@@ -1,0 +1,28 @@
+# Unreal generated build and editor data
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/.vs/
+/Build/
+
+# Local IDE and operating system files
+*.sln
+*.xcodeproj
+*.xcworkspace
+*.suo
+*.user
+*.opensdf
+*.sdf
+.DS_Store
+
+# Per-user editor state
+/Config/DefaultEditorPerProjectUserSettings.ini
+/Config/Layouts/
+
+# Logs and crash output
+*.log
+/Crashes/
+
+# Blender recovery backups
+*.blend1

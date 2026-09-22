@@ -1,0 +1,41 @@
+{
+  "workflow": "Built-in image-generation tool for the hidden reveal background, continuous dusk sky and foliage segmentation matte. The original photo supplies the visible building, flag fabric, foliage colors and ground leaf clusters.",
+  "original": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Content/Lobby/SourceArt/LobbyBackdrop.png",
+  "assets": [
+    {
+      "file": "HouseRevealPlate.png",
+      "purpose": "Hidden background revealed by moving flags, foliage and leaf clusters",
+      "prompt": "Use case: precise-object-edit\nAsset type: hidden clean background plate for animating an existing game lobby photograph.\nInput image 1 is the edit target, not a style reference. Keep exactly the same 16:9 framing, fixed camera, architecture, roof and chimneys, columns, windows, railings, benches, paving seams, warm lights and blue dusk color grade. Do not zoom or recompose.\nRemove ONLY the four hanging flag CLOTHS (retain their poles), every tree branch/leaf at the image edges, the green/gold bushes, and all scattered fallen leaves on the paving. Reconstruct the small hidden areas as matching blue dusk sky, existing brick walls, empty mulch beds, and empty gray paving, as appropriate. No trees, bushes, flag cloth, leaves or people remain in this hidden clean plate. Do not replace these with new objects.\nThis is an inpainting support texture, not a redesign: all unoccluded architectural features must stay in their original pixel positions, including the words PHI SIGMA KAPPA, crest, entrance lights, number 1800, four white columns and the courtyard steps. Preserve the image's original photographic grain, exposure, shadows, textures and autumn-evening lighting. No new text, no watermark. Output a single aligned landscape image."
+    },
+    {
+      "file": "SkyExtension.png",
+      "purpose": "Continuous reconstructed sky animated behind the fixed roof and moving tree silhouettes; replaces the original sky to prevent chimney-shaped seams.",
+      "prompt": "Use case: precise-object-edit.\nAsset type: hidden sky-only extension plate for an animated photograph.\nImage 1 is the edit target. Preserve the blue dusk sky and its cloud shapes at the top, same exposure, blue hue, photographic grain and 16:9 framing. Remove ALL architecture, trees, branches, flags, vegetation and courtyard, and seamlessly extend that same cloudy dusk sky to cover the entire image. The final image contains ONLY natural dark-blue dusk sky with softly lit drifting-looking clouds, edge to edge. No house, roof, horizon, trees, ground, stars, moon, text, watermarks or new bright light sources. This supports a fixed-camera cinemagraph; retain the original sky where already visible and fill the formerly occluded areas consistently."
+    },
+    {
+      "file": "FoliageMatte.png",
+      "purpose": "Black-and-white pixel-aligned foliage segmentation controlling original-photo leaf and branch movement",
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact edit target, a 1672x941 lobby photograph.\nAsset type: technical foliage segmentation matte for an Unreal photo-animation shader.\nPrimary request: Output a precisely pixel-aligned black-and-white foliage mask for this image. All actual living tree leaves, branches, shrubs, bushes and potted plant leaves become solid pure white. Everything else becomes solid pure black, including the house, sky, brickwork visible through gaps in foliage, lamps, benches, flag cloths and poles, railings, paving, pots, fallen leaves on the ground, and the central empty courtyard. Preserve the exact outline and full opaque interiors of each leaf and branch, with only very fine antialiased gray edges. White must include the foreground overhanging trees along the top-left and top-right sides, both rear courtyard shrub areas, the two foreground hedges against the low brick walls, and the small foreground planted beds. All holes between tree branches must be black, and dark shadowed tree leaf pixels are white just like brightly lit ones.\nConstraints: same exact 1672x941 canvas, same framing and pixel positions. This is a segmentation mask, NOT a new illustration or photo. Do not move, reshape or invent foliage. No original photographic texture, no brick patterns in the white regions, no gray lighting gradients, no text. Empty background is pure black, foliage is pure white."
+    },
+    {
+      "file": "GroundLeafMatte.png",
+      "purpose": "Selection mask for the original fallen leaves. Geometry compiler excludes stair edges and living foliage.",
+      "prompt": "Use case: precise-object-edit. Input image 1 is the exact edit target, 1672x941.\nCreate a precisely pixel-aligned BLACK AND WHITE SEGMENTATION MASK of ONLY THE FALLEN AUTUMN LEAVES in this photograph. White = each real fallen brown/orange leaf, black = absolutely everything else. Include all the small fallen leaves along the foot of the stairs, scattered on stair treads, the strips of leaf litter beside the low brick walls, side walkways and terraces, and the entire foreground pavement. Preserve exact existing leaf shapes and positions. Distinguish leaf litter from pavement joints and cracks: cracks, grout, paving, steps, reflections, shadows, lights, house, flags, benches, living shrubs and trees must be black. All attached tree/bush leaves must be black. Isolated dry leaves and fallen piles on the ground must be solid white inside their actual leaf silhouettes, not white rectangular regions. Tiny antialiased gray edges only. Exact same canvas and composition; no new leaves, no relocated leaves, no photographic colors or lighting texture, no text or watermark. This is a technical alpha mask to animate the existing leaves, NOT new art."
+    },
+    {
+      "file": "GroundWithoutLeaves.png",
+      "purpose": "Stationary leaf-free ground and contact-shadow repair beneath original-photo leaf cutouts.",
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact photograph to edit, 1672x941. Remove ONLY the fallen dry autumn leaves and their tiny contact shadows from the pavement, from the foot of the stairs, and from the narrow strips of ground beside the low brick walls. Fill those removed leaf pixels with the immediately surrounding matching paving or soil.\nEverything else MUST remain unchanged: all living shrubs, bushes and trees, all attached leaves, all foreground planted beds, the complete house, flags, windows, lights, steps, brick walls, benches, and the exact paving seams and photographic ground texture. Do not clean away natural ground grain or change wet reflections. Do not remove living foliage. Do not change framing, exposure, color, perspective, materials, or architecture.\nThe final image is the same original photo with fallen leaves removed, NOT a redesign. Preserve the original leaf-free areas pixel-aligned. Do not introduce any objects, text, patterns or leaves. This is the static background underneath cutouts of the original fallen leaves."
+    }
+  ],
+  "photoLeafGeometry": {
+    "leaves": 320,
+    "rectangles": 1788,
+    "pixels": 13252,
+    "vertices": 7152,
+    "stair_foot_pixels": 1277,
+    "left_border_pixels": 1372,
+    "right_border_pixels": 1188
+  },
+  "photoLeafMethod": "Built-in image generation for the two support images. Original lobby photograph supplies every visible moving leaf pixel. Connected-component row-run geometry, no synthetic leaf shapes."
+}
