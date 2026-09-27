@@ -1,9 +1,13 @@
 #include "StoryCampaign.h"
+#include "SeniorPlayerPreferences.h"
+#include "StoryMovementComponent.h"
+#include "HouseFurnitureInteractionComponent.h"
 #include "SeniorLobbyUI.h"
 #include "SeniorCharacterRoster.h"
 #include "SeniorBraxtonVisual.h"
 #include "SeniorDouli.h"
 #include "SeniorDouliAnim.h"
+#include "SeniorDouliIdle.h"
 #include "Animation/AnimInstance.h"
 #include "Animation/AnimSequence.h"
 #include "Components/BoxComponent.h"
@@ -37,10 +41,16 @@
 void TickStorySmokeTest(UWorld* World);
 void TickDouliSmokeTest(AStoryFirstPersonCharacter* Pawn);
 #endif
+#if !UE_BUILD_SHIPPING
+void TickCombinedHouseSmoke(UWorld* World);
+#endif
 
 void UStoryCampaign::Init()
 {
     Super::Init();
+#if !UE_BUILD_SHIPPING
+    if (FParse::Param(FCommandLine::Get(),TEXT("CombinedHouseSmoke"))) SaveSlot=TEXT("SeniorSendoff_CombinedHouseAutomationOnly");
+#endif
 #if WITH_EDITOR
     FString TestMode;
     if (FParse::Param(FCommandLine::Get(),TEXT("DouliTest"))) SaveSlot=TEXT("SeniorSendoff_DouliAutomationOnly");
@@ -63,11 +73,13 @@ void UStoryCampaign::Shutdown()
 }
 FName UStoryCampaign::ChapterMap(int32 Chapter)
 {
+    if (Chapter == 1) return FName(TEXT("/Game/Story/Maps/Chapter01_House"));
     return FName(*FString::Printf(TEXT("/Game/Story/Maps/Chapter%02d"), FMath::Clamp(Chapter, 1, 3)));
 }
 int32 UStoryCampaign::CurrentChapter() const
 {
     const FString Map = UGameplayStatics::GetCurrentLevelName(this, true);
+    if (Map == TEXT("Chapter01_House")) return 1;
     for (int32 Chapter = 1; Chapter <= 3; ++Chapter)
         if (Map == FString::Printf(TEXT("Chapter%02d"), Chapter)) return Chapter;
     return 0;
@@ -240,19 +252,21 @@ AStoryGameMode::AStoryGameMode()
     HUDClass = AStoryHUD::StaticClass();
 }
 
-AStoryFirstPersonCharacter::AStoryFirstPersonCharacter()
+AStoryFirstPersonCharacter::AStoryFirstPersonCharacter(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer.SetDefaultSubobjectClass<UStoryMovementComponent>(ACharacter::CharacterMovementComponentName))
 {
     PrimaryActorTick.bCanEverTick = true;
     PrimaryActorTick.TickInterval = 0.f;
     bReplicates = true;
     SetReplicateMovement(true);
     SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+    // Match the validated measured-house door clearance while retaining a
+    // human-height capsule; roster stature may later adjust only half-height.
+    GetCapsuleComponent()->InitCapsuleSize(32.f, 90.f);
     bUseControllerRotationPitch = false;
     bUseControllerRotationYaw = true;
     bUseControllerRotationRoll = false;
     GetCharacterMovement()->bOrientRotationToMovement = false;
-    GetCharacterMovement()->MaxWalkSpeed = 500.f;
-    GetCharacterMovement()->JumpZVelocity = 520.f;
 
     FirstPersonCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
     FirstPersonCamera->SetupAttachment(GetCapsuleComponent());
@@ -280,6 +294,7 @@ AStoryFirstPersonCharacter::AStoryFirstPersonCharacter()
     FirstPersonArms->SetCastShadow(false);
     FirstPersonArms->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered;
     FirstPersonArms->SetHiddenInGame(true);
+    FurnitureInteraction = CreateDefaultSubobject<UHouseFurnitureInteractionComponent>(TEXT("FurnitureInteraction"));
 
     static ConstructorHelpers::FObjectFinder<UInputMappingContext> Context(TEXT("/Game/Input/IMC_Default.IMC_Default"));
     static ConstructorHelpers::FObjectFinder<UInputAction> Move(TEXT("/Game/Input/Actions/IA_Move.IA_Move"));
@@ -301,6 +316,20 @@ void AStoryFirstPersonCharacter::BeginPlay()
 void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
+    if (IsLocallyControlled() && FirstPersonCamera)
+    {
+        const float WantedFOV = SeniorPlayerPreferences::Get().FieldOfView;
+        if (!FMath::IsNearlyEqual(FirstPersonCamera->FieldOfView, WantedFOV))
+            FirstPersonCamera->SetFieldOfView(WantedFOV);
+        // The capsule's crouch already lowers the viewpoint. A further eased
+        // drop gives a sprint slide a readable low viewpoint without changing
+        // its collision height or an observer's camera.
+        const bool bSliding = GetStoryMovement() && GetStoryMovement()->IsSliding();
+        const float TargetOffset = bSliding ? -36.f : 0.f;
+        SlideCameraOffsetZ = FMath::FInterpTo(SlideCameraOffsetZ, TargetOffset,
+            DeltaSeconds, bSliding ? 15.f : 10.f);
+        FirstPersonCamera->SetRelativeLocation(FVector(0, 0, BaseEyeHeight + SlideCameraOffsetZ));
+    }
     const auto* Selection=GetPlayerState<ASeniorLobbyPlayerState>();
     const bool Equipped=Selection && Selection->CharacterIndex==0 && Selection->LoadoutIndex==0;
     if (HasAuthority() && Equipped && !Douli)
@@ -456,6 +485,7 @@ void AStoryFirstPersonCharacter::ApplyCharacterDimensions(USkeletalMesh* Body)
     const float EyeHeightFromGround = Height * 0.935f;
     BaseEyeHeight = EyeHeightFromGround - HalfHeight;
     FirstPersonCamera->SetRelativeLocation(FVector(0, 0, BaseEyeHeight));
+    SlideCameraOffsetZ = 0;
     FTransform AdjustedArms = ArmsRelativeTransform;
     // FBX already contains each person's body scale. Only the attachment offset needs the same proportion.
     AdjustedArms.SetTranslation(ArmsRelativeTransform.GetTranslation() * (Height / 184.0f));
@@ -487,17 +517,77 @@ void AStoryFirstPersonCharacter::SetupPlayerInputComponent(UInputComponent* Play
     ConfigureLocalInput();
     PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowDouli);
     PlayerInputComponent->BindKey(EKeys::Gamepad_RightTrigger,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowDouli);
+    PlayerInputComponent->BindKey(EKeys::E, IE_Pressed, FurnitureInteraction.Get(), &UHouseFurnitureInteractionComponent::ToggleGrab);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Left, IE_Pressed, FurnitureInteraction.Get(), &UHouseFurnitureInteractionComponent::ToggleGrab);
+    PlayerInputComponent->BindKey(EKeys::LeftShift, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSprint);
+    PlayerInputComponent->BindKey(EKeys::LeftShift, IE_Released, this, &AStoryFirstPersonCharacter::StopSprint);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_LeftThumbstick, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSprint);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_LeftThumbstick, IE_Released, this, &AStoryFirstPersonCharacter::StopSprint);
+    PlayerInputComponent->BindKey(EKeys::LeftControl, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSlide);
+    PlayerInputComponent->BindKey(EKeys::LeftControl, IE_Released, this, &AStoryFirstPersonCharacter::StopSlide);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Right, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSlide);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Right, IE_Released, this, &AStoryFirstPersonCharacter::StopSlide);
+    bool bMouseMappedAndBound = false;
     if (UEnhancedInputComponent* Enhanced = Cast<UEnhancedInputComponent>(PlayerInputComponent))
     {
         if (MoveAction) Enhanced->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AStoryFirstPersonCharacter::Move);
         if (LookAction) Enhanced->BindAction(LookAction, ETriggerEvent::Triggered, this, &AStoryFirstPersonCharacter::Look);
-        if (MouseLookAction) Enhanced->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AStoryFirstPersonCharacter::Look);
+        if (MouseLookAction && InputContext)
+            for (const FEnhancedActionKeyMapping& Mapping : InputContext->GetMappings())
+                if (Mapping.Action == MouseLookAction && Mapping.Key == EKeys::Mouse2D)
+                {
+                    Enhanced->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AStoryFirstPersonCharacter::LookMouse);
+                    bMouseMappedAndBound = true;
+                    break;
+                }
         if (JumpAction)
         {
-            Enhanced->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
+            Enhanced->BindAction(JumpAction, ETriggerEvent::Started, this, &AStoryFirstPersonCharacter::StartMovementJump);
             Enhanced->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
         }
     }
+    // Keep a direct relative-axis path if an older copy of the mapping asset
+    // is restored. Never bind it alongside Mouse2D, or every turn doubles.
+    if (!bMouseMappedAndBound)
+    {
+        PlayerInputComponent->BindAxisKey(EKeys::MouseX, this, &AStoryFirstPersonCharacter::LookMouseX);
+        PlayerInputComponent->BindAxisKey(EKeys::MouseY, this, &AStoryFirstPersonCharacter::LookMouseY);
+        UE_LOG(LogTemp, Warning, TEXT("Story input: Mouse2D mapping absent; using MouseX/MouseY fallback."));
+    }
+}
+UStoryMovementComponent* AStoryFirstPersonCharacter::GetStoryMovement() const
+{
+    return Cast<UStoryMovementComponent>(GetCharacterMovement());
+}
+void AStoryFirstPersonCharacter::StartSprint()
+{
+    if (auto* Movement = GetStoryMovement()) Movement->SetSprintHeld(true);
+}
+void AStoryFirstPersonCharacter::StopSprint()
+{
+    if (auto* Movement = GetStoryMovement()) Movement->SetSprintHeld(false);
+}
+void AStoryFirstPersonCharacter::StartSlide()
+{
+    if (auto* Movement = GetStoryMovement()) Movement->SetSlideHeld(true);
+}
+void AStoryFirstPersonCharacter::StopSlide()
+{
+    if (auto* Movement = GetStoryMovement()) Movement->SetSlideHeld(false);
+}
+void AStoryFirstPersonCharacter::StartMovementJump()
+{
+    // Releasing crouch here lets the same input jump out of a slide. The move's
+    // crouch and jump flags travel together to the server for prediction.
+    if (auto* Movement = GetStoryMovement()) Movement->SetSlideHeld(false);
+    Jump();
+}
+bool AStoryFirstPersonCharacter::CanJumpInternal_Implementation() const
+{
+    // Character checks jump input before its movement component applies the
+    // requested uncrouch. Permit that one transition without allowing a jump
+    // while the player is still holding the slide/crouch key.
+    return (!IsCrouched() || !GetCharacterMovement()->bWantsToCrouch) && JumpIsAllowedInternal();
 }
 void AStoryFirstPersonCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -517,18 +607,36 @@ FTransform AStoryFirstPersonCharacter::DouliGrip(bool bFirstPerson) const
 {
     if (bFirstPerson && FirstPersonCamera)
     {
-        float Move=0;
-        if (const auto* A=Cast<USeniorDouliAnim>(FirstPersonArms->GetAnimInstance())) Move=A->Motion;
-        return FTransform(FirstPersonCamera->GetComponentQuat()*FRotator(-6,0,0).Quaternion(),
-            FirstPersonCamera->GetComponentTransform().TransformPosition(FVector(49+Move*12,8+Move*18,-25+FMath::Abs(Move)*5)));
+        const FTransform Camera=FirstPersonCamera->GetComponentTransform();
+        // The first-person hat is smaller on screen, so its rim is about 13 cm
+        // from the fingers. Follow the animated hand instead of a separate
+        // camera-space motion curve that leaves the fingers in empty space.
+        const FVector Hand=FirstPersonArms && FirstPersonArms->GetSkeletalMeshAsset()
+            ? FirstPersonArms->GetSocketLocation(TEXT("hand_r"))
+            : Camera.TransformPosition(FVector(50,35,-31));
+        const FVector Center=Hand+Camera.GetUnitAxis(EAxis::X)*4.f
+            -Camera.GetUnitAxis(EAxis::Y)*13.f+Camera.GetUnitAxis(EAxis::Z)*5.f;
+        return FTransform(Camera.GetRotation()*FRotator(-6,0,0).Quaternion(),Center,FVector(.65f));
     }
     if (BraxtonVisual && BraxtonVisual->GetBodyMesh())
     {
         const auto* B=BraxtonVisual->GetBodyMesh();
-        const FVector Hand=B->GetSocketLocation(TEXT("hand_r"));
-        return FTransform(GetActorRotation(),Hand-GetActorRightVector()*23+FVector(0,0,-1));
+        if (B->GetSkeletalMeshAsset())
+        {
+            const FQuat LocalRotation=FSeniorDouliIdle::HandFrame(
+                B->GetSkeletalMeshAsset()->GetRefSkeleton())
+                *FSeniorDouliIdle::PalmFrame().Inverse();
+            const FVector LocalCenter=LocalRotation.RotateVector(FSeniorDouliIdle::HatOffset());
+            const FTransform Hand=B->GetSocketTransform(TEXT("hand_r"));
+            return FTransform(Hand.GetRotation()*LocalRotation,
+                Hand.TransformPosition(LocalCenter),FVector::OneVector);
+        }
     }
     return FTransform(GetActorRotation(),GetActorLocation()+GetActorForwardVector()*35+GetActorRightVector()*8+FVector(0,0,15));
+}
+USkeletalMeshComponent* AStoryFirstPersonCharacter::GetBraxtonBodyMesh() const
+{
+    return BraxtonVisual ? BraxtonVisual->GetBodyMesh() : nullptr;
 }
 void AStoryFirstPersonCharacter::Move(const FInputActionValue& Value)
 {
@@ -545,7 +653,26 @@ void AStoryFirstPersonCharacter::Look(const FInputActionValue& Value)
 {
     const FVector2D Input = Value.Get<FVector2D>();
     AddControllerYawInput(Input.X);
-    AddControllerPitchInput(Input.Y);
+    AddControllerPitchInput(Input.Y * (SeniorPlayerPreferences::Get().bInvertY ? -1.f : 1.f));
+}
+void AStoryFirstPersonCharacter::LookMouse(const FInputActionValue& Value)
+{
+    const FVector2D Input = Value.Get<FVector2D>();
+    const auto& Settings = SeniorPlayerPreferences::Get();
+    AddControllerYawInput(Input.X * Settings.MouseSensitivity);
+    // This project's raw mouse-up delta and the controller's pitch input
+    // scale disagree; reverse the mouse once here, then apply the user's
+    // optional inversion. Gamepad look keeps its separate stick convention.
+    AddControllerPitchInput(-Input.Y * Settings.MouseSensitivity * (Settings.bInvertY ? -1.f : 1.f));
+}
+void AStoryFirstPersonCharacter::LookMouseX(float AxisValue)
+{
+    AddControllerYawInput(AxisValue * SeniorPlayerPreferences::Get().MouseSensitivity);
+}
+void AStoryFirstPersonCharacter::LookMouseY(float AxisValue)
+{
+    const auto& Settings = SeniorPlayerPreferences::Get();
+    AddControllerPitchInput(-AxisValue * Settings.MouseSensitivity * (Settings.bInvertY ? -1.f : 1.f));
 }
 void AStoryGameMode::InitGame(const FString& MapName, const FString& Options, FString& Error)
 {
@@ -578,7 +705,8 @@ void AStoryGameMode::BeginPlay()
             TArray<AActor*> Starts;
             UGameplayStatics::GetAllActorsOfClass(this, APlayerStart::StaticClass(), Starts);
             if (Starts.Num()) FallLimit = Starts[0]->GetActorLocation().Z - 1200;
-            Story->Notify(TEXT("Follow checkpoint 1, checkpoint 2, then the chapter exit."));
+            // The permanent objective HUD already explains the route; leave
+            // the temporary notice area free for progress and errors.
         }
     }
 }
@@ -604,6 +732,9 @@ void AStoryGameMode::Tick(float DeltaSeconds)
     Super::Tick(DeltaSeconds);
 #if WITH_EDITOR
     TickStorySmokeTest(GetWorld());
+#endif
+#if !UE_BUILD_SHIPPING
+    TickCombinedHouseSmoke(GetWorld());
 #endif
     auto* Story = GetGameInstance<UStoryCampaign>();
     if (!Story || Story->CurrentChapter() == 0 || Story->bTravelPending || Story->Progress->bCompleted) return;
@@ -666,10 +797,9 @@ void AStoryHUD::DrawHUD()
     const int32 Checkpoint = Team ? Team->StoryCheckpoint : Story->Progress->Checkpoint;
     const int32 Difficulty = Team ? Team->StoryDifficulty : Story->Progress->Difficulty;
     const bool bCompleted = Team ? Team->bStoryCompleted : Story->Progress->bCompleted;
-    const bool bHost = GetWorld()->GetNetMode() != NM_Client;
     const float W = Canvas->SizeX, H = Canvas->SizeY;
     auto* ArmedPawn=PlayerOwner ? Cast<AStoryFirstPersonCharacter>(PlayerOwner->GetPawn()) : nullptr;
-    const float S = FMath::Clamp(W / 1100.f, 0.65f, 1.6f);
+    const float S = FMath::Clamp(W / 1400.f, 0.65f, 1.25f);
     const FLinearColor Ink(0.025f, 0.035f, 0.07f, .92f), Gold(1.f, .78f, .35f, 1.f);
     auto Text = [this, S](const FString& T, float X, float Y, FLinearColor C, float Scale = 1.f) {
         DrawText(T, C, X, Y, GEngine->GetMediumFont(), S * Scale);
@@ -686,6 +816,12 @@ void AStoryHUD::DrawHUD()
     Text(FString::Printf(TEXT("CHAPTER %d / 3    |    CHECKPOINT %d / 2    |    %s"), Story->CurrentChapter(),
         Checkpoint, *UStoryCampaign::DifficultyName(Difficulty)), 34*S, 66*S, FLinearColor::White);
     Text(TEXT("Reach both markers, then the chapter exit."), 34*S, 98*S, FLinearColor(.7f,.8f,.9f));
+    if (Story->CurrentChapter() == 1)
+    {
+        DrawRect(Ink, 18*S, H-97*S, 548*S, 28*S);
+        Text(TEXT("Shift sprint  |  Ctrl slide  |  Space jump  |  E move furniture"),
+             29*S, H-93*S, FLinearColor(.8f,.85f,.9f), .8f);
+    }
     if (ArmedPawn && ArmedPawn->Douli)
     {
         DrawRect(Ink,18*S,H-60*S,340*S,40*S);
@@ -710,15 +846,7 @@ void AStoryHUD::DrawHUD()
     }
     const float BX = W - 245*S, BW = 225*S, BH = 42*S;
     DrawRect(Ink, BX, 18*S, BW, BH);
-    Text(TEXT("Lobby  [Esc]"), BX+10*S, 28*S, FLinearColor::White);
-    if (bHost)
-    {
-        DrawRect(Ink, BX, 70*S, BW, BH);
-        Text(TEXT("Return to checkpoint"), BX+10*S, 80*S, FLinearColor::White);
-        DrawRect(Ink, BX, 122*S, BW, BH);
-        Text(bConfirmRestart ? TEXT("Confirm new story") : TEXT("Restart story"), BX+10*S, 132*S, Gold);
-        if (bConfirmRestart) Text(TEXT("Tap elsewhere to cancel"), BX, 172*S, FLinearColor::White, .8f);
-    }
+    Text(TEXT("Pause / settings [Esc]"), BX+10*S, 28*S, FLinearColor::White);
     float X=0, Y=0; bool Pressed=false;
     if (PlayerOwner)
     {
@@ -738,14 +866,7 @@ void AStoryHUD::DrawHUD()
             if (ArmedPawn && ArmedPawn->Douli && X>=W-150*S && Y>=H-100*S && X<=W-20*S && Y<=H-35*S)
                 ArmedPawn->ServerThrowDouli();
             if (X >= BX && X <= BX+BW && Y >= 18*S && Y <= 18*S+BH)
-            {
-                if (ASeniorLobbyController* PC = Cast<ASeniorLobbyController>(PlayerOwner)) PC->ReturnToLobby();
-                bConfirmRestart=false;
-            }
-            else if (bHost && X >= BX && X <= BX+BW && Y >= 70*S && Y <= 70*S+BH) { Story->RespawnAtCheckpoint(); bConfirmRestart=false; }
-            else if (bHost && X >= BX && X <= BX+BW && Y >= 122*S && Y <= 122*S+BH)
-            { if (bConfirmRestart) { bConfirmRestart=false; Story->NewStory(); } else bConfirmRestart=true; }
-            else bConfirmRestart=false;
+                if (ASeniorLobbyController* PC = Cast<ASeniorLobbyController>(PlayerOwner)) PC->TogglePauseMenu();
         }
     }
     bWasPressed=Pressed;

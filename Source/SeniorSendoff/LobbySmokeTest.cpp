@@ -596,7 +596,7 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
     FParse::Value(FCommandLine::Get(), TEXT("LobbyCharacter="), Character);
     const int32 Loadout = Character % 2;
     const int32 ExpectedDifficulty = Mode == TEXT("Resume") ? 0 : Mode == TEXT("Solo") ? 2 : 1;
-    const FString TargetMap = Mode == TEXT("Resume") ? TEXT("Chapter02") : TEXT("Chapter01");
+    const FString TargetMap = Mode == TEXT("Resume") ? TEXT("Chapter02") : TEXT("Chapter01_House");
 
     if (Step == 0 && Lobby)
     {
@@ -639,7 +639,7 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
     {
         if (Mode == TEXT("Client"))
         {
-            if (Map != TEXT("Chapter01") || !PC->GetPawn()) return;
+            if (Map != TEXT("Chapter01_House") || !PC->GetPawn()) return;
             if (!Check(Player->CharacterIndex == Character && Player->LoadoutIndex == Loadout, TEXT("Client selections lost in chapter travel"))) return;
             auto* CharacterPawn = Cast<AStoryFirstPersonCharacter>(PC->GetPawn());
             if (CharacterPawn && CharacterPawn->GetPlayerState() != Player) return;

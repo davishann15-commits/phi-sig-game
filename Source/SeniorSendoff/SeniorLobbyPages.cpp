@@ -1,5 +1,6 @@
 #include "SeniorLobbyPages.h"
 #include "SeniorLobbyAtmosphere.h"
+#include "SeniorSettingsPanel.h"
 #include "SeniorLobby.h"
 #include "SeniorCharacterPreview.h"
 #include "SeniorCharacterRoster.h"
@@ -217,7 +218,9 @@ public:
         {
             case ESeniorLobbyPage::Character: BuildCharacters(Canvas); break;
             case ESeniorLobbyPage::Loadout: BuildCharacters(Canvas); break;
-            case ESeniorLobbyPage::Settings: BuildSettings(Canvas); break;
+            case ESeniorLobbyPage::Settings:
+                Place(Canvas, 60, 250, 1480, 590, MakeSeniorSettingsPanel());
+                break;
             case ESeniorLobbyPage::Achievements: BuildAchievements(Canvas); break;
             case ESeniorLobbyPage::MainLobby: BuildMainLobby(Canvas); break;
             case ESeniorLobbyPage::News: BuildNews(Canvas); break;

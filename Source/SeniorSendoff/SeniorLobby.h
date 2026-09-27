@@ -60,6 +60,8 @@ public:
     UFUNCTION(BlueprintCallable, Category="Lobby") void JoinLAN(const FString& Address);
     UFUNCTION(BlueprintCallable, Category="Lobby") void LeaveLobby();
     UFUNCTION(BlueprintCallable, Category="Lobby") void ReturnToLobby();
+    UFUNCTION(BlueprintCallable, Category="Game") void TogglePauseMenu();
+    UFUNCTION(BlueprintPure, Category="Game") bool IsPauseMenuOpen() const { return PauseWidget.IsValid(); }
     UFUNCTION(BlueprintPure, Category="Lobby") FString GetLobbyMessage() const;
     UFUNCTION(BlueprintPure, Category="Lobby") bool IsHost() const;
     UFUNCTION(BlueprintPure, Category="Lobby") FString GetHostAddress() const;
@@ -69,11 +71,17 @@ private:
     void RefreshPresentation();
     void RemoveLobbyWidget();
     void RemoveLoadingWidget();
+    void CaptureGameplayMouse();
+    void OpenPauseMenu();
+    void ClosePauseMenu();
     void NetworkFailed(UWorld* World, UNetDriver* Driver, ENetworkFailure::Type Failure, const FString& Error);
     void TravelFailed(UWorld* World, ETravelFailure::Type Failure, const FString& Error);
     void RecoverToLobby(const FString& Message);
     TSharedPtr<SWidget> LobbyWidget;
     TSharedPtr<SWidget> LoadingWidget;
+    TSharedPtr<SWidget> PauseWidget;
+    bool bPausedWorldForMenu = false;
+    bool bRestartConfirmationPending = false;
     FString LoadingDestination;
     FString LobbyMessage;
     double LobbyMessageUntil = 0;

@@ -36,6 +36,9 @@ private:
     FVector FlightDirection = FVector::ForwardVector;
     float DistanceTravelled = 0;
     float Spin = 0;
+    FTransform ReleaseVisualStart = FTransform::Identity;
+    FTransform CatchVisualStart = FTransform::Identity;
+    bool bCatchVisualStartValid = false;
 };
 
 // Transient automation fixture, never placed in campaign maps.

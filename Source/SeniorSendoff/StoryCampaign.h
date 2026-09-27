@@ -17,6 +17,8 @@ class USkeletalMesh;
 class USkeletalMeshComponent;
 class UInputAction;
 class UInputMappingContext;
+class UStoryMovementComponent;
+class UHouseFurnitureInteractionComponent;
 class ASeniorBraxtonVisual;
 class ASeniorDouli;
 struct FInputActionValue;
@@ -102,7 +104,7 @@ class SENIORSENDOFF_API AStoryFirstPersonCharacter : public ACharacter
 {
     GENERATED_BODY()
 public:
-    AStoryFirstPersonCharacter();
+    AStoryFirstPersonCharacter(const FObjectInitializer& ObjectInitializer);
     virtual void BeginPlay() override;
     virtual void Tick(float DeltaSeconds) override;
     virtual void PossessedBy(AController* NewController) override;
@@ -111,15 +113,19 @@ public:
     virtual void NotifyControllerChanged() override;
     virtual void PawnClientRestart() override;
     virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
+    virtual bool CanJumpInternal_Implementation() const override;
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out) const override;
     UPROPERTY(Replicated, BlueprintReadOnly, Category="Weapon") TObjectPtr<ASeniorDouli> Douli;
     UFUNCTION(BlueprintCallable, Category="Weapon") void ThrowDouli();
     UFUNCTION(Server, Reliable) void ServerThrowDouli();
     FTransform DouliGrip(bool bFirstPerson) const;
+    USkeletalMeshComponent* GetBraxtonBodyMesh() const;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="First Person") TObjectPtr<UCameraComponent> FirstPersonCamera;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="First Person") TObjectPtr<USkeletalMeshComponent> FirstPersonArms;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Furniture") TObjectPtr<UHouseFurnitureInteractionComponent> FurnitureInteraction;
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="First Person") FTransform ArmsRelativeTransform = FTransform(FRotator::ZeroRotator, FVector(8, 0, -155));
     UFUNCTION(BlueprintCallable, Category="Character") void ApplySelectedCharacter();
+    UFUNCTION(BlueprintPure, Category="Movement") UStoryMovementComponent* GetStoryMovement() const;
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Input") TObjectPtr<UInputMappingContext> InputContext;
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Input") TObjectPtr<UInputAction> MoveAction;
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Input") TObjectPtr<UInputAction> LookAction;
@@ -138,10 +144,19 @@ private:
     int32 AppliedCharacterIndex = INDEX_NONE;
     bool bWalkingAnimation = false;
     float DouliFlightBlend = 0;
+    float SlideCameraOffsetZ = 0;
     FSeniorClothMotion ClothMotion;
     void ConfigureLocalInput();
+    void StartSprint();
+    void StopSprint();
+    void StartSlide();
+    void StopSlide();
+    void StartMovementJump();
     void Move(const FInputActionValue& Value);
     void Look(const FInputActionValue& Value);
+    void LookMouse(const FInputActionValue& Value);
+    void LookMouseX(float AxisValue);
+    void LookMouseY(float AxisValue);
 };
 
 UCLASS(Blueprintable)
@@ -172,6 +187,5 @@ public:
     virtual void DrawHUD() override;
 private:
     bool bWasPressed = false;
-    bool bConfirmRestart = false;
     bool bThrowTouchPressed = false;
 };

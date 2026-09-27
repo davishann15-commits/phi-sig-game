@@ -1,0 +1,5664 @@
+{
+  "schema": "sso.house.connected-layout.v3",
+  "source": "User-corrected intersecting hallway topology; S03 local scan geometry retained; branch doorway registration is an explicit candidate.",
+  "coordinateSystem": "Unity metres [x,y,z] = Blender [x,z,y] after the House_Central FBX export; Unreal footprint 1.80x, height 1.00x, portable objects 1.00x from Blender source",
+  "registration": {
+    "s03RootBlender": [
+      -1.825,
+      -11.55,
+      1.3852
+    ],
+    "entranceFloorY": 0.0,
+    "basementFloorY": -3.2906,
+    "greatRoomNorthDoorUnity": [
+      -3.98,
+      1.31,
+      -7.19
+    ],
+    "confidence": "User-constrained orthogonal candidate; local S03 dimensions retained, independent-scan joins still require validation.",
+    "editableObject": "MOVE_S03_STUDY_STAIRS_AND_ENTRANCE_CORRIDOR",
+    "s03YawBlenderDegrees": 0.0,
+    "rejectedPreviousPose": {
+      "rootBlender": [
+        1.73,
+        -7.9,
+        1.3852
+      ],
+      "yawDegrees": 0,
+      "reason": "87 foreign objects intruded into the measured great room."
+    },
+    "connection": "great-room door -> measured short side hall -> intersecting bedroom corridor -> east/rear stair",
+    "sourcePortalRaw": [
+      -2.15,
+      -1.3852,
+      -4.2
+    ],
+    "sourcePortalUnity": [
+      -3.975,
+      0.0,
+      -7.35
+    ],
+    "rejectedEndDoorPose": {
+      "rootBlender": [
+        -3.135,
+        -13.6,
+        1.3852
+      ],
+      "yawDegrees": -90.0,
+      "reason": "Incorrectly used residential door102 as a longitudinal great-room entrance."
+    },
+    "secondFloorMigration": {
+      "id": "sso.s03-second-floor-frame.20260913.v1",
+      "previousFrame": {
+        "s03RootBlender": [
+          -2.03349,
+          -12.258152,
+          1.3852
+        ],
+        "s03YawBlenderDegrees": -18.999983715774096
+      },
+      "residuals": {
+        "galleryJambLongitudinalM": 0.4200147198761031,
+        "shaftMaxPlanAdjustmentM": 0.2472365644755528,
+        "shaftMax3DAdjustmentM": 0.26740954784374926,
+        "retainedLowerStackVerticalOffsetM": 0.10189184199102619,
+        "sharedHeaderVsRoofHeightDeltaDifferenceM": 0.004459102434603679,
+        "wholeStairCandidateInlierFraction": 0.35131141485038786,
+        "wholeStairCandidateInlierPlaneRmsM": 0.02455412909264772,
+        "shaftAdjustmentScope": "Conservative source-shaft ROI relative to original composed fit; includes total4.4deg raw-yaw correction and retained vertical floor closure."
+      },
+      "sourceSha256": "f71b3f35ed1d7ad0ed5ba045f333e90ea817e03f0b5e3fbfa91816d8799012b9",
+      "ownership": "Explicit S03 room/route endpoints, S03 view IDs and two threshold views; mixed GR approach stays fixed.",
+      "revisions": [
+        {
+          "id": "sso.s03-ground-connector-clearance.20260913.v2",
+          "previousFrame": {
+            "s03RootBlender": [
+              -1.5730025109618393,
+              -11.600409025495729,
+              1.3852
+            ],
+            "s03YawBlenderDegrees": 2.060091546589728
+          },
+          "targetFrame": {
+            "s03RootBlender": [
+              -1.5015883361840086,
+              -11.928418587066973,
+              1.3852
+            ],
+            "s03YawBlenderDegrees": 4.5600917188116155
+          },
+          "preservedS05TranslationRaw": [
+            -1.5013456781705217,
+            3.3750597036349914,
+            0.09429372553907749
+          ],
+          "preservedS05YawRawDegrees": 180.0,
+          "previousFixedApproachXYZ": [
+            [
+              -3.975,
+              0.08,
+              -5.95
+            ],
+            [
+              -3.975,
+              0.08,
+              -6.95
+            ],
+            [
+              -3.975,
+              0.08,
+              -7.61
+            ],
+            [
+              -5.04075,
+              0.08,
+              -7.61
+            ]
+          ],
+          "extraYawBlenderDegrees": 2.5,
+          "pivotRawXZ": [
+            7.6,
+            -1.2
+          ],
+          "reason": "Actual native measured end-partition left only.3572m behind protected GR jamb. Rigid S03 rotation creates a candidate .32m-radius curved turn without changing source walls; S05 remains fixed.",
+          "nativeCandidateEvidence": "../GroundConnectorReview/native_mesh_turn_candidates.json",
+          "nativeIntegratedStatus": "PENDING_FULL_REGENERATION_AND_CAPSULE_VALIDATION"
+        }
+      ]
+    },
+    "s05TranslationRaw": [
+      -1.5013456781705217,
+      3.3750597036349914,
+      0.09429372553907749
+    ],
+    "s05YawRawDegrees": 180.0,
+    "secondFloorGalleryFloor": 3.0683297650916903,
+    "groundConnectorRevision": {
+      "id": "sso.s03-ground-connector-clearance.20260913.v2",
+      "previousFrame": {
+        "s03RootBlender": [
+          -1.5730025109618393,
+          -11.600409025495729,
+          1.3852
+        ],
+        "s03YawBlenderDegrees": 2.060091546589728
+      },
+      "targetFrame": {
+        "s03RootBlender": [
+          -1.5015883361840086,
+          -11.928418587066973,
+          1.3852
+        ],
+        "s03YawBlenderDegrees": 4.5600917188116155
+      },
+      "preservedS05TranslationRaw": [
+        -1.5013456781705217,
+        3.3750597036349914,
+        0.09429372553907749
+      ],
+      "preservedS05YawRawDegrees": 180.0,
+      "previousFixedApproachXYZ": [
+        [
+          -3.975,
+          0.08,
+          -5.95
+        ],
+        [
+          -3.975,
+          0.08,
+          -6.95
+        ],
+        [
+          -3.975,
+          0.08,
+          -7.61
+        ],
+        [
+          -5.04075,
+          0.08,
+          -7.61
+        ]
+      ],
+      "extraYawBlenderDegrees": 2.5,
+      "pivotRawXZ": [
+        7.6,
+        -1.2
+      ],
+      "reason": "Actual native measured end-partition left only.3572m behind protected GR jamb. Rigid S03 rotation creates a candidate .32m-radius curved turn without changing source walls; S05 remains fixed.",
+      "nativeCandidateEvidence": "../GroundConnectorReview/native_mesh_turn_candidates.json",
+      "nativeIntegratedStatus": "PENDING_FULL_REGENERATION_AND_CAPSULE_VALIDATION"
+    },
+    "orthogonalHallRevision": {
+      "id": "sso.s03-square-short-hall.20260922.v1",
+      "evidence": "User confirms square house, two wings and right-angle intersections; S03/IMG1920 fix room and fixture sequence.",
+      "scope": "Replace tapered S03 entrance short-hall enclosure and its GR doorway; original scans unchanged.",
+      "registrationLimit": "S03 whole-wing yaw and S05 shaft fit remain provisional until independent common-feature registration."
+    },
+    "orthogonalHouseRevision": {
+      "id": "sso.square-wings.20260922.v1",
+      "previousRootBlender": [
+        -1.5015883361840086,
+        -11.928418587066973,
+        1.3852
+      ],
+      "previousYawDegrees": 4.5600917188116155,
+      "rootBlender": [
+        -1.825,
+        -11.55,
+        1.3852
+      ],
+      "yawDegrees": 0.0,
+      "evidence": "User confirms no crooked rooms or odd house shape; both wings and intersections are square.",
+      "limit": "Great-room and S05 independent-scan joins remain candidate positions; route and scan-overlay checks are required."
+    }
+  },
+  "rooms": [
+    {
+      "id": "S04_GreatRoom",
+      "floor": "entrance",
+      "anchor": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 0.0
+      },
+      "evidence": "S04 measured clean shell"
+    },
+    {
+      "id": "S03_Entrance_Vestibule",
+      "floor": "entrance",
+      "anchor": {
+        "x": -8.144982,
+        "y": 1.2852,
+        "z": -16.650018
+      },
+      "evidence": "Measured short hall to T-junction. User confirms intervening short hall; exact S04 door correspondence remains a candidate."
+    },
+    {
+      "id": "S03_Entrance_LongHall",
+      "floor": "entrance",
+      "anchor": {
+        "x": -2.583,
+        "y": 1.31,
+        "z": -22.122
+      },
+      "evidence": "S03 upper corridor measured"
+    },
+    {
+      "id": "S03_Entrance_Bathroom",
+      "floor": "entrance",
+      "anchor": {
+        "x": -1.809,
+        "y": 1.31,
+        "z": -17.1
+      },
+      "evidence": "S03 communal bathroom measured; review anchor stays in the unobstructed west bay"
+    },
+    {
+      "id": "S03_Entrance_LibraryStairApproach",
+      "floor": "entrance",
+      "anchor": {
+        "x": 8.505,
+        "y": 1.31,
+        "z": -22.266018
+      },
+      "evidence": "Measured east stair connects down to the basement library via lower connector"
+    },
+    {
+      "id": "S03_Basement_StairCorridor",
+      "floor": "basement",
+      "anchor": {
+        "x": 6.543,
+        "y": -2.14,
+        "z": -18.63
+      },
+      "evidence": "S03 lower connector measured"
+    },
+    {
+      "id": "S03_Basement_Storage",
+      "floor": "basement",
+      "anchor": {
+        "x": 3.105,
+        "y": -2.14,
+        "z": -18.864
+      },
+      "evidence": "S03 lower scan chair/storage pocket; distinct from upper photo1920 branch"
+    },
+    {
+      "id": "S03_Basement_Switchback",
+      "floor": "basement",
+      "anchor": {
+        "x": 8.163,
+        "y": -2.14,
+        "z": -21.654
+      },
+      "evidence": "S03 measured stair threshold and flights"
+    },
+    {
+      "id": "S04_Basement_BlackHall",
+      "floor": "basement",
+      "anchor": {
+        "x": 0.0,
+        "y": -1.87,
+        "z": 0.0
+      },
+      "evidence": "user-directed appearance; envelope inferred"
+    },
+    {
+      "id": "S03_Entrance_ChairServiceBranch",
+      "floor": "entrance",
+      "anchor": {
+        "x": -7.425,
+        "y": 1.2352,
+        "z": -16.11
+      },
+      "evidence": "Photo1920 matched to upper southwest branch through door, panel, thermostat and conduit"
+    },
+    {
+      "id": "S03_Upper_CapturedLanding",
+      "floor": "upper landing",
+      "anchor": {
+        "x": 9.674982,
+        "y": 4.0452,
+        "z": -21.780018
+      },
+      "evidence": "S03 horizontal surface at raw Y1.66; rooms beyond scan coverage are not reconstructed"
+    },
+    {
+      "id": "S03_Entrance_Bedroom",
+      "anchor": {
+        "x": -10.125,
+        "y": 1.4852,
+        "z": -26.46
+      },
+      "floor": "entrance",
+      "evidence": "Source scan and matching photo; source-parent registration retained"
+    },
+    {
+      "id": "S03_Basement_Study",
+      "anchor": {
+        "x": -7.335,
+        "y": -1.6648,
+        "z": -27.954
+      },
+      "floor": "basement",
+      "evidence": "Source scan and matching photo; source-parent registration retained"
+    },
+    {
+      "id": "S03_Basement_StudySeating",
+      "anchor": {
+        "x": 6.885,
+        "y": -1.6648,
+        "z": -26.19
+      },
+      "floor": "basement",
+      "evidence": "IMG1916 looks through lower connector into the east study; two gray chairs and round lamp table registered to S03"
+    },
+    {
+      "id": "S02_Service",
+      "anchor": {
+        "x": 7.362,
+        "y": 1.4651,
+        "z": 15.102
+      },
+      "floor": "entrance",
+      "evidence": "Source scan and matching photo; source-parent registration retained"
+    },
+    {
+      "id": "S02_Dining",
+      "anchor": {
+        "x": -2.718,
+        "y": 1.4651,
+        "z": 23.202
+      },
+      "floor": "entrance",
+      "evidence": "Source scan and matching photo; source-parent registration retained"
+    },
+    {
+      "id": "S02_SmallBathroom",
+      "anchor": {
+        "x": -12.726,
+        "y": 1.4651,
+        "z": 28.008
+      },
+      "floor": "entrance",
+      "evidence": "S02 textured scan north bathroom and conservative original opening fit"
+    },
+    {
+      "id": "GalleryNorth",
+      "anchor": {
+        "x": -7.254,
+        "y": 3.14833,
+        "z": -12.06
+      },
+      "floor": "gallery",
+      "evidence": "S04 front and S05 measured gallery floor/rear wall, now connected to captured upper wings."
+    },
+    {
+      "id": "GallerySouth",
+      "anchor": {
+        "x": -7.254,
+        "y": 3.14833,
+        "z": 11.97
+      },
+      "floor": "gallery",
+      "evidence": "S04 front and S05 measured gallery floor/rear wall, now connected to captured upper wings."
+    },
+    {
+      "id": "BH_ServiceAlcove",
+      "anchor": {
+        "x": -4.365,
+        "y": -1.6906,
+        "z": 14.04
+      },
+      "floor": "basement",
+      "evidence": "IMG1908/1910 shared chair stack, bucket and doorway. Dimensions are photo-ratio estimates; inner door destination unknown."
+    },
+    {
+      "id": "S05_RearUpperHall",
+      "anchor": {
+        "x": 7.01757,
+        "y": 4.62991,
+        "z": -21.949722
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_FarUpperHall",
+      "anchor": {
+        "x": -7.02243,
+        "y": 4.71691,
+        "z": 20.080278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_GalleryBalcony",
+      "anchor": {
+        "x": -10.89243,
+        "y": 4.66745,
+        "z": -0.169722
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_SouthA",
+      "anchor": {
+        "x": 6.29757,
+        "y": 4.61742,
+        "z": -25.099722
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_SouthStriped",
+      "anchor": {
+        "x": -1.80243,
+        "y": 4.60813,
+        "z": -25.729722
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_BlueBath",
+      "anchor": {
+        "x": 0.89757,
+        "y": 4.6299,
+        "z": -16.909722
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NW_entry",
+      "anchor": {
+        "x": 7.55757,
+        "y": 4.7221,
+        "z": 20.890278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NW_south_bed",
+      "anchor": {
+        "x": 8.54757,
+        "y": 4.70763,
+        "z": 14.770278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NW_north_bed",
+      "anchor": {
+        "x": 10.70757,
+        "y": 4.73403,
+        "z": 25.570278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NW_bath",
+      "anchor": {
+        "x": 7.61157,
+        "y": 4.73637,
+        "z": 26.830278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NE_entry",
+      "anchor": {
+        "x": -13.50243,
+        "y": 4.71763,
+        "z": 20.980278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NE_south_bed",
+      "anchor": {
+        "x": -12.60243,
+        "y": 4.70681,
+        "z": 16.390278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NE_north_bed",
+      "anchor": {
+        "x": -15.39243,
+        "y": 4.72995,
+        "z": 26.290278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    },
+    {
+      "id": "S05_NE_bath",
+      "anchor": {
+        "x": -12.60243,
+        "y": 4.73187,
+        "z": 26.830278
+      },
+      "floor": "second",
+      "evidence": "S05 captured upper-floor room; rigid candidate alignment and documented seams"
+    }
+  ],
+  "routes": [
+    {
+      "id": "LongHall_to_Bathroom",
+      "from": "S03_Entrance_LongHall",
+      "to": "S03_Entrance_Bathroom",
+      "waypoints": [
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -4.275018,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -4.274982,
+          "y": 0.08,
+          "z": -20.394018
+        },
+        {
+          "x": -2.889,
+          "y": 0.08,
+          "z": -19.206
+        },
+        {
+          "x": -1.809,
+          "y": 0.08,
+          "z": -17.1
+        }
+      ],
+      "kind": "measured_opening",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "LongHall_to_LibraryStair",
+      "from": "S03_Entrance_LongHall",
+      "to": "S03_Entrance_LibraryStairApproach",
+      "waypoints": [
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.266018
+        }
+      ],
+      "kind": "measured_stair_threshold",
+      "waypointSources": [
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "StairCorridor_to_Storage",
+      "from": "S03_Basement_StairCorridor",
+      "to": "S03_Basement_Storage",
+      "waypoints": [
+        {
+          "x": 6.543,
+          "y": -3.2,
+          "z": -18.63
+        },
+        {
+          "x": 5.049,
+          "y": -3.2,
+          "z": -20.178
+        },
+        {
+          "x": 3.105,
+          "y": -3.2,
+          "z": -18.864
+        }
+      ],
+      "kind": "measured_opening",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "StairCorridor_to_Switchback",
+      "from": "S03_Basement_StairCorridor",
+      "to": "S03_Basement_Switchback",
+      "waypoints": [
+        {
+          "x": 6.543,
+          "y": -3.2,
+          "z": -18.63
+        },
+        {
+          "x": 8.163,
+          "y": -3.2,
+          "z": -21.654
+        }
+      ],
+      "kind": "measured_stair_threshold",
+      "waypointSources": [
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "Basement_to_Entrance_Stairs",
+      "from": "S03_Basement_StairCorridor",
+      "to": "S03_Entrance_LibraryStairApproach",
+      "waypoints": [
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.795,
+          "y": -3.2106,
+          "z": -21.663
+        },
+        {
+          "x": 8.163,
+          "y": -3.2106,
+          "z": -21.663018
+        },
+        {
+          "x": 9.315,
+          "y": -3.2148,
+          "z": -21.654
+        },
+        {
+          "x": 11.403,
+          "y": -3.2148,
+          "z": -21.599982
+        },
+        {
+          "x": 11.403,
+          "y": -3.2748,
+          "z": -20.7
+        },
+        {
+          "x": 11.205,
+          "y": -1.5748,
+          "z": -15.588
+        },
+        {
+          "x": 11.115018,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -16.073982
+        },
+        {
+          "x": 9.387,
+          "y": 0.0852,
+          "z": -20.88
+        },
+        {
+          "x": 9.423,
+          "y": 0.0852,
+          "z": -22.256982
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        }
+      ],
+      "kind": "both measured flights and middle landing; continuous gravity-driven CharacterController, no vertical steering",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "Entrance_to_Basement_Stairs",
+      "from": "S03_Entrance_LibraryStairApproach",
+      "to": "S03_Basement_StairCorridor",
+      "waypoints": [
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 9.423,
+          "y": 0.0852,
+          "z": -22.256982
+        },
+        {
+          "x": 9.387,
+          "y": 0.0852,
+          "z": -20.88
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -16.073982
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.115018,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.205,
+          "y": -1.5748,
+          "z": -15.588
+        },
+        {
+          "x": 11.403,
+          "y": -3.2748,
+          "z": -20.7
+        },
+        {
+          "x": 11.403,
+          "y": -3.2148,
+          "z": -21.599982
+        },
+        {
+          "x": 9.315,
+          "y": -3.2148,
+          "z": -21.654
+        },
+        {
+          "x": 8.163,
+          "y": -3.2106,
+          "z": -21.663018
+        },
+        {
+          "x": 6.795,
+          "y": -3.2106,
+          "z": -21.663
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        }
+      ],
+      "kind": "same measured staircase descended without floor teleport",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "Entrance_to_UpperCapturedLanding",
+      "from": "S03_Entrance_LibraryStairApproach",
+      "to": "S03_Upper_CapturedLanding",
+      "waypoints": [
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 9.405,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -22.05
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -20.25
+        },
+        {
+          "x": 11.205018,
+          "y": 1.7652,
+          "z": -15.75
+        },
+        {
+          "x": 11.114982,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 9.207018,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 9.207,
+          "y": 1.7652,
+          "z": -16.2
+        },
+        {
+          "x": 9.387,
+          "y": 3.1252,
+          "z": -20.160018
+        },
+        {
+          "x": 9.459018,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        }
+      ],
+      "kind": "two further source-measured flights; landing is captured, destination rooms unresolved",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "UpperCapturedLanding_to_Entrance",
+      "from": "S03_Upper_CapturedLanding",
+      "to": "S03_Entrance_LibraryStairApproach",
+      "waypoints": [
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 9.459018,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 9.387,
+          "y": 3.1252,
+          "z": -20.160018
+        },
+        {
+          "x": 9.207,
+          "y": 1.7652,
+          "z": -16.2
+        },
+        {
+          "x": 9.207018,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 11.114982,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 11.205018,
+          "y": 1.7652,
+          "z": -15.75
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -20.25
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -22.05
+        },
+        {
+          "x": 9.405,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        }
+      ],
+      "kind": "same captured upper switchback descended with gravity",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "Basement_to_UpperCapturedLanding",
+      "from": "S03_Basement_StairCorridor",
+      "to": "S03_Upper_CapturedLanding",
+      "waypoints": [
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.795,
+          "y": -3.2106,
+          "z": -21.663
+        },
+        {
+          "x": 8.163,
+          "y": -3.2106,
+          "z": -21.663018
+        },
+        {
+          "x": 9.315,
+          "y": -3.2148,
+          "z": -21.654
+        },
+        {
+          "x": 11.403,
+          "y": -3.2148,
+          "z": -21.599982
+        },
+        {
+          "x": 11.403,
+          "y": -3.2748,
+          "z": -20.7
+        },
+        {
+          "x": 11.205,
+          "y": -1.5748,
+          "z": -15.588
+        },
+        {
+          "x": 11.115018,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -16.073982
+        },
+        {
+          "x": 9.387,
+          "y": 0.0852,
+          "z": -20.88
+        },
+        {
+          "x": 9.423,
+          "y": 0.0852,
+          "z": -22.256982
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 9.405,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -22.05
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -20.25
+        },
+        {
+          "x": 11.205018,
+          "y": 1.7652,
+          "z": -15.75
+        },
+        {
+          "x": 11.114982,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 9.207018,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 9.207,
+          "y": 1.7652,
+          "z": -16.2
+        },
+        {
+          "x": 9.387,
+          "y": 3.1252,
+          "z": -20.160018
+        },
+        {
+          "x": 9.459018,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        }
+      ],
+      "kind": "all four source-measured flights continuously ascended; no floor teleport",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "UpperCapturedLanding_to_Basement",
+      "from": "S03_Upper_CapturedLanding",
+      "to": "S03_Basement_StairCorridor",
+      "waypoints": [
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 9.459018,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 9.387,
+          "y": 3.1252,
+          "z": -20.160018
+        },
+        {
+          "x": 9.207,
+          "y": 1.7652,
+          "z": -16.2
+        },
+        {
+          "x": 9.207018,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 11.114982,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 11.205018,
+          "y": 1.7652,
+          "z": -15.75
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -20.25
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -22.05
+        },
+        {
+          "x": 9.405,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 9.423,
+          "y": 0.0852,
+          "z": -22.256982
+        },
+        {
+          "x": 9.387,
+          "y": 0.0852,
+          "z": -20.88
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -16.073982
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.115018,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.205,
+          "y": -1.5748,
+          "z": -15.588
+        },
+        {
+          "x": 11.403,
+          "y": -3.2748,
+          "z": -20.7
+        },
+        {
+          "x": 11.403,
+          "y": -3.2148,
+          "z": -21.599982
+        },
+        {
+          "x": 9.315,
+          "y": -3.2148,
+          "z": -21.654
+        },
+        {
+          "x": 8.163,
+          "y": -3.2106,
+          "z": -21.663018
+        },
+        {
+          "x": 6.795,
+          "y": -3.2106,
+          "z": -21.663
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        }
+      ],
+      "kind": "all four source-measured flights continuously descended; no floor teleport",
+      "waypointSources": [
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03",
+        "S03"
+      ]
+    },
+    {
+      "id": "GreatRoom_to_LongHall",
+      "from": "S04_GreatRoom",
+      "to": "S03_Entrance_LongHall",
+      "waypoints": [
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -10.71
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -12.51
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.032
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.23
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -14.49
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -16.02
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -18.99
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -21.96
+        },
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        }
+      ],
+      "kind": "Source-correct short hall/intersection; clear aisle east of photographed green chair"
+    },
+    {
+      "id": "LongHall_to_GreatRoom",
+      "from": "S03_Entrance_LongHall",
+      "to": "S04_GreatRoom",
+      "waypoints": [
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -21.96
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -18.99
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -16.02
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -14.49
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.23
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.032
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -12.51
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -10.71
+        }
+      ],
+      "kind": "Return through measured intersection and source-correct chair aisle; closed residential end door"
+    },
+    {
+      "id": "LongHall_to_ChairServiceBranch",
+      "from": "S03_Entrance_LongHall",
+      "to": "S03_Entrance_ChairServiceBranch",
+      "waypoints": [
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -19.44
+        },
+        {
+          "x": -7.065,
+          "y": 0.08,
+          "z": -16.29
+        }
+      ],
+      "kind": "User-confirmed right-angle short hall; photo1920 fixture sequence retained"
+    },
+    {
+      "id": "LongHall_to_Bedroom",
+      "from": "S03_Entrance_LongHall",
+      "to": "S03_Entrance_Bedroom",
+      "waypoints": [
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -12.231,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -12.231,
+          "y": 0.08,
+          "z": -23.778
+        },
+        {
+          "x": -12.231,
+          "y": 0.08,
+          "z": -25.38
+        },
+        {
+          "x": -10.125,
+          "y": 0.08,
+          "z": -26.46
+        }
+      ],
+      "kind": "Source-informed clear aisle; horizontal controller movement plus gravity"
+    },
+    {
+      "id": "Study_to_StairCorridor",
+      "from": "S03_Basement_Study",
+      "to": "S03_Basement_StairCorridor",
+      "waypoints": [
+        {
+          "x": -7.335,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -5.985,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -2.115,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -0.765,
+          "y": -3.2106,
+          "z": -27.774
+        },
+        {
+          "x": 2.691,
+          "y": -3.2106,
+          "z": -27.702
+        },
+        {
+          "x": 3.195,
+          "y": -3.2106,
+          "z": -27.09
+        },
+        {
+          "x": 3.609,
+          "y": -3.2106,
+          "z": -25.686
+        },
+        {
+          "x": 4.185,
+          "y": -3.2106,
+          "z": -25.254
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -24.84
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -23.454
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        }
+      ],
+      "kind": "Source-informed clear aisle; horizontal controller movement plus gravity"
+    },
+    {
+      "id": "StairCorridor_to_StudySeating",
+      "from": "S03_Basement_StairCorridor",
+      "to": "S03_Basement_StudySeating",
+      "waypoints": [
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.255,
+          "y": -3.2106,
+          "z": -22.05
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -23.67
+        },
+        {
+          "x": 6.165,
+          "y": -3.2106,
+          "z": -25.29
+        },
+        {
+          "x": 6.885,
+          "y": -3.2106,
+          "z": -26.19
+        }
+      ],
+      "kind": "Source-informed clear aisle; horizontal controller movement plus gravity"
+    },
+    {
+      "id": "GreatRoom_to_Library_ViaIntersection",
+      "from": "S04_GreatRoom",
+      "to": "S03_Basement_Study",
+      "waypoints": [
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -10.71
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -12.51
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.032
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.23
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -14.49
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -16.02
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -18.99
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -21.96
+        },
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.266018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 9.423,
+          "y": 0.0852,
+          "z": -22.256982
+        },
+        {
+          "x": 9.387,
+          "y": 0.0852,
+          "z": -20.88
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -16.073982
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.115018,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.205,
+          "y": -1.5748,
+          "z": -15.588
+        },
+        {
+          "x": 11.403,
+          "y": -3.2748,
+          "z": -20.7
+        },
+        {
+          "x": 11.403,
+          "y": -3.2148,
+          "z": -21.599982
+        },
+        {
+          "x": 9.315,
+          "y": -3.2148,
+          "z": -21.654
+        },
+        {
+          "x": 8.163,
+          "y": -3.2106,
+          "z": -21.663018
+        },
+        {
+          "x": 6.795,
+          "y": -3.2106,
+          "z": -21.663
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -23.454
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -24.84
+        },
+        {
+          "x": 4.185,
+          "y": -3.2106,
+          "z": -25.254
+        },
+        {
+          "x": 3.609,
+          "y": -3.2106,
+          "z": -25.686
+        },
+        {
+          "x": 3.195,
+          "y": -3.2106,
+          "z": -27.09
+        },
+        {
+          "x": 2.691,
+          "y": -3.2106,
+          "z": -27.702
+        },
+        {
+          "x": -0.765,
+          "y": -3.2106,
+          "z": -27.774
+        },
+        {
+          "x": -2.115,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -5.985,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -7.335,
+          "y": -3.2106,
+          "z": -27.954
+        }
+      ],
+      "kind": "Continuous great-room short hall, intersecting bedroom corridor, rear switchback and source-corrected study aisle"
+    },
+    {
+      "id": "Library_to_GreatRoom_ViaIntersection",
+      "from": "S03_Basement_Study",
+      "to": "S04_GreatRoom",
+      "waypoints": [
+        {
+          "x": -7.335,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -5.985,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -2.115,
+          "y": -3.2106,
+          "z": -27.954
+        },
+        {
+          "x": -0.765,
+          "y": -3.2106,
+          "z": -27.774
+        },
+        {
+          "x": 2.691,
+          "y": -3.2106,
+          "z": -27.702
+        },
+        {
+          "x": 3.195,
+          "y": -3.2106,
+          "z": -27.09
+        },
+        {
+          "x": 3.609,
+          "y": -3.2106,
+          "z": -25.686
+        },
+        {
+          "x": 4.185,
+          "y": -3.2106,
+          "z": -25.254
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -24.84
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -23.454
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.795,
+          "y": -3.2106,
+          "z": -21.663
+        },
+        {
+          "x": 8.163,
+          "y": -3.2106,
+          "z": -21.663018
+        },
+        {
+          "x": 9.315,
+          "y": -3.2148,
+          "z": -21.654
+        },
+        {
+          "x": 11.403,
+          "y": -3.2148,
+          "z": -21.599982
+        },
+        {
+          "x": 11.403,
+          "y": -3.2748,
+          "z": -20.7
+        },
+        {
+          "x": 11.205,
+          "y": -1.5748,
+          "z": -15.588
+        },
+        {
+          "x": 11.115018,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -16.073982
+        },
+        {
+          "x": 9.387,
+          "y": 0.0852,
+          "z": -20.88
+        },
+        {
+          "x": 9.423,
+          "y": 0.0852,
+          "z": -22.256982
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.266018
+        },
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -21.96
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -18.99
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -16.02
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -14.49
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.23
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.032
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -12.51
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -10.71
+        }
+      ],
+      "kind": "Continuous great-room short hall, intersecting bedroom corridor, rear switchback and source-corrected study aisle"
+    },
+    {
+      "id": "GreatRoom_to_RearChairRoom",
+      "from": "S04_GreatRoom",
+      "to": "S03_Basement_StudySeating",
+      "waypoints": [
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -10.71
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -12.51
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.032
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.23
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -14.49
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -16.02
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -18.99
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -21.96
+        },
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.266018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 9.423,
+          "y": 0.0852,
+          "z": -22.256982
+        },
+        {
+          "x": 9.387,
+          "y": 0.0852,
+          "z": -20.88
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -16.073982
+        },
+        {
+          "x": 9.207,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.115018,
+          "y": -1.5748,
+          "z": -14.958
+        },
+        {
+          "x": 11.205,
+          "y": -1.5748,
+          "z": -15.588
+        },
+        {
+          "x": 11.403,
+          "y": -3.2748,
+          "z": -20.7
+        },
+        {
+          "x": 11.403,
+          "y": -3.2148,
+          "z": -21.599982
+        },
+        {
+          "x": 9.315,
+          "y": -3.2148,
+          "z": -21.654
+        },
+        {
+          "x": 8.163,
+          "y": -3.2106,
+          "z": -21.663018
+        },
+        {
+          "x": 6.795,
+          "y": -3.2106,
+          "z": -21.663
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.255,
+          "y": -3.2106,
+          "z": -22.05
+        },
+        {
+          "x": 5.913,
+          "y": -3.2106,
+          "z": -23.67
+        },
+        {
+          "x": 6.165,
+          "y": -3.2106,
+          "z": -25.29
+        },
+        {
+          "x": 6.885,
+          "y": -3.2106,
+          "z": -26.19
+        }
+      ],
+      "kind": "Continuous great-room short hall, intersecting bedroom corridor, rear switchback and source-corrected study aisle"
+    },
+    {
+      "id": "S02_Service_to_Dining",
+      "from": "S02_Service",
+      "to": "S02_Dining",
+      "waypoints": [
+        {
+          "x": 6.912,
+          "y": 0.08,
+          "z": 13.392
+        },
+        {
+          "x": 7.362,
+          "y": 0.08,
+          "z": 15.102
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 15.282
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 18.972
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 23.202
+        },
+        {
+          "x": -2.718,
+          "y": 0.08,
+          "z": 23.202
+        }
+      ],
+      "kind": "Source-informed clear aisle; horizontal controller movement plus gravity"
+    },
+    {
+      "id": "S02_Dining_to_Service",
+      "from": "S02_Dining",
+      "to": "S02_Service",
+      "waypoints": [
+        {
+          "x": -2.718,
+          "y": 0.08,
+          "z": 23.202
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 23.202
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 18.972
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 15.282
+        },
+        {
+          "x": 7.362,
+          "y": 0.08,
+          "z": 15.102
+        },
+        {
+          "x": 6.912,
+          "y": 0.08,
+          "z": 13.392
+        }
+      ],
+      "kind": "Source-informed clear aisle; horizontal controller movement plus gravity"
+    },
+    {
+      "id": "S02_Dining_to_SmallBathroom",
+      "from": "S02_Dining",
+      "to": "S02_SmallBathroom",
+      "waypoints": [
+        {
+          "x": -2.718,
+          "y": 0.05,
+          "z": 23.202
+        },
+        {
+          "x": -3.74832,
+          "y": 0.05,
+          "z": 23.202
+        },
+        {
+          "x": -3.750192,
+          "y": 0.05,
+          "z": 22.572
+        },
+        {
+          "x": -3.75633,
+          "y": 0.05,
+          "z": 20.502
+        },
+        {
+          "x": -5.238,
+          "y": 0.05,
+          "z": 20.232
+        },
+        {
+          "x": -7.848,
+          "y": 0.05,
+          "z": 20.232
+        },
+        {
+          "x": -9.018,
+          "y": 0.05,
+          "z": 20.232
+        },
+        {
+          "x": -9.018,
+          "y": 0.05,
+          "z": 26.532
+        },
+        {
+          "x": -9.558,
+          "y": 0.05,
+          "z": 28.2546
+        },
+        {
+          "x": -10.64106,
+          "y": 0.05,
+          "z": 28.256184
+        },
+        {
+          "x": -12.441042,
+          "y": 0.08,
+          "z": 28.263132
+        },
+        {
+          "x": -12.726,
+          "y": 0.08,
+          "z": 28.008
+        }
+      ],
+      "kind": "Conservative source-fit .66m/.68m portals, unchanged structural openings; endpoint .608m beyond bathroom aperture"
+    },
+    {
+      "id": "S02_SmallBathroom_to_Dining",
+      "from": "S02_SmallBathroom",
+      "to": "S02_Dining",
+      "waypoints": [
+        {
+          "x": -12.726,
+          "y": 0.08,
+          "z": 28.008
+        },
+        {
+          "x": -12.441042,
+          "y": 0.08,
+          "z": 28.263132
+        },
+        {
+          "x": -10.64106,
+          "y": 0.05,
+          "z": 28.256184
+        },
+        {
+          "x": -9.558,
+          "y": 0.05,
+          "z": 28.2546
+        },
+        {
+          "x": -9.018,
+          "y": 0.05,
+          "z": 26.532
+        },
+        {
+          "x": -9.018,
+          "y": 0.05,
+          "z": 20.232
+        },
+        {
+          "x": -7.848,
+          "y": 0.05,
+          "z": 20.232
+        },
+        {
+          "x": -5.238,
+          "y": 0.05,
+          "z": 20.232
+        },
+        {
+          "x": -3.75633,
+          "y": 0.05,
+          "z": 20.502
+        },
+        {
+          "x": -3.750192,
+          "y": 0.05,
+          "z": 22.572
+        },
+        {
+          "x": -3.74832,
+          "y": 0.05,
+          "z": 23.202
+        },
+        {
+          "x": -2.718,
+          "y": 0.05,
+          "z": 23.202
+        }
+      ],
+      "kind": "Source-informed clear aisle; horizontal controller movement plus gravity"
+    },
+    {
+      "id": "GreatRoom_to_Dining",
+      "from": "S04_GreatRoom",
+      "to": "S02_Dining",
+      "waypoints": [
+        {
+          "x": 6.912,
+          "y": 0.08,
+          "z": 11.16
+        },
+        {
+          "x": 6.912,
+          "y": 0.08,
+          "z": 12.816
+        },
+        {
+          "x": 6.912,
+          "y": 0.08,
+          "z": 13.392
+        },
+        {
+          "x": 7.362,
+          "y": 0.08,
+          "z": 15.102
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 15.282
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 18.972
+        },
+        {
+          "x": 8.622,
+          "y": 0.08,
+          "z": 23.202
+        },
+        {
+          "x": -2.718,
+          "y": 0.08,
+          "z": 23.202
+        }
+      ],
+      "kind": "Candidate registered fireplace-end coffee door; walking continuity does not establish survey accuracy"
+    },
+    {
+      "id": "Gallery_North_to_South",
+      "from": "GalleryNorth",
+      "to": "GallerySouth",
+      "waypoints": [
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -12.06
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -5.76
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 0.0
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 5.76
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 11.97
+        }
+      ],
+      "kind": "Local gallery aisle beside photographed chairs; no new stair or unseen room connection"
+    },
+    {
+      "id": "Gallery_South_to_North",
+      "from": "GallerySouth",
+      "to": "GalleryNorth",
+      "waypoints": [
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 11.97
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 5.76
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 0.0
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -5.76
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -12.06
+        }
+      ],
+      "kind": "Local gallery aisle beside photographed chairs; no new stair or unseen room connection"
+    },
+    {
+      "id": "BlackHall_to_ServiceAlcove",
+      "from": "S04_Basement_BlackHall",
+      "to": "BH_ServiceAlcove",
+      "waypoints": [
+        {
+          "x": -3.42,
+          "y": -3.2106,
+          "z": 8.82
+        },
+        {
+          "x": -3.42,
+          "y": -3.2106,
+          "z": 10.44
+        },
+        {
+          "x": -4.365,
+          "y": -3.2106,
+          "z": 10.44
+        },
+        {
+          "x": -4.365,
+          "y": -3.2106,
+          "z": 12.78
+        },
+        {
+          "x": -4.365,
+          "y": -3.2106,
+          "z": 14.04
+        }
+      ],
+      "kind": "Photo-confirmed local alcove opening within an estimated shell; gravity traversal does not certify dimensions or unseen connections"
+    },
+    {
+      "id": "ServiceAlcove_to_BlackHall",
+      "from": "BH_ServiceAlcove",
+      "to": "S04_Basement_BlackHall",
+      "waypoints": [
+        {
+          "x": -4.365,
+          "y": -3.2106,
+          "z": 14.04
+        },
+        {
+          "x": -4.365,
+          "y": -3.2106,
+          "z": 12.78
+        },
+        {
+          "x": -4.365,
+          "y": -3.2106,
+          "z": 10.44
+        },
+        {
+          "x": -3.42,
+          "y": -3.2106,
+          "z": 10.44
+        },
+        {
+          "x": -3.42,
+          "y": -3.2106,
+          "z": 8.82
+        }
+      ],
+      "kind": "Photo-confirmed local alcove opening within an estimated shell; gravity traversal does not certify dimensions or unseen connections"
+    },
+    {
+      "id": "UpperLanding_to_SecondFloor",
+      "from": "S03_Upper_CapturedLanding",
+      "to": "S05_RearUpperHall",
+      "waypoints": [
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 10.34757,
+          "y": 3.1252,
+          "z": -22.129722
+        },
+        {
+          "x": 9.23157,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 8.54757,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "UpperLanding_to_SecondFloor_Return",
+      "from": "S05_RearUpperHall",
+      "to": "S03_Upper_CapturedLanding",
+      "waypoints": [
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        },
+        {
+          "x": 8.54757,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 9.23157,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 10.34757,
+          "y": 3.1252,
+          "z": -22.129722
+        },
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "SecondFloor_to_Gallery",
+      "from": "S05_RearUpperHall",
+      "to": "GalleryNorth",
+      "waypoints": [
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        },
+        {
+          "x": 2.87757,
+          "y": 3.09824,
+          "z": -21.949722
+        },
+        {
+          "x": -6.91443,
+          "y": 3.09606,
+          "z": -21.949722
+        },
+        {
+          "x": -6.91443,
+          "y": 3.11377,
+          "z": -14.569722
+        },
+        {
+          "x": -6.914422,
+          "y": 3.114829,
+          "z": -14.13
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": -13.14
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -11.7
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "SecondFloor_to_Gallery_Return",
+      "from": "GalleryNorth",
+      "to": "S05_RearUpperHall",
+      "waypoints": [
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -11.7
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": -13.14
+        },
+        {
+          "x": -6.914422,
+          "y": 3.114829,
+          "z": -14.13
+        },
+        {
+          "x": -6.91443,
+          "y": 3.11377,
+          "z": -14.569722
+        },
+        {
+          "x": -6.91443,
+          "y": 3.09606,
+          "z": -21.949722
+        },
+        {
+          "x": 2.87757,
+          "y": 3.09824,
+          "z": -21.949722
+        },
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "Gallery_to_FarUpperHall",
+      "from": "GalleryNorth",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -11.7
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 0.0
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 10.62
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": 12.06
+        },
+        {
+          "x": -6.914422,
+          "y": 3.180148,
+          "z": 13.086
+        },
+        {
+          "x": -6.91443,
+          "y": 3.18354,
+          "z": 14.500278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "Gallery_to_FarUpperHall_Return",
+      "from": "S05_FarUpperHall",
+      "to": "GalleryNorth",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": -6.91443,
+          "y": 3.18354,
+          "z": 14.500278
+        },
+        {
+          "x": -6.914422,
+          "y": 3.180148,
+          "z": 13.086
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": 12.06
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 10.62
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 0.0
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -11.7
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "Gallery_to_CoveredBalcony",
+      "from": "GalleryNorth",
+      "to": "S05_GalleryBalcony",
+      "waypoints": [
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -0.169729
+        },
+        {
+          "x": -8.44443,
+          "y": 3.14799,
+          "z": -0.169722
+        },
+        {
+          "x": -9.00243,
+          "y": 3.14787,
+          "z": -0.169722
+        },
+        {
+          "x": -10.89243,
+          "y": 3.14745,
+          "z": -0.169722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "Gallery_to_CoveredBalcony_Return",
+      "from": "S05_GalleryBalcony",
+      "to": "GalleryNorth",
+      "waypoints": [
+        {
+          "x": -10.89243,
+          "y": 3.14745,
+          "z": -0.169722
+        },
+        {
+          "x": -9.00243,
+          "y": 3.14787,
+          "z": -0.169722
+        },
+        {
+          "x": -8.44443,
+          "y": 3.14799,
+          "z": -0.169722
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -0.169729
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_SouthA",
+      "from": "S05_RearUpperHall",
+      "to": "S05_SouthA",
+      "waypoints": [
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        },
+        {
+          "x": 5.50557,
+          "y": 3.09954,
+          "z": -21.949722
+        },
+        {
+          "x": 5.50557,
+          "y": 3.09619,
+          "z": -23.348322
+        },
+        {
+          "x": 6.02757,
+          "y": 3.09729,
+          "z": -24.379722
+        },
+        {
+          "x": 6.29757,
+          "y": 3.09742,
+          "z": -25.099722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_SouthA_Return",
+      "from": "S05_SouthA",
+      "to": "S05_RearUpperHall",
+      "waypoints": [
+        {
+          "x": 6.29757,
+          "y": 3.09742,
+          "z": -25.099722
+        },
+        {
+          "x": 6.02757,
+          "y": 3.09729,
+          "z": -24.379722
+        },
+        {
+          "x": 5.50557,
+          "y": 3.09619,
+          "z": -23.348322
+        },
+        {
+          "x": 5.50557,
+          "y": 3.09954,
+          "z": -21.949722
+        },
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_SouthStriped",
+      "from": "S05_RearUpperHall",
+      "to": "S05_SouthStriped",
+      "waypoints": [
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        },
+        {
+          "x": 1.43757,
+          "y": 3.09792,
+          "z": -21.949722
+        },
+        {
+          "x": -3.54843,
+          "y": 3.09681,
+          "z": -21.949722
+        },
+        {
+          "x": -3.54843,
+          "y": 3.09345,
+          "z": -23.348322
+        },
+        {
+          "x": -3.02643,
+          "y": 3.09131,
+          "z": -24.289722
+        },
+        {
+          "x": -3.02643,
+          "y": 3.08915,
+          "z": -25.189722
+        },
+        {
+          "x": -1.80243,
+          "y": 3.08813,
+          "z": -25.729722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_SouthStriped_Return",
+      "from": "S05_SouthStriped",
+      "to": "S05_RearUpperHall",
+      "waypoints": [
+        {
+          "x": -1.80243,
+          "y": 3.08813,
+          "z": -25.729722
+        },
+        {
+          "x": -3.02643,
+          "y": 3.08915,
+          "z": -25.189722
+        },
+        {
+          "x": -3.02643,
+          "y": 3.09131,
+          "z": -24.289722
+        },
+        {
+          "x": -3.54843,
+          "y": 3.09345,
+          "z": -23.348322
+        },
+        {
+          "x": -3.54843,
+          "y": 3.09681,
+          "z": -21.949722
+        },
+        {
+          "x": 1.43757,
+          "y": 3.09792,
+          "z": -21.949722
+        },
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_BlueBath",
+      "from": "S05_RearUpperHall",
+      "to": "S05_BlueBath",
+      "waypoints": [
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        },
+        {
+          "x": 1.43757,
+          "y": 3.09792,
+          "z": -21.949722
+        },
+        {
+          "x": -0.92043,
+          "y": 3.0974,
+          "z": -21.949722
+        },
+        {
+          "x": -0.92043,
+          "y": 3.10144,
+          "z": -20.263122
+        },
+        {
+          "x": -0.92043,
+          "y": 3.10949,
+          "z": -16.909722
+        },
+        {
+          "x": 0.89757,
+          "y": 3.1099,
+          "z": -16.909722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_BlueBath_Return",
+      "from": "S05_BlueBath",
+      "to": "S05_RearUpperHall",
+      "waypoints": [
+        {
+          "x": 0.89757,
+          "y": 3.1099,
+          "z": -16.909722
+        },
+        {
+          "x": -0.92043,
+          "y": 3.10949,
+          "z": -16.909722
+        },
+        {
+          "x": -0.92043,
+          "y": 3.10144,
+          "z": -20.263122
+        },
+        {
+          "x": -0.92043,
+          "y": 3.0974,
+          "z": -21.949722
+        },
+        {
+          "x": 1.43757,
+          "y": 3.09792,
+          "z": -21.949722
+        },
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_entry",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NW_entry",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_entry_Return",
+      "from": "S05_NW_entry",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_south_bed",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NW_south_bed",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.19619,
+          "z": 18.460278
+        },
+        {
+          "x": 7.35957,
+          "y": 3.19319,
+          "z": 17.194878
+        },
+        {
+          "x": 7.55757,
+          "y": 3.19095,
+          "z": 16.246278
+        },
+        {
+          "x": 8.45757,
+          "y": 3.19085,
+          "z": 16.120278
+        },
+        {
+          "x": 8.54757,
+          "y": 3.18763,
+          "z": 14.770278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_south_bed_Return",
+      "from": "S05_NW_south_bed",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": 8.54757,
+          "y": 3.18763,
+          "z": 14.770278
+        },
+        {
+          "x": 8.45757,
+          "y": 3.19085,
+          "z": 16.120278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.19095,
+          "z": 16.246278
+        },
+        {
+          "x": 7.35957,
+          "y": 3.19319,
+          "z": 17.194878
+        },
+        {
+          "x": 7.19757,
+          "y": 3.19619,
+          "z": 18.460278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_north_bed",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NW_north_bed",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.20491,
+          "z": 22.060278
+        },
+        {
+          "x": 7.73757,
+          "y": 3.20927,
+          "z": 23.860278
+        },
+        {
+          "x": 8.96157,
+          "y": 3.20976,
+          "z": 23.950278
+        },
+        {
+          "x": 9.71757,
+          "y": 3.21062,
+          "z": 24.238278
+        },
+        {
+          "x": 10.25757,
+          "y": 3.21212,
+          "z": 24.814278
+        },
+        {
+          "x": 10.65357,
+          "y": 3.21359,
+          "z": 25.390278
+        },
+        {
+          "x": 10.70757,
+          "y": 3.21403,
+          "z": 25.570278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_north_bed_Return",
+      "from": "S05_NW_north_bed",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": 10.70757,
+          "y": 3.21403,
+          "z": 25.570278
+        },
+        {
+          "x": 10.65357,
+          "y": 3.21359,
+          "z": 25.390278
+        },
+        {
+          "x": 10.25757,
+          "y": 3.21212,
+          "z": 24.814278
+        },
+        {
+          "x": 9.71757,
+          "y": 3.21062,
+          "z": 24.238278
+        },
+        {
+          "x": 8.96157,
+          "y": 3.20976,
+          "z": 23.950278
+        },
+        {
+          "x": 7.73757,
+          "y": 3.20927,
+          "z": 23.860278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.20491,
+          "z": 22.060278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_bath",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NW_bath",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.20772,
+          "z": 23.230278
+        },
+        {
+          "x": 7.61157,
+          "y": 3.21378,
+          "z": 25.750278
+        },
+        {
+          "x": 7.61157,
+          "y": 3.21637,
+          "z": 26.830278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NW_bath_Return",
+      "from": "S05_NW_bath",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": 7.61157,
+          "y": 3.21637,
+          "z": 26.830278
+        },
+        {
+          "x": 7.61157,
+          "y": 3.21378,
+          "z": 25.750278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.20772,
+          "z": 23.230278
+        },
+        {
+          "x": 7.55757,
+          "y": 3.2021,
+          "z": 20.890278
+        },
+        {
+          "x": 7.19757,
+          "y": 3.20008,
+          "z": 20.080278
+        },
+        {
+          "x": 4.13757,
+          "y": 3.1994,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_entry",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NE_entry",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_entry_Return",
+      "from": "S05_NE_entry",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_south_bed",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NE_south_bed",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        },
+        {
+          "x": -12.40443,
+          "y": 3.19226,
+          "z": 18.640278
+        },
+        {
+          "x": -12.40443,
+          "y": 3.19003,
+          "z": 17.711478
+        },
+        {
+          "x": -12.56643,
+          "y": 3.18751,
+          "z": 16.678278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.18681,
+          "z": 16.390278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_south_bed_Return",
+      "from": "S05_NE_south_bed",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": -12.60243,
+          "y": 3.18681,
+          "z": 16.390278
+        },
+        {
+          "x": -12.56643,
+          "y": 3.18751,
+          "z": 16.678278
+        },
+        {
+          "x": -12.40443,
+          "y": 3.19003,
+          "z": 17.711478
+        },
+        {
+          "x": -12.40443,
+          "y": 3.19226,
+          "z": 18.640278
+        },
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_north_bed",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NE_north_bed",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        },
+        {
+          "x": -13.32243,
+          "y": 3.20302,
+          "z": 23.208678
+        },
+        {
+          "x": -13.34043,
+          "y": 3.20648,
+          "z": 24.652278
+        },
+        {
+          "x": -14.13243,
+          "y": 3.20626,
+          "z": 24.634278
+        },
+        {
+          "x": -14.97843,
+          "y": 3.20616,
+          "z": 24.670278
+        },
+        {
+          "x": -15.21243,
+          "y": 3.20783,
+          "z": 25.390278
+        },
+        {
+          "x": -15.39243,
+          "y": 3.20995,
+          "z": 26.290278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_north_bed_Return",
+      "from": "S05_NE_north_bed",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": -15.39243,
+          "y": 3.20995,
+          "z": 26.290278
+        },
+        {
+          "x": -15.21243,
+          "y": 3.20783,
+          "z": 25.390278
+        },
+        {
+          "x": -14.97843,
+          "y": 3.20616,
+          "z": 24.670278
+        },
+        {
+          "x": -14.13243,
+          "y": 3.20626,
+          "z": 24.634278
+        },
+        {
+          "x": -13.34043,
+          "y": 3.20648,
+          "z": 24.652278
+        },
+        {
+          "x": -13.32243,
+          "y": 3.20302,
+          "z": 23.208678
+        },
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_bath",
+      "from": "S05_FarUpperHall",
+      "to": "S05_NE_bath",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        },
+        {
+          "x": -13.32243,
+          "y": 3.20302,
+          "z": 23.208678
+        },
+        {
+          "x": -13.14243,
+          "y": 3.20592,
+          "z": 24.400278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.20971,
+          "z": 25.930278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.21187,
+          "z": 26.830278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "S05_NE_bath_Return",
+      "from": "S05_NE_bath",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": -12.60243,
+          "y": 3.21187,
+          "z": 26.830278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.20971,
+          "z": 25.930278
+        },
+        {
+          "x": -13.14243,
+          "y": 3.20592,
+          "z": 24.400278
+        },
+        {
+          "x": -13.32243,
+          "y": 3.20302,
+          "z": 23.208678
+        },
+        {
+          "x": -13.50243,
+          "y": 3.19763,
+          "z": 20.980278
+        },
+        {
+          "x": -12.60243,
+          "y": 3.19567,
+          "z": 20.080278
+        },
+        {
+          "x": -9.00243,
+          "y": 3.19647,
+          "z": 20.080278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "GreatRoom_to_EntireSecondFloor",
+      "from": "S04_GreatRoom",
+      "to": "S05_FarUpperHall",
+      "waypoints": [
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -10.71
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -12.51
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.032
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.23
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -14.49
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -16.02
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -18.99
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -21.96
+        },
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.266018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 9.405,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -22.05
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -20.25
+        },
+        {
+          "x": 11.205018,
+          "y": 1.7652,
+          "z": -15.75
+        },
+        {
+          "x": 11.114982,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 9.207018,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 9.207,
+          "y": 1.7652,
+          "z": -16.2
+        },
+        {
+          "x": 9.387,
+          "y": 3.1252,
+          "z": -20.160018
+        },
+        {
+          "x": 9.459018,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 10.34757,
+          "y": 3.1252,
+          "z": -22.129722
+        },
+        {
+          "x": 9.23157,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 8.54757,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        },
+        {
+          "x": 2.87757,
+          "y": 3.09824,
+          "z": -21.949722
+        },
+        {
+          "x": -6.91443,
+          "y": 3.09606,
+          "z": -21.949722
+        },
+        {
+          "x": -6.91443,
+          "y": 3.11377,
+          "z": -14.569722
+        },
+        {
+          "x": -6.914422,
+          "y": 3.114829,
+          "z": -14.13
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": -13.14
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -11.7
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 0.0
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 10.62
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": 12.06
+        },
+        {
+          "x": -6.914422,
+          "y": 3.180148,
+          "z": 13.086
+        },
+        {
+          "x": -6.91443,
+          "y": 3.18354,
+          "z": 14.500278
+        },
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "GreatRoom_to_EntireSecondFloor_Return",
+      "from": "S05_FarUpperHall",
+      "to": "S04_GreatRoom",
+      "waypoints": [
+        {
+          "x": -7.02243,
+          "y": 3.19691,
+          "z": 20.080278
+        },
+        {
+          "x": -6.91443,
+          "y": 3.18354,
+          "z": 14.500278
+        },
+        {
+          "x": -6.914422,
+          "y": 3.180148,
+          "z": 13.086
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": 12.06
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 10.62
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": 0.0
+        },
+        {
+          "x": -7.254,
+          "y": 3.14833,
+          "z": -11.7
+        },
+        {
+          "x": -6.914422,
+          "y": 3.14833,
+          "z": -13.14
+        },
+        {
+          "x": -6.914422,
+          "y": 3.114829,
+          "z": -14.13
+        },
+        {
+          "x": -6.91443,
+          "y": 3.11377,
+          "z": -14.569722
+        },
+        {
+          "x": -6.91443,
+          "y": 3.09606,
+          "z": -21.949722
+        },
+        {
+          "x": 2.87757,
+          "y": 3.09824,
+          "z": -21.949722
+        },
+        {
+          "x": 7.01757,
+          "y": 3.10991,
+          "z": -21.949722
+        },
+        {
+          "x": 8.54757,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 9.23157,
+          "y": 3.1252,
+          "z": -22.147722
+        },
+        {
+          "x": 10.34757,
+          "y": 3.1252,
+          "z": -22.129722
+        },
+        {
+          "x": 10.934982,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 9.459018,
+          "y": 3.1252,
+          "z": -22.014
+        },
+        {
+          "x": 9.387,
+          "y": 3.1252,
+          "z": -20.160018
+        },
+        {
+          "x": 9.207,
+          "y": 1.7652,
+          "z": -16.2
+        },
+        {
+          "x": 9.207018,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 11.114982,
+          "y": 1.7652,
+          "z": -14.94
+        },
+        {
+          "x": 11.205018,
+          "y": 1.7652,
+          "z": -15.75
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -20.25
+        },
+        {
+          "x": 11.403,
+          "y": 0.08,
+          "z": -22.05
+        },
+        {
+          "x": 9.405,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.257018
+        },
+        {
+          "x": 6.975,
+          "y": 0.08,
+          "z": -22.257
+        },
+        {
+          "x": 8.505,
+          "y": 0.08,
+          "z": -22.266018
+        },
+        {
+          "x": -2.583,
+          "y": 0.08,
+          "z": -22.122
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -21.96
+        },
+        {
+          "x": -6.795,
+          "y": 0.08,
+          "z": -18.99
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -16.02
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -14.49
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.23
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -13.032
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -12.51
+        },
+        {
+          "x": -7.155,
+          "y": 0.08,
+          "z": -10.71
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "LibraryCorridor_to_BlackHall",
+      "from": "S03_Basement_StairCorridor",
+      "to": "S04_Basement_BlackHall",
+      "waypoints": [
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        },
+        {
+          "x": 6.597,
+          "y": -3.2106,
+          "z": -14.94
+        },
+        {
+          "x": 6.597,
+          "y": -3.2106,
+          "z": -13.885146
+        },
+        {
+          "x": 6.597,
+          "y": -3.2106,
+          "z": -11.52
+        },
+        {
+          "x": 5.697,
+          "y": -3.2106,
+          "z": -10.26
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    },
+    {
+      "id": "LibraryCorridor_to_BlackHall_Return",
+      "from": "S04_Basement_BlackHall",
+      "to": "S03_Basement_StairCorridor",
+      "waypoints": [
+        {
+          "x": 5.697,
+          "y": -3.2106,
+          "z": -10.26
+        },
+        {
+          "x": 6.597,
+          "y": -3.2106,
+          "z": -11.52
+        },
+        {
+          "x": 6.597,
+          "y": -3.2106,
+          "z": -13.885146
+        },
+        {
+          "x": 6.597,
+          "y": -3.2106,
+          "z": -14.94
+        },
+        {
+          "x": 6.543,
+          "y": -3.2106,
+          "z": -18.63
+        }
+      ],
+      "kind": "S05 captured rooms and passages; controlled full-capsule traversal, no survey-accuracy claim"
+    }
+  ],
+  "landings": [
+    {
+      "name": "Great room / entrance floor",
+      "feet": {
+        "x": 5.67,
+        "y": 0.05,
+        "z": 10.764
+      },
+      "floor": 0,
+      "walkDirection": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      }
+    },
+    {
+      "name": "S03 entrance-floor long hallway",
+      "feet": {
+        "x": -2.583,
+        "y": 0.05,
+        "z": -22.122
+      },
+      "floor": 0.0,
+      "walkDirection": {
+        "x": 0.99999999,
+        "y": 0,
+        "z": -1e-08
+      }
+    },
+    {
+      "name": "S03 basement study",
+      "feet": {
+        "x": -7.335,
+        "y": -3.2406,
+        "z": -27.954
+      },
+      "floor": -3.2906,
+      "walkDirection": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "name": "Basement / black hall",
+      "feet": {
+        "x": 6.39,
+        "y": -3.2406,
+        "z": -10.26
+      },
+      "floor": -3.2906,
+      "walkDirection": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "name": "Gallery / upper level",
+      "feet": {
+        "x": -6.57,
+        "y": 3.11833,
+        "z": -2.25
+      },
+      "floor": 3.0683297650916903,
+      "walkDirection": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "name": "Upper captured stair landing",
+      "feet": {
+        "x": 9.405,
+        "y": 3.0952,
+        "z": -22.014
+      },
+      "floor": 3.0452,
+      "walkDirection": {
+        "x": 1.00000195,
+        "y": 0.0,
+        "z": -1.57e-06
+      }
+    },
+    {
+      "name": "S02 dining / service",
+      "feet": {
+        "x": -2.718,
+        "y": 0.05,
+        "z": 23.202
+      },
+      "floor": 0.0,
+      "walkDirection": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "name": "S01 measured porch",
+      "feet": {
+        "x": 11.60406,
+        "y": 0.05,
+        "z": 3.668292
+      },
+      "floor": 0.0,
+      "walkDirection": {
+        "x": -0.00096,
+        "y": 0.0,
+        "z": 1.0
+      }
+    },
+    {
+      "name": "Second floor / rear hallway",
+      "feet": {
+        "x": 7.01757,
+        "y": 3.07991,
+        "z": -21.949722
+      },
+      "floor": 3.02991,
+      "walkDirection": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "name": "Covered gallery balcony",
+      "feet": {
+        "x": -10.89243,
+        "y": 3.11745,
+        "z": -0.169722
+      },
+      "floor": 3.06745,
+      "walkDirection": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ],
+  "views": [
+    {
+      "name": "01_GreatRoom_Entrance",
+      "position": {
+        "x": 5.67,
+        "y": 1.68,
+        "z": 10.764
+      },
+      "target": {
+        "x": -4.14,
+        "y": 2.5,
+        "z": -3.96
+      },
+      "fieldOfView": 67
+    },
+    {
+      "name": "02_Basement_BlackHall",
+      "position": {
+        "x": 6.39,
+        "y": -1.6906,
+        "z": -10.26
+      },
+      "target": {
+        "x": -3.78,
+        "y": -2.1106,
+        "z": 5.85
+      },
+      "fieldOfView": 66
+    },
+    {
+      "name": "03_Gallery_Overlook",
+      "position": {
+        "x": -5.346,
+        "y": 4.51,
+        "z": -2.25
+      },
+      "target": {
+        "x": 2.34,
+        "y": 1.2,
+        "z": 0.72
+      },
+      "fieldOfView": 72
+    },
+    {
+      "name": "04_Connected_Porch",
+      "position": {
+        "x": 13.68,
+        "y": 1.68,
+        "z": 10.53
+      },
+      "target": {
+        "x": 8.1,
+        "y": 1.3,
+        "z": -2.7
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "05_S03_LongHall",
+      "position": {
+        "x": 5.715,
+        "y": 1.6352,
+        "z": -22.05
+      },
+      "target": {
+        "x": -12.285,
+        "y": 1.6352,
+        "z": -22.05
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "06_S03_BasementStudy",
+      "position": {
+        "x": 6.615,
+        "y": -1.6648,
+        "z": -26.19
+      },
+      "target": {
+        "x": -11.565,
+        "y": -1.9148,
+        "z": -35.19
+      },
+      "fieldOfView": 58.72
+    },
+    {
+      "name": "07_GreatRoom_RestoredFireplace",
+      "position": {
+        "x": 5.58,
+        "y": 1.68,
+        "z": -2.43
+      },
+      "target": {
+        "x": -1.62,
+        "y": 2.0,
+        "z": -12.06
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "08_GreatRoom_HallDoor",
+      "position": {
+        "x": -6.84,
+        "y": 1.68,
+        "z": -8.82
+      },
+      "target": {
+        "x": -7.155,
+        "y": 1.4,
+        "z": -15.3
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "09_S03_StudyReverse",
+      "position": {
+        "x": -12.105,
+        "y": -1.6648,
+        "z": -27.81
+      },
+      "target": {
+        "x": 5.895,
+        "y": -1.9148,
+        "z": -27.27
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "10_S03_ChairServiceBranch",
+      "position": {
+        "x": -7.155,
+        "y": 1.5852,
+        "z": -21.33
+      },
+      "target": {
+        "x": -7.155,
+        "y": 1.4352,
+        "z": -13.23
+      },
+      "fieldOfView": 62
+    },
+    {
+      "name": "11_S03_Switchback",
+      "position": {
+        "x": 11.115,
+        "y": -0.6148,
+        "z": -14.85
+      },
+      "target": {
+        "x": 9.405,
+        "y": 1.0352,
+        "z": -21.510018
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "12_S03_UpperStairAscent",
+      "position": {
+        "x": 11.115,
+        "y": 1.6352,
+        "z": -21.78
+      },
+      "target": {
+        "x": 11.115,
+        "y": 1.8852,
+        "z": -15.749982
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "13_S03_UpperStairReturn",
+      "position": {
+        "x": 11.115,
+        "y": 3.1852,
+        "z": -14.85
+      },
+      "target": {
+        "x": 9.225,
+        "y": 3.7852,
+        "z": -21.870018
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "14_S03_UpperCapturedLanding",
+      "position": {
+        "x": 9.495018,
+        "y": 4.6652,
+        "z": -22.05
+      },
+      "target": {
+        "x": 9.675,
+        "y": 2.6852,
+        "z": -15.93
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "15_S03_ShortHallIntersection",
+      "position": {
+        "x": -7.155,
+        "y": 1.6352,
+        "z": -14.67
+      },
+      "target": {
+        "x": -7.155,
+        "y": 1.6352,
+        "z": -22.05
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "16_S03_IntersectionToRearStairs",
+      "position": {
+        "x": -7.155,
+        "y": 1.6352,
+        "z": -22.086
+      },
+      "target": {
+        "x": 8.775,
+        "y": 1.6352,
+        "z": -22.085982
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "17_S03_RearChairRoom",
+      "position": {
+        "x": 6.525,
+        "y": -1.6548,
+        "z": -16.11
+      },
+      "target": {
+        "x": 6.255,
+        "y": -1.9148,
+        "z": -23.85
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "18_S03_Bathroom",
+      "position": {
+        "x": -4.455,
+        "y": 1.5852,
+        "z": -17.37
+      },
+      "target": {
+        "x": 5.445,
+        "y": 1.4352,
+        "z": -16.29
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "19_S03_Bedroom",
+      "position": {
+        "x": -11.025,
+        "y": 1.6252,
+        "z": -24.75
+      },
+      "target": {
+        "x": -6.165,
+        "y": 1.4352,
+        "z": -28.89
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "20_S02_Dining1937",
+      "position": {
+        "x": -2.718,
+        "y": 1.5651,
+        "z": 23.202
+      },
+      "target": {
+        "x": 10.062,
+        "y": 1.3651,
+        "z": 25.812
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "21_S02_Service1938",
+      "position": {
+        "x": 9.522,
+        "y": 1.5651,
+        "z": 19.872
+      },
+      "target": {
+        "x": 6.642,
+        "y": 1.4651,
+        "z": 17.532
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "22_S02_CoffeeDoor1939",
+      "position": {
+        "x": 7.002,
+        "y": 1.5651,
+        "z": 13.5
+      },
+      "target": {
+        "x": 11.592,
+        "y": 1.4651,
+        "z": 21.672
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "23_S02_DiningReverse",
+      "position": {
+        "x": 8.802,
+        "y": 1.5651,
+        "z": 24.732
+      },
+      "target": {
+        "x": -6.318,
+        "y": 1.4151,
+        "z": 24.912
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "24_S01_Porch1940",
+      "position": {
+        "x": 11.597706,
+        "y": 1.6089,
+        "z": 10.328292
+      },
+      "target": {
+        "x": 11.618964,
+        "y": 1.4589,
+        "z": -11.991708
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "25_S01_Porch1941",
+      "position": {
+        "x": 11.617074,
+        "y": 1.6089,
+        "z": -10.011708
+      },
+      "target": {
+        "x": 11.596176,
+        "y": 1.4589,
+        "z": 11.948292
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "26_S03_StudySeating",
+      "position": {
+        "x": 7.245,
+        "y": -1.7148,
+        "z": -26.46
+      },
+      "target": {
+        "x": 5.895,
+        "y": -2.4148,
+        "z": -29.52
+      },
+      "fieldOfView": 58
+    },
+    {
+      "name": "27_S03_BathCounter",
+      "position": {
+        "x": 1.215,
+        "y": 1.5352,
+        "z": -17.19
+      },
+      "target": {
+        "x": 1.215,
+        "y": 1.1352,
+        "z": -14.31
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "28_S02_SmallBathroom",
+      "position": {
+        "x": -11.898,
+        "y": 1.4651,
+        "z": 28.152
+      },
+      "target": {
+        "x": -13.608,
+        "y": 1.0151,
+        "z": 25.092
+      },
+      "fieldOfView": 74
+    },
+    {
+      "name": "29_S02_LobbyReverse",
+      "position": {
+        "x": -9.558,
+        "y": 1.5651,
+        "z": 27.432
+      },
+      "target": {
+        "x": -8.478,
+        "y": 1.4651,
+        "z": 13.752
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "30_S02_StorageRecess",
+      "position": {
+        "x": -0.738,
+        "y": 1.5651,
+        "z": 23.832
+      },
+      "target": {
+        "x": 2.142,
+        "y": 1.3151,
+        "z": 19.746
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "31_BH_ServiceAlcove1910",
+      "position": {
+        "x": -4.365,
+        "y": -1.6706,
+        "z": 11.016
+      },
+      "target": {
+        "x": -4.608,
+        "y": -2.2106,
+        "z": 15.876
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "32_BH_EndWall1909",
+      "position": {
+        "x": 6.12,
+        "y": -1.6406,
+        "z": 10.62
+      },
+      "target": {
+        "x": -3.6,
+        "y": -2.0906,
+        "z": -4.32
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "33_GalleryHall1928",
+      "position": {
+        "x": -6.84,
+        "y": 4.57,
+        "z": -11.97
+      },
+      "target": {
+        "x": -6.84,
+        "y": 4.4,
+        "z": 1.8
+      },
+      "fieldOfView": 60
+    },
+    {
+      "name": "34_GalleryFront1922",
+      "position": {
+        "x": 7.02,
+        "y": 2.05,
+        "z": 0.54
+      },
+      "target": {
+        "x": -5.22,
+        "y": 2.6,
+        "z": 0.18
+      },
+      "fieldOfView": 68
+    },
+    {
+      "name": "35_S02_VacuumStorageClose",
+      "position": {
+        "x": 1.332,
+        "y": 1.2651,
+        "z": 22.932
+      },
+      "target": {
+        "x": 2.412,
+        "y": 0.5951,
+        "z": 21.096
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "36_GalleryReverse",
+      "position": {
+        "x": -6.804,
+        "y": 4.57,
+        "z": 11.52
+      },
+      "target": {
+        "x": -6.804,
+        "y": 4.37,
+        "z": -1.8
+      },
+      "fieldOfView": 60
+    },
+    {
+      "name": "37_LibraryThreshold1916",
+      "position": {
+        "x": 6.399,
+        "y": -1.6548,
+        "z": -14.67
+      },
+      "target": {
+        "x": 6.021,
+        "y": -2.6148,
+        "z": -23.454
+      },
+      "fieldOfView": 63.44003
+    },
+    {
+      "name": "38_LibraryDoorHardware",
+      "position": {
+        "x": 4.275,
+        "y": -1.9148,
+        "z": -27.72
+      },
+      "target": {
+        "x": 4.122,
+        "y": -2.1548,
+        "z": -23.814
+      },
+      "fieldOfView": 61.08116
+    },
+    {
+      "name": "39_S05_RearHall",
+      "position": {
+        "x": 6.29757,
+        "y": 4.67606,
+        "z": -21.769722
+      },
+      "target": {
+        "x": -5.40243,
+        "y": 4.62606,
+        "z": -21.769722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "40_S05_UpperStair",
+      "position": {
+        "x": 10.97757,
+        "y": 4.67606,
+        "z": -21.409722
+      },
+      "target": {
+        "x": 10.97757,
+        "y": 3.67606,
+        "z": -14.749722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "41_S05_GalleryBalcony",
+      "position": {
+        "x": -10.62243,
+        "y": 4.72606,
+        "z": 4.870278
+      },
+      "target": {
+        "x": -10.62243,
+        "y": 4.72606,
+        "z": -5.029722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "42_S05_FarHall",
+      "position": {
+        "x": -6.84243,
+        "y": 4.72606,
+        "z": 20.080278
+      },
+      "target": {
+        "x": 8.09757,
+        "y": 4.72606,
+        "z": 20.080278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "43_S05_StripedBedroom",
+      "position": {
+        "x": -2.48643,
+        "y": 4.67606,
+        "z": -24.577722
+      },
+      "target": {
+        "x": 1.43757,
+        "y": 4.27606,
+        "z": -28.429722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "44_S05_BlueBathroom",
+      "position": {
+        "x": 2.69757,
+        "y": 4.72606,
+        "z": -16.729722
+      },
+      "target": {
+        "x": -1.98243,
+        "y": 4.72606,
+        "z": -16.729722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "45_S05_NorthWestSuite",
+      "position": {
+        "x": 6.92757,
+        "y": 4.65606,
+        "z": 21.430278
+      },
+      "target": {
+        "x": 10.61757,
+        "y": 4.27606,
+        "z": 18.370278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "46_S05_NorthEastSuite",
+      "position": {
+        "x": -12.42243,
+        "y": 4.72606,
+        "z": 20.350278
+      },
+      "target": {
+        "x": -17.64243,
+        "y": 4.52606,
+        "z": 20.710278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "47_LibraryToBlackHallDoor",
+      "position": {
+        "x": 6.435,
+        "y": -1.6548,
+        "z": -19.53
+      },
+      "target": {
+        "x": 6.561,
+        "y": -2.1948,
+        "z": -13.842
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "48_S05_BlueBedroom",
+      "position": {
+        "x": 6.29757,
+        "y": 4.62606,
+        "z": -23.749722
+      },
+      "target": {
+        "x": 9.89757,
+        "y": 4.42606,
+        "z": -28.609722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "49_S05_NorthWestBedroom",
+      "position": {
+        "x": 10.79757,
+        "y": 4.62606,
+        "z": 25.030278
+      },
+      "target": {
+        "x": 10.79757,
+        "y": 4.42606,
+        "z": 28.630278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "50_S05_NorthEastSouthBedroom",
+      "position": {
+        "x": -12.40443,
+        "y": 4.72606,
+        "z": 18.064278
+      },
+      "target": {
+        "x": -15.57243,
+        "y": 4.49606,
+        "z": 13.960278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "51_InspectReverse_GreatRoom_Entrance",
+      "position": {
+        "x": 5.67,
+        "y": 1.68,
+        "z": 10.764
+      },
+      "target": {
+        "x": 8.664113,
+        "y": 1.5,
+        "z": 15.257917
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "01_GreatRoom_Entrance"
+    },
+    {
+      "name": "52_InspectReverse_Basement_BlackHall",
+      "position": {
+        "x": 6.39,
+        "y": -1.6906,
+        "z": -10.26
+      },
+      "target": {
+        "x": 9.272602,
+        "y": -1.8706,
+        "z": -14.826246
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "02_Basement_BlackHall"
+    },
+    {
+      "name": "53_Inspect_BasementStudyInterior",
+      "position": {
+        "x": -0.966996,
+        "y": -1.6106,
+        "z": -28.519452
+      },
+      "target": {
+        "x": -6.170472,
+        "y": -1.8106,
+        "z": -28.934478
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "06_S03_BasementStudy",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "54_InspectReverse_S03_RearChairRoom",
+      "position": {
+        "x": 6.525,
+        "y": -1.6548,
+        "z": -16.11
+      },
+      "target": {
+        "x": 6.713258,
+        "y": -1.8348,
+        "z": -10.713283
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "17_S03_RearChairRoom"
+    },
+    {
+      "name": "55_Inspect_HallBathroomInterior",
+      "position": {
+        "x": -1.524906,
+        "y": 1.68,
+        "z": -17.675478
+      },
+      "target": {
+        "x": 2.25,
+        "y": 1.3,
+        "z": -16.02
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "18_S03_Bathroom",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "56_Inspect_HallBedroomInterior",
+      "position": {
+        "x": -9.070416,
+        "y": 1.68,
+        "z": -27.667008
+      },
+      "target": {
+        "x": -10.103526,
+        "y": 1.4,
+        "z": -26.033976
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "19_S03_Bedroom",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "57_Inspect_DiningInterior",
+      "position": {
+        "x": 8.622,
+        "y": 1.68,
+        "z": 23.202
+      },
+      "target": {
+        "x": -2.718,
+        "y": 1.35,
+        "z": 23.202
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "20_S02_Dining1937",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "58_Inspect_PorchInterior",
+      "position": {
+        "x": 11.617074,
+        "y": 1.6089,
+        "z": -8.211708
+      },
+      "target": {
+        "x": 11.597706,
+        "y": 1.45,
+        "z": 10.328292
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "24_S01_Porch1940",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "59_Inspect_SmallBathroomInterior",
+      "position": {
+        "x": -12.726,
+        "y": 1.68,
+        "z": 28.008
+      },
+      "target": {
+        "x": -13.608,
+        "y": 1.0151,
+        "z": 25.092
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "28_S02_SmallBathroom",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "60_Inspect_LobbyInterior",
+      "position": {
+        "x": -7.848,
+        "y": 1.65,
+        "z": 20.232
+      },
+      "target": {
+        "x": -9.558,
+        "y": 1.45,
+        "z": 27.432
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "29_S02_LobbyReverse",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "61_InspectReverse_BH_ServiceAlcove1910",
+      "position": {
+        "x": -4.365,
+        "y": -1.6706,
+        "z": 11.016
+      },
+      "target": {
+        "x": -4.095337,
+        "y": -1.8506,
+        "z": 5.622737
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "31_BH_ServiceAlcove1910"
+    },
+    {
+      "name": "62_InspectReverse_GalleryHall1928",
+      "position": {
+        "x": -6.84,
+        "y": 4.57,
+        "z": -11.97
+      },
+      "target": {
+        "x": -6.84,
+        "y": 4.39,
+        "z": -17.37
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "33_GalleryHall1928"
+    },
+    {
+      "name": "63_Inspect_GalleryBalconyInterior",
+      "position": {
+        "x": -10.89243,
+        "y": 4.69745,
+        "z": -0.169722
+      },
+      "target": {
+        "x": -10.29843,
+        "y": 3.87606,
+        "z": 4.942278
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "41_S05_GalleryBalcony",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "64_InspectReverse_S05_StripedBedroom",
+      "position": {
+        "x": -2.48643,
+        "y": 4.67606,
+        "z": -24.577722
+      },
+      "target": {
+        "x": -6.339997,
+        "y": 4.49606,
+        "z": -20.794863
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "43_S05_StripedBedroom"
+    },
+    {
+      "name": "65_Inspect_BlueBathroomInterior",
+      "position": {
+        "x": 0.89757,
+        "y": 4.6599,
+        "z": -16.909722
+      },
+      "target": {
+        "x": -3.15243,
+        "y": 4.29606,
+        "z": -16.009722
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "44_S05_BlueBathroom",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "66_Inspect_NorthWestSuiteInterior",
+      "position": {
+        "x": 7.55757,
+        "y": 4.7521,
+        "z": 20.890278
+      },
+      "target": {
+        "x": 10.97757,
+        "y": 4.12606,
+        "z": 19.720278
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "45_S05_NorthWestSuite",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "67_InspectReverse_S05_NorthEastSuite",
+      "position": {
+        "x": -12.42243,
+        "y": 4.72606,
+        "z": 20.350278
+      },
+      "target": {
+        "x": -7.035226,
+        "y": 4.54606,
+        "z": 19.978747
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "46_S05_NorthEastSuite"
+    },
+    {
+      "name": "68_InspectReverse_S05_BlueBedroom",
+      "position": {
+        "x": 6.29757,
+        "y": 4.62606,
+        "z": -23.749722
+      },
+      "target": {
+        "x": 3.083341,
+        "y": 4.44606,
+        "z": -19.410513
+      },
+      "fieldOfView": 75,
+      "wholeHouseInspection": true,
+      "sourceView": "48_S05_BlueBedroom"
+    },
+    {
+      "name": "69_Inspect_NorthWestBedroom",
+      "position": {
+        "x": 10.797578,
+        "y": 4.62606,
+        "z": 25.120271
+      },
+      "target": {
+        "x": 10.887578,
+        "y": 4.37606,
+        "z": 28.450271
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "49_S05_NorthWestBedroom",
+      "evidence": "Native FurnitureRepair20260921 source-local interior review; no metric photo calibration claim"
+    },
+    {
+      "name": "70_Inspect_NorthEastSouthBedroom",
+      "position": {
+        "x": -12.566422,
+        "y": 4.63606,
+        "z": 17.956271
+      },
+      "target": {
+        "x": -14.312422,
+        "y": 4.49606,
+        "z": 14.860271
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "50_S05_NorthEastSouthBedroom",
+      "evidence": "S05 scan and IMG1934 source-local doorway review; no metric photo calibration claim"
+    },
+    {
+      "name": "71_Inspect_NorthWestBedroomContext",
+      "position": {
+        "x": 9.807578,
+        "y": 4.62606,
+        "z": 25.174271
+      },
+      "target": {
+        "x": 11.067578,
+        "y": 4.22606,
+        "z": 27.550271
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "evidence": "S05 native-reviewed room context; source-informed pose near checked room-route points, not calibrated photo resection"
+    },
+    {
+      "name": "72_Inspect_NorthEastBedroomContext",
+      "position": {
+        "x": -15.392422,
+        "y": 4.62606,
+        "z": 25.210271
+      },
+      "target": {
+        "x": -17.012422,
+        "y": 4.37606,
+        "z": 28.090271
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "evidence": "S05 native-reviewed room context; source-informed pose near checked room-route points, not calibrated photo resection"
+    },
+    {
+      "name": "73_Inspect_NorthEastLivingContext",
+      "position": {
+        "x": -13.502422,
+        "y": 4.72606,
+        "z": 20.980271
+      },
+      "target": {
+        "x": -17.102422,
+        "y": 4.47606,
+        "z": 18.280271
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "evidence": "S05 native-reviewed room context; source-informed pose near checked room-route points, not calibrated photo resection"
+    },
+    {
+      "name": "74_Inspect_LibrarySouthFurniture",
+      "position": {
+        "x": -3.285,
+        "y": -1.6648,
+        "z": -29.43
+      },
+      "target": {
+        "x": -3.285,
+        "y": -2.1148,
+        "z": -24.21
+      },
+      "fieldOfView": 65,
+      "wholeHouseInspection": true,
+      "evidence": "Existing native S03 textured-source review pose; not calibrated photo resection"
+    },
+    {
+      "name": "75_Inspect_LibraryOctagonalTable",
+      "position": {
+        "x": 6.255,
+        "y": -1.7148,
+        "z": -25.56
+      },
+      "target": {
+        "x": 6.075,
+        "y": -2.5148,
+        "z": -29.25
+      },
+      "fieldOfView": 65,
+      "wholeHouseInspection": true,
+      "evidence": "Existing native S03 textured-source review pose; not calibrated photo resection"
+    },
+    {
+      "name": "76_Inspect_RecoveredStairWindow",
+      "position": {
+        "x": 10.077578,
+        "y": 4.32606,
+        "z": -16.261729
+      },
+      "target": {
+        "x": 12.687578,
+        "y": 4.32606,
+        "z": -16.261729
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "evidence": "S05 source stair-window elevation context"
+    },
+    {
+      "name": "77_PhotoMatch_IMG1925_CandidateS05",
+      "position": {
+        "x": 9.28557,
+        "y": 4.66606,
+        "z": -21.805722
+      },
+      "target": {
+        "x": -12.60243,
+        "y": 4.61606,
+        "z": -21.805722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "78_PhotoMatch_IMG1919_CandidateS03",
+      "position": {
+        "x": 8.415,
+        "y": 1.6352,
+        "z": -22.14
+      },
+      "target": {
+        "x": -13.437,
+        "y": 1.6352,
+        "z": -22.284
+      },
+      "fieldOfView": 65,
+      "wholeHouseInspection": true,
+      "evidence": "IMG1919 source-local corridor axis, near-left 05 and far 102; camera intrinsics approximate"
+    },
+    {
+      "name": "79_PhotoMatch_IMG1932_CandidateS05",
+      "position": {
+        "x": -13.142422,
+        "y": 4.67606,
+        "z": 19.270271
+      },
+      "target": {
+        "x": -15.662422,
+        "y": 4.45606,
+        "z": 21.790271
+      },
+      "fieldOfView": 120,
+      "wholeHouseInspection": true,
+      "evidence": "IMG1932 S05 sitting-room lamp-left/window-centre/TV-right/door-right landmarks. Eye is inside the sitting room; field of view approximates the portrait source photo, not a calibrated camera solve."
+    },
+    {
+      "name": "80_Exterior_RegisteredPorchFacade",
+      "position": {
+        "x": 20.88,
+        "y": 2.85,
+        "z": -0.09
+      },
+      "target": {
+        "x": 11.07,
+        "y": 1.35,
+        "z": -0.09
+      },
+      "fieldOfView": 72,
+      "wholeHouseInspection": true,
+      "evidence": "S01/S04 eight-jamb coarse registration; IMG1940/1941 porch appearance. Exterior camera pose is a review choice, not a surveyed vantage or measured surrounding grade."
+    },
+    {
+      "name": "81_Exterior_PorchEndAndPergola",
+      "position": {
+        "x": 19.89,
+        "y": 2.65,
+        "z": -16.65
+      },
+      "target": {
+        "x": 11.16,
+        "y": 1.55,
+        "z": -6.66
+      },
+      "fieldOfView": 72,
+      "wholeHouseInspection": true,
+      "evidence": "S01/S04 eight-jamb coarse registration; IMG1940/1941 porch appearance. Exterior camera pose is a review choice, not a surveyed vantage or measured surrounding grade."
+    },
+    {
+      "name": "82_PhotoMatch_IMG1929_CandidateS05",
+      "position": {
+        "x": -11.252422,
+        "y": 4.65606,
+        "z": -5.569729
+      },
+      "target": {
+        "x": -10.352422,
+        "y": 4.43606,
+        "z": 3.880271
+      },
+      "fieldOfView": 69,
+      "wholeHouseInspection": true,
+      "evidence": "IMG1929 looks from the bench end toward the upholstered seat, with white rail left and brick facade right; source-local S05 pose, camera intrinsics approximate"
+    },
+    {
+      "name": "83_Inspect_S03_BathroomHallWall",
+      "position": {
+        "x": 1.305,
+        "y": 1.6252,
+        "z": -22.338
+      },
+      "target": {
+        "x": -1.629,
+        "y": 1.5052,
+        "z": -20.538
+      },
+      "fieldOfView": 74,
+      "wholeHouseInspection": true,
+      "evidence": "IMG1923 hall doorway and continuous adjacent wall; scan-local review of the formerly unclosed 0..1.97m interval"
+    }
+  ],
+  "greatRoomProtectedVolumes": [
+    {
+      "min": {
+        "x": -8.082,
+        "y": 0.08,
+        "z": -11.178
+      },
+      "max": {
+        "x": 8.118,
+        "y": 5.7416,
+        "z": 12.636
+      }
+    },
+    {
+      "min": {
+        "x": -8.082,
+        "y": 0.08,
+        "z": -12.618
+      },
+      "max": {
+        "x": -0.54,
+        "y": 5.7416,
+        "z": -11.178
+      }
+    },
+    {
+      "min": {
+        "x": 4.338,
+        "y": 0.08,
+        "z": -12.618
+      },
+      "max": {
+        "x": 8.118,
+        "y": 5.7416,
+        "z": -11.178
+      }
+    }
+  ],
+  "secondFloorScope": "S05 captured rooms, balcony, staircase continuation and constrained rigid registration. Remaining gallery signed-jamb mismatch0.420m is documented; no perfect whole-house survey claim.",
+  "playableScale": 1.8,
+  "playableVerticalScale": 1.0,
+  "portableScale": 1.0
+}

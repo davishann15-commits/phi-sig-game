@@ -1,5 +1,6 @@
 #include "SeniorLobby.h"
 #include "SeniorLobbyUI.h"
+#include "SeniorSettingsPanel.h"
 #include "SeniorCharacterRoster.h"
 #include "StoryCampaign.h"
 #include "Containers/Ticker.h"
@@ -13,6 +14,13 @@
 #include "Net/UnrealNetwork.h"
 #include "SocketSubsystem.h"
 #include "Widgets/SWidget.h"
+#include "Widgets/Input/SButton.h"
+#include "Widgets/Layout/SBorder.h"
+#include "Widgets/Layout/SBox.h"
+#include "Widgets/SOverlay.h"
+#include "Widgets/SBoxPanel.h"
+#include "Widgets/Text/STextBlock.h"
+#include "Framework/Application/SlateApplication.h"
 
 #if WITH_EDITOR
 void TickSeniorLobbySmokeTest(ASeniorLobbyController* Controller);
@@ -134,6 +142,7 @@ void ASeniorLobbyController::Tick(float DeltaSeconds)
 }
 void ASeniorLobbyController::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
+    ClosePauseMenu();
     RemoveLobbyWidget();
     RemoveLoadingWidget();
     if (GEngine)
@@ -148,6 +157,7 @@ void ASeniorLobbyController::OnPossess(APawn* InPawn) { Super::OnPossess(InPawn)
 void ASeniorLobbyController::RefreshPresentation()
 {
     if (!IsLocalController()) return;
+    if (PauseWidget.IsValid()) ClosePauseMenu();
     PresentedMap = UGameplayStatics::GetCurrentLevelName(this, true);
     const bool bInLobby = PresentedMap == TEXT("Lobby");
     bShowMouseCursor = bInLobby;
@@ -157,6 +167,8 @@ void ASeniorLobbyController::RefreshPresentation()
     if (bInLobby)
     {
         ActivateTouchInterface(nullptr);
+        if (GetWorld() && GetWorld()->GetGameViewport())
+            GetWorld()->GetGameViewport()->SetMouseCaptureMode(EMouseCaptureMode::NoCapture);
         if (!LobbyWidget.IsValid() && GetWorld() && GetWorld()->GetGameViewport())
         {
             LobbyWidget = MakeSeniorLobbyWidget(this);
@@ -170,7 +182,7 @@ void ASeniorLobbyController::RefreshPresentation()
     else
     {
         RemoveLobbyWidget();
-        SetInputMode(FInputModeGameOnly());
+        CaptureGameplayMouse();
 #if PLATFORM_IOS || PLATFORM_ANDROID
         ActivateTouchInterface(LoadObject<UTouchInterface>(nullptr,
             TEXT("/Engine/MobileResources/HUD/DefaultVirtualJoysticks.DefaultVirtualJoysticks")));
@@ -188,12 +200,105 @@ void ASeniorLobbyController::RemoveLoadingWidget()
     if (LoadingWidget.IsValid() && GetWorld() && GetWorld()->GetGameViewport())
         GetWorld()->GetGameViewport()->RemoveViewportWidgetContent(LoadingWidget.ToSharedRef());
     LoadingWidget.Reset();
+    if (GetWorld() && !IsLobby(this) && !PauseWidget.IsValid()) CaptureGameplayMouse();
+}
+void ASeniorLobbyController::CaptureGameplayMouse()
+{
+    if (!IsLocalController() || !GetWorld() || IsLobby(this) || PauseWidget.IsValid()) return;
+    bShowMouseCursor = false;
+    bEnableClickEvents = false;
+    bEnableTouchEvents = false;
+    FInputModeGameOnly Mode;
+    Mode.SetConsumeCaptureMouseDown(false);
+    SetInputMode(Mode);
+    if (UGameViewportClient* Viewport = GetWorld()->GetGameViewport())
+    {
+        Viewport->SetMouseCaptureMode(EMouseCaptureMode::CapturePermanently_IncludingInitialMouseDown);
+        Viewport->SetMouseLockMode(EMouseLockMode::LockOnCapture);
+    }
+    if (FSlateApplication::IsInitialized()) FSlateApplication::Get().SetAllUserFocusToGameViewport();
+}
+void ASeniorLobbyController::OpenPauseMenu()
+{
+    if (!IsLocalController() || !GetWorld() || IsLobby(this) || PauseWidget.IsValid()) return;
+    UGameViewportClient* Viewport = GetWorld()->GetGameViewport();
+    if (!Viewport) return;
+    bRestartConfirmationPending = false;
+    PauseWidget = SNew(SOverlay)
+        + SOverlay::Slot()[SNew(SBorder).BorderBackgroundColor(FLinearColor(0.005f, 0.008f, 0.012f, .80f))]
+        + SOverlay::Slot().HAlign(HAlign_Center).VAlign(VAlign_Center)
+          [SNew(SBox).WidthOverride(1050).HeightOverride(650)
+            [SNew(SBorder).Padding(20).BorderBackgroundColor(FLinearColor(.035f, .045f, .055f, .98f))
+              [SNew(SVerticalBox)
+                + SVerticalBox::Slot().AutoHeight().Padding(12, 2, 12, 12)
+                  [SNew(STextBlock).Text(FText::FromString(TEXT("PAUSED  |  SENIOR SEND-OFF")))]
+                + SVerticalBox::Slot().AutoHeight().Padding(12, 0, 12, 12)
+                  [SNew(SHorizontalBox)
+                    + SHorizontalBox::Slot().AutoWidth().Padding(0, 0, 12, 0)
+                      [SNew(SButton).Text(FText::FromString(TEXT("RESUME  (ESC)")))
+                        .OnClicked_Lambda([this]() { ClosePauseMenu(); return FReply::Handled(); })]
+                    + SHorizontalBox::Slot().AutoWidth()
+                      [SNew(SButton).Text(FText::FromString(TEXT("RETURN TO LOBBY")))
+                        .OnClicked_Lambda([this]() { ReturnToLobby(); return FReply::Handled(); })]
+                    + SHorizontalBox::Slot().AutoWidth().Padding(12, 0, 0, 0)
+                      [SNew(SButton).Text(FText::FromString(TEXT("CHECKPOINT")))
+                        .IsEnabled_Lambda([this]() { return HasAuthority(); })
+                        .OnClicked_Lambda([this]() {
+                            ClosePauseMenu();
+                            if (UStoryCampaign* Story = GetGameInstance<UStoryCampaign>())
+                                Story->RespawnAtCheckpoint();
+                            return FReply::Handled();
+                        })]
+                    + SHorizontalBox::Slot().AutoWidth().Padding(12, 0, 0, 0)
+                      [SNew(SButton).Text_Lambda([this]() { return FText::FromString(
+                          bRestartConfirmationPending ? TEXT("CONFIRM RESTART") : TEXT("RESTART STORY")); })
+                        .IsEnabled_Lambda([this]() { return HasAuthority(); })
+                        .OnClicked_Lambda([this]() {
+                            if (!bRestartConfirmationPending) bRestartConfirmationPending = true;
+                            else
+                            {
+                                ClosePauseMenu();
+                                if (UStoryCampaign* Story = GetGameInstance<UStoryCampaign>()) Story->NewStory();
+                            }
+                            return FReply::Handled();
+                        })]]
+                + SVerticalBox::Slot().FillHeight(1)[MakeSeniorSettingsPanel()]]]];
+    Viewport->AddViewportWidgetContent(PauseWidget.ToSharedRef(), 300);
+    bPausedWorldForMenu = GetNetMode() == NM_Standalone && SetPause(true);
+    SetIgnoreMoveInput(true);
+    SetIgnoreLookInput(true);
+    bShowMouseCursor = true;
+    bEnableClickEvents = true;
+    FInputModeGameAndUI Mode;
+    Mode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+    Mode.SetHideCursorDuringCapture(false);
+    SetInputMode(Mode);
+    Viewport->SetMouseCaptureMode(EMouseCaptureMode::NoCapture);
+}
+void ASeniorLobbyController::ClosePauseMenu()
+{
+    if (!PauseWidget.IsValid()) return;
+    if (GetWorld() && GetWorld()->GetGameViewport())
+        GetWorld()->GetGameViewport()->RemoveViewportWidgetContent(PauseWidget.ToSharedRef());
+    PauseWidget.Reset();
+    bRestartConfirmationPending = false;
+    if (bPausedWorldForMenu) SetPause(false);
+    bPausedWorldForMenu = false;
+    ResetIgnoreMoveInput();
+    ResetIgnoreLookInput();
+    CaptureGameplayMouse();
+}
+void ASeniorLobbyController::TogglePauseMenu()
+{
+    if (PauseWidget.IsValid()) ClosePauseMenu();
+    else OpenPauseMenu();
 }
 void ASeniorLobbyController::ClientBeginStoryLoading_Implementation(int32 Chapter)
 {
     if (!IsLocalController()) return;
     RemoveLoadingWidget();
-    LoadingDestination = FString::Printf(TEXT("Chapter%02d"), FMath::Clamp(Chapter, 1, 3));
+    LoadingDestination = Chapter == 1 ? TEXT("Chapter01_House") :
+        FString::Printf(TEXT("Chapter%02d"), FMath::Clamp(Chapter, 1, 3));
     if (GetWorld() && GetWorld()->GetGameViewport())
     {
         LoadingWidget = MakeSeniorLoadingWidget(Chapter);
@@ -204,7 +309,7 @@ void ASeniorLobbyController::ClientCancelStoryLoading_Implementation() { RemoveL
 bool ASeniorLobbyController::InputKey(const FInputKeyEventArgs& Params)
 {
     if (Params.Key == EKeys::Escape && Params.Event == IE_Pressed && IsLocalController() && !IsLobby(this))
-    { ReturnToLobby(); return true; }
+    { TogglePauseMenu(); return true; }
     return Super::InputKey(Params);
 }
 bool ASeniorLobbyController::CanEditLobby() const
@@ -334,6 +439,7 @@ void ASeniorLobbyController::LeaveLobby()
 void ASeniorLobbyController::ReturnToLobby()
 {
     if (!IsLocalController() || !GetWorld()) return;
+    ClosePauseMenu();
     if (GetNetMode() == NM_ListenServer) GetWorld()->ServerTravel(LobbyMap.ToString() + TEXT("?") + LobbyOptions, true);
     else LeaveLobby();
 }

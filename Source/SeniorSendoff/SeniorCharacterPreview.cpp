@@ -17,9 +17,11 @@
 #include "Components/SceneComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMesh.h"
+#include "Engine/Engine.h"
 #include "Engine/TextureRenderTarget2D.h"
 #include "Engine/World.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/GameUserSettings.h"
 #include "HAL/PlatformTime.h"
 #include "Input/Reply.h"
 #include "InputCoreTypes.h"
@@ -99,6 +101,13 @@ public:
         if (!Capture.IsValid() || !Mesh.IsValid()) return;
 
         if (WantedCharacter != ShownCharacter) SetCharacter(WantedCharacter);
+        const FIntPoint DesiredSize = GetPreviewSize(WantedCharacter);
+        if (DesiredSize != CurrentRenderTargetSize)
+        {
+            RenderTarget->ResizeTarget(DesiredSize.X, DesiredSize.Y);
+            CurrentRenderTargetSize = DesiredSize;
+            bNeedsCapture = true;
+        }
         const int32 WantedWeapon=FMath::Clamp(WeaponIndex.Get(0),0,1);
         if(bRoom)Room.Update(WantedCharacter,WantedWeapon,FSeniorSelectionRoom::Time());
         if(WantedWeapon!=ShownWeapon)
@@ -158,7 +167,13 @@ public:
             if (Braxton.IsValid()) Braxton->PrestreamPreviewTextures();
             LastPrestreamTime = Now;
         }
-        const double FrameInterval = bInteractive ? 1.0 / 30.0 : 1.0 / 15.0;
+        // Scene captures render a second view of an animated, groomed character.
+        // Match their cadence to the player's quality preset so the lobby does
+        // not consume the frame budget before the player enters the house.
+        const int32 Quality = GetPreviewQuality();
+        const double FrameInterval = bInteractive
+            ? 1.0 / (Quality >= 3 ? 24.0 : Quality >= 2 ? 18.0 : 12.0)
+            : 1.0 / (Quality >= 2 ? 12.0 : 8.0);
         if (!bNeedsCapture && Now - LastCaptureTime < FrameInterval) return;
 
         USkeletalMeshComponent* Body = Mesh.Get();
@@ -498,7 +513,8 @@ private:
         RenderTarget->bAutoGenerateMips = bInteractive;
         RenderTarget->Filter = TF_Trilinear;
         RenderTarget->MipsSamplerFilter = TF_Bilinear;
-        RenderTarget->InitAutoFormat(bInteractive ? 1024 : 768, bInteractive ? 1024 : 768);
+        CurrentRenderTargetSize = GetPreviewSize(CharacterIndex.Get(0));
+        RenderTarget->InitAutoFormat(CurrentRenderTargetSize.X, CurrentRenderTargetSize.Y);
         RenderTarget->UpdateResourceImmediate(true);
 
         USceneCaptureComponent2D* Camera = NewObject<USceneCaptureComponent2D>(Actor, TEXT("PreviewCamera"));
@@ -601,10 +617,12 @@ private:
         Body->SetSkeletalMesh(Asset);
         Body->SetCastShadow(Index == 0);
         Capture->ShowFlags.SetDynamicShadows(Index == 0);
-        // Higher preview resolution reveals the pores/fabric while zooming.
-        RenderTarget->ResizeTarget(bInteractive && Index == 0 ? 1536 : bInteractive ? 1024 : 768,
-            bInteractive && Index == 0 ? 1536 : bInteractive ? 1024 : 768);
-        if(bRoom)RenderTarget->ResizeTarget(1600,900);
+        const FIntPoint DesiredSize = GetPreviewSize(Index);
+        if (DesiredSize != CurrentRenderTargetSize)
+        {
+            RenderTarget->ResizeTarget(DesiredSize.X, DesiredSize.Y);
+            CurrentRenderTargetSize = DesiredSize;
+        }
         UAnimSequence* Idle = SeniorRoster::Idle(Index);
         bHasAnimation = Idle != nullptr;
         if (Idle) Body->PlayAnimation(Idle, true);
@@ -671,6 +689,27 @@ private:
         if(Hit>=0 && Hit<2){if(OnWeapon)OnWeapon(Hit);return true;}
         return false;
     }
+    int32 GetPreviewQuality() const
+    {
+        const UGameUserSettings* Settings = GEngine ? GEngine->GetGameUserSettings() : nullptr;
+        // OverallScalabilityLevel becomes "custom" when the independent 3D
+        // render scale differs from a preset. Keep capture cost tied to the
+        // actual shadow/effects quality rather than that resolution choice.
+        const int32 Level = Settings ? FMath::Min(Settings->GetShadowQuality(),
+            Settings->GetVisualEffectQuality()) : 2;
+        return FMath::Clamp(Level, 0, 4);
+    }
+    FIntPoint GetPreviewSize(int32 Index) const
+    {
+        const int32 Quality = GetPreviewQuality();
+        if (bRoom)
+            return Quality >= 3 ? FIntPoint(1600, 900) :
+                   Quality >= 2 ? FIntPoint(1280, 720) : FIntPoint(960, 540);
+        const int32 Side = !bInteractive ? (Quality >= 2 ? 768 : 576) :
+                           Index == 0 ? (Quality >= 3 ? 1280 : Quality >= 2 ? 1024 : 768) :
+                                        (Quality >= 2 ? 1024 : 768);
+        return FIntPoint(Side, Side);
+    }
     FSeniorCharacterRoom Room;
     bool bRoom=false;
     bool bRoomValidated=false;
@@ -686,6 +725,7 @@ private:
     TWeakObjectPtr<USkeletalMeshComponent> Mesh;
     TWeakObjectPtr<USceneCaptureComponent2D> Capture;
     TStrongObjectPtr<UTextureRenderTarget2D> RenderTarget;
+    FIntPoint CurrentRenderTargetSize = FIntPoint::ZeroValue;
     TStrongObjectPtr<UMaterialInstanceDynamic> PreviewMaterial;
     TStrongObjectPtr<UMaterialInstanceDynamic> ShadowMaterial;
     FSlateBrush ShadowBrush;

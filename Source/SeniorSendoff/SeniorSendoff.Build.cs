@@ -5,7 +5,7 @@ public class SeniorSendoff : ModuleRules
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
-        PrivateDependencyModuleNames.AddRange(new[] { "Slate", "SlateCore", "UMG", "MoviePlayer", "Sockets", "HairStrandsCore", "ChaosCloth", "ClothingSystemRuntimeCommon", "ClothingSystemRuntimeInterface", "AnimGraphRuntime", "AnimationCore" });
+        PrivateDependencyModuleNames.AddRange(new[] { "Slate", "SlateCore", "UMG", "MoviePlayer", "Sockets", "Json", "HairStrandsCore", "ChaosCloth", "ClothingSystemRuntimeCommon", "ClothingSystemRuntimeInterface", "AnimGraphRuntime", "AnimationCore", "LiveLinkAnimationCore" });
         if (Target.bBuildEditor)
             PrivateDependencyModuleNames.AddRange(new[] { "ClothingSystemEditor", "ClothingSystemEditorInterface", "MeshDescription", "StaticMeshDescription" });
     }

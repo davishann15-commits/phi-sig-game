@@ -44,7 +44,20 @@ void ASeniorDouli::SetPhase(EDouliPhase Value)
     Phase=Value; PhaseStart=GetWorld()->GetTimeSeconds(); OnRep_Phase(); ForceNetUpdate();
     UE_LOG(LogTemp, Display, TEXT("DOULI_PHASE %s %d"), *GetName(), int32(Value));
 }
-void ASeniorDouli::OnRep_Phase() { if(Phase==EDouliPhase::Outbound) Spin=0; }
+void ASeniorDouli::OnRep_Phase()
+{
+    if (Phase==EDouliPhase::Outbound)
+    {
+        Spin=0;
+        ReleaseVisualStart=FirstPersonHat->GetComponentTransform();
+        bCatchVisualStartValid=false;
+    }
+    else if (Phase==EDouliPhase::Catching && !bCatchVisualStartValid)
+    {
+        CatchVisualStart=Hat->GetComponentTransform();
+        bCatchVisualStartValid=true;
+    }
+}
 void ASeniorDouli::DamageHit(const FHitResult& Hit)
 {
     auto* Pawn=Cast<AStoryFirstPersonCharacter>(GetOwner());
@@ -91,7 +104,11 @@ void ASeniorDouli::Tick(float DeltaSeconds)
         {
             const FRotator Aim=Pawn->GetControlRotation();
             const FVector View=Pawn->GetPawnViewLocation();
-            const FVector Launch=View+Aim.RotateVector(FVector(49,8,-25));
+            // The replicated projectile starts at the third-person hand so
+            // other players do not see it snap to the owner's camera. A short
+            // owner-only first-person visual bridges the camera grip to that
+            // world flight during the release frames below.
+            const FVector Launch=WorldGrip.GetLocation();
             FCollisionQueryParams Q(SCENE_QUERY_STAT(DouliRelease),false,Pawn);Q.AddIgnoredActor(this);
             FHitResult Obstacle,AimHit;
             FVector AimPoint=View+Aim.Vector()*MaxRange;
@@ -119,22 +136,56 @@ void ASeniorDouli::Tick(float DeltaSeconds)
             const FVector To=Target-GetActorLocation();
             // Recall is harmless and ignores scenery, preventing a stuck or lost weapon.
             const float Speed=ReturnSpeed+Age*900.f;
-            if (To.Size()<=Speed*DeltaSeconds+10 || Age>3.f) { SetActorTransform(WorldGrip); SetPhase(EDouliPhase::Catching); }
+            if (To.Size()<=Speed*DeltaSeconds+10 || Age>3.f)
+            {
+                CatchVisualStart=Hat->GetComponentTransform();
+                bCatchVisualStartValid=true;
+                SetActorTransform(WorldGrip);
+                SetPhase(EDouliPhase::Catching);
+            }
             else SetActorLocation(GetActorLocation()+To.GetSafeNormal()*Speed*DeltaSeconds);
         }
         else if (Phase==EDouliPhase::Catching && Age>=.24f) SetPhase(EDouliPhase::Ready);
     }
     const bool bHeld=IsHeld();
-    Hat->SetOwnerNoSee(bHeld);
-    FirstPersonHat->SetVisibility(bHeld && bLocal);
+    const bool bReleaseBridge=bLocal && Phase==EDouliPhase::Outbound && GetPhaseAge()<.14f;
+    Hat->SetOwnerNoSee(bHeld || bReleaseBridge);
+    FirstPersonHat->SetVisibility(bLocal && (bHeld || bReleaseBridge));
     if (bHeld)
     {
-        Hat->SetWorldTransform(WorldGrip); FirstPersonHat->SetWorldTransform(CameraGrip);
+        if (Phase==EDouliPhase::Catching && bCatchVisualStartValid)
+        {
+            const float U=FMath::SmoothStep(0.f,.24f,GetPhaseAge());
+            FTransform Visual;
+            Visual.Blend(CatchVisualStart,bLocal ? CameraGrip : WorldGrip,U);
+            if (bLocal) FirstPersonHat->SetWorldTransform(Visual);
+            else Hat->SetWorldTransform(Visual);
+        }
+        else
+        {
+            Hat->SetWorldTransform(WorldGrip);
+            FirstPersonHat->SetWorldTransform(CameraGrip);
+        }
     }
     else
     {
         Spin=FMath::Fmod(Spin+DeltaSeconds*1500.f,360.f);
         Hat->SetRelativeLocation(FVector::ZeroVector);
-        Hat->SetWorldRotation(FRotator(4.f*FMath::Sin(Spin*.017f),Spin,5.f));
+        const FQuat FlightRotation=FRotator(4.f*FMath::Sin(Spin*.017f),Spin,5.f).Quaternion();
+        if (bReleaseBridge)
+        {
+            const float U=FMath::SmoothStep(0.f,.14f,GetPhaseAge());
+            FTransform Visual;
+            Visual.Blend(ReleaseVisualStart,
+                FTransform(FlightRotation,Hat->GetComponentLocation(),FVector::OneVector),U);
+            FirstPersonHat->SetWorldTransform(Visual);
+            Hat->SetWorldRotation(FlightRotation);
+            Hat->SetWorldScale3D(FVector::OneVector);
+        }
+        else
+        {
+            Hat->SetWorldRotation(FlightRotation);
+            Hat->SetWorldScale3D(FVector::OneVector);
+        }
     }
 }

@@ -8,6 +8,7 @@
 		{"Name": "MetaHumanSDK", "Enabled": true},
 		{"Name": "HairStrands", "Enabled": true},
 		{"Name": "RigLogic", "Enabled": true},
+		{"Name": "LiveLink", "Enabled": true},
 		{
 			"Name": "MetaHumanCharacter",
 			"Enabled": true,
