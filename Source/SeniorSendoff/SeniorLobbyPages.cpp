@@ -327,30 +327,19 @@ private:
             Controller.IsValid()?Controller->GetWorld():nullptr,
             TAttribute<int32>::CreateLambda([this](){return PreviewCharacter;}),
             TAttribute<int32>::CreateLambda([this](){return PreviewWeapons[PreviewCharacter];}),
-            [this](int32 I){if(CanEdit())PreviewWeapons[PreviewCharacter]=I;},OnBack));
-        for(int32 Direction:{-1,1})
-            Place(Canvas,Direction<0?540:990,430,48,70,SNew(SButton).ButtonStyle(&CharacterButton())
-                .IsEnabled_Lambda([this](){return CanEdit();}).HAlign(HAlign_Center).VAlign(VAlign_Center)
-                .OnClicked_Lambda([this,Direction](){Browse(Direction);return FReply::Handled();})
-                [Text(Direction<0?TEXT("‹"):TEXT("›"),36,Cream)]);
-        Place(Canvas,540,771,520,30,SNew(STextBlock).Font(Font(18,true)).ColorAndOpacity(Cream).Justification(ETextJustify::Center)
-            .Text_Lambda([this](){return FText::FromString(FString::Printf(TEXT("%s   /   %02d OF %02d"),*SeniorRoster::Label(PreviewCharacter),PreviewCharacter+1,SeniorRoster::Count));}));
-        for(int32 I=0;I<SeniorRoster::Count;++I)
-            Place(Canvas,658+I*34,811,25,7,SNew(SButton).ButtonStyle(&FlatButton()).ContentPadding(0)
-                .IsEnabled_Lambda([this](){return CanEdit();})
-                .ButtonColorAndOpacity_Lambda([this,I](){return I==PreviewCharacter?FLinearColor(.78,.16,.21,1):FLinearColor(.095,.11,.13,1);})
-                .OnClicked_Lambda([this,I](){Browse(I-PreviewCharacter);return FReply::Handled();}));
-        Place(Canvas,562,842,510,24,Text(TEXT("DRAG: ROTATE   •   SCROLL: ZOOM   •   RIGHT-DRAG: PAN"),10,Muted));
+            [this](int32 I){if(CanEdit())PreviewWeapons[PreviewCharacter]=I;},
+            [this](int32 Direction){Browse(Direction);},OnBack));
         Place(Canvas,1110,726,430,45,Text(TEXT("CHOOSE A WEAPON FROM THE SHELF"),11,Cream,true));
         Place(Canvas,1110,751,430,40,SNew(STextBlock).Font(Font(11)).ColorAndOpacity(Muted).WrapTextAt(420)
-            .Text_Lambda([this](){return FText::FromString(PreviewCharacter==0 && PreviewWeapons[0]==0?
-                TEXT("dǒulì • Returning throw"):TEXT("Prototype weapon • Gameplay in development"));}));
+            .Text_Lambda([this](){return FText::FromString(PreviewCharacter==0?
+                (PreviewWeapons[0]==0?TEXT("dǒulì • Returning throw"):TEXT("Smackdown sauce • Sticky slowing area")):
+                TEXT("Prototype weapon • Gameplay in development"));}));
         Place(Canvas,1110,795,425,62,SNew(SButton).ButtonStyle(&CharacterButton(true)).HAlign(HAlign_Center).VAlign(VAlign_Center)
             .IsEnabled_Lambda([this](){return CanEdit()&&!SelectionMatches();})
             .OnClicked_Lambda([this](){ConfirmSelection();return FReply::Handled();})
             [SNew(STextBlock).Font(Font(17,true)).ColorAndOpacity(Cream)
                 .Text_Lambda([this](){return FText::FromString(SelectionMatches()?TEXT("EQUIPPED FOR LOBBY"):TEXT("CONFIRM CHARACTER & WEAPON"));})]);
-        Place(Canvas,1110,868,425,22,Text(TEXT("1 / 2  SELECT WEAPON     •     ENTER  CONFIRM"),10,Muted));
+        Place(Canvas,1110,868,425,22,Text(TEXT("1 / 2  SWITCH WEAPON     •     ENTER  CONFIRM"),10,Muted));
     }
 
     TSharedRef<SWidget> SettingsOption(const FString& Label, TFunction<bool()> IsActive,

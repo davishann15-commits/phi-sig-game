@@ -68,7 +68,7 @@ bool ASeniorBraxtonVisual::InitializeVisual(bool bPreview, bool bHideFromOwner)
         if (M->GetSkeletalMeshAsset() && M->GetSkeletalMeshAsset()->GetName().Contains(TEXT("Outfits")))
         {
             Garments.Add(M);
-            USkeletalMesh* Hoodie = LoadObject<USkeletalMesh>(nullptr, *(FString(BraxtonRoot)+TEXT("Details/Hoodie/SK_Braxton_HoodieOutfitV5")));
+            USkeletalMesh* Hoodie = LoadObject<USkeletalMesh>(nullptr, *(FString(BraxtonRoot)+TEXT("Details/Hoodie/SK_Braxton_HoodieOutfitV6")));
             if (Hoodie)
             {
                 M->SetLeaderPoseComponent(nullptr, true, true);

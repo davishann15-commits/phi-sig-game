@@ -2,6 +2,8 @@
 #include "SeniorLobby.h"
 #include "SeniorCharacterRoster.h"
 #include "SeniorBraxtonVisual.h"
+#include "SeniorRunnerVisual.h"
+#include "SeniorFixerVisual.h"
 #include "SeniorLobbyAtmosphere.h"
 #include "StoryCampaign.h"
 #include "SeniorDouli.h"
@@ -10,6 +12,7 @@
 #include "Components/StaticMeshComponent.h"
 #if WITH_EDITOR
 #include "AssetCompilingManager.h"
+#include "Animation/AnimSequence.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
@@ -79,6 +82,48 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
             if (!Check(NativeCount == 1 && !Pawn->GetMesh()->IsVisible(),
                 TEXT("Braxton needs exactly one native replacement and no visible legacy body"))) return false;
             UE_LOG(LogTemp,Display,TEXT("LOBBY_TEST: Native Braxton replacement and teammate visibility verified"));
+        }
+        if (Selected->CharacterIndex == 1 && Pawn->GetNetMode() != NM_DedicatedServer
+            && !FParse::Param(FCommandLine::Get(), TEXT("RunnerLegacyVisual")))
+        {
+            int32 NativeCount = 0;
+            for (ASeniorRunnerVisual* Visual : TActorRange<ASeniorRunnerVisual>(Pawn->GetWorld()))
+                if (Visual->GetOwner() == Pawn)
+                {
+                    ++NativeCount;
+                    AActor* Native = Visual->GetNativeCharacter();
+                    if (!Check(Native && !Native->IsHidden() && Native->GetOwner() == Pawn,
+                        TEXT("Native Runner body is missing, hidden or has the wrong owner"))) return false;
+                    TInlineComponentArray<UMeshComponent*> Parts(Native);
+                    for (const UMeshComponent* Part : Parts)
+                        if (!Check(Part->bOwnerNoSee && !Part->bOnlyOwnerSee,
+                            TEXT("Native Runner must be hidden from its first-person owner but visible to teammates"))) return false;
+                }
+            if (!Check(NativeCount == 1 && !Pawn->GetMesh()->IsVisible(),
+                TEXT("Runner needs exactly one native replacement and no visible legacy body"))) return false;
+            UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: Native Runner replacement and teammate visibility verified"));
+        }
+        if (Selected->CharacterIndex == 2 && Pawn->GetNetMode() != NM_DedicatedServer
+            && !FParse::Param(FCommandLine::Get(), TEXT("FixerLegacyVisual")))
+        {
+            int32 NativeCount = 0;
+            for (ASeniorFixerVisual* Visual : TActorRange<ASeniorFixerVisual>(Pawn->GetWorld()))
+                if (Visual->GetOwner() == Pawn)
+                {
+                    ++NativeCount;
+                    AActor* Native = Visual->GetNativeCharacter();
+                    if (!Check(Native && !Native->IsHidden() && Native->GetOwner() == Pawn,
+                        TEXT("Native Fixer body is missing, hidden or has the wrong owner"))) return false;
+                    if (!Check(Visual->GetBodyMesh() && Visual->GetIdleAnimation() && Visual->GetWalkAnimation(),
+                        TEXT("Native Fixer body or movement animation is missing"))) return false;
+                    TInlineComponentArray<UMeshComponent*> Parts(Native);
+                    for (const UMeshComponent* Part : Parts)
+                        if (!Check(Part->bOwnerNoSee && !Part->bOnlyOwnerSee,
+                            TEXT("Native Fixer must be hidden from its first-person owner but visible to teammates"))) return false;
+                }
+            if (!Check(NativeCount == 1 && !Pawn->GetMesh()->IsVisible(),
+                TEXT("Fixer needs exactly one native replacement and no visible legacy body"))) return false;
+            UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: Native Fixer replacement and teammate visibility verified"));
         }
         return true;
     };
@@ -268,7 +313,7 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
         const float WalkSpeed = Pawn->GetCharacterMovement()->MaxWalkSpeed;
         const float JumpSpeed = Pawn->GetCharacterMovement()->JumpZVelocity;
         const float Radius = Pawn->GetCapsuleComponent()->GetUnscaledCapsuleRadius();
-        float ShortHeight = 0, TallHeight = 0, ShortEye = 0, TallEye = 0;
+        float ShortHeight = MAX_flt, TallHeight = 0, ShortEye = 0, TallEye = 0;
         for (int32 Index = 0; Index < SeniorRoster::Count; ++Index)
         {
             const float FeetBefore = Pawn->GetActorLocation().Z - Pawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
@@ -276,13 +321,15 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
             Player->OnRep_CharacterIndex();
             if (!CheckCharacterAppearance(Pawn)) return;
             const FBoxSphereBounds Bounds = Pawn->GetMesh()->GetSkeletalMeshAsset()->GetBounds();
-            const float Height = float(Bounds.BoxExtent.Z * 2.0);
+            const bool bNativeFixer = Index == 2 && !FParse::Param(FCommandLine::Get(), TEXT("FixerLegacyVisual"));
+            const float Height = bNativeFixer ? ASeniorFixerVisual::HeightCm : float(Bounds.BoxExtent.Z * 2.0);
+            const float LowestPoint = bNativeFixer ? 0.f : float(Bounds.Origin.Z - Bounds.BoxExtent.Z);
             const float HalfHeight = Pawn->GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight();
             const float FeetAfter = Pawn->GetActorLocation().Z - Pawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
             const float EyeHeight = Pawn->FirstPersonCamera->GetRelativeLocation().Z + HalfHeight;
             if (!Check(FMath::IsNearlyEqual(Height, HalfHeight * 2, .25f)
                 && FMath::IsNearlyEqual(float(FeetBefore), FeetAfter, .25f), TEXT("Stature update moved the feet or mismatched the collision height"))) return;
-            if (!Check(FMath::IsNearlyEqual(float(Pawn->GetMesh()->GetRelativeLocation().Z + Bounds.Origin.Z - Bounds.BoxExtent.Z), -HalfHeight, .25f)
+            if (!Check(FMath::IsNearlyEqual(float(Pawn->GetMesh()->GetRelativeLocation().Z + LowestPoint), -HalfHeight, .25f)
                 && FMath::IsNearlyEqual(EyeHeight, Height * .935f, .25f), TEXT("Mesh floor or eye level does not match character height"))) return;
             if (!Check(Pawn->GetBaseTranslationOffset().Equals(Pawn->GetMesh()->GetRelativeLocation(), .1f),
                 TEXT("Network smoothing still uses a different character's mesh offset"))) return;
@@ -291,8 +338,8 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
             if (!Check(FMath::IsNearlyEqual(Radius, Pawn->GetCapsuleComponent()->GetUnscaledCapsuleRadius())
                 && FMath::IsNearlyEqual(WalkSpeed, Pawn->GetCharacterMovement()->MaxWalkSpeed)
                 && FMath::IsNearlyEqual(JumpSpeed, Pawn->GetCharacterMovement()->JumpZVelocity), TEXT("Stature update changed movement balance"))) return;
-            if (Index == 2) { TallHeight = Height; TallEye = EyeHeight; }
-            if (Index == 6) { ShortHeight = Height; ShortEye = EyeHeight; }
+            if (Height > TallHeight) { TallHeight = Height; TallEye = EyeHeight; }
+            if (Height < ShortHeight) { ShortHeight = Height; ShortEye = EyeHeight; }
             UE_LOG(LogTemp, Display, TEXT("CHARACTER_DIMENSIONS: C%02d height=%.2f eye=%.2f half=%.2f"), Index + 1, Height, EyeHeight, HalfHeight);
         }
         if (!Check(TallHeight - ShortHeight >= 12.f && TallEye - ShortEye >= 11.f,
@@ -483,11 +530,14 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
         }
         int32 DisplayedCharacter=Player->CharacterIndex;
         if(PreviewPage==TEXT("Character")) FParse::Value(FCommandLine::Get(),TEXT("LobbyPreviewCharacter="),DisplayedCharacter);
-        const bool bNativeReview = !FParse::Param(FCommandLine::Get(), TEXT("BraxtonLegacyVisual"))
+        const bool bNativeBraxtonReview = !FParse::Param(FCommandLine::Get(), TEXT("BraxtonLegacyVisual"))
             && (PreviewPage == TEXT("Character") || PreviewPage == TEXT("Lobby")) && DisplayedCharacter == 0;
+        const bool bNativeFixerReview = !FParse::Param(FCommandLine::Get(), TEXT("FixerLegacyVisual"))
+            && (PreviewPage == TEXT("Character") || PreviewPage == TEXT("Lobby")) && DisplayedCharacter == 2;
+        const bool bNativeReview = bNativeBraxtonReview || bNativeFixerReview;
         if (Step == 0 && Lobby && Now - Started > (bNativeReview ? 24 : 5) && RenderAssetsReady())
         {
-            if (bNativeReview)
+            if (bNativeBraxtonReview)
             {
                 int32 NativeActors = 0;
                 for (ASeniorBraxtonVisual* Visual : TActorRange<ASeniorBraxtonVisual>(World))
@@ -522,6 +572,46 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
                         && !Check(SimParticles > 0, TEXT("Native garment simulation has no moving particles"))) return;
                 }
                 if (!Check(NativeActors > 0, TEXT("Native Braxton preview was not created"))) return;
+            }
+            if (bNativeFixerReview)
+            {
+                int32 VisibleNativeActors = 0;
+                for (ASeniorFixerVisual* Visual : TActorRange<ASeniorFixerVisual>(World))
+                {
+                    AActor* Native = Visual->GetNativeCharacter();
+                    if (!Check(Native != nullptr, TEXT("Native Fixer assembly failed to spawn"))) return;
+                    if (Native->IsHidden()) continue; // Cached previews need not be active.
+                    ++VisibleNativeActors;
+                    USkeletalMeshComponent* Body = Visual->GetBodyMesh();
+                    if (!Check(Body && Body->GetSkeletalMeshAsset() && Body->IsVisible(),
+                        TEXT("Fixer's native body is missing or invisible"))) return;
+                    if (!Check(Visual->GetIdleAnimation() && Visual->GetWalkAnimation(),
+                        TEXT("Fixer's native idle or walk animation is missing"))) return;
+                    if (!Check(FMath::IsNearlyEqual(ASeniorFixerVisual::HeightCm, 168.f, .01f)
+                        && Native->GetActorRelativeScale3D().Equals(FVector::OneVector, .001f),
+                        TEXT("Fixer must retain the authored 168 cm proportions without extra native-body scaling"))) return;
+                    USkeletalMeshComponent* Face = nullptr;
+                    USkeletalMeshComponent* Earbuds = nullptr;
+                    TInlineComponentArray<USkeletalMeshComponent*> FixerMeshes(Native);
+                    for (USkeletalMeshComponent* Mesh : FixerMeshes)
+                    {
+                        if (Mesh->GetFName() == TEXT("Face")) Face = Mesh;
+                        if (Mesh->GetFName() == TEXT("FixerWiredEarbuds")) Earbuds = Mesh;
+                    }
+                    if (!Check(Face && Face->GetSkeletalMeshAsset() &&
+                        Face->GetSkeletalMeshAsset()->GetName().Contains(TEXT("Fixer_Lean")),
+                        TEXT("Fixer's independently sculpted face was not loaded"))) return;
+                    if (!Check(Earbuds && Earbuds->IsVisible() && Earbuds->GetSkeletalMeshAsset() &&
+                        Earbuds->LeaderPoseComponent.Get() == Body &&
+                        !Earbuds->Bounds.Origin.ContainsNaN() && Earbuds->Bounds.BoxExtent.GetMax() > 10.f,
+                        TEXT("Fixer's wired earbuds are missing or not following his pose"))) return;
+                    UE_LOG(LogTemp,Display,TEXT("FIXER_FACE_AND_EARBUDS_VERIFIED face=%s earbuds=%s"),
+                        *Face->GetSkeletalMeshAsset()->GetName(),*Earbuds->GetSkeletalMeshAsset()->GetName());
+                    UE_LOG(LogTemp, Display, TEXT("FIXER_VISUAL_VERIFIED: body=%s idle=%s walk=%s heightCm=%.1f"),
+                        *Body->GetSkeletalMeshAsset()->GetName(), *Visual->GetIdleAnimation()->GetName(),
+                        *Visual->GetWalkAnimation()->GetName(), ASeniorFixerVisual::HeightCm);
+                }
+                if (!Check(VisibleNativeActors > 0, TEXT("Native Fixer preview was not visible"))) return;
             }
             if (PreviewPage != TEXT("Lobby"))
             {
@@ -565,7 +655,14 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
                 {
                     if (!Actor->ActorHasTag(TEXT("SeniorCharacterPreview"))) continue;
                     const auto* Capture = Actor->FindComponentByClass<USceneCaptureComponent2D>();
-                    if (Capture && Capture->OrthoWidth < 30.f && Capture->GetRelativeLocation().Z > 150.f)
+                    const bool bFramedInOriginalPreview = Capture &&
+                        Capture->ProjectionType == ECameraProjectionMode::Orthographic &&
+                        Capture->OrthoWidth < 30.f && Capture->GetRelativeLocation().Z > 150.f;
+                    const bool bFramedInSelectionRoom = Capture &&
+                        Capture->ProjectionType == ECameraProjectionMode::Perspective &&
+                        Capture->GetRelativeLocation().X < 250.f &&
+                        Capture->GetRelativeLocation().Z > (DisplayedCharacter == 2 ? 180.f : 220.f);
+                    if (bFramedInOriginalPreview || bFramedInSelectionRoom)
                     {
                         bFaceFramed = true;
                         UE_LOG(LogTemp, Display, TEXT("LOBBY_FACE_PREVIEW: width=%.2f aimZ=%.2f"),
@@ -573,13 +670,16 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
                     }
                 }
                 if (!Check(bFaceFramed, TEXT("Close-up zoom did not move the camera to the face"))) return;
-                const auto* Skin = LoadObject<UTexture2D>(nullptr,
-                    TEXT("/Game/Characters/Cobble/C01/T_C01_SkinReference.T_C01_SkinReference"));
-                if (!Check(Skin != nullptr, TEXT("Face preview skin texture is missing"))) return;
-                // Await the visible preview's short residency lease, not a global streaming override.
-                if (!bNativeReview && Skin->GetNumResidentMips() < Skin->GetNumMips()) return;
-                UE_LOG(LogTemp, Display, TEXT("LOBBY_FACE_TEXTURE: residentMips=%d totalMips=%d"),
-                    Skin->GetNumResidentMips(), Skin->GetNumMips());
+                if (DisplayedCharacter == 0)
+                {
+                    const auto* Skin = LoadObject<UTexture2D>(nullptr,
+                        TEXT("/Game/Characters/Cobble/C01/T_C01_SkinReference.T_C01_SkinReference"));
+                    if (!Check(Skin != nullptr, TEXT("Face preview skin texture is missing"))) return;
+                    // Await the visible preview's short residency lease, not a global streaming override.
+                    if (!bNativeReview && Skin->GetNumResidentMips() < Skin->GetNumMips()) return;
+                    UE_LOG(LogTemp, Display, TEXT("LOBBY_FACE_TEXTURE: residentMips=%d totalMips=%d"),
+                        Skin->GetNumResidentMips(), Skin->GetNumMips());
+                }
             }
             const FString Screenshot = FPaths::ProjectSavedDir() / FString::Printf(TEXT("Screenshots/LobbyV2_%s%s.png"), *PreviewPage, Variant);
             UE_LOG(LogTemp, Display, TEXT("LOBBY_VISUAL: Capturing rendered %s page with Slate UI"), *PreviewPage);

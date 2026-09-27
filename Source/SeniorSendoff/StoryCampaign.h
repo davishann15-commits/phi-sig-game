@@ -18,7 +18,10 @@ class USkeletalMeshComponent;
 class UInputAction;
 class UInputMappingContext;
 class ASeniorBraxtonVisual;
+class ASeniorRunnerVisual;
+class ASeniorFixerVisual;
 class ASeniorDouli;
+class ASeniorSaucePacket;
 struct FInputActionValue;
 
 UCLASS()
@@ -113,9 +116,13 @@ public:
     virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out) const override;
     UPROPERTY(Replicated, BlueprintReadOnly, Category="Weapon") TObjectPtr<ASeniorDouli> Douli;
+    UPROPERTY(Replicated, BlueprintReadOnly, Category="Weapon") TObjectPtr<ASeniorSaucePacket> SaucePacket;
+    UFUNCTION(BlueprintCallable, Category="Weapon") void ThrowEquippedWeapon();
+    UFUNCTION(Server, Reliable) void ServerThrowEquippedWeapon();
     UFUNCTION(BlueprintCallable, Category="Weapon") void ThrowDouli();
     UFUNCTION(Server, Reliable) void ServerThrowDouli();
     FTransform DouliGrip(bool bFirstPerson) const;
+    FTransform SauceGrip(bool bFirstPerson) const;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="First Person") TObjectPtr<UCameraComponent> FirstPersonCamera;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="First Person") TObjectPtr<USkeletalMeshComponent> FirstPersonArms;
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="First Person") FTransform ArmsRelativeTransform = FTransform(FRotator::ZeroRotator, FVector(8, 0, -155));
@@ -135,6 +142,8 @@ private:
     UPROPERTY(Transient) TObjectPtr<UAnimSequence> CurrentBodyAnimation;
     UPROPERTY(Transient) TObjectPtr<UAnimSequence> CurrentArmsAnimation;
     UPROPERTY(Transient) TObjectPtr<ASeniorBraxtonVisual> BraxtonVisual;
+    UPROPERTY(Transient) TObjectPtr<ASeniorRunnerVisual> RunnerVisual;
+    UPROPERTY(Transient) TObjectPtr<ASeniorFixerVisual> FixerVisual;
     int32 AppliedCharacterIndex = INDEX_NONE;
     bool bWalkingAnimation = false;
     float DouliFlightBlend = 0;

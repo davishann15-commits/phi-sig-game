@@ -2,7 +2,10 @@
 #include "SeniorLobbyUI.h"
 #include "SeniorCharacterRoster.h"
 #include "SeniorBraxtonVisual.h"
+#include "SeniorRunnerVisual.h"
+#include "SeniorFixerVisual.h"
 #include "SeniorDouli.h"
+#include "SeniorSauce.h"
 #include "SeniorDouliAnim.h"
 #include "Animation/AnimInstance.h"
 #include "Animation/AnimSequence.h"
@@ -36,6 +39,7 @@
 #if WITH_EDITOR
 void TickStorySmokeTest(UWorld* World);
 void TickDouliSmokeTest(AStoryFirstPersonCharacter* Pawn);
+void TickSauceSmokeTest(AStoryFirstPersonCharacter* Pawn);
 #endif
 
 void UStoryCampaign::Init()
@@ -44,6 +48,7 @@ void UStoryCampaign::Init()
 #if WITH_EDITOR
     FString TestMode;
     if (FParse::Param(FCommandLine::Get(),TEXT("DouliTest"))) SaveSlot=TEXT("SeniorSendoff_DouliAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("SauceTest"))) SaveSlot=TEXT("SeniorSendoff_SauceAutomationOnly");
     if (FParse::Value(FCommandLine::Get(), TEXT("StorySmokeTest="), TestMode)) SaveSlot = TEXT("SeniorSendoff_AutomationOnly");
     else if (FParse::Value(FCommandLine::Get(), TEXT("LobbySmokeTest="), TestMode)) SaveSlot = TEXT("SeniorSendoff_LobbyAutomationOnly");
 #endif
@@ -303,6 +308,7 @@ void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
     Super::Tick(DeltaSeconds);
     const auto* Selection=GetPlayerState<ASeniorLobbyPlayerState>();
     const bool Equipped=Selection && Selection->CharacterIndex==0 && Selection->LoadoutIndex==0;
+    const bool SauceEquipped=Selection && Selection->CharacterIndex==0 && Selection->LoadoutIndex==1;
     if (HasAuthority() && Equipped && !Douli)
     {
         FActorSpawnParameters P; P.Owner=this; P.Instigator=this;
@@ -310,6 +316,13 @@ void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
         Douli=GetWorld()->SpawnActor<ASeniorDouli>(GetActorLocation(),GetActorRotation(),P);
     }
     if (HasAuthority() && !Equipped && Douli) { Douli->Destroy(); Douli=nullptr; }
+    if (HasAuthority() && SauceEquipped && !SaucePacket)
+    {
+        FActorSpawnParameters P;P.Owner=this;P.Instigator=this;
+        P.SpawnCollisionHandlingOverride=ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+        SaucePacket=GetWorld()->SpawnActor<ASeniorSaucePacket>(GetActorLocation(),GetActorRotation(),P);
+    }
+    if (HasAuthority() && !SauceEquipped && SaucePacket) { SaucePacket->Destroy();SaucePacket=nullptr; }
     float Motion=0;
     if (Douli)
     {
@@ -330,18 +343,26 @@ void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
         A->BaseSequence=CurrentArmsAnimation; A->bFirstPerson=true; A->bEquipped=Equipped; A->Motion=Motion; A->FlightBlend=DouliFlightBlend;
     }
     if (BraxtonVisual) BraxtonVisual->SetMoveSpeed(GetVelocity().Size2D());
+    else if (RunnerVisual) RunnerVisual->SetMoveSpeed(GetVelocity().Size2D());
+    else if (FixerVisual) FixerVisual->SetMoveSpeed(GetVelocity().Size2D());
     else UpdateBodyAnimation();
     if (AppliedCharacterIndex == 0 && !BraxtonVisual && GetNetMode() != NM_DedicatedServer)
         ClothMotion.Update(GetMesh(), DeltaSeconds, GetActorRotation().Yaw, GetVelocity().Size2D());
 #if WITH_EDITOR
     TickDouliSmokeTest(this);
+    TickSauceSmokeTest(this);
 #endif
 }
 void AStoryFirstPersonCharacter::EndPlay(const EEndPlayReason::Type Reason)
 {
     if (Douli && HasAuthority()) Douli->Destroy();
+    if (SaucePacket && HasAuthority()) SaucePacket->Destroy();
     if (BraxtonVisual) BraxtonVisual->Destroy();
     BraxtonVisual = nullptr;
+    if (RunnerVisual) RunnerVisual->Destroy();
+    RunnerVisual = nullptr;
+    if (FixerVisual) FixerVisual->Destroy();
+    FixerVisual = nullptr;
     Super::EndPlay(Reason);
 }
 void AStoryFirstPersonCharacter::PossessedBy(AController* NewController)
@@ -373,6 +394,8 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
     const int32 Index = SeniorRoster::IsValidIndex(State->CharacterIndex) ? State->CharacterIndex : 0;
     if (AppliedCharacterIndex == Index) return;
     if (BraxtonVisual) { BraxtonVisual->Destroy(); BraxtonVisual = nullptr; }
+    if (RunnerVisual) { RunnerVisual->Destroy(); RunnerVisual = nullptr; }
+    if (FixerVisual) { FixerVisual->Destroy(); FixerVisual = nullptr; }
     GetMesh()->SetVisibility(true, false);
     GetMesh()->SetComponentTickEnabled(true);
     AppliedCharacterIndex = Index;
@@ -413,6 +436,12 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
                 for (int32 Slot = 0; Slot < Arms->GetMaterials().Num(); ++Slot)
                     if (Arms->GetMaterials()[Slot].MaterialSlotName == TEXT("Braxton_DetailedCloth"))
                         FirstPersonArms->SetMaterial(Slot, Hoodie);
+        if (Index == 2 && !FParse::Param(FCommandLine::Get(), TEXT("FixerLegacyVisual")))
+            if (UMaterialInterface* Skin = LoadObject<UMaterialInterface>(nullptr,
+                TEXT("/Game/MetaHumans/Fixer/MH_Fixer/Details/MI_FixerFirstPersonSkin.MI_FixerFirstPersonSkin")))
+                for (int32 Slot = 0; Slot < Arms->GetMaterials().Num(); ++Slot)
+                    if (Arms->GetMaterials()[Slot].MaterialSlotName.ToString().Contains(TEXT("Skin")))
+                        FirstPersonArms->SetMaterial(Slot, Skin);
         CurrentArmsAnimation = SeniorRoster::ArmsIdle(Index);
         FirstPersonArms->SetAnimationMode(EAnimationMode::AnimationSingleNode);
         if (CurrentArmsAnimation) FirstPersonArms->PlayAnimation(CurrentArmsAnimation, true);
@@ -435,13 +464,50 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
         }
         else if (NewVisual) NewVisual->Destroy();
     }
+    if (Index == 1 && GetNetMode() != NM_DedicatedServer
+        && !FParse::Param(FCommandLine::Get(), TEXT("RunnerLegacyVisual")))
+    {
+        FActorSpawnParameters Params;
+        Params.Owner = this;
+        Params.ObjectFlags = RF_Transient;
+        Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+        ASeniorRunnerVisual* NewVisual = GetWorld()->SpawnActor<ASeniorRunnerVisual>(
+            GetMesh()->GetComponentLocation(), GetMesh()->GetComponentRotation(), Params);
+        if (NewVisual && NewVisual->InitializeVisual(false, true))
+        {
+            RunnerVisual = NewVisual;
+            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+            GetMesh()->SetVisibility(false, false);
+            GetMesh()->SetComponentTickEnabled(false);
+        }
+        else if (NewVisual) NewVisual->Destroy();
+    }
+    if (Index == 2 && GetNetMode() != NM_DedicatedServer
+        && !FParse::Param(FCommandLine::Get(), TEXT("FixerLegacyVisual")))
+    {
+        FActorSpawnParameters Params;
+        Params.Owner = this;
+        Params.ObjectFlags = RF_Transient;
+        Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+        ASeniorFixerVisual* NewVisual = GetWorld()->SpawnActor<ASeniorFixerVisual>(
+            GetMesh()->GetComponentLocation(), GetMesh()->GetComponentRotation(), Params);
+        if (NewVisual && NewVisual->InitializeVisual(false, true))
+        {
+            FixerVisual = NewVisual;
+            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+            GetMesh()->SetVisibility(false, false);
+            GetMesh()->SetComponentTickEnabled(false);
+        }
+        else if (NewVisual) NewVisual->Destroy();
+    }
 }
 void AStoryFirstPersonCharacter::ApplyCharacterDimensions(USkeletalMesh* Body)
 {
     if (!Body) return;
     const FBoxSphereBounds Bounds = Body->GetBounds();
-    const float Height = FMath::Clamp(float(Bounds.BoxExtent.Z * 2.0), 140.0f, 220.0f);
-    const float LowestPoint = float(Bounds.Origin.Z - Bounds.BoxExtent.Z);
+    const bool bNativeFixer = AppliedCharacterIndex == 2 && !FParse::Param(FCommandLine::Get(), TEXT("FixerLegacyVisual"));
+    const float Height = bNativeFixer ? ASeniorFixerVisual::HeightCm : FMath::Clamp(float(Bounds.BoxExtent.Z * 2.0), 140.0f, 220.0f);
+    const float LowestPoint = bNativeFixer ? 0.f : float(Bounds.Origin.Z - Bounds.BoxExtent.Z);
     const float OldHalfHeight = GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight();
     const float HalfHeight = Height * 0.5f;
     GetCapsuleComponent()->SetCapsuleHalfHeight(HalfHeight, false);
@@ -485,8 +551,8 @@ void AStoryFirstPersonCharacter::SetupPlayerInputComponent(UInputComponent* Play
 {
     Super::SetupPlayerInputComponent(PlayerInputComponent);
     ConfigureLocalInput();
-    PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowDouli);
-    PlayerInputComponent->BindKey(EKeys::Gamepad_RightTrigger,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowDouli);
+    PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowEquippedWeapon);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_RightTrigger,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowEquippedWeapon);
     if (UEnhancedInputComponent* Enhanced = Cast<UEnhancedInputComponent>(PlayerInputComponent))
     {
         if (MoveAction) Enhanced->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AStoryFirstPersonCharacter::Move);
@@ -501,7 +567,21 @@ void AStoryFirstPersonCharacter::SetupPlayerInputComponent(UInputComponent* Play
 }
 void AStoryFirstPersonCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
-    Super::GetLifetimeReplicatedProps(OutLifetimeProps); DOREPLIFETIME(AStoryFirstPersonCharacter,Douli);
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,Douli);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,SaucePacket);
+}
+void AStoryFirstPersonCharacter::ThrowEquippedWeapon()
+{
+    if(APlayerController* PC=Cast<APlayerController>(Controller);PC && PC->bShowMouseCursor)return;
+    ServerThrowEquippedWeapon();
+}
+void AStoryFirstPersonCharacter::ServerThrowEquippedWeapon_Implementation()
+{
+    const auto* State=GetPlayerState<ASeniorLobbyPlayerState>();
+    if(!State || State->CharacterIndex!=0)return;
+    if(State->LoadoutIndex==0 && Douli)Douli->BeginThrow();
+    else if(State->LoadoutIndex==1 && SaucePacket)SaucePacket->BeginThrow();
 }
 void AStoryFirstPersonCharacter::ThrowDouli()
 {
@@ -529,6 +609,18 @@ FTransform AStoryFirstPersonCharacter::DouliGrip(bool bFirstPerson) const
         return FTransform(GetActorRotation(),Hand-GetActorRightVector()*23+FVector(0,0,-1));
     }
     return FTransform(GetActorRotation(),GetActorLocation()+GetActorForwardVector()*35+GetActorRightVector()*8+FVector(0,0,15));
+}
+FTransform AStoryFirstPersonCharacter::SauceGrip(bool bFirstPerson) const
+{
+    if(bFirstPerson && FirstPersonCamera)
+        return FTransform(FirstPersonCamera->GetComponentQuat()*FRotator(0,180,0).Quaternion(),
+            FirstPersonCamera->GetComponentTransform().TransformPosition(FVector(43,19,-14)));
+    if(BraxtonVisual && BraxtonVisual->GetBodyMesh())
+    {
+        const FVector Hand=BraxtonVisual->GetBodyMesh()->GetSocketLocation(TEXT("hand_r"));
+        return FTransform(GetActorRotation(),Hand-GetActorRightVector()*5+FVector(0,0,-5));
+    }
+    return FTransform(GetActorRotation(),GetActorLocation()+GetActorForwardVector()*35+GetActorRightVector()*10+FVector(0,0,12));
 }
 void AStoryFirstPersonCharacter::Move(const FInputActionValue& Value)
 {
@@ -686,10 +778,10 @@ void AStoryHUD::DrawHUD()
     Text(FString::Printf(TEXT("CHAPTER %d / 3    |    CHECKPOINT %d / 2    |    %s"), Story->CurrentChapter(),
         Checkpoint, *UStoryCampaign::DifficultyName(Difficulty)), 34*S, 66*S, FLinearColor::White);
     Text(TEXT("Reach both markers, then the chapter exit."), 34*S, 98*S, FLinearColor(.7f,.8f,.9f));
-    if (ArmedPawn && ArmedPawn->Douli)
+    if (ArmedPawn && (ArmedPawn->Douli || ArmedPawn->SaucePacket))
     {
         DrawRect(Ink,18*S,H-60*S,340*S,40*S);
-        Text(ArmedPawn->Douli->StatusText(),30*S,H-49*S,Gold,.85f);
+        Text(ArmedPawn->SaucePacket?ArmedPawn->SaucePacket->StatusText():ArmedPawn->Douli->StatusText(),30*S,H-49*S,Gold,.85f);
         DrawLine(W*.5f-5,H*.5f,W*.5f+5,H*.5f,FLinearColor::White);
         DrawLine(W*.5f,H*.5f-5,W*.5f,H*.5f+5,FLinearColor::White);
 #if PLATFORM_IOS || PLATFORM_ANDROID
@@ -729,14 +821,14 @@ void AStoryHUD::DrawHUD()
             PlayerOwner->GetInputTouchState(ETouchIndex::Type(Finger),TX,TY,Down);
             bThrowTouch|=Down && TX>=W-150*S && TX<=W-20*S && TY>=H-100*S && TY<=H-35*S;
         }
-        if(bThrowTouch && !bThrowTouchPressed && ArmedPawn && ArmedPawn->Douli) ArmedPawn->ServerThrowDouli();
+        if(bThrowTouch && !bThrowTouchPressed && ArmedPawn && (ArmedPawn->Douli || ArmedPawn->SaucePacket)) ArmedPawn->ServerThrowEquippedWeapon();
         bThrowTouchPressed=bThrowTouch;
         PlayerOwner->GetInputTouchState(ETouchIndex::Touch1, X, Y, Pressed);
         if (!Pressed) { PlayerOwner->GetMousePosition(X,Y); Pressed = PlayerOwner->IsInputKeyDown(EKeys::LeftMouseButton); }
         if (Pressed && !bWasPressed)
         {
-            if (ArmedPawn && ArmedPawn->Douli && X>=W-150*S && Y>=H-100*S && X<=W-20*S && Y<=H-35*S)
-                ArmedPawn->ServerThrowDouli();
+            if (ArmedPawn && (ArmedPawn->Douli || ArmedPawn->SaucePacket) && X>=W-150*S && Y>=H-100*S && X<=W-20*S && Y<=H-35*S)
+                ArmedPawn->ServerThrowEquippedWeapon();
             if (X >= BX && X <= BX+BW && Y >= 18*S && Y <= 18*S+BH)
             {
                 if (ASeniorLobbyController* PC = Cast<ASeniorLobbyController>(PlayerOwner)) PC->ReturnToLobby();

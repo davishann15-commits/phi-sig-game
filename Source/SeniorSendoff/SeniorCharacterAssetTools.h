@@ -21,5 +21,11 @@ public:
     UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
     static bool ShapeBraxtonHair(UGroomAsset* Groom);
     UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
+    static bool ShapeFixerShortMullet(UGroomAsset* Groom);
+    UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
+    static bool PrepareFixerLeanSource(UObject* Character);
+    UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
+    static bool BakeFixerLocalShape(UObject* Character);
+    UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
     static bool MatchBraxtonGarmentBindPose(USkeletalMesh* Outfit, USkeletalMesh* Body);
 };

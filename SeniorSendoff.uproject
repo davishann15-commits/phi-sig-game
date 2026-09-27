@@ -8,6 +8,7 @@
 		{"Name": "MetaHumanSDK", "Enabled": true},
 		{"Name": "HairStrands", "Enabled": true},
 		{"Name": "RigLogic", "Enabled": true},
+		{"Name": "MetaHumanCoreTech", "Enabled": true, "TargetAllowList": ["Editor"]},
 		{
 			"Name": "MetaHumanCharacter",
 			"Enabled": true,

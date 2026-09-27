@@ -18,4 +18,5 @@ namespace SeniorRoster
     SENIORSENDOFF_API UAnimSequence* Walk(int32 Index);
     SENIORSENDOFF_API UAnimSequence* ArmsIdle(int32 Index);
     SENIORSENDOFF_API UTexture2D* Portrait(int32 Index);
+    SENIORSENDOFF_API void AppendSelectionPreviewPaths(TArray<FSoftObjectPath>& OutPaths);
 }

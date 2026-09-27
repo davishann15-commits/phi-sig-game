@@ -1,0 +1,118 @@
+{
+  "scale_to_native": 0.9098958333333335,
+  "source": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/RunnerV2/RunnerV2.blend",
+  "pieces": {
+    "C02_Body.toigo_wool_pants": {
+      "vertices": 822,
+      "materials": [
+        "C02_Shorts"
+      ],
+      "groups": 23
+    },
+    "C02_Body.toigo_basic_tucked_t-shirt": {
+      "vertices": 1084,
+      "materials": [
+        "C02_Shirt"
+      ],
+      "groups": 45
+    },
+    "Black jersey edge": {
+      "vertices": 162,
+      "materials": [
+        "C02_black"
+      ],
+      "groups": 22
+    },
+    "Black jersey edge.001": {
+      "vertices": 222,
+      "materials": [
+        "C02_black"
+      ],
+      "groups": 15
+    },
+    "Garment print": {
+      "vertices": 166,
+      "materials": [
+        "C02_black"
+      ],
+      "groups": 20
+    },
+    "Garment print.001": {
+      "vertices": 38,
+      "materials": [
+        "C02_black"
+      ],
+      "groups": 30
+    },
+    "Garment print.002": {
+      "vertices": 80,
+      "materials": [
+        "C02_black"
+      ],
+      "groups": 14
+    },
+    "Garment print.003": {
+      "vertices": 38,
+      "materials": [
+        "C02_black"
+      ],
+      "groups": 14
+    },
+    "RunnerV2_GoldOutline_Garment_print": {
+      "vertices": 166,
+      "materials": [
+        "RunnerV2_TrimGold"
+      ],
+      "groups": 20
+    },
+    "RunnerV2_GoldOutline_Garment_print.001": {
+      "vertices": 38,
+      "materials": [
+        "RunnerV2_TrimGold"
+      ],
+      "groups": 31
+    },
+    "RunnerV2_GoldOutline_Garment_print.003": {
+      "vertices": 38,
+      "materials": [
+        "RunnerV2_TrimGold"
+      ],
+      "groups": 14
+    },
+    "Flip flop l": {
+      "vertices": 176,
+      "materials": [
+        "C02_black",
+        "C02_brown"
+      ],
+      "groups": 13
+    },
+    "Flip flop r": {
+      "vertices": 176,
+      "materials": [
+        "C02_black",
+        "C02_brown"
+      ],
+      "groups": 13
+    },
+    "Worn rectangular sunglasses": {
+      "vertices": 504,
+      "materials": [
+        "C02_black",
+        "C02_metal",
+        "Cobble sunglass lens.001"
+      ],
+      "groups": 1
+    }
+  },
+  "combined_vertices": 3710,
+  "combined_materials": [
+    "C02_Shorts",
+    "C02_Shirt",
+    "C02_black",
+    "RunnerV2_TrimGold",
+    "C02_brown",
+    "C02_metal",
+    "Cobble sunglass lens.001"
+  ]
+}
