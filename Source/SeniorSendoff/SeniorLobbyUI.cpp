@@ -175,14 +175,29 @@ public:
 
         Place(Canvas,438,778,1095,24,SNew(STextBlock).Font(Font(12)).ColorAndOpacity(White)
             .Text_Lambda([this]() { return FText::FromString(StatusText()); }));
-        Place(Canvas,438,795,1110,66,SNew(SButton).ContentPadding(FMargin(22,8))
-            .ButtonStyle(&LobbyButtonStyle(true)).HAlign(HAlign_Center).VAlign(VAlign_Center)
-            .IsEnabled_Lambda([this]() { return CanStart(); })
-            .OnClicked_Lambda([this]() { ShowStartGameMenu(); return FReply::Handled(); })
-            [SNew(STextBlock).Font(Font(25,true)).ColorAndOpacity(White).Text_Lambda([this]() {
-                if(Starting()) return FText::FromString(TEXT("STARTING..."));
-                return FText::FromString(Controller.IsValid() && !Controller->IsHost() ? TEXT("WAITING FOR HOST") : TEXT("START GAME"));
-            })]);
+        Place(Canvas,438,795,1095,66,SNew(SHorizontalBox)
+            +SHorizontalBox::Slot().AutoWidth().Padding(0,0,12,0)
+                [SNew(SBox).WidthOverride(260)
+                 .Visibility_Lambda([this]() { return Members().Num()>1 ? EVisibility::Visible : EVisibility::Collapsed; })
+                 [SNew(SButton).ContentPadding(FMargin(18,8))
+                  .ButtonStyle(&LobbyButtonStyle()).HAlign(HAlign_Center).VAlign(VAlign_Center)
+                  .IsEnabled_Lambda([this]() { return Controller.IsValid() && LocalState() && !Starting(); })
+                  .OnClicked_Lambda([this]() {
+                      if(Controller.IsValid() && LocalState()) Controller->SetReady(!LocalState()->bReady);
+                      return FReply::Handled();
+                  })
+                  [SNew(STextBlock).Font(Font(19,true)).ColorAndOpacity(White).Text_Lambda([this]() {
+                      return FText::FromString(LocalState() && LocalState()->bReady ? TEXT("CANCEL READY") : TEXT("READY UP"));
+                  })]]]
+            +SHorizontalBox::Slot().FillWidth(1)
+                [SNew(SButton).ContentPadding(FMargin(22,8))
+                 .ButtonStyle(&LobbyButtonStyle(true)).HAlign(HAlign_Center).VAlign(VAlign_Center)
+                 .IsEnabled_Lambda([this]() { return CanStart(); })
+                 .OnClicked_Lambda([this]() { ShowStartGameMenu(); return FReply::Handled(); })
+                 [SNew(STextBlock).Font(Font(25,true)).ColorAndOpacity(White).Text_Lambda([this]() {
+                     if(Starting()) return FText::FromString(TEXT("STARTING..."));
+                     return FText::FromString(Controller.IsValid() && !Controller->IsHost() ? TEXT("WAITING FOR HOST") : TEXT("START GAME"));
+                 })]]);
         ChildSlot[SNew(SOverlay)
             +SOverlay::Slot()[SNew(SScaleBox).Stretch(EStretch::ScaleToFill)
                 [MakeSeniorLobbyAtmosphere(TAttribute<bool>::CreateLambda([this]() {
@@ -245,7 +260,13 @@ private:
     TArray<ASeniorLobbyPlayerState*> Members() const { return State()?State()->GetMembers():TArray<ASeniorLobbyPlayerState*>(); }
     ASeniorLobbyPlayerState* Member(int32 Index) const { const auto List=Members();return List.IsValidIndex(Index)?List[Index]:nullptr; }
     bool Starting() const { return (State() && State()->bStarting) || (GetStory() && GetStory()->bTravelPending); }
-    bool CanStart() const { return Controller.IsValid() && Controller->IsHost() && State() && State()->CanStart(); }
+    bool CanStart() const
+    {
+        if(!Controller.IsValid() || !Controller->IsHost() || !State() || Starting()) return false;
+        if(State()->CanStart()) return true;
+        const auto Party=Members();
+        return Party.Num()==1 && Party[0]==LocalState(); // A solo host starts in one click.
+    }
     bool HasSave() const { const auto* S=GetStory();return S && S->Progress && !S->Progress->bCompleted && (S->Progress->bHasCheckpoint || S->Progress->Chapter>1); }
     FString StatusText() const
     {
@@ -253,9 +274,15 @@ private:
         const FString Message=Controller->GetLobbyMessage();
         if(!Message.IsEmpty()) return Message;
         if(Starting()) return TEXT("Loading the chapter for your party...");
-        if(!State() || !State()->CanStart()) return TEXT("Preparing the party...");
-        return Controller->IsHost()?TEXT("Choose your character and weapon, then select Start Game.")
-            :TEXT("Choose your character and weapon. The host controls when the story begins.");
+        if(!State() || !LocalState() || Members().IsEmpty()) return TEXT("Preparing the party...");
+        if(Members().Num()==1 && Controller->IsHost())
+            return TEXT("Choose your character and weapon, then select Start Game.");
+        if(!LocalState()->bReady)
+            return TEXT("Choose your character and weapon, then select Ready Up.");
+        if(Controller->IsHost() && !State()->CanStart())
+            return TEXT("Waiting for the other players to ready up.");
+        return Controller->IsHost()?TEXT("Your party is ready. Select Start Game.")
+            :TEXT("Ready. Waiting for the host to start the story.");
     }
     TSharedRef<SWidget> MakeStandingPlayer(int32 Index)
     {
@@ -283,8 +310,8 @@ private:
                 [SNew(STextBlock).Font(Font(14,true)).ColorAndOpacity(White).Text_Lambda([this,Index](){
                     auto* P=Member(Index);return FText::FromString(P?SeniorRoster::Label(P->CharacterIndex)+(P==LocalState()?TEXT(" / YOU"):TEXT("")):FString::Printf(TEXT("PLAYER %d"),Index+1));})]
              +SVerticalBox::Slot().AutoHeight().HAlign(HAlign_Center)
-                [SNew(STextBlock).Font(Font(12,true)).ColorAndOpacity_Lambda([this,Index](){return Member(Index)?Green:Muted;})
-                 .Text_Lambda([this,Index](){auto* P=Member(Index);return FText::FromString(!P?TEXT("OPEN SLOT"):P->bIsHost?TEXT("HOST"):TEXT("CONNECTED"));})]]);
+                [SNew(STextBlock).Font(Font(12,true)).ColorAndOpacity_Lambda([this,Index](){auto* P=Member(Index);return P && P->bReady?Green:Muted;})
+                 .Text_Lambda([this,Index](){auto* P=Member(Index);return FText::FromString(!P?TEXT("OPEN SLOT"):P->bIsHost?(P->bReady?TEXT("HOST / READY"):TEXT("HOST / CHOOSING")):(P->bReady?TEXT("READY"):TEXT("CHOOSING")));})]]);
         return Stage;
     }
     void OpenPage(ESeniorLobbyPage Page)

@@ -730,7 +730,8 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
             if (!Check(!Player->bReady, TEXT("Loadout change must clear ready"))) return;
             Story->SetDifficulty(ExpectedDifficulty);
         }
-        PC->SetCharacter(Character); PC->SetLoadout(Loadout); PC->SetReady(true);
+        PC->SetCharacter(Character); PC->SetLoadout(Loadout);
+        if (Mode != TEXT("Solo")) PC->SetReady(true);
         if (Mode == TEXT("Client")) PC->StartStory(false); // Server must ignore a non-host start request.
         UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: %s selected character %d and marked ready"), *Mode, Character);
         Step = 1; Changed = Now;
@@ -748,9 +749,11 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
             Step = 3; Changed = Now;
             return;
         }
-        if (!Lobby || State->GetMembers().Num() != ExpectedPlayers || !State->CanStart() || Now - Changed < 1) return;
+        if (!Lobby || State->GetMembers().Num() != ExpectedPlayers ||
+            (Mode != TEXT("Solo") && !State->CanStart()) || Now - Changed < 1) return;
         if (!Check(Player->CharacterIndex == Character && Player->LoadoutIndex == Loadout, TEXT("Host selections wrong"))) return;
         PC->StartStory(Mode==TEXT("Resume"));
+        if (Mode == TEXT("Solo") && !Check(Player->bReady, TEXT("Solo start did not pass the ready gate"))) return;
         if (!Check(Story->bTravelPending && State->bStarting, TEXT("Host did not start story"))) return;
         UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: Host started with %d members"), ExpectedPlayers);
         Step = 2; Changed = Now;

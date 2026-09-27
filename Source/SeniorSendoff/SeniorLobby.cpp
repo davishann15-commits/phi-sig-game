@@ -350,6 +350,18 @@ void ASeniorLobbyController::StartStory_Implementation(bool bResume)
 {
     if (!HasAuthority() || !IsLocalController() || !CanEditLobby()) return;
     auto* State = GetWorld()->GetGameState<ASeniorLobbyGameState>();
+    // A solo player has no other party members to coordinate with. Keep the
+    // ready gate for multiplayer, but let the main Start Game button work alone.
+    if (!State->CanStart())
+    {
+        const auto Members = State->GetMembers();
+        auto* Host = GetPlayerState<ASeniorLobbyPlayerState>();
+        if (Members.Num() == 1 && Members[0] == Host && Host->bIsHost)
+        {
+            Host->bReady = true;
+            Host->ForceNetUpdate();
+        }
+    }
     if (!State->CanStart()) { ShowLobbyMessage(TEXT("The host cannot start this party yet.")); return; }
     auto* Story = GetGameInstance<UStoryCampaign>();
     if (!Story) { ShowLobbyMessage(TEXT("Story setup is unavailable. Return to the lobby and try again.")); return; }
