@@ -83,6 +83,7 @@ bool ASeniorLobbyGameState::CanStart() const
     for (const auto* Member : Members)
     {
         bHasHost |= Member->bIsHost;
+        if (!Member->bReady) return false;
     }
     return bHasHost;
 }

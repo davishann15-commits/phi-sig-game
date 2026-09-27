@@ -709,7 +709,7 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
         if (Mode == TEXT("Client") && PC->GetNetMode() != NM_Client) return;
         if (Mode != TEXT("Client"))
         {
-            if (!Check(PC->IsHost() && State->CanStart(), TEXT("Host could not open the start flow"))) return;
+            if (!Check(PC->IsHost() && !State->CanStart(), TEXT("Unready host could start the story"))) return;
             if(Mode==TEXT("Resume"))
             {
                 Story->Progress->Chapter=2; Story->Progress->Checkpoint=1;
@@ -730,9 +730,9 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
             if (!Check(!Player->bReady, TEXT("Loadout change must clear ready"))) return;
             Story->SetDifficulty(ExpectedDifficulty);
         }
-        PC->SetCharacter(Character); PC->SetLoadout(Loadout);
+        PC->SetCharacter(Character); PC->SetLoadout(Loadout); PC->SetReady(true);
         if (Mode == TEXT("Client")) PC->StartStory(false); // Server must ignore a non-host start request.
-        UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: %s selected character %d without a ready gate"), *Mode, Character);
+        UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: %s selected character %d and marked ready"), *Mode, Character);
         Step = 1; Changed = Now;
     }
     else if (Step == 1)
@@ -755,7 +755,7 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
         UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: Host started with %d members"), ExpectedPlayers);
         Step = 2; Changed = Now;
     }
-    else if (Step == 2 && Map == TargetMap && PC->GetPawn() && Now - Changed > 3)
+    else if (Step == 2 && Map == TargetMap && PC->GetPawn() && Now - Changed > (Mode == TEXT("Host") ? 10 : 3))
     {
         if(bDouliNetworkTest && Now-DouliChapterStart<14)return;
         if (!Check(Player->CharacterIndex == Character && Player->LoadoutIndex == Loadout, TEXT("Host/solo selections lost in travel"))) return;
@@ -776,7 +776,7 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
     {
         if (Now - Changed < 1) return;
         if (!Check(Player->CharacterIndex == Character && Player->LoadoutIndex == Loadout, TEXT("Selections lost on return to lobby"))) return;
-        if (!Check(!Player->bReady && !State->bStarting && State->CanStart(), TEXT("Return to lobby did not restore the host start flow"))) return;
+        if (!Check(!Player->bReady && !State->bStarting && !State->CanStart(), TEXT("Return to lobby did not reset the ready gate"))) return;
         UE_LOG(LogTemp, Display, TEXT("LOBBY_TEST: Returned to lobby with %d members"), ExpectedPlayers);
         Step = 4; Changed = Now;
     }

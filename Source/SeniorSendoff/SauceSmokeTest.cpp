@@ -4,6 +4,8 @@
 #if WITH_EDITOR
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMeshActor.h"
+#include "Engine/PointLight.h"
+#include "Components/PointLightComponent.h"
 #include "UnrealClient.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -15,6 +17,32 @@
 // and high-altitude collision fixture do not touch the player's campaign.
 void TickSauceSmokeTest(AStoryFirstPersonCharacter* Pawn)
 {
+    if(FParse::Param(FCommandLine::Get(),TEXT("SauceVisualHouse")))
+    {
+        if(!Pawn->HasAuthority())return;
+        static int32 VisualStep=0;
+        static float VisualChanged=0.f;
+        const float VisualNow=Pawn->GetWorld()->GetTimeSeconds();
+        auto* VisualState=Pawn->GetPlayerState<ASeniorLobbyPlayerState>();
+        if(!VisualState || !Pawn->GetController())return;
+        if(VisualStep==0)
+        {
+            VisualState->CharacterIndex=0;VisualState->LoadoutIndex=1;
+            VisualChanged=VisualNow;VisualStep=1;
+        }
+        else if(VisualStep==1 && Pawn->SaucePacket && VisualNow-VisualChanged>2.f)
+        {
+            FScreenshotRequest::RequestScreenshot(FPaths::ProjectSavedDir()/TEXT("Screenshots/Sauce_InHouse.png"),false,false);
+            VisualChanged=VisualNow;VisualStep=2;
+        }
+        else if(VisualStep==2 && VisualNow-VisualChanged>1.f)
+        {
+            UE_LOG(LogTemp,Display,TEXT("SAUCE_HOUSE_VISUAL_PASSED: held packet captured in Chapter 1 lighting"));
+            FPlatformMisc::RequestExitWithStatus(false,0);
+            VisualStep=3;
+        }
+        return;
+    }
     if(!FParse::Param(FCommandLine::Get(),TEXT("SauceTest")) || !Pawn->HasAuthority())return;
     static TWeakObjectPtr<ACharacter> Senior;
     static TWeakObjectPtr<ASeniorSaucePuddle> Puddle;
@@ -46,6 +74,33 @@ void TickSauceSmokeTest(AStoryFirstPersonCharacter* Pawn)
         Mesh->SetStaticMesh(LoadObject<UStaticMesh>(nullptr,TEXT("/Engine/BasicShapes/Cube.Cube")));
         Mesh->SetWorldScale3D(FVector(30,10,.2f));
         Mesh->SetCollisionProfileName(TEXT("BlockAll"));
+        // Match the hat test's neutral, movable light rig so the packet can
+        // be reviewed visually outside the campaign without touching its map.
+        for(const FVector Offset : {FVector(-330,285,105),FVector(850,0,105)})
+        {
+            auto* Panel=Pawn->GetWorld()->SpawnActor<AStaticMeshActor>(Pawn->GetActorLocation()+Offset,FRotator::ZeroRotator);
+            auto* PanelMesh=Panel->GetStaticMeshComponent();
+            PanelMesh->SetMobility(EComponentMobility::Movable);
+            PanelMesh->SetStaticMesh(LoadObject<UStaticMesh>(nullptr,TEXT("/Engine/BasicShapes/Cube.Cube")));
+            PanelMesh->SetWorldScale3D(FVector(.08f,16.f,8.f));
+            PanelMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+            PanelMesh->SetCastShadow(false);
+        }
+        for(const TPair<FVector,float>& Key : {TPair<FVector,float>(FVector(155,15,145),18000.f),
+                                               TPair<FVector,float>(FVector(220,-170,125),22000.f),
+                                               TPair<FVector,float>(FVector(700,0,165),20000.f)})
+        {
+            if(auto* Light=Pawn->GetWorld()->SpawnActor<APointLight>(Pawn->GetActorLocation()+Key.Key,FRotator::ZeroRotator))
+            {
+                if(auto* Bulb=Cast<UPointLightComponent>(Light->GetLightComponent()))
+                {
+                    Bulb->SetMobility(EComponentMobility::Movable);
+                    Bulb->SetIntensity(Key.Value);
+                    Bulb->SetAttenuationRadius(1100.f);
+                    Bulb->SetCastShadows(false);
+                }
+            }
+        }
         Changed=Now;Step=1;
     }
     else if(Step==1 && Now-Changed>.5f)
