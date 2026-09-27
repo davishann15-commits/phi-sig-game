@@ -1,0 +1,53 @@
+{
+  "source": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Cobble/C03/C03.blend",
+  "target": "/private/tmp/FixerNativeBody.fbx",
+  "exports": {
+    "L": {
+      "name": "SM_FixerSneakerBody_L",
+      "vertices": 1800,
+      "target_ankle": [
+        0.1336429864168167,
+        -0.0019204036798328161,
+        0.08294317871332169
+      ],
+      "bounds": [
+        [
+          0.07931957393884659,
+          0.21578571200370789
+        ],
+        [
+          -0.22840504348278046,
+          0.07473491132259369
+        ],
+        [
+          -0.0029279468581080437,
+          0.11999999731779099
+        ]
+      ]
+    },
+    "R": {
+      "name": "SM_FixerSneakerBody_R",
+      "vertices": 1800,
+      "target_ankle": [
+        -0.1336430013179779,
+        -0.0019202734110876918,
+        0.08294317871332169
+      ],
+      "bounds": [
+        [
+          -0.21578583121299744,
+          -0.07931961864233017
+        ],
+        [
+          -0.22840487957000732,
+          0.07473503798246384
+        ],
+        [
+          -0.0029279468581080437,
+          0.11999999731779099
+        ]
+      ]
+    }
+  },
+  "texture": "/Users/Stewart/Documents/Codex/2026-09-11/c/work/cobble-tools/assets/clothes/shoes05/shoes05_diffuse.png"
+}

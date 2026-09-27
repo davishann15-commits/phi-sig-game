@@ -4,6 +4,7 @@
 #include "Engine/StaticMesh.h"
 #include "GameFramework/Actor.h"
 #include "Materials/MaterialInterface.h"
+#include "SeniorSauceVisual.h"
 
 // Cosmetic prototypes only. Shared geometry between the wall rack and held preview;
 // deliberately independent from the gameplay weapon / projectile implementation.
@@ -27,6 +28,10 @@ inline USceneComponent* Build(AActor* Owner, USceneComponent* Parent, int32 Char
         auto* Hat=NewObject<UStaticMeshComponent>(Owner); Owner->AddInstanceComponent(Hat); Hat->SetupAttachment(Root);
         Hat->SetStaticMesh(LoadObject<UStaticMesh>(nullptr,TEXT("/Game/Weapons/Douli/SM_Douli.SM_Douli")));
         Hat->SetCollisionEnabled(ECollisionEnabled::NoCollision); Hat->RegisterComponent();
+    }
+    else if(Character==0 && Weapon==1)
+    {
+        SeniorSauceVisual::Build(Owner,Root);
     }
     else if(Weapon==1)
     {

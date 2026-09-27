@@ -16,6 +16,12 @@
 #include "HairDescription.h"
 #include "StaticMeshAttributes.h"
 #include "ReferenceSkeleton.h"
+#include "MetaHumanCharacter.h"
+#include "MetaHumanCharacterEditorSubsystem.h"
+#include "MetaHumanCharacterIdentity.h"
+#include "MetaHumanCharacterBodyIdentity.h"
+#include "SkelMeshDNAUtils.h"
+#include "DNAUtils.h"
 #endif
 
 bool USeniorCharacterAssetTools::ExportBraxtonScalpReference()
@@ -38,16 +44,34 @@ bool USeniorCharacterAssetTools::ExportBraxtonScalpReference()
 bool USeniorCharacterAssetTools::MatchBraxtonGarmentBindPose(USkeletalMesh* Outfit, USkeletalMesh* Body)
 {
 #if WITH_EDITOR
-    if (!Outfit || !Body || !Outfit->GetPathName().Contains(TEXT("/Details/Hoodie/"))) return false;
+    if (!Outfit || !Body ||
+        !(Outfit->GetPathName().Contains(TEXT("/Details/Hoodie/")) ||
+          Outfit->GetPathName().Contains(TEXT("/MH_Runner_Working/Details/RunnerOutfit/")) ||
+          Outfit->GetPathName().Contains(TEXT("/MetaHumans/Fixer/MH_Fixer/Details/")))) return false;
     const FReferenceSkeleton& Native = Body->GetRefSkeleton();
     FReferenceSkeleton& Ref = Outfit->GetRefSkeleton();
     for (int32 I=0; I<Ref.GetRawBoneNum(); ++I)
     {
         const int32 Other = Native.FindBoneIndex(Ref.GetBoneName(I));
-        if (Other == INDEX_NONE) return false;
+        if (Other == INDEX_NONE)
+        {
+            UE_LOG(LogTemp, Error, TEXT("RUNNER_BIND_MISSING_BONE index=%d name=%s"), I, *Ref.GetBoneName(I).ToString());
+            return false;
+        }
         const int32 Parent = Ref.GetParentIndex(I), NativeParent = Native.GetParentIndex(Other);
-        if ((Parent == INDEX_NONE) != (NativeParent == INDEX_NONE)) return false;
-        if (Parent != INDEX_NONE && Ref.GetBoneName(Parent) != Native.GetBoneName(NativeParent)) return false;
+        if ((Parent == INDEX_NONE) != (NativeParent == INDEX_NONE))
+        {
+            UE_LOG(LogTemp, Error, TEXT("RUNNER_BIND_ROOT_MISMATCH name=%s importedParent=%s nativeParent=%s"),
+                *Ref.GetBoneName(I).ToString(), Parent == INDEX_NONE ? TEXT("<none>") : *Ref.GetBoneName(Parent).ToString(),
+                NativeParent == INDEX_NONE ? TEXT("<none>") : *Native.GetBoneName(NativeParent).ToString());
+            return false;
+        }
+        if (Parent != INDEX_NONE && Ref.GetBoneName(Parent) != Native.GetBoneName(NativeParent))
+        {
+            UE_LOG(LogTemp, Error, TEXT("RUNNER_BIND_PARENT_MISMATCH name=%s importedParent=%s nativeParent=%s"),
+                *Ref.GetBoneName(I).ToString(), *Ref.GetBoneName(Parent).ToString(), *Native.GetBoneName(NativeParent).ToString());
+            return false;
+        }
     }
     Outfit->Modify();
     int32 Changed = 0; double MaxAngle = 0, MaxPosition = 0;
@@ -123,6 +147,120 @@ bool USeniorCharacterAssetTools::ShapeBraxtonHair(UGroomAsset* Groom)
     return false;
 #endif
 }
+bool USeniorCharacterAssetTools::PrepareFixerLeanSource(UObject* Object)
+{
+#if WITH_EDITOR
+    UMetaHumanCharacter* Character=Cast<UMetaHumanCharacter>(Object);
+    if (!Character || Character->GetPathName()!=TEXT("/Game/Characters/MetaHumans/Fixer/MH_Fixer_Lean.MH_Fixer_Lean")) return false;
+    UMetaHumanCharacterEditorSubsystem* Editor=UMetaHumanCharacterEditorSubsystem::Get();
+    if (!Editor || !Editor->IsObjectAddedForEditing(Character)) return false;
+    UE_LOG(LogTemp,Display,TEXT("FIXER_LEAN_SOURCE fixed=%d bodyDNA=%d"),Character->bFixedBodyType,Character->HasBodyDNA());
+    if (Character->bFixedBodyType)
+    {
+        const bool bFit=Character->HasBodyDNA() ? Editor->ParametricFitToDnaBody(Character) : Editor->ParametricFitToCompatibilityBody(Character);
+        if (!bFit) return false;
+        Editor->CommitBodyState(Character);
+    }
+    return !Character->bFixedBodyType;
+#else
+    return false;
+#endif
+}
+
+bool USeniorCharacterAssetTools::BakeFixerLocalShape(UObject* Object)
+{
+#if WITH_EDITOR
+    UMetaHumanCharacter* Character=Cast<UMetaHumanCharacter>(Object);
+    if (!Character || Character->GetPathName()!=TEXT("/Game/Characters/MetaHumans/Fixer/MH_Fixer_Lean.MH_Fixer_Lean")) return false;
+    auto* Editor=UMetaHumanCharacterEditorSubsystem::Get();
+    if (!Editor || !Editor->IsObjectAddedForEditing(Character)) return false;
+    // Assembly consumes stored rig DNA. Committing editable landmarks alone
+    // leaves its earlier neutral shape in place. Bake the LOCAL edits over the
+    // existing rig, preserving topology, weights and animation behavior.
+    const USkeletalMesh* ConstBody=Editor->GetBodyEditMesh(Character);
+    const USkeletalMesh* ConstFace=Editor->GetFaceEditMesh(Character);
+    auto* Body=const_cast<USkeletalMesh*>(ConstBody);
+    auto* Face=const_cast<USkeletalMesh*>(ConstFace);
+    const auto BodyTemplate=USkelMeshDNAUtils::GetDNAReader(Body);
+    const auto FaceTemplate=USkelMeshDNAUtils::GetDNAReader(Face);
+    if (!BodyTemplate || !FaceTemplate) return false;
+    const auto BodyDNA=Editor->GetBodyState(Character)->StateToDna(BodyTemplate->Unwrap());
+    auto FaceDNA=Editor->GetFaceState(Character)->StateToDna(FaceTemplate->Unwrap());
+    const auto AlignedFace=Editor->AlignFaceDNAWithBody(Character,FaceDNA);
+    if (!AlignedFace) return false;
+    TArray<uint8> BodyBuffer, FaceBuffer;
+    SaveDNAToBuffer(&BodyDNA.Get(),EDNADataLayer::All,BodyBuffer);
+    SaveDNAToBuffer(AlignedFace.Get(),EDNADataLayer::All,FaceBuffer);
+    if (BodyBuffer.IsEmpty() || FaceBuffer.IsEmpty()) return false;
+    Character->Modify();
+    Character->SetBodyDNABuffer(BodyBuffer);
+    Character->SetFaceDNABuffer(FaceBuffer,AlignedFace->GetBlendShapeChannelCount()>0);
+    Character->MarkPackageDirty();
+    UE_LOG(LogTemp,Display,TEXT("FIXER_LOCAL_SHAPE_BAKED bodyBytes=%d faceBytes=%d"),BodyBuffer.Num(),FaceBuffer.Num());
+    return true;
+#else
+    return false;
+#endif
+}
+
+bool USeniorCharacterAssetTools::ShapeFixerShortMullet(UGroomAsset* Groom)
+{
+#if WITH_EDITOR
+    const FString Prefix(TEXT("/Game/MetaHumans/Fixer/MH_Fixer/Details/Hair/Mullet/"));
+    if (!Groom || !Groom->GetPathName().StartsWith(Prefix)) return false;
+    FHairDescription Description = Groom->GetHairDescription();
+    if (!Description.IsValid()) return false;
+    auto Positions = Description.VertexAttributes().GetAttributesRef<FVector3f>(HairAttribute::Vertex::Position);
+    FBox Before(ForceInit), After(ForceInit);
+    for (int32 I=0; I<Description.GetNumVertices(); ++I) Before += FVector(Positions[FVertexID(I)]);
+    const float Top = float(Before.Max.Z);
+    const auto Shape = [Top](FVector3f P)
+    {
+        // Short, close side silhouette with a modest textured tail at the nape.
+        // All authoring is local to this duplicate; no shared groom is changed.
+        const float Back = 1.f-FMath::SmoothStep(-3.f, 2.f, P.Y);
+        const float Nape = 1.f-FMath::SmoothStep(Top-19.f, Top-10.f, P.Z);
+        const float Side = FMath::SmoothStep(4.5f, 8.5f, FMath::Abs(P.X));
+        const float Front = FMath::SmoothStep(1.f, 6.f, P.Y);
+        const float Fringe = 1.f-FMath::SmoothStep(Top-10.f, Top-5.f, P.Z);
+        P.X *= 1.f-.035f*Side*(1.f-Back*Nape);
+        P.Z += Front*Fringe*1.35f;
+        const float CenterTail=1.f-FMath::SmoothStep(3.f,7.f,FMath::Abs(P.X));
+        P.Z -= Back*Nape*(.9f+1.8f*CenterTail+.18f*FMath::Sin(P.X*2.1f));
+        P.Y -= Back*Nape*.65f;
+        P.Z -= .45f*FMath::SmoothStep(Top-5.f, Top, P.Z);
+        return P;
+    };
+    Groom->Modify();
+    for (int32 I=0; I<Description.GetNumVertices(); ++I)
+    {
+        FVector3f& P=Positions[FVertexID(I)]; P=Shape(P); After+=FVector(P);
+    }
+    Groom->CommitHairDescription(MoveTemp(Description),EHairDescriptionType::Source);
+    for (FHairGroupsCardsSourceDescription& Card : Groom->GetHairGroupsCards())
+        if (UStaticMesh* Mesh=Card.ImportedMesh)
+        {
+            if (!Mesh->GetPathName().StartsWith(Prefix)) return false;
+            Mesh->Modify();
+            for (int32 L=0;L<Mesh->GetNumSourceModels();++L)
+                if (FMeshDescription* Data=Mesh->GetMeshDescription(L))
+                {
+                    FStaticMeshAttributes Attributes(*Data);
+                    auto V=Attributes.GetVertexPositions();
+                    for (FVertexID Id : Data->Vertices().GetElementIDs()) V[Id]=Shape(V[Id]);
+                    Mesh->CommitMeshDescription(L);
+                }
+            Mesh->Build(false);Mesh->MarkPackageDirty();
+        }
+    const bool bBuilt=Groom->CacheDerivedDatas();
+    Groom->MarkPackageDirty();
+    UE_LOG(LogTemp,Display,TEXT("FIXER_MULLET_SHAPED: %s -> %s built=%d"),*Before.ToString(),*After.ToString(),bBuilt);
+    return bBuilt;
+#else
+    return false;
+#endif
+}
+
 bool USeniorCharacterAssetTools::PrepareBraxtonHoodieExport(USkeletalMesh* Mesh)
 {
 #if WITH_EDITOR
@@ -195,7 +333,7 @@ bool USeniorCharacterAssetTools::BuildBraxtonCloth(USkeletalMesh* Outfit, USkele
             {
                 // Relaxed hoodie trims have their own skin weights. Mapping cuff
                 // bands to the torso simulation surface stretches them on arm lifts.
-                if (S > 1 && (Outfit->GetName().Contains(TEXT("HoodieOutfitV4")) || Outfit->GetName().Contains(TEXT("HoodieOutfitV5")))) continue;
+                if (S > 1 && (Outfit->GetName().Contains(TEXT("HoodieOutfitV4")) || Outfit->GetName().Contains(TEXT("HoodieOutfitV5")) || Outfit->GetName().Contains(TEXT("HoodieOutfitV6")))) continue;
                 const int32 MaterialIndex=LodModel.Sections[S].MaterialIndex;
                 if(Outfit->GetMaterials().IsValidIndex(MaterialIndex))
                 {

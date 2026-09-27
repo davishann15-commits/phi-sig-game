@@ -7,6 +7,6 @@ public class SeniorSendoff : ModuleRules
         PublicDependencyModuleNames.AddRange(new[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
         PrivateDependencyModuleNames.AddRange(new[] { "Slate", "SlateCore", "UMG", "MoviePlayer", "Sockets", "Json", "HairStrandsCore", "ChaosCloth", "ClothingSystemRuntimeCommon", "ClothingSystemRuntimeInterface", "AnimGraphRuntime", "AnimationCore", "LiveLinkAnimationCore" });
         if (Target.bBuildEditor)
-            PrivateDependencyModuleNames.AddRange(new[] { "ClothingSystemEditor", "ClothingSystemEditorInterface", "MeshDescription", "StaticMeshDescription" });
+            PrivateDependencyModuleNames.AddRange(new[] { "ClothingSystemEditor", "ClothingSystemEditorInterface", "MeshDescription", "StaticMeshDescription", "MetaHumanCharacter", "MetaHumanCharacterEditor", "MetaHumanCoreTechLib", "RigLogicModule" });
     }
 }

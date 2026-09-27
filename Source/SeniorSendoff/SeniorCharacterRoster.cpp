@@ -52,6 +52,8 @@ bool SeniorRoster::IsValidIndex(int32 Index) { return Index >= 0 && Index < Coun
 FString SeniorRoster::Label(int32 Index)
 {
     if (Index == 0) return TEXT("BRAXTON HUNGATE");
+    if (Index == 1) return TEXT("SAM MCCALL");
+    if (Index == 2) return TEXT("THE FIXER");
     return IsValidIndex(Index) ? FString::Printf(TEXT("CHARACTER %02d"), Index + 1) : TEXT("CHARACTER");
 }
 USkeletalMesh* SeniorRoster::Body(int32 Index)
@@ -83,4 +85,15 @@ UTexture2D* SeniorRoster::Portrait(int32 Index)
 {
     FCharacterAssets* Entry = Assets(Index);
     return Entry ? Entry->Portrait.LoadSynchronous() : nullptr;
+}
+void SeniorRoster::AppendSelectionPreviewPaths(TArray<FSoftObjectPath>& OutPaths)
+{
+    // Braxton, Sam and Fixer use their assembled native previews. The remaining
+    // bodies/idle clips can stream while those detailed previews initialize.
+    for(int32 Index=3;Index<Count;++Index)
+        if(FCharacterAssets* Entry=Assets(Index))
+        {
+            OutPaths.Add(Entry->Body.ToSoftObjectPath());
+            OutPaths.Add(Entry->Idle.ToSoftObjectPath());
+        }
 }

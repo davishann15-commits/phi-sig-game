@@ -9,4 +9,4 @@ class UWorld;
 TSharedRef<SWidget> MakeSeniorCharacterPreview(
     UWorld* World, TAttribute<int32> CharacterIndex, bool bInteractive = true, TAttribute<int32> WeaponIndex = 0);
 TSharedRef<SWidget> MakeSeniorCharacterRoomPreview(UWorld* World,TAttribute<int32> CharacterIndex,
-    TAttribute<int32> WeaponIndex,TFunction<void(int32)> OnWeapon,FSimpleDelegate OnBack);
+    TAttribute<int32> WeaponIndex,TFunction<void(int32)> OnWeapon,TFunction<void(int32)> OnBrowse,FSimpleDelegate OnBack);
