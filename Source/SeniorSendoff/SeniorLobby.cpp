@@ -184,6 +184,7 @@ void ASeniorLobbyController::RefreshPresentation()
     if (!IsLocalController()) return;
     if (PauseWidget.IsValid()) ClosePauseMenu();
     const FString CurrentMap = UGameplayStatics::GetCurrentLevelName(this, true);
+    const bool bLeavingLobby = PresentedMap == TEXT("Lobby") && CurrentMap != TEXT("Lobby");
     if (CurrentMap == TEXT("Lobby") && PresentedMap != CurrentMap)
         PartyPreparationStartedAt = FPlatformTime::Seconds();
     PresentedMap = CurrentMap;
@@ -209,6 +210,14 @@ void ASeniorLobbyController::RefreshPresentation()
     }
     else
     {
+        if (bLeavingLobby)
+        {
+            // Welcome, selection and ready-up feedback belongs to the lobby.
+            // Preserve later gameplay messages when this refresh is called
+            // again for possession or respawn in the same story map.
+            LobbyMessage.Empty();
+            LobbyMessageUntil = 0;
+        }
         RemoveLobbyWidget();
         CaptureGameplayMouse();
 #if PLATFORM_IOS || PLATFORM_ANDROID
@@ -438,8 +447,12 @@ void ASeniorLobbyController::ShowLobbyMessage_Implementation(const FString& Mess
 {
     LobbyMessage = Message.Left(240);
     LobbyMessageUntil = FPlatformTime::Seconds() + 6;
-    if (auto* Story = GetGameInstance<UStoryCampaign>())
-    { Story->Status = LobbyMessage; Story->StatusUntil = GetWorld() ? GetWorld()->GetTimeSeconds() + 5.f : 5.f; }
+    // Lobby feedback must not populate the persistent story HUD. Its world-
+    // time deadline would otherwise become active again in the next map.
+    // Gameplay feedback still reaches the HUD on network clients.
+    if (!IsLobby(this))
+        if (auto* Story = GetGameInstance<UStoryCampaign>())
+        { Story->Status = LobbyMessage; Story->StatusUntil = GetWorld() ? GetWorld()->GetTimeSeconds() + 5.f : 5.f; }
 }
 FString ASeniorLobbyController::GetLobbyMessage() const
 {

@@ -71,6 +71,9 @@ void TickSeniorLobbyStartupSmoke(ASeniorLobbyController* PC)
         if (!Check(Pawn && Pawn->GetController() == PC && Player && Player->CharacterIndex == 2
             && Player->LoadoutIndex == 1 && !Story->bTravelPending,
             TEXT("House did not finish loading a possessed pawn with the selected loadout"))) return;
+        if (!Check(PC->GetLobbyMessage().IsEmpty()
+            && Story->StatusUntil <= PC->GetWorld()->GetTimeSeconds(),
+            TEXT("Lobby feedback leaked into the house HUD"))) return;
         if (FParse::Param(FCommandLine::Get(), TEXT("LobbyStartupCapture")))
             FScreenshotRequest::RequestScreenshot(TEXT("LobbyStartupHouse.png"), true, false);
         UE_LOG(LogTemp, Display, TEXT("LOBBY_STARTUP_TEST: house loaded, pawn possessed, travel completed"));
