@@ -257,6 +257,8 @@ void TickCombinedHouseSmoke(UWorld* World)
             }
         }
 
+        FString RequestedFurniture;
+        FParse::Value(FCommandLine::Get(), TEXT("CombinedHouseFurniture="), RequestedFurniture);
         int32 ValidFurniture = 0;
         for (TActorIterator<AActor> It(World); It; ++It)
         {
@@ -266,6 +268,15 @@ void TickCombinedHouseSmoke(UWorld* World)
             if (Body && Body->IsSimulatingPhysics() && Actor->GetIsReplicated() && Actor->IsReplicatingMovement())
             {
                 ++ValidFurniture;
+                // A furniture repair can request its actual tagged body. Keep
+                // the shared population check, floor/trace checks and player
+                // interaction rather than substituting a synthetic physics box.
+                if (!RequestedFurniture.IsEmpty())
+                {
+                    if (Actor->ActorHasTag(FName(*RequestedFurniture)))
+                        State.FurnitureCandidates.Add(Body);
+                    continue;
+                }
                 // Prefer the entrance-floor chair, then try the other scanned
                 // pieces if its reachable side happens to be obstructed.
                 if (Actor->ActorHasTag(TEXT("GR_ClubChair1")))
@@ -277,6 +288,11 @@ void TickCombinedHouseSmoke(UWorld* World)
         if (ValidFurniture < 4)
         {
             FinishSmoke(State, false, FString::Printf(TEXT("Expected four tagged, simulated, replicated furniture bodies; found %d"), ValidFurniture));
+            return;
+        }
+        if (State.FurnitureCandidates.IsEmpty())
+        {
+            FinishSmoke(State, false, FString::Printf(TEXT("Requested tagged furniture body is absent: %s"), *RequestedFurniture));
             return;
         }
 
@@ -532,7 +548,7 @@ void TickCombinedHouseSmoke(UWorld* World)
         UPrimitiveComponent* Furniture = State.Furniture.Get();
         if (!Furniture || !Pawn->FurnitureInteraction || !Pawn->FurnitureInteraction->bHoldingFurniture)
         {
-            FinishSmoke(State, false, TEXT("Player lost the chair while dragging"));
+            FinishSmoke(State, false, TEXT("Player lost the furniture while dragging"));
             break;
         }
         if (PhaseTime < 0.35f) Pawn->AddMovementInput(State.DragDirection, 0.35f, true);
@@ -542,13 +558,13 @@ void TickCombinedHouseSmoke(UWorld* World)
             Pawn->FurnitureInteraction->ToggleGrab();
             if (Pawn->FurnitureInteraction->bHoldingFurniture
                 || Furniture->ComponentHasTag(TEXT("SSOFurnitureHeld")))
-                FinishSmoke(State, false, TEXT("Player could not release the chair"));
+                FinishSmoke(State, false, TEXT("Player could not release the furniture"));
             else
-                FinishSmoke(State, true, FString::Printf(TEXT("Four tagged physics bodies; sprint %.0f, slide %.0f, air minimum %.0f cm/s; player grabbed, dragged %.1f cm, and released a chair"),
-                    State.SprintPeak, State.SlideEntrySpeed, State.LowestAirSpeed, Displacement));
+                FinishSmoke(State, true, FString::Printf(TEXT("Four tagged physics bodies; sprint %.0f, slide %.0f, air minimum %.0f cm/s; player grabbed, dragged %.1f cm, and released %s"),
+                    State.SprintPeak, State.SlideEntrySpeed, State.LowestAirSpeed, Displacement, *Furniture->GetOwner()->GetName()));
         }
         else if (PhaseTime > 1.5f)
-            FinishSmoke(State, false, FString::Printf(TEXT("Player grabbed chair but drag moved it only %.1f cm"), Displacement));
+            FinishSmoke(State, false, FString::Printf(TEXT("Player grabbed furniture but drag moved it only %.1f cm"), Displacement));
         break;
     }
 
