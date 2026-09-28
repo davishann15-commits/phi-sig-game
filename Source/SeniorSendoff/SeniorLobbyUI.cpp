@@ -178,6 +178,12 @@ public:
         Place(Canvas,438,795,1095,66,SNew(SHorizontalBox)
             +SHorizontalBox::Slot().AutoWidth().Padding(0,0,12,0)
                 [SNew(SBox).WidthOverride(260)
+                 .Visibility_Lambda([this]() { return Controller.IsValid() && Controller->HasPartyInitializationFailed() ? EVisibility::Visible : EVisibility::Collapsed; })
+                 [SeniorUI::Button(TEXT("RELOAD SOLO LOBBY"), [this]() {
+                     if(Controller.IsValid()) Controller->RetryPartyInitialization();
+                 })]]
+            +SHorizontalBox::Slot().AutoWidth().Padding(0,0,12,0)
+                [SNew(SBox).WidthOverride(260)
                  .Visibility_Lambda([this]() { return Members().Num()>1 ? EVisibility::Visible : EVisibility::Collapsed; })
                  [SNew(SButton).ContentPadding(FMargin(18,8))
                   .ButtonStyle(&LobbyButtonStyle()).HAlign(HAlign_Center).VAlign(VAlign_Center)
@@ -262,19 +268,17 @@ private:
     bool Starting() const { return (State() && State()->bStarting) || (GetStory() && GetStory()->bTravelPending); }
     bool CanStart() const
     {
-        if(!Controller.IsValid() || !Controller->IsHost() || !State() || Starting()) return false;
-        if(State()->CanStart()) return true;
-        const auto Party=Members();
-        return Party.Num()==1 && Party[0]==LocalState(); // A solo host starts in one click.
+        return Controller.IsValid() && Controller->CanStartStory();
     }
     bool HasSave() const { const auto* S=GetStory();return S && S->Progress && !S->Progress->bCompleted && (S->Progress->bHasCheckpoint || S->Progress->Chapter>1); }
     FString StatusText() const
     {
         if(!Controller.IsValid()) return TEXT("Connecting...");
+        if(Controller->HasPartyInitializationFailed()) return TEXT("The party could not initialize. Select Reload Solo Lobby to recover.");
         const FString Message=Controller->GetLobbyMessage();
         if(!Message.IsEmpty()) return Message;
         if(Starting()) return TEXT("Loading the chapter for your party...");
-        if(!State() || !LocalState() || Members().IsEmpty()) return TEXT("Preparing the party...");
+        if(!Controller->IsPartyPrepared()) return TEXT("Preparing the party...");
         if(Members().Num()==1 && Controller->IsHost())
             return TEXT("Choose your character and weapon, then select Start Game.");
         if(!LocalState()->bReady)

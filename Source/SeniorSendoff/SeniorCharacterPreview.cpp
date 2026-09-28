@@ -67,7 +67,9 @@ public:
         WeaponIndex = Args._WeaponIndex;
         bInteractive = Args._Interactive;
         bRoom=Args._Room; OnWeapon=Args._OnWeapon; OnBrowse=Args._OnBrowse; OnBack=Args._OnBack;
-        Brush.DrawAs = ESlateBrushDrawType::Image;
+        // Slate draws an unbound image brush as a white rectangle. Keep the
+        // lineup transparent until its first scene capture has been submitted.
+        Brush.DrawAs = ESlateBrushDrawType::NoDrawType;
         Brush.ImageSize = FVector2D(768, 768);
         SetCanTick(true);
         // The image is a changing render target. Repaint also lets hidden pages suspend captures.
@@ -409,6 +411,7 @@ public:
         const double CaptureStarted=bMeasureCapture?FPlatformTime::Seconds():0;
 #endif
         Capture->CaptureScene();
+        Brush.DrawAs = ESlateBrushDrawType::Image;
 #if WITH_EDITOR
         if(bMeasureCapture)
             UE_LOG(LogTemp,Display,TEXT("CHARACTER_ROOM_CAPTURE_MS: index=%d duration=%.1f"),ShownCharacter,(FPlatformTime::Seconds()-CaptureStarted)*1000.0);

@@ -1,0 +1,13 @@
+# Lobby startup repair — September 28
+
+The current source already had the September 27 solo-start repair. A fresh default-map launch loaded the native lobby; the most recent interactive package log also recorded a successful transition into `Chapter01_House`. The reported freeze was not reproduced on that package, so its exact original cause remains unconfirmed.
+
+The UI displayed “Preparing the party…” indefinitely whenever its typed game state, local player state, or member registration was absent. Start Game also had a separate UI predicate from the authority's start logic. Use one controller predicate for both: a prepared solo host can start immediately; multiple players still need every member ready.
+
+Give party initialization ten seconds. A standalone lobby automatically reopens once with an absolute URL that explicitly selects the native lobby game mode. This clears stale URL/game-mode options and initializes fresh player registration. Persist the attempt across the reload to prevent a loop. If initialization still fails, show an actionable error and Reload Solo Lobby button. A network client or listen host is never automatically disconnected. Returning through seamless travel resets the preparation timer.
+
+`-LobbyStartupSmoke` is an opt-in Development-player test using `SeniorSendoff_LobbyStartupAutomationOnly`, not the player's save. It checks the same predicate Slate uses, starts without Ready Up, verifies the possessed house pawn and retained loadout, and returns to a restartable lobby. Add `-LobbyStartupRecoveryTest` to remove party registration deliberately and exercise recovery; this is a controlled reproduction of the gate, not evidence of the original failure's cause. `-LobbyStartupCapture` requests actual lobby and house screenshots when rendering is enabled.
+
+Run the rebuilt game with `./Play Senior Sendoff.sh` from the project directory. Verification results are recorded in the house repository's `TestResults/combined_campaign_report.json` and `Docs/HouseRebuild/LOBBY_STARTUP_REPAIR_20260928.md`.
+
+Final verification: native editor build, campaign, lobby and movement checks passed. The rebuilt Linux package passed default solo startup, injected registration recovery, house movement/physics and normal-window Vulkan lobby/story/return plus house startup. The character preview was inspected after capture; its initial white rectangle is gone. Both weapon presentation materials loaded without the earlier missing-object warnings. Twelve final checks and two screenshots are archived at the linked house-repository review. The earlier uncapped offscreen teardown GPU error is retained as failed evidence and excluded from the passing normal-window validation.

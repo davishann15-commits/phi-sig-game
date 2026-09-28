@@ -64,6 +64,10 @@ public:
     UFUNCTION(BlueprintPure, Category="Game") bool IsPauseMenuOpen() const { return PauseWidget.IsValid(); }
     UFUNCTION(BlueprintPure, Category="Lobby") FString GetLobbyMessage() const;
     UFUNCTION(BlueprintPure, Category="Lobby") bool IsHost() const;
+    bool IsPartyPrepared() const;
+    bool CanStartStory() const;
+    bool HasPartyInitializationFailed() const;
+    void RetryPartyInitialization();
     UFUNCTION(BlueprintPure, Category="Lobby") FString GetHostAddress() const;
     static bool IsValidLANAddress(const FString& Address);
 private:
@@ -89,6 +93,7 @@ private:
     FDelegateHandle NetworkFailureHandle, TravelFailureHandle;
     bool bConnectionPending = false;
     bool bAppliedLocalSelections = false;
+    double PartyPreparationStartedAt = 0;
     mutable FString CachedHostAddress;
     mutable double AddressCheckedAt = -10;
 };

@@ -54,6 +54,7 @@ void UStoryCampaign::Init()
     Super::Init();
 #if !UE_BUILD_SHIPPING
     if (FParse::Param(FCommandLine::Get(),TEXT("CombinedHouseSmoke"))) SaveSlot=TEXT("SeniorSendoff_CombinedHouseAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("LobbyStartupSmoke"))) SaveSlot=TEXT("SeniorSendoff_LobbyStartupAutomationOnly");
 #endif
 #if WITH_EDITOR
     FString TestMode;

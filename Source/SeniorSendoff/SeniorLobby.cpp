@@ -25,12 +25,15 @@
 #if WITH_EDITOR
 void TickSeniorLobbySmokeTest(ASeniorLobbyController* Controller);
 #endif
+#if !UE_BUILD_SHIPPING
+void TickSeniorLobbyStartupSmoke(ASeniorLobbyController* Controller);
+#endif
 
 namespace
 {
     const FName LobbyMap(TEXT("/Game/Story/Maps/Lobby"));
     const TCHAR* LobbyOptions = TEXT("game=/Script/SeniorSendoff.SeniorLobbyGameMode");
-    struct FLobbyRecovery { FString Message; bool bScheduled = false; };
+    struct FLobbyRecovery { FString Message; bool bScheduled = false; bool bPartyRepairAttempted = false; };
     // Retain connection errors across replacement of the failed world's controller.
     TMap<TWeakObjectPtr<UGameInstance>, FLobbyRecovery> RecoveryState;
     struct FLocalSelections { int32 Character = 0; int32 Loadout = 0; };
@@ -100,6 +103,7 @@ void ASeniorLobbyController::BeginPlay()
 {
     Super::BeginPlay();
     if (!IsLocalController()) return;
+    PartyPreparationStartedAt = FPlatformTime::Seconds();
     if (GEngine)
     {
         NetworkFailureHandle = GEngine->OnNetworkFailure().AddUObject(this, &ASeniorLobbyController::NetworkFailed);
@@ -110,7 +114,7 @@ void ASeniorLobbyController::BeginPlay()
     {
         LobbyMessage = Recovery->Message;
         LobbyMessageUntil = FPlatformTime::Seconds() + 20;
-        if (!Recovery->bScheduled) RecoveryState.Remove(GetGameInstance());
+        if (!Recovery->bScheduled && !Recovery->bPartyRepairAttempted) RecoveryState.Remove(GetGameInstance());
     }
     RefreshPresentation();
 }
@@ -137,6 +141,26 @@ void ASeniorLobbyController::Tick(float DeltaSeconds)
         Saved.Character = State->CharacterIndex; Saved.Loadout = State->LoadoutIndex;
     }
     if (LoadingWidget.IsValid() && PresentedMap == LoadingDestination && GetPawn()) RemoveLoadingWidget();
+    if (IsLobby(this) && !bConnectionPending)
+    {
+        if (IsPartyPrepared())
+        {
+            if (auto* Recovery = RecoveryState.Find(GetGameInstance()))
+                if (!Recovery->bScheduled) RecoveryState.Remove(GetGameInstance());
+        }
+        else if (HasPartyInitializationFailed() && GetNetMode() == NM_Standalone)
+        {
+            auto& Recovery = RecoveryState.FindOrAdd(GetGameInstance());
+            if (!Recovery.bPartyRepairAttempted)
+            {
+                Recovery.bPartyRepairAttempted = true;
+                RetryPartyInitialization();
+            }
+        }
+    }
+#if !UE_BUILD_SHIPPING
+    TickSeniorLobbyStartupSmoke(this);
+#endif
 #if WITH_EDITOR
     TickSeniorLobbySmokeTest(this);
 #endif
@@ -159,7 +183,10 @@ void ASeniorLobbyController::RefreshPresentation()
 {
     if (!IsLocalController()) return;
     if (PauseWidget.IsValid()) ClosePauseMenu();
-    PresentedMap = UGameplayStatics::GetCurrentLevelName(this, true);
+    const FString CurrentMap = UGameplayStatics::GetCurrentLevelName(this, true);
+    if (CurrentMap == TEXT("Lobby") && PresentedMap != CurrentMap)
+        PartyPreparationStartedAt = FPlatformTime::Seconds();
+    PresentedMap = CurrentMap;
     const bool bInLobby = PresentedMap == TEXT("Lobby");
     bShowMouseCursor = bInLobby;
     bEnableClickEvents = bInLobby;
@@ -346,10 +373,42 @@ bool ASeniorLobbyController::IsHost() const
     if (const auto* State = GetPlayerState<ASeniorLobbyPlayerState>()) return State->bIsHost;
     return HasAuthority() && IsLocalController();
 }
+bool ASeniorLobbyController::IsPartyPrepared() const
+{
+    const auto* State = GetWorld() ? GetWorld()->GetGameState<ASeniorLobbyGameState>() : nullptr;
+    const auto* Local = GetPlayerState<ASeniorLobbyPlayerState>();
+    return State && Local && State->GetMembers().Contains(Local);
+}
+bool ASeniorLobbyController::CanStartStory() const
+{
+    if (!IsLobby(this) || !IsHost() || !IsPartyPrepared()) return false;
+    const auto* State = GetWorld()->GetGameState<ASeniorLobbyGameState>();
+    const auto* Story = GetGameInstance<UStoryCampaign>();
+    if (State->bStarting || !Story || Story->bTravelPending) return false;
+    // The UI and authority use the same predicate; solo play requires no ready step.
+    return State->CanStart() || State->GetMembers().Num() == 1;
+}
+bool ASeniorLobbyController::HasPartyInitializationFailed() const
+{
+    return IsLobby(this) && !bConnectionPending && !IsPartyPrepared()
+        && PartyPreparationStartedAt > 0 && FPlatformTime::Seconds() - PartyPreparationStartedAt >= 10;
+}
+void ASeniorLobbyController::RetryPartyInitialization()
+{
+    if (!IsLocalController() || !IsLobby(this) || !HasPartyInitializationFailed()) return;
+    const auto* World = GetWorld();
+    UE_LOG(LogTemp, Warning, TEXT("LOBBY_INITIALIZATION_RECOVERY: mode=%s state=%s player=%s; reopening the native solo lobby"),
+        *GetNameSafe(World ? World->GetAuthGameMode() : nullptr),
+        *GetNameSafe(World ? World->GetGameState() : nullptr), *GetNameSafe(PlayerState));
+    // Absolute travel clears stale PIE/URL game-mode options. Never manufacture
+    // a replicated party locally or bypass multiplayer readiness.
+    LeaveLobby();
+}
 void ASeniorLobbyController::StartStory_Implementation(bool bResume)
 {
     if (!HasAuthority() || !IsLocalController() || !CanEditLobby()) return;
     auto* State = GetWorld()->GetGameState<ASeniorLobbyGameState>();
+    if (!CanStartStory()) { ShowLobbyMessage(TEXT("The host cannot start this party yet.")); return; }
     // A solo player has no other party members to coordinate with. Keep the
     // ready gate for multiplayer, but let the main Start Game button work alone.
     if (!State->CanStart())
