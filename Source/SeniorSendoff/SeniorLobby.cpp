@@ -145,6 +145,13 @@ void ASeniorLobbyController::Tick(float DeltaSeconds)
     {
         if (IsPartyPrepared())
         {
+            if (!bLoggedPartyPrepared)
+            {
+                bLoggedPartyPrepared = true;
+                UE_LOG(LogTemp, Display, TEXT("LOBBY_PARTY_PREPARED: netMode=%d controller=%s player=%s members=%d soloStart=%d"),
+                    int32(GetNetMode()), *GetName(), *GetNameSafe(PlayerState),
+                    GetWorld()->GetGameState<ASeniorLobbyGameState>()->GetMembers().Num(), CanStartStory());
+            }
             if (auto* Recovery = RecoveryState.Find(GetGameInstance()))
                 if (!Recovery->bScheduled) RecoveryState.Remove(GetGameInstance());
         }
@@ -186,7 +193,10 @@ void ASeniorLobbyController::RefreshPresentation()
     const FString CurrentMap = UGameplayStatics::GetCurrentLevelName(this, true);
     const bool bLeavingLobby = PresentedMap == TEXT("Lobby") && CurrentMap != TEXT("Lobby");
     if (CurrentMap == TEXT("Lobby") && PresentedMap != CurrentMap)
+    {
         PartyPreparationStartedAt = FPlatformTime::Seconds();
+        bLoggedPartyPrepared = false;
+    }
     PresentedMap = CurrentMap;
     const bool bInLobby = PresentedMap == TEXT("Lobby");
     bShowMouseCursor = bInLobby;

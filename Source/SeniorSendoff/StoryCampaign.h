@@ -46,6 +46,8 @@ class SENIORSENDOFF_API UStoryCampaign : public UGameInstance
 public:
     virtual void Init() override;
     virtual void Shutdown() override;
+    virtual TSubclassOf<AGameModeBase> OverrideGameModeClass(TSubclassOf<AGameModeBase> GameModeClass,
+        const FString& MapName, const FString& Options, const FString& Portal) const override;
     UPROPERTY(BlueprintReadOnly) TObjectPtr<UStorySave> Progress;
     UPROPERTY(BlueprintReadOnly) bool bTravelPending = false;
     UPROPERTY(BlueprintReadOnly) FString Status;

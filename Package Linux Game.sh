@@ -4,6 +4,8 @@ set -euo pipefail
 project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 engine_dir="${SSO_UNREAL_ENGINE:-$HOME/UnrealEngine/5.8.2}"
 archive_dir="${SSO_PACKAGE_DIR:-$project_dir/Deliverables/CombinedLinux}"
+# Bound AutomationTool cache requests on many-core Linux hosts.
+export DOTNET_PROCESSOR_COUNT="${SSO_BUILD_PROCESSORS:-${DOTNET_PROCESSOR_COUNT:-4}}"
 "$engine_dir/Engine/Build/BatchFiles/RunUAT.sh" BuildCookRun \
   "-project=$project_dir/SeniorSendoff.uproject" -noP4 -platform=Linux \
   -clientconfig=Development -build -cook -iterativecooking -stage -package -pak -archive \

@@ -4,6 +4,7 @@
 #include "StoryCampaign.h"
 #if !UE_BUILD_SHIPPING
 #include "Engine/World.h"
+#include "HAL/IConsoleManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "Misc/CommandLine.h"
 #include "Misc/Parse.h"
@@ -14,6 +15,7 @@ void TickSeniorLobbyStartupSmoke(ASeniorLobbyController* PC)
     if (!FParse::Param(FCommandLine::Get(), TEXT("LobbyStartupSmoke"))) return;
     static int32 Step = 0;
     static double Started = FPlatformTime::Seconds(), Changed = Started;
+    static double HouseReadyAt = -1;
     static bool bInjected = false, bDone = false;
     if (bDone) return;
     const double Now = FPlatformTime::Seconds();
@@ -27,7 +29,11 @@ void TickSeniorLobbyStartupSmoke(ASeniorLobbyController* PC)
         }
         return Condition;
     };
-    if (!Check(Now - Started < 45, TEXT("Default lobby/story startup timed out"))) return;
+    float VisualWarmup = 0;
+    FParse::Value(FCommandLine::Get(), TEXT("LobbyStartupVisualWarmup="), VisualWarmup);
+    if (!Check(FMath::IsFinite(VisualWarmup) && VisualWarmup >= 0 && VisualWarmup <= 20,
+        TEXT("Invalid optional house render warm-up"))) return;
+    if (!Check(Now - Started < 45 + VisualWarmup, TEXT("Default lobby/story startup timed out"))) return;
     const FString Map = UGameplayStatics::GetCurrentLevelName(PC, true);
     auto* Story = PC->GetGameInstance<UStoryCampaign>();
     if (!Check(Story != nullptr, TEXT("Campaign game instance is missing"))) return;
@@ -35,6 +41,14 @@ void TickSeniorLobbyStartupSmoke(ASeniorLobbyController* PC)
     auto* State = PC->GetWorld()->GetGameState<ASeniorLobbyGameState>();
     if (Step == 0 && Map == TEXT("Lobby") && PC->IsPartyPrepared())
     {
+        // Cover both native map loading and editor PIE name resolution. A
+        // chapter's own mode must remain available for gameplay and travel.
+        if (!Check(Story->OverrideGameModeClass(AGameModeBase::StaticClass(), TEXT("Lobby"), TEXT(""), TEXT(""))
+                == ASeniorLobbyGameMode::StaticClass()
+            && Story->OverrideGameModeClass(AGameModeBase::StaticClass(), TEXT("UEDPIE_0_Lobby"), TEXT(""), TEXT(""))
+                == ASeniorLobbyGameMode::StaticClass()
+            && Story->OverrideGameModeClass(AStoryGameMode::StaticClass(), TEXT("Chapter01_House"), TEXT(""), TEXT(""))
+                == AStoryGameMode::StaticClass(), TEXT("Lobby mode contract or chapter mode preservation failed"))) return;
         if (FParse::Param(FCommandLine::Get(), TEXT("LobbyStartupRecoveryTest")) && !bInjected)
         {
             // Reproduce the exact UI gate: a controller exists but the party
@@ -74,6 +88,19 @@ void TickSeniorLobbyStartupSmoke(ASeniorLobbyController* PC)
         if (!Check(PC->GetLobbyMessage().IsEmpty()
             && Story->StatusUntil <= PC->GetWorld()->GetTimeSeconds(),
             TEXT("Lobby feedback leaked into the house HUD"))) return;
+        // Optional rendered-entry diagnosis waits from actual possession, not
+        // from the earlier lobby Start call. It does not change production
+        // travel, quality or streaming, and keeps the early default capture.
+        if (HouseReadyAt < 0) HouseReadyAt = Now;
+        if (Now - HouseReadyAt < VisualWarmup) return;
+        auto Value = [](const TCHAR* Name)
+        {
+            const IConsoleVariable* Var = IConsoleManager::Get().FindConsoleVariable(Name);
+            return Var ? Var->GetInt() : -1;
+        };
+        UE_LOG(LogTemp, Display, TEXT("LOBBY_STARTUP_HOUSE_RENDER_STATE: warmup=%.2f GI=%d shadows=%d lumen=%d"),
+            Now - HouseReadyAt, Value(TEXT("sg.GlobalIlluminationQuality")),
+            Value(TEXT("sg.ShadowQuality")), Value(TEXT("r.Lumen.DiffuseIndirect.Allow")));
         if (FParse::Param(FCommandLine::Get(), TEXT("LobbyStartupCapture")))
             FScreenshotRequest::RequestScreenshot(TEXT("LobbyStartupHouse.png"), true, false);
         UE_LOG(LogTemp, Display, TEXT("LOBBY_STARTUP_TEST: house loaded, pawn possessed, travel completed"));

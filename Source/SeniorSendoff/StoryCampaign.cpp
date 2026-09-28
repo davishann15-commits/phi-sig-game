@@ -47,6 +47,7 @@ void TickSauceSmokeTest(AStoryFirstPersonCharacter* Pawn);
 #endif
 #if !UE_BUILD_SHIPPING
 void TickCombinedHouseSmoke(UWorld* World);
+void TickHouseVisualReview(UWorld* World);
 #endif
 
 void UStoryCampaign::Init()
@@ -54,6 +55,7 @@ void UStoryCampaign::Init()
     Super::Init();
 #if !UE_BUILD_SHIPPING
     if (FParse::Param(FCommandLine::Get(),TEXT("CombinedHouseSmoke"))) SaveSlot=TEXT("SeniorSendoff_CombinedHouseAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseVisualReview"))) SaveSlot=TEXT("SeniorSendoff_HouseVisualAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("LobbyStartupSmoke"))) SaveSlot=TEXT("SeniorSendoff_LobbyStartupAutomationOnly");
 #endif
 #if WITH_EDITOR
@@ -76,6 +78,23 @@ void UStoryCampaign::Shutdown()
     FCoreUObjectDelegates::PreLoadMap.Remove(BeforeHandle);
     FCoreUObjectDelegates::PostLoadMapWithWorld.Remove(AfterHandle);
     Super::Shutdown();
+}
+TSubclassOf<AGameModeBase> UStoryCampaign::OverrideGameModeClass(TSubclassOf<AGameModeBase> GameModeClass,
+    const FString& MapName, const FString& Options, const FString& Portal) const
+{
+    // The lobby widget requires this mode's controller and replicated party
+    // state. Stale World Settings or inherited travel options must not replace
+    // that contract. Unreal passes a PIE-prefixed map name during editor Play.
+    const bool bLobby = MapName == TEXT("Lobby")
+        || (MapName.StartsWith(TEXT("UEDPIE_")) && MapName.EndsWith(TEXT("_Lobby")));
+    if (bLobby)
+    {
+        if (GameModeClass != ASeniorLobbyGameMode::StaticClass())
+            UE_LOG(LogTemp, Warning, TEXT("LOBBY_GAME_MODE_REPAIRED: map=%s requested=%s; using SeniorLobbyGameMode"),
+                *MapName, *GetNameSafe(GameModeClass.Get()));
+        return ASeniorLobbyGameMode::StaticClass();
+    }
+    return Super::OverrideGameModeClass(GameModeClass, MapName, Options, Portal);
 }
 FName UStoryCampaign::ChapterMap(int32 Chapter)
 {
@@ -325,7 +344,12 @@ void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
     if (IsLocallyControlled() && FirstPersonCamera)
     {
         const float WantedFOV = SeniorPlayerPreferences::Get().FieldOfView;
-        if (!FMath::IsNearlyEqual(FirstPersonCamera->FieldOfView, WantedFOV))
+        bool bUsePlayerFov = true;
+#if !UE_BUILD_SHIPPING
+        // The opt-in campaign render sweep fits the registered photo FOV.
+        bUsePlayerFov = !FParse::Param(FCommandLine::Get(), TEXT("HouseVisualReview"));
+#endif
+        if (bUsePlayerFov && !FMath::IsNearlyEqual(FirstPersonCamera->FieldOfView, WantedFOV))
             FirstPersonCamera->SetFieldOfView(WantedFOV);
         // The capsule's crouch already lowers the viewpoint. A further eased
         // drop gives a sprint slide a readable low viewpoint without changing
@@ -828,6 +852,7 @@ void AStoryGameMode::Tick(float DeltaSeconds)
 #endif
 #if !UE_BUILD_SHIPPING
     TickCombinedHouseSmoke(GetWorld());
+    TickHouseVisualReview(GetWorld());
 #endif
     auto* Story = GetGameInstance<UStoryCampaign>();
     if (!Story || Story->CurrentChapter() == 0 || Story->bTravelPending || Story->Progress->bCompleted) return;

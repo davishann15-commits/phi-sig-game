@@ -94,6 +94,7 @@ private:
     bool bConnectionPending = false;
     bool bAppliedLocalSelections = false;
     double PartyPreparationStartedAt = 0;
+    bool bLoggedPartyPrepared = false;
     mutable FString CachedHostAddress;
     mutable double AddressCheckedAt = -10;
 };

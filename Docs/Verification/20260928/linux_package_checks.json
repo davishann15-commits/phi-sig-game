@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-28T23:30:17.180457+00:00",
+  "checks": {
+    "linuxPackage": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 605.0,
+      "expectedMarker": "BUILD SUCCESSFUL",
+      "fatalMarkers": []
+    },
+    "packaged_lobby": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 1.22,
+      "expectedMarker": "Load map complete /Game/Story/Maps/Lobby",
+      "fatalMarkers": []
+    },
+    "packaged_house": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 1.82,
+      "expectedMarker": "Load map complete /Game/Story/Maps/Chapter01_House",
+      "fatalMarkers": []
+    },
+    "packaged_lobby_start": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 12.99,
+      "expectedMarker": "LOBBY_STARTUP_PASSED",
+      "fatalMarkers": []
+    },
+    "packaged_lobby_recovery": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 23.02,
+      "expectedMarker": "LOBBY_STARTUP_PASSED",
+      "fatalMarkers": []
+    },
+    "packaged_lobby_mode_override": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 13.04,
+      "expectedMarker": "LOBBY_STARTUP_PASSED",
+      "fatalMarkers": []
+    },
+    "packagedHouseMovement": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 4.48,
+      "expectedMarker": "COMBINED_HOUSE_SMOKE_PASSED",
+      "fatalMarkers": []
+    },
+    "packagedHouseOttoman": {
+      "status": "PASS",
+      "exitCode": 0,
+      "seconds": 4.37,
+      "expectedMarker": "COMBINED_HOUSE_SMOKE_PASSED",
+      "fatalMarkers": []
+    }
+  },
+  "productionFilesUnchanged": true,
+  "scope": "Scripted editor/cooked smoke checks in separate UserDir save/config roots; no unassisted playthrough or real-peer multiplayer claim."
+}
