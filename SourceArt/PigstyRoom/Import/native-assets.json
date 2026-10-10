@@ -1,0 +1,868 @@
+[
+  {
+    "name": "SM_PIG_BlackBody",
+    "boundsCm": [
+      [
+        -66.4007339477539,
+        -25.7393741607666,
+        38.06877136230469
+      ],
+      [
+        66.35018920898438,
+        25.72712516784668,
+        91.14277648925781
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -66.40074,
+        -25.73937,
+        38.06877
+      ],
+      "max": [
+        66.35019,
+        25.72713,
+        91.14278
+      ],
+      "size": [
+        132.75092,
+        51.4665,
+        53.07401
+      ],
+      "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+    },
+    "group": "pigs",
+    "slots": [
+      "PIG_M_BlackHide",
+      "PIG_M_BlackBristle"
+    ]
+  },
+  {
+    "name": "SM_PIG_BlackHead",
+    "boundsCm": [
+      [
+        -16.621315002441406,
+        -25.575342178344727,
+        -23.97223663330078
+      ],
+      [
+        23.3799991607666,
+        25.484254837036133,
+        14.117321014404297
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -16.62132,
+        -25.57534,
+        -23.97224
+      ],
+      "max": [
+        23.38,
+        25.48425,
+        14.11732
+      ],
+      "size": [
+        40.00131,
+        51.0596,
+        38.08956
+      ],
+      "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+    },
+    "group": "pigs",
+    "slots": [
+      "PIG_M_BlackHide",
+      "PIG_M_BlackSnout",
+      "PIG_M_NostrilMouth",
+      "PIG_M_GlossBlackEye",
+      "PIG_M_CharcoalEarInner"
+    ]
+  },
+  {
+    "name": "SM_PIG_BlackUpperLeg",
+    "boundsCm": [
+      [
+        -6.750752925872803,
+        -6.838107109069824,
+        -25.27010726928711
+      ],
+      [
+        8.446635246276855,
+        6.838107109069824,
+        3.327779769897461
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -6.75075,
+        -6.83811,
+        -25.27011
+      ],
+      "max": [
+        8.44664,
+        6.83811,
+        3.32778
+      ],
+      "size": [
+        15.19739,
+        13.67621,
+        28.59789
+      ],
+      "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+    },
+    "group": "pigs",
+    "slots": [
+      "PIG_M_BlackHide"
+    ]
+  },
+  {
+    "name": "SM_PIG_BlackLowerLeg",
+    "boundsCm": [
+      [
+        -3.8195087909698486,
+        -5.6526970863342285,
+        -23.0
+      ],
+      [
+        8.114591598510742,
+        5.652698040008545,
+        3.352679967880249
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -3.81951,
+        -5.6527,
+        -23.0
+      ],
+      "max": [
+        8.11459,
+        5.6527,
+        3.35268
+      ],
+      "size": [
+        11.9341,
+        11.30539,
+        26.35268
+      ],
+      "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+    },
+    "group": "pigs",
+    "slots": [
+      "PIG_M_BlackHide",
+      "PIG_M_HoofKeratin"
+    ]
+  },
+  {
+    "name": "PIG_SM_Mattress",
+    "boundsCm": [
+      [
+        -100.00000762939453,
+        -70.00001525878906,
+        0.0
+      ],
+      [
+        100.00000762939453,
+        70.00001525878906,
+        21.0
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -100.0,
+        -70.000002,
+        0.0
+      ],
+      "max": [
+        100.0,
+        70.000002,
+        20.999997
+      ],
+      "size": [
+        200.0,
+        140.000004,
+        20.999997
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_MattressFabric",
+      "PIG_M_MattressSide",
+      "PIG_M_Binding"
+    ]
+  },
+  {
+    "name": "PIG_SM_Mattress_COL",
+    "boundsCm": [
+      [
+        -97.00000762939453,
+        -67.00001525878906,
+        0.0
+      ],
+      [
+        97.00000762939453,
+        67.00001525878906,
+        18.399999618530273
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -97.0,
+        -67.000002,
+        0.0
+      ],
+      "max": [
+        97.0,
+        67.000002,
+        18.399997
+      ],
+      "size": [
+        194.0,
+        134.000004,
+        18.399997
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_DarkMetal"
+    ]
+  },
+  {
+    "name": "PIG_SM_Blanket",
+    "boundsCm": [
+      [
+        -46.000003814697266,
+        -37.00648880004883,
+        -0.5446767210960388
+      ],
+      [
+        46.000003814697266,
+        32.00000762939453,
+        2.4780948162078857
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -46.0,
+        -37.006488,
+        -0.544677
+      ],
+      "max": [
+        46.0,
+        32.000003,
+        2.478095
+      ],
+      "size": [
+        92.0,
+        69.006491,
+        3.022772
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_Blanket"
+    ]
+  },
+  {
+    "name": "PIG_SM_Cheeto",
+    "boundsCm": [
+      [
+        -2.5,
+        -0.8000001311302185,
+        0.0
+      ],
+      [
+        2.5,
+        0.8000001907348633,
+        1.600000023841858
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -2.5,
+        -0.8,
+        0.0
+      ],
+      "max": [
+        2.5,
+        0.8,
+        1.6
+      ],
+      "size": [
+        5.0,
+        1.6,
+        1.6
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_Cheeto"
+    ]
+  },
+  {
+    "name": "PIG_SM_CheetosBag",
+    "boundsCm": [
+      [
+        -11.05000114440918,
+        -5.160900592803955,
+        -0.19227950274944305
+      ],
+      [
+        11.05000114440918,
+        5.160903453826904,
+        28.074798583984375
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -11.05,
+        -5.1609,
+        -0.192279
+      ],
+      "max": [
+        11.05,
+        5.160903,
+        28.074796
+      ],
+      "size": [
+        22.1,
+        10.321803,
+        28.267075
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_CheetosBag",
+      "PIG_M_BagFoil"
+    ]
+  },
+  {
+    "name": "PIG_SM_OrangeCrumbs",
+    "boundsCm": [
+      [
+        -17.313907623291016,
+        -12.550111770629883,
+        -0.06529977172613144
+      ],
+      [
+        15.182106971740723,
+        12.805824279785156,
+        0.3864439129829407
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -17.313908,
+        -12.550114,
+        -0.0653
+      ],
+      "max": [
+        15.182108,
+        12.805825,
+        0.386444
+      ],
+      "size": [
+        32.496016,
+        25.355939,
+        0.451744
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_Cheeto"
+    ]
+  },
+  {
+    "name": "PIG_SM_WaterTrough",
+    "boundsCm": [
+      [
+        -70.0,
+        -23.000009536743164,
+        -0.20000001788139343
+      ],
+      [
+        70.0,
+        23.000009536743164,
+        34.0
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -70.0,
+        -23.000008,
+        -0.2
+      ],
+      "max": [
+        70.0,
+        23.000008,
+        34.000001
+      ],
+      "size": [
+        140.0,
+        46.000016,
+        34.200001
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_RustyMetal",
+      "PIG_M_DirtyWater",
+      "PIG_M_DarkMetal"
+    ]
+  },
+  {
+    "name": "PIG_SM_FeedBucket",
+    "boundsCm": [
+      [
+        -17.0,
+        -17.0,
+        0.0
+      ],
+      [
+        17.0,
+        17.0,
+        41.58000183105469
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -17.0,
+        -17.0,
+        0.0
+      ],
+      "max": [
+        17.0,
+        17.0,
+        41.58
+      ],
+      "size": [
+        34.0,
+        34.0,
+        41.58
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_RustyMetal",
+      "PIG_M_Feed",
+      "PIG_M_DarkMetal"
+    ]
+  },
+  {
+    "name": "PIG_SM_BrokenBoards",
+    "boundsCm": [
+      [
+        -70.38740539550781,
+        -35.25901794433594,
+        0.0
+      ],
+      [
+        64.58071899414062,
+        28.80812644958496,
+        8.60999870300293
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -70.387408,
+        -35.259016,
+        0.0
+      ],
+      "max": [
+        64.580724,
+        28.808127,
+        8.609999
+      ],
+      "size": [
+        134.968132,
+        64.067143,
+        8.609999
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_OldWood",
+      "PIG_M_DarkMetal"
+    ]
+  },
+  {
+    "name": "PIG_SM_StrawPatch",
+    "boundsCm": [
+      [
+        -41.11421203613281,
+        -26.02915382385254,
+        -0.04108916223049164
+      ],
+      [
+        41.886287689208984,
+        26.26808738708496,
+        0.8705804347991943
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -41.11421,
+        -26.029156,
+        -0.041089
+      ],
+      "max": [
+        41.88629,
+        26.268087,
+        0.87058
+      ],
+      "size": [
+        83.0005,
+        52.297243,
+        0.911669
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_Straw"
+    ]
+  },
+  {
+    "name": "PIG_SM_WallVent",
+    "boundsCm": [
+      [
+        -32.0,
+        -2.500004768371582,
+        0.0
+      ],
+      [
+        32.0,
+        4.9500041007995605,
+        38.0
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -32.0,
+        -2.500005,
+        0.0
+      ],
+      "max": [
+        32.0,
+        4.950004,
+        38.0
+      ],
+      "size": [
+        64.0,
+        7.450009,
+        38.0
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_DarkMetal",
+      "PIG_M_RustyMetal"
+    ]
+  },
+  {
+    "name": "PIG_SM_BulkheadLamp",
+    "boundsCm": [
+      [
+        -19.0,
+        -3.000002384185791,
+        0.0
+      ],
+      [
+        19.0,
+        7.699999809265137,
+        26.0
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -19.0,
+        -3.000002,
+        0.0
+      ],
+      "max": [
+        19.0,
+        7.7,
+        25.999999
+      ],
+      "size": [
+        38.0,
+        10.700002,
+        25.999999
+      ],
+      "coordinateSpace": "Unreal localcm with native importerYreflection"
+    },
+    "group": "props",
+    "slots": [
+      "PIG_M_DarkMetal",
+      "PIG_M_LampGlass",
+      "PIG_M_RustyMetal"
+    ]
+  },
+  {
+    "name": "PIG_SM_OriginalShellRemainder",
+    "boundsCm": [
+      [
+        -2510.0,
+        -1860.0001220703125,
+        297.29937744140625
+      ],
+      [
+        -1467.9998779296875,
+        -865.0,
+        582.0996704101562
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -2510.0000381469727,
+        -1860.0000381469727,
+        297.2996711730957
+      ],
+      "max": [
+        -1467.9998397827148,
+        -864.9999618530273,
+        582.0998191833496
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "MI_SSO_S05HallGrey",
+      "MI_SSO_S05Ceiling"
+    ]
+  },
+  {
+    "name": "PIG_SM_OriginalFloorsRemainder",
+    "boundsCm": [
+      [
+        -2490.0,
+        -1840.0,
+        297.29937744140625
+      ],
+      [
+        -1488.0001220703125,
+        -615.0001220703125,
+        302.2997741699219
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -2489.9999618530273,
+        -1839.9999618530273,
+        297.2996711730957
+      ],
+      "max": [
+        -1488.0001068115234,
+        -615.000057220459,
+        302.2998809814453
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "MI_SSO_FloorWood",
+      "MI_SSO_S05SouthHallFloor"
+    ]
+  },
+  {
+    "name": "PIG_SM_OriginalTrimRemainder",
+    "boundsCm": [
+      [
+        -2490.0,
+        -1840.000244140625,
+        302.2994079589844
+      ],
+      [
+        -1488.0,
+        -885.0,
+        319.299560546875
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -2489.9999618530273,
+        -1840.0001525878906,
+        302.29971408843994
+      ],
+      "max": [
+        -1488.0000114440918,
+        -884.999942779541,
+        319.2997694015503
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "MI_SSO_PaintWhite"
+    ]
+  },
+  {
+    "name": "PIG_COL_OriginalShellRemainder",
+    "boundsCm": [
+      [
+        -2510.0,
+        -1860.0001220703125,
+        297.29937744140625
+      ],
+      [
+        -1467.9998779296875,
+        -615.0001220703125,
+        582.0996704101562
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -2510.0000381469727,
+        -1860.0000381469727,
+        297.2996711730957
+      ],
+      "max": [
+        -1467.9998397827148,
+        -615.000057220459,
+        582.0998191833496
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "WorldGridMaterial",
+      "WorldGridMaterial_1",
+      "WorldGridMaterial_2",
+      "WorldGridMaterial_3"
+    ]
+  },
+  {
+    "name": "PIG_SM_ExpandedRoom",
+    "boundsCm": [
+      [
+        -2992.0,
+        -1391.842529296875,
+        297.2997741699219
+      ],
+      [
+        -2320.432861328125,
+        -745.0,
+        582.0999145507812
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -2992.0000076293945,
+        -1391.8424606323242,
+        297.30000495910645
+      ],
+      "max": [
+        -2320.4328536987305,
+        -744.9999809265137,
+        582.1000099182129
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "PST_M_DirtyOlivePlaster",
+      "PST_M_DampCeiling",
+      "PST_M_StainedConcrete"
+    ]
+  },
+  {
+    "name": "PIG_COL_ExpandedRoom",
+    "boundsCm": [
+      [
+        -2992.0,
+        -1391.842529296875,
+        297.2997741699219
+      ],
+      [
+        -2320.432861328125,
+        -745.0,
+        582.0999145507812
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -2992.0000076293945,
+        -1391.8424606323242,
+        297.30000495910645
+      ],
+      "max": [
+        -2320.4328536987305,
+        -744.9999809265137,
+        582.1000099182129
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "PST_M_DirtyOlivePlaster",
+      "PST_M_DampCeiling",
+      "PST_M_StainedConcrete"
+    ]
+  },
+  {
+    "name": "PIG_SM_KeepShutPlaque",
+    "boundsCm": [
+      [
+        -20.0,
+        -4.073016953043407e-06,
+        0.0
+      ],
+      [
+        20.0,
+        0.0,
+        25.0
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -20.000000298023224,
+        -0.0,
+        0.0
+      ],
+      "max": [
+        20.000000298023224,
+        -0.0,
+        25.0
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "PST_M_KeepShutPlaque"
+    ]
+  },
+  {
+    "name": "PIG_SM_GrimeScratch",
+    "boundsCm": [
+      [
+        -50.0,
+        -2.4438102627755143e-05,
+        0.0
+      ],
+      [
+        50.0,
+        0.0,
+        150.0
+      ]
+    ],
+    "expectedBoundsCm": {
+      "min": [
+        -50.0,
+        -0.0,
+        0.0
+      ],
+      "max": [
+        50.0,
+        -0.0,
+        150.0
+      ]
+    },
+    "group": "geometry",
+    "slots": [
+      "PST_M_GrimeScratchDecal"
+    ]
+  }
+]

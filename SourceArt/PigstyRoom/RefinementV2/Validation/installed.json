@@ -1,0 +1,125 @@
+{
+  "assets": [
+    {
+      "name": "SM_PIG_BlackBody",
+      "boundsCm": [
+        [
+          -66.92304992675781,
+          -26.647214889526367,
+          39.26308059692383
+        ],
+        [
+          57.22504425048828,
+          26.636720657348633,
+          90.1436996459961
+        ]
+      ],
+      "slots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackBristle"
+      ]
+    },
+    {
+      "name": "SM_PIG_BlackHead",
+      "boundsCm": [
+        [
+          -24.2396183013916,
+          -20.553943634033203,
+          -26.492244720458984
+        ],
+        [
+          24.9000244140625,
+          20.175498962402344,
+          7.212644100189209
+        ]
+      ],
+      "slots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackSnout",
+        "PIG_M_NostrilMouth",
+        "PIG_M_GlossBlackEye",
+        "PIG_M_CharcoalEarInner",
+        "PIG_M_BlackBristle"
+      ]
+    },
+    {
+      "name": "SM_PIG_BlackUpperLeg",
+      "boundsCm": [
+        [
+          -8.502923965454102,
+          -7.389864921569824,
+          -25.568735122680664
+        ],
+        [
+          6.44461727142334,
+          7.389864921569824,
+          4.941442012786865
+        ]
+      ],
+      "slots": [
+        "PIG_M_BlackHide"
+      ]
+    },
+    {
+      "name": "SM_PIG_BlackLowerLeg",
+      "boundsCm": [
+        [
+          -3.7068605422973633,
+          -5.549999713897705,
+          -23.0
+        ],
+        [
+          6.650487899780273,
+          5.5500006675720215,
+          3.968770742416382
+        ]
+      ],
+      "slots": [
+        "PIG_M_BlackHide",
+        "PIG_M_HoofKeratin",
+        "PIG_M_BlackSnout"
+      ]
+    }
+  ],
+  "pigs": [
+    {
+      "name": "PIG_Pepper",
+      "settings": {
+        "visual_scale": 0.62,
+        "max_health": 85.0,
+        "health": 85.0,
+        "walk_speed": 155.0,
+        "run_speed": 340.0,
+        "bed_yaw": 0.0
+      },
+      "feetZ": 302.3,
+      "bed": [
+        -2825.0,
+        -956.0,
+        323.3
+      ]
+    },
+    {
+      "name": "PIG_Coal",
+      "settings": {
+        "visual_scale": 0.82,
+        "max_health": 160.0,
+        "health": 160.0,
+        "walk_speed": 130.0,
+        "run_speed": 280.0,
+        "bed_yaw": 0.0
+      },
+      "feetZ": 302.3,
+      "bed": [
+        -2825.0,
+        -886.0,
+        323.3
+      ]
+    }
+  ],
+  "protectedActors": 708,
+  "allProtectedUnchanged": true,
+  "doorRegistryUnchanged": true,
+  "foodCapacity": 24,
+  "foodRefillSeconds": 5
+}

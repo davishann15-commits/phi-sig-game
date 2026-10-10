@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "shells": [
+    {
+      "label": "SM_Entrance_p0_m1_Solid",
+      "asset_name": "SM_GRTV_Retained_SM_Entrance_p0_m1_Solid",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/GreatRoomTVs/models/SM_GRTV_Retained_SM_Entrance_p0_m1_Solid.fbx",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodWalnut.MI_SSO_WoodWalnut",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S01BroomYellow.MI_SSO_S01BroomYellow",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityChrome.MI_SSO_S03FidelityChrome",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream.MI_SSO_S03MasonryCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityBathPaint.MI_SSO_S03FidelityBathPaint"
+      ],
+      "original_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_ArchitecturalRemainder_SM_Entrance_p0_m1_Solid.HI_ArchitecturalRemainder_SM_Entrance_p0_m1_Solid",
+      "source_faces": 45638,
+      "removed_tv_faces": 376,
+      "removed_tv_components": 2,
+      "retained_faces": 45262,
+      "conservation_pass": true,
+      "tv_bounds": [
+        [
+          -6.364999771118164,
+          -1.934999704360962,
+          1.8349997997283936
+        ],
+        [
+          -6.233999729156494,
+          -0.17499932646751404,
+          2.8650002479553223
+        ]
+      ]
+    },
+    {
+      "label": "SM_Entrance_p0_p0_Solid",
+      "asset_name": "SM_GRTV_Retained_SM_Entrance_p0_p0_Solid",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/GreatRoomTVs/models/SM_GRTV_Retained_SM_Entrance_p0_p0_Solid.fbx",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood.MI_SSO_FloorWood",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodWalnut.MI_SSO_WoodWalnut",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete"
+      ],
+      "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalRoom_Entrance_p0_p0_Solid.SM_OriginalRoom_Entrance_p0_p0_Solid",
+      "source_faces": 51884,
+      "removed_tv_faces": 376,
+      "removed_tv_components": 2,
+      "retained_faces": 51508,
+      "conservation_pass": true,
+      "tv_bounds": [
+        [
+          6.783999443054199,
+          -1.8199992179870605,
+          1.8349997997283936
+        ],
+        [
+          6.914999961853027,
+          -0.05999889597296715,
+          2.8650002479553223
+        ]
+      ]
+    }
+  ],
+  "kitchen_props_preserved": 137
+}

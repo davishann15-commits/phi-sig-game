@@ -1,0 +1,681 @@
+{
+  "audit_kind": "Read-only source geometry and saved snapshot audit; parent refreshes actual editor before mutation",
+  "scene_factor": 1.1,
+  "door101": {
+    "reuse_actor": "OriginalDoor_Entrance_m1_m2_Solid_01",
+    "id": "SM_OriginalLeaf_Entrance_m1_m2_Solid_01",
+    "hinge_before": [
+      -2354.4,
+      -1140.7,
+      8
+    ],
+    "hinge_current": [
+      -2589.84,
+      -1254.77,
+      8.8
+    ],
+    "doorway_center_before": [
+      -2354.4,
+      -1212.7,
+      118
+    ],
+    "doorway_center_current": [
+      -2589.84,
+      -1333.97,
+      129.8
+    ],
+    "closed_yaw": 90,
+    "open_yaw": 0,
+    "clear_opening_before": [
+      [
+        -2368.8,
+        -1291.48055,
+        0.8
+      ],
+      [
+        -2340,
+        -1142.16622,
+        221.51985
+      ]
+    ],
+    "clear_opening_current": [
+      [
+        -2605.68,
+        -1420.628605,
+        0.88
+      ],
+      [
+        -2574,
+        -1256.382842,
+        243.671835
+      ]
+    ],
+    "original_leaf": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Entrance_m1_m2_Solid_01"
+  },
+  "door102": {
+    "actor": "OriginalDoor_Entrance_m1_m2_Solid_03",
+    "id": "SM_OriginalLeaf_Entrance_m1_m2_Solid_03",
+    "hinge_before": [
+      -2313,
+      -1347.8,
+      8
+    ],
+    "hinge_current": [
+      -2544.3,
+      -1482.58,
+      8.8
+    ],
+    "doorway_center_before": [
+      -2228.4,
+      -1347.8,
+      118
+    ],
+    "doorway_center_current": [
+      -2451.24,
+      -1482.58,
+      129.8
+    ],
+    "closed_yaw": 0,
+    "open_yaw": -90
+  },
+  "room101": {
+    "usable_interior_before": [
+      [
+        -3015.0,
+        -1313.1,
+        0.8
+      ],
+      [
+        -2368.8,
+        -473.4,
+        262.24
+      ]
+    ],
+    "usable_interior_current": [
+      [
+        -3316.5,
+        -1444.41,
+        0.88
+      ],
+      [
+        -2605.68,
+        -520.74,
+        288.464
+      ]
+    ],
+    "real_equivalent_size_m": [
+      3.59,
+      4.665
+    ],
+    "geometry_cut_required": false,
+    "outside_shell_alteration_required": false,
+    "floor": "Existing connected component242 of SM_Entrance_m1_m2_Solid, wood overlay top0.8cm before scale",
+    "ceiling": "Existing shared SM_Entrance_m1_m2_Solid component263, lower face262.24cm before scale"
+  },
+  "protected_shell_actors": [
+    "SM_Entrance_m1_m2_Solid",
+    "COL_Entrance_m1_m2_Solid",
+    "SM_Entrance_m1_m3_Solid",
+    "COL_Entrance_m1_m3_Solid",
+    "SM_Room102_Shell",
+    "COL_Room102_Shell"
+  ],
+  "source_meshes": {
+    "shared_visual": "/Game/SeniorSendOff/House/HallFloorsPorch/SM_HFP_Entrance_m1_m2_Solid",
+    "shared_collision": "/Game/SeniorSendOff/House/Room102Chairs/COL_R102_Entrance_m1_m2_DoorClear",
+    "exterior_visual": "/Game/SeniorSendOff/House/Meshes/SM_Entrance_m1_m3_Solid",
+    "exterior_collision": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_m1_m3_Solid"
+  },
+  "optional_generic_room_furniture_removal": [
+    "Interactive_SMF_Entrance_ALL__003",
+    "Interactive_SMF_Entrance_ALL__004",
+    "Interactive_SMF_Entrance_ALL__005",
+    "Interactive_SMF_Entrance_ALL__006",
+    "Interactive_SMF_Entrance_ALL__007",
+    "Interactive_SMF_Entrance_ALL__008",
+    "Interactive_SMF_Entrance_ALL__014",
+    "Interactive_SMF_Entrance_ALL__015",
+    "Interactive_SMF_Entrance_ALL__016",
+    "Interactive_SMF_Entrance_ALL__017",
+    "Interactive_SMF_Entrance_ALL__018",
+    "Interactive_SMF_Entrance_ALL__019",
+    "Interactive_SMF_Entrance_ALL__020",
+    "Interactive_SMF_Entrance_ALL__076",
+    "Interactive_SMF_Entrance_ALL__086",
+    "Interactive_SMF_Entrance_ALL__087",
+    "Interactive_SMF_Entrance_ALL__088",
+    "Interactive_SMF_Entrance_ALL__089",
+    "Interactive_SMF_Entrance_ALL__090",
+    "Interactive_SMF_Entrance_ALL__091",
+    "Interactive_SMF_Entrance_ALL__092",
+    "Interactive_SMF_Entrance_ALL__093",
+    "Interactive_SMF_Entrance_ALL__094",
+    "Interactive_SMF_Entrance_ALL__097"
+  ],
+  "preserve_room_fixtures": [
+    "Interactive_SMF_Entrance_ALL__001",
+    "Interactive_SMF_Entrance_ALL__078",
+    "Interactive_SMF_Entrance_ALL__095",
+    "Interactive_SMF_Entrance_ALL__096"
+  ],
+  "preserve_room_lights": [
+    "S03_Fidelity_BedroomDome_Blender",
+    "S03_Fidelity_BedroomLED_Practical0_Blender",
+    "S03_Fidelity_BedroomLED_Practical1_Blender",
+    "S03_Fidelity_BedroomLED_Practical2_Blender"
+  ],
+  "removable_actor_original_bounds": [
+    {
+      "label": "Interactive_SMF_Entrance_ALL__003",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2470.999908,
+        -592.299938,
+        61.49990600000001
+      ],
+      "bounds": [
+        [
+          -2504.093360453613,
+          -612.84756640271,
+          54.74990647683717
+        ],
+        [
+          -2437.906264811523,
+          -571.7522619135742,
+          68.24990552316285
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__004",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2470.999908,
+        -592.299938,
+        172.49989500000004
+      ],
+      "bounds": [
+        [
+          -2503.939437418945,
+          -612.5090120203857,
+          165.7498954768372
+        ],
+        [
+          -2438.0605693159177,
+          -572.0908639796143,
+          179.24990644409183
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__005",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2811.800003,
+        -603.899813,
+        68.19989700000002
+      ],
+      "bounds": [
+        [
+          -2843.1671142060545,
+          -629.0948870814209,
+          59.699898907348654
+        ],
+        [
+          -2780.432891793945,
+          -578.7047389185791,
+          76.69989509265139
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__006",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2788.199997,
+        -1023.299789,
+        12.999839000000009
+      ],
+      "bounds": [
+        [
+          -2800.9498596708986,
+          -1044.7998042587892,
+          5.249832801116952
+        ],
+        [
+          -2775.4501343291017,
+          -1001.7997737412111,
+          20.749845198883065
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__007",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2951.671982,
+        -1057.499886,
+        68.93385599999999
+      ],
+      "bounds": [
+        [
+          -2990.443802068359,
+          -1136.9999012587891,
+          34.99980067163085
+        ],
+        [
+          -2912.9001619316405,
+          -977.9997791884766,
+          102.86791132836913
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__008",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2879.800034,
+        -597.899818,
+        67.699903
+      ],
+      "bounds": [
+        [
+          -2912.289047671875,
+          -622.1794124213867,
+          58.699905861022955
+        ],
+        [
+          -2847.311020328125,
+          -573.6202235786133,
+          76.69990013897706
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__014",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2809.800148,
+        -913.499832,
+        44.79985499999998
+      ],
+      "bounds": [
+        [
+          -2833.300018300293,
+          -940.4498155968017,
+          3.1998488964843546
+        ],
+        [
+          -2786.300277699707,
+          -886.5497644798584,
+          86.3998611035156
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__015",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2439.375114,
+        -987.299919,
+        52.19984099999999
+      ],
+      "bounds": [
+        [
+          -2461.050033128418,
+          -1062.2999266293946,
+          -0.0001826511230547112
+        ],
+        [
+          -2417.700194871582,
+          -912.2998121884766,
+          104.39984939233398
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__016",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2788.199997,
+        -1023.299789,
+        17.549841000000015
+      ],
+      "bounds": [
+        [
+          -2807.950210623047,
+          -1051.99976115271,
+          3.1998310817871243
+        ],
+        [
+          -2768.4499741118166,
+          -994.5998206619875,
+          31.89984996453859
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__017",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2474.349976,
+        -664.749908,
+        100.49989199999999
+      ],
+      "bounds": [
+        [
+          -2529.500008043457,
+          -769.2999491987305,
+          -0.0001385175781365433
+        ],
+        [
+          -2419.200134691406,
+          -560.1998668012695,
+          200.9999225175781
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__018",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2847.050095,
+        -668.84985,
+        52.039844000000016
+      ],
+      "bounds": [
+        [
+          -2920.800209440918,
+          -776.8998149047851,
+          16.499858343261735
+        ],
+        [
+          -2773.3001712939454,
+          -560.7998393188476,
+          87.57981439794924
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__019",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2939.400101,
+        -1057.49979,
+        19.24982799999998
+      ],
+      "bounds": [
+        [
+          -2976.3999941884767,
+          -1137.4998128881837,
+          -0.0001948881836142391
+        ],
+        [
+          -2902.4000170766603,
+          -977.499774741211,
+          38.49984898083494
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__020",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2975.149918,
+        -863.099861,
+        44.42485899999997
+      ],
+      "bounds": [
+        [
+          -2995.7000736396485,
+          -882.5999315718994,
+          -0.00014405175784304447
+        ],
+        [
+          -2954.599953095215,
+          -843.5997904281006,
+          88.84986205175778
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__076",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2373.750114,
+        -693.899918,
+        187.999892
+      ],
+      "bounds": [
+        [
+          -2376.9500728012695,
+          -743.8999218146972,
+          158.49986529711913
+        ],
+        [
+          -2370.5501551987304,
+          -643.8999141853027,
+          217.49990725878905
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__086",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2438.700104,
+        -1030.299854,
+        101.66733299999999
+      ],
+      "bounds": [
+        [
+          -2442.000007869629,
+          -1033.5998539523164,
+          92.69983803540038
+        ],
+        [
+          -2435.400009395508,
+          -1026.9998535708467,
+          110.6348279645996
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__087",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2438.700104,
+        -959.699821,
+        103.16484000000003
+      ],
+      "bounds": [
+        [
+          -2442.100334407715,
+          -963.6999130295716,
+          92.69983126434329
+        ],
+        [
+          -2435.3000643271484,
+          -955.6998262452088,
+          113.62984205993655
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__088",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2430.700302,
+        -1046.499825,
+        104.23483799999997
+      ],
+      "bounds": [
+        [
+          -2433.7001799296877,
+          -1050.2999317638398,
+          92.69983052319333
+        ],
+        [
+          -2427.7002333354494,
+          -1042.6998157493592,
+          115.7698388010864
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__089",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2427.199936,
+        -1009.29985,
+        104.30482599999999
+      ],
+      "bounds": [
+        [
+          -2429.80003365625,
+          -1011.8998532424927,
+          92.69982550408935
+        ],
+        [
+          -2424.59983834375,
+          -1006.6999414096832,
+          115.90982649591064
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__090",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2431.699944,
+        -982.2999,
+        105.33734600000003
+      ],
+      "bounds": [
+        [
+          -2435.400009612793,
+          -985.9998700069427,
+          102.14984456948855
+        ],
+        [
+          -2427.999878387207,
+          -978.5999295162201,
+          108.52484766893008
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__091",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2429.700089,
+        -935.299873,
+        105.35984000000002
+      ],
+      "bounds": [
+        [
+          -2432.6999669296874,
+          -938.2999426182251,
+          92.69983729156496
+        ],
+        [
+          -2426.7002110703124,
+          -932.2998024281006,
+          118.01984270843508
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__092",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2838.600159,
+        -485.99987,
+        185.99991799999998
+      ],
+      "bounds": [
+        [
+          -2908.6002352939454,
+          -492.59987133514403,
+          144.49991037060545
+        ],
+        [
+          -2768.6000827060548,
+          -479.39991634857176,
+          227.4999370734863
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__093",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2845.800018,
+        -563.399887,
+        59.99990700000001
+      ],
+      "bounds": [
+        [
+          -2918.9998623603515,
+          -566.6498273953553,
+          2.4999146293945387
+        ],
+        [
+          -2772.6003643745116,
+          -560.149898920929,
+          117.49989937060548
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__094",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -2660.400009,
+        -1014.29987,
+        2.1998350000000073
+      ],
+      "bounds": [
+        [
+          -2761.900138699707,
+          -1115.2998928881836,
+          1.299802420101173
+        ],
+        [
+          -2558.900070035156,
+          -913.2998471118165,
+          3.099867758712776
+        ]
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Entrance_ALL__097",
+      "class_name": "HouseInteractiveProp",
+      "location": [
+        -3001.800156,
+        -1021.499825,
+        190.99982999999997
+      ],
+      "bounds": [
+        [
+          -3002.7000430849607,
+          -1091.4999089233397,
+          149.49981092651365
+        ],
+        [
+          -3000.9000781801756,
+          -951.4998402587889,
+          232.4998490734863
+        ]
+      ]
+    }
+  ],
+  "evidence_files": [
+    "SourceArt/HallFloorsPorch/context/parts.json",
+    "SourceArt/HallFloorsPorch/context/actors.json",
+    "SourceArt/HouseScale110/before/actors.json",
+    "Content/HouseReview/original_house_doors.json",
+    "/Users/Stewart/Projects/Senior sendoff/outputs/room102-chairs/work/current_collision_components.json"
+  ],
+  "recommendation": "Replace existing101 and102 leaf art with local-hinge matching six-panel ivory paint, black numerals, keypad and brushed lever; keep original wall apertures and collision, room101 shell and101 exterior intact. Optional room furniture cleanup uses exactlistedlabels, no broad spatial deletion."
+}

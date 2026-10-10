@@ -1,0 +1,114 @@
+{
+  "coordinateSystem": "FBX raw Blender metres; actor scales XY1.8,Z1.0",
+  "protected": {},
+  "visual": {
+    "source": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseDoors/SM_OriginalRoom_Entrance_m1_m2_Solid.fbx",
+    "staged": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/models/SM_SPA_Entrance_m1_m2_MiddleSealed.fbx",
+    "removedComponents": [
+      {
+        "faces": 188,
+        "boundsRaw": [
+          [
+            -13.107999801635742,
+            1.9024995565414429,
+            -0.037500347942113876
+          ],
+          [
+            -13.052000045776367,
+            1.9874999523162842,
+            2.12749981880188
+          ]
+        ]
+      },
+      {
+        "faces": 188,
+        "boundsRaw": [
+          [
+            -13.107999801635742,
+            2.862499237060547,
+            -0.03750050440430641
+          ],
+          [
+            -13.052000045776367,
+            2.9474997520446777,
+            2.127499580383301
+          ]
+        ]
+      },
+      {
+        "faces": 188,
+        "boundsRaw": [
+          [
+            -13.107999801635742,
+            1.904999852180481,
+            2.0824995040893555
+          ],
+          [
+            -13.052000045776367,
+            2.9449994564056396,
+            2.1674997806549072
+          ]
+        ]
+      }
+    ],
+    "removedFaceCount": 564,
+    "beforeFaces": 21832,
+    "afterFaces": 21276,
+    "retainedFingerprint": "7956efe9055e076e81e803d45298d0b3acaab608dd92a1490c65196ca09aa89e",
+    "expectedProtectedFingerprint": "7956efe9055e076e81e803d45298d0b3acaab608dd92a1490c65196ca09aa89e",
+    "protectionPass": true,
+    "newWallBoundsRaw": [
+      [
+        -13.15999984741211,
+        1.994996190071106,
+        0
+      ],
+      [
+        -13.0,
+        2.8549964427948,
+        2.0899994373321533
+      ]
+    ],
+    "newSkirtingBoundsRaw": [
+      [
+        -13.17199984741211,
+        1.994996190071106,
+        0
+      ],
+      [
+        -12.987,
+        2.8549964427948,
+        0.11
+      ]
+    ]
+  },
+  "collision": {
+    "source": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/work/COL_Entrance_m1_m2_Solid.fbx",
+    "staged": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/models/COL_SPA_Entrance_m1_m2_MiddleSealed.fbx",
+    "beforeFaces": 408,
+    "afterFaces": 414,
+    "addedFaces": 6,
+    "retainedFingerprint": "a48a6bbdf8436c1d2927f4d83d96b9dbf13765c5f4efd4a9d0a4f7aa1cc2b692",
+    "expectedProtectedFingerprint": "a48a6bbdf8436c1d2927f4d83d96b9dbf13765c5f4efd4a9d0a4f7aa1cc2b692",
+    "protectionPass": true,
+    "newWallBoundsRaw": [
+      [
+        -13.15999984741211,
+        1.994996190071106,
+        0
+      ],
+      [
+        -13.0,
+        2.8549964427948,
+        2.0899994373321533
+      ]
+    ]
+  },
+  "owners": {
+    "visualMapActor": "SM_Entrance_m1_m2_Solid",
+    "visualCurrentAsset": "/Game/ExistingHouseDoors/SM_OriginalRoom_Entrance_m1_m2_Solid",
+    "collisionMapActor": "COL_Entrance_m1_m2_Solid",
+    "collisionCurrentAsset": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_m1_m2_Solid",
+    "removeDoorActor": "OriginalDoor_Entrance_m1_m2_Solid_02"
+  }
+}

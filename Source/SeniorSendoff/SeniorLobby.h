@@ -61,6 +61,7 @@ public:
     UFUNCTION(BlueprintCallable, Category="Lobby") void LeaveLobby();
     UFUNCTION(BlueprintCallable, Category="Lobby") void ReturnToLobby();
     UFUNCTION(BlueprintCallable, Category="Game") void TogglePauseMenu();
+    void ToggleEquipmentCursor();
     UFUNCTION(BlueprintPure, Category="Game") bool IsPauseMenuOpen() const { return PauseWidget.IsValid(); }
     UFUNCTION(BlueprintPure, Category="Lobby") FString GetLobbyMessage() const;
     UFUNCTION(BlueprintPure, Category="Lobby") bool IsHost() const;

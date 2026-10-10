@@ -2,18 +2,44 @@
 	"FileVersion": 3,
 	"EngineAssociation": "5.8",
 	"Category": "",
-	"Description": "Senior Sendoff — a three-chapter story campaign with saved checkpoints.",
-	"Modules": [{"Name": "SeniorSendoff", "Type": "Runtime", "LoadingPhase": "Default"}],
+	"Description": "Senior Sendoff \u2014 a three-chapter story campaign with saved checkpoints.",
+	"Modules": [
+		{
+			"Name": "SeniorSendoff",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
-		{"Name": "MetaHumanSDK", "Enabled": true},
-		{"Name": "HairStrands", "Enabled": true},
-		{"Name": "RigLogic", "Enabled": true},
-		{"Name": "LiveLink", "Enabled": true},
-		{"Name": "MetaHumanCoreTech", "Enabled": true, "TargetAllowList": ["Editor"]},
+		{
+			"Name": "MetaHumanSDK",
+			"Enabled": true
+		},
+		{
+			"Name": "HairStrands",
+			"Enabled": true
+		},
+		{
+			"Name": "RigLogic",
+			"Enabled": true
+		},
+		{
+			"Name": "LiveLink",
+			"Enabled": true
+		},
+		{
+			"Name": "MetaHumanCoreTech",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
 		{
 			"Name": "MetaHumanCharacter",
 			"Enabled": true,
-			"TargetAllowList": ["Editor"]
+			"TargetAllowList": [
+				"Editor"
+			]
 		},
 		{
 			"Name": "ModelingToolsEditorMode",
@@ -39,6 +65,10 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "ProceduralMeshComponent",
+			"Enabled": true
 		}
 	]
 }

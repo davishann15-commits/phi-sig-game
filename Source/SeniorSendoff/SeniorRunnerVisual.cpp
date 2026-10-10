@@ -1,4 +1,6 @@
 #include "SeniorRunnerVisual.h"
+#include "SeniorDouliAnim.h"
+#include "HouseFurnitureInteractionComponent.h"
 #include "SeniorGarmentAnimInstance.h"
 #include "Animation/AnimSequence.h"
 #include "Components/LODSyncComponent.h"
@@ -343,6 +345,13 @@ void ASeniorRunnerVisual::PrestreamPreviewTextures()
 void ASeniorRunnerVisual::SetMoveSpeed(float Speed)
 {
     const bool bShouldWalk = bWalking ? Speed > 5.f : Speed > 12.f;
+    if(auto* Anim=Body?Cast<USeniorDouliAnim>(Body->GetAnimInstance()):nullptr)
+    {
+        bWalking=bShouldWalk;
+        Anim->BaseSequence=bWalking && Walk?Walk:Idle;
+        Anim->Speed=bWalking?Speed:0.f;
+        return;
+    }
     if (bShouldWalk != bWalking && Body)
     {
         bWalking = bShouldWalk;
@@ -350,6 +359,19 @@ void ASeniorRunnerVisual::SetMoveSpeed(float Speed)
             Body->PlayAnimation(Clip, true);
     }
     if (Body) Body->SetPlayRate(bWalking ? FMath::Clamp(Speed / 155.f, .65f, 2.1f) : 1.f);
+}
+
+void ASeniorRunnerVisual::SetFurnitureCarryPose(UHouseFurnitureInteractionComponent* Carry)
+{
+    if(!Body || bPreview)return;
+    if(Carry && Carry->GetCarryPoseBlend()>.001f && !Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+        Body->SetAnimInstanceClass(USeniorDouliAnim::StaticClass());
+    if(auto* Anim=Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+    {
+        if(!Anim->BaseSequence)Anim->BaseSequence=bWalking && Walk?Walk:Idle;
+        Anim->bFirstPerson=false;
+        Anim->FurnitureCarryTarget=Carry;
+    }
 }
 
 void ASeniorRunnerVisual::Tick(float DeltaSeconds)

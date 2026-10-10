@@ -1,0 +1,167 @@
+{
+  "assets": [
+    {
+      "name": "SM_NCD101_PhotoDoor",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/door_refit/models/SM_NCD101_PhotoDoor.fbx",
+      "triangles": 12280,
+      "vertices": 8232,
+      "boundsMetres": [
+        [
+          -0.012500000186264515,
+          -0.11499937623739243,
+          0.0
+        ],
+        [
+          1.584999918937683,
+          0.11499937623739243,
+          2.190000057220459
+        ]
+      ],
+      "dimensionsCm": [
+        159.74999191239476,
+        22.999875247478485,
+        219.0000057220459
+      ],
+      "origin": "Hinge floor local(0,0,0); scale1 in map",
+      "front": "Hallway Unreal-Y; leaf +X; hinge +Z",
+      "materials": [
+        "M_NCD101_WarmWornWhite",
+        "M_NCD101_KeypadHousing",
+        "M_NCD101_RubberKeys",
+        "M_NCD101_KeyLegends",
+        "M_NCD101_DarkHardware",
+        "M_NCD101_BrushedSilver",
+        "M_NCD101_Black101",
+        "M_NCD101_PaintChip"
+      ],
+      "hasCustomNormals": true,
+      "collision": "NoCollision",
+      "boundsUnrealCm": [
+        [
+          -1.2500000186264515,
+          -11.499937623739243,
+          0.0
+        ],
+        [
+          158.4999918937683,
+          11.499937623739243,
+          219.0000057220459
+        ]
+      ]
+    }
+  ],
+  "materials": {
+    "M_NCD101_WarmWornWhite": {
+      "color": [
+        0.74,
+        0.72,
+        0.66
+      ],
+      "roughness": 0.64,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/door_refit/textures/T_NCD101_WornPaint_BaseColor.png",
+      "roughness_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/door_refit/textures/T_NCD101_WornPaint_Roughness.png"
+    },
+    "M_NCD101_BrushedSilver": {
+      "color": [
+        0.46,
+        0.49,
+        0.51
+      ],
+      "roughness": 0.28,
+      "metallic": 0.95,
+      "uv_scale": 1
+    },
+    "M_NCD101_KeypadHousing": {
+      "color": [
+        0.01,
+        0.012,
+        0.014
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_NCD101_RubberKeys": {
+      "color": [
+        0.037,
+        0.043,
+        0.047
+      ],
+      "roughness": 0.68,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_NCD101_KeyLegends": {
+      "color": [
+        0.68,
+        0.71,
+        0.72
+      ],
+      "roughness": 0.55,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_NCD101_DarkHardware": {
+      "color": [
+        0.023,
+        0.026,
+        0.029
+      ],
+      "roughness": 0.4,
+      "metallic": 0.7,
+      "uv_scale": 1
+    },
+    "M_NCD101_Black101": {
+      "color": [
+        0.004,
+        0.005,
+        0.006
+      ],
+      "roughness": 0.55,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_NCD101_PaintChip": {
+      "color": [
+        0.42,
+        0.35,
+        0.27
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1
+    }
+  },
+  "textures": [
+    "T_NCD101_WornPaint_BaseColor.png",
+    "T_NCD101_WornPaint_Roughness.png"
+  ],
+  "coordinateSystem": "Blender metres to Unreal cm [100X,-100Y,100Z]",
+  "placementScale": 1.0,
+  "hingeOriginCm": [
+    0,
+    0,
+    0
+  ],
+  "panelCenterLocalCm": [
+    79,
+    0,
+    109.5
+  ],
+  "panelHalfExtentLocalCm": [
+    79,
+    3,
+    109.5
+  ],
+  "widthCm": 158,
+  "heightCm": 219,
+  "hallwayFace": "Unreal local -Y. Closed yaw -90 means hallway world -X.",
+  "collision": "ExistingHouseDoor movable panel box only; visual leaf NoCollision.",
+  "notes": [
+    "True recessed six panels both sides. Black keypad and silver lever on hallway face.",
+    "Black serif 101 on both sides. Warm worn white paint, quiet bottom kick scuffs and small chips.",
+    "All leaf details joined so they rotate with original door hinge. No emissive CLUB label."
+  ]
+}

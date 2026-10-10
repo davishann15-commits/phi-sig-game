@@ -1,0 +1,58 @@
+{
+  "meshes": {
+    "IH_SM_RetainedShell": {
+      "maxBoundsErrorCm": 0.00030994415283203125,
+      "polygons": 216,
+      "triangles": 216
+    },
+    "IH_COL_RetainedShell": {
+      "maxBoundsErrorCm": 0.00030994415283203125,
+      "polygons": 252,
+      "triangles": 252
+    },
+    "IH_SM_RetainedTrim": {
+      "maxBoundsErrorCm": 0.00030994415283203125,
+      "polygons": 108,
+      "triangles": 108
+    },
+    "IH_SM_RetainedPracticals": {
+      "maxBoundsErrorCm": 0.00019073486328125,
+      "polygons": 624,
+      "triangles": 624
+    },
+    "IH_SM_CorridorSurfaces": {
+      "maxBoundsErrorCm": 0.000762939453125,
+      "polygons": 432,
+      "triangles": 864,
+      "periodsMatchingPrototype": 18,
+      "maximumPeriodicSerializationErrorCm": 0.0005670441896654665
+    },
+    "IH_SM_CorridorTrim": {
+      "maxBoundsErrorCm": 0.0007390975952148438,
+      "polygons": 15552,
+      "triangles": 31104,
+      "periodsMatchingPrototype": 18,
+      "maximumPeriodicSerializationErrorCm": 0.0006348921451717615
+    },
+    "IH_SM_CorridorFixtures": {
+      "maxBoundsErrorCm": 0.000762939453125,
+      "polygons": 6804,
+      "triangles": 13608,
+      "periodsMatchingPrototype": 18,
+      "maximumPeriodicSerializationErrorCm": 0.0006228128331713378
+    },
+    "IH_SM_EntranceThroat": {
+      "maxBoundsErrorCm": 0.0002384185791015625,
+      "polygons": 12,
+      "triangles": 24
+    },
+    "IH_COL_CorridorNear": {
+      "maxBoundsErrorCm": 0.000762939453125,
+      "polygons": 36,
+      "triangles": 72
+    }
+  },
+  "moduleLengthCm": 180,
+  "periodsAllExact": true,
+  "roundtripPassed": true
+}

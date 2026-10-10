@@ -1,0 +1,50 @@
+{
+  "source": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/work/COL_Entrance_p0_m2_Solid.fbx",
+  "staged": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/models/COL_SPA_Entrance_p0_m2_DoorClear.fbx",
+  "ownerActor": "COL_Entrance_p0_m2_Solid",
+  "ownerAsset": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_m2_Solid",
+  "stagedAsset": "/Game/SeniorSendOff/House/HotTubRoomV1/COL_SPA_Entrance_p0_m2_DoorClear",
+  "actorTransform": {
+    "location": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1.8,
+      1.8,
+      1
+    ]
+  },
+  "removedTriangles": 12,
+  "beforeTriangles": 360,
+  "afterTriangles": 348,
+  "removedBoundsWorldBlenderMetres": [
+    [
+      -23.624098777770996,
+      -5.805001115798951,
+      0.01249992847442627
+    ],
+    [
+      -23.546700096130373,
+      -4.185000944137573,
+      2.0774998664855957
+    ]
+  ],
+  "removedBoundsUnrealCm": [
+    [
+      -2362.4098777770996,
+      418.5000944137573,
+      1.249992847442627
+    ],
+    [
+      -2354.670009613037,
+      580.500111579895,
+      207.74998664855957
+    ]
+  ],
+  "protectedExpectedSHA256": "85a7f9c98f138b4b7128e9014c5d6e1a4e3dcc5ed10d902d89a67b7d3734b6e3",
+  "protectedActualSHA256": "85a7f9c98f138b4b7128e9014c5d6e1a4e3dcc5ed10d902d89a67b7d3734b6e3",
+  "protectionPass": true,
+  "scope": "Only baked closed leaf collision removed; native header, jamb walls, floor and all other geometry retained. ExistingHouseDoor owns moving leaf collision."
+}

@@ -1,0 +1,60 @@
+{
+  "views": [
+    {
+      "name": "Pigsty_Entrance",
+      "position": {
+        "x": -12.8,
+        "y": 4.51,
+        "z": -24.2
+      },
+      "target": {
+        "x": -9.9,
+        "y": 3.67,
+        "z": -27.6
+      },
+      "fieldOfView": 66
+    },
+    {
+      "name": "Pigsty_Mattress",
+      "position": {
+        "x": -12.1,
+        "y": 4.41,
+        "z": -26.7
+      },
+      "target": {
+        "x": -9.1,
+        "y": 3.37,
+        "z": -28.25
+      },
+      "fieldOfView": 62
+    },
+    {
+      "name": "Pigsty_Cheetos",
+      "position": {
+        "x": -12.4,
+        "y": 4.2,
+        "z": -24.75
+      },
+      "target": {
+        "x": -11.0,
+        "y": 3.4,
+        "z": -27.1
+      },
+      "fieldOfView": 60
+    },
+    {
+      "name": "Pigsty_North",
+      "position": {
+        "x": -7.9,
+        "y": 4.5,
+        "z": -28.0
+      },
+      "target": {
+        "x": -11.5,
+        "y": 3.55,
+        "z": -25.7
+      },
+      "fieldOfView": 65
+    }
+  ]
+}

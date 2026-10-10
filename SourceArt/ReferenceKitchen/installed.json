@@ -1,0 +1,3009 @@
+{
+  "passed": true,
+  "removed": [
+    {
+      "label": "Kitchen_KitchenOakFloor_001"
+    },
+    {
+      "label": "Kitchen_TVCableWallHole_001"
+    },
+    {
+      "label": "Kitchen_WallWear_001"
+    },
+    {
+      "label": "Kitchen_WallWear_002"
+    },
+    {
+      "label": "Kitchen_WallWear_003"
+    },
+    {
+      "label": "Kitchen_WallWear_004"
+    },
+    {
+      "label": "Kitchen_WallWear_005"
+    },
+    {
+      "label": "Kitchen_WallWear_006"
+    },
+    {
+      "label": "Interactive_Kitchen_DiningTable_001"
+    },
+    {
+      "label": "Interactive_Kitchen_DiningTable_002"
+    },
+    {
+      "label": "Interactive_Kitchen_DiningTable_003"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_001"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_002"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_003"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_004"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_005"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_006"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_007"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_008"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_009"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_010"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_011"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_012"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_013"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_014"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_015"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_016"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_017"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_018"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_019"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_020"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_001"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_002"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_003"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_004"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_005"
+    },
+    {
+      "label": "Interactive_Kitchen_PanLid_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_002"
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_003"
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_004"
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_005"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_001"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_002"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_003"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_004"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_005"
+    },
+    {
+      "label": "Interactive_Kitchen_StorageBagCarton_001"
+    },
+    {
+      "label": "Interactive_Kitchen_StorageBagCarton_002"
+    },
+    {
+      "label": "Interactive_Kitchen_StorageBagCarton_003"
+    },
+    {
+      "label": "Interactive_Kitchen_FoilCarton_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CoffeePump_001"
+    },
+    {
+      "label": "Interactive_Kitchen_RectangularCerealCanister_001"
+    },
+    {
+      "label": "Interactive_Kitchen_RectangularCerealCanister_002"
+    },
+    {
+      "label": "Interactive_Kitchen_RectangularCerealCanister_003"
+    },
+    {
+      "label": "Interactive_Kitchen_CerealCanister_001"
+    },
+    {
+      "label": "Interactive_Kitchen_PeanutButterJar_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CocoaBox_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BreakfastSupplies_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BreakfastSupplies_002"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_001"
+    },
+    {
+      "label": "Interactive_Kitchen_IceMachinePallet_001"
+    },
+    {
+      "label": "Interactive_Kitchen_IceMachine_001"
+    },
+    {
+      "label": "Interactive_Kitchen_SuppliesBox_001"
+    },
+    {
+      "label": "Interactive_Kitchen_UtilitySink_001"
+    },
+    {
+      "label": "Interactive_Kitchen_TowerFan_001"
+    },
+    {
+      "label": "Interactive_Kitchen_TopFreezerFridge_001"
+    },
+    {
+      "label": "Interactive_Kitchen_TennesseeCoolerBag_001"
+    },
+    {
+      "label": "Interactive_Kitchen_StainlessApplianceRack_001"
+    },
+    {
+      "label": "Interactive_Kitchen_WhiteMicrowave_001"
+    },
+    {
+      "label": "Interactive_Kitchen_SuppliesBox_002"
+    },
+    {
+      "label": "Interactive_Kitchen_AirFryer_001"
+    },
+    {
+      "label": "Interactive_Kitchen_Toaster_001"
+    },
+    {
+      "label": "Interactive_Kitchen_WireBasket_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CoffeePods_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BasketWithApples_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CoffeeMaker_001"
+    },
+    {
+      "label": "Interactive_Kitchen_WaterDispenser_001"
+    },
+    {
+      "label": "Interactive_Kitchen_WaterPitcher_001"
+    },
+    {
+      "label": "Interactive_Kitchen_PeanutButterJar_002"
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CondimentBottle_001"
+    },
+    {
+      "label": "Interactive_Kitchen_TrashCan_001"
+    },
+    {
+      "label": "Interactive_Kitchen_PowerCord_001"
+    },
+    {
+      "label": "Interactive_Kitchen_TV_001"
+    },
+    {
+      "label": "Interactive_Kitchen_HangingTVCables_001"
+    },
+    {
+      "label": "Interactive_Kitchen_MicrowaveCart_001"
+    },
+    {
+      "label": "Interactive_Kitchen_SilverMicrowave_001"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_006"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperProductPack_001"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperProductPack_002"
+    },
+    {
+      "label": "Interactive_Kitchen_ForksBox_001"
+    },
+    {
+      "label": "Interactive_Kitchen_ForksBox_002"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_002"
+    },
+    {
+      "label": "Interactive_Kitchen_Saucepan_001"
+    },
+    {
+      "label": "Interactive_Kitchen_Saucepan_002"
+    },
+    {
+      "label": "Interactive_Kitchen_NapkinBasket_001"
+    },
+    {
+      "label": "Interactive_Kitchen_SmallBlackCabinet_001"
+    },
+    {
+      "label": "Interactive_Kitchen_PowerCord_002"
+    },
+    {
+      "label": "Interactive_Kitchen_WhiteCooler_001"
+    },
+    {
+      "label": "Interactive_Kitchen_RollingBlueCooler_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BlackBarStool_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BlackBarStool_002"
+    },
+    {
+      "label": "Interactive_Kitchen_ClosedStorageBox_001"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperGroceryBag_001"
+    },
+    {
+      "label": "Interactive_Kitchen_BlackBag_001"
+    },
+    {
+      "label": "Interactive_Kitchen_ClosedStorageBox_002"
+    },
+    {
+      "label": "Interactive_Kitchen_DoubleCerealDispenser_001"
+    },
+    {
+      "label": "Interactive_Kitchen_RedBullCase_001"
+    },
+    {
+      "label": "Interactive_Kitchen_RedBullCase_002"
+    },
+    {
+      "label": "Interactive_Kitchen_PowerCord_003"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_021"
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_022"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_007"
+    },
+    {
+      "label": "Interactive_Kitchen_CrumpledNapkin_001"
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_002"
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_008"
+    },
+    {
+      "label": "Interactive_Kitchen_CrumpledNapkin_002"
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_003"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_003"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_004"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_005"
+    },
+    {
+      "label": "Interactive_Kitchen_CityWallPrint_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CafeWallPrint_001"
+    },
+    {
+      "label": "Interactive_Kitchen_RulesWallPrint_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CafeWallPrint_002"
+    },
+    {
+      "label": "HouseReactiveFixture"
+    },
+    {
+      "label": "HouseReactiveFixture2"
+    },
+    {
+      "label": "HouseReactiveFixture3"
+    },
+    {
+      "label": "HouseReactiveFixture4"
+    },
+    {
+      "label": "HouseReactiveFixture5"
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_001"
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_002"
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_003"
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_004"
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_005"
+    },
+    {
+      "label": "Interactive_Kitchen_ExitSign_001"
+    },
+    {
+      "label": "Interactive_Kitchen_FireCabinet_001"
+    },
+    {
+      "label": "Interactive_Kitchen_FruitTray_001"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingBowl_001"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingBowl_002"
+    },
+    {
+      "label": "Interactive_Kitchen_UtensilCup_001"
+    },
+    {
+      "label": "Interactive_Kitchen_GroceryBag_001"
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_004"
+    },
+    {
+      "label": "Interactive_Kitchen_PaperProductPack_003"
+    },
+    {
+      "label": "Interactive_Kitchen_ServingBowl_003"
+    },
+    {
+      "label": "Interactive_Kitchen_CleaningCloth_001"
+    },
+    {
+      "label": "Interactive_Kitchen_CleaningCloth_002"
+    },
+    {
+      "label": "Interactive_Kitchen_ClosetWallDecoration_001"
+    },
+    {
+      "label": "Interactive_Kitchen_SmokeDetector_001"
+    },
+    {
+      "label": "Kitchen_ClosedClosetDoor"
+    }
+  ],
+  "new_furniture": [
+    {
+      "label": "Interactive_Kitchen_DiningTable_001",
+      "asset": "DiningTable",
+      "location": [
+        2735,
+        -205,
+        0
+      ],
+      "mass": 48
+    },
+    {
+      "label": "Interactive_Kitchen_DiningTable_002",
+      "asset": "DiningTable",
+      "location": [
+        2735,
+        101,
+        0
+      ],
+      "mass": 48
+    },
+    {
+      "label": "Interactive_Kitchen_DiningTable_003",
+      "asset": "DiningTable",
+      "location": [
+        2735,
+        407,
+        0
+      ],
+      "mass": 48
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_001",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        -302,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_002",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        -302,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_003",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        -205,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_004",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        -205,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_005",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        -108,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_006",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        -108,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_007",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        4,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_008",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        4,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_009",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        101,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_010",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        101,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_011",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        198,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_012",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        198,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_013",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        310,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_014",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        310,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_015",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        407,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_016",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        407,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_017",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2620,
+        504,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_018",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2850,
+        504,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_019",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2735,
+        -397,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_020",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2735,
+        600,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_001",
+      "asset": "ServingCounter",
+      "location": [
+        1710,
+        1115,
+        0
+      ],
+      "mass": 145
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_002",
+      "asset": "ServingCounter",
+      "location": [
+        1930,
+        1115,
+        0
+      ],
+      "mass": 145
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_003",
+      "asset": "ServingCounter",
+      "location": [
+        2150,
+        1115,
+        0
+      ],
+      "mass": 145
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_004",
+      "asset": "ServingCounter",
+      "location": [
+        2370,
+        1115,
+        0
+      ],
+      "mass": 145
+    },
+    {
+      "label": "Interactive_Kitchen_ServingCounter_005",
+      "asset": "ServingCounter",
+      "location": [
+        2590,
+        1115,
+        0
+      ],
+      "mass": 145
+    },
+    {
+      "label": "Interactive_Kitchen_PanLid_001",
+      "asset": "PanLid",
+      "location": [
+        2070,
+        1104,
+        86
+      ],
+      "mass": 1.8
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_001",
+      "asset": "BreadBag",
+      "location": [
+        2400,
+        1080,
+        87
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_002",
+      "asset": "BreadBag",
+      "location": [
+        2520,
+        1077,
+        87
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_003",
+      "asset": "BreadBag",
+      "location": [
+        2630,
+        1085,
+        87
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_004",
+      "asset": "BreadBag",
+      "location": [
+        2435,
+        1128,
+        87
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_BreadBag_005",
+      "asset": "BreadBag",
+      "location": [
+        2560,
+        1130,
+        87
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_001",
+      "asset": "AutumnBouquet",
+      "location": [
+        1660,
+        1160,
+        151
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_002",
+      "asset": "AutumnBouquet",
+      "location": [
+        1880,
+        1160,
+        151
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_003",
+      "asset": "AutumnBouquet",
+      "location": [
+        2100,
+        1160,
+        151
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_004",
+      "asset": "AutumnBouquet",
+      "location": [
+        2320,
+        1160,
+        151
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_005",
+      "asset": "AutumnBouquet",
+      "location": [
+        2540,
+        1160,
+        151
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_StorageBagCarton_001",
+      "asset": "StorageBagCarton",
+      "location": [
+        2460,
+        1158,
+        151
+      ],
+      "mass": 0.5
+    },
+    {
+      "label": "Interactive_Kitchen_StorageBagCarton_002",
+      "asset": "StorageBagCarton",
+      "location": [
+        2490,
+        1158,
+        158
+      ],
+      "mass": 0.5
+    },
+    {
+      "label": "Interactive_Kitchen_StorageBagCarton_003",
+      "asset": "StorageBagCarton",
+      "location": [
+        2520,
+        1158,
+        165
+      ],
+      "mass": 0.5
+    },
+    {
+      "label": "Interactive_Kitchen_FoilCarton_001",
+      "asset": "FoilCarton",
+      "location": [
+        2485,
+        1160,
+        173
+      ],
+      "mass": 0.5
+    },
+    {
+      "label": "Interactive_Kitchen_CoffeePump_001",
+      "asset": "CoffeePump",
+      "location": [
+        2660,
+        1160,
+        151
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_RectangularCerealCanister_001",
+      "asset": "RectangularCerealCanister",
+      "location": [
+        1725,
+        1160,
+        151
+      ],
+      "mass": 1.5
+    },
+    {
+      "label": "Interactive_Kitchen_RectangularCerealCanister_002",
+      "asset": "RectangularCerealCanister",
+      "location": [
+        1770,
+        1160,
+        151
+      ],
+      "mass": 1.5
+    },
+    {
+      "label": "Interactive_Kitchen_RectangularCerealCanister_003",
+      "asset": "RectangularCerealCanister",
+      "location": [
+        1815,
+        1160,
+        151
+      ],
+      "mass": 1.5
+    },
+    {
+      "label": "Interactive_Kitchen_CerealCanister_001",
+      "asset": "CerealCanister",
+      "location": [
+        1860,
+        1160,
+        151
+      ],
+      "mass": 1.8
+    },
+    {
+      "label": "Interactive_Kitchen_PeanutButterJar_001",
+      "asset": "PeanutButterJar",
+      "location": [
+        1820,
+        1110,
+        87
+      ],
+      "mass": 0.8
+    },
+    {
+      "label": "Interactive_Kitchen_CocoaBox_001",
+      "asset": "CocoaBox",
+      "location": [
+        1625,
+        1080,
+        87
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_BreakfastSupplies_001",
+      "asset": "BreakfastSupplies",
+      "location": [
+        1735,
+        1090,
+        87
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Kitchen_BreakfastSupplies_002",
+      "asset": "BreakfastSupplies",
+      "location": [
+        1915,
+        1090,
+        87
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_001",
+      "asset": "PaperTowelRoll",
+      "location": [
+        2205,
+        1160,
+        151
+      ],
+      "mass": 0.45
+    },
+    {
+      "label": "Interactive_Kitchen_IceMachinePallet_001",
+      "asset": "IceMachinePallet",
+      "location": [
+        1729,
+        680,
+        0
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Kitchen_IceMachine_001",
+      "asset": "IceMachine",
+      "location": [
+        1729,
+        680,
+        11
+      ],
+      "mass": 155
+    },
+    {
+      "label": "Interactive_Kitchen_SuppliesBox_001",
+      "asset": "SuppliesBox",
+      "location": [
+        1610,
+        690,
+        0
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Kitchen_UtilitySink_001",
+      "asset": "UtilitySink",
+      "location": [
+        1995,
+        655,
+        0
+      ],
+      "mass": 35
+    },
+    {
+      "label": "Interactive_Kitchen_TowerFan_001",
+      "asset": "TowerFan",
+      "location": [
+        2110,
+        540,
+        0
+      ],
+      "mass": 4
+    },
+    {
+      "label": "Interactive_Kitchen_TopFreezerFridge_001",
+      "asset": "TopFreezerFridge",
+      "location": [
+        1410,
+        1112,
+        0
+      ],
+      "mass": 92
+    },
+    {
+      "label": "Interactive_Kitchen_TennesseeCoolerBag_001",
+      "asset": "TennesseeCoolerBag",
+      "location": [
+        1410,
+        1112,
+        175
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Kitchen_StainlessApplianceRack_001",
+      "asset": "StainlessApplianceRack",
+      "location": [
+        1410,
+        927,
+        0
+      ],
+      "mass": 24
+    },
+    {
+      "label": "Interactive_Kitchen_WhiteMicrowave_001",
+      "asset": "WhiteMicrowave",
+      "location": [
+        1440,
+        972,
+        36
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Kitchen_SuppliesBox_002",
+      "asset": "SuppliesBox",
+      "location": [
+        1390,
+        893,
+        36
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Kitchen_AirFryer_001",
+      "asset": "AirFryer",
+      "location": [
+        1410,
+        961,
+        88
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Kitchen_Toaster_001",
+      "asset": "Toaster",
+      "location": [
+        1410,
+        858,
+        88
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_WireBasket_001",
+      "asset": "WireBasket",
+      "location": [
+        1372,
+        901,
+        88
+      ],
+      "mass": 0.8
+    },
+    {
+      "label": "Interactive_Kitchen_CoffeePods_001",
+      "asset": "CoffeePods",
+      "location": [
+        1372,
+        901,
+        90
+      ],
+      "mass": 0.5
+    },
+    {
+      "label": "Interactive_Kitchen_BasketWithApples_001",
+      "asset": "BasketWithApples",
+      "location": [
+        1440,
+        910,
+        88
+      ],
+      "mass": 2.3
+    },
+    {
+      "label": "Interactive_Kitchen_CoffeeMaker_001",
+      "asset": "CoffeeMaker",
+      "location": [
+        1450,
+        853,
+        88
+      ],
+      "mass": 4
+    },
+    {
+      "label": "Interactive_Kitchen_WaterDispenser_001",
+      "asset": "WaterDispenser",
+      "location": [
+        1408,
+        1030,
+        0
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Kitchen_WaterPitcher_001",
+      "asset": "WaterPitcher",
+      "location": [
+        1368,
+        990,
+        36
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Kitchen_PeanutButterJar_002",
+      "asset": "PeanutButterJar",
+      "location": [
+        1448,
+        994,
+        88
+      ],
+      "mass": 0.8
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_001",
+      "asset": "ClearCup",
+      "location": [
+        1370,
+        973,
+        88
+      ],
+      "mass": 0.15
+    },
+    {
+      "label": "Interactive_Kitchen_CondimentBottle_001",
+      "asset": "CondimentBottle",
+      "location": [
+        1365,
+        868,
+        36
+      ],
+      "mass": 0.4
+    },
+    {
+      "label": "Interactive_Kitchen_TrashCan_001",
+      "asset": "TrashCan",
+      "location": [
+        1490,
+        1030,
+        0
+      ],
+      "mass": 4
+    },
+    {
+      "label": "Interactive_Kitchen_PowerCord_001",
+      "asset": "PowerCord",
+      "location": [
+        1485,
+        930,
+        0.2
+      ],
+      "mass": 0.3
+    },
+    {
+      "label": "Interactive_Kitchen_TV_001",
+      "asset": "TV",
+      "location": [
+        2092,
+        400,
+        173
+      ],
+      "mass": 16
+    },
+    {
+      "label": "Interactive_Kitchen_HangingTVCables_001",
+      "asset": "HangingTVCables",
+      "location": [
+        2097,
+        430,
+        143
+      ],
+      "mass": 0.3
+    },
+    {
+      "label": "Interactive_Kitchen_MicrowaveCart_001",
+      "asset": "MicrowaveCart",
+      "location": [
+        2140,
+        390,
+        0
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Kitchen_SilverMicrowave_001",
+      "asset": "SilverMicrowave",
+      "location": [
+        2140,
+        390,
+        83
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_006",
+      "asset": "AutumnBouquet",
+      "location": [
+        2140,
+        390,
+        113
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_PaperProductPack_001",
+      "asset": "PaperProductPack",
+      "location": [
+        2140,
+        361,
+        42
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Kitchen_PaperProductPack_002",
+      "asset": "PaperProductPack",
+      "location": [
+        2140,
+        419,
+        42
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Kitchen_ForksBox_001",
+      "asset": "ForksBox",
+      "location": [
+        2180,
+        351,
+        42
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_ForksBox_002",
+      "asset": "ForksBox",
+      "location": [
+        2180,
+        403,
+        42
+      ],
+      "mass": 0.7
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_002",
+      "asset": "PaperTowelRoll",
+      "location": [
+        2145,
+        384,
+        42
+      ],
+      "mass": 0.45
+    },
+    {
+      "label": "Interactive_Kitchen_Saucepan_001",
+      "asset": "Saucepan",
+      "location": [
+        2140,
+        412,
+        12
+      ],
+      "mass": 1.5
+    },
+    {
+      "label": "Interactive_Kitchen_Saucepan_002",
+      "asset": "Saucepan",
+      "location": [
+        2165,
+        353,
+        12
+      ],
+      "mass": 1.5
+    },
+    {
+      "label": "Interactive_Kitchen_NapkinBasket_001",
+      "asset": "NapkinBasket",
+      "location": [
+        2170,
+        420,
+        12
+      ],
+      "mass": 1.2
+    },
+    {
+      "label": "Interactive_Kitchen_SmallBlackCabinet_001",
+      "asset": "SmallBlackCabinet",
+      "location": [
+        2140,
+        18,
+        0
+      ],
+      "mass": 22
+    },
+    {
+      "label": "Interactive_Kitchen_PowerCord_002",
+      "asset": "PowerCord",
+      "location": [
+        2150,
+        530,
+        0.2
+      ],
+      "mass": 0.3
+    },
+    {
+      "label": "Interactive_Kitchen_WhiteCooler_001",
+      "asset": "WhiteCooler",
+      "location": [
+        2395,
+        -625,
+        0
+      ],
+      "mass": 18
+    },
+    {
+      "label": "Interactive_Kitchen_RollingBlueCooler_001",
+      "asset": "RollingBlueCooler",
+      "location": [
+        2550,
+        -625,
+        0
+      ],
+      "mass": 10
+    },
+    {
+      "label": "Interactive_Kitchen_BlackBarStool_001",
+      "asset": "BlackBarStool",
+      "location": [
+        2650,
+        -630,
+        0
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Kitchen_BlackBarStool_002",
+      "asset": "BlackBarStool",
+      "location": [
+        2710,
+        -630,
+        0
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Kitchen_ClosedStorageBox_001",
+      "asset": "ClosedStorageBox",
+      "location": [
+        2820,
+        -640,
+        0
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Kitchen_PaperGroceryBag_001",
+      "asset": "PaperGroceryBag",
+      "location": [
+        2830,
+        -632,
+        33
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Kitchen_BlackBag_001",
+      "asset": "BlackBag",
+      "location": [
+        2800,
+        -627,
+        33
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Kitchen_ClosedStorageBox_002",
+      "asset": "ClosedStorageBox",
+      "location": [
+        2220,
+        -630,
+        0
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Kitchen_DoubleCerealDispenser_001",
+      "asset": "DoubleCerealDispenser",
+      "location": [
+        2220,
+        -630,
+        33
+      ],
+      "mass": 4.5
+    },
+    {
+      "label": "Interactive_Kitchen_RedBullCase_001",
+      "asset": "RedBullCase",
+      "location": [
+        2290,
+        -620,
+        0
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Kitchen_RedBullCase_002",
+      "asset": "RedBullCase",
+      "location": [
+        2290,
+        -620,
+        18
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Kitchen_PowerCord_003",
+      "asset": "PowerCord",
+      "location": [
+        2210,
+        -572,
+        0.2
+      ],
+      "mass": 0.3
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_021",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2890,
+        -625,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_GreenSpindleChair_022",
+      "asset": "GreenSpindleChair",
+      "location": [
+        2890,
+        -530,
+        0
+      ],
+      "mass": 6.5
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_007",
+      "asset": "AutumnBouquet",
+      "location": [
+        2735,
+        -205,
+        78
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_CrumpledNapkin_001",
+      "asset": "CrumpledNapkin",
+      "location": [
+        2765,
+        -131,
+        78
+      ],
+      "mass": 0.12
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_002",
+      "asset": "ClearCup",
+      "location": [
+        2700,
+        -170,
+        78
+      ],
+      "mass": 0.15
+    },
+    {
+      "label": "Interactive_Kitchen_AutumnBouquet_008",
+      "asset": "AutumnBouquet",
+      "location": [
+        2735,
+        407,
+        78
+      ],
+      "mass": 2.5
+    },
+    {
+      "label": "Interactive_Kitchen_CrumpledNapkin_002",
+      "asset": "CrumpledNapkin",
+      "location": [
+        2765,
+        481,
+        78
+      ],
+      "mass": 0.12
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_003",
+      "asset": "ClearCup",
+      "location": [
+        2700,
+        442,
+        78
+      ],
+      "mass": 0.15
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_003",
+      "asset": "PaperTowelRoll",
+      "location": [
+        2740,
+        89,
+        78
+      ],
+      "mass": 0.45
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_004",
+      "asset": "PaperTowelRoll",
+      "location": [
+        2740,
+        112,
+        78
+      ],
+      "mass": 0.45
+    },
+    {
+      "label": "Interactive_Kitchen_PaperTowelRoll_005",
+      "asset": "PaperTowelRoll",
+      "location": [
+        2740,
+        138,
+        78
+      ],
+      "mass": 0.45
+    },
+    {
+      "label": "Interactive_Kitchen_CityWallPrint_001",
+      "asset": "CityWallPrint",
+      "location": [
+        2910,
+        650,
+        176
+      ],
+      "mass": 1.8
+    },
+    {
+      "label": "Interactive_Kitchen_CafeWallPrint_001",
+      "asset": "CafeWallPrint",
+      "location": [
+        2410,
+        1247,
+        183
+      ],
+      "mass": 1.8
+    },
+    {
+      "label": "Interactive_Kitchen_RulesWallPrint_001",
+      "asset": "RulesWallPrint",
+      "location": [
+        2100,
+        1247,
+        190
+      ],
+      "mass": 1.8
+    },
+    {
+      "label": "Interactive_Kitchen_CafeWallPrint_002",
+      "asset": "CafeWallPrint",
+      "location": [
+        1880,
+        618,
+        184
+      ],
+      "mass": 1.8
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_001",
+      "asset": "Outlet",
+      "location": [
+        2067,
+        480,
+        58
+      ],
+      "mass": 0.25
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_002",
+      "asset": "Outlet",
+      "location": [
+        2067,
+        195,
+        53
+      ],
+      "mass": 0.25
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_003",
+      "asset": "Outlet",
+      "location": [
+        1425,
+        1255,
+        58
+      ],
+      "mass": 0.25
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_004",
+      "asset": "Outlet",
+      "location": [
+        1480,
+        1255,
+        118
+      ],
+      "mass": 0.25
+    },
+    {
+      "label": "Interactive_Kitchen_Outlet_005",
+      "asset": "Outlet",
+      "location": [
+        1820,
+        618,
+        89
+      ],
+      "mass": 0.25
+    },
+    {
+      "label": "Interactive_Kitchen_ExitSign_001",
+      "asset": "ExitSign",
+      "location": [
+        1500,
+        619,
+        235
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Kitchen_FireCabinet_001",
+      "asset": "FireCabinet",
+      "location": [
+        1540,
+        619,
+        135
+      ],
+      "mass": 7
+    },
+    {
+      "label": "Interactive_Kitchen_FruitTray_001",
+      "asset": "FruitTray",
+      "location": [
+        2230,
+        1115,
+        75
+      ],
+      "mass": 1.2
+    },
+    {
+      "label": "Interactive_Kitchen_ServingBowl_001",
+      "asset": "ServingBowl",
+      "location": [
+        1940,
+        1065,
+        87
+      ],
+      "mass": 0.6
+    },
+    {
+      "label": "Interactive_Kitchen_ServingBowl_002",
+      "asset": "ServingBowl",
+      "location": [
+        2035,
+        1070,
+        87
+      ],
+      "mass": 0.6
+    },
+    {
+      "label": "Interactive_Kitchen_UtensilCup_001",
+      "asset": "UtensilCup",
+      "location": [
+        1620,
+        1160,
+        151
+      ],
+      "mass": 0.8
+    },
+    {
+      "label": "Interactive_Kitchen_GroceryBag_001",
+      "asset": "GroceryBag",
+      "location": [
+        1355,
+        954,
+        88
+      ],
+      "mass": 0.4
+    },
+    {
+      "label": "Interactive_Kitchen_ClearCup_004",
+      "asset": "ClearCup",
+      "location": [
+        2100,
+        1060,
+        87
+      ],
+      "mass": 0.15
+    },
+    {
+      "label": "Interactive_Kitchen_PaperProductPack_003",
+      "asset": "PaperProductPack",
+      "location": [
+        1810,
+        1065,
+        87
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Kitchen_ServingBowl_003",
+      "asset": "ServingBowl",
+      "location": [
+        1935,
+        1155,
+        151
+      ],
+      "mass": 0.6
+    },
+    {
+      "label": "Interactive_Kitchen_CleaningCloth_001",
+      "asset": "CleaningCloth",
+      "location": [
+        1942,
+        704,
+        0.3
+      ],
+      "mass": 0.25
+    },
+    {
+      "label": "Interactive_Kitchen_CleaningCloth_002",
+      "asset": "CleaningCloth",
+      "location": [
+        2042,
+        680,
+        5
+      ],
+      "mass": 0.25
+    },
+    {
+      "label": "Interactive_Kitchen_ClosetWallDecoration_001",
+      "asset": "ClosetWallDecoration",
+      "location": [
+        2070,
+        18,
+        194
+      ],
+      "mass": 0.3
+    },
+    {
+      "label": "Interactive_Kitchen_SmokeDetector_001",
+      "asset": "SmokeDetector",
+      "location": [
+        2068,
+        520,
+        245
+      ],
+      "mass": 0.4
+    }
+  ],
+  "placements": 150,
+  "assets": [
+    {
+      "asset": "GreenSpindleChair",
+      "faces": 2754,
+      "meshes": [
+        "SM_Kitchen_GreenSpindleChair",
+        "SM_Kitchen_GreenSpindleChair_DamageV2",
+        "SM_Kitchen_GreenSpindleChair_HeavyV2",
+        "SM_Kitchen_GreenSpindleChair_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "DiningTable",
+      "faces": 934,
+      "meshes": [
+        "SM_Kitchen_DiningTable",
+        "SM_Kitchen_DiningTable_DamageV2",
+        "SM_Kitchen_DiningTable_HeavyV2",
+        "SM_Kitchen_DiningTable_BrokenV2"
+      ],
+      "hulls": [
+        9,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "asset": "ServingCounter",
+      "faces": 3589,
+      "meshes": [
+        "SM_Kitchen_ServingCounter",
+        "SM_Kitchen_ServingCounter_DamageV2",
+        "SM_Kitchen_ServingCounter_HeavyV2",
+        "SM_Kitchen_ServingCounter_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "PanLid",
+      "faces": 173,
+      "meshes": [
+        "SM_Kitchen_PanLid",
+        "SM_Kitchen_PanLid_DamageV2",
+        "SM_Kitchen_PanLid_HeavyV2",
+        "SM_Kitchen_PanLid_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "IceMachine",
+      "faces": 2872,
+      "meshes": [
+        "SM_Kitchen_IceMachine",
+        "SM_Kitchen_IceMachine_DamageV2",
+        "SM_Kitchen_IceMachine_HeavyV2",
+        "SM_Kitchen_IceMachine_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "IceMachinePallet",
+      "faces": 686,
+      "meshes": [
+        "SM_Kitchen_IceMachinePallet",
+        "SM_Kitchen_IceMachinePallet_DamageV2",
+        "SM_Kitchen_IceMachinePallet_HeavyV2",
+        "SM_Kitchen_IceMachinePallet_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "asset": "UtilitySink",
+      "faces": 1510,
+      "meshes": [
+        "SM_Kitchen_UtilitySink",
+        "SM_Kitchen_UtilitySink_DamageV2",
+        "SM_Kitchen_UtilitySink_HeavyV2",
+        "SM_Kitchen_UtilitySink_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "TopFreezerFridge",
+      "faces": 1466,
+      "meshes": [
+        "SM_Kitchen_TopFreezerFridge",
+        "SM_Kitchen_TopFreezerFridge_DamageV2",
+        "SM_Kitchen_TopFreezerFridge_HeavyV2",
+        "SM_Kitchen_TopFreezerFridge_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "TennesseeCoolerBag",
+      "faces": 341,
+      "meshes": [
+        "SM_Kitchen_TennesseeCoolerBag",
+        "SM_Kitchen_TennesseeCoolerBag_DamageV2",
+        "SM_Kitchen_TennesseeCoolerBag_HeavyV2",
+        "SM_Kitchen_TennesseeCoolerBag_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "StainlessApplianceRack",
+      "faces": 1084,
+      "meshes": [
+        "SM_Kitchen_StainlessApplianceRack",
+        "SM_Kitchen_StainlessApplianceRack_DamageV2",
+        "SM_Kitchen_StainlessApplianceRack_HeavyV2",
+        "SM_Kitchen_StainlessApplianceRack_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "MicrowaveCart",
+      "faces": 1378,
+      "meshes": [
+        "SM_Kitchen_MicrowaveCart",
+        "SM_Kitchen_MicrowaveCart_DamageV2",
+        "SM_Kitchen_MicrowaveCart_HeavyV2",
+        "SM_Kitchen_MicrowaveCart_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "WhiteMicrowave",
+      "faces": 2474,
+      "meshes": [
+        "SM_Kitchen_WhiteMicrowave",
+        "SM_Kitchen_WhiteMicrowave_DamageV2",
+        "SM_Kitchen_WhiteMicrowave_HeavyV2",
+        "SM_Kitchen_WhiteMicrowave_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "SilverMicrowave",
+      "faces": 2474,
+      "meshes": [
+        "SM_Kitchen_SilverMicrowave",
+        "SM_Kitchen_SilverMicrowave_DamageV2",
+        "SM_Kitchen_SilverMicrowave_HeavyV2",
+        "SM_Kitchen_SilverMicrowave_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "AirFryer",
+      "faces": 729,
+      "meshes": [
+        "SM_Kitchen_AirFryer",
+        "SM_Kitchen_AirFryer_DamageV2",
+        "SM_Kitchen_AirFryer_HeavyV2",
+        "SM_Kitchen_AirFryer_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "Toaster",
+      "faces": 534,
+      "meshes": [
+        "SM_Kitchen_Toaster",
+        "SM_Kitchen_Toaster_DamageV2",
+        "SM_Kitchen_Toaster_HeavyV2",
+        "SM_Kitchen_Toaster_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "TV",
+      "faces": 534,
+      "meshes": [
+        "SM_Kitchen_TV",
+        "SM_Kitchen_TV_DamageV2",
+        "SM_Kitchen_TV_HeavyV2",
+        "SM_Kitchen_TV_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "SmallBlackCabinet",
+      "faces": 686,
+      "meshes": [
+        "SM_Kitchen_SmallBlackCabinet",
+        "SM_Kitchen_SmallBlackCabinet_DamageV2",
+        "SM_Kitchen_SmallBlackCabinet_HeavyV2",
+        "SM_Kitchen_SmallBlackCabinet_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "TowerFan",
+      "faces": 4070,
+      "meshes": [
+        "SM_Kitchen_TowerFan",
+        "SM_Kitchen_TowerFan_DamageV2",
+        "SM_Kitchen_TowerFan_HeavyV2",
+        "SM_Kitchen_TowerFan_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "asset": "TrashCan",
+      "faces": 126,
+      "meshes": [
+        "SM_Kitchen_TrashCan",
+        "SM_Kitchen_TrashCan_DamageV2",
+        "SM_Kitchen_TrashCan_HeavyV2",
+        "SM_Kitchen_TrashCan_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "WhiteCooler",
+      "faces": 610,
+      "meshes": [
+        "SM_Kitchen_WhiteCooler",
+        "SM_Kitchen_WhiteCooler_DamageV2",
+        "SM_Kitchen_WhiteCooler_HeavyV2",
+        "SM_Kitchen_WhiteCooler_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "RollingBlueCooler",
+      "faces": 677,
+      "meshes": [
+        "SM_Kitchen_RollingBlueCooler",
+        "SM_Kitchen_RollingBlueCooler_DamageV2",
+        "SM_Kitchen_RollingBlueCooler_HeavyV2",
+        "SM_Kitchen_RollingBlueCooler_BrokenV2"
+      ],
+      "hulls": [
+        9,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "BlackBarStool",
+      "faces": 468,
+      "meshes": [
+        "SM_Kitchen_BlackBarStool",
+        "SM_Kitchen_BlackBarStool_DamageV2",
+        "SM_Kitchen_BlackBarStool_HeavyV2",
+        "SM_Kitchen_BlackBarStool_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "SuppliesBox",
+      "faces": 1230,
+      "meshes": [
+        "SM_Kitchen_SuppliesBox",
+        "SM_Kitchen_SuppliesBox_DamageV2",
+        "SM_Kitchen_SuppliesBox_HeavyV2",
+        "SM_Kitchen_SuppliesBox_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "asset": "PaperGroceryBag",
+      "faces": 144,
+      "meshes": [
+        "SM_Kitchen_PaperGroceryBag",
+        "SM_Kitchen_PaperGroceryBag_DamageV2",
+        "SM_Kitchen_PaperGroceryBag_HeavyV2",
+        "SM_Kitchen_PaperGroceryBag_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "BlackBag",
+      "faces": 286,
+      "meshes": [
+        "SM_Kitchen_BlackBag",
+        "SM_Kitchen_BlackBag_DamageV2",
+        "SM_Kitchen_BlackBag_HeavyV2",
+        "SM_Kitchen_BlackBag_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "AutumnBouquet",
+      "faces": 14347,
+      "meshes": [
+        "SM_Kitchen_AutumnBouquet",
+        "SM_Kitchen_AutumnBouquet_DamageV2",
+        "SM_Kitchen_AutumnBouquet_HeavyV2",
+        "SM_Kitchen_AutumnBouquet_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "PaperTowelRoll",
+      "faces": 83,
+      "meshes": [
+        "SM_Kitchen_PaperTowelRoll",
+        "SM_Kitchen_PaperTowelRoll_DamageV2",
+        "SM_Kitchen_PaperTowelRoll_HeavyV2",
+        "SM_Kitchen_PaperTowelRoll_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "CrumpledNapkin",
+      "faces": 30,
+      "meshes": [
+        "SM_Kitchen_CrumpledNapkin",
+        "SM_Kitchen_CrumpledNapkin_DamageV2",
+        "SM_Kitchen_CrumpledNapkin_HeavyV2",
+        "SM_Kitchen_CrumpledNapkin_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "ClearCup",
+      "faces": 52,
+      "meshes": [
+        "SM_Kitchen_ClearCup",
+        "SM_Kitchen_ClearCup_DamageV2",
+        "SM_Kitchen_ClearCup_HeavyV2",
+        "SM_Kitchen_ClearCup_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "asset": "BreadBag",
+      "faces": 825,
+      "meshes": [
+        "SM_Kitchen_BreadBag",
+        "SM_Kitchen_BreadBag_DamageV2",
+        "SM_Kitchen_BreadBag_HeavyV2",
+        "SM_Kitchen_BreadBag_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "FoilCarton",
+      "faces": 99,
+      "meshes": [
+        "SM_Kitchen_FoilCarton",
+        "SM_Kitchen_FoilCarton_DamageV2",
+        "SM_Kitchen_FoilCarton_HeavyV2",
+        "SM_Kitchen_FoilCarton_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "StorageBagCarton",
+      "faces": 99,
+      "meshes": [
+        "SM_Kitchen_StorageBagCarton",
+        "SM_Kitchen_StorageBagCarton_DamageV2",
+        "SM_Kitchen_StorageBagCarton_HeavyV2",
+        "SM_Kitchen_StorageBagCarton_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        1,
+        6
+      ]
+    },
+    {
+      "asset": "SnackVarietyBox",
+      "faces": 99,
+      "meshes": [
+        "SM_Kitchen_SnackVarietyBox",
+        "SM_Kitchen_SnackVarietyBox_DamageV2",
+        "SM_Kitchen_SnackVarietyBox_HeavyV2",
+        "SM_Kitchen_SnackVarietyBox_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "PaperProductPack",
+      "faces": 99,
+      "meshes": [
+        "SM_Kitchen_PaperProductPack",
+        "SM_Kitchen_PaperProductPack_DamageV2",
+        "SM_Kitchen_PaperProductPack_HeavyV2",
+        "SM_Kitchen_PaperProductPack_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "CoffeePump",
+      "faces": 174,
+      "meshes": [
+        "SM_Kitchen_CoffeePump",
+        "SM_Kitchen_CoffeePump_DamageV2",
+        "SM_Kitchen_CoffeePump_HeavyV2",
+        "SM_Kitchen_CoffeePump_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "CerealCanister",
+      "faces": 21661,
+      "meshes": [
+        "SM_Kitchen_CerealCanister",
+        "SM_Kitchen_CerealCanister_DamageV2",
+        "SM_Kitchen_CerealCanister_HeavyV2",
+        "SM_Kitchen_CerealCanister_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "WireBasket",
+      "faces": 392,
+      "meshes": [
+        "SM_Kitchen_WireBasket",
+        "SM_Kitchen_WireBasket_DamageV2",
+        "SM_Kitchen_WireBasket_HeavyV2",
+        "SM_Kitchen_WireBasket_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        5,
+        5,
+        12
+      ]
+    },
+    {
+      "asset": "CondimentBottle",
+      "faces": 78,
+      "meshes": [
+        "SM_Kitchen_CondimentBottle",
+        "SM_Kitchen_CondimentBottle_DamageV2",
+        "SM_Kitchen_CondimentBottle_HeavyV2",
+        "SM_Kitchen_CondimentBottle_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Saucepan",
+      "faces": 43,
+      "meshes": [
+        "SM_Kitchen_Saucepan",
+        "SM_Kitchen_Saucepan_DamageV2",
+        "SM_Kitchen_Saucepan_HeavyV2",
+        "SM_Kitchen_Saucepan_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "WaterPitcher",
+      "faces": 49,
+      "meshes": [
+        "SM_Kitchen_WaterPitcher",
+        "SM_Kitchen_WaterPitcher_DamageV2",
+        "SM_Kitchen_WaterPitcher_HeavyV2",
+        "SM_Kitchen_WaterPitcher_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "asset": "FruitTray",
+      "faces": 3430,
+      "meshes": [
+        "SM_Kitchen_FruitTray",
+        "SM_Kitchen_FruitTray_DamageV2",
+        "SM_Kitchen_FruitTray_HeavyV2",
+        "SM_Kitchen_FruitTray_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "ServingBowl",
+      "faces": 196,
+      "meshes": [
+        "SM_Kitchen_ServingBowl",
+        "SM_Kitchen_ServingBowl_DamageV2",
+        "SM_Kitchen_ServingBowl_HeavyV2",
+        "SM_Kitchen_ServingBowl_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "UtensilCup",
+      "faces": 2018,
+      "meshes": [
+        "SM_Kitchen_UtensilCup",
+        "SM_Kitchen_UtensilCup_DamageV2",
+        "SM_Kitchen_UtensilCup_HeavyV2",
+        "SM_Kitchen_UtensilCup_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        9,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "GroceryBag",
+      "faces": 286,
+      "meshes": [
+        "SM_Kitchen_GroceryBag",
+        "SM_Kitchen_GroceryBag_DamageV2",
+        "SM_Kitchen_GroceryBag_HeavyV2",
+        "SM_Kitchen_GroceryBag_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "CityWallPrint",
+      "faces": 491,
+      "meshes": [
+        "SM_Kitchen_CityWallPrint",
+        "SM_Kitchen_CityWallPrint_DamageV2",
+        "SM_Kitchen_CityWallPrint_HeavyV2",
+        "SM_Kitchen_CityWallPrint_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "CafeWallPrint",
+      "faces": 491,
+      "meshes": [
+        "SM_Kitchen_CafeWallPrint",
+        "SM_Kitchen_CafeWallPrint_DamageV2",
+        "SM_Kitchen_CafeWallPrint_HeavyV2",
+        "SM_Kitchen_CafeWallPrint_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "RulesWallPrint",
+      "faces": 491,
+      "meshes": [
+        "SM_Kitchen_RulesWallPrint",
+        "SM_Kitchen_RulesWallPrint_DamageV2",
+        "SM_Kitchen_RulesWallPrint_HeavyV2",
+        "SM_Kitchen_RulesWallPrint_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "Outlet",
+      "faces": 532,
+      "meshes": [
+        "SM_Kitchen_Outlet",
+        "SM_Kitchen_Outlet_DamageV2",
+        "SM_Kitchen_Outlet_HeavyV2",
+        "SM_Kitchen_Outlet_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "PowerCord",
+      "faces": 172,
+      "meshes": [
+        "SM_Kitchen_PowerCord",
+        "SM_Kitchen_PowerCord_DamageV2",
+        "SM_Kitchen_PowerCord_HeavyV2",
+        "SM_Kitchen_PowerCord_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "HangingTVCables",
+      "faces": 53,
+      "meshes": [
+        "SM_Kitchen_HangingTVCables",
+        "SM_Kitchen_HangingTVCables_DamageV2",
+        "SM_Kitchen_HangingTVCables_HeavyV2",
+        "SM_Kitchen_HangingTVCables_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "asset": "WindowBlinds",
+      "faces": 2925,
+      "meshes": [
+        "SM_Kitchen_WindowBlinds",
+        "SM_Kitchen_WindowBlinds_DamageV2",
+        "SM_Kitchen_WindowBlinds_HeavyV2",
+        "SM_Kitchen_WindowBlinds_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "ClosedClosetDoor",
+      "faces": 3370,
+      "meshes": [
+        "SM_Kitchen_ClosedClosetDoor"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "KitchenOakFloor",
+      "faces": 3,
+      "meshes": [
+        "SM_Kitchen_KitchenOakFloor"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "CoffeeMaker",
+      "faces": 2119,
+      "meshes": [
+        "SM_Kitchen_CoffeeMaker",
+        "SM_Kitchen_CoffeeMaker_DamageV2",
+        "SM_Kitchen_CoffeeMaker_HeavyV2",
+        "SM_Kitchen_CoffeeMaker_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "asset": "WaterDispenser",
+      "faces": 1798,
+      "meshes": [
+        "SM_Kitchen_WaterDispenser",
+        "SM_Kitchen_WaterDispenser_DamageV2",
+        "SM_Kitchen_WaterDispenser_HeavyV2",
+        "SM_Kitchen_WaterDispenser_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "asset": "PeanutButterJar",
+      "faces": 4005,
+      "meshes": [
+        "SM_Kitchen_PeanutButterJar",
+        "SM_Kitchen_PeanutButterJar_DamageV2",
+        "SM_Kitchen_PeanutButterJar_HeavyV2",
+        "SM_Kitchen_PeanutButterJar_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "asset": "BasketWithApples",
+      "faces": 2392,
+      "meshes": [
+        "SM_Kitchen_BasketWithApples",
+        "SM_Kitchen_BasketWithApples_DamageV2",
+        "SM_Kitchen_BasketWithApples_HeavyV2",
+        "SM_Kitchen_BasketWithApples_BrokenV2"
+      ],
+      "hulls": [
+        10,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "CoffeePods",
+      "faces": 432,
+      "meshes": [
+        "SM_Kitchen_CoffeePods",
+        "SM_Kitchen_CoffeePods_DamageV2",
+        "SM_Kitchen_CoffeePods_HeavyV2",
+        "SM_Kitchen_CoffeePods_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "CocoaBox",
+      "faces": 198,
+      "meshes": [
+        "SM_Kitchen_CocoaBox",
+        "SM_Kitchen_CocoaBox_DamageV2",
+        "SM_Kitchen_CocoaBox_HeavyV2",
+        "SM_Kitchen_CocoaBox_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "asset": "ForksBox",
+      "faces": 198,
+      "meshes": [
+        "SM_Kitchen_ForksBox",
+        "SM_Kitchen_ForksBox_DamageV2",
+        "SM_Kitchen_ForksBox_HeavyV2",
+        "SM_Kitchen_ForksBox_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "asset": "RedBullCase",
+      "faces": 198,
+      "meshes": [
+        "SM_Kitchen_RedBullCase",
+        "SM_Kitchen_RedBullCase_DamageV2",
+        "SM_Kitchen_RedBullCase_HeavyV2",
+        "SM_Kitchen_RedBullCase_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "BreakfastSupplies",
+      "faces": 1827,
+      "meshes": [
+        "SM_Kitchen_BreakfastSupplies",
+        "SM_Kitchen_BreakfastSupplies_DamageV2",
+        "SM_Kitchen_BreakfastSupplies_HeavyV2",
+        "SM_Kitchen_BreakfastSupplies_BrokenV2"
+      ],
+      "hulls": [
+        11,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "RectangularCerealCanister",
+      "faces": 33968,
+      "meshes": [
+        "SM_Kitchen_RectangularCerealCanister",
+        "SM_Kitchen_RectangularCerealCanister_DamageV2",
+        "SM_Kitchen_RectangularCerealCanister_HeavyV2",
+        "SM_Kitchen_RectangularCerealCanister_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "DoubleCerealDispenser",
+      "faces": 38746,
+      "meshes": [
+        "SM_Kitchen_DoubleCerealDispenser",
+        "SM_Kitchen_DoubleCerealDispenser_DamageV2",
+        "SM_Kitchen_DoubleCerealDispenser_HeavyV2",
+        "SM_Kitchen_DoubleCerealDispenser_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "asset": "ClosedStorageBox",
+      "faces": 625,
+      "meshes": [
+        "SM_Kitchen_ClosedStorageBox",
+        "SM_Kitchen_ClosedStorageBox_DamageV2",
+        "SM_Kitchen_ClosedStorageBox_HeavyV2",
+        "SM_Kitchen_ClosedStorageBox_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "NapkinBasket",
+      "faces": 728,
+      "meshes": [
+        "SM_Kitchen_NapkinBasket",
+        "SM_Kitchen_NapkinBasket_DamageV2",
+        "SM_Kitchen_NapkinBasket_HeavyV2",
+        "SM_Kitchen_NapkinBasket_BrokenV2"
+      ],
+      "hulls": [
+        11,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "CleaningCloth",
+      "faces": 80,
+      "meshes": [
+        "SM_Kitchen_CleaningCloth",
+        "SM_Kitchen_CleaningCloth_DamageV2",
+        "SM_Kitchen_CleaningCloth_HeavyV2",
+        "SM_Kitchen_CleaningCloth_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "SmokeDetector",
+      "faces": 772,
+      "meshes": [
+        "SM_Kitchen_SmokeDetector",
+        "SM_Kitchen_SmokeDetector_DamageV2",
+        "SM_Kitchen_SmokeDetector_HeavyV2",
+        "SM_Kitchen_SmokeDetector_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "ClosetWallDecoration",
+      "faces": 439,
+      "meshes": [
+        "SM_Kitchen_ClosetWallDecoration",
+        "SM_Kitchen_ClosetWallDecoration_DamageV2",
+        "SM_Kitchen_ClosetWallDecoration_HeavyV2",
+        "SM_Kitchen_ClosetWallDecoration_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "WallWear",
+      "faces": 1,
+      "meshes": [
+        "SM_Kitchen_WallWear"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "TVCableWallHole",
+      "faces": 2880,
+      "meshes": [
+        "SM_Kitchen_TVCableWallHole"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "ExitSign",
+      "faces": 288,
+      "meshes": [
+        "SM_Kitchen_ExitSign",
+        "SM_Kitchen_ExitSign_DamageV2",
+        "SM_Kitchen_ExitSign_HeavyV2",
+        "SM_Kitchen_ExitSign_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "FireCabinet",
+      "faces": 320,
+      "meshes": [
+        "SM_Kitchen_FireCabinet",
+        "SM_Kitchen_FireCabinet_DamageV2",
+        "SM_Kitchen_FireCabinet_HeavyV2",
+        "SM_Kitchen_FireCabinet_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "SM_Entrance_p0_p1_Solid",
+      "faces": 20752,
+      "meshes": [
+        "SM_Kitchen_SM_Entrance_p0_p1_Solid"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "COL_Entrance_p0_p1_Solid",
+      "faces": 204,
+      "meshes": [
+        "SM_Kitchen_COL_Entrance_p0_p1_Solid"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "SM_Entrance_m1_p1_Solid",
+      "faces": 14595,
+      "meshes": [
+        "SM_Kitchen_SM_Entrance_m1_p1_Solid"
+      ],
+      "hulls": [
+        0
+      ]
+    }
+  ],
+  "closed_closet": true,
+  "interactive_blinds": 5
+}

@@ -1,4 +1,6 @@
 #include "SeniorFixerVisual.h"
+#include "SeniorDouliAnim.h"
+#include "HouseFurnitureInteractionComponent.h"
 #include "Animation/AnimSequence.h"
 #include "Components/LODSyncComponent.h"
 #include "Components/SceneComponent.h"
@@ -303,12 +305,34 @@ void ASeniorFixerVisual::PrestreamPreviewTextures()
 void ASeniorFixerVisual::SetMoveSpeed(float Speed)
 {
     const bool bShouldWalk = bWalking ? Speed > 5.f : Speed > 12.f;
+    if(auto* Anim=Body?Cast<USeniorDouliAnim>(Body->GetAnimInstance()):nullptr)
+    {
+        bWalking=bShouldWalk;
+        Anim->BaseSequence=bWalking && Walk?Walk:Idle;
+        // The shared proxy uses a 155 cm/s reference. Preserve Fixer's
+        // existing 145 cm/s walk cadence when its carry overlay is active.
+        Anim->Speed=bWalking?Speed*(155.f/145.f):0.f;
+        return;
+    }
     if (bShouldWalk != bWalking && Body)
     {
         bWalking = bShouldWalk;
         if (UAnimSequence* Clip = bWalking && Walk ? Walk.Get() : Idle.Get()) Body->PlayAnimation(Clip, true);
     }
     if (Body) Body->SetPlayRate(bWalking ? FMath::Clamp(Speed / 145.f, .65f, 2.1f) : 1.f);
+}
+
+void ASeniorFixerVisual::SetFurnitureCarryPose(UHouseFurnitureInteractionComponent* Carry)
+{
+    if(!Body || bPreview)return;
+    if(Carry && Carry->GetCarryPoseBlend()>.001f && !Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+        Body->SetAnimInstanceClass(USeniorDouliAnim::StaticClass());
+    if(auto* Anim=Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+    {
+        if(!Anim->BaseSequence)Anim->BaseSequence=bWalking && Walk?Walk:Idle;
+        Anim->bFirstPerson=false;
+        Anim->FurnitureCarryTarget=Carry;
+    }
 }
 
 void ASeniorFixerVisual::Tick(float DeltaSeconds)

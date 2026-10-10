@@ -1,0 +1,343 @@
+{
+  "scope": "Both great room televisions in the saved Chapter01_House map",
+  "installation": {
+    "passed": true,
+    "tvs": [
+      {
+        "id": "GreatRoom_WestTV",
+        "location": [
+          -1136.0,
+          189.8999486,
+          251.0
+        ],
+        "mass": 23.5,
+        "health": 60,
+        "attachment_health": 36,
+        "rotation_pitch_yaw_roll": [
+          0,
+          -90,
+          0
+        ],
+        "scale": [
+          1.65,
+          1,
+          1.65
+        ],
+        "width_cm": 303.6,
+        "height_cm": 175.725,
+        "bracket_touches_wall": true,
+        "bracket_connects_tv": true
+      },
+      {
+        "id": "GreatRoom_EastTV",
+        "location": [
+          1235.0,
+          169.1999073,
+          251.0
+        ],
+        "mass": 23.5,
+        "health": 60,
+        "attachment_health": 36,
+        "rotation_pitch_yaw_roll": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          1.65,
+          1,
+          1.65
+        ],
+        "width_cm": 303.6,
+        "height_cm": 175.725,
+        "bracket_touches_wall": true,
+        "bracket_connects_tv": true
+      }
+    ],
+    "kitchen_props_preserved": 137,
+    "shell_face_conservation": [
+      {
+        "label": "SM_Entrance_p0_m1_Solid",
+        "asset_name": "SM_GRTV_Retained_SM_Entrance_p0_m1_Solid",
+        "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/GreatRoomTVs/models/SM_GRTV_Retained_SM_Entrance_p0_m1_Solid.fbx",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodWalnut.MI_SSO_WoodWalnut",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S01BroomYellow.MI_SSO_S01BroomYellow",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityChrome.MI_SSO_S03FidelityChrome",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream.MI_SSO_S03MasonryCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityBathPaint.MI_SSO_S03FidelityBathPaint"
+        ],
+        "original_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_ArchitecturalRemainder_SM_Entrance_p0_m1_Solid.HI_ArchitecturalRemainder_SM_Entrance_p0_m1_Solid",
+        "source_faces": 45638,
+        "removed_tv_faces": 376,
+        "removed_tv_components": 2,
+        "retained_faces": 45262,
+        "conservation_pass": true,
+        "tv_bounds": [
+          [
+            -6.364999771118164,
+            -1.934999704360962,
+            1.8349997997283936
+          ],
+          [
+            -6.233999729156494,
+            -0.17499932646751404,
+            2.8650002479553223
+          ]
+        ]
+      },
+      {
+        "label": "SM_Entrance_p0_p0_Solid",
+        "asset_name": "SM_GRTV_Retained_SM_Entrance_p0_p0_Solid",
+        "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/GreatRoomTVs/models/SM_GRTV_Retained_SM_Entrance_p0_p0_Solid.fbx",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood.MI_SSO_FloorWood",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodWalnut.MI_SSO_WoodWalnut",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete"
+        ],
+        "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalRoom_Entrance_p0_p0_Solid.SM_OriginalRoom_Entrance_p0_p0_Solid",
+        "source_faces": 51884,
+        "removed_tv_faces": 376,
+        "removed_tv_components": 2,
+        "retained_faces": 51508,
+        "conservation_pass": true,
+        "tv_bounds": [
+          [
+            6.783999443054199,
+            -1.8199992179870605,
+            1.8349997997283936
+          ],
+          [
+            6.914999961853027,
+            -0.05999889597296715,
+            2.8650002479553223
+          ]
+        ]
+      }
+    ]
+  },
+  "runtime": {
+    "twoDetailedTVsAndSeparateMounts": true,
+    "televisionsFaceRoomWithLandscapeScreens": true,
+    "untouchedTVsRemainParked": true,
+    "firstHitCracksWhileMounted": true,
+    "secondHitDamagesAndReleasesMount": true,
+    "westTVFallCm": 247.04998779296875,
+    "threeDistinctDamageStagesAndCountOnce": true,
+    "actualBraxtonWeaponHitsMountedTV": true,
+    "weaponThrows": 3,
+    "westSettledSpeed": 0,
+    "eastSettledSpeed": 0,
+    "eastTVFallCm": 247.05004267190967,
+    "bothTVsFallAndSettle": true,
+    "oneHouseDamageCountPerTV": true,
+    "passed": true,
+    "detail": "Both saved TVs: mounted LCD cracks, three damage stages, real weapon hits, mount release, gravity fall, stable collision, and damage counted once.",
+    "elapsedSeconds": 27.245380707085133
+  },
+  "map_sha256": "5af27fc7a70aaed52e655c00720c36326da7db7e2d5330de020df97459191a9d",
+  "rendered_visual_review": {
+    "status": "PASS",
+    "detail": "Registered campaign camera sweep complete",
+    "scope": "Assisted registered-camera sweep in the actual campaign house; not player traversal or a multiplayer session.",
+    "userDirectory": "/Users/Stewart/Projects/Senior sendoff/outputs/great-room-tvs/visual/",
+    "elapsedSeconds": 15.084562249481678,
+    "quality": 1,
+    "actualShadowQuality": 1,
+    "requestedPageOverride": 0,
+    "actualPages": 1024,
+    "virtualShadowsEnabled": 1,
+    "expectedViews": 4,
+    "minimumWarmupFrames": 64,
+    "captures": [
+      {
+        "view": "01_West_Front",
+        "path": "/Users/Stewart/Projects/Senior sendoff/outputs/great-room-tvs/visual/Saved/HouseVisualReview/01_West_Front.png",
+        "width": 1280,
+        "height": 720,
+        "horizontalFov": 79.31687927246094,
+        "actualPages": 1024,
+        "warmupFrames": 105,
+        "warmupSeconds": 2.603820789605379
+      },
+      {
+        "view": "02_West_SideMount",
+        "path": "/Users/Stewart/Projects/Senior sendoff/outputs/great-room-tvs/visual/Saved/HouseVisualReview/02_West_SideMount.png",
+        "width": 1280,
+        "height": 720,
+        "horizontalFov": 79.31687927246094,
+        "actualPages": 1024,
+        "warmupFrames": 109,
+        "warmupSeconds": 2.5110306665301323
+      },
+      {
+        "view": "03_East_Front",
+        "path": "/Users/Stewart/Projects/Senior sendoff/outputs/great-room-tvs/visual/Saved/HouseVisualReview/03_East_Front.png",
+        "width": 1280,
+        "height": 720,
+        "horizontalFov": 79.31687927246094,
+        "actualPages": 1024,
+        "warmupFrames": 136,
+        "warmupSeconds": 2.729583166539669
+      },
+      {
+        "view": "04_East_SideMount",
+        "path": "/Users/Stewart/Projects/Senior sendoff/outputs/great-room-tvs/visual/Saved/HouseVisualReview/04_East_SideMount.png",
+        "width": 1280,
+        "height": 720,
+        "horizontalFov": 79.31687927246094,
+        "actualPages": 1024,
+        "warmupFrames": 117,
+        "warmupSeconds": 2.516412042081356
+      }
+    ]
+  },
+  "validation_scope": "Native campaign weapon collisions and physics, plus registered close-up cameras. No manual player traversal or FPS benchmark.",
+  "visual_inspection": {
+    "passed": true,
+    "front": "Both TVs visibly larger, centered above mantels and clear of molding.",
+    "side": "Both wall plates touch the projecting fireplace faces, and the rails reach the television backs."
+  },
+  "damage_visual_inspection": {
+    "passed": true,
+    "first_hit": "Visible fine cracks remain mounted in 05_RealWeaponScreenCracks.png",
+    "fall": "Detached TV resting on floor before fireplace in 03_FallenLCD.png",
+    "other_smoke_frames": "Camera timing and initial shader compilation make frames 01, 02, 04 and 06 unsuitable for final visual evidence."
+  },
+  "editor_handoff": {
+    "observed_window": "SeniorSendoff - Unreal Editor",
+    "map": "Chapter01_House",
+    "all_saved": true,
+    "tv_visible": true,
+    "editor_camera": "West TV at an angle, after the placement correction"
+  },
+  "placement_correction": {
+    "passed": true,
+    "tvs": [
+      {
+        "id": "GreatRoom_WestTV",
+        "old_location": [
+          -1265.0000000000002,
+          189.8999486,
+          251.0
+        ],
+        "old_scale": [
+          1.65,
+          1.0,
+          1.65
+        ],
+        "location": [
+          -1136.0,
+          189.8999486,
+          251.0
+        ],
+        "scale": [
+          1.65,
+          1,
+          1.65
+        ],
+        "width_cm": 303.6,
+        "height_cm": 175.725,
+        "wall_plane_x": -1150.2,
+        "bracket_back_x": -1150.2,
+        "bracket_front_x": -1140.6,
+        "tv_mount_plane_x": -1140.6,
+        "bracket_touches_wall": true,
+        "bracket_connects_tv": true,
+        "body_wall_clearance_cm": 9.95,
+        "bounds_center": [
+          -1136.4999940395355,
+          189.89994859995093,
+          244.40431785583496
+        ],
+        "bounds_extent": [
+          5.4000027328629585,
+          151.8000000005297,
+          94.4581884384155
+        ]
+      },
+      {
+        "id": "GreatRoom_EastTV",
+        "old_location": [
+          1266.8000000000002,
+          169.1999073,
+          251.0
+        ],
+        "old_scale": [
+          1.65,
+          1.0,
+          1.65
+        ],
+        "location": [
+          1235.0,
+          169.1999073,
+          251.0
+        ],
+        "scale": [
+          1.65,
+          1,
+          1.65
+        ],
+        "width_cm": 303.6,
+        "height_cm": 175.725,
+        "wall_plane_x": 1249.2,
+        "bracket_back_x": 1249.2,
+        "bracket_front_x": 1239.6,
+        "tv_mount_plane_x": 1239.6,
+        "bracket_touches_wall": true,
+        "bracket_connects_tv": true,
+        "body_wall_clearance_cm": 9.95,
+        "bounds_center": [
+          1235.4999940395355,
+          169.19990729995098,
+          244.40431785583496
+        ],
+        "bounds_extent": [
+          5.4000027328629585,
+          151.80000000052974,
+          94.4581884384155
+        ]
+      }
+    ],
+    "kitchen_props_preserved": 137
+  }
+}

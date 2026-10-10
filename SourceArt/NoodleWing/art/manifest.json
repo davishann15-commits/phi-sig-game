@@ -1,0 +1,3214 @@
+{
+  "assets": [
+    {
+      "name": "SM_NW_RedFloors",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_RedFloors.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_DustyRed",
+        "M_NW_FloorOak7",
+        "M_NW_FloorOak6",
+        "M_NW_FloorOak5",
+        "M_NW_FloorOak4",
+        "M_NW_FloorOak3",
+        "M_NW_FloorOak2",
+        "M_NW_FloorOak1",
+        "M_NW_FloorOak0"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 1956
+    },
+    {
+      "name": "SM_NW_BlueFloors",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_BlueFloors.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_Ceiling",
+        "M_NW_FloorOak7",
+        "M_NW_FloorOak6",
+        "M_NW_FloorOak5",
+        "M_NW_FloorOak4",
+        "M_NW_FloorOak3",
+        "M_NW_FloorOak2",
+        "M_NW_FloorOak1",
+        "M_NW_FloorOak0"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 1848
+    },
+    {
+      "name": "SM_NW_LaundryFloors",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_LaundryFloors.fbx",
+      "materials": [
+        "M_NW_WornConcrete",
+        "M_NW_Ceiling"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 24
+    },
+    {
+      "name": "SM_NW_HallFloors",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_HallFloors.fbx",
+      "materials": [
+        "M_NW_WornConcrete",
+        "M_NW_Ceiling"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 72
+    },
+    {
+      "name": "SM_NW_RedWalls",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_RedWalls.fbx",
+      "materials": [
+        "M_NW_DustyRed",
+        "M_NW_IvoryTrim",
+        "M_NW_UtilityCream"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 252
+    },
+    {
+      "name": "SM_NW_BlueWalls",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_BlueWalls.fbx",
+      "materials": [
+        "M_NW_NavyBlue",
+        "M_NW_IvoryTrim",
+        "M_NW_UtilityCream"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 168
+    },
+    {
+      "name": "SM_NW_LaundryWalls",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_LaundryWalls.fbx",
+      "materials": [
+        "M_NW_UtilityCream",
+        "M_NW_IvoryTrim"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 120
+    },
+    {
+      "name": "SM_NW_HallWalls",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_HallWalls.fbx",
+      "materials": [
+        "M_NW_UtilityCream",
+        "M_NW_IvoryTrim"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 948
+    },
+    {
+      "name": "SM_NW_BasementTrim",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_BasementTrim.fbx",
+      "materials": [
+        "M_NW_IvoryTrim",
+        "M_NW_WarmWood",
+        "M_NW_BrushedChrome"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 6764
+    },
+    {
+      "name": "SM_NW_FireDoor",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_FireDoor.fbx",
+      "materials": [
+        "M_NW_UtilityCream",
+        "M_NW_BrushedChrome",
+        "M_NW_WornSteel"
+      ],
+      "kind": "door",
+      "mass": 20,
+      "triangles": 2316
+    },
+    {
+      "name": "SM_NW_BilliardTable",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_BilliardTable.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_WornSteel",
+        "M_NW_PoolFelt",
+        "M_NW_BlackRubber",
+        "M_NW_ChestnutLeather",
+        "M_NW_OldBrass"
+      ],
+      "kind": "prop",
+      "mass": 260,
+      "triangles": 15692
+    },
+    {
+      "name": "SM_NW_CueBall",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_CueBall.fbx",
+      "materials": [
+        "M_NW_BilliardWhite"
+      ],
+      "kind": "prop",
+      "mass": 0.18,
+      "triangles": 528
+    },
+    {
+      "name": "SM_NW_YellowBall",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_YellowBall.fbx",
+      "materials": [
+        "M_NW_BilliardYellow"
+      ],
+      "kind": "prop",
+      "mass": 0.18,
+      "triangles": 528
+    },
+    {
+      "name": "SM_NW_PoolCue",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_PoolCue.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_WornSteel",
+        "M_NW_ChairGreen"
+      ],
+      "kind": "prop",
+      "mass": 0.6,
+      "triangles": 308
+    },
+    {
+      "name": "SM_NW_CueRack",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_CueRack.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_OldBrass"
+      ],
+      "kind": "static",
+      "mass": 20,
+      "triangles": 7232
+    },
+    {
+      "name": "SM_NW_TanRecliner",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_TanRecliner.fbx",
+      "materials": [
+        "M_NW_ReclinerTan",
+        "M_NW_WornSteel"
+      ],
+      "kind": "prop",
+      "mass": 65,
+      "triangles": 3372
+    },
+    {
+      "name": "SM_NW_LeatherSofa",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_LeatherSofa.fbx",
+      "materials": [
+        "M_NW_ChestnutLeather",
+        "M_NW_OldBrass",
+        "M_NW_WornSteel"
+      ],
+      "kind": "prop",
+      "mass": 110,
+      "triangles": 6160
+    },
+    {
+      "name": "SM_NW_Pillow",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_Pillow.fbx",
+      "materials": [
+        "M_NW_ReclinerTan"
+      ],
+      "kind": "prop",
+      "mass": 1.1,
+      "triangles": 588
+    },
+    {
+      "name": "SM_NW_Counter",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_Counter.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_WornSteel"
+      ],
+      "kind": "prop",
+      "mass": 70,
+      "triangles": 14228
+    },
+    {
+      "name": "SM_NW_LeatherStool",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_LeatherStool.fbx",
+      "materials": [
+        "M_NW_WornSteel",
+        "M_NW_ChestnutLeather"
+      ],
+      "kind": "prop",
+      "mass": 12,
+      "triangles": 2416
+    },
+    {
+      "name": "SM_NW_TVConsole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_TVConsole.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_BlackRubber",
+        "M_NW_WornSteel",
+        "M_NW_BrushedChrome"
+      ],
+      "kind": "prop",
+      "mass": 55,
+      "triangles": 1700
+    },
+    {
+      "name": "SM_NW_TV",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_TV.fbx",
+      "materials": [
+        "M_NW_WornSteel",
+        "M_NW_BlackRubber",
+        "M_NW_SmokedGlass",
+        "M_NW_BlueLCD"
+      ],
+      "kind": "wall",
+      "mass": 22,
+      "triangles": 1276
+    },
+    {
+      "name": "SM_NW_Arcade",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_Arcade.fbx",
+      "materials": [
+        "M_NW_WornSteel",
+        "M_NW_SmokedGlass",
+        "M_NW_WarmWood",
+        "M_NW_NavyBlue",
+        "M_NW_Fluorescent",
+        "M_NW_BrushedChrome",
+        "M_NW_DetergentOrange",
+        "M_NW_BilliardYellow",
+        "M_NW_BlackRubber",
+        "M_NW_BlueLCD"
+      ],
+      "kind": "prop",
+      "mass": 130,
+      "triangles": 20404
+    },
+    {
+      "name": "SM_NW_StackedLaundry",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_StackedLaundry.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_BrushedChrome",
+        "M_NW_SmokedGlass",
+        "M_NW_BlueLCD",
+        "M_NW_BlackRubber",
+        "M_NW_WornSteel"
+      ],
+      "kind": "prop",
+      "mass": 190,
+      "triangles": 23652
+    },
+    {
+      "name": "SM_NW_FrontWasher",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_FrontWasher.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_BrushedChrome",
+        "M_NW_SmokedGlass",
+        "M_NW_BlueLCD",
+        "M_NW_BlackRubber",
+        "M_NW_WornSteel"
+      ],
+      "kind": "prop",
+      "mass": 84,
+      "triangles": 11844
+    },
+    {
+      "name": "SM_NW_TopWasher",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_TopWasher.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_BrushedChrome",
+        "M_NW_BlackRubber",
+        "M_NW_UtilityCream"
+      ],
+      "kind": "prop",
+      "mass": 90,
+      "triangles": 2908
+    },
+    {
+      "name": "SM_NW_OpenPorthole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_OpenPorthole.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_BrushedChrome",
+        "M_NW_SmokedGlass"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 2780
+    },
+    {
+      "name": "SM_NW_UtilitySink",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_UtilitySink.fbx",
+      "materials": [
+        "M_NW_BrushedChrome",
+        "M_NW_ApplianceEnamel"
+      ],
+      "kind": "prop",
+      "mass": 46,
+      "triangles": 3572
+    },
+    {
+      "name": "SM_NW_WallCabinet",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_WallCabinet.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_UtilityCream",
+        "M_NW_BrushedChrome"
+      ],
+      "kind": "wall",
+      "mass": 35,
+      "triangles": 1028
+    },
+    {
+      "name": "SM_NW_Detergent",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_Detergent.fbx",
+      "materials": [
+        "M_NW_DetergentOrange",
+        "M_NW_NavyBlue",
+        "M_NW_Paper"
+      ],
+      "kind": "prop",
+      "mass": 2.2,
+      "triangles": 1208
+    },
+    {
+      "name": "SM_NW_LaundryBasket",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_LaundryBasket.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel"
+      ],
+      "kind": "prop",
+      "mass": 1.5,
+      "triangles": 1300
+    },
+    {
+      "name": "SM_NW_LaundryPile",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_LaundryPile.fbx",
+      "materials": [
+        "M_NW_CharcoalCloth",
+        "M_NW_LaundryWhite"
+      ],
+      "kind": "prop",
+      "mass": 1,
+      "triangles": 800
+    },
+    {
+      "name": "SM_NW_DryerSheet",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_DryerSheet.fbx",
+      "materials": [
+        "M_NW_LaundryWhite"
+      ],
+      "kind": "prop",
+      "mass": 0.02,
+      "triangles": 4
+    },
+    {
+      "name": "SM_NW_UtilityDetail",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_UtilityDetail.fbx",
+      "materials": [
+        "M_NW_WornSteel",
+        "M_NW_BrushedChrome"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 1900
+    },
+    {
+      "name": "SM_NW_Box",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_Box.fbx",
+      "materials": [
+        "M_NW_Paper"
+      ],
+      "kind": "prop",
+      "mass": 1.5,
+      "triangles": 84
+    },
+    {
+      "name": "SM_NW_SpindleChair",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_SpindleChair.fbx",
+      "materials": [
+        "M_NW_ChairGreen",
+        "M_NW_WornSteel"
+      ],
+      "kind": "prop",
+      "mass": 9,
+      "triangles": 1044
+    },
+    {
+      "name": "SM_NW_SideTable",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_SideTable.fbx",
+      "materials": [
+        "M_NW_WarmWood"
+      ],
+      "kind": "prop",
+      "mass": 11,
+      "triangles": 940
+    },
+    {
+      "name": "SM_NW_TableLamp",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_TableLamp.fbx",
+      "materials": [
+        "M_NW_OldBrass",
+        "M_NW_LaundryWhite"
+      ],
+      "kind": "prop",
+      "mass": 3,
+      "triangles": 1624
+    },
+    {
+      "name": "SM_NW_BlueRug",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_BlueRug.fbx",
+      "materials": [
+        "M_NW_RugOatmeal",
+        "M_NW_LaundryWhite"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 1268
+    },
+    {
+      "name": "SM_NW_RedRug",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_RedRug.fbx",
+      "materials": [
+        "M_NW_RugOatmeal",
+        "M_NW_LaundryWhite"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 1028
+    },
+    {
+      "name": "SM_NW_RedDogs",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_RedDogs.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_RedDogsPrint"
+      ],
+      "kind": "wall",
+      "mass": 5,
+      "triangles": 190
+    },
+    {
+      "name": "SM_NW_RedWildlife",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_RedWildlife.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_RedWildlifePrint"
+      ],
+      "kind": "wall",
+      "mass": 5,
+      "triangles": 190
+    },
+    {
+      "name": "SM_NW_RedSport",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_RedSport.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_RedSportPrint"
+      ],
+      "kind": "wall",
+      "mass": 5,
+      "triangles": 190
+    },
+    {
+      "name": "SM_NW_HallFlag",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_HallFlag.fbx",
+      "materials": [
+        "M_NW_DustyRed",
+        "M_NW_Paper",
+        "M_NW_NavyBlue",
+        "M_NW_OldBrass"
+      ],
+      "kind": "wall",
+      "mass": 1,
+      "triangles": 16256
+    },
+    {
+      "name": "SM_NW_MechanicalCloset",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_MechanicalCloset.fbx",
+      "materials": [
+        "M_NW_UtilityCream",
+        "M_NW_IvoryTrim",
+        "M_NW_OldBrass"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 4852
+    },
+    {
+      "name": "SM_NW_CeilingFixtures",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_CeilingFixtures.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_Fluorescent",
+        "M_NW_WornSteel"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 3908
+    },
+    {
+      "name": "SM_NW_ExitSign",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_ExitSign.fbx",
+      "materials": [
+        "M_NW_UtilityCream",
+        "M_NW_ApplianceEnamel",
+        "M_NW_ExitRed"
+      ],
+      "kind": "wall",
+      "mass": 4,
+      "triangles": 504
+    },
+    {
+      "name": "SM_NW_FordPlaque",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_FordPlaque.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_WornSteel",
+        "M_NW_Paper"
+      ],
+      "kind": "wall",
+      "mass": 5,
+      "triangles": 628
+    },
+    {
+      "name": "SM_NW_SportsPennant",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_SportsPennant.fbx",
+      "materials": [
+        "M_NW_WarmWood",
+        "M_NW_DustyRed",
+        "M_NW_Paper",
+        "M_NW_DetergentOrange"
+      ],
+      "kind": "wall",
+      "mass": 3,
+      "triangles": 1180
+    },
+    {
+      "name": "SM_NW_UtilityCable",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_UtilityCable.fbx",
+      "materials": [
+        "M_NW_CableYellow"
+      ],
+      "kind": "prop",
+      "mass": 2,
+      "triangles": 3428
+    },
+    {
+      "name": "SM_NW_FireExtinguisher",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_FireExtinguisher.fbx",
+      "materials": [
+        "M_NW_DustyRed",
+        "M_NW_Paper",
+        "M_NW_OldBrass",
+        "M_NW_WornSteel"
+      ],
+      "kind": "wall",
+      "mass": 6,
+      "triangles": 1572
+    },
+    {
+      "name": "SM_NW_StairNorthernPractical",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_StairNorthernPractical.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_Fluorescent"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 624
+    },
+    {
+      "name": "SM_NW_StairStructure",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_StairStructure.fbx",
+      "materials": [
+        "M_NW_WornConcrete",
+        "M_NW_AggregateTreads",
+        "M_NW_WornSteel",
+        "M_NW_YellowBlock",
+        "M_NW_Ceiling"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 23976,
+      "material_overrides": {
+        "M_NW_AggregateTreads": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03StairTreadSteel",
+        "M_NW_WornConcrete": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03WornConcrete"
+      }
+    },
+    {
+      "name": "SM_NW_StairRails",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_StairRails.fbx",
+      "materials": [
+        "M_NW_WornSteel"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 35996
+    },
+    {
+      "name": "SM_NW_StairHardware",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_StairHardware.fbx",
+      "materials": [
+        "M_NW_ApplianceEnamel",
+        "M_NW_Fluorescent",
+        "M_NW_BrushedChrome",
+        "M_NW_WornSteel",
+        "M_NW_UtilityCream",
+        "M_NW_IvoryTrim"
+      ],
+      "kind": "detail",
+      "mass": 20,
+      "triangles": 5936
+    }
+  ],
+  "materials": {
+    "M_NW_DustyRed": {
+      "color": [
+        0.2,
+        0.06,
+        0.055
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 125,
+      "emissive": 0
+    },
+    "M_NW_NavyBlue": {
+      "color": [
+        0.014,
+        0.029,
+        0.063
+      ],
+      "roughness": 0.48,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 125,
+      "emissive": 0
+    },
+    "M_NW_UtilityCream": {
+      "color": [
+        0.48,
+        0.455,
+        0.4
+      ],
+      "roughness": 0.78,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 125,
+      "emissive": 0
+    },
+    "M_NW_Ceiling": {
+      "color": [
+        0.65,
+        0.64,
+        0.6
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 140,
+      "emissive": 0
+    },
+    "M_NW_YellowBlock": {
+      "color": [
+        0.67,
+        0.55,
+        0.31
+      ],
+      "roughness": 0.72,
+      "metallic": 0,
+      "texture": "brick",
+      "period": 81.28,
+      "emissive": 0
+    },
+    "M_NW_WornConcrete": {
+      "color": [
+        0.2,
+        0.18,
+        0.14
+      ],
+      "roughness": 0.87,
+      "metallic": 0,
+      "texture": "concrete",
+      "period": 180,
+      "emissive": 0
+    },
+    "M_NW_WarmWood": {
+      "color": [
+        0.21,
+        0.092,
+        0.036
+      ],
+      "roughness": 0.63,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 160,
+      "emissive": 0
+    },
+    "M_NW_IvoryTrim": {
+      "color": [
+        0.59,
+        0.57,
+        0.5
+      ],
+      "roughness": 0.54,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 90,
+      "emissive": 0
+    },
+    "M_NW_WornSteel": {
+      "color": [
+        0.014,
+        0.017,
+        0.018
+      ],
+      "roughness": 0.48,
+      "metallic": 0.65,
+      "texture": "metal",
+      "period": 80,
+      "emissive": 0
+    },
+    "M_NW_BrushedChrome": {
+      "color": [
+        0.43,
+        0.46,
+        0.49
+      ],
+      "roughness": 0.27,
+      "metallic": 0.91,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_AggregateTreads": {
+      "color": [
+        0.23,
+        0.24,
+        0.23
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "texture": "concrete",
+      "period": 95,
+      "emissive": 0
+    },
+    "M_NW_ApplianceEnamel": {
+      "color": [
+        0.69,
+        0.68,
+        0.62
+      ],
+      "roughness": 0.36,
+      "metallic": 0.1,
+      "texture": "paint",
+      "period": 90,
+      "emissive": 0
+    },
+    "M_NW_BlackRubber": {
+      "color": [
+        0.005,
+        0.006,
+        0.008
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_SmokedGlass": {
+      "color": [
+        0.014,
+        0.025,
+        0.035
+      ],
+      "roughness": 0.1,
+      "metallic": 0.58,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_PoolFelt": {
+      "color": [
+        0.008,
+        0.23,
+        0.14
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 55,
+      "emissive": 0
+    },
+    "M_NW_ChestnutLeather": {
+      "color": [
+        0.18,
+        0.069,
+        0.029
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "texture": "leather",
+      "period": 65,
+      "emissive": 0
+    },
+    "M_NW_ReclinerTan": {
+      "color": [
+        0.31,
+        0.27,
+        0.19
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 75,
+      "emissive": 0
+    },
+    "M_NW_Paper": {
+      "color": [
+        0.76,
+        0.73,
+        0.65
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_CharcoalCloth": {
+      "color": [
+        0.04,
+        0.044,
+        0.049
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 45,
+      "emissive": 0
+    },
+    "M_NW_LaundryWhite": {
+      "color": [
+        0.48,
+        0.49,
+        0.45
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 45,
+      "emissive": 0
+    },
+    "M_NW_DetergentOrange": {
+      "color": [
+        0.83,
+        0.115,
+        0.008
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_ChairGreen": {
+      "color": [
+        0.013,
+        0.075,
+        0.046
+      ],
+      "roughness": 0.52,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_OldBrass": {
+      "color": [
+        0.35,
+        0.23,
+        0.075
+      ],
+      "roughness": 0.34,
+      "metallic": 0.75,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_Fluorescent": {
+      "color": [
+        0.75,
+        0.79,
+        0.72
+      ],
+      "roughness": 0.45,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 2.5
+    },
+    "M_NW_BlueLCD": {
+      "color": [
+        0.025,
+        0.26,
+        0.65
+      ],
+      "roughness": 0.3,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 1.1
+    },
+    "M_NW_CableYellow": {
+      "color": [
+        0.65,
+        0.5,
+        0.014
+      ],
+      "roughness": 0.64,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_BilliardWhite": {
+      "color": [
+        0.77,
+        0.76,
+        0.67
+      ],
+      "roughness": 0.24,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_BilliardYellow": {
+      "color": [
+        0.8,
+        0.58,
+        0.009
+      ],
+      "roughness": 0.24,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_RugOatmeal": {
+      "color": [
+        0.34,
+        0.29,
+        0.2
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 75,
+      "emissive": 0
+    },
+    "M_NW_FloorOak0": {
+      "color": [
+        0.1608,
+        0.08710000000000001,
+        0.04958
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak1": {
+      "color": [
+        0.17951999999999999,
+        0.09724000000000001,
+        0.055352
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak2": {
+      "color": [
+        0.19824,
+        0.10738000000000002,
+        0.061124000000000005
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak3": {
+      "color": [
+        0.21696,
+        0.11752000000000001,
+        0.066896
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak4": {
+      "color": [
+        0.23568,
+        0.12766,
+        0.072668
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak5": {
+      "color": [
+        0.2544,
+        0.1378,
+        0.07844
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak6": {
+      "color": [
+        0.27312,
+        0.14794,
+        0.084212
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak7": {
+      "color": [
+        0.29184000000000004,
+        0.15808000000000003,
+        0.08998400000000001
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_RedDogsPrint": {
+      "color": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0,
+      "photo": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/references/noodle/IMG_0193.jpg"
+    },
+    "M_NW_RedWildlifePrint": {
+      "color": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0,
+      "photo": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/references/noodle/IMG_0194.jpg"
+    },
+    "M_NW_RedSportPrint": {
+      "color": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0,
+      "photo": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/references/noodle/IMG_0195.jpg"
+    },
+    "M_NW_ExitRed": {
+      "color": [
+        0.65,
+        0.001,
+        0.001
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 2
+    }
+  },
+  "placements": [
+    {
+      "asset": "SM_NW_RedFloors",
+      "label": "NW_RedFloors",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_BlueFloors",
+      "label": "NW_BlueFloors",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryFloors",
+      "label": "NW_LaundryFloors",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_HallFloors",
+      "label": "NW_HallFloors",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_RedWalls",
+      "label": "NW_RedWalls",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_BlueWalls",
+      "label": "NW_BlueWalls",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryWalls",
+      "label": "NW_LaundryWalls",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_HallWalls",
+      "label": "NW_HallWalls",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_BasementTrim",
+      "label": "NW_BasementTrim",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_StairStructure",
+      "label": "NW_StairStructure",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_StairRails",
+      "label": "NW_StairRails",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_StairHardware",
+      "label": "NW_StairHardware",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_BilliardTable",
+      "label": "NW_Red_BilliardTable",
+      "pos": [
+        2765,
+        -1230,
+        -361.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1.2,
+        1.2,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_CueBall",
+      "label": "NW_Red_CueBall",
+      "pos": [
+        2740,
+        -1330,
+        -261.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_YellowBall",
+      "label": "NW_Red_YellowBall",
+      "pos": [
+        2790,
+        -1240,
+        -261.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_PoolCue",
+      "label": "NW_Red_WallCue_0",
+      "pos": [
+        2950,
+        -1563,
+        -317.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_PoolCue",
+      "label": "NW_Red_WallCue_1",
+      "pos": [
+        2969,
+        -1563,
+        -317.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_PoolCue",
+      "label": "NW_Red_WallCue_2",
+      "pos": [
+        2988,
+        -1563,
+        -317.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_PoolCue",
+      "label": "NW_Red_WallCue_3",
+      "pos": [
+        3007,
+        -1563,
+        -317.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_PoolCue",
+      "label": "NW_Red_WallCue_4",
+      "pos": [
+        3026,
+        -1563,
+        -317.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_CueRack",
+      "label": "NW_Red_CueRack",
+      "pos": [
+        2990,
+        -1570,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TanRecliner",
+      "label": "NW_Red_ReclinerA",
+      "pos": [
+        3124,
+        -939,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1.1,
+        1.1,
+        1.05
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TanRecliner",
+      "label": "NW_Red_ReclinerB",
+      "pos": [
+        3124,
+        -780,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1.1,
+        1.1,
+        1.05
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherSofa",
+      "label": "NW_Blue_SectionalLong",
+      "pos": [
+        2655,
+        74,
+        -361.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1.75,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherSofa",
+      "label": "NW_Blue_SectionalReturn",
+      "pos": [
+        2870,
+        -201,
+        -361.966
+      ],
+      "yaw": 180,
+      "scale": [
+        1.27,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherSofa",
+      "label": "NW_Red_Sofa",
+      "pos": [
+        2390,
+        -1160,
+        -361.966
+      ],
+      "yaw": 90,
+      "scale": [
+        0.85,
+        0.9,
+        0.9
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Pillow",
+      "label": "NW_Blue_PillowA",
+      "pos": [
+        2647,
+        -60,
+        -303.966
+      ],
+      "yaw": 25,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Pillow",
+      "label": "NW_Blue_PillowB",
+      "pos": [
+        2870,
+        -245,
+        -303.966
+      ],
+      "yaw": -18,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Counter",
+      "label": "NW_Blue_Bar",
+      "pos": [
+        2339,
+        36,
+        -361.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1.5,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Counter",
+      "label": "NW_Red_Console",
+      "pos": [
+        2868,
+        -702,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        0.95,
+        0.7,
+        0.82
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Counter",
+      "label": "NW_Red_HighTable",
+      "pos": [
+        2456,
+        -1465,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherStool",
+      "label": "NW_Blue_BarStool0",
+      "pos": [
+        2435,
+        -180,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherStool",
+      "label": "NW_Blue_BarStool1",
+      "pos": [
+        2435,
+        -65,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherStool",
+      "label": "NW_Blue_BarStool2",
+      "pos": [
+        2435,
+        55,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherStool",
+      "label": "NW_Blue_BarStool3",
+      "pos": [
+        2435,
+        175,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherStool",
+      "label": "NW_Red_HighStoolA",
+      "pos": [
+        2415,
+        -1368,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LeatherStool",
+      "label": "NW_Red_HighStoolB",
+      "pos": [
+        2525,
+        -1400,
+        -361.966
+      ],
+      "yaw": 15,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TVConsole",
+      "label": "NW_Blue_MediaConsole",
+      "pos": [
+        2850,
+        387,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TV",
+      "label": "NW_Blue_MainTV",
+      "pos": [
+        2840,
+        418,
+        -174.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TV",
+      "label": "NW_Blue_SecondTV",
+      "pos": [
+        3192,
+        96,
+        -181.966
+      ],
+      "yaw": -90,
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TV",
+      "label": "NW_Red_TV",
+      "pos": [
+        2319,
+        -1478,
+        -163.966
+      ],
+      "yaw": 90,
+      "scale": [
+        0.72,
+        0.72,
+        0.72
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Arcade",
+      "label": "NW_Blue_Arcade",
+      "pos": [
+        3110,
+        330,
+        -361.966
+      ],
+      "yaw": -12,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_StackedLaundry",
+      "label": "NW_Laundry_Stacked_A",
+      "pos": [
+        2730,
+        1140,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_StackedLaundry",
+      "label": "NW_Laundry_Stacked_B",
+      "pos": [
+        2840,
+        1140,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_FrontWasher",
+      "label": "NW_Laundry_FrontWasher",
+      "pos": [
+        2950,
+        1140,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TopWasher",
+      "label": "NW_Laundry_TopLoad",
+      "pos": [
+        3060,
+        1140,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_OpenPorthole",
+      "label": "NW_Laundry_OpenDoor",
+      "pos": [
+        2810,
+        1076,
+        -310.966
+      ],
+      "yaw": 58,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_UtilitySink",
+      "label": "NW_Laundry_UtilitySink",
+      "pos": [
+        3155,
+        846,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_WallCabinet",
+      "label": "NW_Laundry_WallCabinets",
+      "pos": [
+        3175,
+        846,
+        -131.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Detergent",
+      "label": "NW_Laundry_Detergent0",
+      "pos": [
+        2710,
+        1130,
+        -150.966
+      ],
+      "yaw": -12,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Detergent",
+      "label": "NW_Laundry_Detergent1",
+      "pos": [
+        2750,
+        1151,
+        -150.966
+      ],
+      "yaw": 3,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Detergent",
+      "label": "NW_Laundry_Detergent2",
+      "pos": [
+        2940,
+        1157,
+        -257.966
+      ],
+      "yaw": 18,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Detergent",
+      "label": "NW_Laundry_Detergent3",
+      "pos": [
+        3153,
+        870,
+        -268.966
+      ],
+      "yaw": 33,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryBasket",
+      "label": "NW_Laundry_Hamper",
+      "pos": [
+        2690,
+        886,
+        -361.966
+      ],
+      "yaw": 14,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryBasket",
+      "label": "NW_Laundry_Hamper2",
+      "pos": [
+        2713,
+        760,
+        -361.966
+      ],
+      "yaw": -8,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryPile",
+      "label": "NW_Laundry_Garments0",
+      "pos": [
+        2670,
+        892,
+        -342.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryPile",
+      "label": "NW_Laundry_Garments1",
+      "pos": [
+        2705,
+        758,
+        -342.966
+      ],
+      "yaw": 59,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryPile",
+      "label": "NW_Laundry_Garments2",
+      "pos": [
+        2980,
+        1020,
+        -361.966
+      ],
+      "yaw": 118,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryPile",
+      "label": "NW_Laundry_Garments3",
+      "pos": [
+        3080,
+        1050,
+        -361.966
+      ],
+      "yaw": 177,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryPile",
+      "label": "NW_Laundry_Garments4",
+      "pos": [
+        2880,
+        928,
+        -361.966
+      ],
+      "yaw": 236,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_LaundryPile",
+      "label": "NW_Laundry_Garments5",
+      "pos": [
+        2600,
+        806,
+        -361.966
+      ],
+      "yaw": 295,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet0",
+      "pos": [
+        2667.976913117217,
+        996.2167863385087,
+        -361.81600000000003
+      ],
+      "yaw": 93.6250369776968,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet1",
+      "pos": [
+        3071.3939706397714,
+        1071.4196674994873,
+        -361.81600000000003
+      ],
+      "yaw": 273.70605655326335,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet2",
+      "pos": [
+        2759.8431075774092,
+        1002.5217378972533,
+        -361.81600000000003
+      ],
+      "yaw": 208.35495080625435,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet3",
+      "pos": [
+        2660.828214098505,
+        744.9098224171325,
+        -361.81600000000003
+      ],
+      "yaw": 153.7160705020514,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet4",
+      "pos": [
+        2843.117209528501,
+        1011.0508905288052,
+        -361.81600000000003
+      ],
+      "yaw": 332.59419607122317,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet5",
+      "pos": [
+        2759.9984152928755,
+        975.3810978391417,
+        -361.81600000000003
+      ],
+      "yaw": 131.93339486925726,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet6",
+      "pos": [
+        2984.5676059098287,
+        1072.1942436882116,
+        -361.81600000000003
+      ],
+      "yaw": 170.9318787484944,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet7",
+      "pos": [
+        2855.6133363390927,
+        813.1979763988808,
+        -361.81600000000003
+      ],
+      "yaw": 244.79266644258286,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet8",
+      "pos": [
+        2945.7494556857323,
+        892.0222075034254,
+        -361.81600000000003
+      ],
+      "yaw": 288.4042036478867,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet9",
+      "pos": [
+        2741.679123556756,
+        1016.2631366039175,
+        -361.81600000000003
+      ],
+      "yaw": 174.71772030310933,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet10",
+      "pos": [
+        3060.725250509036,
+        1071.4041737138032,
+        -361.81600000000003
+      ],
+      "yaw": 348.43142760562273,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet11",
+      "pos": [
+        2887.2041640324373,
+        1022.6381024954255,
+        -361.81600000000003
+      ],
+      "yaw": 10.866255048466549,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet12",
+      "pos": [
+        2942.682417876259,
+        786.851262269824,
+        -361.81600000000003
+      ],
+      "yaw": 346.64484998810764,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet13",
+      "pos": [
+        2690.4300808619773,
+        793.1209120308014,
+        -361.81600000000003
+      ],
+      "yaw": 278.6585121377505,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet14",
+      "pos": [
+        2768.9990641510085,
+        846.0634831402054,
+        -361.81600000000003
+      ],
+      "yaw": 43.89760680723634,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet15",
+      "pos": [
+        2808.597140216185,
+        749.7794664081143,
+        -361.81600000000003
+      ],
+      "yaw": 238.6266157209333,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_DryerSheet",
+      "label": "NW_Laundry_Sheet16",
+      "pos": [
+        2834.5457490047675,
+        986.2432284233173,
+        -361.81600000000003
+      ],
+      "yaw": 317.6588797347513,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_UtilityDetail",
+      "label": "NW_UtilityDetail",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_Box",
+      "label": "NW_Hall_OpenBox",
+      "pos": [
+        2550,
+        1150,
+        -361.966
+      ],
+      "yaw": 17,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_SpindleChair",
+      "label": "NW_Hall_StoredChair0",
+      "pos": [
+        2360,
+        724,
+        -361.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_SpindleChair",
+      "label": "NW_Hall_StoredChair1",
+      "pos": [
+        2360,
+        814,
+        -361.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_SpindleChair",
+      "label": "NW_Hall_StoredChair2",
+      "pos": [
+        2360,
+        908,
+        -361.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_SpindleChair",
+      "label": "NW_Red_GreenChair",
+      "pos": [
+        2392,
+        -1013,
+        -361.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_SideTable",
+      "label": "NW_Red_SideTable",
+      "pos": [
+        3101,
+        -1084,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_TableLamp",
+      "label": "NW_Red_TableLamp",
+      "pos": [
+        3101,
+        -1084,
+        -300.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_BlueRug",
+      "label": "NW_Blue_AreaRug",
+      "pos": [
+        2840,
+        46,
+        -361.866
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_RedRug",
+      "label": "NW_Red_AreaRug",
+      "pos": [
+        2765,
+        -1230,
+        -361.766
+      ],
+      "yaw": 90,
+      "scale": [
+        1.3,
+        1.25,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_RedDogs",
+      "label": "NW_Red_DogsPicture",
+      "pos": [
+        3189,
+        -1220,
+        -166.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_RedWildlife",
+      "label": "NW_Red_WildlifePicture",
+      "pos": [
+        2815,
+        -1570,
+        -165.966
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_RedSport",
+      "label": "NW_Red_SportsPicture",
+      "pos": [
+        2700,
+        -696,
+        -159.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_HallFlag",
+      "label": "NW_Hall_USFlag",
+      "pos": [
+        2320,
+        1072,
+        -171.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_MechanicalCloset",
+      "label": "NW_Red_MechanicalCloset",
+      "pos": [
+        2310,
+        -1350,
+        -361.966
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_CeilingFixtures",
+      "label": "NW_CeilingFixtures",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_ExitSign",
+      "label": "NW_Hall_Exit",
+      "pos": [
+        1776.6,
+        -526,
+        -94.96600000000001
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_ExitSign",
+      "label": "NW_Stair_Main_Exit",
+      "pos": [
+        2020,
+        -534,
+        270
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_ExitSign",
+      "label": "NW_Stair_Upper_Exit",
+      "pos": [
+        2020,
+        -329,
+        600
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_FordPlaque",
+      "label": "NW_Blue_FordPlaque",
+      "pos": [
+        3193,
+        96,
+        -103.96600000000001
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_SportsPennant",
+      "label": "NW_Blue_SportsPrint",
+      "pos": [
+        3194,
+        -196,
+        -160.966
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_UtilityCable",
+      "label": "NW_Hall_CoiledCable",
+      "pos": [
+        2510,
+        1010,
+        -361.966
+      ],
+      "yaw": 10,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_FireExtinguisher",
+      "label": "NW_Hall_FireExtinguisher",
+      "pos": [
+        2319,
+        497,
+        -244.966
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    },
+    {
+      "asset": "SM_NW_StairNorthernPractical",
+      "label": "NW_StairNorthernPractical",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    }
+  ],
+  "lights": [
+    {
+      "label": "NW_Red_Lamp",
+      "pos": [
+        3101,
+        -1084,
+        -248.966
+      ],
+      "power": 170,
+      "radius": 230,
+      "temperature": 2700
+    },
+    {
+      "label": "NW_Red_Ceiling0",
+      "pos": [
+        2520,
+        -1455,
+        -73.0
+      ],
+      "power": 850,
+      "radius": 400,
+      "temperature": 3900
+    },
+    {
+      "label": "NW_Red_Ceiling1",
+      "pos": [
+        2920,
+        -1420,
+        -73.0
+      ],
+      "power": 850,
+      "radius": 400,
+      "temperature": 3900
+    },
+    {
+      "label": "NW_Red_Ceiling2",
+      "pos": [
+        2910,
+        -916,
+        -73.0
+      ],
+      "power": 850,
+      "radius": 400,
+      "temperature": 3900
+    },
+    {
+      "label": "NW_Blue_Ceiling0",
+      "pos": [
+        2465,
+        -130,
+        -73.0
+      ],
+      "power": 900,
+      "radius": 400,
+      "temperature": 4200
+    },
+    {
+      "label": "NW_Blue_Ceiling1",
+      "pos": [
+        2880,
+        -110,
+        -73.0
+      ],
+      "power": 900,
+      "radius": 400,
+      "temperature": 4200
+    },
+    {
+      "label": "NW_Blue_Ceiling2",
+      "pos": [
+        2880,
+        267,
+        -73.0
+      ],
+      "power": 900,
+      "radius": 400,
+      "temperature": 4200
+    },
+    {
+      "label": "NW_Laundry_Ceiling0",
+      "pos": [
+        2800,
+        715,
+        -73.0
+      ],
+      "power": 1200,
+      "radius": 400,
+      "temperature": 4500
+    },
+    {
+      "label": "NW_Laundry_Ceiling1",
+      "pos": [
+        2990,
+        1040,
+        -73.0
+      ],
+      "power": 1200,
+      "radius": 400,
+      "temperature": 4500
+    },
+    {
+      "label": "NW_Hall_Ceiling0",
+      "pos": [
+        2000,
+        -525,
+        -73.0
+      ],
+      "power": 800,
+      "radius": 330,
+      "temperature": 4000
+    },
+    {
+      "label": "NW_Hall_Ceiling1",
+      "pos": [
+        2455,
+        -570,
+        -73.0
+      ],
+      "power": 800,
+      "radius": 330,
+      "temperature": 4000
+    },
+    {
+      "label": "NW_Hall_Ceiling2",
+      "pos": [
+        2448,
+        1030,
+        -73.0
+      ],
+      "power": 800,
+      "radius": 330,
+      "temperature": 4000
+    },
+    {
+      "label": "NW_StairNorthern260",
+      "pos": [
+        1880,
+        -547,
+        260
+      ],
+      "power": 580,
+      "radius": 320,
+      "temperature": 4300
+    },
+    {
+      "label": "NW_StairNorthern594",
+      "pos": [
+        1880,
+        -547,
+        594
+      ],
+      "power": 580,
+      "radius": 320,
+      "temperature": 4300
+    },
+    {
+      "label": "NW_StairLamp_Lower",
+      "pos": [
+        1625,
+        539,
+        -143.966
+      ],
+      "power": 720,
+      "radius": 440,
+      "temperature": 4100
+    },
+    {
+      "label": "NW_StairLamp_Turn",
+      "pos": [
+        1710,
+        361,
+        -16.376199999999983
+      ],
+      "power": 940,
+      "radius": 415,
+      "temperature": 4100
+    },
+    {
+      "label": "NW_StairLamp_Upper",
+      "pos": [
+        1710,
+        361,
+        401.55
+      ],
+      "power": 940,
+      "radius": 415,
+      "temperature": 4100
+    },
+    {
+      "label": "NW_StairLamp_BasementFoot",
+      "pos": [
+        1880,
+        100,
+        65
+      ],
+      "power": 680,
+      "radius": 350,
+      "temperature": 4100
+    }
+  ],
+  "doors": [
+    {
+      "label": "NW_MainStairDoor",
+      "pos": [
+        2083,
+        -450,
+        0
+      ],
+      "yaw": -90,
+      "width": 165,
+      "height": 236,
+      "center": [
+        2083,
+        -532.5,
+        118
+      ],
+      "asset": "SM_NW_FireDoor",
+      "swing": 90
+    },
+    {
+      "label": "NW_LaundryDoor",
+      "pos": [
+        2606,
+        651,
+        -361.966
+      ],
+      "yaw": -90,
+      "width": 150,
+      "height": 230,
+      "center": [
+        2606,
+        576,
+        -246.966
+      ],
+      "asset": "SM_NW_FireDoor",
+      "scale": [
+        0.9090909090909091,
+        1,
+        0.9745762711864406
+      ],
+      "swing": -90
+    }
+  ],
+  "route": [
+    {
+      "name": "Basement existing entrance",
+      "p": [
+        1680,
+        -514,
+        -361.966
+      ]
+    },
+    {
+      "name": "New hall",
+      "p": [
+        2100,
+        -525,
+        -361.966
+      ]
+    },
+    {
+      "name": "Red room",
+      "p": [
+        2570,
+        -1030,
+        -361.966
+      ]
+    },
+    {
+      "name": "Blue lounge",
+      "p": [
+        2500,
+        -220,
+        -361.966
+      ]
+    },
+    {
+      "name": "Laundry",
+      "p": [
+        2800,
+        580,
+        -361.966
+      ]
+    },
+    {
+      "name": "Basement stairs",
+      "p": [
+        1510,
+        534,
+        -361.966
+      ]
+    },
+    {
+      "name": "Main entrance",
+      "p": [
+        2110,
+        -534,
+        0
+      ]
+    },
+    {
+      "name": "Upper entrance",
+      "p": [
+        2130,
+        -329,
+        333.1
+      ]
+    }
+  ]
+}

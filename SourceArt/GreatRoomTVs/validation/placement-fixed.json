@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "tvs": [
+    {
+      "id": "GreatRoom_WestTV",
+      "old_location": [
+        -1265.0000000000002,
+        189.8999486,
+        251.0
+      ],
+      "old_scale": [
+        1.65,
+        1.0,
+        1.65
+      ],
+      "location": [
+        -1136.0,
+        189.8999486,
+        251.0
+      ],
+      "scale": [
+        1.65,
+        1,
+        1.65
+      ],
+      "width_cm": 303.6,
+      "height_cm": 175.725,
+      "wall_plane_x": -1150.2,
+      "bracket_back_x": -1150.2,
+      "bracket_front_x": -1140.6,
+      "tv_mount_plane_x": -1140.6,
+      "bracket_touches_wall": true,
+      "bracket_connects_tv": true,
+      "body_wall_clearance_cm": 9.95,
+      "bounds_center": [
+        -1136.4999940395355,
+        189.89994859995093,
+        244.40431785583496
+      ],
+      "bounds_extent": [
+        5.4000027328629585,
+        151.8000000005297,
+        94.4581884384155
+      ]
+    },
+    {
+      "id": "GreatRoom_EastTV",
+      "old_location": [
+        1266.8000000000002,
+        169.1999073,
+        251.0
+      ],
+      "old_scale": [
+        1.65,
+        1.0,
+        1.65
+      ],
+      "location": [
+        1235.0,
+        169.1999073,
+        251.0
+      ],
+      "scale": [
+        1.65,
+        1,
+        1.65
+      ],
+      "width_cm": 303.6,
+      "height_cm": 175.725,
+      "wall_plane_x": 1249.2,
+      "bracket_back_x": 1249.2,
+      "bracket_front_x": 1239.6,
+      "tv_mount_plane_x": 1239.6,
+      "bracket_touches_wall": true,
+      "bracket_connects_tv": true,
+      "body_wall_clearance_cm": 9.95,
+      "bounds_center": [
+        1235.4999940395355,
+        169.19990729995098,
+        244.40431785583496
+      ],
+      "bounds_extent": [
+        5.4000027328629585,
+        151.80000000052974,
+        94.4581884384155
+      ]
+    }
+  ],
+  "kitchen_props_preserved": 137
+}

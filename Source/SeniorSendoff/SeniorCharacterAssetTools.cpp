@@ -47,7 +47,8 @@ bool USeniorCharacterAssetTools::MatchBraxtonGarmentBindPose(USkeletalMesh* Outf
     if (!Outfit || !Body ||
         !(Outfit->GetPathName().Contains(TEXT("/Details/Hoodie/")) ||
           Outfit->GetPathName().Contains(TEXT("/MH_Runner_Working/Details/RunnerOutfit/")) ||
-          Outfit->GetPathName().Contains(TEXT("/MetaHumans/Fixer/MH_Fixer/Details/")))) return false;
+          Outfit->GetPathName().Contains(TEXT("/MetaHumans/Fixer/MH_Fixer/Details/")) ||
+          Outfit->GetPathName().Contains(TEXT("/MetaHumans/Boywick/MH_Boywick/Details/")))) return false;
     const FReferenceSkeleton& Native = Body->GetRefSkeleton();
     FReferenceSkeleton& Ref = Outfit->GetRefSkeleton();
     for (int32 I=0; I<Ref.GetRawBoneNum(); ++I)
@@ -197,6 +198,116 @@ bool USeniorCharacterAssetTools::BakeFixerLocalShape(UObject* Object)
     Character->SetFaceDNABuffer(FaceBuffer,AlignedFace->GetBlendShapeChannelCount()>0);
     Character->MarkPackageDirty();
     UE_LOG(LogTemp,Display,TEXT("FIXER_LOCAL_SHAPE_BAKED bodyBytes=%d faceBytes=%d"),BodyBuffer.Num(),FaceBuffer.Num());
+    return true;
+#else
+    return false;
+#endif
+}
+
+bool USeniorCharacterAssetTools::PrepareBoywickSource(UObject* Object)
+{
+#if WITH_EDITOR
+    auto* Character=Cast<UMetaHumanCharacter>(Object);
+    if (!Character || Character->GetPathName()!=TEXT("/Game/Characters/MetaHumans/Boywick/MH_Boywick.MH_Boywick")) return false;
+    auto* Editor=UMetaHumanCharacterEditorSubsystem::Get();
+    if (!Editor || !Editor->IsObjectAddedForEditing(Character)) return false;
+    if (Character->bFixedBodyType)
+    {
+        const bool bFit=Character->HasBodyDNA()?Editor->ParametricFitToDnaBody(Character):Editor->ParametricFitToCompatibilityBody(Character);
+        if (!bFit) return false;
+        Editor->CommitBodyState(Character);
+    }
+    return !Character->bFixedBodyType;
+#else
+    return false;
+#endif
+}
+
+bool USeniorCharacterAssetTools::ShapeBoywickScoopHair(UGroomAsset* Groom)
+{
+#if WITH_EDITOR
+    const FString Prefix(TEXT("/Game/MetaHumans/Boywick/"));
+    if (!Groom || !Groom->GetPathName().StartsWith(Prefix)) return false;
+    for (const auto& Card:Groom->GetHairGroupsCards())
+        if (Card.ImportedMesh&&!Card.ImportedMesh->GetPathName().StartsWith(Prefix)) return false;
+    FHairDescription Description=Groom->GetHairDescription();
+    if (!Description.IsValid()) return false;
+    auto Positions=Description.VertexAttributes().GetAttributesRef<FVector3f>(HairAttribute::Vertex::Position);
+    FBox Before(ForceInit),After(ForceInit);
+    for (int32 I=0;I<Description.GetNumVertices();++I) Before+=FVector(Positions[FVertexID(I)]);
+    const float Top=float(Before.Max.Z);
+    const auto Shape=[Top](FVector3f P)
+    {
+        // Keep a full, rounded crown and tuck the long lower locks above the
+        // nape. Cards and source strands receive the same shape at every LOD.
+        const float Crown=FMath::SmoothStep(Top-12.f,Top-2.f,P.Z);
+        P.X*=1.f+.055f*Crown;
+        P.Z+=.75f*Crown;
+        if (P.Z<Top-18.f)
+        {
+            P.Z=(Top-18.f)+(P.Z-(Top-18.f))*.14f;
+            P.Y*=.92f;
+        }
+        return P;
+    };
+    Groom->Modify();
+    for (int32 I=0;I<Description.GetNumVertices();++I)
+    {
+        FVector3f& P=Positions[FVertexID(I)];P=Shape(P);After+=FVector(P);
+    }
+    Groom->CommitHairDescription(MoveTemp(Description),EHairDescriptionType::Source);
+    for (auto& Card:Groom->GetHairGroupsCards())
+        if (UStaticMesh* Mesh=Card.ImportedMesh)
+        {
+            Mesh->Modify();
+            for (int32 L=0;L<Mesh->GetNumSourceModels();++L)
+                if (FMeshDescription* Data=Mesh->GetMeshDescription(L))
+                {
+                    FStaticMeshAttributes Attributes(*Data);
+                    auto V=Attributes.GetVertexPositions();
+                    for (FVertexID Id:Data->Vertices().GetElementIDs()) V[Id]=Shape(V[Id]);
+                    Mesh->CommitMeshDescription(L);
+                }
+            Mesh->Build(false);Mesh->MarkPackageDirty();
+        }
+    const bool bBuilt=Groom->CacheDerivedDatas();
+    Groom->MarkPackageDirty();
+    UE_LOG(LogTemp,Display,TEXT("BOYWICK_SCOOP_HAIR_SHAPED before=%s after=%s built=%d"),*Before.ToString(),*After.ToString(),bBuilt);
+    return bBuilt;
+#else
+    return false;
+#endif
+}
+
+bool USeniorCharacterAssetTools::BakeBoywickLocalShape(UObject* Object)
+{
+#if WITH_EDITOR
+    auto* Character=Cast<UMetaHumanCharacter>(Object);
+    if (!Character || Character->GetPathName()!=TEXT("/Game/Characters/MetaHumans/Boywick/MH_Boywick.MH_Boywick")) return false;
+    auto* Editor=UMetaHumanCharacterEditorSubsystem::Get();
+    if (!Editor || !Editor->IsObjectAddedForEditing(Character)) return false;
+    // Bake the edited neutral anatomy into the character's private DNA. This
+    // retains the native facial rig, weights and topology for local assembly.
+    const USkeletalMesh* ConstBody=Editor->GetBodyEditMesh(Character);
+    const USkeletalMesh* ConstFace=Editor->GetFaceEditMesh(Character);
+    auto* Body=const_cast<USkeletalMesh*>(ConstBody);
+    auto* Face=const_cast<USkeletalMesh*>(ConstFace);
+    const auto BodyTemplate=USkelMeshDNAUtils::GetDNAReader(Body);
+    const auto FaceTemplate=USkelMeshDNAUtils::GetDNAReader(Face);
+    if (!BodyTemplate || !FaceTemplate) return false;
+    const auto BodyDNA=Editor->GetBodyState(Character)->StateToDna(BodyTemplate->Unwrap());
+    const auto FaceDNA=Editor->GetFaceState(Character)->StateToDna(FaceTemplate->Unwrap());
+    const auto AlignedFace=Editor->AlignFaceDNAWithBody(Character,FaceDNA);
+    if (!AlignedFace) return false;
+    TArray<uint8> BodyBuffer,FaceBuffer;
+    SaveDNAToBuffer(&BodyDNA.Get(),EDNADataLayer::All,BodyBuffer);
+    SaveDNAToBuffer(AlignedFace.Get(),EDNADataLayer::All,FaceBuffer);
+    if (BodyBuffer.IsEmpty() || FaceBuffer.IsEmpty()) return false;
+    Character->Modify();
+    Character->SetBodyDNABuffer(BodyBuffer);
+    Character->SetFaceDNABuffer(FaceBuffer,AlignedFace->GetBlendShapeChannelCount()>0);
+    Character->MarkPackageDirty();
+    UE_LOG(LogTemp,Display,TEXT("BOYWICK_LOCAL_SHAPE_BAKED bodyBytes=%d faceBytes=%d"),BodyBuffer.Num(),FaceBuffer.Num());
     return true;
 #else
     return false;

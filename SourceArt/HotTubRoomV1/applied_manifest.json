@@ -1,0 +1,25 @@
+{
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "actors": [
+    "COL_SpaRoom",
+    "SM_SpaRoom_ArchitecturalDetails",
+    "SM_SpaRoom_Lounge",
+    "SM_SpaRoom_Plants",
+    "SM_SpaRoom_RefreshmentBar",
+    "SM_SpaRoom_Shell",
+    "SM_SpaRoom_TowelStorage",
+    "SM_SpaRoom_TubAcrylic",
+    "SM_SpaRoom_TubWalnut",
+    "SpaRoom_ReactiveHotTubWater",
+    "SpaRoom_TubCeiling",
+    "SpaRoom_LoungeCeiling",
+    "SpaRoom_EntryWarmth",
+    "SpaRoom_LoungeWest",
+    "SpaRoom_TubWest",
+    "SpaRoom_WaterGlow"
+  ],
+  "removedDoor": "OriginalDoor_Entrance_m1_m2_Solid_02",
+  "protectedActors": 410,
+  "beforeCount": 430,
+  "afterCount": 430
+}

@@ -1,0 +1,206 @@
+{
+  "meshes": [
+    {
+      "name": "PIG_SM_OriginalShellRemainder",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_OriginalShellRemainder.fbx",
+      "boundsCm": {
+        "min": [
+          -2510.0000381469727,
+          -1860.0000381469727,
+          297.2996711730957
+        ],
+        "max": [
+          -1467.9998397827148,
+          -864.9999618530273,
+          582.0998191833496
+        ]
+      },
+      "materials": [
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_S05Ceiling"
+      ],
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_OriginalFloorsRemainder",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_OriginalFloorsRemainder.fbx",
+      "boundsCm": {
+        "min": [
+          -2489.9999618530273,
+          -1839.9999618530273,
+          297.2996711730957
+        ],
+        "max": [
+          -1488.0001068115234,
+          -615.000057220459,
+          302.2998809814453
+        ]
+      },
+      "materials": [
+        "MI_SSO_FloorWood",
+        "MI_SSO_S05SouthHallFloor"
+      ],
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_OriginalTrimRemainder",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_OriginalTrimRemainder.fbx",
+      "boundsCm": {
+        "min": [
+          -2489.9999618530273,
+          -1840.0001525878906,
+          302.29971408843994
+        ],
+        "max": [
+          -1488.0000114440918,
+          -884.999942779541,
+          319.2997694015503
+        ]
+      },
+      "materials": [
+        "MI_SSO_PaintWhite"
+      ],
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_COL_OriginalShellRemainder",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_COL_OriginalShellRemainder.fbx",
+      "boundsCm": {
+        "min": [
+          -2510.0000381469727,
+          -1860.0000381469727,
+          297.2996711730957
+        ],
+        "max": [
+          -1467.9998397827148,
+          -615.000057220459,
+          582.0998191833496
+        ]
+      },
+      "materials": [
+        "WorldGridMaterial",
+        "WorldGridMaterial_1",
+        "WorldGridMaterial_2",
+        "WorldGridMaterial_3"
+      ],
+      "complex_collision": true
+    },
+    {
+      "name": "PIG_SM_ExpandedRoom",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_ExpandedRoom.fbx",
+      "boundsCm": {
+        "min": [
+          -2992.0000076293945,
+          -1391.8424606323242,
+          297.30000495910645
+        ],
+        "max": [
+          -2320.4328536987305,
+          -744.9999809265137,
+          582.1000099182129
+        ]
+      },
+      "materials": [
+        "PST_M_DirtyOlivePlaster",
+        "PST_M_DampCeiling",
+        "PST_M_StainedConcrete"
+      ]
+    },
+    {
+      "name": "PIG_COL_ExpandedRoom",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_COL_ExpandedRoom.fbx",
+      "boundsCm": {
+        "min": [
+          -2992.0000076293945,
+          -1391.8424606323242,
+          297.30000495910645
+        ],
+        "max": [
+          -2320.4328536987305,
+          -744.9999809265137,
+          582.1000099182129
+        ]
+      },
+      "materials": [
+        "PST_M_DirtyOlivePlaster",
+        "PST_M_DampCeiling",
+        "PST_M_StainedConcrete"
+      ],
+      "complex_collision": true
+    },
+    {
+      "name": "PIG_SM_KeepShutPlaque",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_KeepShutPlaque.fbx",
+      "boundsCm": {
+        "min": [
+          -20.000000298023224,
+          -0.0,
+          0.0
+        ],
+        "max": [
+          20.000000298023224,
+          -0.0,
+          25.0
+        ]
+      },
+      "materials": [
+        "PST_M_KeepShutPlaque"
+      ]
+    },
+    {
+      "name": "PIG_SM_GrimeScratch",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_GrimeScratch.fbx",
+      "boundsCm": {
+        "min": [
+          -50.0,
+          -0.0,
+          0.0
+        ],
+        "max": [
+          50.0,
+          -0.0,
+          150.0
+        ]
+      },
+      "materials": [
+        "PST_M_GrimeScratchDecal"
+      ]
+    }
+  ],
+  "materials": {},
+  "textures": [],
+  "actors": [
+    {
+      "label": "PIG_ExpandedRoom",
+      "mesh": "PIG_SM_ExpandedRoom"
+    },
+    {
+      "label": "PIG_ExpandedRoomCollision",
+      "mesh": "PIG_COL_ExpandedRoom",
+      "collision": "BlockAll",
+      "hidden": true
+    }
+  ],
+  "replacements": [
+    {
+      "actor": "HallEnd_SM_HallEnd_ThreeRoomsShell",
+      "mesh": "PIG_SM_OriginalShellRemainder",
+      "collision": false
+    },
+    {
+      "actor": "HallEnd_SM_HallEnd_ThreeRoomsFloors",
+      "mesh": "PIG_SM_OriginalFloorsRemainder",
+      "collision": false
+    },
+    {
+      "actor": "HallEnd_SM_HallEnd_ThreeRoomsTrim",
+      "mesh": "PIG_SM_OriginalTrimRemainder",
+      "collision": false
+    },
+    {
+      "actor": "HallEnd_COL_HallEnd_ThreeRoomsShell",
+      "mesh": "PIG_COL_OriginalShellRemainder",
+      "collision": true
+    }
+  ]
+}

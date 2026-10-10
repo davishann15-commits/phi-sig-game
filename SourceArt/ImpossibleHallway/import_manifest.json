@@ -1,0 +1,548 @@
+{
+  "schema": "SeniorSendoff.ImpossibleHallway.v1",
+  "textures": [
+    "IH_T_DampCeiling_BaseColor.png",
+    "IH_T_DampCeiling_Normal.png",
+    "IH_T_DampCeiling_Roughness.png",
+    "IH_T_DampOlivePlaster_BaseColor.png",
+    "IH_T_DampOlivePlaster_Normal.png",
+    "IH_T_DampOlivePlaster_Roughness.png",
+    "IH_T_OldFloor_BaseColor.png",
+    "IH_T_OldFloor_Normal.png",
+    "IH_T_OldFloor_Roughness.png"
+  ],
+  "materials": {
+    "IH_M_DampOlivePlaster": {
+      "color": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "base_texture": "IH_T_DampOlivePlaster_BaseColor.png",
+      "roughness_texture": "IH_T_DampOlivePlaster_Roughness.png",
+      "normal_texture": "IH_T_DampOlivePlaster_Normal.png",
+      "normal_strength": 0.65
+    },
+    "IH_M_OldFloor": {
+      "color": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "base_texture": "IH_T_OldFloor_BaseColor.png",
+      "roughness_texture": "IH_T_OldFloor_Roughness.png",
+      "normal_texture": "IH_T_OldFloor_Normal.png",
+      "normal_strength": 0.65
+    },
+    "IH_M_DampCeiling": {
+      "color": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "base_texture": "IH_T_DampCeiling_BaseColor.png",
+      "roughness_texture": "IH_T_DampCeiling_Roughness.png",
+      "normal_texture": "IH_T_DampCeiling_Normal.png",
+      "normal_strength": 0.65
+    },
+    "IH_M_WornTrim": {
+      "color": [
+        0.18,
+        0.19,
+        0.145
+      ],
+      "roughness": 0.8,
+      "metallic": 0
+    },
+    "IH_M_BlackIron": {
+      "color": [
+        0.025,
+        0.03,
+        0.024
+      ],
+      "roughness": 0.52,
+      "metallic": 0.62
+    },
+    "IH_M_OldBrass": {
+      "color": [
+        0.105,
+        0.078,
+        0.034
+      ],
+      "roughness": 0.58,
+      "metallic": 0.6
+    },
+    "IH_M_WeakLampGlass": {
+      "color": [
+        0.38,
+        0.3,
+        0.18
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "emission": 0.45
+    },
+    "IH_M_OldDoor": {
+      "color": [
+        0.2,
+        0.215,
+        0.177
+      ],
+      "roughness": 0.84,
+      "metallic": 0
+    }
+  },
+  "meshes": [
+    {
+      "name": "IH_SM_RetainedShell",
+      "file": "IH_SM_RetainedShell.fbx",
+      "complex_collision": false,
+      "boundsCm": {
+        "min": [
+          -2510.0000381469727,
+          -1860.0000381469727,
+          297.29936122894287
+        ],
+        "max": [
+          -1467.9998397827148,
+          -865.000057220459,
+          582.0996761322021
+        ]
+      },
+      "materials": [
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_S05Ceiling"
+      ],
+      "polygons": 216,
+      "triangles": 216
+    },
+    {
+      "name": "IH_COL_RetainedShell",
+      "file": "IH_COL_RetainedShell.fbx",
+      "complex_collision": true,
+      "boundsCm": {
+        "min": [
+          -2510.0000381469727,
+          -1860.0000381469727,
+          297.29936122894287
+        ],
+        "max": [
+          -1467.9998397827148,
+          -615.0001049041748,
+          582.0996761322021
+        ]
+      },
+      "materials": [
+        "WorldGridMaterial",
+        "WorldGridMaterial_1",
+        "WorldGridMaterial_2",
+        "WorldGridMaterial_3"
+      ],
+      "polygons": 252,
+      "triangles": 252
+    },
+    {
+      "name": "IH_SM_RetainedTrim",
+      "file": "IH_SM_RetainedTrim.fbx",
+      "complex_collision": false,
+      "boundsCm": {
+        "min": [
+          -2489.9999618530273,
+          -1840.0001525878906,
+          302.2994041442871
+        ],
+        "max": [
+          -1488.0000114440918,
+          -885.0000381469727,
+          319.2995548248291
+        ]
+      },
+      "materials": [
+        "MI_SSO_PaintWhite"
+      ],
+      "polygons": 108,
+      "triangles": 108
+    },
+    {
+      "name": "IH_SM_RetainedPracticals",
+      "file": "IH_SM_RetainedPracticals.fbx",
+      "complex_collision": false,
+      "boundsCm": {
+        "min": [
+          -2208.300018310547,
+          -1141.0001754760742,
+          558.849573135376
+        ],
+        "max": [
+          -1721.6999053955078,
+          -987.0001792907715,
+          564.3496990203857
+        ]
+      },
+      "materials": [
+        "MI_SSO_MetalBrass",
+        "MI_SSO_LightWarm"
+      ],
+      "polygons": 624,
+      "triangles": 624
+    },
+    {
+      "name": "IH_SM_CorridorSurfaces",
+      "file": "IH_SM_CorridorSurfaces.fbx",
+      "complex_collision": false,
+      "boundsCm": {
+        "min": [
+          -2290.999984741211,
+          -4626.242828369141,
+          301.9000053405762
+        ],
+        "max": [
+          -2062.99991607666,
+          -1386.2425804138184,
+          570.1000213623047
+        ]
+      },
+      "materials": [
+        "IH_M_OldFloor",
+        "IH_M_DampCeiling",
+        "IH_M_DampOlivePlaster"
+      ],
+      "polygons": 432,
+      "triangles": 864
+    },
+    {
+      "name": "IH_SM_CorridorTrim",
+      "file": "IH_SM_CorridorTrim.fbx",
+      "complex_collision": false,
+      "boundsCm": {
+        "min": [
+          -2287.00008392334,
+          -4626.242828369141,
+          302.3000240325928
+        ],
+        "max": [
+          -2067.0000076293945,
+          -1386.2425804138184,
+          565.7999992370605
+        ]
+      },
+      "materials": [
+        "IH_M_WornTrim",
+        "IH_M_OldDoor",
+        "IH_M_BlackIron",
+        "IH_M_OldBrass"
+      ],
+      "polygons": 15552,
+      "triangles": 31104
+    },
+    {
+      "name": "IH_SM_CorridorFixtures",
+      "file": "IH_SM_CorridorFixtures.fbx",
+      "complex_collision": false,
+      "boundsCm": {
+        "min": [
+          -2286.899948120117,
+          -4545.242691040039,
+          472.2999572753906
+        ],
+        "max": [
+          -2274.50008392334,
+          -1467.2425270080566,
+          504.2999744415283
+        ]
+      },
+      "materials": [
+        "IH_M_BlackIron",
+        "IH_M_WeakLampGlass"
+      ],
+      "polygons": 6804,
+      "triangles": 13608
+    },
+    {
+      "name": "IH_SM_EntranceThroat",
+      "file": "IH_SM_EntranceThroat.fbx",
+      "complex_collision": false,
+      "boundsCm": {
+        "min": [
+          -2290.999984741211,
+          -1466.242504119873,
+          302.30000019073486
+        ],
+        "max": [
+          -2062.99991607666,
+          -1386.2425804138184,
+          566.100025177002
+        ]
+      },
+      "materials": [
+        "IH_M_DampOlivePlaster"
+      ],
+      "polygons": 12,
+      "triangles": 24
+    },
+    {
+      "name": "IH_COL_CorridorNear",
+      "file": "IH_COL_CorridorNear.fbx",
+      "complex_collision": true,
+      "boundsCm": {
+        "min": [
+          -2290.999984741211,
+          -4626.242446899414,
+          297.30000495910645
+        ],
+        "max": [
+          -2062.99991607666,
+          -1386.2425804138184,
+          570.1000213623047
+        ]
+      },
+      "materials": [
+        "IH_M_DampOlivePlaster",
+        "IH_M_OldFloor"
+      ],
+      "polygons": 36,
+      "triangles": 72
+    }
+  ],
+  "replacements": [
+    {
+      "actor": "HallEnd_SM_HallEnd_ThreeRoomsShell",
+      "mesh": "IH_SM_RetainedShell",
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "actor": "HallEnd_COL_HallEnd_ThreeRoomsShell",
+      "mesh": "IH_COL_RetainedShell",
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "actor": "HallEnd_SM_HallEnd_ThreeRoomsTrim",
+      "mesh": "IH_SM_RetainedTrim",
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "actor": "HallEnd_SM_HallEnd_ThreeRoomsPracticalLights",
+      "mesh": "IH_SM_RetainedPracticals",
+      "collision": "NoCollision",
+      "hidden": false
+    }
+  ],
+  "actors": [
+    {
+      "label": "InfiniteHall_IH_SM_CorridorSurfaces",
+      "mesh": "IH_SM_CorridorSurfaces",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "InfiniteHall_IH_SM_CorridorTrim",
+      "mesh": "IH_SM_CorridorTrim",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "InfiniteHall_IH_SM_CorridorFixtures",
+      "mesh": "IH_SM_CorridorFixtures",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "InfiniteHall_IH_SM_EntranceThroat",
+      "mesh": "IH_SM_EntranceThroat",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "InfiniteHall_IH_COL_CorridorNear",
+      "mesh": "IH_COL_CorridorNear",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    }
+  ],
+  "lights": [
+    {
+      "label": "InfiniteHall_Lamp_00",
+      "location": [
+        -2266.0,
+        -1476.2425,
+        489.3
+      ],
+      "intensity": 115.0,
+      "radius": 140.0,
+      "color": [
+        1,
+        0.69,
+        0.36
+      ],
+      "cast_shadows": false
+    },
+    {
+      "label": "InfiniteHall_Lamp_01",
+      "location": [
+        -2266.0,
+        -1656.2425,
+        489.3
+      ],
+      "intensity": 115.0,
+      "radius": 140.0,
+      "color": [
+        1,
+        0.69,
+        0.36
+      ],
+      "cast_shadows": false
+    },
+    {
+      "label": "InfiniteHall_Lamp_02",
+      "location": [
+        -2266.0,
+        -1836.2425,
+        489.3
+      ],
+      "intensity": 115.0,
+      "radius": 140.0,
+      "color": [
+        1,
+        0.69,
+        0.36
+      ],
+      "cast_shadows": false
+    },
+    {
+      "label": "InfiniteHall_Lamp_03",
+      "location": [
+        -2266.0,
+        -2016.2425,
+        489.3
+      ],
+      "intensity": 115.0,
+      "radius": 140.0,
+      "color": [
+        1,
+        0.69,
+        0.36
+      ],
+      "cast_shadows": false
+    },
+    {
+      "label": "InfiniteHall_Lamp_04",
+      "location": [
+        -2266.0,
+        -2196.2425000000003,
+        489.3
+      ],
+      "intensity": 115.0,
+      "radius": 140.0,
+      "color": [
+        1,
+        0.69,
+        0.36
+      ],
+      "cast_shadows": false
+    },
+    {
+      "label": "InfiniteHall_Lamp_05",
+      "location": [
+        -2266.0,
+        -2376.2425000000003,
+        489.3
+      ],
+      "intensity": 115.0,
+      "radius": 140.0,
+      "color": [
+        1,
+        0.69,
+        0.36
+      ],
+      "cast_shadows": false
+    }
+  ],
+  "runtime": {
+    "label": "InfiniteHall_Illusion",
+    "location": [
+      -2177.0,
+      -1386.2425,
+      302.3
+    ],
+    "yaw": -90.0,
+    "properties": {
+      "entrance_door_id": "HallEnd_End",
+      "module_length": 180.0,
+      "loop_depth": 360.0,
+      "return_min_depth": 90.0,
+      "corridor_half_width": 110.0,
+      "corridor_height": 263.8
+    }
+  },
+  "layout": {
+    "doorId": "HallEnd_End",
+    "centerX": -2177.0,
+    "doorPlaneY": -1386.2425,
+    "floorZ": 302.3,
+    "ceilingZ": 566.1,
+    "moduleLength": 180.0,
+    "moduleCount": 18,
+    "lengthCm": 3240.0,
+    "corridorWidthCm": 220,
+    "throatLengthCm": 80
+  }
+}

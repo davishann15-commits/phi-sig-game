@@ -1,0 +1,412 @@
+{
+  "schema": "pigsty-west-components-face-indices-v1",
+  "coordinateConvention": "Blender reimport metre geometry to Unreal [100X,-100Y,100Z]",
+  "selectionReason": "West-owned connected components from current exported FBXs; protects all door caps and end-room geometry",
+  "files": {
+    "HallEnd_SM_HallEnd_ThreeRoomsShell": {
+      "source": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/context/HallEnd_SM_HallEnd_ThreeRoomsShell.fbx",
+      "sourceSha256": "a7ca2a8d76c572d5674ea0dc82eadb5a2d3055f3ea20559a42561ce36f2fa286",
+      "objectName": "SM_HallEnd_ThreeRoomsShell",
+      "meshName": "SM_HallEnd_ThreeRoomsShell",
+      "originalPolygonCount": 276,
+      "removePolygonIndices": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        226,
+        227,
+        228,
+        229,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251
+      ],
+      "removePolygonCount": 48,
+      "retainPolygonCount": 228,
+      "selectedComponents": [
+        {
+          "index": 9,
+          "triangleCount": 24,
+          "boundsCm": {
+            "min": [
+              -2992.0000076293945,
+              -1391.8424606323242,
+              297.29974269866943
+            ],
+            "max": [
+              -2349.232864379883,
+              -864.9999618530273,
+              582.0998191833496
+            ]
+          },
+          "selected": true
+        },
+        {
+          "index": 10,
+          "triangleCount": 24,
+          "boundsCm": {
+            "min": [
+              -2971.999931335449,
+              -1391.8426513671875,
+              297.29974269866943
+            ],
+            "max": [
+              -2349.232864379883,
+              -885.0000381469727,
+              582.0998191833496
+            ]
+          },
+          "selected": true
+        }
+      ],
+      "protectedDoorCapPolygonIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    "HallEnd_SM_HallEnd_ThreeRoomsFloors": {
+      "source": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/context/HallEnd_SM_HallEnd_ThreeRoomsFloors.fbx",
+      "sourceSha256": "123190eb5ba365ec79e8379d8653fde3bcf03c4fd7437a710d294d8d0d5a8620",
+      "objectName": "SM_HallEnd_ThreeRoomsFloors",
+      "meshName": "SM_HallEnd_ThreeRoomsFloors",
+      "originalPolygonCount": 48,
+      "removePolygonIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "removePolygonCount": 12,
+      "retainPolygonCount": 36,
+      "selectedComponents": [
+        {
+          "index": 0,
+          "triangleCount": 12,
+          "boundsCm": {
+            "min": [
+              -2971.999931335449,
+              -1371.8424797058105,
+              297.29974269866943
+            ],
+            "max": [
+              -2320.4328536987305,
+              -884.999942779541,
+              302.2998571395874
+            ]
+          },
+          "selected": true
+        }
+      ],
+      "protectedDoorCapPolygonIndices": []
+    },
+    "HallEnd_SM_HallEnd_ThreeRoomsTrim": {
+      "source": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/context/HallEnd_SM_HallEnd_ThreeRoomsTrim.fbx",
+      "sourceSha256": "00477e1a55184e195a0f9b5cedd331c8ef66423225f234ac579350735087c427",
+      "objectName": "SM_HallEnd_ThreeRoomsTrim",
+      "meshName": "SM_HallEnd_ThreeRoomsTrim",
+      "originalPolygonCount": 156,
+      "removePolygonIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "removePolygonCount": 36,
+      "retainPolygonCount": 120,
+      "selectedComponents": [
+        {
+          "index": 0,
+          "triangleCount": 36,
+          "boundsCm": {
+            "min": [
+              -2971.999931335449,
+              -1371.8424797058105,
+              302.29976177215576
+            ],
+            "max": [
+              -2349.232864379883,
+              -884.999942779541,
+              316.29981994628906
+            ]
+          },
+          "selected": true
+        }
+      ],
+      "protectedDoorCapPolygonIndices": []
+    },
+    "HallEnd_COL_HallEnd_ThreeRoomsShell": {
+      "source": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/context/HallEnd_COL_HallEnd_ThreeRoomsShell.fbx",
+      "sourceSha256": "1940d6bf7ef2c9b78ef57177a826f1490b273d69da0a7c71176611300dedcf9b",
+      "objectName": "COL_HallEnd_ThreeRoomsShell",
+      "meshName": "COL_HallEnd_ThreeRoomsShell",
+      "originalPolygonCount": 324,
+      "removePolygonIndices": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        226,
+        227,
+        228,
+        229,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287
+      ],
+      "removePolygonCount": 60,
+      "retainPolygonCount": 264,
+      "selectedComponents": [
+        {
+          "index": 9,
+          "triangleCount": 24,
+          "boundsCm": {
+            "min": [
+              -2992.0000076293945,
+              -1391.8424606323242,
+              297.29974269866943
+            ],
+            "max": [
+              -2349.232864379883,
+              -864.9999618530273,
+              582.0998191833496
+            ]
+          },
+          "selected": true
+        },
+        {
+          "index": 10,
+          "triangleCount": 24,
+          "boundsCm": {
+            "min": [
+              -2971.999931335449,
+              -1391.8426513671875,
+              297.29974269866943
+            ],
+            "max": [
+              -2349.232864379883,
+              -885.0000381469727,
+              582.0998191833496
+            ]
+          },
+          "selected": true
+        },
+        {
+          "index": 16,
+          "triangleCount": 12,
+          "boundsCm": {
+            "min": [
+              -2971.999931335449,
+              -1371.8424797058105,
+              297.29976654052734
+            ],
+            "max": [
+              -2320.4328536987305,
+              -884.999942779541,
+              302.2998332977295
+            ]
+          },
+          "selected": true
+        }
+      ],
+      "protectedDoorCapPolygonIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    }
+  }
+}

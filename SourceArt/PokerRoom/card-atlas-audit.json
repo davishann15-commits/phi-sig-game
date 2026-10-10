@@ -1,0 +1,19 @@
+{
+  "thirdHandIndicesSourceXOrder": [
+    30,
+    45,
+    28,
+    26,
+    15
+  ],
+  "nativeScreenLeftToRight": [
+    "3 hearts",
+    "ace clubs",
+    "3 clubs",
+    "7 diamonds",
+    "5 clubs"
+  ],
+  "matchesAtlas": true,
+  "capture": "native-poker/Saved/HousePokerSmoke/poker_hand.png",
+  "note": "Camera faces +Y, so source X order appears right-to-left. All five logged atlas cells match visible faces."
+}

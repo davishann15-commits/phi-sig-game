@@ -1,0 +1,243 @@
+{
+  "schema": "pigsty-surface-textures-1",
+  "textures": [
+    {
+      "name": "PST_T_DirtyOlivePlaster_BaseColor",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_DirtyOlivePlaster_BaseColor.png",
+      "kind": "BaseColor",
+      "sRGB": true,
+      "seamless": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_DirtyOlivePlaster_Roughness",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_DirtyOlivePlaster_Roughness.png",
+      "kind": "Roughness",
+      "sRGB": false,
+      "seamless": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_DirtyOlivePlaster_Normal",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_DirtyOlivePlaster_Normal.png",
+      "kind": "Normal",
+      "sRGB": false,
+      "flipGreenChannel": true,
+      "seamless": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_StainedConcrete_BaseColor",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_StainedConcrete_BaseColor.png",
+      "kind": "BaseColor",
+      "sRGB": true,
+      "seamless": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_StainedConcrete_Roughness",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_StainedConcrete_Roughness.png",
+      "kind": "Roughness",
+      "sRGB": false,
+      "seamless": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_StainedConcrete_Normal",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_StainedConcrete_Normal.png",
+      "kind": "Normal",
+      "sRGB": false,
+      "flipGreenChannel": true,
+      "seamless": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_DampCeiling_BaseColor",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_DampCeiling_BaseColor.png",
+      "kind": "BaseColor",
+      "sRGB": true,
+      "seamless": false,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_DampCeiling_Roughness",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_DampCeiling_Roughness.png",
+      "kind": "Roughness",
+      "sRGB": false,
+      "seamless": false,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_DampCeiling_Normal",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_DampCeiling_Normal.png",
+      "kind": "Normal",
+      "sRGB": false,
+      "flipGreenChannel": true,
+      "seamless": false,
+      "size": [
+        1024,
+        1024
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_KeepShutPlaque_BaseColor",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_KeepShutPlaque_BaseColor.png",
+      "kind": "BaseColor",
+      "sRGB": true,
+      "size": [
+        1024,
+        640
+      ],
+      "seamless": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_T_GrimeScratchDecal_RGBA",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/textures/PST_T_GrimeScratchDecal_RGBA.png",
+      "kind": "BaseColorAlpha",
+      "sRGB": true,
+      "size": [
+        1024,
+        1024
+      ],
+      "seamless": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    }
+  ],
+  "materials": [
+    {
+      "name": "PST_M_DirtyOlivePlaster",
+      "textures": {
+        "BaseColor": "PST_T_DirtyOlivePlaster_BaseColor",
+        "Roughness": "PST_T_DirtyOlivePlaster_Roughness",
+        "Normal": "PST_T_DirtyOlivePlaster_Normal"
+      },
+      "roughness": 0.9,
+      "metallic": 0,
+      "normalStrength": 0.55,
+      "uvMapping": "Tile200cm; UV=(worldSurfaceHorizontalCm/200,worldZCm/200)",
+      "tileWorldSizeCm": 200,
+      "baseColor": [
+        1,
+        1,
+        1
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_M_StainedConcrete",
+      "textures": {
+        "BaseColor": "PST_T_StainedConcrete_BaseColor",
+        "Roughness": "PST_T_StainedConcrete_Roughness",
+        "Normal": "PST_T_StainedConcrete_Normal"
+      },
+      "roughness": 0.86,
+      "metallic": 0,
+      "normalStrength": 0.45,
+      "uvMapping": "Tile200cm; UV=(worldXcm/200,worldYcm/200)",
+      "tileWorldSizeCm": 200,
+      "baseColor": [
+        1,
+        1,
+        1
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_M_DampCeiling",
+      "textures": {
+        "BaseColor": "PST_T_DampCeiling_BaseColor",
+        "Roughness": "PST_T_DampCeiling_Roughness",
+        "Normal": "PST_T_DampCeiling_Normal"
+      },
+      "roughness": 0.91,
+      "metallic": 0,
+      "normalStrength": 0.28,
+      "uvMapping": "One full ceiling plane UV0..1, clamp texture addressing to preserve damp perimeter",
+      "addressMode": "Clamp",
+      "baseColor": [
+        1,
+        1,
+        1
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_M_KeepShutPlaque",
+      "textures": {
+        "BaseColor": "PST_T_KeepShutPlaque_BaseColor"
+      },
+      "roughness": 0.82,
+      "metallic": 0.25,
+      "uvMapping": "One full rectangular plaque UV0..1; recommended dimensions40\u00d725cm",
+      "addressMode": "Clamp",
+      "baseColor": [
+        1,
+        1,
+        1
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    },
+    {
+      "name": "PST_M_GrimeScratchDecal",
+      "textures": {
+        "BaseColorAlpha": "PST_T_GrimeScratchDecal_RGBA"
+      },
+      "roughness": 0.88,
+      "metallic": 0,
+      "blendMode": "Translucent",
+      "decalBlendMode": "DBufferColorRoughness",
+      "opacitySource": "textureAlpha",
+      "uvMapping": "One wall-facing decal plane UV0..1; recommended100\u00d7150cm, alpha fades to0 at edges",
+      "addressMode": "Clamp",
+      "twoSided": false,
+      "baseColor": [
+        1,
+        1,
+        1
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces"
+    }
+  ],
+  "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Surfaces",
+  "notes": [
+    "Wall/floor tile every200cm; preserve real grain size via UV scale or world aligned texture.",
+    "Ceiling/plaque/grime use full0..1 UV and Clamp address.",
+    "BaseColor replaces constant material color. Roughness sRGBFalse. Normal maps are OpenGL; Unreal FlipGreenChannelTrue.",
+    "Grime alpha is transparent at every image edge. Meshes and decals are placed by root."
+  ],
+  "preview": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/surfaces/previews/PST_Surface_ContactSheet.png"
+}

@@ -16,6 +16,8 @@
 *.opensdf
 *.sdf
 .DS_Store
+__pycache__/
+*.pyc
 
 # Per-user editor state
 /Config/DefaultEditorPerProjectUserSettings.ini

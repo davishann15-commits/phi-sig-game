@@ -1,0 +1,17 @@
+{
+  "sampleRate": 44100,
+  "channels": 1,
+  "sampleWidth": 2,
+  "frames": 44637,
+  "duration": 1.0121768707482994,
+  "peak": 0.62353515625,
+  "rms": 0.05017827189118665,
+  "source": "https://freesound.org/people/JarredGibb/sounds/233165/",
+  "sourceDownload": "https://cdn.freesound.org/previews/233/233165_4056007-hq.mp3",
+  "author": "JarredGibb",
+  "title": "Pig - Snort 6 - 96kHz.wav",
+  "license": "CC0 1.0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "conversion": "High quality MP3 preview decoded to mono 44.1 kHz 16-bit PCM WAV",
+  "sha256": "a701353db8213fb631a8be71b3187fbcf106f90da0c70719c3c38d79d92b784b"
+}

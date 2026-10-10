@@ -1,0 +1,468 @@
+{
+  "schema": "pig-modular-assets-2",
+  "units": "Unreal centimeters",
+  "assetForward": "+X",
+  "assetUp": "+Z",
+  "exportConvention": "Numeric cm, scene scale_length0.01, FBX_SCALE_UNITS, apply_unit_scaleTrue, unitfactor1; Unreal importScale1. Native Unreal reflects sourceY. No extra vertex Y flip.",
+  "meshes": [
+    {
+      "name": "SM_PIG_BlackBody",
+      "fbx": "meshes/SM_PIG_BlackBody.fbx",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "sourceBoundsCm": {
+        "min": [
+          -66.923052,
+          -26.636726,
+          39.263082
+        ],
+        "max": [
+          57.225043,
+          26.64721,
+          90.143698
+        ],
+        "size": [
+          124.148095,
+          53.283936,
+          50.880617
+        ]
+      },
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackBristle"
+      ],
+      "triangleCount": 19472,
+      "uvLayerCount": 1,
+      "importScale": 1,
+      "collision": "Runtime capsule and animated hitbox; visual meshes NoCollision",
+      "boundsCm": {
+        "min": [
+          -66.923052,
+          -26.64721,
+          39.263082
+        ],
+        "max": [
+          57.225043,
+          26.636726,
+          90.143698
+        ],
+        "size": [
+          124.148095,
+          53.283936,
+          50.880617
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      }
+    },
+    {
+      "name": "SM_PIG_BlackHead",
+      "fbx": "meshes/SM_PIG_BlackHead.fbx",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "sourceBoundsCm": {
+        "min": [
+          -24.239618,
+          -20.175499,
+          -26.492244
+        ],
+        "max": [
+          24.900027,
+          20.553944,
+          7.212644
+        ],
+        "size": [
+          49.139644,
+          40.729442,
+          33.704888
+        ]
+      },
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackSnout",
+        "PIG_M_NostrilMouth",
+        "PIG_M_GlossBlackEye",
+        "PIG_M_CharcoalEarInner",
+        "PIG_M_BlackBristle"
+      ],
+      "triangleCount": 19500,
+      "uvLayerCount": 1,
+      "importScale": 1,
+      "collision": "Runtime capsule and animated hitbox; visual meshes NoCollision",
+      "boundsCm": {
+        "min": [
+          -24.239618,
+          -20.553944,
+          -26.492244
+        ],
+        "max": [
+          24.900027,
+          20.175499,
+          7.212644
+        ],
+        "size": [
+          49.139644,
+          40.729442,
+          33.704888
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      }
+    },
+    {
+      "name": "SM_PIG_BlackUpperLeg",
+      "fbx": "meshes/SM_PIG_BlackUpperLeg.fbx",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "sourceBoundsCm": {
+        "min": [
+          -8.502924,
+          -7.389865,
+          -25.568736
+        ],
+        "max": [
+          6.444617,
+          7.389865,
+          4.941442
+        ],
+        "size": [
+          14.947542,
+          14.77973,
+          30.510178
+        ]
+      },
+      "materialSlots": [
+        "PIG_M_BlackHide"
+      ],
+      "triangleCount": 1920,
+      "uvLayerCount": 1,
+      "importScale": 1,
+      "collision": "Runtime capsule and animated hitbox; visual meshes NoCollision",
+      "boundsCm": {
+        "min": [
+          -8.502924,
+          -7.389865,
+          -25.568736
+        ],
+        "max": [
+          6.444617,
+          7.389865,
+          4.941442
+        ],
+        "size": [
+          14.947542,
+          14.77973,
+          30.510178
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      }
+    },
+    {
+      "name": "SM_PIG_BlackLowerLeg",
+      "fbx": "meshes/SM_PIG_BlackLowerLeg.fbx",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "sourceBoundsCm": {
+        "min": [
+          -3.706861,
+          -5.55,
+          -23.0
+        ],
+        "max": [
+          6.650487,
+          5.55,
+          3.968771
+        ],
+        "size": [
+          10.357348,
+          11.1,
+          26.968771
+        ]
+      },
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_HoofKeratin",
+        "PIG_M_BlackSnout"
+      ],
+      "triangleCount": 4752,
+      "uvLayerCount": 1,
+      "importScale": 1,
+      "collision": "Runtime capsule and animated hitbox; visual meshes NoCollision",
+      "boundsCm": {
+        "min": [
+          -3.706861,
+          -5.55,
+          -23.0
+        ],
+        "max": [
+          6.650487,
+          5.55,
+          3.968771
+        ],
+        "size": [
+          10.357348,
+          11.1,
+          26.968771
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "PIG_M_BlackHide",
+      "baseColor": [
+        0.010999999940395355,
+        0.012000000104308128,
+        0.013000000268220901
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0,
+      "textures": {
+        "BaseColor": "PIG_T_BlackHide_BaseColor",
+        "Roughness": "PIG_T_BlackHide_Roughness",
+        "Normal": "PIG_T_BlackHide_Normal"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "normalStrength": 0.550000011920929
+    },
+    {
+      "name": "PIG_M_BlackSnout",
+      "baseColor": [
+        0.012000000104308128,
+        0.009999999776482582,
+        0.009999999776482582
+      ],
+      "roughness": 0.5699999928474426,
+      "metallic": 0,
+      "textures": {
+        "BaseColor": "PIG_T_BlackSnout_BaseColor",
+        "Roughness": "PIG_T_BlackSnout_Roughness",
+        "Normal": "PIG_T_BlackSnout_Normal"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "normalStrength": 0.44999998807907104
+    },
+    {
+      "name": "PIG_M_CharcoalEarInner",
+      "baseColor": [
+        0.009999999776482582,
+        0.00800000037997961,
+        0.008999999612569809
+      ],
+      "roughness": 0.5799999833106995,
+      "metallic": 0,
+      "textures": {
+        "BaseColor": "PIG_T_BlackHide_BaseColor",
+        "Roughness": "PIG_T_BlackHide_Roughness",
+        "Normal": "PIG_T_BlackHide_Normal"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "normalStrength": 0.5
+    },
+    {
+      "name": "PIG_M_HoofKeratin",
+      "baseColor": [
+        0.008999999612569809,
+        0.00800000037997961,
+        0.007000000216066837
+      ],
+      "roughness": 0.4699999988079071,
+      "metallic": 0,
+      "textures": {
+        "BaseColor": "PIG_T_HoofKeratin_BaseColor",
+        "Roughness": "PIG_T_HoofKeratin_Roughness",
+        "Normal": "PIG_T_HoofKeratin_Normal"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs",
+      "normalStrength": 0.5
+    },
+    {
+      "name": "PIG_M_GlossBlackEye",
+      "baseColor": [
+        0.001500000013038516,
+        0.0017000000225380063,
+        0.0017999999690800905
+      ],
+      "roughness": 0.04500000178813934,
+      "metallic": 0,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_M_NostrilMouth",
+      "baseColor": [
+        0.000699999975040555,
+        0.0006000000284984708,
+        0.0006000000284984708
+      ],
+      "roughness": 0.800000011920929,
+      "metallic": 0,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_M_BlackBristle",
+      "baseColor": [
+        0.004000000189989805,
+        0.003599999938160181,
+        0.0035000001080334187
+      ],
+      "roughness": 0.5899999737739563,
+      "metallic": 0,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    }
+  ],
+  "textures": [
+    {
+      "name": "PIG_T_BlackHide_BaseColor",
+      "path": "textures/PIG_T_BlackHide_BaseColor.png",
+      "kind": "BaseColor",
+      "sRGB": true,
+      "flipGreenChannel": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_BlackHide_Normal",
+      "path": "textures/PIG_T_BlackHide_Normal.png",
+      "kind": "Normal",
+      "sRGB": false,
+      "flipGreenChannel": true,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_BlackHide_Roughness",
+      "path": "textures/PIG_T_BlackHide_Roughness.png",
+      "kind": "Roughness",
+      "sRGB": false,
+      "flipGreenChannel": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_BlackSnout_BaseColor",
+      "path": "textures/PIG_T_BlackSnout_BaseColor.png",
+      "kind": "BaseColor",
+      "sRGB": true,
+      "flipGreenChannel": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_BlackSnout_Normal",
+      "path": "textures/PIG_T_BlackSnout_Normal.png",
+      "kind": "Normal",
+      "sRGB": false,
+      "flipGreenChannel": true,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_BlackSnout_Roughness",
+      "path": "textures/PIG_T_BlackSnout_Roughness.png",
+      "kind": "Roughness",
+      "sRGB": false,
+      "flipGreenChannel": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_HoofKeratin_BaseColor",
+      "path": "textures/PIG_T_HoofKeratin_BaseColor.png",
+      "kind": "BaseColor",
+      "sRGB": true,
+      "flipGreenChannel": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_HoofKeratin_Normal",
+      "path": "textures/PIG_T_HoofKeratin_Normal.png",
+      "kind": "Normal",
+      "sRGB": false,
+      "flipGreenChannel": true,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    },
+    {
+      "name": "PIG_T_HoofKeratin_Roughness",
+      "path": "textures/PIG_T_HoofKeratin_Roughness.png",
+      "kind": "Roughness",
+      "sRGB": false,
+      "flipGreenChannel": false,
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom/Pigs"
+    }
+  ],
+  "recommendedPivotsCm": {
+    "Body": [
+      0,
+      0,
+      0
+    ],
+    "Head": [
+      60,
+      0,
+      76
+    ],
+    "FrontLeftHip": [
+      35,
+      -21,
+      48
+    ],
+    "FrontRightHip": [
+      35,
+      21,
+      48
+    ],
+    "RearLeftHip": [
+      -35,
+      -21,
+      48
+    ],
+    "RearRightHip": [
+      -35,
+      21,
+      48
+    ],
+    "KneeRelativeToUpper": [
+      0,
+      0,
+      -25
+    ]
+  },
+  "legFloorNote": "Lower hoof minimumZ exactly -23; hip48 + knee-25 + hoof-23 = floor0.",
+  "assembledBoundsCm": {
+    "min": [
+      -66.923052,
+      -28.389865,
+      0.0
+    ],
+    "max": [
+      84.900027,
+      28.389865,
+      90.143698
+    ],
+    "size": [
+      151.823079,
+      56.77973,
+      90.143698
+    ]
+  },
+  "triangleCountUnique": 45644,
+  "triangleCountAssembled": 65660,
+  "reference": "Large Black anatomy informed by Rare Breeds Survival Trust https://www.rbst.org.uk/watchlist-breed/large-black/ ; all geometry and texture maps procedurally authored for this project.",
+  "preview": "previews/PIG_RealBlackPig_Assembled.png",
+  "materialNotes": [
+    "Same seven material names as version1. Three hide texture names updated in place. Six additional maps for snout and hoof.",
+    "Normal maps OpenGL; flipGreenChannelTrue on Unreal import.",
+    "Black pigs only: subtle charcoal hide, no pink or white areas.",
+    "Organic drooping ears, actual recessed nostril cavities, dark almond eyes, shaped jaw/neck, tapered toes, sparse fine bristles."
+  ],
+  "pathBase": "Directory containing this manifest; all filesystem paths are relative.",
+  "sourceBlender": "PIG_RealBlackPig_Source.blend",
+  "sourceBuilder": "build_real_pigs.py",
+  "textureBuilder": "make_textures.py",
+  "poseReviewBuilder": "check_poses.py",
+  "portability": {
+    "blenderVersion": "5.2.2 LTS",
+    "regenerateTexturesRequires": [
+      "Python3",
+      "Pillow",
+      "NumPy"
+    ],
+    "regenerateMeshesRequires": [
+      "Blender with built-in FBX importer/exporter"
+    ],
+    "unrealDestinationPaths": "Original SeniorSendoff package targets are retained as import routing hints; filesystem paths are portable.",
+    "blendTextureReferences": "Relative //textures paths plus packed images; packed images embedded for missing external textures."
+  }
+}

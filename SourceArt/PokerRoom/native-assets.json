@@ -1,0 +1,805 @@
+[
+  {
+    "name": "SM_POK_Table",
+    "boundsCm": [
+      [
+        -150.0,
+        -75.0,
+        0.3999999761581421
+      ],
+      [
+        150.0,
+        75.0,
+        80.0
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -150.0,
+        -75.0,
+        0.4
+      ],
+      [
+        150.0,
+        75.0,
+        80.0
+      ]
+    ],
+    "group": "furniture",
+    "slots": [
+      "M_POK_Walnut",
+      "M_POK_Baize",
+      "M_POK_RailLeather",
+      "M_POK_SatinBrass",
+      "M_POK_Stitch",
+      "M_POK_CupInterior",
+      "M_POK_AntiqueBrass",
+      "M_POK_BlackMetal"
+    ]
+  },
+  {
+    "name": "SM_POK_Chair",
+    "boundsCm": [
+      [
+        -29.000001907348633,
+        -26.94308853149414,
+        0.9835928678512573
+      ],
+      [
+        29.000001907348633,
+        28.650001525878906,
+        91.79999542236328
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -29.0,
+        -28.65,
+        0.9836
+      ],
+      [
+        29.0,
+        26.9431,
+        91.8
+      ]
+    ],
+    "group": "furniture",
+    "slots": [
+      "M_POK_Walnut",
+      "M_POK_ChairLeather",
+      "M_POK_Stitch",
+      "M_POK_SatinBrass",
+      "M_POK_AntiqueBrass",
+      "M_POK_RailLeather"
+    ]
+  },
+  {
+    "name": "SM_POK_Sideboard",
+    "boundsCm": [
+      [
+        -92.00000762939453,
+        -23.00001335144043,
+        0.8500009775161743
+      ],
+      [
+        92.00000762939453,
+        27.00001335144043,
+        92.25
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -92.0,
+        -27.0,
+        0.85
+      ],
+      [
+        92.0,
+        23.0,
+        92.25
+      ]
+    ],
+    "group": "furniture",
+    "slots": [
+      "M_POK_Walnut",
+      "M_POK_Marble",
+      "M_POK_SatinBrass",
+      "M_POK_AntiqueBrass"
+    ]
+  },
+  {
+    "name": "SM_POK_Pendant",
+    "boundsCm": [
+      [
+        -55.39999771118164,
+        -16.400005340576172,
+        -64.70000457763672
+      ],
+      [
+        55.39999771118164,
+        16.400005340576172,
+        0.0
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -55.4,
+        -16.4,
+        -64.7
+      ],
+      [
+        55.4,
+        16.4,
+        0.0
+      ]
+    ],
+    "group": "furniture",
+    "slots": [
+      "M_POK_SatinBrass",
+      "M_POK_IvoryGlass",
+      "M_POK_WarmLight",
+      "M_POK_AntiqueBrass"
+    ]
+  },
+  {
+    "name": "SM_POK_Table_Collision",
+    "boundsCm": [
+      [
+        -149.8000030517578,
+        -74.80000305175781,
+        4.999998092651367
+      ],
+      [
+        149.8000030517578,
+        74.80000305175781,
+        80.0999984741211
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -149.8,
+        -74.8,
+        5.0
+      ],
+      [
+        149.8,
+        74.8,
+        80.1
+      ]
+    ],
+    "group": "furniture",
+    "slots": [
+      "M_POK_Collider"
+    ]
+  },
+  {
+    "name": "SM_POK_Sideboard_Collision",
+    "boundsCm": [
+      [
+        -92.00000762939453,
+        -23.000015258789062,
+        0.050002336502075195
+      ],
+      [
+        92.00000762939453,
+        23.000015258789062,
+        92.3499984741211
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -92.0,
+        -23.0,
+        0.05
+      ],
+      [
+        92.0,
+        23.0,
+        92.35
+      ]
+    ],
+    "group": "furniture",
+    "slots": [
+      "M_POK_Collider"
+    ]
+  },
+  {
+    "name": "POK_SM_Card",
+    "boundsCm": [
+      [
+        -4.450000762939453,
+        -6.200000286102295,
+        0.0
+      ],
+      [
+        4.450000762939453,
+        6.200000286102295,
+        0.07999999821186066
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -4.449999809265137,
+        -6.199999809265137,
+        0.0
+      ],
+      [
+        4.449999809265137,
+        6.199999809265137,
+        0.07999999821186066
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_CardAtlas",
+      "POK_M_CardEdge"
+    ]
+  },
+  {
+    "name": "POK_SM_Deck",
+    "boundsCm": [
+      [
+        -4.470000743865967,
+        -6.220000267028809,
+        0.0
+      ],
+      [
+        4.470000743865967,
+        6.220000267028809,
+        2.1599998474121094
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -4.46999979019165,
+        -6.21999979019165,
+        0.0
+      ],
+      [
+        4.46999979019165,
+        6.21999979019165,
+        2.1599998474121094
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_CardEdge",
+      "POK_M_Napkin",
+      "POK_M_CardBack"
+    ]
+  },
+  {
+    "name": "POK_SM_ChipStack5",
+    "boundsCm": [
+      [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        3.0900001525878906
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        3.0900001525878906
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_Chip5Side",
+      "POK_M_Chip5Top",
+      "POK_M_ChipIvory"
+    ]
+  },
+  {
+    "name": "POK_SM_ChipStack25",
+    "boundsCm": [
+      [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        3.0900001525878906
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        3.0900001525878906
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_Chip25Side",
+      "POK_M_Chip25Top",
+      "POK_M_ChipIvory"
+    ]
+  },
+  {
+    "name": "POK_SM_ChipStack100",
+    "boundsCm": [
+      [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        3.0900001525878906
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      [
+        2.0,
+        2.0,
+        3.0900001525878906
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_Chip100Side",
+      "POK_M_Chip100Top",
+      "POK_M_ChipIvory"
+    ]
+  },
+  {
+    "name": "POK_SM_TablePack",
+    "boundsCm": [
+      [
+        -97.5,
+        -24.20634651184082,
+        0.0
+      ],
+      [
+        105.90304565429688,
+        24.140499114990234,
+        3.9100000858306885
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -97.5,
+        -24.140483856201172,
+        0.0
+      ],
+      [
+        105.90304565429688,
+        24.206356048583984,
+        3.9100000858306885
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_PropsWalnut",
+      "POK_M_PropsBrass",
+      "POK_M_Chip5Side",
+      "POK_M_Chip5Top",
+      "POK_M_ChipIvory",
+      "POK_M_Chip25Side",
+      "POK_M_Chip25Top",
+      "POK_M_Chip100Side",
+      "POK_M_Chip100Top",
+      "POK_M_StaticCards",
+      "POK_M_CardEdge",
+      "POK_M_CardBack",
+      "POK_M_Dealer"
+    ]
+  },
+  {
+    "name": "POK_SM_ChipRack",
+    "boundsCm": [
+      [
+        -16.500001907348633,
+        -7.500002384185791,
+        0.0
+      ],
+      [
+        16.500001907348633,
+        7.500002384185791,
+        3.5
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -16.5,
+        -7.5,
+        0.0
+      ],
+      [
+        16.5,
+        7.5,
+        3.5
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_PropsWalnut",
+      "POK_M_PropsBrass",
+      "POK_M_Chip5Side",
+      "POK_M_Chip5Top",
+      "POK_M_ChipIvory",
+      "POK_M_Chip25Side",
+      "POK_M_Chip25Top",
+      "POK_M_Chip100Side",
+      "POK_M_Chip100Top"
+    ]
+  },
+  {
+    "name": "POK_SM_BarClutter",
+    "boundsCm": [
+      [
+        -46.0,
+        -14.400006294250488,
+        -1.5
+      ],
+      [
+        48.000003814697266,
+        12.400007247924805,
+        30.0
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -46.0,
+        -12.399999618530273,
+        -1.5
+      ],
+      [
+        48.0,
+        14.399999618530273,
+        30.0
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_AmberBottle",
+      "POK_M_PropsBrass",
+      "POK_M_BottleLabel",
+      "POK_M_SmokedGlass",
+      "POK_M_Whiskey",
+      "POK_M_PropsBurgundy",
+      "POK_M_Napkin",
+      "POK_M_CardEdge",
+      "POK_M_PropsWalnut"
+    ]
+  },
+  {
+    "name": "POK_SM_LastHandSign",
+    "boundsCm": [
+      [
+        -63.5,
+        -1.5000094175338745,
+        0.0
+      ],
+      [
+        63.5,
+        3.670009136199951,
+        76.0
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -63.5,
+        -3.6700000762939453,
+        0.0
+      ],
+      [
+        63.5,
+        1.5,
+        76.0
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_PropsDarkMetal",
+      "POK_M_LastHandSign",
+      "POK_M_PropsWalnut",
+      "POK_M_PropsBrass"
+    ]
+  },
+  {
+    "name": "POK_SM_SpadeArt",
+    "boundsCm": [
+      [
+        -24.5,
+        -1.5000035762786865,
+        0.0
+      ],
+      [
+        24.5,
+        3.6700034141540527,
+        68.0
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -24.5,
+        -3.6700000762939453,
+        0.0
+      ],
+      [
+        24.5,
+        1.5,
+        68.0
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_PropsDarkMetal",
+      "POK_M_SpadeArt",
+      "POK_M_PropsWalnut",
+      "POK_M_PropsBrass"
+    ]
+  },
+  {
+    "name": "POK_SM_HeartArt",
+    "boundsCm": [
+      [
+        -24.5,
+        -1.5000035762786865,
+        0.0
+      ],
+      [
+        24.5,
+        3.6700034141540527,
+        68.0
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -24.5,
+        -3.6700000762939453,
+        0.0
+      ],
+      [
+        24.5,
+        1.5,
+        68.0
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_PropsDarkMetal",
+      "POK_M_HeartArt",
+      "POK_M_PropsWalnut",
+      "POK_M_PropsBrass"
+    ]
+  },
+  {
+    "name": "POK_SM_Clock",
+    "boundsCm": [
+      [
+        -20.100000381469727,
+        -3.143654339510249e-06,
+        -0.10000056028366089
+      ],
+      [
+        20.100000381469727,
+        5.000003337860107,
+        40.099998474121094
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -20.100000381469727,
+        -5.000000953674316,
+        -0.10000056028366089
+      ],
+      [
+        20.100000381469727,
+        8.74227794156468e-07,
+        40.099998474121094
+      ]
+    ],
+    "group": "props",
+    "slots": [
+      "POK_M_PropsWalnut",
+      "POK_M_ClockDial",
+      "POK_M_PropsBrass",
+      "POK_M_PropsDarkMetal"
+    ]
+  },
+  {
+    "name": "POK_SM_Wallpaper",
+    "boundsCm": [
+      [
+        -2972.0,
+        -1371.842529296875,
+        392.2997741699219
+      ],
+      [
+        -2349.23291015625,
+        -885.0001220703125,
+        565.7998657226562
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2971.999931335449,
+        -1371.8424797058105,
+        392.300009727478
+      ],
+      [
+        -2349.232864379883,
+        -885.0000381469727,
+        565.7999992370605
+      ]
+    ],
+    "group": "geometry",
+    "slots": [
+      "POK_M_WallWine"
+    ]
+  },
+  {
+    "name": "POK_SM_Wainscot",
+    "boundsCm": [
+      [
+        -2974.0,
+        -1373.842529296875,
+        302.2997741699219
+      ],
+      [
+        -2347.23291015625,
+        -883.0000610351562,
+        391.79986572265625
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2973.9999771118164,
+        -1373.842430114746,
+        302.30000019073486
+      ],
+      [
+        -2347.2328186035156,
+        -882.9999923706055,
+        391.79999828338623
+      ]
+    ],
+    "group": "geometry",
+    "slots": [
+      "POK_M_RecessWalnut",
+      "POK_M_PanelWalnut"
+    ]
+  },
+  {
+    "name": "POK_SM_BrassTrim",
+    "boundsCm": [
+      [
+        -2972.0,
+        -1371.8426513671875,
+        391.2997741699219
+      ],
+      [
+        -2349.23291015625,
+        -885.0,
+        391.89984130859375
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2972.0001220703125,
+        -1371.8425750732422,
+        391.29998683929443
+      ],
+      [
+        -2349.232864379883,
+        -884.999942779541,
+        391.8999910354614
+      ]
+    ],
+    "group": "geometry",
+    "slots": [
+      "POK_M_RoomBrass"
+    ]
+  },
+  {
+    "name": "POK_SM_Rug",
+    "boundsCm": [
+      [
+        -2905.0,
+        -1280.0001220703125,
+        302.47979736328125
+      ],
+      [
+        -2435.0,
+        -940.0,
+        302.4798583984375
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2904.9999237060547,
+        -1280.0000190734863,
+        302.48000621795654
+      ],
+      [
+        -2435.0000381469727,
+        -939.9999618530273,
+        302.48000621795654
+      ]
+    ],
+    "group": "geometry",
+    "slots": [
+      "POK_M_Rug"
+    ]
+  },
+  {
+    "name": "POK_SM_WallSconces",
+    "boundsCm": [
+      [
+        -2968.999755859375,
+        -1239.0001220703125,
+        448.99981689453125
+      ],
+      [
+        -2958.999755859375,
+        -1001.0001220703125,
+        489.9998474121094
+      ]
+    ],
+    "sourceBoundsCm": [
+      [
+        -2968.9998626708984,
+        -1239.0000343322754,
+        449.0000247955322
+      ],
+      [
+        -2958.999824523926,
+        -1001.0000228881836,
+        490.00000953674316
+      ]
+    ],
+    "group": "geometry",
+    "slots": [
+      "POK_M_RoomBrass",
+      "POK_M_SconceGlass"
+    ]
+  },
+  {
+    "name": "POK_SM_OtherHallPracticalLights",
+    "boundsCm": [
+      [
+        -2218.0,
+        -1673.000244140625,
+        558.8494262695312
+      ],
+      [
+        -1721.699951171875,
+        -987.0001831054688,
+        564.3496704101562
+      ]
+    ],
+    "sourceBoundsCm": null,
+    "group": "geometry",
+    "slots": [
+      "MI_SSO_MetalBrass",
+      "MI_SSO_LightWarm"
+    ]
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "views": [
+    {
+      "name": "LibraryEntrance",
+      "position": {
+        "x": 6.3,
+        "y": -1.64,
+        "z": -26.4
+      },
+      "target": {
+        "x": -9.0,
+        "y": -2.11,
+        "z": -27.6
+      },
+      "fieldOfView": 62
+    },
+    {
+      "name": "LibraryReverse",
+      "position": {
+        "x": -12.0,
+        "y": -1.64,
+        "z": -27.5
+      },
+      "target": {
+        "x": 6.9,
+        "y": -2.15,
+        "z": -27.3
+      },
+      "fieldOfView": 62
+    },
+    {
+      "name": "LibraryLounge",
+      "position": {
+        "x": -2.65,
+        "y": -1.6,
+        "z": -25.3
+      },
+      "target": {
+        "x": -2.9,
+        "y": -2.28,
+        "z": -29.7
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryStudy",
+      "position": {
+        "x": -8.5,
+        "y": -1.55,
+        "z": -27.7
+      },
+      "target": {
+        "x": -12.4,
+        "y": -2.3,
+        "z": -25.7
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryGameTable",
+      "position": {
+        "x": 7.6,
+        "y": -1.66,
+        "z": -25.2
+      },
+      "target": {
+        "x": 4.7,
+        "y": -2.41,
+        "z": -27.1
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryNewDoor",
+      "position": {
+        "x": 4.0,
+        "y": -1.62,
+        "z": -26.9
+      },
+      "target": {
+        "x": 7.89,
+        "y": -2.25,
+        "z": -27.01
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryCeiling",
+      "position": {
+        "x": 3.0,
+        "y": -1.4,
+        "z": -26.6
+      },
+      "target": {
+        "x": -2.9,
+        "y": -1.0,
+        "z": -27.0
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryShelves",
+      "position": {
+        "x": -0.2,
+        "y": -1.74,
+        "z": -27.7
+      },
+      "target": {
+        "x": 0.52,
+        "y": -2.03,
+        "z": -29.75
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryTV",
+      "position": {
+        "x": -2.5,
+        "y": -1.7,
+        "z": -26.2
+      },
+      "target": {
+        "x": -3.44,
+        "y": -2.08,
+        "z": -23.86
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryWorktable",
+      "position": {
+        "x": 0.4,
+        "y": -1.74,
+        "z": -25.2
+      },
+      "target": {
+        "x": 2.23,
+        "y": -2.49,
+        "z": -28.1
+      },
+      "fieldOfView": 52
+    }
+  ]
+}

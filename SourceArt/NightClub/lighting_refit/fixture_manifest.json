@@ -1,0 +1,297 @@
+{
+  "coordinateSystem": "Blender metres to Unrealcm [100X,-100Y,100Z]. Optical axis Unreal+X; lens exit at local0.",
+  "assets": [
+    {
+      "name": "SM_NCLF_MovingOpticalHead",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lighting_refit/models/SM_NCLF_MovingOpticalHead.fbx",
+      "triangles": 7232,
+      "vertices": 3753,
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_BrushedAluminium",
+        "M_NC_Rubber",
+        "M_NC_Chrome",
+        "M_NCLF_DynamicOpticalLens"
+      ],
+      "boundsUnrealCm": [
+        [
+          -27.3499995470047,
+          -13.199999928474426,
+          -11.999999731779099
+        ],
+        [
+          0.15000022249296308,
+          13.199999928474426,
+          12.749999761581421
+        ]
+      ],
+      "dimensionsCm": [
+        27.499999769497663,
+        26.399999856948853,
+        24.74999949336052
+      ],
+      "origin": "Lens optical exit local0; local Unreal+X forward.",
+      "opticalAxisUnreal": [
+        1,
+        0,
+        0
+      ],
+      "collision": "NoCollision",
+      "supportRayTracing": false,
+      "castShadow": false,
+      "dynamicLensSlot": 4
+    },
+    {
+      "name": "SM_NCLF_StaticCeilingMount",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lighting_refit/models/SM_NCLF_StaticCeilingMount.fbx",
+      "triangles": 3084,
+      "vertices": 1576,
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_BrushedAluminium"
+      ],
+      "boundsUnrealCm": [
+        [
+          -51.94999575614929,
+          -17.100000381469727,
+          -10.999999940395355
+        ],
+        [
+          -8.299999684095383,
+          17.100000381469727,
+          10.999999940395355
+        ]
+      ],
+      "dimensionsCm": [
+        43.64999607205391,
+        34.20000076293945,
+        21.99999988079071
+      ],
+      "origin": "Lens optical exit local0; local Unreal+X forward.",
+      "opticalAxisUnreal": [
+        1,
+        0,
+        0
+      ],
+      "collision": "NoCollision",
+      "supportRayTracing": false,
+      "castShadow": false
+    },
+    {
+      "name": "SM_NCLF_CompactStrobeBar",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lighting_refit/models/SM_NCLF_CompactStrobeBar.fbx",
+      "triangles": 6320,
+      "vertices": 3240,
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_BrushedAluminium",
+        "M_NC_Rubber",
+        "M_NCLF_DynamicStrobeLens"
+      ],
+      "boundsUnrealCm": [
+        [
+          -8.799999952316284,
+          -24.09999966621399,
+          -5.299999937415123
+        ],
+        [
+          1.3000001199543476,
+          24.09999966621399,
+          5.299999937415123
+        ]
+      ],
+      "dimensionsCm": [
+        10.100000072270632,
+        48.19999933242798,
+        10.599999874830246
+      ],
+      "origin": "Lens optical exit local0; local Unreal+X forward.",
+      "opticalAxisUnreal": [
+        1,
+        0,
+        0
+      ],
+      "collision": "NoCollision",
+      "supportRayTracing": false,
+      "castShadow": false,
+      "dynamicLensSlot": 3
+    },
+    {
+      "name": "SM_NCLF_OpenBeamCone",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lighting_refit/models/SM_NCLF_OpenBeamCone.fbx",
+      "triangles": 64,
+      "vertices": 64,
+      "materials": [
+        "M_NCLF_DynamicBeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          0.0,
+          -25.999999046325684,
+          -25.999999046325684
+        ],
+        [
+          100.0,
+          25.999999046325684,
+          25.999999046325684
+        ]
+      ],
+      "dimensionsCm": [
+        100.0,
+        51.99999809265137,
+        51.99999809265137
+      ],
+      "origin": "Lens optical exit local0; local Unreal+X forward.",
+      "opticalAxisUnreal": [
+        1,
+        0,
+        0
+      ],
+      "collision": "NoCollision",
+      "supportRayTracing": false,
+      "castShadow": false,
+      "nearRadiusCm": 3,
+      "farRadiusCm": 26,
+      "lengthCm": 100,
+      "openFarEnd": true,
+      "openNearEnd": true,
+      "uvMap": "U=local UnrealX /100cm; V=circumference0..1 with seam"
+    }
+  ],
+  "materials": {
+    "M_NC_PowderCoat": {
+      "color": [
+        0.009,
+        0.011,
+        0.019
+      ],
+      "roughness": 0.48,
+      "metallic": 0.52,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat"
+    },
+    "M_NC_BrushedAluminium": {
+      "color": [
+        0.28,
+        0.31,
+        0.37
+      ],
+      "roughness": 0.25,
+      "metallic": 0.95,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium"
+    },
+    "M_NC_Chrome": {
+      "color": [
+        0.62,
+        0.67,
+        0.73
+      ],
+      "roughness": 0.14,
+      "metallic": 1,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Chrome"
+    },
+    "M_NC_Rubber": {
+      "color": [
+        0.005,
+        0.006,
+        0.008
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber"
+    },
+    "M_NCLF_DynamicOpticalLens": {
+      "color": [
+        0.11,
+        0.48,
+        0.7
+      ],
+      "roughness": 0.15,
+      "metallic": 0.02,
+      "emissive_strength": 4,
+      "emissive": [
+        0.11,
+        0.48,
+        0.7
+      ],
+      "dynamic_parameters": [
+        "LensColor",
+        "LensStrength"
+      ]
+    },
+    "M_NCLF_DynamicStrobeLens": {
+      "color": [
+        0.68,
+        0.75,
+        0.85
+      ],
+      "roughness": 0.2,
+      "metallic": 0,
+      "emissive_strength": 3,
+      "emissive": [
+        0.68,
+        0.75,
+        0.85
+      ],
+      "dynamic_parameters": [
+        "LensColor",
+        "LensStrength"
+      ]
+    },
+    "M_NCLF_DynamicBeam": {
+      "color": [
+        0.06,
+        0.32,
+        0.55
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "emissive_strength": 0.8,
+      "emissive": [
+        0.06,
+        0.32,
+        0.55
+      ],
+      "unlit": true,
+      "blend_mode": "additive",
+      "opacity": 0.04,
+      "two_sided": true,
+      "depth_fade_cm": 25,
+      "dynamic_parameters": [
+        "BeamColor",
+        "BeamStrength"
+      ]
+    }
+  },
+  "notes": [
+    "No real lights; all objects visual NoCollision.",
+    "Bind moving optical head and beam to existing spotlight transform; both have origin at lens exit.",
+    "Ceiling mount/yoke uses matching optical basis, plate50cm behind lens; keep this part static.",
+    "Moving head has dedicated dynamic emission lens material slot. Strobe uses separate lens slot.",
+    "Beam is open at both ends,32sides,100cm long with near radius3cm and far26cm. Scale X to set length.",
+    "Preserve cheap meshes, no ray tracing/distance field/GI or dynamic shadows from fixtures/beam."
+  ]
+}

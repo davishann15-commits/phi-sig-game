@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "saved_map_sha256": "4b34c300fbbd1b96fdb8ac43c0dc1f03ce3895e9ae7f74deaae0b5194d890448",
+  "interaction": {
+    "stainlessServingCarts": 5,
+    "fridgeAndPrepTableCorrectOrder": true,
+    "chairMaximumHorizontalSizeCm": 49.35000991821289,
+    "allPropsParkedWithDamageAndCollision": true,
+    "closedClosetBlocksAndStaysClosed": true,
+    "actualChairPickupAndTwoHandContacts": true,
+    "allThreeTableDamageStagesAndSettling": true,
+    "settledBrokenSpeed": 0,
+    "passed": true,
+    "detail": "Installed kitchen inventory, fitted damage meshes, closed closet collision, actual chair pickup and staged table destruction verified",
+    "furnitureCount": 137,
+    "ceilingPanels": 3,
+    "elapsedSeconds": 16.493459042161703
+  },
+  "walking": {
+    "passed": 1.0,
+    "seconds": 15.02,
+    "frames": 856.0,
+    "p50FrameMs": 16.69,
+    "p95FrameMs": 21.96,
+    "p99FrameMs": 27.99,
+    "worstFrameMs": 93.61,
+    "over25Ms": 20.0,
+    "over33Ms": 4.0,
+    "travelCm": 5621.5,
+    "waypoints": 29.0,
+    "laps": 1.0,
+    "stalls": 0.0,
+    "longestNoProgressSeconds": 0.02,
+    "memoryStartMB": 11155.4,
+    "memoryEndMB": 11342.1,
+    "memoryDeltaMB": 186.8,
+    "vsm": 1.0,
+    "vsmCoarseNonNanite": 0.0,
+    "vsmPages": 1024.0,
+    "lumenHw": 0.0,
+    "lumenMeshSdf": 0.0,
+    "skylight": 1.3,
+    "shadowQuality": 1.0,
+    "resolutionQuality": 80.0,
+    "pigAvoidances": 0.0
+  },
+  "visual_views_inspected": 9,
+  "corrections": {
+    "chair_dimensions_cm": [
+      46.6,
+      49.35,
+      91.9
+    ],
+    "stainless_serving_cart_count": 5,
+    "corrected_fridge_and_table_order": true,
+    "photograph_details_added": [
+      "BasketWithApples",
+      "BreakfastSupplies",
+      "CleaningCloth",
+      "ClosedStorageBox",
+      "ClosetWallDecoration",
+      "CocoaBox",
+      "CoffeeMaker",
+      "CoffeePods",
+      "DoubleCerealDispenser",
+      "ForksBox",
+      "NapkinBasket",
+      "PeanutButterJar",
+      "RectangularCerealCanister",
+      "RedBullCase",
+      "SmokeDetector",
+      "TVCableWallHole",
+      "WallWear",
+      "WaterDispenser"
+    ],
+    "floor_tile_metres": [
+      4.8,
+      3.2
+    ],
+    "floor_board_width_cm": 20
+  }
+}

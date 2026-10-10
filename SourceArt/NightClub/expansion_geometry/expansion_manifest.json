@@ -1,0 +1,190 @@
+{
+  "assets": [
+    {
+      "name": "SM_NCR_OriginalUpperFloorsWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_OriginalUpperFloorsWithHole.fbx",
+      "sourceActor": "HallEnd_SM_HallEnd_ThreeRoomsFloors",
+      "materials": [
+        "MI_SSO_FloorWood",
+        "MI_SSO_S05SouthHallFloor"
+      ]
+    },
+    {
+      "name": "SM_NCR_OriginalUpperShellWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_OriginalUpperShellWithHole.fbx",
+      "sourceActor": "HallEnd_SM_HallEnd_ThreeRoomsShell",
+      "materials": [
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_S05Ceiling"
+      ]
+    },
+    {
+      "name": "COL_NCR_OriginalUpperShellWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/COL_NCR_OriginalUpperShellWithHole.fbx",
+      "sourceActor": "HallEnd_COL_HallEnd_ThreeRoomsShell",
+      "materials": [
+        "WorldGridMaterial",
+        "WorldGridMaterial_1",
+        "WorldGridMaterial_2",
+        "WorldGridMaterial_3"
+      ]
+    },
+    {
+      "name": "SM_NCR_OriginalLowerHallDoorClear",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_OriginalLowerHallDoorClear.fbx",
+      "sourceActor": "SM_Entrance_m1_m2_Solid",
+      "materials": [
+        "MI_SSO_PaintGrey",
+        "MI_SSO_MetalDark",
+        "MI_SSO_S03HallGrey",
+        "MI_SSO_S03FidelityBathSkirt",
+        "MI_SSO_FloorWood",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_Red",
+        "MI_SSO_S03FidelityLED",
+        "MI_SSO_Ceiling",
+        "MI_SSO_S03HallConcrete",
+        "MI_SSO_S03FidelityBathPaint",
+        "MI_SSO_S03FidelityBedroomPaint",
+        "MI_SSO_S03HallSkirting",
+        "MI_SSO_S03WallGrey",
+        "HFP_HallCoating"
+      ]
+    },
+    {
+      "name": "COL_NCR_OriginalLowerHallDoorClear",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/COL_NCR_OriginalLowerHallDoorClear.fbx",
+      "sourceActor": "COL_Entrance_m1_m2_Solid",
+      "materials": [
+        "WorldGridMaterial",
+        "WorldGridMaterial_1"
+      ]
+    },
+    {
+      "name": "SM_NCR_LowerRoomShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_LowerRoomShell.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_FloorBlack",
+        "M_NC_Charcoal"
+      ]
+    },
+    {
+      "name": "SM_NCR_LowerCeilingWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_LowerCeilingWithHole.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_CeilingBlack"
+      ]
+    },
+    {
+      "name": "SM_NCR_UpperDarkFloorWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_UpperDarkFloorWithHole.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_FloorBlack"
+      ]
+    },
+    {
+      "name": "SM_NCR_UpperSupportFloorWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_UpperSupportFloorWithHole.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_FloorBlack"
+      ]
+    },
+    {
+      "name": "SM_NCR_UpperExtensionCollision",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_UpperExtensionCollision.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_Charcoal",
+        "M_NC_CeilingBlack"
+      ]
+    },
+    {
+      "name": "SM_NCR_UpperWallLining",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_UpperWallLining.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_Charcoal",
+        "M_NC_CeilingBlack"
+      ]
+    },
+    {
+      "name": "SM_NCR_LowerDanceFloorInlay",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_LowerDanceFloorInlay.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_FloorSlate",
+        "M_NC_FloorBlack",
+        "M_NC_FloorGlow"
+      ]
+    },
+    {
+      "name": "SM_NCR_LowerDoorTrim",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion_geometry/SM_NCR_LowerDoorTrim.fbx",
+      "sourceActor": null,
+      "materials": [
+        "M_NC_Trim"
+      ]
+    }
+  ],
+  "materials": {
+    "M_NC_Charcoal": {
+      "color": [
+        0.014,
+        0.016,
+        0.026
+      ],
+      "roughness": 0.72
+    },
+    "M_NC_FloorBlack": {
+      "color": [
+        0.025,
+        0.028,
+        0.045
+      ],
+      "roughness": 0.24
+    },
+    "M_NC_FloorSlate": {
+      "color": [
+        0.04,
+        0.045,
+        0.065
+      ],
+      "roughness": 0.32
+    },
+    "M_NC_CeilingBlack": {
+      "color": [
+        0.008,
+        0.009,
+        0.016
+      ],
+      "roughness": 0.85
+    },
+    "M_NC_Trim": {
+      "color": [
+        0.1,
+        0.11,
+        0.14
+      ],
+      "roughness": 0.25,
+      "metallic": 0.8
+    },
+    "M_NC_FloorGlow": {
+      "color": [
+        0.015,
+        0.07,
+        0.12
+      ],
+      "roughness": 0.35,
+      "emissive": [
+        0.008,
+        0.08,
+        0.15
+      ],
+      "emissive_strength": 2
+    }
+  }
+}

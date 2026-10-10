@@ -1,5 +1,11 @@
 # Senior Sendoff
 
+## Current development handoff — October 10, 2026
+
+The current house is `Content/Story/Maps/Chapter01_House.umap`. This handoff includes the latest rooms, interactions, exterior brickwork, standing windblown grass, and detailed cars. Use **Unreal Engine 5.8.2** and **Git LFS**. On Linux, start with [the Linux development handoff](Docs/LINUX_DEVELOPMENT_HANDOFF_20261010.md) and `./Setup\ Linux\ Development.sh` to build the editor module locally.
+
+The house has substantial runtime-generated geometry and interactions in `Source/SeniorSendoff`. Rebuild the C++ module before playing; copying only the map or reusing an older game package will miss changes. The instructions and validation notes below describe earlier versions where dated. Do not re-import the old base house over this handoff.
+
 Unreal Engine 5.8 project for a three-chapter story campaign with saved checkpoints.
 
 Open `SeniorSendoff.uproject` with Unreal Engine 5.8 for editing. On this Linux machine, `./Play\ Senior\ Sendoff.sh` starts the packaged game at the lobby when it exists; pass `--editor` to run the Editor game mode instead. `./Package\ Linux\ Game.sh` rebuilds the standalone Linux Development game under `Deliverables/CombinedLinux` when the local Unreal engine is installed. Generated build, editor cache, packages, and local save data are excluded from version control. Unreal binary assets are stored with Git LFS.

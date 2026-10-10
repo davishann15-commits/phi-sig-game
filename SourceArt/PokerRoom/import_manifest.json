@@ -1,0 +1,989 @@
+{
+  "materials": {
+    "M_POK_Walnut": {
+      "color": [
+        0.2199999988079071,
+        0.10000000149011612,
+        0.0430000014603138
+      ],
+      "roughness": 0.41999998688697815,
+      "metallic": 0.0,
+      "normal_strength": 0.3,
+      "emission": 0.0,
+      "two_sided": false,
+      "base_texture": "T_POK_Walnut_BaseColor.png",
+      "normal_texture": "T_POK_Walnut_Normal.png",
+      "roughness_texture": "T_POK_Walnut_Roughness.png"
+    },
+    "M_POK_Baize": {
+      "color": [
+        0.017999999225139618,
+        0.0949999988079071,
+        0.04699999839067459
+      ],
+      "roughness": 0.8999999761581421,
+      "metallic": 0.0,
+      "normal_strength": 0.3,
+      "emission": 0.0,
+      "two_sided": false,
+      "base_texture": "T_POK_Baize_BaseColor.png",
+      "normal_texture": "T_POK_Baize_Normal.png",
+      "roughness_texture": "T_POK_Baize_Roughness.png"
+    },
+    "M_POK_RailLeather": {
+      "color": [
+        0.15000000596046448,
+        0.06499999761581421,
+        0.02500000037252903
+      ],
+      "roughness": 0.5600000023841858,
+      "metallic": 0.0,
+      "normal_strength": 0.3,
+      "emission": 0.0,
+      "two_sided": false,
+      "base_texture": "T_POK_Leather_BaseColor.png",
+      "normal_texture": "T_POK_Leather_Normal.png",
+      "roughness_texture": "T_POK_Leather_Roughness.png"
+    },
+    "M_POK_ChairLeather": {
+      "color": [
+        0.02500000037252903,
+        0.0949999988079071,
+        0.054999999701976776
+      ],
+      "roughness": 0.5600000023841858,
+      "metallic": 0.0,
+      "normal_strength": 0.3,
+      "emission": 0.0,
+      "two_sided": false,
+      "base_texture": "T_POK_ChairLeather_BaseColor.png",
+      "normal_texture": "T_POK_ChairLeather_Normal.png",
+      "roughness_texture": "T_POK_ChairLeather_Roughness.png"
+    },
+    "M_POK_SatinBrass": {
+      "color": [
+        0.5600000023841858,
+        0.33000001311302185,
+        0.0949999988079071
+      ],
+      "roughness": 0.2800000011920929,
+      "metallic": 0.8199999928474426,
+      "normal_strength": 0,
+      "emission": 0.0,
+      "two_sided": false
+    },
+    "M_POK_AntiqueBrass": {
+      "color": [
+        0.33000001311302185,
+        0.18000000715255737,
+        0.0430000014603138
+      ],
+      "roughness": 0.4300000071525574,
+      "metallic": 0.7300000190734863,
+      "normal_strength": 0,
+      "emission": 0.0,
+      "two_sided": false
+    },
+    "M_POK_BlackMetal": {
+      "color": [
+        0.01899999938905239,
+        0.020999999716877937,
+        0.01899999938905239
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.550000011920929,
+      "normal_strength": 0,
+      "emission": 0.0,
+      "two_sided": false
+    },
+    "M_POK_CupInterior": {
+      "color": [
+        0.012000000104308128,
+        0.014000000432133675,
+        0.012000000104308128
+      ],
+      "roughness": 0.23000000417232513,
+      "metallic": 0.6499999761581421,
+      "normal_strength": 0,
+      "emission": 0.0,
+      "two_sided": false
+    },
+    "M_POK_Marble": {
+      "color": [
+        0.03999999910593033,
+        0.04500000178813934,
+        0.04500000178813934
+      ],
+      "roughness": 0.25,
+      "metallic": 0.0,
+      "normal_strength": 0.3,
+      "emission": 0.0,
+      "two_sided": false,
+      "base_texture": "T_POK_Marble_BaseColor.png",
+      "normal_texture": "T_POK_Marble_Normal.png",
+      "roughness_texture": "T_POK_Marble_Roughness.png"
+    },
+    "M_POK_IvoryGlass": {
+      "color": [
+        0.6800000071525574,
+        0.5600000023841858,
+        0.3199999928474426
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "normal_strength": 0,
+      "emission": 0.0,
+      "two_sided": false
+    },
+    "M_POK_WarmLight": {
+      "color": [
+        1.0,
+        0.6899999976158142,
+        0.3199999928474426
+      ],
+      "roughness": 0.3499999940395355,
+      "metallic": 0.0,
+      "normal_strength": 0,
+      "emission": 3.0,
+      "two_sided": false
+    },
+    "M_POK_Stitch": {
+      "color": [
+        0.3499999940395355,
+        0.27000001072883606,
+        0.12999999523162842
+      ],
+      "roughness": 0.800000011920929,
+      "metallic": 0.0,
+      "normal_strength": 0,
+      "emission": 0.0,
+      "two_sided": false
+    },
+    "POK_M_PropsWalnut": {
+      "color": [
+        0.12,
+        0.051,
+        0.021
+      ],
+      "roughness": 0.34,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_PropsBrass": {
+      "color": [
+        0.56,
+        0.35,
+        0.1
+      ],
+      "roughness": 0.25,
+      "metallic": 0.75,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_PropsDarkMetal": {
+      "color": [
+        0.023,
+        0.022,
+        0.022
+      ],
+      "roughness": 0.36,
+      "metallic": 0.62,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_PropsBurgundy": {
+      "color": [
+        0.19,
+        0.012,
+        0.03
+      ],
+      "roughness": 0.5,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_CardEdge": {
+      "color": [
+        0.77,
+        0.73,
+        0.6
+      ],
+      "roughness": 0.74,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_CardAtlas": {
+      "color": [
+        0.92,
+        0.9,
+        0.8
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_CardAtlas.png"
+    },
+    "POK_M_StaticCards": {
+      "color": [
+        0.92,
+        0.9,
+        0.8
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_CardAtlas.png"
+    },
+    "POK_M_CardBack": {
+      "color": [
+        0.2,
+        0.03,
+        0.05
+      ],
+      "roughness": 0.55,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_CardBack.png"
+    },
+    "POK_M_ChipIvory": {
+      "color": [
+        0.89,
+        0.82,
+        0.61
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_Chip5Side": {
+      "color": [
+        0.4,
+        0.028,
+        0.04
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_Chip5Top": {
+      "color": [
+        0.4,
+        0.028,
+        0.04
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_Chip5.png"
+    },
+    "POK_M_Chip25Side": {
+      "color": [
+        0.022,
+        0.23,
+        0.11
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_Chip25Top": {
+      "color": [
+        0.022,
+        0.23,
+        0.11
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_Chip25.png"
+    },
+    "POK_M_Chip100Side": {
+      "color": [
+        0.016,
+        0.014,
+        0.018
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_Chip100Top": {
+      "color": [
+        0.016,
+        0.014,
+        0.018
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_Chip100.png"
+    },
+    "POK_M_Dealer": {
+      "color": [
+        0.8,
+        0.73,
+        0.55
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_Dealer.png"
+    },
+    "POK_M_LastHandSign": {
+      "color": [
+        0.15,
+        0.1,
+        0.1
+      ],
+      "roughness": 0.6,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_LastHandSign.png"
+    },
+    "POK_M_SpadeArt": {
+      "color": [
+        0.75,
+        0.66,
+        0.47
+      ],
+      "roughness": 0.75,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_SpadeArt.png"
+    },
+    "POK_M_HeartArt": {
+      "color": [
+        0.75,
+        0.66,
+        0.47
+      ],
+      "roughness": 0.75,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_HeartArt.png"
+    },
+    "POK_M_ClockDial": {
+      "color": [
+        0.73,
+        0.69,
+        0.52
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_ClockDial.png"
+    },
+    "POK_M_AmberBottle": {
+      "color": [
+        0.075,
+        0.039,
+        0.012
+      ],
+      "roughness": 0.19,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_SmokedGlass": {
+      "color": [
+        0.26,
+        0.39,
+        0.33
+      ],
+      "roughness": 0.12,
+      "metallic": 0.08,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "translucent": true,
+      "opacity": 0.42
+    },
+    "POK_M_Whiskey": {
+      "color": [
+        0.3,
+        0.09,
+        0.012
+      ],
+      "roughness": 0.14,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_BottleLabel": {
+      "color": [
+        0.68,
+        0.52,
+        0.29
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false,
+      "base_texture": "POK_T_BottleLabel.png"
+    },
+    "POK_M_Napkin": {
+      "color": [
+        0.73,
+        0.66,
+        0.48
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "normal_strength": 0,
+      "emission": 0,
+      "two_sided": false
+    },
+    "POK_M_WallWine": {
+      "color": [
+        0.115,
+        0.025,
+        0.033
+      ],
+      "roughness": 0.89,
+      "base_texture": "POK_T_DecoWallpaper.png"
+    },
+    "POK_M_RecessWalnut": {
+      "color": [
+        0.064,
+        0.025,
+        0.013
+      ],
+      "roughness": 0.59
+    },
+    "POK_M_PanelWalnut": {
+      "color": [
+        0.12,
+        0.05,
+        0.025
+      ],
+      "roughness": 0.47
+    },
+    "POK_M_RoomBrass": {
+      "color": [
+        0.44,
+        0.26,
+        0.075
+      ],
+      "roughness": 0.36,
+      "metallic": 0.83
+    },
+    "POK_M_Rug": {
+      "color": [
+        0.22,
+        0.025,
+        0.035
+      ],
+      "roughness": 0.93,
+      "base_texture": "POK_T_Rug.png"
+    },
+    "POK_M_SconceGlass": {
+      "color": [
+        0.93,
+        0.6,
+        0.26
+      ],
+      "roughness": 0.4,
+      "emission": 1.4
+    }
+  },
+  "textures": [
+    "T_POK_Walnut_BaseColor.png",
+    "T_POK_Walnut_Roughness.png",
+    "T_POK_Walnut_Normal.png",
+    "T_POK_Baize_BaseColor.png",
+    "T_POK_Baize_Roughness.png",
+    "T_POK_Baize_Normal.png",
+    "T_POK_Leather_BaseColor.png",
+    "T_POK_Leather_Roughness.png",
+    "T_POK_Leather_Normal.png",
+    "T_POK_ChairLeather_BaseColor.png",
+    "T_POK_ChairLeather_Roughness.png",
+    "T_POK_ChairLeather_Normal.png",
+    "T_POK_Marble_BaseColor.png",
+    "T_POK_Marble_Roughness.png",
+    "T_POK_Marble_Normal.png",
+    "POK_T_SpadeArt.png",
+    "POK_T_BottleLabel.png",
+    "POK_T_ClockDial.png",
+    "POK_T_CardAtlas.png",
+    "POK_T_Chip25.png",
+    "POK_T_Chip5.png",
+    "POK_T_Chip100.png",
+    "POK_T_CardBack.png",
+    "POK_T_HeartArt.png",
+    "POK_T_Dealer.png",
+    "POK_T_LastHandSign.png",
+    "POK_T_DecoWallpaper.png",
+    "POK_T_Rug.png"
+  ],
+  "flip_green_textures": [
+    "T_POK_Walnut_Normal.png",
+    "T_POK_Baize_Normal.png",
+    "T_POK_Leather_Normal.png",
+    "T_POK_ChairLeather_Normal.png",
+    "T_POK_Marble_Normal.png"
+  ],
+  "meshes": [
+    {
+      "name": "SM_POK_Table",
+      "file": "SM_POK_Table.fbx",
+      "boundsCm": [
+        [
+          -150.0,
+          -75.0,
+          0.4
+        ],
+        [
+          150.0,
+          75.0,
+          80.0
+        ]
+      ],
+      "group": "furniture",
+      "complex_collision": false
+    },
+    {
+      "name": "SM_POK_Chair",
+      "file": "SM_POK_Chair.fbx",
+      "boundsCm": [
+        [
+          -29.0,
+          -28.65,
+          0.9836
+        ],
+        [
+          29.0,
+          26.9431,
+          91.8
+        ]
+      ],
+      "group": "furniture",
+      "complex_collision": false
+    },
+    {
+      "name": "SM_POK_Sideboard",
+      "file": "SM_POK_Sideboard.fbx",
+      "boundsCm": [
+        [
+          -92.0,
+          -27.0,
+          0.85
+        ],
+        [
+          92.0,
+          23.0,
+          92.25
+        ]
+      ],
+      "group": "furniture",
+      "complex_collision": false
+    },
+    {
+      "name": "SM_POK_Pendant",
+      "file": "SM_POK_Pendant.fbx",
+      "boundsCm": [
+        [
+          -55.4,
+          -16.4,
+          -64.7
+        ],
+        [
+          55.4,
+          16.4,
+          0.0
+        ]
+      ],
+      "group": "furniture",
+      "complex_collision": false
+    },
+    {
+      "name": "SM_POK_Table_Collision",
+      "file": "SM_POK_Table_Collision.fbx",
+      "boundsCm": [
+        [
+          -149.8,
+          -74.8,
+          5.0
+        ],
+        [
+          149.8,
+          74.8,
+          80.1
+        ]
+      ],
+      "group": "furniture",
+      "complex_collision": true
+    },
+    {
+      "name": "SM_POK_Sideboard_Collision",
+      "file": "SM_POK_Sideboard_Collision.fbx",
+      "boundsCm": [
+        [
+          -92.0,
+          -23.0,
+          0.05
+        ],
+        [
+          92.0,
+          23.0,
+          92.35
+        ]
+      ],
+      "group": "furniture",
+      "complex_collision": true
+    },
+    {
+      "name": "POK_SM_Card",
+      "file": "POK_SM_Card.fbx",
+      "boundsCm": [
+        [
+          -4.449999809265137,
+          -6.199999809265137,
+          0.0
+        ],
+        [
+          4.449999809265137,
+          6.199999809265137,
+          0.07999999821186066
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_Deck",
+      "file": "POK_SM_Deck.fbx",
+      "boundsCm": [
+        [
+          -4.46999979019165,
+          -6.21999979019165,
+          0.0
+        ],
+        [
+          4.46999979019165,
+          6.21999979019165,
+          2.1599998474121094
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_ChipStack5",
+      "file": "POK_SM_ChipStack5.fbx",
+      "boundsCm": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          3.0900001525878906
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_ChipStack25",
+      "file": "POK_SM_ChipStack25.fbx",
+      "boundsCm": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          3.0900001525878906
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_ChipStack100",
+      "file": "POK_SM_ChipStack100.fbx",
+      "boundsCm": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          3.0900001525878906
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_TablePack",
+      "file": "POK_SM_TablePack.fbx",
+      "boundsCm": [
+        [
+          -97.5,
+          -24.140483856201172,
+          0.0
+        ],
+        [
+          105.90304565429688,
+          24.206356048583984,
+          3.9100000858306885
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_ChipRack",
+      "file": "POK_SM_ChipRack.fbx",
+      "boundsCm": [
+        [
+          -16.5,
+          -7.5,
+          0.0
+        ],
+        [
+          16.5,
+          7.5,
+          3.5
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_BarClutter",
+      "file": "POK_SM_BarClutter.fbx",
+      "boundsCm": [
+        [
+          -46.0,
+          -12.399999618530273,
+          -1.5
+        ],
+        [
+          48.0,
+          14.399999618530273,
+          30.0
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_LastHandSign",
+      "file": "POK_SM_LastHandSign.fbx",
+      "boundsCm": [
+        [
+          -63.5,
+          -3.6700000762939453,
+          0.0
+        ],
+        [
+          63.5,
+          1.5,
+          76.0
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_SpadeArt",
+      "file": "POK_SM_SpadeArt.fbx",
+      "boundsCm": [
+        [
+          -24.5,
+          -3.6700000762939453,
+          0.0
+        ],
+        [
+          24.5,
+          1.5,
+          68.0
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_HeartArt",
+      "file": "POK_SM_HeartArt.fbx",
+      "boundsCm": [
+        [
+          -24.5,
+          -3.6700000762939453,
+          0.0
+        ],
+        [
+          24.5,
+          1.5,
+          68.0
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_Clock",
+      "file": "POK_SM_Clock.fbx",
+      "boundsCm": [
+        [
+          -20.100000381469727,
+          -5.000000953674316,
+          -0.10000056028366089
+        ],
+        [
+          20.100000381469727,
+          8.74227794156468e-07,
+          40.099998474121094
+        ]
+      ],
+      "group": "props",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_Wallpaper",
+      "file": "POK_SM_Wallpaper.fbx",
+      "boundsCm": [
+        [
+          -2971.999931335449,
+          -1371.8424797058105,
+          392.300009727478
+        ],
+        [
+          -2349.232864379883,
+          -885.0000381469727,
+          565.7999992370605
+        ]
+      ],
+      "group": "geometry",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_Wainscot",
+      "file": "POK_SM_Wainscot.fbx",
+      "boundsCm": [
+        [
+          -2973.9999771118164,
+          -1373.842430114746,
+          302.30000019073486
+        ],
+        [
+          -2347.2328186035156,
+          -882.9999923706055,
+          391.79999828338623
+        ]
+      ],
+      "group": "geometry",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_BrassTrim",
+      "file": "POK_SM_BrassTrim.fbx",
+      "boundsCm": [
+        [
+          -2972.0001220703125,
+          -1371.8425750732422,
+          391.29998683929443
+        ],
+        [
+          -2349.232864379883,
+          -884.999942779541,
+          391.8999910354614
+        ]
+      ],
+      "group": "geometry",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_Rug",
+      "file": "POK_SM_Rug.fbx",
+      "boundsCm": [
+        [
+          -2904.9999237060547,
+          -1280.0000190734863,
+          302.48000621795654
+        ],
+        [
+          -2435.0000381469727,
+          -939.9999618530273,
+          302.48000621795654
+        ]
+      ],
+      "group": "geometry",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_WallSconces",
+      "file": "POK_SM_WallSconces.fbx",
+      "boundsCm": [
+        [
+          -2968.9998626708984,
+          -1239.0000343322754,
+          449.0000247955322
+        ],
+        [
+          -2958.999824523926,
+          -1001.0000228881836,
+          490.00000953674316
+        ]
+      ],
+      "group": "geometry",
+      "complex_collision": false
+    },
+    {
+      "name": "POK_SM_OtherHallPracticalLights",
+      "file": "POK_SM_OtherHallPracticalLights.fbx",
+      "boundsCm": null,
+      "group": "geometry",
+      "complex_collision": false
+    }
+  ]
+}

@@ -1,0 +1,1163 @@
+{
+  "schema": "sso.hall-end-three-rooms.v1",
+  "replacements": [
+    {
+      "actor": "SM_Upper_m1_m2_Solid",
+      "mesh": "SM_Upper_m1_m2_ThreeRoomsCut",
+      "collision": "NoCollision"
+    },
+    {
+      "actor": "COL_Upper_m1_m2_Solid",
+      "mesh": "COL_Upper_m1_m2_ThreeRoomsCut",
+      "collision": "BlockAll"
+    }
+  ],
+  "actors": [
+    {
+      "label": "HallEnd_SM_HallEnd_ThreeRoomsShell",
+      "mesh": "SM_HallEnd_ThreeRoomsShell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "HallEnd_SM_HallEnd_ThreeRoomsFloors",
+      "mesh": "SM_HallEnd_ThreeRoomsFloors",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "HallEnd_SM_HallEnd_ThreeRoomsTrim",
+      "mesh": "SM_HallEnd_ThreeRoomsTrim",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "HallEnd_SM_HallEnd_ThreeRoomsPracticalLights",
+      "mesh": "SM_HallEnd_ThreeRoomsPracticalLights",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "HallEnd_COL_HallEnd_ThreeRoomsShell",
+      "mesh": "COL_HallEnd_ThreeRoomsShell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "label": "HallEnd_SM_HallEnd_West_FrameWorld",
+      "mesh": "SM_HallEnd_West_FrameWorld",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "HallEnd_COL_HallEnd_West_FrameWorld",
+      "mesh": "COL_HallEnd_West_FrameWorld",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "label": "HallEnd_SM_HallEnd_End_FrameWorld",
+      "mesh": "SM_HallEnd_End_FrameWorld",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "HallEnd_COL_HallEnd_End_FrameWorld",
+      "mesh": "COL_HallEnd_End_FrameWorld",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "label": "HallEnd_SM_HallEnd_East_FrameWorld",
+      "mesh": "SM_HallEnd_East_FrameWorld",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "HallEnd_COL_HallEnd_East_FrameWorld",
+      "mesh": "COL_HallEnd_East_FrameWorld",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "label": "HallEnd_BudLightFlag",
+      "mesh": "SM_HallEnd_BudLightFlag",
+      "location": [
+        -2318,
+        -910,
+        416
+      ],
+      "yaw": -90,
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "label": "HallEnd_SantaBass",
+      "mesh": "SM_HallEnd_SantaBass",
+      "location": [
+        -2317,
+        -735,
+        414
+      ],
+      "yaw": -90,
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ]
+    },
+    {
+      "label": "HallEnd_ExitArrowLight",
+      "mesh": "SM_HallEnd_ExitArrowLight",
+      "location": [
+        -2317,
+        -880,
+        518
+      ],
+      "yaw": -90
+    },
+    {
+      "label": "HallEnd_RedAlarm",
+      "mesh": "SM_HallEnd_Alarm",
+      "location": [
+        -2317,
+        -720,
+        505
+      ],
+      "yaw": -90
+    }
+  ],
+  "meshes": [
+    {
+      "name": "SM_Upper_m1_m2_ThreeRoomsCut",
+      "file": "SM_Upper_m1_m2_ThreeRoomsCut.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_S05BathBlue",
+        "MI_SSO_S05Ceiling",
+        "MI_SSO_Concrete",
+        "MI_SSO_MetalBrass",
+        "MI_SSO_LightWarm",
+        "MI_SSO_S05SouthHallCeiling",
+        "MI_SSO_S05SouthHallFloor",
+        "MI_SSO_S05SouthHallPaint",
+        "MI_SSO_S05SouthHallBaseboard",
+        "MI_SSO_FloorWood"
+      ]
+    },
+    {
+      "name": "COL_Upper_m1_m2_ThreeRoomsCut",
+      "file": "COL_Upper_m1_m2_ThreeRoomsCut.fbx",
+      "complex_collision": true,
+      "materialSlots": [
+        "WorldGridMaterial"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_ThreeRoomsShell",
+      "file": "SM_HallEnd_ThreeRoomsShell.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_S05Ceiling"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_ThreeRoomsFloors",
+      "file": "SM_HallEnd_ThreeRoomsFloors.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "MI_SSO_FloorWood",
+        "MI_SSO_S05SouthHallFloor"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_ThreeRoomsTrim",
+      "file": "SM_HallEnd_ThreeRoomsTrim.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "MI_SSO_PaintWhite"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_ThreeRoomsPracticalLights",
+      "file": "SM_HallEnd_ThreeRoomsPracticalLights.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "MI_SSO_MetalBrass",
+        "MI_SSO_LightWarm"
+      ]
+    },
+    {
+      "name": "COL_HallEnd_ThreeRoomsShell",
+      "file": "COL_HallEnd_ThreeRoomsShell.fbx",
+      "complex_collision": true,
+      "materialSlots": [
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_S05Ceiling",
+        "MI_SSO_FloorWood",
+        "MI_SSO_S05SouthHallFloor"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_West_LeafWorld",
+      "file": "SM_HallEnd_West_LeafWorld.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_3Doors_WarmOffWhitePaint",
+        "M_3Doors_PanelRecessPaint",
+        "M_3Doors_CharcoalElectronicHousing",
+        "M_3Doors_RubberKeypadKeys",
+        "M_3Doors_KeypadLegends",
+        "M_3Doors_DarkHardware",
+        "M_3Doors_BrushedSilverLever"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_West_FrameWorld",
+      "file": "SM_HallEnd_West_FrameWorld.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_3Doors_MatchingWhiteJamb",
+        "M_3Doors_DarkHardware",
+        "M_3Doors_BrushedSilverLever"
+      ]
+    },
+    {
+      "name": "COL_HallEnd_West_FrameWorld",
+      "file": "COL_HallEnd_West_FrameWorld.fbx",
+      "complex_collision": true,
+      "materialSlots": [
+        "M_3Doors_Collider"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_End_LeafWorld",
+      "file": "SM_HallEnd_End_LeafWorld.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_3Doors_WarmOffWhitePaint",
+        "M_3Doors_PanelRecessPaint",
+        "M_3Doors_CharcoalElectronicHousing",
+        "M_3Doors_RubberKeypadKeys",
+        "M_3Doors_KeypadLegends",
+        "M_3Doors_DarkHardware",
+        "M_3Doors_BrushedSilverLever"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_End_FrameWorld",
+      "file": "SM_HallEnd_End_FrameWorld.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_3Doors_MatchingWhiteJamb",
+        "M_3Doors_DarkHardware",
+        "M_3Doors_BrushedSilverLever"
+      ]
+    },
+    {
+      "name": "COL_HallEnd_End_FrameWorld",
+      "file": "COL_HallEnd_End_FrameWorld.fbx",
+      "complex_collision": true,
+      "materialSlots": [
+        "M_3Doors_Collider"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_East_LeafWorld",
+      "file": "SM_HallEnd_East_LeafWorld.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_3Doors_WarmOffWhitePaint",
+        "M_3Doors_PanelRecessPaint",
+        "M_3Doors_CharcoalElectronicHousing",
+        "M_3Doors_RubberKeypadKeys",
+        "M_3Doors_KeypadLegends",
+        "M_3Doors_DarkHardware",
+        "M_3Doors_BrushedSilverLever"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_East_FrameWorld",
+      "file": "SM_HallEnd_East_FrameWorld.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_3Doors_MatchingWhiteJamb",
+        "M_3Doors_DarkHardware",
+        "M_3Doors_BrushedSilverLever"
+      ]
+    },
+    {
+      "name": "COL_HallEnd_East_FrameWorld",
+      "file": "COL_HallEnd_East_FrameWorld.fbx",
+      "complex_collision": true,
+      "materialSlots": [
+        "M_3Doors_Collider"
+      ]
+    },
+    {
+      "name": "SM_HallEnd_BudLightFlag",
+      "file": "SM_HallEnd_BudLightFlag.fbx",
+      "boundsCm": [
+        [
+          -75.00068664550781,
+          -0.5956324338912964,
+          -45.06999969482422
+        ],
+        [
+          75.06999969482422,
+          1.4550529718399048,
+          45.06999969482422
+        ]
+      ],
+      "sizeCm": [
+        150.07068634033203,
+        2.050685405731201,
+        90.13999938964844
+      ],
+      "triangles": 7252,
+      "materialSlots": [
+        "M_HallEnd_BudLightCloth",
+        "M_HallEnd_OrangeHem",
+        "M_HallEnd_Ivory",
+        "M_HallEnd_GrommetMetal"
+      ],
+      "pivot": "centre of wall artwork",
+      "collision": "NoCollision",
+      "note": "Exact extracted orange flag art, thin static draped cloth, stitched hems and two metal grommets. Natural front face150x90cm; keep uniform scale."
+    },
+    {
+      "name": "SM_HallEnd_SantaBass",
+      "file": "SM_HallEnd_SantaBass.fbx",
+      "boundsCm": [
+        [
+          -19.0,
+          -0.800000011920929,
+          -12.532815933227539
+        ],
+        [
+          19.0,
+          6.452211856842041,
+          12.534668922424316
+        ]
+      ],
+      "sizeCm": [
+        38.0,
+        7.25221186876297,
+        25.067484855651855
+      ],
+      "triangles": 5148,
+      "materialSlots": [
+        "M_HallEnd_PlaqueEdge",
+        "M_HallEnd_PlaqueWood",
+        "M_HallEnd_BassPhoto",
+        "M_HallEnd_FishEye",
+        "M_HallEnd_Ivory",
+        "M_HallEnd_SantaRed",
+        "M_HallEnd_SantaTrim",
+        "M_HallEnd_BassLabel"
+      ],
+      "pivot": "centre of wall artwork",
+      "collision": "NoCollision",
+      "note": "Classic shaped brown/dark mount; shallow3D bass with exact photo color projection, glass eye, tiny dimensional Santa hat and plaque label/buttons."
+    },
+    {
+      "name": "SM_HallEnd_ExitArrowLight",
+      "file": "SM_HallEnd_ExitArrowLight.fbx",
+      "boundsCm": [
+        [
+          -16.5,
+          -2.9000000953674316,
+          -11.0
+        ],
+        [
+          16.5,
+          3.049999952316284,
+          11.0
+        ]
+      ],
+      "sizeCm": [
+        33.0,
+        5.950000047683716,
+        22.0
+      ],
+      "triangles": 542,
+      "materialSlots": [
+        "M_HallEnd_Ivory",
+        "M_HallEnd_ExitFace",
+        "M_HallEnd_GrommetMetal"
+      ],
+      "pivot": "centre of wall artwork",
+      "collision": "NoCollision",
+      "note": "33x22cm white EXIT box, exact photographed red left arrow and lettering, softly emissive face. No flashing/tick required."
+    },
+    {
+      "name": "SM_HallEnd_Alarm",
+      "file": "SM_HallEnd_Alarm.fbx",
+      "boundsCm": [
+        [
+          -6.0,
+          -2.200000047683716,
+          -7.0
+        ],
+        [
+          6.0,
+          2.450000047683716,
+          7.0
+        ]
+      ],
+      "sizeCm": [
+        12.0,
+        4.650000095367432,
+        14.0
+      ],
+      "triangles": 422,
+      "materialSlots": [
+        "M_HallEnd_AlarmRed",
+        "M_HallEnd_AlarmFace",
+        "M_HallEnd_GrommetMetal"
+      ],
+      "pivot": "centre of wall artwork",
+      "collision": "NoCollision",
+      "note": "Small red wall alarm/strobe fixture with exact photographed face and dimensional rounded housing."
+    }
+  ],
+  "materials": {
+    "M_3Doors_WarmOffWhitePaint": {
+      "color": [
+        0.69,
+        0.67,
+        0.6
+      ],
+      "roughness": 0.64,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "T_3Doors_OffWhitePaint_BaseColor.png",
+      "roughness_texture": "T_3Doors_OffWhitePaint_Roughness.png"
+    },
+    "M_3Doors_PanelRecessPaint": {
+      "color": [
+        0.61,
+        0.6,
+        0.54
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "T_3Doors_OffWhitePaint_BaseColor.png",
+      "roughness_texture": "T_3Doors_OffWhitePaint_Roughness.png"
+    },
+    "M_3Doors_MatchingWhiteJamb": {
+      "color": [
+        0.7,
+        0.68,
+        0.62
+      ],
+      "roughness": 0.64,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_3Doors_BrushedSilverLever": {
+      "color": [
+        0.43,
+        0.45,
+        0.46
+      ],
+      "roughness": 0.28,
+      "metallic": 0.93,
+      "uv_scale": 1
+    },
+    "M_3Doors_CharcoalElectronicHousing": {
+      "color": [
+        0.008,
+        0.01,
+        0.011
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_3Doors_RubberKeypadKeys": {
+      "color": [
+        0.031,
+        0.035,
+        0.036
+      ],
+      "roughness": 0.67,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_3Doors_KeypadLegends": {
+      "color": [
+        0.58,
+        0.61,
+        0.59
+      ],
+      "roughness": 0.48,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_3Doors_DarkHardware": {
+      "color": [
+        0.016,
+        0.018,
+        0.019
+      ],
+      "roughness": 0.36,
+      "metallic": 0.7,
+      "uv_scale": 1
+    },
+    "M_3Doors_Collider": {
+      "color": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_HallEnd_BudLightCloth": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "two_sided": true,
+      "base_texture": "T_HallEnd_BudLightFlag.png"
+    },
+    "M_HallEnd_OrangeHem": {
+      "color": [
+        0.43,
+        0.21,
+        0.035
+      ],
+      "roughness": 0.86,
+      "metallic": 0
+    },
+    "M_HallEnd_Ivory": {
+      "color": [
+        0.76,
+        0.77,
+        0.71
+      ],
+      "roughness": 0.44,
+      "metallic": 0
+    },
+    "M_HallEnd_GrommetMetal": {
+      "color": [
+        0.56,
+        0.55,
+        0.47
+      ],
+      "roughness": 0.27,
+      "metallic": 0.8
+    },
+    "M_HallEnd_PlaqueEdge": {
+      "color": [
+        0.024,
+        0.027,
+        0.021
+      ],
+      "roughness": 0.39,
+      "metallic": 0.06
+    },
+    "M_HallEnd_PlaqueWood": {
+      "color": [
+        0.17,
+        0.12,
+        0.05
+      ],
+      "roughness": 0.66,
+      "metallic": 0
+    },
+    "M_HallEnd_BassPhoto": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.34,
+      "metallic": 0,
+      "masked": true,
+      "mask_texture": "T_HallEnd_BassColor.png",
+      "mask_channel": "A",
+      "clip": 0.3,
+      "two_sided": true,
+      "base_texture": "T_HallEnd_BassColor.png"
+    },
+    "M_HallEnd_BassLabel": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.52,
+      "metallic": 0,
+      "base_texture": "T_HallEnd_BassLabel.png"
+    },
+    "M_HallEnd_SantaRed": {
+      "color": [
+        0.39,
+        0.014,
+        0.024
+      ],
+      "roughness": 0.85,
+      "metallic": 0
+    },
+    "M_HallEnd_SantaTrim": {
+      "color": [
+        0.88,
+        0.88,
+        0.79
+      ],
+      "roughness": 0.94,
+      "metallic": 0
+    },
+    "M_HallEnd_FishEye": {
+      "color": [
+        0.012,
+        0.017,
+        0.011
+      ],
+      "roughness": 0.07,
+      "metallic": 0
+    },
+    "M_HallEnd_ExitFace": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "emission": 0.4,
+      "base_texture": "T_HallEnd_ExitFace.png"
+    },
+    "M_HallEnd_AlarmRed": {
+      "color": [
+        0.34,
+        0.016,
+        0.014
+      ],
+      "roughness": 0.4,
+      "metallic": 0
+    },
+    "M_HallEnd_AlarmFace": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.51,
+      "metallic": 0,
+      "base_texture": "T_HallEnd_AlarmFace.png"
+    }
+  },
+  "lights": [
+    {
+      "label": "HallEnd_west_Practical",
+      "location": [
+        -2660.6,
+        -1113,
+        547.1
+      ],
+      "intensity": 2100,
+      "attenuation_radius": 720,
+      "color": [
+        1,
+        0.81,
+        0.6
+      ],
+      "cast_shadows": false,
+      "source_radius": 28,
+      "source_length": 18
+    },
+    {
+      "label": "HallEnd_end_Practical",
+      "location": [
+        -2190,
+        -1645,
+        547.1
+      ],
+      "intensity": 2100,
+      "attenuation_radius": 720,
+      "color": [
+        1,
+        0.81,
+        0.6
+      ],
+      "cast_shadows": false,
+      "source_radius": 28,
+      "source_length": 18
+    },
+    {
+      "label": "HallEnd_east_Practical",
+      "location": [
+        -1749.7,
+        -1113,
+        547.1
+      ],
+      "intensity": 2100,
+      "attenuation_radius": 720,
+      "color": [
+        1,
+        0.81,
+        0.6
+      ],
+      "cast_shadows": false,
+      "source_radius": 28,
+      "source_length": 18
+    },
+    {
+      "label": "HallEnd_hall_Practical",
+      "location": [
+        -2180.3,
+        -1015,
+        547.1
+      ],
+      "intensity": 1300,
+      "attenuation_radius": 510,
+      "color": [
+        1,
+        0.81,
+        0.6
+      ],
+      "cast_shadows": false,
+      "source_radius": 28,
+      "source_length": 18
+    },
+    {
+      "label": "HallEnd_DisplayFill",
+      "location": [
+        -2184,
+        -875,
+        537
+      ],
+      "intensity": 650,
+      "radius": 430,
+      "color": [
+        0.99,
+        0.95,
+        0.88
+      ],
+      "cast_shadows": false
+    },
+    {
+      "label": "HallEnd_ExitGlow",
+      "location": [
+        -2301,
+        -880,
+        518
+      ],
+      "intensity": 25,
+      "radius": 70,
+      "color": [
+        1,
+        0.96,
+        0.87
+      ],
+      "cast_shadows": false
+    }
+  ],
+  "doors": [
+    {
+      "label": "HallEnd_West",
+      "id": "HallEnd_West",
+      "hinge": [
+        -2334.8328,
+        -1326,
+        302.3
+      ],
+      "center": [
+        -2334.8328,
+        -1245,
+        407.8
+      ],
+      "open_yaw": 90.0,
+      "panel_center": [
+        -2334.8328,
+        -1245.0,
+        407.3
+      ],
+      "panel_half_extent": [
+        5.3,
+        81,
+        105
+      ],
+      "leaf": "SM_HallEnd_West_LeafWorld",
+      "closed_yaw": 0,
+      "locked": false,
+      "added_handle": null,
+      "original_glass": null
+    },
+    {
+      "label": "HallEnd_End",
+      "id": "HallEnd_End",
+      "hinge": [
+        -2096,
+        -1386.2425,
+        302.3
+      ],
+      "center": [
+        -2177,
+        -1386.2425,
+        407.8
+      ],
+      "open_yaw": 90.0,
+      "panel_center": [
+        -2177,
+        -1386.2425,
+        407.3
+      ],
+      "panel_half_extent": [
+        81,
+        5.3,
+        105
+      ],
+      "leaf": "SM_HallEnd_End_LeafWorld",
+      "closed_yaw": 0,
+      "locked": false,
+      "added_handle": null,
+      "original_glass": null
+    },
+    {
+      "label": "HallEnd_East",
+      "id": "HallEnd_East",
+      "hinge": [
+        -2025.7729,
+        -1179,
+        302.3
+      ],
+      "center": [
+        -2025.7729,
+        -1260,
+        407.8
+      ],
+      "open_yaw": 90.0,
+      "panel_center": [
+        -2025.7729,
+        -1260.0,
+        407.3
+      ],
+      "panel_half_extent": [
+        5.3,
+        81,
+        105
+      ],
+      "leaf": "SM_HallEnd_East_LeafWorld",
+      "closed_yaw": 0,
+      "locked": false,
+      "added_handle": null,
+      "original_glass": null
+    }
+  ],
+  "remove_actors": [
+    "OriginalDoor_Upper_m1_m2_Solid_01"
+  ],
+  "remove_door_ids": [
+    "SM_OriginalLeaf_Upper_m1_m2_Solid_01"
+  ],
+  "audit": [
+    {
+      "source": "SM_Upper_m1_m2_Solid",
+      "mesh": "SM_Upper_m1_m2_ThreeRoomsCut",
+      "originalFaces": 11128,
+      "outputPolygons": 9541,
+      "removedComponents": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        65,
+        66,
+        67,
+        68
+      ],
+      "intersectedFaces": 122,
+      "exactUnchangedOriginalFaces": 9314,
+      "maxRoundtripMetres": 1.719260808386025e-06
+    },
+    {
+      "source": "COL_Upper_m1_m2_Solid",
+      "mesh": "COL_Upper_m1_m2_ThreeRoomsCut",
+      "originalFaces": 436,
+      "outputPolygons": 449,
+      "removedComponents": [
+        13
+      ],
+      "intersectedFaces": 42,
+      "exactUnchangedOriginalFaces": 382,
+      "maxRoundtripMetres": 1.719260808386025e-06
+    }
+  ],
+  "layout": {
+    "rooms": [
+      {
+        "id": "west",
+        "clear_bounds": [
+          [
+            -2972,
+            -1371.8425,
+            302.3
+          ],
+          [
+            -2349.2328,
+            -885,
+            566.1
+          ]
+        ],
+        "light": [
+          -2660.6,
+          -1113,
+          548.3
+        ]
+      },
+      {
+        "id": "end",
+        "clear_bounds": [
+          [
+            -2490,
+            -1840,
+            302.3
+          ],
+          [
+            -1890,
+            -1400.6425,
+            566.1
+          ]
+        ],
+        "light": [
+          -2190,
+          -1645,
+          548.3
+        ]
+      },
+      {
+        "id": "east",
+        "clear_bounds": [
+          [
+            -2011.3729,
+            -1371.8425,
+            302.3
+          ],
+          [
+            -1488,
+            -885,
+            566.1
+          ]
+        ],
+        "light": [
+          -1749.7,
+          -1113,
+          548.3
+        ]
+      }
+    ],
+    "floorZ": 302.3,
+    "ceilingZ": 566.1,
+    "hallClearX": [
+      -2320.4328,
+      -2040.1729
+    ],
+    "westOpeningY": [
+      -1326.9,
+      -1163.1
+    ],
+    "eastOpeningY": [
+      -1341.9,
+      -1178.1
+    ],
+    "endOpeningX": [
+      -2258.9,
+      -2095.1
+    ],
+    "propWall": {
+      "X": -2320.4328,
+      "usableY": [
+        -1100,
+        -620
+      ],
+      "usableZ": [
+        327,
+        545
+      ],
+      "facing": "east"
+    },
+    "adjacentUpperM1M1MinimumX": -1459.8,
+    "eastNewOuterWallMaximumX": -1468,
+    "sourceTransform": "Native structure Blender metres -> UEcm [180X,-180Y,100Z]. Static additions [100X,-100Y,100Z]."
+  },
+  "doorOrientationRefinement": {
+    "changedMeshes": [
+      "COL_HallEnd_End_FrameWorld",
+      "SM_HallEnd_East_LeafWorld",
+      "SM_HallEnd_End_FrameWorld",
+      "SM_HallEnd_End_LeafWorld",
+      "SM_HallEnd_West_LeafWorld"
+    ],
+    "unchangedMeshesBitwise": [
+      "COL_HallEnd_East_FrameWorld",
+      "COL_HallEnd_ThreeRoomsShell",
+      "COL_HallEnd_West_FrameWorld",
+      "COL_Upper_m1_m2_ThreeRoomsCut",
+      "SM_HallEnd_East_FrameWorld",
+      "SM_HallEnd_ThreeRoomsFloors",
+      "SM_HallEnd_ThreeRoomsPracticalLights",
+      "SM_HallEnd_ThreeRoomsShell",
+      "SM_HallEnd_ThreeRoomsTrim",
+      "SM_HallEnd_West_FrameWorld",
+      "SM_Upper_m1_m2_ThreeRoomsCut"
+    ],
+    "endHinge": [
+      -2096,
+      -1386.2425,
+      302.3
+    ],
+    "endOpeningX": [
+      -2258.9,
+      -2095.1
+    ],
+    "endOpenYaw": 90,
+    "keypadFacing": "All numeric keypads face the hallway. End lever is left when viewed from hallway.",
+    "method": "Reflect kit local Y; reverse face winding, UV loop order, and transformed corner normal loop order."
+  },
+  "textures": [
+    "T_3Doors_OffWhitePaint_BaseColor.png",
+    "T_3Doors_OffWhitePaint_Roughness.png",
+    "T_HallEnd_AlarmFace.png",
+    "T_HallEnd_BassColor.png",
+    "T_HallEnd_BassLabel.png",
+    "T_HallEnd_BudLightFlag.png",
+    "T_HallEnd_ExitFace.png"
+  ]
+}

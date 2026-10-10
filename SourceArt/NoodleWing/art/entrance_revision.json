@@ -1,0 +1,492 @@
+{
+  "assets": [
+    {
+      "name": "SM_NW_HallWalls",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_NW_HallWalls.fbx",
+      "materials": [
+        "M_NW_UtilityCream",
+        "M_NW_IvoryTrim"
+      ],
+      "kind": "structure",
+      "mass": 20,
+      "triangles": 948
+    }
+  ],
+  "materials": {
+    "M_NW_DustyRed": {
+      "color": [
+        0.2,
+        0.06,
+        0.055
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 125,
+      "emissive": 0
+    },
+    "M_NW_NavyBlue": {
+      "color": [
+        0.014,
+        0.029,
+        0.063
+      ],
+      "roughness": 0.48,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 125,
+      "emissive": 0
+    },
+    "M_NW_UtilityCream": {
+      "color": [
+        0.48,
+        0.455,
+        0.4
+      ],
+      "roughness": 0.78,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 125,
+      "emissive": 0
+    },
+    "M_NW_Ceiling": {
+      "color": [
+        0.65,
+        0.64,
+        0.6
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 140,
+      "emissive": 0
+    },
+    "M_NW_YellowBlock": {
+      "color": [
+        0.67,
+        0.55,
+        0.31
+      ],
+      "roughness": 0.72,
+      "metallic": 0,
+      "texture": "brick",
+      "period": 81.28,
+      "emissive": 0
+    },
+    "M_NW_WornConcrete": {
+      "color": [
+        0.2,
+        0.18,
+        0.14
+      ],
+      "roughness": 0.87,
+      "metallic": 0,
+      "texture": "concrete",
+      "period": 180,
+      "emissive": 0
+    },
+    "M_NW_WarmWood": {
+      "color": [
+        0.21,
+        0.092,
+        0.036
+      ],
+      "roughness": 0.63,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 160,
+      "emissive": 0
+    },
+    "M_NW_IvoryTrim": {
+      "color": [
+        0.59,
+        0.57,
+        0.5
+      ],
+      "roughness": 0.54,
+      "metallic": 0,
+      "texture": "paint",
+      "period": 90,
+      "emissive": 0
+    },
+    "M_NW_WornSteel": {
+      "color": [
+        0.014,
+        0.017,
+        0.018
+      ],
+      "roughness": 0.48,
+      "metallic": 0.65,
+      "texture": "metal",
+      "period": 80,
+      "emissive": 0
+    },
+    "M_NW_BrushedChrome": {
+      "color": [
+        0.43,
+        0.46,
+        0.49
+      ],
+      "roughness": 0.27,
+      "metallic": 0.91,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_AggregateTreads": {
+      "color": [
+        0.23,
+        0.24,
+        0.23
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "texture": "concrete",
+      "period": 95,
+      "emissive": 0
+    },
+    "M_NW_ApplianceEnamel": {
+      "color": [
+        0.69,
+        0.68,
+        0.62
+      ],
+      "roughness": 0.36,
+      "metallic": 0.1,
+      "texture": "paint",
+      "period": 90,
+      "emissive": 0
+    },
+    "M_NW_BlackRubber": {
+      "color": [
+        0.005,
+        0.006,
+        0.008
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_SmokedGlass": {
+      "color": [
+        0.014,
+        0.025,
+        0.035
+      ],
+      "roughness": 0.1,
+      "metallic": 0.58,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_PoolFelt": {
+      "color": [
+        0.008,
+        0.23,
+        0.14
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 55,
+      "emissive": 0
+    },
+    "M_NW_ChestnutLeather": {
+      "color": [
+        0.18,
+        0.069,
+        0.029
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "texture": "leather",
+      "period": 65,
+      "emissive": 0
+    },
+    "M_NW_ReclinerTan": {
+      "color": [
+        0.31,
+        0.27,
+        0.19
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 75,
+      "emissive": 0
+    },
+    "M_NW_Paper": {
+      "color": [
+        0.76,
+        0.73,
+        0.65
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_CharcoalCloth": {
+      "color": [
+        0.04,
+        0.044,
+        0.049
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 45,
+      "emissive": 0
+    },
+    "M_NW_LaundryWhite": {
+      "color": [
+        0.48,
+        0.49,
+        0.45
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 45,
+      "emissive": 0
+    },
+    "M_NW_DetergentOrange": {
+      "color": [
+        0.83,
+        0.115,
+        0.008
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_ChairGreen": {
+      "color": [
+        0.013,
+        0.075,
+        0.046
+      ],
+      "roughness": 0.52,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_OldBrass": {
+      "color": [
+        0.35,
+        0.23,
+        0.075
+      ],
+      "roughness": 0.34,
+      "metallic": 0.75,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_Fluorescent": {
+      "color": [
+        0.75,
+        0.79,
+        0.72
+      ],
+      "roughness": 0.45,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 2.5
+    },
+    "M_NW_BlueLCD": {
+      "color": [
+        0.025,
+        0.26,
+        0.65
+      ],
+      "roughness": 0.3,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 1.1
+    },
+    "M_NW_CableYellow": {
+      "color": [
+        0.65,
+        0.5,
+        0.014
+      ],
+      "roughness": 0.64,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_BilliardWhite": {
+      "color": [
+        0.77,
+        0.76,
+        0.67
+      ],
+      "roughness": 0.24,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_BilliardYellow": {
+      "color": [
+        0.8,
+        0.58,
+        0.009
+      ],
+      "roughness": 0.24,
+      "metallic": 0,
+      "texture": null,
+      "period": 100,
+      "emissive": 0
+    },
+    "M_NW_RugOatmeal": {
+      "color": [
+        0.34,
+        0.29,
+        0.2
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "texture": "fabric",
+      "period": 75,
+      "emissive": 0
+    },
+    "M_NW_FloorOak0": {
+      "color": [
+        0.1608,
+        0.08710000000000001,
+        0.04958
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak1": {
+      "color": [
+        0.17951999999999999,
+        0.09724000000000001,
+        0.055352
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak2": {
+      "color": [
+        0.19824,
+        0.10738000000000002,
+        0.061124000000000005
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak3": {
+      "color": [
+        0.21696,
+        0.11752000000000001,
+        0.066896
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak4": {
+      "color": [
+        0.23568,
+        0.12766,
+        0.072668
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak5": {
+      "color": [
+        0.2544,
+        0.1378,
+        0.07844
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak6": {
+      "color": [
+        0.27312,
+        0.14794,
+        0.084212
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    },
+    "M_NW_FloorOak7": {
+      "color": [
+        0.29184000000000004,
+        0.15808000000000003,
+        0.08998400000000001
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "texture": "wood",
+      "period": 200,
+      "emissive": 0
+    }
+  },
+  "placements": [
+    {
+      "asset": "SM_NW_HallWalls",
+      "label": "NW_HallWalls",
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": null,
+      "mass": null
+    }
+  ],
+  "lights": [],
+  "doors": [],
+  "route": [],
+  "sign": {
+    "label": "NW_Hall_Exit",
+    "pos": [
+      1776.6,
+      -526,
+      -94.96600000000001
+    ],
+    "yaw": 90
+  }
+}

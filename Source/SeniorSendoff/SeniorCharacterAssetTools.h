@@ -27,5 +27,11 @@ public:
     UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
     static bool BakeFixerLocalShape(UObject* Character);
     UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
+    static bool PrepareBoywickSource(UObject* Character);
+    UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
+    static bool BakeBoywickLocalShape(UObject* Character);
+    UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
+    static bool ShapeBoywickScoopHair(UGroomAsset* Groom);
+    UFUNCTION(BlueprintCallable, Category="Senior Sendoff|Asset Build")
     static bool MatchBraxtonGarmentBindPose(USkeletalMesh* Outfit, USkeletalMesh* Body);
 };

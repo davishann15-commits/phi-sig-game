@@ -1,0 +1,24 @@
+[
+  {
+    "source": "SM_Basement_p0_m2_Solid",
+    "door_wall_faces": 376,
+    "removed_old_table_faces": 4516,
+    "opening_world_cm": [
+      -2788.0,
+      -2614.0,
+      -332.5,
+      -120.0
+    ]
+  },
+  {
+    "source": "COL_Basement_p0_m2_Solid",
+    "door_wall_faces": 12,
+    "removed_old_table_faces": 0,
+    "opening_world_cm": [
+      -2788.0,
+      -2614.0,
+      -332.5,
+      -120.0
+    ]
+  }
+]

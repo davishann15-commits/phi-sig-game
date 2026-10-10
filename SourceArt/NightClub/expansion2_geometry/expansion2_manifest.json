@@ -1,0 +1,374 @@
+{
+  "assets": [
+    {
+      "name": "SM_NCR2_LowerRoomShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_geometry/models/SM_NCR2_LowerRoomShell.fbx",
+      "target_actor": "NightClub_SM_NC_LowerRoomShell",
+      "collision": true,
+      "collision_mode": "UseComplexAsSimple",
+      "materials": [
+        "M_NC_FloorBlack",
+        "M_NC_Charcoal"
+      ],
+      "origin_cm": [
+        0,
+        0,
+        0
+      ],
+      "bounds_cm": [
+        [
+          -2280.999755859375,
+          -1521.0270881652832,
+          -10.000000149011612
+        ],
+        [
+          -838.0000114440918,
+          -961.4999771118164,
+          332.53002166748047
+        ]
+      ],
+      "triangles": 142,
+      "source_preservation": {
+        "source_actor": "NightClub_SM_NC_LowerRoomShell",
+        "source_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_context/fbx/StaticMeshActor_86_StaticMeshComponent0.fbx",
+        "source_faces": 96,
+        "removed_faces": 16,
+        "seam_faces_split": 2
+      }
+    },
+    {
+      "name": "SM_NCR2_LowerCeilingWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_geometry/models/SM_NCR2_LowerCeilingWithHole.fbx",
+      "target_actor": "NightClub_SM_NC_LowerCeilingWithHole",
+      "collision": true,
+      "collision_mode": "UseComplexAsSimple",
+      "materials": [
+        "M_NC_CeilingBlack"
+      ],
+      "origin_cm": [
+        0,
+        0,
+        0
+      ],
+      "bounds_cm": [
+        [
+          -2212.5099182128906,
+          -1509.027099609375,
+          327.02999114990234
+        ],
+        [
+          -860.0000381469727,
+          -973.5002517700195,
+          332.52999782562256
+        ]
+      ],
+      "triangles": 282,
+      "source_preservation": {
+        "source_actor": "NightClub_SM_NC_LowerCeilingWithHole",
+        "source_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_context/fbx/StaticMeshActor_87_StaticMeshComponent0.fbx",
+        "source_faces": 268,
+        "removed_faces": 0,
+        "seam_faces_split": 2
+      }
+    },
+    {
+      "name": "SM_NCR2_UpperDarkFloorWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_geometry/models/SM_NCR2_UpperDarkFloorWithHole.fbx",
+      "target_actor": "NightClub_SM_NC_UpperDarkFloorWithHole",
+      "collision": false,
+      "collision_mode": "NoCollision",
+      "materials": [
+        "M_NC_FloorBlack"
+      ],
+      "origin_cm": [
+        0,
+        0,
+        0
+      ],
+      "bounds_cm": [
+        [
+          -2212.5099182128906,
+          -1509.027099609375,
+          332.5999975204468
+        ],
+        [
+          -860.0000381469727,
+          -973.5002517700195,
+          333.1000089645386
+        ]
+      ],
+      "triangles": 282,
+      "source_preservation": {
+        "source_actor": "NightClub_SM_NC_UpperDarkFloorWithHole",
+        "source_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_context/fbx/StaticMeshActor_88_StaticMeshComponent0.fbx",
+        "source_faces": 268,
+        "removed_faces": 0,
+        "seam_faces_split": 2
+      }
+    },
+    {
+      "name": "SM_NCR2_UpperSupportFloorWithHole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_geometry/models/SM_NCR2_UpperSupportFloorWithHole.fbx",
+      "target_actor": "NightClub_SM_NCR_UpperSupportFloorWithHole",
+      "collision": true,
+      "collision_mode": "UseComplexAsSimple",
+      "materials": [
+        "M_NC_FloorBlack"
+      ],
+      "origin_cm": [
+        0,
+        0,
+        0
+      ],
+      "bounds_cm": [
+        [
+          -2212.5099182128906,
+          -1509.027099609375,
+          327.09996700286865
+        ],
+        [
+          -860.0000381469727,
+          -973.5002517700195,
+          332.52999782562256
+        ]
+      ],
+      "triangles": 282,
+      "source_preservation": {
+        "source_actor": "NightClub_SM_NCR_UpperSupportFloorWithHole",
+        "source_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_context/fbx/StaticMeshActor_122_StaticMeshComponent0.fbx",
+        "source_faces": 268,
+        "removed_faces": 0,
+        "seam_faces_split": 2
+      }
+    },
+    {
+      "name": "SM_NCR2_UpperExtensionCollision",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_geometry/models/SM_NCR2_UpperExtensionCollision.fbx",
+      "target_actor": "NightClub_SM_NCR_UpperExtensionCollision",
+      "collision": true,
+      "collision_mode": "UseComplexAsSimple",
+      "materials": [
+        "M_NC_Charcoal",
+        "M_NC_CeilingBlack"
+      ],
+      "origin_cm": [
+        0,
+        0,
+        0
+      ],
+      "bounds_cm": [
+        [
+          -1636.7998123168945,
+          -1521.0270881652832,
+          332.52999782562256
+        ],
+        [
+          -838.0000114440918,
+          -961.4999771118164,
+          640.2999877929688
+        ]
+      ],
+      "triangles": 88,
+      "source_preservation": {
+        "source_actor": "NightClub_SM_NCR_UpperExtensionCollision",
+        "source_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_context/fbx/StaticMeshActor_123_StaticMeshComponent0.fbx",
+        "source_faces": 48,
+        "removed_faces": 18,
+        "seam_faces_split": 0
+      }
+    },
+    {
+      "name": "SM_NCR2_UpperWallLining",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_geometry/models/SM_NCR2_UpperWallLining.fbx",
+      "target_actor": "NightClub_SM_NC_UpperWallLining",
+      "collision": false,
+      "collision_mode": "NoCollision",
+      "materials": [
+        "M_NC_Charcoal",
+        "M_NC_CeilingBlack"
+      ],
+      "origin_cm": [
+        0,
+        0,
+        0
+      ],
+      "bounds_cm": [
+        [
+          -2212.510299682617,
+          -1509.027099609375,
+          333.09996128082275
+        ],
+        [
+          -860.0000381469727,
+          -973.4999656677246,
+          622.7099895477295
+        ]
+      ],
+      "triangles": 124,
+      "source_preservation": {
+        "source_actor": "NightClub_SM_NC_UpperWallLining",
+        "source_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_context/fbx/StaticMeshActor_90_StaticMeshComponent0.fbx",
+        "source_faces": 84,
+        "removed_faces": 18,
+        "seam_faces_split": 0
+      }
+    },
+    {
+      "name": "SM_NCR2_LowerDanceFloorInlay",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_geometry/models/SM_NCR2_LowerDanceFloorInlay.fbx",
+      "target_actor": "NightClub_SM_NC_LowerDanceFloorInlay",
+      "collision": false,
+      "collision_mode": "NoCollision",
+      "materials": [
+        "M_NC_FloorSlate",
+        "M_NC_FloorBlack",
+        "M_NC_FloorGlow",
+        "M_NC_Trim"
+      ],
+      "origin_cm": [
+        0,
+        0,
+        0
+      ],
+      "bounds_cm": [
+        [
+          -2212.510108947754,
+          -1509.0267181396484,
+          0.8799999952316284
+        ],
+        [
+          -860.0000381469727,
+          -973.4999656677246,
+          339.1000032424927
+        ]
+      ],
+      "triangles": 1812,
+      "source_preservation": {}
+    }
+  ],
+  "materials": {
+    "M_NC_Charcoal": {
+      "color": [
+        0.014,
+        0.016,
+        0.026
+      ],
+      "roughness": 0.72,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Charcoal"
+    },
+    "M_NC_FloorBlack": {
+      "color": [
+        0.025,
+        0.028,
+        0.045
+      ],
+      "roughness": 0.24,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorBlack"
+    },
+    "M_NC_FloorSlate": {
+      "color": [
+        0.04,
+        0.045,
+        0.065
+      ],
+      "roughness": 0.32,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorSlate"
+    },
+    "M_NC_CeilingBlack": {
+      "color": [
+        0.008,
+        0.009,
+        0.016
+      ],
+      "roughness": 0.85,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_CeilingBlack"
+    },
+    "M_NC_Trim": {
+      "color": [
+        0.1,
+        0.11,
+        0.14
+      ],
+      "roughness": 0.25,
+      "metallic": 0.8,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Trim"
+    },
+    "M_NC_FloorGlow": {
+      "color": [
+        0.015,
+        0.07,
+        0.12
+      ],
+      "roughness": 0.35,
+      "emissive": [
+        0.008,
+        0.08,
+        0.15
+      ],
+      "emissive_strength": 2,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorGlow"
+    }
+  },
+  "coordinates": "World-baked UE centimeters; actor location/rotation zero, scale one.",
+  "footprint": {
+    "base_cm": [
+      [
+        -2212.51019,
+        -1509.02675
+      ],
+      [
+        -1490.0,
+        -973.5
+      ]
+    ],
+    "east_wing_cm": [
+      [
+        -1490.0,
+        -1509.02675
+      ],
+      [
+        -860.0,
+        -1030.0
+      ]
+    ],
+    "original_area_m2": 38.692353389258244,
+    "added_area_m2": 30.178685249999997
+  },
+  "heights_cm": {
+    "lower_floor": 0.88,
+    "lower_ceiling": 327.03,
+    "upper_collision_floor": 332.53,
+    "upper_finish_floor": 333.1,
+    "upper_ceiling": 622.71
+  },
+  "pole_aperture": {
+    "center_cm": [
+      -1935,
+      -1175
+    ],
+    "inradius_cm": 100,
+    "sides": 48,
+    "unchanged": true
+  },
+  "notes": [
+    "Only club-specific geometry copied/extended. No original HallEnd or house asset changed.",
+    "Do not generate a single convex hull. Collision=true assets require UseComplexAsSimple.",
+    "Old east wall removed over full Y[-1509.02675,-1030] opening on both floors.",
+    "Doors, door trim, pole rim/rail and other house actors remain separate and untouched."
+  ],
+  "geometry_checks": {
+    "lower_join_clear": true,
+    "upper_join_clear": true,
+    "notch_wall_preserved_lower": true,
+    "notch_wall_preserved_upper": true,
+    "lower_wing_floor_present": true,
+    "SM_NCR2_LowerCeilingWithHole_hole_clear": true,
+    "SM_NCR2_LowerCeilingWithHole_wing_continuous": true,
+    "SM_NCR2_UpperSupportFloorWithHole_hole_clear": true,
+    "SM_NCR2_UpperSupportFloorWithHole_wing_continuous": true,
+    "SM_NCR2_UpperDarkFloorWithHole_hole_clear": true,
+    "SM_NCR2_UpperDarkFloorWithHole_wing_continuous": true,
+    "lower_old_door_clear": true,
+    "all_origin_identity": true
+  }
+}

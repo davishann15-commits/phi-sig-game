@@ -1,0 +1,5899 @@
+[
+  {
+    "world": "Chapter01_House",
+    "actors": [
+      {
+        "label": "Brush0",
+        "name": "Brush_0",
+        "class": "Brush",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extent": [
+          128.0,
+          128.0,
+          128.0
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "BrushComponent0",
+            "class": "BrushComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "COL_Entrance_m1_m1_Solid",
+        "name": "StaticMeshActor_35",
+        "class": "StaticMeshActor",
+        "origin": [
+          -831.6,
+          -753.88,
+          143.0
+        ],
+        "extent": [
+          639.54,
+          223.25,
+          160.6
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_m1_m1_Solid.COL_Entrance_m1_m1_Solid",
+            "mesh_origin": [
+              -420.0,
+              -380.74,
+              130.0
+            ],
+            "mesh_extent": [
+              323.0,
+              112.75,
+              146.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Entrance_m1_m2_Solid",
+        "name": "StaticMeshActor_36",
+        "class": "StaticMeshActor",
+        "origin": [
+          -2388.86,
+          -286.11,
+          144.23
+        ],
+        "extent": [
+          943.48,
+          1225.62,
+          161.83
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/NightClub/COL_NC_OriginalLowerHallDoorClear.COL_NC_OriginalLowerHallDoorClear",
+            "mesh_origin": [
+              -1206.5,
+              -144.5,
+              131.12
+            ],
+            "mesh_extent": [
+              476.5,
+              619.0,
+              147.12
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Entrance_m1_p0_Solid",
+        "name": "StaticMeshActor_38",
+        "class": "StaticMeshActor",
+        "origin": [
+          21.7,
+          -222.75,
+          159.01
+        ],
+        "extent": [
+          1446.31,
+          886.05,
+          159.44
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/NoodleWing/COL_Entrance_m1_p0_Solid_NoodleCut.COL_Entrance_m1_p0_Solid_NoodleCut",
+            "mesh_origin": [
+              10.96,
+              -112.5,
+              144.55
+            ],
+            "mesh_extent": [
+              730.46,
+              447.5,
+              144.95
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Entrance_m1_p1_Solid",
+        "name": "StaticMeshActor_39",
+        "class": "StaticMeshActor",
+        "origin": [
+          2339.37,
+          -99.49,
+          141.88
+        ],
+        "extent": [
+          895.95,
+          1503.32,
+          159.48
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/NoodleWing/COL_Entrance_m1_p1_Solid_NoodleCut.COL_Entrance_m1_p1_Solid_NoodleCut",
+            "mesh_origin": [
+              1181.5,
+              -50.25,
+              128.98
+            ],
+            "mesh_extent": [
+              452.5,
+              759.25,
+              144.98
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Entrance_p0_m1_Solid",
+        "name": "StaticMeshActor_42",
+        "class": "StaticMeshActor",
+        "origin": [
+          -91.12,
+          348.53,
+          136.65
+        ],
+        "extent": [
+          1487.93,
+          1273.19,
+          498.62
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_m1_Solid.COL_Entrance_p0_m1_Solid",
+            "mesh_origin": [
+              -46.02,
+              176.03,
+              124.23
+            ],
+            "mesh_extent": [
+              751.48,
+              643.03,
+              453.29
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Entrance_p0_p0_Solid",
+        "name": "StaticMeshActor_44",
+        "class": "StaticMeshActor",
+        "origin": [
+          93.56,
+          347.19,
+          147.86
+        ],
+        "extent": [
+          1517.18,
+          1271.86,
+          196.32
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_p0_Solid.COL_Entrance_p0_p0_Solid",
+            "mesh_origin": [
+              47.25,
+              175.35,
+              134.41
+            ],
+            "mesh_extent": [
+              766.25,
+              642.35,
+              178.48
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Entrance_p0_p1_Solid",
+        "name": "StaticMeshActor_45",
+        "class": "StaticMeshActor",
+        "origin": [
+          2338.38,
+          716.56,
+          141.88
+        ],
+        "extent": [
+          894.96,
+          703.1,
+          159.48
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true,
+            "mesh": "/Game/SeniorSendOff/House/ReferenceKitchen/SM_Kitchen_COL_Entrance_p0_p1_Solid.SM_Kitchen_COL_Entrance_p0_p1_Solid",
+            "mesh_origin": [
+              2125.8,
+              651.41,
+              128.99
+            ],
+            "mesh_extent": [
+              813.6,
+              639.19,
+              144.99
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Upper_m1_m1_Solid",
+        "name": "StaticMeshActor_49",
+        "class": "StaticMeshActor",
+        "origin": [
+          -472.65,
+          -997.06,
+          482.07
+        ],
+        "extent": [
+          1133.12,
+          448.6,
+          163.91
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_m1_m1_Solid.HI_WindowPassage_COL_Upper_m1_m1_Solid",
+            "mesh_origin": [
+              -238.71,
+              -503.57,
+              438.25
+            ],
+            "mesh_extent": [
+              572.29,
+              226.57,
+              149.01
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Upper_m1_m2_Solid",
+        "name": "StaticMeshActor_50",
+        "class": "StaticMeshActor",
+        "origin": [
+          -2357.05,
+          -300.24,
+          477.58
+        ],
+        "extent": [
+          928.62,
+          1240.47,
+          164.05
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Room204/R204_R2_COL_Upper_m1_m2_SecondCloset.R204_R2_COL_Upper_m1_m2_SecondCloset",
+            "mesh_origin": [
+              -1190.43,
+              -151.63,
+              434.16
+            ],
+            "mesh_extent": [
+              469.0,
+              626.5,
+              149.14
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Upper_m1_p0_Solid",
+        "name": "StaticMeshActor_52",
+        "class": "StaticMeshActor",
+        "origin": [
+          140.15,
+          -1110.91,
+          475.92
+        ],
+        "extent": [
+          1563.77,
+          562.45,
+          164.46
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_m1_p0_Solid.HI_WindowPassage_COL_Upper_m1_p0_Solid",
+            "mesh_origin": [
+              70.79,
+              -561.07,
+              432.65
+            ],
+            "mesh_extent": [
+              789.79,
+              284.07,
+              149.51
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Upper_m1_p1_Solid",
+        "name": "StaticMeshActor_53",
+        "class": "StaticMeshActor",
+        "origin": [
+          2333.87,
+          -450.72,
+          486.89
+        ],
+        "extent": [
+          892.68,
+          1119.69,
+          163.58
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/NoodleWing/COL_Upper_m1_p1_DoorClear_NoodleCut.COL_Upper_m1_p1_DoorClear_NoodleCut",
+            "mesh_origin": [
+              1178.72,
+              -227.63,
+              442.63
+            ],
+            "mesh_extent": [
+              450.85,
+              565.5,
+              148.71
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Upper_p0_m1_Solid",
+        "name": "StaticMeshActor_58",
+        "class": "StaticMeshActor",
+        "origin": [
+          -87.07,
+          366.84,
+          485.22
+        ],
+        "extent": [
+          1485.9,
+          1291.5,
+          155.15
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Upper_p0_m1_Solid.COL_Upper_p0_m1_Solid",
+            "mesh_origin": [
+              -43.98,
+              185.27,
+              441.11
+            ],
+            "mesh_extent": [
+              750.45,
+              652.27,
+              141.05
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Upper_p0_p0_Solid",
+        "name": "StaticMeshActor_61",
+        "class": "StaticMeshActor",
+        "origin": [
+          118.37,
+          266.18,
+          465.97
+        ],
+        "extent": [
+          1541.99,
+          1190.84,
+          191.83
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Upper_p0_p0_Solid.COL_Upper_p0_p0_Solid",
+            "mesh_origin": [
+              59.79,
+              134.43,
+              423.61
+            ],
+            "mesh_extent": [
+              778.79,
+              601.43,
+              174.39
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "COL_Upper_p0_p1_Solid",
+        "name": "StaticMeshActor_62",
+        "class": "StaticMeshActor",
+        "origin": [
+          2303.87,
+          403.65,
+          488.16
+        ],
+        "extent": [
+          908.82,
+          1053.36,
+          164.5
+        ],
+        "folder": "House/Collision",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_p0_p1_Solid.HI_WindowPassage_COL_Upper_p0_p1_Solid",
+            "mesh_origin": [
+              1163.57,
+              203.87,
+              443.78
+            ],
+            "mesh_extent": [
+              459.0,
+              532.0,
+              149.55
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "SM_Entrance_m1_p1_Solid",
+        "name": "StaticMeshActor_282",
+        "class": "StaticMeshActor",
+        "origin": [
+          2339.37,
+          -98.01,
+          141.88
+        ],
+        "extent": [
+          895.95,
+          1501.83,
+          159.48
+        ],
+        "folder": "House/Architecture and furnishings",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/NoodleWing/SM_Kitchen_SM_Entrance_m1_p1_Solid_NoodleCut.SM_Kitchen_SM_Entrance_m1_p1_Solid_NoodleCut",
+            "mesh_origin": [
+              2126.7,
+              -89.1,
+              128.98
+            ],
+            "mesh_extent": [
+              814.5,
+              1365.3,
+              144.99
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "SM_Entrance_p0_p1_Solid",
+        "name": "StaticMeshActor_293",
+        "class": "StaticMeshActor",
+        "origin": [
+          2338.38,
+          662.3,
+          141.88
+        ],
+        "extent": [
+          894.96,
+          779.14,
+          159.48
+        ],
+        "folder": "House/Architecture and furnishings",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/ReferenceKitchen/SM_Kitchen_SM_Entrance_p0_p1_Solid.SM_Kitchen_SM_Entrance_p0_p1_Solid",
+            "mesh_origin": [
+              2125.8,
+              602.09,
+              128.99
+            ],
+            "mesh_extent": [
+              813.6,
+              708.31,
+              144.99
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "SM_Upper_p0_m1_Solid",
+        "name": "StaticMeshActor_314",
+        "class": "StaticMeshActor",
+        "origin": [
+          -89.7,
+          366.84,
+          320.19
+        ],
+        "extent": [
+          1488.52,
+          1291.5,
+          320.19
+        ],
+        "folder": "House/Architecture and furnishings",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Meshes/SM_Upper_p0_m1_Solid.SM_Upper_p0_m1_Solid",
+            "mesh_origin": [
+              -45.3,
+              185.27,
+              291.08
+            ],
+            "mesh_extent": [
+              751.78,
+              652.27,
+              291.08
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "SM_Upper_p0_p0_Solid",
+        "name": "StaticMeshActor_320",
+        "class": "StaticMeshActor",
+        "origin": [
+          118.37,
+          365.16,
+          328.9
+        ],
+        "extent": [
+          1541.99,
+          1289.82,
+          328.9
+        ],
+        "folder": "House/Architecture and furnishings",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/NoodleWing/SM_Upper_p0_p0_CornerCleared_NoodleCut.SM_Upper_p0_p0_CornerCleared_NoodleCut",
+            "mesh_origin": [
+              59.79,
+              184.42,
+              299.0
+            ],
+            "mesh_extent": [
+              778.79,
+              651.42,
+              299.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "GreatRoom_Fireplace_West",
+        "name": "StaticMeshActor_17",
+        "class": "StaticMeshActor",
+        "origin": [
+          -1210.0,
+          208.89,
+          86.21
+        ],
+        "extent": [
+          74.25,
+          253.44,
+          86.21
+        ],
+        "folder": "GreatRoom/Fireplaces",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/FireplaceRefinement/SM_FPR_ClassicFireplace.SM_FPR_ClassicFireplace",
+            "mesh_origin": [
+              0.0,
+              58.0,
+              78.38
+            ],
+            "mesh_extent": [
+              230.4,
+              67.5,
+              78.38
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -1273.8,
+              208.89,
+              0.0
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "GreatRoom_Fireplace_East",
+        "name": "StaticMeshActor_20",
+        "class": "StaticMeshActor",
+        "origin": [
+          1318.9,
+          186.12,
+          86.21
+        ],
+        "extent": [
+          74.25,
+          253.44,
+          86.21
+        ],
+        "folder": "GreatRoom/Fireplaces",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/FireplaceRefinement/SM_FPR_ClassicFireplace.SM_FPR_ClassicFireplace",
+            "mesh_origin": [
+              0.0,
+              58.0,
+              78.38
+            ],
+            "mesh_extent": [
+              230.4,
+              67.5,
+              78.38
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              1382.7,
+              186.12,
+              0.0
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Upper short hall worn floor",
+        "name": "StaticMeshActor_84",
+        "class": "StaticMeshActor",
+        "origin": [
+          -1826.28,
+          -756.47,
+          335.72
+        ],
+        "extent": [
+          402.88,
+          168.19,
+          2.2
+        ],
+        "folder": "House details/Hall floors and porch",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Engine/BasicShapes/Cube.Cube",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              50.0,
+              50.0,
+              50.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              -1826.28,
+              -756.47,
+              335.72
+            ],
+            "scale": [
+              8.06,
+              3.36,
+              0.04
+            ]
+          }
+        ]
+      },
+      {
+        "label": "NW_StairStructure",
+        "name": "StaticMeshActor_137",
+        "class": "StaticMeshActor",
+        "origin": [
+          1742.0,
+          -18.0,
+          131.52
+        ],
+        "extent": [
+          358.0,
+          657.0,
+          508.48
+        ],
+        "folder": "Noodle Wing/Architecture",
+        "components": [
+          {
+            "name": "StaticMeshComponent0",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/NoodleWing/SM_NW_StairStructure.SM_NW_StairStructure",
+            "mesh_origin": [
+              1742.0,
+              -18.0,
+              131.52
+            ],
+            "mesh_extent": [
+              358.0,
+              657.0,
+              508.48
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Entrance_m1_m1_Solid_01",
+        "name": "ExistingHouseDoor_3",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1085.7,
+          -1488.52,
+          126.09
+        ],
+        "extent": [
+          507.1,
+          843.48,
+          130.21
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "OriginalDoorLeaf",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Entrance_m1_m1_Solid_01.SM_OriginalLeaf_Entrance_m1_m1_Solid_01",
+            "mesh_origin": [
+              -780.6,
+              -446.9,
+              113.76
+            ],
+            "mesh_extent": [
+              48.4,
+              6.85,
+              117.51
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              -579.7,
+              -2330.9,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Entrance_m1_p0_Solid_01",
+        "name": "ExistingHouseDoor_7",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1938.09,
+          -327.3,
+          127.6
+        ],
+        "extent": [
+          523.71,
+          803.17,
+          128.7
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "OriginalDoorLeaf",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Entrance_m1_p0_Solid_01.SM_OriginalLeaf_Entrance_m1_p0_Solid_01",
+            "mesh_origin": [
+              745.12,
+              -459.0,
+              103.8
+            ],
+            "mesh_extent": [
+              5.77,
+              42.5,
+              103.8
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              2460.7,
+              474.76,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Entrance_p0_m2_Solid_01",
+        "name": "ExistingHouseDoor_8",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1365.38,
+          342.93,
+          127.6
+        ],
+        "extent": [
+          1366.48,
+          344.03,
+          128.7
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "OriginalDoorLeaf",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Entrance_p0_m2_Solid_01.SM_OriginalLeaf_Entrance_p0_m2_Solid_01",
+            "mesh_origin": [
+              -1306.47,
+              277.5,
+              104.5
+            ],
+            "mesh_extent": [
+              5.97,
+              45.0,
+              103.25
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Entrance_p0_p0_Solid_01",
+        "name": "ExistingHouseDoor_9",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1695.98,
+          59.78,
+          127.6
+        ],
+        "extent": [
+          400.95,
+          830.12,
+          128.7
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "OriginalDoorLeaf",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Entrance_p0_p0_Solid_01.SM_OriginalLeaf_Entrance_p0_p0_Solid_01",
+            "mesh_origin": [
+              766.5,
+              333.77,
+              99.55
+            ],
+            "mesh_extent": [
+              47.0,
+              5.78,
+              99.55
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              2095.83,
+              -769.23,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_m1_m1_Solid_01",
+        "name": "ExistingHouseDoor_10",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -2072.18,
+          -1167.07,
+          557.06
+        ],
+        "extent": [
+          786.06,
+          543.92,
+          232.01
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_m1_m2_Solid_02",
+        "name": "ExistingHouseDoor_12",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1182.67,
+          -297.91,
+          290.95
+        ],
+        "extent": [
+          1183.77,
+          299.01,
+          292.05
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "OriginalDoorLeaf",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Upper_m1_m2_Solid_02.SM_OriginalLeaf_Upper_m1_m2_Solid_02",
+            "mesh_origin": [
+              -1125.73,
+              -232.13,
+              406.07
+            ],
+            "mesh_extent": [
+              10.25,
+              45.2,
+              105.9
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_m1_m2_Solid_03",
+        "name": "ExistingHouseDoor_13",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1352.91,
+          -245.11,
+          286.44
+        ],
+        "extent": [
+          1352.91,
+          245.11,
+          286.44
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_m1_p0_Solid_03",
+        "name": "ExistingHouseDoor_16",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          700.83,
+          -443.99,
+          563.21
+        ],
+        "extent": [
+          877.89,
+          455.81,
+          234.53
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_m1_p1_Solid_04",
+        "name": "ExistingHouseDoor_20",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1253.51,
+          -237.6,
+          293.7
+        ],
+        "extent": [
+          1254.61,
+          238.7,
+          294.8
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "OriginalDoorLeaf",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Upper_m1_p1_Solid_04.SM_OriginalLeaf_Upper_m1_p1_Solid_04",
+            "mesh_origin": [
+              1197.27,
+              -171.13,
+              416.13
+            ],
+            "mesh_extent": [
+              10.25,
+              49.2,
+              105.9
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_m1_p1_Solid_05",
+        "name": "ExistingHouseDoor_21",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1104.18,
+          -233.2,
+          294.25
+        ],
+        "extent": [
+          1104.18,
+          233.2,
+          294.25
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_p0_m2_Solid_03",
+        "name": "ExistingHouseDoor_25",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1353.22,
+          371.25,
+          291.5
+        ],
+        "extent": [
+          1353.22,
+          371.25,
+          291.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalDoor_Upper_p0_p1_Solid_04",
+        "name": "ExistingHouseDoor_30",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1595.93,
+          1646.04,
+          293.7
+        ],
+        "extent": [
+          433.02,
+          973.94,
+          294.8
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "OriginalDoorLeaf",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAll",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Upper_p0_p1_Solid_04.SM_OriginalLeaf_Upper_p0_p1_Solid_04",
+            "mesh_origin": [
+              914.07,
+              367.37,
+              415.57
+            ],
+            "mesh_extent": [
+              41.8,
+              9.0,
+              102.85
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+            "location": [
+              1164.02,
+              2618.88,
+              0.0
+            ],
+            "scale": [
+              1.98,
+              1.98,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_m1_01",
+        "name": "ExistingHouseDoor_70",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1087.5,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_m1_02",
+        "name": "ExistingHouseDoor_71",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1087.5,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_m1_03",
+        "name": "ExistingHouseDoor_72",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -352.13,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_m1_04",
+        "name": "ExistingHouseDoor_73",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -352.13,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_p0_01",
+        "name": "ExistingHouseDoor_74",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          334.56,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_p0_02",
+        "name": "ExistingHouseDoor_75",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          334.56,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_p0_03",
+        "name": "ExistingHouseDoor_76",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1064.2,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "OriginalPorchDoor_Porch_p0_p0_04",
+        "name": "ExistingHouseDoor_77",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1064.2,
+          934.56,
+          121.0
+        ],
+        "extent": [
+          181.5,
+          385.0,
+          126.5
+        ],
+        "folder": "None",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HallEnd_West",
+        "name": "ExistingHouseDoor_11",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1352.91,
+          -753.5,
+          287.54
+        ],
+        "extent": [
+          1352.91,
+          753.5,
+          287.54
+        ],
+        "folder": "Second floor/Hallway end",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HallEnd_End",
+        "name": "ExistingHouseDoor_31",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1266.1,
+          -831.18,
+          287.54
+        ],
+        "extent": [
+          1266.1,
+          831.18,
+          287.54
+        ],
+        "folder": "Second floor/Hallway end",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HallEnd_East",
+        "name": "ExistingHouseDoor_32",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          -1182.93,
+          -761.75,
+          287.54
+        ],
+        "extent": [
+          1182.93,
+          761.75,
+          287.54
+        ],
+        "folder": "Second floor/Hallway end",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_m1_Glass__001",
+        "name": "HouseReactiveFixture_0",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -36.63,
+          -468.07,
+          113.9
+        ],
+        "extent": [
+          149.49,
+          468.07,
+          113.9
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_m1_Glass__002",
+        "name": "HouseReactiveFixture_1",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -36.63,
+          -463.52,
+          133.7
+        ],
+        "extent": [
+          146.52,
+          463.52,
+          133.7
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_m1_Glass__003",
+        "name": "HouseReactiveFixture_2",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -586.08,
+          -465.75,
+          132.05
+        ],
+        "extent": [
+          586.08,
+          465.75,
+          132.05
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_m1_Glass__004",
+        "name": "HouseReactiveFixture_3",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -274.23,
+          -465.75,
+          119.95
+        ],
+        "extent": [
+          274.23,
+          465.75,
+          119.95
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_p0_Glass__001",
+        "name": "HouseReactiveFixture_4",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          567.27,
+          -465.75,
+          126.0
+        ],
+        "extent": [
+          567.27,
+          465.75,
+          126.0
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_p0_Glass__002",
+        "name": "HouseReactiveFixture_5",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          297.99,
+          -465.75,
+          119.95
+        ],
+        "extent": [
+          297.99,
+          465.75,
+          119.95
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_p2_Glass__001",
+        "name": "HouseReactiveFixture_6",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1619.31,
+          -571.47,
+          109.18
+        ],
+        "extent": [
+          1619.31,
+          571.47,
+          109.18
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_m1_p2_Glass__002",
+        "name": "HouseReactiveFixture_7",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1620.54,
+          -223.19,
+          106.98
+        ],
+        "extent": [
+          1620.54,
+          223.19,
+          106.98
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_m1_Glass__001",
+        "name": "HouseReactiveFixture_8",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -258.73,
+          468.47,
+          135.97
+        ],
+        "extent": [
+          258.73,
+          468.47,
+          135.97
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_m1_Glass__002",
+        "name": "HouseReactiveFixture_9",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -617.5,
+          468.47,
+          129.12
+        ],
+        "extent": [
+          617.5,
+          468.47,
+          129.12
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_p0_Glass__001",
+        "name": "HouseReactiveFixture_10",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          613.62,
+          468.47,
+          134.08
+        ],
+        "extent": [
+          613.62,
+          468.47,
+          134.08
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_p0_Glass__002",
+        "name": "HouseReactiveFixture_11",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          245.81,
+          468.47,
+          131.93
+        ],
+        "extent": [
+          245.81,
+          468.47,
+          131.93
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_p1_Glass__002",
+        "name": "HouseReactiveFixture_13",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1501.15,
+          705.13,
+          105.13
+        ],
+        "extent": [
+          1501.15,
+          705.13,
+          105.13
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_p1_Glass__003",
+        "name": "HouseReactiveFixture_14",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          951.0,
+          705.13,
+          96.16
+        ],
+        "extent": [
+          951.0,
+          705.13,
+          96.16
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_p2_Glass__001",
+        "name": "HouseReactiveFixture_15",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1620.27,
+          235.88,
+          106.98
+        ],
+        "extent": [
+          1620.27,
+          235.88,
+          106.98
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_p2_Glass__002",
+        "name": "HouseReactiveFixture_16",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1620.0,
+          598.57,
+          106.98
+        ],
+        "extent": [
+          1620.0,
+          598.57,
+          106.98
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_m1_Glass__001",
+        "name": "HouseReactiveFixture_17",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -84.33,
+          -463.52,
+          281.51
+        ],
+        "extent": [
+          84.33,
+          463.52,
+          281.51
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_m1_Glass__002",
+        "name": "HouseReactiveFixture_18",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -281.66,
+          -463.52,
+          281.1
+        ],
+        "extent": [
+          281.66,
+          463.52,
+          281.1
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_m1_Glass__003",
+        "name": "HouseReactiveFixture_19",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -583.61,
+          -463.52,
+          281.1
+        ],
+        "extent": [
+          583.61,
+          463.52,
+          281.1
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_m1_Glass__004",
+        "name": "HouseReactiveFixture_20",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -307.82,
+          -496.87,
+          282.5
+        ],
+        "extent": [
+          307.82,
+          496.87,
+          282.5
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_p0_Glass__002",
+        "name": "HouseReactiveFixture_22",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          65.66,
+          -463.52,
+          281.51
+        ],
+        "extent": [
+          65.66,
+          463.52,
+          281.51
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_p0_Glass__003",
+        "name": "HouseReactiveFixture_23",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          583.6,
+          -463.52,
+          281.1
+        ],
+        "extent": [
+          583.6,
+          463.52,
+          281.1
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_p0_Glass__004",
+        "name": "HouseReactiveFixture_24",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          288.58,
+          -463.52,
+          281.1
+        ],
+        "extent": [
+          288.58,
+          463.52,
+          281.1
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m1_p0_Glass__005",
+        "name": "HouseReactiveFixture_25",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          289.64,
+          -496.87,
+          283.76
+        ],
+        "extent": [
+          289.64,
+          496.87,
+          283.76
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m2_p0_Glass__001",
+        "name": "HouseReactiveFixture_26",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          724.35,
+          -938.65,
+          284.8
+        ],
+        "extent": [
+          724.35,
+          938.65,
+          284.8
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m2_p1_Glass__001",
+        "name": "HouseReactiveFixture_27",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1223.81,
+          -1020.03,
+          273.35
+        ],
+        "extent": [
+          1223.81,
+          1020.03,
+          273.35
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_m2_p2_Glass__001",
+        "name": "HouseReactiveFixture_28",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1617.04,
+          -903.01,
+          286.95
+        ],
+        "extent": [
+          1617.04,
+          903.01,
+          286.95
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_m1_Glass__001",
+        "name": "HouseReactiveFixture_29",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -214.09,
+          466.49,
+          284.4
+        ],
+        "extent": [
+          214.09,
+          466.49,
+          284.4
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_m1_Glass__002",
+        "name": "HouseReactiveFixture_30",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -578.41,
+          466.49,
+          284.4
+        ],
+        "extent": [
+          578.41,
+          466.49,
+          284.4
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_m2_Glass__001",
+        "name": "HouseReactiveFixture_31",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -934.24,
+          696.07,
+          269.23
+        ],
+        "extent": [
+          934.24,
+          696.07,
+          269.23
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_m2_Glass__002",
+        "name": "HouseReactiveFixture_32",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1557.2,
+          724.35,
+          281.12
+        ],
+        "extent": [
+          1557.2,
+          724.35,
+          281.12
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_m3_Glass__001",
+        "name": "HouseReactiveFixture_33",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1644.57,
+          619.11,
+          280.76
+        ],
+        "extent": [
+          1644.57,
+          619.11,
+          280.76
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_m3_Glass__002",
+        "name": "HouseReactiveFixture_34",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1644.57,
+          59.13,
+          279.33
+        ],
+        "extent": [
+          1644.57,
+          98.01,
+          279.33
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_p0_Glass__001",
+        "name": "HouseReactiveFixture_35",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          570.49,
+          466.49,
+          284.4
+        ],
+        "extent": [
+          570.49,
+          466.49,
+          284.4
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_p0_Glass__002",
+        "name": "HouseReactiveFixture_36",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          209.14,
+          466.49,
+          284.4
+        ],
+        "extent": [
+          209.14,
+          466.49,
+          284.4
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_p1_Glass__001",
+        "name": "HouseReactiveFixture_37",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          870.77,
+          724.35,
+          285.41
+        ],
+        "extent": [
+          870.77,
+          724.35,
+          285.41
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_p1_Glass__002",
+        "name": "HouseReactiveFixture_38",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1144.51,
+          724.35,
+          286.05
+        ],
+        "extent": [
+          1144.51,
+          724.35,
+          286.05
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Upper_p0_p2_Glass__001",
+        "name": "HouseReactiveFixture_39",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1610.11,
+          652.28,
+          287.26
+        ],
+        "extent": [
+          1610.11,
+          652.28,
+          287.26
+        ],
+        "folder": "House interactions/window",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Consoles__004",
+        "name": "HouseInteractiveProp_6",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          1320.0,
+          -192.5,
+          44.41
+        ],
+        "extent": [
+          41.94,
+          74.25,
+          44.41
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Consoles_004.HI_SM_GR3_Consoles_004",
+            "mesh_origin": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              38.12,
+              67.5,
+              40.38
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              1320.0,
+              -192.5,
+              44.41
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Consoles__008",
+        "name": "HouseInteractiveProp_10",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          1320.0,
+          -192.5,
+          122.1
+        ],
+        "extent": [
+          23.1,
+          17.6,
+          35.2
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Consoles_008.HI_SM_GR3_Consoles_008",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              21.0,
+              16.0,
+              32.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              1320.0,
+              -192.5,
+              122.1
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__001",
+        "name": "HouseInteractiveProp_17",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -110.0,
+          379.5,
+          62.87
+        ],
+        "extent": [
+          81.18,
+          92.07,
+          62.87
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_001.HI_SM_GR3_Conversation_001",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              73.8,
+              83.7,
+              57.15
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -110.0,
+              379.5,
+              62.87
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__002",
+        "name": "HouseInteractiveProp_18",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          143.0,
+          379.5,
+          62.84
+        ],
+        "extent": [
+          81.18,
+          92.07,
+          62.84
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_002.HI_SM_GR3_Conversation_002",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              73.8,
+              83.7,
+              57.13
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              143.0,
+              379.5,
+              62.84
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__003",
+        "name": "HouseInteractiveProp_19",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -110.64,
+          -49.38,
+          62.88
+        ],
+        "extent": [
+          87.25,
+          97.84,
+          62.88
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_003.HI_SM_GR3_Conversation_003",
+            "mesh_origin": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              79.32,
+              88.94,
+              57.16
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -110.64,
+              -49.38,
+              62.88
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__004",
+        "name": "HouseInteractiveProp_20",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          143.62,
+          -49.46,
+          62.86
+        ],
+        "extent": [
+          87.38,
+          97.79,
+          62.86
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_004.HI_SM_GR3_Conversation_004",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              79.43,
+              88.9,
+              57.15
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              143.62,
+              -49.46,
+              62.86
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__005",
+        "name": "HouseInteractiveProp_21",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          291.5,
+          165.0,
+          64.75
+        ],
+        "extent": [
+          92.07,
+          81.18,
+          64.75
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_005.HI_SM_GR3_Conversation_005",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              83.7,
+              73.8,
+              58.86
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              291.5,
+              165.0,
+              64.75
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__006",
+        "name": "HouseInteractiveProp_22",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -258.5,
+          165.0,
+          64.87
+        ],
+        "extent": [
+          92.07,
+          81.18,
+          64.87
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_006.HI_SM_GR3_Conversation_006",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              83.7,
+              73.8,
+              58.97
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -258.5,
+              165.0,
+              64.87
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__007",
+        "name": "HouseInteractiveProp_23",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          16.93,
+          165.13,
+          33.75
+        ],
+        "extent": [
+          101.02,
+          100.98,
+          31.15
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_007.HI_SM_GR3_Conversation_007",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              91.84,
+              91.8,
+              28.32
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              16.93,
+              165.13,
+              33.75
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Conversation__008",
+        "name": "HouseInteractiveProp_24",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          16.5,
+          346.5,
+          30.8
+        ],
+        "extent": [
+          34.65,
+          43.56,
+          25.85
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Conversation_008.HI_SM_GR3_Conversation_008",
+            "mesh_origin": [
+              -0.0,
+              -0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              31.5,
+              39.6,
+              23.5
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              16.5,
+              346.5,
+              30.8
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_FarSeating__001",
+        "name": "HouseInteractiveProp_26",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -555.5,
+          170.5,
+          64.86
+        ],
+        "extent": [
+          97.02,
+          361.35,
+          64.86
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_FarSeating_001.HI_SM_GR3_FarSeating_001",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -1.75
+            ],
+            "mesh_extent": [
+              88.2,
+              328.5,
+              58.97
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -555.5,
+              170.5,
+              66.79
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_FarSeating__002",
+        "name": "HouseInteractiveProp_27",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -833.8,
+          440.0,
+          62.4
+        ],
+        "extent": [
+          187.09,
+          97.02,
+          62.4
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_FarSeating_002.HI_SM_GR3_FarSeating_002",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -1.75
+            ],
+            "mesh_extent": [
+              170.08,
+              88.2,
+              56.73
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -833.8,
+              440.0,
+              64.32
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_FarSeating__003",
+        "name": "HouseInteractiveProp_28",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -833.8,
+          -99.0,
+          62.41
+        ],
+        "extent": [
+          187.09,
+          97.02,
+          62.41
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_FarSeating_003.HI_SM_GR3_FarSeating_003",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -1.75
+            ],
+            "mesh_extent": [
+              170.08,
+              88.2,
+              56.74
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -833.8,
+              -99.0,
+              64.34
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_NearSeating__001",
+        "name": "HouseInteractiveProp_30",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          704.0,
+          530.2,
+          62.42
+        ],
+        "extent": [
+          422.45,
+          97.02,
+          62.42
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_NearSeating_001.HI_SM_GR3_NearSeating_001",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              -1.75
+            ],
+            "mesh_extent": [
+              384.05,
+              88.2,
+              56.75
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              704.0,
+              530.2,
+              64.35
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_NearSeating__002",
+        "name": "HouseInteractiveProp_31",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          1033.39,
+          258.62,
+          47.14
+        ],
+        "extent": [
+          93.06,
+          174.56,
+          47.14
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_NearSeating_002.HI_SM_GR3_NearSeating_002",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              84.6,
+              158.69,
+              42.85
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              1033.39,
+              258.62,
+              47.14
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_NearSeating__003",
+        "name": "HouseInteractiveProp_32",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          704.0,
+          -247.5,
+          62.41
+        ],
+        "extent": [
+          187.09,
+          97.02,
+          62.41
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_NearSeating_003.HI_SM_GR3_NearSeating_003",
+            "mesh_origin": [
+              -0.0,
+              -0.0,
+              -1.75
+            ],
+            "mesh_extent": [
+              170.08,
+              88.2,
+              56.74
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              704.0,
+              -247.5,
+              64.34
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_NearSeating__004",
+        "name": "HouseInteractiveProp_33",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          599.5,
+          -220.0,
+          76.34
+        ],
+        "extent": [
+          46.12,
+          29.49,
+          16.9
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_NearSeating_004.HI_SM_GR3_NearSeating_004",
+            "mesh_origin": [
+              13.0,
+              -0.0,
+              -3.1
+            ],
+            "mesh_extent": [
+              41.92,
+              26.81,
+              15.37
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              585.2,
+              -220.0,
+              79.75
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_NearSeating__005",
+        "name": "HouseInteractiveProp_34",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          726.0,
+          -211.18,
+          76.98
+        ],
+        "extent": [
+          46.41,
+          32.7,
+          16.9
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_NearSeating_005.HI_SM_GR3_NearSeating_005",
+            "mesh_origin": [
+              0.01,
+              -0.0,
+              -2.51
+            ],
+            "mesh_extent": [
+              42.19,
+              29.73,
+              15.37
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              726.0,
+              -211.18,
+              79.75
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_NearSeating__006",
+        "name": "HouseInteractiveProp_35",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          770.01,
+          503.85,
+          77.03
+        ],
+        "extent": [
+          46.28,
+          31.43,
+          16.9
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_NearSeating_006.HI_SM_GR3_NearSeating_006",
+            "mesh_origin": [
+              0.01,
+              0.0,
+              -2.48
+            ],
+            "mesh_extent": [
+              42.07,
+              28.57,
+              15.37
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              770.0,
+              503.85,
+              79.75
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_NearSeating__007",
+        "name": "HouseInteractiveProp_36",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          371.8,
+          508.19,
+          76.38
+        ],
+        "extent": [
+          46.12,
+          29.48,
+          16.9
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_NearSeating_007.HI_SM_GR3_NearSeating_007",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -3.07
+            ],
+            "mesh_extent": [
+              41.92,
+              26.8,
+              15.37
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              371.8,
+              508.19,
+              79.75
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Tables__001",
+        "name": "HouseInteractiveProp_38",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          148.93,
+          588.63,
+          26.6
+        ],
+        "extent": [
+          101.02,
+          100.98,
+          24.0
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Tables_001.HI_SM_GR3_Tables_001",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              91.84,
+              91.8,
+              21.82
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              148.93,
+              588.63,
+              26.6
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Tables__002",
+        "name": "HouseInteractiveProp_39",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          960.3,
+          -253.0,
+          30.8
+        ],
+        "extent": [
+          52.47,
+          54.81,
+          30.8
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Tables_002.HI_SM_GR3_Tables_002",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              47.7,
+              49.82,
+              28.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              960.3,
+              -253.0,
+              30.8
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Tables__003",
+        "name": "HouseInteractiveProp_40",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -951.5,
+          -269.5,
+          30.8
+        ],
+        "extent": [
+          52.47,
+          54.81,
+          30.8
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Tables_003.HI_SM_GR3_Tables_003",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              47.7,
+              49.82,
+              28.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -951.5,
+              -269.5,
+              30.8
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Tables__004",
+        "name": "HouseInteractiveProp_41",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -242.0,
+          -269.5,
+          37.4
+        ],
+        "extent": [
+          45.84,
+          45.84,
+          37.4
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Tables_004.HI_SM_GR3_Tables_004",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              41.67,
+              41.67,
+              34.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -242.0,
+              -269.5,
+              37.4
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_GR3_Tables__005",
+        "name": "HouseInteractiveProp_42",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          148.5,
+          583.0,
+          64.9
+        ],
+        "extent": [
+          51.82,
+          44.72,
+          6.6
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_GR3_Tables_005.HI_SM_GR3_Tables_005",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              47.1,
+              40.66,
+              6.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              148.5,
+              583.0,
+              64.9
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_UpBath_Bath_orange_folded_curtain_1__001",
+        "name": "HouseReactiveFixture_40",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1097.7,
+          358.81,
+          272.49
+        ],
+        "extent": [
+          1097.7,
+          358.81,
+          272.49
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_UpBath_Bath_orange_folded_curtain_2__001",
+        "name": "HouseReactiveFixture_41",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1027.35,
+          359.21,
+          272.49
+        ],
+        "extent": [
+          1027.35,
+          359.21,
+          272.49
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_UpBath_Bath_orange_folded_curtain_3__001",
+        "name": "HouseReactiveFixture_42",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -959.1,
+          358.81,
+          272.49
+        ],
+        "extent": [
+          959.1,
+          358.81,
+          272.49
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_BR_SM_Bedroom_CreamCurtainsPartOpen__001",
+        "name": "HouseReactiveFixture_43",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1467.48,
+          715.74,
+          290.4
+        ],
+        "extent": [
+          1467.48,
+          715.74,
+          290.4
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_BR_SM_Bedroom_CreamCurtainsPartOpen__002",
+        "name": "HouseReactiveFixture_44",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1574.08,
+          715.74,
+          290.4
+        ],
+        "extent": [
+          1574.08,
+          715.74,
+          290.4
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_BR_SM_Bedroom_CharcoalCurtainsClosed__001",
+        "name": "HouseReactiveFixture_45",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1637.82,
+          635.01,
+          290.4
+        ],
+        "extent": [
+          1637.82,
+          635.01,
+          290.4
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_BR_SM_Bedroom_CharcoalCurtainsClosed__002",
+        "name": "HouseReactiveFixture_46",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1637.82,
+          568.29,
+          290.4
+        ],
+        "extent": [
+          1637.82,
+          568.29,
+          290.4
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_R204_LightGrommetCurtains__001",
+        "name": "HouseReactiveFixture_47",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1623.24,
+          80.06,
+          282.5
+        ],
+        "extent": [
+          1623.24,
+          80.06,
+          282.5
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_R204_LightGrommetCurtains__002",
+        "name": "HouseReactiveFixture_48",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1622.94,
+          6.17,
+          282.5
+        ],
+        "extent": [
+          1622.94,
+          48.33,
+          282.5
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__001",
+        "name": "HouseReactiveFixture_49",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1649.51,
+          -415.33,
+          118.8
+        ],
+        "extent": [
+          1649.51,
+          415.33,
+          118.8
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__002",
+        "name": "HouseReactiveFixture_50",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -882.91,
+          266.95,
+          110.56
+        ],
+        "extent": [
+          882.91,
+          266.95,
+          110.56
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__077",
+        "name": "HouseReactiveFixture_51",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -977.68,
+          -403.97,
+          145.17
+        ],
+        "extent": [
+          977.68,
+          403.97,
+          145.17
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__078",
+        "name": "HouseReactiveFixture_52",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1455.47,
+          -448.14,
+          142.46
+        ],
+        "extent": [
+          1455.47,
+          448.14,
+          142.46
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__079",
+        "name": "HouseReactiveFixture_53",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1228.15,
+          -641.57,
+          145.17
+        ],
+        "extent": [
+          1228.15,
+          641.57,
+          145.17
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__080",
+        "name": "HouseReactiveFixture_54",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1228.15,
+          -394.07,
+          145.17
+        ],
+        "extent": [
+          1228.15,
+          394.07,
+          145.17
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__081",
+        "name": "HouseReactiveFixture_55",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1228.15,
+          -131.72,
+          145.17
+        ],
+        "extent": [
+          1228.15,
+          131.72,
+          145.17
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__099",
+        "name": "HouseInteractiveProp_392",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          1417.68,
+          -306.9,
+          198.11
+        ],
+        "extent": [
+          28.6,
+          106.7,
+          3.58
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SMF_Entrance_ALL_099.HI_SMF_Entrance_ALL_099",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              26.0,
+              97.0,
+              3.25
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              1417.68,
+              -306.9,
+              198.11
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__100",
+        "name": "HouseInteractiveProp_393",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          1412.07,
+          -240.9,
+          128.81
+        ],
+        "extent": [
+          22.66,
+          34.1,
+          23.65
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SMF_Entrance_ALL_100.HI_SMF_Entrance_ALL_100",
+            "mesh_origin": [
+              -0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              20.6,
+              31.0,
+              21.5
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              1412.07,
+              -240.9,
+              128.81
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__103",
+        "name": "HouseReactiveFixture_56",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1412.0,
+          -201.64,
+          143.26
+        ],
+        "extent": [
+          1412.0,
+          201.64,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__108",
+        "name": "HouseInteractiveProp_400",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -564.3,
+          752.07,
+          38.5
+        ],
+        "extent": [
+          23.1,
+          17.38,
+          38.5
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SMF_Entrance_ALL_108.HI_SMF_Entrance_ALL_108",
+            "mesh_origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              21.0,
+              15.8,
+              35.0
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -564.3,
+              752.07,
+              38.5
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__111",
+        "name": "HouseReactiveFixture_57",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -865.42,
+          367.95,
+          142.46
+        ],
+        "extent": [
+          865.42,
+          367.95,
+          142.46
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__112",
+        "name": "HouseReactiveFixture_58",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1228.15,
+          156.48,
+          145.17
+        ],
+        "extent": [
+          1228.15,
+          156.48,
+          145.17
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__113",
+        "name": "HouseReactiveFixture_59",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1228.15,
+          389.13,
+          145.17
+        ],
+        "extent": [
+          1228.15,
+          389.13,
+          145.17
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__143",
+        "name": "HouseReactiveFixture_60",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1410.35,
+          580.4,
+          143.26
+        ],
+        "extent": [
+          1410.35,
+          580.4,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__144",
+        "name": "HouseReactiveFixture_61",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1178.53,
+          584.53,
+          143.26
+        ],
+        "extent": [
+          1178.53,
+          584.53,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__145",
+        "name": "HouseReactiveFixture_62",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          939.28,
+          587.41,
+          143.26
+        ],
+        "extent": [
+          939.28,
+          587.41,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__146",
+        "name": "HouseReactiveFixture_63",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1410.35,
+          434.79,
+          143.26
+        ],
+        "extent": [
+          1410.35,
+          434.79,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__147",
+        "name": "HouseReactiveFixture_64",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1179.35,
+          438.5,
+          143.26
+        ],
+        "extent": [
+          1179.35,
+          438.5,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__148",
+        "name": "HouseReactiveFixture_65",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          939.69,
+          440.15,
+          143.26
+        ],
+        "extent": [
+          939.69,
+          440.15,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__149",
+        "name": "HouseReactiveFixture_66",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1411.59,
+          288.76,
+          143.26
+        ],
+        "extent": [
+          1411.59,
+          288.76,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Entrance_ALL__150",
+        "name": "HouseReactiveFixture_67",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1410.76,
+          61.48,
+          143.26
+        ],
+        "extent": [
+          1410.76,
+          61.48,
+          143.26
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__001",
+        "name": "HouseReactiveFixture_68",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          738.59,
+          -883.46,
+          284.32
+        ],
+        "extent": [
+          738.59,
+          883.46,
+          284.32
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__002",
+        "name": "HouseReactiveFixture_69",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          738.59,
+          -942.26,
+          284.3
+        ],
+        "extent": [
+          738.59,
+          942.26,
+          284.3
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__003",
+        "name": "HouseReactiveFixture_70",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1598.68,
+          -907.34,
+          286.35
+        ],
+        "extent": [
+          1598.68,
+          907.34,
+          286.35
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__004",
+        "name": "HouseReactiveFixture_71",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1598.68,
+          -849.61,
+          286.37
+        ],
+        "extent": [
+          1598.68,
+          849.61,
+          286.37
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__005",
+        "name": "HouseReactiveFixture_72",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1591.75,
+          584.98,
+          286.66
+        ],
+        "extent": [
+          1591.75,
+          584.98,
+          286.66
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__006",
+        "name": "HouseReactiveFixture_73",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1591.75,
+          639.51,
+          286.67
+        ],
+        "extent": [
+          1591.75,
+          639.51,
+          286.67
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__036",
+        "name": "HouseInteractiveProp_471",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -738.54,
+          -652.69,
+          397.0
+        ],
+        "extent": [
+          26.14,
+          23.26,
+          58.54
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SMF_Upper_ALL_036.HI_SMF_Upper_ALL_036",
+            "mesh_origin": [
+              -0.0,
+              0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              23.76,
+              21.15,
+              53.22
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -738.54,
+              -652.69,
+              397.0
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__037",
+        "name": "HouseInteractiveProp_472",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -853.38,
+          -652.69,
+          397.0
+        ],
+        "extent": [
+          26.14,
+          23.26,
+          58.54
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SMF_Upper_ALL_037.HI_SMF_Upper_ALL_037",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              -0.0
+            ],
+            "mesh_extent": [
+              23.76,
+              21.15,
+              53.22
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -853.38,
+              -652.69,
+              397.0
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__038",
+        "name": "HouseInteractiveProp_473",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -1049.4,
+          -511.61,
+          396.67
+        ],
+        "extent": [
+          54.22,
+          1.98,
+          85.79
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SMF_Upper_ALL_038.HI_SMF_Upper_ALL_038",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              49.29,
+              1.8,
+              77.99
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -1049.4,
+              -511.61,
+              396.67
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__039",
+        "name": "HouseInteractiveProp_474",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -0.0,
+          -512.47,
+          345.18
+        ],
+        "extent": [
+          69.96,
+          2.51,
+          86.68
+        ],
+        "folder": "House interactions/furniture",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SMF_Upper_ALL_039.HI_SMF_Upper_ALL_039",
+            "mesh_origin": [
+              0.0,
+              -0.0,
+              0.0
+            ],
+            "mesh_extent": [
+              63.6,
+              2.28,
+              78.8
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -0.0,
+              -512.47,
+              345.18
+            ],
+            "scale": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__040",
+        "name": "HouseReactiveFixture_74",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -401.22,
+          128.97,
+          318.84
+        ],
+        "extent": [
+          401.22,
+          128.97,
+          318.84
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__042",
+        "name": "HouseReactiveFixture_75",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          406.18,
+          128.97,
+          318.84
+        ],
+        "extent": [
+          406.18,
+          128.97,
+          318.84
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__044",
+        "name": "HouseReactiveFixture_76",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1504.99,
+          -702.32,
+          313.92
+        ],
+        "extent": [
+          1504.99,
+          702.32,
+          313.92
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__049",
+        "name": "HouseReactiveFixture_77",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1120.87,
+          -861.71,
+          312.96
+        ],
+        "extent": [
+          1120.87,
+          861.71,
+          312.96
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__050",
+        "name": "HouseReactiveFixture_78",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1487.17,
+          -893.39,
+          313.83
+        ],
+        "extent": [
+          1487.17,
+          893.39,
+          313.83
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__051",
+        "name": "HouseReactiveFixture_79",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          841.69,
+          -827.06,
+          312.3
+        ],
+        "extent": [
+          841.69,
+          827.06,
+          312.3
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__067",
+        "name": "HouseReactiveFixture_80",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1506.97,
+          415.83,
+          314.17
+        ],
+        "extent": [
+          1506.97,
+          415.83,
+          314.17
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__068",
+        "name": "HouseReactiveFixture_81",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1160.47,
+          536.61,
+          313.36
+        ],
+        "extent": [
+          1160.47,
+          536.61,
+          313.36
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__069",
+        "name": "HouseReactiveFixture_82",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1477.27,
+          611.85,
+          314.14
+        ],
+        "extent": [
+          1477.27,
+          611.85,
+          314.14
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SMF_Upper_ALL__070",
+        "name": "HouseReactiveFixture_83",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          838.72,
+          541.56,
+          312.59
+        ],
+        "extent": [
+          838.72,
+          541.56,
+          312.59
+        ],
+        "folder": "House interactions/chandelier",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_m1_Solid__embedded_1",
+        "name": "HouseReactiveFixture_84",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -747.65,
+          434.12,
+          82.78
+        ],
+        "extent": [
+          747.65,
+          434.12,
+          82.78
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Interactive_SM_Entrance_p0_m2_Solid__embedded_1",
+        "name": "HouseReactiveFixture_85",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -905.35,
+          432.33,
+          82.78
+        ],
+        "extent": [
+          905.35,
+          432.33,
+          82.78
+        ],
+        "folder": "House interactions/curtain",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HouseReactiveFixture",
+        "name": "HouseReactiveFixture_90",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          949.13,
+          692.42,
+          114.81
+        ],
+        "extent": [
+          949.13,
+          692.42,
+          114.81
+        ],
+        "folder": "First floor/Reference kitchen",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HouseReactiveFixture2",
+        "name": "HouseReactiveFixture_91",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1499.13,
+          692.42,
+          109.31
+        ],
+        "extent": [
+          1499.13,
+          692.42,
+          109.31
+        ],
+        "folder": "First floor/Reference kitchen",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HouseReactiveFixture3",
+        "name": "HouseReactiveFixture_92",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1608.72,
+          -215.43,
+          110.96
+        ],
+        "extent": [
+          1608.72,
+          215.43,
+          110.96
+        ],
+        "folder": "First floor/Reference kitchen",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HouseReactiveFixture4",
+        "name": "HouseReactiveFixture_93",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1608.72,
+          223.13,
+          110.96
+        ],
+        "extent": [
+          1608.72,
+          223.13,
+          110.96
+        ],
+        "folder": "First floor/Reference kitchen",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "HouseReactiveFixture5",
+        "name": "HouseReactiveFixture_94",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          1608.72,
+          584.48,
+          110.96
+        ],
+        "extent": [
+          1608.72,
+          584.48,
+          110.96
+        ],
+        "folder": "First floor/Reference kitchen",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Kitchen_ClosedClosetDoor",
+        "name": "ExistingHouseDoor_24",
+        "class": "ExistingHouseDoor",
+        "origin": [
+          1201.51,
+          114.84,
+          121.0
+        ],
+        "extent": [
+          1201.51,
+          137.5,
+          126.5
+        ],
+        "folder": "First floor/Reference kitchen",
+        "components": [
+          {
+            "name": "MovingPanelCollision",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "GreatRoom_WestTV",
+        "name": "HouseInteractiveProp_2",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          -1250.15,
+          208.89,
+          268.84
+        ],
+        "extent": [
+          5.94,
+          166.98,
+          103.9
+        ],
+        "folder": "GreatRoom/Televisions",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/GreatRoomTVs/SM_GRTV_Television_0.SM_GRTV_Television_0",
+            "mesh_origin": [
+              0.0,
+              -0.5,
+              -4.0
+            ],
+            "mesh_extent": [
+              92.0,
+              5.4,
+              57.25
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              -1249.6,
+              208.89,
+              276.1
+            ],
+            "scale": [
+              1.81,
+              1.1,
+              1.81
+            ]
+          }
+        ]
+      },
+      {
+        "label": "GreatRoom_EastTV",
+        "name": "HouseInteractiveProp_229",
+        "class": "HouseInteractiveProp",
+        "origin": [
+          1359.05,
+          186.12,
+          268.84
+        ],
+        "extent": [
+          5.94,
+          166.98,
+          103.9
+        ],
+        "folder": "GreatRoom/Televisions",
+        "components": [
+          {
+            "name": "Body",
+            "class": "StaticMeshComponent",
+            "profile": "BlockAllDynamic",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": true,
+            "hidden_in_game": false,
+            "mesh": "/Game/SeniorSendOff/House/GreatRoomTVs/SM_GRTV_Television_0.SM_GRTV_Television_0",
+            "mesh_origin": [
+              0.0,
+              -0.5,
+              -4.0
+            ],
+            "mesh_extent": [
+              92.0,
+              5.4,
+              57.25
+            ],
+            "trace_flag": "<CollisionTraceFlag.CTF_USE_SIMPLE_AND_COMPLEX: 1>",
+            "location": [
+              1358.5,
+              186.12,
+              276.1
+            ],
+            "scale": [
+              1.81,
+              1.1,
+              1.81
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Landing sash glass",
+        "name": "HouseReactiveFixture_86",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -1260.6,
+          676.55,
+          300.85
+        ],
+        "extent": [
+          1260.6,
+          676.55,
+          300.85
+        ],
+        "folder": "House details/Hall floors and porch",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "NightClub_Ambience",
+        "name": "HouseNightClub_0",
+        "class": "HouseNightClub",
+        "origin": [
+          -1375.22,
+          -1073.33,
+          311.36
+        ],
+        "extent": [
+          1375.22,
+          1073.33,
+          311.36
+        ],
+        "folder": "House/NightClub/Runtime",
+        "components": [
+          {
+            "name": "Room0ClubPostProcessBounds",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          },
+          {
+            "name": "Room1ClubPostProcessBounds",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      },
+      {
+        "label": "Porch navy door curtain",
+        "name": "HouseReactiveFixture_12",
+        "class": "HouseReactiveFixture",
+        "origin": [
+          -14.75,
+          -462.33,
+          284.35
+        ],
+        "extent": [
+          83.17,
+          462.33,
+          284.35
+        ],
+        "folder": "House details/Hall floors and porch",
+        "components": [
+          {
+            "name": "FixtureInteractionVolume",
+            "class": "BoxComponent",
+            "profile": "Custom",
+            "pawn_response": "<CollisionResponseType.ECR_IGNORE: 0>",
+            "visible": false,
+            "hidden_in_game": true
+          }
+        ]
+      }
+    ]
+  }
+]

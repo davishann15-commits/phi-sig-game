@@ -1,0 +1,60 @@
+{
+  "views": [
+    {
+      "name": "01_GreatRoom_Entrance",
+      "position": {
+        "x": 5.67,
+        "y": 1.68,
+        "z": 10.764
+      },
+      "target": {
+        "x": -4.14,
+        "y": 2.5,
+        "z": -3.96
+      },
+      "fieldOfView": 67
+    },
+    {
+      "name": "07_GreatRoom_RestoredFireplace",
+      "position": {
+        "x": 5.58,
+        "y": 1.68,
+        "z": -2.43
+      },
+      "target": {
+        "x": -1.62,
+        "y": 2.0,
+        "z": -12.06
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "03_WestTVClose",
+      "position": {
+        "x": 3.2,
+        "y": 1.69,
+        "z": -8.5
+      },
+      "target": {
+        "x": 1.9,
+        "y": 2.4125,
+        "z": -11.18
+      },
+      "fieldOfView": 50
+    },
+    {
+      "name": "04_EastTVClose",
+      "position": {
+        "x": 0.6,
+        "y": 1.69,
+        "z": 9.45
+      },
+      "target": {
+        "x": 1.69,
+        "y": 2.4125,
+        "z": 12.17
+      },
+      "fieldOfView": 50
+    }
+  ]
+}

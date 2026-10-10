@@ -70,6 +70,8 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
                 {
                     ++NativeCount;
                     AActor* Native = Visual->GetNativeCharacter();
+                    if (!Check(Visual->GetActorScale3D().Equals(Pawn->GetMesh()->GetComponentScale(), .001f),
+                        TEXT("Detailed character body did not inherit the gameplay size"))) return false;
                     if (!Check(Native && !Native->IsHidden() && Native->GetOwner() == Pawn,
                         TEXT("Native Braxton body is missing, hidden or has the wrong owner"))) return false;
                     // Groom setup creates non-rendering Niagara simulation
@@ -92,6 +94,8 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
                 {
                     ++NativeCount;
                     AActor* Native = Visual->GetNativeCharacter();
+                    if (!Check(Visual->GetActorScale3D().Equals(Pawn->GetMesh()->GetComponentScale(), .001f),
+                        TEXT("Detailed character body did not inherit the gameplay size"))) return false;
                     if (!Check(Native && !Native->IsHidden() && Native->GetOwner() == Pawn,
                         TEXT("Native Runner body is missing, hidden or has the wrong owner"))) return false;
                     TInlineComponentArray<UMeshComponent*> Parts(Native);
@@ -112,6 +116,8 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
                 {
                     ++NativeCount;
                     AActor* Native = Visual->GetNativeCharacter();
+                    if (!Check(Visual->GetActorScale3D().Equals(Pawn->GetMesh()->GetComponentScale(), .001f),
+                        TEXT("Detailed character body did not inherit the gameplay size"))) return false;
                     if (!Check(Native && !Native->IsHidden() && Native->GetOwner() == Pawn,
                         TEXT("Native Fixer body is missing, hidden or has the wrong owner"))) return false;
                     if (!Check(Visual->GetBodyMesh() && Visual->GetIdleAnimation() && Visual->GetWalkAnimation(),
@@ -334,13 +340,21 @@ void TickSeniorLobbySmokeTest(ASeniorLobbyController* PC)
             if (!Check(Pawn->GetBaseTranslationOffset().Equals(Pawn->GetMesh()->GetRelativeLocation(), .1f),
                 TEXT("Network smoothing still uses a different character's mesh offset"))) return;
             if (!Check(Pawn->FirstPersonArms->GetRelativeLocation().Equals(Pawn->ArmsRelativeTransform.GetTranslation() * (Height / 184.f), .1f)
-                && Pawn->GetMesh()->GetRelativeScale3D().Equals(FVector::OneVector, .001f), TEXT("Body or first-person arms were scaled twice"))) return;
+                && Pawn->GetMesh()->GetRelativeScale3D().Equals(FVector::OneVector, .001f)
+                && Pawn->GetActorScale3D().Equals(FVector(.95f), .001f)
+                && Pawn->FirstPersonArms->GetComponentScale().Equals(Pawn->ArmsRelativeTransform.GetScale3D()*.95f, .001f),
+                TEXT("Body or first-person arms do not inherit one five-percent reduction"))) return;
+            if (!Check(FMath::IsNearlyEqual(Pawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight()*2.f,Height*.95f,.25f)
+                && FMath::IsNearlyEqual(Pawn->GetCapsuleComponent()->GetScaledCapsuleRadius(),32.f*.95f,.1f)
+                && FMath::IsNearlyEqual(float(Pawn->FirstPersonCamera->GetComponentLocation().Z-FeetAfter),EyeHeight*.95f,.25f),
+                TEXT("World collision or eye level does not match the smaller character"))) return;
             if (!Check(FMath::IsNearlyEqual(Radius, Pawn->GetCapsuleComponent()->GetUnscaledCapsuleRadius())
                 && FMath::IsNearlyEqual(WalkSpeed, Pawn->GetCharacterMovement()->MaxWalkSpeed)
                 && FMath::IsNearlyEqual(JumpSpeed, Pawn->GetCharacterMovement()->JumpZVelocity), TEXT("Stature update changed movement balance"))) return;
             if (Height > TallHeight) { TallHeight = Height; TallEye = EyeHeight; }
             if (Height < ShortHeight) { ShortHeight = Height; ShortEye = EyeHeight; }
-            UE_LOG(LogTemp, Display, TEXT("CHARACTER_DIMENSIONS: C%02d height=%.2f eye=%.2f half=%.2f"), Index + 1, Height, EyeHeight, HalfHeight);
+            UE_LOG(LogTemp, Display, TEXT("CHARACTER_DIMENSIONS: C%02d height=%.2f eye=%.2f half=%.2f worldHeight=%.2f worldEye=%.2f scale=%.3f"),
+                Index + 1, Height, EyeHeight, HalfHeight,Height*.95f,EyeHeight*.95f,Pawn->GetActorScale3D().Z);
         }
         if (!Check(TallHeight - ShortHeight >= 12.f && TallEye - ShortEye >= 11.f,
             TEXT("Shortest and tallest character assets do not have the intended visible height separation"))) return;

@@ -65,10 +65,12 @@ void ASeniorDouli::DamageHit(const FHitResult& Hit)
     const APawn* OtherPawn=Cast<APawn>(Target);
     if(HasAuthority() && Pawn && Target && Target->CanBeDamaged()
         && !(OtherPawn && OtherPawn->IsPlayerControlled())
-        && (OtherPawn || Target->ActorHasTag(TEXT("Enemy"))))
+        && (OtherPawn || Target->ActorHasTag(TEXT("Enemy")) || Target->ActorHasTag(TEXT("HouseBreakable"))))
     {
-        UGameplayStatics::ApplyPointDamage(Target,Damage,FlightDirection,Hit,Pawn->GetController(),this,UDamageType::StaticClass());
-        UE_LOG(LogTemp,Display,TEXT("DOULI_HIT %s damage=%.1f"),*Target->GetName(),Damage);
+        // Scenery uses hit-sized damage steps; combat damage keeps its existing tuning.
+        const float AppliedDamage = (Target->ActorHasTag(TEXT("HouseBreakable")) ? 8.f : Damage) * Pawn->OutgoingDamageMultiplier();
+        UGameplayStatics::ApplyPointDamage(Target,AppliedDamage,FlightDirection,Hit,Pawn->GetController(),this,UDamageType::StaticClass());
+        UE_LOG(LogTemp,Display,TEXT("DOULI_HIT %s damage=%.1f"),*Target->GetName(),AppliedDamage);
     }
 }
 bool ASeniorDouli::BeginThrow()

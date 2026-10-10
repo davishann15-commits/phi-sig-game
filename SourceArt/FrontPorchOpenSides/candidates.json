@@ -1,0 +1,48 @@
+[
+  {
+    "actor": "SM_Upper_m1_m1_Solid",
+    "asset": "/Game/SeniorSendOff/House/HallFloorsPorch/SM_HFP_Upper_m1_m1_Solid.SM_HFP_Upper_m1_m1_Solid",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.9800000000000002,
+      1.9800000000000002,
+      1.1
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cuts": [
+      149,
+      0
+    ]
+  },
+  {
+    "actor": "SM_Upper_m1_p0_Solid",
+    "asset": "/Game/SeniorSendOff/House/HallFloorsPorch/SM_HFP_Upper_m1_p0_Solid.SM_HFP_Upper_m1_p0_Solid",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.9800000000000002,
+      1.9800000000000002,
+      1.1
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cuts": [
+      0,
+      149
+    ]
+  }
+]

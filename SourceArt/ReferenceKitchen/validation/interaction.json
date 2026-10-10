@@ -1,0 +1,15 @@
+{
+	"stainlessServingCarts": 5,
+	"fridgeAndPrepTableCorrectOrder": true,
+	"chairMaximumHorizontalSizeCm": 49.350009918212891,
+	"allPropsParkedWithDamageAndCollision": true,
+	"closedClosetBlocksAndStaysClosed": true,
+	"actualChairPickupAndTwoHandContacts": true,
+	"allThreeTableDamageStagesAndSettling": true,
+	"settledBrokenSpeed": 0,
+	"passed": true,
+	"detail": "Installed kitchen inventory, fitted damage meshes, closed closet collision, actual chair pickup and staged table destruction verified",
+	"furnitureCount": 137,
+	"ceilingPanels": 3,
+	"elapsedSeconds": 16.493459042161703
+}

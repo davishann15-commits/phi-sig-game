@@ -1,0 +1,102 @@
+{
+  "meshes": [
+    {
+      "name": "SM_PIG_BlackHead",
+      "file": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-animal-v4/art/meshes/SM_PIG_BlackHead.fbx",
+      "vertices": 6756,
+      "triangles": 13280,
+      "uvLayers": 1,
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackSnout",
+        "PIG_M_NostrilMouth",
+        "PIG_M_GlossBlackEye",
+        "PIG_M_CharcoalEarInner",
+        "PIG_M_BlackBristle"
+      ],
+      "hingeCmUnreal": [
+        0,
+        0,
+        0
+      ],
+      "boundsCm": {
+        "min": [
+          -24.2396183013916,
+          -14.702303886413574,
+          -26.492244720458984
+        ],
+        "max": [
+          24.900026321411133,
+          14.697556495666504,
+          3.355391263961792
+        ]
+      }
+    },
+    {
+      "name": "SM_PIG_LeftEar",
+      "file": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-animal-v4/art/meshes/SM_PIG_LeftEar.fbx",
+      "vertices": 1631,
+      "triangles": 3254,
+      "uvLayers": 1,
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackSnout",
+        "PIG_M_NostrilMouth",
+        "PIG_M_GlossBlackEye",
+        "PIG_M_CharcoalEarInner",
+        "PIG_M_BlackBristle"
+      ],
+      "hingeCmUnreal": [
+        -15.6,
+        -11.200000000000001,
+        2.5
+      ],
+      "boundsCm": {
+        "min": [
+          -1.635897159576416,
+          -9.35394287109375,
+          -7.136382102966309
+        ],
+        "max": [
+          21.504003524780273,
+          1.2687422037124634,
+          4.712644100189209
+        ]
+      }
+    },
+    {
+      "name": "SM_PIG_RightEar",
+      "file": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-animal-v4/art/meshes/SM_PIG_RightEar.fbx",
+      "vertices": 1487,
+      "triangles": 2966,
+      "uvLayers": 1,
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackSnout",
+        "PIG_M_NostrilMouth",
+        "PIG_M_GlossBlackEye",
+        "PIG_M_CharcoalEarInner",
+        "PIG_M_BlackBristle"
+      ],
+      "hingeCmUnreal": [
+        -15.6,
+        11.200000000000001,
+        2.5
+      ],
+      "boundsCm": {
+        "min": [
+          -1.2590408325195312,
+          -1.5071712732315063,
+          -7.172221660614014
+        ],
+        "max": [
+          21.07741355895996,
+          8.97549819946289,
+          4.4667229652404785
+        ]
+      }
+    }
+  ],
+  "originalHeadTriangles": 19500,
+  "partitionPreservesAllTriangles": true
+}

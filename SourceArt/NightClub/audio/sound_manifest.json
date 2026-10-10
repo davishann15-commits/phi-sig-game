@@ -1,0 +1,25 @@
+{
+  "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/audio/NC_OriginalFiller_120BPM.wav",
+  "asset_name": "NC_OriginalFiller_120BPM",
+  "suggested_asset_path": "/Game/SeniorSendOff/House/NightClub/NC_OriginalFiller_120BPM",
+  "author": "Original procedural composition generated for SeniorSendoff",
+  "third_party_samples": [],
+  "sample_rate": 44100,
+  "channels": 2,
+  "bit_depth": 16,
+  "duration_seconds": 16,
+  "bpm": 120,
+  "beats_per_loop": 32,
+  "bars_4_4": 8,
+  "seamless_wrap": true,
+  "peak_dbfs": -4.03,
+  "rms_dbfs": -17.72,
+  "sha256": "58d1ef956f58e0ca902538469c99c78543bba42af76e4bf436e5db9d5be57def",
+  "unreal_soundwave_settings": {
+    "looping": true,
+    "loading_behavior": "ForceInline",
+    "compression_quality": 80,
+    "sound_class": null
+  },
+  "runtime_music_volume": 0.3
+}

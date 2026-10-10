@@ -1,0 +1,17 @@
+{
+  "map": "Chapter01_House",
+  "actorCount": 724,
+  "protectedActorsUnchanged": 723,
+  "waterTransformUnchanged": true,
+  "materials": {
+    "water": "/Game/SeniorSendOff/House/HotTubRoomV1/M_Spa_ReactiveWater_v3.M_Spa_ReactiveWater_v3",
+    "splash": "/Game/SeniorSendOff/House/HotTubRoomV1/M_Spa_SplashDroplet.M_Spa_SplashDroplet",
+    "foam": "/Game/SeniorSendOff/House/HotTubRoomV1/M_Spa_SplashFoam.M_Spa_SplashFoam"
+  },
+  "waveSpeed": 62.0,
+  "waveDamping": 1.100000023841858,
+  "maxWaveHeightCm": 5.0,
+  "foamWeightChangedNodes": [
+    "MaterialExpressionConstant_2"
+  ]
+}

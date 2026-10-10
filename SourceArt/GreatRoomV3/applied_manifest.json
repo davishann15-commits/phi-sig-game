@@ -1,0 +1,59 @@
+{
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "newActors": [
+    "COL_GR3_Furniture",
+    "SM_GR3_Consoles",
+    "SM_GR3_Conversation",
+    "SM_GR3_FarRug",
+    "SM_GR3_FarSeating",
+    "SM_GR3_GreenRug",
+    "SM_GR3_NearSeating",
+    "SM_GR3_RoseRug",
+    "SM_GR3_Tables"
+  ],
+  "changedChunks": {
+    "SMF_Entrance_m1_m1_Solid": {
+      "asset": "SMF_GR3_m1_m1_Cleared",
+      "removedFaces": 24056,
+      "remainingFaces": 2632
+    },
+    "SMF_Entrance_m1_p0_Solid": {
+      "asset": "SMF_GR3_m1_p0_Cleared",
+      "removedFaces": 16212,
+      "remainingFaces": 3384
+    },
+    "SMF_Entrance_p0_m1_Solid": {
+      "asset": "SMF_GR3_p0_m1_Cleared",
+      "removedFaces": 49788,
+      "remainingFaces": 36528
+    },
+    "SMF_Entrance_p0_p0_Solid": {
+      "asset": "SMF_GR3_p0_p0_Cleared",
+      "removedFaces": 46412,
+      "remainingFaces": 50608
+    },
+    "COLF_Entrance_m1_m1_Solid": {
+      "asset": null,
+      "removedFaces": 24,
+      "remainingFaces": 0
+    },
+    "COLF_Entrance_m1_p0_Solid": {
+      "asset": null,
+      "removedFaces": 12,
+      "remainingFaces": 0
+    },
+    "COLF_Entrance_p0_m1_Solid": {
+      "asset": "COLF_GR3_p0_m1_Cleared",
+      "removedFaces": 60,
+      "remainingFaces": 72
+    },
+    "COLF_Entrance_p0_p0_Solid": {
+      "asset": "COLF_GR3_p0_p0_Cleared",
+      "removedFaces": 72,
+      "remainingFaces": 36
+    }
+  },
+  "beforeCount": 415,
+  "afterCount": 415,
+  "protectedActorsVerified": 400
+}

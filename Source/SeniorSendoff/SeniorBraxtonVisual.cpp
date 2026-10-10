@@ -1,7 +1,9 @@
 #include "SeniorBraxtonVisual.h"
 #include "SeniorGarmentAnimInstance.h"
 #include "SeniorDouliAnim.h"
+#include "HouseFurnitureInteractionComponent.h"
 #include "SeniorDouliIdle.h"
+#include "HouseRoamingPig.h"
 #include "Animation/AnimSequence.h"
 #include "Components/SceneComponent.h"
 #include "Components/SkeletalMeshComponent.h"
@@ -239,6 +241,36 @@ void ASeniorBraxtonVisual::SetDouliEquipped(bool bEquipped, float Motion, float 
         else if(Pose.Attachment==FSeniorDouliIdle::EAttachment::Head)
             LobbyHat->SetRelativeTransform(FSeniorDouliIdle::HeadHat(Body->GetSkeletalMeshAsset()->GetRefSkeleton()));
         else LobbyHat->SetRelativeTransform(Pose.FreeHat);
+    }
+}
+
+void ASeniorBraxtonVisual::SetFurnitureCarryPose(UHouseFurnitureInteractionComponent* Carry)
+{
+    if(!Body || bIsPreview)return;
+    if(Carry && Carry->GetCarryPoseBlend()>.001f && !Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+        Body->SetAnimInstanceClass(USeniorDouliAnim::StaticClass());
+    if(auto* Anim=Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+    {
+        if(!Anim->BaseSequence)Anim->BaseSequence=Idle;
+        Anim->bFirstPerson=false;Anim->FurnitureCarryTarget=Carry;
+    }
+}
+
+void ASeniorBraxtonVisual::SetPigCarryPose(float Blend,float Grip,const FVector& GripWorld,const FVector& LegAxisWorld,const FVector& FingersWorld,bool bPlacing,AHouseRoamingPig* Pig)
+{
+    if(!Body || bIsPreview)return;
+    if(Blend>.001f && !Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+        Body->SetAnimInstanceClass(USeniorDouliAnim::StaticClass());
+    if(auto* Anim=Cast<USeniorDouliAnim>(Body->GetAnimInstance()))
+    {
+        if(!Anim->BaseSequence)Anim->BaseSequence=Idle;
+        Anim->bFirstPerson=false;Anim->bHoldingPig=Blend>.001f;Anim->bPigPlacing=bPlacing;
+        Anim->PigTargetActor=Pig;
+        Anim->PigCarryBlend=Blend;Anim->PigGripBlend=Grip;
+        const FTransform Component=Body->GetComponentTransform();
+        Anim->PigGripTarget=Component.InverseTransformPosition(GripWorld);
+        Anim->PigGripDirection=Component.InverseTransformVectorNoScale(LegAxisWorld).GetSafeNormal();
+        Anim->PigHandForward=Component.InverseTransformVectorNoScale(FingersWorld).GetSafeNormal();
     }
 }
 

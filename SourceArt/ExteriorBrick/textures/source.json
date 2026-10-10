@@ -1,0 +1,15 @@
+{
+  "source": "Original procedural assets authored for SeniorSendoff",
+  "tile_cm": 192,
+  "bond": "8 bricks across / 24 courses, running bond",
+  "joint_cm": 0.96,
+  "reference_images": [
+    "front.jpg",
+    "arcade.jpg"
+  ],
+  "maps": [
+    "Base",
+    "DirectX normal",
+    "Roughness/AO/Height"
+  ]
+}

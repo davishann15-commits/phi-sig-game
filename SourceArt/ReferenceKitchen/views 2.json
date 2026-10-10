@@ -1,0 +1,116 @@
+{
+  "views": [
+    {
+      "name": "01_DiningForward",
+      "position": {
+        "x": -2.72,
+        "y": 1.63,
+        "z": 23.3
+      },
+      "target": {
+        "x": 7.0,
+        "y": 1.05,
+        "z": 27.6
+      },
+      "fieldOfView": 55
+    },
+    {
+      "name": "02_DiningReverse",
+      "position": {
+        "x": 9.25,
+        "y": 1.62,
+        "z": 25.0
+      },
+      "target": {
+        "x": -5.8,
+        "y": 0.8,
+        "z": 27.5
+      },
+      "fieldOfView": 55
+    },
+    {
+      "name": "03_ServingCounter",
+      "position": {
+        "x": 9.0,
+        "y": 1.57,
+        "z": 20.5
+      },
+      "target": {
+        "x": 11.15,
+        "y": 1.07,
+        "z": 20.41
+      },
+      "fieldOfView": 53
+    },
+    {
+      "name": "04_ApplianceStation",
+      "position": {
+        "x": 10.5,
+        "y": 1.53,
+        "z": 16.9
+      },
+      "target": {
+        "x": 10.4,
+        "y": 1.1,
+        "z": 14.1
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "05_IceAndSink",
+      "position": {
+        "x": 9.3,
+        "y": 1.56,
+        "z": 18.4
+      },
+      "target": {
+        "x": 6.55,
+        "y": 1.0,
+        "z": 18.0
+      },
+      "fieldOfView": 50
+    },
+    {
+      "name": "06_TVAndClosedCloset",
+      "position": {
+        "x": 3.25,
+        "y": 1.55,
+        "z": 24.5
+      },
+      "target": {
+        "x": 2.5,
+        "y": 1.2,
+        "z": 20.67
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "07_StorageWall",
+      "position": {
+        "x": -3.9,
+        "y": 1.53,
+        "z": 23.8
+      },
+      "target": {
+        "x": -6.25,
+        "y": 0.65,
+        "z": 24.4
+      },
+      "fieldOfView": 55
+    },
+    {
+      "name": "08_EntryExit",
+      "position": {
+        "x": 8.0,
+        "y": 1.65,
+        "z": 15.0
+      },
+      "target": {
+        "x": 6.19,
+        "y": 2.2,
+        "z": 15.0
+      },
+      "fieldOfView": 50
+    }
+  ]
+}

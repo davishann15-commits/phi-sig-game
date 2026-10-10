@@ -1,0 +1,60 @@
+{
+  "views": [
+    {
+      "name": "LibraryStudy",
+      "position": {
+        "x": -8.5,
+        "y": -1.55,
+        "z": -27.7
+      },
+      "target": {
+        "x": -12.4,
+        "y": -2.3,
+        "z": -25.7
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryGameTable",
+      "position": {
+        "x": 7.6,
+        "y": -1.66,
+        "z": -25.2
+      },
+      "target": {
+        "x": 4.7,
+        "y": -2.41,
+        "z": -27.1
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryShelves",
+      "position": {
+        "x": -0.2,
+        "y": -1.74,
+        "z": -27.7
+      },
+      "target": {
+        "x": 0.52,
+        "y": -2.03,
+        "z": -29.75
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryWorktable",
+      "position": {
+        "x": 0.4,
+        "y": -1.74,
+        "z": -25.2
+      },
+      "target": {
+        "x": 2.23,
+        "y": -2.49,
+        "z": -28.1
+      },
+      "fieldOfView": 52
+    }
+  ]
+}

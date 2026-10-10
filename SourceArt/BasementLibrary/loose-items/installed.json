@@ -1,0 +1,851 @@
+{
+  "passed": true,
+  "removed_groups": [
+    "Library_BookShelfContents0_001",
+    "Library_StackedBooks_001",
+    "Library_BookShelfContents2_001",
+    "Library_BookShelfContents3_001",
+    "Library_StackedBooks_002",
+    "Library_BookShelfContents0_002",
+    "Library_BookShelfContents1_001",
+    "Library_StackedBooks_003",
+    "Library_BookShelfContents3_002",
+    "Library_BookShelfContents4_001",
+    "Library_StackedBooks_004",
+    "Library_BookShelfContents1_002",
+    "Library_BookShelfContents2_002",
+    "Library_StackedBooks_005",
+    "Library_BookShelfContents4_002",
+    "Library_BookShelfContents0_003",
+    "Library_StackedBooks_006",
+    "Library_BookShelfContents2_003",
+    "Library_BookShelfContents1_003",
+    "Library_StackedBooks_007",
+    "Library_BookShelfContents3_003",
+    "Library_BookShelfContents4_003",
+    "Library_StackedBooks_008",
+    "Library_BookShelfContents1_004",
+    "Library_BookShelfContents2_004",
+    "Library_StackedBooks_009",
+    "Library_BookShelfContents4_004",
+    "Library_BookShelfContents0_004",
+    "Library_StackedBooks_010",
+    "Library_BookShelfContents2_005",
+    "Library_BookShelfContents3_004",
+    "Library_StackedBooks_011",
+    "Library_BookShelfContents0_005",
+    "Library_BookShelfContents1_005",
+    "Library_StackedBooks_012",
+    "Library_BookShelfContents3_005",
+    "Library_OpenPokerChipCase_001",
+    "Library_GrayBackpack_001",
+    "Library_PaperScatter_001",
+    "Library_FrameRails_001",
+    "Library_PaperScatter_002",
+    "Library_PartyGameStack_001",
+    "Library_StackedBooks_013",
+    "Library_PaperScatter_003",
+    "Library_DeskRiser_001",
+    "Library_PaperScatter_004",
+    "Library_PaperScatter_005",
+    "Library_LoosePaperStack_001",
+    "Library_LoosePaperStack_002",
+    "Library_LoosePaperStack_003",
+    "Library_LoosePaperStack_004",
+    "Library_LoosePaperStack_005",
+    "Library_LoosePaperStack_006",
+    "Library_LoosePaperStack_007",
+    "Library_LoosePaperStack_008"
+  ],
+  "individual_items": 489,
+  "narrowed_chairs": [
+    "Library_MeshOfficeChair_001",
+    "Library_MeshOfficeChair_002",
+    "Library_GrayOfficeChair_001",
+    "Library_MeshOfficeChair_003",
+    "Library_MeshOfficeChair_004",
+    "Library_MeshOfficeChair_005",
+    "Library_MeshOfficeChair_006",
+    "Library_MeshOfficeChair_007",
+    "Library_MeshOfficeChair_008",
+    "Library_MeshOfficeChair_009",
+    "Library_MeshOfficeChair_010"
+  ],
+  "assets": [
+    {
+      "asset": "Loose_BookShelfContents0_00",
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents0_01",
+      "hulls": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents0_02",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents0_03",
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents0_04",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents0_05",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents0_06",
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_00",
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_01",
+      "hulls": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_02",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_03",
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_04",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_05",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_06",
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents1_07",
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_00",
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_01",
+      "hulls": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_02",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_03",
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_04",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_05",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_06",
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_07",
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents2_08",
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_00",
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_01",
+      "hulls": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_02",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_03",
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_04",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_05",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_06",
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_07",
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_08",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents3_09",
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_00",
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_01",
+      "hulls": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_02",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_03",
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_04",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_05",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_06",
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_07",
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_08",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_09",
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "Loose_BookShelfContents4_10",
+      "hulls": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_StackedBooks_00",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_StackedBooks_01",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_StackedBooks_02",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_StackedBooks_03",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_StackedBooks_04",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_StackedBooks_05",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PaperScatter_00",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PaperScatter_01",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PaperScatter_02",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PaperScatter_03",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PaperScatter_04",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PaperScatter_05",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PaperScatter_06",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_00",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_01",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_02",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_03",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_04",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_05",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_06",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_LoosePaperStack_07",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PartyGameStack_00",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PartyGameStack_01",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PartyGameStack_02",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PartyGameStack_03",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PartyGameStack_04",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PartyGameStack_05",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_PartyGameStack_white",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_DeskRiser_notebook",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_DeskRiser_support",
+      "hulls": [
+        3,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_FrameRails_00",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_FrameRails_01",
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "Loose_OpenPokerChipCase_00",
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "Loose_OpenPokerChipCase_12",
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "Loose_OpenPokerChipCase_24",
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "Loose_OpenPokerChipCase_36",
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "Loose_OpenPokerChipCase_support",
+      "hulls": [
+        7,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "Loose_GrayBackpack_bag",
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "Loose_GrayBackpack_jacket",
+      "hulls": [
+        1,
+        2,
+        1,
+        6
+      ]
+    },
+    {
+      "asset": "MeshOfficeChair",
+      "hulls": [
+        9,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "GrayOfficeChair",
+      "hulls": [
+        9,
+        12,
+        12,
+        12
+      ]
+    }
+  ],
+  "protected_actors": 1081
+}

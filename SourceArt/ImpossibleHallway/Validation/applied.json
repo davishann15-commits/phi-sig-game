@@ -1,0 +1,185 @@
+{
+  "protectedActors": 706,
+  "allProtectedUnchanged": true,
+  "doorUnchanged": true,
+  "doorRegistrySha256": "327b5380d1338faf1b828b8dc68644cf0ac6f78749833576b54d713e47122191",
+  "doorRegistryUnchanged": true,
+  "changed": [
+    "HallEnd_COL_HallEnd_ThreeRoomsShell",
+    "HallEnd_SM_HallEnd_ThreeRoomsPracticalLights",
+    "HallEnd_SM_HallEnd_ThreeRoomsShell",
+    "HallEnd_SM_HallEnd_ThreeRoomsTrim",
+    "HallEnd_end_Practical"
+  ],
+  "removedPreviousHallActors": [],
+  "new": [
+    "InfiniteHall_IH_SM_CorridorSurfaces",
+    "InfiniteHall_IH_SM_CorridorTrim",
+    "InfiniteHall_IH_SM_CorridorFixtures",
+    "InfiniteHall_IH_SM_EntranceThroat",
+    "InfiniteHall_IH_COL_CorridorNear",
+    "InfiniteHall_Lamp_00",
+    "InfiniteHall_Lamp_01",
+    "InfiniteHall_Lamp_02",
+    "InfiniteHall_Lamp_03",
+    "InfiniteHall_Lamp_04",
+    "InfiniteHall_Lamp_05",
+    "InfiniteHall_Illusion"
+  ],
+  "meshes": {
+    "IH_SM_RetainedShell": {
+      "boundsCm": [
+        [
+          -2510.0,
+          -1860.0001220703125,
+          297.299072265625
+        ],
+        [
+          -1467.9998779296875,
+          -865.0001220703125,
+          582.0995483398438
+        ]
+      ],
+      "maxErrorCm": 0.00028896331787109375
+    },
+    "IH_COL_RetainedShell": {
+      "boundsCm": [
+        [
+          -2510.0,
+          -1860.0001220703125,
+          297.299072265625
+        ],
+        [
+          -1467.9998779296875,
+          -615.0001831054688,
+          582.0995483398438
+        ]
+      ],
+      "maxErrorCm": 0.00028896331787109375
+    },
+    "IH_SM_RetainedTrim": {
+      "boundsCm": [
+        [
+          -2490.0,
+          -1840.000244140625,
+          302.2991027832031
+        ],
+        [
+          -1488.0,
+          -885.0000610351562,
+          319.2993469238281
+        ]
+      ],
+      "maxErrorCm": 0.000301361083984375
+    },
+    "IH_SM_RetainedPracticals": {
+      "boundsCm": [
+        [
+          -2208.300048828125,
+          -1141.000244140625,
+          558.849365234375
+        ],
+        [
+          -1721.699951171875,
+          -987.000244140625,
+          564.3495483398438
+        ]
+      ],
+      "maxErrorCm": 0.0002079010009765625
+    },
+    "IH_SM_CorridorSurfaces": {
+      "boundsCm": [
+        [
+          -2291.0,
+          -4626.2431640625,
+          301.8992614746094
+        ],
+        [
+          -2063.0,
+          -1386.24267578125,
+          570.0997924804688
+        ]
+      ],
+      "maxErrorCm": 0.000743865966796875
+    },
+    "IH_SM_CorridorTrim": {
+      "boundsCm": [
+        [
+          -2287.0,
+          -4626.2431640625,
+          302.2992858886719
+        ],
+        [
+          -2067.0,
+          -1386.24267578125,
+          565.7997436523438
+        ]
+      ],
+      "maxErrorCm": 0.0007381439208984375
+    },
+    "IH_SM_CorridorFixtures": {
+      "boundsCm": [
+        [
+          -2286.89990234375,
+          -4545.24267578125,
+          472.2992248535156
+        ],
+        [
+          -2274.5,
+          -1467.2425537109375,
+          504.29974365234375
+        ]
+      ],
+      "maxErrorCm": 0.000732421875
+    },
+    "IH_SM_EntranceThroat": {
+      "boundsCm": [
+        [
+          -2291.0,
+          -1466.2425537109375,
+          302.2997741699219
+        ],
+        [
+          -2063.0,
+          -1386.24267578125,
+          566.0997924804688
+        ]
+      ],
+      "maxErrorCm": 0.000232696533203125
+    },
+    "IH_COL_CorridorNear": {
+      "boundsCm": [
+        [
+          -2291.0,
+          -4626.24267578125,
+          297.29925537109375
+        ],
+        [
+          -2063.0,
+          -1386.24267578125,
+          570.0997924804688
+        ]
+      ],
+      "maxErrorCm": 0.0007495880126953125
+    }
+  },
+  "actorCount": 723,
+  "runtime": {
+    "label": "InfiniteHall_Illusion",
+    "location": [
+      -2177.0,
+      -1386.2425,
+      302.3
+    ],
+    "yaw": -90.0,
+    "properties": {
+      "entrance_door_id": "HallEnd_End",
+      "module_length": 180.0,
+      "loop_depth": 360.0,
+      "return_min_depth": 90.0,
+      "corridor_half_width": 110.0,
+      "corridor_height": 263.8
+    }
+  },
+  "audio": "/Game/SeniorSendOff/House/ImpossibleHallway/IH_PipeDrone.IH_PipeDrone"
+}

@@ -1,0 +1,1877 @@
+[
+  {
+    "label": "COL_Entrance_m1_m1_Solid",
+    "name": "StaticMeshActor_35",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1471.1401208496095,
+        -977.1299395751954,
+        -17.600000000000023
+      ],
+      [
+        -192.06009063720694,
+        -530.6201806640626,
+        303.6
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_m1_m1_Solid.COL_Entrance_m1_m1_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": false,
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+        "materials": [
+          "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        ],
+        "near_vertices": 84,
+        "sections": [
+          {
+            "section": 0,
+            "n": 84,
+            "lo": [
+              -192.06013595581058,
+              -951.8850604248048,
+              0.0
+            ],
+            "hi": [
+              -192.06009063720705,
+              -897.4350604248048,
+              269.61002349853516
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "COL_Entrance_m1_p0_Solid",
+    "name": "StaticMeshActor_38",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1424.6100000000004,
+        -1108.7998791503908,
+        -0.43999433517456055
+      ],
+      [
+        1468.000085449219,
+        663.3001812744142,
+        318.45000000000005
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/NoodleWing/COL_Entrance_m1_p0_Solid_NoodleCut.COL_Entrance_m1_p0_Solid_NoodleCut",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": false,
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+        "materials": [
+          "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        ],
+        "near_vertices": 82,
+        "sections": [
+          {
+            "section": 0,
+            "n": 82,
+            "lo": [
+              118.80003776550294,
+              -951.8849395751954,
+              0.0
+            ],
+            "hi": [
+              118.80009063720705,
+              -897.4349395751954,
+              269.61002349853516
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "COL_Entrance_p0_m1_Solid",
+    "name": "StaticMeshActor_42",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1579.0500604248048,
+        -924.6600000000001,
+        -361.96599731445315
+      ],
+      [
+        1396.808245239258,
+        1621.7270727539064,
+        635.272021484375
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_m1_Solid.COL_Entrance_p0_m1_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": false,
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+        "materials": [
+          "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  },
+  {
+    "label": "COL_Entrance_p0_p0_Solid",
+    "name": "StaticMeshActor_44",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1423.6201208496095,
+        -924.6600604248049,
+        -48.46601829528808
+      ],
+      [
+        1610.7301208496096,
+        1619.0500122070314,
+        344.17901611328125
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_p0_Solid.COL_Entrance_p0_p0_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": false,
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+        "materials": [
+          "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  },
+  {
+    "label": "COL_Upper_p0_p0_Solid",
+    "name": "StaticMeshActor_61",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1423.6201208496095,
+        -924.6600604248047,
+        274.1419845581055
+      ],
+      [
+        1660.3698229980469,
+        1457.0136474609376,
+        657.8000000000001
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Upper_p0_p0_Solid.COL_Upper_p0_p0_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": false,
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+        "materials": [
+          "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  },
+  {
+    "label": "SM_Entrance_m1_m1_Solid",
+    "name": "StaticMeshActor_277",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1471.14,
+        -979.6051208496094,
+        -17.600176239013678
+      ],
+      [
+        134.63998489379878,
+        94.44605438232429,
+        303.5998657226563
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowCleared_SM_Entrance_m1_m1_Solid.HI_WindowCleared_SM_Entrance_m1_m1_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood.MI_SSO_FloorWood",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodOak.MI_SSO_WoodOak",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S03HallGrey.MI_SSO_S03HallGrey",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+        ],
+        "near_vertices": 5505,
+        "sections": [
+          {
+            "section": 2,
+            "n": 1152,
+            "lo": [
+              -195.03019638061525,
+              -946.4401208496095,
+              -0.00017078973032766954
+            ],
+            "hi": [
+              -192.06009063720705,
+              -902.8800000000001,
+              269.60985565185547
+            ]
+          },
+          {
+            "section": 4,
+            "n": 2721,
+            "lo": [
+              -207.90003021240236,
+              -951.8848791503907,
+              -3.850168371200562
+            ],
+            "hi": [
+              134.63998489379884,
+              -897.4349395751954,
+              286.98982543945317
+            ]
+          },
+          {
+            "section": 7,
+            "n": 288,
+            "lo": [
+              -213.54302719116214,
+              -918.7200604248047,
+              -0.00016623774135950955
+            ],
+            "hi": [
+              -108.20704078674318,
+              -918.3239758300782,
+              1.319833779335022
+            ]
+          },
+          {
+            "section": 8,
+            "n": 192,
+            "lo": [
+              -55.14303852081299,
+              -918.7200000000001,
+              -0.00016623774135950955
+            ],
+            "hi": [
+              -3.2670379543304446,
+              -918.3239758300782,
+              1.319833779335022
+            ]
+          },
+          {
+            "section": 12,
+            "n": 384,
+            "lo": [
+              -212.55302719116213,
+              -918.7198791503907,
+              -0.00016623774135950955
+            ],
+            "hi": [
+              -55.73703701019288,
+              -918.3239758300782,
+              1.319833779335022
+            ]
+          },
+          {
+            "section": 15,
+            "n": 768,
+            "lo": [
+              -155.6280422973633,
+              -948.4200604248048,
+              102.29981536865235
+            ],
+            "hi": [
+              -104.14804985046388,
+              -932.5800604248047,
+              221.48480529785158
+            ]
+          }
+        ],
+        "exported": true
+      }
+    ]
+  },
+  {
+    "label": "SM_Entrance_m1_p0_Solid",
+    "name": "StaticMeshActor_281",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1424.6100000000001,
+        -1108.8000000000002,
+        -61.94124069213868
+      ],
+      [
+        1475.5950000000003,
+        663.3001812744142,
+        318.4498657226562
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/NoodleWing/SM_FPR_Retained_SM_Entrance_m1_p0_Solid_NoodleCut.SM_FPR_Retained_SM_Entrance_m1_p0_Solid_NoodleCut",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Red.MI_SSO_Red",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_FabricCream.MI_SSO_FabricCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+        ],
+        "near_vertices": 3754,
+        "sections": [
+          {
+            "section": 1,
+            "n": 1296,
+            "lo": [
+              108.40510574340821,
+              -951.8850604248048,
+              -3.3002525568008427
+            ],
+            "hi": [
+              127.71010574340822,
+              -897.4350604248048,
+              272.9097045898438
+            ]
+          },
+          {
+            "section": 2,
+            "n": 512,
+            "lo": [
+              -2.6729011487960816,
+              -918.7200604248047,
+              -0.00024935662804637104
+            ],
+            "hi": [
+              101.6730951690674,
+              -918.3239758300782,
+              1.3197506427764893
+            ]
+          },
+          {
+            "section": 6,
+            "n": 262,
+            "lo": [
+              102.26709365844728,
+              -918.7199395751954,
+              -0.00024935662804637104
+            ],
+            "hi": [
+              154.1430876159668,
+              -918.3239758300782,
+              1.3197506427764893
+            ]
+          },
+          {
+            "section": 8,
+            "n": 132,
+            "lo": [
+              154.73707855224612,
+              -918.7200604248047,
+              -0.00024935662804637104
+            ],
+            "hi": [
+              155.133102722168,
+              -918.3239758300782,
+              1.3197506427764893
+            ]
+          },
+          {
+            "section": 10,
+            "n": 1552,
+            "lo": [
+              118.80003776550294,
+              -946.4403021240236,
+              -0.0002561846355092712
+            ],
+            "hi": [
+              121.77010574340821,
+              -902.8800000000001,
+              269.6097549438477
+            ]
+          }
+        ],
+        "exported": true
+      }
+    ]
+  },
+  {
+    "label": "SM_Entrance_p0_m1_Solid",
+    "name": "StaticMeshActor_288",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1584.4951208496095,
+        -924.660422973633,
+        -361.9656616210938
+      ],
+      [
+        1396.8083056640626,
+        1621.7256225585938,
+        635.2724914550782
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/FireplaceRefinement/SM_FPR_Retained_SM_Entrance_p0_m1_Solid.SM_FPR_Retained_SM_Entrance_p0_m1_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S01BroomYellow.MI_SSO_S01BroomYellow",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityChrome.MI_SSO_S03FidelityChrome",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream.MI_SSO_S03MasonryCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityBathPaint.MI_SSO_S03FidelityBathPaint"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  },
+  {
+    "label": "SM_Entrance_p0_p0_Solid",
+    "name": "StaticMeshActor_291",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1423.6201208496095,
+        -924.6604229736329,
+        -61.940716171264654
+      ],
+      [
+        1615.6797583007815,
+        1619.0484411621094,
+        344.1795532226563
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/FireplaceRefinement/SM_FPR_Retained_SM_Entrance_p0_p0_Solid.SM_FPR_Retained_SM_Entrance_p0_p0_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood.MI_SSO_FloorWood",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  },
+  {
+    "label": "SM_Upper_p0_m1_Solid",
+    "name": "StaticMeshActor_314",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1578.2171044921874,
+        -924.6601812744143,
+        -1.971334711470263e-06
+      ],
+      [
+        1398.822868652344,
+        1658.344383544922,
+        640.3760375976562
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/Meshes/SM_Upper_p0_m1_Solid.SM_Upper_p0_m1_Solid",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S05BathBlue.MI_SSO_S05BathBlue",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_IdentityWhite.MI_SSO_IdentityWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_IdentityRed.MI_SSO_IdentityRed"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  },
+  {
+    "label": "SM_Upper_p0_p0_Solid",
+    "name": "StaticMeshActor_320",
+    "cls": "StaticMeshActor",
+    "bounds": [
+      [
+        -1423.6201208496095,
+        -924.660422973633,
+        -4.03229250878212e-06
+      ],
+      [
+        1660.3697021484377,
+        1654.9787219238283,
+        657.8000671386719
+      ]
+    ],
+    "components": [
+      {
+        "name": "StaticMeshComponent0",
+        "mesh": "/Game/SeniorSendOff/House/NoodleWing/SM_Upper_p0_p0_CornerCleared_NoodleCut.SM_Upper_p0_p0_CornerCleared_NoodleCut",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_S05RoomWarm.MI_SSO_S05RoomWarm"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  },
+  {
+    "label": "HallEnd_West",
+    "name": "ExistingHouseDoor_11",
+    "cls": "ExistingHouseDoor",
+    "bounds": [
+      [
+        -2705.8160800000005,
+        -1507.0000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        575.08
+      ]
+    ],
+    "components": [
+      {
+        "name": "OriginalDoorLeaf",
+        "mesh": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_West_LeafWorld.SM_HallEnd_West_LeafWorld",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_WarmOffWhitePaint.M_3Doors_WarmOffWhitePaint",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_PanelRecessPaint.M_3Doors_PanelRecessPaint",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_CharcoalElectronicHousing.M_3Doors_CharcoalElectronicHousing",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_RubberKeypadKeys.M_3Doors_RubberKeypadKeys",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_KeypadLegends.M_3Doors_KeypadLegends",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_DarkHardware.M_3Doors_DarkHardware",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_BrushedSilverLever.M_3Doors_BrushedSilverLever"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ],
+    "door": {
+      "door_id": "HallEnd_West",
+      "door_group": "None",
+      "doorway_center": "<Struct 'Vector' (0x7e761467680) {x: -2568.316080, y: -1369.500000, z: 448.580000}>",
+      "local_leaf_space": "False",
+      "closed_yaw": "0.0",
+      "open_yaw": "90.0",
+      "panel_center_world": "<Struct 'Vector' (0x7e7614676c0) {x: -2568.316080, y: -1369.500000, z: 448.030000}>",
+      "panel_half_extent": "<Struct 'Vector' (0x7e7614676d8) {x: 5.300000, y: 81.000000, z: 105.000000}>"
+    }
+  },
+  {
+    "label": "HallEnd_End",
+    "name": "ExistingHouseDoor_31",
+    "cls": "ExistingHouseDoor",
+    "bounds": [
+      [
+        -2532.2000000000003,
+        -1662.3667500000001,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        575.08
+      ]
+    ],
+    "components": [
+      {
+        "name": "OriginalDoorLeaf",
+        "mesh": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_End_LeafWorld.SM_HallEnd_End_LeafWorld",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_WarmOffWhitePaint.M_3Doors_WarmOffWhitePaint",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_PanelRecessPaint.M_3Doors_PanelRecessPaint",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_CharcoalElectronicHousing.M_3Doors_CharcoalElectronicHousing",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_RubberKeypadKeys.M_3Doors_RubberKeypadKeys",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_KeypadLegends.M_3Doors_KeypadLegends",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_DarkHardware.M_3Doors_DarkHardware",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_BrushedSilverLever.M_3Doors_BrushedSilverLever"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ],
+    "door": {
+      "door_id": "HallEnd_End",
+      "door_group": "None",
+      "doorway_center": "<Struct 'Vector' (0x7e7616a1680) {x: -2394.700000, y: -1524.866750, z: 448.580000}>",
+      "local_leaf_space": "False",
+      "closed_yaw": "0.0",
+      "open_yaw": "90.0",
+      "panel_center_world": "<Struct 'Vector' (0x7e7616a16c0) {x: -2394.700000, y: -1524.866750, z: 448.030000}>",
+      "panel_half_extent": "<Struct 'Vector' (0x7e7616a16d8) {x: 81.000000, y: 5.300000, z: 105.000000}>"
+    }
+  },
+  {
+    "label": "HallEnd_East",
+    "name": "ExistingHouseDoor_32",
+    "cls": "ExistingHouseDoor",
+    "bounds": [
+      [
+        -2365.85019,
+        -1523.5,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        575.08
+      ]
+    ],
+    "components": [
+      {
+        "name": "OriginalDoorLeaf",
+        "mesh": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_East_LeafWorld.SM_HallEnd_East_LeafWorld",
+        "loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_WarmOffWhitePaint.M_3Doors_WarmOffWhitePaint",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_PanelRecessPaint.M_3Doors_PanelRecessPaint",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_CharcoalElectronicHousing.M_3Doors_CharcoalElectronicHousing",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_RubberKeypadKeys.M_3Doors_RubberKeypadKeys",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_KeypadLegends.M_3Doors_KeypadLegends",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_DarkHardware.M_3Doors_DarkHardware",
+          "/Game/SeniorSendOff/House/HallwayEnd/M_3Doors_BrushedSilverLever.M_3Doors_BrushedSilverLever"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ],
+    "door": {
+      "door_id": "HallEnd_East",
+      "door_group": "None",
+      "doorway_center": "<Struct 'Vector' (0x7e7616a1c80) {x: -2228.350190, y: -1386.000000, z: 448.580000}>",
+      "local_leaf_space": "False",
+      "closed_yaw": "0.0",
+      "open_yaw": "90.0",
+      "panel_center_world": "<Struct 'Vector' (0x7e7616a1cc0) {x: -2228.350190, y: -1386.000000, z: 448.030000}>",
+      "panel_half_extent": "<Struct 'Vector' (0x7e7616a1cd8) {x: 5.300000, y: 81.000000, z: 105.000000}>"
+    }
+  },
+  {
+    "label": "Interactive_SM_Entrance_m1_m1_Glass__001",
+    "name": "HouseReactiveFixture_0",
+    "cls": "HouseReactiveFixture",
+    "bounds": [
+      [
+        -186.1200507462012,
+        -936.1440077204169,
+        -8.178027344740713e-05
+      ],
+      [
+        112.85997946620117,
+        0.0,
+        227.80990814892579
+      ]
+    ],
+    "components": [
+      {
+        "name": "OriginalFixture",
+        "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_Entrance_m1_m1_Glass_001.HI_SM_Entrance_m1_m1_Glass_001",
+        "loc": [
+          -36.630035640000024,
+          -924.66001584,
+          113.9050055
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Glass.MI_SSO_Glass"
+        ],
+        "near_vertices": 384,
+        "sections": [
+          {
+            "section": 0,
+            "n": 384,
+            "lo": [
+              -178.69503564000004,
+              -926.1450809854925,
+              7.700002143066399
+            ],
+            "hi": [
+              105.43496436000001,
+              -923.1748562807502,
+              220.10999207226564
+            ]
+          }
+        ],
+        "exported": true
+      },
+      {
+        "name": "BreakawayWindowGrille",
+        "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_Breakaway_SM_Entrance_m1_m1_Glass__001.HI_Breakaway_SM_Entrance_m1_m1_Glass__001",
+        "loc": [
+          -36.630035640000024,
+          -924.66001584,
+          113.9050055
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+        ],
+        "near_vertices": 2304,
+        "sections": [
+          {
+            "section": 0,
+            "n": 2304,
+            "lo": [
+              -186.1200507462012,
+              -936.1440077204169,
+              -8.178027344740713e-05
+            ],
+            "hi": [
+              112.85997946620117,
+              -920.2049747700156,
+              227.80990814892579
+            ]
+          }
+        ],
+        "exported": true
+      },
+      {
+        "name": "BrokenGlassPieces",
+        "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_GlassShard.HI_GlassShard",
+        "loc": [
+          -36.630035640000024,
+          -924.66001584,
+          113.9050055
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Glass.MI_SSO_Glass"
+        ],
+        "near_vertices": 18,
+        "sections": [
+          {
+            "section": 0,
+            "n": 18,
+            "lo": [
+              -56.43003564000003,
+              -936.54001584,
+              113.79500441653657
+            ],
+            "hi": [
+              -16.830035640000023,
+              -912.78001584,
+              114.01500658346343
+            ]
+          }
+        ],
+        "exported": true
+      },
+      {
+        "name": "SettledGlassEdgeGlints",
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "loc": [
+          -36.630035640000024,
+          -924.66001584,
+          113.9050055
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"
+        ],
+        "near_vertices": 33,
+        "sections": [
+          {
+            "section": 0,
+            "n": 33,
+            "lo": [
+              -135.63003564000005,
+              -1023.66001584,
+              58.905005499999994
+            ],
+            "hi": [
+              62.36996435999999,
+              -924.66001584,
+              168.90500550000002
+            ]
+          }
+        ],
+        "exported": true
+      },
+      {
+        "name": "GlassImpactCracks",
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "loc": [
+          -36.630035640000024,
+          -924.66001584,
+          113.9050055
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"
+        ],
+        "near_vertices": 33,
+        "sections": [
+          {
+            "section": 0,
+            "n": 33,
+            "lo": [
+              -135.63003564000005,
+              -1023.66001584,
+              58.905005499999994
+            ],
+            "hi": [
+              62.36996435999999,
+              -924.66001584,
+              168.90500550000002
+            ]
+          }
+        ],
+        "exported": true
+      }
+    ]
+  },
+  {
+    "label": "Interactive_SM_Entrance_m1_m1_Glass__002",
+    "name": "HouseReactiveFixture_1",
+    "cls": "HouseReactiveFixture",
+    "bounds": [
+      [
+        -183.1500297,
+        -927.0360159344137,
+        230.009982807666
+      ],
+      [
+        109.88997030000002,
+        -922.2840157455863,
+        267.409999592334
+      ]
+    ],
+    "components": [
+      {
+        "name": "OriginalFixture",
+        "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_SM_Entrance_m1_m1_Glass_002.HI_SM_Entrance_m1_m1_Glass_002",
+        "loc": [
+          -36.6300297,
+          -924.66001584,
+          248.70999120000002
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Glass.MI_SSO_Glass"
+        ],
+        "near_vertices": 384,
+        "sections": [
+          {
+            "section": 0,
+            "n": 384,
+            "lo": [
+              -183.1500297,
+              -926.1450552577437,
+              230.00998280766603
+            ],
+            "hi": [
+              109.88997030000002,
+              -923.174882008499,
+              267.409999592334
+            ]
+          }
+        ],
+        "exported": true
+      },
+      {
+        "name": "BrokenGlassPieces",
+        "mesh": "/Game/SeniorSendOff/House/Interactivity/HI_GlassShard.HI_GlassShard",
+        "loc": [
+          -36.6300297,
+          -924.66001584,
+          248.70999120000002
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/Materials/MI_SSO_Glass.MI_SSO_Glass"
+        ],
+        "near_vertices": 18,
+        "sections": [
+          {
+            "section": 0,
+            "n": 18,
+            "lo": [
+              -56.430029700000006,
+              -936.54001584,
+              248.5999901165366
+            ],
+            "hi": [
+              -16.8300297,
+              -912.78001584,
+              248.81999228346345
+            ]
+          }
+        ],
+        "exported": true
+      },
+      {
+        "name": "SettledGlassEdgeGlints",
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "loc": [
+          -36.6300297,
+          -924.66001584,
+          248.70999120000002
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"
+        ],
+        "near_vertices": 20,
+        "sections": [
+          {
+            "section": 0,
+            "n": 20,
+            "lo": [
+              -135.63002970000002,
+              -1023.66001584,
+              193.70999120000002
+            ],
+            "hi": [
+              62.36997030000001,
+              -924.66001584,
+              248.70999120000002
+            ]
+          }
+        ],
+        "exported": true
+      },
+      {
+        "name": "GlassImpactCracks",
+        "mesh": "/Engine/BasicShapes/Cube.Cube",
+        "loc": [
+          -36.6300297,
+          -924.66001584,
+          248.70999120000002
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.9800000000000002,
+          1.9800000000000002,
+          1.1
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"
+        ],
+        "near_vertices": 20,
+        "sections": [
+          {
+            "section": 0,
+            "n": 20,
+            "lo": [
+              -135.63002970000002,
+              -1023.66001584,
+              193.70999120000002
+            ],
+            "hi": [
+              62.36997030000001,
+              -924.66001584,
+              248.70999120000002
+            ]
+          }
+        ],
+        "exported": true
+      }
+    ]
+  },
+  {
+    "label": "NightClub_Ambience",
+    "name": "HouseNightClub_0",
+    "cls": "HouseNightClub",
+    "bounds": [
+      [
+        -2750.4400000000005,
+        -2146.65,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        622.71
+      ]
+    ],
+    "components": [
+      {
+        "name": "Room0ClubFixture0",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_MovingOpticalHead.SM_NCLF_MovingOpticalHead",
+        "loc": [
+          -1750.0,
+          -1200.0,
+          273.03
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Chrome.M_NC_Chrome",
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Lens.M_NCLF_Lens"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room0ClubFixtureMount0",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_StaticCeilingMount.SM_NCLF_StaticCeilingMount",
+        "loc": [
+          -1750.0,
+          -1200.0,
+          273.03
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room0ClubBeam0",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_OpenBeamCone.SM_NCLF_OpenBeamCone",
+        "loc": [
+          -1750.0,
+          -1200.0,
+          273.03
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          2.68149995803833,
+          2.9573376178741455,
+          2.9573376178741455
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Beam.M_NCLF_Beam"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room0ClubFixture1",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_MovingOpticalHead.SM_NCLF_MovingOpticalHead",
+        "loc": [
+          -2450.0,
+          -1850.0,
+          234.464
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Chrome.M_NC_Chrome",
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Lens.M_NCLF_Lens"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room0ClubFixtureMount1",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_StaticCeilingMount.SM_NCLF_StaticCeilingMount",
+        "loc": [
+          -2450.0,
+          -1850.0,
+          234.464
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room0ClubBeam1",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_OpenBeamCone.SM_NCLF_OpenBeamCone",
+        "loc": [
+          -2450.0,
+          -1850.0,
+          234.464
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          2.29584002494812,
+          2.532005786895752,
+          2.532005786895752
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Beam.M_NCLF_Beam"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room0ClubFixture2",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_CompactStrobeBar.SM_NCLF_CompactStrobeBar",
+        "loc": [
+          -1970.0,
+          -1300.0,
+          273.03
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Lens.M_NCLF_Lens"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room0ClubFixtureMount2",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_StaticCeilingMount.SM_NCLF_StaticCeilingMount",
+        "loc": [
+          -1970.0,
+          -1300.0,
+          273.03
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubFixture0",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_MovingOpticalHead.SM_NCLF_MovingOpticalHead",
+        "loc": [
+          -2039.1077482758467,
+          -1348.3687186160237,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Chrome.M_NC_Chrome",
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Lens.M_NCLF_Lens"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubFixtureMount0",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_StaticCeilingMount.SM_NCLF_StaticCeilingMount",
+        "loc": [
+          -2039.1077482758467,
+          -1348.3687186160237,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubBeam0",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_OpenBeamCone.SM_NCLF_OpenBeamCone",
+        "loc": [
+          -2039.1077482758467,
+          -1348.3687186160237,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          2.3217999935150146,
+          2.560636281967163,
+          2.560636281967163
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Beam.M_NCLF_Beam"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubFixture1",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_MovingOpticalHead.SM_NCLF_MovingOpticalHead",
+        "loc": [
+          -1663.4024524903941,
+          -1134.1580313839763,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Chrome.M_NC_Chrome",
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Lens.M_NCLF_Lens"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubFixtureMount1",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_StaticCeilingMount.SM_NCLF_StaticCeilingMount",
+        "loc": [
+          -1663.4024524903941,
+          -1134.1580313839763,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubBeam1",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_OpenBeamCone.SM_NCLF_OpenBeamCone",
+        "loc": [
+          -1663.4024524903941,
+          -1134.1580313839763,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          2.3217999935150146,
+          2.560636281967163,
+          2.560636281967163
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Beam.M_NCLF_Beam"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubFixture2",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_CompactStrobeBar.SM_NCLF_CompactStrobeBar",
+        "loc": [
+          -1851.255095,
+          -1230.552850214362,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+          "/Game/SeniorSendOff/House/NightClub/Lighting/M_NCLF_Lens.M_NCLF_Lens"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      },
+      {
+        "name": "Room1ClubFixtureMount2",
+        "mesh": "/Game/SeniorSendOff/House/NightClub/Lighting/SM_NCLF_StaticCeilingMount.SM_NCLF_StaticCeilingMount",
+        "loc": [
+          -1851.255095,
+          -1230.552850214362,
+          568.71
+        ],
+        "quat": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "visible": true,
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+        "materials": [
+          "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+          "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium"
+        ],
+        "near_vertices": 0,
+        "sections": []
+      }
+    ]
+  }
+]

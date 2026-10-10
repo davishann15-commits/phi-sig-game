@@ -1,0 +1,46 @@
+{
+  "views": [
+    {
+      "name": "FireplaceWest",
+      "position": {
+        "x": 1.75,
+        "y": 1.55,
+        "z": -8.5
+      },
+      "target": {
+        "x": 1.899,
+        "y": 0.8,
+        "z": -11.3
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "FireplaceEast",
+      "position": {
+        "x": 1.05,
+        "y": 1.53,
+        "z": 9.58
+      },
+      "target": {
+        "x": 1.692,
+        "y": 0.82,
+        "z": 12.29
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "FireplaceWestWide",
+      "position": {
+        "x": -2.85,
+        "y": 1.75,
+        "z": -5.75
+      },
+      "target": {
+        "x": 2.05,
+        "y": 1.2,
+        "z": -11.25
+      },
+      "fieldOfView": 57
+    }
+  ]
+}

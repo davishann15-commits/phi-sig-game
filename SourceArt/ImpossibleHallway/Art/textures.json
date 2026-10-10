@@ -1,0 +1,19 @@
+{
+  "size": [
+    1024,
+    1024
+  ],
+  "textures": [
+    "IH_T_DampCeiling_BaseColor.png",
+    "IH_T_DampCeiling_Normal.png",
+    "IH_T_DampCeiling_Roughness.png",
+    "IH_T_DampOlivePlaster_BaseColor.png",
+    "IH_T_DampOlivePlaster_Normal.png",
+    "IH_T_DampOlivePlaster_Roughness.png",
+    "IH_T_OldFloor_BaseColor.png",
+    "IH_T_OldFloor_Normal.png",
+    "IH_T_OldFloor_Roughness.png"
+  ],
+  "seed": 38117,
+  "surfacePatternPeriodCm": 180
+}

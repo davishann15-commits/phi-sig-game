@@ -1,0 +1,1 @@
+Chapter01_House exterior vegetation only. Detailed fall trees, irregular shrubs, patchy green/dry/soil grass, fallen leaves and gentle wind. Preserve house, roads and enlarged lawn, paths, court geometry/gameplay, brighter night lighting, doors/interiors. Unity untouched. Verify native build, rendered foliage at ground level and overview, original player routes, protected hashes.

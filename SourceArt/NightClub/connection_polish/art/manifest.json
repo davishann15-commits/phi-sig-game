@@ -1,0 +1,586 @@
+{
+  "assets": [
+    {
+      "name": "SM_CP_NeonPicture_Headphones",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_NeonPicture_Headphones.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "static",
+      "mass": null,
+      "materials": [
+        "M_CP_ScuffedMetal",
+        "M_CP_BrushedEdges",
+        "M_CP_Rubber",
+        "M_CP_NeonCyan",
+        "M_CP_NeonPink",
+        "M_CP_NeonViolet",
+        "M_CP_Cable"
+      ],
+      "triangles": 16744,
+      "bounds": [
+        [
+          -69.9999988079071,
+          -6.449999660253525,
+          -52.99999713897705
+        ],
+        [
+          69.9999988079071,
+          4.100000113248825,
+          52.99999713897705
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_NeonPicture_Disco",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_NeonPicture_Disco.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "static",
+      "mass": null,
+      "materials": [
+        "M_CP_ScuffedMetal",
+        "M_CP_BrushedEdges",
+        "M_CP_Rubber",
+        "M_CP_NeonPink",
+        "M_CP_NeonCyan",
+        "M_CP_NeonViolet",
+        "M_CP_Cable"
+      ],
+      "triangles": 26640,
+      "bounds": [
+        [
+          -61.000001430511475,
+          -6.449999660253525,
+          -58.99999737739563
+        ],
+        [
+          61.000001430511475,
+          4.100000113248825,
+          58.99999737739563
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_NeonPicture_Cocktail",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_NeonPicture_Cocktail.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "static",
+      "mass": null,
+      "materials": [
+        "M_CP_ScuffedMetal",
+        "M_CP_BrushedEdges",
+        "M_CP_Rubber",
+        "M_CP_NeonPink",
+        "M_CP_NeonCyan",
+        "M_CP_NeonViolet",
+        "M_CP_NeonAmber",
+        "M_CP_Cable"
+      ],
+      "triangles": 9644,
+      "bounds": [
+        [
+          -50.999999046325684,
+          -6.449999660253525,
+          -57.999998331069946
+        ],
+        [
+          50.999999046325684,
+          4.100000113248825,
+          57.999998331069946
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_ContinuousLowerFloor",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_ContinuousLowerFloor.fbx",
+      "target": "NightClub_SM_NC_LowerDanceFloorInlay",
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "static",
+      "mass": null,
+      "materials": [
+        "M_CP_WornFloor",
+        "M_CP_NeonFloorLine"
+      ],
+      "triangles": 480,
+      "bounds": [
+        [
+          -2749.4998931884766,
+          -2145.7000732421875,
+          0.8999999612569809
+        ],
+        [
+          -1490.000057220459,
+          -973.5000610351562,
+          1.140000019222498
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_ClubArchitecturalDetail",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_ClubArchitecturalDetail.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "static",
+      "mass": null,
+      "materials": [
+        "M_CP_WornUpholsteredPanel",
+        "M_CP_ScuffedMetal",
+        "M_CP_BrushedEdges",
+        "M_CP_NeonCyan",
+        "M_CP_NeonViolet"
+      ],
+      "triangles": 3236,
+      "bounds": [
+        [
+          -2747.999954223633,
+          -2144.0000534057617,
+          2.000001072883606
+        ],
+        [
+          -1490.999984741211,
+          -973.9999771118164,
+          411.00001335144043
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_WallDrinkPerch",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_WallDrinkPerch.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "static",
+      "mass": null,
+      "materials": [
+        "M_CP_ChippedWalnut",
+        "M_CP_ScuffedMetal",
+        "M_CP_BrushedEdges",
+        "M_CP_ExposedTimber"
+      ],
+      "triangles": 1644,
+      "bounds": [
+        [
+          -69.9999988079071,
+          -12.999999523162842,
+          76.500004529953
+        ],
+        [
+          69.9999988079071,
+          12.999999523162842,
+          107.34999179840088
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_LooseCup",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_LooseCup.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "prop",
+      "mass": 0.12,
+      "materials": [
+        "M_CP_CupPlastic"
+      ],
+      "triangles": 764,
+      "bounds": [
+        [
+          -5.499999970197678,
+          -5.499999970197678,
+          0.0
+        ],
+        [
+          5.499999970197678,
+          5.499999970197678,
+          15.350000560283661
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_LooseBottle",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_LooseBottle.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "prop",
+      "mass": 0.5,
+      "materials": [
+        "M_CP_BottleGreen",
+        "M_CP_BrushedEdges",
+        "M_CP_BottleLabel"
+      ],
+      "triangles": 830,
+      "bounds": [
+        [
+          -3.9500001817941666,
+          -3.9500001817941666,
+          0.0
+        ],
+        [
+          3.9500001817941666,
+          3.9500001817941666,
+          30.900001525878906
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_LooseCoaster",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_LooseCoaster.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "prop",
+      "mass": 0.03,
+      "materials": [
+        "M_CP_Paper",
+        "M_CP_BottleLabel"
+      ],
+      "triangles": 540,
+      "bounds": [
+        [
+          -5.60000017285347,
+          -5.60000017285347,
+          0.0
+        ],
+        [
+          5.60000017285347,
+          5.60000017285347,
+          0.5350000225007534
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_CrumpledNapkin",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_CrumpledNapkin.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "prop",
+      "mass": 0.02,
+      "materials": [
+        "M_CP_Paper"
+      ],
+      "triangles": 128,
+      "bounds": [
+        [
+          -9.49999988079071,
+          -9.49999988079071,
+          0.4282120615243912
+        ],
+        [
+          9.49999988079071,
+          9.49999988079071,
+          1.592181995511055
+        ]
+      ]
+    },
+    {
+      "name": "SM_CP_DJBackCableDetail",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/models/SM_CP_DJBackCableDetail.fbx",
+      "target": null,
+      "pos": null,
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "static",
+      "mass": null,
+      "materials": [
+        "M_CP_Cable",
+        "M_CP_BrushedEdges",
+        "M_CP_ScuffedMetal"
+      ],
+      "triangles": 4216,
+      "bounds": [
+        [
+          75.49999952316284,
+          -56.09999895095825,
+          34.59999859333038
+        ],
+        [
+          96.39902710914612,
+          -43.09999942779541,
+          71.00000381469727
+        ]
+      ]
+    }
+  ],
+  "materials": {
+    "M_CP_ScuffedMetal": {
+      "color": [
+        0.032,
+        0.037,
+        0.045
+      ],
+      "roughness": 0.59,
+      "metallic": 0.45,
+      "emissive_strength": 0,
+      "texture": "metal"
+    },
+    "M_CP_BrushedEdges": {
+      "color": [
+        0.31,
+        0.33,
+        0.36
+      ],
+      "roughness": 0.3,
+      "metallic": 0.85,
+      "emissive_strength": 0
+    },
+    "M_CP_Rubber": {
+      "color": [
+        0.007,
+        0.01,
+        0.015
+      ],
+      "roughness": 0.83,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CP_NeonCyan": {
+      "color": [
+        0.028,
+        0.57,
+        0.86
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emissive_strength": 2
+    },
+    "M_CP_NeonPink": {
+      "color": [
+        0.85,
+        0.027,
+        0.28
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emissive_strength": 2
+    },
+    "M_CP_NeonViolet": {
+      "color": [
+        0.34,
+        0.06,
+        0.75
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emissive_strength": 2
+    },
+    "M_CP_NeonAmber": {
+      "color": [
+        0.85,
+        0.25,
+        0.048
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emissive_strength": 1.6
+    },
+    "M_CP_WornFloor": {
+      "color": [
+        0.05,
+        0.053,
+        0.061
+      ],
+      "roughness": 0.68,
+      "metallic": 0,
+      "emissive_strength": 0.006,
+      "texture": "floor"
+    },
+    "M_CP_WornCharcoal": {
+      "color": [
+        0.055,
+        0.045,
+        0.056
+      ],
+      "roughness": 0.82,
+      "metallic": 0,
+      "emissive_strength": 0.02,
+      "texture": "wall"
+    },
+    "M_CP_NeonFloorLine": {
+      "color": [
+        0.014,
+        0.25,
+        0.34
+      ],
+      "roughness": 0.6,
+      "metallic": 0,
+      "emissive_strength": 0.6
+    },
+    "M_CP_WornUpholsteredPanel": {
+      "color": [
+        0.082,
+        0.035,
+        0.051
+      ],
+      "roughness": 0.84,
+      "metallic": 0,
+      "emissive_strength": 0.013,
+      "texture": "wall"
+    },
+    "M_CP_ChippedWalnut": {
+      "color": [
+        0.074,
+        0.031,
+        0.015
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "emissive_strength": 0,
+      "texture": "wood"
+    },
+    "M_CP_ExposedTimber": {
+      "color": [
+        0.23,
+        0.14,
+        0.075
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CP_Paper": {
+      "color": [
+        0.49,
+        0.45,
+        0.36
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CP_CupPlastic": {
+      "color": [
+        0.42,
+        0.39,
+        0.42
+      ],
+      "roughness": 0.49,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CP_BottleGreen": {
+      "color": [
+        0.023,
+        0.15,
+        0.072
+      ],
+      "roughness": 0.24,
+      "metallic": 0.12,
+      "emissive_strength": 0
+    },
+    "M_CP_BottleLabel": {
+      "color": [
+        0.16,
+        0.09,
+        0.035
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "emissive_strength": 0
+    },
+    "M_CP_Cable": {
+      "color": [
+        0.006,
+        0.006,
+        0.008
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0
+    }
+  },
+  "textures": {
+    "floor": {
+      "Colour": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_floor_Colour.png",
+      "Roughness": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_floor_Roughness.png"
+    },
+    "wall": {
+      "Colour": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_wall_Colour.png",
+      "Roughness": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_wall_Roughness.png"
+    },
+    "metal": {
+      "Colour": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_metal_Colour.png",
+      "Roughness": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_metal_Roughness.png"
+    },
+    "wood": {
+      "Colour": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_wood_Colour.png",
+      "Roughness": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/connection_polish/art/textures/T_CP_wood_Roughness.png"
+    }
+  },
+  "notes": [
+    "All six neon word boards replaced by bent tube pictograms.",
+    "Continuous eighty centimeter world grid joins both downstairs spaces.",
+    "Room footprint, door openings, floor collision, and pole are unchanged.",
+    "Loose tabletop props remain independent native interactive objects.",
+    "No added real lights."
+  ],
+  "geometry_checks": {
+    "neon_pictures": 3,
+    "neon_words_generated": 0,
+    "unchanged_structural_collision": true,
+    "new_real_lights": 0,
+    "continuous_grid_cm": 80,
+    "club_bounds_unchanged": true
+  }
+}

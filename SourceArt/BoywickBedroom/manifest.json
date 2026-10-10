@@ -1,0 +1,5119 @@
+{
+  "assets": [
+    {
+      "id": "LoftFrame",
+      "asset_name": "SM_BWR_LoftFrame",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LoftFrame.fbx",
+      "material_names": [
+        "M_BWR_BlackSteel",
+        "M_BWR_BlackPlastic",
+        "M_BWR_Rubber",
+        "M_BWR_BrushedSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 65,
+      "break_health": 160,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 4840,
+      "hulls": 11,
+      "bounds": [
+        [
+          -1.8594000339508057,
+          -1.274399995803833,
+          0.0
+        ],
+        [
+          1.8594000339508057,
+          1.274399995803833,
+          1.940999984741211
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LoftFrame_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_LoftFrame_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LoftFrame_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_LoftFrame_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LoftFrame_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_LoftFrame_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "QuiltedMattress",
+      "asset_name": "SM_BWR_QuiltedMattress",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_QuiltedMattress.fbx",
+      "material_names": [
+        "M_BWR_WhiteQuiltedCotton",
+        "M_BWR_CottonStitches"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CottonStitches.M_BWR_CottonStitches"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 30,
+      "break_health": 65,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 6285,
+      "hulls": 12,
+      "bounds": [
+        [
+          -1.7685000896453857,
+          -1.178999900817871,
+          0.0
+        ],
+        [
+          1.7685000896453857,
+          1.178999900817871,
+          0.27333149313926697
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_QuiltedMattress_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_QuiltedMattress_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CottonStitches.M_BWR_CottonStitches",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_QuiltedMattress_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_QuiltedMattress_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CottonStitches.M_BWR_CottonStitches",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_QuiltedMattress_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_QuiltedMattress_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CottonStitches.M_BWR_CottonStitches",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "LowDaybed",
+      "asset_name": "SM_BWR_LowDaybed",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LowDaybed.fbx",
+      "material_names": [
+        "M_BWR_CharcoalFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 26,
+      "break_health": 70,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 998,
+      "hulls": 2,
+      "bounds": [
+        [
+          -1.7820000648498535,
+          -1.1970000267028809,
+          0.0
+        ],
+        [
+          1.7820000648498535,
+          1.1970000267028809,
+          0.2371577024459839
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LowDaybed_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_LowDaybed_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LowDaybed_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_LowDaybed_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LowDaybed_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_LowDaybed_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "GreyPillow",
+      "asset_name": "SM_BWR_GreyPillow",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_GreyPillow.fbx",
+      "material_names": [
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 1,
+      "break_health": 8,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1252,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.3824999928474426,
+          -0.6525000333786011,
+          -0.012000000104308128
+        ],
+        [
+          0.3824999928474426,
+          0.6525000333786011,
+          0.1420000046491623
+        ]
+      ]
+    },
+    {
+      "id": "BunchedOrangeTowel",
+      "asset_name": "SM_BWR_BunchedOrangeTowel",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_BunchedOrangeTowel.fbx",
+      "material_names": [
+        "M_BWR_OrangeTowelFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.7,
+      "break_health": 8,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1408,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.4950000047683716,
+          -0.43199998140335083,
+          -0.008401619270443916
+        ],
+        [
+          0.4950000047683716,
+          0.43199998140335083,
+          0.12291253358125687
+        ]
+      ]
+    },
+    {
+      "id": "DrapedTowel",
+      "asset_name": "SM_BWR_DrapedTowel",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_DrapedTowel.fbx",
+      "material_names": [
+        "M_BWR_TaupeTowelFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 1.1,
+      "break_health": 8,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 1408,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.4950000047683716,
+          -0.16200000047683716,
+          0.02500000037252903
+        ],
+        [
+          0.4950000047683716,
+          0.05322543531656265,
+          1.159237027168274
+        ]
+      ]
+    },
+    {
+      "id": "GreyFuton",
+      "asset_name": "SM_BWR_GreyFuton",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_GreyFuton.fbx",
+      "material_names": [
+        "M_BWR_CharcoalFabric",
+        "M_BWR_BlackPlastic",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 44,
+      "break_health": 100,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 4431,
+      "hulls": 12,
+      "bounds": [
+        [
+          -1.7999999523162842,
+          -0.7963129281997681,
+          0.0
+        ],
+        [
+          1.7999999523162842,
+          0.7019999623298645,
+          0.9795503616333008
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GreyFuton_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_GreyFuton_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GreyFuton_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_GreyFuton_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GreyFuton_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_GreyFuton_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "PatternedPillow",
+      "asset_name": "SM_BWR_PatternedPillow",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_PatternedPillow.fbx",
+      "material_names": [
+        "M_BWR_Photo2328"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2328.M_BWR_Photo2328"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 1.2,
+      "break_health": 8,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1252,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.39149999618530273,
+          -0.39149999618530273,
+          -0.02199999988079071
+        ],
+        [
+          0.39149999618530273,
+          0.39149999618530273,
+          0.15199999511241913
+        ]
+      ]
+    },
+    {
+      "id": "CoffeeTable",
+      "asset_name": "SM_BWR_CoffeeTable",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_CoffeeTable.fbx",
+      "material_names": [
+        "M_BWR_WalnutWood",
+        "M_BWR_BrushedSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 28,
+      "break_health": 65,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1538,
+      "hulls": 12,
+      "bounds": [
+        [
+          -1.1880000829696655,
+          -0.5633999705314636,
+          0.0
+        ],
+        [
+          1.1880000829696655,
+          0.5633999705314636,
+          0.4860000014305115
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_CoffeeTable_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_CoffeeTable_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_CoffeeTable_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_CoffeeTable_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_CoffeeTable_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_CoffeeTable_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "Dresser",
+      "asset_name": "SM_BWR_Dresser",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_Dresser.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_CharcoalFabric",
+        "M_BWR_WalnutWood"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 22,
+      "break_health": 54,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1285,
+      "hulls": 12,
+      "bounds": [
+        [
+          -0.9900000095367432,
+          -0.3330000042915344,
+          0.0
+        ],
+        [
+          0.9900000095367432,
+          0.3958285450935364,
+          0.7230000495910645
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Dresser_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_Dresser_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Dresser_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_Dresser_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Dresser_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_Dresser_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "SmallTelevision",
+      "asset_name": "SM_BWR_SmallTelevision",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_SmallTelevision.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_ScreenGlass",
+        "M_BWR_Paper",
+        "M_BWR_BluePlastic",
+        "M_BWR_OrangeTowelFabric",
+        "M_BWR_RedPrint"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 5,
+      "break_health": 25,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 300,
+      "hulls": 4,
+      "bounds": [
+        [
+          -0.6299999952316284,
+          -0.10886995494365692,
+          0.0027623316273093224
+        ],
+        [
+          0.6299999952316284,
+          0.1442692130804062,
+          0.48250001668930054
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_SmallTelevision_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_SmallTelevision_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_SmallTelevision_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_SmallTelevision_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_SmallTelevision_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_SmallTelevision_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "GameConsole",
+      "asset_name": "SM_BWR_GameConsole",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_GameConsole.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_WhiteEnamel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 3,
+      "break_health": 20,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 294,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.07200000435113907,
+          -0.17100000381469727,
+          -0.0020000040531158447
+        ],
+        [
+          0.07200000435113907,
+          0.17100000381469727,
+          0.3580000102519989
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GameConsole_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_GameConsole_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GameConsole_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_GameConsole_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GameConsole_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_GameConsole_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "WritingDesk",
+      "asset_name": "SM_BWR_WritingDesk",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_WritingDesk.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_BrushedSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 23,
+      "break_health": 60,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 845,
+      "hulls": 9,
+      "bounds": [
+        [
+          -0.9089999794960022,
+          -0.476999968290329,
+          0.0
+        ],
+        [
+          0.9089999794960022,
+          0.4950000047683716,
+          0.7599999904632568
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WritingDesk_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_WritingDesk_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WritingDesk_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_WritingDesk_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WritingDesk_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_WritingDesk_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "DeskLamp",
+      "asset_name": "SM_BWR_DeskLamp",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_DeskLamp.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_FrostedLight"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_FrostedLight.M_BWR_FrostedLight"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 1.7,
+      "break_health": 12,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 248,
+      "hulls": 4,
+      "bounds": [
+        [
+          -0.14399999380111694,
+          -0.14399999380111694,
+          0.002499999478459358
+        ],
+        [
+          0.14399999380111694,
+          0.5219999551773071,
+          0.4699999988079071
+        ]
+      ]
+    },
+    {
+      "id": "WireRack",
+      "asset_name": "SM_BWR_WireRack",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_WireRack.fbx",
+      "material_names": [
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 13,
+      "break_health": 60,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1144,
+      "hulls": 5,
+      "bounds": [
+        [
+          -0.6876000165939331,
+          -0.4625999927520752,
+          0.0
+        ],
+        [
+          0.6876000165939331,
+          0.4625999927520752,
+          1.840000033378601
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WireRack_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_WireRack_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WireRack_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_WireRack_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WireRack_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_WireRack_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "MiniFridge",
+      "asset_name": "SM_BWR_MiniFridge",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_MiniFridge.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_Rubber",
+        "M_BWR_BlackSteel",
+        "M_BWR_BrushedSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 32,
+      "break_health": 90,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1063,
+      "hulls": 4,
+      "bounds": [
+        [
+          -0.414000004529953,
+          -0.40950000286102295,
+          0.0
+        ],
+        [
+          0.414000004529953,
+          0.501300036907196,
+          0.8259999752044678
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_MiniFridge_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_MiniFridge_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_MiniFridge_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_MiniFridge_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_MiniFridge_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_MiniFridge_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "DrinkCup",
+      "asset_name": "SM_BWR_DrinkCup",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_DrinkCup.fbx",
+      "material_names": [
+        "M_BWR_Paper",
+        "M_BWR_RedPrint"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.16,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 403,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.06435000151395798,
+          -0.06435000151395798,
+          0.0
+        ],
+        [
+          0.06435000151395798,
+          0.06435000151395798,
+          0.14249999821186066
+        ]
+      ]
+    },
+    {
+      "id": "LiddedCup",
+      "asset_name": "SM_BWR_LiddedCup",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LiddedCup.fbx",
+      "material_names": [
+        "M_BWR_Paper",
+        "M_BWR_WhiteEnamel",
+        "M_BWR_RedPrint"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.3,
+      "break_health": 6,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 447,
+      "hulls": 4,
+      "bounds": [
+        [
+          -0.06499999761581421,
+          -0.06499999761581421,
+          0.0
+        ],
+        [
+          0.06499999761581421,
+          0.06499999761581421,
+          0.22717204689979553
+        ]
+      ]
+    },
+    {
+      "id": "PaperTowelRoll",
+      "asset_name": "SM_BWR_PaperTowelRoll",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_PaperTowelRoll.fbx",
+      "material_names": [
+        "M_BWR_WhiteQuiltedCotton",
+        "M_BWR_Cardboard",
+        "M_BWR_BlackPlastic",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 6,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 794,
+      "hulls": 4,
+      "bounds": [
+        [
+          -0.07249999791383743,
+          -0.07249999791383743,
+          0.0
+        ],
+        [
+          0.0949999988079071,
+          0.07249999791383743,
+          0.281499981880188
+        ]
+      ]
+    },
+    {
+      "id": "WaterBottle",
+      "asset_name": "SM_BWR_WaterBottle",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_WaterBottle.fbx",
+      "material_names": [
+        "M_BWR_PurpleBottle",
+        "M_BWR_BlackPlastic",
+        "M_BWR_OrangeTowelFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_PurpleBottle.M_BWR_PurpleBottle",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 8,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 210,
+      "hulls": 5,
+      "bounds": [
+        [
+          -0.048750001937150955,
+          -0.048750001937150955,
+          0.0
+        ],
+        [
+          0.048750001937150955,
+          0.04999999701976776,
+          0.2879999876022339
+        ]
+      ]
+    },
+    {
+      "id": "GreenBottle",
+      "asset_name": "SM_BWR_GreenBottle",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_GreenBottle.fbx",
+      "material_names": [
+        "M_BWR_GreenBottle",
+        "M_BWR_WhiteEnamel",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreenBottle.M_BWR_GreenBottle",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.3,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 340,
+      "hulls": 5,
+      "bounds": [
+        [
+          -0.035624999552965164,
+          -0.035624999552965164,
+          0.0
+        ],
+        [
+          0.035624999552965164,
+          0.035624999552965164,
+          0.2630000114440918
+        ]
+      ]
+    },
+    {
+      "id": "SnackJar",
+      "asset_name": "SM_BWR_SnackJar",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_SnackJar.fbx",
+      "material_names": [
+        "M_BWR_AmberJar",
+        "M_BWR_BlackPlastic",
+        "M_BWR_PeanutLabel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_AmberJar.M_BWR_AmberJar",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_PeanutLabel.M_BWR_PeanutLabel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.8,
+      "break_health": 8,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 77,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.08875000476837158,
+          -0.08875000476837158,
+          0.0
+        ],
+        [
+          0.08875000476837158,
+          0.08875000476837158,
+          0.27799999713897705
+        ]
+      ]
+    },
+    {
+      "id": "Shaker",
+      "asset_name": "SM_BWR_Shaker",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_Shaker.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.35,
+      "break_health": 6,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 150,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.04999999701976776,
+          -0.04999999701976776,
+          0.0
+        ],
+        [
+          0.04999999701976776,
+          0.04999999701976776,
+          0.23649999499320984
+        ]
+      ]
+    },
+    {
+      "id": "SnackCarton",
+      "asset_name": "SM_BWR_SnackCarton",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_SnackCarton.fbx",
+      "material_names": [
+        "M_BWR_Cardboard",
+        "M_BWR_CerealLabel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CerealLabel.M_BWR_CerealLabel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.3,
+      "break_health": 8,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 99,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.08699999749660492,
+          -0.03407499939203262,
+          0.0
+        ],
+        [
+          0.08699999749660492,
+          0.03480000048875809,
+          0.27000001072883606
+        ]
+      ]
+    },
+    {
+      "id": "ProteinTub",
+      "asset_name": "SM_BWR_ProteinTub",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_ProteinTub.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_BluePlastic",
+        "M_BWR_PaperPack"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_PaperPack.M_BWR_PaperPack"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 1.4,
+      "break_health": 10,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 61,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.09620000422000885,
+          -0.09620000422000885,
+          0.0
+        ],
+        [
+          0.09620000422000885,
+          0.09620000422000885,
+          0.22949999570846558
+        ]
+      ]
+    },
+    {
+      "id": "SnackBag",
+      "asset_name": "SM_BWR_SnackBag",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_SnackBag.fbx",
+      "material_names": [
+        "M_BWR_SnackBox",
+        "M_BWR_Cardboard"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_SnackBox.M_BWR_SnackBox",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.15,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 802,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.09375,
+          -0.04437500238418579,
+          0.004999999888241291
+        ],
+        [
+          0.09375,
+          0.02437499910593033,
+          0.2150000035762787
+        ]
+      ]
+    },
+    {
+      "id": "Laptop",
+      "asset_name": "SM_BWR_Laptop",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_Laptop.fbx",
+      "material_names": [
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackPlastic",
+        "M_BWR_GreyFabric",
+        "M_BWR_ScreenGlass"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 1.9,
+      "break_health": 14,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 6370,
+      "hulls": 12,
+      "bounds": [
+        [
+          -0.20799998939037323,
+          -0.16468237340450287,
+          0.0
+        ],
+        [
+          0.20799998939037323,
+          0.14300000667572021,
+          0.21199536323547363
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Laptop_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_Laptop_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Laptop_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_Laptop_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Laptop_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_Laptop_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "Controller",
+      "asset_name": "SM_BWR_Controller",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_Controller.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_Rubber",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.35,
+      "break_health": 7,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 812,
+      "hulls": 9,
+      "bounds": [
+        [
+          -0.1040000170469284,
+          -0.06629999727010727,
+          -0.0020000003278255463
+        ],
+        [
+          0.10400000959634781,
+          0.05460001528263092,
+          0.05199999734759331
+        ]
+      ]
+    },
+    {
+      "id": "PaperAndEnvelope",
+      "asset_name": "SM_BWR_PaperAndEnvelope",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_PaperAndEnvelope.fbx",
+      "material_names": [
+        "M_BWR_Paper",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.05,
+      "break_health": 3,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 60,
+      "hulls": 10,
+      "bounds": [
+        [
+          -0.12383010983467102,
+          -0.12326444685459137,
+          0.0005000000237487257
+        ],
+        [
+          0.15263010561466217,
+          0.09926445037126541,
+          0.004150000400841236
+        ]
+      ]
+    },
+    {
+      "id": "KeysAndSunglasses",
+      "asset_name": "SM_BWR_KeysAndSunglasses",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_KeysAndSunglasses.fbx",
+      "material_names": [
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackPlastic",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.18,
+      "break_health": 4,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 907,
+      "hulls": 7,
+      "bounds": [
+        [
+          -0.04365214332938194,
+          -0.10320000350475311,
+          0.002500000176951289
+        ],
+        [
+          0.05914177745580673,
+          0.01998976618051529,
+          0.009462391957640648
+        ]
+      ]
+    },
+    {
+      "id": "LooseShirt0",
+      "asset_name": "SM_BWR_LooseShirt0",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LooseShirt0.fbx",
+      "material_names": [
+        "M_BWR_Shirt0"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt0.M_BWR_Shirt0"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 2112,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.41324999928474426,
+          -0.3334999978542328,
+          -0.002095406409353018
+        ],
+        [
+          0.41324999928474426,
+          0.3334999978542328,
+          0.04263651371002197
+        ]
+      ]
+    },
+    {
+      "id": "LooseShirt1",
+      "asset_name": "SM_BWR_LooseShirt1",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LooseShirt1.fbx",
+      "material_names": [
+        "M_BWR_Shirt1"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt1.M_BWR_Shirt1"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 2112,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.41324999928474426,
+          -0.3334999978542328,
+          -0.00245852442458272
+        ],
+        [
+          0.41324999928474426,
+          0.3334999978542328,
+          0.043221134692430496
+        ]
+      ]
+    },
+    {
+      "id": "LooseShirt2",
+      "asset_name": "SM_BWR_LooseShirt2",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LooseShirt2.fbx",
+      "material_names": [
+        "M_BWR_Shirt2"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt2.M_BWR_Shirt2"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 2112,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.41324999928474426,
+          -0.3334999978542328,
+          -0.0024802994448691607
+        ],
+        [
+          0.41324999928474426,
+          0.3334999978542328,
+          0.04256945475935936
+        ]
+      ]
+    },
+    {
+      "id": "LooseShirt3",
+      "asset_name": "SM_BWR_LooseShirt3",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LooseShirt3.fbx",
+      "material_names": [
+        "M_BWR_Shirt3"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt3.M_BWR_Shirt3"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 2112,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.41324999928474426,
+          -0.3334999978542328,
+          -0.0009206237155012786
+        ],
+        [
+          0.41324999928474426,
+          0.3334999978542328,
+          0.04246632009744644
+        ]
+      ]
+    },
+    {
+      "id": "LooseShirt4",
+      "asset_name": "SM_BWR_LooseShirt4",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LooseShirt4.fbx",
+      "material_names": [
+        "M_BWR_Shirt4"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt4.M_BWR_Shirt4"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 2112,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.41324999928474426,
+          -0.3334999978542328,
+          -0.000359096797183156
+        ],
+        [
+          0.41324999928474426,
+          0.3334999978542328,
+          0.041677817702293396
+        ]
+      ]
+    },
+    {
+      "id": "LooseShirt5",
+      "asset_name": "SM_BWR_LooseShirt5",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LooseShirt5.fbx",
+      "material_names": [
+        "M_BWR_Shirt5"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt5.M_BWR_Shirt5"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 2112,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.41324999928474426,
+          -0.3334999978542328,
+          -0.0026125083677470684
+        ],
+        [
+          0.41324999928474426,
+          0.3334999978542328,
+          0.042644355446100235
+        ]
+      ]
+    },
+    {
+      "id": "LaundryBasket",
+      "asset_name": "SM_BWR_LaundryBasket",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LaundryBasket.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 2.5,
+      "break_health": 20,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 23650,
+      "hulls": 12,
+      "bounds": [
+        [
+          -0.3075000047683716,
+          -0.22500000894069672,
+          0.0
+        ],
+        [
+          0.3075000047683716,
+          0.22500000894069672,
+          0.515999972820282
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LaundryBasket_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_LaundryBasket_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LaundryBasket_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_LaundryBasket_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LaundryBasket_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_LaundryBasket_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "TrashBin",
+      "asset_name": "SM_BWR_TrashBin",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_TrashBin.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_BlackPlastic",
+        "M_BWR_Cardboard",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 3,
+      "break_health": 20,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 4540,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.23999999463558197,
+          -0.22500000894069672,
+          0.0
+        ],
+        [
+          0.23999999463558197,
+          0.22500000894069672,
+          0.5583553910255432
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_TrashBin_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_TrashBin_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_TrashBin_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_TrashBin_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_TrashBin_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_TrashBin_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "FlipFlop",
+      "asset_name": "SM_BWR_FlipFlop",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_FlipFlop.fbx",
+      "material_names": [
+        "M_BWR_Rubber",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.22,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 262,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.16200007498264313,
+          -0.0580500029027462,
+          0.0
+        ],
+        [
+          0.16200001537799835,
+          0.058050017803907394,
+          0.06260845065116882
+        ]
+      ]
+    },
+    {
+      "id": "Sneaker",
+      "asset_name": "SM_BWR_Sneaker",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_Sneaker.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_GreyFabric",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.45,
+      "break_health": 7,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 768,
+      "hulls": 9,
+      "bounds": [
+        [
+          -0.1846000999212265,
+          -0.07539999485015869,
+          -0.0020000003278255463
+        ],
+        [
+          0.18460002541542053,
+          0.07540001720190048,
+          0.1120000034570694
+        ]
+      ]
+    },
+    {
+      "id": "StorageBox",
+      "asset_name": "SM_BWR_StorageBox",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_StorageBox.fbx",
+      "material_names": [
+        "M_BWR_Cardboard",
+        "M_BWR_TaupeTowelFabric",
+        "M_BWR_Paper",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 4,
+      "break_health": 18,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 434,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.24000000953674316,
+          -0.25599998235702515,
+          0.0
+        ],
+        [
+          0.24000000953674316,
+          0.26288002729415894,
+          0.47999998927116394
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_StorageBox_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_StorageBox_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_StorageBox_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_StorageBox_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_StorageBox_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_StorageBox_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "ClosetDrawerUnit",
+      "asset_name": "SM_BWR_ClosetDrawerUnit",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_ClosetDrawerUnit.fbx",
+      "material_names": [
+        "M_BWR_BlackSteel",
+        "M_BWR_WalnutWood",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 17,
+      "break_health": 45,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 1066,
+      "hulls": 12,
+      "bounds": [
+        [
+          -0.746999979019165,
+          -0.36000001430511475,
+          0.0
+        ],
+        [
+          0.746999979019165,
+          0.4390704333782196,
+          0.9200000166893005
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_ClosetDrawerUnit_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_ClosetDrawerUnit_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_ClosetDrawerUnit_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_ClosetDrawerUnit_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_ClosetDrawerUnit_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_ClosetDrawerUnit_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "HangingShirt0",
+      "asset_name": "SM_BWR_HangingShirt0",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt0.fbx",
+      "material_names": [
+        "M_BWR_Shirt0",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt0.M_BWR_Shirt0",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.04132107272744179,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "HangingShirt1",
+      "asset_name": "SM_BWR_HangingShirt1",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt1.fbx",
+      "material_names": [
+        "M_BWR_Shirt1",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt1.M_BWR_Shirt1",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.04621483385562897,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "HangingShirt2",
+      "asset_name": "SM_BWR_HangingShirt2",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt2.fbx",
+      "material_names": [
+        "M_BWR_Shirt2",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt2.M_BWR_Shirt2",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.045924071222543716,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "HangingShirt3",
+      "asset_name": "SM_BWR_HangingShirt3",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt3.fbx",
+      "material_names": [
+        "M_BWR_Shirt3",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt3.M_BWR_Shirt3",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.04491743445396423,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "HangingShirt4",
+      "asset_name": "SM_BWR_HangingShirt4",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt4.fbx",
+      "material_names": [
+        "M_BWR_Shirt4",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt4.M_BWR_Shirt4",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.04638798534870148,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "HangingShirt5",
+      "asset_name": "SM_BWR_HangingShirt5",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt5.fbx",
+      "material_names": [
+        "M_BWR_Shirt5",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt5.M_BWR_Shirt5",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.04604962840676308,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "HangingShirt6",
+      "asset_name": "SM_BWR_HangingShirt6",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt6.fbx",
+      "material_names": [
+        "M_BWR_Shirt6",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt6.M_BWR_Shirt6",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.037397369742393494,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "HangingShirt7",
+      "asset_name": "SM_BWR_HangingShirt7",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingShirt7.fbx",
+      "material_names": [
+        "M_BWR_Shirt7",
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Shirt7.M_BWR_Shirt7",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 114,
+      "hulls": 8,
+      "bounds": [
+        [
+          -0.46399998664855957,
+          -0.046360764652490616,
+          0.05999999865889549
+        ],
+        [
+          0.46399998664855957,
+          0.051987096667289734,
+          0.920598030090332
+        ]
+      ]
+    },
+    {
+      "id": "FlavortownBanner",
+      "asset_name": "SM_BWR_FlavortownBanner",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_FlavortownBanner.fbx",
+      "material_names": [
+        "M_BWR_Photo2329",
+        "M_BWR_BrassGrommets"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2329.M_BWR_Photo2329",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrassGrommets.M_BWR_BrassGrommets"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 1,
+      "break_health": 9,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 984,
+      "hulls": 5,
+      "bounds": [
+        [
+          -1.1160000562667847,
+          -0.021531524136662483,
+          -0.44999998807907104
+        ],
+        [
+          1.1160000562667847,
+          0.020274030044674873,
+          0.44999998807907104
+        ]
+      ]
+    },
+    {
+      "id": "PulpFictionPoster",
+      "asset_name": "SM_BWR_PulpFictionPoster",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_PulpFictionPoster.fbx",
+      "material_names": [
+        "M_BWR_Photo2327",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 242,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.6352499723434448,
+          -0.01979999989271164,
+          -0.26499998569488525
+        ],
+        [
+          0.6352499723434448,
+          -0.0,
+          0.26499998569488525
+        ]
+      ]
+    },
+    {
+      "id": "ActionBronsonPoster",
+      "asset_name": "SM_BWR_ActionBronsonPoster",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_ActionBronsonPoster.fbx",
+      "material_names": [
+        "M_BWR_Photo2328",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2328.M_BWR_Photo2328",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.3,
+      "break_health": 5,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 242,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.19575001299381256,
+          -0.017400000244379044,
+          -0.20999999344348907
+        ],
+        [
+          0.19575001299381256,
+          -0.0,
+          0.20999999344348907
+        ]
+      ]
+    },
+    {
+      "id": "SmallAlbumPrint",
+      "asset_name": "SM_BWR_SmallAlbumPrint",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_SmallAlbumPrint.fbx",
+      "material_names": [
+        "M_BWR_Photo2328",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2328.M_BWR_Photo2328",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.15,
+      "break_health": 4,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 242,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.13774999976158142,
+          -0.017400000244379044,
+          -0.0949999988079071
+        ],
+        [
+          0.13774999976158142,
+          -0.0,
+          0.0949999988079071
+        ]
+      ]
+    },
+    {
+      "id": "FramedPrint",
+      "asset_name": "SM_BWR_FramedPrint",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_FramedPrint.fbx",
+      "material_names": [
+        "M_BWR_Photo2327",
+        "M_BWR_Paper",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 2,
+      "break_health": 15,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 634,
+      "hulls": 6,
+      "bounds": [
+        [
+          -0.5122500061988831,
+          -0.017999999225139618,
+          -0.22999998927116394
+        ],
+        [
+          0.5122500061988831,
+          0.020250000059604645,
+          0.22999998927116394
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_FramedPrint_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_FramedPrint_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_FramedPrint_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_FramedPrint_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_FramedPrint_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_FramedPrint_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "EmptyTVBracket",
+      "asset_name": "SM_BWR_EmptyTVBracket",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_EmptyTVBracket.fbx",
+      "material_names": [
+        "M_BWR_BlackSteel",
+        "M_BWR_BrushedSteel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 2.5,
+      "break_health": 20,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 546,
+      "hulls": 9,
+      "bounds": [
+        [
+          -0.5249999761581421,
+          -0.017999999225139618,
+          -0.11500000208616257
+        ],
+        [
+          0.5249999761581421,
+          0.03375000134110451,
+          0.11500000208616257
+        ]
+      ]
+    },
+    {
+      "id": "RopeShelf",
+      "asset_name": "SM_BWR_RopeShelf",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_RopeShelf.fbx",
+      "material_names": [
+        "M_BWR_WalnutWood",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": true,
+      "mass_kg": 1.8,
+      "break_health": 15,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 126,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.3449999988079071,
+          -0.0025980761274695396,
+          -0.008999999612569809
+        ],
+        [
+          0.3449999988079071,
+          0.22711414098739624,
+          0.21173204481601715
+        ]
+      ],
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_RopeShelf_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_RopeShelf_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_RopeShelf_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_RopeShelf_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_RopeShelf_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_RopeShelf_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    {
+      "id": "StripedRug",
+      "asset_name": "SM_BWR_StripedRug",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_StripedRug.fbx",
+      "material_names": [
+        "M_BWR_RugIvory",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RugIvory.M_BWR_RugIvory",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "architecture",
+      "interactive": false,
+      "damage": false,
+      "mass_kg": 10,
+      "break_health": 30,
+      "movable": false,
+      "wall": false,
+      "collision": false,
+      "faces": 566,
+      "hulls": 0,
+      "bounds": [
+        [
+          -1.8629999160766602,
+          -1.3140000104904175,
+          0.0
+        ],
+        [
+          1.8629999160766602,
+          1.3140000104904175,
+          0.013500000350177288
+        ]
+      ]
+    },
+    {
+      "id": "RoomShell",
+      "asset_name": "SM_BWR_RoomShell",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_RoomShell.fbx",
+      "material_names": [
+        "M_BWR_OakFloorWood",
+        "M_BWR_CeilingPaint",
+        "M_BWR_WarmGreyPaint",
+        "M_BWR_WhiteEnamel",
+        "M_BWR_BlackSteel",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OakFloorWood.M_BWR_OakFloorWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CeilingPaint.M_BWR_CeilingPaint",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WarmGreyPaint.M_BWR_WarmGreyPaint",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "architecture",
+      "interactive": false,
+      "damage": false,
+      "mass_kg": 10,
+      "break_health": 30,
+      "movable": false,
+      "wall": false,
+      "collision": true,
+      "faces": 2478,
+      "hulls": 12,
+      "bounds": [
+        [
+          -29.81999969482422,
+          5.7699995040893555,
+          2.9230000972747803
+        ],
+        [
+          -23.450000762939453,
+          13.817999839782715,
+          5.761000156402588
+        ]
+      ]
+    },
+    {
+      "id": "WindowBlinds",
+      "asset_name": "SM_BWR_WindowBlinds",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_WindowBlinds.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_WhiteEnamel",
+        "M_BWR_TaupeTowelFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric"
+      ],
+      "behavior": "architecture",
+      "interactive": false,
+      "damage": false,
+      "mass_kg": 10,
+      "break_health": 30,
+      "movable": false,
+      "wall": false,
+      "collision": false,
+      "faces": 6680,
+      "hulls": 0,
+      "bounds": [
+        [
+          -0.7749999761581421,
+          -0.03564999997615814,
+          -0.06999999284744263
+        ],
+        [
+          0.7749999761581421,
+          0.1627500057220459,
+          1.7300000190734863
+        ]
+      ]
+    },
+    {
+      "id": "CeilingDetails",
+      "asset_name": "SM_BWR_CeilingDetails",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_CeilingDetails.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_FrostedLight"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_FrostedLight.M_BWR_FrostedLight"
+      ],
+      "behavior": "architecture",
+      "interactive": false,
+      "damage": false,
+      "mass_kg": 10,
+      "break_health": 30,
+      "movable": false,
+      "wall": false,
+      "collision": false,
+      "faces": 282,
+      "hulls": 0,
+      "bounds": [
+        [
+          -0.25,
+          -0.25,
+          -0.07999999821186066
+        ],
+        [
+          0.25,
+          0.25,
+          0.04999999701976776
+        ]
+      ]
+    },
+    {
+      "id": "CeilingVent",
+      "asset_name": "SM_BWR_CeilingVent",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_CeilingVent.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel"
+      ],
+      "behavior": "architecture",
+      "interactive": false,
+      "damage": false,
+      "mass_kg": 10,
+      "break_health": 30,
+      "movable": false,
+      "wall": false,
+      "collision": false,
+      "faces": 2058,
+      "hulls": 0,
+      "bounds": [
+        [
+          -0.2199999988079071,
+          -0.2199999988079071,
+          -0.030000001192092896
+        ],
+        [
+          0.2199999988079071,
+          0.2199999988079071,
+          0.008999999612569809
+        ]
+      ]
+    },
+    {
+      "id": "SmokeAlarm",
+      "asset_name": "SM_BWR_SmokeAlarm",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_SmokeAlarm.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "architecture",
+      "interactive": false,
+      "damage": false,
+      "mass_kg": 10,
+      "break_health": 30,
+      "movable": false,
+      "wall": false,
+      "collision": false,
+      "faces": 1032,
+      "hulls": 0,
+      "bounds": [
+        [
+          -0.06800000369548798,
+          -0.013500003144145012,
+          -0.06800000369548798
+        ],
+        [
+          0.06800000369548798,
+          0.02199999988079071,
+          0.06800000369548798
+        ]
+      ]
+    },
+    {
+      "id": "ClosetBroom",
+      "asset_name": "SM_BWR_ClosetBroom",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_ClosetBroom.fbx",
+      "material_names": [
+        "M_BWR_BrushedSteel",
+        "M_BWR_BlackPlastic",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.9,
+      "break_health": 10,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 273,
+      "hulls": 12,
+      "bounds": [
+        [
+          -0.1822500079870224,
+          -0.03779871016740799,
+          0.019742149859666824
+        ],
+        [
+          0.26718294620513916,
+          0.030375001952052116,
+          1.4111746549606323
+        ]
+      ]
+    },
+    {
+      "id": "LongCarton",
+      "asset_name": "SM_BWR_LongCarton",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_LongCarton.fbx",
+      "material_names": [
+        "M_BWR_Cardboard",
+        "M_BWR_Paper",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 3,
+      "break_health": 18,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 428,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.18125000596046448,
+          -0.06525000184774399,
+          0.0
+        ],
+        [
+          0.18125000596046448,
+          0.07003500312566757,
+          1.159999966621399
+        ]
+      ]
+    },
+    {
+      "id": "AirPurifier",
+      "asset_name": "SM_BWR_AirPurifier",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_AirPurifier.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_BlackPlastic",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 1.5,
+      "break_health": 10,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 33668,
+      "hulls": 12,
+      "bounds": [
+        [
+          -0.11569999903440475,
+          -0.11286434531211853,
+          0.0
+        ],
+        [
+          0.11569999903440475,
+          0.11286435276269913,
+          0.26600000262260437
+        ]
+      ]
+    },
+    {
+      "id": "TissueBox",
+      "asset_name": "SM_BWR_TissueBox",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_TissueBox.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_GreyFabric",
+        "M_BWR_Paper"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.22,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 900,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.09750000387430191,
+          -0.07800000160932541,
+          0.0
+        ],
+        [
+          0.09750000387430191,
+          0.07800000160932541,
+          0.13866697251796722
+        ]
+      ]
+    },
+    {
+      "id": "DeskPhoto",
+      "asset_name": "SM_BWR_DeskPhoto",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_DeskPhoto.fbx",
+      "material_names": [
+        "M_BWR_Photo2327",
+        "M_BWR_Paper",
+        "M_BWR_WhiteEnamel",
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.25,
+      "break_health": 6,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 732,
+      "hulls": 7,
+      "bounds": [
+        [
+          -0.1266999989748001,
+          -0.09589999914169312,
+          -0.06400000303983688
+        ],
+        [
+          0.1266999989748001,
+          0.018200000748038292,
+          0.06400000303983688
+        ]
+      ]
+    },
+    {
+      "id": "TowerFan",
+      "asset_name": "SM_BWR_TowerFan",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_TowerFan.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_GreyFabric",
+        "M_BWR_ScreenGlass"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 4.5,
+      "break_health": 23,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 3954,
+      "hulls": 12,
+      "bounds": [
+        [
+          -0.16899999976158142,
+          -0.16899999976158142,
+          0.000499999150633812
+        ],
+        [
+          0.16899999976158142,
+          0.16899999976158142,
+          0.9249999523162842
+        ]
+      ]
+    },
+    {
+      "id": "HangingLaundryBag",
+      "asset_name": "SM_BWR_HangingLaundryBag",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_HangingLaundryBag.fbx",
+      "material_names": [
+        "M_BWR_WhiteQuiltedCotton",
+        "M_BWR_GreyFabric",
+        "M_BWR_WhiteEnamel"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.6,
+      "break_health": 6,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 1424,
+      "hulls": 3,
+      "bounds": [
+        [
+          -0.17249999940395355,
+          -0.10796608030796051,
+          0.054999999701976776
+        ],
+        [
+          0.17249999940395355,
+          0.03168180584907532,
+          0.6924372911453247
+        ]
+      ]
+    },
+    {
+      "id": "ChairJacket",
+      "asset_name": "SM_BWR_ChairJacket",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_ChairJacket.fbx",
+      "material_names": [
+        "M_BWR_CharcoalFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.9,
+      "break_health": 8,
+      "movable": true,
+      "wall": true,
+      "collision": true,
+      "faces": 1408,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.28600001335144043,
+          -0.15600000321865082,
+          0.004999999888241291
+        ],
+        [
+          0.28600001335144043,
+          0.04167148843407631,
+          0.6073682904243469
+        ]
+      ]
+    },
+    {
+      "id": "MilkCarton",
+      "asset_name": "SM_BWR_MilkCarton",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_MilkCarton.fbx",
+      "material_names": [
+        "M_BWR_BluePlastic",
+        "M_BWR_Paper",
+        "M_BWR_WhiteEnamel",
+        "M_BWR_PaperPack"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_PaperPack.M_BWR_PaperPack"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.3,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 219,
+      "hulls": 4,
+      "bounds": [
+        [
+          -0.036249998956918716,
+          -0.038750000298023224,
+          0.0
+        ],
+        [
+          0.036249998956918716,
+          0.04000000283122063,
+          0.1745000034570694
+        ]
+      ]
+    },
+    {
+      "id": "Wallet",
+      "asset_name": "SM_BWR_Wallet",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_Wallet.fbx",
+      "material_names": [
+        "M_BWR_WalletLeather"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalletLeather.M_BWR_WalletLeather"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.16,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 98,
+      "hulls": 1,
+      "bounds": [
+        [
+          -0.06875000149011612,
+          -0.04999999701976776,
+          0.0
+        ],
+        [
+          0.06875000149011612,
+          0.04999999701976776,
+          0.024000000208616257
+        ]
+      ]
+    },
+    {
+      "id": "Phone",
+      "asset_name": "SM_BWR_Phone",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_Phone.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic",
+        "M_BWR_ScreenGlass"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.2,
+      "break_health": 8,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 196,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.04500000178813934,
+          -0.08699999749660492,
+          0.0
+        ],
+        [
+          0.04500000178813934,
+          0.08699999749660492,
+          0.011500000022351742
+        ]
+      ]
+    },
+    {
+      "id": "PowerCords",
+      "asset_name": "SM_BWR_PowerCords",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_PowerCords.fbx",
+      "material_names": [
+        "M_BWR_BlackPlastic"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic"
+      ],
+      "behavior": "furniture",
+      "interactive": true,
+      "damage": false,
+      "mass_kg": 0.25,
+      "break_health": 5,
+      "movable": true,
+      "wall": false,
+      "collision": true,
+      "faces": 142,
+      "hulls": 2,
+      "bounds": [
+        [
+          -0.06499999761581421,
+          -0.302102267742157,
+          0.0010000001639127731
+        ],
+        [
+          0.314681738615036,
+          0.024050001055002213,
+          0.027000000700354576
+        ]
+      ]
+    },
+    {
+      "id": "PowerOutlet",
+      "asset_name": "SM_BWR_PowerOutlet",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/SM_BWR_PowerOutlet.fbx",
+      "material_names": [
+        "M_BWR_WhiteEnamel",
+        "M_BWR_GreyFabric"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric"
+      ],
+      "behavior": "architecture",
+      "interactive": false,
+      "damage": false,
+      "mass_kg": 10,
+      "break_health": 30,
+      "movable": false,
+      "wall": false,
+      "collision": false,
+      "faces": 518,
+      "hulls": 0,
+      "bounds": [
+        [
+          -0.03849999979138374,
+          -0.005499999970197678,
+          -0.05950000137090683
+        ],
+        [
+          0.03849999979138374,
+          0.00800000037997961,
+          0.05950000137090683
+        ]
+      ]
+    }
+  ],
+  "placements": [
+    {
+      "asset": "LoftFrame",
+      "location": [
+        -2782,
+        -728.8,
+        302.3
+      ],
+      "yaw": 180,
+      "name": "Black steel loft bed"
+    },
+    {
+      "asset": "QuiltedMattress",
+      "location": [
+        -2782,
+        -728.8,
+        449.3
+      ],
+      "yaw": 180,
+      "name": "Quilted white mattress"
+    },
+    {
+      "asset": "LowDaybed",
+      "location": [
+        -2782,
+        -728.8,
+        333.3
+      ],
+      "yaw": 180,
+      "name": "Dark futon pad under loft"
+    },
+    {
+      "asset": "GreyPillow",
+      "location": [
+        -2910,
+        -728.8,
+        478.3
+      ],
+      "yaw": 184,
+      "name": "Gray pillow"
+    },
+    {
+      "asset": "GreyPillow",
+      "location": [
+        -2918,
+        -738.8,
+        357.3
+      ],
+      "yaw": 172,
+      "name": "Dark daybed pillow"
+    },
+    {
+      "asset": "BunchedOrangeTowel",
+      "location": [
+        -2770,
+        -719.8,
+        478.3
+      ],
+      "yaw": 162,
+      "name": "Orange towel"
+    },
+    {
+      "asset": "DrapedTowel",
+      "location": [
+        -2690,
+        -856.8,
+        330.3
+      ],
+      "yaw": 0,
+      "name": "Towel over loft rail"
+    },
+    {
+      "asset": "GreyFuton",
+      "location": [
+        -2730,
+        -1286.8,
+        302.3
+      ],
+      "yaw": 180,
+      "name": "Charcoal gray futon"
+    },
+    {
+      "asset": "PatternedPillow",
+      "location": [
+        -2812,
+        -1297.8,
+        362.3
+      ],
+      "yaw": 165,
+      "name": "Patterned teal pillow",
+      "roll": 65
+    },
+    {
+      "asset": "PatternedPillow",
+      "location": [
+        -2742,
+        -1307.8,
+        362.3
+      ],
+      "yaw": 198,
+      "name": "Patterned teal pillow",
+      "roll": 65
+    },
+    {
+      "asset": "CoffeeTable",
+      "location": [
+        -2695,
+        -1080.8,
+        302.3
+      ],
+      "yaw": 180,
+      "name": "Rustic coffee table"
+    },
+    {
+      "asset": "Dresser",
+      "location": [
+        -2470,
+        -621.0,
+        302.3
+      ],
+      "yaw": 0,
+      "name": "Dark fabric dresser"
+    },
+    {
+      "asset": "SmallTelevision",
+      "location": [
+        -2466,
+        -626.0,
+        375.3
+      ],
+      "yaw": 0,
+      "name": "Television"
+    },
+    {
+      "asset": "GameConsole",
+      "location": [
+        -2543,
+        -626.0,
+        375.3
+      ],
+      "yaw": 0,
+      "name": "White game console"
+    },
+    {
+      "asset": "WritingDesk",
+      "location": [
+        -2918,
+        -958.8,
+        302.3
+      ],
+      "yaw": 90,
+      "name": "White desk"
+    },
+    {
+      "asset": "DeskLamp",
+      "location": [
+        -2940,
+        -936.8,
+        378.3
+      ],
+      "yaw": 90,
+      "name": "Adjustable desk lamp"
+    },
+    {
+      "asset": "WireRack",
+      "location": [
+        -2920,
+        -1123.8,
+        302.3
+      ],
+      "yaw": 90,
+      "name": "Black wire storage rack"
+    },
+    {
+      "asset": "MiniFridge",
+      "location": [
+        -2918,
+        -1123.8,
+        302.3
+      ],
+      "yaw": 90,
+      "name": "Black mini fridge"
+    },
+    {
+      "asset": "DrinkCup",
+      "location": [
+        -2750,
+        -1070.8,
+        350.3
+      ],
+      "yaw": 170,
+      "name": "Drink cup"
+    },
+    {
+      "asset": "DrinkCup",
+      "location": [
+        -2638,
+        -1087.8,
+        350.3
+      ],
+      "yaw": 185,
+      "name": "Drink cup"
+    },
+    {
+      "asset": "DrinkCup",
+      "location": [
+        -2665,
+        -1100.8,
+        350.3
+      ],
+      "yaw": 165,
+      "name": "Drink cup"
+    },
+    {
+      "asset": "DrinkCup",
+      "location": [
+        -2710,
+        -1046.8,
+        350.3
+      ],
+      "yaw": 200,
+      "name": "Drink cup"
+    },
+    {
+      "asset": "DrinkCup",
+      "location": [
+        -2890,
+        -973.8,
+        378.3
+      ],
+      "yaw": 90,
+      "name": "Desk drink cup"
+    },
+    {
+      "asset": "LiddedCup",
+      "location": [
+        -2780,
+        -1093.8,
+        350.3
+      ],
+      "yaw": 190,
+      "name": "Takeout drink"
+    },
+    {
+      "asset": "LiddedCup",
+      "location": [
+        -2724,
+        -1089.8,
+        350.3
+      ],
+      "yaw": 155,
+      "name": "Takeout drink"
+    },
+    {
+      "asset": "PaperTowelRoll",
+      "location": [
+        -2728,
+        -1061.8,
+        350.3
+      ],
+      "yaw": 180,
+      "name": "Paper towels"
+    },
+    {
+      "asset": "WaterBottle",
+      "location": [
+        -2678,
+        -1067.8,
+        350.3
+      ],
+      "yaw": 172,
+      "name": "Purple water bottle"
+    },
+    {
+      "asset": "GreenBottle",
+      "location": [
+        -2896,
+        -1013.8,
+        378.3
+      ],
+      "yaw": 90,
+      "name": "Green bottle"
+    },
+    {
+      "asset": "GreenBottle",
+      "location": [
+        -2920,
+        -1011.8,
+        378.3
+      ],
+      "yaw": 90,
+      "name": "Green bottle"
+    },
+    {
+      "asset": "GreenBottle",
+      "location": [
+        -2907,
+        -995.8,
+        378.3
+      ],
+      "yaw": 90,
+      "name": "Green bottle"
+    },
+    {
+      "asset": "SnackJar",
+      "location": [
+        -2601,
+        -1070.8,
+        350.3
+      ],
+      "yaw": 180,
+      "name": "Large snack jar"
+    },
+    {
+      "asset": "Shaker",
+      "location": [
+        -2610,
+        -1043.8,
+        350.3
+      ],
+      "yaw": 165,
+      "name": "Black shaker"
+    },
+    {
+      "asset": "SnackCarton",
+      "location": [
+        -2898,
+        -1074.8,
+        453.3
+      ],
+      "yaw": 90,
+      "name": "Cereal and snack box"
+    },
+    {
+      "asset": "SnackCarton",
+      "location": [
+        -2898,
+        -1106.8,
+        422.3
+      ],
+      "yaw": 90,
+      "name": "Cereal and snack box"
+    },
+    {
+      "asset": "SnackCarton",
+      "location": [
+        -2898,
+        -1146.8,
+        391.3
+      ],
+      "yaw": 90,
+      "name": "Cereal and snack box"
+    },
+    {
+      "asset": "ProteinTub",
+      "location": [
+        -2895,
+        -1088.8,
+        391.3
+      ],
+      "yaw": 90,
+      "name": "Protein powder tub"
+    },
+    {
+      "asset": "ProteinTub",
+      "location": [
+        -2916,
+        -1163.8,
+        453.3
+      ],
+      "yaw": 90,
+      "name": "Storage tub"
+    },
+    {
+      "asset": "SnackBag",
+      "location": [
+        -2890,
+        -1083.8,
+        422.3
+      ],
+      "yaw": 90,
+      "name": "Snack bag"
+    },
+    {
+      "asset": "SnackBag",
+      "location": [
+        -2913,
+        -1130.8,
+        422.3
+      ],
+      "yaw": 90,
+      "name": "Snack bag"
+    },
+    {
+      "asset": "SnackBag",
+      "location": [
+        -2926,
+        -1164.8,
+        422.3
+      ],
+      "yaw": 90,
+      "name": "Snack bag"
+    },
+    {
+      "asset": "SnackBag",
+      "location": [
+        -2860,
+        -1143.8,
+        303.3
+      ],
+      "yaw": 150,
+      "name": "Snack bag"
+    },
+    {
+      "asset": "SnackBag",
+      "location": [
+        -2662,
+        -1220.8,
+        346.3
+      ],
+      "yaw": 160,
+      "name": "Snack bag"
+    },
+    {
+      "asset": "SnackBag",
+      "location": [
+        -2830,
+        -1168.8,
+        302.3
+      ],
+      "yaw": 80,
+      "name": "Snack bag"
+    },
+    {
+      "asset": "Laptop",
+      "location": [
+        -2600,
+        -1227.8,
+        349.3
+      ],
+      "yaw": 198,
+      "name": "Laptop on futon"
+    },
+    {
+      "asset": "Controller",
+      "location": [
+        -2812,
+        -1219.8,
+        351.3
+      ],
+      "yaw": 210,
+      "name": "Game controller"
+    },
+    {
+      "asset": "PaperAndEnvelope",
+      "location": [
+        -2770,
+        -1051.8,
+        350.3
+      ],
+      "yaw": 172,
+      "name": "Loose papers"
+    },
+    {
+      "asset": "KeysAndSunglasses",
+      "location": [
+        -2600,
+        -1093.8,
+        350.3
+      ],
+      "yaw": 198,
+      "name": "Keys and sunglasses"
+    },
+    {
+      "asset": "LooseShirt0",
+      "location": [
+        -2854,
+        -1236.8,
+        351.3
+      ],
+      "yaw": 180,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LooseShirt1",
+      "location": [
+        -2830,
+        -1248.8,
+        352.5
+      ],
+      "yaw": 143,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LooseShirt2",
+      "location": [
+        -2800,
+        -1231.8,
+        353.7
+      ],
+      "yaw": 106,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LooseShirt3",
+      "location": [
+        -2652,
+        -1233.8,
+        351.3
+      ],
+      "yaw": 69,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LooseShirt4",
+      "location": [
+        -2577,
+        -1223.8,
+        352.5
+      ],
+      "yaw": 32,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LooseShirt5",
+      "location": [
+        -2468,
+        -1160.8,
+        303.3
+      ],
+      "yaw": 355,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LooseShirt0",
+      "location": [
+        -2544,
+        -894.8,
+        302.3
+      ],
+      "yaw": 318,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LooseShirt1",
+      "location": [
+        -2821,
+        -993.8,
+        302.3
+      ],
+      "yaw": 281,
+      "name": "Loose clothing"
+    },
+    {
+      "asset": "LaundryBasket",
+      "location": [
+        -2510,
+        -1312.8,
+        302.3
+      ],
+      "yaw": 180,
+      "name": "White laundry hamper"
+    },
+    {
+      "asset": "TrashBin",
+      "location": [
+        -2610,
+        -633.8,
+        302.3
+      ],
+      "yaw": 180,
+      "name": "Overflowing trash can"
+    },
+    {
+      "asset": "FlipFlop",
+      "location": [
+        -2515,
+        -788.8,
+        303.3
+      ],
+      "yaw": 215,
+      "name": "Flip flop"
+    },
+    {
+      "asset": "FlipFlop",
+      "location": [
+        -2500,
+        -833.8,
+        303.3
+      ],
+      "yaw": 200,
+      "name": "Flip flop"
+    },
+    {
+      "asset": "FlipFlop",
+      "location": [
+        -2580,
+        -963.8,
+        303.3
+      ],
+      "yaw": 135,
+      "name": "Flip flop"
+    },
+    {
+      "asset": "FlipFlop",
+      "location": [
+        -2604,
+        -967.8,
+        303.3
+      ],
+      "yaw": 115,
+      "name": "Flip flop"
+    },
+    {
+      "asset": "Sneaker",
+      "location": [
+        -2805,
+        -958.8,
+        302.3
+      ],
+      "yaw": 155,
+      "name": "Sneaker"
+    },
+    {
+      "asset": "Sneaker",
+      "location": [
+        -2780,
+        -979.8,
+        302.3
+      ],
+      "yaw": 192,
+      "name": "Sneaker"
+    },
+    {
+      "asset": "Sneaker",
+      "location": [
+        -2397,
+        -991,
+        302.3
+      ],
+      "yaw": -45,
+      "name": "Sneaker"
+    },
+    {
+      "asset": "Sneaker",
+      "location": [
+        -2400,
+        -946,
+        302.3
+      ],
+      "yaw": -15,
+      "name": "Sneaker"
+    },
+    {
+      "asset": "Sneaker",
+      "location": [
+        -2402,
+        -1025,
+        302.3
+      ],
+      "yaw": -75,
+      "name": "Sneaker"
+    },
+    {
+      "asset": "StorageBox",
+      "location": [
+        -2394,
+        -1057,
+        302.3
+      ],
+      "yaw": -90,
+      "name": "Closet storage box"
+    },
+    {
+      "asset": "StorageBox",
+      "location": [
+        -2393,
+        -1057,
+        350.3
+      ],
+      "yaw": -90,
+      "name": "Closet storage box"
+    },
+    {
+      "asset": "StorageBox",
+      "location": [
+        -2390,
+        -1010,
+        302.3
+      ],
+      "yaw": -90,
+      "name": "Closet storage box"
+    },
+    {
+      "asset": "ClosetDrawerUnit",
+      "location": [
+        -2398,
+        -752,
+        302.3
+      ],
+      "yaw": -90,
+      "name": "Closet drawer organizer"
+    },
+    {
+      "asset": "HangingShirt0",
+      "location": [
+        -2398,
+        -835.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt1",
+      "location": [
+        -2398,
+        -823.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt2",
+      "location": [
+        -2398,
+        -811.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt3",
+      "location": [
+        -2398,
+        -799.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt4",
+      "location": [
+        -2398,
+        -787.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt5",
+      "location": [
+        -2398,
+        -775.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt6",
+      "location": [
+        -2398,
+        -763.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt7",
+      "location": [
+        -2398,
+        -751.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt0",
+      "location": [
+        -2398,
+        -739.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt1",
+      "location": [
+        -2398,
+        -727.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt2",
+      "location": [
+        -2398,
+        -715.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt3",
+      "location": [
+        -2398,
+        -703.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt4",
+      "location": [
+        -2398,
+        -691.0,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet shirt"
+    },
+    {
+      "asset": "HangingShirt2",
+      "location": [
+        -2397,
+        -1094,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet jacket"
+    },
+    {
+      "asset": "HangingShirt1",
+      "location": [
+        -2397,
+        -1077,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet jacket"
+    },
+    {
+      "asset": "HangingShirt5",
+      "location": [
+        -2397,
+        -1060,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet jacket"
+    },
+    {
+      "asset": "HangingShirt5",
+      "location": [
+        -2397,
+        -1043,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet jacket"
+    },
+    {
+      "asset": "HangingShirt2",
+      "location": [
+        -2397,
+        -1026,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet jacket"
+    },
+    {
+      "asset": "HangingShirt1",
+      "location": [
+        -2397,
+        -1009,
+        390.3
+      ],
+      "yaw": 0,
+      "name": "Hanging closet jacket"
+    },
+    {
+      "asset": "FlavortownBanner",
+      "location": [
+        -2697,
+        -1368.8,
+        466.3
+      ],
+      "yaw": 0,
+      "name": "Flavortown banner"
+    },
+    {
+      "asset": "PulpFictionPoster",
+      "location": [
+        -2967,
+        -921.8,
+        515.3
+      ],
+      "yaw": 90,
+      "name": "Pulp Fiction poster"
+    },
+    {
+      "asset": "ActionBronsonPoster",
+      "location": [
+        -2448,
+        -899,
+        465.3
+      ],
+      "yaw": -90,
+      "name": "Action Bronson poster between closets"
+    },
+    {
+      "asset": "SmallAlbumPrint",
+      "location": [
+        -2448,
+        -667,
+        540.3
+      ],
+      "yaw": -90,
+      "name": "Small album print"
+    },
+    {
+      "asset": "FramedPrint",
+      "location": [
+        -2467,
+        -590.8,
+        460.3
+      ],
+      "yaw": 180,
+      "name": "Framed wall print"
+    },
+    {
+      "asset": "EmptyTVBracket",
+      "location": [
+        -2467,
+        -591.8,
+        513.3
+      ],
+      "yaw": 180,
+      "name": "Empty television wall bracket"
+    },
+    {
+      "asset": "RopeShelf",
+      "location": [
+        -2850,
+        -591.8,
+        532.3
+      ],
+      "yaw": 180,
+      "name": "Rope wall shelf"
+    },
+    {
+      "asset": "RopeShelf",
+      "location": [
+        -2743,
+        -591.8,
+        532.3
+      ],
+      "yaw": 180,
+      "name": "Rope wall shelf"
+    },
+    {
+      "asset": "StripedRug",
+      "location": [
+        -2697,
+        -1080.8,
+        302.55
+      ],
+      "yaw": 180,
+      "name": "Striped rug"
+    },
+    {
+      "asset": "RoomShell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "name": "Boy Wick room architecture"
+    },
+    {
+      "asset": "WindowBlinds",
+      "location": [
+        -2968,
+        -1266.8,
+        359.3
+      ],
+      "yaw": 90,
+      "name": "Window and closed blinds"
+    },
+    {
+      "asset": "CeilingDetails",
+      "location": [
+        -2683,
+        -967.8,
+        562.3
+      ],
+      "yaw": 180,
+      "name": "Ceiling light"
+    },
+    {
+      "asset": "CeilingVent",
+      "location": [
+        -2790,
+        -858.8,
+        564.3
+      ],
+      "yaw": 180,
+      "name": "Square ceiling diffuser"
+    },
+    {
+      "asset": "CeilingVent",
+      "location": [
+        -2480,
+        -758.8,
+        564.3
+      ],
+      "yaw": 180,
+      "name": "Entrance air return"
+    },
+    {
+      "asset": "SmokeAlarm",
+      "location": [
+        -2810,
+        -1368.8,
+        532.3
+      ],
+      "yaw": 0,
+      "name": "Smoke detector"
+    },
+    {
+      "asset": "ClosetBroom",
+      "location": [
+        -2394,
+        -1036,
+        302.3
+      ],
+      "yaw": 90,
+      "name": "Closet broom"
+    },
+    {
+      "asset": "LongCarton",
+      "location": [
+        -2381,
+        -998,
+        302.3
+      ],
+      "yaw": -90,
+      "name": "Tall carton"
+    },
+    {
+      "asset": "AirPurifier",
+      "location": [
+        -2920,
+        -893.8,
+        378.3
+      ],
+      "yaw": 180,
+      "name": "Desk air purifier"
+    },
+    {
+      "asset": "TissueBox",
+      "location": [
+        -2930,
+        -954.8,
+        378.3
+      ],
+      "yaw": 90,
+      "name": "Tissue box"
+    },
+    {
+      "asset": "DeskPhoto",
+      "location": [
+        -2940,
+        -989.8,
+        386.3
+      ],
+      "yaw": 90,
+      "name": "Desk photograph"
+    },
+    {
+      "asset": "TowerFan",
+      "location": [
+        -2930,
+        -848.8,
+        302.3
+      ],
+      "yaw": 90,
+      "name": "Black tower fan"
+    },
+    {
+      "asset": "HangingLaundryBag",
+      "location": [
+        -2795,
+        -861.8,
+        377.3
+      ],
+      "yaw": 0,
+      "name": "Hanging laundry bag"
+    },
+    {
+      "asset": "ChairJacket",
+      "location": [
+        -2759,
+        -954.8,
+        337.3
+      ],
+      "yaw": 90,
+      "name": "Jacket draped over desk chair"
+    },
+    {
+      "asset": "MilkCarton",
+      "location": [
+        -2745,
+        -1100.8,
+        350.3
+      ],
+      "yaw": 180,
+      "name": "Blue drink carton"
+    },
+    {
+      "asset": "Wallet",
+      "location": [
+        -2777,
+        -1044.8,
+        351.3
+      ],
+      "yaw": 200,
+      "name": "Wallet"
+    },
+    {
+      "asset": "Phone",
+      "location": [
+        -2619,
+        -1102.8,
+        350.3
+      ],
+      "yaw": 158,
+      "name": "Phone"
+    },
+    {
+      "asset": "PowerCords",
+      "location": [
+        -2604,
+        -1081.8,
+        350.3
+      ],
+      "yaw": 260,
+      "name": "Phone charger"
+    },
+    {
+      "asset": "PowerOutlet",
+      "location": [
+        -2968,
+        -869.8,
+        326.3
+      ],
+      "yaw": 90,
+      "name": "Wall power outlet"
+    },
+    {
+      "asset": "PowerOutlet",
+      "location": [
+        -2449,
+        -898,
+        332.3
+      ],
+      "yaw": -90,
+      "name": "Closet wall outlet"
+    }
+  ],
+  "materials": {
+    "M_BWR_BlackSteel": {
+      "base_color": [
+        0.013,
+        0.015,
+        0.018
+      ],
+      "roughness": 0.4,
+      "metallic": 0.65,
+      "two_sided": false
+    },
+    "M_BWR_Rubber": {
+      "base_color": [
+        0.012,
+        0.014,
+        0.018
+      ],
+      "roughness": 0.89,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_BrushedSteel": {
+      "base_color": [
+        0.38,
+        0.4,
+        0.42
+      ],
+      "roughness": 0.31,
+      "metallic": 0.8,
+      "two_sided": false
+    },
+    "M_BWR_WarmGreyPaint": {
+      "base_color": [
+        0.43,
+        0.41,
+        0.37
+      ],
+      "roughness": 0.82,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_WhiteEnamel": {
+      "base_color": [
+        0.77,
+        0.77,
+        0.72
+      ],
+      "roughness": 0.47,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_CeilingPaint": {
+      "base_color": [
+        0.72,
+        0.72,
+        0.69
+      ],
+      "roughness": 0.93,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_BlackPlastic": {
+      "base_color": [
+        0.009,
+        0.012,
+        0.016
+      ],
+      "roughness": 0.47,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_WalnutWood": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.58,
+      "metallic": 0,
+      "two_sided": false,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/DarkWalnut.png"
+    },
+    "M_BWR_OakFloorWood": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.67,
+      "metallic": 0,
+      "two_sided": false,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/OakPlanks.png",
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/OakPlanks_Normal.png"
+    },
+    "M_BWR_CharcoalFabric": {
+      "base_color": [
+        0.078,
+        0.082,
+        0.087
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_BlackQuilt_Normal.png"
+    },
+    "M_BWR_GreyFabric": {
+      "base_color": [
+        0.26,
+        0.28,
+        0.3
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_BlackQuilt_Normal.png"
+    },
+    "M_BWR_WhiteQuiltedCotton": {
+      "base_color": [
+        0.78,
+        0.79,
+        0.75
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_CottonStitches": {
+      "base_color": [
+        0.52,
+        0.53,
+        0.51
+      ],
+      "roughness": 1,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_OrangeTowelFabric": {
+      "base_color": [
+        0.74,
+        0.26,
+        0.043
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_TaupeTowelFabric": {
+      "base_color": [
+        0.39,
+        0.34,
+        0.265
+      ],
+      "roughness": 0.97,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Paper": {
+      "base_color": [
+        0.83,
+        0.83,
+        0.78
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_RedPrint": {
+      "base_color": [
+        0.55,
+        0.028,
+        0.023
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_BluePlastic": {
+      "base_color": [
+        0.021,
+        0.13,
+        0.3
+      ],
+      "roughness": 0.62,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_GreenBottle": {
+      "base_color": [
+        0.045,
+        0.22,
+        0.055
+      ],
+      "roughness": 0.28,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_PurpleBottle": {
+      "base_color": [
+        0.23,
+        0.105,
+        0.33
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_Cardboard": {
+      "base_color": [
+        0.41,
+        0.31,
+        0.19
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_BrassGrommets": {
+      "base_color": [
+        0.45,
+        0.3,
+        0.09
+      ],
+      "roughness": 0.35,
+      "metallic": 0.8,
+      "two_sided": false
+    },
+    "M_BWR_FrostedLight": {
+      "base_color": [
+        0.86,
+        0.88,
+        0.83
+      ],
+      "roughness": 0.3,
+      "metallic": 0,
+      "two_sided": false,
+      "emission": 1.2
+    },
+    "M_BWR_ScreenGlass": {
+      "base_color": [
+        0.012,
+        0.025,
+        0.05
+      ],
+      "roughness": 0.18,
+      "metallic": 0.15,
+      "two_sided": false,
+      "emission": 0.22
+    },
+    "M_BWR_Photo2327": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "two_sided": true,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/references/IMG_2327.jpeg"
+    },
+    "M_BWR_Photo2328": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "two_sided": true,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/references/IMG_2328.jpeg"
+    },
+    "M_BWR_Photo2329": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "two_sided": true,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/references/IMG_2329.jpeg"
+    },
+    "M_BWR_Photo2330": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "two_sided": true,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/references/IMG_2330.jpeg"
+    },
+    "M_BWR_PeanutLabel": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "two_sided": false,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/PeanutLabel.png"
+    },
+    "M_BWR_CerealLabel": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "two_sided": false,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/CerealLabel.png"
+    },
+    "M_BWR_SnackBox": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "two_sided": false,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/SnackBox.png"
+    },
+    "M_BWR_EnergyLabel": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "two_sided": false,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/EnergyLabel.png"
+    },
+    "M_BWR_PaperPack": {
+      "base_color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "two_sided": false,
+      "texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ReferenceKitchen/textures/PaperPack.png"
+    },
+    "M_BWR_Shirt0": {
+      "base_color": [
+        0.12,
+        0.17,
+        0.24
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Shirt1": {
+      "base_color": [
+        0.44,
+        0.45,
+        0.44
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Shirt2": {
+      "base_color": [
+        0.73,
+        0.71,
+        0.66
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Shirt3": {
+      "base_color": [
+        0.51,
+        0.27,
+        0.24
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Shirt4": {
+      "base_color": [
+        0.85,
+        0.3,
+        0.02
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Shirt5": {
+      "base_color": [
+        0.018,
+        0.021,
+        0.026
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Shirt6": {
+      "base_color": [
+        0.6,
+        0.52,
+        0.13
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_Shirt7": {
+      "base_color": [
+        0.13,
+        0.24,
+        0.18
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "two_sided": false,
+      "normal_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room204/T_R204_WhiteSheet_Normal.png"
+    },
+    "M_BWR_AmberJar": {
+      "base_color": [
+        0.25,
+        0.12,
+        0.025
+      ],
+      "roughness": 0.23,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_RugIvory": {
+      "base_color": [
+        0.49,
+        0.48,
+        0.43
+      ],
+      "roughness": 1,
+      "metallic": 0,
+      "two_sided": false
+    },
+    "M_BWR_WalletLeather": {
+      "base_color": [
+        0.072,
+        0.034,
+        0.019
+      ],
+      "roughness": 0.75,
+      "metallic": 0,
+      "two_sided": false
+    }
+  },
+  "notes": [
+    "All six original photos reviewed.",
+    "Photo dimensions inferred using standard furniture proportions; not a measured survey.",
+    "House horizontal scale 1.8 and existing ceiling height retained.",
+    "One loft-bed unit anchored in the far-left corner from the entrance."
+  ],
+  "external": [
+    {
+      "asset": "/Game/SeniorSendOff/House/ReferenceKitchen/SM_Kitchen_GreenSpindleChair",
+      "location": [
+        -2793,
+        -954.8,
+        302.3
+      ],
+      "yaw": 270,
+      "name": "Green desk chair",
+      "mass": 7
+    }
+  ],
+  "damage_materials": [
+    {
+      "asset_name": "M_HI_SplinterWood",
+      "base_color": [
+        0.34,
+        0.21,
+        0.095
+      ],
+      "roughness": 0.95,
+      "metallic": 0
+    },
+    {
+      "asset_name": "M_HI_Foam",
+      "base_color": [
+        0.48,
+        0.38,
+        0.2
+      ],
+      "roughness": 1.0,
+      "metallic": 0
+    },
+    {
+      "asset_name": "M_HI_RawMetal",
+      "base_color": [
+        0.12,
+        0.13,
+        0.14
+      ],
+      "roughness": 0.8,
+      "metallic": 0.65
+    },
+    {
+      "asset_name": "M_HI_FractureCore",
+      "base_color": [
+        0.42,
+        0.4,
+        0.34
+      ],
+      "roughness": 0.95,
+      "metallic": 0
+    }
+  ],
+  "entry_orientation_corrected": true,
+  "wall_fit_corrected": true,
+  "refresh_meshes": [
+    "PulpFictionPoster",
+    "ActionBronsonPoster",
+    "SmallAlbumPrint",
+    "FramedPrint",
+    "PatternedPillow",
+    "DrapedTowel",
+    "DeskPhoto"
+  ],
+  "visual_fit_corrected": true,
+  "cloth_rest_corrected": true
+}

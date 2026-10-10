@@ -1,7 +1,24 @@
 #include "StoryCampaign.h"
+#include "HouseFurnitureCarrySmoke.h"
+#include "HouseCarryTiersReview.h"
+#include "HouseReactiveFixture.h"
+#include "HouseFixtureSmoke.h"
+#include "HouseGadgets.h"
+#include "HouseInteractiveProp.h"
+#include "HouseDamageSubsystem.h"
 #include "SeniorPlayerPreferences.h"
 #include "StoryMovementComponent.h"
 #include "HouseFurnitureInteractionComponent.h"
+#include "HouseBasketball.h"
+#include "ExistingHouseDoor.h"
+#include "HouseOxbloodMask.h"
+#include "HousePokerTable.h"
+#include "HouseRoamingPig.h"
+#include "BoywickCharacter.h"
+#include "BoywickRoom.h"
+#include "HouseVentNetwork.h"
+#include "HouseImpossibleHallway.h"
+#include "HouseWorldScale.h"
 #include "SeniorLobbyUI.h"
 #include "SeniorCharacterRoster.h"
 #include "SeniorBraxtonVisual.h"
@@ -11,10 +28,13 @@
 #include "SeniorSauce.h"
 #include "SeniorDouliAnim.h"
 #include "SeniorDouliIdle.h"
+#include "SeniorPigHoldPose.h"
+#include "SeniorFurnitureHoldPose.h"
 #include "Animation/AnimInstance.h"
 #include "Animation/AnimSequence.h"
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/SceneComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/TextRenderComponent.h"
@@ -26,7 +46,10 @@
 #include "Engine/Canvas.h"
 #include "Engine/Engine.h"
 #include "Engine/SkeletalMesh.h"
+#include "Engine/Texture2D.h"
 #include "Engine/World.h"
+#include "EngineUtils.h"
+#include "Math/RotationMatrix.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/PlayerController.h"
@@ -48,14 +71,54 @@ void TickSauceSmokeTest(AStoryFirstPersonCharacter* Pawn);
 #if !UE_BUILD_SHIPPING
 void TickCombinedHouseSmoke(UWorld* World);
 void TickHouseVisualReview(UWorld* World);
+void TickHouseMaskReview(UWorld* World);
+void TickExistingHouseDoorSmoke(UWorld* World);
+void TickRoom101EntrySmoke(UWorld* World);
+void TickNightClubSmoke(UWorld* World);
+void TickNightClubEntranceSmoke(UWorld* World);
+void TickHouseTraversalSmoke(UWorld* World);
+void TickHouseChairSmoke(UWorld* World);
+void TickHousePokerSmoke(UWorld* World);
+void TickHousePigSmoke(UWorld* World);
+void TickHouseImpossibleHallwaySmoke(UWorld* World);
+void TickHouseHotTubWaterSmoke(UWorld* World);
+void TickHouseInteractivitySmoke(UWorld* World);
+void TickHouseLibrarySmoke(UWorld* World);
+void TickHouseKitchenSmoke(UWorld* World);
+void TickHouseTelevisionSmoke(UWorld* World);
+void TickHouseVentSmoke(UWorld* World);
 #endif
 
 void UStoryCampaign::Init()
 {
     Super::Init();
 #if !UE_BUILD_SHIPPING
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseInteractivitySmoke"))) SaveSlot=TEXT("SeniorSendoff_HouseInteractivityAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseGlassSmoke"))) SaveSlot=TEXT("SeniorSendoff_HouseGlassAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseLibrarySmoke"))) SaveSlot=TEXT("SeniorSendoff_LibraryAutomationOnly");
+#endif
+#if !UE_BUILD_SHIPPING
     if (FParse::Param(FCommandLine::Get(),TEXT("CombinedHouseSmoke"))) SaveSlot=TEXT("SeniorSendoff_CombinedHouseAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("HouseVisualReview"))) SaveSlot=TEXT("SeniorSendoff_HouseVisualAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseMaskReview"))) SaveSlot=TEXT("SeniorSendoff_HouseMaskAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("ExistingHouseDoorSmoke"))) SaveSlot=TEXT("SeniorSendoff_OriginalDoorAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("FrontDoubleDoorReview"))) SaveSlot=TEXT("SeniorSendoff_FrontDoorAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseExteriorWalkReview"))) SaveSlot=TEXT("SeniorSendoff_ExteriorWalkAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("NightClubEntranceSmoke"))) SaveSlot=TEXT("SeniorSendoff_NightClubEntryAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("NightClubSmoke"))) SaveSlot=TEXT("SeniorSendoff_NightClubAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("Room101EntrySmoke"))) SaveSlot=TEXT("SeniorSendoff_Room101AutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseClubPoleSmoke")) || FParse::Param(FCommandLine::Get(),TEXT("ClubPoleMultiplayerSmoke")))
+        SaveSlot=TEXT("SeniorSendoff_ClubPoleAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseTraversalSmoke"))) SaveSlot=TEXT("SeniorSendoff_HouseTraversalAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseChairSmoke"))) SaveSlot=TEXT("SeniorSendoff_HouseChairAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HousePokerSmoke"))) SaveSlot=TEXT("SeniorSendoff_HousePokerAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseImpossibleHallwaySmoke"))) SaveSlot=TEXT("SeniorSendoff_HallwayAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseVentSmoke"))) SaveSlot=TEXT("SeniorSendoff_VentAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseHotTubWaterSmoke"))) SaveSlot=TEXT("SeniorSendoff_HotTubWaterAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HousePigSmoke")) || FParse::Param(FCommandLine::Get(),TEXT("HousePigStairSmoke"))
+        || FParse::Param(FCommandLine::Get(),TEXT("HousePigUpgradeSmoke"))
+        || FParse::Param(FCommandLine::Get(),TEXT("HousePigMotionSmoke"))
+        || FParse::Param(FCommandLine::Get(),TEXT("HousePigAnimalSmoke"))) SaveSlot=TEXT("SeniorSendoff_HousePigAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("LobbyStartupSmoke"))) SaveSlot=TEXT("SeniorSendoff_LobbyStartupAutomationOnly");
 #endif
 #if WITH_EDITOR
@@ -253,7 +316,7 @@ void UStoryCampaign::RespawnPlayerAtCheckpoint(APlayerController* PC)
     if (!PC || !GM) return;
     if (APawn* OldPawn = PC->GetPawn()) { PC->UnPossess(); OldPawn->Destroy(); }
     GM->RestartPlayer(PC);
-    Notify(Progress->bHasCheckpoint ? TEXT("Returned to checkpoint") : TEXT("Returned to chapter start"));
+    Notify(CurrentChapter() != 1 && Progress->bHasCheckpoint ? TEXT("Returned to checkpoint") : TEXT("Returned to chapter start"));
 }
 
 void AStoryGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
@@ -293,6 +356,12 @@ AStoryFirstPersonCharacter::AStoryFirstPersonCharacter(const FObjectInitializer&
     bUseControllerRotationRoll = false;
     GetCharacterMovement()->bOrientRotationToMovement = false;
 
+    // Keep movement's mesh offset and network smoothing intact. This pivot
+    // poses every roster body, including the three attached MetaHuman visuals.
+    CrawlVisualPivot = CreateDefaultSubobject<USceneComponent>(TEXT("CrawlVisualPivot"));
+    CrawlVisualPivot->SetupAttachment(GetCapsuleComponent());
+    GetMesh()->SetupAttachment(CrawlVisualPivot);
+
     FirstPersonCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
     FirstPersonCamera->SetupAttachment(GetCapsuleComponent());
     FirstPersonCamera->SetRelativeLocation(FVector(0, 0, 64.f));
@@ -320,6 +389,15 @@ AStoryFirstPersonCharacter::AStoryFirstPersonCharacter(const FObjectInitializer&
     FirstPersonArms->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered;
     FirstPersonArms->SetHiddenInGame(true);
     FurnitureInteraction = CreateDefaultSubobject<UHouseFurnitureInteractionComponent>(TEXT("FurnitureInteraction"));
+    HouseMaskVisual = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("EquippedHouseMask"));
+    HouseMaskVisual->SetupAttachment(GetCapsuleComponent());
+    HouseMaskVisual->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    HouseMaskVisual->SetGenerateOverlapEvents(false);
+    HouseMaskVisual->SetOwnerNoSee(true);
+    HouseMaskVisual->SetVisibility(false);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> HouseMask(
+        TEXT("/Game/Items/HouseMask/SM_HouseOxbloodMaskWorn.SM_HouseOxbloodMaskWorn"));
+    HouseMaskVisual->SetStaticMesh(HouseMask.Object);
 
     static ConstructorHelpers::FObjectFinder<UInputMappingContext> Context(TEXT("/Game/Input/IMC_Default.IMC_Default"));
     static ConstructorHelpers::FObjectFinder<UInputAction> Move(TEXT("/Game/Input/Actions/IA_Move.IA_Move"));
@@ -341,8 +419,41 @@ void AStoryFirstPersonCharacter::BeginPlay()
 void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
-    if (IsLocallyControlled() && FirstPersonCamera)
+    if (ClubPoleJourney.Pole) ClubPoleJourney.Pole->UpdateTraveller(this, DeltaSeconds);
+    UpdateHouseImpossibleHallwayTraveler(this);
+    UpdateBoywickBlessing(DeltaSeconds);
+    const UStoryMovementComponent* StoryMovement = GetStoryMovement();
+    const bool bCrawling = StoryMovement && StoryMovement->IsCrawling();
+    if (FirstPersonArms)
+        FirstPersonArms->SetHiddenInGame(!FirstPersonArms->GetSkeletalMeshAsset());
+    if (HasAuthority() && bReplicatedCrawl != bCrawling)
     {
+        bReplicatedCrawl = bCrawling;
+        ForceNetUpdate();
+    }
+    CrawlVisualBlend = FMath::FInterpTo(CrawlVisualBlend, bCrawling ? 1.f : 0.f,
+        DeltaSeconds, bCrawling ? 14.f : 9.f);
+    if (!bCrawling && CrawlVisualBlend < .001f) CrawlVisualBlend = 0.f;
+    if (CrawlVisualPivot)
+    {
+        const float Speed = GetVelocity().Size2D();
+        if (bCrawling && Speed > 4.f) CrawlStrokePhase += Speed * DeltaSeconds / 38.f;
+        const float Stroke = FMath::Sin(CrawlStrokePhase);
+        const float Blend = CrawlVisualBlend;
+        CrawlVisualPivot->SetRelativeLocation(FVector(
+            Blend * (-.9f * StandingVisualHalfHeight + 2.f * Stroke),
+            Blend * 1.6f * FMath::Cos(CrawlStrokePhase),
+            Blend * (-5.f + 1.2f * FMath::Abs(Stroke))));
+        CrawlVisualPivot->SetRelativeRotation(FRotator(
+            Blend * (-87.f + 1.5f * Stroke),
+            Blend * 1.8f * FMath::Cos(CrawlStrokePhase),
+            Blend * 2.f * Stroke));
+    }
+    AHouseRoamingPig* HeldPig=CarriedHousePig();
+    if (FirstPersonCamera)
+    {
+        if(IsLocallyControlled())
+        {
         const float WantedFOV = SeniorPlayerPreferences::Get().FieldOfView;
         bool bUsePlayerFov = true;
 #if !UE_BUILD_SHIPPING
@@ -351,14 +462,41 @@ void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
 #endif
         if (bUsePlayerFov && !FMath::IsNearlyEqual(FirstPersonCamera->FieldOfView, WantedFOV))
             FirstPersonCamera->SetFieldOfView(WantedFOV);
+        }
+        if(HeldPig || (FurnitureInteraction && FurnitureInteraction->GetCarryPoseBlend()>.001f))
+        {
+            // Pose against this frame's aim before the pig and arms tick.
+            // A later camera-manager update must not rotate the camera basis
+            // after IK has already solved the hand against the actual ankle.
+            FirstPersonCamera->SetWorldRotation(GetBaseAimRotation());
+        }
         // The capsule's crouch already lowers the viewpoint. A further eased
         // drop gives a sprint slide a readable low viewpoint without changing
         // its collision height or an observer's camera.
-        const bool bSliding = GetStoryMovement() && GetStoryMovement()->IsSliding();
-        const float TargetOffset = bSliding ? -36.f : 0.f;
+        const bool bSliding = StoryMovement && StoryMovement->IsSliding();
+        // Bend down to reach the actual rear ankle before lifting it. The
+        // envelope recovers before the suspended hold, preserving head-to-
+        // floor clearance for the larger pig. Never move the view below a
+        // forty-five-centimetre eye height above the character's foot plane.
+        // This brief deep reach can grasp a standing pig's grounded rear hoof.
+        const float ViewScale=GetCapsuleComponent()->GetComponentScale().Z;
+        const float MaxPigBend=FMath::Clamp(GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight()+BaseEyeHeight-45.f/ViewScale,0.f,115.f/ViewScale);
+        const float PigBend=HeldPig?MaxPigBend*HeldPig->GetPickupBend():0.f;
+        const float FurnitureBend=FurnitureInteraction
+            ?FMath::Min(FurnitureInteraction->GetPickupBend()/ViewScale,MaxPigBend):0.f;
+        const float TargetOffset = bCrawling ? -7.f : bSliding ? -36.f : -FMath::Max(PigBend,FurnitureBend);
         SlideCameraOffsetZ = FMath::FInterpTo(SlideCameraOffsetZ, TargetOffset,
-            DeltaSeconds, bSliding ? 15.f : 10.f);
-        FirstPersonCamera->SetRelativeLocation(FVector(0, 0, BaseEyeHeight + SlideCameraOffsetZ));
+            DeltaSeconds, bSliding || bCrawling ? 15.f : 10.f);
+        FurnitureCameraLeanX=FMath::FInterpTo(FurnitureCameraLeanX,
+            FurnitureInteraction?FurnitureInteraction->GetPickupLean()/ViewScale:0.f,DeltaSeconds,8.f);
+        // Effort, footstep bob and throw lunge while handling furniture.
+        FVector Effort=FurnitureInteraction?FurnitureInteraction->GetCameraEffortOffset()/ViewScale:FVector::ZeroVector;
+        // A nearby crack or break jolts the view.
+        if(IsLocallyControlled())
+            if(const UHouseDamageSubsystem* Damage=GetWorld()->GetSubsystem<UHouseDamageSubsystem>())
+                Effort+=Damage->SampleCameraImpact(FirstPersonCamera->GetComponentLocation())/ViewScale;
+        FirstPersonCamera->SetRelativeLocation(FVector(FurnitureCameraLeanX+Effort.X+(bCrawling?8.f:0.f),
+            Effort.Y, BaseEyeHeight + SlideCameraOffsetZ + Effort.Z));
     }
     const auto* Selection=GetPlayerState<ASeniorLobbyPlayerState>();
     const bool Equipped=Selection && Selection->CharacterIndex==0 && Selection->LoadoutIndex==0;
@@ -389,26 +527,201 @@ void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
     }
     const bool bReaching=Douli && !Douli->IsHeld() && (Douli->Phase!=EDouliPhase::Outbound || Douli->GetPhaseAge()>.2f);
     DouliFlightBlend=FMath::FInterpTo(DouliFlightBlend,bReaching?1.f:0.f,DeltaSeconds,12.f);
-    if (BraxtonVisual) BraxtonVisual->SetDouliEquipped(Equipped,Motion,DouliFlightBlend);
-    if (Equipped && FirstPersonArms->GetSkeletalMeshAsset() && !Cast<USeniorDouliAnim>(FirstPersonArms->GetAnimInstance()))
+    UpdatePigCarryAnimation(DeltaSeconds,HeldPig);
+    const bool bHandsBusy=HeldPig || PigCarryPoseBlend>.02f || (FurnitureInteraction && FurnitureInteraction->GetCarryPoseBlend()>.002f);
+    // Evaluate actual contact even if the arm temporarily leaves the owner's
+    // screen during a bend. Remote clients also pose their owner-only arms so
+    // a carried pig does not lag a hidden stale wrist. Dedicated servers keep
+    // the existing visibility policy and use the bounded reference reach.
+    FirstPersonArms->VisibilityBasedAnimTickOption=bHandsBusy && GetNetMode()!=NM_DedicatedServer
+        ?EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones
+        :EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered;
+    // Keep reusable equipment alive and restore it after the hand returns.
+    // Flying weapons retain their own visible flight and recovery behavior.
+    if(Douli) Douli->SetActorHiddenInGame(bCrawling || (bHandsBusy && Douli->IsHeld()));
+    if(SaucePacket) SaucePacket->SetActorHiddenInGame(bCrawling || (bHandsBusy && SaucePacket->Phase==ESeniorSaucePhase::Ready));
+    if (BraxtonVisual) BraxtonVisual->SetDouliEquipped(Equipped && !bHandsBusy,Motion,DouliFlightBlend);
+    if ((Equipped || bHandsBusy || CrawlVisualBlend>.001f) && FirstPersonArms->GetSkeletalMeshAsset() && !Cast<USeniorDouliAnim>(FirstPersonArms->GetAnimInstance()))
         FirstPersonArms->SetAnimInstanceClass(USeniorDouliAnim::StaticClass());
     if (auto* A=Cast<USeniorDouliAnim>(FirstPersonArms->GetAnimInstance()))
     {
-        A->BaseSequence=CurrentArmsAnimation; A->bFirstPerson=true; A->bEquipped=Equipped; A->Motion=Motion; A->FlightBlend=DouliFlightBlend;
+        A->BaseSequence=CurrentArmsAnimation; A->bFirstPerson=true; A->bEquipped=Equipped && !bHandsBusy; A->Motion=Motion; A->FlightBlend=DouliFlightBlend;
+        A->CrawlBlend=CrawlVisualBlend; A->CrawlPhase=CrawlStrokePhase;
+        A->CrawlSpeed=bCrawling?GetVelocity().Size2D():0.f;
+        A->bHoldingPig=HeldPig!=nullptr; A->bPigPlacing=HeldPig && HeldPig->IsPlacing();
+        A->PigTargetActor=HeldPig;
+        A->FurnitureCarryTarget=FurnitureInteraction;
+        A->PigCarryBlend=PigCarryPoseBlend; A->PigGripBlend=PigFingerGripBlend;
+        const FTransform Component=FirstPersonArms->GetComponentTransform();
+        A->PigGripTarget=Component.InverseTransformPosition(PigGripWorld);
+        A->PigGripDirection=Component.InverseTransformVectorNoScale(PigGripAxisWorld).GetSafeNormal();
+        A->PigHandForward=Component.InverseTransformVectorNoScale(PigHandForwardWorld).GetSafeNormal();
     }
+    if(BraxtonVisual) BraxtonVisual->SetPigCarryPose(PigCarryPoseBlend,PigFingerGripBlend,PigGripWorld,PigGripAxisWorld,PigHandForwardWorld,HeldPig && HeldPig->IsPlacing(),HeldPig);
+    if (BraxtonVisual) BraxtonVisual->SetFurnitureCarryPose(FurnitureInteraction);
+    if (RunnerVisual) RunnerVisual->SetFurnitureCarryPose(FurnitureInteraction);
+    if (FixerVisual) FixerVisual->SetFurnitureCarryPose(FurnitureInteraction);
     if (BraxtonVisual) BraxtonVisual->SetMoveSpeed(GetVelocity().Size2D());
     else if (RunnerVisual) RunnerVisual->SetMoveSpeed(GetVelocity().Size2D());
     else if (FixerVisual) FixerVisual->SetMoveSpeed(GetVelocity().Size2D());
     else UpdateBodyAnimation();
+    // The body pose runs on every viewing client. Only the movement state is
+    // replicated; each animation worker receives scalar values from this tick.
+    USkeletalMeshComponent* CrawlBody = BraxtonVisual ? BraxtonVisual->GetBodyMesh()
+        : RunnerVisual ? RunnerVisual->GetBodyMesh()
+        : FixerVisual ? FixerVisual->GetBodyMesh() : GetMesh();
+    UAnimSequence* CrawlIdle = BraxtonVisual ? BraxtonVisual->GetIdleAnimation()
+        : RunnerVisual ? RunnerVisual->GetIdleAnimation()
+        : FixerVisual ? FixerVisual->GetIdleAnimation() : BodyIdle.Get();
+    if (CrawlBody && CrawlBody->GetSkeletalMeshAsset())
+    {
+        if (CrawlVisualBlend > .001f && !Cast<USeniorDouliAnim>(CrawlBody->GetAnimInstance()))
+            CrawlBody->SetAnimInstanceClass(USeniorDouliAnim::StaticClass());
+        if (auto* Anim = Cast<USeniorDouliAnim>(CrawlBody->GetAnimInstance()))
+        {
+            Anim->CrawlBlend = CrawlVisualBlend;
+            Anim->CrawlPhase = CrawlStrokePhase;
+            Anim->CrawlSpeed = bCrawling ? GetVelocity().Size2D() : 0.f;
+            if (CrawlVisualBlend > .001f && CrawlIdle) Anim->BaseSequence = CrawlIdle;
+        }
+    }
+    if (bHouseMaskEquipped) UpdateHouseMaskVisual();
     if (AppliedCharacterIndex == 0 && !BraxtonVisual && GetNetMode() != NM_DedicatedServer)
         ClothMotion.Update(GetMesh(), DeltaSeconds, GetActorRotation().Yaw, GetVelocity().Size2D());
 #if WITH_EDITOR
+    TickHouseFurnitureCarrySmoke(this);
+    TickHouseCarryTiersReview(this);
+    TickHouseBasketballReview(this);
     TickDouliSmokeTest(this);
     TickSauceSmokeTest(this);
 #endif
 }
+void AStoryFirstPersonCharacter::UpdatePigCarryAnimation(float DeltaSeconds,AHouseRoamingPig* HeldPig)
+{
+    if(HeldPig)
+    {
+        PigGripWorld=HeldPig->GetCarryGripPoint();
+        PigGripAxisWorld=HeldPig->GetCarryGripDirection();
+        // Keep the fingers across the leg. The hanging rear ankle points
+        // sideways across the view, so camera-forward makes a stable palm
+        // plane through the floor reach, lift, and suspended hold.
+        const FVector ViewForward=FirstPersonCamera?FirstPersonCamera->GetForwardVector():GetActorForwardVector();
+        const FVector LegAxis=PigGripAxisWorld.GetSafeNormal();
+        PigHandForwardWorld=FVector::VectorPlaneProject(ViewForward,LegAxis).GetSafeNormal();
+        if(PigHandForwardWorld.IsNearlyZero())
+        {
+            const FVector ViewUp=FirstPersonCamera?FirstPersonCamera->GetUpVector():FVector::UpVector;
+            PigHandForwardWorld=FVector::VectorPlaneProject(ViewUp,LegAxis).GetSafeNormal();
+            if(PigHandForwardWorld.IsNearlyZero())PigHandForwardWorld=FVector::VectorPlaneProject(GetActorRightVector(),LegAxis).GetSafeNormal();
+        }
+        const float Reach=HeldPig->GetCarryBlend();
+        const float Target=FMath::SmoothStep(0.f,.15f,Reach);
+        PigCarryPoseBlend=FMath::FInterpTo(PigCarryPoseBlend,Target,DeltaSeconds,18.f);
+        PigFingerGripBlend=FMath::FInterpTo(PigFingerGripBlend,FMath::SmoothStep(.03f,.13f,Reach),DeltaSeconds,16.f);
+        FirstPersonArms->AddTickPrerequisiteActor(HeldPig);
+        if(USkeletalMeshComponent* Body=GetBraxtonBodyMesh())Body->AddTickPrerequisiteActor(HeldPig);
+    }
+    else
+    {
+        PigCarryPoseBlend=FMath::FInterpTo(PigCarryPoseBlend,0.f,DeltaSeconds,10.f);
+        PigFingerGripBlend=FMath::FInterpTo(PigFingerGripBlend,0.f,DeltaSeconds,16.f);
+        if(PigCarryPoseBlend<.002f)PigCarryPoseBlend=0.f;
+        if(PigFingerGripBlend<.002f)PigFingerGripBlend=0.f;
+    }
+}
+FVector AStoryFirstPersonCharacter::GetPigHandGripPoint() const
+{
+    if(!FirstPersonArms || !FirstPersonArms->GetSkeletalMeshAsset()
+        || FirstPersonArms->GetBoneIndex(TEXT("hand_r"))==INDEX_NONE)return FVector::ZeroVector;
+    const FTransform Mesh=FirstPersonArms->GetComponentTransform();
+    const FTransform Hand=FirstPersonArms->GetSocketTransform(TEXT("hand_r")).GetRelativeTransform(Mesh);
+    // The FK bone transform retains the FBX unit-conversion scale, while the
+    // arm solver works in centimetres in component space. Match that exact
+    // geometric construction here; scaling six centimetres by the imported
+    // bone scale would measure a point several metres beyond the fingers.
+    const FVector Contact=Hand.GetLocation()+Hand.TransformVectorNoScale(
+        FSeniorPigHoldPose::GripOffset(FirstPersonArms->GetSkeletalMeshAsset()->GetRefSkeleton()));
+    return Mesh.TransformPosition(Contact);
+}
+FVector AStoryFirstPersonCharacter::GetFurnitureHandGripPoint(bool Right) const
+{
+    if(!FirstPersonArms || !FirstPersonArms->GetSkeletalMeshAsset())return FVector::ZeroVector;
+    const FName Bone=Right?TEXT("hand_r"):TEXT("hand_l");
+    if(FirstPersonArms->GetBoneIndex(Bone)==INDEX_NONE)return FVector::ZeroVector;
+    const FTransform Mesh=FirstPersonArms->GetComponentTransform();
+    const FTransform Hand=FirstPersonArms->GetSocketTransform(Bone).GetRelativeTransform(Mesh);
+    const FVector Contact=Hand.GetLocation()+Hand.TransformVectorNoScale(FSeniorFurnitureHoldPose::GripOffset(FirstPersonArms->GetSkeletalMeshAsset()->GetRefSkeleton(),Right));
+    return Mesh.TransformPosition(Contact);
+}
+bool AStoryFirstPersonCharacter::CanReachPigGrip(const FVector& GripWorld,const FVector& LegAxisWorld) const
+{
+    if(!FirstPersonArms || !FirstPersonArms->GetSkeletalMeshAsset() || !FirstPersonCamera || !GetCapsuleComponent())return false;
+    for(const TCHAR* Name:{TEXT("upperarm_r"),TEXT("lowerarm_r"),TEXT("hand_r")})
+        if(FirstPersonArms->GetBoneIndex(Name)==INDEX_NONE)return false;
+    const USkeletalMesh* MeshAsset=FirstPersonArms->GetSkeletalMeshAsset();
+    const FReferenceSkeleton& Ref=MeshAsset->GetRefSkeleton();
+    const TArray<FTransform>& Components=FirstPersonArms->GetComponentSpaceTransforms();
+    auto Bone=[&](const TCHAR* Name)
+    {
+        const int32 Index=Ref.FindBoneIndex(Name);
+        // An invisible remote/dedicated FP mesh may never have evaluated an
+        // animation. Its imported anatomical reference remains valid in cm.
+        return Components.IsValidIndex(Index) && GetNetMode()!=NM_DedicatedServer
+            ?Components[Index]:FSeniorDouliIdle::RefBone(Ref,Name);
+    };
+    const float ViewScale=GetCapsuleComponent()->GetComponentScale().Z;
+    const float MaxBend=FMath::Clamp(GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight()+BaseEyeHeight-45.f/ViewScale,0.f,115.f/ViewScale);
+    // Predict the complete camera and mesh attachment, including view pitch.
+    // This works before a remote camera has been updated and while a local
+    // camera is already partway through its bend.
+    FTransform BentCamera=FirstPersonCamera->GetComponentTransform();
+    BentCamera.SetRotation(GetBaseAimRotation().Quaternion());
+    FVector CameraLocal=FirstPersonCamera->GetRelativeLocation();
+    CameraLocal.Z=BaseEyeHeight-MaxBend;
+    BentCamera.SetLocation(GetCapsuleComponent()->GetComponentTransform().TransformPosition(CameraLocal));
+    const FTransform BentArms=FirstPersonArms->GetRelativeTransform()*BentCamera;
+    const FVector BentShoulder=BentArms.TransformPosition(Bone(TEXT("upperarm_r")).GetLocation());
+    const FVector BentElbow=BentArms.TransformPosition(Bone(TEXT("lowerarm_r")).GetLocation());
+    const FVector BentWrist=BentArms.TransformPosition(Bone(TEXT("hand_r")).GetLocation());
+    // The imported FK locations are already in world centimetres. Bone scale
+    // never participates in this length measurement. Require some elbow bend
+    // at contact, rather than reaching at a locked elbow and then stretching.
+    const float ArmReach=.98f*(FVector::Dist(BentShoulder,BentElbow)+FVector::Dist(BentElbow,BentWrist));
+    const FVector LegAxis=LegAxisWorld.GetSafeNormal();
+    FVector Fingers=FVector::VectorPlaneProject(BentCamera.GetRotation().GetAxisX(),LegAxis).GetSafeNormal();
+    if(Fingers.IsNearlyZero())Fingers=FVector::VectorPlaneProject(BentCamera.GetRotation().GetAxisZ(),LegAxis).GetSafeNormal();
+    if(Fingers.IsNearlyZero())Fingers=FVector::VectorPlaneProject(BentCamera.GetRotation().GetAxisY(),LegAxis).GetSafeNormal();
+    const FQuat Palm=FRotationMatrix::MakeFromXY(Fingers,LegAxis).ToQuat();
+    const FVector PalmOffset=Palm.RotateVector(FVector(6.f,0.f,-1.5f));
+    const FVector DesiredWrist=GripWorld-PalmOffset;
+    const float Distance=FVector::Dist(BentShoulder,DesiredWrist);
+    const bool Reachable=Distance<=ArmReach;
+#if !UE_BUILD_SHIPPING
+    if(!Reachable && FParse::Param(FCommandLine::Get(),TEXT("HousePigMotionSmoke")))
+    {
+        static int32 FailedReachLogs=0;
+        if(FailedReachLogs<96)
+        {
+            ++FailedReachLogs;
+            UE_LOG(LogTemp,Display,TEXT("HOUSE_PIG_REACH_REJECT line=%d armReach=%.3f wristDistance=%.3f upperLength=%.3f lowerLength=%.3f bentShoulder=%s wristTarget=%s grip=%s legAxis=%s aim=%s playerFeet=%s bendMax=%.2f cameraLocal=%s meshScale=%s shoulderComponent=%s elbowComponent=%s handComponent=%s componentCount=%d carryPoseBlend=%.4f handScale=%s"),
+                FailedReachLogs,ArmReach,Distance,FVector::Dist(BentShoulder,BentElbow),FVector::Dist(BentElbow,BentWrist),
+                *BentShoulder.ToString(),*DesiredWrist.ToString(),*GripWorld.ToString(),*LegAxis.ToString(),*GetBaseAimRotation().ToString(),
+                *(GetActorLocation()-FVector(0,0,GetCapsuleComponent()->GetScaledCapsuleHalfHeight())).ToString(),MaxBend,
+                *FirstPersonCamera->GetRelativeLocation().ToString(),*BentArms.GetScale3D().ToString(),
+                *Bone(TEXT("upperarm_r")).GetLocation().ToString(),*Bone(TEXT("lowerarm_r")).GetLocation().ToString(),*Bone(TEXT("hand_r")).GetLocation().ToString(),
+                Components.Num(),PigCarryPoseBlend,*Bone(TEXT("hand_r")).GetScale3D().ToString());
+        }
+    }
+#endif
+    return Reachable;
+}
 void AStoryFirstPersonCharacter::EndPlay(const EEndPlayReason::Type Reason)
 {
+    if (ClubPoleJourney.Pole)
+    {
+        if (HasAuthority()) ClubPoleJourney.Pole->AbortTraveller(this, TEXT("pawn ended play"));
+        else ClubPoleJourney.Pole->RestoreTraveller(this);
+    }
     if (Douli && HasAuthority()) Douli->Destroy();
     if (SaucePacket && HasAuthority()) SaucePacket->Destroy();
     if (BraxtonVisual) BraxtonVisual->Destroy();
@@ -447,6 +760,7 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
     if (!State) return;
     const int32 Index = SeniorRoster::IsValidIndex(State->CharacterIndex) ? State->CharacterIndex : 0;
     if (AppliedCharacterIndex == Index) return;
+    if (HouseMaskVisual) HouseMaskVisual->DetachFromComponent(FDetachmentTransformRules::KeepWorldTransform);
     if (BraxtonVisual) { BraxtonVisual->Destroy(); BraxtonVisual = nullptr; }
     if (RunnerVisual) { RunnerVisual->Destroy(); RunnerVisual = nullptr; }
     if (FixerVisual) { FixerVisual->Destroy(); FixerVisual = nullptr; }
@@ -475,7 +789,7 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
         GetMesh()->SetSkeletalMesh(FallbackBody);
         GetMesh()->SetRelativeRotation(FRotator(0, -90, 0));
         GetMesh()->SetAnimInstanceClass(FallbackAnimClass);
-        FirstPersonArms->SetRelativeTransform(ArmsRelativeTransform);
+        ApplyCharacterDimensions(FallbackBody);
     }
 
     USkeletalMesh* Arms = SeniorRoster::Arms(Index);
@@ -512,7 +826,7 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
         if (NewVisual && NewVisual->InitializeVisual(false, true))
         {
             BraxtonVisual = NewVisual;
-            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale);
             GetMesh()->SetVisibility(false, false);
             GetMesh()->SetComponentTickEnabled(false);
         }
@@ -530,7 +844,7 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
         if (NewVisual && NewVisual->InitializeVisual(false, true))
         {
             RunnerVisual = NewVisual;
-            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale);
             GetMesh()->SetVisibility(false, false);
             GetMesh()->SetComponentTickEnabled(false);
         }
@@ -548,12 +862,13 @@ void AStoryFirstPersonCharacter::ApplySelectedCharacter()
         if (NewVisual && NewVisual->InitializeVisual(false, true))
         {
             FixerVisual = NewVisual;
-            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+            NewVisual->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale);
             GetMesh()->SetVisibility(false, false);
             GetMesh()->SetComponentTickEnabled(false);
         }
         else if (NewVisual) NewVisual->Destroy();
     }
+    UpdateHouseMaskVisual();
 }
 void AStoryFirstPersonCharacter::ApplyCharacterDimensions(USkeletalMesh* Body)
 {
@@ -562,18 +877,27 @@ void AStoryFirstPersonCharacter::ApplyCharacterDimensions(USkeletalMesh* Body)
     const bool bNativeFixer = AppliedCharacterIndex == 2 && !FParse::Param(FCommandLine::Get(), TEXT("FixerLegacyVisual"));
     const float Height = bNativeFixer ? ASeniorFixerVisual::HeightCm : FMath::Clamp(float(Bounds.BoxExtent.Z * 2.0), 140.0f, 220.0f);
     const float LowestPoint = bNativeFixer ? 0.f : float(Bounds.Origin.Z - Bounds.BoxExtent.Z);
-    const float OldHalfHeight = GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight();
+    const float OldScaledHalfHeight = GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
     const float HalfHeight = Height * 0.5f;
+    StandingVisualHalfHeight = HalfHeight;
+    if (UStoryMovementComponent* Movement = GetStoryMovement())
+        Movement->SetStandingCapsuleHalfHeight(HalfHeight);
     GetCapsuleComponent()->SetCapsuleHalfHeight(HalfHeight, false);
+    // Apply one uniform scale to the pawn. The camera, arms, head attachments
+    // and capsule inherit it, without baking a second scale into imported rigs.
+    SetActorScale3D(FVector(GameplayScale));
+    const float NewScaledHalfHeight = GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
     // Keep the feet in place when the server applies a different stature; clients receive that root position.
-    if (HasAuthority() && !FMath::IsNearlyEqual(OldHalfHeight, HalfHeight))
+    if (HasAuthority() && !FMath::IsNearlyEqual(OldScaledHalfHeight, NewScaledHalfHeight))
     {
-        AddActorWorldOffset(FVector(0, 0, (HalfHeight - OldHalfHeight) * GetActorScale3D().Z), false, nullptr, ETeleportType::TeleportPhysics);
+        AddActorWorldOffset(FVector(0, 0, NewScaledHalfHeight - OldScaledHalfHeight), false, nullptr, ETeleportType::TeleportPhysics);
     }
     GetMesh()->SetRelativeLocation(FVector(0, 0, -HalfHeight - LowestPoint));
+    StandingMeshOffsetZ = GetMesh()->GetRelativeLocation().Z;
     // Network smoothing must preserve this character's new mesh-to-capsule offset.
     CacheInitialMeshOffset(GetMesh()->GetRelativeLocation(), GetMesh()->GetRelativeRotation());
     const float EyeHeightFromGround = Height * 0.935f;
+    StandingEyeHeightFromGround = EyeHeightFromGround;
     BaseEyeHeight = EyeHeightFromGround - HalfHeight;
     FirstPersonCamera->SetRelativeLocation(FVector(0, 0, BaseEyeHeight));
     SlideCameraOffsetZ = 0;
@@ -582,6 +906,34 @@ void AStoryFirstPersonCharacter::ApplyCharacterDimensions(USkeletalMesh* Body)
     AdjustedArms.SetTranslation(ArmsRelativeTransform.GetTranslation() * (Height / 184.0f));
     FirstPersonArms->SetRelativeTransform(AdjustedArms);
 }
+void AStoryFirstPersonCharacter::OnStartCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust)
+{
+    Super::OnStartCrouch(HalfHeightAdjust, ScaledHalfHeightAdjust);
+    // Engine crouch uses the class-default mesh offset. Roster members have
+    // different measured heights, so retain each person's foot alignment.
+    if (GetMesh() && GetCapsuleComponent())
+    {
+        FVector Offset = GetMesh()->GetRelativeLocation();
+        Offset.Z = StandingMeshOffsetZ + StandingVisualHalfHeight
+            - GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight();
+        GetMesh()->SetRelativeLocation(Offset);
+        BaseTranslationOffset.Z = Offset.Z;
+    }
+}
+void AStoryFirstPersonCharacter::OnEndCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust)
+{
+    Super::OnEndCrouch(HalfHeightAdjust, ScaledHalfHeightAdjust);
+    if (GetMesh() && GetCapsuleComponent())
+    {
+        FVector Offset = GetMesh()->GetRelativeLocation();
+        Offset.Z = StandingMeshOffsetZ + StandingVisualHalfHeight
+            - GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight();
+        GetMesh()->SetRelativeLocation(Offset);
+        BaseTranslationOffset.Z = Offset.Z;
+        BaseEyeHeight = StandingEyeHeightFromGround
+            - GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight();
+    }
+}
 void AStoryFirstPersonCharacter::UpdateBodyAnimation()
 {
     if (!BodyIdle && !BodyWalk) return;
@@ -589,6 +941,13 @@ void AStoryFirstPersonCharacter::UpdateBodyAnimation()
     bWalkingAnimation = bWalkingAnimation ? Speed > 5.f : Speed > 12.f;
     UAnimSequence* Desired = bWalkingAnimation && BodyWalk ? BodyWalk.Get() : BodyIdle.Get();
     if (!Desired) Desired = BodyWalk;
+    if (auto* Anim = Cast<USeniorDouliAnim>(GetMesh()->GetAnimInstance()))
+    {
+        Anim->BaseSequence = Desired;
+        Anim->Speed = bWalkingAnimation ? Speed : 0.f;
+        CurrentBodyAnimation = Desired;
+        return;
+    }
     if (Desired != CurrentBodyAnimation)
     {
         CurrentBodyAnimation = Desired;
@@ -606,16 +965,21 @@ void AStoryFirstPersonCharacter::SetupPlayerInputComponent(UInputComponent* Play
 {
     Super::SetupPlayerInputComponent(PlayerInputComponent);
     ConfigureLocalInput();
-    PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowEquippedWeapon);
+    PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Pressed,this,&AStoryFirstPersonCharacter::OnLeftMousePressed);
     PlayerInputComponent->BindKey(EKeys::Gamepad_RightTrigger,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowEquippedWeapon);
-    PlayerInputComponent->BindKey(EKeys::E, IE_Pressed, FurnitureInteraction.Get(), &UHouseFurnitureInteractionComponent::ToggleGrab);
-    PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Left, IE_Pressed, FurnitureInteraction.Get(), &UHouseFurnitureInteractionComponent::ToggleGrab);
+    PlayerInputComponent->BindKey(EKeys::E, IE_Pressed, this, &AStoryFirstPersonCharacter::InteractWithExistingDoorOrFurniture);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Left, IE_Pressed, this, &AStoryFirstPersonCharacter::InteractWithExistingDoorOrFurniture);
+    PlayerInputComponent->BindKey(EKeys::M, IE_Pressed, this, &AStoryFirstPersonCharacter::ToggleHouseMask);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_DPad_Up, IE_Pressed, this, &AStoryFirstPersonCharacter::ToggleHouseMask);
+    PlayerInputComponent->BindKey(EKeys::Tab, IE_Pressed, this, &AStoryFirstPersonCharacter::ToggleHouseMaskCursor);
     PlayerInputComponent->BindKey(EKeys::LeftShift, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSprint);
     PlayerInputComponent->BindKey(EKeys::LeftShift, IE_Released, this, &AStoryFirstPersonCharacter::StopSprint);
     PlayerInputComponent->BindKey(EKeys::Gamepad_LeftThumbstick, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSprint);
     PlayerInputComponent->BindKey(EKeys::Gamepad_LeftThumbstick, IE_Released, this, &AStoryFirstPersonCharacter::StopSprint);
     PlayerInputComponent->BindKey(EKeys::LeftControl, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSlide);
     PlayerInputComponent->BindKey(EKeys::LeftControl, IE_Released, this, &AStoryFirstPersonCharacter::StopSlide);
+    PlayerInputComponent->BindKey(EKeys::C, IE_Pressed, this, &AStoryFirstPersonCharacter::ToggleCrawl);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_DPad_Down, IE_Pressed, this, &AStoryFirstPersonCharacter::ToggleCrawl);
     PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Right, IE_Pressed, this, &AStoryFirstPersonCharacter::StartSlide);
     PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Right, IE_Released, this, &AStoryFirstPersonCharacter::StopSlide);
     bool bMouseMappedAndBound = false;
@@ -646,12 +1010,507 @@ void AStoryFirstPersonCharacter::SetupPlayerInputComponent(UInputComponent* Play
         UE_LOG(LogTemp, Warning, TEXT("Story input: Mouse2D mapping absent; using MouseX/MouseY fallback."));
     }
 }
+AHouseOxbloodMaskPickup* AStoryFirstPersonCharacter::FocusedHouseMask() const
+{
+    if (!GetWorld() || bHasHouseMask || !FirstPersonCamera) return nullptr;
+    const FVector View = FirstPersonCamera->GetComponentLocation();
+    const FVector Facing = FirstPersonCamera->GetForwardVector();
+    AHouseOxbloodMaskPickup* Best = nullptr;
+    float BestScore = BIG_NUMBER;
+    for (TActorIterator<AHouseOxbloodMaskPickup> It(GetWorld()); It; ++It)
+    {
+        const FVector To = It->InteractionLocation() - View;
+        const float Distance = To.Size();
+        if (Distance < 1.f || Distance > 270.f || FVector::DotProduct(Facing, To / Distance) < .66f) continue;
+        FCollisionQueryParams Query(SCENE_QUERY_STAT(HouseMaskFocus), false);
+        Query.AddIgnoredActor(this);
+        Query.AddIgnoredActor(*It);
+        FHitResult Obstruction;
+        if (GetWorld()->LineTraceSingleByChannel(Obstruction, View, It->InteractionLocation(), ECC_Visibility, Query)) continue;
+        const float AimOffset = FVector::CrossProduct(Facing, To).Size();
+        const float Score = Distance + AimOffset * 3.f;
+        if (Score < BestScore) { Best = *It; BestScore = Score; }
+    }
+    return Best;
+}
+AHousePokerTable* AStoryFirstPersonCharacter::FocusedHousePokerTable() const
+{
+    if (!GetWorld() || !FirstPersonCamera || !Controller) return nullptr;
+    if (const APlayerController* PC = Cast<APlayerController>(Controller); PC && PC->bShowMouseCursor) return nullptr;
+    if ((FurnitureInteraction && (FurnitureInteraction->bHoldingFurniture || FurnitureInteraction->FocusedFurnitureForInteraction()))
+        || CarriedHousePig() || FocusedHousePigForInteraction() || FocusedHouseMask()) return nullptr;
+    for (TActorIterator<AHousePokerTable> It(GetWorld()); It; ++It)
+        if (It->IsFocusedBy(this)) return *It;
+    return nullptr;
+}
+void AStoryFirstPersonCharacter::ServerDealHousePokerTable_Implementation(AHousePokerTable* Table)
+{
+    // The client supplies only a candidate. Aim, range, obstruction and the
+    // existing held-furniture/mask priorities are checked on the server again.
+    if (IsValid(Table) && FocusedHousePokerTable() == Table) Table->DealHand(this);
+}
+void AStoryFirstPersonCharacter::ReceiveHouseMask()
+{
+    if (!HasAuthority() || bHasHouseMask) return;
+    bHasHouseMask = true;
+    bHouseMaskEquipped = true;
+    OnRep_HouseMask();
+    ForceNetUpdate();
+    ClientHouseMaskNotice(TEXT("Mask equipped: +25% damage. Press Tab, then click its corner icon to remove it."));
+}
+void AStoryFirstPersonCharacter::OnRep_HouseMask()
+{
+    UpdateHouseMaskVisual();
+}
+void AStoryFirstPersonCharacter::UpdateHouseMaskVisual()
+{
+    if (!HouseMaskVisual) return;
+    const bool bVisible = bHouseMaskEquipped && GetNetMode() != NM_DedicatedServer;
+    HouseMaskVisual->SetVisibility(bVisible);
+    if (!bVisible) return;
+
+    AActor* Native = BraxtonVisual ? BraxtonVisual->GetNativeCharacter() :
+        RunnerVisual ? RunnerVisual->GetNativeCharacter() : FixerVisual ? FixerVisual->GetNativeCharacter() : nullptr;
+    USkeletalMeshComponent* Face = nullptr;
+    if (Native)
+        for (USkeletalMeshComponent* Mesh : TInlineComponentArray<USkeletalMeshComponent*>(Native))
+            if (Mesh && Mesh->GetFName() == TEXT("Face")) { Face = Mesh; break; }
+    if (!Face) Face = BraxtonVisual ? BraxtonVisual->GetBodyMesh() :
+        RunnerVisual ? RunnerVisual->GetBodyMesh() : FixerVisual ? FixerVisual->GetBodyMesh() : GetMesh();
+    if (!Face || !Face->GetSkeletalMeshAsset() || !Face->DoesSocketExist(TEXT("head")))
+    { HouseMaskVisual->SetVisibility(false); return; }
+    // Fit only when the character changes. Skeletal attachment updates after
+    // the head animation, so the mask follows looking, walking and turning.
+    if (HouseMaskVisual->GetAttachParent() == Face && HouseMaskVisual->GetAttachSocketName() == TEXT("head")) return;
+    const FReferenceSkeleton& Skeleton = Face->GetSkeletalMeshAsset()->GetRefSkeleton();
+    const auto ReferenceBone = [&Skeleton](FName Name)
+    {
+        int32 Index = Skeleton.FindBoneIndex(Name);
+        FTransform Transform = FTransform::Identity;
+        while (Index != INDEX_NONE)
+        {
+            Transform *= Skeleton.GetRefBonePose()[Index];
+            Index = Skeleton.GetParentIndex(Index);
+        }
+        return Transform;
+    };
+    const FTransform Head = ReferenceBone(TEXT("head"));
+    const bool bForwardY = Native || Face->GetSkeletalMeshAsset() == FallbackBody;
+    const FQuat FitRotation = bForwardY ? FQuat::Identity : FRotator(0, -90, 0).Quaternion();
+    const FVector Forward = FitRotation.RotateVector(FVector(0, 1, 0));
+    FVector Eyes = Head.GetTranslation() + Forward * 6.f + FVector(0, 0, 12);
+    float Scale = .62f;
+    if (!bForwardY && AppliedCharacterIndex >= 3 && AppliedCharacterIndex <= 7)
+    {
+        // The five Cobble faces have no eye bones. These measurements come
+        // from their source iris centres and scale with the imported skeleton.
+        const float SourceHeadZ[] = {159.9777f,160.0450f,159.9288f,160.0297f,160.0856f};
+        const float EyeRise[] = {3.91275f,3.84393f,3.96454f,3.84943f,3.79112f};
+        const float EyeSpan[] = {6.05599f,6.21710f,5.99844f,6.21710f,6.05599f};
+        const int32 FitIndex = AppliedCharacterIndex - 3;
+        const float Stature = float(Head.GetTranslation().Z) / SourceHeadZ[FitIndex];
+        Eyes = Head.GetTranslation() + Forward * (10.01316f * Stature) + FVector(0, 0, EyeRise[FitIndex] * Stature);
+        Scale = EyeSpan[FitIndex] * Stature / 11.6f * 1.08f;
+    }
+    if (Skeleton.FindBoneIndex(TEXT("FACIAL_L_Eye")) != INDEX_NONE &&
+        Skeleton.FindBoneIndex(TEXT("FACIAL_R_Eye")) != INDEX_NONE)
+    {
+        const FVector Left = ReferenceBone(TEXT("FACIAL_L_Eye")).GetTranslation();
+        const FVector Right = ReferenceBone(TEXT("FACIAL_R_Eye")).GetTranslation();
+        Eyes = (Left + Right) * .5f;
+        Scale = FMath::Clamp(float(FVector::Distance(Left, Right) / 11.6 * 1.08), .55f, .75f);
+    }
+    // Native faces and this mesh are both +Y forward. Align the open eye
+    // apertures to the eyes, with leather slightly ahead of the eyelids.
+    const FVector Origin = Eyes + Forward * 2.2f - FitRotation.RotateVector(FVector(0, 8, .8f) * Scale);
+    const FTransform Fit(FitRotation, Origin, FVector(Scale));
+    HouseMaskVisual->AttachToComponent(Face, FAttachmentTransformRules::SnapToTargetNotIncludingScale, TEXT("head"));
+    HouseMaskVisual->SetRelativeTransform(Fit.GetRelativeTransform(Head));
+    HouseMaskVisual->SetCastShadow(true);
+    HouseMaskVisual->SetCastHiddenShadow(true);
+}
+void AStoryFirstPersonCharacter::ToggleHouseMask()
+{
+    if (!IsLocallyControlled() || !bHasHouseMask) return;
+    if (ASeniorLobbyController* PC=Cast<ASeniorLobbyController>(Controller); PC && PC->IsPauseMenuOpen()) return;
+    ServerToggleHouseMask();
+}
+void AStoryFirstPersonCharacter::ToggleHouseMaskCursor()
+{
+    if (!IsLocallyControlled() || !bHasHouseMask) return;
+    if (ASeniorLobbyController* PC=Cast<ASeniorLobbyController>(Controller)) PC->ToggleEquipmentCursor();
+}
+void AStoryFirstPersonCharacter::ServerToggleHouseMask_Implementation()
+{
+    if (!bHasHouseMask) return;
+    bHouseMaskEquipped = !bHouseMaskEquipped;
+    OnRep_HouseMask();
+    ForceNetUpdate();
+    ClientHouseMaskNotice(bHouseMaskEquipped ? TEXT("Oxblood mask equipped: +25% damage.") :
+        TEXT("Oxblood mask removed: normal damage."));
+}
+void AStoryFirstPersonCharacter::ServerCollectHouseMask_Implementation(AHouseOxbloodMaskPickup* Pickup)
+{
+    if (IsValid(Pickup) && Pickup->CanCollect(this)) Pickup->Collect(this);
+}
+void AStoryFirstPersonCharacter::ClientHouseMaskNotice_Implementation(const FString& Message)
+{
+    if (UStoryCampaign* Story=GetGameInstance<UStoryCampaign>()) Story->Notify(Message);
+}
+AExistingHouseDoor* AStoryFirstPersonCharacter::FindFocusedExistingDoor(float MinimumFacing) const
+{
+    if (!GetWorld()) return nullptr;
+    const FVector ViewLocation = FirstPersonCamera ? FirstPersonCamera->GetComponentLocation() : GetActorLocation();
+    const FVector ViewForward = FirstPersonCamera ? FirstPersonCamera->GetForwardVector() : GetActorForwardVector();
+    AExistingHouseDoor* BestDoor = nullptr;
+    float BestScore = BIG_NUMBER;
+    for (TActorIterator<AExistingHouseDoor> It(GetWorld()); It; ++It)
+    {
+        const FVector ToDoor = It->DoorwayCenter - ViewLocation;
+        const float Distance = ToDoor.Size();
+        if (Distance > 270.f || Distance < 1.f) continue;
+        const float Facing = FVector::DotProduct(ViewForward, ToDoor / Distance);
+        if (Facing < MinimumFacing) continue;
+        if (MinimumFacing > .7f)
+        {
+            const FVector FlatForward = FVector(ViewForward.X, ViewForward.Y, 0.f).GetSafeNormal();
+            const float SideDistance = FMath::Abs(FVector::CrossProduct(FlatForward, ToDoor).Z);
+            if (SideDistance > (It->DoorGroup.IsNone() ? 78.f : 145.f)) continue;
+        }
+        FCollisionQueryParams Query(SCENE_QUERY_STAT(ExistingHouseDoorFocus), false);
+        Query.AddIgnoredActor(this);
+        if (AHouseRoamingPig* Pig=CarriedHousePig()) Query.AddIgnoredActor(Pig);
+        if (Douli) Query.AddIgnoredActor(Douli.Get());
+        if (SaucePacket) Query.AddIgnoredActor(SaucePacket.Get());
+        FHitResult Obstruction;
+        if (GetWorld()->LineTraceSingleByChannel(Obstruction, ViewLocation, It->DoorwayCenter,
+                ECC_Visibility, Query))
+        {
+            const AExistingHouseDoor* HitDoor = Cast<AExistingHouseDoor>(Obstruction.GetActor());
+            if (!HitDoor && Cast<AHouseReactiveFixture>(Obstruction.GetActor()))
+                HitDoor = Cast<AExistingHouseDoor>(Obstruction.GetActor()->GetOwner());
+            if (!HitDoor || (HitDoor != *It
+                && (It->DoorGroup.IsNone() || HitDoor->DoorGroup != It->DoorGroup)))
+                continue;
+        }
+        // Favor the door under the reticle. Adjacent room doors can be
+        // closer to the player than the one they are looking straight at.
+        const float AimOffset = FVector::CrossProduct(ViewForward, ToDoor).Size();
+        const float Score = Distance + AimOffset * 3.f;
+        if (Score < BestScore) { BestDoor = *It; BestScore = Score; }
+    }
+    return BestDoor;
+}
+AExistingHouseDoor* AStoryFirstPersonCharacter::FocusedDoorForInteraction() const
+{
+    return FindFocusedExistingDoor(CarriedHousePig()?.97f:.45f);
+}
+AHouseRoamingPig* AStoryFirstPersonCharacter::CarriedHousePig() const
+{
+    if (!GetWorld()) return nullptr;
+    for (TActorIterator<AHouseRoamingPig> It(GetWorld());It;++It) if (It->Carrier==this) return *It;
+    return nullptr;
+}
+AHouseRoamingPig* AStoryFirstPersonCharacter::FocusedHousePigForInteraction() const
+{
+    if (!GetWorld() || !Controller || CarriedHousePig()
+        || (FurnitureInteraction && FurnitureInteraction->bHoldingFurniture)) return nullptr;
+    if (const APlayerController* PC=Cast<APlayerController>(Controller); PC && PC->bShowMouseCursor) return nullptr;
+    FVector View; FRotator Rotation; Controller->GetPlayerViewPoint(View,Rotation);
+    FCollisionQueryParams Query(SCENE_QUERY_STAT(HousePigFocus),false,this);
+    if (Douli) Query.AddIgnoredActor(Douli.Get());
+    if (SaucePacket) Query.AddIgnoredActor(SaucePacket.Get());
+    FHitResult Hit;
+    GetWorld()->LineTraceSingleByChannel(Hit,View,View+Rotation.Vector()*220.f,ECC_Visibility,Query);
+    if (AHouseRoamingPig* Pig=Cast<AHouseRoamingPig>(Hit.GetActor())) return Pig->CanPickup(const_cast<AStoryFirstPersonCharacter*>(this))?Pig:nullptr;
+    // Small aim assistance makes the smaller, quicker pig usable without ever
+    // selecting through a wall or an intervening furniture object.
+    if (Hit.bBlockingHit) return nullptr;
+    if (GetWorld()->SweepSingleByChannel(Hit,View,View+Rotation.Vector()*220.f,FQuat::Identity,ECC_Visibility,
+        FCollisionShape::MakeSphere(16.f),Query))
+        if (AHouseRoamingPig* Pig=Cast<AHouseRoamingPig>(Hit.GetActor()))
+            return Pig->CanPickup(const_cast<AStoryFirstPersonCharacter*>(this))?Pig:nullptr;
+    return nullptr;
+}
+void AStoryFirstPersonCharacter::ServerInteractHousePig_Implementation(AHouseRoamingPig* Pig)
+{
+    if (!IsValid(Pig)) return;
+    if (Pig==CarriedHousePig())
+    {
+        if(Pig->IsPlacing() || Pig->GetCarryBlend()<.995f)return;
+        if (!Pig->TryPlace(this)) ClientHouseMaskNotice(TEXT("Find a clear, level floor to put the pig down."));
+        return;
+    }
+    if (!(GetStoryMovement() && GetStoryMovement()->IsCrawling())
+        && !CarriedHousePig() && !(FurnitureInteraction && FurnitureInteraction->bHoldingFurniture)
+        && FocusedHousePigForInteraction()==Pig) Pig->TryPickup(this);
+}
+bool AStoryFirstPersonCharacter::InteractWithExistingDoor(AExistingHouseDoor* Door)
+{
+    if (!Door) return false;
+    if (Door->bLocked)
+    {
+        if (UStoryCampaign* Story = GetGameInstance<UStoryCampaign>())
+            Story->Notify(TEXT("Locked: this area is not playable yet."));
+        return true;
+    }
+    if (HasAuthority())
+    {
+        const bool bWasOpen = Door->IsOpen();
+        if (!Door->Interact(this) && bWasOpen) ClientNotifyDoorwayOccupied();
+    }
+    else ServerInteractExistingDoor(Door);
+    return true;
+}
+void AStoryFirstPersonCharacter::OnLeftMousePressed()
+{
+    if (!IsLocallyControlled()) return;
+    if (GetStoryMovement() && GetStoryMovement()->IsCrawling()) return;
+    // A HUD click must never throw a weapon or double-click a door behind it.
+    if (APlayerController* PC=Cast<APlayerController>(Controller); PC && PC->bShowMouseCursor) return;
+    // A held chair takes precedence over a door double-click and equipment.
+    if (FurnitureInteraction && FurnitureInteraction->bHoldingFurniture)
+    {
+        LastClickedDoor.Reset();
+        LastDoorClickTime = -1000.0;
+        FurnitureInteraction->ThrowHeldFurniture();
+        return;
+    }
+    // Deliberately aiming at scenery throws at that piece, even near a door.
+    FCollisionQueryParams SceneryQuery(SCENE_QUERY_STAT(HouseWeaponTarget), false);
+    SceneryQuery.AddIgnoredActor(this);
+    if (Douli) SceneryQuery.AddIgnoredActor(Douli.Get());
+    if (SaucePacket) SceneryQuery.AddIgnoredActor(SaucePacket.Get());
+    const FVector ViewStart = FirstPersonCamera->GetComponentLocation();
+    FHitResult SceneryHit;
+    if (GetWorld()->LineTraceSingleByChannel(SceneryHit, ViewStart,
+        ViewStart + GetBaseAimRotation().Vector()*5000.f, ECC_Visibility, SceneryQuery)
+        && SceneryHit.GetActor() && SceneryHit.GetActor()->ActorHasTag(TEXT("HouseBreakable")))
+    {
+        LastClickedDoor.Reset();
+        LastDoorClickTime = -1000.0;
+        ThrowEquippedWeapon();
+        return;
+    }
+    if (AExistingHouseDoor* Door = FindFocusedExistingDoor(.78f); Door && !Door->bLocked)
+    {
+        const double Now = GetWorld()->GetRealTimeSeconds();
+        const bool bSameDoor = LastClickedDoor.Get() == Door ||
+            (LastClickedDoor.IsValid() && !Door->DoorGroup.IsNone() && LastClickedDoor->DoorGroup == Door->DoorGroup);
+        if (bSameDoor && Now - LastDoorClickTime <= .36)
+        {
+            InteractWithExistingDoor(Door);
+            LastClickedDoor.Reset();
+            LastDoorClickTime = -1000.0;
+        }
+        else
+        {
+            LastClickedDoor = Door;
+            LastDoorClickTime = Now;
+        }
+        return;
+    }
+    LastClickedDoor.Reset();
+    LastDoorClickTime = -1000.0;
+    ThrowEquippedWeapon();
+}
+AHouseReactiveFixture* AStoryFirstPersonCharacter::FocusedHouseFixture() const
+{
+    if (!GetWorld() || !Controller || !FirstPersonCamera) return nullptr;
+    if (FurnitureInteraction && FurnitureInteraction->bHoldingFurniture) return nullptr;
+    FCollisionQueryParams Query;
+    Query.AddIgnoredActor(this);
+    const FVector Start = FirstPersonCamera->GetComponentLocation();
+    FHitResult Hit;
+    if (!GetWorld()->LineTraceSingleByChannel(Hit, Start,
+        Start + GetBaseAimRotation().Vector()*300.f, ECC_Visibility, Query)) return nullptr;
+    AHouseReactiveFixture* Fixture = Cast<AHouseReactiveFixture>(Hit.GetActor());
+    return Fixture && !Fixture->IsBroken() ? Fixture : nullptr;
+}
+AHouseGadget* AStoryFirstPersonCharacter::FocusedHouseGadget() const
+{
+    if (!GetWorld() || !Controller || !FirstPersonCamera) return nullptr;
+    if (FurnitureInteraction && FurnitureInteraction->bHoldingFurniture) return nullptr;
+    if (CarriedHousePig()) return nullptr;
+    FCollisionQueryParams Query;
+    Query.AddIgnoredActor(this);
+    const FVector Start = FirstPersonCamera->GetComponentLocation();
+    FHitResult Hit;
+    if (!GetWorld()->LineTraceSingleByChannel(Hit, Start,
+        Start + GetBaseAimRotation().Vector()*260.f, ECC_Visibility, Query)) return nullptr;
+    AHouseGadget* Gadget = Cast<AHouseGadget>(Hit.GetActor());
+    return Gadget && Gadget->IsInteractive() ? Gadget : nullptr;
+}
+void AStoryFirstPersonCharacter::ServerInteractHouseGadget_Implementation(AHouseGadget* Gadget)
+{
+    if (IsValid(Gadget) && FocusedHouseGadget()==Gadget)
+        Gadget->Interact(this);
+}
+void AStoryFirstPersonCharacter::ServerInteractHouseFixture_Implementation(AHouseReactiveFixture* Fixture)
+{
+    if (IsValid(Fixture) && !CarriedHousePig() && FocusedHouseFixture()==Fixture)
+        Fixture->Interact(this);
+}
+AHouseClubPole* AStoryFirstPersonCharacter::FocusedClubPole(bool& bUpper) const
+{
+    bUpper=false;
+    if (!GetWorld() || ClubPoleJourney.Pole) return nullptr;
+    for (TActorIterator<AHouseClubPole> It(GetWorld()); It; ++It)
+        if (It->FindFocusedEnd(this,bUpper)) return *It;
+    return nullptr;
+}
+void AStoryFirstPersonCharacter::ServerUseClubPole_Implementation(AHouseClubPole* Pole, bool bUpper)
+{
+    if (IsValid(Pole)) Pole->TryUse(this,bUpper);
+}
+void AStoryFirstPersonCharacter::ServerClubPoleSmokeReady_Implementation(AHouseClubPole* Pole)
+{
+    // The pole validates the opt-in flag, actual remote pawn and approach.
+    // The RPC still comes through this pawn's normal owning connection.
+    if (IsValid(Pole)) Pole->MarkMultiplayerSmokeClientReady(this);
+}
+void AStoryFirstPersonCharacter::ClientClubPoleNotice_Implementation(const FString& Message)
+{
+    if (UStoryCampaign* Story=GetGameInstance<UStoryCampaign>()) Story->Notify(Message);
+}
+void AStoryFirstPersonCharacter::SetClubPoleJourney(const FHouseClubPoleJourney& Journey)
+{
+    if (!HasAuthority()) return;
+    const FHouseClubPoleJourney Previous=ClubPoleJourney;
+    ClubPoleJourney=Journey;
+    OnRep_ClubPoleJourney(Previous);
+    ForceNetUpdate();
+}
+void AStoryFirstPersonCharacter::OnRep_ClubPoleJourney(const FHouseClubPoleJourney& Previous)
+{
+    if (Previous.Pole && (Previous.Pole!=ClubPoleJourney.Pole || Previous.Serial!=ClubPoleJourney.Serial))
+        Previous.Pole->FinishReplicatedTraveller(this,Previous,ClubPoleJourney);
+    if (ClubPoleJourney.Pole) ClubPoleJourney.Pole->ApplyJourney(this,ClubPoleJourney);
+}
+void AStoryFirstPersonCharacter::InteractWithExistingDoorOrFurniture()
+{
+    if (!IsLocallyControlled()) return;
+    if (const APlayerController* PC=Cast<APlayerController>(Controller); PC && PC->bShowMouseCursor) return;
+    if (ClubPoleJourney.Pole) return;
+    bool bPoleUpper=false;
+    if (AHouseClubPole* Pole=FocusedClubPole(bPoleUpper))
+    { ServerUseClubPole(Pole,bPoleUpper); return; }
+    FName VentPortal;
+    if (AHouseVentNetwork* Vent = FocusedVentNetwork(VentPortal))
+    {
+        if (HasAuthority()) Vent->Interact(this, VentPortal);
+        else ServerInteractVent(VentPortal);
+        return;
+    }
+    if (GetStoryMovement() && GetStoryMovement()->IsCrawling())
+    {
+        InteractWithExistingDoor(FindFocusedExistingDoor(.45f));
+        return;
+    }
+    if (AHouseRoamingPig* Pig=CarriedHousePig())
+    {
+        // A deliberate aim at a door still opens it while carrying a pig;
+        // looking down at the floor uses the same E key to place the animal.
+        if (InteractWithExistingDoor(FindFocusedExistingDoor(.97f))) return;
+        ServerInteractHousePig(Pig); return;
+    }
+    if (FurnitureInteraction && FurnitureInteraction->bHoldingFurniture)
+    {
+        FurnitureInteraction->ToggleGrab();
+        return;
+    }
+    if (AHouseOxbloodMaskPickup* Pickup = FocusedHouseMask())
+    { ServerCollectHouseMask(Pickup); return; }
+    if (AHouseGadget* Gadget = FocusedHouseGadget())
+    { ServerInteractHouseGadget(Gadget); return; }
+    if (AHouseReactiveFixture* Fixture = FocusedHouseFixture();
+        Fixture && Fixture->FixtureKind != EHouseReactiveFixtureKind::Window)
+    { ServerInteractHouseFixture(Fixture); return; }
+    // Boywick under the reticle takes the E press before any furnishing or door.
+    if (ABoywickCharacter* Boywick = FocusedBoywick())
+    { ServerInteractBoywick(Boywick); return; }
+    // A furnishing under the reticle wins over a nearby door's wider aim cone.
+    if (FurnitureInteraction && FurnitureInteraction->FocusedFurnitureForInteraction())
+    { FurnitureInteraction->ToggleGrab(); return; }
+    if (AHouseRoamingPig* Pig=FocusedHousePigForInteraction())
+    { ServerInteractHousePig(Pig); return; }
+    if (AHousePokerTable* Table = FocusedHousePokerTable())
+    { ServerDealHousePokerTable(Table); return; }
+    if (InteractWithExistingDoor(FindFocusedExistingDoor(.45f))) return;
+    if (FurnitureInteraction) FurnitureInteraction->ToggleGrab();
+}
+AHouseVentNetwork* AStoryFirstPersonCharacter::FocusedVentNetwork(FName& OutPortalId) const
+{
+    OutPortalId = NAME_None;
+    if (!GetWorld()) return nullptr;
+    for (TActorIterator<AHouseVentNetwork> It(GetWorld()); It; ++It)
+    {
+        OutPortalId = It->FindFocusedPortal(this);
+        if (!OutPortalId.IsNone()) return *It;
+    }
+    return nullptr;
+}
+void AStoryFirstPersonCharacter::ServerInteractVent_Implementation(FName PortalId)
+{
+    if (PortalId.IsNone()) return;
+    FName FocusedPortal;
+    AHouseVentNetwork* Vent = FocusedVentNetwork(FocusedPortal);
+    if (Vent && FocusedPortal == PortalId) Vent->Interact(this, PortalId);
+}
+void AStoryFirstPersonCharacter::ServerInteractExistingDoor_Implementation(AExistingHouseDoor* Door)
+{
+    if (!IsValid(Door)) return;
+    // The client supplies only a candidate. Re-check its aim and unobstructed
+    // view on the server before applying the authoritative door state.
+    AExistingHouseDoor* Focused = FocusedDoorForInteraction();
+    if (Focused != Door && (!Focused || Door->DoorGroup.IsNone()
+        || Focused->DoorGroup != Door->DoorGroup)) return;
+    const bool bWasOpen = Door->IsOpen();
+    if (!Door->Interact(this) && bWasOpen) ClientNotifyDoorwayOccupied();
+}
+void AStoryFirstPersonCharacter::ClientNotifyDoorwayOccupied_Implementation()
+{
+    if (UStoryCampaign* Story = GetGameInstance<UStoryCampaign>())
+        Story->Notify(TEXT("Step clear of the doorway to close it."));
+}
 UStoryMovementComponent* AStoryFirstPersonCharacter::GetStoryMovement() const
 {
     return Cast<UStoryMovementComponent>(GetCharacterMovement());
 }
+bool AStoryFirstPersonCharacter::CanStartCrawl() const
+{
+    return !(FurnitureInteraction && FurnitureInteraction->bHoldingFurniture)
+        && !CarriedHousePig();
+}
+bool AStoryFirstPersonCharacter::SetVentCrawlForced(bool bForced)
+{
+    if (!HasAuthority()) return false;
+    if (bForced && !CanStartCrawl()) return false;
+    UStoryMovementComponent* Movement = GetStoryMovement();
+    if (!Movement) return false;
+    if (bForced && !Movement->SetCrawlForced(true))
+    {
+        Movement->SetCrawlForced(false);
+        return false;
+    }
+    if (!bForced) Movement->SetCrawlForced(false);
+    bVentCrawlForced = bForced;
+    ForceNetUpdate();
+    return true;
+}
+void AStoryFirstPersonCharacter::OnRep_VentCrawlForced()
+{
+    if (UStoryMovementComponent* Movement = GetStoryMovement())
+        Movement->SetCrawlForced(bVentCrawlForced);
+}
+void AStoryFirstPersonCharacter::OnRep_ReplicatedCrawl()
+{
+    if (UStoryMovementComponent* Movement = GetStoryMovement())
+        Movement->SetSimulatedCrawl(bReplicatedCrawl);
+}
 void AStoryFirstPersonCharacter::StartSprint()
 {
+    if (ClubPoleJourney.Pole) return;
     if (auto* Movement = GetStoryMovement()) Movement->SetSprintHeld(true);
 }
 void AStoryFirstPersonCharacter::StopSprint()
@@ -660,14 +1519,31 @@ void AStoryFirstPersonCharacter::StopSprint()
 }
 void AStoryFirstPersonCharacter::StartSlide()
 {
+    if (ClubPoleJourney.Pole) return;
     if (auto* Movement = GetStoryMovement()) Movement->SetSlideHeld(true);
 }
 void AStoryFirstPersonCharacter::StopSlide()
 {
     if (auto* Movement = GetStoryMovement()) Movement->SetSlideHeld(false);
 }
+void AStoryFirstPersonCharacter::ToggleCrawl()
+{
+    if (ClubPoleJourney.Pole) return;
+    if (UStoryMovementComponent* Movement = GetStoryMovement())
+    {
+        const bool bNewRequest = !Movement->WantsToCrawl();
+        if (bNewRequest && !CanStartCrawl())
+        {
+            if (UStoryCampaign* Story = GetGameInstance<UStoryCampaign>())
+                Story->Notify(TEXT("Set down what you're carrying before crawling."));
+            return;
+        }
+        Movement->SetCrawlRequested(bNewRequest);
+    }
+}
 void AStoryFirstPersonCharacter::StartMovementJump()
 {
+    if (ClubPoleJourney.Pole) return;
     // Releasing crouch here lets the same input jump out of a slide. The move's
     // crouch and jump flags travel together to the server for prediction.
     if (auto* Movement = GetStoryMovement()) Movement->SetSlideHeld(false);
@@ -678,21 +1554,45 @@ bool AStoryFirstPersonCharacter::CanJumpInternal_Implementation() const
     // Character checks jump input before its movement component applies the
     // requested uncrouch. Permit that one transition without allowing a jump
     // while the player is still holding the slide/crouch key.
-    return (!IsCrouched() || !GetCharacterMovement()->bWantsToCrouch) && JumpIsAllowedInternal();
+    return !(GetStoryMovement() && GetStoryMovement()->IsCrawling())
+        && (!IsCrouched() || !GetCharacterMovement()->bWantsToCrouch) && JumpIsAllowedInternal();
 }
 void AStoryFirstPersonCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
     DOREPLIFETIME(AStoryFirstPersonCharacter,Douli);
     DOREPLIFETIME(AStoryFirstPersonCharacter,SaucePacket);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,bHasHouseMask);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,bHouseMaskEquipped);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,bVentCrawlForced);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,BoywickBlessing);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,BoywickBlessingUntil);
+    DOREPLIFETIME(AStoryFirstPersonCharacter,ClubPoleJourney);
+    DOREPLIFETIME_CONDITION(AStoryFirstPersonCharacter,bReplicatedCrawl,COND_SkipOwner);
 }
 void AStoryFirstPersonCharacter::ThrowEquippedWeapon()
 {
+    if (GetStoryMovement() && GetStoryMovement()->IsCrawling()) return;
     if(APlayerController* PC=Cast<APlayerController>(Controller);PC && PC->bShowMouseCursor)return;
+    if(CarriedHousePig() || PigCarryPoseBlend>.02f)return;
+    // The gamepad right trigger uses this same input action.
+    if (FurnitureInteraction && FurnitureInteraction->bHoldingFurniture)
+    {
+        FurnitureInteraction->ThrowHeldFurniture();
+        return;
+    }
     ServerThrowEquippedWeapon();
 }
 void AStoryFirstPersonCharacter::ServerThrowEquippedWeapon_Implementation()
 {
+    if (GetStoryMovement() && GetStoryMovement()->IsCrawling()) return;
+    if(CarriedHousePig())return;
+    // Resolve a delayed client hold replication on the authoritative side too.
+    if (FurnitureInteraction && FurnitureInteraction->bHoldingFurniture)
+    {
+        FurnitureInteraction->ThrowHeldFurniture();
+        return;
+    }
     const auto* State=GetPlayerState<ASeniorLobbyPlayerState>();
     if(!State || State->CharacterIndex!=0)return;
     if(State->LoadoutIndex==0 && Douli)Douli->BeginThrow();
@@ -700,12 +1600,16 @@ void AStoryFirstPersonCharacter::ServerThrowEquippedWeapon_Implementation()
 }
 void AStoryFirstPersonCharacter::ThrowDouli()
 {
+    if (GetStoryMovement() && GetStoryMovement()->IsCrawling()) return;
     // UI clicks must not also launch a weapon behind the menu.
     if (APlayerController* PC=Cast<APlayerController>(Controller); PC && PC->bShowMouseCursor) return;
+    if(CarriedHousePig() || PigCarryPoseBlend>.02f)return;
     ServerThrowDouli();
 }
 void AStoryFirstPersonCharacter::ServerThrowDouli_Implementation()
 {
+    if (GetStoryMovement() && GetStoryMovement()->IsCrawling()) return;
+    if(CarriedHousePig())return;
     if (Douli) Douli->BeginThrow();
 }
 FTransform AStoryFirstPersonCharacter::DouliGrip(bool bFirstPerson) const
@@ -776,20 +1680,24 @@ void AStoryFirstPersonCharacter::LookMouse(const FInputActionValue& Value)
 {
     const FVector2D Input = Value.Get<FVector2D>();
     const auto& Settings = SeniorPlayerPreferences::Get();
-    AddControllerYawInput(Input.X * Settings.MouseSensitivity);
+    // The controller applies its legacy 2.5x look scale after this call.
+    // Bound a single frame's delta so a focus/capture hitch cannot whip the camera around.
+    constexpr float MaxMouseLookPerFrame = 4.f;
+    AddControllerYawInput(FMath::Clamp(Input.X * Settings.MouseSensitivity, -MaxMouseLookPerFrame, MaxMouseLookPerFrame));
     // This project's raw mouse-up delta and the controller's pitch input
     // scale disagree; reverse the mouse once here, then apply the user's
     // optional inversion. Gamepad look keeps its separate stick convention.
-    AddControllerPitchInput(-Input.Y * Settings.MouseSensitivity * (Settings.bInvertY ? -1.f : 1.f));
+    AddControllerPitchInput(FMath::Clamp(-Input.Y * Settings.MouseSensitivity * (Settings.bInvertY ? -1.f : 1.f),
+        -MaxMouseLookPerFrame, MaxMouseLookPerFrame));
 }
 void AStoryFirstPersonCharacter::LookMouseX(float AxisValue)
 {
-    AddControllerYawInput(AxisValue * SeniorPlayerPreferences::Get().MouseSensitivity);
+    AddControllerYawInput(FMath::Clamp(AxisValue * SeniorPlayerPreferences::Get().MouseSensitivity, -4.f, 4.f));
 }
 void AStoryFirstPersonCharacter::LookMouseY(float AxisValue)
 {
     const auto& Settings = SeniorPlayerPreferences::Get();
-    AddControllerPitchInput(-AxisValue * Settings.MouseSensitivity * (Settings.bInvertY ? -1.f : 1.f));
+    AddControllerPitchInput(FMath::Clamp(-AxisValue * Settings.MouseSensitivity * (Settings.bInvertY ? -1.f : 1.f), -4.f, 4.f));
 }
 void AStoryGameMode::InitGame(const FString& MapName, const FString& Options, FString& Error)
 {
@@ -822,6 +1730,36 @@ void AStoryGameMode::BeginPlay()
             TArray<AActor*> Starts;
             UGameplayStatics::GetAllActorsOfClass(this, APlayerStart::StaticClass(), Starts);
             if (Starts.Num()) FallLimit = Starts[0]->GetActorLocation().Z - 1200;
+            // Masks are deliberately left on existing furniture. These are
+            // visible surface centres, rather than the taller collision proxies.
+            if (HasAuthority() && Story->CurrentChapter() == 1)
+            {
+                if (UGameplayStatics::GetCurrentLevelName(this, true) == TEXT("Chapter01_House"))
+                {
+                    TActorIterator<AHouseVentNetwork> ExistingVent(GetWorld());
+                    if (!ExistingVent)
+                    {
+                        FActorSpawnParameters VentParams;
+                        VentParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+                        GetWorld()->SpawnActor<AHouseVentNetwork>(AHouseVentNetwork::StaticClass(),
+                            HouseWorldScale::Transform(GetWorld(), FTransform::Identity), VentParams);
+                    }
+                }
+                struct FMaskPlacement { FVector Surface; float Yaw; };
+                const FMaskPlacement Places[] = {
+                    { FVector(873, -230, 56), 18.f },       // Sofa end table
+                    { FVector(-865, -245, 56), -24.f },     // Far side table
+                    { FVector(-100, 802, 76), 0.f },        // Console beside trophies
+                    { FVector(-2690, -213, 349.75f), 0.f }, // Upstairs leather ottoman
+                };
+                for (const FMaskPlacement& Place : Places)
+                {
+                    FActorSpawnParameters Params;
+                    Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+                    GetWorld()->SpawnActor<AHouseOxbloodMaskPickup>(AHouseOxbloodMaskPickup::StaticClass(),
+                        HouseWorldScale::Transform(GetWorld(), FTransform(FRotator(0, Place.Yaw, 0), Place.Surface)), Params);
+                }
+            }
             // The permanent objective HUD already explains the route; leave
             // the temporary notice area free for progress and errors.
         }
@@ -831,7 +1769,7 @@ void AStoryGameMode::RestartPlayer(AController* Player)
 {
     if (!Player) return;
     auto* Story = GetGameInstance<UStoryCampaign>();
-    if (Story && Story->Progress && Story->Progress->bHasCheckpoint && Story->CurrentChapter() == Story->Progress->Chapter)
+    if (Story && Story->CurrentChapter() != 1 && Story->Progress && Story->Progress->bHasCheckpoint && Story->CurrentChapter() == Story->Progress->Chapter)
     {
         FTransform Spawn = Story->Progress->Spawn;
         if (GameState)
@@ -853,12 +1791,33 @@ void AStoryGameMode::Tick(float DeltaSeconds)
 #if !UE_BUILD_SHIPPING
     TickCombinedHouseSmoke(GetWorld());
     TickHouseVisualReview(GetWorld());
+    TickHouseMaskReview(GetWorld());
+    TickExistingHouseDoorSmoke(GetWorld());
+    TickRoom101EntrySmoke(GetWorld());
+    TickNightClubSmoke(GetWorld());
+    TickNightClubEntranceSmoke(GetWorld());
+    TickHouseTraversalSmoke(GetWorld());
+    TickHouseChairSmoke(GetWorld());
+    TickHousePokerSmoke(GetWorld());
+    TickHousePigSmoke(GetWorld());
+    TickHouseImpossibleHallwaySmoke(GetWorld());
+    TickHouseHotTubWaterSmoke(GetWorld());
+    TickHouseInteractivitySmoke(GetWorld());
+    TickHouseGlassSmoke(GetWorld());
+    TickHouseLibrarySmoke(GetWorld());
+    TickHouseKitchenSmoke(GetWorld());
+    TickHouseTelevisionSmoke(GetWorld());
+    TickHouseVentSmoke(GetWorld());
 #endif
     auto* Story = GetGameInstance<UStoryCampaign>();
     if (!Story || Story->CurrentChapter() == 0 || Story->bTravelPending || Story->Progress->bCompleted) return;
+    TActorIterator<AHouseVentNetwork> VentIt(GetWorld());
+    AHouseVentNetwork* Vent = VentIt ? *VentIt : nullptr;
     for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
         if (APlayerController* PC = It->Get(); PC && PC->HasClientLoadedCurrentWorld())
-            if (!PC->GetPawn() || PC->GetPawn()->GetActorLocation().Z < FallLimit) Story->RespawnPlayerAtCheckpoint(PC);
+            if (APawn* Pawn = PC->GetPawn(); !Pawn ||
+                (Pawn->GetActorLocation().Z < FallLimit && !(Vent && Vent->IsInDuct(Pawn))))
+                Story->RespawnPlayerAtCheckpoint(PC);
 }
 
 AStoryCheckpoint::AStoryCheckpoint()
@@ -890,6 +1849,13 @@ void AStoryCheckpoint::BeginPlay()
 {
     Super::BeginPlay();
     Label->SetText(FText::FromString(bChapterExit ? (Chapter == 3 ? TEXT("FINISH STORY") : TEXT("NEXT CHAPTER")) : FString::Printf(TEXT("CHECKPOINT %d"), CheckpointIndex)));
+    // The chapter-one porch exit is a real doorway. Hide its placeholder
+    // checkered cylinder and oversized floating text without changing its trigger.
+    if (bChapterExit && Chapter == 1)
+    {
+        Marker->SetVisibility(false);
+        Label->SetVisibility(false);
+    }
 }
 void AStoryCheckpoint::Enter(UPrimitiveComponent*, AActor* Other, UPrimitiveComponent*, int32, bool, const FHitResult&)
 {
@@ -904,6 +1870,13 @@ void AStoryCheckpoint::Enter(UPrimitiveComponent*, AActor* Other, UPrimitiveComp
         else Story->CompleteChapter();
     }
     else Story->ReachCheckpoint(Chapter, CheckpointIndex, RespawnPoint->GetComponentTransform());
+}
+
+AStoryHUD::AStoryHUD()
+{
+    static ConstructorHelpers::FObjectFinder<UTexture2D> Icon(
+        TEXT("/Game/Items/HouseMask/T_HouseMaskIcon.T_HouseMaskIcon"));
+    HouseMaskIcon = Icon.Object;
 }
 
 void AStoryHUD::DrawHUD()
@@ -929,27 +1902,209 @@ void AStoryHUD::DrawHUD()
         Text(TEXT("Loading your story..."), W * .3f, H * .52f, FLinearColor::White);
         return;
     }
-    DrawRect(Ink, 18*S, 18*S, 540*S, 112*S);
+    DrawRect(Ink, 18*S, 18*S, 540*S, Story->CurrentChapter()==1 ? 140*S : 112*S);
     Text(TEXT("SENIOR SENDOFF"), 34*S, 30*S, Gold, 1.25f);
-    Text(FString::Printf(TEXT("CHAPTER %d / 3    |    CHECKPOINT %d / 2    |    %s"), Story->CurrentChapter(),
-        Checkpoint, *UStoryCampaign::DifficultyName(Difficulty)), 34*S, 66*S, FLinearColor::White);
-    Text(TEXT("Reach both markers, then the chapter exit."), 34*S, 98*S, FLinearColor(.7f,.8f,.9f));
     if (Story->CurrentChapter() == 1)
     {
+        Text(FString::Printf(TEXT("HOUSE    |    %s"), *UStoryCampaign::DifficultyName(Difficulty)),
+            34*S, 66*S, FLinearColor::White);
+        Text(TEXT("Explore the house."), 34*S, 98*S, FLinearColor(.7f,.8f,.9f));
+    }
+    else
+    {
+        Text(FString::Printf(TEXT("CHAPTER %d / 3    |    CHECKPOINT %d / 2    |    %s"), Story->CurrentChapter(),
+            Checkpoint, *UStoryCampaign::DifficultyName(Difficulty)), 34*S, 66*S, FLinearColor::White);
+        Text(TEXT("Reach both markers, then the chapter exit."), 34*S, 98*S, FLinearColor(.7f,.8f,.9f));
+    }
+    if (Story->CurrentChapter() == 1)
+    {
+        if (const UHouseDamageSubsystem* Damage = GetWorld()->GetSubsystem<UHouseDamageSubsystem>())
+            Text(FString::Printf(TEXT("HOUSE DAMAGE  |  %d BROKEN"), Damage->GetTotalBrokenCount()),
+                34*S, 126*S, Gold, .9f);
         DrawRect(Ink, 18*S, H-97*S, 548*S, 28*S);
-        Text(TEXT("Shift sprint  |  Ctrl slide  |  Space jump  |  E move furniture"),
-             29*S, H-93*S, FLinearColor(.8f,.85f,.9f), .8f);
+        Text(ArmedPawn && ArmedPawn->CarriedHousePig()
+            ? TEXT("Carry pig  |  E place on clear floor  |  Aim at door + E open / close")
+            : ArmedPawn && ArmedPawn->FurnitureInteraction && ArmedPawn->FurnitureInteraction->bHoldingFurniture
+                && ArmedPawn->FurnitureInteraction->GetHeldBody() && Cast<AHouseBasketball>(ArmedPawn->FurnitureInteraction->GetHeldBody()->GetOwner())
+            ? TEXT("Basketball  |  Aim at either rim  |  LMB / right trigger shoot  |  E set down")
+            : ArmedPawn && ArmedPawn->FurnitureInteraction && ArmedPawn->FurnitureInteraction->bHoldingFurniture
+            ? (ArmedPawn->FurnitureInteraction->GetCarrySize()==ESSOCarrySize::Large?TEXT("Dragging  |  E lower and let go  |  LMB / right trigger shove")
+                : ArmedPawn->FurnitureInteraction->GetCarrySize()==ESSOCarrySize::Medium?TEXT("Two-hand carry  |  E set down  |  LMB / right trigger toss")
+                : TEXT("One-hand carry  |  E set down  |  LMB / right trigger throw"))
+            : TEXT("Shift sprint  |  Ctrl slide  |  C crawl  |  Space jump  |  E interact  |  Double-click doors"),
+            29*S, H-93*S, FLinearColor(.8f,.85f,.9f), .8f);
+        if (ArmedPawn && ArmedPawn->FurnitureInteraction && PlayerOwner && !PlayerOwner->bShowMouseCursor)
+        {
+            const bool bHolding = ArmedPawn->FurnitureInteraction->bHoldingFurniture;
+            // This same focused trace takes priority over nearby doors for E.
+            AActor* Focused = !bHolding ? ArmedPawn->FurnitureInteraction->FocusedFurnitureForInteraction() : nullptr;
+            const bool bFocused = Focused != nullptr;
+            if (bHolding || bFocused)
+            {
+                const ESSOCarrySize HeldSize = ArmedPawn->FurnitureInteraction->GetCarrySize();
+                FString Prompt = bHolding ? (HeldSize==ESSOCarrySize::Large?TEXT("E LET GO  |  LMB SHOVE")
+                    : HeldSize==ESSOCarrySize::Medium?TEXT("E SET DOWN  |  LMB TOSS"):TEXT("E SET DOWN  |  LMB THROW")) : TEXT("E PICK UP FURNITURE");
+                if (const AHouseInteractiveProp* Prop = Cast<AHouseInteractiveProp>(Focused))
+                {
+                    const ESSOCarrySize FocusedSize = UHouseFurnitureInteractionComponent::ClassifyFurniture(Prop->Body, Prop);
+                    Prompt = Prop->IsClothFlag() ? TEXT("E PULL DOWN")
+                        : Prop->bWallMounted && !Prop->IsDetached() ? TEXT("E PULL FROM WALL")
+                        : FocusedSize==ESSOCarrySize::Large ? TEXT("E LIFT ONE SIDE AND DRAG")
+                        : FocusedSize==ESSOCarrySize::Medium ? TEXT("E PICK UP (TWO HANDS)") : TEXT("E PICK UP");
+                    if (Prop->DamageStage == 1) Prompt += TEXT("  |  CRACKED");
+                    else if (Prop->DamageStage == 2) Prompt += TEXT("  |  DAMAGED");
+                    else if (Prop->bBroken) Prompt += TEXT("  |  BROKEN");
+                    const FString Label = Prop->PropName.ToUpper();
+                    if (!Label.IsEmpty() && Label.Len() <= 26 && Label != TEXT("FURNITURE") && Label != TEXT("LOOSE FURNISHING") && !Label.Contains(TEXT("_")))
+                        Prompt += TEXT("  |  ") + Label;
+                }
+                const AHouseBasketball* Ball = Cast<AHouseBasketball>(bHolding && ArmedPawn->FurnitureInteraction->GetHeldBody()
+                    ? ArmedPawn->FurnitureInteraction->GetHeldBody()->GetOwner() : Focused);
+                if (Ball) Prompt = bHolding ? TEXT("E SET DOWN  |  AIM AT RIM + LMB SHOOT") : TEXT("E PICK UP BASKETBALL");
+                float PromptWidth = bHolding ? 280*S : 350*S;
+                { float TW = 0, TH = 0; GetTextSize(Prompt, TW, TH, GEngine->GetMediumFont(), S * .82f); PromptWidth = FMath::Max(PromptWidth, TW + 26*S); }
+                const float PromptX = (W - PromptWidth) * .5f;
+                DrawRect(Ink, PromptX, H*.5f + 30*S, PromptWidth, 28*S);
+                Text(Prompt,
+                    PromptX + 12*S, H*.5f + 34*S, Gold, .82f);
+            }
+        }
+    }
+    if (Story->CurrentChapter() == 1 && PlayerOwner)
+        for (TActorIterator<AHouseRoamingPig> It(GetWorld()); It; ++It)
+        {
+            FVector LabelWorld; FVector2D Screen;
+            if (!It->ShouldShowHealthTo(PlayerOwner,LabelWorld)
+                || !PlayerOwner->ProjectWorldLocationToScreen(LabelWorld,Screen,true)
+                || Screen.X < 10*S || Screen.X > W-10*S || Screen.Y < 15*S || Screen.Y > H-15*S) continue;
+            const float Width=118*S, X=Screen.X-Width*.5f, Y=Screen.Y;
+            const bool ShowMood=It->IsCarried()||It->Mood==EHousePigMood::Sleeping;
+            DrawRect(Ink,X-5*S,Y-4*S,Width+10*S,(ShowMood?53.f:40.f)*S);
+            Text(FString::Printf(TEXT("%s  %d / %d"),*It->PigName,FMath::CeilToInt(It->Health),FMath::RoundToInt(It->MaxHealth)),
+                X+3*S,Y,FLinearColor::White,.72f);
+            DrawRect(FLinearColor(.12f,.14f,.13f,1),X,Y+23*S,Width,7*S);
+            const float Fraction=FMath::Clamp(It->Health/FMath::Max(1.f,It->MaxHealth),0.f,1.f);
+            DrawRect(Fraction>.35f?FLinearColor(.42f,.72f,.39f,1):FLinearColor(.9f,.32f,.2f,1),X,Y+23*S,Width*Fraction,7*S);
+            if (ShowMood) Text(It->IsCarried()?TEXT("Carried"):TEXT("Sleeping"),X+3*S,Y+33*S,Gold,.62f);
+        }
+    BoywickDrawOverlay(this, ArmedPawn, PlayerOwner, S, W, H, Ink, Gold);
+    if (ArmedPawn && ArmedPawn->bHasHouseMask)
+    {
+        const float MaskX = W - 100*S, MaskY = 72*S, MaskSize = 76*S;
+        const FLinearColor MaskTint = ArmedPawn->bHouseMaskEquipped ? FLinearColor::White :
+            FLinearColor(.48f, .5f, .54f, 1.f);
+        DrawRect(Ink, MaskX, MaskY, MaskSize, 88*S);
+        if (HouseMaskIcon)
+            DrawTexture(HouseMaskIcon, MaskX+5*S, MaskY+3*S, 66*S, 66*S,
+                0, 0, 1, 1, MaskTint);
+        Text(ArmedPawn->bHouseMaskEquipped ? TEXT("ON +25%") : TEXT("OFF"),
+            MaskX+8*S, MaskY+68*S, ArmedPawn->bHouseMaskEquipped ? Gold : FLinearColor::White, .66f);
+#if !(PLATFORM_IOS || PLATFORM_ANDROID)
+        Text(TEXT("TAB: CLICK MASK"), W-179*S, MaskY+92*S,
+            FLinearColor(.8f,.85f,.9f), .62f);
+#endif
+    }
+    if (ArmedPawn && !ArmedPawn->bHasHouseMask)
+    {
+        if (ArmedPawn->FocusedHouseMask())
+        {
+            DrawRect(Ink, W*.5f-124*S, H*.5f+25*S, 248*S, 32*S);
+            Text(TEXT("E  PICK UP OXBLOOD MASK"), W*.5f-112*S, H*.5f+29*S, Gold, .85f);
+        }
+    }
+    if (ArmedPawn && PlayerOwner && !PlayerOwner->bShowMouseCursor && !ArmedPawn->CarriedHousePig())
+        if (AHouseGadget* Gadget = ArmedPawn->FocusedHouseGadget())
+        {
+            const FString GadgetLabel = Gadget->FocusLabel();
+            float GW = 0.f, GH = 0.f;
+            GetTextSize(GadgetLabel, GW, GH, GEngine->GetMediumFont(), S * .85f);
+            DrawRect(Ink, W*.5f-GW*.5f-14*S, H*.5f+25*S, GW+28*S, 32*S);
+            Text(GadgetLabel, W*.5f-GW*.5f, H*.5f+29*S, Gold, .85f);
+        }
+    if (ArmedPawn && PlayerOwner && !PlayerOwner->bShowMouseCursor && !ArmedPawn->CarriedHousePig())
+        if (AHouseReactiveFixture* Fixture = ArmedPawn->FocusedHouseFixture())
+        {
+            DrawRect(Ink, W*.5f-135*S, H*.5f+25*S, 270*S, 32*S);
+            Text(Fixture->FocusLabel(), W*.5f-122*S, H*.5f+29*S, Gold, .85f);
+        }
+    if (ArmedPawn && !ArmedPawn->FocusedHouseFixture() && !ArmedPawn->FocusedHouseGadget()
+        && !(ArmedPawn->FurnitureInteraction && (ArmedPawn->FurnitureInteraction->bHoldingFurniture
+            || ArmedPawn->FurnitureInteraction->FocusedFurnitureForInteraction()))
+        && !ArmedPawn->FocusedHousePokerTable() && !ArmedPawn->FocusedHousePigForInteraction() && !ArmedPawn->FocusedBoywick()
+        && !ArmedPawn->ClubPoleJourney.Pole)
+    {
+        if (AExistingHouseDoor* Door = ArmedPawn->FocusedDoorForInteraction())
+        {
+            const FString Prompt = Door->bLocked ? TEXT("LOCKED")
+                : Door->IsOpen() ? TEXT("E  CLOSE DOOR") : TEXT("E  OPEN DOOR");
+            DrawRect(Ink, W*.5f-101*S, H*.5f+25*S, 202*S, 32*S);
+            Text(Prompt, W*.5f-86*S, H*.5f+29*S, Door->bLocked ? FLinearColor::White : Gold, .9f);
+        }
+    }
+    if (ArmedPawn && PlayerOwner && !PlayerOwner->bShowMouseCursor)
+    {
+        AHouseRoamingPig* HeldPig=ArmedPawn->CarriedHousePig();
+        AHouseRoamingPig* FocusedPig=ArmedPawn->FocusedHousePigForInteraction();
+        if (FocusedPig || (HeldPig && !ArmedPawn->FocusedDoorForInteraction()))
+        {
+            const FString Prompt=HeldPig
+                ? HeldPig->IsPlacing()?FString::Printf(TEXT("PLACING %s..."),*HeldPig->PigName.ToUpper())
+                : HeldPig->GetCarryBlend()<.995f?FString::Printf(TEXT("LIFTING %s..."),*HeldPig->PigName.ToUpper())
+                : FString::Printf(TEXT("E  PLACE %s ON FLOOR"),*HeldPig->PigName.ToUpper())
+                : FString::Printf(TEXT("E  PICK UP %s"),*FocusedPig->PigName.ToUpper());
+            DrawRect(Ink,W*.5f-142*S,H*.5f+25*S,284*S,32*S);
+            Text(Prompt,W*.5f-129*S,H*.5f+29*S,Gold,.85f);
+        }
+    }
+    if (ArmedPawn)
+        if (AHousePokerTable* Table = ArmedPawn->FocusedHousePokerTable())
+        {
+            const float PromptX = W*.5f-150*S;
+            const bool bShowHand = Table->HasHand() && !Table->IsDealing();
+            DrawRect(Ink, PromptX, H*.5f+25*S, 300*S, (bShowHand ? 62.f : 32.f)*S);
+            Text(Table->InteractionPrompt(), PromptX+14*S, H*.5f+29*S, Gold, .9f);
+            if (bShowHand) Text(Table->HandName(), PromptX+14*S, H*.5f+57*S, FLinearColor::White, .88f);
+        }
+    if (ArmedPawn && PlayerOwner && !PlayerOwner->bShowMouseCursor)
+    {
+        FName PortalId;
+        if (AHouseVentNetwork* Vent = ArmedPawn->FocusedVentNetwork(PortalId))
+        {
+            const FString Prompt = Vent->IsInDuct(ArmedPawn)
+                ? FString::Printf(TEXT("E  EXIT TO %s"), *Vent->PortalDisplayName(PortalId).ToUpper())
+                : ArmedPawn->CanStartCrawl() ? TEXT("E  ENTER VENT")
+                : TEXT("SET DOWN ITEM TO ENTER VENT");
+            DrawRect(Ink, W*.5f-185*S, H*.5f+25*S, 370*S, 32*S);
+            Text(Prompt, W*.5f-172*S, H*.5f+29*S, Gold, .82f);
+        }
+    }
+    if (ArmedPawn && PlayerOwner && !PlayerOwner->bShowMouseCursor)
+    {
+        bool bUpper=false;
+        AHouseClubPole* Pole=ArmedPawn->FocusedClubPole(bUpper);
+        const FString Prompt=ArmedPawn->ClubPoleJourney.Pole
+            ? ArmedPawn->ClubPoleJourney.bClimbing ? TEXT("CLIMBING UP...") : TEXT("SLIDING DOWN...")
+            : Pole ? Pole->FocusLabel(ArmedPawn) : FString();
+        if (!Prompt.IsEmpty())
+        {
+            float PW=0,PH=0; GetTextSize(Prompt,PW,PH,GEngine->GetMediumFont(),S*.85f);
+            DrawRect(Ink,W*.5f-PW*.5f-14*S,H*.5f+25*S,PW+28*S,32*S);
+            Text(Prompt,W*.5f-PW*.5f,H*.5f+29*S,Gold,.85f);
+        }
     }
     if (ArmedPawn && (ArmedPawn->Douli || ArmedPawn->SaucePacket))
     {
-        DrawRect(Ink,18*S,H-60*S,340*S,40*S);
-        Text(ArmedPawn->SaucePacket?ArmedPawn->SaucePacket->StatusText():ArmedPawn->Douli->StatusText(),30*S,H-49*S,Gold,.85f);
         DrawLine(W*.5f-5,H*.5f,W*.5f+5,H*.5f,FLinearColor::White);
         DrawLine(W*.5f,H*.5f-5,W*.5f,H*.5f+5,FLinearColor::White);
+        if(!ArmedPawn->CarriedHousePig())
+        {
+        DrawRect(Ink,18*S,H-60*S,340*S,40*S);
+        Text(ArmedPawn->SaucePacket?ArmedPawn->SaucePacket->StatusText():ArmedPawn->Douli->StatusText(),30*S,H-49*S,Gold,.85f);
 #if PLATFORM_IOS || PLATFORM_ANDROID
         DrawRect(Ink,W-150*S,H-100*S,130*S,65*S);
         Text(TEXT("THROW"),W-125*S,H-79*S,Gold);
 #endif
+        }
     }
     if (GetWorld()->GetTimeSeconds() < Story->StatusUntil)
     {
@@ -978,9 +2133,21 @@ void AStoryHUD::DrawHUD()
         if(bThrowTouch && !bThrowTouchPressed && ArmedPawn && (ArmedPawn->Douli || ArmedPawn->SaucePacket)) ArmedPawn->ServerThrowEquippedWeapon();
         bThrowTouchPressed=bThrowTouch;
         PlayerOwner->GetInputTouchState(ETouchIndex::Touch1, X, Y, Pressed);
+        const bool bMaskTouch = Pressed;
         if (!Pressed) { PlayerOwner->GetMousePosition(X,Y); Pressed = PlayerOwner->IsInputKeyDown(EKeys::LeftMouseButton); }
         if (Pressed && !bWasPressed)
         {
+            if (ArmedPawn && ArmedPawn->bHasHouseMask &&
+                X>=W-100*S && X<=W-24*S && Y>=72*S && Y<=160*S &&
+                (PlayerOwner->bShowMouseCursor || bMaskTouch))
+            {
+                if (ASeniorLobbyController* PC=Cast<ASeniorLobbyController>(PlayerOwner);
+                    !PC || !PC->IsPauseMenuOpen())
+                {
+                    ArmedPawn->ToggleHouseMask();
+                    if (PC && PC->bShowMouseCursor) PC->ToggleEquipmentCursor();
+                }
+            }
             if (ArmedPawn && (ArmedPawn->Douli || ArmedPawn->SaucePacket) && X>=W-150*S && Y>=H-100*S && X<=W-20*S && Y<=H-35*S)
                 ArmedPawn->ServerThrowEquippedWeapon();
             if (X >= BX && X <= BX+BW && Y >= 18*S && Y <= 18*S+BH)

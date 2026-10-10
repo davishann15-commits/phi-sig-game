@@ -1,0 +1,4 @@
+Requested: Move the front road away from Chapter01_House to increase the front lawn.
+Implementation: 1200 world cm front street setback; move road paint, both sidewalks/curbs, street lights/parking, and opposite street frontage together; extend driveway connections and centered concrete approach; restore walkable grass where the old road was.
+Protected: house location and dimensions, rooms, front doors, concrete landing/steps, rear court and porch, interior gameplay; Unreal only.
+Acceptance: rendered front lawn and displaced road; supported grass in old road strip; normal walking between porch, lawn, sidewalk, road and both extended driveway connections; unchanged protected file hashes.

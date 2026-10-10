@@ -1,0 +1,1461 @@
+{
+  "coordinateSystem": "Blender metres -> Unreal cm [100X,-100Y,100Z]. Furniture front Unreal+Y; back Unreal-Y.",
+  "assets": [
+    {
+      "name": "SM_NCL_SectionalMain",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalMain.fbx",
+      "stage": 0,
+      "triangles": 20200,
+      "vertices": 10194,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -175.0,
+          -47.50000238418579,
+          0.0
+        ],
+        [
+          175.0,
+          47.94999957084656,
+          87.99999952316284
+        ]
+      ],
+      "dimensionsCm": [
+        350.0,
+        95.45000195503235,
+        87.99999952316284
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 3,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            22
+          ],
+          [
+            175,
+            47.5,
+            22
+          ]
+        ],
+        [
+          [
+            4,
+            -36.5,
+            61
+          ],
+          [
+            171,
+            11,
+            27
+          ]
+        ],
+        [
+          [
+            -166,
+            0,
+            49.5
+          ],
+          [
+            9,
+            47.5,
+            26.5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalMain_Damaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalMain_Damaged.fbx",
+      "stage": 1,
+      "triangles": 20184,
+      "vertices": 10186,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_SplinterWood",
+        "M_NCL_ExposedFoam",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -175.0,
+          -47.50000238418579,
+          0.0
+        ],
+        [
+          175.0,
+          47.94999957084656,
+          87.99999952316284
+        ]
+      ],
+      "dimensionsCm": [
+        350.0,
+        95.45000195503235,
+        87.99999952316284
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 3,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            22
+          ],
+          [
+            175,
+            47.5,
+            22
+          ]
+        ],
+        [
+          [
+            4,
+            -36.5,
+            61
+          ],
+          [
+            171,
+            11,
+            27
+          ]
+        ],
+        [
+          [
+            -166,
+            0,
+            49.5
+          ],
+          [
+            9,
+            47.5,
+            26.5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalMain_HeavilyDamaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalMain_HeavilyDamaged.fbx",
+      "stage": 2,
+      "triangles": 20026,
+      "vertices": 10107,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_SplinterWood",
+        "M_NCL_ExposedFoam",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -175.0,
+          -47.50000238418579,
+          0.0
+        ],
+        [
+          175.0,
+          47.94999957084656,
+          87.99999952316284
+        ]
+      ],
+      "dimensionsCm": [
+        350.0,
+        95.45000195503235,
+        87.99999952316284
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 3,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            22
+          ],
+          [
+            175,
+            47.5,
+            22
+          ]
+        ],
+        [
+          [
+            4,
+            -36.5,
+            61
+          ],
+          [
+            171,
+            11,
+            27
+          ]
+        ],
+        [
+          [
+            -166,
+            0,
+            49.5
+          ],
+          [
+            9,
+            47.5,
+            26.5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalMain_Broken",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalMain_Broken.fbx",
+      "stage": 3,
+      "triangles": 16142,
+      "vertices": 8131,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_SplinterWood",
+        "M_NCL_ExposedFoam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -176.99999809265137,
+          -49.50000047683716,
+          0.0
+        ],
+        [
+          168.75208616256714,
+          49.50000047683716,
+          29.218989610671997
+        ]
+      ],
+      "dimensionsCm": [
+        345.75209617614746,
+        99.00000095367432,
+        29.218989610671997
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": "Ground-rested wreck bounds"
+    },
+    {
+      "name": "SM_NCL_SectionalChaise",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalChaise.fbx",
+      "stage": 0,
+      "triangles": 9296,
+      "vertices": 4702,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -44.999998807907104,
+          -104.99999523162842,
+          0.0
+        ],
+        [
+          45.00000178813934,
+          104.99999523162842,
+          87.99999952316284
+        ]
+      ],
+      "dimensionsCm": [
+        89.99999761581421,
+        209.99999046325684,
+        87.99999952316284
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 3,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            22
+          ],
+          [
+            45,
+            105,
+            22
+          ]
+        ],
+        [
+          [
+            0,
+            -94,
+            61
+          ],
+          [
+            45,
+            11,
+            27
+          ]
+        ],
+        [
+          [
+            36,
+            -57.5,
+            49.5
+          ],
+          [
+            9,
+            47.5,
+            26.5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalChaise_Damaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalChaise_Damaged.fbx",
+      "stage": 1,
+      "triangles": 9326,
+      "vertices": 4717,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_SplinterWood",
+        "M_NCL_ExposedFoam",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -44.999998807907104,
+          -104.99999523162842,
+          0.0
+        ],
+        [
+          45.00000178813934,
+          104.99999523162842,
+          87.99999952316284
+        ]
+      ],
+      "dimensionsCm": [
+        89.99999761581421,
+        209.99999046325684,
+        87.99999952316284
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 3,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            22
+          ],
+          [
+            45,
+            105,
+            22
+          ]
+        ],
+        [
+          [
+            0,
+            -94,
+            61
+          ],
+          [
+            45,
+            11,
+            27
+          ]
+        ],
+        [
+          [
+            36,
+            -57.5,
+            49.5
+          ],
+          [
+            9,
+            47.5,
+            26.5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalChaise_HeavilyDamaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalChaise_HeavilyDamaged.fbx",
+      "stage": 2,
+      "triangles": 9110,
+      "vertices": 4609,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_SplinterWood",
+        "M_NCL_ExposedFoam",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -44.999998807907104,
+          -104.99999523162842,
+          0.0
+        ],
+        [
+          45.00000178813934,
+          104.99999523162842,
+          87.99999952316284
+        ]
+      ],
+      "dimensionsCm": [
+        89.99999761581421,
+        209.99999046325684,
+        87.99999952316284
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 3,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            22
+          ],
+          [
+            45,
+            105,
+            22
+          ]
+        ],
+        [
+          [
+            0,
+            -94,
+            61
+          ],
+          [
+            45,
+            11,
+            27
+          ]
+        ],
+        [
+          [
+            36,
+            -57.5,
+            49.5
+          ],
+          [
+            9,
+            47.5,
+            26.5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalChaise_Broken",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SectionalChaise_Broken.fbx",
+      "stage": 3,
+      "triangles": 8302,
+      "vertices": 4197,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_SplinterWood",
+        "M_NCL_ExposedFoam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -46.99999988079071,
+          -107.00000524520874,
+          0.0
+        ],
+        [
+          46.99999988079071,
+          107.00000524520874,
+          32.81809091567993
+        ]
+      ],
+      "dimensionsCm": [
+        93.99999976158142,
+        214.00001049041748,
+        32.81809091567993
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": "Ground-rested wreck bounds"
+    },
+    {
+      "name": "SM_NCL_CoffeeTable",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_CoffeeTable.fbx",
+      "stage": 0,
+      "triangles": 5008,
+      "vertices": 2558,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -44.999998807907104,
+          -25.0,
+          0.0
+        ],
+        [
+          44.999998807907104,
+          25.0,
+          38.08181881904602
+        ]
+      ],
+      "dimensionsCm": [
+        89.99999761581421,
+        50.0,
+        38.08181881904602
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 2,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            16.0
+          ],
+          [
+            45.0,
+            25.0,
+            16.0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            35.199999999999996
+          ],
+          [
+            45.0,
+            25.0,
+            2.8
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_CoffeeTable_Damaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_CoffeeTable_Damaged.fbx",
+      "stage": 1,
+      "triangles": 5000,
+      "vertices": 2554,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_SplinterWood",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -44.999998807907104,
+          -25.0,
+          0.0
+        ],
+        [
+          44.999998807907104,
+          25.0,
+          38.08181881904602
+        ]
+      ],
+      "dimensionsCm": [
+        89.99999761581421,
+        50.0,
+        38.08181881904602
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 2,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            16.0
+          ],
+          [
+            45.0,
+            25.0,
+            16.0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            35.199999999999996
+          ],
+          [
+            45.0,
+            25.0,
+            2.8
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_CoffeeTable_HeavilyDamaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_CoffeeTable_HeavilyDamaged.fbx",
+      "stage": 2,
+      "triangles": 5000,
+      "vertices": 2554,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_SplinterWood",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -44.999998807907104,
+          -25.0,
+          0.0
+        ],
+        [
+          44.999998807907104,
+          25.0,
+          38.08181881904602
+        ]
+      ],
+      "dimensionsCm": [
+        89.99999761581421,
+        50.0,
+        38.08181881904602
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 2,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            16.0
+          ],
+          [
+            45.0,
+            25.0,
+            16.0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            35.199999999999996
+          ],
+          [
+            45.0,
+            25.0,
+            2.8
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_CoffeeTable_Broken",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_CoffeeTable_Broken.fbx",
+      "stage": 3,
+      "triangles": 5344,
+      "vertices": 2730,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_SplinterWood",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -46.99999988079071,
+          -27.000001072883606,
+          0.0
+        ],
+        [
+          46.99999988079071,
+          27.000001072883606,
+          5.6450702250003815
+        ]
+      ],
+      "dimensionsCm": [
+        93.99999976158142,
+        54.00000214576721,
+        5.6450702250003815
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": "Ground-rested wreck bounds"
+    },
+    {
+      "name": "SM_NCL_SideTable",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SideTable.fbx",
+      "stage": 0,
+      "triangles": 5008,
+      "vertices": 2558,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -20.999999344348907,
+          -20.999999344348907,
+          0.0
+        ],
+        [
+          20.999999344348907,
+          20.999999344348907,
+          56.08181357383728
+        ]
+      ],
+      "dimensionsCm": [
+        41.999998688697815,
+        41.999998688697815,
+        56.08181357383728
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 2,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            25.0
+          ],
+          [
+            21.0,
+            21.0,
+            25.0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            53.2
+          ],
+          [
+            21.0,
+            21.0,
+            2.8
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SideTable_Damaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SideTable_Damaged.fbx",
+      "stage": 1,
+      "triangles": 5068,
+      "vertices": 2588,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_SplinterWood",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -20.999999344348907,
+          -20.999999344348907,
+          0.0
+        ],
+        [
+          20.999999344348907,
+          20.999999344348907,
+          56.08181357383728
+        ]
+      ],
+      "dimensionsCm": [
+        41.999998688697815,
+        41.999998688697815,
+        56.08181357383728
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 2,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            25.0
+          ],
+          [
+            21.0,
+            21.0,
+            25.0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            53.2
+          ],
+          [
+            21.0,
+            21.0,
+            2.8
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SideTable_HeavilyDamaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SideTable_HeavilyDamaged.fbx",
+      "stage": 2,
+      "triangles": 5026,
+      "vertices": 2567,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_SplinterWood",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -20.999999344348907,
+          -20.999999344348907,
+          0.0
+        ],
+        [
+          20.999999344348907,
+          20.999999344348907,
+          56.08181357383728
+        ]
+      ],
+      "dimensionsCm": [
+        41.999998688697815,
+        41.999998688697815,
+        56.08181357383728
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 2,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            25.0
+          ],
+          [
+            21.0,
+            21.0,
+            25.0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            53.2
+          ],
+          [
+            21.0,
+            21.0,
+            2.8
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_SideTable_Broken",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_SideTable_Broken.fbx",
+      "stage": 3,
+      "triangles": 5024,
+      "vertices": 2566,
+      "materials": [
+        "M_NCL_Walnut",
+        "M_NCL_SplinterWood",
+        "M_NCL_WalnutGrain",
+        "M_NC_PowderCoat",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber"
+      ],
+      "boundsUnrealCm": [
+        [
+          -23.000000417232513,
+          -23.000000417232513,
+          0.0
+        ],
+        [
+          23.000000417232513,
+          23.000000417232513,
+          5.660860612988472
+        ]
+      ],
+      "dimensionsCm": [
+        46.00000083446503,
+        46.00000083446503,
+        5.660860612988472
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": "Ground-rested wreck bounds"
+    },
+    {
+      "name": "SM_NCL_Ottoman",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_Ottoman.fbx",
+      "stage": 0,
+      "triangles": 3092,
+      "vertices": 1584,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -32.499998807907104,
+          -32.499998807907104,
+          0.0
+        ],
+        [
+          32.499998807907104,
+          32.499998807907104,
+          48.28999936580658
+        ]
+      ],
+      "dimensionsCm": [
+        64.99999761581421,
+        64.99999761581421,
+        48.28999936580658
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            24
+          ],
+          [
+            32.5,
+            32.5,
+            24
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_Ottoman_Damaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_Ottoman_Damaged.fbx",
+      "stage": 1,
+      "triangles": 3162,
+      "vertices": 1619,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_ExposedFoam",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -32.499998807907104,
+          -32.499998807907104,
+          0.0
+        ],
+        [
+          32.499998807907104,
+          32.499998807907104,
+          48.28999936580658
+        ]
+      ],
+      "dimensionsCm": [
+        64.99999761581421,
+        64.99999761581421,
+        48.28999936580658
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            24
+          ],
+          [
+            32.5,
+            32.5,
+            24
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_Ottoman_HeavilyDamaged",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_Ottoman_HeavilyDamaged.fbx",
+      "stage": 2,
+      "triangles": 3080,
+      "vertices": 1578,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_ExposedFoam",
+        "M_NC_BlackLeatherSeam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -32.499998807907104,
+          -32.499998807907104,
+          0.0
+        ],
+        [
+          32.499998807907104,
+          32.499998807907104,
+          48.28999936580658
+        ]
+      ],
+      "dimensionsCm": [
+        64.99999761581421,
+        64.99999761581421,
+        48.28999936580658
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            24
+          ],
+          [
+            32.5,
+            32.5,
+            24
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_Ottoman_Broken",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_Ottoman_Broken.fbx",
+      "stage": 3,
+      "triangles": 2850,
+      "vertices": 1457,
+      "materials": [
+        "M_NC_BrushedAluminium",
+        "M_NCL_RawMetal",
+        "M_NC_Rubber",
+        "M_NC_SoftBlackLeather",
+        "M_NCL_ExposedFoam"
+      ],
+      "boundsUnrealCm": [
+        [
+          -32.988911867141724,
+          -34.49999988079071,
+          0.0
+        ],
+        [
+          32.108598947525024,
+          34.49999988079071,
+          49.302950501441956
+        ]
+      ],
+      "dimensionsCm": [
+        65.09751081466675,
+        68.99999976158142,
+        49.302950501441956
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": "Ground-rested wreck bounds"
+    },
+    {
+      "name": "SM_NCL_PillowPlum",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_PillowPlum.fbx",
+      "stage": 0,
+      "triangles": 4756,
+      "vertices": 2522,
+      "materials": [
+        "M_NCL_PlushPlum",
+        "M_NCL_PillowThread"
+      ],
+      "boundsUnrealCm": [
+        [
+          -23.21000099182129,
+          -23.148493468761444,
+          0.5499999970197678
+        ],
+        [
+          23.148493468761444,
+          23.21000099182129,
+          10.949999839067459
+        ]
+      ],
+      "dimensionsCm": [
+        46.35849595069885,
+        46.35849595069885,
+        10.400000214576721
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            5.75
+          ],
+          [
+            23,
+            23,
+            5.75
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_NCL_PillowTeal",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/lounge_refit/models/SM_NCL_PillowTeal.fbx",
+      "stage": 0,
+      "triangles": 4756,
+      "vertices": 2522,
+      "materials": [
+        "M_NCL_PlushTeal",
+        "M_NCL_PillowThread"
+      ],
+      "boundsUnrealCm": [
+        [
+          -23.21000099182129,
+          -23.148493468761444,
+          0.5499999970197678
+        ],
+        [
+          23.148493468761444,
+          23.21000099182129,
+          10.949999839067459
+        ]
+      ],
+      "dimensionsCm": [
+        46.35849595069885,
+        46.35849595069885,
+        10.400000214576721
+      ],
+      "origin": "Furniture floor center local0; rootscale1. Pillows horizontal grounded pivot.",
+      "collision": "Embedded UCX convex simple collision; never complex-as-simple on moving furniture.",
+      "collisionHullCount": 1,
+      "collisionBoxesUnrealCm": [
+        [
+          [
+            0,
+            0,
+            5.75
+          ],
+          [
+            23,
+            23,
+            5.75
+          ]
+        ]
+      ]
+    }
+  ],
+  "materials": {
+    "M_NC_SoftBlackLeather": {
+      "color": [
+        0.018,
+        0.022,
+        0.027
+      ],
+      "roughness": 0.38,
+      "metallic": 0.02,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather"
+    },
+    "M_NC_BlackLeatherSeam": {
+      "color": [
+        0.006,
+        0.008,
+        0.01
+      ],
+      "roughness": 0.66,
+      "metallic": 0,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam"
+    },
+    "M_NC_BrushedAluminium": {
+      "color": [
+        0.28,
+        0.31,
+        0.37
+      ],
+      "roughness": 0.25,
+      "metallic": 0.95,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium"
+    },
+    "M_NC_PowderCoat": {
+      "color": [
+        0.009,
+        0.011,
+        0.019
+      ],
+      "roughness": 0.48,
+      "metallic": 0.52,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat"
+    },
+    "M_NC_Rubber": {
+      "color": [
+        0.005,
+        0.006,
+        0.008
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber"
+    },
+    "M_NCL_Walnut": {
+      "color": [
+        0.055,
+        0.025,
+        0.014
+      ],
+      "roughness": 0.46,
+      "metallic": 0
+    },
+    "M_NCL_WalnutGrain": {
+      "color": [
+        0.025,
+        0.012,
+        0.009
+      ],
+      "roughness": 0.6,
+      "metallic": 0
+    },
+    "M_NCL_ExposedFoam": {
+      "color": [
+        0.38,
+        0.29,
+        0.15
+      ],
+      "roughness": 0.99,
+      "metallic": 0
+    },
+    "M_NCL_SplinterWood": {
+      "color": [
+        0.28,
+        0.17,
+        0.075
+      ],
+      "roughness": 0.96,
+      "metallic": 0
+    },
+    "M_NCL_RawMetal": {
+      "color": [
+        0.15,
+        0.16,
+        0.18
+      ],
+      "roughness": 0.72,
+      "metallic": 0.7
+    },
+    "M_NCL_PlushPlum": {
+      "color": [
+        0.08,
+        0.012,
+        0.035
+      ],
+      "roughness": 0.82,
+      "metallic": 0
+    },
+    "M_NCL_PlushTeal": {
+      "color": [
+        0.013,
+        0.05,
+        0.058
+      ],
+      "roughness": 0.83,
+      "metallic": 0
+    },
+    "M_NCL_PillowThread": {
+      "color": [
+        0.1,
+        0.12,
+        0.13
+      ],
+      "roughness": 0.9,
+      "metallic": 0
+    }
+  },
+  "props": {
+    "SM_NCL_SectionalMain": {
+      "meshes": {
+        "intact": "SM_NCL_SectionalMain",
+        "damaged": "SM_NCL_SectionalMain_Damaged",
+        "heavily_damaged": "SM_NCL_SectionalMain_HeavilyDamaged",
+        "broken": "SM_NCL_SectionalMain_Broken"
+      },
+      "massKg": 85,
+      "breakHealth": 73.25,
+      "origin": "Floor-center local0",
+      "collision": "Use embedded UCX hulls. Both sectional modules are independent heavy interactive props."
+    },
+    "SM_NCL_SectionalChaise": {
+      "meshes": {
+        "intact": "SM_NCL_SectionalChaise",
+        "damaged": "SM_NCL_SectionalChaise_Damaged",
+        "heavily_damaged": "SM_NCL_SectionalChaise_HeavilyDamaged",
+        "broken": "SM_NCL_SectionalChaise_Broken"
+      },
+      "massKg": 60,
+      "breakHealth": 57.0,
+      "origin": "Floor-center local0",
+      "collision": "Use embedded UCX hulls. Both sectional modules are independent heavy interactive props."
+    },
+    "SM_NCL_CoffeeTable": {
+      "meshes": {
+        "intact": "SM_NCL_CoffeeTable",
+        "damaged": "SM_NCL_CoffeeTable_Damaged",
+        "heavily_damaged": "SM_NCL_CoffeeTable_HeavilyDamaged",
+        "broken": "SM_NCL_CoffeeTable_Broken"
+      },
+      "massKg": 19,
+      "breakHealth": 30.35,
+      "origin": "Floor-center local0",
+      "collision": "Use embedded UCX hulls. Both sectional modules are independent heavy interactive props."
+    },
+    "SM_NCL_SideTable": {
+      "meshes": {
+        "intact": "SM_NCL_SideTable",
+        "damaged": "SM_NCL_SideTable_Damaged",
+        "heavily_damaged": "SM_NCL_SideTable_HeavilyDamaged",
+        "broken": "SM_NCL_SideTable_Broken"
+      },
+      "massKg": 12,
+      "breakHealth": 25.8,
+      "origin": "Floor-center local0",
+      "collision": "Use embedded UCX hulls. Both sectional modules are independent heavy interactive props."
+    },
+    "SM_NCL_Ottoman": {
+      "meshes": {
+        "intact": "SM_NCL_Ottoman",
+        "damaged": "SM_NCL_Ottoman_Damaged",
+        "heavily_damaged": "SM_NCL_Ottoman_HeavilyDamaged",
+        "broken": "SM_NCL_Ottoman_Broken"
+      },
+      "massKg": 16,
+      "breakHealth": 28.4,
+      "origin": "Floor-center local0",
+      "collision": "Use embedded UCX hulls. Both sectional modules are independent heavy interactive props."
+    },
+    "SM_NCL_PillowPlum": {
+      "meshes": {
+        "intact": "SM_NCL_PillowPlum"
+      },
+      "massKg": 0.7,
+      "breakHealth": 18.455,
+      "origin": "Floor-center local0",
+      "collision": "Use embedded UCX hulls. Both sectional modules are independent heavy interactive props."
+    },
+    "SM_NCL_PillowTeal": {
+      "meshes": {
+        "intact": "SM_NCL_PillowTeal"
+      },
+      "massKg": 0.7,
+      "breakHealth": 18.455,
+      "origin": "Floor-center local0",
+      "collision": "Use embedded UCX hulls. Both sectional modules are independent heavy interactive props."
+    }
+  },
+  "placementScale": 1,
+  "notes": [
+    "Grounded furniture origins local0, all stages keep same origin.",
+    "Main right edge joins chaise left edge, exact rear-aligned placement in manifest.",
+    "UCX hulls embedded in each FBX. Import simple collision, do not replace with complex-as-simple.",
+    "Damage uses capped rigid cuts, exposed foam/wood, loosened backs, final floor-rested recognizable wreck."
+  ],
+  "sectional": {
+    "main": {
+      "name": "SM_NCL_SectionalMain",
+      "placementWorldCm": [
+        -1850,
+        -1440,
+        333.1
+      ],
+      "widthCm": 350,
+      "depthCm": 95,
+      "heightCm": 88,
+      "seatHeightCm": 44,
+      "joiningEdge": "+X"
+    },
+    "chaise": {
+      "name": "SM_NCL_SectionalChaise",
+      "placementWorldCm": [
+        -1630,
+        -1382.5,
+        333.1
+      ],
+      "widthCm": 90,
+      "depthCm": 210,
+      "heightCm": 88,
+      "seatHeightCm": 44,
+      "joiningEdge": "-X rear95cm"
+    },
+    "yaw": 0,
+    "backRearYWorldCm": -1487.5,
+    "joinWorldXcm": -1675
+  }
+}

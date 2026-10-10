@@ -1,0 +1,1738 @@
+{
+  "schema": "pigsty-room-props-1",
+  "assetRoot": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props",
+  "units": "Unreal centimetres",
+  "blenderUnits": "numeric centimetres, scale_length0.01",
+  "exportAxisForward": "-Y",
+  "exportAxisUp": "Z",
+  "axisConversionNote": "Numeric sourcecm, scene.scale_length0.01 and apply_unit_scaleTrue/FBX_SCALE_UNITS produce FBX unitfactor1, verified by Blender importer scale100. UE importscale1 with nativeYreflection. Mattress/Cheeto are centeredXY and bottomZ0. Wallvent/lamp face source-Y, expected UE+Y; rotate actor180degrees to face-Y if placednorthwall.",
+  "meshes": [
+    {
+      "name": "PIG_SM_Mattress",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_Mattress.fbx",
+      "purpose": "Old stained cream tufted torn mattress directly on floor; curved binding, sagged corners, curled fabric tears. NoCollision visual; root can box collide separately.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -100.0,
+          -70.000002,
+          0.0
+        ],
+        "max": [
+          100.0,
+          70.000002,
+          20.999997
+        ],
+        "size": [
+          200.0,
+          140.000004,
+          20.999997
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 6377,
+      "materials": [
+        "PIG_M_MattressFabric",
+        "PIG_M_MattressSide",
+        "PIG_M_Binding"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 6377,
+      "materialSlots": [
+        "PIG_M_MattressFabric",
+        "PIG_M_MattressSide",
+        "PIG_M_Binding"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -100.0,
+          -70.0,
+          0.0
+        ],
+        "max": [
+          100.0,
+          70.0,
+          21.0
+        ],
+        "size": [
+          200.0,
+          140.0,
+          21.0
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -100.0,
+          -70.000002,
+          0.0
+        ],
+        "max": [
+          100.0,
+          70.000002,
+          20.999997
+        ],
+        "size": [
+          200.0,
+          140.000004,
+          20.999997
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -100.0,
+          -70.000002,
+          0.0
+        ],
+        "max": [
+          100.0,
+          70.000002,
+          20.999997
+        ],
+        "size": [
+          200.0,
+          140.000004,
+          20.999997
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_Mattress_COL",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_Mattress_COL.fbx",
+      "purpose": "Optional mattress hidden box collision source",
+      "collision": "HiddenCollider",
+      "boundsCm": {
+        "min": [
+          -97.0,
+          -67.000002,
+          0.0
+        ],
+        "max": [
+          97.0,
+          67.000002,
+          18.399997
+        ],
+        "size": [
+          194.0,
+          134.000004,
+          18.399997
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 12,
+      "materials": [
+        "PIG_M_DarkMetal"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "collisionMesh": true,
+      "triangleCount": 12,
+      "materialSlots": [
+        "PIG_M_DarkMetal"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -97.0,
+          -67.0,
+          0.0
+        ],
+        "max": [
+          97.0,
+          67.0,
+          18.399999618530273
+        ],
+        "size": [
+          194.0,
+          134.0,
+          18.399999618530273
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -97.0,
+          -67.000002,
+          0.0
+        ],
+        "max": [
+          97.0,
+          67.000002,
+          18.399997
+        ],
+        "size": [
+          194.0,
+          134.000004,
+          18.399997
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -97.0,
+          -67.000002,
+          0.0
+        ],
+        "max": [
+          97.0,
+          67.000002,
+          18.399997
+        ],
+        "size": [
+          194.0,
+          134.000004,
+          18.399997
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_Blanket",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_Blanket.fbx",
+      "purpose": "Separate thin folded grimy blanket; place above mattress, preferably foot end X-49,Y0,Z22.5.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -46.0,
+          -37.006488,
+          -0.544677
+        ],
+        "max": [
+          46.0,
+          32.000003,
+          2.478095
+        ],
+        "size": [
+          92.0,
+          69.006491,
+          3.022772
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 2472,
+      "materials": [
+        "PIG_M_Blanket"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 2472,
+      "materialSlots": [
+        "PIG_M_Blanket"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -46.0,
+          -32.0,
+          -0.5446767210960388
+        ],
+        "max": [
+          46.0,
+          37.00648498535156,
+          2.4780948162078857
+        ],
+        "size": [
+          92.0,
+          69.00648498535156,
+          3.0227715373039246
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -46.0,
+          -32.000003,
+          -0.544677
+        ],
+        "max": [
+          46.0,
+          37.006488,
+          2.478095
+        ],
+        "size": [
+          92.0,
+          69.006491,
+          3.022772
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -46.0,
+          -37.006488,
+          -0.544677
+        ],
+        "max": [
+          46.0,
+          32.000003,
+          2.478095
+        ],
+        "size": [
+          92.0,
+          69.006491,
+          3.022772
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_Cheeto",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_Cheeto.fbx",
+      "purpose": "Runtime reusable edible Cheeto; X length5cm,Y width1.6,Z height1.6,bottomZ0, centerXY0.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -2.5,
+          -0.8,
+          0.0
+        ],
+        "max": [
+          2.5,
+          0.8,
+          1.6
+        ],
+        "size": [
+          5.0,
+          1.6,
+          1.6
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 212,
+      "materials": [
+        "PIG_M_Cheeto"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 212,
+      "materialSlots": [
+        "PIG_M_Cheeto"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -2.5,
+          -0.800000011920929,
+          0.0
+        ],
+        "max": [
+          2.5,
+          0.800000011920929,
+          1.600000023841858
+        ],
+        "size": [
+          5.0,
+          1.600000023841858,
+          1.600000023841858
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -2.5,
+          -0.8,
+          0.0
+        ],
+        "max": [
+          2.5,
+          0.8,
+          1.6
+        ],
+        "size": [
+          5.0,
+          1.6,
+          1.6
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -2.5,
+          -0.8,
+          0.0
+        ],
+        "max": [
+          2.5,
+          0.8,
+          1.6
+        ],
+        "size": [
+          5.0,
+          1.6,
+          1.6
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_CheetosBag",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/revised/PIG_SM_CheetosBag.fbx",
+      "purpose": "Opened crumpled Cheetos bag with readable orange/yellow/black front label. Runtime agent scatters edible Cheetos separately. No static edible duplicates.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -11.05,
+          -5.1609,
+          -0.192279
+        ],
+        "max": [
+          11.05,
+          5.160903,
+          28.074796
+        ],
+        "size": [
+          22.1,
+          10.321803,
+          28.267075
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 1544,
+      "materials": [
+        "PIG_M_CheetosBag",
+        "PIG_M_BagFoil"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 1544,
+      "materialSlots": [
+        "PIG_M_CheetosBag",
+        "PIG_M_BagFoil"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -11.050000190734863,
+          -5.16090202331543,
+          -0.19227950274944305
+        ],
+        "max": [
+          11.050000190734863,
+          5.16090202331543,
+          28.074798583984375
+        ],
+        "size": [
+          22.100000381469727,
+          10.32180404663086,
+          28.267078086733818
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -11.05,
+          -5.160903,
+          -0.192279
+        ],
+        "max": [
+          11.05,
+          5.1609,
+          28.074796
+        ],
+        "size": [
+          22.1,
+          10.321803,
+          28.267075
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -11.05,
+          -5.1609,
+          -0.192279
+        ],
+        "max": [
+          11.05,
+          5.160903,
+          28.074796
+        ],
+        "size": [
+          22.1,
+          10.321803,
+          28.267075
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "note": "Both outward bag label UVs readable; geometry unchanged"
+    },
+    {
+      "name": "PIG_SM_OrangeCrumbs",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_OrangeCrumbs.fbx",
+      "purpose": "Nonedible visual orange crumbs only; keep separate from runtime Cheeto pile.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -17.313908,
+          -12.550114,
+          -0.0653
+        ],
+        "max": [
+          15.182108,
+          12.805825,
+          0.386444
+        ],
+        "size": [
+          32.496016,
+          25.355939,
+          0.451744
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 480,
+      "materials": [
+        "PIG_M_Cheeto"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 480,
+      "materialSlots": [
+        "PIG_M_Cheeto"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -17.313907623291016,
+          -12.805826187133789,
+          -0.06529977917671204
+        ],
+        "max": [
+          15.182107925415039,
+          12.550110816955566,
+          0.3864439129829407
+        ],
+        "size": [
+          32.496015548706055,
+          25.355937004089355,
+          0.4517436921596527
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -17.313908,
+          -12.805825,
+          -0.0653
+        ],
+        "max": [
+          15.182108,
+          12.550114,
+          0.386444
+        ],
+        "size": [
+          32.496016,
+          25.355939,
+          0.451744
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -17.313908,
+          -12.550114,
+          -0.0653
+        ],
+        "max": [
+          15.182108,
+          12.805825,
+          0.386444
+        ],
+        "size": [
+          32.496016,
+          25.355939,
+          0.451744
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_WaterTrough",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_WaterTrough.fbx",
+      "purpose": "Hollow worn galvanized trough with dark dirty water; localfloororigin. Root can add box collider.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -70.0,
+          -23.000008,
+          -0.2
+        ],
+        "max": [
+          70.0,
+          23.000008,
+          34.000001
+        ],
+        "size": [
+          140.0,
+          46.000016,
+          34.200001
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 426,
+      "materials": [
+        "PIG_M_RustyMetal",
+        "PIG_M_DirtyWater",
+        "PIG_M_DarkMetal"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 426,
+      "materialSlots": [
+        "PIG_M_RustyMetal",
+        "PIG_M_DirtyWater",
+        "PIG_M_DarkMetal"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -70.0,
+          -23.0,
+          -0.20000001788139343
+        ],
+        "max": [
+          70.0,
+          23.0,
+          34.0
+        ],
+        "size": [
+          140.0,
+          46.0,
+          34.20000001788139
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -70.0,
+          -23.000008,
+          -0.2
+        ],
+        "max": [
+          70.0,
+          23.000008,
+          34.000001
+        ],
+        "size": [
+          140.0,
+          46.000016,
+          34.200001
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -70.0,
+          -23.000008,
+          -0.2
+        ],
+        "max": [
+          70.0,
+          23.000008,
+          34.000001
+        ],
+        "size": [
+          140.0,
+          46.000016,
+          34.200001
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_FeedBucket",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_FeedBucket.fbx",
+      "purpose": "Dirty upright feed bucket, old grain, raised bent wire handle. Bottom origin.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -17.0,
+          -17.0,
+          0.0
+        ],
+        "max": [
+          17.0,
+          17.0,
+          41.58
+        ],
+        "size": [
+          34.0,
+          34.0,
+          41.58
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 2384,
+      "materials": [
+        "PIG_M_RustyMetal",
+        "PIG_M_Feed",
+        "PIG_M_DarkMetal"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 2384,
+      "materialSlots": [
+        "PIG_M_RustyMetal",
+        "PIG_M_Feed",
+        "PIG_M_DarkMetal"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -17.0,
+          -17.0,
+          0.0
+        ],
+        "max": [
+          17.0,
+          17.0,
+          41.58000183105469
+        ],
+        "size": [
+          34.0,
+          34.0,
+          41.58000183105469
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -17.0,
+          -17.0,
+          0.0
+        ],
+        "max": [
+          17.0,
+          17.0,
+          41.58
+        ],
+        "size": [
+          34.0,
+          34.0,
+          41.58
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -17.0,
+          -17.0,
+          0.0
+        ],
+        "max": [
+          17.0,
+          17.0,
+          41.58
+        ],
+        "size": [
+          34.0,
+          34.0,
+          41.58
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_BrokenBoards",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_BrokenBoards.fbx",
+      "purpose": "Weathered boards with rust nails and loose floor splinters.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -70.387408,
+          -35.259016,
+          0.0
+        ],
+        "max": [
+          64.580724,
+          28.808127,
+          8.609999
+        ],
+        "size": [
+          134.968132,
+          64.067143,
+          8.609999
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 548,
+      "materials": [
+        "PIG_M_OldWood",
+        "PIG_M_DarkMetal"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 548,
+      "materialSlots": [
+        "PIG_M_OldWood",
+        "PIG_M_DarkMetal"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -70.38740539550781,
+          -28.808116912841797,
+          -1.1920928955078125e-07
+        ],
+        "max": [
+          64.58072662353516,
+          35.25901794433594,
+          8.60999870300293
+        ],
+        "size": [
+          134.96813201904297,
+          64.06713485717773,
+          8.60999882221222
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -70.387408,
+          -28.808127,
+          0.0
+        ],
+        "max": [
+          64.580724,
+          35.259016,
+          8.609999
+        ],
+        "size": [
+          134.968132,
+          64.067143,
+          8.609999
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -70.387408,
+          -35.259016,
+          0.0
+        ],
+        "max": [
+          64.580724,
+          28.808127,
+          8.609999
+        ],
+        "size": [
+          134.968132,
+          64.067143,
+          8.609999
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_StrawPatch",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_StrawPatch.fbx",
+      "purpose": "Sparse dirty straw floor clump; flat minimal fragments.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -41.11421,
+          -26.029156,
+          -0.041089
+        ],
+        "max": [
+          41.88629,
+          26.268087,
+          0.87058
+        ],
+        "size": [
+          83.0005,
+          52.297243,
+          0.911669
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 1300,
+      "materials": [
+        "PIG_M_Straw"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 1300,
+      "materialSlots": [
+        "PIG_M_Straw"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -41.11421203613281,
+          -26.26808738708496,
+          -0.04108916223049164
+        ],
+        "max": [
+          41.886287689208984,
+          26.02914810180664,
+          0.8705804347991943
+        ],
+        "size": [
+          83.0004997253418,
+          52.2972354888916,
+          0.911669597029686
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -41.11421,
+          -26.268087,
+          -0.041089
+        ],
+        "max": [
+          41.88629,
+          26.029156,
+          0.87058
+        ],
+        "size": [
+          83.0005,
+          52.297243,
+          0.911669
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -41.11421,
+          -26.029156,
+          -0.041089
+        ],
+        "max": [
+          41.88629,
+          26.268087,
+          0.87058
+        ],
+        "size": [
+          83.0005,
+          52.297243,
+          0.911669
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_WallVent",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_WallVent.fbx",
+      "purpose": "Grimy slatted industrial vent; originbottomcenter, face source-Y.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -32.0,
+          -2.500005,
+          0.0
+        ],
+        "max": [
+          32.0,
+          4.950004,
+          38.0
+        ],
+        "size": [
+          64.0,
+          7.450009,
+          38.0
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 1472,
+      "materials": [
+        "PIG_M_DarkMetal",
+        "PIG_M_RustyMetal"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 1472,
+      "materialSlots": [
+        "PIG_M_DarkMetal",
+        "PIG_M_RustyMetal"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -32.0,
+          -4.949999809265137,
+          0.0
+        ],
+        "max": [
+          32.0,
+          2.5,
+          38.0
+        ],
+        "size": [
+          64.0,
+          7.449999809265137,
+          38.0
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -32.0,
+          -4.950004,
+          0.0
+        ],
+        "max": [
+          32.0,
+          2.500005,
+          38.0
+        ],
+        "size": [
+          64.0,
+          7.450009,
+          38.0
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -32.0,
+          -2.500005,
+          0.0
+        ],
+        "max": [
+          32.0,
+          4.950004,
+          38.0
+        ],
+        "size": [
+          64.0,
+          7.450009,
+          38.0
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    },
+    {
+      "name": "PIG_SM_BulkheadLamp",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx/PIG_SM_BulkheadLamp.fbx",
+      "purpose": "Warm dirty industrial bulkhead lamp and metal cage; sourcefront-Y, root adds2700K point light if needed.",
+      "collision": "NoCollision",
+      "boundsCm": {
+        "min": [
+          -19.0,
+          -3.000002,
+          0.0
+        ],
+        "max": [
+          19.0,
+          7.7,
+          25.999999
+        ],
+        "size": [
+          38.0,
+          10.700002,
+          25.999999
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "triangles": 532,
+      "materials": [
+        "PIG_M_DarkMetal",
+        "PIG_M_LampGlass",
+        "PIG_M_RustyMetal"
+      ],
+      "suggestedLocalPose": {
+        "location": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "triangleCount": 532,
+      "materialSlots": [
+        "PIG_M_DarkMetal",
+        "PIG_M_LampGlass",
+        "PIG_M_RustyMetal"
+      ],
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "sourceBoundsCm": {
+        "min": [
+          -19.0,
+          -7.699999809265137,
+          0.0
+        ],
+        "max": [
+          19.0,
+          3.0,
+          26.0
+        ],
+        "size": [
+          38.0,
+          10.699999809265137,
+          26.0
+        ]
+      },
+      "boundsCmRoundtrip": {
+        "min": [
+          -19.0,
+          -7.7,
+          0.0
+        ],
+        "max": [
+          19.0,
+          3.000002,
+          25.999999
+        ],
+        "size": [
+          38.0,
+          10.700002,
+          25.999999
+        ]
+      },
+      "unrealBoundsCmIfYReflected": {
+        "min": [
+          -19.0,
+          -3.000002,
+          0.0
+        ],
+        "max": [
+          19.0,
+          7.7,
+          25.999999
+        ],
+        "size": [
+          38.0,
+          10.700002,
+          25.999999
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "PIG_M_MattressFabric",
+      "baseColor": [
+        0.6,
+        0.56,
+        0.45
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_MattressFabric.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_MattressFabric",
+        "Normal": "PIG_T_FabricNormal",
+        "Roughness": "PIG_T_FabricRoughness"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0.4
+    },
+    {
+      "name": "PIG_M_MattressSide",
+      "baseColor": [
+        0.52,
+        0.48,
+        0.38
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_MattressSide.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_MattressSide",
+        "Normal": "PIG_T_FabricNormal",
+        "Roughness": "PIG_T_FabricRoughness"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0.4
+    },
+    {
+      "name": "PIG_M_Binding",
+      "baseColor": [
+        0.28,
+        0.24,
+        0.17
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": null,
+      "twoSided": false,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_Foam",
+      "baseColor": [
+        0.35,
+        0.2,
+        0.07
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": null,
+      "twoSided": false,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_Blanket",
+      "baseColor": [
+        0.18,
+        0.21,
+        0.16
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_DirtyBlanket.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_DirtyBlanket",
+        "Normal": "PIG_T_FabricNormal",
+        "Roughness": "PIG_T_FabricRoughness"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0.4
+    },
+    {
+      "name": "PIG_M_Cheeto",
+      "baseColor": [
+        0.9,
+        0.35,
+        0.01
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_Cheeto.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_Cheeto"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_CheetosBag",
+      "baseColor": [
+        0.9,
+        0.3,
+        0.02
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_CheetosBag.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_CheetosBag"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_BagFoil",
+      "baseColor": [
+        0.5,
+        0.49,
+        0.42
+      ],
+      "roughness": 0.29,
+      "metallic": 0.5,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_BagFoil.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_BagFoil"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_RustyMetal",
+      "baseColor": [
+        0.22,
+        0.24,
+        0.21
+      ],
+      "roughness": 0.65,
+      "metallic": 0.57,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_RustyMetal.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_RustyMetal"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_DarkMetal",
+      "baseColor": [
+        0.037,
+        0.036,
+        0.03
+      ],
+      "roughness": 0.64,
+      "metallic": 0.55,
+      "opacity": 1,
+      "texture": null,
+      "twoSided": false,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_DirtyWater",
+      "baseColor": [
+        0.027,
+        0.033,
+        0.021
+      ],
+      "roughness": 0.2,
+      "metallic": 0.03,
+      "opacity": 1,
+      "texture": null,
+      "twoSided": false,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_Feed",
+      "baseColor": [
+        0.3,
+        0.24,
+        0.09
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_Feed.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_Feed"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_OldWood",
+      "baseColor": [
+        0.25,
+        0.22,
+        0.15
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_OldWood.png",
+      "twoSided": false,
+      "textures": {
+        "BaseColor": "PIG_T_OldWood"
+      },
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_Straw",
+      "baseColor": [
+        0.3,
+        0.26,
+        0.12
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": null,
+      "twoSided": false,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0,
+        0,
+        0
+      ],
+      "emissionStrength": 0,
+      "normalStrength": 0
+    },
+    {
+      "name": "PIG_M_LampGlass",
+      "baseColor": [
+        0.69,
+        0.54,
+        0.24
+      ],
+      "roughness": 0.48,
+      "metallic": 0,
+      "opacity": 1,
+      "texture": null,
+      "twoSided": false,
+      "textures": {},
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom",
+      "blendMode": "BLEND_OPAQUE",
+      "emissionColor": [
+        0.8,
+        0.43,
+        0.09
+      ],
+      "emissionStrength": 1.2,
+      "normalStrength": 0
+    }
+  ],
+  "textures": [
+    {
+      "name": "PIG_T_CheetosBag",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_CheetosBag.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_Cheeto",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_Cheeto.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_FabricRoughness",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_FabricRoughness.png",
+      "srgb": false,
+      "role": "Roughness",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_FabricNormal",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_FabricNormal.png",
+      "srgb": false,
+      "role": "Normal",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_MattressFabric",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_MattressFabric.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_OldWood",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_OldWood.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_MattressSide",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_MattressSide.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_RustyMetal",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_RustyMetal.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_BagFoil",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_BagFoil.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_Feed",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_Feed.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    },
+    {
+      "name": "PIG_T_DirtyBlanket",
+      "path": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/textures/PIG_T_DirtyBlanket.png",
+      "srgb": true,
+      "role": "BaseColor",
+      "destinationPath": "/Game/SeniorSendOff/House/PigstyRoom"
+    }
+  ],
+  "totalVisibleTriangles": 17747,
+  "blend": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/pigsty_props.blend",
+  "preview": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/previews/pigsty_props_gallery.png",
+  "runtimeCheetoContract": {
+    "mesh": "PIG_SM_Cheeto",
+    "dimensionsCm": [
+      5,
+      1.6,
+      1.6
+    ],
+    "boundsCm": {
+      "min": [
+        -2.5,
+        -0.8,
+        0
+      ],
+      "max": [
+        2.5,
+        0.8,
+        1.6
+      ]
+    },
+    "origin": "XYcenter/bottomZ0",
+    "forwardAxis": "+X",
+    "material": "PIG_M_Cheeto",
+    "staticDuplicateEdibles": false
+  },
+  "boundsConvention": "boundsCm reports Unreal local numericcm after native FBX importer Yreflection. sourceBoundsCm and boundsCmRoundtrip retain unreflected Blender reimport geometry. Do not alter or reflect the FBX again.",
+  "fbxAudit": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/props/fbx_audit.json"
+}

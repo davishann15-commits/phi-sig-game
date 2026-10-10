@@ -1,0 +1,583 @@
+{
+  "coordinateSystem": "Blender metres => Unrealcm [100X,-100Y,100Z]. LeafcanvasextendsUE+X0..90cm. FrontUE+Y. Localhinge-floorpivot(0,0,0), verticalZhingeaxis. Allpartsonevisualleafsoturntogether. Actor root1.1 preserves enlargedhouse; leaf already authored144/169.2cmwide199.75cmtall.",
+  "assets": [
+    {
+      "name": "SM_R101Entry_Door101Leaf",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/models/SM_R101Entry_Door101Leaf.fbx",
+      "triangles": 10632,
+      "vertices": 7064,
+      "boundsMetres": [
+        [
+          -0.019200000911951065,
+          -0.096999391913414,
+          0.0
+        ],
+        [
+          1.4503999948501587,
+          0.096999391913414,
+          1.9975001811981201
+        ]
+      ],
+      "dimensionsCm": [
+        146.95999957621098,
+        19.3998783826828,
+        199.750018119812
+      ],
+      "origin": "Local hinge floor(0,0,0); apply root scale1.1 in map",
+      "front": "Unreal+Y;leafextends+X;hingeaxis+Z",
+      "materials": [
+        "M_R101Entry_WarmOffWhitePaint",
+        "M_R101Entry_PanelRecessPaint",
+        "M_R101Entry_CharcoalElectronicHousing",
+        "M_R101Entry_RubberKeypadKeys",
+        "M_R101Entry_KeypadLegends",
+        "M_R101Entry_DarkHardware",
+        "M_R101Entry_BrushedSilverLever",
+        "M_R101Entry_BlackRoomNumbers",
+        "M_R101Entry_OldPaintChip",
+        "M_R101Entry_PaintScuff"
+      ],
+      "hasCustomNormals": true,
+      "collision": "NoCollision",
+      "boundsUnrealCm": [
+        [
+          -1.9200000911951065,
+          -9.6999391913414,
+          0.0
+        ],
+        [
+          145.03999948501587,
+          9.6999391913414,
+          199.750018119812
+        ]
+      ]
+    },
+    {
+      "name": "SM_R101Entry_Frame101",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/models/SM_R101Entry_Frame101.fbx",
+      "triangles": 3904,
+      "vertices": 2008,
+      "boundsMetres": [
+        [
+          -0.12399999797344208,
+          -0.09799999743700027,
+          0.0
+        ],
+        [
+          1.5640000104904175,
+          0.09799999743700027,
+          2.0831072330474854
+        ]
+      ],
+      "dimensionsCm": [
+        168.80000084638596,
+        19.599999487400055,
+        208.31072330474854
+      ],
+      "origin": "Local hinge floor(0,0,0); apply root scale1.1 in map",
+      "front": "Unreal+Y;leafextends+X;hingeaxis+Z",
+      "materials": [
+        "M_R101Entry_MatchingWhiteJamb",
+        "M_R101Entry_DarkHardware",
+        "M_R101Entry_BrushedSilverLever"
+      ],
+      "hasCustomNormals": true,
+      "collision": "NoCollision",
+      "boundsUnrealCm": [
+        [
+          -12.399999797344208,
+          -9.799999743700027,
+          0.0
+        ],
+        [
+          156.40000104904175,
+          9.799999743700027,
+          208.31072330474854
+        ]
+      ]
+    },
+    {
+      "name": "COL_R101Entry_Frame101",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/models/COL_R101Entry_Frame101.fbx",
+      "triangles": 36,
+      "vertices": 24,
+      "boundsMetres": [
+        [
+          -0.12000000476837158,
+          -0.07500000298023224,
+          0.0
+        ],
+        [
+          1.5600000619888306,
+          0.07500000298023224,
+          2.0545716285705566
+        ]
+      ],
+      "dimensionsCm": [
+        168.00000667572021,
+        15.000000596046448,
+        205.45716285705566
+      ],
+      "origin": "Local hinge floor(0,0,0); apply root scale1.1 in map",
+      "front": "Unreal+Y;leafextends+X;hingeaxis+Z",
+      "materials": [
+        "M_R101Entry_Collider"
+      ],
+      "hasCustomNormals": false,
+      "collision": "Hidden BlockAll complex as simple frame only",
+      "boundsUnrealCm": [
+        [
+          -12.000000476837158,
+          -7.500000298023224,
+          0.0
+        ],
+        [
+          156.00000619888306,
+          7.500000298023224,
+          205.45716285705566
+        ]
+      ]
+    },
+    {
+      "name": "SM_R101Entry_Door102Leaf",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/models/SM_R101Entry_Door102Leaf.fbx",
+      "triangles": 10716,
+      "vertices": 7168,
+      "boundsMetres": [
+        [
+          -0.0225600004196167,
+          -0.096999391913414,
+          0.0
+        ],
+        [
+          1.704219937324524,
+          0.096999391913414,
+          1.9975001811981201
+        ]
+      ],
+      "dimensionsCm": [
+        172.67799377441406,
+        19.3998783826828,
+        199.750018119812
+      ],
+      "origin": "Local hinge floor(0,0,0); apply root scale1.1 in map",
+      "front": "Unreal+Y;leafextends+X;hingeaxis+Z",
+      "materials": [
+        "M_R101Entry_WarmOffWhitePaint",
+        "M_R101Entry_PanelRecessPaint",
+        "M_R101Entry_CharcoalElectronicHousing",
+        "M_R101Entry_RubberKeypadKeys",
+        "M_R101Entry_KeypadLegends",
+        "M_R101Entry_DarkHardware",
+        "M_R101Entry_BrushedSilverLever",
+        "M_R101Entry_BlackRoomNumbers",
+        "M_R101Entry_OldPaintChip",
+        "M_R101Entry_PaintScuff"
+      ],
+      "hasCustomNormals": true,
+      "collision": "NoCollision",
+      "boundsUnrealCm": [
+        [
+          -2.25600004196167,
+          -9.6999391913414,
+          0.0
+        ],
+        [
+          170.4219937324524,
+          9.6999391913414,
+          199.750018119812
+        ]
+      ]
+    },
+    {
+      "name": "SM_R101Entry_Frame102",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/models/SM_R101Entry_Frame102.fbx",
+      "triangles": 3904,
+      "vertices": 2008,
+      "boundsMetres": [
+        [
+          -0.14570000767707825,
+          -0.09799999743700027,
+          0.0
+        ],
+        [
+          1.8377000093460083,
+          0.09799999743700027,
+          2.0831072330474854
+        ]
+      ],
+      "dimensionsCm": [
+        198.34000170230865,
+        19.599999487400055,
+        208.31072330474854
+      ],
+      "origin": "Local hinge floor(0,0,0); apply root scale1.1 in map",
+      "front": "Unreal+Y;leafextends+X;hingeaxis+Z",
+      "materials": [
+        "M_R101Entry_MatchingWhiteJamb",
+        "M_R101Entry_DarkHardware",
+        "M_R101Entry_BrushedSilverLever"
+      ],
+      "hasCustomNormals": true,
+      "collision": "NoCollision",
+      "boundsUnrealCm": [
+        [
+          -14.570000767707825,
+          -9.799999743700027,
+          0.0
+        ],
+        [
+          183.77000093460083,
+          9.799999743700027,
+          208.31072330474854
+        ]
+      ]
+    },
+    {
+      "name": "COL_R101Entry_Frame102",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/models/COL_R101Entry_Frame102.fbx",
+      "triangles": 36,
+      "vertices": 24,
+      "boundsMetres": [
+        [
+          -0.14100000262260437,
+          -0.07500000298023224,
+          0.0
+        ],
+        [
+          1.8330000638961792,
+          0.07500000298023224,
+          2.0545716285705566
+        ]
+      ],
+      "dimensionsCm": [
+        197.40000665187836,
+        15.000000596046448,
+        205.45716285705566
+      ],
+      "origin": "Local hinge floor(0,0,0); apply root scale1.1 in map",
+      "front": "Unreal+Y;leafextends+X;hingeaxis+Z",
+      "materials": [
+        "M_R101Entry_Collider"
+      ],
+      "hasCustomNormals": false,
+      "collision": "Hidden BlockAll complex as simple frame only",
+      "boundsUnrealCm": [
+        [
+          -14.100000262260437,
+          -7.500000298023224,
+          0.0
+        ],
+        [
+          183.30000638961792,
+          7.500000298023224,
+          205.45716285705566
+        ]
+      ]
+    },
+    {
+      "name": "SM_R101Entry_BlankNamePlaque",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/models/SM_R101Entry_BlankNamePlaque.fbx",
+      "triangles": 520,
+      "vertices": 272,
+      "boundsMetres": [
+        [
+          -0.12099999934434891,
+          -0.011500000022351742,
+          -0.054999999701976776
+        ],
+        [
+          0.12099999934434891,
+          0.008500000461935997,
+          0.054999999701976776
+        ]
+      ],
+      "dimensionsCm": [
+        24.19999986886978,
+        2.000000048428774,
+        10.999999940395355
+      ],
+      "origin": "Local hinge floor(0,0,0); apply root scale1.1 in map",
+      "front": "Unreal+Y;leafextends+X;hingeaxis+Z",
+      "materials": [
+        "M_R101Entry_PlaqueWarmWood",
+        "M_R101Entry_PlaqueBlackFace",
+        "M_R101Entry_BrushedSilverLever"
+      ],
+      "hasCustomNormals": true,
+      "collision": "NoCollision",
+      "boundsUnrealCm": [
+        [
+          -12.09999993443489,
+          -0.8500000461935997,
+          -5.499999970197678
+        ],
+        [
+          12.09999993443489,
+          1.1500000022351742,
+          5.499999970197678
+        ]
+      ]
+    }
+  ],
+  "materials": {
+    "M_R101Entry_WarmOffWhitePaint": {
+      "color": [
+        0.69,
+        0.67,
+        0.6
+      ],
+      "roughness": 0.64,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/textures/T_R101Entry_OffWhitePaint_BaseColor.png",
+      "roughness_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/textures/T_R101Entry_OffWhitePaint_Roughness.png"
+    },
+    "M_R101Entry_PanelRecessPaint": {
+      "color": [
+        0.61,
+        0.6,
+        0.54
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/textures/T_R101Entry_OffWhitePaint_BaseColor.png",
+      "roughness_texture": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Room101Entry/textures/T_R101Entry_OffWhitePaint_Roughness.png"
+    },
+    "M_R101Entry_MatchingWhiteJamb": {
+      "color": [
+        0.7,
+        0.68,
+        0.62
+      ],
+      "roughness": 0.64,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_BrushedSilverLever": {
+      "color": [
+        0.43,
+        0.45,
+        0.46
+      ],
+      "roughness": 0.28,
+      "metallic": 0.93,
+      "uv_scale": 1
+    },
+    "M_R101Entry_CharcoalElectronicHousing": {
+      "color": [
+        0.008,
+        0.01,
+        0.011
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_RubberKeypadKeys": {
+      "color": [
+        0.031,
+        0.035,
+        0.036
+      ],
+      "roughness": 0.67,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_KeypadLegends": {
+      "color": [
+        0.58,
+        0.61,
+        0.59
+      ],
+      "roughness": 0.48,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_DarkHardware": {
+      "color": [
+        0.016,
+        0.018,
+        0.019
+      ],
+      "roughness": 0.36,
+      "metallic": 0.7,
+      "uv_scale": 1
+    },
+    "M_R101Entry_Collider": {
+      "color": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_BlackRoomNumbers": {
+      "color": [
+        0.004,
+        0.005,
+        0.006
+      ],
+      "roughness": 0.55,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_PaintScuff": {
+      "color": [
+        0.43,
+        0.42,
+        0.37
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_OldPaintChip": {
+      "color": [
+        0.45,
+        0.35,
+        0.23
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_PlaqueWarmWood": {
+      "color": [
+        0.16,
+        0.095,
+        0.042
+      ],
+      "roughness": 0.67,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R101Entry_PlaqueBlackFace": {
+      "color": [
+        0.008,
+        0.009,
+        0.01
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "uv_scale": 1
+    }
+  },
+  "hingeOriginCm": [
+    0,
+    0,
+    0
+  ],
+  "leafCanvasBoundsUnrealCm": {
+    "101": [
+      [
+        0,
+        -2.5,
+        0
+      ],
+      [
+        144,
+        2.5,
+        199.75
+      ]
+    ],
+    "102": [
+      [
+        0,
+        -2.5,
+        0
+      ],
+      [
+        169.2,
+        2.5,
+        199.75
+      ]
+    ]
+  },
+  "leafCollision": "ExistingHouseDoor movableboxroothandlesleaf; do not add staticleafcollider.",
+  "frameInnerClearUnrealCm": {
+    "101": [
+      [
+        -0.8,
+        -7.5,
+        0
+      ],
+      [
+        144.8,
+        7.5,
+        200.7
+      ]
+    ],
+    "102": [
+      [
+        -0.94,
+        -7.5,
+        0
+      ],
+      [
+        170.14,
+        7.5,
+        200.7
+      ]
+    ]
+  },
+  "notes": [
+    "Six true recessed panels onbothsides, not raisedslaboverlays.",
+    "Latchleverand12-keyelectronickeypadmoveaspartofleaf.",
+    "Black serif101/102numbers and light localizedpaintwear match userreference.",
+    "FramesarestaticandCOL_frameisplayerblockersforpostsandlintelonly."
+  ],
+  "textures": [
+    "T_R101Entry_OffWhitePaint_BaseColor.png",
+    "T_R101Entry_OffWhitePaint_Roughness.png"
+  ],
+  "doors": {
+    "101": {
+      "leaf": "SM_R101Entry_Door101Leaf",
+      "frame": "SM_R101Entry_Frame101",
+      "frame_collision": "COL_R101Entry_Frame101",
+      "widthCm": 144.0,
+      "heightCm": 199.75,
+      "panelCenterLocalCm": [
+        72.0,
+        0,
+        99.875
+      ],
+      "panelHalfExtentLocalCm": [
+        72.0,
+        2.5,
+        99.875
+      ],
+      "closedYaw": -90,
+      "openYaw": -180,
+      "frameYaw": -90,
+      "front": "Local+Y turnsworld+X facinghall"
+    },
+    "102": {
+      "leaf": "SM_R101Entry_Door102Leaf",
+      "frame": "SM_R101Entry_Frame102",
+      "frame_collision": "COL_R101Entry_Frame102",
+      "widthCm": 169.2,
+      "heightCm": 199.75,
+      "panelCenterLocalCm": [
+        84.6,
+        0,
+        99.875
+      ],
+      "panelHalfExtentLocalCm": [
+        84.6,
+        2.5,
+        99.875
+      ],
+      "closedYaw": 0,
+      "openYaw": -90,
+      "frameYaw": 0,
+      "front": "Local+Y hallface"
+    }
+  },
+  "placementScale": 1.1,
+  "totalVisualTriangles": 29676
+}

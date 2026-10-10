@@ -1,0 +1,736 @@
+{
+  "door": {
+    "id": "SM_OriginalLeaf_Entrance_m1_m2_Solid_03",
+    "actor": "OriginalDoor_Entrance_m1_m2_Solid_03",
+    "properties": {
+      "locked": false,
+      "closed_yaw": 0.0,
+      "open_yaw": -90.0
+    }
+  },
+  "replacements": [
+    {
+      "actor": "COL_Entrance_m1_m2_Solid",
+      "mesh": "COL_R102_Entrance_m1_m2_DoorClear"
+    }
+  ],
+  "static": [
+    {
+      "label": "SM_Room102_Shell",
+      "mesh": "SM_R102_RoomShell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "SM_Room102_Fixtures",
+      "mesh": "SM_R102_CeilingFixtures",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "SM_Room102_Sign",
+      "mesh": "SM_R102_NumberPlate",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "COL_Room102_Shell",
+      "mesh": "COL_R102_RoomShell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0
+    }
+  ],
+  "lights": [
+    {
+      "label": "Room102_CeilingLight_1",
+      "location": [
+        -2228.4,
+        -1516.0,
+        249
+      ],
+      "intensity": 900,
+      "radius": 440,
+      "color": [
+        1,
+        0.94,
+        0.82
+      ]
+    },
+    {
+      "label": "Room102_CeilingLight_2",
+      "location": [
+        -2228.4,
+        -1801.0000000000002,
+        249
+      ],
+      "intensity": 900,
+      "radius": 440,
+      "color": [
+        1,
+        0.94,
+        0.82
+      ]
+    }
+  ],
+  "bounds": {
+    "worldBlenderMetres": [
+      [
+        -25.184,
+        13.455,
+        -0.16
+      ],
+      [
+        -19.384,
+        19.695,
+        2.7824
+      ]
+    ],
+    "unrealCm": [
+      [
+        -2518.4,
+        -1969.5,
+        -16
+      ],
+      [
+        -1938.4,
+        -1345.5,
+        278.24
+      ]
+    ],
+    "usableInteriorUnrealCm": [
+      [
+        -2500.4,
+        -1951.5,
+        0.8
+      ],
+      [
+        -1956.4,
+        -1372.5,
+        262.24
+      ]
+    ],
+    "interiorWidthCm": 544,
+    "interiorDepthCm": 579,
+    "clearCeilingCm": 261.44,
+    "entryCenterUnrealCm": [
+      -2228.4,
+      -1347.8,
+      118
+    ],
+    "entryOpeningUnrealCm": [
+      [
+        -2313,
+        -1374.3,
+        8
+      ],
+      [
+        -2143.8,
+        -1343.97,
+        207.75
+      ]
+    ],
+    "doorwayKeepClearUnrealCm": [
+      [
+        -2368.4,
+        -1530,
+        0.8
+      ],
+      [
+        -2088.4,
+        -1300,
+        211
+      ]
+    ]
+  },
+  "materials": [
+    "S03HallGrey",
+    "PaintCream",
+    "PaintWhite",
+    "FloorWood",
+    "Ceiling",
+    "MetalDark",
+    "LightWarm"
+  ],
+  "collisionPolicy": "New floor/walls/ceiling complex-as-simple invisible BlockAll collider. Original movingdoor controlsleaf collision. Only static bakedleaf removed from previous sealedmiddle collider. All trims/fixtures visual only.",
+  "chairs": [
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2450,
+        -1568.4073151744517,
+        1.1
+      ],
+      "yaw": 0.6957917224573413,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2395,
+        -1568.3212567104574,
+        1.1
+      ],
+      "yaw": 1.2750416842512458,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2340,
+        -1566.56867002897,
+        1.1
+      ],
+      "yaw": -0.6939751672981767,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2116,
+        -1566.5300094655422,
+        1.1
+      ],
+      "yaw": 0.3975146225681985,
+      "wear": false,
+      "test": true
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2061,
+        -1568.8271109841974,
+        1.1
+      ],
+      "yaw": 0.1807095651174473,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2006,
+        -1566.52136722963,
+        1.1
+      ],
+      "yaw": 0.11765406511649168,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2450,
+        -1635.4821512047843,
+        1.1
+      ],
+      "yaw": 1.411866983362546,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2395,
+        -1637.4915201532388,
+        1.1
+      ],
+      "yaw": -1.6389614711658382,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2340,
+        -1638.4878028307874,
+        1.1
+      ],
+      "yaw": 1.8612104528932756,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2116,
+        -1636.240854615457,
+        1.1
+      ],
+      "yaw": 0.655905451268533,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2061,
+        -1637.233072552133,
+        1.1
+      ],
+      "yaw": 0.006245739941361794,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2006,
+        -1638.1119011725702,
+        1.1
+      ],
+      "yaw": 0.18245532478266657,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2450,
+        -1708.4185917827253,
+        1.1
+      ],
+      "yaw": 0.7266096805941875,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2395,
+        -1706.4793321645661,
+        1.1
+      ],
+      "yaw": 1.021757844172142,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2340,
+        -1708.014241110942,
+        1.1
+      ],
+      "yaw": -2.4479807840964254,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2116,
+        -1707.6680740303543,
+        1.1
+      ],
+      "yaw": 1.1257631865659032,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2061,
+        -1706.9603441528259,
+        1.1
+      ],
+      "yaw": 1.4856583000531094,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2006,
+        -1707.2757862257888,
+        1.1
+      ],
+      "yaw": -0.6093862146091453,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2450,
+        -1775.369703090049,
+        1.1
+      ],
+      "yaw": -1.997951238001173,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2395,
+        -1778.1705532052574,
+        1.1
+      ],
+      "yaw": 0.5328656243047325,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2340,
+        -1776.4744084091521,
+        1.1
+      ],
+      "yaw": -0.4029819610256862,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2116,
+        -1776.7677552218738,
+        1.1
+      ],
+      "yaw": -0.35649870494092095,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2061,
+        -1776.325284398579,
+        1.1
+      ],
+      "yaw": 2.332908031366376,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2006,
+        -1775.6997769678828,
+        1.1
+      ],
+      "yaw": 0.8354109559514447,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2450,
+        -1847.1194644678023,
+        1.1
+      ],
+      "yaw": 2.6852945627165816,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2395,
+        -1847.2114621736725,
+        1.1
+      ],
+      "yaw": 0.754335611613576,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2340,
+        -1845.526079937475,
+        1.1
+      ],
+      "yaw": 1.1003809067913384,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2116,
+        -1847.4370701538219,
+        1.1
+      ],
+      "yaw": 1.458087989909668,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2061,
+        -1846.5988308612416,
+        1.1
+      ],
+      "yaw": 2.489961797427755,
+      "wear": false,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChair",
+      "location": [
+        -2006,
+        -1846.5076702784775,
+        1.1
+      ],
+      "yaw": 0.202022679317734,
+      "wear": true,
+      "test": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2470,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": true
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2422,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2374,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2326,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2278,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2230,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": true
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2182,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2134,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2086,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2038,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -1990,
+        -1903,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": true
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2470,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2422,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2374,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2326,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2278,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": true
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2230,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2182,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2134,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2086,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -2038,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": true
+    },
+    {
+      "mesh": "SM_R102_FoldingChairFolded",
+      "location": [
+        -1990,
+        -1933,
+        1.1
+      ],
+      "yaw": 0,
+      "wear": false
+    }
+  ],
+  "notes": {
+    "chair_count": 52,
+    "open_chairs": 30,
+    "folded_chairs": 22,
+    "real_dimensions_cm": [
+      46,
+      57.2,
+      85
+    ],
+    "clear_center_aisle_cm": 178,
+    "doorway_first_182_cm_clear": true,
+    "room_identification": "Existing registered far102 camera and door102 path match this locked end-of-west-hall leaf within4.1cm."
+  }
+}

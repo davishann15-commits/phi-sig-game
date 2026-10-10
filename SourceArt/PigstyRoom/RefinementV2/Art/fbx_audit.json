@@ -1,0 +1,102 @@
+[
+  {
+    "name": "SM_PIG_BlackBody",
+    "roundtripObjectCount": 1,
+    "roundtripBoundsCm": {
+      "min": [
+        -66.923052,
+        -26.636735,
+        39.263079
+      ],
+      "max": [
+        57.225049,
+        26.647216,
+        90.143698
+      ],
+      "size": [
+        124.148101,
+        53.283951,
+        50.88062
+      ]
+    },
+    "triangles": 19472,
+    "uvLayers": 1,
+    "finiteNormals": true,
+    "maxBoundsDifferenceCm": 9.00000000214618e-06
+  },
+  {
+    "name": "SM_PIG_BlackHead",
+    "roundtripObjectCount": 1,
+    "roundtripBoundsCm": {
+      "min": [
+        -24.239621,
+        -20.175503,
+        -26.492244
+      ],
+      "max": [
+        24.900028,
+        20.553946,
+        7.212644
+      ],
+      "size": [
+        49.139649,
+        40.72945,
+        33.704888
+      ]
+    },
+    "triangles": 19500,
+    "uvLayers": 1,
+    "finiteNormals": true,
+    "maxBoundsDifferenceCm": 4.000000000559112e-06
+  },
+  {
+    "name": "SM_PIG_BlackUpperLeg",
+    "roundtripObjectCount": 1,
+    "roundtripBoundsCm": {
+      "min": [
+        -8.502924,
+        -7.389866,
+        -25.568736
+      ],
+      "max": [
+        6.444618,
+        7.389867,
+        4.941442
+      ],
+      "size": [
+        14.947543,
+        14.779732,
+        30.510177
+      ]
+    },
+    "triangles": 1920,
+    "uvLayers": 1,
+    "finiteNormals": true,
+    "maxBoundsDifferenceCm": 1.9999999993913775e-06
+  },
+  {
+    "name": "SM_PIG_BlackLowerLeg",
+    "roundtripObjectCount": 1,
+    "roundtripBoundsCm": {
+      "min": [
+        -3.706861,
+        -5.550001,
+        -22.999999
+      ],
+      "max": [
+        6.650488,
+        5.550001,
+        3.968771
+      ],
+      "size": [
+        10.357349,
+        11.100002,
+        26.96877
+      ]
+    },
+    "triangles": 4752,
+    "uvLayers": 1,
+    "finiteNormals": true,
+    "maxBoundsDifferenceCm": 1.0000000010279564e-06
+  }
+]

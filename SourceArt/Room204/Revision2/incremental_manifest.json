@@ -1,0 +1,1624 @@
+{
+  "textures": [
+    "T_R204_R2_BlackQuilt_BaseColor.png",
+    "T_R204_R2_BlackQuilt_Normal.png",
+    "T_R204_R2_BlackQuilt_Roughness.png",
+    "T_R204_R2_DarkWalnut_BaseColor.png",
+    "T_R204_R2_DarkWalnut_Normal.png",
+    "T_R204_R2_DarkWalnut_Roughness.png",
+    "T_R204_R2_FridgeEnamel_BaseColor.png",
+    "T_R204_R2_FridgeEnamel_Normal.png",
+    "T_R204_R2_FridgeEnamel_Roughness.png",
+    "T_R204_R2_StripedBlanket_BaseColor.png",
+    "T_R204_R2_StripedBlanket_Normal.png",
+    "T_R204_R2_StripedBlanket_Roughness.png",
+    "T_R204_R2_WhiteSheet_BaseColor.png",
+    "T_R204_R2_WhiteSheet_Normal.png",
+    "T_R204_R2_WhiteSheet_Roughness.png",
+    "T_R204_R2_WovenNormal.png",
+    "T_R204_R2_WovenRoughness.png"
+  ],
+  "meshes": [
+    {
+      "name": "R204_R2_SM_Upper_m1_m2_SecondCloset",
+      "file": "R204_R2_SM_Upper_m1_m2_SecondCloset.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_S05BathBlue",
+        "MI_SSO_S05Ceiling",
+        "MI_SSO_Concrete",
+        "MI_SSO_MetalBrass",
+        "MI_SSO_LightWarm",
+        "MI_SSO_S05SouthHallCeiling",
+        "MI_SSO_S05SouthHallFloor",
+        "MI_SSO_S05SouthHallPaint",
+        "MI_SSO_S05SouthHallBaseboard",
+        "MI_SSO_FloorWood"
+      ]
+    },
+    {
+      "name": "R204_R2_COL_Upper_m1_m2_SecondCloset",
+      "file": "R204_R2_COL_Upper_m1_m2_SecondCloset.fbx",
+      "complex_collision": true,
+      "materialSlots": [
+        "WorldGridMaterial"
+      ]
+    },
+    {
+      "name": "R204_R2_SM_InteriorPaint_SecondCloset",
+      "file": "R204_R2_SM_InteriorPaint_SecondCloset.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_R204_BlueGreyPaint",
+        "M_R204_CreamCeiling"
+      ]
+    },
+    {
+      "name": "R204_R2_SM_CharcoalSkirting_SecondCloset",
+      "file": "R204_R2_SM_CharcoalSkirting_SecondCloset.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_R204_CharcoalSkirting"
+      ]
+    },
+    {
+      "name": "R204_R2_SM_SecondClosetShell",
+      "file": "R204_R2_SM_SecondClosetShell.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_R204_BlueGreyPaint",
+        "M_R204_CreamCeiling"
+      ]
+    },
+    {
+      "name": "R204_R2_SM_SecondClosetFloor",
+      "file": "R204_R2_SM_SecondClosetFloor.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "MI_SSO_FloorWood"
+      ]
+    },
+    {
+      "name": "R204_R2_SM_SecondClosetTrim",
+      "file": "R204_R2_SM_SecondClosetTrim.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_R204_ClosetWhiteTrim",
+        "M_R204_CharcoalSkirting"
+      ]
+    },
+    {
+      "name": "R204_R2_SM_SecondClosetShelf",
+      "file": "R204_R2_SM_SecondClosetShelf.fbx",
+      "complex_collision": false,
+      "materialSlots": [
+        "M_R204_R2_ShelfCream",
+        "M_R204_R2_BracketSteel"
+      ]
+    },
+    {
+      "name": "R204_R2_COL_SecondClosetShellFloor",
+      "file": "R204_R2_COL_SecondClosetShellFloor.fbx",
+      "complex_collision": true,
+      "materialSlots": [
+        "M_R204_BlueGreyPaint",
+        "M_R204_CreamCeiling",
+        "MI_SSO_FloorWood"
+      ]
+    },
+    {
+      "name": "R204_R2_BlackDoubleBed",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/furniture/models/R204_R2_BlackDoubleBed.fbx",
+      "file": "R204_R2_BlackDoubleBed.fbx",
+      "triangles": 39692,
+      "vertices": 19940,
+      "boundsMetres": [
+        [
+          -0.7150179147720337,
+          -1.0306612253189087,
+          0.0
+        ],
+        [
+          0.7150179147720337,
+          1.029630422592163,
+          0.9046428203582764
+        ]
+      ],
+      "boundsCm": [
+        [
+          -71.50179147720337,
+          -102.96304225921631,
+          0.0
+        ],
+        [
+          71.50179147720337,
+          103.06612253189087,
+          90.46428203582764
+        ]
+      ],
+      "dimensionsCm": [
+        143.00358295440674,
+        206.02916479110718,
+        90.46428203582764
+      ],
+      "materials": [
+        "M_R204_R2_BlackPowdercoatMetal",
+        "M_R204_R2_MattressIvoryEdge",
+        "M_R204_R2_BlackRumpledQuilt",
+        "M_R204_R2_WhiteCottonSheet",
+        "M_R204_R2_IvoryThread"
+      ],
+      "collision": "NoCollision",
+      "complex_collision": false,
+      "hasCustomNormals": true,
+      "pivot": "floor centerXY; curtain rod centerZ0",
+      "colliderAsset": "R204_R2_COL_BlackDoubleBed"
+    },
+    {
+      "name": "R204_R2_WhiteStripedDoubleBed",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/furniture/models/R204_R2_WhiteStripedDoubleBed.fbx",
+      "file": "R204_R2_WhiteStripedDoubleBed.fbx",
+      "triangles": 35876,
+      "vertices": 18016,
+      "boundsMetres": [
+        [
+          -0.7150179147720337,
+          -1.0298981666564941,
+          0.0
+        ],
+        [
+          0.7150179147720337,
+          1.0301189422607422,
+          0.9350000023841858
+        ]
+      ],
+      "boundsCm": [
+        [
+          -71.50179147720337,
+          -103.01189422607422,
+          0.0
+        ],
+        [
+          71.50179147720337,
+          102.98981666564941,
+          93.50000023841858
+        ]
+      ],
+      "dimensionsCm": [
+        143.00358295440674,
+        206.00171089172363,
+        93.50000023841858
+      ],
+      "materials": [
+        "M_R204_R2_WarmOakBedframe",
+        "M_R204_R2_MattressIvoryEdge",
+        "M_R204_R2_WhiteCottonSheet",
+        "M_R204_R2_MutedStripedBlanket",
+        "M_R204_R2_IvoryThread"
+      ],
+      "collision": "NoCollision",
+      "complex_collision": false,
+      "hasCustomNormals": true,
+      "pivot": "floor centerXY; curtain rod centerZ0",
+      "colliderAsset": "R204_R2_COL_WhiteStripedDoubleBed"
+    },
+    {
+      "name": "R204_R2_GalanzFridgeAndMicrowave",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/furniture/models/R204_R2_GalanzFridgeAndMicrowave.fbx",
+      "file": "R204_R2_GalanzFridgeAndMicrowave.fbx",
+      "triangles": 12664,
+      "vertices": 8524,
+      "boundsMetres": [
+        [
+          -0.31150001287460327,
+          -0.4609990417957306,
+          0.0
+        ],
+        [
+          0.3050000071525574,
+          0.3199999928474426,
+          2.0460000038146973
+        ]
+      ],
+      "boundsCm": [
+        [
+          -31.150001287460327,
+          -31.999999284744263,
+          0.0
+        ],
+        [
+          30.500000715255737,
+          46.09990417957306,
+          204.60000038146973
+        ]
+      ],
+      "dimensionsCm": [
+        61.650002002716064,
+        78.09990346431732,
+        204.60000038146973
+      ],
+      "materials": [
+        "M_R204_R2_BlackFridgeEnamel",
+        "M_R204_R2_BlackFridgeGasket",
+        "M_R204_R2_PolishedChrome",
+        "M_R204_R2_WarmOakBedframe",
+        "M_R204_R2_BlackPlastic",
+        "M_R204_R2_OldIvoryAppliance",
+        "M_R204_R2_MicrowaveBlackGlass",
+        "M_R204_R2_WarmLampBulb",
+        "M_R204_R2_MicrowaveKeyLegends"
+      ],
+      "collision": "NoCollision",
+      "complex_collision": false,
+      "hasCustomNormals": true,
+      "pivot": "floor centerXY; curtain rod centerZ0",
+      "colliderAsset": "R204_R2_COL_GalanzFridgeAndMicrowave"
+    },
+    {
+      "name": "R204_R2_COL_GalanzFridgeAndMicrowave",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/furniture/models/R204_R2_COL_GalanzFridgeAndMicrowave.fbx",
+      "file": "R204_R2_COL_GalanzFridgeAndMicrowave.fbx",
+      "triangles": 24,
+      "vertices": 16,
+      "boundsMetres": [
+        [
+          -0.3050000071525574,
+          -0.3199999928474426,
+          0.0
+        ],
+        [
+          0.3050000071525574,
+          0.3199999928474426,
+          2.049999952316284
+        ]
+      ],
+      "boundsCm": [
+        [
+          -30.500000715255737,
+          -31.999999284744263,
+          0.0
+        ],
+        [
+          30.500000715255737,
+          31.999999284744263,
+          204.99999523162842
+        ]
+      ],
+      "dimensionsCm": [
+        61.000001430511475,
+        63.999998569488525,
+        204.99999523162842
+      ],
+      "materials": [
+        "M_R204_R2_Collider"
+      ],
+      "collision": "BlockAll",
+      "complex_collision": true,
+      "hasCustomNormals": false,
+      "pivot": "floor centerXY; curtain rod centerZ0"
+    },
+    {
+      "name": "R204_R2_OpenDarkWoodDresser",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/furniture/models/R204_R2_OpenDarkWoodDresser.fbx",
+      "file": "R204_R2_OpenDarkWoodDresser.fbx",
+      "triangles": 10616,
+      "vertices": 5472,
+      "boundsMetres": [
+        [
+          -0.45500001311302185,
+          -0.5020000338554382,
+          0.0
+        ],
+        [
+          0.45500001311302185,
+          0.2549999952316284,
+          0.9749999642372131
+        ]
+      ],
+      "boundsCm": [
+        [
+          -45.500001311302185,
+          -25.499999523162842,
+          0.0
+        ],
+        [
+          45.500001311302185,
+          50.20000338554382,
+          97.49999642372131
+        ]
+      ],
+      "dimensionsCm": [
+        91.00000262260437,
+        75.70000290870667,
+        97.49999642372131
+      ],
+      "materials": [
+        "M_R204_R2_WornDarkWalnut",
+        "M_R204_R2_BlackFridgeGasket",
+        "M_R204_R2_WarmOakBedframe",
+        "M_R204_R2_AgedDresserBrass"
+      ],
+      "collision": "NoCollision",
+      "complex_collision": false,
+      "hasCustomNormals": true,
+      "pivot": "floor centerXY; curtain rod centerZ0",
+      "colliderAsset": "R204_R2_COL_OpenDarkWoodDresser"
+    },
+    {
+      "name": "R204_R2_COL_OpenDarkWoodDresser",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/furniture/models/R204_R2_COL_OpenDarkWoodDresser.fbx",
+      "file": "R204_R2_COL_OpenDarkWoodDresser.fbx",
+      "triangles": 24,
+      "vertices": 16,
+      "boundsMetres": [
+        [
+          -0.45500001311302185,
+          -0.4950000047683716,
+          0.0
+        ],
+        [
+          0.45500001311302185,
+          0.2549999952316284,
+          0.9800000190734863
+        ]
+      ],
+      "boundsCm": [
+        [
+          -45.500001311302185,
+          -25.499999523162842,
+          0.0
+        ],
+        [
+          45.500001311302185,
+          49.50000047683716,
+          98.00000190734863
+        ]
+      ],
+      "dimensionsCm": [
+        91.00000262260437,
+        75.0,
+        98.00000190734863
+      ],
+      "materials": [
+        "M_R204_R2_Collider"
+      ],
+      "collision": "BlockAll",
+      "complex_collision": true,
+      "hasCustomNormals": false,
+      "pivot": "floor centerXY; curtain rod centerZ0"
+    },
+    {
+      "name": "SM_R204_R2_BlackBedFootGarments",
+      "file": "SM_R204_R2_BlackBedFootGarments.fbx",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/details/models/SM_R204_R2_BlackBedFootGarments.fbx",
+      "triangles": 6496,
+      "vertices": 3314,
+      "boundsCm": [
+        [
+          -26.527416229248047,
+          -19.675106048583984,
+          0.47636738419532776
+        ],
+        [
+          22.907028198242188,
+          18.935997009277344,
+          10.509490013122559
+        ]
+      ],
+      "boundsBlenderCm": [
+        [
+          -26.527416229248047,
+          -18.935997009277344,
+          0.47636738419532776
+        ],
+        [
+          22.907028198242188,
+          19.675106048583984,
+          10.509490013122559
+        ]
+      ],
+      "sizeCm": [
+        49.434444427490234,
+        38.61110305786133,
+        10.03312262892723
+      ],
+      "materialSlots": [
+        "M_R204_R2_BlueDenim",
+        "M_R204_R2_Thread",
+        "M_R204_R2_LightThread",
+        "M_R204_R2_DullSteel",
+        "M_R204_R2_HeatherGrayJersey",
+        "M_R204_R2_Paper",
+        "M_R204_R2_WornIvoryCotton",
+        "M_R204_R2_BlackCloth"
+      ],
+      "pivot": "floor centre, native centimetres",
+      "collision": "NoCollision",
+      "note": "Photo2199 dirty floor garments: denim trouser legs, gray tee, ivory undershirt and black sock. Recognizable collars/cuffs, raised seams and deep folds. No slab or collision.",
+      "hasCustomNormals": true,
+      "boundsSpace": "Unreal",
+      "normalsImport": "Import authored normals; no recomputation"
+    },
+    {
+      "name": "SM_R204_R2_CompactLaundryHamper",
+      "file": "SM_R204_R2_CompactLaundryHamper.fbx",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/details/models/SM_R204_R2_CompactLaundryHamper.fbx",
+      "triangles": 7342,
+      "vertices": 3919,
+      "boundsCm": [
+        [
+          -24.04242515563965,
+          -13.649999618530273,
+          0.0
+        ],
+        [
+          19.50659942626953,
+          21.474807739257812,
+          27.649999618530273
+        ]
+      ],
+      "boundsBlenderCm": [
+        [
+          -24.04242515563965,
+          -21.474807739257812,
+          0.0
+        ],
+        [
+          19.50659942626953,
+          13.649999618530273,
+          27.649999618530273
+        ]
+      ],
+      "sizeCm": [
+        43.54902458190918,
+        35.124807357788086,
+        27.649999618530273
+      ],
+      "materialSlots": [
+        "M_R204_R2_GrayPerforatedPlastic",
+        "M_R204_R2_BlackCloth",
+        "M_R204_R2_WornIvoryCotton",
+        "M_R204_R2_Thread",
+        "M_R204_R2_LightThread",
+        "M_R204_R2_Paper",
+        "M_R204_R2_NavyCloth",
+        "M_R204_R2_DullSteel",
+        "M_R204_R2_HeatherGrayJersey",
+        "M_R204_R2_LightGrayCotton"
+      ],
+      "pivot": "floor centre, native centimetres",
+      "collision": "NoCollision",
+      "note": "Photo2199 perforated gray storage basket packed with worn clothes/canister and two loose floor socks. Compact scale fits west of dresser without touching fridge or entry route.",
+      "hasCustomNormals": true,
+      "boundsSpace": "Unreal",
+      "normalsImport": "Import authored normals; no recomputation"
+    },
+    {
+      "name": "SM_R204_R2_ClosetThresholdClothesBox",
+      "file": "SM_R204_R2_ClosetThresholdClothesBox.fbx",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/details/models/SM_R204_R2_ClosetThresholdClothesBox.fbx",
+      "triangles": 9348,
+      "vertices": 4774,
+      "boundsCm": [
+        [
+          -26.030593872070312,
+          -22.666654586791992,
+          0.0
+        ],
+        [
+          28.531341552734375,
+          25.083322525024414,
+          21.178232192993164
+        ]
+      ],
+      "boundsBlenderCm": [
+        [
+          -26.030593872070312,
+          -25.083322525024414,
+          0.0
+        ],
+        [
+          28.531341552734375,
+          22.666654586791992,
+          21.178232192993164
+        ]
+      ],
+      "sizeCm": [
+        54.56193542480469,
+        47.749977111816406,
+        21.178232192993164
+      ],
+      "materialSlots": [
+        "M_R204_R2_Cardboard",
+        "M_R204_R2_CorrugatedCardboardEdge",
+        "M_R204_R2_OrangeJersey",
+        "M_R204_R2_Thread",
+        "M_R204_R2_LightThread",
+        "M_R204_R2_Paper",
+        "M_R204_R2_LightGrayCotton",
+        "M_R204_R2_DullSteel",
+        "M_R204_R2_WornIvoryCotton",
+        "M_R204_R2_BlackCloth",
+        "M_R204_R2_DarkGreenCarton"
+      ],
+      "pivot": "floor centre, native centimetres",
+      "collision": "NoCollision",
+      "note": "Photo2200 open cardboard box at closet threshold, rumpled ivory/gray/orange garments, loose sock, small green carton and packaging paper. Place WEST of closet access lane.",
+      "hasCustomNormals": true,
+      "boundsSpace": "Unreal",
+      "normalsImport": "Import authored normals; no recomputation"
+    },
+    {
+      "name": "SM_R204_R2_SecondClosetClothes",
+      "file": "SM_R204_R2_SecondClosetClothes.fbx",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/details/models/SM_R204_R2_SecondClosetClothes.fbx",
+      "triangles": 12424,
+      "vertices": 6322,
+      "boundsCm": [
+        [
+          -23.08727264404297,
+          -64.5,
+          0.40043050050735474
+        ],
+        [
+          23.08727264404297,
+          11.850781440734863,
+          185.17320251464844
+        ]
+      ],
+      "boundsBlenderCm": [
+        [
+          -23.08727264404297,
+          -11.850781440734863,
+          0.40043050050735474
+        ],
+        [
+          23.08727264404297,
+          64.5,
+          185.17320251464844
+        ]
+      ],
+      "sizeCm": [
+        46.17454528808594,
+        76.35078144073486,
+        184.77277201414108
+      ],
+      "materialSlots": [
+        "M_R204_R2_WornIvoryCotton",
+        "M_R204_R2_LightThread",
+        "M_R204_R2_DullSteel",
+        "M_R204_R2_LightGrayCotton",
+        "M_R204_R2_BlueDenim",
+        "M_R204_R2_WornCanvas",
+        "M_R204_R2_NavyCloth",
+        "M_R204_R2_BlackCloth",
+        "M_R204_R2_Thread",
+        "M_R204_R2_Paper"
+      ],
+      "pivot": "floor centre, native centimetres",
+      "collision": "NoCollision",
+      "note": "Distinct second closet insert: six hanging white/gray/blue/navy long garments, sewn fabric cubes, folded linens and low floor shirt/sock. No duplicate rail/shelf. WEST half leaves East75cm aisle open.",
+      "hasCustomNormals": true,
+      "boundsSpace": "Unreal",
+      "normalsImport": "Import authored normals; no recomputation"
+    },
+    {
+      "name": "SM_R204_R2_FutonSideFloorGarments",
+      "file": "SM_R204_R2_FutonSideFloorGarments.fbx",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/details/models/SM_R204_R2_FutonSideFloorGarments.fbx",
+      "triangles": 4642,
+      "vertices": 2373,
+      "boundsCm": [
+        [
+          -28.071697235107422,
+          -25.999208450317383,
+          0.40043050050735474
+        ],
+        [
+          24.798179626464844,
+          27.440021514892578,
+          9.678231239318848
+        ]
+      ],
+      "boundsBlenderCm": [
+        [
+          -28.071697235107422,
+          -27.440021514892578,
+          0.40043050050735474
+        ],
+        [
+          24.798179626464844,
+          25.999208450317383,
+          9.678231239318848
+        ]
+      ],
+      "sizeCm": [
+        52.869876861572266,
+        53.43922996520996,
+        9.277800738811493
+      ],
+      "materialSlots": [
+        "M_R204_R2_WornCanvas",
+        "M_R204_R2_Thread",
+        "M_R204_R2_LightThread",
+        "M_R204_R2_DullSteel",
+        "M_R204_R2_BlueDenim",
+        "M_R204_R2_Paper",
+        "M_R204_R2_WornIvoryCotton"
+      ],
+      "pivot": "floor centre, native centimetres",
+      "collision": "NoCollision",
+      "note": "Photo2202 gray/blue/beige dirty garments on the floor by the futon/ottoman. Separate seams and folded silhouettes, floor-mounted.",
+      "hasCustomNormals": true,
+      "boundsSpace": "Unreal",
+      "normalsImport": "Import authored normals; no recomputation"
+    },
+    {
+      "name": "SM_R204_R2_EntryIron",
+      "file": "SM_R204_R2_EntryIron.fbx",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/details/models/SM_R204_R2_EntryIron.fbx",
+      "triangles": 580,
+      "vertices": 304,
+      "boundsCm": [
+        [
+          -5.7158403396606445,
+          0.0499994158744812,
+          0.10000038146972656
+        ],
+        [
+          5.7158403396606445,
+          10.967514991760254,
+          20.30116844177246
+        ]
+      ],
+      "boundsBlenderCm": [
+        [
+          -5.7158403396606445,
+          -10.967514991760254,
+          0.10000038146972656
+        ],
+        [
+          5.7158403396606445,
+          -0.0499994158744812,
+          20.30116844177246
+        ]
+      ],
+      "sizeCm": [
+        11.431680679321289,
+        10.917515575885773,
+        20.201168060302734
+      ],
+      "materialSlots": [
+        "M_R204_R2_OffwhitePlastic",
+        "M_R204_R2_DullSteel",
+        "M_R204_R2_GrayPerforatedPlastic"
+      ],
+      "pivot": "floor centre, native centimetres",
+      "collision": "NoCollision",
+      "note": "Photo2200 small white iron standing upright at the entry return. Add cable/socket separately on the wall.",
+      "hasCustomNormals": true,
+      "boundsSpace": "Unreal",
+      "normalsImport": "Import authored normals; no recomputation"
+    },
+    {
+      "name": "SM_R204_R2_EntryOutletCable",
+      "file": "SM_R204_R2_EntryOutletCable.fbx",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/bathroom-opposite-fridge-room/revision-2/details/models/SM_R204_R2_EntryOutletCable.fbx",
+      "triangles": 1644,
+      "vertices": 840,
+      "boundsCm": [
+        [
+          -3.9000000953674316,
+          -0.0,
+          -105.27693939208984
+        ],
+        [
+          20.27456283569336,
+          17.275484085083008,
+          6.0
+        ]
+      ],
+      "boundsBlenderCm": [
+        [
+          -3.9000000953674316,
+          -17.275484085083008,
+          -105.27693939208984
+        ],
+        [
+          20.27456283569336,
+          0.0,
+          6.0
+        ]
+      ],
+      "sizeCm": [
+        24.17456293106079,
+        17.275484085083008,
+        111.27693939208984
+      ],
+      "materialSlots": [
+        "M_R204_R2_OffwhitePlastic",
+        "M_R204_R2_GrayPerforatedPlastic",
+        "M_R204_R2_BlackCloth",
+        "M_R204_R2_HeatherGrayJersey"
+      ],
+      "pivot": "floor centre, native centimetres",
+      "collision": "NoCollision",
+      "note": "Photo2200 socket and visible thin cord below hanging belt. Hook pivot is socket centre; placeZ~405 and +Y face rotated to the WEST return.",
+      "hasCustomNormals": true,
+      "boundsSpace": "Unreal",
+      "normalsImport": "Import authored normals; no recomputation"
+    }
+  ],
+  "actors": [
+    {
+      "label": "R204_R2_SM_SecondClosetShell",
+      "mesh": "R204_R2_SM_SecondClosetShell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "R204_R2_SM_SecondClosetFloor",
+      "mesh": "R204_R2_SM_SecondClosetFloor",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "R204_R2_SM_SecondClosetTrim",
+      "mesh": "R204_R2_SM_SecondClosetTrim",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "R204_R2_SM_SecondClosetShelf",
+      "mesh": "R204_R2_SM_SecondClosetShelf",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "R204_R2_COL_SecondClosetShellFloor",
+      "mesh": "R204_R2_COL_SecondClosetShellFloor",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "label": "R204_R2_BlackBedFootGarments",
+      "mesh": "SM_R204_R2_BlackBedFootGarments",
+      "location": [
+        -2516,
+        -117,
+        302.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.1,
+        1.1,
+        1.15
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_R2_ClosetThresholdClothesBox",
+      "mesh": "SM_R204_R2_ClosetThresholdClothesBox",
+      "location": [
+        -2850,
+        -353,
+        302.3
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_R2_SecondClosetClothes",
+      "mesh": "SM_R204_R2_SecondClosetClothes",
+      "location": [
+        -2845,
+        -405,
+        302.3
+      ],
+      "yaw": 0,
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_R2_FutonSideFloorGarments",
+      "mesh": "SM_R204_R2_FutonSideFloorGarments",
+      "location": [
+        -2920,
+        -336,
+        302.3
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_R2_EntryIron",
+      "mesh": "SM_R204_R2_EntryIron",
+      "location": [
+        -2429,
+        -453,
+        302.3
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_R2_EntryOutletCable",
+      "mesh": "SM_R204_R2_EntryOutletCable",
+      "location": [
+        -2440,
+        -449.5,
+        408
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision"
+    }
+  ],
+  "actor_updates": [
+    {
+      "label": "R204_BlackDoubleBed",
+      "mesh": "R204_R2_BlackDoubleBed",
+      "location": [
+        -2490,
+        199,
+        302.3
+      ],
+      "yaw": 180,
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_WhiteStripedDoubleBed",
+      "mesh": "R204_R2_WhiteStripedDoubleBed",
+      "location": [
+        -2832,
+        199,
+        302.3
+      ],
+      "yaw": 180,
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_GalanzFridgeAndMicrowave",
+      "mesh": "R204_R2_GalanzFridgeAndMicrowave",
+      "location": [
+        -2410,
+        -63.2,
+        302.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_COL_GalanzFridgeAndMicrowave",
+      "mesh": "R204_R2_COL_GalanzFridgeAndMicrowave",
+      "location": [
+        -2410,
+        -63.2,
+        302.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "label": "R204_OpenDarkWoodDresser",
+      "mesh": "R204_R2_OpenDarkWoodDresser",
+      "location": [
+        -2396,
+        -197.2,
+        302.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.48,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_COL_OpenDarkWoodDresser",
+      "mesh": "R204_R2_COL_OpenDarkWoodDresser",
+      "location": [
+        -2396,
+        -197.2,
+        302.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.48,
+        1.8,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "label": "R204_DresserCupsTumblerRoll",
+      "mesh": "SM_R204_DresserTop",
+      "location": [
+        -2396,
+        -197.2,
+        399.8
+      ],
+      "yaw": 90,
+      "scale": [
+        1.48,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_DresserOpenDrawerLaundry",
+      "mesh": "SM_R204_DresserDrawerLaundry",
+      "location": [
+        -2396,
+        -197.2,
+        302.3
+      ],
+      "yaw": 90,
+      "scale": [
+        1.48,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_CoorsCartonFridge",
+      "mesh": "SM_R204_CoorsCarton",
+      "location": [
+        -2515,
+        -56,
+        302.3
+      ],
+      "yaw": 180,
+      "scale": [
+        1.4,
+        1.4,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_CheckeredT",
+      "location": [
+        -2440,
+        -429,
+        497
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "R204_HangingBackpack",
+      "location": [
+        -2440,
+        -409,
+        444
+      ],
+      "yaw": -90,
+      "scale": [
+        1.35,
+        1.35,
+        1.15
+      ]
+    },
+    {
+      "label": "R204_HangingBelt",
+      "location": [
+        -2440,
+        -454,
+        458
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "R204_BlackBedLaundryBasket",
+      "mesh": "SM_R204_R2_CompactLaundryHamper",
+      "location": [
+        -2515,
+        -181,
+        302.3
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_FutonClothingShoesBread",
+      "location": [
+        -2870.5,
+        -142,
+        353.3
+      ]
+    },
+    {
+      "label": "R204_FutonBackDrapes",
+      "location": [
+        -2925,
+        -142,
+        376.5
+      ]
+    },
+    {
+      "label": "R204_QuiltedLeatherFuton",
+      "mesh": "SM_R204_QuiltedLeatherFuton",
+      "location": [
+        -2885,
+        -142,
+        302.3
+      ],
+      "yaw": -90,
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "R204_COL_QuiltedLeatherFuton",
+      "mesh": "COL_R204_QuiltedLeatherFuton",
+      "location": [
+        -2885,
+        -142,
+        302.3
+      ],
+      "yaw": -90,
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    }
+  ],
+  "replacements": [
+    {
+      "actor": "SM_Upper_m1_m2_Solid",
+      "mesh": "R204_R2_SM_Upper_m1_m2_SecondCloset",
+      "collision": "NoCollision"
+    },
+    {
+      "actor": "COL_Upper_m1_m2_Solid",
+      "mesh": "R204_R2_COL_Upper_m1_m2_SecondCloset",
+      "collision": "BlockAll"
+    },
+    {
+      "actor": "R204_SM_InteriorPaint",
+      "mesh": "R204_R2_SM_InteriorPaint_SecondCloset",
+      "collision": "NoCollision"
+    },
+    {
+      "actor": "R204_SM_CharcoalSkirting",
+      "mesh": "R204_R2_SM_CharcoalSkirting_SecondCloset",
+      "collision": "NoCollision"
+    }
+  ],
+  "materials": {
+    "M_R204_BlueGreyPaint": {
+      "existing_asset": "/Game/SeniorSendOff/House/Room204/M_R204_BlueGreyPaint"
+    },
+    "M_R204_CharcoalSkirting": {
+      "existing_asset": "/Game/SeniorSendOff/House/Room204/M_R204_CharcoalSkirting"
+    },
+    "M_R204_ClosetWhiteTrim": {
+      "existing_asset": "/Game/SeniorSendOff/House/Room204/M_R204_ClosetWhiteTrim"
+    },
+    "M_R204_CreamCeiling": {
+      "existing_asset": "/Game/SeniorSendOff/House/Room204/M_R204_CreamCeiling"
+    },
+    "MI_SSO_FloorWood": {
+      "existing_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood.MI_SSO_FloorWood"
+    },
+    "M_R204_R2_ShelfCream": {
+      "color": [
+        0.68,
+        0.665,
+        0.61
+      ],
+      "roughness": 0.7
+    },
+    "M_R204_R2_BracketSteel": {
+      "color": [
+        0.55,
+        0.55,
+        0.52
+      ],
+      "roughness": 0.4,
+      "metallic": 0.72
+    },
+    "M_R204_R2_WornDarkWalnut": {
+      "color": [
+        0.1,
+        0.055,
+        0.023
+      ],
+      "roughness": 0.47,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "T_R204_R2_DarkWalnut_BaseColor.png",
+      "normal_texture": "T_R204_R2_DarkWalnut_Normal.png",
+      "roughness_texture": "T_R204_R2_DarkWalnut_Roughness.png",
+      "normal_strength": 0.35
+    },
+    "M_R204_R2_WarmOakBedframe": {
+      "color": [
+        0.32,
+        0.18,
+        0.071
+      ],
+      "roughness": 0.53,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_BlackRumpledQuilt": {
+      "color": [
+        0.035,
+        0.041,
+        0.045
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "T_R204_R2_BlackQuilt_BaseColor.png",
+      "normal_texture": "T_R204_R2_BlackQuilt_Normal.png",
+      "roughness_texture": "T_R204_R2_BlackQuilt_Roughness.png",
+      "normal_strength": 0.55
+    },
+    "M_R204_R2_WhiteCottonSheet": {
+      "color": [
+        0.76,
+        0.76,
+        0.72
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "T_R204_R2_WhiteSheet_BaseColor.png",
+      "normal_texture": "T_R204_R2_WhiteSheet_Normal.png",
+      "roughness_texture": "T_R204_R2_WhiteSheet_Roughness.png",
+      "normal_strength": 0.35
+    },
+    "M_R204_R2_MutedStripedBlanket": {
+      "color": [
+        0.36,
+        0.37,
+        0.31
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "base_texture": "T_R204_R2_StripedBlanket_BaseColor.png",
+      "normal_texture": "T_R204_R2_StripedBlanket_Normal.png",
+      "roughness_texture": "T_R204_R2_StripedBlanket_Roughness.png",
+      "normal_strength": 0.35
+    },
+    "M_R204_R2_BlackPowdercoatMetal": {
+      "color": [
+        0.018,
+        0.021,
+        0.025
+      ],
+      "roughness": 0.53,
+      "metallic": 0.6,
+      "uv_scale": 1
+    },
+    "M_R204_R2_PolishedChrome": {
+      "color": [
+        0.62,
+        0.65,
+        0.68
+      ],
+      "roughness": 0.2,
+      "metallic": 0.95,
+      "uv_scale": 1
+    },
+    "M_R204_R2_BlackPlastic": {
+      "color": [
+        0.014,
+        0.017,
+        0.02
+      ],
+      "roughness": 0.46,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_BlackFridgeEnamel": {
+      "color": [
+        0.017,
+        0.022,
+        0.027
+      ],
+      "roughness": 0.23,
+      "metallic": 0.2,
+      "uv_scale": 1,
+      "base_texture": "T_R204_R2_FridgeEnamel_BaseColor.png",
+      "normal_texture": "T_R204_R2_FridgeEnamel_Normal.png",
+      "roughness_texture": "T_R204_R2_FridgeEnamel_Roughness.png",
+      "normal_strength": 0.35
+    },
+    "M_R204_R2_OldIvoryAppliance": {
+      "color": [
+        0.66,
+        0.65,
+        0.59
+      ],
+      "roughness": 0.58,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_MicrowaveBlackGlass": {
+      "color": [
+        0.016,
+        0.025,
+        0.03
+      ],
+      "roughness": 0.13,
+      "metallic": 0.2,
+      "uv_scale": 1
+    },
+    "M_R204_R2_MattressIvoryEdge": {
+      "color": [
+        0.64,
+        0.635,
+        0.58
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_BlackFridgeGasket": {
+      "color": [
+        0.006,
+        0.008,
+        0.009
+      ],
+      "roughness": 0.79,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_WarmLampBulb": {
+      "color": [
+        0.95,
+        0.71,
+        0.32
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emissive_color": [
+        1,
+        0.46,
+        0.08
+      ],
+      "emissive_strength": 0.25,
+      "emission": 0.25
+    },
+    "M_R204_R2_Collider": {
+      "color": [
+        0.04,
+        0.04,
+        0.04
+      ],
+      "roughness": 1,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_AgedDresserBrass": {
+      "color": [
+        0.33,
+        0.22,
+        0.082
+      ],
+      "roughness": 0.37,
+      "metallic": 0.78,
+      "uv_scale": 1
+    },
+    "M_R204_R2_IvoryThread": {
+      "color": [
+        0.68,
+        0.68,
+        0.63
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_MicrowaveKeyLegends": {
+      "color": [
+        0.042,
+        0.047,
+        0.049
+      ],
+      "roughness": 0.58,
+      "metallic": 0,
+      "uv_scale": 1
+    },
+    "M_R204_R2_WornIvoryCotton": {
+      "color": [
+        0.67,
+        0.65,
+        0.59
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_HeatherGrayJersey": {
+      "color": [
+        0.2,
+        0.215,
+        0.23
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_LightGrayCotton": {
+      "color": [
+        0.36,
+        0.37,
+        0.37
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_BlueDenim": {
+      "color": [
+        0.045,
+        0.085,
+        0.145
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_NavyCloth": {
+      "color": [
+        0.022,
+        0.035,
+        0.057
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_BlackCloth": {
+      "color": [
+        0.012,
+        0.015,
+        0.019
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_OrangeJersey": {
+      "color": [
+        0.61,
+        0.18,
+        0.026
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_WornCanvas": {
+      "color": [
+        0.37,
+        0.32,
+        0.235
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_texture": "T_R204_R2_WovenNormal.png",
+      "roughness_texture": "T_R204_R2_WovenRoughness.png"
+    },
+    "M_R204_R2_Thread": {
+      "color": [
+        0.19,
+        0.19,
+        0.175
+      ],
+      "roughness": 0.96,
+      "metallic": 0
+    },
+    "M_R204_R2_LightThread": {
+      "color": [
+        0.58,
+        0.56,
+        0.49
+      ],
+      "roughness": 0.96,
+      "metallic": 0
+    },
+    "M_R204_R2_GrayPerforatedPlastic": {
+      "color": [
+        0.125,
+        0.145,
+        0.134
+      ],
+      "roughness": 0.66,
+      "metallic": 0
+    },
+    "M_R204_R2_OffwhitePlastic": {
+      "color": [
+        0.64,
+        0.65,
+        0.61
+      ],
+      "roughness": 0.42,
+      "metallic": 0
+    },
+    "M_R204_R2_DullSteel": {
+      "color": [
+        0.32,
+        0.34,
+        0.32
+      ],
+      "roughness": 0.33,
+      "metallic": 0.75
+    },
+    "M_R204_R2_Cardboard": {
+      "color": [
+        0.31,
+        0.205,
+        0.107
+      ],
+      "roughness": 0.91,
+      "metallic": 0
+    },
+    "M_R204_R2_CorrugatedCardboardEdge": {
+      "color": [
+        0.235,
+        0.145,
+        0.067
+      ],
+      "roughness": 0.95,
+      "metallic": 0
+    },
+    "M_R204_R2_Paper": {
+      "color": [
+        0.7,
+        0.69,
+        0.63
+      ],
+      "roughness": 0.93,
+      "metallic": 0
+    },
+    "M_R204_R2_DarkGreenCarton": {
+      "color": [
+        0.033,
+        0.135,
+        0.085
+      ],
+      "roughness": 0.76,
+      "metallic": 0
+    }
+  }
+}

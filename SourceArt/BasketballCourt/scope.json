@@ -1,0 +1,30 @@
+{
+  "map": "Chapter01_House",
+  "reference_images": [
+    "IMG_1907.jpeg",
+    "IMG_1904.jpeg",
+    "IMG_1905.jpeg",
+    "IMG_1903.jpeg",
+    "IMG_1942.jpeg"
+  ],
+  "changes": [
+    "Worn full court with two hoops and shared physics basketball",
+    "Brick retaining walls, cream stone caps, black iron fencing",
+    "Carport-side grassy bank and opposite lawn with twin-fan HVAC"
+  ],
+  "protected": [
+    "Saved interior map",
+    "NoodleWing entrance and T junction",
+    "Both stairwells",
+    "Porch doors, arcade, restored porch railing",
+    "No porch-to-court stairs",
+    "Unity projects"
+  ],
+  "checks": [
+    "Native court collision and walking route",
+    "Real bounces",
+    "Normal E pickup, animated LMB shot through both baskets",
+    "Out-of-bounds ball recovery",
+    "Native screenshots and manual playtest"
+  ]
+}

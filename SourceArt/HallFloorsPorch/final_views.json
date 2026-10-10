@@ -1,0 +1,172 @@
+{
+  "views": [
+    {
+      "name": "01_ground_hall",
+      "position": {
+        "x": -9.25,
+        "y": 1.6,
+        "z": -21.9
+      },
+      "target": {
+        "x": 4.5,
+        "y": 0.1,
+        "z": -21.9
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "02_upper_hall",
+      "position": {
+        "x": -11.2,
+        "y": 4.6,
+        "z": -21.9
+      },
+      "target": {
+        "x": 2.5,
+        "y": 3.06,
+        "z": -21.9
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "03_wood_transition",
+      "position": {
+        "x": -6.9,
+        "y": 4.6,
+        "z": -15.0
+      },
+      "target": {
+        "x": -6.9,
+        "y": 3.06,
+        "z": -11.6
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "04_ground_bath",
+      "position": {
+        "x": -4.4,
+        "y": 1.6,
+        "z": -17.0
+      },
+      "target": {
+        "x": 3.2,
+        "y": 0.05,
+        "z": -17.0
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "05_upper_bath",
+      "position": {
+        "x": -4.3,
+        "y": 4.65,
+        "z": -17.4
+      },
+      "target": {
+        "x": 3.5,
+        "y": 3.05,
+        "z": -17.4
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "06_guarded_window",
+      "position": {
+        "x": 9.4,
+        "y": 4.7,
+        "z": -22.4
+      },
+      "target": {
+        "x": 12.34,
+        "y": 4.48,
+        "z": -22.1
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "07_landing_floor",
+      "position": {
+        "x": 10.2,
+        "y": 4.8,
+        "z": -22.1
+      },
+      "target": {
+        "x": 9.3,
+        "y": 3.04,
+        "z": -21.75
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "08_porch_door_inside",
+      "position": {
+        "x": -6.0,
+        "y": 4.67,
+        "z": -0.17
+      },
+      "target": {
+        "x": -8.4,
+        "y": 4.17,
+        "z": -0.17
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "09_porch_seating",
+      "position": {
+        "x": -12.2,
+        "y": 4.87,
+        "z": -1.2
+      },
+      "target": {
+        "x": -9.4,
+        "y": 3.78,
+        "z": 0.2
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "10_porch_chair",
+      "position": {
+        "x": -12.4,
+        "y": 4.7,
+        "z": 3.2
+      },
+      "target": {
+        "x": -10.08,
+        "y": 3.9,
+        "z": 3.4
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "11_porch_bench",
+      "position": {
+        "x": -12.3,
+        "y": 4.62,
+        "z": -3.6
+      },
+      "target": {
+        "x": -9.85,
+        "y": 3.92,
+        "z": -3.75
+      },
+      "fieldOfView": 56
+    },
+    {
+      "name": "12_gallery_wood",
+      "position": {
+        "x": -6.9,
+        "y": 4.65,
+        "z": -10.4
+      },
+      "target": {
+        "x": -6.8,
+        "y": 3.06,
+        "z": 0.0
+      },
+      "fieldOfView": 56
+    }
+  ]
+}

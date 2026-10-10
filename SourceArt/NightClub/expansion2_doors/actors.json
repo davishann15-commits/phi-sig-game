@@ -1,0 +1,755 @@
+[
+  {
+    "name": "ExistingHouseDoor_0",
+    "label": "OriginalDoor_Basement_m1_m1_Solid_01",
+    "location": [
+      -1366.2,
+      -393.03000000000003,
+      -353.1
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "bounds": [
+      [
+        -1590.8200000000002,
+        -1760.3299999615529,
+        -362.79106445312505
+      ],
+      [
+        -972.0699998658715,
+        -255.52999999999997,
+        1.1000000000000227
+      ]
+    ],
+    "meshes": [
+      {
+        "component": "OriginalDoorLeaf",
+        "asset": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Basement_m1_m1_Solid_01.SM_OriginalLeaf_Basement_m1_m1_Solid_01",
+        "location": [
+          -973.1699998659794,
+          -1759.229999961445,
+          0.0
+        ],
+        "rotation": [
+          -0.0,
+          -89.99999999437944,
+          -0.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "fbx": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_doors/fbx/ExistingHouseDoor_0_OriginalDoorLeaf.fbx",
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      }
+    ],
+    "boxes": [
+      {
+        "component": "MovingPanelCollision",
+        "location": [
+          -973.1699998659794,
+          -1759.229999961445,
+          0.0
+        ],
+        "rotation": [
+          -0.0,
+          -89.99999999437944,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      {
+        "component": "Approach",
+        "location": [
+          -1453.3200000000002,
+          -393.03000000000003,
+          -232.10000000000002
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          125.0,
+          125.0,
+          115.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "closed_yaw": -90.0,
+    "open_yaw": 0.0,
+    "doorway_center": [
+      -1453.3200000000002,
+      -393.03000000000003,
+      -232.10000000000002
+    ],
+    "panel_center_world": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "panel_half_extent": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "local_leaf_space": false
+  },
+  {
+    "name": "ExistingHouseDoor_3",
+    "label": "OriginalDoor_Entrance_m1_m1_Solid_01",
+    "location": [
+      -1455.3000000000002,
+      -875.6,
+      8.8
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "bounds": [
+      [
+        -1592.8000000000002,
+        -2331.9999999142137,
+        -4.125083923339844
+      ],
+      [
+        -578.5999998571315,
+        -645.04,
+        256.3
+      ]
+    ],
+    "meshes": [
+      {
+        "component": "OriginalDoorLeaf",
+        "asset": "/Game/ExistingHouseDoors/SM_OriginalLeaf_Entrance_m1_m1_Solid_01.SM_OriginalLeaf_Entrance_m1_m1_Solid_01",
+        "location": [
+          -579.6999998572394,
+          -2330.899999914106,
+          0.0
+        ],
+        "rotation": [
+          -0.0,
+          -89.99999999437944,
+          -0.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "fbx": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_doors/fbx/ExistingHouseDoor_3_OriginalDoorLeaf.fbx",
+        "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      },
+      {
+        "component": "AddedDoorHandle",
+        "asset": "/Game/ExistingHouseDoors/SM_HouseLeverHandle.SM_HouseLeverHandle",
+        "location": [
+          -1455.2560336284766,
+          -700.4800075530962,
+          114.67499213218693
+        ],
+        "rotation": [
+          0.0,
+          90.00000000562056,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "fbx": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_doors/fbx/ExistingHouseDoor_3_AddedDoorHandle.fbx",
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "boxes": [
+      {
+        "component": "MovingPanelCollision",
+        "location": [
+          -579.6999998572394,
+          -2330.899999914106,
+          0.0
+        ],
+        "rotation": [
+          -0.0,
+          -89.99999999437944,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      },
+      {
+        "component": "Approach",
+        "location": [
+          -1455.3000000000002,
+          -782.54,
+          129.8
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          125.0,
+          125.0,
+          115.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "closed_yaw": -90.0,
+    "open_yaw": 0.0,
+    "doorway_center": [
+      -1455.3000000000002,
+      -782.5400000000001,
+      129.8
+    ],
+    "panel_center_world": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "panel_half_extent": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "local_leaf_space": false
+  },
+  {
+    "name": "ExistingHouseDoor_10",
+    "label": "OriginalDoor_Upper_m1_m1_Solid_01",
+    "location": [
+      -1423.6200000000001,
+      -856.35,
+      338.25
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "bounds": [
+      [
+        -2858.240105743408,
+        -1710.9863525390624,
+        325.04999999999995
+      ],
+      [
+        -1286.12,
+        -623.1500000000001,
+        789.066279220581
+      ]
+    ],
+    "meshes": [
+      {
+        "component": "OriginalDoorLeaf",
+        "asset": "/Game/SeniorSendOff/House/DoorRepair/SM_PorchAccessFittedLeaf_v2.SM_PorchAccessFittedLeaf_v2",
+        "location": [
+          -1423.62,
+          -856.35,
+          338.25
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "fbx": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_doors/fbx/ExistingHouseDoor_10_OriginalDoorLeaf.fbx",
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "boxes": [
+      {
+        "component": "MovingPanelCollision",
+        "location": [
+          -1423.6200000000001,
+          -760.65,
+          451.55
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          2.8,
+          87.0,
+          103.0
+        ],
+        "collision": "<CollisionEnabled.QUERY_ONLY: 1>"
+      },
+      {
+        "component": "Approach",
+        "location": [
+          -1423.6200000000001,
+          -760.65,
+          451.55
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          125.0,
+          125.0,
+          115.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "closed_yaw": 0.0,
+    "open_yaw": 90.0,
+    "doorway_center": [
+      -1423.6200000000001,
+      -760.6500000000001,
+      451.55
+    ],
+    "panel_center_world": [
+      0.0,
+      87.0,
+      103.0
+    ],
+    "panel_half_extent": [
+      2.8,
+      87.0,
+      103.0
+    ],
+    "local_leaf_space": true
+  },
+  {
+    "name": "ExistingHouseDoor_11",
+    "label": "HallEnd_West",
+    "location": [
+      -2568.3160800000005,
+      -1458.6000000000001,
+      332.53000000000003
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "bounds": [
+      [
+        -2705.8160800000005,
+        -1507.0000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        575.08
+      ]
+    ],
+    "meshes": [
+      {
+        "component": "OriginalDoorLeaf",
+        "asset": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_West_LeafWorld.SM_HallEnd_West_LeafWorld",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "fbx": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_doors/fbx/ExistingHouseDoor_11_OriginalDoorLeaf.fbx",
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "boxes": [
+      {
+        "component": "MovingPanelCollision",
+        "location": [
+          -2568.3160800000005,
+          -1369.5,
+          448.03000000000003
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          5.3,
+          81.0,
+          105.0
+        ],
+        "collision": "<CollisionEnabled.QUERY_ONLY: 1>"
+      },
+      {
+        "component": "Approach",
+        "location": [
+          -2568.3160800000005,
+          -1369.5000000000002,
+          448.58000000000004
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          125.0,
+          125.0,
+          115.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "closed_yaw": 0.0,
+    "open_yaw": 90.0,
+    "doorway_center": [
+      -2568.3160800000005,
+      -1369.5,
+      448.58000000000004
+    ],
+    "panel_center_world": [
+      -2568.3160800000005,
+      -1369.5,
+      448.03000000000003
+    ],
+    "panel_half_extent": [
+      5.3,
+      81.0,
+      105.0
+    ],
+    "local_leaf_space": false
+  },
+  {
+    "name": "ExistingHouseDoor_31",
+    "label": "HallEnd_End",
+    "location": [
+      -2305.6000000000004,
+      -1524.8667500000001,
+      332.53000000000003
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "bounds": [
+      [
+        -2532.2000000000003,
+        -1662.3667500000001,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        575.08
+      ]
+    ],
+    "meshes": [
+      {
+        "component": "OriginalDoorLeaf",
+        "asset": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_End_LeafWorld.SM_HallEnd_End_LeafWorld",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "fbx": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_doors/fbx/ExistingHouseDoor_31_OriginalDoorLeaf.fbx",
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "boxes": [
+      {
+        "component": "MovingPanelCollision",
+        "location": [
+          -2394.7000000000003,
+          -1524.8667500000001,
+          448.03000000000003
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          81.0,
+          5.3,
+          105.0
+        ],
+        "collision": "<CollisionEnabled.QUERY_ONLY: 1>"
+      },
+      {
+        "component": "Approach",
+        "location": [
+          -2394.7000000000003,
+          -1524.8667500000001,
+          448.58000000000004
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          125.0,
+          125.0,
+          115.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "closed_yaw": 0.0,
+    "open_yaw": 90.0,
+    "doorway_center": [
+      -2394.7000000000003,
+      -1524.8667500000001,
+      448.58000000000004
+    ],
+    "panel_center_world": [
+      -2394.7000000000003,
+      -1524.8667500000001,
+      448.03000000000003
+    ],
+    "panel_half_extent": [
+      81.0,
+      5.3,
+      105.0
+    ],
+    "local_leaf_space": false
+  },
+  {
+    "name": "ExistingHouseDoor_32",
+    "label": "HallEnd_East",
+    "location": [
+      -2228.35019,
+      -1296.9,
+      332.53000000000003
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.1,
+      1.1,
+      1.1
+    ],
+    "bounds": [
+      [
+        -2365.85019,
+        -1523.5,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        575.08
+      ]
+    ],
+    "meshes": [
+      {
+        "component": "OriginalDoorLeaf",
+        "asset": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_East_LeafWorld.SM_HallEnd_East_LeafWorld",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.9799999475479129,
+          1.9799999475479129,
+          1.1
+        ],
+        "fbx": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_doors/fbx/ExistingHouseDoor_32_OriginalDoorLeaf.fbx",
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "boxes": [
+      {
+        "component": "MovingPanelCollision",
+        "location": [
+          -2228.35019,
+          -1386.0,
+          448.03000000000003
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          5.3,
+          81.0,
+          105.0
+        ],
+        "collision": "<CollisionEnabled.QUERY_ONLY: 1>"
+      },
+      {
+        "component": "Approach",
+        "location": [
+          -2228.35019,
+          -1386.0,
+          448.58000000000004
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "scale": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "extent": [
+          125.0,
+          125.0,
+          115.0
+        ],
+        "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+      }
+    ],
+    "closed_yaw": 0.0,
+    "open_yaw": 90.0,
+    "doorway_center": [
+      -2228.35019,
+      -1386.0,
+      448.58000000000004
+    ],
+    "panel_center_world": [
+      -2228.35019,
+      -1386.0,
+      448.03000000000003
+    ],
+    "panel_half_extent": [
+      5.3,
+      81.0,
+      105.0
+    ],
+    "local_leaf_space": false
+  }
+]

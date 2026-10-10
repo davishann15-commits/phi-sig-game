@@ -1,0 +1,367 @@
+{
+  "shelf": {
+    "id": "SixShelfBookcase",
+    "asset_name": "SM_Lib_SixShelfBookcase",
+    "intact_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/basement-library/models/SM_Lib_SixShelfBookcase.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/BasementLibrary/M_Lib_BlackCaseWood.M_Lib_BlackCaseWood"
+    ],
+    "material_names": [
+      "M_Lib_BlackCaseWood"
+    ],
+    "bounds_blender_metres": [
+      [
+        -0.6678000688552856,
+        -0.27000001072883606,
+        0.0
+      ],
+      [
+        0.6678000688552856,
+        0.27000001072883606,
+        1.8899999856948853
+      ]
+    ],
+    "behavior": "furniture",
+    "mass_kg": 85,
+    "break_health": 85,
+    "movable": true,
+    "wall": false,
+    "damage": true,
+    "hulls": 10,
+    "vertices": 960,
+    "faces": 980,
+    "damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/basement-library/models/damage/SM_Lib_SixShelfBookcase_DamageV2.fbx",
+    "damaged_asset_name": "SM_Lib_SixShelfBookcase_DamageV2",
+    "damaged_material_slots": [
+      "/Game/SeniorSendOff/House/BasementLibrary/M_Lib_BlackCaseWood.M_Lib_BlackCaseWood",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+    ],
+    "damaged_collision": "imported_fragment_ucx",
+    "heavily_damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/basement-library/models/damage/SM_Lib_SixShelfBookcase_HeavyV2.fbx",
+    "heavily_damaged_asset_name": "SM_Lib_SixShelfBookcase_HeavyV2",
+    "heavily_damaged_material_slots": [
+      "/Game/SeniorSendOff/House/BasementLibrary/M_Lib_BlackCaseWood.M_Lib_BlackCaseWood",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+    ],
+    "heavily_damaged_collision": "imported_fragment_ucx",
+    "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/models/SM_Lib_SixShelfBookcase_BrokenV3.fbx",
+    "broken_asset_name": "SM_Lib_SixShelfBookcase_BrokenV3",
+    "broken_material_slots": [
+      "/Game/SeniorSendOff/House/BasementLibrary/M_Lib_BlackCaseWood.M_Lib_BlackCaseWood",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+      "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+    ],
+    "broken_collision": "imported_fragment_ucx",
+    "damage_geometry_version": 2,
+    "broken_material_names": [
+      "M_Lib_BlackCaseWood",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "broken_audit": {
+      "vertices": 1280,
+      "faces": 1420,
+      "hulls": 12,
+      "bounds": [
+        [
+          -1.395686,
+          -0.885846,
+          0.02
+        ],
+        [
+          1.239416,
+          0.752383,
+          0.608691
+        ]
+      ],
+      "fragments": 20
+    }
+  },
+  "retained": [
+    {
+      "label": "SM_Entrance_p0_m1_Solid",
+      "asset_name": "SM_FPR_Retained_SM_Entrance_p0_m1_Solid",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/models/SM_FPR_Retained_SM_Entrance_p0_m1_Solid.fbx",
+      "material_names": [
+        "MI_SSO_Blue",
+        "MI_SSO_MetalDark",
+        "MI_SSO_Black",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_PaintGrey",
+        "MI_SSO_OakTone1",
+        "MI_SSO_OakTone4",
+        "MI_SSO_OakTone3",
+        "MI_SSO_OakTone7",
+        "MI_SSO_OakTone6",
+        "MI_SSO_OakTone2",
+        "MI_SSO_OakTone5",
+        "MI_SSO_OakTone0",
+        "MI_SSO_TileCream",
+        "MI_SSO_Brick",
+        "MI_SSO_PaintCream",
+        "MI_SSO_LightWarm",
+        "MI_SSO_S01BroomYellow",
+        "MI_SSO_Concrete",
+        "MI_SSO_S03FidelityChrome",
+        "MI_SSO_S03MasonryCream",
+        "MI_SSO_S03FidelityBathPaint"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S01BroomYellow.MI_SSO_S01BroomYellow",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityChrome.MI_SSO_S03FidelityChrome",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream.MI_SSO_S03MasonryCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityBathPaint.MI_SSO_S03FidelityBathPaint"
+      ],
+      "faces_before": 45262,
+      "faces_retained": 39922,
+      "fireplace_faces_replaced": 5340
+    },
+    {
+      "label": "SM_Entrance_p0_p0_Solid",
+      "asset_name": "SM_FPR_Retained_SM_Entrance_p0_p0_Solid",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/models/SM_FPR_Retained_SM_Entrance_p0_p0_Solid.fbx",
+      "material_names": [
+        "MI_SSO_BHCeilingWhite",
+        "MI_SSO_MortarDark",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_PaintCream",
+        "MI_SSO_Blue",
+        "MI_SSO_MetalDark",
+        "MI_SSO_FloorWood",
+        "MI_SSO_OakTone4",
+        "MI_SSO_OakTone2",
+        "MI_SSO_OakTone3",
+        "MI_SSO_OakTone0",
+        "MI_SSO_OakTone6",
+        "MI_SSO_OakTone7",
+        "MI_SSO_OakTone1",
+        "MI_SSO_OakTone5",
+        "MI_SSO_TileCream",
+        "MI_SSO_Brick",
+        "MI_SSO_Black",
+        "MI_SSO_PaintGrey",
+        "MI_SSO_LightWarm",
+        "MI_SSO_MetalBrass",
+        "MI_SSO_S02WallTaupe",
+        "MI_SSO_Concrete"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood.MI_SSO_FloorWood",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_TileCream.MI_SSO_TileCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Brick.MI_SSO_Brick",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete"
+      ],
+      "faces_before": 51508,
+      "faces_retained": 46920,
+      "fireplace_faces_replaced": 4588
+    },
+    {
+      "label": "SM_Entrance_m1_p0_Solid",
+      "asset_name": "SM_FPR_Retained_SM_Entrance_m1_p0_Solid",
+      "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/models/SM_FPR_Retained_SM_Entrance_m1_p0_Solid.fbx",
+      "material_names": [
+        "MI_SSO_MortarDark",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_OakTone0",
+        "MI_SSO_OakTone2",
+        "MI_SSO_OakTone7",
+        "MI_SSO_OakTone3",
+        "MI_SSO_OakTone1",
+        "MI_SSO_OakTone6",
+        "MI_SSO_OakTone4",
+        "MI_SSO_OakTone5",
+        "MI_SSO_PaintCream",
+        "MI_SSO_MetalDark",
+        "MI_SSO_Red",
+        "MI_SSO_FabricCream",
+        "MI_SSO_Blue",
+        "MI_SSO_S02WallTaupe",
+        "MI_SSO_MetalBrass"
+      ],
+      "material_slots": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Red.MI_SSO_Red",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_FabricCream.MI_SSO_FabricCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+      ],
+      "faces_before": 40522,
+      "faces_retained": 39770,
+      "fireplace_faces_replaced": 752
+    }
+  ],
+  "fireplace": {
+    "asset_name": "SM_FPR_ClassicFireplace",
+    "intact_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/models/SM_FPR_ClassicFireplace.fbx",
+    "material_names": [
+      "M_FPR_BarkEdge",
+      "M_FPR_BlackIron",
+      "M_FPR_CharredOak",
+      "M_FPR_Embers",
+      "M_FPR_HonedStone",
+      "M_FPR_SootBrick",
+      "M_FPR_WarmPaint"
+    ],
+    "material_slots": [
+      "/Game/SeniorSendOff/House/FireplaceRefinement/M_FPR_BarkEdge.M_FPR_BarkEdge",
+      "/Game/SeniorSendOff/House/FireplaceRefinement/M_FPR_BlackIron.M_FPR_BlackIron",
+      "/Game/SeniorSendOff/House/FireplaceRefinement/M_FPR_CharredOak.M_FPR_CharredOak",
+      "/Game/SeniorSendOff/House/FireplaceRefinement/M_FPR_Embers.M_FPR_Embers",
+      "/Game/SeniorSendOff/House/FireplaceRefinement/M_FPR_HonedStone.M_FPR_HonedStone",
+      "/Game/SeniorSendOff/House/FireplaceRefinement/M_FPR_SootBrick.M_FPR_SootBrick",
+      "/Game/SeniorSendOff/House/FireplaceRefinement/M_FPR_WarmPaint.M_FPR_WarmPaint"
+    ],
+    "faces": 18171,
+    "placements": [
+      {
+        "label": "GreatRoom_Fireplace_West",
+        "location": [
+          -1158,
+          189.9,
+          0
+        ],
+        "yaw": -90
+      },
+      {
+        "label": "GreatRoom_Fireplace_East",
+        "location": [
+          1257,
+          169.2,
+          0
+        ],
+        "yaw": 90
+      }
+    ]
+  },
+  "materials": {
+    "M_FPR_WarmPaint": {
+      "base_color": [
+        0.74,
+        0.705,
+        0.61
+      ],
+      "roughness": 0.46,
+      "metallic": 0,
+      "emission": 0
+    },
+    "M_FPR_HonedStone": {
+      "base_color": [
+        0.105,
+        0.115,
+        0.12
+      ],
+      "roughness": 0.68,
+      "metallic": 0,
+      "emission": 0
+    },
+    "M_FPR_SootBrick": {
+      "base_color": [
+        0.085,
+        0.061,
+        0.045
+      ],
+      "roughness": 0.93,
+      "metallic": 0,
+      "emission": 0
+    },
+    "M_FPR_BlackIron": {
+      "base_color": [
+        0.018,
+        0.022,
+        0.024
+      ],
+      "roughness": 0.48,
+      "metallic": 0.75,
+      "emission": 0
+    },
+    "M_FPR_CharredOak": {
+      "base_color": [
+        0.025,
+        0.016,
+        0.008
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "emission": 0
+    },
+    "M_FPR_BarkEdge": {
+      "base_color": [
+        0.065,
+        0.039,
+        0.018
+      ],
+      "roughness": 0.97,
+      "metallic": 0,
+      "emission": 0
+    },
+    "M_FPR_Embers": {
+      "base_color": [
+        0.8,
+        0.09,
+        0.009
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "emission": 1.6
+    }
+  }
+}

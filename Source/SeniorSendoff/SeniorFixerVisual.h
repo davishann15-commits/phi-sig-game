@@ -21,6 +21,7 @@ public:
     void SetVisualActive(bool bActive);
     void PrestreamPreviewTextures();
     void SetMoveSpeed(float Speed);
+    void SetFurnitureCarryPose(class UHouseFurnitureInteractionComponent* Carry);
     AActor* GetNativeCharacter() const { return NativeCharacter; }
     USkeletalMeshComponent* GetBodyMesh() const { return Body; }
     UAnimSequence* GetIdleAnimation() const { return Idle; }

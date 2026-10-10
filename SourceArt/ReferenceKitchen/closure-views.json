@@ -1,0 +1,46 @@
+{
+  "views": [
+    {
+      "name": "01_DiningForward",
+      "position": {
+        "x": -2.72,
+        "y": 1.63,
+        "z": 23.3
+      },
+      "target": {
+        "x": 7.0,
+        "y": 1.05,
+        "z": 27.6
+      },
+      "fieldOfView": 55
+    },
+    {
+      "name": "02_DiningReverse",
+      "position": {
+        "x": 9.25,
+        "y": 1.62,
+        "z": 25.0
+      },
+      "target": {
+        "x": -5.8,
+        "y": 0.8,
+        "z": 27.5
+      },
+      "fieldOfView": 55
+    },
+    {
+      "name": "06_TVAndClosedCloset",
+      "position": {
+        "x": 3.25,
+        "y": 1.55,
+        "z": 24.5
+      },
+      "target": {
+        "x": 2.5,
+        "y": 1.2,
+        "z": 20.67
+      },
+      "fieldOfView": 56
+    }
+  ]
+}

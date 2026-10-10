@@ -1,0 +1,10 @@
+{
+  "mode": "built-in image_gen",
+  "use_case": "photorealistic-natural",
+  "prompt": "Use case: photorealistic-natural\nAsset type: seamless game material base-color/albedo texture, square tile, for walnut live-edge console slabs and round coffee tables in a warm great room.\nPrimary request: create a natural warm walnut wood albedo tile. One solid continuous wood surface fills the full square, no margins.\nComposition: orthographic top-down surface scan, all wood grain travels predominantly left-to-right along image X. Tight, fine pores and flowing subtle natural grain; small restrained knots, with organic brown and muted honey variation. Subdued medium walnut brown overall, visibly natural rather than procedurally perfect.\nLighting: perfectly uniform neutral diffuse illumination suitable for physically based material base color; no directional lighting, no highlights, no shadows, no ambient occlusion, no reflections.\nConstraints: seamless and tileable on all four edges; continuous single solid timber surface, no plank seams or separate boards; no crosshatching, no grid, no checker pattern, no parquet, no burned lines, no live-edge outline; not a photograph of furniture. No text, no logos, no border, no background. Fine pores and realistic wood detail without stark black streaks.",
+  "original_path": "/Users/Stewart/.codex/generated_images/01a0ef82-3d74-78c0-83d4-1186cb967236/exec-9d4bcefc-dcf6-47e3-b2d2-3eb5fd48f7d2.png",
+  "output_path": "/Users/Stewart/Projects/Senior sendoff/outputs/great-room-polish-v3/source/T_GR3_Walnut.png",
+  "original_copy_path": "outputs/great-room-polish-v3/source/ReferenceTextures/T_GR3_Walnut-original.png",
+  "asset_conversion": "RGB PNG, 1024x1024 Lanczos resampling",
+  "visual_qa": "Warm restrained walnut grain runs left to right. Fine pores and subtle knots; no plank joins, grid, baked light, shine, or furniture edges. Generated tile appears suitable for wood albedo; exact edge continuity is not proven by the generation."
+}

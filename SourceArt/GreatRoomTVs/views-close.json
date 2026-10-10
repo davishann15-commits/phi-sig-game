@@ -1,0 +1,32 @@
+{
+  "views": [
+    {
+      "name": "03_WestTVClose",
+      "position": {
+        "x": 3.2,
+        "y": 1.69,
+        "z": -8.5
+      },
+      "target": {
+        "x": 1.9,
+        "y": 2.4125,
+        "z": -11.18
+      },
+      "fieldOfView": 50
+    },
+    {
+      "name": "04_EastTVClose",
+      "position": {
+        "x": 0.6,
+        "y": 1.69,
+        "z": 9.45
+      },
+      "target": {
+        "x": 1.69,
+        "y": 2.4125,
+        "z": 12.17
+      },
+      "fieldOfView": 50
+    }
+  ]
+}

@@ -1,0 +1,791 @@
+{
+  "status": "PASS",
+  "protected_unchanged": true,
+  "protected_actor_count": 1843,
+  "changed_existing": [
+    "NightClub_Lower_DJ_console",
+    "NightClub_Lower_Leather_sofa",
+    "NightClub_Lower_Speaker_0",
+    "NightClub_Lower_Speaker_1",
+    "NightClub_Upper_Leather_sofa",
+    "NightClub_Upper_Lounge_table"
+  ],
+  "added": [
+    "NightClub_Lounge_UpperChaise",
+    "NightClub_Lounge_UpperOttoman",
+    "NightClub_Lounge_UpperPillow_0",
+    "NightClub_Lounge_UpperPillow_1",
+    "NightClub_Lounge_UpperSideTable"
+  ],
+  "actor_count": 1854,
+  "derived_bounds_settled": [
+    "PIG_EdibleCheetos",
+    "Interactive_SM_Entrance_m1_m1_Glass__001"
+  ],
+  "club_lights_unchanged": true,
+  "pole_and_doors_unchanged": true,
+  "imports": [
+    {
+      "name": "SM_NCL_SectionalMain",
+      "convex_hulls": 3,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalMain_Damaged",
+      "convex_hulls": 3,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalMain_HeavilyDamaged",
+      "convex_hulls": 3,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalMain_Broken",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam"
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalChaise",
+      "convex_hulls": 3,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalChaise_Damaged",
+      "convex_hulls": 3,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalChaise_HeavilyDamaged",
+      "convex_hulls": 3,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_SectionalChaise_Broken",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam"
+      ]
+    },
+    {
+      "name": "SM_NCL_CoffeeTable",
+      "convex_hulls": 2,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_CoffeeTable_Damaged",
+      "convex_hulls": 2,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_CoffeeTable_HeavilyDamaged",
+      "convex_hulls": 2,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_CoffeeTable_Broken",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_SideTable",
+      "convex_hulls": 2,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_SideTable_Damaged",
+      "convex_hulls": 2,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_SideTable_HeavilyDamaged",
+      "convex_hulls": 2,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_SideTable_Broken",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_SplinterWood.M_NCL_SplinterWood",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+      ]
+    },
+    {
+      "name": "SM_NCL_Ottoman",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_Ottoman_Damaged",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_Ottoman_HeavilyDamaged",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+      ]
+    },
+    {
+      "name": "SM_NCL_Ottoman_Broken",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+        "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_ExposedFoam.M_NCL_ExposedFoam"
+      ]
+    },
+    {
+      "name": "SM_NCL_PillowPlum",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PlushPlum.M_NCL_PlushPlum",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PillowThread.M_NCL_PillowThread"
+      ]
+    },
+    {
+      "name": "SM_NCL_PillowTeal",
+      "convex_hulls": 1,
+      "materials": [
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PlushTeal.M_NCL_PlushTeal",
+        "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PillowThread.M_NCL_PillowThread"
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "name": "HouseInteractiveProp_533",
+      "label": "NightClub_Lounge_UpperChaise",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1630.0,
+        -1382.5,
+        333.1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1675.0,
+          -1487.5000076293945,
+          333.099984766916
+        ],
+        [
+          -1585.0,
+          -1277.5000076293945,
+          421.09998474121096
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/Lounge/SM_NCL_SectionalChaise.SM_NCL_SectionalChaise",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_534",
+      "label": "NightClub_Lounge_UpperOttoman",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1620.0,
+        -1155.0,
+        333.1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1652.5,
+          -1187.5000038146973,
+          333.0999956826023
+        ],
+        [
+          -1587.5,
+          -1122.5000038146973,
+          381.39000473022463
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/Lounge/SM_NCL_Ottoman.SM_NCL_Ottoman",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_536",
+      "label": "NightClub_Lounge_UpperPillow_0",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1960.0,
+        -1425.0,
+        377.1
+      ],
+      "rotation": [
+        0.0,
+        -9.999999999023998,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1986.877082847787,
+          -1451.816510663683,
+          377.65000001192095
+        ],
+        [
+          -1933.172810431545,
+          -1398.1122367002768,
+          388.04999980926516
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/Lounge/SM_NCL_PillowPlum.SM_NCL_PillowPlum",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PlushPlum.M_NCL_PlushPlum",
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PillowThread.M_NCL_PillowThread"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_537",
+      "label": "NightClub_Lounge_UpperPillow_1",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1633.0,
+        -1400.0,
+        377.1
+      ],
+      "rotation": [
+        0.0,
+        11.999999999999996,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1660.5284373332706,
+          -1427.4682751215075,
+          377.65000001192095
+        ],
+        [
+          -1605.544514617036,
+          -1372.4843509361642,
+          388.04999980926516
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/Lounge/SM_NCL_PillowTeal.SM_NCL_PillowTeal",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PlushTeal.M_NCL_PlushTeal",
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_PillowThread.M_NCL_PillowThread"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_535",
+      "label": "NightClub_Lounge_UpperSideTable",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1538.0,
+        -1370.0,
+        333.1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1559.0,
+          -1391.0000076293945,
+          333.0999973818649
+        ],
+        [
+          -1517.0,
+          -1349.0000095367432,
+          389.18181762695315
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/Lounge/SM_NCL_SideTable.SM_NCL_SideTable",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_177",
+      "label": "NightClub_Lower_DJ_console",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1545.0,
+        -1210.0,
+        0.88
+      ],
+      "rotation": [
+        0.0,
+        89.99999999437944,
+        -0.0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.9
+      ],
+      "bounds": [
+        [
+          -1587.28750001134,
+          -1325.6000000040442,
+          0.8349942627549183
+        ],
+        [
+          -1503.7749837761967,
+          -1094.3999999958517,
+          115.54000137329102
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/SM_NC_DJBooth.SM_NC_DJBooth",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/M_NC_DarkWalnut.M_NC_DarkWalnut",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_NeonCyan.M_NC_NeonCyan",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_NeonMagenta.M_NC_NeonMagenta",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_DisplayGreen.M_NC_DisplayGreen",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_NeonWarmAmber.M_NC_NeonWarmAmber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_DisplayRed.M_NC_DisplayRed"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_529",
+      "label": "NightClub_Lower_Leather_sofa",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1851.255095,
+        -1440.0,
+        0.88
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "scale": [
+        0.9,
+        0.8,
+        0.9
+      ],
+      "bounds": [
+        [
+          -1986.255095,
+          -1478.9600067138672,
+          0.8799945894041485
+        ],
+        [
+          -1716.255095,
+          -1402.1600036621094,
+          76.93
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/SM_NC_ClubSofa.SM_NC_ClubSofa",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_508",
+      "label": "NightClub_Lower_Speaker_0",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1530.0,
+        -1400.0,
+        0.88
+      ],
+      "rotation": [
+        0.0,
+        89.99999999437944,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1557.3386440305057,
+          -1428.5000000021091,
+          0.879997474729528
+        ],
+        [
+          -1508.4999809237179,
+          -1371.4999999973184,
+          125.38
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/SM_NC_PASpeaker.SM_NC_PASpeaker",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_NeonCyan.M_NC_NeonCyan"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_527",
+      "label": "NightClub_Lower_Speaker_1",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1530.0,
+        -1025.0,
+        0.88
+      ],
+      "rotation": [
+        0.0,
+        89.99999999437944,
+        -0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1557.3386440305057,
+          -1053.5000000021091,
+          0.879997474729528
+        ],
+        [
+          -1508.4999809237179,
+          -996.4999999973184,
+          125.38
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/SM_NC_PASpeaker.SM_NC_PASpeaker",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_NeonCyan.M_NC_NeonCyan"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_528",
+      "label": "NightClub_Upper_Leather_sofa",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1850.0,
+        -1440.0,
+        333.1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -2025.0,
+          -1487.500015258789,
+          333.09999389047437
+        ],
+        [
+          -1675.0,
+          -1392.0500030517578,
+          421.0999923706055
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/Lounge/SM_NCL_SectionalMain.SM_NCL_SectionalMain",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BrushedAluminium.M_NC_BrushedAluminium",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_SoftBlackLeather.M_NC_SoftBlackLeather",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_BlackLeatherSeam.M_NC_BlackLeatherSeam"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    },
+    {
+      "name": "HouseInteractiveProp_530",
+      "label": "NightClub_Upper_Lounge_table",
+      "cls": "HouseInteractiveProp",
+      "location": [
+        -1765.0,
+        -1340.0,
+        333.1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -1810.0,
+          -1365.000005722046,
+          333.09999673018194
+        ],
+        [
+          -1720.0,
+          -1315.000005722046,
+          371.1818214416504
+        ]
+      ],
+      "meshes": [
+        {
+          "component": "Body",
+          "mesh": "/Game/SeniorSendOff/House/NightClub/Lounge/SM_NCL_CoffeeTable.SM_NCL_CoffeeTable",
+          "materials": [
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_Walnut.M_NCL_Walnut",
+            "/Game/SeniorSendOff/House/NightClub/Lounge/M_NCL_WalnutGrain.M_NCL_WalnutGrain",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_PowderCoat.M_NC_PowderCoat",
+            "/Game/SeniorSendOff/House/NightClub/M_NC_Rubber.M_NC_Rubber"
+          ],
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+          "visible": true
+        }
+      ],
+      "lights": []
+    }
+  ],
+  "notes": [
+    "Both speakers and DJ face into room from east wall. Lower couch uses former DJ wall.",
+    "Upper sectional consists of independently movable and breakable modules.",
+    "Loose cushions use native pickup and multiplayer replication."
+  ],
+  "visual_inspection": "PASS: DJ booth/speakers and sectional/lounge pieces grounded and correctly oriented in four native screenshots",
+  "pole_traversal": "PASS: actual E down/up and natural approach, closed guard collision; evidence/pole-lounge.log",
+  "door_traversal": "PASS: both doors native E, closed collision and actual in/out walking; evidence/entrance-lounge-verification.json"
+}

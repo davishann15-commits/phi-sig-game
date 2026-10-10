@@ -1,0 +1,46 @@
+{
+  "views": [
+    {
+      "name": "Entry101And102",
+      "position": {
+        "x": -10.3,
+        "y": 1.55,
+        "z": -21.1
+      },
+      "target": {
+        "x": -13.3,
+        "y": 1.14,
+        "z": -23.18
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "Room101Interior",
+      "position": {
+        "x": -11.9,
+        "y": 1.55,
+        "z": -24.7
+      },
+      "target": {
+        "x": -7.1,
+        "y": 1.25,
+        "z": -27.6
+      },
+      "fieldOfView": 69
+    },
+    {
+      "name": "Room102Entrance",
+      "position": {
+        "x": -11.9,
+        "y": 1.55,
+        "z": -22.3
+      },
+      "target": {
+        "x": -14.6,
+        "y": 1.15,
+        "z": -22.28
+      },
+      "fieldOfView": 60
+    }
+  ]
+}

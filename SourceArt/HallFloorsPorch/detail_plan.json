@@ -1,0 +1,237 @@
+[
+  {
+    "name": "SM_HFP_PorchDoor",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_PorchDoor.fbx",
+    "materials": [
+      "HFP_PaintedWhite",
+      "HFP_Brass",
+      "HFP_Chrome"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_PorchDoorGlass",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_PorchDoorGlass.fbx",
+    "materials": [
+      "HFP_Glass"
+    ],
+    "collision": false,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_DoorCurtain",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_DoorCurtain.fbx",
+    "materials": [
+      "HFP_NavyLinen"
+    ],
+    "collision": false,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_CurtainRod",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_CurtainRod.fbx",
+    "materials": [
+      "HFP_Chrome"
+    ],
+    "collision": false,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_LandingWindowFrame",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_LandingWindowFrame.fbx",
+    "materials": [
+      "HFP_PaintedWhite",
+      "HFP_Chrome"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_LandingWindowGlass",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_LandingWindowGlass.fbx",
+    "materials": [
+      "HFP_Glass"
+    ],
+    "collision": false,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_LandingGuard",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_LandingGuard.fbx",
+    "materials": [
+      "HFP_BlackSteel",
+      "HFP_Chrome"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_Bench",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Bench.fbx",
+    "materials": [
+      "HFP_PorchTimber",
+      "HFP_BlackSteel"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_Bench_Damaged",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Bench_Damaged.fbx",
+    "materials": [
+      "HFP_PorchTimber",
+      "HFP_BlackSteel",
+      "HFP_DarkCrack"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_Bench_Heavy",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Bench_Heavy.fbx",
+    "materials": [
+      "HFP_PorchTimber",
+      "HFP_PorchTimberRaw",
+      "HFP_BlackSteel",
+      "HFP_DarkCrack"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_Bench_Broken",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Bench_Broken.fbx",
+    "materials": [
+      "HFP_PorchTimber",
+      "HFP_PorchTimberRaw",
+      "HFP_BlackSteel",
+      "HFP_DarkCrack"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_Chair",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Chair.fbx",
+    "materials": [
+      "HFP_Walnut",
+      "HFP_Leather",
+      "HFP_LeatherSeam"
+    ],
+    "collision": true,
+    "convex_collision": true
+  },
+  {
+    "name": "SM_HFP_Chair_Damaged",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Chair_Damaged.fbx",
+    "materials": [
+      "HFP_Walnut",
+      "HFP_Leather",
+      "HFP_LeatherSeam",
+      "HFP_DarkCrack"
+    ],
+    "collision": true,
+    "convex_collision": true
+  },
+  {
+    "name": "SM_HFP_Chair_Heavy",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Chair_Heavy.fbx",
+    "materials": [
+      "HFP_Walnut",
+      "HFP_Leather",
+      "HFP_LeatherSeam",
+      "HFP_DarkCrack",
+      "HFP_Foam"
+    ],
+    "collision": true,
+    "convex_collision": true
+  },
+  {
+    "name": "SM_HFP_Chair_Broken",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_Chair_Broken.fbx",
+    "materials": [
+      "HFP_Walnut",
+      "HFP_Leather",
+      "HFP_LeatherSeam",
+      "HFP_DarkCrack",
+      "HFP_Foam",
+      "HFP_PorchTimberRaw"
+    ],
+    "collision": true,
+    "convex_collision": true
+  },
+  {
+    "name": "SM_HFP_SeatCushion",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_SeatCushion.fbx",
+    "materials": [
+      "HFP_Leather",
+      "HFP_LeatherSeam"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_SeatCushion_Damaged",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_SeatCushion_Damaged.fbx",
+    "materials": [
+      "HFP_Leather",
+      "HFP_LeatherSeam",
+      "HFP_DarkCrack"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_SeatCushion_Heavy",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_SeatCushion_Heavy.fbx",
+    "materials": [
+      "HFP_Leather",
+      "HFP_LeatherSeam",
+      "HFP_DarkCrack",
+      "HFP_Foam"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_SeatCushion_Broken",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_SeatCushion_Broken.fbx",
+    "materials": [
+      "HFP_Leather",
+      "HFP_LeatherSeam",
+      "HFP_DarkCrack",
+      "HFP_Foam"
+    ],
+    "collision": true,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_FloorGrate",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_FloorGrate.fbx",
+    "materials": [
+      "HFP_BlackSteel",
+      "HFP_Chrome"
+    ],
+    "collision": false,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_WoodThreshold",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_WoodThreshold.fbx",
+    "materials": [
+      "HFP_DarkBronze"
+    ],
+    "collision": false,
+    "convex_collision": false
+  },
+  {
+    "name": "SM_HFP_RubberMat",
+    "file": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HallFloorsPorch/SM_HFP_RubberMat.fbx",
+    "materials": [
+      "HFP_Rubber"
+    ],
+    "collision": false,
+    "convex_collision": false
+  }
+]

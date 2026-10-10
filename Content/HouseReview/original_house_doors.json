@@ -1,0 +1,1023 @@
+[
+  {
+    "id": "SM_OriginalLeaf_Basement_m1_m1_Solid_01",
+    "sourceMesh": "SM_Basement_m1_m1_Solid",
+    "fbx": "SM_OriginalLeaf_Basement_m1_m1_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        -6.923500061035156,
+        1.9849995374679565,
+        -3.290599822998047
+      ],
+      [
+        -6.876500129699707,
+        2.864999532699585,
+        -1.1906001567840576
+      ]
+    ],
+    "floor": "basement",
+    "faces": 2140,
+    "material": "MI_SSO_BHAlcoveDoor",
+    "hinge": [
+      -1242.0,
+      -357.3,
+      -321
+    ],
+    "closedYaw": -90,
+    "routeDistance": 928.0,
+    "nearRoute": "StairCorridor_to_Storage",
+    "doorwayCenter": [
+      -1321.2,
+      -357.3,
+      -211
+    ],
+    "locked": true
+  },
+  {
+    "id": "SM_OriginalLeaf_Basement_m1_p1_Solid_01",
+    "sourceMesh": "SM_Basement_m1_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Basement_m1_p1_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        8.802498817443848,
+        2.1750001907348633,
+        -3.290599822998047
+      ],
+      [
+        8.84950065612793,
+        3.015000343322754,
+        -1.230600118637085
+      ]
+    ],
+    "floor": "basement",
+    "faces": 2140,
+    "material": "MI_SSO_BHAlcoveDoor",
+    "hinge": [
+      1588.7,
+      -391.5,
+      -321
+    ],
+    "closedYaw": 0,
+    "routeDistance": 190.1,
+    "nearRoute": "BlackHall_to_ServiceAlcove",
+    "doorwayCenter": [
+      1588.7,
+      -467.1,
+      -211
+    ],
+    "locked": true
+  },
+  {
+    "id": "SM_OriginalLeaf_Basement_p0_m2_Solid_01",
+    "sourceMesh": "SM_Basement_p0_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Basement_p0_m2_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        -8.614089012145996,
+        -4.162721633911133,
+        -3.278599739074707
+      ],
+      [
+        -7.701694965362549,
+        -4.1011576652526855,
+        -1.2277995347976685
+      ]
+    ],
+    "floor": "basement",
+    "faces": 1020,
+    "material": "MI_SSO_S03ConnectionDoorCream",
+    "hinge": [
+      -1386.3,
+      743.7,
+      -321
+    ],
+    "closedYaw": 90,
+    "routeDistance": 84.1,
+    "nearRoute": "LibraryCorridor_to_BlackHall",
+    "doorwayCenter": [
+      -1386.3,
+      661.6,
+      -211
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Entrance_m1_m1_Solid_01",
+    "sourceMesh": "SM_Entrance_m1_m1_Solid",
+    "fbx": "SM_OriginalLeaf_Entrance_m1_m1_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        -8.289999961853027,
+        4.400500297546387,
+        0.01249992847442627
+      ],
+      [
+        -7.350000381469727,
+        4.44350004196167,
+        2.262700080871582
+      ]
+    ],
+    "floor": "entrance",
+    "faces": 2632,
+    "material": "MI_SSO_PaintGrey",
+    "hinge": [
+      -1323.0,
+      -796.0,
+      8
+    ],
+    "closedYaw": -90,
+    "routeDistance": 80.5,
+    "nearRoute": "GreatRoom_to_EntireSecondFloor",
+    "doorwayCenter": [
+      -1323.0,
+      -711.4,
+      118
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Entrance_m1_m2_Solid_01",
+    "sourceMesh": "SM_Entrance_m1_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Entrance_m1_m2_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        -13.880000114440918,
+        6.315499305725098,
+        0.01249992847442627
+      ],
+      [
+        -13.079999923706055,
+        6.358499050140381,
+        2.0774998664855957
+      ]
+    ],
+    "floor": "entrance",
+    "faces": 3776,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -2354.4,
+      -1140.7,
+      8
+    ],
+    "closedYaw": 90,
+    "routeDistance": 85.7,
+    "nearRoute": "LongHall_to_Bedroom",
+    "doorwayCenter": [
+      -2354.4,
+      -1212.7,
+      118
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Entrance_m1_m2_Solid_03",
+    "sourceMesh": "SM_Entrance_m1_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Entrance_m1_m2_Solid_03.fbx",
+    "fbxBounds": [
+      [
+        -12.850001335144043,
+        7.466499328613281,
+        0.01249992847442627
+      ],
+      [
+        -11.90999984741211,
+        7.509500026702881,
+        2.0774998664855957
+      ]
+    ],
+    "floor": "entrance",
+    "faces": 4524,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -2313.0,
+      -1347.8,
+      8
+    ],
+    "closedYaw": 0.0,
+    "openYaw": -90.0,
+    "routeDistance": 140.6,
+    "nearRoute": "LongHall_to_Bedroom",
+    "doorwayCenter": [
+      -2228.4,
+      -1347.8,
+      118
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Entrance_m1_p0_Solid_01",
+    "sourceMesh": "SM_Entrance_m1_p0_Solid",
+    "fbx": "SM_OriginalLeaf_Entrance_m1_p0_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        7.393499374389648,
+        4.164999961853027,
+        0.0
+      ],
+      [
+        7.432499885559082,
+        5.015000343322754,
+        2.0759999752044678
+      ]
+    ],
+    "floor": "entrance",
+    "faces": 2032,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1334.3,
+      -902.7,
+      8
+    ],
+    "closedYaw": -90,
+    "routeDistance": 688.9,
+    "nearRoute": "S02_Dining_to_SmallBathroom",
+    "doorwayCenter": [
+      1410.8,
+      -902.7,
+      118
+    ],
+    "locked": true
+  },
+  {
+    "id": "SM_OriginalLeaf_Entrance_p0_m2_Solid_01",
+    "sourceMesh": "SM_Entrance_p0_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Entrance_p0_m2_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        -13.124499320983887,
+        -3.2250006198883057,
+        0.01249992847442627
+      ],
+      [
+        -13.081500053405762,
+        -2.325000524520874,
+        2.0774998664855957
+      ]
+    ],
+    "floor": "entrance",
+    "faces": 4468,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -2358.5,
+      580.5,
+      8
+    ],
+    "closedYaw": 0,
+    "routeDistance": 177.0,
+    "nearRoute": "Basement_to_Entrance_Stairs",
+    "doorwayCenter": [
+      -2358.5,
+      499.5,
+      118
+    ],
+    "locked": false,
+    "openYaw": -90
+  },
+  {
+    "id": "SM_OriginalLeaf_Entrance_p0_p0_Solid_01",
+    "sourceMesh": "SM_Entrance_p0_p0_Solid",
+    "fbx": "SM_OriginalLeaf_Entrance_p0_p0_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        7.2350006103515625,
+        -3.374999523162842,
+        0.009999990463256836
+      ],
+      [
+        8.135000228881836,
+        -3.3249993324279785,
+        1.9909998178482056
+      ]
+    ],
+    "floor": "entrance",
+    "faces": 1128,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1302.3,
+      603.0,
+      8
+    ],
+    "closedYaw": 90,
+    "routeDistance": 90.6,
+    "nearRoute": "GreatRoom_to_Dining",
+    "doorwayCenter": [
+      1302.3,
+      684.0,
+      118
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_m1_Solid_01",
+    "sourceMesh": "SM_Upper_m1_m1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_m1_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        -8.109999656677246,
+        4.296345233917236,
+        3.0683298110961914
+      ],
+      [
+        -7.190000534057617,
+        4.336345195770264,
+        5.13832950592041
+      ]
+    ],
+    "floor": "upper",
+    "faces": 564,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -1294.2,
+      -778.5,
+      307.5
+    ],
+    "closedYaw": 0,
+    "routeDistance": 85.5,
+    "nearRoute": "GreatRoom_to_EntireSecondFloor",
+    "doorwayCenter": [
+      -1294.2,
+      -691.5,
+      410.5
+    ],
+    "locked": false,
+    "openYaw": 90,
+    "leafAsset": "/Game/SeniorSendOff/House/DoorRepair/SM_PorchAccessFittedLeaf_v2",
+    "localLeafSpace": true,
+    "actorYaw": 0,
+    "panelCenterWorld": [
+      0,
+      87,
+      103
+    ],
+    "panelHalfExtent": [
+      2.8,
+      87,
+      103
+    ]
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_m2_Solid_02",
+    "sourceMesh": "SM_Upper_m1_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_m2_Solid_02.fbx",
+    "fbxBounds": [
+      [
+        -11.276293754577637,
+        1.9313459396362305,
+        3.0347180366516113
+      ],
+      [
+        -11.238293647766113,
+        2.71134614944458,
+        5.0917181968688965
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4440,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -2026.3,
+      -347.6,
+      310
+    ],
+    "closedYaw": 0,
+    "routeDistance": 168.8,
+    "nearRoute": "S05_SouthStriped",
+    "doorwayCenter": [
+      -2026.3,
+      -417.65,
+      415
+    ],
+    "locked": false,
+    "openYaw": 90
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_m2_Solid_03",
+    "sourceMesh": "SM_Upper_m1_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_m2_Solid_03.fbx",
+    "fbxBounds": [
+      [
+        -13.180285453796387,
+        0.5037679672241211,
+        3.027453899383545
+      ],
+      [
+        -13.05771541595459,
+        1.482653260231018,
+        5.08445405960083
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4064,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -2334.8328,
+      -443.3,
+      302.3
+    ],
+    "closedYaw": 0,
+    "openYaw": 58.0,
+    "routeDistance": 76.4,
+    "nearRoute": "S05_SouthStriped",
+    "doorwayCenter": [
+      -2334.8328,
+      -305,
+      405.8
+    ],
+    "locked": false,
+    "panelCenterWorld": [
+      -2334.8328,
+      -355.1,
+      405.3
+    ],
+    "panelHalfExtent": [
+      4.2,
+      88.2,
+      103
+    ],
+    "leafAsset": "/Game/SeniorSendOff/House/Room204/R204_SM_DecoratedDoorLeafWorld"
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_p0_Solid_01",
+    "sourceMesh": "SM_Upper_m1_p0_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_p0_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        0.3182060420513153,
+        4.670000076293945,
+        3.0683298110961914
+      ],
+      [
+        0.37320613861083984,
+        5.549999713897705,
+        5.148329257965088
+      ]
+    ],
+    "floor": "upper",
+    "faces": 2026,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      62.2,
+      -840.6,
+      310
+    ],
+    "closedYaw": -90,
+    "routeDistance": 79.3,
+    "nearRoute": "Gallery_to_CoveredBalcony",
+    "doorwayCenter": [
+      -17.0,
+      -840.6,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_p0_Solid_03",
+    "sourceMesh": "SM_Upper_m1_p0_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_p0_Solid_03.fbx",
+    "fbxBounds": [
+      [
+        7.278706073760986,
+        3.4073455333709717,
+        3.114161252975464
+      ],
+      [
+        8.228705406188965,
+        3.445345401763916,
+        5.17116117477417
+      ]
+    ],
+    "floor": "upper",
+    "faces": 3196,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1310.2,
+      -606,
+      310.8
+    ],
+    "closedYaw": 0,
+    "routeDistance": 74.7,
+    "nearRoute": "Gallery_to_FarUpperHall",
+    "doorwayCenter": [
+      1310.2,
+      -693,
+      413.8
+    ],
+    "locked": false,
+    "openYaw": 90,
+    "leafAsset": "/Game/SeniorSendOff/House/DoorRepair/SM_PorchAccessFittedLeaf_v2",
+    "localLeafSpace": true,
+    "actorYaw": 180,
+    "panelCenterWorld": [
+      0,
+      87,
+      103
+    ],
+    "panelHalfExtent": [
+      2.8,
+      87,
+      103
+    ]
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_p1_Solid_01",
+    "sourceMesh": "SM_Upper_m1_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_p1_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        14.405706405639648,
+        6.607344627380371,
+        3.143707752227783
+      ],
+      [
+        15.155706405639648,
+        6.6453447341918945,
+        5.200707912445068
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4064,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      2593.0,
+      -1192.7,
+      310
+    ],
+    "closedYaw": -90,
+    "routeDistance": 67.5,
+    "nearRoute": "S05_NE_bath",
+    "doorwayCenter": [
+      2593.0,
+      -1260.2,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_p1_Solid_02",
+    "sourceMesh": "SM_Upper_m1_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_p1_Solid_02.fbx",
+    "fbxBounds": [
+      [
+        10.666705131530762,
+        5.261344909667969,
+        3.129988670349121
+      ],
+      [
+        10.704705238342285,
+        6.201344966888428,
+        5.186988353729248
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4064,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1923.4,
+      -947.0,
+      310
+    ],
+    "closedYaw": 90,
+    "routeDistance": 96.7,
+    "nearRoute": "S05_NE_bath",
+    "doorwayCenter": [
+      2008.0,
+      -947.0,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_p1_Solid_03",
+    "sourceMesh": "SM_Upper_m1_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_p1_Solid_03.fbx",
+    "fbxBounds": [
+      [
+        9.839705467224121,
+        6.487344741821289,
+        3.1240267753601074
+      ],
+      [
+        10.609705924987793,
+        6.525345325469971,
+        5.181026935577393
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4252,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1771.1,
+      -1171.1,
+      310
+    ],
+    "closedYaw": -90,
+    "routeDistance": 69.3,
+    "nearRoute": "S05_NE_south_bed",
+    "doorwayCenter": [
+      1771.1,
+      -1240.4,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_p1_Solid_04",
+    "sourceMesh": "SM_Upper_m1_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_p1_Solid_04.fbx",
+    "fbxBounds": [
+      [
+        11.953705787658691,
+        1.2813451290130615,
+        3.135317325592041
+      ],
+      [
+        11.991705894470215,
+        2.141345262527466,
+        5.192317485809326
+      ]
+    ],
+    "floor": "upper",
+    "faces": 5196,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      2155.1,
+      -385.4,
+      310
+    ],
+    "closedYaw": 0,
+    "openYaw": -90,
+    "routeDistance": 349.3,
+    "nearRoute": "Gallery_to_FarUpperHall",
+    "doorwayCenter": [
+      2155.1,
+      -308.0,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m1_p1_Solid_05",
+    "sourceMesh": "SM_Upper_m1_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m1_p1_Solid_05.fbx",
+    "fbxBounds": [
+      [
+        10.439706802368164,
+        1.2363451719284058,
+        3.1287968158721924
+      ],
+      [
+        10.477705955505371,
+        2.0863451957702637,
+        5.185797214508057
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4440,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1882.6,
+      -375.5,
+      310
+    ],
+    "closedYaw": 0,
+    "openYaw": 90,
+    "routeDistance": 350.0,
+    "nearRoute": "Gallery_to_FarUpperHall",
+    "doorwayCenter": [
+      1882.6,
+      -299.0,
+      420
+    ],
+    "locked": true
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_m2_p1_Solid_01",
+    "sourceMesh": "SM_Upper_m2_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_m2_p1_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        13.281705856323242,
+        7.851344585418701,
+        3.140256881713867
+      ],
+      [
+        13.319705963134766,
+        8.621344566345215,
+        5.197257041931152
+      ]
+    ],
+    "floor": "upper",
+    "faces": 3500,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      2394.1,
+      -1413.2,
+      310
+    ],
+    "closedYaw": 90,
+    "routeDistance": 69.3,
+    "nearRoute": "S05_NE_north_bed",
+    "doorwayCenter": [
+      2463.4,
+      -1413.2,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_p0_m2_Solid_03",
+    "sourceMesh": "SM_Upper_p0_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_p0_m2_Solid_03.fbx",
+    "fbxBounds": [
+      [
+        -12.884871482849121,
+        -2.604961395263672,
+        3.030186653137207
+      ],
+      [
+        -12.768402099609375,
+        -1.6958094835281372,
+        5.087186813354492
+      ]
+    ],
+    "floor": "upper",
+    "faces": 6152,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -2335.4,
+      637,
+      310
+    ],
+    "closedYaw": 0,
+    "routeDistance": 85.7,
+    "nearRoute": "S05_SouthA",
+    "doorwayCenter": [
+      -2335.4,
+      550,
+      415
+    ],
+    "locked": false,
+    "openYaw": -105,
+    "leafAsset": "/Game/SeniorSendOff/House/AcrossPosterBedroom/SM_Bedroom_EntryLeafFitted"
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_p0_m2_Solid_04",
+    "sourceMesh": "SM_Upper_p0_m2_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_p0_m2_Solid_04.fbx",
+    "fbxBounds": [
+      [
+        -12.798294067382812,
+        -5.698653221130371,
+        3.05393385887146
+      ],
+      [
+        -12.760293960571289,
+        -4.748653888702393,
+        5.110934257507324
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4252,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      -2300.3,
+      854.8,
+      310
+    ],
+    "closedYaw": -90,
+    "routeDistance": 85.5,
+    "nearRoute": "GreatRoom_to_EntireSecondFloor",
+    "doorwayCenter": [
+      -2214.8,
+      854.8,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_p0_p1_Solid_01",
+    "sourceMesh": "SM_Upper_p0_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_p0_p1_Solid_01.fbx",
+    "fbxBounds": [
+      [
+        14.305705070495605,
+        -4.632655143737793,
+        3.1477770805358887
+      ],
+      [
+        15.075705528259277,
+        -4.5946550369262695,
+        5.204777240753174
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4064,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      2575.0,
+      830.5,
+      310
+    ],
+    "closedYaw": -90,
+    "routeDistance": 69.3,
+    "nearRoute": "S05_NW_bath",
+    "doorwayCenter": [
+      2575.0,
+      761.2,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_p0_p1_Solid_02",
+    "sourceMesh": "SM_Upper_p0_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_p0_p1_Solid_02.fbx",
+    "fbxBounds": [
+      [
+        13.759397506713867,
+        -5.208930969238281,
+        3.143834114074707
+      ],
+      [
+        14.638664245605469,
+        -5.095075607299805,
+        5.200834274291992
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4064,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      2476.7,
+      927.4,
+      310
+    ],
+    "closedYaw": 90,
+    "routeDistance": 69.0,
+    "nearRoute": "S05_NW_north_bed",
+    "doorwayCenter": [
+      2476.7,
+      1006.5,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_p0_p1_Solid_03",
+    "sourceMesh": "SM_Upper_p0_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_p0_p1_Solid_03.fbx",
+    "fbxBounds": [
+      [
+        10.666706085205078,
+        -3.378654956817627,
+        3.1338276863098145
+      ],
+      [
+        10.704707145690918,
+        -2.438654899597168,
+        5.190827369689941
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4064,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1923.4,
+      439.0,
+      310
+    ],
+    "closedYaw": -90,
+    "routeDistance": 88.3,
+    "nearRoute": "S05_NW_bath",
+    "doorwayCenter": [
+      2008.0,
+      439.0,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "SM_OriginalLeaf_Upper_p0_p1_Solid_04",
+    "sourceMesh": "SM_Upper_p0_p1_Solid",
+    "fbx": "SM_OriginalLeaf_Upper_p0_p1_Solid_04.fbx",
+    "fbxBounds": [
+      [
+        8.722705841064453,
+        -3.692655324935913,
+        3.1271870136260986
+      ],
+      [
+        9.552705764770508,
+        -3.6546549797058105,
+        5.184187412261963
+      ]
+    ],
+    "floor": "upper",
+    "faces": 4064,
+    "material": "MI_SSO_PaintWhite",
+    "hinge": [
+      1719.5,
+      661.3,
+      310
+    ],
+    "closedYaw": -90,
+    "routeDistance": 74.7,
+    "nearRoute": "S05_NW_south_bed",
+    "doorwayCenter": [
+      1719.5,
+      736.0,
+      420
+    ],
+    "locked": false
+  },
+  {
+    "id": "HallEnd_West",
+    "kind": "Solid",
+    "doorwayCenter": [
+      -2334.8328,
+      -1245,
+      407.8
+    ],
+    "hinge": [
+      -2334.8328,
+      -1326,
+      302.3
+    ],
+    "closedYaw": 0,
+    "openYaw": 90.0,
+    "locked": false,
+    "leafAsset": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_West_LeafWorld",
+    "glassAsset": null,
+    "group": null,
+    "panelCenterWorld": [
+      -2334.8328,
+      -1245.0,
+      407.3
+    ],
+    "panelHalfExtent": [
+      5.3,
+      81,
+      105
+    ]
+  },
+  {
+    "id": "HallEnd_End",
+    "kind": "Solid",
+    "doorwayCenter": [
+      -2177,
+      -1386.2425,
+      407.8
+    ],
+    "hinge": [
+      -2096,
+      -1386.2425,
+      302.3
+    ],
+    "closedYaw": 0,
+    "openYaw": 90.0,
+    "locked": false,
+    "leafAsset": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_End_LeafWorld",
+    "glassAsset": null,
+    "group": null,
+    "panelCenterWorld": [
+      -2177,
+      -1386.2425,
+      407.3
+    ],
+    "panelHalfExtent": [
+      81,
+      5.3,
+      105
+    ]
+  },
+  {
+    "id": "HallEnd_East",
+    "kind": "Solid",
+    "doorwayCenter": [
+      -2025.7729,
+      -1260,
+      407.8
+    ],
+    "hinge": [
+      -2025.7729,
+      -1179,
+      302.3
+    ],
+    "closedYaw": 0,
+    "openYaw": 90.0,
+    "locked": false,
+    "leafAsset": "/Game/SeniorSendOff/House/HallwayEnd/SM_HallEnd_East_LeafWorld",
+    "glassAsset": null,
+    "group": null,
+    "panelCenterWorld": [
+      -2025.7729,
+      -1260.0,
+      407.3
+    ],
+    "panelHalfExtent": [
+      5.3,
+      81,
+      105
+    ]
+  }
+]

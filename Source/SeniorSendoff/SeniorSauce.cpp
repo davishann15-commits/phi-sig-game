@@ -180,8 +180,8 @@ void ASeniorSaucePacket::Burst(const FHitResult* Impact)
         AActor* Target=Impact->GetActor();
         const APawn* OtherPawn=Cast<APawn>(Target);
         if(Target && Target->CanBeDamaged() && !(OtherPawn && OtherPawn->IsPlayerControlled()) &&
-            (OtherPawn || Target->ActorHasTag(TEXT("Enemy"))))
-            UGameplayStatics::ApplyPointDamage(Target,8.f,Velocity.GetSafeNormal(),*Impact,Pawn->GetController(),this,UDamageType::StaticClass());
+            (OtherPawn || Target->ActorHasTag(TEXT("Enemy")) || Target->ActorHasTag(TEXT("HouseBreakable"))))
+            UGameplayStatics::ApplyPointDamage(Target,8.f * Pawn->OutgoingDamageMultiplier(),Velocity.GetSafeNormal(),*Impact,Pawn->GetController(),this,UDamageType::StaticClass());
     }
     FVector Point=Impact?FVector(Impact->ImpactPoint):GetActorLocation();
     FCollisionQueryParams GroundQuery(SCENE_QUERY_STAT(SauceGround),false,this);

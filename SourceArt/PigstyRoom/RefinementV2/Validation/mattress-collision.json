@@ -1,0 +1,7 @@
+{
+  "asset": "/Game/SeniorSendOff/House/PigstyRoom/PIG_SM_Mattress_COL.PIG_SM_Mattress_COL",
+  "beforeCollisionTrace": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+  "afterCollisionTrace": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+  "mapActorsUnchanged": true,
+  "method": "existing twelve-triangle hidden mattress box as collision"
+}

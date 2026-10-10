@@ -265,6 +265,25 @@ void ASeniorLobbyController::CaptureGameplayMouse()
     }
     if (FSlateApplication::IsInitialized()) FSlateApplication::Get().SetAllUserFocusToGameViewport();
 }
+void ASeniorLobbyController::ToggleEquipmentCursor()
+{
+    if (!IsLocalController() || !GetWorld() || IsLobby(this) || PauseWidget.IsValid()) return;
+    if (bShowMouseCursor)
+    {
+        ResetIgnoreLookInput();
+        CaptureGameplayMouse();
+        return;
+    }
+    bShowMouseCursor = true;
+    bEnableClickEvents = true;
+    SetIgnoreLookInput(true);
+    FInputModeGameAndUI Mode;
+    Mode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+    Mode.SetHideCursorDuringCapture(false);
+    SetInputMode(Mode);
+    if (UGameViewportClient* Viewport = GetWorld()->GetGameViewport())
+        Viewport->SetMouseCaptureMode(EMouseCaptureMode::NoCapture);
+}
 void ASeniorLobbyController::OpenPauseMenu()
 {
     if (!IsLocalController() || !GetWorld() || IsLobby(this) || PauseWidget.IsValid()) return;

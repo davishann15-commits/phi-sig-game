@@ -1,0 +1,9 @@
+{
+  "map": "/Game/Story/Maps/Chapter01_House.Chapter01_House",
+  "fireplaces": [
+    "GreatRoom_Fireplace_West",
+    "GreatRoom_Fireplace_East"
+  ],
+  "shelves": 6,
+  "saved": true
+}

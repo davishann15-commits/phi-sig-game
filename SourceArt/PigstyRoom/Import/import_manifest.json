@@ -1,0 +1,1105 @@
+{
+  "materials": {
+    "PIG_M_BlackHide": {
+      "color": [
+        0.014999999664723873,
+        0.017000000923871994,
+        0.01899999938905239
+      ],
+      "roughness": 0.7400000095367432,
+      "metallic": 0.0,
+      "normal_strength": 0.4,
+      "two_sided": false,
+      "base_texture": "PIG_T_BlackHide_BaseColor.png",
+      "normal_texture": "PIG_T_BlackHide_Normal.png",
+      "roughness_texture": "PIG_T_BlackHide_Roughness.png"
+    },
+    "PIG_M_BlackSnout": {
+      "color": [
+        0.012000000104308128,
+        0.014000000432133675,
+        0.01600000075995922
+      ],
+      "roughness": 0.5600000023841858,
+      "metallic": 0.0,
+      "normal_strength": 0.4,
+      "two_sided": false
+    },
+    "PIG_M_CharcoalEarInner": {
+      "color": [
+        0.024000000208616257,
+        0.020999999716877937,
+        0.023000000044703484
+      ],
+      "roughness": 0.800000011920929,
+      "metallic": 0.0,
+      "normal_strength": 0.4,
+      "two_sided": false
+    },
+    "PIG_M_HoofKeratin": {
+      "color": [
+        0.00800000037997961,
+        0.009999999776482582,
+        0.010999999940395355
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.0,
+      "normal_strength": 0.4,
+      "two_sided": false
+    },
+    "PIG_M_GlossBlackEye": {
+      "color": [
+        0.001500000013038516,
+        0.0017000000225380063,
+        0.0017999999690800905
+      ],
+      "roughness": 0.11999999731779099,
+      "metallic": 0.0,
+      "normal_strength": 0.4,
+      "two_sided": false
+    },
+    "PIG_M_NostrilMouth": {
+      "color": [
+        0.000699999975040555,
+        0.0007999999797903001,
+        0.0008999999845400453
+      ],
+      "roughness": 0.8199999928474426,
+      "metallic": 0.0,
+      "normal_strength": 0.4,
+      "two_sided": false
+    },
+    "PIG_M_BlackBristle": {
+      "color": [
+        0.00800000037997961,
+        0.009999999776482582,
+        0.010999999940395355
+      ],
+      "roughness": 0.75,
+      "metallic": 0.0,
+      "normal_strength": 0.4,
+      "two_sided": false
+    },
+    "PIG_M_MattressFabric": {
+      "color": [
+        0.6,
+        0.56,
+        0.45
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "normal_strength": 0.4,
+      "two_sided": false,
+      "base_texture": "PIG_T_MattressFabric.png",
+      "normal_texture": "PIG_T_FabricNormal.png",
+      "roughness_texture": "PIG_T_FabricRoughness.png"
+    },
+    "PIG_M_MattressSide": {
+      "color": [
+        0.52,
+        0.48,
+        0.38
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "normal_strength": 0.4,
+      "two_sided": false,
+      "base_texture": "PIG_T_MattressSide.png",
+      "normal_texture": "PIG_T_FabricNormal.png",
+      "roughness_texture": "PIG_T_FabricRoughness.png"
+    },
+    "PIG_M_Binding": {
+      "color": [
+        0.28,
+        0.24,
+        0.17
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false
+    },
+    "PIG_M_Foam": {
+      "color": [
+        0.35,
+        0.2,
+        0.07
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false
+    },
+    "PIG_M_Blanket": {
+      "color": [
+        0.18,
+        0.21,
+        0.16
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "normal_strength": 0.4,
+      "two_sided": false,
+      "base_texture": "PIG_T_DirtyBlanket.png",
+      "normal_texture": "PIG_T_FabricNormal.png",
+      "roughness_texture": "PIG_T_FabricRoughness.png"
+    },
+    "PIG_M_Cheeto": {
+      "color": [
+        0.9,
+        0.35,
+        0.01
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false,
+      "base_texture": "PIG_T_Cheeto.png"
+    },
+    "PIG_M_CheetosBag": {
+      "color": [
+        0.9,
+        0.3,
+        0.02
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false,
+      "base_texture": "PIG_T_CheetosBag.png"
+    },
+    "PIG_M_BagFoil": {
+      "color": [
+        0.5,
+        0.49,
+        0.42
+      ],
+      "roughness": 0.29,
+      "metallic": 0.5,
+      "normal_strength": 0,
+      "two_sided": false,
+      "base_texture": "PIG_T_BagFoil.png"
+    },
+    "PIG_M_RustyMetal": {
+      "color": [
+        0.22,
+        0.24,
+        0.21
+      ],
+      "roughness": 0.65,
+      "metallic": 0.57,
+      "normal_strength": 0,
+      "two_sided": false,
+      "base_texture": "PIG_T_RustyMetal.png"
+    },
+    "PIG_M_DarkMetal": {
+      "color": [
+        0.037,
+        0.036,
+        0.03
+      ],
+      "roughness": 0.64,
+      "metallic": 0.55,
+      "normal_strength": 0,
+      "two_sided": false
+    },
+    "PIG_M_DirtyWater": {
+      "color": [
+        0.027,
+        0.033,
+        0.021
+      ],
+      "roughness": 0.2,
+      "metallic": 0.03,
+      "normal_strength": 0,
+      "two_sided": false
+    },
+    "PIG_M_Feed": {
+      "color": [
+        0.3,
+        0.24,
+        0.09
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false,
+      "base_texture": "PIG_T_Feed.png"
+    },
+    "PIG_M_OldWood": {
+      "color": [
+        0.25,
+        0.22,
+        0.15
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false,
+      "base_texture": "PIG_T_OldWood.png"
+    },
+    "PIG_M_Straw": {
+      "color": [
+        0.3,
+        0.26,
+        0.12
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false
+    },
+    "PIG_M_LampGlass": {
+      "color": [
+        0.69,
+        0.54,
+        0.24
+      ],
+      "roughness": 0.48,
+      "metallic": 0,
+      "normal_strength": 0,
+      "two_sided": false,
+      "emission": 1.2
+    },
+    "PST_M_DirtyOlivePlaster": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "normal_strength": 0.55,
+      "two_sided": false,
+      "base_texture": "PST_T_DirtyOlivePlaster_BaseColor.png",
+      "normal_texture": "PST_T_DirtyOlivePlaster_Normal.png",
+      "roughness_texture": "PST_T_DirtyOlivePlaster_Roughness.png"
+    },
+    "PST_M_StainedConcrete": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "normal_strength": 0.45,
+      "two_sided": false,
+      "base_texture": "PST_T_StainedConcrete_BaseColor.png",
+      "normal_texture": "PST_T_StainedConcrete_Normal.png",
+      "roughness_texture": "PST_T_StainedConcrete_Roughness.png"
+    },
+    "PST_M_DampCeiling": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.91,
+      "metallic": 0,
+      "normal_strength": 0.28,
+      "two_sided": false,
+      "base_texture": "PST_T_DampCeiling_BaseColor.png",
+      "normal_texture": "PST_T_DampCeiling_Normal.png",
+      "roughness_texture": "PST_T_DampCeiling_Roughness.png",
+      "clamp_textures": true
+    },
+    "PST_M_KeepShutPlaque": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.82,
+      "metallic": 0.25,
+      "normal_strength": 0.4,
+      "two_sided": false,
+      "base_texture": "PST_T_KeepShutPlaque_BaseColor.png",
+      "clamp_textures": true
+    },
+    "PST_M_GrimeScratchDecal": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "normal_strength": 0.4,
+      "two_sided": true,
+      "clamp_textures": true,
+      "base_texture": "PST_T_GrimeScratchDecal_RGBA.png",
+      "alpha_opacity": true
+    }
+  },
+  "textures": [
+    "PIG_T_BlackHide_BaseColor.png",
+    "PIG_T_BlackHide_Roughness.png",
+    "PIG_T_BlackHide_Normal.png",
+    "PIG_T_CheetosBag.png",
+    "PIG_T_Cheeto.png",
+    "PIG_T_FabricRoughness.png",
+    "PIG_T_FabricNormal.png",
+    "PIG_T_MattressFabric.png",
+    "PIG_T_OldWood.png",
+    "PIG_T_MattressSide.png",
+    "PIG_T_RustyMetal.png",
+    "PIG_T_BagFoil.png",
+    "PIG_T_Feed.png",
+    "PIG_T_DirtyBlanket.png",
+    "PST_T_DirtyOlivePlaster_BaseColor.png",
+    "PST_T_DirtyOlivePlaster_Roughness.png",
+    "PST_T_DirtyOlivePlaster_Normal.png",
+    "PST_T_StainedConcrete_BaseColor.png",
+    "PST_T_StainedConcrete_Roughness.png",
+    "PST_T_StainedConcrete_Normal.png",
+    "PST_T_DampCeiling_BaseColor.png",
+    "PST_T_DampCeiling_Roughness.png",
+    "PST_T_DampCeiling_Normal.png",
+    "PST_T_KeepShutPlaque_BaseColor.png",
+    "PST_T_GrimeScratchDecal_RGBA.png"
+  ],
+  "flip_green_textures": [
+    "PIG_T_BlackHide_Normal.png",
+    "PIG_T_FabricNormal.png",
+    "PST_T_DirtyOlivePlaster_Normal.png",
+    "PST_T_StainedConcrete_Normal.png",
+    "PST_T_DampCeiling_Normal.png"
+  ],
+  "meshes": [
+    {
+      "name": "SM_PIG_BlackBody",
+      "file": "SM_PIG_BlackBody.fbx",
+      "group": "pigs",
+      "boundsCm": {
+        "min": [
+          -66.40074,
+          -25.73937,
+          38.06877
+        ],
+        "max": [
+          66.35019,
+          25.72713,
+          91.14278
+        ],
+        "size": [
+          132.75092,
+          51.4665,
+          53.07401
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "SM_PIG_BlackHead",
+      "file": "SM_PIG_BlackHead.fbx",
+      "group": "pigs",
+      "boundsCm": {
+        "min": [
+          -16.62132,
+          -25.57534,
+          -23.97224
+        ],
+        "max": [
+          23.38,
+          25.48425,
+          14.11732
+        ],
+        "size": [
+          40.00131,
+          51.0596,
+          38.08956
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "SM_PIG_BlackUpperLeg",
+      "file": "SM_PIG_BlackUpperLeg.fbx",
+      "group": "pigs",
+      "boundsCm": {
+        "min": [
+          -6.75075,
+          -6.83811,
+          -25.27011
+        ],
+        "max": [
+          8.44664,
+          6.83811,
+          3.32778
+        ],
+        "size": [
+          15.19739,
+          13.67621,
+          28.59789
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "SM_PIG_BlackLowerLeg",
+      "file": "SM_PIG_BlackLowerLeg.fbx",
+      "group": "pigs",
+      "boundsCm": {
+        "min": [
+          -3.81951,
+          -5.6527,
+          -23.0
+        ],
+        "max": [
+          8.11459,
+          5.6527,
+          3.35268
+        ],
+        "size": [
+          11.9341,
+          11.30539,
+          26.35268
+        ],
+        "coordinateSpace": "Unreal local numeric centimeters after native Y reflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_Mattress",
+      "file": "PIG_SM_Mattress.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -100.0,
+          -70.000002,
+          0.0
+        ],
+        "max": [
+          100.0,
+          70.000002,
+          20.999997
+        ],
+        "size": [
+          200.0,
+          140.000004,
+          20.999997
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_Mattress_COL",
+      "file": "PIG_SM_Mattress_COL.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -97.0,
+          -67.000002,
+          0.0
+        ],
+        "max": [
+          97.0,
+          67.000002,
+          18.399997
+        ],
+        "size": [
+          194.0,
+          134.000004,
+          18.399997
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_Blanket",
+      "file": "PIG_SM_Blanket.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -46.0,
+          -37.006488,
+          -0.544677
+        ],
+        "max": [
+          46.0,
+          32.000003,
+          2.478095
+        ],
+        "size": [
+          92.0,
+          69.006491,
+          3.022772
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_Cheeto",
+      "file": "PIG_SM_Cheeto.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -2.5,
+          -0.8,
+          0.0
+        ],
+        "max": [
+          2.5,
+          0.8,
+          1.6
+        ],
+        "size": [
+          5.0,
+          1.6,
+          1.6
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_CheetosBag",
+      "file": "PIG_SM_CheetosBag.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -11.05,
+          -5.1609,
+          -0.192279
+        ],
+        "max": [
+          11.05,
+          5.160903,
+          28.074796
+        ],
+        "size": [
+          22.1,
+          10.321803,
+          28.267075
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_OrangeCrumbs",
+      "file": "PIG_SM_OrangeCrumbs.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -17.313908,
+          -12.550114,
+          -0.0653
+        ],
+        "max": [
+          15.182108,
+          12.805825,
+          0.386444
+        ],
+        "size": [
+          32.496016,
+          25.355939,
+          0.451744
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_WaterTrough",
+      "file": "PIG_SM_WaterTrough.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -70.0,
+          -23.000008,
+          -0.2
+        ],
+        "max": [
+          70.0,
+          23.000008,
+          34.000001
+        ],
+        "size": [
+          140.0,
+          46.000016,
+          34.200001
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_FeedBucket",
+      "file": "PIG_SM_FeedBucket.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -17.0,
+          -17.0,
+          0.0
+        ],
+        "max": [
+          17.0,
+          17.0,
+          41.58
+        ],
+        "size": [
+          34.0,
+          34.0,
+          41.58
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_BrokenBoards",
+      "file": "PIG_SM_BrokenBoards.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -70.387408,
+          -35.259016,
+          0.0
+        ],
+        "max": [
+          64.580724,
+          28.808127,
+          8.609999
+        ],
+        "size": [
+          134.968132,
+          64.067143,
+          8.609999
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_StrawPatch",
+      "file": "PIG_SM_StrawPatch.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -41.11421,
+          -26.029156,
+          -0.041089
+        ],
+        "max": [
+          41.88629,
+          26.268087,
+          0.87058
+        ],
+        "size": [
+          83.0005,
+          52.297243,
+          0.911669
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_WallVent",
+      "file": "PIG_SM_WallVent.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -32.0,
+          -2.500005,
+          0.0
+        ],
+        "max": [
+          32.0,
+          4.950004,
+          38.0
+        ],
+        "size": [
+          64.0,
+          7.450009,
+          38.0
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_BulkheadLamp",
+      "file": "PIG_SM_BulkheadLamp.fbx",
+      "group": "props",
+      "boundsCm": {
+        "min": [
+          -19.0,
+          -3.000002,
+          0.0
+        ],
+        "max": [
+          19.0,
+          7.7,
+          25.999999
+        ],
+        "size": [
+          38.0,
+          10.700002,
+          25.999999
+        ],
+        "coordinateSpace": "Unreal localcm with native importerYreflection"
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_OriginalShellRemainder",
+      "file": "PIG_SM_OriginalShellRemainder.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -2510.0000381469727,
+          -1860.0000381469727,
+          297.2996711730957
+        ],
+        "max": [
+          -1467.9998397827148,
+          -864.9999618530273,
+          582.0998191833496
+        ]
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_OriginalFloorsRemainder",
+      "file": "PIG_SM_OriginalFloorsRemainder.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -2489.9999618530273,
+          -1839.9999618530273,
+          297.2996711730957
+        ],
+        "max": [
+          -1488.0001068115234,
+          -615.000057220459,
+          302.2998809814453
+        ]
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_OriginalTrimRemainder",
+      "file": "PIG_SM_OriginalTrimRemainder.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -2489.9999618530273,
+          -1840.0001525878906,
+          302.29971408843994
+        ],
+        "max": [
+          -1488.0000114440918,
+          -884.999942779541,
+          319.2997694015503
+        ]
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_COL_OriginalShellRemainder",
+      "file": "PIG_COL_OriginalShellRemainder.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -2510.0000381469727,
+          -1860.0000381469727,
+          297.2996711730957
+        ],
+        "max": [
+          -1467.9998397827148,
+          -615.000057220459,
+          582.0998191833496
+        ]
+      },
+      "complex_collision": true
+    },
+    {
+      "name": "PIG_SM_ExpandedRoom",
+      "file": "PIG_SM_ExpandedRoom.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -2992.0000076293945,
+          -1391.8424606323242,
+          297.30000495910645
+        ],
+        "max": [
+          -2320.4328536987305,
+          -744.9999809265137,
+          582.1000099182129
+        ]
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_COL_ExpandedRoom",
+      "file": "PIG_COL_ExpandedRoom.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -2992.0000076293945,
+          -1391.8424606323242,
+          297.30000495910645
+        ],
+        "max": [
+          -2320.4328536987305,
+          -744.9999809265137,
+          582.1000099182129
+        ]
+      },
+      "complex_collision": true
+    },
+    {
+      "name": "PIG_SM_KeepShutPlaque",
+      "file": "PIG_SM_KeepShutPlaque.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -20.000000298023224,
+          -0.0,
+          0.0
+        ],
+        "max": [
+          20.000000298023224,
+          -0.0,
+          25.0
+        ]
+      },
+      "complex_collision": false
+    },
+    {
+      "name": "PIG_SM_GrimeScratch",
+      "file": "PIG_SM_GrimeScratch.fbx",
+      "group": "geometry",
+      "boundsCm": {
+        "min": [
+          -50.0,
+          -0.0,
+          0.0
+        ],
+        "max": [
+          50.0,
+          -0.0,
+          150.0
+        ]
+      },
+      "complex_collision": false
+    }
+  ],
+  "geometry": {
+    "meshes": [
+      {
+        "name": "PIG_SM_OriginalShellRemainder",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_OriginalShellRemainder.fbx",
+        "boundsCm": {
+          "min": [
+            -2510.0000381469727,
+            -1860.0000381469727,
+            297.2996711730957
+          ],
+          "max": [
+            -1467.9998397827148,
+            -864.9999618530273,
+            582.0998191833496
+          ]
+        },
+        "materials": [
+          "MI_SSO_S05HallGrey",
+          "MI_SSO_S05Ceiling"
+        ],
+        "complex_collision": false
+      },
+      {
+        "name": "PIG_SM_OriginalFloorsRemainder",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_OriginalFloorsRemainder.fbx",
+        "boundsCm": {
+          "min": [
+            -2489.9999618530273,
+            -1839.9999618530273,
+            297.2996711730957
+          ],
+          "max": [
+            -1488.0001068115234,
+            -615.000057220459,
+            302.2998809814453
+          ]
+        },
+        "materials": [
+          "MI_SSO_FloorWood",
+          "MI_SSO_S05SouthHallFloor"
+        ],
+        "complex_collision": false
+      },
+      {
+        "name": "PIG_SM_OriginalTrimRemainder",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_OriginalTrimRemainder.fbx",
+        "boundsCm": {
+          "min": [
+            -2489.9999618530273,
+            -1840.0001525878906,
+            302.29971408843994
+          ],
+          "max": [
+            -1488.0000114440918,
+            -884.999942779541,
+            319.2997694015503
+          ]
+        },
+        "materials": [
+          "MI_SSO_PaintWhite"
+        ],
+        "complex_collision": false
+      },
+      {
+        "name": "PIG_COL_OriginalShellRemainder",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_COL_OriginalShellRemainder.fbx",
+        "boundsCm": {
+          "min": [
+            -2510.0000381469727,
+            -1860.0000381469727,
+            297.2996711730957
+          ],
+          "max": [
+            -1467.9998397827148,
+            -615.000057220459,
+            582.0998191833496
+          ]
+        },
+        "materials": [
+          "WorldGridMaterial",
+          "WorldGridMaterial_1",
+          "WorldGridMaterial_2",
+          "WorldGridMaterial_3"
+        ],
+        "complex_collision": true
+      },
+      {
+        "name": "PIG_SM_ExpandedRoom",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_ExpandedRoom.fbx",
+        "boundsCm": {
+          "min": [
+            -2992.0000076293945,
+            -1391.8424606323242,
+            297.30000495910645
+          ],
+          "max": [
+            -2320.4328536987305,
+            -744.9999809265137,
+            582.1000099182129
+          ]
+        },
+        "materials": [
+          "PST_M_DirtyOlivePlaster",
+          "PST_M_DampCeiling",
+          "PST_M_StainedConcrete"
+        ]
+      },
+      {
+        "name": "PIG_COL_ExpandedRoom",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_COL_ExpandedRoom.fbx",
+        "boundsCm": {
+          "min": [
+            -2992.0000076293945,
+            -1391.8424606323242,
+            297.30000495910645
+          ],
+          "max": [
+            -2320.4328536987305,
+            -744.9999809265137,
+            582.1000099182129
+          ]
+        },
+        "materials": [
+          "PST_M_DirtyOlivePlaster",
+          "PST_M_DampCeiling",
+          "PST_M_StainedConcrete"
+        ],
+        "complex_collision": true
+      },
+      {
+        "name": "PIG_SM_KeepShutPlaque",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_KeepShutPlaque.fbx",
+        "boundsCm": {
+          "min": [
+            -20.000000298023224,
+            -0.0,
+            0.0
+          ],
+          "max": [
+            20.000000298023224,
+            -0.0,
+            25.0
+          ]
+        },
+        "materials": [
+          "PST_M_KeepShutPlaque"
+        ]
+      },
+      {
+        "name": "PIG_SM_GrimeScratch",
+        "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/pigsty-room-v1/geometry/PIG_SM_GrimeScratch.fbx",
+        "boundsCm": {
+          "min": [
+            -50.0,
+            -0.0,
+            0.0
+          ],
+          "max": [
+            50.0,
+            -0.0,
+            150.0
+          ]
+        },
+        "materials": [
+          "PST_M_GrimeScratchDecal"
+        ]
+      }
+    ],
+    "materials": {},
+    "textures": [],
+    "actors": [
+      {
+        "label": "PIG_ExpandedRoom",
+        "mesh": "PIG_SM_ExpandedRoom"
+      },
+      {
+        "label": "PIG_ExpandedRoomCollision",
+        "mesh": "PIG_COL_ExpandedRoom",
+        "collision": "BlockAll",
+        "hidden": true
+      }
+    ],
+    "replacements": [
+      {
+        "actor": "HallEnd_SM_HallEnd_ThreeRoomsShell",
+        "mesh": "PIG_SM_OriginalShellRemainder",
+        "collision": false
+      },
+      {
+        "actor": "HallEnd_SM_HallEnd_ThreeRoomsFloors",
+        "mesh": "PIG_SM_OriginalFloorsRemainder",
+        "collision": false
+      },
+      {
+        "actor": "HallEnd_SM_HallEnd_ThreeRoomsTrim",
+        "mesh": "PIG_SM_OriginalTrimRemainder",
+        "collision": false
+      },
+      {
+        "actor": "HallEnd_COL_HallEnd_ThreeRoomsShell",
+        "mesh": "PIG_COL_OriginalShellRemainder",
+        "collision": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "cuts": [
+    {
+      "name": "SM_Entrance_m1_m1_Solid_FrontDoorCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontDoubleDoors/models/SM_Entrance_m1_m1_Solid_FrontDoorCut.fbx",
+      "source_actor": "SM_Entrance_m1_m1_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/Interactivity/HI_WindowCleared_SM_Entrance_m1_m1_Solid.HI_WindowCleared_SM_Entrance_m1_m1_Solid",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood.MI_SSO_FloorWood",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodOak.MI_SSO_WoodOak",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S03HallGrey.MI_SSO_S03HallGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+      ],
+      "removed_islands": [
+        [
+          [
+            -207.90001416206363,
+            -944.4599962234498,
+            266.85980319976807
+          ],
+          [
+            134.63997781276703,
+            -904.8601284027101,
+            277.859845161438
+          ]
+        ],
+        [
+          [
+            -200.97004437446597,
+            -944.4599962234498,
+            -3.300167322158814
+          ],
+          [
+            -183.1500259637833,
+            -904.8599395751954,
+            272.9098105430603
+          ]
+        ],
+        [
+          [
+            -186.1200467348099,
+            -931.4910392761232,
+            -3.850168436765671
+          ],
+          [
+            112.85997498035432,
+            -922.581024169922,
+            3.849832825362683
+          ]
+        ],
+        [
+          [
+            -186.1200467348099,
+            -931.4910392761232,
+            223.95984411239627
+          ],
+          [
+            112.85997498035432,
+            -922.581024169922,
+            231.65986299514773
+          ]
+        ],
+        [
+          [
+            -190.5750542879105,
+            -931.5900793075563,
+            -0.00016853167380759262
+          ],
+          [
+            -181.66503918170932,
+            -917.7299509048463,
+            227.8098273277283
+          ]
+        ],
+        [
+          [
+            -192.06004106998446,
+            -935.550075531006,
+            223.1348252296448
+          ],
+          [
+            118.79996931552888,
+            -917.730139732361,
+            232.4848294258118
+          ]
+        ],
+        [
+          [
+            -193.532305598259,
+            -946.0441646575929,
+            267.7106022834778
+          ],
+          [
+            120.27221024036409,
+            -930.9960279464723,
+            286.98981285095215
+          ]
+        ],
+        [
+          [
+            -155.62803804874423,
+            -948.4199924468995,
+            214.33479428291324
+          ],
+          [
+            -104.14805173873903,
+            -932.5800075531007,
+            221.48478746414187
+          ]
+        ],
+        [
+          [
+            -146.7378262281418,
+            -941.9850339889528,
+            102.29981064796449
+          ],
+          [
+            -141.78784275054934,
+            -933.0750188827516,
+            122.09981799125673
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "SM_Entrance_m1_p0_Solid_FrontDoorCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontDoubleDoors/models/SM_Entrance_m1_p0_Solid_FrontDoorCut.fbx",
+      "source_actor": "SM_Entrance_m1_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/NoodleWing/SM_FPR_Retained_SM_Entrance_m1_p0_Solid_NoodleCut.SM_FPR_Retained_SM_Entrance_m1_p0_Solid_NoodleCut",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Red.MI_SSO_Red",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_FabricCream.MI_SSO_FabricCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+      ],
+      "removed_islands": [
+        [
+          [
+            109.89008402824403,
+            -944.4599962234498,
+            -3.3002525568008427
+          ],
+          [
+            127.71010243892671,
+            -904.8599395751954,
+            272.9097056388855
+          ]
+        ],
+        [
+          [
+            108.40510904788972,
+            -931.5900793075563,
+            -0.0002527975107113889
+          ],
+          [
+            117.31510055065156,
+            -917.7299509048463,
+            227.8097224235535
+          ]
+        ]
+      ]
+    }
+  ],
+  "leaf": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontDoubleDoors/models/SM_FD_WalnutLeaf.fbx",
+  "frame": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontDoubleDoors/models/SM_FD_WalnutFrame.fbx",
+  "width": 138.6,
+  "height": 257.4,
+  "hinges": [
+    [
+      -175.8,
+      -989,
+      1.7
+    ],
+    [
+      102.5,
+      -989,
+      1.7
+    ]
+  ],
+  "center": [
+    -36.65,
+    -989,
+    129.5
+  ],
+  "materials": [
+    "M_FD_Walnut",
+    "M_FD_WalnutRail",
+    "M_FD_WalnutPanel",
+    "M_FD_WalnutDark",
+    "M_FD_Brass",
+    "M_FD_BrassDark",
+    "M_FD_Black"
+  ]
+}

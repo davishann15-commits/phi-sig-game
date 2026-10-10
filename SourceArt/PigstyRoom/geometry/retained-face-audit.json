@@ -1,0 +1,55 @@
+{
+  "HallEnd_SM_HallEnd_ThreeRoomsShell": {
+    "before": 276,
+    "retained": 228,
+    "removedPerCube": [
+      18,
+      12,
+      12,
+      6
+    ],
+    "retainedCoordinatesUnchanged": true,
+    "retainedUVsAndNormalsCopied": true,
+    "protectedDoorCapsUnchanged": true,
+    "ownedComponentsOnly": true
+  },
+  "HallEnd_SM_HallEnd_ThreeRoomsFloors": {
+    "before": 48,
+    "retained": 36,
+    "removedPerCube": [
+      12
+    ],
+    "retainedCoordinatesUnchanged": true,
+    "retainedUVsAndNormalsCopied": true,
+    "protectedDoorCapsUnchanged": true,
+    "ownedComponentsOnly": true
+  },
+  "HallEnd_SM_HallEnd_ThreeRoomsTrim": {
+    "before": 156,
+    "retained": 120,
+    "removedPerCube": [
+      16,
+      10,
+      10
+    ],
+    "retainedCoordinatesUnchanged": true,
+    "retainedUVsAndNormalsCopied": true,
+    "protectedDoorCapsUnchanged": true,
+    "ownedComponentsOnly": true
+  },
+  "HallEnd_COL_HallEnd_ThreeRoomsShell": {
+    "before": 324,
+    "retained": 264,
+    "removedPerCube": [
+      20,
+      12,
+      12,
+      6,
+      10
+    ],
+    "retainedCoordinatesUnchanged": true,
+    "retainedUVsAndNormalsCopied": true,
+    "protectedDoorCapsUnchanged": true,
+    "ownedComponentsOnly": true
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "cuts": [
+    [
+      [
+        1468,
+        -667,
+        -49
+      ],
+      [
+        2025,
+        627,
+        620
+      ]
+    ],
+    [
+      [
+        2005,
+        -620,
+        -0.05
+      ],
+      [
+        2110,
+        -448,
+        239
+      ]
+    ],
+    [
+      [
+        2020,
+        -417,
+        332.5
+      ],
+      [
+        2090,
+        -241,
+        570
+      ]
+    ],
+    [
+      [
+        1738,
+        -600,
+        -362.2
+      ],
+      [
+        1790,
+        -429,
+        -119
+      ]
+    ],
+    [
+      [
+        1380,
+        474,
+        -362
+      ],
+      [
+        1480,
+        605,
+        -126
+      ]
+    ],
+    [
+      [
+        1468,
+        -389,
+        -360
+      ],
+      [
+        2025,
+        627,
+        -48
+      ]
+    ]
+  ],
+  "assets": [
+    {
+      "name": "COL_Basement_m1_p0_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/COL_Basement_m1_p0_Solid_NoodleCut.fbx",
+      "sourceActor": "COL_Basement_m1_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/Meshes/COL_Basement_m1_p0_Solid.COL_Basement_m1_p0_Solid",
+      "materials": [
+        "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+      ],
+      "cut_faces": 20,
+      "faces_before": 120,
+      "faces_after": 134
+    },
+    {
+      "name": "COL_Basement_m1_p1_DoorClear_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/COL_Basement_m1_p1_DoorClear_NoodleCut.fbx",
+      "sourceActor": "COL_Basement_m1_p1_Solid",
+      "old_asset": "/Game/ExistingHouseDoors/COL_Basement_m1_p1_DoorClear.COL_Basement_m1_p1_DoorClear",
+      "materials": [
+        "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+      ],
+      "cut_faces": 24,
+      "faces_before": 36,
+      "faces_after": 45
+    },
+    {
+      "name": "COL_Basement_p0_p0_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/COL_Basement_p0_p0_Solid_NoodleCut.fbx",
+      "sourceActor": "COL_Basement_p0_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/Meshes/COL_Basement_p0_p0_Solid.COL_Basement_p0_p0_Solid",
+      "materials": [
+        "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+      ],
+      "cut_faces": 40,
+      "faces_before": 156,
+      "faces_after": 165
+    },
+    {
+      "name": "COL_Entrance_m1_p0_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/COL_Entrance_m1_p0_Solid_NoodleCut.fbx",
+      "sourceActor": "COL_Entrance_m1_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_m1_p0_Solid.COL_Entrance_m1_p0_Solid",
+      "materials": [
+        "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+      ],
+      "cut_faces": 10,
+      "faces_before": 710,
+      "faces_after": 708
+    },
+    {
+      "name": "COL_Entrance_m1_p1_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/COL_Entrance_m1_p1_Solid_NoodleCut.fbx",
+      "sourceActor": "COL_Entrance_m1_p1_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_m1_p1_Solid.COL_Entrance_m1_p1_Solid",
+      "materials": [
+        "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+      ],
+      "cut_faces": 11,
+      "faces_before": 368,
+      "faces_after": 385
+    },
+    {
+      "name": "COL_Upper_m1_p1_DoorClear_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/COL_Upper_m1_p1_DoorClear_NoodleCut.fbx",
+      "sourceActor": "COL_Upper_m1_p1_Solid",
+      "old_asset": "/Game/ExistingHouseDoors/COL_Upper_m1_p1_DoorClear.COL_Upper_m1_p1_DoorClear",
+      "materials": [
+        "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+      ],
+      "cut_faces": 16,
+      "faces_before": 344,
+      "faces_after": 370
+    },
+    {
+      "name": "SM_Basement_m1_p0_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_Basement_m1_p0_Solid_NoodleCut.fbx",
+      "sourceActor": "SM_Basement_m1_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/Meshes/SM_Basement_m1_p0_Solid.SM_Basement_m1_p0_Solid",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BlackBlock.MI_SSO_BlackBlock",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHMetalChannel.MI_SSO_BHMetalChannel",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHLightNeutral.MI_SSO_BHLightNeutral",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHAlcoveConcrete.MI_SSO_BHAlcoveConcrete",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHAlcovePlaster.MI_SSO_BHAlcovePlaster",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodOak.MI_SSO_WoodOak",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_IdentityRed.MI_SSO_IdentityRed"
+      ],
+      "cut_faces": 222,
+      "faces_before": 51128,
+      "faces_after": 50998
+    },
+    {
+      "name": "SM_OriginalRoom_Basement_m1_p1_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_OriginalRoom_Basement_m1_p1_Solid_NoodleCut.fbx",
+      "sourceActor": "SM_Basement_m1_p1_Solid",
+      "old_asset": "/Game/ExistingHouseDoors/SM_OriginalRoom_Basement_m1_p1_Solid.SM_OriginalRoom_Basement_m1_p1_Solid",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHAlcoveMetal.MI_SSO_BHAlcoveMetal",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHAlcovePlaster.MI_SSO_BHAlcovePlaster",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark"
+      ],
+      "cut_faces": 772,
+      "faces_before": 2192,
+      "faces_after": 1627
+    },
+    {
+      "name": "SM_Basement_p0_p0_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_Basement_p0_p0_Solid_NoodleCut.fbx",
+      "sourceActor": "SM_Basement_p0_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/Meshes/SM_Basement_p0_p0_Solid.SM_Basement_p0_p0_Solid",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHSealedConcrete.MI_SSO_BHSealedConcrete",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BlackBlock.MI_SSO_BlackBlock",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Black.MI_SSO_Black",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHMetalChannel.MI_SSO_BHMetalChannel",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHLightNeutral.MI_SSO_BHLightNeutral",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHAlcoveCream.MI_SSO_BHAlcoveCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite.MI_SSO_BHCeilingWhite"
+      ],
+      "cut_faces": 8108,
+      "faces_before": 58680,
+      "faces_after": 50801
+    },
+    {
+      "name": "SM_FPR_Retained_SM_Entrance_m1_p0_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_FPR_Retained_SM_Entrance_m1_p0_Solid_NoodleCut.fbx",
+      "sourceActor": "SM_Entrance_m1_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/FireplaceRefinement/SM_FPR_Retained_SM_Entrance_m1_p0_Solid.SM_FPR_Retained_SM_Entrance_m1_p0_Solid",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark.MI_SSO_MortarDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone0.MI_SSO_OakTone0",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone2.MI_SSO_OakTone2",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone7.MI_SSO_OakTone7",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone3.MI_SSO_OakTone3",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone1.MI_SSO_OakTone1",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone6.MI_SSO_OakTone6",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone4.MI_SSO_OakTone4",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_OakTone5.MI_SSO_OakTone5",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Red.MI_SSO_Red",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_FabricCream.MI_SSO_FabricCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Blue.MI_SSO_Blue",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+      ],
+      "cut_faces": 110,
+      "faces_before": 39770,
+      "faces_after": 39692
+    },
+    {
+      "name": "SM_Kitchen_SM_Entrance_m1_p1_Solid_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_Kitchen_SM_Entrance_m1_p1_Solid_NoodleCut.fbx",
+      "sourceActor": "SM_Entrance_m1_p1_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/ReferenceKitchen/SM_Kitchen_SM_Entrance_m1_p1_Solid.SM_Kitchen_SM_Entrance_m1_p1_Solid",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02FloorOak.MI_SSO_S02FloorOak",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02WallTaupe.MI_SSO_S02WallTaupe",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02TileGrout.MI_SSO_S02TileGrout",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02BathroomTile.MI_SSO_S02BathroomTile",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02StainlessMetal.MI_SSO_S02StainlessMetal",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02BathroomMirror.MI_SSO_S02BathroomMirror",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S02BathroomWood.MI_SSO_S02BathroomWood",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Red.MI_SSO_Red",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey"
+      ],
+      "cut_faces": 43,
+      "faces_before": 14595,
+      "faces_after": 14644
+    },
+    {
+      "name": "SM_Clean_current_easthall_v2_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_Clean_current_easthall_v2_NoodleCut.fbx",
+      "sourceActor": "SM_Upper_m1_p1_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/DoorRepair/SM_Clean_current_easthall_v2.SM_Clean_current_easthall_v2",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S05HallGrey.MI_SSO_S05HallGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S05Ceiling.MI_SSO_S05Ceiling",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete.MI_SSO_Concrete",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S05RoomWarm.MI_SSO_S05RoomWarm",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S05BedroomNeutralGrey.MI_SSO_S05BedroomNeutralGrey"
+      ],
+      "cut_faces": 66,
+      "faces_before": 21116,
+      "faces_after": 21196
+    },
+    {
+      "name": "SM_Upper_p0_p0_CornerCleared_NoodleCut",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NoodleWing/art/models/SM_Upper_p0_p0_CornerCleared_NoodleCut.fbx",
+      "sourceActor": "SM_Upper_p0_p0_Solid",
+      "old_asset": "/Game/SeniorSendOff/House/GreatRoomCorner/SM_Upper_p0_p0_CornerCleared.SM_Upper_p0_p0_CornerCleared",
+      "materials": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_S05RoomWarm.MI_SSO_S05RoomWarm"
+      ],
+      "cut_faces": 64,
+      "faces_before": 19236,
+      "faces_after": 19207
+    }
+  ]
+}

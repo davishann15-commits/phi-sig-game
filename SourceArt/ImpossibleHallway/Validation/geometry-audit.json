@@ -1,0 +1,65 @@
+{
+  "retained": {
+    "IH_SM_RetainedShell": {
+      "source": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/PigstyRoom/Import/PIG_SM_OriginalShellRemainder.fbx",
+      "sourceSha256": "a998c07658e23bf585ef0fcca882c1a83771c9ac1da4ffa6edca8087864fd07f",
+      "inputPolygons": 228,
+      "removedPolygons": 12,
+      "outputPolygons": 216,
+      "removedPerOwnedBox": {
+        "0": 12
+      },
+      "allRetainedCoordinatesAndMaterialsExact": true,
+      "uvsAndNormalsCopied": true,
+      "targetActor": "HallEnd_SM_HallEnd_ThreeRoomsShell"
+    },
+    "IH_COL_RetainedShell": {
+      "source": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/PigstyRoom/Import/PIG_COL_OriginalShellRemainder.fbx",
+      "sourceSha256": "4ff8b331a8d5230df884d378c9368c85d6aa28b9ba238256d31dadcbcc19aac5",
+      "inputPolygons": 264,
+      "removedPolygons": 12,
+      "outputPolygons": 252,
+      "removedPerOwnedBox": {
+        "0": 12
+      },
+      "allRetainedCoordinatesAndMaterialsExact": true,
+      "uvsAndNormalsCopied": true,
+      "targetActor": "HallEnd_COL_HallEnd_ThreeRoomsShell"
+    },
+    "IH_SM_RetainedTrim": {
+      "source": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/PigstyRoom/Import/PIG_SM_OriginalTrimRemainder.fbx",
+      "sourceSha256": "8403ee2bf2dbc0deabde089bb13811e77e34e50644c53019350609f1af82f83a",
+      "inputPolygons": 120,
+      "removedPolygons": 12,
+      "outputPolygons": 108,
+      "removedPerOwnedBox": {
+        "0": 12
+      },
+      "allRetainedCoordinatesAndMaterialsExact": true,
+      "uvsAndNormalsCopied": true,
+      "targetActor": "HallEnd_SM_HallEnd_ThreeRoomsTrim"
+    },
+    "IH_SM_RetainedPracticals": {
+      "source": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/PokerRoom/POK_SM_OtherHallPracticalLights.fbx",
+      "sourceSha256": "91b0dba767708c9204795fc9d64c85bd8e55230fa9f31b5e31c830bf1deebce9",
+      "inputPolygons": 936,
+      "removedPolygons": 312,
+      "outputPolygons": 624,
+      "removedPerOwnedBox": {
+        "0": 312
+      },
+      "allRetainedCoordinatesAndMaterialsExact": true,
+      "uvsAndNormalsCopied": true,
+      "targetActor": "HallEnd_SM_HallEnd_ThreeRoomsPracticalLights"
+    }
+  },
+  "modulePeriodCm": 180.0,
+  "moduleCount": 18,
+  "corridorLengthCm": 3240.0,
+  "prototypeObjectCount": 27,
+  "prototypeTranslationsExact": true,
+  "newMeshTriangles": 45672,
+  "newLightCount": 6,
+  "newLightRadiusCm": 140,
+  "doorRegistryWritten": false
+}

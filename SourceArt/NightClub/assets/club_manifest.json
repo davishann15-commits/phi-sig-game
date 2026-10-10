@@ -1,0 +1,764 @@
+{
+  "coordinateSystem": "Blender metres -> Unreal centimetres [100X,-100Y,100Z]. Front = Unreal +Y. Assets unscaled, root house scale = 1.1.",
+  "assets": [
+    {
+      "name": "SM_NC_Sign_PhiSig",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_Sign_PhiSig.fbx",
+      "triangles": 8396,
+      "vertices": 4298,
+      "boundsMetres": [
+        [
+          -1.458050012588501,
+          -0.0494999997317791,
+          -0.3449999988079071
+        ],
+        [
+          1.458050012588501,
+          0.06499999761581421,
+          0.3449999988079071
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -145.8050012588501,
+          -6.499999761581421,
+          -34.49999988079071
+        ],
+        [
+          145.8050012588501,
+          4.94999997317791,
+          34.49999988079071
+        ]
+      ],
+      "materials": [
+        "M_NC_NeonCyan",
+        "M_NC_PowderCoat",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_Sign_OpenLate",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_Sign_OpenLate.fbx",
+      "triangles": 7200,
+      "vertices": 3694,
+      "boundsMetres": [
+        [
+          -1.5537500381469727,
+          -0.0494999997317791,
+          -0.3050000071525574
+        ],
+        [
+          1.5537500381469727,
+          0.06499999761581421,
+          0.3050000071525574
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -155.37500381469727,
+          -6.499999761581421,
+          -30.500000715255737
+        ],
+        [
+          155.37500381469727,
+          4.94999997317791,
+          30.500000715255737
+        ]
+      ],
+      "materials": [
+        "M_NC_NeonMagenta",
+        "M_NC_PowderCoat",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_Sign_AfterHours",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_Sign_AfterHours.fbx",
+      "triangles": 11456,
+      "vertices": 5858,
+      "boundsMetres": [
+        [
+          -1.6445000171661377,
+          -0.0494999997317791,
+          -0.2800000011920929
+        ],
+        [
+          1.6445000171661377,
+          0.06499999761581421,
+          0.2800000011920929
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -164.45000171661377,
+          -6.499999761581421,
+          -28.00000011920929
+        ],
+        [
+          164.45000171661377,
+          4.94999997317791,
+          28.00000011920929
+        ]
+      ],
+      "materials": [
+        "M_NC_NeonViolet",
+        "M_NC_PowderCoat",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_WallStrip_Cyan",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_WallStrip_Cyan.fbx",
+      "triangles": 944,
+      "vertices": 484,
+      "boundsMetres": [
+        [
+          -1.0220000743865967,
+          -0.029999999329447746,
+          -0.028999999165534973
+        ],
+        [
+          1.0220000743865967,
+          0.05650000274181366,
+          0.028999999165534973
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -102.20000743865967,
+          -5.650000274181366,
+          -2.8999999165534973
+        ],
+        [
+          102.20000743865967,
+          2.9999999329447746,
+          2.8999999165534973
+        ]
+      ],
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_NeonCyan",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_WallStrip_Magenta",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_WallStrip_Magenta.fbx",
+      "triangles": 944,
+      "vertices": 484,
+      "boundsMetres": [
+        [
+          -1.0220000743865967,
+          -0.029999999329447746,
+          -0.028999999165534973
+        ],
+        [
+          1.0220000743865967,
+          0.05650000274181366,
+          0.028999999165534973
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -102.20000743865967,
+          -5.650000274181366,
+          -2.8999999165534973
+        ],
+        [
+          102.20000743865967,
+          2.9999999329447746,
+          2.8999999165534973
+        ]
+      ],
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_NeonMagenta",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_WallStrip_Violet",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_WallStrip_Violet.fbx",
+      "triangles": 944,
+      "vertices": 484,
+      "boundsMetres": [
+        [
+          -1.0220000743865967,
+          -0.029999999329447746,
+          -0.028999999165534973
+        ],
+        [
+          1.0220000743865967,
+          0.05650000274181366,
+          0.028999999165534973
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -102.20000743865967,
+          -5.650000274181366,
+          -2.8999999165534973
+        ],
+        [
+          102.20000743865967,
+          2.9999999329447746,
+          2.8999999165534973
+        ]
+      ],
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_NeonViolet",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_DJBooth",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_DJBooth.fbx",
+      "triangles": 20116,
+      "vertices": 10464,
+      "boundsMetres": [
+        [
+          -1.3600000143051147,
+          -0.4975000023841858,
+          -0.0005000010132789612
+        ],
+        [
+          1.3600000143051147,
+          0.48500001430511475,
+          1.2740000486373901
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -136.00000143051147,
+          -48.500001430511475,
+          -0.05000010132789612
+        ],
+        [
+          136.00000143051147,
+          49.75000023841858,
+          127.40000486373901
+        ]
+      ],
+      "materials": [
+        "M_NC_DarkWalnut",
+        "M_NC_PowderCoat",
+        "M_NC_BrushedAluminium",
+        "M_NC_NeonCyan",
+        "M_NC_Rubber",
+        "M_NC_NeonMagenta",
+        "M_NC_DisplayGreen",
+        "M_NC_NeonWarmAmber",
+        "M_NC_DisplayRed"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_PASpeaker",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_PASpeaker.fbx",
+      "triangles": 4624,
+      "vertices": 2476,
+      "boundsMetres": [
+        [
+          -0.2849999964237213,
+          -0.27338650822639465,
+          0.0
+        ],
+        [
+          0.2849999964237213,
+          0.2150000035762787,
+          1.2450000047683716
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -28.49999964237213,
+          -21.50000035762787,
+          0.0
+        ],
+        [
+          28.49999964237213,
+          27.338650822639465,
+          124.50000047683716
+        ]
+      ],
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_Rubber",
+        "M_NC_BrushedAluminium",
+        "M_NC_NeonCyan"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_DiscoBall",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_DiscoBall.fbx",
+      "triangles": 2876,
+      "vertices": 3538,
+      "boundsMetres": [
+        [
+          -0.31437891721725464,
+          -0.31437891721725464,
+          -0.31200000643730164
+        ],
+        [
+          0.31437891721725464,
+          0.31437891721725464,
+          0.5189999938011169
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -31.437891721725464,
+          -31.437891721725464,
+          -31.200000643730164
+        ],
+        [
+          31.437891721725464,
+          31.437891721725464,
+          51.899999380111694
+        ]
+      ],
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_MirrorTile",
+        "M_NC_Chrome",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_FirePole",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_FirePole.fbx",
+      "triangles": 1260,
+      "vertices": 640,
+      "boundsMetres": [
+        [
+          -0.10199999809265137,
+          -0.10199999809265137,
+          0.0
+        ],
+        [
+          0.10199999809265137,
+          0.10199999809265137,
+          3.015000104904175
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -10.199999809265137,
+          -10.199999809265137,
+          0.0
+        ],
+        [
+          10.199999809265137,
+          10.199999809265137,
+          301.5000104904175
+        ]
+      ],
+      "materials": [
+        "M_NC_Chrome",
+        "M_NC_Rubber",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_PoleHoleCollar",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_PoleHoleCollar.fbx",
+      "triangles": 3008,
+      "vertices": 1536,
+      "boundsMetres": [
+        [
+          -0.953000009059906,
+          -0.953000009059906,
+          -0.010999999940395355
+        ],
+        [
+          0.953000009059906,
+          0.953000009059906,
+          0.02500000037252903
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -95.3000009059906,
+          -95.3000009059906,
+          -1.0999999940395355
+        ],
+        [
+          95.3000009059906,
+          95.3000009059906,
+          2.500000037252903
+        ]
+      ],
+      "materials": [
+        "M_NC_Chrome",
+        "M_NC_Rubber",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_PoleGuard",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_PoleGuard.fbx",
+      "triangles": 7816,
+      "vertices": 4016,
+      "boundsMetres": [
+        [
+          -1.1176683902740479,
+          -0.9899773001670837,
+          0.0
+        ],
+        [
+          1.1176683902740479,
+          1.1340000629425049,
+          0.9810000061988831
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -111.76683902740479,
+          -113.40000629425049,
+          0.0
+        ],
+        [
+          111.76683902740479,
+          98.99773001670837,
+          98.1000006198883
+        ]
+      ],
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_Chrome",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_PoleAccessGate",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_PoleAccessGate.fbx",
+      "triangles": 2168,
+      "vertices": 1104,
+      "boundsMetres": [
+        [
+          -1.125,
+          -0.17002269625663757,
+          0.0
+        ],
+        [
+          0.02800000086426735,
+          0.032499998807907104,
+          0.9810000061988831
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -112.5,
+          -3.2499998807907104,
+          0.0
+        ],
+        [
+          2.800000086426735,
+          17.002269625663757,
+          98.1000006198883
+        ]
+      ],
+      "materials": [
+        "M_NC_PowderCoat",
+        "M_NC_Chrome"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    },
+    {
+      "name": "SM_NC_PoleLandingPad",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/assets/models/SM_NC_PoleLandingPad.fbx",
+      "triangles": 2484,
+      "vertices": 1264,
+      "boundsMetres": [
+        [
+          -0.7900000214576721,
+          -0.7900000214576721,
+          0.0
+        ],
+        [
+          0.7900000214576721,
+          0.7900000214576721,
+          0.015500000678002834
+        ]
+      ],
+      "boundsUnrealCm": [
+        [
+          -79.00000214576721,
+          -79.00000214576721,
+          0.0
+        ],
+        [
+          79.00000214576721,
+          79.00000214576721,
+          1.5500000678002834
+        ]
+      ],
+      "materials": [
+        "M_NC_Rubber",
+        "M_NC_NeonCyan",
+        "M_NC_BrushedAluminium"
+      ],
+      "origin": "Authored local origin, metres. Signcenter or furniturefloor or polebottom. Gatehinge0.",
+      "collision": "Simple box for DJ booth / speaker only; runtime explicit for pole/guard/gate. No neon collision.",
+      "hasCustomNormals": true
+    }
+  ],
+  "materials": {
+    "M_NC_PowderCoat": {
+      "color": [
+        0.009,
+        0.011,
+        0.019
+      ],
+      "roughness": 0.48,
+      "metallic": 0.52,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M_NC_Rubber": {
+      "color": [
+        0.005,
+        0.006,
+        0.008
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M_NC_BrushedAluminium": {
+      "color": [
+        0.28,
+        0.31,
+        0.37
+      ],
+      "roughness": 0.25,
+      "metallic": 0.95,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M_NC_Chrome": {
+      "color": [
+        0.62,
+        0.67,
+        0.73
+      ],
+      "roughness": 0.14,
+      "metallic": 1,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M_NC_MirrorTile": {
+      "color": [
+        0.73,
+        0.77,
+        0.82
+      ],
+      "roughness": 0.07,
+      "metallic": 1,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M_NC_DarkWalnut": {
+      "color": [
+        0.035,
+        0.018,
+        0.012
+      ],
+      "roughness": 0.46,
+      "metallic": 0,
+      "emissive_strength": 0,
+      "emissive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M_NC_NeonCyan": {
+      "color": [
+        0.03,
+        0.68,
+        1
+      ],
+      "roughness": 0.3,
+      "metallic": 0.15,
+      "emissive_strength": 18,
+      "emissive": [
+        0.03,
+        0.68,
+        1
+      ]
+    },
+    "M_NC_NeonMagenta": {
+      "color": [
+        0.95,
+        0.028,
+        0.4
+      ],
+      "roughness": 0.3,
+      "metallic": 0.15,
+      "emissive_strength": 16,
+      "emissive": [
+        0.95,
+        0.028,
+        0.4
+      ]
+    },
+    "M_NC_NeonViolet": {
+      "color": [
+        0.32,
+        0.065,
+        1
+      ],
+      "roughness": 0.3,
+      "metallic": 0.15,
+      "emissive_strength": 20,
+      "emissive": [
+        0.32,
+        0.065,
+        1
+      ]
+    },
+    "M_NC_NeonWarmAmber": {
+      "color": [
+        1,
+        0.28,
+        0.035
+      ],
+      "roughness": 0.3,
+      "metallic": 0.12,
+      "emissive_strength": 14,
+      "emissive": [
+        1,
+        0.28,
+        0.035
+      ]
+    },
+    "M_NC_TinyDisplayWhite": {
+      "color": [
+        0.56,
+        0.71,
+        0.85
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "emissive_strength": 2.5,
+      "emissive": [
+        0.56,
+        0.71,
+        0.85
+      ]
+    },
+    "M_NC_DisplayGreen": {
+      "color": [
+        0.03,
+        0.62,
+        0.21
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "emissive_strength": 3,
+      "emissive": [
+        0.03,
+        0.62,
+        0.21
+      ]
+    },
+    "M_NC_DisplayRed": {
+      "color": [
+        0.6,
+        0.008,
+        0.02
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "emissive_strength": 3,
+      "emissive": [
+        0.6,
+        0.008,
+        0.02
+      ]
+    }
+  },
+  "notes": [
+    "Use emissive neon materials with bloom; emissive geometry is the neon light source, no per-tube lights.",
+    "Simple box collision only for DJ booth / speaker. Pole, guard, gate collision handled explicitly by runtime.",
+    "Guard aperture pre-scale radius .8636m; outer guard 1.075m. Open guard access faces UE+Y, 60 degree gap. Separate gate closes that gap."
+  ],
+  "pole": {
+    "defaultHeightCm": 301.5,
+    "radiusCm": 4.3,
+    "holeRadiusCm": 86.36,
+    "guardRadiusCm": 107.5,
+    "guardHeightCm": 95.5,
+    "gateHingeCm": [
+      53.75000000000001,
+      93.09773090682715,
+      0
+    ],
+    "gateGapDirectionUE": [
+      0,
+      1,
+      0
+    ],
+    "gateGapDegrees": 60
+  }
+}

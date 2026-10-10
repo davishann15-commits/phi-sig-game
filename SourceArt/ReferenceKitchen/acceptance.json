@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "photoCount": 9,
+  "interactiveFurniture": 117,
+  "scale": [
+    1.8,
+    1.8,
+    1
+  ],
+  "dimensionBasis": "Estimated from photos and existing shell",
+  "map": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Content/Story/Maps/Chapter01_House.umap",
+  "mapSHA256": "310586101e811191b63c0b5a0866f3904d378acd3073e0342223bdce38e51b68",
+  "interactions": {
+    "allPropsParkedWithDamageAndCollision": true,
+    "closedClosetBlocksAndStaysClosed": true,
+    "actualChairPickupAndTwoHandContacts": true,
+    "allThreeTableDamageStagesAndSettling": true,
+    "settledBrokenSpeed": 0,
+    "passed": true,
+    "detail": "Installed kitchen inventory, fitted damage meshes, closed closet collision, actual chair pickup and staged table destruction verified",
+    "furnitureCount": 117,
+    "ceilingPanels": 3,
+    "elapsedSeconds": 16.892398208379745
+  },
+  "visualViewsReviewed": 8,
+  "closureViewsAfterTrim": 3,
+  "walkingResult": "passed=1 seconds=15.01 frames=880 p50FrameMs=16.68 p95FrameMs=17.04 p99FrameMs=23.54 worstFrameMs=99.76 over25Ms=6 over33Ms=4 travelCm=5501.1 waypoints=28 laps=1 stalls=0 longestNoProgressSeconds=0.23 memoryStartMB=11199.9 memoryEndMB=11744.3 memoryDeltaMB=+544.4 vsm=1 vsmCoarseNonNanite=0 vsmPages=1024 lumenHw=0 lumenMeshSdf=0 skylight=1.30 shadowQuality=1 resolutionQuality=80.0 pigAvoidances=0",
+  "source": "Actual native campaign sessions, with isolated test user directories"
+}

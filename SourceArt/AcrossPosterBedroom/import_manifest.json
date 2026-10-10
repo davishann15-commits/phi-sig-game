@@ -1,0 +1,2225 @@
+{
+  "materials": {
+    "Bedroom_PerwinklePaint": {
+      "color": [
+        0.2,
+        0.25,
+        0.5
+      ],
+      "roughness": 0.84,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.14,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Paint_Normal.png",
+      "specular": 0.24
+    },
+    "Bedroom_WhiteTrim": {
+      "color": [
+        0.84,
+        0.82,
+        0.76
+      ],
+      "roughness": 0.58,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0,
+      "specular": 0.36
+    },
+    "Bedroom_CharcoalSkirting": {
+      "color": [
+        0.034,
+        0.03,
+        0.03
+      ],
+      "roughness": 0.72,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "Bedroom_CreamCeiling": {
+      "color": [
+        0.76,
+        0.75,
+        0.69
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "Bedroom_WarmOakFloor": {
+      "color": [
+        0.49,
+        0.29,
+        0.13
+      ],
+      "roughness": 0.59,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0,
+      "base_texture": "T_Bedroom_OakFloor_BaseColor.png",
+      "roughness_texture": "T_Bedroom_OakFloor_Roughness.png",
+      "normal_texture": "T_BR_Refined_Wood_Normal.png",
+      "specular": 0.32
+    },
+    "M_Bedroom_DarkStainedWood": {
+      "color": [
+        0.055,
+        0.018,
+        0.01
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.18,
+      "emission": 0,
+      "base_texture": "T_Bedroom_Walnut_BaseColor.png",
+      "roughness_texture": "T_Bedroom_Walnut_Roughness.png",
+      "normal_texture": "T_BR_Refined_Wood_Normal.png",
+      "specular": 0.36
+    },
+    "M_Bedroom_LightOak": {
+      "color": [
+        0.48,
+        0.31,
+        0.14
+      ],
+      "roughness": 0.58,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.18,
+      "emission": 0,
+      "base_texture": "T_Bedroom_Oak_BaseColor.png",
+      "roughness_texture": "T_Bedroom_Oak_Roughness.png",
+      "normal_texture": "T_BR_Refined_Wood_Normal.png",
+      "specular": 0.36
+    },
+    "M_Bedroom_BrownMicrofiber": {
+      "color": [
+        0.105,
+        0.064,
+        0.046
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.3,
+      "emission": 0,
+      "base_texture": "T_BR_Refined_BrownFabric_BaseColor.png",
+      "normal_texture": "T_BR_Refined_BrownFabric_Normal.png",
+      "roughness_texture": "T_BR_Refined_BrownFabric_Roughness.png",
+      "specular": 0.3
+    },
+    "M_Bedroom_RumpledCharcoalQuilt": {
+      "color": [
+        0.08,
+        0.087,
+        0.089
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.3,
+      "emission": 0,
+      "base_texture": "T_BR_Refined_CharcoalQuilt_BaseColor.png",
+      "normal_texture": "T_BR_Refined_CharcoalQuilt_Normal.png",
+      "roughness_texture": "T_BR_Refined_CharcoalQuilt_Roughness.png",
+      "specular": 0.3
+    },
+    "M_Bedroom_IvoryPillow": {
+      "color": [
+        0.6,
+        0.59,
+        0.56
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.3,
+      "emission": 0,
+      "base_texture": "T_BR_Refined_CreamPillow_BaseColor.png",
+      "normal_texture": "T_BR_Refined_CreamPillow_Normal.png",
+      "roughness_texture": "T_BR_Refined_CreamPillow_Roughness.png",
+      "specular": 0.3
+    },
+    "M_Bedroom_DarkBrownSeams": {
+      "color": [
+        0.035,
+        0.021,
+        0.014
+      ],
+      "roughness": 0.98,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_BlackPlastic": {
+      "color": [
+        0.008,
+        0.009,
+        0.01
+      ],
+      "roughness": 0.28,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.1,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Plastic_Normal.png",
+      "specular": 0.38
+    },
+    "M_Bedroom_MatteBlackMetal": {
+      "color": [
+        0.012,
+        0.013,
+        0.014
+      ],
+      "roughness": 0.63,
+      "metallic": 0.75,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_BrushedStainless": {
+      "color": [
+        0.44,
+        0.45,
+        0.46
+      ],
+      "roughness": 0.3,
+      "metallic": 0.92,
+      "uv_scale": 1,
+      "normal_strength": 0.23,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Steel_Normal.png",
+      "roughness_texture": "T_BR_Refined_Steel_Roughness.png"
+    },
+    "M_Bedroom_IvoryPaint": {
+      "color": [
+        0.76,
+        0.74,
+        0.68
+      ],
+      "roughness": 0.61,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_MattressEdge": {
+      "color": [
+        0.59,
+        0.59,
+        0.55
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_TelevisionScreen": {
+      "color": [
+        0.006,
+        0.008,
+        0.01
+      ],
+      "roughness": 0.38,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0.24,
+      "base_texture": "TVScreen.png"
+    },
+    "M_Bedroom_Collider": {
+      "color": [
+        0.04,
+        0.04,
+        0.04
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_BlueShirt": {
+      "color": [
+        0.023,
+        0.065,
+        0.115
+      ],
+      "roughness": 0.91,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_GreyShirt": {
+      "color": [
+        0.17,
+        0.18,
+        0.18
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_MaroonShirt": {
+      "color": [
+        0.18,
+        0.019,
+        0.016
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_Khaki": {
+      "color": [
+        0.31,
+        0.25,
+        0.16
+      ],
+      "roughness": 0.93,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_GreenShirt": {
+      "color": [
+        0.021,
+        0.077,
+        0.043
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_BlackClothing": {
+      "color": [
+        0.014,
+        0.015,
+        0.017
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_Cardboard": {
+      "color": [
+        0.39,
+        0.28,
+        0.17
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_GrayStorageBin": {
+      "color": [
+        0.11,
+        0.12,
+        0.13
+      ],
+      "roughness": 0.79,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_TVStatusLED": {
+      "color": [
+        0.09,
+        0.22,
+        0.18
+      ],
+      "roughness": 0.3,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_GreyGamingTableTop": {
+      "color": [
+        0.15,
+        0.16,
+        0.155
+      ],
+      "roughness": 0.92,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.22,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.26
+    },
+    "M_Bedroom_CharcoalCurtain": {
+      "color": [
+        0.015,
+        0.016,
+        0.017
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.3,
+      "emission": 0,
+      "base_texture": "T_BR_Refined_CharcoalCurtain_BaseColor.png",
+      "normal_texture": "T_BR_Refined_CharcoalCurtain_Normal.png",
+      "roughness_texture": "T_BR_Refined_CharcoalCurtain_Roughness.png",
+      "specular": 0.3
+    },
+    "M_Bedroom_CreamCurtain": {
+      "color": [
+        0.56,
+        0.55,
+        0.5
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.3,
+      "emission": 0,
+      "base_texture": "T_BR_Refined_CreamPillow_BaseColor.png",
+      "normal_texture": "T_BR_Refined_CreamPillow_Normal.png",
+      "roughness_texture": "T_BR_Refined_CreamPillow_Roughness.png",
+      "specular": 0.3
+    },
+    "M_Bedroom_FanIvoryHousing": {
+      "color": [
+        0.68,
+        0.65,
+        0.58
+      ],
+      "roughness": 0.44,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_Bedroom_FanGlassGlow": {
+      "color": [
+        0.85,
+        0.8,
+        0.65
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 1.6
+    },
+    "M_BedDetail_Ivory": {
+      "color": [
+        0.78,
+        0.79,
+        0.76
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.1,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Plastic_Normal.png",
+      "specular": 0.38
+    },
+    "M_BedDetail_Black": {
+      "color": [
+        0.011,
+        0.014,
+        0.018
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.1,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Plastic_Normal.png",
+      "specular": 0.38
+    },
+    "M_BedDetail_Metal": {
+      "color": [
+        0.52,
+        0.54,
+        0.58
+      ],
+      "roughness": 0.25,
+      "metallic": 0.88,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_Blue": {
+      "color": [
+        0.025,
+        0.055,
+        0.4
+      ],
+      "roughness": 0.43,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_Red": {
+      "color": [
+        0.48,
+        0.025,
+        0.013
+      ],
+      "roughness": 0.43,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_TennesseeOrange": {
+      "color": [
+        0.65,
+        0.12,
+        0.012
+      ],
+      "roughness": 0.61,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_Leaf": {
+      "color": [
+        0.052,
+        0.16,
+        0.021
+      ],
+      "roughness": 0.76,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_LeafTip": {
+      "color": [
+        0.16,
+        0.26,
+        0.07
+      ],
+      "roughness": 0.72,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_Bread": {
+      "color": [
+        0.38,
+        0.2,
+        0.064
+      ],
+      "roughness": 0.82,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_GrayCloth": {
+      "color": [
+        0.2,
+        0.215,
+        0.23
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.18,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.28
+    },
+    "M_BedDetail_DarkCloth": {
+      "color": [
+        0.052,
+        0.06,
+        0.069
+      ],
+      "roughness": 0.91,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.18,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.28
+    },
+    "M_BedDetail_Glass": {
+      "color": [
+        0.38,
+        0.48,
+        0.47
+      ],
+      "roughness": 0.13,
+      "metallic": 0.12,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0,
+      "translucent": true,
+      "opacity": 0.23
+    },
+    "M_BedDetail_Mirror": {
+      "color": [
+        0.63,
+        0.66,
+        0.68
+      ],
+      "roughness": 0.035,
+      "metallic": 1,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "M_BedDetail_ReferenceArt": {
+      "color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "roughness": 0.78,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0,
+      "base_texture": "T_Bed_ReferenceArtAtlas.png",
+      "two_sided": true,
+      "masked": true,
+      "clip": 0.3,
+      "mask_texture": "T_Bed_ReferenceArtAtlas.png",
+      "mask_channel": "A"
+    },
+    "BR_LEDTrack": {
+      "color": [
+        0.16,
+        0.17,
+        0.18
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 0
+    },
+    "BR_PurpleLED": {
+      "color": [
+        0.38,
+        0.025,
+        1.0
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.2,
+      "emission": 3.2
+    },
+    "M_BedDetail_DuffelCanvas": {
+      "color": [
+        0.075,
+        0.084,
+        0.05
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "uv_scale": 1,
+      "normal_strength": 0.18,
+      "emission": 0,
+      "normal_texture": "T_BR_Refined_Cloth_Normal.png",
+      "roughness_texture": "T_BR_Refined_Cloth_Roughness.png",
+      "specular": 0.28
+    }
+  },
+  "textures": [
+    "T_Bedroom_OakFloor_BaseColor.png",
+    "T_Bedroom_OakFloor_Roughness.png",
+    "T_Bedroom_Walnut_BaseColor.png",
+    "T_Bedroom_Walnut_Roughness.png",
+    "T_Bedroom_Oak_BaseColor.png",
+    "T_Bedroom_Oak_Roughness.png",
+    "T_Bedroom_BrownFabric_BaseColor.png",
+    "T_Bedroom_BrownFabric_Normal.png",
+    "T_Bedroom_BrownFabric_Roughness.png",
+    "T_Bedroom_CharcoalQuilt_BaseColor.png",
+    "T_Bedroom_CharcoalQuilt_Normal.png",
+    "T_Bedroom_CharcoalQuilt_Roughness.png",
+    "T_Bedroom_CreamPillow_BaseColor.png",
+    "T_Bedroom_CreamPillow_Normal.png",
+    "T_Bedroom_CreamPillow_Roughness.png",
+    "T_Bedroom_CharcoalCurtain_BaseColor.png",
+    "T_Bedroom_CharcoalCurtain_Normal.png",
+    "T_Bedroom_CharcoalCurtain_Roughness.png",
+    "T_Bed_ReferenceArtAtlas.png",
+    "TVScreen.png",
+    "T_BR_Refined_BrownFabric_BaseColor.png",
+    "T_BR_Refined_BrownFabric_Normal.png",
+    "T_BR_Refined_BrownFabric_Roughness.png",
+    "T_BR_Refined_CharcoalQuilt_BaseColor.png",
+    "T_BR_Refined_CharcoalQuilt_Normal.png",
+    "T_BR_Refined_CharcoalQuilt_Roughness.png",
+    "T_BR_Refined_CreamPillow_BaseColor.png",
+    "T_BR_Refined_CreamPillow_Normal.png",
+    "T_BR_Refined_CreamPillow_Roughness.png",
+    "T_BR_Refined_CharcoalCurtain_BaseColor.png",
+    "T_BR_Refined_CharcoalCurtain_Normal.png",
+    "T_BR_Refined_CharcoalCurtain_Roughness.png",
+    "T_BR_Refined_Cloth_Normal.png",
+    "T_BR_Refined_Cloth_Roughness.png",
+    "T_BR_Refined_Wood_Normal.png",
+    "T_BR_Refined_Steel_Normal.png",
+    "T_BR_Refined_Steel_Roughness.png",
+    "T_BR_Refined_Plastic_Normal.png",
+    "T_BR_Refined_Paint_Normal.png"
+  ],
+  "flip_green_textures": [],
+  "meshes": [
+    {
+      "name": "SMF_Upper_p0_m2_PhotoBedroomCleared",
+      "file": "SMF_Upper_p0_m2_PhotoBedroomCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SMF_Upper_p0_m3_PhotoBedroomCleared",
+      "file": "SMF_Upper_p0_m3_PhotoBedroomCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COLF_Upper_p0_m2_PhotoBedroomCleared",
+      "file": "COLF_Upper_p0_m2_PhotoBedroomCleared.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COLF_Upper_p0_m3_PhotoBedroomCleared",
+      "file": "COLF_Upper_p0_m3_PhotoBedroomCleared.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Upper_p0_m2_PhotoBedroomCleared",
+      "file": "SM_Upper_p0_m2_PhotoBedroomCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Upper_p0_m3_PhotoBedroomCleared",
+      "file": "SM_Upper_p0_m3_PhotoBedroomCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Upper_p0_m2_PhotoBedroomCleared",
+      "file": "COL_Upper_p0_m2_PhotoBedroomCleared.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_ClosetShell",
+      "file": "SM_Bedroom_ClosetShell.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bedroom_WoodFloor",
+      "file": "SM_Bedroom_WoodFloor.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_ClosetsFloor",
+      "file": "COL_Bedroom_ClosetsFloor.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_EntryLeafFitted",
+      "file": "SM_Bedroom_EntryLeafFitted.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bedroom_FullSpindleBed",
+      "file": "SM_Bedroom_FullSpindleBed.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_FullSpindleBed",
+      "file": "COL_Bedroom_FullSpindleBed.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_TwinSpindleBed",
+      "file": "SM_Bedroom_TwinSpindleBed.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_TwinSpindleBed",
+      "file": "COL_Bedroom_TwinSpindleBed.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_BrownReclinerSofa",
+      "file": "SM_Bedroom_BrownReclinerSofa.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_BrownReclinerSofa",
+      "file": "COL_Bedroom_BrownReclinerSofa.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_OvalCoffeeTable",
+      "file": "SM_Bedroom_OvalCoffeeTable.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_OvalCoffeeTable",
+      "file": "COL_Bedroom_OvalCoffeeTable.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_OakFourDrawerChest",
+      "file": "SM_Bedroom_OakFourDrawerChest.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_OakFourDrawerChest",
+      "file": "COL_Bedroom_OakFourDrawerChest.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_StainlessMiniFridge",
+      "file": "SM_Bedroom_StainlessMiniFridge.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_StainlessMiniFridge",
+      "file": "COL_Bedroom_StainlessMiniFridge.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_WallTelevision",
+      "file": "SM_Bedroom_WallTelevision.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bedroom_BlackGamingTable",
+      "file": "SM_Bedroom_BlackGamingTable.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_BlackGamingTable",
+      "file": "COL_Bedroom_BlackGamingTable.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_ClosetShallowContents",
+      "file": "SM_Bedroom_ClosetShallowContents.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_ClosetShallowContents",
+      "file": "COL_Bedroom_ClosetShallowContents.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_ClosetDeepContents",
+      "file": "SM_Bedroom_ClosetDeepContents.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bedroom_ClosetDeepContents",
+      "file": "COL_Bedroom_ClosetDeepContents.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bedroom_FiveBladeCeilingFan",
+      "file": "SM_Bedroom_FiveBladeCeilingFan.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bedroom_CreamCurtainsPartOpen",
+      "file": "SM_Bedroom_CreamCurtainsPartOpen.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bedroom_CharcoalCurtainsClosed",
+      "file": "SM_Bedroom_CharcoalCurtainsClosed.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_TexasFlag",
+      "file": "SM_BedArt_TexasFlag.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_TennesseeBanner",
+      "file": "SM_BedArt_TennesseeBanner.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_WingedWreath",
+      "file": "SM_BedArt_WingedWreath.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_ChampionsPennant",
+      "file": "SM_BedArt_ChampionsPennant.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_CoronaOval",
+      "file": "SM_BedArt_CoronaOval.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_VolsHelmet",
+      "file": "SM_BedArt_VolsHelmet.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_FramedCollage",
+      "file": "SM_BedArt_FramedCollage.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_VolsPennant",
+      "file": "SM_BedArt_VolsPennant.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_AmericanWomanFlag",
+      "file": "SM_BedArt_AmericanWomanFlag.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_XIIICrest",
+      "file": "SM_BedArt_XIIICrest.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_ClosetArtwork",
+      "file": "SM_BedArt_ClosetArtwork.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_TennesseeMiniFlag",
+      "file": "SM_BedArt_TennesseeMiniFlag.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_TennesseeDoorPlaque",
+      "file": "SM_BedArt_TennesseeDoorPlaque.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_PartyTime",
+      "file": "SM_BedArt_PartyTime.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_PhotoComposite",
+      "file": "SM_BedArt_PhotoComposite.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_RedMusicBanner",
+      "file": "SM_BedArt_RedMusicBanner.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedArt_CollegiateT",
+      "file": "SM_BedArt_CollegiateT.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedProps_CoffeeTable",
+      "file": "SM_BedProps_CoffeeTable.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedProps_Dresser",
+      "file": "SM_BedProps_Dresser.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedProps_FridgeTop",
+      "file": "SM_BedProps_FridgeTop.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedProps_GameTable",
+      "file": "SM_BedProps_GameTable.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedProps_ExtraBasketPlant",
+      "file": "SM_BedProps_ExtraBasketPlant.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedProps_SofaRemote",
+      "file": "SM_BedProps_SofaRemote.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bed_EntryCoatRack",
+      "file": "SM_Bed_EntryCoatRack.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bed_HookBlackCap",
+      "file": "SM_Bed_HookBlackCap.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bed_HookWhiteCap",
+      "file": "SM_Bed_HookWhiteCap.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BR_PurplePerimeterLED",
+      "file": "SM_BR_PurplePerimeterLED.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_BedProps_EntryFloorClutter",
+      "file": "SM_BedProps_EntryFloorClutter.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    }
+  ],
+  "replacements": [
+    {
+      "actor": "SMF_Upper_p0_m2_Solid",
+      "mesh": "SMF_Upper_p0_m2_PhotoBedroomCleared",
+      "collision": false
+    },
+    {
+      "actor": "SMF_Upper_p0_m3_Solid",
+      "mesh": "SMF_Upper_p0_m3_PhotoBedroomCleared",
+      "collision": false
+    },
+    {
+      "actor": "COLF_Upper_p0_m2_Solid",
+      "mesh": "COLF_Upper_p0_m2_PhotoBedroomCleared",
+      "collision": true
+    },
+    {
+      "actor": "COLF_Upper_p0_m3_Solid",
+      "mesh": "COLF_Upper_p0_m3_PhotoBedroomCleared",
+      "collision": true
+    },
+    {
+      "actor": "SM_Upper_p0_m2_Solid",
+      "mesh": "SM_Upper_p0_m2_PhotoBedroomCleared",
+      "collision": false
+    },
+    {
+      "actor": "SM_Upper_p0_m3_Solid",
+      "mesh": "SM_Upper_p0_m3_PhotoBedroomCleared",
+      "collision": false
+    },
+    {
+      "actor": "COL_Upper_p0_m2_Solid",
+      "mesh": "COL_Upper_p0_m2_PhotoBedroomCleared",
+      "collision": true
+    }
+  ],
+  "actors": [
+    {
+      "mesh": "SM_Bedroom_ClosetShell",
+      "label": "BR_SM_Bedroom_ClosetShell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bedroom_WoodFloor",
+      "label": "BR_SM_Bedroom_WoodFloor",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_ClosetsFloor",
+      "label": "BR_COL_Bedroom_ClosetsFloor",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_FullSpindleBed",
+      "label": "BR_SM_Bedroom_FullSpindleBed",
+      "location": [
+        -2498,
+        1099,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.7,
+        1.7,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_FullSpindleBed",
+      "label": "BR_COL_Bedroom_FullSpindleBed",
+      "location": [
+        -2498,
+        1099,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.7,
+        1.7,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_TwinSpindleBed",
+      "label": "BR_SM_Bedroom_TwinSpindleBed",
+      "location": [
+        -2800,
+        1108,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.7,
+        1.7,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_TwinSpindleBed",
+      "label": "BR_COL_Bedroom_TwinSpindleBed",
+      "location": [
+        -2800,
+        1108,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.7,
+        1.7,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_BrownReclinerSofa",
+      "label": "BR_SM_Bedroom_BrownReclinerSofa",
+      "location": [
+        -2884,
+        732,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1.47,
+        1.47,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_BrownReclinerSofa",
+      "label": "BR_COL_Bedroom_BrownReclinerSofa",
+      "location": [
+        -2884,
+        732,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1.47,
+        1.47,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_OvalCoffeeTable",
+      "label": "BR_SM_Bedroom_OvalCoffeeTable",
+      "location": [
+        -2660,
+        778,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.6,
+        1.6,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_OvalCoffeeTable",
+      "label": "BR_COL_Bedroom_OvalCoffeeTable",
+      "location": [
+        -2660,
+        778,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.6,
+        1.6,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_OakFourDrawerChest",
+      "label": "BR_SM_Bedroom_OakFourDrawerChest",
+      "location": [
+        -2400,
+        839,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1.4,
+        1.4,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_OakFourDrawerChest",
+      "label": "BR_COL_Bedroom_OakFourDrawerChest",
+      "location": [
+        -2400,
+        839,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1.4,
+        1.4,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_StainlessMiniFridge",
+      "label": "BR_SM_Bedroom_StainlessMiniFridge",
+      "location": [
+        -2405,
+        725,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1.4,
+        1.4,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_StainlessMiniFridge",
+      "label": "BR_COL_Bedroom_StainlessMiniFridge",
+      "location": [
+        -2405,
+        725,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1.4,
+        1.4,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_WallTelevision",
+      "label": "BR_SM_Bedroom_WallTelevision",
+      "location": [
+        -2358,
+        839,
+        480
+      ],
+      "yaw": 90,
+      "scale": [
+        1.45,
+        1.45,
+        1.45
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bedroom_BlackGamingTable",
+      "label": "BR_SM_Bedroom_BlackGamingTable",
+      "location": [
+        -2710,
+        672,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.3,
+        1.3,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_BlackGamingTable",
+      "label": "BR_COL_Bedroom_BlackGamingTable",
+      "location": [
+        -2710,
+        672,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.3,
+        1.3,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_ClosetShallowContents",
+      "label": "BR_SM_Bedroom_ClosetShallowContents",
+      "location": [
+        -2870,
+        513,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.17,
+        1.3,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_ClosetShallowContents",
+      "label": "BR_COL_Bedroom_ClosetShallowContents",
+      "location": [
+        -2870,
+        513,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.17,
+        1.3,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_ClosetDeepContents",
+      "label": "BR_SM_Bedroom_ClosetDeepContents",
+      "location": [
+        -2640.473,
+        498,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.06,
+        1.3,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bedroom_ClosetDeepContents",
+      "label": "BR_COL_Bedroom_ClosetDeepContents",
+      "location": [
+        -2640.473,
+        498,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.06,
+        1.3,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bedroom_FiveBladeCeilingFan",
+      "label": "BR_SM_Bedroom_FiveBladeCeilingFan",
+      "location": [
+        -2661,
+        905,
+        562
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bedroom_CreamCurtainsPartOpen",
+      "label": "BR_SM_Bedroom_CreamCurtainsPartOpen",
+      "location": [
+        -2743.97,
+        1291.5,
+        525
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bedroom_CharcoalCurtainsClosed",
+      "label": "BR_SM_Bedroom_CharcoalCurtainsClosed",
+      "location": [
+        -2968,
+        1036.56,
+        525
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "label": "BR_BedDetail_TexasFlag_01",
+      "mesh": "SM_BedArt_TexasFlag",
+      "location": [
+        -2910,
+        1293,
+        479
+      ],
+      "yaw": 180,
+      "scale": [
+        0.98,
+        0.98,
+        0.98
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_TennesseeBanner_02",
+      "mesh": "SM_BedArt_TennesseeBanner",
+      "location": [
+        -2594,
+        1293,
+        472
+      ],
+      "yaw": 180,
+      "scale": [
+        1.15,
+        1.15,
+        1.15
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_WingedWreath_03",
+      "mesh": "SM_BedArt_WingedWreath",
+      "location": [
+        -2740,
+        1293,
+        540
+      ],
+      "yaw": 180,
+      "scale": [
+        0.59,
+        0.59,
+        0.59
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_CollegiateT_04",
+      "mesh": "SM_BedArt_CollegiateT",
+      "location": [
+        -2440,
+        1293,
+        480
+      ],
+      "yaw": 180,
+      "scale": [
+        0.94,
+        0.94,
+        0.94
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_ChampionsPennant_05",
+      "mesh": "SM_BedArt_ChampionsPennant",
+      "location": [
+        -2969,
+        1211,
+        542
+      ],
+      "yaw": -90,
+      "scale": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_CoronaOval_06",
+      "mesh": "SM_BedArt_CoronaOval",
+      "location": [
+        -2969,
+        1157,
+        538
+      ],
+      "yaw": -90,
+      "scale": [
+        0.56,
+        0.56,
+        0.56
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_VolsHelmet_07",
+      "mesh": "SM_BedArt_VolsHelmet",
+      "location": [
+        -2969,
+        1038,
+        540
+      ],
+      "yaw": -90,
+      "scale": [
+        0.53,
+        0.53,
+        0.53
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_FramedCollage_08",
+      "mesh": "SM_BedArt_FramedCollage",
+      "location": [
+        -2969,
+        1210,
+        474
+      ],
+      "yaw": -90,
+      "scale": [
+        0.96,
+        0.96,
+        0.96
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_VolsPennant_09",
+      "mesh": "SM_BedArt_VolsPennant",
+      "location": [
+        -2969,
+        1210,
+        420
+      ],
+      "yaw": -90,
+      "scale": [
+        0.92,
+        0.92,
+        0.92
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_AmericanWomanFlag_10",
+      "mesh": "SM_BedArt_AmericanWomanFlag",
+      "location": [
+        -2969,
+        771,
+        484
+      ],
+      "yaw": -90,
+      "scale": [
+        1.11,
+        1.11,
+        1.11
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_XIIICrest_11",
+      "mesh": "SM_BedArt_XIIICrest",
+      "location": [
+        -2870,
+        565.5,
+        547
+      ],
+      "yaw": 0,
+      "scale": [
+        0.57,
+        0.57,
+        0.57
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_ClosetArtwork_12",
+      "mesh": "SM_BedArt_ClosetArtwork",
+      "location": [
+        -2640.473,
+        565.5,
+        547
+      ],
+      "yaw": 0,
+      "scale": [
+        0.57,
+        0.57,
+        0.57
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_TennesseeMiniFlag_13",
+      "mesh": "SM_BedArt_TennesseeMiniFlag",
+      "location": [
+        -2744,
+        565.5,
+        469
+      ],
+      "yaw": 0,
+      "scale": [
+        0.87,
+        0.87,
+        0.87
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_TennesseeDoorPlaque_14",
+      "mesh": "SM_BedArt_TennesseeDoorPlaque",
+      "location": [
+        -2354,
+        550.8,
+        548
+      ],
+      "yaw": 90,
+      "scale": [
+        0.88,
+        0.88,
+        0.88
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_PartyTime_15",
+      "mesh": "SM_BedArt_PartyTime",
+      "location": [
+        -2465,
+        565.5,
+        535
+      ],
+      "yaw": 0,
+      "scale": [
+        0.98,
+        0.98,
+        0.98
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_PhotoComposite_16",
+      "mesh": "SM_BedArt_PhotoComposite",
+      "location": [
+        -2354,
+        839,
+        546
+      ],
+      "yaw": 90,
+      "scale": [
+        0.58,
+        0.58,
+        0.58
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_RedMusicBanner_17",
+      "mesh": "SM_BedArt_RedMusicBanner",
+      "location": [
+        -2354,
+        942,
+        462
+      ],
+      "yaw": 90,
+      "scale": [
+        0.92,
+        0.92,
+        0.92
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_Bed_HookWhiteCap_18",
+      "mesh": "SM_Bed_HookWhiteCap",
+      "location": [
+        -2951,
+        565.5,
+        488
+      ],
+      "yaw": 0,
+      "scale": [
+        1.14,
+        1.14,
+        1.14
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_Bed_HookWhiteCap_19",
+      "mesh": "SM_Bed_HookWhiteCap",
+      "location": [
+        -2951,
+        565.5,
+        449
+      ],
+      "yaw": 0,
+      "scale": [
+        1.14,
+        1.14,
+        1.14
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_Bed_HookBlackCap_20",
+      "mesh": "SM_Bed_HookBlackCap",
+      "location": [
+        -2742,
+        565.5,
+        522
+      ],
+      "yaw": 0,
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_Bed_HookBlackCap_21",
+      "mesh": "SM_Bed_HookBlackCap",
+      "location": [
+        -2536,
+        565.5,
+        520
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_Bed_HookBlackCap_22",
+      "mesh": "SM_Bed_HookBlackCap",
+      "location": [
+        -2420,
+        565.5,
+        531
+      ],
+      "yaw": 0,
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_Bed_EntryCoatRack_23",
+      "mesh": "SM_Bed_EntryCoatRack",
+      "location": [
+        -2445,
+        484.5,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1.28,
+        1.1,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_BedProps_CoffeeTable_24",
+      "mesh": "SM_BedProps_CoffeeTable",
+      "location": [
+        -2660,
+        778,
+        348.5
+      ],
+      "yaw": 0,
+      "scale": [
+        1.6,
+        1.6,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_BedProps_ExtraBasketPlant_25",
+      "mesh": "SM_BedProps_ExtraBasketPlant",
+      "location": [
+        -2610,
+        795,
+        348.5
+      ],
+      "yaw": 0,
+      "scale": [
+        1.2,
+        1.2,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_BedProps_Dresser_26",
+      "mesh": "SM_BedProps_Dresser",
+      "location": [
+        -2400,
+        839,
+        420
+      ],
+      "yaw": 90,
+      "scale": [
+        1.4,
+        1.4,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_BedProps_FridgeTop_27",
+      "mesh": "SM_BedProps_FridgeTop",
+      "location": [
+        -2405,
+        725,
+        422
+      ],
+      "yaw": 90,
+      "scale": [
+        1.3,
+        1.3,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_BedProps_GameTable_28",
+      "mesh": "SM_BedProps_GameTable",
+      "location": [
+        -2710,
+        672,
+        383
+      ],
+      "yaw": 0,
+      "scale": [
+        1.3,
+        1.3,
+        1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "label": "BR_BedDetail_SM_BedProps_SofaRemote_29",
+      "mesh": "SM_BedProps_SofaRemote",
+      "location": [
+        -2858,
+        746,
+        351
+      ],
+      "yaw": -90,
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "mesh": "SM_BR_PurplePerimeterLED",
+      "label": "BR_PurplePerimeterLED",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "collision": "NoCollision"
+    },
+    {
+      "mesh": "SM_BedProps_EntryFloorClutter",
+      "label": "BR_EntryFloorClutter",
+      "location": [
+        -2390,
+        600,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    }
+  ],
+  "lights": [
+    {
+      "label": "BR_CeilingPractical",
+      "location": [
+        -2661,
+        905,
+        530
+      ],
+      "intensity": 1700,
+      "radius": 680,
+      "color": [
+        0.96,
+        0.945,
+        0.94
+      ],
+      "source_radius": 14,
+      "soft_source_radius": 26,
+      "cast_shadows": false
+    },
+    {
+      "label": "BR_WindowDaylight",
+      "location": [
+        -2750,
+        1200,
+        475
+      ],
+      "intensity": 1250,
+      "radius": 520,
+      "color": [
+        0.88,
+        0.93,
+        1
+      ],
+      "source_radius": 38,
+      "soft_source_radius": 45,
+      "cast_shadows": false
+    },
+    {
+      "label": "BR_PurpleAccent_1",
+      "location": [
+        -2925,
+        610,
+        550
+      ],
+      "intensity": 12,
+      "radius": 245,
+      "color": [
+        0.37,
+        0.035,
+        1
+      ],
+      "source_radius": 10,
+      "soft_source_radius": 18,
+      "cast_shadows": false
+    },
+    {
+      "label": "BR_PurpleAccent_2",
+      "location": [
+        -2400,
+        610,
+        550
+      ],
+      "intensity": 12,
+      "radius": 245,
+      "color": [
+        0.37,
+        0.035,
+        1
+      ],
+      "source_radius": 10,
+      "soft_source_radius": 18,
+      "cast_shadows": false
+    },
+    {
+      "label": "BR_PurpleAccent_3",
+      "location": [
+        -2925,
+        1228,
+        550
+      ],
+      "intensity": 12,
+      "radius": 245,
+      "color": [
+        0.37,
+        0.035,
+        1
+      ],
+      "source_radius": 10,
+      "soft_source_radius": 18,
+      "cast_shadows": false
+    },
+    {
+      "label": "BR_PurpleAccent_4",
+      "location": [
+        -2400,
+        1228,
+        550
+      ],
+      "intensity": 12,
+      "radius": 245,
+      "color": [
+        0.37,
+        0.035,
+        1
+      ],
+      "source_radius": 10,
+      "soft_source_radius": 18,
+      "cast_shadows": false
+    },
+    {
+      "label": "BR_PurpleAccent_5",
+      "location": [
+        -2660,
+        610,
+        550
+      ],
+      "intensity": 12,
+      "radius": 245,
+      "color": [
+        0.37,
+        0.035,
+        1
+      ],
+      "source_radius": 10,
+      "soft_source_radius": 18,
+      "cast_shadows": false
+    },
+    {
+      "label": "BR_PurpleAccent_6",
+      "location": [
+        -2660,
+        1228,
+        550
+      ],
+      "intensity": 12,
+      "radius": 245,
+      "color": [
+        0.37,
+        0.035,
+        1
+      ],
+      "source_radius": 10,
+      "soft_source_radius": 18,
+      "cast_shadows": false
+    }
+  ],
+  "remove_actors": [
+    "SMF_Upper_p0_m2_Glass",
+    "S05_Furn_SouthA_Ceiling_Practical"
+  ],
+  "remove_door_ids": [],
+  "door_updates": [
+    {
+      "actor": "OriginalDoor_Upper_p0_m2_Solid_03",
+      "id": "SM_OriginalLeaf_Upper_p0_m2_Solid_03",
+      "location": [
+        -2335.4,
+        637,
+        310
+      ],
+      "properties": {
+        "original_leaf": "SM_Bedroom_EntryLeafFitted",
+        "closed_yaw": 0,
+        "open_yaw": -105,
+        "doorway_center": [
+          -2335.4,
+          550,
+          415
+        ],
+        "locked": false,
+        "panel_center_world": [
+          -2335.4,
+          555.2,
+          410
+        ],
+        "panel_half_extent": [
+          7,
+          81.8,
+          103
+        ]
+      }
+    }
+  ]
+}

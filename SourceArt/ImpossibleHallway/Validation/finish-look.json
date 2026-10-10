@@ -1,0 +1,70 @@
+{
+  "privateLightingChannels": [
+    false,
+    true,
+    false
+  ],
+  "channelActors": {
+    "InfiniteHall_IH_SM_CorridorSurfaces": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_IH_SM_CorridorTrim": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_IH_SM_CorridorFixtures": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_IH_SM_EntranceThroat": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_IH_COL_CorridorNear": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_Lamp_00": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_Lamp_01": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_Lamp_02": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_Lamp_03": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_Lamp_04": [
+      false,
+      true,
+      false
+    ],
+    "InfiniteHall_Lamp_05": [
+      false,
+      true,
+      false
+    ]
+  },
+  "originalActorsUnchanged": 711,
+  "doorRegistryUnchanged": true,
+  "blackEndcapDepthCm": 3240,
+  "blackMaterial": "/Game/SeniorSendOff/House/ImpossibleHallway/IH_M_DistantBlack.IH_M_DistantBlack",
+  "blackMaterialShading": "MSM_UNLIT",
+  "endcapCollision": "BlockAll"
+}

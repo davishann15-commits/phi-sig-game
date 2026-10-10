@@ -1,0 +1,34 @@
+{
+  "views": [
+    {
+      "name": "corner_east_near",
+      "position": {"x": 1.0, "y": 1.65, "z": 7.0},
+      "target": {"x": 6.0, "y": 3.3, "z": 13.0},
+      "fieldOfView": 75
+    },
+    {
+      "name": "corner_east_far",
+      "position": {"x": -2.5, "y": 1.65, "z": 8.5},
+      "target": {"x": 7.5, "y": 3.4, "z": 13.0},
+      "fieldOfView": 75
+    },
+    {
+      "name": "corner_west_near",
+      "position": {"x": 1.0, "y": 1.65, "z": -7.0},
+      "target": {"x": 6.0, "y": 3.3, "z": -13.0},
+      "fieldOfView": 75
+    },
+    {
+      "name": "corner_west_far",
+      "position": {"x": -2.5, "y": 1.65, "z": -8.5},
+      "target": {"x": 7.5, "y": 3.4, "z": -13.0},
+      "fieldOfView": 75
+    },
+    {
+      "name": "corner_east_around_wall",
+      "position": {"x": 2.0, "y": 1.65, "z": 11.0},
+      "target": {"x": 9.0, "y": 3.4, "z": 13.0},
+      "fieldOfView": 75
+    }
+  ]
+}

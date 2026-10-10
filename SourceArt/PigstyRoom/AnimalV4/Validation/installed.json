@@ -1,0 +1,67 @@
+{
+  "meshes": [
+    {
+      "name": "SM_PIG_BlackHead",
+      "boundsCm": [
+        [
+          -24.2396183013916,
+          -14.702305793762207,
+          -26.492244720458984
+        ],
+        [
+          24.9000244140625,
+          14.697554588317871,
+          3.355391263961792
+        ]
+      ],
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_BlackSnout",
+        "PIG_M_NostrilMouth",
+        "PIG_M_GlossBlackEye",
+        "PIG_M_CharcoalEarInner",
+        "PIG_M_BlackBristle"
+      ]
+    },
+    {
+      "name": "SM_PIG_LeftEar",
+      "boundsCm": [
+        [
+          -1.6358972787857056,
+          -9.353940963745117,
+          -7.136382102966309
+        ],
+        [
+          21.504003524780273,
+          1.2687419652938843,
+          4.712644100189209
+        ]
+      ],
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_CharcoalEarInner"
+      ]
+    },
+    {
+      "name": "SM_PIG_RightEar",
+      "boundsCm": [
+        [
+          -1.2590405941009521,
+          -1.507171392440796,
+          -7.172221660614014
+        ],
+        [
+          21.07741355895996,
+          8.975500106811523,
+          4.4667229652404785
+        ]
+      ],
+      "materialSlots": [
+        "PIG_M_BlackHide",
+        "PIG_M_CharcoalEarInner"
+      ]
+    }
+  ],
+  "soundDuration": 1.0121768712997437,
+  "soundPath": "/Game/SeniorSendOff/House/PigstyRoom/PIG_Snort.PIG_Snort"
+}

@@ -1,0 +1,2656 @@
+{
+  "passed": true,
+  "removed": [
+    {
+      "label": "Interactive_SMV_S03_LowerFidelity_EastGrayArmchairA_Solid__001",
+      "center": [
+        -2950.800084828125,
+        529.9000247303467,
+        -284.2364432998047
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__001",
+      "center": [
+        -2592.699814,
+        -324.9998560463257,
+        -284.369326
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__002",
+      "center": [
+        -2663.199997,
+        -485.49983801916505,
+        -275.7365153706055
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__003",
+      "center": [
+        -2974.999619,
+        -491.6998129345093,
+        -199.57934019888307
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__004",
+      "center": [
+        -2931.6826823674314,
+        656.1129341118165,
+        -275.7363224632568
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__005",
+      "center": [
+        -2971.800041,
+        594.9001809073486,
+        -226.07917847683711
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__010",
+      "center": [
+        -2570.3942303674316,
+        -391.499853,
+        -294.88760144409184
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__011",
+      "center": [
+        -2663.199997,
+        -482.05027695367426,
+        -304.210067
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__012",
+      "center": [
+        -2659.200096,
+        -367.49985581469724,
+        -304.7850389073486
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__013",
+      "center": [
+        -2565.7000546325685,
+        -269.49984221246336,
+        -296.5783714440918
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__014",
+      "center": [
+        -2453.199959,
+        -114.2998541853027,
+        -233.5599976293945
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__015",
+      "center": [
+        -2431.599998,
+        -710.0998167955322,
+        -233.5600926293945
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__016",
+      "center": [
+        -2628.375053,
+        -1229.042244,
+        -279.38507172204595
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__017",
+      "center": [
+        -2724.942493367432,
+        -1165.5247661389772,
+        -279.38504390734863
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__018",
+      "center": [
+        -2719.942474,
+        -1018.524834138977,
+        -279.3850199073486
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__019",
+      "center": [
+        -2533.857727,
+        -1126.474806822693,
+        -279.38504390734863
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__020",
+      "center": [
+        -2627.400017,
+        -1080.4998438146972,
+        -288.0851673706054
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__021",
+      "center": [
+        -2968.399811,
+        -103.49983190734861,
+        -233.5599976293945
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__022",
+      "center": [
+        -2968.399811,
+        -625.499821,
+        -233.56008499999996
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__023",
+      "center": [
+        -2957.39994,
+        -1059.2999034057618,
+        -289.0851671661377
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__024",
+      "center": [
+        -2967.4498556325684,
+        -443.69982937060547,
+        -285.2600531853027
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__025",
+      "center": [
+        -2978.20015,
+        -765.8998251581421,
+        -268.0601005559082
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__026",
+      "center": [
+        -2990.967751,
+        -826.8998623162842,
+        -279.91027800000006
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__036",
+      "center": [
+        -2739.5998956325684,
+        506.7001378146972,
+        -301.25983955590823
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__037",
+      "center": [
+        -2504.824924367432,
+        225.84252972204592,
+        -279.3848154440918
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__038",
+      "center": [
+        -2557.8000063674317,
+        123.30014700000004,
+        -288.63497181469734
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__039",
+      "center": [
+        -2908.499908,
+        146.90015737060548,
+        -275.5854015559082
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__040",
+      "center": [
+        -2931.09417,
+        645.9313142044678,
+        -281.80989627795407
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__041",
+      "center": [
+        -2971.79985,
+        594.9001751853027,
+        -298.5348709536743
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__042",
+      "center": [
+        -2986.399841,
+        342.9001215559082,
+        -233.55992562939457
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__043",
+      "center": [
+        -2955.5998806325683,
+        144.90017518530271,
+        -282.8099653706055
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__053",
+      "center": [
+        -2620.3249936325683,
+        -1128.4997949536744,
+        -229.06015964855953
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__054",
+      "center": [
+        -2608.325195,
+        -1028.4998426373902,
+        -229.06013549041745
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__055",
+      "center": [
+        -2403.000069,
+        -474.29983488818357,
+        -170.06005627795412
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__056",
+      "center": [
+        -2680.2001034472655,
+        -346.4998097412109,
+        -327.660012178814
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__057",
+      "center": [
+        -2633.4000583674315,
+        -1102.4997252236328,
+        -327.6601430401382
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__058",
+      "center": [
+        -3005.5001263674317,
+        -422.09985501916503,
+        -185.26004409265136
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__059",
+      "center": [
+        -2960.474968,
+        -1077.2998342699584,
+        -231.0601450926514
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__060",
+      "center": [
+        -2975.0,
+        -491.69984162260437,
+        -222.76005795367428
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__066",
+      "center": [
+        -3009.110069,
+        708.300209,
+        -138.05987180111697
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__067",
+      "center": [
+        -3009.110069,
+        540.900135,
+        -138.0598958011169
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__068",
+      "center": [
+        -3009.110069,
+        625.500202,
+        -197.05987572204594
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__069",
+      "center": [
+        -2957.099819632568,
+        131.90017899999998,
+        -235.05995299999995
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__070",
+      "center": [
+        -2971.800041,
+        594.9002270000001,
+        -232.55989599999998
+      ]
+    },
+    {
+      "label": "Interactive_SMF_Basement_ALL__071",
+      "center": [
+        -3008.909798,
+        130.50014332427975,
+        -158.05995499999995
+      ]
+    }
+  ],
+  "new_furniture": [
+    {
+      "label": "Interactive_Library_OctagonalCardTable_001",
+      "asset": "OctagonalCardTable",
+      "location": [
+        -2658.6,
+        533.7,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_001",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2530.048,
+        405.148,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_002",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2530.048,
+        662.252,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_GrayOfficeChair_001",
+      "asset": "GrayOfficeChair",
+      "location": [
+        -2787.152,
+        662.252,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_003",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2787.152,
+        405.148,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_GrayArmchair_001",
+      "asset": "GrayArmchair",
+      "location": [
+        -2921.4,
+        634.5,
+        -329.06
+      ],
+      "mass": 45
+    },
+    {
+      "label": "Interactive_Library_GrayArmchair_002",
+      "asset": "GrayArmchair",
+      "location": [
+        -2921.4,
+        422.1,
+        -329.06
+      ],
+      "mass": 45
+    },
+    {
+      "label": "Interactive_Library_RoundWoodSideTable_001",
+      "asset": "RoundWoodSideTable",
+      "location": [
+        -2939.4,
+        530.1,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_TableLamp_001",
+      "asset": "TableLamp",
+      "location": [
+        -2939.4,
+        530.1,
+        -272.06
+      ],
+      "mass": 4
+    },
+    {
+      "label": "Interactive_Library_SmallPottedPlant_001",
+      "asset": "SmallPottedPlant",
+      "location": [
+        -2916.0,
+        522.9,
+        -272.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_TanThrowPillow_001",
+      "asset": "TanThrowPillow",
+      "location": [
+        -2925.0,
+        629.1,
+        -278.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_DarkThrowPillow_001",
+      "asset": "DarkThrowPillow",
+      "location": [
+        -2925.0,
+        418.5,
+        -278.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_SixShelfBookcase_001",
+      "asset": "SixShelfBookcase",
+      "location": [
+        -2976.3,
+        62.1,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents0_001",
+      "asset": "BookShelfContents0",
+      "location": [
+        -2976.3,
+        62.1,
+        -325.86
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_001",
+      "asset": "StackedBooks",
+      "location": [
+        -2972.34,
+        62.1,
+        -295.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents2_001",
+      "asset": "BookShelfContents2",
+      "location": [
+        -2976.3,
+        62.1,
+        -265.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents3_001",
+      "asset": "BookShelfContents3",
+      "location": [
+        -2976.3,
+        62.1,
+        -235.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_002",
+      "asset": "StackedBooks",
+      "location": [
+        -2972.34,
+        62.1,
+        -204.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents0_002",
+      "asset": "BookShelfContents0",
+      "location": [
+        -2976.3,
+        62.1,
+        -171.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_SmallPottedPlant_002",
+      "asset": "SmallPottedPlant",
+      "location": [
+        -2976.3,
+        92.7,
+        -172.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_SixShelfBookcase_002",
+      "asset": "SixShelfBookcase",
+      "location": [
+        -2976.3,
+        -690.3,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents1_001",
+      "asset": "BookShelfContents1",
+      "location": [
+        -2976.3,
+        -690.3,
+        -325.86
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_003",
+      "asset": "StackedBooks",
+      "location": [
+        -2972.34,
+        -690.3,
+        -295.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents3_002",
+      "asset": "BookShelfContents3",
+      "location": [
+        -2976.3,
+        -690.3,
+        -265.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents4_001",
+      "asset": "BookShelfContents4",
+      "location": [
+        -2976.3,
+        -690.3,
+        -235.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_004",
+      "asset": "StackedBooks",
+      "location": [
+        -2972.34,
+        -690.3,
+        -204.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents1_002",
+      "asset": "BookShelfContents1",
+      "location": [
+        -2976.3,
+        -690.3,
+        -171.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_SmallPottedPlant_003",
+      "asset": "SmallPottedPlant",
+      "location": [
+        -2976.3,
+        -659.7,
+        -172.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_SixShelfBookcase_003",
+      "asset": "SixShelfBookcase",
+      "location": [
+        -2976.3,
+        -1107.9,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents2_002",
+      "asset": "BookShelfContents2",
+      "location": [
+        -2976.3,
+        -1107.9,
+        -325.86
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_005",
+      "asset": "StackedBooks",
+      "location": [
+        -2972.34,
+        -1107.9,
+        -295.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents4_002",
+      "asset": "BookShelfContents4",
+      "location": [
+        -2976.3,
+        -1107.9,
+        -265.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents0_003",
+      "asset": "BookShelfContents0",
+      "location": [
+        -2976.3,
+        -1107.9,
+        -235.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_006",
+      "asset": "StackedBooks",
+      "location": [
+        -2972.34,
+        -1107.9,
+        -204.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents2_003",
+      "asset": "BookShelfContents2",
+      "location": [
+        -2976.3,
+        -1107.9,
+        -171.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_SmallPottedPlant_004",
+      "asset": "SmallPottedPlant",
+      "location": [
+        -2976.3,
+        -1077.3,
+        -172.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_SixShelfBookcase_004",
+      "asset": "SixShelfBookcase",
+      "location": [
+        -2410.2,
+        364.5,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents1_003",
+      "asset": "BookShelfContents1",
+      "location": [
+        -2410.2,
+        364.5,
+        -325.86
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_007",
+      "asset": "StackedBooks",
+      "location": [
+        -2414.16,
+        364.5,
+        -295.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents3_003",
+      "asset": "BookShelfContents3",
+      "location": [
+        -2410.2,
+        364.5,
+        -265.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents4_003",
+      "asset": "BookShelfContents4",
+      "location": [
+        -2410.2,
+        364.5,
+        -235.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_008",
+      "asset": "StackedBooks",
+      "location": [
+        -2414.16,
+        364.5,
+        -204.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents1_004",
+      "asset": "BookShelfContents1",
+      "location": [
+        -2410.2,
+        364.5,
+        -171.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_SmallPottedPlant_005",
+      "asset": "SmallPottedPlant",
+      "location": [
+        -2410.2,
+        395.1,
+        -172.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_SixShelfBookcase_005",
+      "asset": "SixShelfBookcase",
+      "location": [
+        -2410.2,
+        -648.9,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents2_004",
+      "asset": "BookShelfContents2",
+      "location": [
+        -2410.2,
+        -648.9,
+        -325.86
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_009",
+      "asset": "StackedBooks",
+      "location": [
+        -2414.16,
+        -648.9,
+        -295.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents4_004",
+      "asset": "BookShelfContents4",
+      "location": [
+        -2410.2,
+        -648.9,
+        -265.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents0_004",
+      "asset": "BookShelfContents0",
+      "location": [
+        -2410.2,
+        -648.9,
+        -235.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_010",
+      "asset": "StackedBooks",
+      "location": [
+        -2414.16,
+        -648.9,
+        -204.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents2_005",
+      "asset": "BookShelfContents2",
+      "location": [
+        -2410.2,
+        -648.9,
+        -171.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_SmallPottedPlant_006",
+      "asset": "SmallPottedPlant",
+      "location": [
+        -2410.2,
+        -618.3,
+        -172.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_SixShelfBookcase_006",
+      "asset": "SixShelfBookcase",
+      "location": [
+        -2410.2,
+        -1053.9,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents3_004",
+      "asset": "BookShelfContents3",
+      "location": [
+        -2410.2,
+        -1053.9,
+        -325.86
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_011",
+      "asset": "StackedBooks",
+      "location": [
+        -2414.16,
+        -1053.9,
+        -295.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents0_005",
+      "asset": "BookShelfContents0",
+      "location": [
+        -2410.2,
+        -1053.9,
+        -265.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents1_005",
+      "asset": "BookShelfContents1",
+      "location": [
+        -2410.2,
+        -1053.9,
+        -235.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_012",
+      "asset": "StackedBooks",
+      "location": [
+        -2414.16,
+        -1053.9,
+        -204.96
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BookShelfContents3_005",
+      "asset": "BookShelfContents3",
+      "location": [
+        -2410.2,
+        -1053.9,
+        -171.96
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_SmallPottedPlant_007",
+      "asset": "SmallPottedPlant",
+      "location": [
+        -2410.2,
+        -1023.3,
+        -172.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_TrestlePlankWorktable_001",
+      "asset": "TrestlePlankWorktable",
+      "location": [
+        -2803.5,
+        225.9,
+        -329.06
+      ],
+      "mass": 100
+    },
+    {
+      "label": "Interactive_Library_DeskMat_001",
+      "asset": "DeskMat",
+      "location": [
+        -2716.2,
+        220.5,
+        -248.86
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_FoldedBlueWhiteUmbrella_001",
+      "asset": "FoldedBlueWhiteUmbrella",
+      "location": [
+        -2725.2,
+        215.1,
+        -248.16
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_OpenPokerChipCase_001",
+      "asset": "OpenPokerChipCase",
+      "location": [
+        -2863.8,
+        222.3,
+        -248.56
+      ],
+      "mass": 9
+    },
+    {
+      "label": "Interactive_Library_CardDeck_001",
+      "asset": "CardDeck",
+      "location": [
+        -2835.0,
+        267.3,
+        -248.56
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_GrayBackpack_001",
+      "asset": "GrayBackpack",
+      "location": [
+        -2953.8,
+        216.9,
+        -248.56
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_PaperScatter_001",
+      "asset": "PaperScatter",
+      "location": [
+        -2772.0,
+        218.7,
+        -248.06
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_FrameRails_001",
+      "asset": "FrameRails",
+      "location": [
+        -2822.4,
+        233.1,
+        -247.56
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_004",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2813.4,
+        98.1,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_005",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2761.2,
+        346.5,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_EntryRug_001",
+      "asset": "EntryRug",
+      "location": [
+        -2705.4,
+        218.7,
+        -328.36
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_BlackSideTable_001",
+      "asset": "BlackSideTable",
+      "location": [
+        -2421.0,
+        35.1,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_PaperScatter_002",
+      "asset": "PaperScatter",
+      "location": [
+        -2421.0,
+        35.1,
+        -271.86
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_006",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2530.8,
+        26.1,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_LeatherLoveseat_001",
+      "asset": "LeatherLoveseat",
+      "location": [
+        -2917.8,
+        -324.9,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_DarkThrowPillow_002",
+      "asset": "DarkThrowPillow",
+      "location": [
+        -2923.2,
+        -234.9,
+        -275.56
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_OrangeThrowPillow_001",
+      "asset": "OrangeThrowPillow",
+      "location": [
+        -2926.8,
+        -418.5,
+        -275.56
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_CoffeeChest_001",
+      "asset": "CoffeeChest",
+      "location": [
+        -2710.8,
+        -333.9,
+        -329.06
+      ],
+      "mass": 65
+    },
+    {
+      "label": "Interactive_Library_RedCoffeeBook_001",
+      "asset": "RedCoffeeBook",
+      "location": [
+        -2705.4,
+        -319.5,
+        -282.76
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_LeatherClubChair_001",
+      "asset": "LeatherClubChair",
+      "location": [
+        -2786.4,
+        -531.9,
+        -329.06
+      ],
+      "mass": 48
+    },
+    {
+      "label": "Interactive_Library_TanThrowPillow_002",
+      "asset": "TanThrowPillow",
+      "location": [
+        -2786.4,
+        -553.5,
+        -275.06
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_PlantRoundStand_001",
+      "asset": "PlantRoundStand",
+      "location": [
+        -2948.4,
+        -519.3,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_TallGrassPlant_001",
+      "asset": "TallGrassPlant",
+      "location": [
+        -2948.4,
+        -519.3,
+        -275.06
+      ],
+      "mass": 5
+    },
+    {
+      "label": "Interactive_Library_LongRug_001",
+      "asset": "LongRug",
+      "location": [
+        -2797.2,
+        -353.7,
+        -328.36
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_007",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2593.8,
+        -267.3,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_008",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2505.6,
+        -470.7,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_LighthouseCanvas_001",
+      "asset": "LighthouseCanvas",
+      "location": [
+        -3001.68,
+        -317.7,
+        -226.06
+      ],
+      "mass": 8
+    },
+    {
+      "label": "Interactive_Library_DistressedCreamConsole_001",
+      "asset": "DistressedCreamConsole",
+      "location": [
+        -2431.8,
+        -341.1,
+        -329.06
+      ],
+      "mass": 85
+    },
+    {
+      "label": "Interactive_Library_WallTelevision_001",
+      "asset": "WallTelevision",
+      "location": [
+        -2386.8,
+        -330.3,
+        -209.06
+      ],
+      "mass": 22
+    },
+    {
+      "label": "Interactive_Library_PartyGameStack_001",
+      "asset": "PartyGameStack",
+      "location": [
+        -2435.4,
+        -342.9,
+        -242.06
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_FramedGroupPhoto_001",
+      "asset": "FramedGroupPhoto",
+      "location": [
+        -2437.2,
+        -270.9,
+        -241.56
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_OpenCardboardBox_001",
+      "asset": "OpenCardboardBox",
+      "location": [
+        -2431.8,
+        -371.7,
+        -314.66
+      ],
+      "mass": 2
+    },
+    {
+      "label": "Interactive_Library_ClosedSilverCase_001",
+      "asset": "ClosedSilverCase",
+      "location": [
+        -2431.8,
+        -301.5,
+        -314.66
+      ],
+      "mass": 7
+    },
+    {
+      "label": "Interactive_Library_BlackSideTable_002",
+      "asset": "BlackSideTable",
+      "location": [
+        -2424.6,
+        -141.3,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_BlackSideTable_003",
+      "asset": "BlackSideTable",
+      "location": [
+        -2424.6,
+        -533.7,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_FloorLamp_001",
+      "asset": "FloorLamp",
+      "location": [
+        -2419.2,
+        -530.1,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_BrownLeatherBarStool_001",
+      "asset": "BrownLeatherBarStool",
+      "location": [
+        -2482.2,
+        -780.3,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_WhitePlasticDrawerTower_001",
+      "asset": "WhitePlasticDrawerTower",
+      "location": [
+        -2424.6,
+        -944.1,
+        -329.06
+      ],
+      "mass": 24
+    },
+    {
+      "label": "Interactive_Library_StackedBooks_013",
+      "asset": "StackedBooks",
+      "location": [
+        -2424.6,
+        -944.1,
+        -186.06
+      ],
+      "mass": 6
+    },
+    {
+      "label": "Interactive_Library_BlackSideTable_004",
+      "asset": "BlackSideTable",
+      "location": [
+        -2424.6,
+        -1194.3,
+        -329.06
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_SmallMonitor_001",
+      "asset": "SmallMonitor",
+      "location": [
+        -2419.2,
+        -1188.9,
+        -256.86
+      ],
+      "mass": 8
+    },
+    {
+      "label": "Interactive_Library_PaperScatter_003",
+      "asset": "PaperScatter",
+      "location": [
+        -2430.0,
+        -1196.1,
+        -271.56
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_RoundedOakStudyTable_001",
+      "asset": "RoundedOakStudyTable",
+      "location": [
+        -2622.6,
+        -1138.5,
+        -329.06
+      ],
+      "mass": 105
+    },
+    {
+      "label": "Interactive_Library_StudyRug_001",
+      "asset": "StudyRug",
+      "location": [
+        -2622.6,
+        -1149.3,
+        -328.36
+      ],
+      "mass": 12
+    },
+    {
+      "label": "Interactive_Library_DeskMonitor_001",
+      "asset": "DeskMonitor",
+      "location": [
+        -2640.6,
+        -1145.7,
+        -236.06
+      ],
+      "mass": 8
+    },
+    {
+      "label": "Interactive_Library_SmallMonitor_002",
+      "asset": "SmallMonitor",
+      "location": [
+        -2631.6,
+        -1170.9,
+        -236.06
+      ],
+      "mass": 8
+    },
+    {
+      "label": "Interactive_Library_DeskRiser_001",
+      "asset": "DeskRiser",
+      "location": [
+        -2624.4,
+        -1057.5,
+        -250.76
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_DeskOrganizer_001",
+      "asset": "DeskOrganizer",
+      "location": [
+        -2548.8,
+        -1136.7,
+        -250.76
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_PaperScatter_004",
+      "asset": "PaperScatter",
+      "location": [
+        -2658.6,
+        -1048.5,
+        -250.06
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_PaperScatter_005",
+      "asset": "PaperScatter",
+      "location": [
+        -2538.0,
+        -1080.9,
+        -249.86
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_DeskMouse_001",
+      "asset": "DeskMouse",
+      "location": [
+        -2727.0,
+        -1152.9,
+        -250.26
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_DeskPen_001",
+      "asset": "DeskPen",
+      "location": [
+        -2680.2,
+        -1044.9,
+        -250.26
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_BlueMarker_001",
+      "asset": "BlueMarker",
+      "location": [
+        -2730.6,
+        -1079.1,
+        -250.26
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_BlackMarker_001",
+      "asset": "BlackMarker",
+      "location": [
+        -2561.4,
+        -1057.5,
+        -250.26
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_PaperCup_001",
+      "asset": "PaperCup",
+      "location": [
+        -2507.4,
+        -1073.7,
+        -250.56
+      ],
+      "mass": 1
+    },
+    {
+      "label": "Interactive_Library_CurvedWoodDeskChair_001",
+      "asset": "CurvedWoodDeskChair",
+      "location": [
+        -2601.0,
+        -1305.9,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_009",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2433.6,
+        -1138.5,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_MeshOfficeChair_010",
+      "asset": "MeshOfficeChair",
+      "location": [
+        -2795.4,
+        -1138.5,
+        -329.06
+      ],
+      "mass": 14
+    },
+    {
+      "label": "Interactive_Library_GlassWhiteboard_001",
+      "asset": "GlassWhiteboard",
+      "location": [
+        -2388.6,
+        -1255.5,
+        -216.06
+      ],
+      "mass": 15
+    },
+    {
+      "label": "Interactive_Library_StudyPendant_001",
+      "asset": "StudyPendant",
+      "location": [
+        -2622.6,
+        -1143.9,
+        -156.56
+      ],
+      "mass": 18
+    },
+    {
+      "label": "Interactive_Library_FramedHistoricPhoto_001",
+      "asset": "FramedHistoricPhoto",
+      "location": [
+        -3001.86,
+        683.1,
+        -177.06
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_FramedHistoricPhoto_002",
+      "asset": "FramedHistoricPhoto",
+      "location": [
+        -3001.86,
+        548.1,
+        -177.06
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_FramedHistoricPhoto_003",
+      "asset": "FramedHistoricPhoto",
+      "location": [
+        -3001.86,
+        402.3,
+        -229.06
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_FramedHistoricPhoto_004",
+      "asset": "FramedHistoricPhoto",
+      "location": [
+        -3001.86,
+        -821.7,
+        -190.06
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_FramedHistoricPhoto_005",
+      "asset": "FramedHistoricPhoto",
+      "location": [
+        -3001.86,
+        -891.9,
+        -190.06
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_FramedHistoricPhoto_006",
+      "asset": "FramedHistoricPhoto",
+      "location": [
+        -3001.86,
+        -962.1,
+        -190.06
+      ],
+      "mass": 3
+    },
+    {
+      "label": "Interactive_Library_FramedHistoricPhoto_007",
+      "asset": "FramedHistoricPhoto",
+      "location": [
+        -2386.8,
+        69.3,
+        -184.06
+      ],
+      "mass": 3
+    }
+  ],
+  "placements": 133,
+  "assets": [
+    {
+      "asset": "MeshOfficeChair",
+      "faces": 1112,
+      "meshes": [
+        "SM_Lib_MeshOfficeChair",
+        "SM_Lib_MeshOfficeChair_DamageV2",
+        "SM_Lib_MeshOfficeChair_HeavyV2",
+        "SM_Lib_MeshOfficeChair_BrokenV2"
+      ],
+      "hulls": [
+        9,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "GrayOfficeChair",
+      "faces": 1028,
+      "meshes": [
+        "SM_Lib_GrayOfficeChair",
+        "SM_Lib_GrayOfficeChair_DamageV2",
+        "SM_Lib_GrayOfficeChair_HeavyV2",
+        "SM_Lib_GrayOfficeChair_BrokenV2"
+      ],
+      "hulls": [
+        9,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "LeatherLoveseat",
+      "faces": 7272,
+      "meshes": [
+        "SM_Lib_LeatherLoveseat",
+        "SM_Lib_LeatherLoveseat_DamageV2",
+        "SM_Lib_LeatherLoveseat_HeavyV2",
+        "SM_Lib_LeatherLoveseat_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "LeatherClubChair",
+      "faces": 5832,
+      "meshes": [
+        "SM_Lib_LeatherClubChair",
+        "SM_Lib_LeatherClubChair_DamageV2",
+        "SM_Lib_LeatherClubChair_HeavyV2",
+        "SM_Lib_LeatherClubChair_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "GrayArmchair",
+      "faces": 1666,
+      "meshes": [
+        "SM_Lib_GrayArmchair",
+        "SM_Lib_GrayArmchair_DamageV2",
+        "SM_Lib_GrayArmchair_HeavyV2",
+        "SM_Lib_GrayArmchair_BrokenV2"
+      ],
+      "hulls": [
+        11,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "DarkThrowPillow",
+      "faces": 546,
+      "meshes": [
+        "SM_Lib_DarkThrowPillow",
+        "SM_Lib_DarkThrowPillow_DamageV2",
+        "SM_Lib_DarkThrowPillow_HeavyV2",
+        "SM_Lib_DarkThrowPillow_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "TanThrowPillow",
+      "faces": 546,
+      "meshes": [
+        "SM_Lib_TanThrowPillow",
+        "SM_Lib_TanThrowPillow_DamageV2",
+        "SM_Lib_TanThrowPillow_HeavyV2",
+        "SM_Lib_TanThrowPillow_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        5
+      ]
+    },
+    {
+      "asset": "OrangeThrowPillow",
+      "faces": 608,
+      "meshes": [
+        "SM_Lib_OrangeThrowPillow",
+        "SM_Lib_OrangeThrowPillow_DamageV2",
+        "SM_Lib_OrangeThrowPillow_HeavyV2",
+        "SM_Lib_OrangeThrowPillow_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "SixShelfBookcase",
+      "faces": 980,
+      "meshes": [
+        "SM_Lib_SixShelfBookcase",
+        "SM_Lib_SixShelfBookcase_DamageV2",
+        "SM_Lib_SixShelfBookcase_HeavyV2",
+        "SM_Lib_SixShelfBookcase_BrokenV2"
+      ],
+      "hulls": [
+        10,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "asset": "BookShelfContents0",
+      "faces": 4079,
+      "meshes": [
+        "SM_Lib_BookShelfContents0",
+        "SM_Lib_BookShelfContents0_DamageV2",
+        "SM_Lib_BookShelfContents0_HeavyV2",
+        "SM_Lib_BookShelfContents0_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "BookShelfContents1",
+      "faces": 4399,
+      "meshes": [
+        "SM_Lib_BookShelfContents1",
+        "SM_Lib_BookShelfContents1_DamageV2",
+        "SM_Lib_BookShelfContents1_HeavyV2",
+        "SM_Lib_BookShelfContents1_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "BookShelfContents2",
+      "faces": 5305,
+      "meshes": [
+        "SM_Lib_BookShelfContents2",
+        "SM_Lib_BookShelfContents2_DamageV2",
+        "SM_Lib_BookShelfContents2_HeavyV2",
+        "SM_Lib_BookShelfContents2_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "BookShelfContents3",
+      "faces": 5653,
+      "meshes": [
+        "SM_Lib_BookShelfContents3",
+        "SM_Lib_BookShelfContents3_DamageV2",
+        "SM_Lib_BookShelfContents3_HeavyV2",
+        "SM_Lib_BookShelfContents3_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "BookShelfContents4",
+      "faces": 6381,
+      "meshes": [
+        "SM_Lib_BookShelfContents4",
+        "SM_Lib_BookShelfContents4_DamageV2",
+        "SM_Lib_BookShelfContents4_HeavyV2",
+        "SM_Lib_BookShelfContents4_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "StackedBooks",
+      "faces": 3759,
+      "meshes": [
+        "SM_Lib_StackedBooks",
+        "SM_Lib_StackedBooks_DamageV2",
+        "SM_Lib_StackedBooks_HeavyV2",
+        "SM_Lib_StackedBooks_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "CoffeeChest",
+      "faces": 606,
+      "meshes": [
+        "SM_Lib_CoffeeChest",
+        "SM_Lib_CoffeeChest_DamageV2",
+        "SM_Lib_CoffeeChest_HeavyV2",
+        "SM_Lib_CoffeeChest_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "BlackSideTable",
+      "faces": 490,
+      "meshes": [
+        "SM_Lib_BlackSideTable",
+        "SM_Lib_BlackSideTable_DamageV2",
+        "SM_Lib_BlackSideTable_HeavyV2",
+        "SM_Lib_BlackSideTable_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "asset": "RoundWoodSideTable",
+      "faces": 434,
+      "meshes": [
+        "SM_Lib_RoundWoodSideTable",
+        "SM_Lib_RoundWoodSideTable_DamageV2",
+        "SM_Lib_RoundWoodSideTable_HeavyV2",
+        "SM_Lib_RoundWoodSideTable_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "asset": "PlantRoundStand",
+      "faces": 434,
+      "meshes": [
+        "SM_Lib_PlantRoundStand",
+        "SM_Lib_PlantRoundStand_DamageV2",
+        "SM_Lib_PlantRoundStand_HeavyV2",
+        "SM_Lib_PlantRoundStand_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "asset": "DistressedCreamConsole",
+      "faces": 3420,
+      "meshes": [
+        "SM_Lib_DistressedCreamConsole",
+        "SM_Lib_DistressedCreamConsole_DamageV2",
+        "SM_Lib_DistressedCreamConsole_HeavyV2",
+        "SM_Lib_DistressedCreamConsole_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "TrestlePlankWorktable",
+      "faces": 1078,
+      "meshes": [
+        "SM_Lib_TrestlePlankWorktable",
+        "SM_Lib_TrestlePlankWorktable_DamageV2",
+        "SM_Lib_TrestlePlankWorktable_HeavyV2",
+        "SM_Lib_TrestlePlankWorktable_BrokenV2"
+      ],
+      "hulls": [
+        11,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "asset": "RoundedOakStudyTable",
+      "faces": 724,
+      "meshes": [
+        "SM_Lib_RoundedOakStudyTable",
+        "SM_Lib_RoundedOakStudyTable_DamageV2",
+        "SM_Lib_RoundedOakStudyTable_HeavyV2",
+        "SM_Lib_RoundedOakStudyTable_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "asset": "OctagonalCardTable",
+      "faces": 1710,
+      "meshes": [
+        "SM_Lib_OctagonalCardTable",
+        "SM_Lib_OctagonalCardTable_DamageV2",
+        "SM_Lib_OctagonalCardTable_HeavyV2",
+        "SM_Lib_OctagonalCardTable_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "asset": "WhitePlasticDrawerTower",
+      "faces": 2058,
+      "meshes": [
+        "SM_Lib_WhitePlasticDrawerTower",
+        "SM_Lib_WhitePlasticDrawerTower_DamageV2",
+        "SM_Lib_WhitePlasticDrawerTower_HeavyV2",
+        "SM_Lib_WhitePlasticDrawerTower_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "BrownLeatherBarStool",
+      "faces": 932,
+      "meshes": [
+        "SM_Lib_BrownLeatherBarStool",
+        "SM_Lib_BrownLeatherBarStool_DamageV2",
+        "SM_Lib_BrownLeatherBarStool_HeavyV2",
+        "SM_Lib_BrownLeatherBarStool_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "asset": "CurvedWoodDeskChair",
+      "faces": 612,
+      "meshes": [
+        "SM_Lib_CurvedWoodDeskChair",
+        "SM_Lib_CurvedWoodDeskChair_DamageV2",
+        "SM_Lib_CurvedWoodDeskChair_HeavyV2",
+        "SM_Lib_CurvedWoodDeskChair_BrokenV2"
+      ],
+      "hulls": [
+        10,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "FloorLamp",
+      "faces": 356,
+      "meshes": [
+        "SM_Lib_FloorLamp",
+        "SM_Lib_FloorLamp_DamageV2",
+        "SM_Lib_FloorLamp_HeavyV2",
+        "SM_Lib_FloorLamp_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "asset": "TableLamp",
+      "faces": 356,
+      "meshes": [
+        "SM_Lib_TableLamp",
+        "SM_Lib_TableLamp_DamageV2",
+        "SM_Lib_TableLamp_HeavyV2",
+        "SM_Lib_TableLamp_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "TallGrassPlant",
+      "faces": 7004,
+      "meshes": [
+        "SM_Lib_TallGrassPlant",
+        "SM_Lib_TallGrassPlant_DamageV2",
+        "SM_Lib_TallGrassPlant_HeavyV2",
+        "SM_Lib_TallGrassPlant_BrokenV2"
+      ],
+      "hulls": [
+        11,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "SmallPottedPlant",
+      "faces": 6028,
+      "meshes": [
+        "SM_Lib_SmallPottedPlant",
+        "SM_Lib_SmallPottedPlant_DamageV2",
+        "SM_Lib_SmallPottedPlant_HeavyV2",
+        "SM_Lib_SmallPottedPlant_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "WallTelevision",
+      "faces": 437,
+      "meshes": [
+        "SM_Lib_WallTelevision",
+        "SM_Lib_WallTelevision_DamageV2",
+        "SM_Lib_WallTelevision_HeavyV2",
+        "SM_Lib_WallTelevision_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "DeskMonitor",
+      "faces": 1595,
+      "meshes": [
+        "SM_Lib_DeskMonitor",
+        "SM_Lib_DeskMonitor_DamageV2",
+        "SM_Lib_DeskMonitor_HeavyV2",
+        "SM_Lib_DeskMonitor_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "asset": "SmallMonitor",
+      "faces": 1595,
+      "meshes": [
+        "SM_Lib_SmallMonitor",
+        "SM_Lib_SmallMonitor_DamageV2",
+        "SM_Lib_SmallMonitor_HeavyV2",
+        "SM_Lib_SmallMonitor_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "asset": "DeskMouse",
+      "faces": 256,
+      "meshes": [
+        "SM_Lib_DeskMouse",
+        "SM_Lib_DeskMouse_DamageV2",
+        "SM_Lib_DeskMouse_HeavyV2",
+        "SM_Lib_DeskMouse_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "DeskOrganizer",
+      "faces": 686,
+      "meshes": [
+        "SM_Lib_DeskOrganizer",
+        "SM_Lib_DeskOrganizer_DamageV2",
+        "SM_Lib_DeskOrganizer_HeavyV2",
+        "SM_Lib_DeskOrganizer_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "asset": "DeskRiser",
+      "faces": 490,
+      "meshes": [
+        "SM_Lib_DeskRiser",
+        "SM_Lib_DeskRiser_DamageV2",
+        "SM_Lib_DeskRiser_HeavyV2",
+        "SM_Lib_DeskRiser_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "PaperScatter",
+      "faces": 7,
+      "meshes": [
+        "SM_Lib_PaperScatter",
+        "SM_Lib_PaperScatter_DamageV2",
+        "SM_Lib_PaperScatter_HeavyV2",
+        "SM_Lib_PaperScatter_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "BlueMarker",
+      "faces": 28,
+      "meshes": [
+        "SM_Lib_BlueMarker",
+        "SM_Lib_BlueMarker_DamageV2",
+        "SM_Lib_BlueMarker_HeavyV2",
+        "SM_Lib_BlueMarker_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "BlackMarker",
+      "faces": 28,
+      "meshes": [
+        "SM_Lib_BlackMarker",
+        "SM_Lib_BlackMarker_DamageV2",
+        "SM_Lib_BlackMarker_HeavyV2",
+        "SM_Lib_BlackMarker_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "DeskPen",
+      "faces": 28,
+      "meshes": [
+        "SM_Lib_DeskPen",
+        "SM_Lib_DeskPen_DamageV2",
+        "SM_Lib_DeskPen_HeavyV2",
+        "SM_Lib_DeskPen_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "asset": "PaperCup",
+      "faces": 1976,
+      "meshes": [
+        "SM_Lib_PaperCup",
+        "SM_Lib_PaperCup_DamageV2",
+        "SM_Lib_PaperCup_HeavyV2",
+        "SM_Lib_PaperCup_BrokenV2"
+      ],
+      "hulls": [
+        10,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "OpenPokerChipCase",
+      "faces": 35051,
+      "meshes": [
+        "SM_Lib_OpenPokerChipCase",
+        "SM_Lib_OpenPokerChipCase_DamageV2",
+        "SM_Lib_OpenPokerChipCase_HeavyV2",
+        "SM_Lib_OpenPokerChipCase_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "ClosedSilverCase",
+      "faces": 294,
+      "meshes": [
+        "SM_Lib_ClosedSilverCase",
+        "SM_Lib_ClosedSilverCase_DamageV2",
+        "SM_Lib_ClosedSilverCase_HeavyV2",
+        "SM_Lib_ClosedSilverCase_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "FoldedBlueWhiteUmbrella",
+      "faces": 183,
+      "meshes": [
+        "SM_Lib_FoldedBlueWhiteUmbrella",
+        "SM_Lib_FoldedBlueWhiteUmbrella_DamageV2",
+        "SM_Lib_FoldedBlueWhiteUmbrella_HeavyV2",
+        "SM_Lib_FoldedBlueWhiteUmbrella_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "asset": "GrayBackpack",
+      "faces": 560,
+      "meshes": [
+        "SM_Lib_GrayBackpack",
+        "SM_Lib_GrayBackpack_DamageV2",
+        "SM_Lib_GrayBackpack_HeavyV2",
+        "SM_Lib_GrayBackpack_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "FrameRails",
+      "faces": 196,
+      "meshes": [
+        "SM_Lib_FrameRails",
+        "SM_Lib_FrameRails_DamageV2",
+        "SM_Lib_FrameRails_HeavyV2",
+        "SM_Lib_FrameRails_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "OpenCardboardBox",
+      "faces": 588,
+      "meshes": [
+        "SM_Lib_OpenCardboardBox",
+        "SM_Lib_OpenCardboardBox_DamageV2",
+        "SM_Lib_OpenCardboardBox_HeavyV2",
+        "SM_Lib_OpenCardboardBox_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "asset": "PartyGameStack",
+      "faces": 3201,
+      "meshes": [
+        "SM_Lib_PartyGameStack",
+        "SM_Lib_PartyGameStack_DamageV2",
+        "SM_Lib_PartyGameStack_HeavyV2",
+        "SM_Lib_PartyGameStack_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "asset": "CardDeck",
+      "faces": 357,
+      "meshes": [
+        "SM_Lib_CardDeck",
+        "SM_Lib_CardDeck_DamageV2",
+        "SM_Lib_CardDeck_HeavyV2",
+        "SM_Lib_CardDeck_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "RedCoffeeBook",
+      "faces": 417,
+      "meshes": [
+        "SM_Lib_RedCoffeeBook",
+        "SM_Lib_RedCoffeeBook_DamageV2",
+        "SM_Lib_RedCoffeeBook_HeavyV2",
+        "SM_Lib_RedCoffeeBook_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "DeskMat",
+      "faces": 1,
+      "meshes": [
+        "SM_Lib_DeskMat",
+        "SM_Lib_DeskMat_DamageV2",
+        "SM_Lib_DeskMat_HeavyV2",
+        "SM_Lib_DeskMat_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "LighthouseCanvas",
+      "faces": 491,
+      "meshes": [
+        "SM_Lib_LighthouseCanvas",
+        "SM_Lib_LighthouseCanvas_DamageV2",
+        "SM_Lib_LighthouseCanvas_HeavyV2",
+        "SM_Lib_LighthouseCanvas_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "FramedHistoricPhoto",
+      "faces": 491,
+      "meshes": [
+        "SM_Lib_FramedHistoricPhoto",
+        "SM_Lib_FramedHistoricPhoto_DamageV2",
+        "SM_Lib_FramedHistoricPhoto_HeavyV2",
+        "SM_Lib_FramedHistoricPhoto_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "asset": "FramedGroupPhoto",
+      "faces": 491,
+      "meshes": [
+        "SM_Lib_FramedGroupPhoto",
+        "SM_Lib_FramedGroupPhoto_DamageV2",
+        "SM_Lib_FramedGroupPhoto_HeavyV2",
+        "SM_Lib_FramedGroupPhoto_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "asset": "GlassWhiteboard",
+      "faces": 170,
+      "meshes": [
+        "SM_Lib_GlassWhiteboard",
+        "SM_Lib_GlassWhiteboard_DamageV2",
+        "SM_Lib_GlassWhiteboard_HeavyV2",
+        "SM_Lib_GlassWhiteboard_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "LongRug",
+      "faces": 99,
+      "meshes": [
+        "SM_Lib_LongRug",
+        "SM_Lib_LongRug_DamageV2",
+        "SM_Lib_LongRug_HeavyV2",
+        "SM_Lib_LongRug_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "EntryRug",
+      "faces": 99,
+      "meshes": [
+        "SM_Lib_EntryRug",
+        "SM_Lib_EntryRug_DamageV2",
+        "SM_Lib_EntryRug_HeavyV2",
+        "SM_Lib_EntryRug_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "StudyRug",
+      "faces": 99,
+      "meshes": [
+        "SM_Lib_StudyRug",
+        "SM_Lib_StudyRug_DamageV2",
+        "SM_Lib_StudyRug_HeavyV2",
+        "SM_Lib_StudyRug_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "asset": "LibraryFloor",
+      "faces": 98,
+      "meshes": [
+        "SM_Lib_LibraryFloor"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "TVLooseCables",
+      "faces": 69,
+      "meshes": [
+        "SM_Lib_TVLooseCables"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "CeilingHatchHardware",
+      "faces": 686,
+      "meshes": [
+        "SM_Lib_CeilingHatchHardware"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "StudyPendant",
+      "faces": 967,
+      "meshes": [
+        "SM_Lib_StudyPendant",
+        "SM_Lib_StudyPendant_DamageV2",
+        "SM_Lib_StudyPendant_HeavyV2",
+        "SM_Lib_StudyPendant_BrokenV2"
+      ],
+      "hulls": [
+        12,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "asset": "EntryWallDoorClear",
+      "faces": 46921,
+      "meshes": [
+        "SM_Lib_EntryWallDoorClear"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "EntryWallDoorClear",
+      "faces": 308,
+      "meshes": [
+        "COL_Lib_EntryWallDoorClear"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "ServiceAnnexShell",
+      "faces": 1388,
+      "meshes": [
+        "SM_Lib_ServiceAnnexShell"
+      ],
+      "hulls": [
+        0
+      ]
+    },
+    {
+      "asset": "MechanicalDoorSource",
+      "faces": 2155,
+      "meshes": [
+        "SM_Lib_MechanicalDoorSource"
+      ],
+      "hulls": [
+        0
+      ]
+    }
+  ],
+  "service_door": true,
+  "ceiling_access_panels": 3
+}

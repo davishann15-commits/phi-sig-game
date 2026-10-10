@@ -1,0 +1,37 @@
+[
+  {
+    "label": "COL_Entrance_m1_p0_Solid",
+    "mesh": "/Game/SeniorSendOff/House/NoodleWing/COL_Entrance_m1_p0_Solid_NoodleCut.COL_Entrance_m1_p0_Solid_NoodleCut",
+    "exported": true
+  },
+  {
+    "label": "COL_Entrance_p0_m1_Solid",
+    "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_m1_Solid.COL_Entrance_p0_m1_Solid",
+    "exported": true
+  },
+  {
+    "label": "COL_Entrance_p0_p0_Solid",
+    "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_p0_Solid.COL_Entrance_p0_p0_Solid",
+    "exported": true
+  },
+  {
+    "label": "COL_Upper_p0_m1_Solid",
+    "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Upper_p0_m1_Solid.COL_Upper_p0_m1_Solid",
+    "exported": true
+  },
+  {
+    "label": "COL_Upper_p0_p0_Solid",
+    "mesh": "/Game/SeniorSendOff/House/Meshes/COL_Upper_p0_p0_Solid.COL_Upper_p0_p0_Solid",
+    "exported": true
+  },
+  {
+    "label": "SM_Upper_p0_m1_Solid",
+    "mesh": "/Game/SeniorSendOff/House/Meshes/SM_Upper_p0_m1_Solid.SM_Upper_p0_m1_Solid",
+    "exported": true
+  },
+  {
+    "label": "SM_Upper_p0_p0_Solid",
+    "mesh": "/Game/SeniorSendOff/House/NoodleWing/SM_Upper_p0_p0_CornerCleared_NoodleCut.SM_Upper_p0_p0_CornerCleared_NoodleCut",
+    "exported": true
+  }
+]

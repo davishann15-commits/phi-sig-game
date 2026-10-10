@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "actor_count": 1856,
+  "protected_actors": 1837,
+  "protected_unchanged": true,
+  "changed_actors": [
+    "NightClub_Lower_Speaker_1",
+    "NightClub_Tube_Lower1",
+    "NightClub_Neon_UpperLate",
+    "NightClub_Neon_LowerLate",
+    "NightClub_SM_NC_LowerDanceFloorInlay",
+    "NightClub_Tube_Upper1",
+    "NightClub_LowerDiscoBall",
+    "NightClub_Lower_DJ_console",
+    "NightClub_SM_NC_LowerCeilingWithHole",
+    "NightClub_Lower_Speaker_0",
+    "NightClub_SM_NC_UpperWallLining",
+    "NightClub_SM_NCR_UpperExtensionCollision",
+    "NightClub_SM_NC_LowerRoomShell",
+    "NightClub_Ambience",
+    "NightClub_SM_NC_UpperDarkFloorWithHole",
+    "NightClub_UpperDiscoBall",
+    "NightClub_SM_NCR_UpperSupportFloorWithHole"
+  ],
+  "new_actors": [
+    "NightClub_Tube_LowerWing",
+    "NightClub_Tube_UpperWing"
+  ],
+  "base_floor_area_m2": 38.692353389258244,
+  "added_floor_area_m2": 30.178685249999997,
+  "new_floor_area_m2": 68.87103863925824,
+  "percent_added": 77.9965099212037,
+  "kind": "Club-only stepped exterior annex in empty level space",
+  "real_lights_total": 6,
+  "pole_doors_and_song_unchanged": true,
+  "backup": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/expansion2_context/Chapter01_House_before_expansion2.umap"
+}

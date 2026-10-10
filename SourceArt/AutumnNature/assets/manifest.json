@@ -1,0 +1,56 @@
+[
+  {
+    "asset": "grass_ground",
+    "map": "Diffuse",
+    "file": "SourceArt/AutumnNature/assets/grass_ground_Diffuse.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_diff_1k.jpg",
+    "page": "https://polyhaven.com/a/grass_ground",
+    "license": "CC0",
+    "md5": "299047258586c762735b7284d3c662c3"
+  },
+  {
+    "asset": "grass_ground",
+    "map": "nor_dx",
+    "file": "SourceArt/AutumnNature/assets/grass_ground_nor_dx.png",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/grass_ground/grass_ground_nor_dx_1k.png",
+    "page": "https://polyhaven.com/a/grass_ground",
+    "license": "CC0",
+    "md5": "2e56d783a8fadf277ed330d7d8f893cd"
+  },
+  {
+    "asset": "withered_grass",
+    "map": "Diffuse",
+    "file": "SourceArt/AutumnNature/assets/withered_grass_Diffuse.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/withered_grass/withered_grass_diff_1k.jpg",
+    "page": "https://polyhaven.com/a/withered_grass",
+    "license": "CC0",
+    "md5": "a6e00946839a9ab1975457ae4a39823b"
+  },
+  {
+    "asset": "withered_grass",
+    "map": "nor_dx",
+    "file": "SourceArt/AutumnNature/assets/withered_grass_nor_dx.png",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/withered_grass/withered_grass_nor_dx_1k.png",
+    "page": "https://polyhaven.com/a/withered_grass",
+    "license": "CC0",
+    "md5": "97d8bd43e0c976feffce7b2e8b1d8b0a"
+  },
+  {
+    "asset": "tree_bark_03",
+    "map": "Diffuse",
+    "file": "SourceArt/AutumnNature/assets/tree_bark_03_Diffuse.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/tree_bark_03/tree_bark_03_diff_1k.jpg",
+    "page": "https://polyhaven.com/a/tree_bark_03",
+    "license": "CC0",
+    "md5": "7f09750a7529c52977f79dae90f1d713"
+  },
+  {
+    "asset": "tree_bark_03",
+    "map": "nor_dx",
+    "file": "SourceArt/AutumnNature/assets/tree_bark_03_nor_dx.png",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/tree_bark_03/tree_bark_03_nor_dx_1k.png",
+    "page": "https://polyhaven.com/a/tree_bark_03",
+    "license": "CC0",
+    "md5": "896943ddce529d38d4dc49008eaf982d"
+  }
+]

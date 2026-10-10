@@ -1,0 +1,1962 @@
+{
+  "materials": {
+    "UpBath_HallPaint": {
+      "color": [
+        0.51,
+        0.5,
+        0.44
+      ],
+      "roughness": 0.86,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "reuse": "MI_SSO_S05SouthHallPaint",
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_PaleBlue": {
+      "color": [
+        0.45,
+        0.59,
+        0.64
+      ],
+      "roughness": 0.78,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_BrownWainscot": {
+      "color": [
+        0.235,
+        0.217,
+        0.178
+      ],
+      "roughness": 0.76,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_GrimyConcrete": {
+      "color": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "base_texture": "T_UpBath_Floor_BaseColor.png",
+      "roughness_texture": "T_UpBath_Floor_Roughness.png",
+      "normal_texture": "T_UpBath_Floor_Normal.png",
+      "normal_strength": 0.22,
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_Ceiling": {
+      "color": [
+        0.72,
+        0.7,
+        0.63
+      ],
+      "roughness": 0.85,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_Baseboard": {
+      "color": [
+        0.18,
+        0.17,
+        0.14
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_FluorescentGlow": {
+      "color": [
+        0.91,
+        0.96,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 6,
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_LightMetal": {
+      "color": [
+        0.6,
+        0.59,
+        0.56
+      ],
+      "roughness": 0.5,
+      "metallic": 0.2,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_CounterSpeckledCream": {
+      "color": [
+        0.68,
+        0.62,
+        0.5
+      ],
+      "roughness": 0.62,
+      "metallic": 0,
+      "uv_scale": 3.0,
+      "emission": 0,
+      "base_texture": "T_Bath_CreamSpeckle_BaseColor.png",
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_AgedCreamCeramic": {
+      "color": [
+        0.78,
+        0.755,
+        0.63
+      ],
+      "roughness": 0.24,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_Chrome": {
+      "color": [
+        0.63,
+        0.68,
+        0.69
+      ],
+      "roughness": 0.2,
+      "metallic": 0.96,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_WornBrownPartition": {
+      "color": [
+        0.36,
+        0.3,
+        0.23
+      ],
+      "roughness": 0.72,
+      "metallic": 0,
+      "uv_scale": 1.2,
+      "emission": 0,
+      "base_texture": "T_Bath_BrownPaint_BaseColor.png",
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_OrangeCurtain": {
+      "color": [
+        0.93,
+        0.24,
+        0.003
+      ],
+      "roughness": 0.63,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "base_texture": "T_Bath_OrangeCurtain_BaseColor.png",
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_MottledFrostedGlass": {
+      "color": [
+        0.29,
+        0.38,
+        0.37
+      ],
+      "roughness": 0.34,
+      "metallic": 0.2,
+      "uv_scale": 1.3,
+      "emission": 0,
+      "base_texture": "T_Bath_TexturedGlass_BaseColor.png",
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_DirtyMirror": {
+      "color": [
+        0.56,
+        0.59,
+        0.57
+      ],
+      "roughness": 0.085,
+      "metallic": 0.98,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_WornOak": {
+      "color": [
+        0.33,
+        0.21,
+        0.1
+      ],
+      "roughness": 0.71,
+      "metallic": 0,
+      "uv_scale": 1.3,
+      "emission": 0,
+      "base_texture": "T_Bath_WornOak_BaseColor.png",
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_BlackPlastic": {
+      "color": [
+        0.012,
+        0.013,
+        0.015
+      ],
+      "roughness": 0.28,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_BlackRack": {
+      "color": [
+        0.018,
+        0.019,
+        0.02
+      ],
+      "roughness": 0.68,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_ShinyTrashBag": {
+      "color": [
+        0.0035,
+        0.004,
+        0.005
+      ],
+      "roughness": 0.13,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_WhitePlastic": {
+      "color": [
+        0.82,
+        0.82,
+        0.78
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_ToiletPaper": {
+      "color": [
+        0.87,
+        0.86,
+        0.8
+      ],
+      "roughness": 0.91,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_BrownCardboard": {
+      "color": [
+        0.41,
+        0.31,
+        0.18
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_UndercounterDark": {
+      "color": [
+        0.009,
+        0.01,
+        0.007
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_NavyPrint": {
+      "color": [
+        0.018,
+        0.037,
+        0.055
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_RedToiletry": {
+      "color": [
+        0.42,
+        0.025,
+        0.016
+      ],
+      "roughness": 0.36,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_GreenBottle": {
+      "color": [
+        0.07,
+        0.37,
+        0.22
+      ],
+      "roughness": 0.22,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_BlueToiletry": {
+      "color": [
+        0.025,
+        0.24,
+        0.37
+      ],
+      "roughness": 0.23,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_BlueClothing": {
+      "color": [
+        0.14,
+        0.25,
+        0.35
+      ],
+      "roughness": 0.94,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_KhakiClothing": {
+      "color": [
+        0.41,
+        0.29,
+        0.15
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_DarkClothing": {
+      "color": [
+        0.024,
+        0.026,
+        0.026
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_LightGreyClothing": {
+      "color": [
+        0.4,
+        0.47,
+        0.45
+      ],
+      "roughness": 0.96,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_RustGrime": {
+      "color": [
+        0.2,
+        0.105,
+        0.039
+      ],
+      "roughness": 0.97,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_WarmBulb": {
+      "color": [
+        0.98,
+        0.8,
+        0.5
+      ],
+      "roughness": 0.25,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 4,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_ShowerFloor": {
+      "color": [
+        0.19,
+        0.25,
+        0.26
+      ],
+      "roughness": 0.85,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_Bath_FluorescentWhite": {
+      "color": [
+        0.78,
+        0.86,
+        1.0
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 2,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_BlackLeather": {
+      "color": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "roughness": 0.34,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "base_texture": "T_UpBath_Leather_BaseColor.png",
+      "roughness_texture": "T_UpBath_Leather_Roughness.png",
+      "normal_texture": "T_UpBath_Leather_Normal.png",
+      "normal_strength": 0.28,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_LeatherSeam": {
+      "color": [
+        0.012,
+        0.014,
+        0.015
+      ],
+      "roughness": 0.5,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_BrushedSilver": {
+      "color": [
+        0.55,
+        0.58,
+        0.59
+      ],
+      "roughness": 0.24,
+      "metallic": 0.92,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_CupholderIvory": {
+      "color": [
+        0.81,
+        0.81,
+        0.78
+      ],
+      "roughness": 0.24,
+      "metallic": 0.14,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_BlackRubber": {
+      "color": [
+        0.011,
+        0.013,
+        0.014
+      ],
+      "roughness": 0.73,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_VacuumPurple": {
+      "color": [
+        0.13,
+        0.035,
+        0.22
+      ],
+      "roughness": 0.34,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_DustCanister": {
+      "color": [
+        0.19,
+        0.2,
+        0.19
+      ],
+      "roughness": 0.29,
+      "metallic": 0.22,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_VacuumDust": {
+      "color": [
+        0.26,
+        0.24,
+        0.2
+      ],
+      "roughness": 0.83,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_VacuumReleaseRed": {
+      "color": [
+        0.33,
+        0.02,
+        0.012
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": false
+    },
+    "M_UpBath_FishPoster": {
+      "color": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "roughness": 0.75,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "base_texture": "T_UpBath_FishPoster.png",
+      "masked": true,
+      "mask_texture": "T_UpBath_FishPoster.png",
+      "mask_channel": "A",
+      "clip": 0.4,
+      "two_sided": true,
+      "water": false
+    },
+    "M_UpBath_GrimyConcrete": {
+      "color": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "base_texture": "T_UpBath_Floor_BaseColor.png",
+      "roughness_texture": "T_UpBath_Floor_Roughness.png",
+      "normal_texture": "T_UpBath_Floor_Normal.png",
+      "normal_strength": 0.22,
+      "two_sided": false,
+      "water": false
+    },
+    "UpBath_ShallowWater": {
+      "color": [
+        0.07,
+        0.065,
+        0.047
+      ],
+      "roughness": 0.08,
+      "metallic": 0,
+      "uv_scale": 1,
+      "emission": 0,
+      "two_sided": false,
+      "water": true
+    }
+  },
+  "textures": [
+    "T_Bath_CreamSpeckle_BaseColor.png",
+    "T_Bath_BrownPaint_BaseColor.png",
+    "T_Bath_OrangeCurtain_BaseColor.png",
+    "T_Bath_TexturedGlass_BaseColor.png",
+    "T_Bath_WornOak_BaseColor.png",
+    "T_UpBath_Leather_BaseColor.png",
+    "T_UpBath_Leather_Roughness.png",
+    "T_UpBath_Leather_Normal.png",
+    "T_UpBath_FishPoster.png",
+    "T_UpBath_Floor_BaseColor.png",
+    "T_UpBath_Floor_Roughness.png",
+    "T_UpBath_Floor_Normal.png"
+  ],
+  "flip_green_textures": [
+    "T_UpBath_Leather_Normal.png",
+    "T_UpBath_Floor_Normal.png"
+  ],
+  "meshes": [
+    {
+      "name": "SM_Upper_p0_m2_UpBathCleared",
+      "file": "SM_Upper_p0_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Upper_m1_m2_UpBathCleared",
+      "file": "SM_Upper_m1_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Upper_p0_m2_UpBathCleared",
+      "file": "COL_Upper_p0_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Upper_m1_m2_UpBathCleared",
+      "file": "COL_Upper_m1_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SMF_Upper_p0_m2_UpBathCleared",
+      "file": "SMF_Upper_p0_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SMF_Upper_m1_m2_UpBathCleared",
+      "file": "SMF_Upper_m1_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COLF_Upper_p0_m2_UpBathCleared",
+      "file": "COLF_Upper_p0_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COLF_Upper_m1_m2_UpBathCleared",
+      "file": "COLF_Upper_m1_m2_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SMF_Upper_p0_m1_UpBathCleared",
+      "file": "SMF_Upper_p0_m1_UpBathCleared.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_WallLining",
+      "file": "SM_UpBath_WallLining.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_HallChanges",
+      "file": "SM_UpBath_HallChanges.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_GrimyFloor",
+      "file": "SM_UpBath_GrimyFloor.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_Ceiling",
+      "file": "SM_UpBath_Ceiling.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_UpBath_Shell",
+      "file": "COL_UpBath_Shell.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_Bath_VanityTriple",
+      "file": "SM_Bath_VanityTriple.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_VanityClutter",
+      "file": "SM_Bath_VanityClutter.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_MirrorLightRail",
+      "file": "SM_Bath_MirrorLightRail.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_WallDispenser",
+      "file": "SM_Bath_WallDispenser.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_Toilet",
+      "file": "SM_Bath_Toilet.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_ToiletStall",
+      "file": "SM_Bath_ToiletStall.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_UrinalBag",
+      "file": "SM_Bath_UrinalBag.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_ShowerFrame",
+      "file": "SM_Bath_ShowerFrame.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_ShowerCurtainClosed",
+      "file": "SM_Bath_ShowerCurtainClosed.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_ShowerCurtainGathered",
+      "file": "SM_Bath_ShowerCurtainGathered.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_ShowerShelf",
+      "file": "SM_Bath_ShowerShelf.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_LaundryPile",
+      "file": "SM_Bath_LaundryPile.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_UtilityShelf",
+      "file": "SM_Bath_UtilityShelf.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_TissueTable",
+      "file": "SM_Bath_TissueTable.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_FloorDrain",
+      "file": "SM_Bath_FloorDrain.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_Bath_FluorescentCeiling",
+      "file": "SM_Bath_FluorescentCeiling.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "COL_Bath_VanityTriple",
+      "file": "COL_Bath_VanityTriple.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Bath_ToiletStall",
+      "file": "COL_Bath_ToiletStall.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Bath_ShowerFrame",
+      "file": "COL_Bath_ShowerFrame.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Bath_UtilityShelf",
+      "file": "COL_Bath_UtilityShelf.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Bath_ShowerShelf",
+      "file": "COL_Bath_ShowerShelf.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Bath_Toilet",
+      "file": "COL_Bath_Toilet.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Bath_UrinalBag",
+      "file": "COL_Bath_UrinalBag.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "COL_Bath_TissueTable",
+      "file": "COL_Bath_TissueTable.fbx",
+      "hulls": 0,
+      "complex_collision": true
+    },
+    {
+      "name": "SM_UpBath_BlackRecliner",
+      "file": "SM_UpBath_BlackRecliner.fbx",
+      "hulls": 4,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_StickVacuumResting",
+      "file": "SM_UpBath_StickVacuumResting.fbx",
+      "hulls": 2,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_FishPoster",
+      "file": "SM_UpBath_FishPoster.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_MainPuddle",
+      "file": "SM_UpBath_MainPuddle.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    },
+    {
+      "name": "SM_UpBath_ShowerPuddle",
+      "file": "SM_UpBath_ShowerPuddle.fbx",
+      "hulls": 0,
+      "complex_collision": false
+    }
+  ],
+  "replacements": [
+    {
+      "actor": "SM_Upper_p0_m2_Solid",
+      "mesh": "SM_Upper_p0_m2_UpBathCleared",
+      "collision": false
+    },
+    {
+      "actor": "SM_Upper_m1_m2_Solid",
+      "mesh": "SM_Upper_m1_m2_UpBathCleared",
+      "collision": false
+    },
+    {
+      "actor": "COL_Upper_p0_m2_Solid",
+      "mesh": "COL_Upper_p0_m2_UpBathCleared",
+      "collision": true
+    },
+    {
+      "actor": "COL_Upper_m1_m2_Solid",
+      "mesh": "COL_Upper_m1_m2_UpBathCleared",
+      "collision": true
+    },
+    {
+      "actor": "SMF_Upper_p0_m2_Solid",
+      "mesh": "SMF_Upper_p0_m2_UpBathCleared",
+      "collision": false
+    },
+    {
+      "actor": "SMF_Upper_m1_m2_Solid",
+      "mesh": "SMF_Upper_m1_m2_UpBathCleared",
+      "collision": false
+    },
+    {
+      "actor": "COLF_Upper_p0_m2_Solid",
+      "mesh": "COLF_Upper_p0_m2_UpBathCleared",
+      "collision": true
+    },
+    {
+      "actor": "COLF_Upper_m1_m2_Solid",
+      "mesh": "COLF_Upper_m1_m2_UpBathCleared",
+      "collision": true
+    },
+    {
+      "actor": "SMF_Upper_p0_m1_Solid",
+      "mesh": "SMF_Upper_p0_m1_UpBathCleared",
+      "collision": false
+    }
+  ],
+  "actors": [
+    {
+      "mesh": "SM_UpBath_WallLining",
+      "label": "UpBath_SM_UpBath_WallLining",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_UpBath_HallChanges",
+      "label": "UpBath_SM_UpBath_HallChanges",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_UpBath_GrimyFloor",
+      "label": "UpBath_SM_UpBath_GrimyFloor",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_UpBath_Ceiling",
+      "label": "UpBath_SM_UpBath_Ceiling",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_UpBath_Shell",
+      "label": "UpBath_COL_UpBath_Shell",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_VanityTriple",
+      "label": "UpBath_SM_Bath_VanityTriple",
+      "location": [
+        -1468,
+        145,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_VanityClutter",
+      "label": "UpBath_SM_Bath_VanityClutter",
+      "location": [
+        -1468,
+        145,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_MirrorLightRail",
+      "label": "UpBath_SM_Bath_MirrorLightRail",
+      "location": [
+        -1468,
+        145,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_VanityTriple",
+      "label": "UpBath_COL_Bath_VanityTriple",
+      "location": [
+        -1468,
+        145,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_WallDispenser",
+      "label": "UpBath_Bath_black_dispenser_1",
+      "location": [
+        -1441,
+        -50,
+        405
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_WallDispenser",
+      "label": "UpBath_Bath_black_dispenser_2",
+      "location": [
+        -1441,
+        336,
+        405
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_ToiletStall",
+      "label": "UpBath_Bath_open_toilet_stall_1",
+      "location": [
+        -1908,
+        81,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_ToiletStall",
+      "label": "UpBath_Bath_stall_blocker_1",
+      "location": [
+        -1908,
+        81,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_Toilet",
+      "label": "UpBath_Bath_ceramic_toilet_1",
+      "location": [
+        -1955,
+        81,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_Toilet",
+      "label": "UpBath_Bath_toilet_blocker_1",
+      "location": [
+        -1955,
+        81,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_ToiletStall",
+      "label": "UpBath_Bath_open_toilet_stall_2",
+      "location": [
+        -1908,
+        181,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_ToiletStall",
+      "label": "UpBath_Bath_stall_blocker_2",
+      "location": [
+        -1908,
+        181,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_Toilet",
+      "label": "UpBath_Bath_ceramic_toilet_2",
+      "location": [
+        -1955,
+        181,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_Toilet",
+      "label": "UpBath_Bath_toilet_blocker_2",
+      "location": [
+        -1955,
+        181,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_ToiletStall",
+      "label": "UpBath_Bath_open_toilet_stall_3",
+      "location": [
+        -1908,
+        281,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_ToiletStall",
+      "label": "UpBath_Bath_stall_blocker_3",
+      "location": [
+        -1908,
+        281,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_Toilet",
+      "label": "UpBath_Bath_ceramic_toilet_3",
+      "location": [
+        -1955,
+        281,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_Toilet",
+      "label": "UpBath_Bath_toilet_blocker_3",
+      "location": [
+        -1955,
+        281,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_UrinalBag",
+      "label": "UpBath_SM_Bath_UrinalBag",
+      "location": [
+        -1990,
+        360,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_UrinalBag",
+      "label": "UpBath_COL_Bath_UrinalBag",
+      "location": [
+        -1990,
+        360,
+        305
+      ],
+      "yaw": -90,
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_ShowerFrame",
+      "label": "UpBath_Bath_orange_shower_frame_1",
+      "location": [
+        -1933,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_ShowerFrame",
+      "label": "UpBath_Bath_shower_blocker_1",
+      "location": [
+        -1933,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_ShowerCurtainClosed",
+      "label": "UpBath_Bath_orange_folded_curtain_1",
+      "location": [
+        -1933,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_ShowerFrame",
+      "label": "UpBath_Bath_orange_shower_frame_2",
+      "location": [
+        -1807,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_ShowerFrame",
+      "label": "UpBath_Bath_shower_blocker_2",
+      "location": [
+        -1807,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_ShowerCurtainGathered",
+      "label": "UpBath_Bath_orange_folded_curtain_2",
+      "location": [
+        -1807,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_ShowerFrame",
+      "label": "UpBath_Bath_orange_shower_frame_3",
+      "location": [
+        -1681,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_ShowerFrame",
+      "label": "UpBath_Bath_shower_blocker_3",
+      "location": [
+        -1681,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_ShowerCurtainClosed",
+      "label": "UpBath_Bath_orange_folded_curtain_3",
+      "location": [
+        -1681,
+        711,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1.28,
+        1.28,
+        0.93
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_ShowerShelf",
+      "label": "UpBath_SM_Bath_ShowerShelf",
+      "location": [
+        -1955,
+        565,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_ShowerShelf",
+      "label": "UpBath_COL_Bath_ShowerShelf",
+      "location": [
+        -1955,
+        565,
+        305
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_UtilityShelf",
+      "label": "UpBath_SM_Bath_UtilityShelf",
+      "location": [
+        -1595,
+        -407,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_UtilityShelf",
+      "label": "UpBath_COL_Bath_UtilityShelf",
+      "location": [
+        -1595,
+        -407,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_TissueTable",
+      "label": "UpBath_SM_Bath_TissueTable",
+      "location": [
+        -1610,
+        -280,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "COL_Bath_TissueTable",
+      "label": "UpBath_COL_Bath_TissueTable",
+      "location": [
+        -1610,
+        -280,
+        305
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "BlockAll",
+      "hidden": true
+    },
+    {
+      "mesh": "SM_Bath_LaundryPile",
+      "label": "UpBath_Bath_shower_clothes",
+      "location": [
+        -1665,
+        560,
+        305
+      ],
+      "yaw": 15,
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_LaundryPile",
+      "label": "UpBath_Bath_rack_floor_clothes",
+      "location": [
+        -1955,
+        530,
+        305
+      ],
+      "yaw": -40,
+      "scale": [
+        0.47,
+        0.47,
+        0.47
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_LaundryPile",
+      "label": "UpBath_Bath_urinal_floor_clothes",
+      "location": [
+        -1958,
+        360,
+        305
+      ],
+      "yaw": 120,
+      "scale": [
+        0.39,
+        0.39,
+        0.39
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_FloorDrain",
+      "label": "UpBath_Bath_steel_floor_drain_1",
+      "location": [
+        -1755,
+        245,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_FloorDrain",
+      "label": "UpBath_Bath_steel_floor_drain_2",
+      "location": [
+        -1783,
+        563,
+        305
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_FluorescentCeiling",
+      "label": "UpBath_Bath_white_fluorescent_fitting_1",
+      "location": [
+        -1790,
+        -295,
+        562.5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_FluorescentCeiling",
+      "label": "UpBath_Bath_white_fluorescent_fitting_2",
+      "location": [
+        -1720,
+        142,
+        562.5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_Bath_FluorescentCeiling",
+      "label": "UpBath_Bath_white_fluorescent_fitting_3",
+      "location": [
+        -1795,
+        550,
+        562.5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "hidden": false
+    },
+    {
+      "mesh": "SM_UpBath_BlackRecliner",
+      "label": "UpBath_SM_UpBath_BlackRecliner",
+      "location": [
+        -1920,
+        -92,
+        305
+      ],
+      "yaw": 90,
+      "collision": "BlockAll"
+    },
+    {
+      "mesh": "SM_UpBath_StickVacuumResting",
+      "label": "UpBath_SM_UpBath_StickVacuumResting",
+      "location": [
+        -1920,
+        -92,
+        305
+      ],
+      "yaw": 90,
+      "collision": "NoCollision"
+    },
+    {
+      "mesh": "SM_UpBath_FishPoster",
+      "label": "UpBath_SM_UpBath_FishPoster",
+      "location": [
+        -2041.4,
+        559.557,
+        445
+      ],
+      "yaw": 90,
+      "collision": "NoCollision"
+    },
+    {
+      "mesh": "SM_UpBath_MainPuddle",
+      "label": "UpBath_SM_UpBath_MainPuddle",
+      "location": [
+        -1682,
+        206,
+        305.3
+      ],
+      "yaw": -13,
+      "collision": "NoCollision"
+    },
+    {
+      "mesh": "SM_UpBath_ShowerPuddle",
+      "label": "UpBath_SM_UpBath_ShowerPuddle",
+      "location": [
+        -1785,
+        551,
+        305.3
+      ],
+      "yaw": 8,
+      "collision": "NoCollision"
+    }
+  ],
+  "lights": [
+    {
+      "location": [
+        -1775,
+        -330,
+        551
+      ],
+      "intensity": 1100,
+      "radius": 750,
+      "label": "UpBath_CeilingLight_1",
+      "color": [
+        0.91,
+        0.95,
+        1
+      ]
+    },
+    {
+      "location": [
+        -1720,
+        145,
+        551
+      ],
+      "intensity": 1100,
+      "radius": 750,
+      "label": "UpBath_CeilingLight_2",
+      "color": [
+        0.91,
+        0.95,
+        1
+      ]
+    },
+    {
+      "location": [
+        -1800,
+        625,
+        551
+      ],
+      "intensity": 1100,
+      "radius": 750,
+      "label": "UpBath_CeilingLight_3",
+      "color": [
+        0.91,
+        0.95,
+        1
+      ]
+    },
+    {
+      "label": "UpBath_VanityLight_1",
+      "location": [
+        -1447,
+        3.0,
+        516.2
+      ],
+      "intensity": 130,
+      "radius": 165,
+      "color": [
+        1,
+        0.9,
+        0.72
+      ]
+    },
+    {
+      "label": "UpBath_VanityLight_2",
+      "location": [
+        -1447,
+        113.0,
+        516.2
+      ],
+      "intensity": 130,
+      "radius": 165,
+      "color": [
+        1,
+        0.9,
+        0.72
+      ]
+    },
+    {
+      "label": "UpBath_VanityLight_3",
+      "location": [
+        -1447,
+        228.0,
+        516.2
+      ],
+      "intensity": 130,
+      "radius": 165,
+      "color": [
+        1,
+        0.9,
+        0.72
+      ]
+    },
+    {
+      "label": "UpBath_VanityLight_4",
+      "location": [
+        -1447,
+        285.0,
+        516.2
+      ],
+      "intensity": 130,
+      "radius": 165,
+      "color": [
+        1,
+        0.9,
+        0.72
+      ]
+    }
+  ],
+  "remove_actors": [
+    "OriginalDoor_Upper_p0_m2_Solid_01",
+    "OriginalDoor_Upper_p0_m2_Solid_02",
+    "S05_Furn_BlueBath_Ceiling_Practical"
+  ],
+  "remove_door_ids": [
+    "SM_OriginalLeaf_Upper_p0_m2_Solid_01",
+    "SM_OriginalLeaf_Upper_p0_m2_Solid_02"
+  ],
+  "door_updates": [
+    {
+      "actor": "OriginalDoor_Upper_m1_m2_Solid_02",
+      "id": "SM_OriginalLeaf_Upper_m1_m2_Solid_02",
+      "properties": {
+        "closed_yaw": 0,
+        "open_yaw": 90,
+        "doorway_center": [
+          -2026.3,
+          -417.65,
+          415
+        ]
+      }
+    }
+  ]
+}

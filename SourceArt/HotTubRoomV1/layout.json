@@ -1,0 +1,780 @@
+{
+  "coordinateSystem": "world Blender metres -> Unreal centimetres [100x,-100y,100z]",
+  "houseScaleAlreadyBaked": true,
+  "floorZ": 0.025,
+  "ceilingZ": 2.78,
+  "ceilingTopZ": 2.83,
+  "roomBoundsMetres": {
+    "min": [
+      -30.1,
+      -7.8,
+      0.025
+    ],
+    "max": [
+      -23.75,
+      3.3,
+      2.78
+    ]
+  },
+  "entry": {
+    "eastWallX": -23.76,
+    "gapY": [
+      -5.85,
+      -4.14
+    ],
+    "headerZ": 2.1
+  },
+  "hotTub": {
+    "centerMetres": [
+      -27.95,
+      -4.25
+    ],
+    "exteriorSizeMetres": [
+      3.8,
+      3.3
+    ],
+    "rimZ": 0.88,
+    "innerOpeningSizeMetres": [
+      2.95,
+      2.5
+    ],
+    "innerCornerRadiusMetres": 0.22,
+    "basinFloorZ": 0.245,
+    "waterZ": 0.73,
+    "waterUnrealCm": [
+      -2795,
+      425,
+      73
+    ],
+    "waterSizeCm": [
+      295,
+      250
+    ],
+    "waterCornerRadiusCm": 22,
+    "waterDepthCm": 48.5,
+    "steps": [
+      {
+        "center": [
+          -26.74,
+          -7.16
+        ],
+        "topZ": 0.18,
+        "width": 1.18,
+        "run": 0.36
+      },
+      {
+        "center": [
+          -26.74,
+          -6.8
+        ],
+        "topZ": 0.36,
+        "width": 1.18,
+        "run": 0.36
+      },
+      {
+        "center": [
+          -26.74,
+          -6.44
+        ],
+        "topZ": 0.54,
+        "width": 1.18,
+        "run": 0.36
+      },
+      {
+        "center": [
+          -26.74,
+          -6.08
+        ],
+        "topZ": 0.72,
+        "width": 1.18,
+        "run": 0.36
+      }
+    ],
+    "waterMeshExported": false
+  },
+  "walkways": {
+    "eastOfTubClearWidthMetres": 2.24,
+    "eastWalkwayX": [
+      -26.05,
+      -23.81
+    ],
+    "stepsLocated": "south-east corner, leaving east entry and long room axis clear"
+  },
+  "materials": {
+    "Spa_Travertine": {
+      "diffusePreviewRGB": [
+        0.699999988079071,
+        0.6399999856948853,
+        0.5199999809265137
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Grout": {
+      "diffusePreviewRGB": [
+        0.4000000059604645,
+        0.3700000047683716,
+        0.3199999928474426
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Walnut": {
+      "diffusePreviewRGB": [
+        0.17000000178813934,
+        0.07999999821186066,
+        0.03099999949336052
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Brass": {
+      "diffusePreviewRGB": [
+        0.550000011920929,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_CreamAcrylic": {
+      "diffusePreviewRGB": [
+        0.8399999737739563,
+        0.8299999833106995,
+        0.7300000190734863
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_DarkMetal": {
+      "diffusePreviewRGB": [
+        0.019999999552965164,
+        0.024000000208616257,
+        0.02199999988079071
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Linen": {
+      "diffusePreviewRGB": [
+        0.7699999809265137,
+        0.7200000286102295,
+        0.6100000143051147
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Sage": {
+      "diffusePreviewRGB": [
+        0.18000000715255737,
+        0.27000001072883606,
+        0.2199999988079071
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_GreenLeaf": {
+      "diffusePreviewRGB": [
+        0.054999999701976776,
+        0.17000000178813934,
+        0.0689999982714653
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": true
+    },
+    "Spa_TerraCotta": {
+      "diffusePreviewRGB": [
+        0.25999999046325684,
+        0.14000000059604645,
+        0.09000000357627869
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Glass": {
+      "diffusePreviewRGB": [
+        0.6000000238418579,
+        0.7599999904632568,
+        0.7400000095367432
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Art": {
+      "diffusePreviewRGB": [
+        0.5199999809265137,
+        0.4699999988079071,
+        0.3400000035762787
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_LampGlow": {
+      "diffusePreviewRGB": [
+        1.0,
+        0.7200000286102295,
+        0.4000000059604645
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_Citrus": {
+      "diffusePreviewRGB": [
+        0.7400000095367432,
+        0.38999998569488525,
+        0.03500000014901161
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    },
+    "Spa_TowelStripe": {
+      "diffusePreviewRGB": [
+        0.20999999344348907,
+        0.2800000011920929,
+        0.23999999463558197
+      ],
+      "uvUnits": "metres planar projection",
+      "requiresTwoSided": false
+    }
+  },
+  "nativeLightAnchors": [
+    {
+      "name": "West warm spa sconce",
+      "type": "Point",
+      "blenderMetres": [
+        -29.8,
+        -6.38,
+        1.8
+      ],
+      "unrealCm": [
+        -2980,
+        638.0,
+        180
+      ],
+      "colorRGB": [
+        1,
+        0.77,
+        0.48
+      ],
+      "intensityLumens": 260,
+      "attenuationMetres": 3.2
+    },
+    {
+      "name": "West warm spa sconce",
+      "type": "Point",
+      "blenderMetres": [
+        -29.8,
+        -3.3,
+        1.8
+      ],
+      "unrealCm": [
+        -2980,
+        330.0,
+        180
+      ],
+      "colorRGB": [
+        1,
+        0.77,
+        0.48
+      ],
+      "intensityLumens": 260,
+      "attenuationMetres": 3.2
+    },
+    {
+      "name": "West warm spa sconce",
+      "type": "Point",
+      "blenderMetres": [
+        -29.8,
+        0.68,
+        1.8
+      ],
+      "unrealCm": [
+        -2980,
+        -68.0,
+        180
+      ],
+      "colorRGB": [
+        1,
+        0.77,
+        0.48
+      ],
+      "intensityLumens": 260,
+      "attenuationMetres": 3.2
+    },
+    {
+      "name": "West warm spa sconce",
+      "type": "Point",
+      "blenderMetres": [
+        -29.8,
+        2.52,
+        1.8
+      ],
+      "unrealCm": [
+        -2980,
+        -252.0,
+        180
+      ],
+      "colorRGB": [
+        1,
+        0.77,
+        0.48
+      ],
+      "intensityLumens": 260,
+      "attenuationMetres": 3.2
+    },
+    {
+      "name": "Spa downlight",
+      "type": "Spot",
+      "blenderMetres": [
+        -28.25,
+        -6.85,
+        2.51
+      ],
+      "unrealCm": [
+        -2825.0,
+        685.0,
+        251
+      ],
+      "unrealRotation": [
+        -90,
+        0,
+        0
+      ],
+      "colorRGB": [
+        1,
+        0.84,
+        0.64
+      ],
+      "intensityLumens": 430,
+      "attenuationMetres": 4.0,
+      "outerConeDegrees": 70
+    },
+    {
+      "name": "Spa downlight",
+      "type": "Spot",
+      "blenderMetres": [
+        -25.18,
+        -6.85,
+        2.51
+      ],
+      "unrealCm": [
+        -2518.0,
+        685.0,
+        251
+      ],
+      "unrealRotation": [
+        -90,
+        0,
+        0
+      ],
+      "colorRGB": [
+        1,
+        0.84,
+        0.64
+      ],
+      "intensityLumens": 430,
+      "attenuationMetres": 4.0,
+      "outerConeDegrees": 70
+    },
+    {
+      "name": "Spa downlight",
+      "type": "Spot",
+      "blenderMetres": [
+        -28.5,
+        -0.25,
+        2.51
+      ],
+      "unrealCm": [
+        -2850.0,
+        25.0,
+        251
+      ],
+      "unrealRotation": [
+        -90,
+        0,
+        0
+      ],
+      "colorRGB": [
+        1,
+        0.84,
+        0.64
+      ],
+      "intensityLumens": 430,
+      "attenuationMetres": 4.0,
+      "outerConeDegrees": 70
+    },
+    {
+      "name": "Spa downlight",
+      "type": "Spot",
+      "blenderMetres": [
+        -25.6,
+        -0.25,
+        2.51
+      ],
+      "unrealCm": [
+        -2560.0,
+        25.0,
+        251
+      ],
+      "unrealRotation": [
+        -90,
+        0,
+        0
+      ],
+      "colorRGB": [
+        1,
+        0.84,
+        0.64
+      ],
+      "intensityLumens": 430,
+      "attenuationMetres": 4.0,
+      "outerConeDegrees": 70
+    },
+    {
+      "name": "Spa downlight",
+      "type": "Spot",
+      "blenderMetres": [
+        -28.4,
+        2.17,
+        2.51
+      ],
+      "unrealCm": [
+        -2840.0,
+        -217.0,
+        251
+      ],
+      "unrealRotation": [
+        -90,
+        0,
+        0
+      ],
+      "colorRGB": [
+        1,
+        0.84,
+        0.64
+      ],
+      "intensityLumens": 430,
+      "attenuationMetres": 4.0,
+      "outerConeDegrees": 70
+    },
+    {
+      "name": "Spa downlight",
+      "type": "Spot",
+      "blenderMetres": [
+        -25.6,
+        2.17,
+        2.51
+      ],
+      "unrealCm": [
+        -2560.0,
+        -217.0,
+        251
+      ],
+      "unrealRotation": [
+        -90,
+        0,
+        0
+      ],
+      "colorRGB": [
+        1,
+        0.84,
+        0.64
+      ],
+      "intensityLumens": 430,
+      "attenuationMetres": 4.0,
+      "outerConeDegrees": 70
+    }
+  ],
+  "pieces": [
+    {
+      "name": "Primary open hot tub",
+      "centerMetres": [
+        -27.95,
+        -4.25,
+        0.44
+      ],
+      "sizeMetres": [
+        3.8,
+        3.3,
+        0.88
+      ],
+      "notes": "Open annulus, native water added separately; east walkway clear"
+    },
+    {
+      "name": "West relaxation chaise",
+      "centerMetres": [
+        -28.61,
+        1.03,
+        0.54
+      ],
+      "sizeMetres": [
+        0.9,
+        2.0,
+        1.15
+      ],
+      "notes": "Walnut frame and upholstered curved chaise facing south"
+    },
+    {
+      "name": "East relaxation chaise",
+      "centerMetres": [
+        -26.97,
+        1.03,
+        0.54
+      ],
+      "sizeMetres": [
+        0.9,
+        2.0,
+        1.15
+      ],
+      "notes": "Walnut frame and upholstered curved chaise facing south"
+    },
+    {
+      "name": "Refreshment bar",
+      "centerMetres": [
+        -24.12,
+        1.04,
+        0.53
+      ],
+      "sizeMetres": [
+        0.76,
+        2.6,
+        1.07
+      ],
+      "notes": "Walnut reeds, stone counter, clear glassware, citrus and brass shelving"
+    }
+  ],
+  "exports": [
+    {
+      "name": "SM_SpaRoom_Shell",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_Shell.fbx",
+      "triangles": 23512,
+      "vertices": 12008,
+      "materialSlots": [
+        "Spa_Grout",
+        "Spa_Travertine",
+        "Spa_Brass",
+        "Spa_Walnut"
+      ],
+      "boundsMetres": [
+        [
+          -30.260000228881836,
+          -7.960000038146973,
+          -0.012500000186264515
+        ],
+        [
+          -23.669998168945312,
+          3.4600000381469727,
+          2.830000162124634
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "SM_SpaRoom_TubAcrylic",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_TubAcrylic.fbx",
+      "triangles": 3950,
+      "vertices": 2112,
+      "materialSlots": [
+        "Spa_CreamAcrylic",
+        "Spa_Brass",
+        "Spa_DarkMetal"
+      ],
+      "boundsMetres": [
+        [
+          -29.850000381469727,
+          -5.900000095367432,
+          0.24500000476837158
+        ],
+        [
+          -26.049999237060547,
+          -2.5999999046325684,
+          0.8799999952316284
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "SM_SpaRoom_TubWalnut",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_TubWalnut.fbx",
+      "triangles": 35152,
+      "vertices": 18048,
+      "materialSlots": [
+        "Spa_DarkMetal",
+        "Spa_Walnut",
+        "Spa_Sage",
+        "Spa_Brass",
+        "Spa_Travertine"
+      ],
+      "boundsMetres": [
+        [
+          -29.84000015258789,
+          -7.339999675750732,
+          0.0
+        ],
+        [
+          -25.96500015258789,
+          -2.609999895095825,
+          0.906000018119812
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "SM_SpaRoom_Lounge",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_Lounge.fbx",
+      "triangles": 16776,
+      "vertices": 8616,
+      "materialSlots": [
+        "Spa_DarkMetal",
+        "Spa_Walnut",
+        "Spa_Linen",
+        "Spa_Brass",
+        "Spa_TowelStripe",
+        "Spa_Travertine"
+      ],
+      "boundsMetres": [
+        [
+          -30.069499969482422,
+          -2.5399999618530273,
+          0.0
+        ],
+        [
+          -26.496000289916992,
+          2.9200000762939453,
+          2.674999952316284
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "SM_SpaRoom_TowelStorage",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_TowelStorage.fbx",
+      "triangles": 7388,
+      "vertices": 3784,
+      "materialSlots": [
+        "Spa_Walnut",
+        "Spa_DarkMetal",
+        "Spa_Brass",
+        "Spa_Linen",
+        "Spa_TowelStripe",
+        "Spa_Sage"
+      ],
+      "boundsMetres": [
+        [
+          -30.0364990234375,
+          -2.315000057220459,
+          0.030000030994415283
+        ],
+        [
+          -29.38450050354004,
+          2.865000009536743,
+          1.7482491731643677
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "SM_SpaRoom_RefreshmentBar",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_RefreshmentBar.fbx",
+      "triangles": 14716,
+      "vertices": 7494,
+      "materialSlots": [
+        "Spa_Walnut",
+        "Spa_Travertine",
+        "Spa_Brass",
+        "Spa_Linen",
+        "Spa_Glass",
+        "Spa_CreamAcrylic",
+        "Spa_Citrus"
+      ],
+      "boundsMetres": [
+        [
+          -25.33500099182129,
+          -0.2549999952316284,
+          0.025000005960464478
+        ],
+        [
+          -23.760000228881836,
+          2.3350000381469727,
+          1.9249999523162842
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "SM_SpaRoom_Plants",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_Plants.fbx",
+      "triangles": 2752,
+      "vertices": 1802,
+      "materialSlots": [
+        "Spa_TerraCotta",
+        "Spa_DarkMetal",
+        "Spa_Walnut",
+        "Spa_GreenLeaf"
+      ],
+      "boundsMetres": [
+        [
+          -30.01366424560547,
+          -0.6760964393615723,
+          0.02500000037252903
+        ],
+        [
+          -23.896751403808594,
+          3.128971815109253,
+          1.792842149734497
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "SM_SpaRoom_ArchitecturalDetails",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/SM_SpaRoom_ArchitecturalDetails.fbx",
+      "triangles": 12848,
+      "vertices": 7560,
+      "materialSlots": [
+        "Spa_Brass",
+        "Spa_LampGlow",
+        "Spa_Linen",
+        "Spa_Sage",
+        "Spa_Art",
+        "Spa_Walnut"
+      ],
+      "boundsMetres": [
+        [
+          -30.088998794555664,
+          -6.927999973297119,
+          1.493499994277954
+        ],
+        [
+          -25.102001190185547,
+          3.2809998989105225,
+          2.7780001163482666
+        ]
+      ],
+      "visualCollision": "NoCollision"
+    },
+    {
+      "name": "COL_SpaRoom",
+      "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/hot-tub-room-v1/source/models/COL_SpaRoom.fbx",
+      "triangles": 384,
+      "vertices": 256,
+      "materialSlots": [
+        "Spa_DarkMetal"
+      ],
+      "boundsMetres": [
+        [
+          -30.260000228881836,
+          -7.960000038146973,
+          -0.09000000357627869
+        ],
+        [
+          -23.669998168945312,
+          3.4600000381469727,
+          2.830000162124634
+        ]
+      ],
+      "visualCollision": "BlockAll complex-as-simple"
+    }
+  ],
+  "visualTriangleCount": 117094
+}

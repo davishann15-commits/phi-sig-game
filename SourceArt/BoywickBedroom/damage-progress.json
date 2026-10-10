@@ -1,0 +1,1868 @@
+{
+  "SM_BWR_LoftFrame": {
+    "sha256": "b100e9acad93565a8b8b0cf40e7c2f0387b723026ab19d3103c577058ea502b1",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LoftFrame_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_LoftFrame_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LoftFrame_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_LoftFrame_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LoftFrame_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_LoftFrame_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_LoftFrame",
+      "id": "LoftFrame",
+      "groups": 20,
+      "stages": {
+        "damaged": {
+          "vertices": 5206,
+          "faces": 4767,
+          "hulls": 10,
+          "bounds": [
+            [
+              -1.8594,
+              -1.2744,
+              0.0
+            ],
+            [
+              1.8594,
+              1.2744,
+              1.941
+            ]
+          ],
+          "fragments": 20
+        },
+        "heavily_damaged": {
+          "vertices": 5104,
+          "faces": 4685,
+          "hulls": 10,
+          "bounds": [
+            [
+              -1.8594,
+              -1.2744,
+              0.0
+            ],
+            [
+              1.8594,
+              1.2744,
+              1.941
+            ]
+          ],
+          "fragments": 20
+        },
+        "broken": {
+          "vertices": 5084,
+          "faces": 5060,
+          "hulls": 12,
+          "bounds": [
+            [
+              -3.096258,
+              -2.363621,
+              8.3e-05
+            ],
+            [
+              3.089343,
+              1.823615,
+              0.219056
+            ]
+          ],
+          "fragments": 25
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_QuiltedMattress": {
+    "sha256": "a0d3ca923d9a6cdff2e13a5a563c49ed63230b460324018836f345b595d40d4a",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_QuiltedMattress_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_QuiltedMattress_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CottonStitches.M_BWR_CottonStitches",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_QuiltedMattress_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_QuiltedMattress_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CottonStitches.M_BWR_CottonStitches",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_QuiltedMattress_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_QuiltedMattress_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteQuiltedCotton.M_BWR_WhiteQuiltedCotton",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CottonStitches.M_BWR_CottonStitches",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_QuiltedMattress",
+      "id": "QuiltedMattress",
+      "groups": 1,
+      "stages": {
+        "damaged": {
+          "vertices": 6092,
+          "faces": 6089,
+          "hulls": 1,
+          "bounds": [
+            [
+              -1.7685,
+              -1.179,
+              0.0
+            ],
+            [
+              1.7685,
+              1.179,
+              0.273331
+            ]
+          ],
+          "fragments": 1
+        },
+        "heavily_damaged": {
+          "vertices": 5723,
+          "faces": 5718,
+          "hulls": 1,
+          "bounds": [
+            [
+              -1.7685,
+              -1.179,
+              0.0
+            ],
+            [
+              1.7685,
+              1.179,
+              0.273331
+            ]
+          ],
+          "fragments": 1
+        },
+        "broken": {
+          "vertices": 408,
+          "faces": 440,
+          "hulls": 3,
+          "bounds": [
+            [
+              -1.440907,
+              -1.347183,
+              0.001065
+            ],
+            [
+              1.448985,
+              1.400116,
+              0.296488
+            ]
+          ],
+          "fragments": 3
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_LowDaybed": {
+    "sha256": "80d5bb2b00ab8f7089dcec48a9c5570e58317888fb31d8b66517b06ac503aef7",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LowDaybed_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_LowDaybed_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LowDaybed_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_LowDaybed_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LowDaybed_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_LowDaybed_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_LowDaybed",
+      "id": "LowDaybed",
+      "groups": 2,
+      "stages": {
+        "damaged": {
+          "vertices": 1009,
+          "faces": 963,
+          "hulls": 2,
+          "bounds": [
+            [
+              -1.782,
+              -1.197,
+              0.0
+            ],
+            [
+              1.782,
+              1.197,
+              0.237158
+            ]
+          ],
+          "fragments": 2
+        },
+        "heavily_damaged": {
+          "vertices": 1000,
+          "faces": 954,
+          "hulls": 2,
+          "bounds": [
+            [
+              -1.782,
+              -1.187172,
+              0.0
+            ],
+            [
+              1.782,
+              1.193176,
+              0.374624
+            ]
+          ],
+          "fragments": 2
+        },
+        "broken": {
+          "vertices": 1191,
+          "faces": 1137,
+          "hulls": 6,
+          "bounds": [
+            [
+              -2.025401,
+              -1.768258,
+              0.000175
+            ],
+            [
+              1.850707,
+              1.504995,
+              0.219467
+            ]
+          ],
+          "fragments": 6
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_GreyFuton": {
+    "sha256": "5b0f150d52b917541e4fc4d301fbe1f85aca87d4bce8a3b694d5c2b716ec01d7",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GreyFuton_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_GreyFuton_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GreyFuton_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_GreyFuton_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GreyFuton_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_GreyFuton_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_GreyFuton",
+      "id": "GreyFuton",
+      "groups": 5,
+      "stages": {
+        "damaged": {
+          "vertices": 4285,
+          "faces": 4443,
+          "hulls": 3,
+          "bounds": [
+            [
+              -1.8,
+              -0.796313,
+              0.0
+            ],
+            [
+              1.8,
+              0.702,
+              0.97955
+            ]
+          ],
+          "fragments": 5
+        },
+        "heavily_damaged": {
+          "vertices": 4194,
+          "faces": 4352,
+          "hulls": 3,
+          "bounds": [
+            [
+              -1.8,
+              -0.796313,
+              0.0
+            ],
+            [
+              1.8,
+              0.702,
+              0.97955
+            ]
+          ],
+          "fragments": 5
+        },
+        "broken": {
+          "vertices": 4338,
+          "faces": 4583,
+          "hulls": 8,
+          "bounds": [
+            [
+              -1.939816,
+              -1.084015,
+              0.000841
+            ],
+            [
+              2.003298,
+              0.899138,
+              0.934866
+            ]
+          ],
+          "fragments": 8
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_CoffeeTable": {
+    "sha256": "9c7574648f5394d76b7d3037c0773ddc48bfb598abfa1b3e5b888cbde25d4c14",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_CoffeeTable_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_CoffeeTable_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_CoffeeTable_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_CoffeeTable_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_CoffeeTable_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_CoffeeTable_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_CoffeeTable",
+      "id": "CoffeeTable",
+      "groups": 13,
+      "stages": {
+        "damaged": {
+          "vertices": 1504,
+          "faces": 1511,
+          "hulls": 12,
+          "bounds": [
+            [
+              -1.188,
+              -0.5634,
+              0.0
+            ],
+            [
+              1.188,
+              0.5634,
+              0.486
+            ]
+          ],
+          "fragments": 13
+        },
+        "heavily_damaged": {
+          "vertices": 1552,
+          "faces": 1583,
+          "hulls": 12,
+          "bounds": [
+            [
+              -1.188,
+              -0.5634,
+              0.0
+            ],
+            [
+              1.188,
+              0.5634,
+              0.486
+            ]
+          ],
+          "fragments": 15
+        },
+        "broken": {
+          "vertices": 1631,
+          "faces": 1756,
+          "hulls": 12,
+          "bounds": [
+            [
+              -1.321051,
+              -0.796307,
+              0.000228
+            ],
+            [
+              1.378625,
+              0.672782,
+              0.198559
+            ]
+          ],
+          "fragments": 18
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_Dresser": {
+    "sha256": "8da1475762a73d8f1808fecd3a91a8afb491f024650e9efc97bd46657c36f375",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Dresser_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_Dresser_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Dresser_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_Dresser_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Dresser_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_Dresser_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_CharcoalFabric.M_BWR_CharcoalFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_Dresser",
+      "id": "Dresser",
+      "groups": 2,
+      "stages": {
+        "damaged": {
+          "vertices": 1310,
+          "faces": 1295,
+          "hulls": 2,
+          "bounds": [
+            [
+              -0.99,
+              -0.333,
+              0.0
+            ],
+            [
+              0.99,
+              0.395829,
+              0.723
+            ]
+          ],
+          "fragments": 2
+        },
+        "heavily_damaged": {
+          "vertices": 1306,
+          "faces": 1292,
+          "hulls": 2,
+          "bounds": [
+            [
+              -0.99,
+              -0.333,
+              0.0
+            ],
+            [
+              0.99,
+              0.395829,
+              0.723
+            ]
+          ],
+          "fragments": 2
+        },
+        "broken": {
+          "vertices": 1626,
+          "faces": 1732,
+          "hulls": 6,
+          "bounds": [
+            [
+              -1.17272,
+              -0.831806,
+              0.000237
+            ],
+            [
+              1.016473,
+              0.626303,
+              0.797273
+            ]
+          ],
+          "fragments": 6
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_SmallTelevision": {
+    "sha256": "f60c37961c0a8687cda13dac339494c1b298c6f7be78488738d773b00ee3f4bd",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_SmallTelevision_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_SmallTelevision_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_SmallTelevision_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_SmallTelevision_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_SmallTelevision_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_SmallTelevision_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BluePlastic.M_BWR_BluePlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_OrangeTowelFabric.M_BWR_OrangeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_RedPrint.M_BWR_RedPrint",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_SmallTelevision",
+      "id": "SmallTelevision",
+      "groups": 14,
+      "stages": {
+        "damaged": {
+          "vertices": 322,
+          "faces": 302,
+          "hulls": 4,
+          "bounds": [
+            [
+              -0.63,
+              -0.10887,
+              0.002762
+            ],
+            [
+              0.63,
+              0.144269,
+              0.4825
+            ]
+          ],
+          "fragments": 14
+        },
+        "heavily_damaged": {
+          "vertices": 320,
+          "faces": 303,
+          "hulls": 4,
+          "bounds": [
+            [
+              -0.63,
+              -0.10887,
+              0.002762
+            ],
+            [
+              0.63,
+              0.144269,
+              0.4825
+            ]
+          ],
+          "fragments": 14
+        },
+        "broken": {
+          "vertices": 437,
+          "faces": 459,
+          "hulls": 8,
+          "bounds": [
+            [
+              -0.599781,
+              -0.293866,
+              0.002809
+            ],
+            [
+              0.606652,
+              0.322756,
+              0.152512
+            ]
+          ],
+          "fragments": 19
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_GameConsole": {
+    "sha256": "eeeac3f2a8b240eafbd1b03b7b5eaa69e630ab6858b1954784fbecc5242b5fe4",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GameConsole_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_GameConsole_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GameConsole_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_GameConsole_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_GameConsole_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_GameConsole_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_GameConsole",
+      "id": "GameConsole",
+      "groups": 3,
+      "stages": {
+        "damaged": {
+          "vertices": 280,
+          "faces": 294,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.072,
+              -0.171,
+              -0.002
+            ],
+            [
+              0.072,
+              0.171,
+              0.358
+            ]
+          ],
+          "fragments": 3
+        },
+        "heavily_damaged": {
+          "vertices": 279,
+          "faces": 294,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.072,
+              -0.171,
+              -0.002
+            ],
+            [
+              0.072,
+              0.171,
+              0.358
+            ]
+          ],
+          "fragments": 3
+        },
+        "broken": {
+          "vertices": 331,
+          "faces": 376,
+          "hulls": 5,
+          "bounds": [
+            [
+              -0.195491,
+              -0.2472,
+              -0.001027
+            ],
+            [
+              0.270675,
+              0.190769,
+              0.153445
+            ]
+          ],
+          "fragments": 5
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_WritingDesk": {
+    "sha256": "e4c9cc9d2ab37aed2048c83fbd25fe45b27676eba5f554171947c7b8bf0f539b",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WritingDesk_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_WritingDesk_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WritingDesk_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_WritingDesk_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WritingDesk_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_WritingDesk_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_WritingDesk",
+      "id": "WritingDesk",
+      "groups": 8,
+      "stages": {
+        "damaged": {
+          "vertices": 817,
+          "faces": 844,
+          "hulls": 8,
+          "bounds": [
+            [
+              -0.909,
+              -0.477,
+              0.0
+            ],
+            [
+              0.909,
+              0.495,
+              0.76
+            ]
+          ],
+          "fragments": 8
+        },
+        "heavily_damaged": {
+          "vertices": 820,
+          "faces": 869,
+          "hulls": 10,
+          "bounds": [
+            [
+              -0.909,
+              -0.477,
+              0.0
+            ],
+            [
+              0.909,
+              0.495,
+              0.76
+            ]
+          ],
+          "fragments": 10
+        },
+        "broken": {
+          "vertices": 891,
+          "faces": 1006,
+          "hulls": 12,
+          "bounds": [
+            [
+              -1.036897,
+              -0.727652,
+              3.2e-05
+            ],
+            [
+              1.058102,
+              0.80097,
+              0.111985
+            ]
+          ],
+          "fragments": 13
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_WireRack": {
+    "sha256": "2c0f49d6a7a19758840d397ff654e815a548b1db14798608ffc082ebc4babb5b",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WireRack_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_WireRack_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WireRack_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_WireRack_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_WireRack_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_WireRack_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_WireRack",
+      "id": "WireRack",
+      "groups": 20,
+      "stages": {
+        "damaged": {
+          "vertices": 1776,
+          "faces": 1167,
+          "hulls": 8,
+          "bounds": [
+            [
+              -0.6876,
+              -0.4626,
+              0.0
+            ],
+            [
+              0.6876,
+              0.4626,
+              1.84
+            ]
+          ],
+          "fragments": 20
+        },
+        "heavily_damaged": {
+          "vertices": 1840,
+          "faces": 1261,
+          "hulls": 8,
+          "bounds": [
+            [
+              -0.6876,
+              -0.4626,
+              0.0
+            ],
+            [
+              0.6876,
+              0.775308,
+              1.84
+            ]
+          ],
+          "fragments": 22
+        },
+        "broken": {
+          "vertices": 1962,
+          "faces": 1522,
+          "hulls": 12,
+          "bounds": [
+            [
+              -1.474925,
+              -0.837528,
+              0.000118
+            ],
+            [
+              1.522833,
+              0.77555,
+              0.047373
+            ]
+          ],
+          "fragments": 25
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_MiniFridge": {
+    "sha256": "30cf7c2423c4b9d50d55a2f79b39aac08e05e5ba8fa750b190d630cee98f7842",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_MiniFridge_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_MiniFridge_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_MiniFridge_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_MiniFridge_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_MiniFridge_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_MiniFridge_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Rubber.M_BWR_Rubber",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_MiniFridge",
+      "id": "MiniFridge",
+      "groups": 4,
+      "stages": {
+        "damaged": {
+          "vertices": 1203,
+          "faces": 1057,
+          "hulls": 4,
+          "bounds": [
+            [
+              -0.414,
+              -0.4095,
+              0.0
+            ],
+            [
+              0.414,
+              0.5013,
+              0.826
+            ]
+          ],
+          "fragments": 4
+        },
+        "heavily_damaged": {
+          "vertices": 1203,
+          "faces": 1057,
+          "hulls": 4,
+          "bounds": [
+            [
+              -0.414,
+              -0.4095,
+              0.0
+            ],
+            [
+              0.414,
+              0.5013,
+              0.826
+            ]
+          ],
+          "fragments": 4
+        },
+        "broken": {
+          "vertices": 1343,
+          "faces": 1241,
+          "hulls": 7,
+          "bounds": [
+            [
+              -0.543334,
+              -0.533681,
+              0.000243
+            ],
+            [
+              0.667554,
+              0.841287,
+              0.575057
+            ]
+          ],
+          "fragments": 7
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_Laptop": {
+    "sha256": "74492c494883548d05e27a46e2f50554669e06c0cc10c5a3e50aad4a1328bec9",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Laptop_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_Laptop_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Laptop_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_Laptop_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_Laptop_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_Laptop_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BrushedSteel.M_BWR_BrushedSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_ScreenGlass.M_BWR_ScreenGlass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_Laptop",
+      "id": "Laptop",
+      "groups": 3,
+      "stages": {
+        "damaged": {
+          "vertices": 6232,
+          "faces": 6367,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.208,
+              -0.164682,
+              0.0
+            ],
+            [
+              0.208,
+              0.143,
+              0.211995
+            ]
+          ],
+          "fragments": 3
+        },
+        "heavily_damaged": {
+          "vertices": 6232,
+          "faces": 6367,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.208,
+              -0.164682,
+              0.0
+            ],
+            [
+              0.208,
+              0.143,
+              0.211995
+            ]
+          ],
+          "fragments": 3
+        },
+        "broken": {
+          "vertices": 6312,
+          "faces": 6493,
+          "hulls": 5,
+          "bounds": [
+            [
+              -0.263952,
+              -0.358781,
+              0.001198
+            ],
+            [
+              0.235172,
+              0.261845,
+              0.049797
+            ]
+          ],
+          "fragments": 5
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_LaundryBasket": {
+    "sha256": "64e250d68331019cc6374cbe43e793a4c28db13459a94d3a388ef9adaead48a9",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LaundryBasket_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_LaundryBasket_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LaundryBasket_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_LaundryBasket_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_LaundryBasket_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_LaundryBasket_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_GreyFabric.M_BWR_GreyFabric",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_LaundryBasket",
+      "id": "LaundryBasket",
+      "groups": 2,
+      "stages": {
+        "damaged": {
+          "vertices": 21892,
+          "faces": 23642,
+          "hulls": 2,
+          "bounds": [
+            [
+              -0.3075,
+              -0.225,
+              0.0
+            ],
+            [
+              0.3075,
+              0.225,
+              0.516
+            ]
+          ],
+          "fragments": 2
+        },
+        "heavily_damaged": {
+          "vertices": 21652,
+          "faces": 23381,
+          "hulls": 2,
+          "bounds": [
+            [
+              -0.3075,
+              -0.225,
+              0.0
+            ],
+            [
+              0.3075,
+              0.225,
+              0.516
+            ]
+          ],
+          "fragments": 2
+        },
+        "broken": {
+          "vertices": 21986,
+          "faces": 23885,
+          "hulls": 6,
+          "bounds": [
+            [
+              -0.352488,
+              -0.289485,
+              0.000864
+            ],
+            [
+              0.374797,
+              0.258623,
+              0.357069
+            ]
+          ],
+          "fragments": 6
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_TrashBin": {
+    "sha256": "43f46b34f679ef931b25bac61c04ce66941df342daed2bc7f34825f9a15e4628",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_TrashBin_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_TrashBin_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_TrashBin_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_TrashBin_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_TrashBin_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_TrashBin_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WhiteEnamel.M_BWR_WhiteEnamel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_TrashBin",
+      "id": "TrashBin",
+      "groups": 1,
+      "stages": {
+        "damaged": {
+          "vertices": 4859,
+          "faces": 4542,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.24,
+              -0.225,
+              0.0
+            ],
+            [
+              0.24,
+              0.225,
+              0.558355
+            ]
+          ],
+          "fragments": 1
+        },
+        "heavily_damaged": {
+          "vertices": 4658,
+          "faces": 4337,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.24,
+              -0.225,
+              0.0
+            ],
+            [
+              0.24,
+              0.225,
+              0.558355
+            ]
+          ],
+          "fragments": 1
+        },
+        "broken": {
+          "vertices": 4596,
+          "faces": 4307,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.291584,
+              -0.277032,
+              0.000178
+            ],
+            [
+              0.245631,
+              0.316189,
+              0.371469
+            ]
+          ],
+          "fragments": 3
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_StorageBox": {
+    "sha256": "99f1f154fd9c0ea89cd3e5a18aa4a7082213cad25b3e530ec6c9e25de17f963d",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_StorageBox_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_StorageBox_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_StorageBox_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_StorageBox_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_StorageBox_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_StorageBox_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Cardboard.M_BWR_Cardboard",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_TaupeTowelFabric.M_BWR_TaupeTowelFabric",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_StorageBox",
+      "id": "StorageBox",
+      "groups": 1,
+      "stages": {
+        "damaged": {
+          "vertices": 568,
+          "faces": 437,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.24,
+              -0.256,
+              0.0
+            ],
+            [
+              0.24,
+              0.26288,
+              0.48
+            ]
+          ],
+          "fragments": 1
+        },
+        "heavily_damaged": {
+          "vertices": 568,
+          "faces": 437,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.24,
+              -0.256,
+              0.0
+            ],
+            [
+              0.24,
+              0.26288,
+              0.48
+            ]
+          ],
+          "fragments": 1
+        },
+        "broken": {
+          "vertices": 634,
+          "faces": 528,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.346872,
+              -0.355528,
+              0.0002
+            ],
+            [
+              0.340706,
+              0.425754,
+              0.379908
+            ]
+          ],
+          "fragments": 3
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_ClosetDrawerUnit": {
+    "sha256": "a1167e0bb18abdbd06d2b06498e426f03351b4b17b6c264c4a6e72d6e70b1fc9",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_ClosetDrawerUnit_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_ClosetDrawerUnit_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_ClosetDrawerUnit_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_ClosetDrawerUnit_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_ClosetDrawerUnit_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_ClosetDrawerUnit_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackSteel.M_BWR_BlackSteel",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_ClosetDrawerUnit",
+      "id": "ClosetDrawerUnit",
+      "groups": 1,
+      "stages": {
+        "damaged": {
+          "vertices": 1088,
+          "faces": 1069,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.747,
+              -0.36,
+              0.0
+            ],
+            [
+              0.747,
+              0.43907,
+              0.92
+            ]
+          ],
+          "fragments": 1
+        },
+        "heavily_damaged": {
+          "vertices": 1088,
+          "faces": 1069,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.747,
+              -0.36,
+              0.0
+            ],
+            [
+              0.747,
+              0.43907,
+              0.92
+            ]
+          ],
+          "fragments": 1
+        },
+        "broken": {
+          "vertices": 1336,
+          "faces": 1409,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.95889,
+              -0.820712,
+              0.001437
+            ],
+            [
+              0.936083,
+              0.579782,
+              0.849822
+            ]
+          ],
+          "fragments": 3
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_FramedPrint": {
+    "sha256": "2cd3fb27f8112d77bb21ee2df24ca62fcec0e07dab95d5b0b9243e8dd97f175d",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_FramedPrint_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_FramedPrint_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_FramedPrint_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_FramedPrint_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_FramedPrint_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_FramedPrint_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Photo2327.M_BWR_Photo2327",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_Paper.M_BWR_Paper",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_FramedPrint",
+      "id": "FramedPrint",
+      "groups": 1,
+      "stages": {
+        "damaged": {
+          "vertices": 605,
+          "faces": 601,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.51225,
+              -0.018,
+              -0.23
+            ],
+            [
+              0.51225,
+              0.02025,
+              0.23
+            ]
+          ],
+          "fragments": 1
+        },
+        "heavily_damaged": {
+          "vertices": 578,
+          "faces": 577,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.51225,
+              -0.018,
+              -0.23
+            ],
+            [
+              0.51225,
+              0.02025,
+              0.23
+            ]
+          ],
+          "fragments": 1
+        },
+        "broken": {
+          "vertices": 824,
+          "faces": 866,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.585975,
+              -0.415672,
+              -0.229812
+            ],
+            [
+              0.444454,
+              0.297636,
+              -0.183858
+            ]
+          ],
+          "fragments": 3
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  },
+  "SM_BWR_RopeShelf": {
+    "sha256": "aa21a502d3b03313d7e593d022a5c2073bdd95102401b678f256d22bdaf2f4d4",
+    "changes": {
+      "damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_RopeShelf_DamageV2.fbx",
+      "damaged_asset_name": "SM_BWR_RopeShelf_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_RopeShelf_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "SM_BWR_RopeShelf_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/BoywickBedroom/models/damage/SM_BWR_RopeShelf_BrokenV2.fbx",
+      "broken_asset_name": "SM_BWR_RopeShelf_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_WalnutWood.M_BWR_WalnutWood",
+        "/Game/SeniorSendOff/House/BoywickBedroom/M_BWR_BlackPlastic.M_BWR_BlackPlastic",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "audit": {
+      "asset_name": "SM_BWR_RopeShelf",
+      "id": "RopeShelf",
+      "groups": 3,
+      "stages": {
+        "damaged": {
+          "vertices": 130,
+          "faces": 131,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.345,
+              -0.002598,
+              -0.009
+            ],
+            [
+              0.345,
+              0.227114,
+              0.211732
+            ]
+          ],
+          "fragments": 3
+        },
+        "heavily_damaged": {
+          "vertices": 130,
+          "faces": 131,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.345,
+              -0.002598,
+              -0.009
+            ],
+            [
+              0.345,
+              0.227114,
+              0.211732
+            ]
+          ],
+          "fragments": 3
+        },
+        "broken": {
+          "vertices": 180,
+          "faces": 197,
+          "hulls": 5,
+          "bounds": [
+            [
+              -0.379631,
+              -0.056258,
+              -0.007497
+            ],
+            [
+              0.462122,
+              0.337834,
+              0.010765
+            ]
+          ],
+          "fragments": 5
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  }
+}

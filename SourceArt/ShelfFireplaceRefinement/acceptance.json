@@ -1,0 +1,79 @@
+{
+  "saved_map": "/Game/Story/Maps/Chapter01_House",
+  "native": {
+    "allPropsParkedWithDamageAndCollision": true,
+    "independentSmallItems": 517,
+    "fireplacePlayerCapsuleSweepsBlocked": 6,
+    "closedDoorBlocksAndOpenDoorClearsFullPlayer": true,
+    "rollingChairWidthCm": 71.68206024169922,
+    "rollingChairDepthCm": 70.70748138427734,
+    "actualChairPickupAndTwoHandContacts": true,
+    "allThreeTableDamageStagesAndSettling": true,
+    "settledBrokenSpeed": 0,
+    "singleBookPickupIndependentOfNeighbour": true,
+    "singlePaperPickupWithHandContact": true,
+    "individualBookAndPaperThrownAndSettled": true,
+    "shelfBooksWokenTogether": 32,
+    "shelfBooksFellToFloor": 28,
+    "damagedShelfContentsWoken": 68,
+    "shelfWreckCollisionBottomCm": -327.40167236328125,
+    "damagedShelfContentsFell": 68,
+    "shelfWreckVisibleHeightCm": 75.55662534246147,
+    "shelfWreckBottomCm": -327.4468776957374,
+    "shelfWreckSpeed": 0.09745555434567006,
+    "passed": true,
+    "detail": "Three shelf damage stages leave visible floor wreckage and release all books; both great room fireplaces block player capsules above the stepable hearth; loose item and chair interactions still pass",
+    "furnitureCount": 585,
+    "ceilingPanels": 3,
+    "elapsedSeconds": 45.44121379032731
+  },
+  "visual": {
+    "status": "PASS",
+    "detail": "Registered campaign camera sweep complete",
+    "scope": "Assisted registered-camera sweep in the actual campaign house; not player traversal or a multiplayer session.",
+    "userDirectory": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/visual/user/",
+    "elapsedSeconds": 11.465884793549776,
+    "quality": 1,
+    "actualShadowQuality": 1,
+    "requestedPageOverride": 0,
+    "actualPages": 1024,
+    "virtualShadowsEnabled": 1,
+    "expectedViews": 3,
+    "minimumWarmupFrames": 64,
+    "captures": [
+      {
+        "view": "FireplaceWest",
+        "path": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/visual/user/Saved/HouseVisualReview/FireplaceWest.png",
+        "width": 1280,
+        "height": 720,
+        "horizontalFov": 87.97425079345703,
+        "actualPages": 1024,
+        "warmupFrames": 182,
+        "warmupSeconds": 2.675655499100685
+      },
+      {
+        "view": "FireplaceEast",
+        "path": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/visual/user/Saved/HouseVisualReview/FireplaceEast.png",
+        "width": 1280,
+        "height": 720,
+        "horizontalFov": 87.97425079345703,
+        "actualPages": 1024,
+        "warmupFrames": 243,
+        "warmupSeconds": 2.7395651675760746
+      },
+      {
+        "view": "FireplaceWestWide",
+        "path": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/ShelfFireplaceRefinement/visual/user/Saved/HouseVisualReview/FireplaceWestWide.png",
+        "width": 1280,
+        "height": 720,
+        "horizontalFov": 87.97425079345703,
+        "actualPages": 1024,
+        "warmupFrames": 199,
+        "warmupSeconds": 2.7524948306381702
+      }
+    ]
+  },
+  "library_cases_updated": 6,
+  "protected_actor_placements": 1673,
+  "map_sha256": "3ef8a03da3492c25c292200edd88078202bc9a056de78974b0b1757cf1714397"
+}

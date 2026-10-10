@@ -1,0 +1,3 @@
+Requested: photo-matched concrete apron, centered three-riser steps down to grass, concrete side paths.
+Protect: all interiors and room floors, front walnut doors, stairwells, rear deck arcade, basketball court/fence/hills/AC, checkpoints and Billy Bass.
+Acceptance: rendered front and side views; actual player walks up/down all stair lanes and apron; side perimeter route supported; new visible brick walls block; no extra lights; protected saved asset hashes unchanged.

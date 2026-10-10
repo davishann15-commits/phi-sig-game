@@ -5,6 +5,7 @@
 class USkeletalMeshComponent;
 class UGroomComponent;
 class UAnimSequence;
+class AHouseRoamingPig;
 
 // Native assembled character, shared by the selection turntable and network pawns.
 // This actor is cosmetic and never replicated; character identity stays on PlayerState.
@@ -21,7 +22,10 @@ public:
     void KeepPreviewActive();
     void PrestreamPreviewTextures();
     void SetDouliEquipped(bool bEquipped, float Motion = 0, float FlightBlend = 0);
+    void SetFurnitureCarryPose(class UHouseFurnitureInteractionComponent* Carry);
+    void SetPigCarryPose(float Blend,float Grip,const FVector& GripWorld,const FVector& LegAxisWorld,const FVector& FingersWorld,bool bPlacing,AHouseRoamingPig* Pig);
     USkeletalMeshComponent* GetBodyMesh() const { return Body; }
+    UAnimSequence* GetIdleAnimation() const { return Idle; }
     virtual void Tick(float DeltaSeconds) override;
     virtual void EndPlay(const EEndPlayReason::Type Reason) override;
 private:

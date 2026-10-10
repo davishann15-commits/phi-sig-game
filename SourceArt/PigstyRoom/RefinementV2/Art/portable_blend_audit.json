@@ -1,0 +1,62 @@
+{
+  "blend": "PIG_RealBlackPig_Source.blend",
+  "images": [
+    {
+      "image": "PIG_T_BlackHide_BaseColor.png",
+      "relativePath": "//textures/PIG_T_BlackHide_BaseColor.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_BlackHide_Normal.png",
+      "relativePath": "//textures/PIG_T_BlackHide_Normal.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_BlackHide_Roughness.png",
+      "relativePath": "//textures/PIG_T_BlackHide_Roughness.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_BlackSnout_BaseColor.png",
+      "relativePath": "//textures/PIG_T_BlackSnout_BaseColor.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_BlackSnout_Normal.png",
+      "relativePath": "//textures/PIG_T_BlackSnout_Normal.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_BlackSnout_Roughness.png",
+      "relativePath": "//textures/PIG_T_BlackSnout_Roughness.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_HoofKeratin_BaseColor.png",
+      "relativePath": "//textures/PIG_T_HoofKeratin_BaseColor.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_HoofKeratin_Normal.png",
+      "relativePath": "//textures/PIG_T_HoofKeratin_Normal.png",
+      "packed": true,
+      "externalCopyPresent": true
+    },
+    {
+      "image": "PIG_T_HoofKeratin_Roughness.png",
+      "relativePath": "//textures/PIG_T_HoofKeratin_Roughness.png",
+      "packed": true,
+      "externalCopyPresent": true
+    }
+  ],
+  "allPacked": true,
+  "relativeRenderOutput": "//previews/PIG_RealBlackPig_Assembled.png",
+  "geometryChanged": false
+}

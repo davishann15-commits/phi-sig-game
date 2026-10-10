@@ -1,0 +1,318 @@
+{
+  "assets": [
+    {
+      "name": "SM_NCW_LowerMainAndReturn",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/wrap_refit/geometry/models/SM_NCW_LowerMainAndReturn.fbx",
+      "target_actor": "NightClub_SM_NC_LowerRoomShell",
+      "collision": true,
+      "hidden": false,
+      "materials": [
+        "M_NC_FloorBlack",
+        "M_NC_Charcoal",
+        "M_NC_CeilingBlack"
+      ],
+      "bounds_cm": [
+        [
+          -2280.999755859375,
+          -1752.0000457763672,
+          -10.000000149011612
+        ],
+        [
+          -1477.9996871948242,
+          -961.5001678466797,
+          332.53002166748047
+        ]
+      ],
+      "triangles": 309
+    },
+    {
+      "name": "SM_NCW_Former102Shell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/wrap_refit/geometry/models/SM_NCW_Former102Shell.fbx",
+      "target_actor": "SM_Room102_Shell",
+      "collision": false,
+      "hidden": false,
+      "materials": [
+        "MI_SSO_Ceiling",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_PaintCream",
+        "MI_SSO_FloorWood",
+        "MI_SSO_S03HallGrey"
+      ],
+      "bounds_cm": [
+        [
+          -2770.23983001709,
+          -2166.4499282836914,
+          -17.600351572036743
+        ],
+        [
+          -2132.2399139404297,
+          -1480.049991607666,
+          306.06374740600586
+        ]
+      ],
+      "triangles": 1041
+    },
+    {
+      "name": "COL_NCW_Former102Shell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/wrap_refit/geometry/models/COL_NCW_Former102Shell.fbx",
+      "target_actor": "COL_Room102_Shell",
+      "collision": true,
+      "hidden": true,
+      "materials": [
+        "WorldGridMaterial",
+        "WorldGridMaterial_1",
+        "WorldGridMaterial_2",
+        "WorldGridMaterial_3"
+      ],
+      "bounds_cm": [
+        [
+          -2770.23983001709,
+          -2166.4499282836914,
+          -17.600351572036743
+        ],
+        [
+          -2132.2399139404297,
+          -1480.049991607666,
+          306.06374740600586
+        ]
+      ],
+      "triangles": 199
+    },
+    {
+      "name": "SM_NCW_LoungeWallLining",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/wrap_refit/geometry/models/SM_NCW_LoungeWallLining.fbx",
+      "target_actor": null,
+      "collision": false,
+      "hidden": false,
+      "materials": [
+        "M_NC_Charcoal",
+        "M_NC_CeilingBlack"
+      ],
+      "bounds_cm": [
+        [
+          -2750.44002532959,
+          -2146.649932861328,
+          0.8799999952316284
+        ],
+        [
+          -2132.2399139404297,
+          -1483.3999633789062,
+          288.4000062942505
+        ]
+      ],
+      "triangles": 108
+    },
+    {
+      "name": "SM_NCW_LowerDanceFloorInlay",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/wrap_refit/geometry/models/SM_NCW_LowerDanceFloorInlay.fbx",
+      "target_actor": "NightClub_SM_NC_LowerDanceFloorInlay",
+      "collision": false,
+      "hidden": false,
+      "materials": [
+        "M_NC_FloorSlate",
+        "M_NC_FloorBlack",
+        "M_NC_FloorGlow"
+      ],
+      "bounds_cm": [
+        [
+          -2749.50008392334,
+          -2145.7000732421875,
+          0.8999999612569809
+        ],
+        [
+          -1515.999698638916,
+          -999.5001792907715,
+          1.1699999682605267
+        ]
+      ],
+      "triangles": 1560
+    }
+  ],
+  "materials": {
+    "M_NC_Charcoal": {
+      "color": [
+        0.014,
+        0.016,
+        0.026
+      ],
+      "roughness": 0.72,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Charcoal"
+    },
+    "M_NC_FloorBlack": {
+      "color": [
+        0.025,
+        0.028,
+        0.045
+      ],
+      "roughness": 0.24,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorBlack"
+    },
+    "M_NC_FloorSlate": {
+      "color": [
+        0.04,
+        0.045,
+        0.065
+      ],
+      "roughness": 0.32,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorSlate"
+    },
+    "M_NC_CeilingBlack": {
+      "color": [
+        0.008,
+        0.009,
+        0.016
+      ],
+      "roughness": 0.85,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_CeilingBlack"
+    },
+    "M_NC_Trim": {
+      "color": [
+        0.1,
+        0.11,
+        0.14
+      ],
+      "roughness": 0.25,
+      "metallic": 0.8,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Trim"
+    },
+    "M_NC_FloorGlow": {
+      "color": [
+        0.015,
+        0.07,
+        0.12
+      ],
+      "roughness": 0.35,
+      "emissive": [
+        0.008,
+        0.08,
+        0.15
+      ],
+      "emissive_strength": 2,
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorGlow"
+    },
+    "MI_SSO_Ceiling": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling"
+    },
+    "MI_SSO_PaintWhite": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "MI_SSO_PaintCream": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream"
+    },
+    "MI_SSO_FloorWood": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood"
+    },
+    "MI_SSO_S03HallGrey": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03HallGrey"
+    },
+    "WorldGridMaterial": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_1": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_2": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_3": {
+      "color": [
+        0.65,
+        0.65,
+        0.62
+      ],
+      "roughness": 0.65,
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    }
+  },
+  "main": [
+    [
+      -2212.51019,
+      -1509.02675,
+      0.88
+    ],
+    [
+      -1490,
+      -973.5,
+      327.03
+    ]
+  ],
+  "chair": [
+    [
+      -2750.44,
+      -2146.65,
+      0.88
+    ],
+    [
+      -2152.04,
+      -1483.4,
+      288.464
+    ]
+  ],
+  "connector": [
+    [
+      -2152.04,
+      -1740,
+      0.88
+    ],
+    [
+      -1970,
+      -1509.02675,
+      288.464
+    ]
+  ],
+  "upstairs_restored_to_pre_annex": true,
+  "notes": [
+    "No east annex on either floor.",
+    "Two wide internal joins: main/south return and return/former102.",
+    "Preserve102 hallway door and outer front-wall finishes.",
+    "Original shared house geometry is not edited."
+  ]
+}
