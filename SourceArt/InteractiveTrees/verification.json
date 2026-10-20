@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "build": "build5.log",
+  "single": "SourceArt/InteractiveTrees/evidence/single/result.txt",
+  "multiplayer": "SourceArt/InteractiveTrees/multiplayer-verification.json",
+  "walking": "SourceArt/InteractiveTrees/evidence/walk/result.txt",
+  "protected_files_unchanged": 7,
+  "species": [
+    "Oak",
+    "Birch",
+    "Maple"
+  ],
+  "tree_count": 228,
+  "falling_leaf_capacity": 216,
+  "added_real_lights": 0
+}

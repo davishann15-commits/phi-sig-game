@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "unchanged": {
+    "Content/Story/Maps/Chapter01_House.umap": true,
+    "Source/SeniorSendoff/HouseExteriorWalks.cpp": true,
+    "Source/SeniorSendoff/HouseExteriorSiteLayout.h": true,
+    "Source/SeniorSendoff/HouseExteriorBrick.cpp": true,
+    "Source/SeniorSendoff/HouseExteriorCars.cpp": true,
+    "Source/SeniorSendoff/HouseBasketballCourt.cpp": true,
+    "Source/SeniorSendoff/HouseBillyBass.cpp": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Owned unbound wood-only derivatives; native attachment/texture/performance checks pending",
+  "source_packs_unchanged": true,
+  "trees": [
+    {
+      "label": "Beech",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/SM_CalderTreeWood_Beech.SM_CalderTreeWood_Beech",
+      "triangles": [
+        28019,
+        4202,
+        1682
+      ],
+      "bounds_cm": [
+        [
+          -1011.8696899414062,
+          -973.6698608398438,
+          -0.68109530210495
+        ],
+        [
+          932.6049194335938,
+          1020.1727294921875,
+          2153.213623046875
+        ]
+      ],
+      "max_bounds_error_cm": 6.103515625e-05,
+      "nanite": false,
+      "collision": false
+    },
+    {
+      "label": "Maple",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/SM_CalderTreeWood_Maple.SM_CalderTreeWood_Maple",
+      "triangles": [
+        32822,
+        4923,
+        1969
+      ],
+      "bounds_cm": [
+        [
+          -881.3009643554688,
+          -761.7579345703125,
+          -2.17716121673584
+        ],
+        [
+          882.0625610351562,
+          858.5604858398438,
+          2154.98974609375
+        ]
+      ],
+      "max_bounds_error_cm": 6.103515625e-05,
+      "nanite": false,
+      "collision": false
+    }
+  ]
+}

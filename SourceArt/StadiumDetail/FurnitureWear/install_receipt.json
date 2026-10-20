@@ -1,0 +1,18 @@
+{
+  "installed": true,
+  "compiled": false,
+  "native_tested": false,
+  "files": [
+    {
+      "file": "Source/SeniorSendoff/HouseStadiumDetailInteriors.cpp",
+      "before_sha256": "f5b3a0dfa955dbccefdc7aae36994bab5f6b9ac605110ae1b1e1fd1901bb0086",
+      "after_sha256": "119af458f2d9613235abab65d615b359280b67c3477c1b9e7016a60fb3bfcd86"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseStadiumDetailLook.cpp",
+      "before_sha256": "34d2d85bef053d8865d9da6a0d0e80bf825ab0ce0046dca7a6f79b51c2bfb11a",
+      "after_sha256": "50b066797cc202c1198df02336dd1a5a4a0f808b5507b4146214268765f717c6"
+    }
+  ],
+  "scope": "Owner-requested stronger furniture age/wear; existing room, placement and routes retained."
+}

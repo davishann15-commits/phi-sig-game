@@ -1,0 +1,197 @@
+// Opt-in additive stadium acceptance. Original reviewers/routes/tolerances remain byte-identical.
+#include "HouseStadiumDetail.h"
+#include "HouseExterior.h"
+#include "HouseCalderTerrain.h"
+#include "HouseExteriorSiteLayout.h"
+#include "Components/HierarchicalInstancedStaticMeshComponent.h"
+#include "Components/LightComponent.h"
+#include "Components/CapsuleComponent.h"
+#include "GameFramework/PlayerController.h"
+#include "EngineUtils.h"
+#include "Engine/World.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
+#include "Misc/Paths.h"
+#include "Misc/FileHelper.h"
+#include "HAL/FileManager.h"
+#if !UE_BUILD_SHIPPING
+#include "HouseCampusInteriors.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "Misc/CoreDelegates.h"
+namespace HouseStadiumDetailReviewImpl
+{
+FVector Mid(int32 K,float R,float Z)
+{const float A=K*PI/20,B=(K+1)*PI/20;return {2400+(FMath::Cos(A)+FMath::Cos(B))*.5f*5600*R,-13300+(FMath::Sin(A)+FMath::Sin(B))*.5f*3800*R,Z};}
+void CheckLockerSeams(UWorld* W)
+{
+ if(!HouseStadiumDetail::Enabled()||HouseStadiumDetail::Step()<6)return;
+ static TWeakObjectPtr<UWorld> Checked;if(Checked.Get()==W)return;
+ auto Point=[](float Degrees,float Radius,float Z){const int32 K=FMath::FloorToInt(Degrees/9.f);const float T=(Degrees-K*9.f)/9.f,A=K*PI/20,B=(K+1)*PI/20;return FVector(2400+FMath::Lerp(FMath::Cos(A),FMath::Cos(B),T)*5600*Radius,-13300+FMath::Lerp(FMath::Sin(A),FMath::Sin(B),T)*3800*Radius,Z);};
+ FCollisionQueryParams Params(SCENE_QUERY_STAT(CalderStadiumWallSeam),true);if(auto* PC=W->GetFirstPlayerController())if(PC->GetPawn())Params.AddIgnoredActor(PC->GetPawn());
+ const FVector End=Point(50,.80f,60),Along=(Point(50,.80f,0)-Point(50,.78f,0)).GetSafeNormal(),Into(-Along.Y,Along.X,0);FHitResult Ready;
+ if(!W->LineTraceSingleByChannel(Ready,End+Into*60,End-Into*60,ECC_Pawn,Params)||!GetNameSafe(Ready.GetComponent()).Contains(TEXT("CampusInterior_STA_Solid")))return;
+ Checked=W;int32 Rays=0,Leaks=0;
+ const FVector Eye(4342.79,-10560.73,115),Target(5096.13,-10872.15,25);const FRotationMatrix Camera((Target-Eye).Rotation());Params.bReturnFaceIndex=true;
+ for(const FVector2D Pixel:{FVector2D(120,210),FVector2D(240,245)}){const FVector D=(Camera.GetUnitAxis(EAxis::X)+Camera.GetUnitAxis(EAxis::Y)*((Pixel.X/1280.f*2-1)*FMath::Tan(FMath::DegreesToRadians(40.f)))+Camera.GetUnitAxis(EAxis::Z)*((1-Pixel.Y/720.f*2)*FMath::Tan(FMath::DegreesToRadians(40.f))*720.f/1280.f)).GetSafeNormal();FHitResult H;if(W->LineTraceSingleByChannel(H,Eye,Eye+D*2500,ECC_Pawn,Params)){int32 Section=INDEX_NONE;auto* Material=H.GetComponent()->GetMaterialFromCollisionFaceIndex(H.FaceIndex,Section);UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_LINTEL_DIAGNOSTIC pixel=%.0f,%.0f hit=%s normal=%s component=%s section=%d material=%s"),Pixel.X,Pixel.Y,*H.ImpactPoint.ToString(),*H.ImpactNormal.ToString(),*GetNameSafe(H.GetComponent()),Section,*GetNameSafe(Material));}}
+
+ for(float Degrees:{50.f,66.f}){const FVector Direction=(Point(Degrees,.80f,0)-Point(Degrees,.78f,0)).GetSafeNormal(),Normal=FVector(-Direction.Y,Direction.X,0)*(Degrees==50.f?1.f:-1.f);
+  for(float Radius:{.696f,.700f,.740f,.800f,.840f,.880f,.884f})for(float Z:{-20.f,60.f,150.f}){const FVector C=Point(Degrees,Radius,Z);FHitResult H;++Rays;if(!W->LineTraceSingleByChannel(H,C+Normal*60,C-Normal*60,ECC_Pawn,Params)){++Leaks;UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_WALL_LEAK degrees=%.0f radius=%.3f z=%.1f"),Degrees,Radius,Z);}}
+ }
+ UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_WALL_SEAMS %s rays=%d leaks=%d actualStreamedRoom=1"),Leaks==0?TEXT("PASS"):TEXT("FAIL"),Rays,Leaks);
+}
+void Tick(UWorld* W,ELevelTick,float)
+{
+ if(!W||!W->IsGameWorld()||!FParse::Param(FCommandLine::Get(),TEXT("StadiumDetailReview"))||W->GetTimeSeconds()<12||!HouseCalderTerrain::CollisionReady(W))return;
+ CheckLockerSeams(W);
+ static TWeakObjectPtr<UWorld> Done;if(Done.Get()==W)return;Done=W;bool OK=true;int32 Actors=0,Components=0,Instances=0,NewLights=0,Floors=0,Misses=0,Blocked=0,Sweeps=0;float MinTread=FLT_MAX,MaxError=0;TArray<FString> Problems;
+ AHouseStadiumDetail* Stadium=nullptr;for(TActorIterator<AHouseStadiumDetail> It(W);It;++It){Stadium=*It;++Actors;}
+ for(TActorIterator<AActor> It(W);It;++It){TInlineComponentArray<UActorComponent*> Parts(*It);for(const auto* C:Parts)if(C->GetName().StartsWith(TEXT("CalderStadium"))){++Components;if(C->IsA<ULightComponent>())++NewLights;if(const auto* H=Cast<UHierarchicalInstancedStaticMeshComponent>(C))Instances+=H->GetInstanceCount();}}
+ const bool Enabled=HouseStadiumDetail::Enabled();OK&=NewLights==0&&(Enabled?(Actors==1&&Stadium&&Instances>1000):(Actors==0&&Components==0));
+ FCollisionQueryParams Q(SCENE_QUERY_STAT(CalderStadiumFloor),true);if(auto* PC=W->GetFirstPlayerController())if(PC->GetPawn())Q.AddIgnoredActor(PC->GetPawn());
+ if(Enabled)
+ {
+  for(int32 K:{0,2,17,19,20,22,37,39})
+  {
+   const FVector Along=(Mid(K+1,.69f,0)-Mid(K-1,.69f,0)).GetSafeNormal(),Normal(Along.Y,-Along.X,0);
+   FVector Prev[2];bool Have=false;
+   // Analytic sampling at actual step centres, both sides of the centre rail. Require real blocking floors.
+   auto Flight=[&](float R0,float R1,float Z0,float Z1,int32 Count)
+   {
+    const float Run=FMath::Abs(FVector::DotProduct(Mid(K,R1,0)-Mid(K,R0,0),Normal))/Count,Rise=(Z1-Z0)/Count;MinTread=FMath::Min(MinTread,Run);OK&=Run>=30.f&&Rise>=14.f&&Rise<=18.f;
+    for(int32 J=0;J<Count;++J)
+    {
+     const float T=(J+.5f)/Count,Top=FMath::Lerp(Z0,Z1,float(J+1)/Count);const FVector C=Mid(K,FMath::Lerp(R0,R1,T),Top);
+     for(int32 Side=0;Side<2;++Side){const FVector P=C+Along*(Side?80.f:-80.f);FHitResult H;const bool Hit=W->LineTraceSingleByChannel(H,P+FVector(0,0,6),P-FVector(0,0,10),ECC_Pawn,Q);const float Error=Hit?FMath::Abs(float(H.ImpactPoint.Z)-Top):1000;MaxError=FMath::Max(MaxError,Error);++Floors;if(!Hit||H.ImpactNormal.Z<.95f||Error>1.f){++Misses;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("floor segment=%d r0=%.4f step=%d side=%d expected=%s hit=%s normalZ=%.3f component=%s"),K,R0,J,Side,*P.ToString(),*H.ImpactPoint.ToString(),H.ImpactNormal.Z,*GetNameSafe(H.GetComponent())));}
+      if(Have){const FVector Start=Prev[Side]+FVector(0,0,18+97),End=P+FVector(0,0,18+97);++Sweeps;if(W->SweepSingleByChannel(H,Start,End,FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("blocked segment=%d r0=%.4f step=%d side=%d start=%s end=%s hit=%s component=%s"),K,R0,J,Side,*Start.ToString(),*End.ToString(),*H.ImpactPoint.ToString(),*GetNameSafe(H.GetComponent())));}}
+      Prev[Side]=P;
+     }Have=true;
+    }
+   };
+   Flight(.60f,.69f,-56,180,14);for(int32 Row=0;Row<11;++Row)Flight(.69f+Row*.024f,.714f+Row*.024f,180+Row*63.f,243+Row*63.f,4);Flight(.954f,1.025f,873,990,7);
+  }
+  auto CheckFloor=[&](FVector P,const TCHAR* Label){FHitResult H;++Floors;const bool Hit=W->LineTraceSingleByChannel(H,P+FVector(0,0,6),P-FVector(0,0,10),ECC_Pawn,Q);const float Error=Hit?FMath::Abs(float(H.ImpactPoint.Z-P.Z)):1000.f;MaxError=FMath::Max(MaxError,Error);if(!Hit||H.ImpactNormal.Z<.95f||Error>1.f){++Misses;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("floor %s at=%s hit=%s component=%s"),Label,*P.ToString(),*H.ImpactPoint.ToString(),*GetNameSafe(H.GetComponent())));}};
+  for(int32 K:{4,16})
+  {
+   const FVector Along=(Mid(K+1,1,0)-Mid(K-1,1,0)).GetSafeNormal(),Normal(Along.Y,-Along.X,0);
+   const float Run=FMath::Abs(FVector::DotProduct(Mid(K,.802f,0)-Mid(K,1.f,0),Normal))/25;MinTread=FMath::Min(MinTread,Run);OK&=Run>=30.f;
+   FVector Prev[2];bool Have=false;
+   for(int32 J=0;J<25;++J)for(int32 Side=0;Side<2;++Side)
+   {
+    const FVector P=Mid(K,1.f-.198f*(J+.5f)/25,-57+426.f*(J+1)/25)+Along*(Side?80.f:-80.f);CheckFloor(P,TEXT("new-portal-stair"));
+    if(Have){FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,Prev[Side]+FVector(0,0,115),P+FVector(0,0,115),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("portal blocked segment=%d step=%d side=%d component=%s"),K,J,Side,*GetNameSafe(H.GetComponent())));}}
+    Prev[Side]=P;if(Side==1)Have=true;
+   }
+   for(float R:{.77f,.78f,.79f,.80f})for(float Side:{-1.f,1.f})CheckFloor(Mid(K,R,369)+Along*(Side*80),TEXT("new-portal-landing"));
+  }
+  for(int32 K:{2,17})
+  {
+   const FVector Along=(Mid(K+1,1,0)-Mid(K-1,1,0)).GetSafeNormal();const float Side=K==2?1.f:-1.f;
+   for(int32 J=0;J<3;++J)CheckFloor(Mid(K,.774f,369+(J+1)*15.75f)+Along*(Side*(235-(J+.5f)*35)),TEXT("cross-aisle-side-steps"));
+   MinTread=FMath::Min(MinTread,35.f);
+  }
+  for(int32 K:{3,4,16})for(float T:{.1f,.3f,.5f,.7f,.9f})
+  {
+   const float A=K*PI/20,B=(K+1)*PI/20;const FVector L(2400+FMath::Cos(A)*5600*.774f,-13300+FMath::Sin(A)*3800*.774f,369),R(2400+FMath::Cos(B)*5600*.774f,-13300+FMath::Sin(B)*3800*.774f,369);
+   CheckFloor(FMath::Lerp(L,R,T),TEXT("row-D-cross-aisle"));
+  }
+  // The fixed side masts pass through the upper rim. Check a continuous72cm capsule lane
+  // between the retained inner coping and each mast, including the new lattice at body height.
+  auto RimPoint=[](float Degrees)
+  {
+   const int32 K=FMath::FloorToInt(Degrees/9.f);const float T=(Degrees-K*9.f)/9.f,A=K*PI/20,B=(K+1)*PI/20;
+   return FVector(2400+FMath::Lerp(FMath::Cos(A),FMath::Cos(B),T)*5600*1.009f,-13300+FMath::Lerp(FMath::Sin(A),FMath::Sin(B),T)*3800*1.009f,990);
+  };
+  for(float Degrees:{35.f,145.f})
+  {
+   FVector Previous;
+   for(int32 J=0;J<=32;++J)
+   {
+    const FVector P=RimPoint(Degrees-8.f+J*.5f);CheckFloor(P,TEXT("mast-rim-lane"));
+    if(J){FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,Previous+FVector(0,0,97),P+FVector(0,0,97),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("mast rim blocked degrees=%.0f step=%d start=%s end=%s hit=%s component=%s"),Degrees,J,*Previous.ToString(),*P.ToString(),*H.ImpactPoint.ToString(),*GetNameSafe(H.GetComponent())));}}
+    Previous=P;
+   }
+  }
+  if(HouseStadiumDetail::Step()>=4)for(int32 Row=0;Row<3;++Row)CheckFloor({5900,-14000+Row*100.,-56+Row*16.+18},TEXT("band-access-aisle"));
+  if(HouseStadiumDetail::Step()>=4)
+  {
+   // Extra field-equipment bypasses. These add physical coverage without altering any original route.
+   const FVector Ends[][2]={{{-700,-14080,-56},{50,-14080,-56}},{{4760,-13160,-56},{5080,-13160,-56}},{{-340,-12620,-56},{300,-12620,-56}},{{4070,-15100,-56},{4330,-15100,-56}},{{5100,-14200,-56},{5400,-14200,-56}}};
+   for(const auto& Path:Ends){FVector Previous;for(int32 J=0;J<=10;++J){const FVector P=FMath::Lerp(Path[0],Path[1],J/10.f);CheckFloor(P,TEXT("field-equipment-bypass"));if(J){FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,Previous+FVector(0,0,97),P+FVector(0,0,97),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("field equipment bypass blocked start=%s end=%s component=%s"),*Previous.ToString(),*P.ToString(),*GetNameSafe(H.GetComponent())));}}Previous=P;}}
+  }
+  if(HouseStadiumDetail::Step()>=5){const FVector Views[]={{-605.282,-9857.585,-57.000},{4827.310,-9726.029,-60.000},{3008.455,-9332.209,-57.000}};for(const FVector& P:Views){CheckFloor(P,TEXT("concourse-close-view-floor"));FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,P+FVector(0,0,97),P+FVector(0,0,98),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("concourse view capsule blocked at=%s component=%s"),*P.ToString(),*GetNameSafe(H.GetComponent())));}}}
+  if(HouseStadiumDetail::Step()>=6){const FVector Views[]={{5157.360,-10960.190,-55.000},{4885.697,-10601.548,-55.000},{4769.615,-10596.971,-55.000}};for(const FVector& P:Views){CheckFloor(P,TEXT("interior-close-view-floor"));FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,P+FVector(0,0,97),P+FVector(0,0,98),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("interior view capsule blocked at=%s component=%s"),*P.ToString(),*GetNameSafe(H.GetComponent())));}}}
+  if(HouseStadiumDetail::Step()>=6){
+   // Additional full-height path from the room through the existing players' tunnel.
+   // Original STA tour waypoints remain byte-identical; these checks add the actual passage.
+   FVector Previous;for(int32 J=0;J<=14;++J){const float R=J==12?.675f:.79f-J*.01f;FVector P=Mid(6,R,0);P.Z=R>=.69f?-55.f:R>.668f?HouseExteriorSite::GroundHeight(float(P.X),float(P.Y)):-56.f;CheckFloor(P,TEXT("locker-to-field-tunnel"));if(J){FHitResult H;++Sweeps;const float Rise=FMath::Abs(float(P.Z-Previous.Z));const double CentreZ=FMath::Max(P.Z,Previous.Z)+97;const FVector From(Previous.X,Previous.Y,CentreZ),To(P.X,P.Y,CentreZ);if(Rise>18.f||W->SweepSingleByChannel(H,From,To,FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("tunnel full-height sweep blocked start=%s end=%s component=%s"),*Previous.ToString(),*P.ToString(),*GetNameSafe(H.GetComponent())));}}Previous=P;}
+  }
+  if(HouseStadiumDetail::Step()>=7){
+   // Add the owner-authorized office to the full-height collision review; no original samples are removed.
+   auto OfficeLane=[&](FVector A,FVector B){FVector Previous;for(int32 J=0;J<=16;++J){const FVector P=FMath::Lerp(A,B,J/16.f);CheckFloor(P,TEXT("coach-office-lane"));if(J){FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,Previous+FVector(0,0,97),P+FVector(0,0,97),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("coach office blocked at=%s end=%s component=%s"),*Previous.ToString(),*P.ToString(),*GetNameSafe(H.GetComponent())));}}Previous=P;}};
+   OfficeLane(HouseStadiumDetail::CoachPoint(0,180,-55),HouseStadiumDetail::CoachPoint(0,-210,-55));
+   OfficeLane(HouseStadiumDetail::CoachPoint(0,-80,-55),HouseStadiumDetail::CoachPoint(180,-80,-55));
+   for(const FVector P:{FVector(5011.463,-10995.147,-55),FVector(5213.259,-11204.916,-55)}){CheckFloor(P,TEXT("coach-office-view-floor"));FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,P+FVector(0,0,97),P+FVector(0,0,98),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;Problems.Add(FString::Printf(TEXT("coach office view blocked at=%s component=%s"),*P.ToString(),*GetNameSafe(H.GetComponent())));}}
+  }
+  if(HouseStadiumDetail::Step()>=7){const FVector P={-485.863,-15722.141,540.000};CheckFloor(P,TEXT("moving-program-view-floor"));FHitResult H;++Sweeps;if(W->SweepSingleByChannel(H,P+FVector(0,0,97),P+FVector(0,0,98),FQuat::Identity,ECC_Pawn,FCollisionShape::MakeCapsule(36,96),Q)){++Blocked;OK=false;if(Problems.Num()<32)Problems.Add(FString::Printf(TEXT("program view capsule blocked at=%s component=%s"),*P.ToString(),*GetNameSafe(H.GetComponent())));}}
+  if(HouseStadiumDetail::Step()>=6){MinTread=FMath::Min(MinTread,30.f);for(int32 Flight=1;Flight<=8;++Flight){const bool North=Flight%2==1;for(int32 Tread=0;Tread<8;++Tread){const double Y=North?-9490+(Tread+.5)*30:-9250-(Tread+.5)*30;CheckFloor({North?4888.:4772.,Y,-55+(Flight-1)*140.+(Tread+1)*17.5},TEXT("press-tower30cm-tread"));}}}
+ }
+ const FString Result=FString::Printf(TEXT("%s enabled=%d step=%d actors=%d components=%d instances=%d newLights=%d floorSamples=%d misses=%d maxFloorError=%.3f capsuleSweeps=%d blocked=%d minTread=%.3f\n"),OK?TEXT("PASS"):TEXT("FAIL"),int(Enabled),HouseStadiumDetail::Step(),Actors,Components,Instances,NewLights,Floors,Misses,MaxError,Sweeps,Blocked,Enabled?MinTread:0.f);
+ const FString Dir=FPaths::ProjectSavedDir()/TEXT("StadiumDetailReview");IFileManager::Get().MakeDirectory(*Dir,true);FFileHelper::SaveStringToFile(Result,*(Dir/TEXT("result.txt")));FFileHelper::SaveStringArrayToFile(Problems,*(Dir/TEXT("problems.txt")));for(const FString& Problem:Problems)UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_PROBLEM %s"),*Problem);UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_REVIEW %s"),*Result);
+}
+struct FRegistration{FRegistration(){FWorldDelegates::OnWorldPostActorTick.AddStatic(&Tick);}}Registration;
+}
+// Additive actual-pawn office route and door interactions. Invoked independently of all original review routes.
+namespace HouseStadiumDetailCoachReview
+{
+struct FState
+{
+ TWeakObjectPtr<UWorld> World;TWeakObjectPtr<ACharacter> Walker;TWeakObjectPtr<AHouseCampusInteriors> Interiors;TWeakObjectPtr<ACampusDoor> Door;
+ int32 Phase=0,Stop=0,Reached=0,Doors=0,Indoor=0,ShellRays=0,MaxLights=0;double Since=0,Start=0,Progress=0;float Best=FLT_MAX;FVector Goal;bool Moving=false,Done=false;TArray<FString> Rows;
+};
+FState State;
+void Finish(bool Pass,const FString& Reason)
+{
+ auto& S=State;if(S.Done)return;S.Done=true;S.Moving=false;if(S.Walker.IsValid())S.Walker->GetCharacterMovement()->StopMovementImmediately();
+ const FString Line=FString::Printf(TEXT("%s reached=%d/8 doors=%d/4 indoor=%d/3 shellRays=%d maxLights=%d pool=6 reason=%s\n"),Pass?TEXT("PASS"):TEXT("FAIL"),S.Reached,S.Doors,S.Indoor,S.ShellRays,S.MaxLights,*Reason);
+ S.Rows.Add(Line);const FString Dir=FPaths::ProjectSavedDir()/TEXT("StadiumCoachOfficeReview");IFileManager::Get().MakeDirectory(*Dir,true);FFileHelper::SaveStringArrayToFile(S.Rows,*(Dir/TEXT("result.txt")));UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_COACH_REVIEW %s"),*Line);FPlatformMisc::RequestExitWithStatus(false,Pass?0:1);
+}
+void Tick(UWorld* W,ELevelTick,float)
+{
+ if(!W||!W->IsGameWorld()||!FParse::Param(FCommandLine::Get(),TEXT("StadiumCoachOfficeReview")))return;
+ auto* PC=W->GetFirstPlayerController();auto* Pawn=PC?Cast<ACharacter>(PC->GetPawn()):nullptr;if(!Pawn)return;auto& S=State;const double Now=W->GetTimeSeconds();
+ if(S.World.Get()!=W){S=FState();S.World=W;S.Walker=Pawn;S.Start=S.Since=Now;}
+ static const FDelegateHandle Input=FCoreDelegates::OnBeginFrame.AddLambda([](){auto& Live=State;if(Live.Moving&&!Live.Done&&Live.Walker.IsValid())Live.Walker->AddMovementInput((Live.Goal-Live.Walker->GetActorLocation()).GetSafeNormal2D(),1.f);});
+ if(S.Done)return;if(Now-S.Start>140){Finish(false,TEXT("office route timeout"));return;}
+ if(Now-S.Start<8||!HouseCalderTerrain::CollisionReady(W))return;
+ const int32 Seed=HouseCampusInteriors::SeedFor(TEXT("STA"));const float Half=Pawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
+ if(!S.Interiors.IsValid()){TActorIterator<AHouseCampusInteriors> It(W);if(It)S.Interiors=*It;}
+ if(!S.Door.IsValid())for(TActorIterator<ACampusDoor> It(W);It;++It)if(It->DoorId==TEXT("Campus_STA_CoachOffice")){S.Door=*It;break;}
+ if(!S.Interiors.IsValid()||!S.Door.IsValid())return;
+ if(S.Phase==0){S.Interiors->BuildNow(Seed);Pawn->GetCharacterMovement()->StopMovementImmediately();Pawn->SetActorLocation(HouseStadiumDetail::CoachPoint(0,155,-55+Half+3),false,nullptr,ETeleportType::TeleportPhysics);Pawn->GetCharacterMovement()->SetMovementMode(MOVE_Walking);S.Phase=1;S.Since=Now;return;}
+ if(Now-S.Since<1.8)return;
+ S.MaxLights=FMath::Max(S.MaxLights,S.Interiors->ActiveLights());if(S.MaxLights>AHouseCampusInteriors::LightPool){Finish(false,TEXT("light pool exceeded"));return;}
+ auto Toggle=[&](bool Want){if(S.Door->IsOpen()==Want){Finish(false,TEXT("unexpected door state before interaction"));return false;}if(!S.Door->Interact(Pawn)){Finish(false,TEXT("door interaction refused"));return false;}++S.Doors;S.Since=Now;return true;};
+ if(S.Phase==1){if(S.Interiors->PendingConversions(Seed)>0)return;if(!Toggle(false))return;S.Phase=2;return;}
+ if(S.Phase==2){if(S.Door->IsOpen()){Finish(false,TEXT("door failed to close"));return;}if(!Toggle(true))return;S.Phase=3;return;}
+ const FVector Stops[]={HouseStadiumDetail::CoachPoint(0,65,-55),HouseStadiumDetail::CoachPoint(0,-80,-55),HouseStadiumDetail::CoachPoint(180,-80,-55),HouseStadiumDetail::CoachPoint(0,-80,-55),HouseStadiumDetail::CoachPoint(0,155,-55),HouseStadiumDetail::CoachPoint(0,-80,-55),HouseStadiumDetail::CoachPoint(0,-205,-55),HouseStadiumDetail::CoachPoint(0,155,-55)};
+ if(S.Phase==3){
+  if(S.Stop==8){if(S.Reached!=8||S.Doors!=4||S.Indoor!=3||S.MaxLights<=0){Finish(false,TEXT("route counters incomplete"));return;}Finish(true,TEXT("realWalkingDoorUseReturnAndIndoorClassification"));return;}
+  if(S.Stop==5&&S.Doors==2){if(!Toggle(false))return;S.Phase=4;return;}
+  S.Goal=Stops[S.Stop]+FVector(0,0,Half);S.Best=FLT_MAX;S.Progress=Now;S.Moving=true;S.Phase=5;return;
+ }
+ if(S.Phase==4){if(S.Door->IsOpen()){Finish(false,TEXT("second close failed"));return;}if(!Toggle(true))return;S.Phase=3;return;}
+ if(S.Phase!=5)return;
+ const FVector Feet=Pawn->GetActorLocation()-FVector(0,0,Half);const float Distance=FVector::Dist2D(Feet,Stops[S.Stop]);PC->SetControlRotation((S.Goal-Pawn->GetActorLocation()).Rotation());
+ if(Distance<S.Best-3){S.Best=Distance;S.Progress=Now;}if(Now-S.Progress>7){Finish(false,FString::Printf(TEXT("stalled stop%d at%s remaining%.2f"),S.Stop,*Feet.ToString(),Distance));return;}
+ if(Distance>10)return;S.Moving=false;Pawn->GetCharacterMovement()->StopMovementImmediately();if(FMath::Abs(Feet.Z+55)>5){Finish(false,TEXT("wrong office floor"));return;}
+ if(S.Stop==1||S.Stop==2||S.Stop==6){if(!HouseCampusInteriors::InsideInterior(Seed,Feet+FVector(0,0,100))||HouseCampusInteriors::DistanceOutside(Feet+FVector(0,0,150))>0.1||!S.Interiors->Loaded().Contains(Seed)){Finish(false,TEXT("office failed indoor or loaded test"));return;}++S.Indoor;}
+ if(S.Stop==1){
+  FCollisionQueryParams Q(SCENE_QUERY_STAT(CoachOfficeShell),true,Pawn);const FVector Centre=HouseStadiumDetail::CoachPoint(100,-140,151);const FVector X=(HouseStadiumDetail::CoachPoint(1,0,0)-HouseStadiumDetail::CoachPoint(0,0,0)).GetSafeNormal(),Y(-X.Y,X.X,0);
+  for(const FVector Direction:{X,-X,-Y,FVector::UpVector}){FHitResult Hit;++S.ShellRays;if(!W->LineTraceSingleByChannel(Hit,Centre,Centre+Direction*650,ECC_Pawn,Q)||!GetNameSafe(Hit.GetComponent()).Contains(TEXT("CampusInterior_STA_Solid"))){Finish(false,TEXT("office shell ray leaked"));return;}}
+ }
+ ++S.Reached;UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_COACH_STOP index=%d feet=%s floor=-55 indoors=%d lights=%d doorOpen=%d"),S.Stop,*Feet.ToString(),int(HouseStadiumDetail::CoachInside(Feet+FVector(0,0,100))),S.Interiors->ActiveLights(),int(S.Door->IsOpen()));S.Rows.Add(FString::Printf(TEXT("stop=%d feet=%s"),S.Stop,*Feet.ToString()));++S.Stop;S.Phase=3;S.Since=Now-1.8;
+}
+struct FRegistration{FRegistration(){FWorldDelegates::OnWorldPostActorTick.AddStatic(&Tick);}}Registration;
+}
+#endif

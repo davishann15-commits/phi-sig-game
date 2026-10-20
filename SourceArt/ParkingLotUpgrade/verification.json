@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "map": "Chapter01_House",
+  "saved_map_sha256": "5309c8f80470373721148eabdc62bc6d70ed40fe12ad789587881a2ca7335e5c",
+  "saved_house_unchanged": true,
+  "layout": {
+    "total_bays": 15,
+    "accessible_bays": 2,
+    "shared_loading_aisle_cm": 320,
+    "driveway_opening_cm": 600,
+    "parked_cars": 6,
+    "landscape_shrubs": 37,
+    "lamp_posts_in_middle": 0,
+    "exterior_light_count": 53
+  },
+  "verification": {
+    "build": "PASS",
+    "native_scene": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 53.974799834017176,
+      "expected_markers": [
+        "CAMPUS_WOODS_REVIEW PASS",
+        "FRATERNITY_BOUNDARY_REVIEW PASS",
+        "WOODS_REVIEW PASS",
+        "HOUSE_VISUAL_REVIEW_PASSED",
+        "SURROUNDINGS_POLISH_REVIEW PASS",
+        "WEST_FIELD_REVIEW PASS",
+        "PARKING_LOT_REVIEW PASS"
+      ]
+    },
+    "actual_character_walk": {
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 59.963533958012704,
+      "scope": "Actual character movement from the parking driveway, along the central drive aisle and shared accessible aisle, onto the house walkway; single player"
+    },
+    "floor_samples": "7/7",
+    "curb_samples": "2/2",
+    "capsule_routes": "4/4",
+    "other_environment_checks": "PASS"
+  },
+  "lighting_note": "Two existing perimeter parking lamps brightened after the walking check; layout and collision unchanged. Final native scene and image checks passed after the lighting change.",
+  "scope": "West parking lot only. Cars elsewhere and the saved house layout retained."
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "Explicit65-maple trial; visual progress, not whole-woods photographic/performance acceptance",
+  "images": [
+    {
+      "file": "00_detail_woods_edge.png",
+      "sha256": "d74f481754c64b14ac56c6ffdf5dd27480f022f4632cf6ccd4a219d7ad2bd91b",
+      "inspected": true
+    },
+    {
+      "file": "01_detail_woods_20m.png",
+      "sha256": "5983dddcb9b40abbb3b3198adc4804618ba39397aa18fc85b3f7d085b33d3672",
+      "inspected": true
+    },
+    {
+      "file": "02_detail_woods_deep.png",
+      "sha256": "a8f014b0522bfb1a47137ad8bdafb8757a2d766dc81f3324bff7095b34f83c2e",
+      "inspected": true
+    },
+    {
+      "file": "04_detail_woods_silhouette.png",
+      "sha256": "68fa94d69cc88bb08647f66a56ee5b5a83558dded74813cad3de9d4670338ef5",
+      "inspected": true
+    }
+  ],
+  "prior_runs": [
+    "codex_tree_woods_original_views",
+    "codex_tree_woods_trial_views"
+  ],
+  "findings": [
+    "Denser attached maple crowns and branch detail in all four existing views",
+    "Warmer palette after matching acquired branch selector and setting local luminance gain6",
+    "Trail/hut preserved; legacy species/ground detail and overall photographic finish remain"
+  ],
+  "leaf_shader": {
+    "pixel_instructions": 245,
+    "samples": 3,
+    "branch_mask": "saturate(B^5*25000)",
+    "luminance_gain": 6
+  },
+  "default_enabled": false,
+  "total_inspected_tree_candidate_and_woods_frames": 86
+}

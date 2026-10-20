@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "wildlife_start_source_mutations": [
+    "Source/SeniorSendoff/HouseCalderTerrainReview.cpp",
+    "Source/SeniorSendoff/HouseCampusInteriorsReview.cpp",
+    "Source/SeniorSendoff/HouseCampusInteriorsSmoke.cpp",
+    "Source/SeniorSendoff/HouseCampusLayoutReview.cpp",
+    "Source/SeniorSendoff/HouseCampusPolish.cpp",
+    "Source/SeniorSendoff/SeniorSendoff.Build.cs"
+  ],
+  "unexpected_source_mutations": [],
+  "protected_sources_and_map": [
+    {
+      "file": "Source/SeniorSendoff/HouseBasketballCourt.h",
+      "unchanged": true,
+      "current_sha256": "d6d4968aaaa30d5c8556bbf9fb3acaba63264fbbb9a67994542dca73a5aa8d91",
+      "takeover_sha256": "d6d4968aaaa30d5c8556bbf9fb3acaba63264fbbb9a67994542dca73a5aa8d91",
+      "wildlife_current_sha256": "d6d4968aaaa30d5c8556bbf9fb3acaba63264fbbb9a67994542dca73a5aa8d91"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseParkingLot.h",
+      "unchanged": true,
+      "current_sha256": "6622d5244d6d9176ef5dceca787830744f5aa8d344b986d182c31fe3c33443e3",
+      "takeover_sha256": "6622d5244d6d9176ef5dceca787830744f5aa8d344b986d182c31fe3c33443e3",
+      "wildlife_current_sha256": "6622d5244d6d9176ef5dceca787830744f5aa8d344b986d182c31fe3c33443e3"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseBasketballCourt.cpp",
+      "unchanged": true,
+      "current_sha256": "695430e976d8f907d10d50fa8b826ea91a6480c02d9dd8527e22f504cb0b5714",
+      "takeover_sha256": "695430e976d8f907d10d50fa8b826ea91a6480c02d9dd8527e22f504cb0b5714",
+      "wildlife_current_sha256": "695430e976d8f907d10d50fa8b826ea91a6480c02d9dd8527e22f504cb0b5714"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseParkingLotReview.cpp",
+      "unchanged": true,
+      "current_sha256": "ac2f10f3cdbead6b4b28c00cfb5ba130a150dab14a9228c656572fb76f815e41",
+      "takeover_sha256": "ac2f10f3cdbead6b4b28c00cfb5ba130a150dab14a9228c656572fb76f815e41",
+      "wildlife_current_sha256": "ac2f10f3cdbead6b4b28c00cfb5ba130a150dab14a9228c656572fb76f815e41"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseRearPorch.cpp",
+      "unchanged": true,
+      "current_sha256": "8175e1e0ce07fb8763a2bb6811476289da051f5c442954797232c353435979ca",
+      "takeover_sha256": "8175e1e0ce07fb8763a2bb6811476289da051f5c442954797232c353435979ca",
+      "wildlife_current_sha256": "8175e1e0ce07fb8763a2bb6811476289da051f5c442954797232c353435979ca"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseParkingLot.cpp",
+      "unchanged": true,
+      "current_sha256": "86a205a8670a6bd4262e81801fb580ce30be1c403eb7b308f7c1badc4f51af15",
+      "takeover_sha256": "86a205a8670a6bd4262e81801fb580ce30be1c403eb7b308f7c1badc4f51af15",
+      "wildlife_current_sha256": "86a205a8670a6bd4262e81801fb580ce30be1c403eb7b308f7c1badc4f51af15"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseParkingDetail.cpp",
+      "unchanged": true,
+      "current_sha256": "6f4af188ed90d19f59c2682908c6daf1c136742e192ba0585f6aa5ba6fdb8381",
+      "takeover_sha256": "6f4af188ed90d19f59c2682908c6daf1c136742e192ba0585f6aa5ba6fdb8381",
+      "wildlife_current_sha256": "6f4af188ed90d19f59c2682908c6daf1c136742e192ba0585f6aa5ba6fdb8381"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseFallJam.cpp",
+      "unchanged": true,
+      "current_sha256": "6ce445873590eac43d270cbc947fc445057af4a71aed92a8f41bf99afdca100b",
+      "takeover_sha256": "6ce445873590eac43d270cbc947fc445057af4a71aed92a8f41bf99afdca100b",
+      "wildlife_current_sha256": "6ce445873590eac43d270cbc947fc445057af4a71aed92a8f41bf99afdca100b"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseFallJam.h",
+      "unchanged": true,
+      "current_sha256": "9e2d8d2c2670d2ccc2719e41ec087dc91300dc53fd09a61679ee1fc36291553b",
+      "takeover_sha256": "9e2d8d2c2670d2ccc2719e41ec087dc91300dc53fd09a61679ee1fc36291553b",
+      "wildlife_current_sha256": "9e2d8d2c2670d2ccc2719e41ec087dc91300dc53fd09a61679ee1fc36291553b"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseRearPorchReview.cpp",
+      "unchanged": true,
+      "current_sha256": "de049038a7da41c86157ff2f432b891a749c3ec24d54c074c2b54a1432e28270",
+      "takeover_sha256": "de049038a7da41c86157ff2f432b891a749c3ec24d54c074c2b54a1432e28270",
+      "wildlife_current_sha256": "de049038a7da41c86157ff2f432b891a749c3ec24d54c074c2b54a1432e28270"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseParkingDetail.h",
+      "unchanged": true,
+      "current_sha256": "3aca74c29c4a1313c272669fe92210d4e523951e25fb7cd3e9d2bafbba7ba980",
+      "takeover_sha256": "3aca74c29c4a1313c272669fe92210d4e523951e25fb7cd3e9d2bafbba7ba980",
+      "wildlife_current_sha256": "3aca74c29c4a1313c272669fe92210d4e523951e25fb7cd3e9d2bafbba7ba980"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseRearPorch.h",
+      "unchanged": true,
+      "current_sha256": "b789c92e671f6949f1d18f4204ffd9c497c602676e695c42abf1c54f44ef500a",
+      "takeover_sha256": "b789c92e671f6949f1d18f4204ffd9c497c602676e695c42abf1c54f44ef500a",
+      "wildlife_current_sha256": "b789c92e671f6949f1d18f4204ffd9c497c602676e695c42abf1c54f44ef500a"
+    },
+    {
+      "file": "Content/Story/Maps/Chapter01_House.umap",
+      "unchanged": true,
+      "current_sha256": "5309c8f80470373721148eabdc62bc6d70ed40fe12ad789587881a2ca7335e5c",
+      "takeover_sha256": "5309c8f80470373721148eabdc62bc6d70ed40fe12ad789587881a2ca7335e5c",
+      "wildlife_current_sha256": "5309c8f80470373721148eabdc62bc6d70ed40fe12ad789587881a2ca7335e5c"
+    }
+  ],
+  "no_map_saved": true,
+  "standalone_and_logic_checks_finished": true,
+  "source_assets_unchanged": 64,
+  "authorized_campus_crickets_replacement": "HouseCampusPolish conditional start only; MASTER_PROMPT nightbed replaces campus crickets, NoWildlifeSound restores original start",
+  "current_evening_checks_finished": true,
+  "medium_native_validation_pending": false,
+  "original_campus_mp_sha256": "404b4e7727205d7f01a7b8dd5f1f9205ef12a4ee7db6618eb32626e5642f3e79",
+  "current_utc": "2026-10-18T03:41:55.674165+00:00",
+  "current_contact_routes_timing_passed": true,
+  "default_source_only_delta_after_timing_verified": "Saved/CalderWork/runs/codex_deer_perf_v2_scope_audio_audit.json",
+  "standalone_default_build_and_strict_signature_passed": true
+}

@@ -1,0 +1,120 @@
+{
+  "status": "native_visual_clock_restoration_multiplayer_build_scope_verified_recovery_receipt_authoritative",
+  "owner_duration_minutes": 30,
+  "owner_authorized_override_of_frozen_dusk": true,
+  "wildlife_checkpoint_verified_before_start": true,
+  "wildlife_checkpoint": "Saved/CalderWork/codex_checkpoint_owner_wildlife_20261018_v1/recovery_receipt.json",
+  "source": "Source/SeniorSendoff/HouseCalderNightfall.cpp",
+  "duration_seconds": 1800,
+  "clock": "GameState shared server world time; fallback world time only before GameState exists",
+  "curve": "smoothstep(clamp(seconds/1800,0,1)); hold night thereafter",
+  "new_actors_lights": 0,
+  "fog_density_opacity": "unchanged",
+  "interior_fixtures_exposure": "unchanged",
+  "disable_switches": [
+    "NoCalderNightfall",
+    "NoDusk",
+    "NoCalderTerrain",
+    "NoCalderLandscape"
+  ],
+  "visual_and_clock_acceptance_pending": false,
+  "native_source_config_freeze_required": true,
+  "whole_calder_master_complete": false,
+  "editor_v1": {
+    "passed": false,
+    "seconds": 162.2,
+    "log": "Saved/CalderWork/nightfall_20261018_v1/editor_build_v1.log",
+    "reason": "Strict compiler rejects unconditional break in directional-light iterator loop; fixed with one iterator/if initialization."
+  },
+  "editor_v2": {
+    "passed": true,
+    "seconds": 161.19,
+    "log": "Saved/CalderWork/nightfall_20261018_v1/editor_build_v2.log"
+  },
+  "first_night": {
+    "native_machine_passed": true,
+    "visual_accepted": false,
+    "receipt": "Saved/CalderWork/runs/codex_nightfall_night_v1_nightfall.json",
+    "correction": "Increase existing sky-light compensation32x at night; visible atmospheric tint and sun descent unchanged, no new lights."
+  },
+  "editor_v3": {
+    "passed": true,
+    "seconds": 152.59,
+    "log": "Saved/CalderWork/nightfall_20261018_v1/editor_build_v3.log"
+  },
+  "second_night": {
+    "receipt": "Saved/CalderWork/runs/codex_nightfall_night_v2_nightfall.json",
+    "machine_passed": true,
+    "visual_accepted": false,
+    "reason": "Captured night sky supplies negligible lighting; intensity compensation not useful."
+  },
+  "ambient_fill_revision": {
+    "existing_component": "ExteriorDuskFilmLook",
+    "new_actors_or_lights": 0,
+    "transient_uniform_cube_bytes": 49152,
+    "default_strength": 0.1,
+    "weight": "shared alpha squared times immediate local exterior gain, restoring original cube settings indoors",
+    "interior_exposure_and_fixtures": "unchanged",
+    "sky_intensity_restored_to_normal_night_fade": true
+  },
+  "editor_v4": {
+    "passed": true,
+    "seconds": 156.05
+  },
+  "fill_probes": {
+    "low_dim": "Saved/CalderWork/runs/codex_nightfall_fill_probe_v1_nightfall.json",
+    "selected": "Saved/CalderWork/runs/codex_nightfall_fill_probe_v2_nightfall.json",
+    "selected_strength": 0.1,
+    "all_four_selected_captures_reviewed": true
+  },
+  "editor_v5": {
+    "passed": true,
+    "seconds": 164.83,
+    "log": "Saved/CalderWork/nightfall_20261018_v1/editor_build_v5.log"
+  },
+  "native_final": {
+    "source_config_frozen": true,
+    "stage_captures_reviewed": 45,
+    "stages": [
+      "codex_nightfall_final_dusk_v1",
+      "codex_nightfall_final_middle_v1",
+      "codex_nightfall_final_night_v1"
+    ],
+    "clock": "codex_nightfall_final_clock_v2",
+    "clock_actual_play_window_seconds": 50.000284,
+    "clock_wall_window_seconds": 49.9936439171,
+    "clock_error_seconds": 0.0066400829,
+    "clock_initial_failure_retained": "codex_nightfall_final_clock_v1 compared map generation/screenshot delays to clamped game time; review now uses actual600-frame renderer window, unchanged1s tolerance. No runtime source changed.",
+    "hold_3600": "codex_nightfall_final_hold_v1 passed and2captures reviewed",
+    "no_nightfall": "codex_nightfall_final_off_v1 passed",
+    "no_terrain": "codex_nightfall_final_terrain_off_v1 passed",
+    "real_30_minute_soak_performed": false
+  },
+  "native_final_chain": "Saved/CalderWork/nightfall_20261018_v1/final_native_chain.json",
+  "native_final_captures_reviewed": 54,
+  "normal_multiplayer": {
+    "run": "Saved/CalderWork/runs/codex_nightfall_mp_v1/result.json",
+    "passed": true,
+    "source_config_frozen": true,
+    "client_data_ms": 23.26,
+    "client_gpu_frame_completion_upper_bound_ms": 58.12,
+    "capture_reviewed": true,
+    "shared_clock_report": "Saved/CalderWork/nightfall_20261018_v1/multiplayer_clock_settled.json",
+    "settled_max_shared_clock_error_seconds": 0.5179139146182337,
+    "initial_loading_analysis_failure_preserved": "Saved/CalderWork/nightfall_20261018_v1/multiplayer_clock.json",
+    "normal_scene_time_not_night_pinned": true
+  },
+  "standalone_final": {
+    "passed": true,
+    "build_seconds": 134.05,
+    "strict_signature_passed": true,
+    "source_config_frozen": true,
+    "receipt": "Saved/CalderWork/codex_nightfall_game_v1_build.json",
+    "standalone_gameplay_tested": false
+  },
+  "scope_guard_passed": true,
+  "wildlife_source_carryforward": "Saved/CalderWork/nightfall_20261018_v1/final_source_carryforward.json",
+  "recovery_target": "Saved/CalderWork/codex_checkpoint_nightfall_20261018_v1/recovery_receipt.json",
+  "recovery_completion_rule": "Present passed=true receipt is authoritative; prior verified wildlife recovery remains intact.",
+  "full_30_minute_wall_clock_or_multiplayer_soak_performed": false
+}

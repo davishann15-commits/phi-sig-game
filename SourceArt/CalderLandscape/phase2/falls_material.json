@@ -1,0 +1,9 @@
+{
+  "num_pixel_shader_instructions": 305,
+  "num_pixel_texture_samples": 3,
+  "material": "/Game/SeniorSendOff/Calder/Materials/M_CalderFalls",
+  "blend_mode": "opaque",
+  "roughness": 0.06,
+  "projection": "world XZ",
+  "normal": "world derivative bump"
+}

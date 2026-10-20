@@ -1,0 +1,273 @@
+#include "HouseStadiumDetail.h"
+#include "Async/ParallelFor.h"
+#include "HouseBlackHall.h"
+#include "HouseBlackHallLook.h"
+#include "HouseBlackHallPaint.h"
+#include "Engine/Texture2D.h"
+#include "Materials/MaterialInstanceDynamic.h"
+#include "Materials/MaterialInterface.h"
+namespace HouseStadiumDetailLookImpl
+{
+void Texture(UHouseBlackHallSubsystem* Look,FName Key,const FHallImage& Image,float Rough,float Metal=0.f,const FHallImage* Normal=nullptr,bool Wrap=true)
+{auto* T=HallMakeTexture(Image,true,false,*FString::Printf(TEXT("CalderStadium_%s"),*Key.ToString()),Wrap);Look->Textures.Add(Key,T);UTexture2D* N=nullptr;if(Normal){N=HallMakeTexture(*Normal,false,true,*FString::Printf(TEXT("CalderStadium_%s_N"),*Key.ToString()),Wrap);Look->Textures.Add(FName(*FString::Printf(TEXT("%s_N"),*Key.ToString())),N);}HallMakeTextured(Look,Key,T,N,Rough,FLinearColor::White,Normal?.65f:0.f,Metal);}
+void Label(FHallImage& I,FString Text,float Y,float H,FLinearColor Ink)
+{FHallTextStyle S;S.Height=H;S.Stroke=H*.075f;S.Wobble=.5f;S.Seed=861018;const FString Painted=Text.Replace(TEXT("\u00a2"),TEXT("C"));const float Left=(I.W-HallTextWidth(Painted,S))*.5f;HallDrawText(I,Painted,{Left,Y},S,Ink);for(int32 J=0;J<Text.Len();++J)if(Text[J]==TCHAR(0xa2)){const float X=Left+(J?HallTextWidth(Painted.Left(J),S)+S.Spacing*H:0.f)+H/3.f;I.Stroke({{X+H*.07f,Y+H*.08f},{X-H*.07f,Y-H*1.08f}},S.Stroke*.8f,Ink);}}
+}
+void HouseStadiumDetail::WeatherField(FHallImage& Image)
+{
+ if(!Enabled()||Step()<4)return;
+ const double Start=FPlatformTime::Seconds();
+ auto Row=[&](int32 Y){for(int32 X=0;X<Image.W;++X)
+ {
+  auto& Pixel=Image.At(X,Y);const float Grain=HallNoise(X*1.7f,Y*.9f,861018);
+  // Chalk wears into the grass in small chips. Retain the original painted layout and legibility.
+  if(Pixel.R>.55f&&Pixel.G>.55f&&Pixel.B>.5f&&Grain<.30f)
+   Pixel=FMath::Lerp(Pixel,FLinearColor(.05f,.08f,.035f),FMath::Clamp((.30f-Grain)*3.f,0.f,.5f));
+  Pixel=Pixel*(.88f+Grain*.22f);Pixel.A=1.f;
+ }};
+ if(Step()>=5)ParallelFor(Image.H,Row);else for(int32 Y=0;Y<Image.H;++Y)Row(Y);
+ UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_SURFACE_PREP fieldRows=%d columns=%d parallel=%d ms=%.3f"),Image.H,Image.W,int(Step()>=5),(FPlatformTime::Seconds()-Start)*1000.);
+}
+void HouseStadiumDetail::CreateLook(UHouseBlackHallSubsystem* Look)
+{
+ if(!Enabled()||!Look||Look->Materials.Contains(TEXT("SD_Concrete")))return;namespace L=HouseStadiumDetailLookImpl;const double Start=FPlatformTime::Seconds();
+ struct FSurface{const TCHAR* Key;FLinearColor Base;float Rough,Metal;int Kind;};
+ const FSurface Surfaces[]={
+ {TEXT("SD_Concrete"),{.37f,.355f,.32f},.96f,0,0},{TEXT("SD_Aluminium"),{.48f,.49f,.48f},.42f,.85f,1},
+ {TEXT("SD_Steel"),{.19f,.205f,.20f},.67f,.65f,2},{TEXT("SD_Purple"),{.105f,.042f,.16f},.76f,.3f,3},
+ {TEXT("SD_Wood"),{.245f,.15f,.08f},.88f,0,4},{TEXT("SD_SeatWood"),{.245f,.15f,.08f},.88f,0,5},{TEXT("SD_Gold"),{.59f,.38f,.064f},.75f,.2f,3},
+ {TEXT("SD_Rust"),{.235f,.092f,.032f},.98f,.1f,2},{TEXT("SD_Cream"),{.67f,.64f,.51f},.85f,0,3},
+ {TEXT("SD_Fabric"),{.13f,.065f,.17f},.96f,0,6}};
+ for(const auto& S:Surfaces){FHallImage I,N;I.Init(256,256,S.Base);TArray<float> Height;Height.SetNum(256*256);
+  auto Row=[&](int32 Y){for(int32 X=0;X<256;++X){const float Grain=HallNoise(X*.7f,Y*.7f,201986);const float Cloud=HallFbm(X*.022f,Y*.022f,3,861018);const float Streak=HallNoise(X*.15f,Y*.003f,1931);float Scale=.82f+Cloud*.27f+(Grain-.5f)*.15f;
+   if(S.Kind==1)Scale=.88f+HallNoise(X*.025f,Y*2.f,31)*.16f+(Cloud-.5f)*.17f;
+   if(S.Kind==4||S.Kind==5)Scale=.65f+HallNoise(X*.04f,Y*.8f,49)*.42f+FMath::Sin(Y*.8f+HallNoise(X*.1f,Y*.01f,67)*8.f)*.05f;
+   if(S.Kind==6)Scale=.86f+Grain*.12f+((X+Y)%2)*.04f;
+   FLinearColor C=S.Base*Scale;if(S.Kind==0){C=C*(1.f-FMath::Pow(Streak,8.f)*.35f);if(Grain>.94f)C*=.48f;}
+   if((S.Kind==2||S.Kind==3)&&Cloud>.62f&&Grain>.48f)C=FMath::Lerp(C,FLinearColor(.27f,.115f,.042f),FMath::Clamp((Cloud-.62f)*4.f,0.f,.8f));
+   if(S.Kind==3&&Grain>.91f)C=FLinearColor(.38f,.39f,.36f);if(S.Kind==5&&Cloud<.62f)C=FMath::Lerp(C,FLinearColor(.13f,.068f,.18f)*Scale,.78f);C.A=1.f;I.At(X,Y)=C;Height[Y*256+X]=Grain*.15f+Cloud*.2f;
+  }};
+  if(Step()>=5)ParallelFor(256,Row);else for(int32 Y=0;Y<256;++Y)Row(Y);
+  HallHeightToNormal(Height,256,256,.8f,true,N);L::Texture(Look,S.Key,I,S.Rough,S.Metal,&N);
+ }
+ // Optional owned CC0 scan, imported once by the guarded texture batch. NoStadiumDetail never loads it.
+ auto* ScanColor=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_Concrete_Color.T_Stadium_Concrete_Color"));auto* ScanNormal=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_Concrete_Normal.T_Stadium_Concrete_Normal"));
+ if(ScanColor&&ScanNormal){HallMakeTextured(Look,TEXT("SD_Concrete"),ScanColor,ScanNormal,.94f,{1.12f,1.12f,1.10f},.65f);UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_SURFACE concrete=PolyHaven_CC0_2K scaleCm=300 newLights=0"));}
+ // Keep the original tread key, so CampusWoodsReview still counts the same geometry.
+ Look->Materials.Add(TEXT("EX_CampusSeats"),Look->Mat(TEXT("SD_Concrete")));
+ HallMakePlain(Look,TEXT("SD_Dark"),{.014f,.016f,.015f},.92f);HallMakePlain(Look,TEXT("SD_Chalk"),{.75f,.73f,.63f},.95f);HallMakePlain(Look,TEXT("SD_Orange"),{.64f,.17f,.021f},.76f);
+ HallMakePlain(Look,TEXT("SD_Bulb"),{.58f,.34f,.10f},.32f,0,{16,8.5f,2.7f});HallMakePlain(Look,TEXT("SD_DeadBulb"),{.055f,.043f,.025f},.35f);
+ HallMakePlain(Look,TEXT("SD_FlickerBulb"),{.58f,.34f,.1f},.32f,0,{14,7,2});HallMakePlain(Look,TEXT("SD_FloodFlicker"),{.6f,.63f,.68f},.2f,0,{22,24,28});
+ HallMakePlain(Look,TEXT("SD_Gum"),{.08f,.073f,.064f},.98f);HallMakePlain(Look,TEXT("SD_GrassWorn"),{.092f,.10f,.043f},.98f);HallMakePlain(Look,TEXT("SD_Dirt"),{.085f,.055f,.03f},.98f);
+ HallMakePlain(Look,TEXT("SD_WaterStain"),{.20f,.19f,.17f},.98f);
+ HallMakePlain(Look,TEXT("SD_FabricEdge"),{.19f,.13f,.22f},.98f);HallMakePlain(Look,TEXT("SD_TireTread"),{.022f,.025f,.024f},.98f);
+ HallMakePlain(Look,TEXT("SD_PaddingDark"),{.025f,.029f,.027f},.82f);HallMakePlain(Look,TEXT("SD_SeatSeam"),{.075f,.078f,.07f},.92f);
+ HallMakePlain(Look,TEXT("SD_CaseLeather"),{.038f,.029f,.024f},.81f);
+ HallMakePlain(Look,TEXT("SD_GrassNear"),{.035f,.075f,.023f},.98f);
+ if(auto* Parent=HallHouseMat(TEXT("M_House_Glass"))){auto* Glass=UMaterialInstanceDynamic::Create(Parent,Look);Glass->SetVectorParameterValue(TEXT("Tint"),FLinearColor(.09f,.13f,.15f));Glass->SetScalarParameterValue(TEXT("Opacity"),.32f);Glass->SetScalarParameterValue(TEXT("Roughness"),.22f);Look->Materials.Add(TEXT("SD_Glass"),Glass);}else HallMakePlain(Look,TEXT("SD_Glass"),{.028f,.045f,.046f},.19f,.25f);
+ HallMakePlain(Look,TEXT("SD_Wet"),{.035f,.038f,.031f},.14f,.1f);
+ HallMakePlain(Look,TEXT("SD_Padding"),{.105f,.042f,.16f},.78f);
+ struct FBoard{const TCHAR* Key;const TCHAR* A;const TCHAR* B;const TCHAR* C;};
+ const FBoard Boards[]={
+ {TEXT("SD_Menu"),TEXT("GEESE GRILL"),TEXT("HOT DOG 75\u00a2"),TEXT("SODA 50\u00a2  COFFEE 35\u00a2")},
+ {TEXT("SD_SponsorHardware"),TEXT("ROOK & SONS"),TEXT("HARDWARE"),TEXT("SERVING CALDER SINCE 1924")},
+ {TEXT("SD_SponsorDiner"),TEXT("MILL CREEK DINER"),TEXT("OPEN LATE"),TEXT("PIE  COFFEE  PLATE LUNCH")},
+ {TEXT("SD_SponsorBank"),TEXT("RIDGE COUNTY BANK"),TEXT("YOUR HOMETOWN BANK"),TEXT("SINCE 1908")},
+ {TEXT("SD_Dedication"),TEXT("CALDER STATE STADIUM"),TEXT("ERECTED 1931"),TEXT("BY THE PEOPLE OF CALDER")},
+ {TEXT("SD_HallOfFame"),TEXT("FIGHTING GEESE"),TEXT("HALL OF FAME"),TEXT("1931  1948  1964  1978")},
+ {TEXT("SD_Flyers"),TEXT("HOMECOMING OCT 18 1986"),TEXT("THE PAPER LANTERNS"),TEXT("FALL FORMAL  LOST CAT  SKI CLUB")},
+ {TEXT("SD_Beat"),TEXT("BEAT DUNMORE"),TEXT("CALDER STATE"),TEXT("FIGHTING GEESE")}};
+ for(const auto& B:Boards){FHallImage I;I.Init(1024,256,{.40f,.37f,.27f});L::Label(I,B.A,65,44,{.09f,.045f,.12f});L::Label(I,B.B,151,50,{.09f,.045f,.12f});L::Label(I,B.C,225,26,{.12f,.10f,.08f});L::Texture(Look,B.Key,I,.88f,0,nullptr,false);}
+ if(Step()>=5)
+ {
+  HallMakePlain(Look,TEXT("SD_TrophyBrass"),{.55f,.39f,.12f},.40f,.78f);
+  struct FFlyer{const TCHAR* Key;const TCHAR* Title;const TCHAR* Line;const TCHAR* Date;};
+  const FFlyer Flyers[]={
+   {TEXT("SD_FlyerFormal"),TEXT("FALL FORMAL"),TEXT("THE PAPER LANTERNS"),TEXT("OCT 25  UNION HALL")},
+   {TEXT("SD_FlyerRadio"),TEXT("CAMPUS RADIO"),TEXT("REQUEST NIGHT"),TEXT("FRIDAY  9 PM")},
+   {TEXT("SD_FlyerSki"),TEXT("SKI CLUB"),TEXT("WINTER TRIP SIGNUP"),TEXT("MONDAY  UNION 204")},
+   {TEXT("SD_FlyerCat"),TEXT("LOST CAT"),TEXT("ORANGE TABBY"),TEXT("LAST SEEN ON CAMPUS")}};
+  for(int32 Index=0;Index<4;++Index)
+  {
+   const auto& Flyer=Flyers[Index];FHallImage Page;Page.Init(512,384,{.69f,.64f,.49f});
+   auto Row=[&](int32 Y){for(int32 X=0;X<Page.W;++X){auto& Pixel=Page.At(X,Y);const float Edge=FMath::Min(FMath::Min(X,511-X),FMath::Min(Y,383-Y));Pixel*=.93f+HallNoise(X*.8f,Y*.8f,1931+Index)*.09f;Pixel*=1.f-(1.f-FMath::Clamp(Edge/24.f,0.f,1.f))*.12f;Pixel.A=1.f;}};ParallelFor(Page.H,Row);
+   L::Label(Page,Flyer.Title,90,44,{.11f,.055f,.14f});L::Label(Page,Flyer.Line,182,30,{.12f,.10f,.075f});L::Label(Page,Flyer.Date,276,24,{.12f,.10f,.075f});
+   Page.Stroke({{26,307},{486,307}},1.2f,{.25f,.22f,.16f});
+   if(Index==3)for(int32 Tab=0;Tab<12;++Tab)Page.Stroke({{28.f+Tab*40,325},{28.f+Tab*40,383}},.9f,{.25f,.22f,.16f});
+   L::Texture(Look,Flyer.Key,Page,.94f,0,nullptr,false);
+  }
+ }
+ FHallImage Goose;Goose.Init(256,256,{.11f,.04f,.18f});Goose.Ellipse({128,128},{118,118},0,{.72f,.49f,.08f});Goose.Ellipse({128,128},{105,105},0,{.11f,.04f,.18f});Goose.Stroke({{90,210},{105,140},{135,84}},28,{.04f,.035f,.03f});Goose.Ellipse({151,73},{34,24},-15,{.04f,.035f,.03f});Goose.Ellipse({143,85},{18,9},20,{.8f,.79f,.73f});Goose.FillPolygon({{177,64},{211,75},{177,83}},{.04f,.035f,.03f});Goose.Ellipse({160,66},{3,3},0,{.72f,.49f,.08f});L::Texture(Look,TEXT("SD_Goose"),Goose,.85f,0,nullptr,false);
+ FHallImage Play;Play.Init(512,256,{.035f,.075f,.049f});for(int32 I=0;I<7;++I){const FVector2D C(80+I*52,168);Play.Ellipse(C,{9,9},0,{.58f,.65f,.57f});Play.Stroke({C+FVector2D(0,-12),C+FVector2D(0,-70),C+FVector2D(I%2?34:-34,-104)},2.8f,{.58f,.65f,.57f});}L::Label(Play,TEXT("SWEEP RIGHT"),235,27,{.58f,.65f,.57f});L::Texture(Look,TEXT("SD_Play"),Play,.98f,0,nullptr,false);
+ FHallImage Down;Down.Init(256,256,{.72f,.19f,.025f});L::Label(Down,TEXT("2"),222,182,{.025f,.025f,.02f});L::Texture(Look,TEXT("SD_DownBoard"),Down,.85f,0,nullptr,false);
+ if(Step()>=4)
+ {
+  auto* FieldParent=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Materials/M_Stadium_FieldDetail.M_Stadium_FieldDetail"));
+  UTexture2D* FieldArt=Look->Textures.FindRef(TEXT("T_CF_Field"));
+  if(FieldParent&&FieldArt){auto* FieldMaterial=UMaterialInstanceDynamic::Create(FieldParent,Look);FieldMaterial->SetTextureParameterValue(TEXT("BaseMap"),FieldArt);Look->Materials.Add(TEXT("CF_Field"),FieldMaterial);UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_SURFACE field=originalArt+Grass004_CC0 detailTileCm=220 normalStrength=.55 fixedZ=-56 newLights=0"));}
+ }
+ if(Step()>=4){Look->Materials.Add(TEXT("CF_Cooler"),Look->Mat(TEXT("SD_Orange")));Look->Materials.Add(TEXT("CF_Bench"),Look->Mat(TEXT("SD_Aluminium")));Look->Materials.Add(TEXT("CF_Aluminium"),Look->Mat(TEXT("SD_Aluminium")));}
+ if(Step()>=6){
+  // Vertical oak fibres follow each timber's local frame. Fine normal relief replaces broad repeated swirls.
+  for(int32 Variant=0;Variant<3;++Variant){FHallImage I,N;I.Init(512,512,{.24f,.135f,.058f});TArray<float> Heights;Heights.SetNum(512*512);
+   ParallelFor(512,[&](int32 Y){for(int32 X=0;X<512;++X){const float Bend=FMath::Sin(Y*.013f+Variant)*6+FMath::Sin(Y*.004f)*12,Grain=HallNoise((X+Bend)*.45f,Y*.018f,1931+Variant),Fine=HallNoise(X*2.f,Y*.05f,53),Shade=.76f+Grain*.28f+Fine*.055f;const float Tint=Variant==0?1.13f:Variant==1?1.f:.84f;const float Age=Step()>=7?.80f+HallNoise(X*.013f,Y*.018f,1939+Variant)*.28f:1.f;I.At(X,Y)=(Step()>=7?FLinearColor(.17f,.086f,.035f):FLinearColor(.27f,.152f,.067f))*Shade*Tint*Age;I.At(X,Y).A=1;Heights[Y*512+X]=Grain*.15f+Fine*.015f;}});HallHeightToNormal(Heights,512,512,.3f,true,N);L::Texture(Look,Variant==0?TEXT("SD_LockerOakLight"):Variant==1?TEXT("SD_LockerOak"):TEXT("SD_LockerOakDark"),I,Step()>=7?.74f:.62f,0,&N);
+  }
+  if(Step()>=7){
+   HallMakePlain(Look,TEXT("SD_WoodEdge"),{.245f,.14f,.063f},.88f);HallMakePlain(Look,TEXT("SD_WoodStain"),{.067f,.038f,.018f},.95f);
+   FHallImage Bench,BenchNormal;Bench.Init(512,256,{.18f,.094f,.038f});TArray<float> Heights;Heights.SetNum(512*256);
+   ParallelFor(256,[&](int32 Y){for(int32 X=0;X<512;++X){const float Warp=FMath::Sin(X*.012f)*5,Grain=HallNoise(X*.018f,(Y+Warp)*.5f,1986),Age=HallNoise(X*.012f,Y*.025f,1931),Scuff=FMath::Pow(HallNoise(X*.014f,Y*.75f,31),10.f)*.28f;const FLinearColor Base=FLinearColor(.18f,.094f,.038f)*(.72f+Grain*.27f)*(.82f+Age*.22f);Bench.At(X,Y)=FMath::Lerp(Base,FLinearColor(.28f,.164f,.078f),Scuff);Bench.At(X,Y).A=1;Heights[Y*512+X]=Grain*.08f+Age*.05f;}});
+   HallHeightToNormal(Heights,512,256,.4f,true,BenchNormal);L::Texture(Look,TEXT("SD_BenchWood"),Bench,.66f,0,&BenchNormal);
+  }
+  FHallImage Steel;Steel.Init(512,256,{.46f,.47f,.45f});ParallelFor(256,[&](int32 Y){for(int32 X=0;X<512;++X){const float Fine=HallNoise(X*.05f,Y*2.f,31);Steel.At(X,Y)=FLinearColor(.48f,.49f,.47f)*(.97f+Fine*.055f);}});L::Texture(Look,TEXT("SD_TubSteel"),Steel,.31f,.88f);
+  HallMakePlain(Look,TEXT("SD_HelmetShell"),{.105f,.033f,.16f},.29f,.07f);HallMakePlain(Look,TEXT("SD_Jersey"),{.12f,.048f,.17f},.94f);HallMakePlain(Look,TEXT("SD_NameBrass"),{.44f,.32f,.13f},.55f,.68f);HallMakePlain(Look,TEXT("SD_Towel"),{.54f,.49f,.38f},.97f);HallMakePlain(Look,TEXT("SD_BottleAmber"),{.16f,.068f,.022f},.35f);
+  if(auto* Parent=HallHouseMat(TEXT("M_House_Glass"))){for(int32 I=0;I<2;++I){auto* Mat=UMaterialInstanceDynamic::Create(Parent,Look);Mat->SetVectorParameterValue(TEXT("Tint"),FLinearColor(.065f,.078f,.066f));Mat->SetScalarParameterValue(TEXT("Opacity"),I==0?.18f:.12f);Mat->SetScalarParameterValue(TEXT("Roughness"),I==0?.18f:.30f);Look->Materials.Add(I==0?TEXT("SD_TubWater"):TEXT("SD_Wet"),Mat);}}
+  else HallMakePlain(Look,TEXT("SD_TubWater"),{.085f,.10f,.085f},.24f);
+  FHallImage Pad,PadNormal;Pad.Init(256,256,{.105f,.042f,.16f});TArray<float> PadHeight;PadHeight.SetNum(256*256);ParallelFor(256,[&](int32 Y){for(int32 X=0;X<256;++X){const float G=HallNoise(X*3.f,Y*3.f,86);Pad.At(X,Y)=FLinearColor(.105f,.042f,.16f)*(.96f+G*.085f);PadHeight[Y*256+X]=G*.05f;}});HallHeightToNormal(PadHeight,256,256,.25f,true,PadNormal);L::Texture(Look,TEXT("SD_Padding"),Pad,.65f,0,&PadNormal);
+  SignLook(Look,false);
+ }
+ // Owner room-identity proof: real worn plaster, quieter mineral floor and purposeful utilities.
+ if(Step()>=7){
+  auto* Wall=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_RoomPlaster_Color.T_Stadium_RoomPlaster_Color"));
+  auto* WallN=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_RoomPlaster_Normal.T_Stadium_RoomPlaster_Normal"));
+  if(Wall&&WallN){HallMakeTextured(Look,TEXT("SD_RoomPlaster"),Wall,WallN,.94f,{.83f,.79f,.66f},.52f);HallMakeTextured(Look,TEXT("SD_RoomCeiling"),Wall,WallN,.97f,{.49f,.47f,.41f},.40f);}
+  else {Look->Materials.Add(TEXT("SD_RoomPlaster"),Look->Mat(TEXT("SD_Concrete")));Look->Materials.Add(TEXT("SD_RoomCeiling"),Look->Mat(TEXT("SD_Concrete")));}
+  if(ScanColor&&ScanNormal)HallMakeTextured(Look,TEXT("SD_RoomFloor"),ScanColor,ScanNormal,.84f,{.36f,.35f,.33f},.45f);else Look->Materials.Add(TEXT("SD_RoomFloor"),Look->Mat(TEXT("SD_Concrete")));
+  HallMakePlain(Look,TEXT("SD_RoomBeam"),{.32f,.31f,.27f},.91f,.12f);HallMakePlain(Look,TEXT("SD_RoomPipe"),{.22f,.20f,.15f},.78f,.30f);
+  HallMakePlain(Look,TEXT("SD_RoomTube"),{.67f,.64f,.51f},.46f,0,{4.2f,4.0f,3.25f});HallMakePlain(Look,TEXT("SD_RoomTubeOld"),{.40f,.36f,.24f},.64f,0,{1.3f,1.1f,.65f});
+
+  // Owner requested more age and wear: actual CC0 furniture scans, kept separate from existing locker wood.
+  auto* FurnitureWood=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_FurnitureWood_Color.T_Stadium_FurnitureWood_Color"));
+  auto* FurnitureWoodN=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_FurnitureWood_Normal.T_Stadium_FurnitureWood_Normal"));
+  if(FurnitureWood&&FurnitureWoodN){HallMakeTextured(Look,TEXT("SD_FurnitureOak"),FurnitureWood,FurnitureWoodN,.85f,{.62f,.50f,.36f},.55f);HallMakeTextured(Look,TEXT("SD_FurnitureOakDark"),FurnitureWood,FurnitureWoodN,.90f,{.39f,.31f,.21f},.45f);HallMakeTextured(Look,TEXT("SD_FurnitureOakRubbed"),FurnitureWood,FurnitureWoodN,.94f,{.88f,.71f,.46f},.60f);}
+  else for(FName Key:{FName(TEXT("SD_FurnitureOak")),FName(TEXT("SD_FurnitureOakDark")),FName(TEXT("SD_FurnitureOakRubbed"))})Look->Materials.Add(Key,Look->Mat(TEXT("SD_LockerOakDark")));
+  auto* Leather=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_FurnitureLeather_Color.T_Stadium_FurnitureLeather_Color"));
+  auto* LeatherN=LoadObject<UTexture2D>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Stadium/Textures/T_Stadium_FurnitureLeather_Normal.T_Stadium_FurnitureLeather_Normal"));
+  if(Leather&&LeatherN){HallMakeTextured(Look,TEXT("SD_CoachUpholstery"),Leather,LeatherN,.81f,{.54f,.40f,.28f},.75f);HallMakeTextured(Look,TEXT("SD_LeatherWorn"),Leather,LeatherN,.96f,{.68f,.49f,.32f},.85f);}
+  else {HallMakePlain(Look,TEXT("SD_CoachUpholstery"),{.12f,.05f,.025f},.88f);HallMakePlain(Look,TEXT("SD_LeatherWorn"),{.22f,.105f,.04f},.96f);}
+  HallMakePlain(Look,TEXT("SD_LeatherCrack"),{.034f,.016f,.009f},.99f);
+  FHallImage Enamel,EnamelN;Enamel.Init(1024,1024,{.048f,.068f,.043f});TArray<float> EnamelH;EnamelH.SetNum(1024*1024);ParallelFor(1024,[&](int32 Y){for(int32 X=0;X<1024;++X){const float G=HallNoise(X*.8f,Y*.8f,1942),Age=HallFbm(X*.006f,Y*.0065f,3,1938),Chip=HallFbm(X*.03f,Y*.032f,4,1961),Fine=HallNoise(X*.7f,Y*.7f,1971);FLinearColor C=FLinearColor(.048f,.068f,.043f)*(.75f+Age*.45f);const bool Lost=Chip>.64f&&Fine>.55f;if(Lost)C=FLinearColor(.070f,.038f,.016f)*(.7f+G*.3f);Enamel.At(X,Y)=C;EnamelH[Y*1024+X]=G*.025f+(Lost?.04f:0);}});HallHeightToNormal(EnamelH,1024,1024,.25f,true,EnamelN);L::Texture(Look,TEXT("SD_CoachEnamel"),Enamel,.88f,.15f,&EnamelN);
+  FHallImage Brass;Brass.Init(128,128,{.22f,.15f,.06f});ParallelFor(128,[&](int32 Y){for(int32 X=0;X<128;++X){const float Age=HallFbm(X*.035f,Y*.04f,3,1931);Brass.At(X,Y)=FLinearColor(.25f,.17f,.064f)*(.55f+Age*.7f);}});L::Texture(Look,TEXT("SD_CoachBrass"),Brass,.77f,.65f);
+  FHallImage OldPaper;OldPaper.Init(256,256,{.45f,.37f,.23f});ParallelFor(256,[&](int32 Y){for(int32 X=0;X<256;++X){const float G=HallNoise(X*2.f,Y*2.f,1986),Stain=HallFbm(X*.022f,Y*.035f,3,1979),Edge=FMath::Min(FMath::Min(X,255-X),FMath::Min(Y,255-Y))/24.f;OldPaper.At(X,Y)=FLinearColor(.49f,.41f,.27f)*(.75f+G*.1f+Stain*.2f)*FMath::Clamp(Edge,.65f,1.f);}});L::Texture(Look,TEXT("SD_CoachPaper"),OldPaper,.99f);
+  FHallImage Roster;Roster.Init(512,768,{.46f,.39f,.26f});ParallelFor(768,[&](int32 Y){for(int32 X=0;X<512;++X){const float G=HallNoise(X*.8f,Y*.8f,1985),A=HallFbm(X*.015f,Y*.012f,3,1977);Roster.At(X,Y)=FLinearColor(.48f,.405f,.275f)*(.77f+G*.11f+A*.23f);}});L::Label(Roster,TEXT("CALDER STATE"),60,34,{.075f,.06f,.045f});L::Label(Roster,TEXT("FOOTBALL"),110,28,{.075f,.06f,.045f});L::Label(Roster,TEXT("OCTOBER 18 1986"),155,21,{.075f,.06f,.045f});L::Label(Roster,TEXT("POSTGAME NOTES"),220,27,{.075f,.06f,.045f});
+  const TCHAR* Rows[]={TEXT("12 WARD      QB"),TEXT("24 BELL      HB"),TEXT("37 REED      FB"),TEXT("41 FINCH     LB"),TEXT("56 MASON     C"),TEXT("63 GREER     G"),TEXT("78 COLE      T")};for(int32 J=0;J<7;++J){L::Label(Roster,Rows[J],290+J*46,22,{.10f,.085f,.06f});Roster.Stroke({{45,300.f+J*46},{467,300.f+J*46}},.7f,{.34f,.31f,.24f});}L::Label(Roster,TEXT("RETURN EQUIPMENT MONDAY"),680,20,{.17f,.085f,.055f});L::Texture(Look,TEXT("SD_CoachRoster"),Roster,.95f,0,nullptr,false);
+
+  // Printed, folded homecoming program. The unit-cube top has UV[-.5,.5], so wrap the authored cover by half a tile.
+  FHallImage Cover;Cover.Init(512,384,{.57f,.51f,.36f});ParallelFor(384,[&](int32 Y){for(int32 X=0;X<512;++X){const float Grain=HallNoise(X*2.f,Y*2.f,1986),Crease=FMath::Exp(-FMath::Square((X-254.f)/2.7f));Cover.At(X,Y)=FLinearColor(.57f,.51f,.36f)*(.93f+Grain*.08f-Crease*.10f);}});
+  L::Label(Cover,TEXT("CALDER STATE"),53,40,{.095f,.046f,.13f});L::Label(Cover,TEXT("HOMECOMING 86"),103,32,{.095f,.046f,.13f});Cover.Stroke({{28,122},{484,122}},2,{.17f,.10f,.12f});L::Label(Cover,TEXT("FIGHTING GEESE"),165,32,{.095f,.046f,.13f});L::Label(Cover,TEXT("VS DUNMORE"),211,29,{.095f,.046f,.13f});L::Label(Cover,TEXT("SATURDAY OCTOBER 18 1986"),260,18,{.12f,.075f,.075f});L::Label(Cover,TEXT("CALDER STATE STADIUM"),300,21,{.12f,.075f,.075f});L::Label(Cover,TEXT("OFFICIAL PROGRAM  50C"),350,18,{.12f,.075f,.075f});
+  FHallImage Wrapped;Wrapped.Init(512,384,FLinearColor::White);ParallelFor(384,[&](int32 Y){for(int32 X=0;X<512;++X)Wrapped.At(X,Y)=Cover.At((X+256)%512,(Y+192)%384);});L::Texture(Look,TEXT("SD_MovingProgram"),Wrapped,.96f);
+
+  FHallImage Stripe;Stripe.Init(1024,128,{.10f,.055f,.12f});ParallelFor(128,[&](int32 Y){for(int32 X=0;X<1024;++X){const float Fine=HallNoise(X*.75f,Y*.7f,31),Patch=HallFbm(X*.015f,Y*.07f,3,1986);auto C=FLinearColor(.13f,.073f,.15f)*(.8f+Patch*.35f);if(Y>106&&Y<116)C={.43f,.32f,.12f};if(Fine>.78f||Patch>.68f)C=FLinearColor(.48f,.45f,.36f)*(.8f+Fine*.2f);Stripe.At(X,Y)=C;}});L::Texture(Look,TEXT("SD_RoomStripe"),Stripe,.94f);
+  FHallImage Notes;Notes.Init(1024,768,{.16f,.091f,.042f});ParallelFor(768,[&](int32 Y){for(int32 X=0;X<1024;++X)Notes.At(X,Y)=FLinearColor(.21f,.124f,.060f)*(.7f+HallNoise(X*.7f,Y*.7f,1931)*.45f);});
+  Notes.FillPolygon({{45,46},{587,35},{601,392},{53,405}},{.58f,.52f,.38f});Notes.FillPolygon({{633,74},{965,94},{950,335},{619,312}},{.64f,.59f,.43f});Notes.FillPolygon({{402,447},{951,422},{966,704},{414,718}},{.69f,.64f,.49f});Notes.FillPolygon({{65,452},{335,469},{322,706},{52,689}},{.46f,.39f,.22f});
+  auto Note=[&](const TCHAR* T,float X,float Y,float H,bool Hand=false){FHallTextStyle S;S.Height=H;S.Stroke=H*(Hand?.063f:.065f);S.Spacing=.18f;S.Wobble=Hand?1.25f:.2f;S.Seed=int32(X+Y)+1986;HallDrawText(Notes,T,{X,Y},S,{.075f,.061f,.043f});};
+  Note(TEXT("CALDER CHRONICLE"),77,100,39);Note(TEXT("SATURDAY OCT 18 1986"),78,141,22);Notes.Stroke({{76,155},{565,155}},2,{.12f,.10f,.06f});Note(TEXT("GEESE HOLD ON"),78,210,41);Note(TEXT("24 - 17"),115,283,61);Note(TEXT("HOMECOMING AT CALDER"),79,332,22);Note(TEXT("ONE LAST HOME GAME"),79,373,22);
+  Note(TEXT("MONDAY 8 AM"),660,146,30,true);Note(TEXT("RETURN ALL"),649,200,29,true);Note(TEXT("EQUIPMENT"),645,249,30,true);Note(TEXT("- COACH"),686,292,26,true);
+  Note(TEXT("WARD - CALL HOME"),444,503,32,true);Note(TEXT("MOM SAVED THE PAPER"),440,558,28,true);Note(TEXT("KEEP THE GAME BALL"),440,617,29,true);Note(TEXT("THANK YOU SENIORS"),440,672,29,true);
+  Note(TEXT("1978"),95,514,39);Note(TEXT("LEAGUE"),81,569,31);Note(TEXT("CHAMPS"),74,618,32);Note(TEXT("CALDER STATE"),70,662,19);L::Texture(Look,TEXT("SD_RoomNotices"),Notes,.97f,0,nullptr,false);
+ }
+
+ UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_SURFACE_PREP lookParallel=%d ms=%.3f"),int(Step()>=5),(FPlatformTime::Seconds()-Start)*1000.);
+}
+
+namespace HouseStadiumDetailSignImpl
+{
+void Line(FHallImage& I,const FString& Text,float Y,float H,FLinearColor Ink,float Width=.90f)
+{
+ FHallTextStyle S;S.Height=H;S.Stroke=H*.085f;S.Spacing=.16f;S.Wobble=.38f;S.Seed=19861018;
+ const FString Painted=Text.Replace(TEXT("\u00a2"),TEXT("C"));S.WidthScale=1.f;const float Fit=FMath::Min(1.f,(I.W*Width-8)/FMath::Max(1.f,HallTextWidth(Painted,S)));S.Height*=Fit;S.Stroke=S.Height*.085f;H=S.Height;
+ const float Left=(I.W-HallTextWidth(Painted,S))*.5f;HallDrawText(I,Painted,{Left,Y},S,Ink);
+ for(int32 J=0;J<Text.Len();++J)if(Text[J]==TCHAR(0xa2)){const float X=Left+(J?HallTextWidth(Painted.Left(J),S)+S.Spacing*H:0.f)+H*S.WidthScale/3.f;I.Stroke({{X+H*.07f,Y+H*.08f},{X-H*.07f,Y-H*1.08f}},S.Stroke*.8f,Ink);}
+}
+void Board(UHouseBlackHallSubsystem* Look,const TCHAR* Key,const TCHAR* A,const TCHAR* B,const TCHAR* C,int32 W,int32 H,FLinearColor Base,FLinearColor Ink,int32 Seed,bool Brass=false)
+{
+ FHallImage I;I.Init(W,H,Base);const float Border=H*.035f;
+ auto Row=[&](int32 Y){for(int32 X=0;X<W;++X){const float Edge=FMath::Min(FMath::Min(float(X),float(W-1-X)),FMath::Min(float(Y),float(H-1-Y))),Grain=HallNoise(X*.8f,Y*.8f,Seed);I.At(X,Y)=Base*(.96f+Grain*.065f)*(1.f-.10f*FMath::Clamp(1.f-Edge/(H*.10f),0.f,1.f));}};ParallelFor(H,Row);
+ I.Stroke({{Border,Border},{W-Border,Border},{W-Border,H-Border},{Border,H-Border},{Border,Border}},H*.010f,Ink,.82f);
+ I.Stroke({{Border*1.8f,Border*1.8f},{W-Border*1.8f,Border*1.8f},{W-Border*1.8f,H-Border*1.8f},{Border*1.8f,H-Border*1.8f},{Border*1.8f,Border*1.8f}},H*.004f,Ink,.60f);
+ const bool Second=FCString::Strlen(B)>0,Third=FCString::Strlen(C)>0;
+ Line(I,A,H*(Second?.34f:.66f),H*(Second?.20f:.38f),Ink);
+ if(Second){I.Stroke({{W*.12f,H*.43f},{W*.88f,H*.43f}},H*.007f,Ink,.58f);Line(I,B,H*(Third?.68f:.79f),H*(Third?.19f:.24f),Ink);}
+ if(Third)Line(I,C,H*.88f,H*.085f,Ink);
+ // A few chips at the rolled edge and screw recesses; no heavy noise over the lettering.
+ FRandomStream R(Seed);for(int32 J=0;J<28;++J){const float X=R.FRandRange(3,W-3),Y=J%2?R.FRandRange(2,Border):R.FRandRange(H-Border,H-2);I.Ellipse({X,Y},{R.FRandRange(1,3),R.FRandRange(.6f,1.6f)},0,Brass?FLinearColor(.12f,.10f,.065f):FLinearColor(.26f,.25f,.22f),.70f);}
+ for(float X:{Border*2.8f,W-Border*2.8f})for(float Y:{Border*2.8f,H-Border*2.8f}){I.Ellipse({X+.8f,Y+1},{H*.012f,H*.012f},0,{.08f,.073f,.06f});I.Ellipse({X,Y},{H*.009f,H*.009f},0,{.46f,.45f,.39f});I.Stroke({{X-H*.006f,Y-H*.002f},{X+H*.006f,Y+H*.002f}},H*.003f,{.07f,.067f,.05f});}
+ HouseStadiumDetailLookImpl::Texture(Look,Key,I,Brass?.53f:.68f,Brass?.68f:.08f,nullptr,false);
+}
+}
+void HouseStadiumDetail::SignLook(UHouseBlackHallSubsystem* Look,bool Polish)
+{
+ if(!Enabled()||Step()<6||!Look)return;namespace S=HouseStadiumDetailSignImpl;
+ const FLinearColor Purple(.11f,.045f,.15f),Cream(.70f,.66f,.54f),Gold(.62f,.43f,.13f),Dark(.025f,.032f,.028f);
+ struct FSpec{const TCHAR* Key;const TCHAR* A;const TCHAR* B;const TCHAR* C;int32 W,H;int32 Style;};
+ const FSpec Owned[]={
+ {TEXT("SD_Menu"),TEXT("GEESE GRILL"),TEXT("HOT DOG 75\u00a2"),TEXT("SODA 50\u00a2   COFFEE 35\u00a2"),1024,256,1},
+ {TEXT("SD_SponsorHardware"),TEXT("ROOK & SONS"),TEXT("HARDWARE"),TEXT("SERVING CALDER SINCE 1924"),1024,384,1},
+ {TEXT("SD_SponsorDiner"),TEXT("MILL CREEK DINER"),TEXT("OPEN LATE"),TEXT("PIE  COFFEE  PLATE LUNCH"),1024,384,2},
+ {TEXT("SD_SponsorBank"),TEXT("RIDGE COUNTY BANK"),TEXT("YOUR HOMETOWN BANK"),TEXT("SINCE 1908"),1024,384,0},
+ {TEXT("SD_Dedication"),TEXT("CALDER STATE STADIUM"),TEXT("ERECTED 1931"),TEXT("BY THE PEOPLE OF CALDER"),1024,512,3},
+ {TEXT("SD_HallOfFame"),TEXT("FIGHTING GEESE"),TEXT("HALL OF FAME"),TEXT("1931  1948  1964  1978"),1024,256,0},
+ {TEXT("SD_Beat"),TEXT("BEAT DUNMORE"),TEXT("CALDER STATE"),TEXT("FIGHTING GEESE"),1024,256,1},
+ {TEXT("CF_TicketSign"),TEXT("TICKETS"),TEXT("SOLD OUT"),TEXT("HOMECOMING  OCT 18 1986"),1024,256,1},
+ {TEXT("CF_PressSign"),TEXT("CALDER STATE STADIUM"),TEXT(""),TEXT(""),2048,256,0},
+ {TEXT("CI_StaMenuGrill"),TEXT("GEESE GRILL"),TEXT("HOT DOGS 75\u00a2   BURGERS $1.25"),TEXT("COFFEE 35\u00a2  -  THANK YOU CALDER"),1536,384,1},
+ {TEXT("CI_StaMenuPopcorn"),TEXT("POPCORN AND CANDY"),TEXT("POPCORN 50\u00a2   CANDY 40\u00a2"),TEXT("PEANUTS 50\u00a2  -  GO GEESE"),1536,384,0},
+ {TEXT("CI_StaMenuDrinks"),TEXT("COLD DRINKS"),TEXT("COLA 60\u00a2   ORANGE 60\u00a2"),TEXT("HOT COCOA 50\u00a2"),1536,384,2},
+ {TEXT("CI_StaClosed"),TEXT("SORRY"),TEXT("CLOSED"),TEXT("THANK YOU - SEE YOU NEXT GAME"),512,256,1},
+ {TEXT("CI_StaGate4"),TEXT("GATE 4"),TEXT("CALDER STATE STADIUM"),TEXT(""),1024,256,0},
+ {TEXT("CI_StaGate5"),TEXT("GATE 5"),TEXT("CALDER STATE STADIUM"),TEXT(""),1024,256,0},
+ {TEXT("CI_StaSections"),TEXT("SECTIONS 21 - 24"),TEXT("BOWL ENTRANCE"),TEXT(""),1024,256,0},
+ {TEXT("CI_StaMen"),TEXT("MEN"),TEXT("RESTROOM"),TEXT(""),512,192,2},
+ {TEXT("CI_StaWomen"),TEXT("WOMEN"),TEXT("RESTROOM"),TEXT(""),512,192,2},
+ {TEXT("CI_StaLockerSign"),TEXT("FIGHTING GEESE"),TEXT("PLAYERS ONLY"),TEXT("LOCKER ROOM"),768,256,0},
+ {TEXT("CI_StaTunnelSign"),TEXT("PLAY LIKE A GOOSE TODAY"),TEXT(""),TEXT(""),1536,128,0},
+ {TEXT("CI_StaGameBall"),TEXT("GAME BALL"),TEXT("CALDER 24 - DUNMORE 17"),TEXT("HOMECOMING  OCT 18 1986"),512,512,1},
+ {TEXT("CI_StaRadio"),TEXT("GEESE RADIO"),TEXT("NETWORK"),TEXT("CALDER STATE  -  PRESS CREDENTIALS ONLY"),768,256,0},
+ {TEXT("CI_StaScoreSign"),TEXT("PA - SCOREBOARD"),TEXT("AUTHORIZED STAFF ONLY"),TEXT(""),768,192,2},
+ {TEXT("SD_TrainerLabel"),TEXT("TRAINING"),TEXT("SUPPLIES"),TEXT("CALDER STATE"),256,256,1},
+ {TEXT("SD_AgitatorLabel"),TEXT("CALDER EQUIPMENT"),TEXT("MODEL W-31"),TEXT(""),512,128,1}};
+ const FSpec Exterior[]={
+ {TEXT("CP_SouvenirSign"),TEXT("SOUVENIRS"),TEXT("PENNANTS $2   BUTTONS 50\u00a2"),TEXT("FIGHTING GEESE  -  HOMECOMING 86"),1024,384,1},
+ {TEXT("CP_StandSignA"),TEXT("HOT DOGS - POPCORN - POP"),TEXT("GEESE GRILL"),TEXT(""),1536,256,0},
+ {TEXT("CP_StandSignB"),TEXT("HOT CIDER & DONUTS"),TEXT("CIDER MILL"),TEXT(""),1536,256,1},
+ {TEXT("CP_ToiletSign"),TEXT("UNIT 14"),TEXT("SANITIZED"),TEXT("CALDER SERVICES"),512,256,1},
+ {TEXT("CP_BandSign"),TEXT("MARCHING GEESE"),TEXT("BAND - DO NOT LEAVE INSTRUMENTS"),TEXT("CALDER STATE"),1024,256,1},
+ {TEXT("CP_FriezeName"),TEXT("CALDER STATE STADIUM"),TEXT(""),TEXT(""),2048,256,1},
+ {TEXT("CP_FriezeNameShort"),TEXT("CALDER STATE STADIUM"),TEXT(""),TEXT(""),1536,256,1},
+ {TEXT("CP_FriezeErected"),TEXT("ERECTED BY THE ALUMNI"),TEXT(""),TEXT(""),2048,256,1},
+ {TEXT("CP_FriezeDedicated"),TEXT("DEDICATED OCTOBER 17 1931"),TEXT(""),TEXT(""),2048,256,1}};
+ auto Paint=[&](const FSpec& B,int32 Index){const FLinearColor Base=B.Style==0?Purple:B.Style==2?Dark:B.Style==3?FLinearColor(.32f,.235f,.11f):Cream,Ink=B.Style==0?Gold:B.Style==2?Cream:B.Style==3?FLinearColor(.055f,.044f,.025f):Purple;S::Board(Look,B.Key,B.A,B.B,B.C,B.W,B.H,Base,Ink,1931+Index,B.Style==3);};
+ if(Polish){
+  for(int32 I=0;I<UE_ARRAY_COUNT(Exterior);++I)Paint(Exterior[I],I+100);
+  const TCHAR* Items[][6]={{TEXT("HOT DOGS"),TEXT("POPCORN"),TEXT("POP"),TEXT("COFFEE"),TEXT("CANDY"),TEXT("PEANUTS")},{TEXT("HOT CIDER"),TEXT("DONUTS"),TEXT("COFFEE"),TEXT("COCOA"),TEXT("CARAMEL APPLE"),TEXT("")}};
+  const TCHAR* Prices[][6]={{TEXT("75\u00a2"),TEXT("50\u00a2"),TEXT("50\u00a2"),TEXT("35\u00a2"),TEXT("25\u00a2"),TEXT("40\u00a2")},{TEXT("50\u00a2"),TEXT("3/$1"),TEXT("35\u00a2"),TEXT("45\u00a2"),TEXT("60\u00a2"),TEXT("")}};
+  for(int32 Menu=0;Menu<2;++Menu){FHallImage I;I.Init(768,960,Cream);
+   ParallelFor(960,[&](int32 Y){for(int32 X=0;X<768;++X){I.At(X,Y)=Cream*(.94f+HallNoise(X*.4f,Y*.4f,Menu+1986)*.07f);}});
+   I.Stroke({{16,16},{752,16},{752,944},{16,944},{16,16}},7,Purple);S::Line(I,Menu==0?TEXT("GEESE GRILL"):TEXT("CIDER MILL"),114,65,Purple);
+   I.Stroke({{48,146},{720,146}},3,Purple);for(int32 Row=0;Row<(Menu==0?6:5);++Row){const float Y=250+Row*103.f;FHallTextStyle T;T.Height=38;T.Stroke=3.3f;T.Spacing=.12f;T.Wobble=.4f;T.WidthScale=.85f;HallDrawText(I,Items[Menu][Row],{52,Y},T,Dark);const FString Price=Prices[Menu][Row];FHallImage Small;Small.Init(176,76,Cream);S::Line(Small,Price,56,37,{.34f,.068f,.043f});for(int32 Py=0;Py<76;++Py)for(int32 Px=0;Px<176;++Px)I.At(542+Px,int32(Y)-56+Py)=Small.At(Px,Py);I.Stroke({{52,Y+22},{716,Y+22}},1,Gold,.5f);}
+   S::Line(I,TEXT("CASH ONLY  -  THANK YOU CALDER"),900,25,Purple);HouseStadiumDetailLookImpl::Texture(Look,Menu==0?TEXT("CP_PriceBoardA"):TEXT("CP_PriceBoardB"),I,.83f,0,nullptr,false);
+  }
+  for(int32 Sign=0;Sign<2;++Sign){FHallImage I;I.Init(1024,256,{.69f,.61f,.41f});for(int32 J=-1;J<12;++J){const float X=J*96.f;for(float Y:{0.f,224.f})I.FillPolygon({{X,Y},{X+43,Y},{X+75,Y+32},{X+32,Y+32}},{.55f,.22f,.035f});}
+   S::Line(I,Sign==0?TEXT("CALDER STATE PHYSICAL PLANT"):TEXT("BUS LOADING - NO PARKING"),129,53,Dark);S::Line(I,TEXT("STADIUM OPERATIONS"),198,25,Dark);HouseStadiumDetailLookImpl::Texture(Look,Sign==0?TEXT("CP_Sawhorse"):TEXT("CP_SawhorseBus"),I,.79f,0,nullptr,false);
+  }
+ }else{for(int32 I=0;I<UE_ARRAY_COUNT(Owned);++I)Paint(Owned[I],I);}
+ if(!Polish){
+  S::Board(Look,TEXT("CI_StaOnAirFace"),TEXT("ON AIR"),TEXT(""),TEXT(""),512,152,{.32f,.018f,.018f},Cream,1986);
+  UTexture2D* Air=Look->Textures.FindRef(TEXT("CI_StaOnAirFace"));HallMakeTextured(Look,TEXT("CI_StaOnAirFace"),Air,nullptr,.5f,FLinearColor::White,0,0,{6.f,.6f,.4f});
+  if(Step()>=7){FHallImage Crest;Crest.Init(768,512,Purple);
+   Crest.Stroke({{18,18},{750,18},{750,494},{18,494},{18,18}},3,Gold,.85f);Crest.Ellipse({384,206},{151,151},0,Gold);Crest.Ellipse({384,206},{143,143},0,Purple);
+   Crest.Stroke({{329,320},{345,225},{391,123}},43,{.025f,.028f,.025f});Crest.Ellipse({414,116},{45,29},-12,{.025f,.028f,.025f});Crest.Ellipse({404,132},{25,12},18,Cream);Crest.FillPolygon({{450,108},{503,124},{449,137}},Gold);Crest.Ellipse({433,108},{4,4},0,Cream);
+   S::Line(Crest,TEXT("FIGHTING GEESE"),454,56,Gold);HouseStadiumDetailLookImpl::Texture(Look,TEXT("CI_StaGeese"),Crest,.89f,0,nullptr,false);
+  }
+  FHallImage Slate;Slate.Init(1024,512,{.035f,.075f,.049f});ParallelFor(512,[&](int32 Y){for(int32 X=0;X<1024;++X){const float Rub=HallNoise(X*.015f,Y*.05f,86);Slate.At(X,Y)=FLinearColor(.035f,.075f,.049f)*(1+Rub*.12f);}});
+  S::Line(Slate,TEXT("BEAT DUNMORE"),136,77,{.62f,.68f,.57f});Slate.Stroke({{182,97},{856,145}},5,{.62f,.68f,.57f},.84f);
+  S::Line(Slate,TEXT("24 - 17"),382,183,{.80f,.72f,.37f});S::Line(Slate,TEXT("HOMECOMING  OCT 18 1986"),471,23,{.48f,.56f,.46f});HouseStadiumDetailLookImpl::Texture(Look,TEXT("CI_StaChalk"),Slate,.98f,0,nullptr,false);
+ }
+ UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_SIGNS group=%s detailedBoards=%d dated=1986 freeRuntimeArt=1 newLights=0"),Polish?TEXT("exterior"):TEXT("interior_and_scoreboard"),Polish?int32(UE_ARRAY_COUNT(Exterior)):int32(UE_ARRAY_COUNT(Owned)));
+}
+void HouseStadiumDetail::SignHardware(FHallMesh& M,FVector C,FVector Right,FVector Normal,float W,float H)
+{
+ if(!Enabled()||Step()<6)return;const FRotator R=Right.Rotation();
+ auto Box=[&](FVector P,FVector D,FName K){M.Box(K,FTransform(R,P),D*.5f,FHallUV::World(100));};
+ for(float S:{-1.f,1.f}){Box(C+Right*(S*(W*.5f-.65f))+Normal*.18f,{1.3f,.6f,H},TEXT("SD_Steel"));Box(C+FVector(0,0,S*(H*.5f-.65f))+Normal*.18f,{W,.6f,1.3f},TEXT("SD_Steel"));}
+ for(float X:{-1.f,1.f})for(float Z:{-1.f,1.f}){const FVector P=C+Right*(X*(W*.5f-2.1f))+FVector(0,0,Z*(H*.5f-2.1f))+Normal*.55f;M.Cylinder(TEXT("SD_Aluminium"),P,P+Normal*.3f,.48f,8,FHallUV::World(100));const FVector A=P+Normal*.32f-Right*.28f,B=P+Normal*.32f+Right*.28f;M.Quad(TEXT("SD_Dark"),A-FVector(0,0,.06f),B-FVector(0,0,.06f),B+FVector(0,0,.06f),A+FVector(0,0,.06f),Normal,FHallUV::World(100));}
+}

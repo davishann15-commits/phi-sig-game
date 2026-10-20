@@ -1,0 +1,12 @@
+ // Personal wall pieces sit unevenly on the existing plaster, clear of the door and all established walking lanes.
+ const FVector InnerAlong=(D-A).GetSafeNormal(),InnerN=FVector::CrossProduct(InnerAlong,FVector::UpVector).GetSafeNormal();
+ auto Frame=[&](FVector Centre,float Width,float Height,float Angle,int32 Cell){const float T=Angle*PI/180.f;const FVector Across=InnerAlong*FMath::Cos(T)+FVector::UpVector*FMath::Sin(T),Rise=FVector::UpVector*FMath::Cos(T)-InnerAlong*FMath::Sin(T);HouseCampusFallKit::Card(Detail,TEXT("SD_CoachPaper"),Centre,Across,Rise,Width,Height,InnerN);C::Paper(Detail,TEXT("SD_CoachWallDetails"),Centre+InnerN*.15f,Across,Rise,InnerN,Width-5,Height-5,Cell,0,0,2);for(float S:{-1.f,1.f}){HouseCampusFallKit::Bar(Solid,TEXT("SD_FurnitureOakDark"),Centre+Across*(S*Width*.5f)-Rise*Height*.5f,Centre+Across*(S*Width*.5f)+Rise*Height*.5f,2.8f,2.1f,InnerN);HouseCampusFallKit::Bar(Solid,TEXT("SD_FurnitureOakDark"),Centre+Rise*(S*Height*.5f)-Across*Width*.5f,Centre+Rise*(S*Height*.5f)+Across*Width*.5f,2.8f,2.1f,InnerN);}const FVector Nail=Centre+FVector(0,0,Height*.5f+8)-InnerN*.3f;for(float S:{-1.f,1.f})Detail.Cylinder(TEXT("SD_Rust"),Nail,Centre+Across*(S*Width*.35f)+Rise*Height*.35f-InnerN*.3f,.08f,6,FHallUV::World(100));I::Screw(Detail,Nail,InnerN,.3f);};
+ Frame(FMath::Lerp(A,D,.72f)+FVector(0,0,164)+InnerN*8,56,40,-2.5f,0);
+ const FVector Calendar=FMath::Lerp(A,D,.37f)+FVector(0,0,141)+InnerN*8;
+ C::Paper(Detail,TEXT("SD_CoachPaper"),Calendar-InnerN*.2f,InnerAlong,FVector::UpVector,InnerN,38,54,-1,2,.6f);
+ C::Paper(Detail,TEXT("SD_CoachWallDetails"),Calendar,InnerAlong,FVector::UpVector,InnerN,38,54,1,2,1.1f,2);
+ for(float Side:{-1.f,1.f})Detail.Cylinder(TEXT("SD_PhoneMetal"),Calendar+InnerAlong*(Side*10)+FVector(0,0,27),Calendar+InnerAlong*(Side*10)+FVector(0,0,25)+InnerN*.4f,.30f,8,FHallUV::World(100));
+ const FVector Pennant=C::Point(45,.735f,123)+BackN*8.8f;const FVector Tip=Pennant+BackX*40-FVector(0,0,3),Top=Pennant-BackX*40+FVector(0,0,18),Bottom=Pennant-BackX*40-FVector(0,0,18);
+ Detail.QuadUV(TEXT("SD_CoachWallDetails"),Bottom,Tip,Tip,Top,BackN,{.50f,1},{1,.75f},{1,.75f},{.50f,.50f},BackX);
+ Detail.Cylinder(TEXT("SD_FabricEdge"),Bottom+BackN*.1f,Tip+BackN*.1f,.16f,6,FHallUV::World(100));Detail.Cylinder(TEXT("SD_FabricEdge"),Top+BackN*.1f,Tip+BackN*.1f,.16f,6,FHallUV::World(100));
+ for(FVector Pin:{Top,Bottom})I::Screw(Detail,Pin+BackN*.2f,BackN,.36f);

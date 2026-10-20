@@ -1,0 +1,88 @@
+{
+  "scope": "Owned instancing repair and LOD derivatives; native appearance validation separate",
+  "source_sha256": {
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_BaseColor.uasset": "ee08c9cc5045f335ee5f0187daa14690fd18f4642d5d463f12b2dde132d0282e",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Displacement.uasset": "67b5f39a058c365914bbece86bd836c9e348cdca950f5c6cd771fe1368040f74",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Bump.uasset": "d51dd2d71c707a4963a22dcf5e2d308567a74f2b10d43006fb55e5a560cf5847",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_AO.uasset": "17d92003b99c7f5406ac7a94e67da9fd19a00c780e2b09d469866e03176fcd14",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Normal.uasset": "664d5c3f515ff35e955728bb05971b44f4353c8a5b165fcb93eefb4807f6d7cb",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Translucency.uasset": "3f96d72ae40b04883989796629edc59723f1b7a6f08757e78d89b825e67718e3",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Opacity.uasset": "b5cc39cfcca01170b626bd3b42e5a457ecb71ce50bfaa4a48133b6dd6ee55140",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Roughness.uasset": "497e817eb26c9911ad2d89247393898207c270969796fd5fc9fe34ede9aa2895",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_Opacity.uasset": "fb285c72f4316ab9e633105553f9d7c272e7e192951985e9b4397a0230f1e170",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_Normal.uasset": "76765bc95d85b144caac94b251ea621daeb20b567dfc07da4c1173fbf50e21f3",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_Translucency.uasset": "2551e59bff49da88922391e1107ae63b7da320e161411450c241beaee38052c0",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Cavity.uasset": "d85da1bdd4527634756a1a5c0d26a87c53c62630c075738554221c7cdc4a0812",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Gloss.uasset": "2c68a687fe5a8e9087e2680f932a9a3890e3488cd515bb9b907adcfdfb9ba91a",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_BaseColor.uasset": "1ab1e96da53ac4ac6c61d0fcaeec0762d1d00984e9631bb4078720d0ff832a2e",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Specular.uasset": "a6a96c13ba8daa12c519e5163fdef66baffec82db8930040eef6950cc59fade1",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.uasset": "7de7b186935a3cbbac60abae217c3f33d4c15f493d6b9196cc4f6e8cbfa5c6ed",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarH.uasset": "3c6a8a82732e0ffd38c776ce61c4e00e93513e3be372ef86b9ee0aab1b6eefe4",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarD.uasset": "4e191cb06804d4972beea9c446ab44e8409e65520c10d7604ff466f4cc00f2bf",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarF.uasset": "ad72397f228dc173a92bf080cfd77ef09f27e6df32d1195585cc80a6ce8e5324",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarB.uasset": "6fc1a5894585e91a62409ff9bf049e4ecb7ac416b4b2e9bf2f511336d763f62c",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarE.uasset": "e5d7cf10c36e581523e07dc9b9bfb304d34de60f021d8cf690fc4c7566a2e0e0",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarG.uasset": "3000c6bbec396b68690c03599e0050e7ec23a94cadd1f0dc788c893d8e137ec3",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarC.uasset": "5ee1acae8cc295340b67d303a8654f0fe79fe66dc824456bbbd38c300982f7f0",
+    "Content/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarA.uasset": "c3657b627e1ca1e727adfee71f1e2d0b7d163c0bfee8fa68ca50fe9bceaed0b7",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Specular.uasset": "dcd31000dc4e091f34e5203b494920096fc90218e49ba4fe9624db1786da05d2",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_AO.uasset": "fc79210fe9a795bc71ef1e139dd4726575a43dd0bc2d01f2d56dd2d70b6d2ab6",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Cavity.uasset": "afd7a1fbd1e9e6bb1b69d8560df3a78dacf152b16b30b1f5055300360dde24bc",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Bump.uasset": "0f4edf8ba3d038840efc5168a9cf4e9e14e7d57315bde66d383db95c4a6b16bd",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Roughness.uasset": "e17bf3dcac9ffaf2c791867065f00ce550b97e6174407d2ecb1e82744540da8d",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Gloss.uasset": "888e6b8213555425c9c22de68fbd48770c6bba3848827848a3f90071926c3448",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Displacement.uasset": "17a058f598c2c1bf39dc34888d01ca21a9c9efa409d3a80974e9e1e0daf7e10a",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Normal.uasset": "23f3f55930ee8b66b40820cb204cbab764103add2cd131f4edd3ddc9c78c28f1",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Fuzz.uasset": "750381314c9cc046b6d4a1ffea82808e3b11d4ed82cac6425c3c1823a6dbe235",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_BaseColor.uasset": "7b7c1fad8c3c87f22c24a511451206457457f2b4fecd28f41ae8c07e365b6b81",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Materials/M_RottenTreeStump.uasset": "cbe84eacd4644e71101ee8d45f2aa13f71939114573bbf63cee4940bc307b80c",
+    "Content/Environment/Megascans/RottenTreeStump_whnpaed/Meshes/SM_RottenTreeStump.uasset": "63febb3f83289128742ec08073eb77f207be100dcce97e41f68c5fad6876a392"
+  },
+  "source_assets_unchanged": true,
+  "props": [
+    {
+      "label": "Fern",
+      "source": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarA.SM_BeechFern_VarA",
+      "asset": "/Game/SeniorSendOff/Calder/Woods/SM_CalderWoodsFern.SM_CalderWoodsFern",
+      "material": "/Game/SeniorSendOff/Calder/Woods/M_CalderWoodsFern.M_CalderWoodsFern",
+      "triangles": [
+        5779,
+        1445,
+        289
+      ],
+      "screen_sizes": [
+        1.0,
+        0.15,
+        0.045
+      ],
+      "bounds_error_cm": 0.0,
+      "nanite": false,
+      "collision": false,
+      "instanced_mesh_usage": true,
+      "pixel_instructions": 240,
+      "pixel_samples": 7
+    },
+    {
+      "label": "Stump",
+      "source": "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Meshes/SM_RottenTreeStump.SM_RottenTreeStump",
+      "asset": "/Game/SeniorSendOff/Calder/Woods/SM_CalderWoodsStump.SM_CalderWoodsStump",
+      "material": "/Game/SeniorSendOff/Calder/Woods/M_CalderWoodsStump.M_CalderWoodsStump",
+      "triangles": [
+        22469,
+        4494,
+        1123
+      ],
+      "screen_sizes": [
+        1.0,
+        0.15,
+        0.045
+      ],
+      "bounds_error_cm": 0.0,
+      "nanite": false,
+      "collision": false,
+      "instanced_mesh_usage": true,
+      "pixel_instructions": 220,
+      "pixel_samples": 5
+    }
+  ]
+}

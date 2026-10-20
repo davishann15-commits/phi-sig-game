@@ -1,0 +1,110 @@
+[
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_m1_01",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_m1_01.SM_OriginalPorchFrame_p0_m1_01",
+    "asset_name": "HI_BrokenPorchFrame_p0_m1_01",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_m1_01.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+    ],
+    "original_faces": 2006,
+    "remaining_faces": 878,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  },
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_m1_02",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_m1_02.SM_OriginalPorchFrame_p0_m1_02",
+    "asset_name": "HI_BrokenPorchFrame_p0_m1_02",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_m1_02.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "original_faces": 1818,
+    "remaining_faces": 690,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  },
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_m1_03",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_m1_03.SM_OriginalPorchFrame_p0_m1_03",
+    "asset_name": "HI_BrokenPorchFrame_p0_m1_03",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_m1_03.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+    ],
+    "original_faces": 2006,
+    "remaining_faces": 878,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  },
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_m1_04",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_m1_04.SM_OriginalPorchFrame_p0_m1_04",
+    "asset_name": "HI_BrokenPorchFrame_p0_m1_04",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_m1_04.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "original_faces": 1818,
+    "remaining_faces": 690,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  },
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_p0_01",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_p0_01.SM_OriginalPorchFrame_p0_p0_01",
+    "asset_name": "HI_BrokenPorchFrame_p0_p0_01",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_p0_01.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+    ],
+    "original_faces": 2006,
+    "remaining_faces": 878,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  },
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_p0_02",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_p0_02.SM_OriginalPorchFrame_p0_p0_02",
+    "asset_name": "HI_BrokenPorchFrame_p0_p0_02",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_p0_02.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "original_faces": 1818,
+    "remaining_faces": 690,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  },
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_p0_03",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_p0_03.SM_OriginalPorchFrame_p0_p0_03",
+    "asset_name": "HI_BrokenPorchFrame_p0_p0_03",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_p0_03.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass.MI_SSO_MetalBrass"
+    ],
+    "original_faces": 2006,
+    "remaining_faces": 878,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  },
+  {
+    "actor_label": "OriginalPorchDoor_Porch_p0_p0_04",
+    "original_mesh": "/Game/ExistingHouseDoors/SM_OriginalPorchFrame_p0_p0_04.SM_OriginalPorchFrame_p0_p0_04",
+    "asset_name": "HI_BrokenPorchFrame_p0_p0_04",
+    "fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BrokenPorchFrame_p0_p0_04.fbx",
+    "material_slots": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "original_faces": 1818,
+    "remaining_faces": 690,
+    "removed_components": 6,
+    "preserves_source_coordinates": true
+  }
+]

@@ -1,0 +1,901 @@
+{
+  "utc": "2026-10-18T17:18:05.811408+00:00",
+  "scope": "Opt-in goose audio: objective source/mix, actual beak data, ordinary-input recovery, two-peer audio/pose, active-call indoor silence/lawn and off-switch pass. Subjective listening/fullperformance/fullroster/defaultpromotion remain open.",
+  "flag": "CalderGooseAudioTrial",
+  "stable_verified_recovery": "Saved/CalderWork/codex_checkpoint_goose_water_effects_20261018_v1",
+  "stable_counts": {
+    "text": 290,
+    "binary": 98,
+    "evidence": 5725
+  },
+  "buffers": "original5 unchanged + hiss/splash/dryhonk/2to5second filtered echoes; native actual PCM prefix SHA verification pending",
+  "voice_pool": "existing4oneshots+2loops, one call per species, original93m attenuation unchanged; new shared400m overhead attenuation",
+  "echo_limits": "2to5seconds, -18dB PCM RMS, sampled actual outer-land faces, no physics; echo emitted from the frozen direct-call position, no separate ridge spatial voice",
+  "candidate_scope": "Shared honk/beak schedule every8s during flight, pond hiss from replicated event, landing splash and small shore-entry splash; early audio recording only under review flag. No default promotion.",
+  "native_review": "Actual mixer/source caps, source dumps, 60s mix, submitted beak customdata and4captures; separate ordinary-walking hiss/120s mix case. Not run.",
+  "current_job": "Recovery export/check/archive freeze",
+  "whole_phase3_complete": false,
+  "night_confirmed_minutes": 30,
+  "night_after_all_animals": true,
+  "night_implementation_started": false,
+  "native_arrival_v1": {
+    "machine_passed": true,
+    "mode": "arrival",
+    "scope": "Native integration/files only; PCM/mix analysis, listening, indoor/lawn and full performance separate",
+    "result": "PASS scope=nativeGooseAudioIntegration buffers=12 components=6 peakVoices=3 peakSources=8 maxPerSpecies=1 honks=2 echoes=2 splashes=4 hisses=0 actualBeakSamples=40 maximumBeakAngleErrorRad=0.000000 captures=4 registeredWildlifeSubmix=1 sourceWavsDumped=1 subjectiveListeningAccepted=0 indoorLawnAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/beak/mix files produced;analyzePCM/listen/checkindoors/lawn/performance",
+    "process_timeout": false,
+    "calls_by_kind": {
+      "5": 0,
+      "6": 4,
+      "7": 0,
+      "8": 2,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    "captures": [
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderGooseAudioReview/detail_goose_audio_00.png",
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderGooseAudioReview/detail_goose_audio_01.png",
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderGooseAudioReview/detail_goose_audio_02.png",
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderGooseAudioReview/detail_goose_audio_03.png"
+    ],
+    "captures_inspection_pending": false,
+    "source_wavs": {
+      "DeerBlow": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/DeerBlow.wav",
+      "LeafCrunch": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/LeafCrunch.wav",
+      "NightBed": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/NightBed.wav",
+      "Creek": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/Creek.wav",
+      "LonePeeper": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/LonePeeper.wav",
+      "GooseHiss": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/GooseHiss.wav",
+      "GooseSplash": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/GooseSplash.wav",
+      "GooseHonk": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/GooseHonk.wav",
+      "GooseHonkEcho2": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/GooseHonkEcho2.wav",
+      "GooseHonkEcho3": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/GooseHonkEcho3.wav",
+      "GooseHonkEcho4": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/GooseHonkEcho4.wav",
+      "GooseHonkEcho5": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/GooseHonkEcho5.wav"
+    },
+    "mix": "Saved/CalderWork/runs/codex_goose_audio_arrival_v1/Saved/CalderWildlifeSound/WildlifeMix.wav",
+    "source_config_frozen": true,
+    "seconds": 124.5,
+    "subjective_listening_accepted": false,
+    "full_performance_accepted": false,
+    "whole_phase3_complete": false,
+    "captures_individually_inspected": 4,
+    "visual_limit": "First3show sky/flight at distance; final shows8incoming swimmers. Beak proof is actual submitted joint data, not visible photographic detail.",
+    "self_tick_p95_ms": 0.083,
+    "objective_analysis": {
+      "passed": false,
+      "scope": "Objective actual source/mixer QA; listening and full animal/master acceptance remain separate",
+      "original_five_actual_wav_sha256_match": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true
+      },
+      "source_signal_analysis_passed": true,
+      "echoes": [
+        {
+          "delay_seconds": 2,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 3,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 4,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 5,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        }
+      ],
+      "actual_honk_ridge_observations": [
+        {
+          "xyz": [
+            7966.847,
+            -46337.574,
+            -2147.154
+          ],
+          "elevated_enclosing_ridge_region": false
+        },
+        {
+          "xyz": [
+            292.483,
+            -55311.329,
+            2296.824
+          ],
+          "elevated_enclosing_ridge_region": false
+        }
+      ],
+      "mix_seconds": 60.693333333333335,
+      "mix_nonzero": true,
+      "native_record_start_metadata": false,
+      "audible_call_source_correlations": [],
+      "expected_call_kinds_detected_in_mix": false,
+      "subjective_listening_accepted": false,
+      "full_performance_accepted": false,
+      "whole_phase3_complete": false
+    },
+    "accepted": false,
+    "rejection_reason": "Native structural pass but echo sampler selected riverbank/town faces. First5sourcePCM actualSHA exact; all4filtered echo source gaps/RMS ratios pass. In-mix correlations require new record-start metadata; not yet proved."
+  },
+  "current_candidate": "Shared exact shore-splash birth and wet-envelope function for sound/effects; pond sound ages now use same cycle clock/fixed diagnostic offset as beak/trajectory. Audio monitor supports MP; no extra voices. Untested candidate.",
+  "native_arrival_v2": {
+    "machine_passed": true,
+    "mode": "arrival",
+    "scope": "Native integration/files only; PCM/mix analysis, listening, indoor/lawn and full performance separate",
+    "result": "PASS scope=nativeGooseAudioIntegration buffers=12 components=6 peakVoices=3 peakSources=8 maxPerSpecies=1 honks=2 echoes=2 splashes=4 hisses=0 actualBeakSamples=36 maximumBeakAngleErrorRad=0.000000 captures=4 registeredWildlifeSubmix=1 sourceWavsDumped=1 subjectiveListeningAccepted=0 indoorLawnAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/beak/mix files produced;analyzePCM/listen/checkindoors/lawn/performance",
+    "process_timeout": false,
+    "calls_by_kind": {
+      "5": 0,
+      "6": 4,
+      "7": 0,
+      "8": 2,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    "captures": [
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderGooseAudioReview/detail_goose_audio_00.png",
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderGooseAudioReview/detail_goose_audio_01.png",
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderGooseAudioReview/detail_goose_audio_02.png",
+      "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderGooseAudioReview/detail_goose_audio_03.png"
+    ],
+    "captures_inspection_pending": false,
+    "source_wavs": {
+      "DeerBlow": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/DeerBlow.wav",
+      "LeafCrunch": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/LeafCrunch.wav",
+      "NightBed": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/NightBed.wav",
+      "Creek": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/Creek.wav",
+      "LonePeeper": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/LonePeeper.wav",
+      "GooseHiss": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/GooseHiss.wav",
+      "GooseSplash": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/GooseSplash.wav",
+      "GooseHonk": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/GooseHonk.wav",
+      "GooseHonkEcho2": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/GooseHonkEcho2.wav",
+      "GooseHonkEcho3": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/GooseHonkEcho3.wav",
+      "GooseHonkEcho4": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/GooseHonkEcho4.wav",
+      "GooseHonkEcho5": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/GooseHonkEcho5.wav"
+    },
+    "mix": "Saved/CalderWork/runs/codex_goose_audio_arrival_v2/Saved/CalderWildlifeSound/WildlifeMix.wav",
+    "source_config_frozen": true,
+    "seconds": 116.5,
+    "subjective_listening_accepted": false,
+    "full_performance_accepted": false,
+    "whole_phase3_complete": false,
+    "captures_individually_inspected": 4,
+    "photographic_detail_accepted": false,
+    "objective_analysis_v1_superseded_silent_window_bug": {
+      "passed": true,
+      "scope": "Objective actual source/mixer QA; listening and full animal/master acceptance remain separate",
+      "original_five_actual_wav_sha256_match": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true
+      },
+      "source_signal_analysis_passed": true,
+      "echoes": [
+        {
+          "delay_seconds": 2,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 3,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 4,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 5,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        }
+      ],
+      "actual_honk_ridge_observations": [
+        {
+          "xyz": [
+            14295.633,
+            -65043.964,
+            10519.366
+          ],
+          "elevated_enclosing_ridge_region": true
+        },
+        {
+          "xyz": [
+            12466.279,
+            -65980.944,
+            11065.779
+          ],
+          "elevated_enclosing_ridge_region": true
+        }
+      ],
+      "mix_seconds": 61.034666666666666,
+      "mix_nonzero": true,
+      "native_record_start_metadata": true,
+      "audible_call_source_correlations": [
+        {
+          "kind": 8,
+          "expected_seconds": -3.758445382118225e-05,
+          "matched_seconds": 0.005083333333333333,
+          "normalized_source_correlation": 3228.0917783627374,
+          "detected": true
+        },
+        {
+          "kind": 8,
+          "expected_seconds": 8.498448625206947,
+          "matched_seconds": 8.021166666666666,
+          "normalized_source_correlation": 0.07102894244807566,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 13.078964456915855,
+          "matched_seconds": 13.077333333333334,
+          "normalized_source_correlation": 0.22885738936034516,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 17.078941248357296,
+          "matched_seconds": 17.088,
+          "normalized_source_correlation": 0.3157591513708645,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 21.02098749950528,
+          "matched_seconds": 21.034666666666666,
+          "normalized_source_correlation": 0.4520109149801404,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 25.004321206361055,
+          "matched_seconds": 25.002666666666666,
+          "normalized_source_correlation": 0.23615314763797732,
+          "detected": true
+        }
+      ],
+      "expected_call_kinds_detected_in_mix": true,
+      "subjective_listening_accepted": false,
+      "full_performance_accepted": false,
+      "whole_phase3_complete": false
+    },
+    "objective_analysis": {
+      "passed": true,
+      "scope": "Objective actual source/mixer QA; listening and full animal/master acceptance remain separate",
+      "original_five_actual_wav_sha256_match": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true
+      },
+      "source_signal_analysis_passed": true,
+      "echoes": [
+        {
+          "delay_seconds": 2,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 3,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 4,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 5,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        }
+      ],
+      "actual_honk_ridge_observations": [
+        {
+          "xyz": [
+            14295.633,
+            -65043.964,
+            10519.366
+          ],
+          "elevated_enclosing_ridge_region": true
+        },
+        {
+          "xyz": [
+            12466.279,
+            -65980.944,
+            11065.779
+          ],
+          "elevated_enclosing_ridge_region": true
+        }
+      ],
+      "mix_seconds": 61.034666666666666,
+      "mix_nonzero": true,
+      "native_record_start_metadata": true,
+      "audible_call_source_correlations": [
+        {
+          "kind": 8,
+          "expected_seconds": -3.758445382118225e-05,
+          "matched_seconds": 0.3839166666666667,
+          "normalized_source_correlation": 0.11950322814771303,
+          "detected": true
+        },
+        {
+          "kind": 8,
+          "expected_seconds": 8.498448625206947,
+          "matched_seconds": 8.021166666666666,
+          "normalized_source_correlation": 0.07102894339729698,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 13.078964456915855,
+          "matched_seconds": 13.077333333333334,
+          "normalized_source_correlation": 0.2288573801333901,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 17.078941248357296,
+          "matched_seconds": 17.088,
+          "normalized_source_correlation": 0.3157591389150836,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 21.02098749950528,
+          "matched_seconds": 21.034666666666666,
+          "normalized_source_correlation": 0.45201089708135594,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 25.004321206361055,
+          "matched_seconds": 25.002666666666666,
+          "normalized_source_correlation": 0.23615313792433912,
+          "detected": true
+        }
+      ],
+      "expected_call_kinds_detected_in_mix": true,
+      "subjective_listening_accepted": false,
+      "full_performance_accepted": false,
+      "whole_phase3_complete": false
+    },
+    "analysis_correction": "FFT roundoff over a silent zero-energy window produced one impossible correlation>1. Retained old report; added energy mask and exact direct dot/norm recomputation. Validated scores are0.1195/0.0710 forhonks and0.2289..0.4520 forsplashes; all in[0,1]. Final corrected analysis passes."
+  },
+  "editor_build_v2": {
+    "passed": true,
+    "seconds": 149.2
+  },
+  "native_hiss_v1": {
+    "machine_passed": true,
+    "mode": "hiss",
+    "scope": "Native integration/files only; PCM/mix analysis, listening, indoor/lawn and full performance separate",
+    "result": "PASS scope=nativeGoosePlayerReaction mode=walk captures=4 expected=4 effectiveHissDistanceCm=584.505 expectedCm=600 toleranceCm=120 actualRoots=13782 worstRootErrorCm=0.000000 gapSamples=71808 gapP95Cm=0.066175 driftSamples=69024 driftP95Cm=0.000000 footLimitCm=3 enteredWater=1 returnedShore=1 ordinaryPlayerInput=1 noAnimalForcing=1 serverCheckHz=10 twoPeerAccepted=0 callsAccepted=0 wholePhase3Complete=0 reason=native ordinary-input files produced; inspect all4images;two-peer/audio/performance remain",
+    "process_timeout": false,
+    "calls_by_kind": {
+      "5": 1,
+      "6": 1,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    "captures": [
+      "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderGooseReactionReview/detail_goose_reaction_00.png",
+      "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderGooseReactionReview/detail_goose_reaction_01.png",
+      "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderGooseReactionReview/detail_goose_reaction_02.png",
+      "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderGooseReactionReview/detail_goose_reaction_03.png"
+    ],
+    "captures_inspection_pending": false,
+    "source_wavs": {
+      "DeerBlow": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/DeerBlow.wav",
+      "LeafCrunch": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/LeafCrunch.wav",
+      "NightBed": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/NightBed.wav",
+      "Creek": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/Creek.wav",
+      "LonePeeper": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/LonePeeper.wav",
+      "GooseHiss": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/GooseHiss.wav",
+      "GooseSplash": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/GooseSplash.wav",
+      "GooseHonk": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/GooseHonk.wav",
+      "GooseHonkEcho2": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/GooseHonkEcho2.wav",
+      "GooseHonkEcho3": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/GooseHonkEcho3.wav",
+      "GooseHonkEcho4": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/GooseHonkEcho4.wav",
+      "GooseHonkEcho5": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/GooseHonkEcho5.wav"
+    },
+    "mix": "Saved/CalderWork/runs/codex_goose_audio_hiss_v1/Saved/CalderWildlifeSound/WildlifeMix.wav",
+    "source_config_frozen": true,
+    "seconds": 283.06,
+    "subjective_listening_accepted": false,
+    "full_performance_accepted": false,
+    "whole_phase3_complete": false,
+    "captures_individually_inspected": 4,
+    "objective_analysis": {
+      "passed": true,
+      "scope": "Objective actual source/mixer QA; listening and full animal/master acceptance remain separate",
+      "original_five_actual_wav_sha256_match": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true
+      },
+      "source_signal_analysis_passed": true,
+      "echoes": [
+        {
+          "delay_seconds": 2,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 3,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 4,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 5,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        }
+      ],
+      "actual_honk_ridge_observations": [],
+      "mix_seconds": 120.91733333333333,
+      "mix_nonzero": true,
+      "native_record_start_metadata": true,
+      "audible_call_source_correlations": [
+        {
+          "kind": 5,
+          "expected_seconds": 2.464382667094469,
+          "matched_seconds": 2.474666666666667,
+          "normalized_source_correlation": 0.9707020348381651,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 7.819387998431921,
+          "matched_seconds": 7.8293333333333335,
+          "normalized_source_correlation": 0.5000973789771361,
+          "detected": true
+        }
+      ],
+      "expected_call_kinds_detected_in_mix": true,
+      "subjective_listening_accepted": false,
+      "full_performance_accepted": false,
+      "whole_phase3_complete": false
+    },
+    "scope_note": "Real ordinary-input/full recovery/120s mix passes. Predates aligning small splash sound birth to visual footspatter; repeat current-source hiss case."
+  },
+  "multiplayer_audio_v1": {
+    "passed": true,
+    "peers": [
+      {
+        "role": "host",
+        "passed": true,
+        "effects_ready": true,
+        "hiss_queue_upper_bound_ms": 0.6179176270961761,
+        "audio_files_and_queue_checked": true,
+        "exit_code": 0,
+        "result": "PASS scope=nativeGooseReactionReplication role=host normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=-1000.000 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=0 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=0 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=host input/recovery and client GPU/pose acknowledgement complete;inspect captures\n",
+        "events": [
+          "[2026.10.18-17.48.45:057][847]LogTemp: Display: CALDER_GOOSE_REACTION_MP PASS scope=nativeGooseReactionReplication role=host normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=-1000.000 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=0 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=0 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=host input/recovery and client GPU/pose acknowledgement complete;inspect captures"
+        ]
+      },
+      {
+        "role": "client",
+        "passed": true,
+        "effects_ready": true,
+        "hiss_queue_upper_bound_ms": 24.073168635368347,
+        "audio_files_and_queue_checked": true,
+        "exit_code": 0,
+        "result": "PASS scope=nativeGooseReactionReplication role=client normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=59.679 followingViewGpuFrameMs=95.195 responseLimitMs=500 sameWallPoseSamples=1923 maximumSameWallErrorCm=27.548730 poseLimitCm=120 hissSamples=2 retreatSamples=435 homeWaitSamples=1008 returnSamples=460 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=real FastArray hiss/retreat/homewait/return and actual client GPU/roots checked;inspect image\n",
+        "events": [
+          "[2026.10.18-17.44.29:910][270]LogTemp: Display: CALDER_GOOSE_REACTION_MP_EYE at=X=25544.683 Y=-10860.777 Z=824.153 standing170cm=1 sideOfApproach=1 geometryUnchanged=1",
+          "[2026.10.18-17.44.45:612][590]LogTemp: Display: CALDER_GOOSE_REACTION_MP_STABLE_START seconds=10.023 maximumTickGapMs=150 responseLimitMs=500 setupOnly=1 startupPerformanceAccepted=0",
+          "[2026.10.18-17.44.51:558][767]LogTemp: Display: CALDER_GOOSE_REACTION_MP_ARM id=6 dataMs=59.679 actualSubmittedRoot=1 followingFrame=1",
+          "[2026.10.18-17.44.51:625][769]LogTemp: Display: CALDER_GOOSE_REACTION_MP_RENDER id=6 gpuFrameMs=95.195 limitMs=500 nextFrameFence=1 PNGTimingSeparate=1",
+          "[2026.10.18-17.48.43:049][666]LogTemp: Display: CALDER_GOOSE_REACTION_MP PASS scope=nativeGooseReactionReplication role=client normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=59.679 followingViewGpuFrameMs=95.195 responseLimitMs=500 sameWallPoseSamples=1923 maximumSameWallErrorCm=27.548730 poseLimitCm=120 hissSamples=2 retreatSamples=435 homeWaitSamples=1008 returnSamples=460 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=real FastArray hiss/retreat/homewait/return and actual client GPU/roots checked;inspect image"
+        ]
+      }
+    ],
+    "terrain_hashes": {
+      "host": "72564759",
+      "client": "72564759"
+    },
+    "habitat_hashes": {
+      "host": "5c0dee53",
+      "client": "5c0dee53"
+    },
+    "hashes_match": true,
+    "client_reaction_recovery_checked": "complete",
+    "client_csv_samples": 1923,
+    "seconds": 326.58,
+    "logic_probe_only": false,
+    "native_captures": [
+      "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_audio_mp_v1/session/detail_goose_reaction_client.png",
+      "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_audio_mp_v1/session/detail_goose_reaction_host.png"
+    ],
+    "original_campus_mp_sha256": "404b4e7727205d7f01a7b8dd5f1f9205ef12a4ee7db6618eb32626e5642f3e79",
+    "original_hill_route_gate_pending": true,
+    "whole_phase3_complete": false,
+    "scope": "Native normal-lobby host ordinary-input hiss/retreat/home wait/return, actual client FastArray data and following-view GPU response within500ms, same-wall roots within120cm. Remote-controlled approach/audio/full roster/final performance remain separate.",
+    "source_config_frozen": true,
+    "captures_inspection_pending": false,
+    "water_effects_enabled": true,
+    "audio_enabled": true,
+    "audio_accepted": false,
+    "captures_individually_inspected": 6,
+    "host_walk_result": "PASS scope=nativeGoosePlayerReaction mode=walk captures=4 expected=4 effectiveHissDistanceCm=592.271 expectedCm=600 toleranceCm=120 actualRoots=6897 worstRootErrorCm=0.000000 gapSamples=36384 gapP95Cm=0.064058 driftSamples=33600 driftP95Cm=0.000000 footLimitCm=3 enteredWater=1 returnedShore=1 ordinaryPlayerInput=1 noAnimalForcing=1 serverCheckHz=10 twoPeerAccepted=0 callsAccepted=0 wholePhase3Complete=0 reason=native ordinary-input files produced; inspect all4images;two-peer/audio/performance remain",
+    "host_mix_analysis": {
+      "passed": true,
+      "scope": "Objective actual source/mixer QA; listening and full animal/master acceptance remain separate",
+      "original_five_actual_wav_sha256_match": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true
+      },
+      "source_signal_analysis_passed": true,
+      "echoes": [
+        {
+          "delay_seconds": 2,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 3,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 4,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 5,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        }
+      ],
+      "actual_honk_ridge_observations": [],
+      "mix_seconds": 124.62933333333334,
+      "mix_nonzero": true,
+      "native_record_start_metadata": true,
+      "audible_call_source_correlations": [
+        {
+          "kind": 5,
+          "expected_seconds": 22.576116167008877,
+          "matched_seconds": 22.570666666666668,
+          "normalized_source_correlation": 0.970207143076457,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 28.709364749491215,
+          "matched_seconds": 28.714375,
+          "normalized_source_correlation": 0.4420878707428154,
+          "detected": true
+        }
+      ],
+      "expected_call_kinds_detected_in_mix": true,
+      "subjective_listening_accepted": false,
+      "full_performance_accepted": false,
+      "whole_phase3_complete": false
+    },
+    "client_mix_analysis": {
+      "passed": true,
+      "scope": "Objective actual source/mixer QA; listening and full animal/master acceptance remain separate",
+      "original_five_actual_wav_sha256_match": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true
+      },
+      "source_signal_analysis_passed": true,
+      "echoes": [
+        {
+          "delay_seconds": 2,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 3,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 4,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 5,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        }
+      ],
+      "actual_honk_ridge_observations": [],
+      "mix_seconds": 124.71466666666667,
+      "mix_nonzero": true,
+      "native_record_start_metadata": true,
+      "audible_call_source_correlations": [
+        {
+          "kind": 5,
+          "expected_seconds": 21.518013335764408,
+          "matched_seconds": 21.525,
+          "normalized_source_correlation": 0.9714429290379192,
+          "detected": true
+        },
+        {
+          "kind": 6,
+          "expected_seconds": 27.612271834164858,
+          "matched_seconds": 27.626333333333335,
+          "normalized_source_correlation": 0.46728177332908005,
+          "detected": true
+        }
+      ],
+      "expected_call_kinds_detected_in_mix": true,
+      "subjective_listening_accepted": false,
+      "full_performance_accepted": false,
+      "whole_phase3_complete": false
+    }
+  },
+  "locations_v1": {
+    "initial_wrapper_receipt": "Saved/CalderWork/runs/codex_goose_audio_locations_v1_audio.json",
+    "wrapper_recheck": "Saved/CalderWork/runs/codex_goose_audio_locations_v1_audio_recheck_v1.json",
+    "wrapper_bug": "Original startswith PASS rejected final anchored PASS following observation notes. No native failure or rerun; preserve first false receipt. Corrected recheck matches frozen current Source/Config.",
+    "machine_passed": true,
+    "captures_individually_inspected": 4,
+    "objective_analysis": {
+      "passed": true,
+      "scope": "Objective actual source/mixer QA; listening and full animal/master acceptance remain separate",
+      "original_five_actual_wav_sha256_match": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true
+      },
+      "source_signal_analysis_passed": true,
+      "echoes": [
+        {
+          "delay_seconds": 2,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 3,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 4,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        },
+        {
+          "delay_seconds": 5,
+          "echo_rms_db_relative_to_direct": -18.002701642241522,
+          "direct_centroid_hz": 576.1474373541952,
+          "echo_centroid_hz": 479.8173203128659,
+          "one_silent_gap_and_one_echo": true,
+          "passed": true
+        }
+      ],
+      "actual_honk_ridge_observations": [
+        {
+          "xyz": [
+            55974.45,
+            32856.152,
+            10982.597
+          ],
+          "elevated_enclosing_ridge_region": true
+        },
+        {
+          "xyz": [
+            63381.383,
+            19114.226,
+            10681.574
+          ],
+          "elevated_enclosing_ridge_region": true
+        },
+        {
+          "xyz": [
+            60695.758,
+            -2940.896,
+            9627.926
+          ],
+          "elevated_enclosing_ridge_region": true
+        },
+        {
+          "xyz": [
+            12086.622,
+            -65652.273,
+            10822.23
+          ],
+          "elevated_enclosing_ridge_region": true
+        }
+      ],
+      "mix_seconds": null,
+      "mix_nonzero": false,
+      "native_record_start_metadata": false,
+      "audible_call_source_correlations": [],
+      "expected_call_kinds_detected_in_mix": false,
+      "subjective_listening_accepted": false,
+      "full_performance_accepted": false,
+      "whole_phase3_complete": false
+    },
+    "active_overhead_honk_during_each_house_and_campus_recording": true,
+    "each_interior_all_samples_zero": true,
+    "lawn_rms_dbfs": -71.75739580371287,
+    "creek_rms_dbfs": -44.79389677103435,
+    "self_tick_p95_ms": 0.1282
+  },
+  "sound_off_v1": {
+    "machine_passed": true,
+    "mode": "off",
+    "scope": "Native integration/files only; PCM/mix analysis, listening, indoor/lawn and full performance separate",
+    "result": "PASS scope=deerOnly logicProbe=0 renderFeetPending=0 cases=0/0 directReactions=0 captures=0 tickP95ms=0.0463 hoofGapP95cm=2.204 hoofDriftP95cm=0.000 actualSoleSamples=40/0 terrainHash=72564759 soundMultiplayerOtherSpeciesFinalPerformancePending=1 wholePhase3Complete=0 reason=NoWildlifeSound:0wildlifeaudio components and original campus cricket component playing;original woodsowl source unchanged",
+    "process_timeout": false,
+    "calls_by_kind": {
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    "captures": [],
+    "captures_inspection_pending": true,
+    "source_wavs": {},
+    "mix": null,
+    "location_wavs": [],
+    "source_config_frozen": true,
+    "seconds": 66.32,
+    "subjective_listening_accepted": false,
+    "full_performance_accepted": false,
+    "whole_phase3_complete": false,
+    "existing_evidence_recheck": false,
+    "original_receipt": null
+  },
+  "editor_build_v3": {
+    "passed": true,
+    "seconds": 149.37
+  },
+  "updated_utc": "2026-10-18T18:03:02.008949+00:00",
+  "standalone_compile": {
+    "passed": true,
+    "actions": 250,
+    "seconds": 136.83,
+    "finder_info_removals_generated_app_only": 570,
+    "log": "Saved/CalderWork/codex_goose_audio_game_build_v1.log",
+    "gameplay_claimed": false
+  },
+  "standalone_signature": {
+    "passed": true,
+    "exit_code": 0,
+    "finder_info_removals": 9,
+    "guard": "Generated app root FinderInfo only, cleared before and during verification",
+    "bundle": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Binaries/Mac/SeniorSendoff.app",
+    "log": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/codex_goose_audio_game_signature_v1.log",
+    "standalone_gameplay_claimed": false
+  },
+  "source_config_matches_final_native_freeze": true,
+  "recovery_receipt": "Saved/CalderWork/codex_checkpoint_goose_audio_20261018_v1/recovery_receipt.json",
+  "recovery_rule": "Use new recovery only when the named receipt exists and passed=true; otherwise prior water290/98/5725 is authoritative.",
+  "owner_honk_feedback": {
+    "previous": "Good for now",
+    "correction": "Actually make it sound more real; it sounds weird.",
+    "latest": "Yes, this is better",
+    "revision_ledger": "phase3/goose_honk_revision.json",
+    "revised_honk_direction_accepted": true,
+    "other_subjective_audio_accepted": false
+  },
+  "honk_revision_current": "phase3/goose_honk_revision.json",
+  "historical_source_and_mixer_evidence_note": "This ledger preserves the original synth revision. Current honk/echo PCM and overhead-only fade supersede it; fresh native arrival/four-location evidence is in goose_honk_revision.json. First seven calls remain byte-identical; prior MP/off remain prior revision carryforward."
+}

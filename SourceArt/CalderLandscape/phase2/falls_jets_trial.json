@@ -1,0 +1,21 @@
+{
+  "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderFallsJetsTrial",
+  "pixel_instructions": 305,
+  "pixel_samples": 4,
+  "surface": "Masked opaque jets; no translucent/refraction pass",
+  "animation": "Ballistic time-of-flight advection, v0=90 cm/s, g=980 cm/s2",
+  "roughness": 0.06,
+  "has_pixel_animation": true,
+  "default_enabled": false,
+  "trial_switch": "CalderFallsJetsTrial",
+  "source_sha256": {
+    "Content/SeniorSendOff/Calder/Materials/M_CalderFalls.uasset": "edcd97c14c7bc43ea47d4194075d9fdc6e5c0ab7c2e40f21de0af4e8393f24b5",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderStream.uasset": "c36d1457988cef02c14494164ede0dcea78b33fc4291f1d011ff2b3e57a482b9"
+  },
+  "scope": "Appearance trial; native/visual acceptance pending",
+  "collision_water_queries_mist_unchanged": true,
+  "static_geometry_tails": false
+}

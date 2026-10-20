@@ -22,6 +22,8 @@ enum class EHallDoorStyle : uint8
     French,
     Exit,
     Equipment,
+    /** The clock tower's ledged oak door (HouseCampusInteriorsTower), in the tower's own plain materials. */
+    Plank,
 };
 
 UCLASS()
@@ -36,7 +38,7 @@ public:
     /** Configure before FinishSpawning (server). */
     void Setup(EHallDoorStyle InStyle, float InWidth, float InHeight, float InRoomSign, uint8 InFlags);
 
-    enum EFlags : uint8 { KickPlate = 1, Closer = 2, Lever = 4, Deadbolt = 8, FlushBolts = 16, OutSwing = 32, Sign = 64 };
+    enum EFlags : uint8 { KickPlate = 1, Closer = 2, Lever = 4, Deadbolt = 8, FlushBolts = 16, OutSwing = 32, Sign = 64, Astragal = 128 };
 
     UPROPERTY(Replicated) uint8 StyleValue = 0;
     UPROPERTY(Replicated) float LeafWidth = 100.f;

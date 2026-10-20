@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "utc": "2026-10-18T06:51:10.529257+00:00",
+  "earlier_native_sequence": "Saved/CalderWork/runs/codex_pond_sequence_native_v3_pond.json",
+  "current_native_two_peer": "Saved/CalderWork/runs/codex_pond_mp_native_v2/result.json",
+  "earlier_sequence_exact_revision_claimed": false,
+  "unchanged_full_files": {
+    "Source/SeniorSendoff/HouseCalderWildlifeBirds.cpp": true,
+    "Source/SeniorSendoff/HouseCalderWildlifeGoosePaths.cpp": true,
+    "Source/SeniorSendoff/HouseCalderWildlifeSky.cpp": true
+  },
+  "drawpond_and_review_readers_sha256": "c8c0dbab41b8e92e26c1da10c02e4dfa02d3bb01658370f7c631009ff902cba3",
+  "drawpond_bytes_unchanged": true,
+  "later_changes_scope": "Natural phase-change replication,client-only ambient time anchor,latejoin stale-stamp rejection; original deer reaction clock unchanged. Current MPv2 directly checks actual host/client roots.",
+  "scope": "Carry forward prior inspected single-player background render/path evidence only; not new art/normal30min/reactions/audio/fulltiming/master acceptance."
+}

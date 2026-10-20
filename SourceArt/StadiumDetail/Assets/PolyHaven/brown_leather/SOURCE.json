@@ -1,0 +1,25 @@
+{
+  "asset": "brown_leather",
+  "source": "https://polyhaven.com/a/brown_leather",
+  "author": "Rob Tuytel",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "tile_cm": 40,
+  "files": [
+    {
+      "kind": "Diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_albedo_1k.jpg",
+      "file": "brown_leather_albedo_1k.jpg",
+      "bytes": 503348,
+      "sha256": "7e9e1d6566d1fd91d4ceb4966c4820361e85d53a7a828b6bab3b2a093a876cd1"
+    },
+    {
+      "kind": "nor_dx",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/brown_leather/brown_leather_nor_dx_1k.png",
+      "file": "brown_leather_nor_dx_1k.png",
+      "bytes": 1925917,
+      "sha256": "1348e9009fa7a736008971d28a8f278000e0f327569988cfe868d70666bd3fb5"
+    }
+  ],
+  "use": "Candidate for owner-requested more age/wear on coach-office furniture. Not yet imported."
+}

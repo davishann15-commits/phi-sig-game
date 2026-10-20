@@ -1,4 +1,6 @@
 #include "HouseRoamingPig.h"
+#include "HouseCalderLandscape.h"
+#include "HouseCalderPigData.inl"
 #include "HouseWorldScale.h"
 #include "HouseInteractiveProp.h"
 #include "ExistingHouseDoor.h"
@@ -13,6 +15,8 @@
 #include "Engine/World.h"
 #include "Engine/OverlapResult.h"
 #include "Engine/StaticMesh.h"
+#include "StaticMeshResources.h"
+#include "Materials/MaterialInstanceDynamic.h"
 #include "EngineUtils.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/PlayerController.h"
@@ -176,14 +180,121 @@ AHouseRoamingPig::AHouseRoamingPig()
 }
 void AHouseRoamingPig::RefreshMeshes()
 {
+    bCalderAppearance = false;
+    if (CalderSkinMaterial) Body->EmptyOverrideMaterials();
+    CalderSkinMaterial = nullptr;
+    Body->SetForcedLodModel(0);
+    Body->SetBoundsScale(1.f);
+    for (TArray<FVector>& Sole : CalderSoleVertices) Sole.Reset();
     VisualScale=FMath::Clamp(VisualScale,.4f,1.f);
     GetCapsuleComponent()->SetCapsuleSize(30.f*VisualScale,48.f*VisualScale);
     VisualRoot->SetRelativeScale3D(FVector(VisualScale));
     VisualRoot->SetRelativeLocation(FVector(0,0,-48.f*VisualScale));
     Body->SetStaticMesh(BodyMesh); Head->SetStaticMesh(HeadMesh);
+    Body->SetVisibility(true); Head->SetVisibility(true); LeftEar->SetVisibility(true); RightEar->SetVisibility(true);
+    Head->SetRelativeLocation(FVector(60,0,76));
     LeftEar->SetStaticMesh(LeftEarMesh); RightEar->SetStaticMesh(RightEarMesh);
     SnortAudio->SetSound(SnortSound);
-    for (int32 i=0;i<4;++i) { UpperLegs[i]->SetStaticMesh(UpperLegMesh); LowerLegs[i]->SetStaticMesh(LowerLegMesh); }
+    for (int32 i=0;i<4;++i)
+    {
+        UpperLegs[i]->SetStaticMesh(UpperLegMesh); LowerLegs[i]->SetStaticMesh(LowerLegMesh);
+        UpperLegs[i]->SetVisibility(true); LowerLegs[i]->SetVisibility(true);
+        UpperLegs[i]->SetRelativeLocation(FVector(i<2?35:-35,i%2?21:-21,48));
+        LowerLegs[i]->SetRelativeLocation(FVector(0,0,-25));
+    }
+    LeftEar->SetRelativeLocation(FVector(-15.6,-11.2,2.5));
+    RightEar->SetRelativeLocation(FVector(-15.6,11.2,2.5));
+    if (GetWorld() && GetWorld()->IsGameWorld() && HouseCalderLandscape::Enabled())
+    {
+        const TCHAR* Names[] = { TEXT("Donor"), TEXT("Head"), TEXT("LeftEar"), TEXT("RightEar"),
+            TEXT("Upper0"), TEXT("Lower0"), TEXT("Upper1"), TEXT("Lower1"),
+            TEXT("Upper2"), TEXT("Lower2"), TEXT("Upper3"), TEXT("Lower3") };
+        UStaticMesh* Meshes[UE_ARRAY_COUNT(Names)] = {};
+        bool Complete = true;
+        for (int32 Index = 0; Index < UE_ARRAY_COUNT(Names); ++Index)
+        {
+            const FString AssetPath = FString::Printf(TEXT("/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_%s.SM_CalderPig_%s"), Names[Index], Names[Index]);
+            Meshes[Index] = LoadObject<UStaticMesh>(nullptr, *AssetPath, nullptr, LOAD_NoWarn | LOAD_Quiet);
+            Complete &= Meshes[Index] != nullptr;
+        }
+        UMaterialInterface* Skin = LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/SeniorSendOff/Calder/Pig/M_CalderPigSkin.M_CalderPigSkin"),nullptr,LOAD_NoWarn|LOAD_Quiet);
+        Complete &= Skin != nullptr;
+        Complete &= Meshes[0] && Meshes[0]->GetRenderData() && !Meshes[0]->GetRenderData()->LODResources.IsEmpty()
+            && Meshes[0]->GetRenderData()->LODResources[0].VertexBuffers.StaticMeshVertexBuffer.GetNumTexCoords() >= 5;
+        if (Complete)
+        {
+            bCalderAppearance = true;
+            Body->SetStaticMesh(Meshes[0]); Head->SetStaticMesh(Meshes[1]);
+            CalderSkinMaterial=UMaterialInstanceDynamic::Create(Skin,this);
+            Body->SetMaterial(0,CalderSkinMaterial);
+            // Preserve the discrete joint IDs in the torso's vertex colours.
+            // Its small LOD0 is cheaper than introducing another draw batch.
+            Body->SetForcedLodModel(1);
+            Body->SetBoundsScale(1.5f);
+            Head->SetRelativeLocation(HouseCalderPigData::HeadRoot());
+            Head->SetVisibility(false); LeftEar->SetVisibility(false); RightEar->SetVisibility(false);
+            LeftEar->SetStaticMesh(Meshes[2]); RightEar->SetStaticMesh(Meshes[3]);
+            LeftEar->SetRelativeLocation(HouseCalderPigData::EarRoot(0));
+            RightEar->SetRelativeLocation(HouseCalderPigData::EarRoot(1));
+            for (int32 Index = 0; Index < 4; ++Index)
+            {
+                UpperLegs[Index]->SetStaticMesh(Meshes[4 + Index * 2]);
+                LowerLegs[Index]->SetStaticMesh(Meshes[5 + Index * 2]);
+                UpperLegs[Index]->SetVisibility(false); LowerLegs[Index]->SetVisibility(false);
+                UpperLegs[Index]->SetRelativeLocation(HouseCalderPigData::Hip(Index));
+                LowerLegs[Index]->SetRelativeLocation(FVector(0,0,-HouseCalderPigData::UpperLength(Index)));
+                const FStaticMeshRenderData* Data = Meshes[5 + Index * 2]->GetRenderData();
+                if (Data && !Data->LODResources.IsEmpty())
+                {
+                    const FPositionVertexBuffer& Positions = Data->LODResources[0].VertexBuffers.PositionVertexBuffer;
+                    float Bottom = BIG_NUMBER;
+                    for (uint32 Vertex = 0; Vertex < Positions.GetNumVertices(); ++Vertex) Bottom = FMath::Min(Bottom, Positions.VertexPosition(Vertex).Z);
+                    for (uint32 Vertex = 0; Vertex < Positions.GetNumVertices(); ++Vertex)
+                        if (Positions.VertexPosition(Vertex).Z < Bottom + 1.25f) CalderSoleVertices[Index].AddUnique(FVector(Positions.VertexPosition(Vertex)));
+                }
+            }
+            UE_LOG(LogTemp, Display, TEXT("CALDER_PIG_APPEARANCE name=%s parts=12 staticLODs=3 runtimeSkeletons=0 physicsAndRoomUnchanged=1"), *PigName);
+            UpdateCalderSkin();
+        }
+        else UE_LOG(LogTemp, Warning, TEXT("CALDER_PIG_APPEARANCE incomplete assets; retaining original complete rig"));
+    }
+}
+void AHouseRoamingPig::UpdateCalderSkin()
+{
+    if (!CalderSkinMaterial) return;
+    static const TArray<FName> Parameters=[]
+    {
+        TArray<FName> Names;
+        const TCHAR* Axes[]={TEXT("X"),TEXT("Y"),TEXT("Z"),TEXT("Origin")};
+        for (int32 Joint=0;Joint<12;++Joint) for (int32 Row=0;Row<4;++Row)
+            Names.Add(FName(*FString::Printf(TEXT("Joint%d%s"),Joint,Axes[Row])));
+        return Names;
+    }();
+    for (int32 Joint=0;Joint<12;++Joint)
+    {
+        FTransform RestToPart=FTransform::Identity;
+        USceneComponent* Part=Body;
+        if (Joint>=2 && Joint<10)
+        {
+            const int32 Leg=(Joint-2)/2;
+            const bool Lower=(Joint-2)%2!=0;
+            const FQuat Rotation=Lower?HouseCalderPigData::ToLower(Leg):HouseCalderPigData::ToUpper(Leg);
+            const FVector Pivot=Lower?HouseCalderPigData::Knee(Leg):HouseCalderPigData::Hip(Leg);
+            const FVector Offset=Lower?HouseCalderPigData::SoleOffset(Leg):FVector::ZeroVector;
+            RestToPart=FTransform(Rotation,-Rotation.RotateVector(Pivot)+Offset,FVector::OneVector);
+            Part=Lower?LowerLegs[Leg].Get():UpperLegs[Leg].Get();
+        }
+        else if (Joint==1) { RestToPart.SetTranslation(-HouseCalderPigData::HeadRoot()); Part=Head; }
+        else if (Joint>=10)
+        {
+            RestToPart.SetTranslation(-HouseCalderPigData::HeadRoot()-HouseCalderPigData::EarRoot(Joint-10));
+            Part=Joint==10?LeftEar.Get():RightEar.Get();
+        }
+        const FMatrix Matrix=RestToPart.ToMatrixWithScale()*Part->GetComponentTransform().ToMatrixWithScale();
+        for (int32 Row=0;Row<4;++Row)
+            CalderSkinMaterial->SetVectorParameterValue(Parameters[Joint*4+Row],
+                FLinearColor(Matrix.M[Row][0],Matrix.M[Row][1],Matrix.M[Row][2],0));
+    }
 }
 void AHouseRoamingPig::OnRep_Appearance() { RefreshMeshes(); }
 void AHouseRoamingPig::OnConstruction(const FTransform& Transform) { Super::OnConstruction(Transform); RefreshMeshes(); }
@@ -598,7 +709,7 @@ float AHouseRoamingPig::GetPickupBend() const
 }
 FVector AHouseRoamingPig::GetCarryGripPoint() const
 {
-    return LowerLegs.IsValidIndex(2)?LowerLegs[2]->GetComponentTransform().TransformPosition(FVector(0,0,-20)):
+    return LowerLegs.IsValidIndex(2)?LowerLegs[2]->GetComponentTransform().TransformPosition(FVector(0,0,bCalderAppearance?3.f-HouseCalderPigData::LowerLength(2):-20.f)):
         GetActorLocation();
 }
 FVector AHouseRoamingPig::GetCarryGripDirection() const
@@ -1104,9 +1215,17 @@ void AHouseRoamingPig::FollowPath(float DeltaSeconds)
             const FVector Candidate=Direction.RotateAngleAxis(Offset,FVector::UpVector);
             if (SafeDirection(Candidate,Probe)) { Direction=Candidate; bFound=true; break; }
         }
+        if (!bFound && bCalderAppearance)
+            for (const float Offset:{90.f,-90.f,125.f,-125.f,180.f})
+            {
+                const FVector Candidate=DesiredDirection.RotateAngleAxis(Offset,FVector::UpVector);
+                if (SafeDirection(Candidate,Probe)) { Direction=Candidate; bFound=true; break; }
+            }
         if (!bFound) { StuckSeconds+=DeltaSeconds; }
         if (!bFound && StuckSeconds<2.5f) { Movement->StopMovementImmediately(); return; }
-        if (!bFound) { ++UnsafeFloorStops; Path.Reset(); PathCursor=0; bLocalGoal=false; Mood=EHousePigMood::Sniffing; ActivityUntil=GetWorld()->GetTimeSeconds()+Personality.FRandRange(.5f,1.4f); StuckSeconds=0; return; }
+        if (!bFound) { ++UnsafeFloorStops; Path.Reset(); PathCursor=0; bLocalGoal=false;
+            if (bCalderAppearance) { bBedIntent=bFeedIntent=bBedApproach=false; }
+            Mood=EHousePigMood::Sniffing; ActivityUntil=GetWorld()->GetTimeSeconds()+Personality.FRandRange(.5f,1.4f); StuckSeconds=0; return; }
     }
     if (FVector::Dist2D(FeetLocation(),LastProgressFeet)>15.f) { LastProgressFeet=FeetLocation(); StuckSeconds=0; }
     const float TargetSpeed=Fast?RunSpeed:WalkSpeed;
@@ -1192,6 +1311,33 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
     const float TurnRate=FMath::FindDeltaAngleDegrees(GaitLastYaw,GetActorRotation().Yaw)/DeltaSeconds;
     GaitLastYaw=GetActorRotation().Yaw;
     GaitTurn=FMath::FInterpTo(GaitTurn,FMath::Clamp(TurnRate,-160.f,160.f),DeltaSeconds,4.f);
+    if (bCalderAppearance && GroundPose && !Sleep)
+    {
+        // A single capsule may be on the mattress while two hooves are on the
+        // floor. Sample the actual support positions before placing the visual
+        // torso; a forecast height alone makes those hooves float or sink.
+        FCollisionQueryParams ContactQuery(SCENE_QUERY_STAT(CalderPigSupport), false, this);
+        for (TActorIterator<APawn> It(GetWorld()); It; ++It) ContactQuery.AddIgnoredActor(*It);
+        const FTransform PreviousRoot = VisualRoot->GetComponentTransform();
+        for (int32 LegIndex = 0; LegIndex < 4; ++LegIndex)
+        {
+            const FVector HipAt = HouseCalderPigData::Hip(LegIndex);
+            const FVector Neutral = PreviousRoot.TransformPosition(FVector(HipAt.X, HipAt.Y, 0));
+            const FVector ContactXY = GaitFootPhase[LegIndex] >= 0.f ? LowerLegs[LegIndex]->GetComponentTransform().TransformPosition(
+                FVector(0,0,-HouseCalderPigData::LowerLength(LegIndex))) : Neutral;
+            FHitResult Contact;
+            if (GetWorld()->LineTraceSingleByChannel(Contact, FVector(ContactXY.X, ContactXY.Y, FloorZ + 70.f),
+                FVector(ContactXY.X, ContactXY.Y, FloorZ - 80.f), ECC_Visibility, ContactQuery) && Contact.ImpactNormal.Z > .65f)
+            {
+                GaitGroundZ[LegIndex] = Contact.ImpactPoint.Z;
+                if (GaitPlanted[LegIndex]) GaitFootWorld[LegIndex].Z = Contact.ImpactPoint.Z;
+            }
+        }
+        float LowSupport = FloorZ;
+        for (const float SupportZ : GaitGroundZ) LowSupport = FMath::Min(LowSupport, SupportZ);
+        CalderSupportDrop = FMath::FInterpTo(CalderSupportDrop, FMath::Clamp(FloorZ - LowSupport, 0.f, 35.f), DeltaSeconds, 30.f);
+    }
+    else CalderSupportDrop = FMath::FInterpTo(CalderSupportDrop, 0.f, DeltaSeconds, 12.f);
     const float FrontGround=(GaitGroundZ[0]+GaitGroundZ[1])*.5f;
     const float RearGround=(GaitGroundZ[2]+GaitGroundZ[3])*.5f;
     const float DesiredTerrainPitch=GroundPose&&!Sleep?FMath::Clamp(FMath::RadiansToDegrees(FMath::Atan2(FrontGround-RearGround,70.f*VisualScale)),-12.f,12.f):0.f;
@@ -1207,7 +1353,7 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
     // Center of mass rolls gently over each support side. Legs solve from
     // this shifted root to the same world anchors, keeping hooves planted.
     VisualRoot->SetRelativeLocation(FVector(ForeAftShift*VisualScale,(-60.f*SleepBlend+SideShift)*VisualScale,
-        -GetCapsuleComponent()->GetScaledCapsuleHalfHeight()-FloorDistance+RestZ));
+        -GetCapsuleComponent()->GetScaledCapsuleHalfHeight()-FloorDistance+RestZ-CalderSupportDrop));
     VisualRoot->SetRelativeRotation(FRotator((GaitTerrainPitch-GaitMotion*1.1f+WeightPitch)*(1.f-SleepBlend)*(1.f-CarryAlpha),0,
         75.f*SleepBlend+WeightRoll));
     const float Breath=FMath::Sin(VisualTime*(Sleep?1.25f:2.2f))*(Sleep?.012f:.003f);
@@ -1220,25 +1366,57 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
     const float HeadInterest=FMath::PerlinNoise1D(VisualTime*.34f+Individual+8.1f);
     const float Snort=GroundPose&&!Sleep?GetSnortPulse():0.f;
     const float TravelHeadPitch=-GaitTerrainPitch*.5f-WeightPitch*.65f+HeadInterest*1.5f;
-    const float SearchHeadPitch=(Feed?-52.f:-76.f)+FMath::Sin(VisualTime*(Feed?5.5f:2.8f))*(Feed?1.2f:1.0f)+HeadInterest*(Feed?1.8f:.7f);
+    const float SearchHeadPitch=(bCalderAppearance?(Feed?-12.f:-32.f):(Feed?-52.f:-76.f))+FMath::Sin(VisualTime*(Feed?5.5f:2.8f))*(Feed?1.2f:1.0f)+HeadInterest*(Feed?1.8f:.7f);
     const float HeadPitch=FMath::Lerp(TravelHeadPitch,SearchHeadPitch,SniffAlpha)+Snort*2.4f;
     const float HeadYaw=FMath::Lerp(HeadInterest*2.5f+GaitTurn*.025f,
         FMath::Sin(VisualTime*1.05f+Individual*.2f)*5.f+HeadInterest*4.f,SniffAlpha);
-    FVector DesiredHeadLocation(60+Snort*.5f,0,76-20.f*SniffAlpha+Snort*.35f);
+    const FVector HeadRest=bCalderAppearance?HouseCalderPigData::HeadRoot():FVector(60,0,76);
+    FVector DesiredHeadLocation=HeadRest+FVector(Snort*.5f,0,(bCalderAppearance?0.f:-20.f*SniffAlpha)+Snort*.35f);
     FRotator DesiredHeadRotation(FMath::Lerp(HeadPitch,-12.f,SleepBlend),HeadYaw*(1.f-SleepBlend),-WeightRoll*.50f);
-    DesiredHeadLocation=FMath::Lerp(DesiredHeadLocation,FVector(60,0,76),CarryAlpha);
+    DesiredHeadLocation=FMath::Lerp(DesiredHeadLocation,HeadRest,CarryAlpha);
     DesiredHeadRotation=FMath::Lerp(DesiredHeadRotation,FRotator(-8.f+FMath::Sin(VisualTime*1.4f)*1.5f,0,0),CarryAlpha);
     GaitHeadRotation=FMath::RInterpTo(GaitHeadRotation,DesiredHeadRotation,DeltaSeconds,4.f);
-    if (!Feed&&GroundPose&&SleepBlend<.015f&&SniffAlpha>.005f)
+    if ((!Feed||bCalderAppearance)&&GroundPose&&SleepBlend<.015f&&(SniffAlpha>.005f||bCalderAppearance))
     {
         // The authored back-neck point remains attached to the torso. Its
         // offset is computed from the already eased rotation, so lowering
         // the snout cannot detach the head or jump to a vertical offset.
-        const FVector NeckAnchor(41,0,65.4);
-        const FVector HeadHinge(-19,0,-10.6);
+        const FVector NeckAnchor=bCalderAppearance?HouseCalderPigData::Neck():FVector(41,0,65.4);
+        const FVector HeadHinge=NeckAnchor-HeadRest;
         GaitHeadLocation=NeckAnchor-GaitHeadRotation.RotateVector(HeadHinge);
     }
     else GaitHeadLocation=FMath::VInterpTo(GaitHeadLocation,DesiredHeadLocation,DeltaSeconds,5.f);
+    if (bCalderAppearance && GroundPose && SleepBlend < .015f && SniffAlpha > .25f)
+    {
+        // Rooting follows the surface beneath the snout, which may be a
+        // mattress above the hooves. Rotate at the anatomical neck instead of
+        // pushing the mesh through that surface or translating it off the body.
+        const FVector NeckAnchor = HouseCalderPigData::Neck();
+        const FVector Hinge = NeckAnchor - HeadRest;
+        const FTransform VisualTransform = VisualRoot->GetComponentTransform();
+        const float ContactWeight = FMath::Clamp((SniffAlpha-.25f)/.5f,0.f,1.f);
+        FCollisionQueryParams SnoutQuery(SCENE_QUERY_STAT(CalderPigSnout),false,this);
+        for (TActorIterator<APawn> It(GetWorld()); It; ++It) SnoutQuery.AddIgnoredActor(*It);
+        for (int32 Iteration=0; Iteration<6; ++Iteration)
+        {
+            auto NoseAt = [&](const FRotator& Rotation)
+            {
+                const FQuat Pose=Rotation.Quaternion();
+                return VisualTransform.TransformPosition(NeckAnchor-Pose.RotateVector(Hinge)+Pose.RotateVector(HouseCalderPigData::Snout()));
+            };
+            const FVector Nose = NoseAt(GaitHeadRotation);
+            FHitResult Surface;
+            if (!GetWorld()->LineTraceSingleByChannel(Surface,Nose+FVector(0,0,60),Nose-FVector(0,0,75),ECC_Visibility,SnoutQuery)
+                || Surface.ImpactNormal.Z<.65f) break;
+            if (FMath::Abs(Surface.ImpactPoint.Z+2.f-Nose.Z)<.02f) break;
+            FRotator Raised=GaitHeadRotation; Raised.Pitch+=1.f;
+            const float Derivative=NoseAt(Raised).Z-Nose.Z;
+            if (FMath::Abs(Derivative)<.05f) break;
+            GaitHeadRotation.Pitch=FMath::Clamp(GaitHeadRotation.Pitch+
+                FMath::Clamp((Surface.ImpactPoint.Z+2.f-Nose.Z)/Derivative,-12.f,12.f)*ContactWeight,-55.f,45.f);
+        }
+        GaitHeadLocation=NeckAnchor-GaitHeadRotation.RotateVector(Hinge);
+    }
     Head->SetRelativeLocation(GaitHeadLocation); Head->SetRelativeRotation(GaitHeadRotation);
 
     // The lop ears are separate meshes hinged to the head. Damped springs
@@ -1279,7 +1457,7 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
     // pig. Round-robin samples look ahead to the next touchdown, not through
     // other characters. Physics still decides the actual body position.
     GaitGroundAccumulator+=DeltaSeconds;
-    if (GroundPose&&!Sleep&&GaitGroundAccumulator>=1.f/30.f)
+    if (!bCalderAppearance&&GroundPose&&!Sleep&&GaitGroundAccumulator>=1.f/30.f)
     {
         GaitGroundAccumulator=0.f;
         const int32 Leg=GaitGroundCursor; GaitGroundCursor=(GaitGroundCursor+1)%4;
@@ -1293,15 +1471,18 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
             GaitGroundZ[Leg]=Ground.ImpactPoint.Z;
     }
     // Exact two-link IK in the desired leg plane, so turns and uneven floors
-    // also retain support. Mesh pivots are the authored 25/23 cm links.
-    auto SolveLeg=[](const FVector& Goal,int32 Leg,FQuat& Upper,FQuat& Lower)
+    // also retain support. The acquired appearance uses its native link
+    // lengths; the original comparison retains its authored 25/23 cm links.
+    auto SolveLeg=[this](const FVector& Goal,int32 Leg,FQuat& Upper,FQuat& Lower)
     {
-        const float Length=FMath::Clamp(static_cast<float>(Goal.Size()),2.1f,47.8f);
+        const float UpperLength=bCalderAppearance?HouseCalderPigData::UpperLength(Leg):25.f;
+        const float LowerLength=bCalderAppearance?HouseCalderPigData::LowerLength(Leg):23.f;
+        const float Length=FMath::Clamp(static_cast<float>(Goal.Size()),FMath::Abs(UpperLength-LowerLength)+.1f,UpperLength+LowerLength-.2f);
         const FVector Direction=Goal.GetSafeNormal(UE_SMALL_NUMBER,FVector(0,0,-1));
-        FVector Bend=FVector(Leg<2?1.f:-1.f,0,0);
+        FVector Bend=bCalderAppearance?HouseCalderPigData::Bend(Leg):FVector(Leg<2?1.f:-1.f,0,0);
         Bend=(Bend-Direction*FVector::DotProduct(Bend,Direction)).GetSafeNormal(UE_SMALL_NUMBER,FVector::RightVector);
-        const float Along=(25.f*25.f+Length*Length-23.f*23.f)/(2.f*Length);
-        const float Out=FMath::Sqrt(FMath::Max(0.f,25.f*25.f-Along*Along));
+        const float Along=(UpperLength*UpperLength+Length*Length-LowerLength*LowerLength)/(2.f*Length);
+        const float Out=FMath::Sqrt(FMath::Max(0.f,UpperLength*UpperLength-Along*Along));
         const FVector Knee=Direction*Along+Bend*Out;
         const FVector End=Direction*Length;
         Upper=FQuat::FindBetweenNormals(FVector(0,0,-1),Knee.GetSafeNormal());
@@ -1312,7 +1493,7 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
     const float TrotOffsets[4]={0.f,.5f,.5f,0.f};
     for (int32 i=0;i<4;++i)
     {
-        const FVector Hip(i<2?35.f:-35.f,i%2?21.f:-21.f,48.f);
+        const FVector Hip=bCalderAppearance?HouseCalderPigData::Hip(i):FVector(i<2?35.f:-35.f,i%2?21.f:-21.f,48.f);
         FQuat UpperGoal=GaitUpperGround[i].Quaternion(),LowerGoal=GaitLowerGround[i].Quaternion();
         if (GroundPose&&SleepBlend<.98f)
         {
@@ -1375,7 +1556,8 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
             // A sharp turn, acceleration or frame hitch can leave an old
             // support behind the body's anatomical reach. Actually lift and
             // step that hoof forward; never slide a supposedly planted foot.
-            if (!GaitRecoveryActive[i]&&GaitPlanted[i]&&LegGoal.Size()>48.15f&&!Settling)
+            const float MaximumReach=bCalderAppearance?HouseCalderPigData::UpperLength(i)+HouseCalderPigData::LowerLength(i)+.15f:48.15f;
+            if (!GaitRecoveryActive[i]&&GaitPlanted[i]&&LegGoal.Size()>MaximumReach&&!Settling)
             {
                 GaitRecoveryActive[i]=true; RecoveryBegan=true; GaitRecoveryAge[i]=0.f;
                 GaitRecoveryDuration[i]=FMath::Clamp(CycleDistance/FMath::Max(35.f,ActualSpeed)*(1.f-Phase),.075f,.18f);
@@ -1412,7 +1594,14 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
                     const float SoleX=RootTransform.TransformVectorNoScale(Combined.RotateVector(FVector::ForwardVector)).Z;
                     const float SoleY=RootTransform.TransformVectorNoScale(Combined.RotateVector(FVector::RightVector)).Z;
                     const float SoleRadius=FMath::Sqrt(FMath::Square(SoleX*3.8f)+FMath::Square(SoleY*2.5f));
-                    const float Lowest=SoleX*2.9f-FMath::Abs(SoleY)*2.95f-SoleRadius;
+                    float Lowest=SoleX*2.9f-FMath::Abs(SoleY)*2.95f-SoleRadius;
+                    if (bCalderAppearance && !CalderSoleVertices[i].IsEmpty())
+                    {
+                        Lowest = BIG_NUMBER;
+                        for (const FVector& Sole : CalderSoleVertices[i])
+                            Lowest = FMath::Min(Lowest, static_cast<float>(RootTransform.TransformVectorNoScale(
+                                Combined.RotateVector(Sole - FVector(0, 0, -HouseCalderPigData::LowerLength(i)))).Z));
+                    }
                     LegGoal=UncorrectedGoal+RootTransform.InverseTransformVectorNoScale(FVector(0,0,FMath::Clamp(-Lowest,-7.f,7.f)));
                     SolveLeg(LegGoal,i,UpperGoal,LowerGoal);
                 }
@@ -1420,7 +1609,18 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
             GaitUpperGround[i]=UpperGoal.Rotator(); GaitLowerGround[i]=LowerGoal.Rotator();
         }
         else { GaitFootPhase[i]=-1.f; GaitRecoveryActive[i]=false; }
-        const FQuat SleepingUpper=FRotator(95,0,0).Quaternion(),SleepingLower=FRotator(-150,0,0).Quaternion();
+        FQuat SleepingUpper=FRotator(95,0,0).Quaternion(),SleepingLower=FRotator(-150,0,0).Quaternion();
+        if (bCalderAppearance)
+        {
+            // The original toy rig folds each thigh 95 degrees and its calf
+            // back 150. Applied to the donor's real shoulder/thigh skin that
+            // pulls barrel mass through the belly. Rest on the side with the
+            // native joints relaxed and only a small anatomical knee bend.
+            const FQuat NativeUpper=HouseCalderPigData::ToUpper(i).Inverse();
+            const FQuat NativeLower=HouseCalderPigData::ToLower(i).Inverse();
+            SleepingUpper=NativeUpper*FRotator(i<2?10.f:-12.f,0,0).Quaternion();
+            SleepingLower=SleepingUpper.Inverse()*NativeLower*FRotator(i<2?-20.f:20.f,0,0).Quaternion();
+        }
         UpperGoal=FQuat::Slerp(UpperGoal,SleepingUpper,SleepBlend);
         LowerGoal=FQuat::Slerp(LowerGoal,SleepingLower,SleepBlend);
         if (CarryAlpha>0.f)
@@ -1452,10 +1652,11 @@ void AHouseRoamingPig::Animate(float DeltaSeconds)
         UpperLegs[i]->SetRelativeRotation(FQuat::Slerp(UpperLegs[i]->GetRelativeRotation().Quaternion(),UpperGoal,Blend));
         LowerLegs[i]->SetRelativeRotation(FQuat::Slerp(LowerLegs[i]->GetRelativeRotation().Quaternion(),LowerGoal,Blend));
     }
+    UpdateCalderSkin();
 }
 FVector AHouseRoamingPig::GetHoofWorldPosition(int32 Leg) const
 {
-    return LowerLegs.IsValidIndex(Leg)?LowerLegs[Leg]->GetComponentTransform().TransformPosition(FVector(0,0,-23)):FeetLocation();
+    return LowerLegs.IsValidIndex(Leg)?LowerLegs[Leg]->GetComponentTransform().TransformPosition(FVector(0,0,bCalderAppearance?-HouseCalderPigData::LowerLength(Leg):-23.f)):FeetLocation();
 }
 void AHouseRoamingPig::Tick(float DeltaSeconds)
 {

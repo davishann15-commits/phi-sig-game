@@ -1,0 +1,27 @@
+boundary=off (PropertyBoundary_* boxes not built)
+leg 1 front: street onto the campus green: from (3100,-5000) over the old line at Y=-5900 to (3100,-7000), ground ExteriorGrounds
+leg 1 CROSSED reached the far side; furthest 1073 cm past the old line, feet at X=3100.000 Y=-6973.216 Z=-57.850
+leg 2 west: along Fraternity Park Dr: from (-7800,-4850) over the old line at X=-8500 to (-9400,-4850), ground ExteriorGrounds
+leg 2 CROSSED reached the far side; furthest 899 cm past the old line, feet at X=-9398.965 Y=-4850.000 Z=-69.850
+leg 3 east: along Fraternity Park Dr into the side street: from (8000,-4850) over the old line at X=8800 to (9600,-4850), ground ExteriorGrounds
+leg 3 CROSSED reached the far side; furthest 800 cm past the old line, feet at X=9599.564 Y=-4850.000 Z=-69.850
+campus route: 19 waypoints from the house's front walk (ground ExteriorWalks_02)
+campus route reached 1/18 Fraternity Park Dr's near sidewalk, feet at (0,-3973,-54.8)
+campus route reached 2/18 the mid-block crosswalk, near side, feet at (2348,-4001,-54.8)
+campus route reached 3/18 across the crosswalk, feet at (2400,-5602,-54.7)
+campus route reached 4/18 past the kiosk, feet at (2880,-5986,-57.9)
+campus route reached 5/18 the promenade, feet at (2901,-6477,-54.9)
+campus route reached 6/18 the promenade's east end, feet at (8252,-6500,-54.9)
+campus route reached 7/18 Calder Dr's west sidewalk, feet at (8595,-6500,-54.9)
+campus route reached 8/18 through the entrance gateposts, feet at (8574,-5929,-54.9)
+campus route reached 9/18 down Calder Dr to the stadium crossing, feet at (8575,-13288,-57.3)
+campus route reached 10/18 the stadium's east gate, feet at (8033,-13304,-54.8)
+campus route reached 11/18 round the stadium apron, feet at (7505,-10026,-57.9)
+campus route reached 12/18 the ticket plaza, feet at (2382,-8696,-54.9)
+campus route reached 13/18 up the gate path, feet at (2400,-6712,-57.9)
+campus route reached 14/18 back on the promenade, feet at (1985,-6494,-55.0)
+campus route reached 15/18 west along the promenade, feet at (-11000,-6500,-55.0)
+campus route reached 16/18 into the quad, feet at (-11000,-10815,-55.0)
+campus route reached 17/18 the library forecourt, feet at (-14354,-10800,-55.0)
+campus route reached 18/18 the clock tower, feet at (-9560,-10800,-55.0)
+PASS boundary=off crossed=3/3 stoppedAtLine=0/3 failed=0 campusRoute=18/18 (nothing invisible may stop the walker)

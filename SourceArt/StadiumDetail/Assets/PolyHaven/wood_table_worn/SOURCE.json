@@ -1,0 +1,25 @@
+{
+  "asset": "wood_table_worn",
+  "source": "https://polyhaven.com/a/wood_table_worn",
+  "author": "Dimitrios Savva; Rico Cilliers",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "tile_cm": 60,
+  "files": [
+    {
+      "kind": "Diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table_worn/wood_table_worn_diff_2k.jpg",
+      "file": "wood_table_worn_diff_2k.jpg",
+      "bytes": 3108339,
+      "sha256": "165cdba449d56ea8e9675116622b95d7af372b7d7c47b8a98a03fcc630f1d51c"
+    },
+    {
+      "kind": "nor_dx",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/wood_table_worn/wood_table_worn_nor_dx_2k.png",
+      "file": "wood_table_worn_nor_dx_2k.png",
+      "bytes": 20555336,
+      "sha256": "652a175b3e4b407f8ca5ecd8b32d5bcb1c76d1e97993f2b58e9710d41ec1dd28"
+    }
+  ],
+  "use": "Candidate for owner-requested more age/wear on coach-office furniture. Not yet imported."
+}

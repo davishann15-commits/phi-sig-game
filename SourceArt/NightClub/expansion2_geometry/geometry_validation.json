@@ -1,0 +1,15 @@
+{
+  "lower_join_clear": true,
+  "upper_join_clear": true,
+  "notch_wall_preserved_lower": true,
+  "notch_wall_preserved_upper": true,
+  "lower_wing_floor_present": true,
+  "SM_NCR2_LowerCeilingWithHole_hole_clear": true,
+  "SM_NCR2_LowerCeilingWithHole_wing_continuous": true,
+  "SM_NCR2_UpperSupportFloorWithHole_hole_clear": true,
+  "SM_NCR2_UpperSupportFloorWithHole_wing_continuous": true,
+  "SM_NCR2_UpperDarkFloorWithHole_hole_clear": true,
+  "SM_NCR2_UpperDarkFloorWithHole_wing_continuous": true,
+  "lower_old_door_clear": true,
+  "all_origin_identity": true
+}

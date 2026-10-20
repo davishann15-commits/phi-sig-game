@@ -1,0 +1,363 @@
+{
+  "source": "/Game/AnimalVarietyPack/Pig/Meshes/SK_Pig",
+  "runtime": "rigid static parts",
+  "parts": {
+    "Body": {
+      "file": "SM_CalderPig_Body.fbx",
+      "pivot_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 749,
+      "triangles": 1463,
+      "topology": {
+        "boundary_edges": 35,
+        "nonmanifold_edges": 37,
+        "volume_cm3": 206843.26186998232
+      },
+      "bounds_cm": [
+        [
+          -69.49999928474426,
+          -27.214902639389038,
+          25.42649805545807
+        ],
+        [
+          54.8747718334198,
+          27.214902639389038,
+          91.10476970672607
+        ]
+      ]
+    },
+    "Head": {
+      "file": "SM_CalderPig_Head.fbx",
+      "pivot_cm": [
+        57.12835693359375,
+        -0.001653009676374495,
+        54.76798629760742
+      ],
+      "vertices": 1654,
+      "triangles": 3283,
+      "topology": {
+        "boundary_edges": 25,
+        "nonmanifold_edges": 27,
+        "volume_cm3": 24619.84435274393
+      },
+      "bounds_cm": [
+        [
+          -13.313677906990051,
+          -27.79531478881836,
+          -33.81389081478119
+        ],
+        [
+          27.871641516685486,
+          27.798622846603394,
+          23.502376675605774
+        ]
+      ]
+    },
+    "LeftEar": {
+      "file": "SM_CalderPig_LeftEar.fbx",
+      "pivot_cm": [
+        63.051963806152344,
+        -17.68659782409668,
+        65.1020736694336
+      ],
+      "vertices": 63,
+      "triangles": 86,
+      "topology": {
+        "boundary_edges": 34,
+        "nonmanifold_edges": 34,
+        "volume_cm3": 2358.9328109694447
+      },
+      "bounds_cm": [
+        [
+          -17.584536969661713,
+          -10.166297852993011,
+          -0.18576811999082565
+        ],
+        [
+          8.852104097604752,
+          9.723255783319473,
+          6.803420931100845
+        ]
+      ]
+    },
+    "RightEar": {
+      "file": "SM_CalderPig_RightEar.fbx",
+      "pivot_cm": [
+        63.051963806152344,
+        17.68659782409668,
+        65.1020736694336
+      ],
+      "vertices": 63,
+      "triangles": 86,
+      "topology": {
+        "boundary_edges": 34,
+        "nonmanifold_edges": 34,
+        "volume_cm3": 2358.932810969444
+      },
+      "bounds_cm": [
+        [
+          -17.584536969661713,
+          -9.723255783319473,
+          -0.18576811999082565
+        ],
+        [
+          8.852104097604752,
+          10.166297852993011,
+          6.803420931100845
+        ]
+      ]
+    },
+    "Upper0": {
+      "file": "SM_CalderPig_Upper0.fbx",
+      "pivot_cm": [
+        35.65573501586914,
+        -17.160343170166016,
+        51.48037338256836
+      ],
+      "vertices": 58,
+      "triangles": 103,
+      "topology": {
+        "boundary_edges": 7,
+        "nonmanifold_edges": 7,
+        "volume_cm3": 16.980493176514667
+      },
+      "bounds_cm": [
+        [
+          -7.610531896352768,
+          -6.566516309976578,
+          -29.186537861824036
+        ],
+        [
+          10.54660752415657,
+          4.420626536011696,
+          -3.31764817237854
+        ]
+      ]
+    },
+    "Lower0": {
+      "file": "SM_CalderPig_Lower0.fbx",
+      "pivot_cm": [
+        20.331501007080078,
+        -13.479216575622559,
+        33.12958908081055
+      ],
+      "vertices": 307,
+      "triangles": 610,
+      "topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_cm3": 1815.807489823945
+      },
+      "bounds_cm": [
+        [
+          -9.234896302223206,
+          -6.244237348437309,
+          -33.5225909948349
+        ],
+        [
+          12.883175909519196,
+          6.100788339972496,
+          3.9649490267038345
+        ]
+      ]
+    },
+    "Upper1": {
+      "file": "SM_CalderPig_Upper1.fbx",
+      "pivot_cm": [
+        35.65617752075195,
+        17.157686233520508,
+        51.47999954223633
+      ],
+      "vertices": 58,
+      "triangles": 103,
+      "topology": {
+        "boundary_edges": 7,
+        "nonmanifold_edges": 7,
+        "volume_cm3": 121.88945761600188
+      },
+      "bounds_cm": [
+        [
+          -7.611121237277985,
+          -4.4182438403368,
+          -29.186251759529114
+        ],
+        [
+          10.545970499515533,
+          6.568872928619385,
+          -3.3172257244586945
+        ]
+      ]
+    },
+    "Lower1": {
+      "file": "SM_CalderPig_Lower1.fbx",
+      "pivot_cm": [
+        20.331844329833984,
+        13.47669792175293,
+        33.129302978515625
+      ],
+      "vertices": 307,
+      "triangles": 610,
+      "topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_cm3": 1832.4738403735719
+      },
+      "bounds_cm": [
+        [
+          -9.23493355512619,
+          -6.098503619432449,
+          -33.522120118141174
+        ],
+        [
+          12.882654368877411,
+          6.246620789170265,
+          3.9652936160564423
+        ]
+      ]
+    },
+    "Upper2": {
+      "file": "SM_CalderPig_Upper2.fbx",
+      "pivot_cm": [
+        -36.8212776184082,
+        -15.37938117980957,
+        70.06861114501953
+      ],
+      "vertices": 92,
+      "triangles": 113,
+      "topology": {
+        "boundary_edges": 69,
+        "nonmanifold_edges": 69,
+        "volume_cm3": 649.5927516517097
+      },
+      "bounds_cm": [
+        [
+          -15.69775640964508,
+          -6.825908273458481,
+          -36.9318425655365
+        ],
+        [
+          12.364567816257477,
+          12.963663041591644,
+          -22.211360931396484
+        ]
+      ]
+    },
+    "Lower2": {
+      "file": "SM_CalderPig_Lower2.fbx",
+      "pivot_cm": [
+        -28.972305297851562,
+        -19.140764236450195,
+        38.88058090209961
+      ],
+      "vertices": 354,
+      "triangles": 704,
+      "topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_cm3": 3739.251272968544
+      },
+      "bounds_cm": [
+        [
+          -13.196134567260742,
+          -7.588770240545273,
+          -39.12618160247803
+        ],
+        [
+          13.638105988502502,
+          10.45997366309166,
+          4.43439856171608
+        ]
+      ]
+    },
+    "Upper3": {
+      "file": "SM_CalderPig_Upper3.fbx",
+      "pivot_cm": [
+        -36.820865631103516,
+        15.37938117980957,
+        70.06826782226562
+      ],
+      "vertices": 92,
+      "triangles": 180,
+      "topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_cm3": 229.49145878017274
+      },
+      "bounds_cm": [
+        [
+          -15.698175132274628,
+          -12.96277940273285,
+          -36.931827664375305
+        ],
+        [
+          12.364161014556885,
+          6.826698035001755,
+          -22.21117913722992
+        ]
+      ]
+    },
+    "Lower3": {
+      "file": "SM_CalderPig_Lower3.fbx",
+      "pivot_cm": [
+        -28.971784591674805,
+        19.13990020751953,
+        38.880165100097656
+      ],
+      "vertices": 354,
+      "triangles": 704,
+      "topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "volume_cm3": 3997.2212119482974
+      },
+      "bounds_cm": [
+        [
+          -13.196340203285217,
+          -10.459257662296295,
+          -39.12574648857117
+        ],
+        [
+          13.637568056583405,
+          7.589464634656906,
+          4.434515163302422
+        ]
+      ]
+    },
+    "Donor": {
+      "file": "SM_CalderPig_Donor.fbx",
+      "pivot_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 3374,
+      "triangles": 6744,
+      "topology": {
+        "boundary_edges": 4,
+        "nonmanifold_edges": 8,
+        "volume_cm3": 242655.3866246674
+      },
+      "bounds_cm": [
+        [
+          -69.49999928474426,
+          -27.852895855903625,
+          7.23436155425361e-07
+        ],
+        [
+          84.99999642372131,
+          27.852895855903625,
+          91.10476970672607
+        ]
+      ]
+    }
+  },
+  "joint_blend_vertices": 579,
+  "contact_proof": {
+    "snout_head_weight": 1.0,
+    "hoof_lower_weight": 1.0,
+    "meaning": "Visible snout and sole vertices use the exact rigid part transforms measured by the motion smoke."
+  }
+}

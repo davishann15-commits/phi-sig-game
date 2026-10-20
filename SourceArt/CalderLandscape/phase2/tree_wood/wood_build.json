@@ -1,0 +1,55 @@
+{
+  "scope": "Owned wood-only derivation; no runtime binding or visual acceptance",
+  "trees": [
+    {
+      "label": "Beech",
+      "file": "SM_CalderTreeWood_Beech.fbx",
+      "triangles": 28019,
+      "vertices": 19926,
+      "materials": [
+        "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_Trunk_05.MI_CalderTree_Beech_Trunk_05",
+        "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_Decoration.MI_CalderTree_Beech_Decoration",
+        "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_Tileable.MI_CalderTree_Beech_Tileable"
+      ],
+      "bounds_cm": [
+        [
+          -1011.8696899414062,
+          -973.6697998046875,
+          -0.68109530210495
+        ],
+        [
+          932.6048583984375,
+          1020.1726684570312,
+          2153.213623046875
+        ]
+      ],
+      "export_json_sha256": "773ab04667dfa728638ad01b14503c10abb505a9567a63800b25b361fea9266a",
+      "fbx_sha256": "ef42a1e1ce31f7530e2547901cce5b3d49084f0984364d466a458d08e85cb2ae"
+    },
+    {
+      "label": "Maple",
+      "file": "SM_CalderTreeWood_Maple.fbx",
+      "triangles": 32822,
+      "vertices": 35742,
+      "materials": [
+        "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_Tileable.MI_CalderTree_Maple_Tileable",
+        "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_Trunk_01.MI_CalderTree_Maple_Trunk_01",
+        "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_Decoration.MI_CalderTree_Maple_Decoration"
+      ],
+      "bounds_cm": [
+        [
+          -881.3009033203125,
+          -761.7579345703125,
+          -2.17716121673584
+        ],
+        [
+          882.0625,
+          858.5604248046875,
+          2154.98974609375
+        ]
+      ],
+      "export_json_sha256": "9d1e82b75dd27c475b8e1700df9dab8205e2d3fcb9aa8bdbbbeb84b172e9db95",
+      "fbx_sha256": "0c7a25ab21857ce97ba8a3527ebac1a809b4d411b26ac3a913d622bef967c3d4"
+    }
+  ]
+}

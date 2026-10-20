@@ -1,0 +1,45 @@
+{
+  "build": {
+    "log": "Saved/CalderWork/codex_farm_arch_cull_build.log",
+    "actions": 210,
+    "seconds": 121.9,
+    "passed": true
+  },
+  "runtime": {
+    "components": 5,
+    "all_Calder_ISMs": 24,
+    "cover_instances": 57705,
+    "cover_crc": "17dc66ec",
+    "terrain_water_woods_pass": true,
+    "architecture_cull_cm": [
+      18000,
+      22500
+    ],
+    "field_cull_cm": [
+      7000,
+      9000
+    ],
+    "view_distance_scale": 0.6,
+    "global_quality_changed": false,
+    "diagnostic_build_ms": 411.6
+  },
+  "appearance": {
+    "inspected_all_frames": true,
+    "images": {
+      "241_detail_calder_farm.png": "bb7fd24ab8262bb3cc8a8076a7ab32235ac957b68b4d26dace3039b2ae13df37",
+      "242_detail_calder_bale.png": "929bce703ec0c131abe81c91caaa72f4dc4ee17cf906e772251684a5e394c7de",
+      "243_detail_calder_barn_entry.png": "c2aab7c6600545deaf8be3003c08257a8bd1fac8c264694f1e5f631605b6e028",
+      "244_detail_calder_barn_roof.png": "19391ba217e8ccaa0a282eff46736cfc3c6560ffc9af6812dde4225bfbae717a"
+    },
+    "total_inspected_tree_woods_ridge_water_farm_frames": 154,
+    "photographic_appearance_accepted": false,
+    "findings": [
+      "Barn now visible from unchanged physical hill roof eye with existing0.6 quality scale.",
+      "Architecture225m and field90m ranges read back correctly; global quality unchanged.",
+      "Curved plants and normal-culling frame retain earlier appearance.",
+      "Roof remains flat/uniform brown; correct corrugation normals and a local metallic/rust material next."
+    ],
+    "default_enabled": false
+  },
+  "scope": "Curing and physical roof-view checkpoint; full photo/performance still unfinished"
+}

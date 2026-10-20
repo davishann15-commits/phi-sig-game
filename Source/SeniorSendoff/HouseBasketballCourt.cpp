@@ -1,4 +1,5 @@
 #include "HouseBasketballCourt.h"
+#include "HouseWestField.h"
 #include "HouseBlackHall.h"
 #include "HouseBlackHallLook.h"
 #include "HouseBlackHallMesh.h"
@@ -98,20 +99,14 @@ void Hoop(FHallMesh& M,FHallMesh& D,int32 End)
     for(float Y:{-53.f,53.f})Tube(M,TEXT("EX_Black"),V(125,Y,16),V(192,0,110),3);
     for(float Y:{-61.f,61.f})Tube(M,TEXT("EX_Rubber"),V(226,Y-5,12),V(226,Y+5,12),10,16);
     // Transparent board is a real colliding surface, with a visible frame and shooting square.
-    Box(M,TEXT("EX_CourtGlass"),V(29,-91,289),V(33,91,397));
+    // Board and rim collision now belong to the reactive hoop actor.
+    Box(D,TEXT("EX_CourtGlass"),V(29,-91,289),V(33,91,397));
     for(float Y:{-93.f,93.f})Box(M,TEXT("EX_Black"),V(26,Y-2.5f,286),V(36,Y+2.5f,400));
     for(float Z:{286.f,400.f})Box(M,TEXT("EX_Black"),V(26,-95,Z-2.5f),V(36,95,Z+2.5f));
     for(float Y:{-29.f,29.f})Box(D,TEXT("EX_White"),V(27,Y-1.6f,305),V(28,Y+1.6f,350));
     for(float Z:{305.f,350.f})Box(D,TEXT("EX_White"),V(27,-30.6f,Z-1.6f),V(28,30.6f,Z+1.6f));
     Box(M,TEXT("EX_CourtRim"),V(23,-8,302),V(30,8,310));
-    Ring(M,TEXT("EX_CourtRim"),Rim,24.2f,1.25f,64);
-    // Twisted diamond net. Cosmetic ropes never seal the opening or stop the ball.
-    for(int I=0;I<12;++I)for(int J=0;J<5;++J)for(float Dir:{-1.f,1.f})
-    {
-        float A=2*PI*(I+Dir*.5f*J)/12,B=2*PI*(I+Dir*.5f*(J+1))/12;
-        float R0=24-(J<3?J*3:9),R1=24-((J+1)<3?(J+1)*3:9);
-        Tube(D,TEXT("EX_CourtNet"),Rim+FVector(R0*FMath::Cos(A),R0*FMath::Sin(A),-J*9.f),Rim+FVector(R1*FMath::Cos(B),R1*FMath::Sin(B),-(J+1)*9.f),.45f,5);
-    }
+    // No static duplicate ropes: the live pinned net supplies the visible geometry.
 }
 void Fence(FHallMesh& M,const FVector& A,const FVector& B)
 {
@@ -145,14 +140,16 @@ float Bank(float X,float Y,bool East)
         float Level=HouseCourt::Floor-3+200.f*FMath::SmoothStep(0.f,1.f,700.f/1300.f);
         Z=FMath::Lerp(Z,Level,1.f-FMath::SmoothStep(0.f,60.f,Outside));
     }
-    return Z;
+    return East?Z:HouseWestField::JoinBank(X,Y,Z+.8f)-.8f;
 }
 void Lawn(FHallMesh& M,FHallMesh& D,bool East)
 {
     const float Sign=East?1:-1;
     for(int I=0;I<24;++I)for(int J=0;J<30;++J)
     {
-        auto P=[&](int X,int Y){float WX=Sign*(1530+X*80.f),WY=1770+Y*84.f;return FVector(WX,WY,Bank(WX,WY,East)+.8f);};
+        // Column 0 starts 2 cm under the court wall's outer face (+/-1508), not at +/-1530: the old 22 cm strip at the wall's
+        // foot showed the void. Bank() is flat inside |X| 1530, so the extra 24 cm lies at -361.2 like the rest of the edge.
+        auto P=[&](int X,int Y){float WX=Sign*(X==0?1506.f:1530.f+X*80.f),WY=1770+Y*84.f;return FVector(WX,WY,Bank(WX,WY,East)+.8f);};
         FVector A=P(I,J),B=P(I+1,J),C=P(I+1,J+1),E=P(I,J+1),N=FVector::CrossProduct(B-A,E-A).GetSafeNormal();if(N.Z<0)N=-N;
         M.Quad(TEXT("EX_Grass"),A,B,C,E,N,GrassUV);
     }

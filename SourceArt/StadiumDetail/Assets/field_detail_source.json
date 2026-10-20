@@ -1,0 +1,28 @@
+{
+  "owned_material": "/Game/SeniorSendOff/Calder/Stadium/Materials/M_Stadium_FieldDetail",
+  "recipe": "SourceArt/StadiumDetail/field_material_batch.py",
+  "receipt": "Saved/StadiumDetailWork/field_material_receipt.json",
+  "source_assets": [
+    {
+      "asset": "/Game/SeniorSendOff/Calder/Textures/Grass004/T_Grass004_A",
+      "kind": "linearized colour detail modulation",
+      "source": "https://ambientcg.com/view?id=Grass004",
+      "license": "CC0",
+      "existing_asset_unchanged": true
+    },
+    {
+      "asset": "/Game/SeniorSendOff/Calder/Textures/Grass004/T_Grass004_N",
+      "kind": "DirectX normal",
+      "source": "https://ambientcg.com/view?id=Grass004",
+      "license": "CC0",
+      "existing_asset_unchanged": true
+    }
+  ],
+  "original_paint": "Runtime T_CF_Field, exact original layout plus own stage4wear in WeatherField; no copyrighted photo artwork",
+  "tile_cm": 220,
+  "normal_strength": 0.55,
+  "map_saved": false,
+  "visual_evidence": "stadium_s4_20261019_a5",
+  "performance_pending": false,
+  "performance_evidence": "stadium_s4_20261019_perf1_performance.json"
+}

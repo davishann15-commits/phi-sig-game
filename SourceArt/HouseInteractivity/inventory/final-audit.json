@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "window": 40,
+    "furniture": 513,
+    "curtain": 19,
+    "chandelier": 27
+  },
+  "pieces": 599,
+  "unique_intact_assets": 533,
+  "furniture_with_all_four_stages": 513,
+  "wall_mounted": 89,
+  "removable_furniture_collision_actors": 55,
+  "remainder_meshes": 39,
+  "breakaway_window_frames": 26,
+  "shattered_porch_frames": 8,
+  "shared_meshes": 9,
+  "referenced_fbx_files": 1950,
+  "referenced_fbx_mib": 326.05,
+  "placement_bounds_errors": 0,
+  "movable_metadata_corrected": [
+    "R204_NightstandAndLamp__001",
+    "R204_BlackDeskFan__001"
+  ],
+  "window_passage_collision_remainders": 12
+}

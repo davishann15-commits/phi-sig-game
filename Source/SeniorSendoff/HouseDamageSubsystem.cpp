@@ -51,6 +51,8 @@ bool UHouseDamageSubsystem::RegisterBrokenActor(AActor* BrokenActor, FName Categ
     if (!World || !IsValid(BrokenActor) || BrokenActor->GetWorld() != World
         || !BrokenActor->HasAuthority() || World->IsNetMode(NM_Client)
         || CountedActors.Contains(BrokenActor)) return false;
+    // Calder State's furniture and doors (HouseCampusInteriors) break like the house's, but they are not house damage.
+    if (BrokenActor->ActorHasTag(TEXT("SSOCampusDamage"))) return false;
 
     AHouseDamageState* Record = FindState();
     if (!Record)

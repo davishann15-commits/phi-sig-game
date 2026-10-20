@@ -1,0 +1,23 @@
+{
+  "scope": "Visual reference only; no photo imported or redistributed",
+  "inspected_image": {
+    "source": "University of Kentucky Burley Tobacco Extension",
+    "page": "https://burleytobaccoextension.mgcafe.uky.edu/content/fat-stems",
+    "image": "https://burleytobaccoextension.ca.uky.edu/files/styles/panopoly_image_original/public/fat_stem1.jpg?itok=glPPqtkN",
+    "observations": [
+      "Broad, thin and wrinkled tan-brown leaf lamina",
+      "Prominent pale central rib and branching veins",
+      "Irregular folded/torn margins; not a rigid diamond shape"
+    ],
+    "caution": "Disorder photograph used for leaf morphology/texture only; no crop disease simulated"
+  },
+  "text_reference": {
+    "url": "https://news.mgcafe.uky.edu/article/tips-curing-burley-tobacco",
+    "used_for": "Tan/brown cured leaf colours and sticks on tier rails; no modern equipment from article added"
+  },
+  "unavailable_reference": {
+    "url": "https://www.loc.gov/item/2017804710/",
+    "status": "Blocked by automated security check; not inspected or used as visual proof"
+  },
+  "next": "Code-painted atlas and curved whole-plant leaves, retain5components/24overall; add native-ground roof view before altering roof material"
+}

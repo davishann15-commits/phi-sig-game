@@ -1,0 +1,263 @@
+doors=161 building=LIB seed=0 openFloors=2
+stop 0: the library forecourt (placed at -15000,-10800)
+stop 1: reached at the main doors, feet at (-15398,-10800,-54.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached through the doors into the lobby, feet at (-15864,-10800,-52.9), indoor=1, interiorLights=6
+stop 4: reached into the card catalog hall, feet at (-16460,-11715,-52.9), indoor=1, interiorLights=6
+stop 5: reached past the circulation desk, feet at (-16551,-10257,-52.9), indoor=1, interiorLights=6
+stop 6: reached behind the desk, feet at (-17396,-10269,-52.9), indoor=1, interiorLights=6
+stop 7: reached into the reference reading room, feet at (-17400,-9681,-52.9), indoor=1, interiorLights=6
+stop 8: reached back to the circulation area, feet at (-17451,-10279,-52.9), indoor=1, interiorLights=6
+stop 9: reached the corridor between the stairs, feet at (-17450,-10756,-52.9), indoor=1, interiorLights=6
+stop 10: reached at the staff workroom, feet at (-18168,-10799,-52.9), indoor=1, interiorLights=6
+stop 11: try the workroom door -> stayed locked, reason "STAFF ONLY - the library workroom"
+stop 12: reached back out of the corridor, feet at (-17447,-10800,-52.9), indoor=1, interiorLights=6
+stop 13: reached into the carrels, feet at (-17402,-11652,-52.9), indoor=1, interiorLights=6
+stop 14: reached back to the circulation area, feet at (-17451,-10780,-52.9), indoor=1, interiorLights=6
+stop 15: reached the foot of the stairs, feet at (-17481,-10437,-52.9), indoor=1, interiorLights=6
+stop 16: reached up the stairs to the stacks, feet at (-18330,-10449,361.4), indoor=1, interiorLights=6
+stop 17: reached the stacks landing, feet at (-18537,-10450,361.4), indoor=1, interiorLights=6
+stop 18: reached at the copy room, feet at (-18550,-10800,361.4), indoor=1, interiorLights=6
+stop 19: try the copy room door -> stayed locked, reason "COPY ROOM - staff only after 5 PM"
+stop 20: reached toward the west stacks, feet at (-18394,-10343,361.4), indoor=1, interiorLights=6
+stop 21: reached along the back of the stacks, feet at (-18381,-9747,361.4), indoor=1, interiorLights=6
+stop 22: reached the stacks' main aisle, feet at (-17164,-9701,361.4), indoor=1, interiorLights=6
+stop 23: reached back past the end of the ranges, feet at (-18455,-10102,361.4), indoor=1, interiorLights=6
+stop 24: reached the head of the stairs, feet at (-18450,-10448,361.4), indoor=1, interiorLights=6
+stop 25: reached down the stairs, feet at (-17480,-10450,-52.9), indoor=1, interiorLights=6
+stop 26: reached round the desk, feet at (-17448,-10256,-52.9), indoor=1, interiorLights=6
+stop 27: reached the lobby side, feet at (-16594,-10269,-52.9), indoor=1, interiorLights=6
+stop 28: reached the lobby, feet at (-15830,-10814,-52.9), indoor=1, interiorLights=6
+stop 29: reached out through the doors, feet at (-14991,-10800,-54.9), indoor=0, interiorLights=3
+stop 30: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: HAR
+stop 0: the Harlow Hall front walk (placed at -8700,-6575)
+stop 1: reached at the main doors, feet at (-8700,-7033,-52.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-8700,-7378,-52.9), indoor=1, interiorLights=6
+stop 4: reached the front corridor, feet at (-8700,-7730,-52.9), indoor=1, interiorLights=6
+stop 5: reached at the TV lounge, feet at (-7849,-7749,-52.9), indoor=1, interiorLights=6
+stop 6: reached into the TV lounge, feet at (-7824,-7515,-52.9), indoor=1, interiorLights=6
+stop 7: reached back to the corridor, feet at (-7820,-7730,-52.9), indoor=1, interiorLights=6
+stop 8: reached at room 107, feet at (-7224,-7715,-52.9), indoor=1, interiorLights=6
+stop 9: try room 107's door -> stayed locked, reason "Room 107 - GONE HOME FOR THE WEEKEND"
+stop 10: reached at the door, feet at (-9704,-7717,-52.9), indoor=1, interiorLights=6
+stop 11: reached in the doorway, feet at (-9725,-7619,-52.9), indoor=1, interiorLights=6
+stop 12: reached past the desk chairs, feet at (-9679,-7537,-52.9), indoor=1, interiorLights=6
+stop 13: reached in room 105, feet at (-9657,-7341,-52.8), indoor=1, interiorLights=6
+stop 14: reached back toward the door, feet at (-9655,-7535,-52.8), indoor=1, interiorLights=6
+stop 15: reached the doorway, feet at (-9742,-7576,-52.8), indoor=1, interiorLights=6
+stop 16: reached out to the corridor, feet at (-9737,-7681,-52.8), indoor=1, interiorLights=6
+stop 17: reached the west end of the front corridor, feet at (-10319,-7752,-52.8), indoor=1, interiorLights=6
+stop 18: reached the west commons, feet at (-10302,-8224,-52.8), indoor=1, interiorLights=6
+stop 19: reached the back corridor, feet at (-10300,-8824,-52.8), indoor=1, interiorLights=6
+stop 20: reached the foot of the west stair, feet at (-10076,-8830,-52.8), indoor=1, interiorLights=6
+stop 21: reached at the bottom step, feet at (-10079,-8727,-52.8), indoor=1, interiorLights=6
+stop 22: reached up the west stair, feet at (-10080,-7916,362.4), indoor=1, interiorLights=6
+stop 23: reached the front corridor upstairs, feet at (-10080,-7730,362.4), indoor=1, interiorLights=6
+stop 24: reached at the door, feet at (-9728,-7717,362.4), indoor=1, interiorLights=6
+stop 25: reached in the doorway, feet at (-9733,-7617,362.4), indoor=1, interiorLights=6
+stop 26: reached past the desk chairs, feet at (-9672,-7540,362.4), indoor=1, interiorLights=6
+stop 27: reached in room 205, feet at (-9655,-7344,362.2), indoor=1, interiorLights=6
+stop 28: reached back toward the door, feet at (-9655,-7538,362.2), indoor=1, interiorLights=6
+stop 29: reached the doorway, feet at (-9747,-7579,362.2), indoor=1, interiorLights=6
+stop 30: reached out to the corridor, feet at (-9738,-7683,362.2), indoor=1, interiorLights=6
+stop 31: reached at the bathroom door, feet at (-9909,-7757,362.2), indoor=1, interiorLights=6
+stop 32: reached inside the bathroom door, feet at (-9892,-7964,362.2), indoor=1, interiorLights=6
+stop 33: reached round the privacy wall, feet at (-9788,-7972,362.2), indoor=1, interiorLights=6
+stop 34: reached in the bathroom, feet at (-9702,-8251,362.2), indoor=1, interiorLights=6
+stop 35: reached back past the sinks, feet at (-9741,-7966,362.2), indoor=1, interiorLights=6
+stop 36: reached the bathroom door, feet at (-9845,-7952,362.2), indoor=1, interiorLights=6
+stop 37: reached out to the corridor, feet at (-9899,-7764,362.2), indoor=1, interiorLights=6
+stop 38: reached the west end upstairs, feet at (-10249,-7752,362.2), indoor=1, interiorLights=6
+stop 39: reached the back corridor upstairs, feet at (-10300,-8841,362.1), indoor=1, interiorLights=6
+stop 40: reached at the door, feet at (-10514,-8864,362.1), indoor=1, interiorLights=6
+stop 41: reached in the doorway, feet at (-10503,-8964,362.2), indoor=1, interiorLights=6
+stop 42: reached past the desk chairs, feet at (-10435,-9044,362.2), indoor=1, interiorLights=6
+stop 43: reached in room 202, feet at (-10418,-9242,362.2), indoor=1, interiorLights=6
+stop 44: reached back toward the door, feet at (-10420,-9043,362.2), indoor=1, interiorLights=6
+stop 45: reached the doorway, feet at (-10505,-9004,362.2), indoor=1, interiorLights=6
+stop 46: reached out to the corridor, feet at (-10501,-8907,362.2), indoor=1, interiorLights=6
+stop 47: reached at the door, feet at (-9020,-8863,362.2), indoor=1, interiorLights=6
+stop 48: reached in the doorway, feet at (-9017,-8958,362.2), indoor=1, interiorLights=6
+stop 49: reached past the desk chairs, feet at (-8954,-9038,362.2), indoor=1, interiorLights=6
+stop 50: reached in room 210, feet at (-8934,-9239,362.2), indoor=1, interiorLights=6
+stop 51: reached back toward the door, feet at (-8935,-9041,362.2), indoor=1, interiorLights=6
+stop 52: reached the doorway, feet at (-9028,-9002,362.2), indoor=1, interiorLights=6
+stop 53: reached out to the corridor, feet at (-9019,-8904,362.2), indoor=1, interiorLights=6
+stop 54: reached the head of the east stair, feet at (-7301,-8829,362.2), indoor=1, interiorLights=6
+stop 55: reached the east stair's landing, feet at (-7322,-8639,362.2), indoor=1, interiorLights=6
+stop 56: reached down the east stair, feet at (-7320,-7913,-38.0), indoor=1, interiorLights=6
+stop 57: reached the front corridor, feet at (-7320,-7740,-52.8), indoor=1, interiorLights=6
+stop 58: reached at the laundry, feet at (-8543,-7750,-52.8), indoor=1, interiorLights=6
+stop 59: reached in the laundry, feet at (-8536,-7977,-52.8), indoor=1, interiorLights=6
+stop 60: reached back out of the laundry, feet at (-8534,-7754,-52.8), indoor=1, interiorLights=6
+stop 61: reached the corridor at the lobby, feet at (-8720,-7750,-52.8), indoor=1, interiorLights=6
+stop 62: reached back through the lobby, feet at (-8701,-7390,-52.8), indoor=1, interiorLights=6
+stop 63: reached out through the doors, feet at (-8700,-6561,-54.9), indoor=0, interiorLights=3
+stop 64: away to the house; the inside must be freed (placed at 0,-26000)
+after leaving: built=freed lights=0
+next building: SCI
+stop 0: the Hollis Hall front walk (placed at -12900,-13600)
+stop 1: reached at the main doors, feet at (-12900,-14070,-52.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-12900,-14522,-52.9), indoor=1, interiorLights=6
+stop 4: reached between the stairs, feet at (-12900,-15115,-52.9), indoor=1, interiorLights=6
+stop 5: reached the corridor, feet at (-12900,-15717,-52.9), indoor=1, interiorLights=6
+stop 6: reached at the chemistry lab, feet at (-14874,-15710,-52.9), indoor=1, interiorLights=6
+stop 7: reached into the chemistry lab, feet at (-14866,-15360,-52.9), indoor=1, interiorLights=6
+stop 8: reached back to the corridor, feet at (-14866,-15708,-52.9), indoor=1, interiorLights=6
+stop 9: reached at the prep room, feet at (-14789,-15748,-52.9), indoor=1, interiorLights=6
+stop 10: try the prep room door -> stayed locked, reason "PREP ROOM 112 - AUTHORIZED PERSONNEL ONLY"
+stop 11: reached at the lecture hall, feet at (-14235,-15709,-52.9), indoor=1, interiorLights=6
+stop 12: reached into the lecturer's well, feet at (-14249,-16058,-52.9), indoor=1, interiorLights=6
+stop 13: reached past the demo bench, feet at (-13304,-16284,-52.9), indoor=1, interiorLights=6
+stop 14: reached the foot of the centre aisle, feet at (-12967,-16300,-52.9), indoor=1, interiorLights=6
+stop 15: reached up the aisle to the cross-aisle, feet at (-12973,-17278,137.4), indoor=1, interiorLights=6
+stop 16: reached back down the aisle, feet at (-12973,-16301,-52.9), indoor=1, interiorLights=6
+stop 17: reached across the well, feet at (-13318,-16280,-52.9), indoor=1, interiorLights=6
+stop 18: reached to the hall door, feet at (-14269,-16097,-52.9), indoor=1, interiorLights=6
+stop 19: reached out to the corridor, feet at (-14253,-15745,-52.9), indoor=1, interiorLights=6
+stop 20: reached at the physics lab, feet at (-11933,-15710,-52.9), indoor=1, interiorLights=6
+stop 21: reached into the physics lab, feet at (-11953,-15365,-52.9), indoor=1, interiorLights=6
+stop 22: reached back to the corridor, feet at (-11954,-15717,-52.9), indoor=1, interiorLights=6
+stop 23: reached the corridor at the lobby, feet at (-12916,-15710,-52.9), indoor=1, interiorLights=6
+stop 24: reached back into the lobby, feet at (-12900,-14736,-52.9), indoor=1, interiorLights=6
+stop 25: reached the foot of the west stair, feet at (-13579,-14740,-52.9), indoor=1, interiorLights=6
+stop 26: reached up the west stair to the corridor, feet at (-13561,-15590,362.4), indoor=1, interiorLights=6
+stop 27: reached at the optics lab, feet at (-13901,-15651,362.2), indoor=1, interiorLights=6
+stop 28: reached into the optics lab, feet at (-13949,-15331,362.2), indoor=1, interiorLights=6
+stop 29: reached back to the corridor, feet at (-13954,-15670,362.2), indoor=1, interiorLights=6
+stop 30: reached at the seminar room, feet at (-11979,-15650,362.2), indoor=1, interiorLights=6
+stop 31: reached into the seminar room, feet at (-11953,-15306,362.2), indoor=1, interiorLights=6
+stop 32: reached back to the corridor, feet at (-11954,-15651,362.2), indoor=1, interiorLights=6
+stop 33: reached at the faculty lounge, feet at (-11135,-15650,362.2), indoor=1, interiorLights=6
+stop 34: reached into the faculty lounge, feet at (-11154,-15299,362.2), indoor=1, interiorLights=6
+stop 35: reached back to the corridor, feet at (-11154,-15645,362.2), indoor=1, interiorLights=6
+stop 36: reached at the faculty offices, feet at (-11226,-15714,362.2), indoor=1, interiorLights=6
+stop 37: try the offices' door -> stayed locked, reason "FACULTY OFFICES 214 - OFFICE HOURS MON-FRI"
+stop 38: reached the head of the east stair, feet at (-12401,-15649,362.2), indoor=1, interiorLights=6
+stop 39: reached down the east stair, feet at (-12385,-14726,-52.9), indoor=1, interiorLights=6
+stop 40: reached across the lobby, feet at (-12861,-14739,-52.9), indoor=1, interiorLights=6
+stop 41: reached to the doors, feet at (-12898,-14140,-52.9), indoor=0, interiorLights=3
+stop 42: reached out through the doors, feet at (-12900,-13578,-54.9), indoor=0, interiorLights=3
+stop 43: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: UNI
+stop 0: the Goose Union's front walk (placed at -8800,-12650)
+stop 1: reached at the main doors, feet at (-8322,-12650,-54.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the north arm, feet at (-7856,-12731,-52.9), indoor=1, interiorLights=6
+stop 4: reached past the north stair, feet at (-6634,-12732,-52.9), indoor=1, interiorLights=6
+stop 5: reached under the atrium, feet at (-6163,-12732,-52.9), indoor=1, interiorLights=6
+stop 6: reached the east arm, feet at (-6247,-12265,-52.9), indoor=1, interiorLights=6
+stop 7: reached into the Goose Pit, feet at (-6711,-12250,-52.9), indoor=1, interiorLights=6
+stop 8: reached back to the east arm, feet at (-6235,-12250,-52.9), indoor=1, interiorLights=6
+stop 9: reached at the trophy case, feet at (-6290,-11400,-52.9), indoor=1, interiorLights=6
+stop 10: reached back across the atrium, feet at (-6251,-12628,-52.9), indoor=1, interiorLights=6
+stop 11: reached the west arm, feet at (-6167,-13815,-52.9), indoor=1, interiorLights=6
+stop 12: reached into the game room, feet at (-5574,-13801,-52.9), indoor=1, interiorLights=6
+stop 13: reached back to the west arm, feet at (-6173,-13800,-52.9), indoor=1, interiorLights=6
+stop 14: reached at the TV lounge, feet at (-6168,-14363,-52.9), indoor=1, interiorLights=6
+stop 15: reached into the TV lounge, feet at (-6646,-14351,-52.9), indoor=1, interiorLights=6
+stop 16: reached back to the west arm, feet at (-6177,-14350,-52.9), indoor=1, interiorLights=6
+stop 17: reached the atrium again, feet at (-6168,-12753,-52.9), indoor=1, interiorLights=6
+stop 18: reached down the south arm, feet at (-4835,-12750,-52.9), indoor=1, interiorLights=6
+stop 19: reached the foot of the south stair, feet at (-4849,-12969,-52.9), indoor=1, interiorLights=6
+stop 20: reached up the south stair, feet at (-5699,-12984,359.8), indoor=1, interiorLights=6
+stop 21: reached the stair's landing, feet at (-5764,-13043,359.8), indoor=1, interiorLights=6
+stop 22: reached round the atrium to the committee room, feet at (-6865,-13030,359.8), indoor=1, interiorLights=6
+stop 23: reached into the homecoming committee room, feet at (-6900,-13240,359.6), indoor=1, interiorLights=6
+stop 24: reached back to the north arm, feet at (-6896,-13019,359.6), indoor=1, interiorLights=6
+stop 25: reached at the ballroom doors, feet at (-7664,-12667,359.6), indoor=1, interiorLights=6
+stop 26: reached into the Calder Ballroom, feet at (-7700,-12065,359.7), indoor=1, interiorLights=6
+stop 27: reached back to the north arm, feet at (-7700,-12663,359.7), indoor=1, interiorLights=6
+stop 28: reached past the north stair's well, feet at (-6722,-12650,359.7), indoor=1, interiorLights=6
+stop 29: reached the head of the north stair, feet at (-6697,-12461,359.7), indoor=1, interiorLights=6
+stop 30: reached down the north stair, feet at (-7663,-12480,-52.9), indoor=1, interiorLights=6
+stop 31: reached the north arm, feet at (-7652,-12703,-52.9), indoor=1, interiorLights=6
+stop 32: reached at the bookstore, feet at (-7548,-13019,-52.9), indoor=1, interiorLights=6
+stop 33: try the bookstore door -> stayed locked, reason "CAMPUS BOOKSTORE - CLOSED SATURDAY, OPEN MONDAY 8 AM"
+stop 34: reached back to the doors, feet at (-7858,-12725,-52.9), indoor=1, interiorLights=6
+stop 35: reached at the doors, feet at (-8304,-12648,-54.9), indoor=0, interiorLights=3
+stop 36: reached out through the doors, feet at (-8779,-12650,-57.9), indoor=0, interiorLights=3
+stop 37: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: STA
+stop 0: beside the press box's stair tower (placed at 4600,-9150)
+stop 1: reached under the press box, feet at (4600,-9379,-57.9), indoor=0, interiorLights=3
+stop 2: reached at the tower's doors, feet at (4600,-9568,-57.9), indoor=0, interiorLights=3
+stop 3: open the tower's doors -> opening
+main doors open: A=1 B=1
+stop 4: reached inside the tower, feet at (4783,-9552,-53.0), indoor=1, interiorLights=6
+stop 5: reached to the first flight, feet at (4881,-9559,-53.0), indoor=1, interiorLights=6
+stop 6: reached up a flight, feet at (4888,-9212,87.1), indoor=1, interiorLights=6
+stop 7: reached across the landing, feet at (4784,-9192,87.1), indoor=1, interiorLights=6
+stop 8: reached up a flight, feet at (4772,-9541,227.2), indoor=1, interiorLights=6
+stop 9: reached across the landing, feet at (4874,-9549,227.2), indoor=1, interiorLights=6
+stop 10: reached up a flight, feet at (4888,-9194,367.1), indoor=1, interiorLights=6
+stop 11: reached across the landing, feet at (4780,-9190,367.1), indoor=1, interiorLights=6
+stop 12: reached up a flight, feet at (4772,-9539,507.1), indoor=1, interiorLights=6
+stop 13: reached across the landing, feet at (4873,-9549,507.1), indoor=1, interiorLights=6
+stop 14: reached up a flight, feet at (4888,-9199,647.0), indoor=1, interiorLights=6
+stop 15: reached across the landing, feet at (4791,-9192,647.0), indoor=1, interiorLights=6
+stop 16: reached up a flight, feet at (4773,-9538,787.1), indoor=1, interiorLights=6
+stop 17: reached across the landing, feet at (4871,-9548,787.1), indoor=1, interiorLights=6
+stop 18: reached up a flight, feet at (4887,-9205,927.1), indoor=1, interiorLights=6
+stop 19: reached across the landing, feet at (4789,-9192,927.1), indoor=1, interiorLights=6
+stop 20: reached up to the top landing, feet at (4773,-9538,1067.1), indoor=1, interiorLights=6
+stop 21: reached into the press box, feet at (4583,-9559,1067.1), indoor=1, interiorLights=6
+stop 22: reached along the press row, feet at (2737,-9697,1067.1), indoor=1, interiorLights=6
+stop 23: reached at the radio booth, feet at (1151,-9510,1067.1), indoor=1, interiorLights=6
+stop 24: try the radio booth's door -> stayed locked, reason "ON AIR - THE POSTGAME SHOW, DO NOT ENTER"
+stop 25: reached back to the tower, feet at (4614,-9564,1067.1), indoor=1, interiorLights=6
+stop 26: reached the top landing, feet at (4788,-9549,1067.1), indoor=1, interiorLights=6
+stop 27: reached down a flight, feet at (4772,-9196,927.1), indoor=1, interiorLights=6
+stop 28: reached across the landing, feet at (4871,-9191,927.1), indoor=1, interiorLights=6
+stop 29: reached down a flight, feet at (4887,-9538,787.1), indoor=1, interiorLights=6
+stop 30: reached across the landing, feet at (4790,-9556,787.1), indoor=1, interiorLights=6
+stop 31: reached down a flight, feet at (4773,-9205,647.1), indoor=1, interiorLights=6
+stop 32: reached across the landing, feet at (4872,-9192,647.1), indoor=1, interiorLights=6
+stop 33: reached down a flight, feet at (4887,-9545,507.1), indoor=1, interiorLights=6
+stop 34: reached across the landing, feet at (4792,-9557,507.1), indoor=1, interiorLights=6
+stop 35: reached down a flight, feet at (4773,-9203,367.1), indoor=1, interiorLights=6
+stop 36: reached across the landing, feet at (4877,-9191,367.1), indoor=1, interiorLights=6
+stop 37: reached down a flight, feet at (4887,-9538,227.1), indoor=1, interiorLights=6
+stop 38: reached across the landing, feet at (4789,-9557,227.1), indoor=1, interiorLights=6
+stop 39: reached down a flight, feet at (4773,-9210,87.1), indoor=1, interiorLights=6
+stop 40: reached across the landing, feet at (4872,-9193,87.1), indoor=1, interiorLights=6
+stop 41: reached down to the foot of the tower, feet at (4887,-9544,-52.9), indoor=1, interiorLights=6
+stop 42: reached to the tower's doors, feet at (4785,-9552,-52.9), indoor=1, interiorLights=6
+stop 43: reached out of the tower, feet at (4566,-9553,-57.9), indoor=0, interiorLights=3
+stop 44: reached under the press box, feet at (4560,-9198,-57.9), indoor=0, interiorLights=3
+stop 45: reached along the north stands, feet at (1963,-9200,-55.1), indoor=0, interiorLights=3
+stop 46: reached at GATE 5, feet at (1949,-9425,-55.1), indoor=0, interiorLights=3
+stop 47: reached through the gate into the concourse, feet at (1989,-9757,-52.9), indoor=1, interiorLights=6
+stop 48: reached along the concourse, feet at (2833,-9742,-52.9), indoor=1, interiorLights=6
+stop 49: reached past GATE 4, feet at (3784,-9852,-52.9), indoor=1, interiorLights=6
+stop 50: reached at the locker room, feet at (4680,-10122,-52.9), indoor=1, interiorLights=6
+stop 51: reached into the Geese locker room, feet at (4334,-10575,-52.9), indoor=1, interiorLights=6
+stop 52: reached by the tunnel, feet at (4572,-10844,-52.9), indoor=1, interiorLights=6
+stop 53: reached back across the locker room, feet at (4353,-10573,-52.9), indoor=1, interiorLights=6
+stop 54: reached out to the concourse, feet at (4672,-10095,-52.9), indoor=1, interiorLights=6
+stop 55: reached back along the concourse, feet at (3774,-9791,-52.9), indoor=1, interiorLights=6
+stop 56: reached past GATE 5, feet at (1925,-9684,-52.9), indoor=1, interiorLights=6
+stop 57: reached behind the vomitory stair, feet at (1092,-9780,-52.9), indoor=1, interiorLights=6
+stop 58: reached the west end, feet at (387,-9937,-52.9), indoor=1, interiorLights=6
+stop 59: reached the foot of the vomitory stair, feet at (412,-10031,-52.9), indoor=1, interiorLights=6
+stop 60: reached up to the vomitory's landing, feet at (1242,-9950,371.4), indoor=1, interiorLights=6
+stop 61: reached out over the stands, feet at (1281,-10250,371.0), indoor=0, interiorLights=3
+stop 62: reached back in, feet at (1229,-9929,371.0), indoor=1, interiorLights=6
+stop 63: reached down the stair, feet at (404,-10087,-52.9), indoor=1, interiorLights=6
+stop 64: reached round the stair's foot, feet at (399,-9985,-52.9), indoor=1, interiorLights=6
+stop 65: reached back along the concourse, feet at (1102,-9780,-52.9), indoor=1, interiorLights=6
+stop 66: reached to GATE 5, feet at (1947,-9741,-52.9), indoor=1, interiorLights=6
+stop 67: reached out through the gate, feet at (1934,-9269,-54.9), indoor=0, interiorLights=3
+stop 68: away to the house; the inside must be freed (placed at 0,-26000)
+after leaving: built=freed lights=0
+PASS buildings=LIB,HAR,SCI,UNI,STA stops=225/225 problems=0 mainDoorsOpened=5/5 lockedDoorsHeld=1 reasonsShown=1 builtWhileInside=1 freedAfterLeaving=5/5 indoorTest=207/207 outdoorTest=18/18 maxInteriorLights=6 pool=6

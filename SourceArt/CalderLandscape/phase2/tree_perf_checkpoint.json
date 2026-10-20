@@ -1,0 +1,257 @@
+{
+  "scope": "Maple trial A/B diagnostic; no final pinned-clock/interior acceptance",
+  "complete": true,
+  "full_acceptance": false,
+  "report": "Saved/CalderWork/codex_maple_trial_perf_perf.json",
+  "rounds": 3,
+  "views": 15,
+  "samples_requested_per_view": 300,
+  "warmup_seconds": 4,
+  "canonical_sha256": "70bd19f8fd71548bcad9d17ef3f9c825da15f78f93273498077078fd5a90a941",
+  "game_launcher_sha256": "f01036e4bda1aac4410fd4d9efb18d8703e422c033fc0382b8e5518e1a6d0a86",
+  "summary": [
+    {
+      "view": "front_street",
+      "on": {
+        "avg_ms": 22.51,
+        "game_ms": 3.96,
+        "render_ms": 22.5,
+        "max_ms": 58.11
+      },
+      "off": {
+        "avg_ms": 22.45,
+        "game_ms": 3.93,
+        "render_ms": 22.33,
+        "max_ms": 53.34
+      },
+      "delta_ms": 0.060000000000002274
+    },
+    {
+      "view": "street_along",
+      "on": {
+        "avg_ms": 15.05,
+        "game_ms": 3.36,
+        "render_ms": 15.04,
+        "max_ms": 17.55
+      },
+      "off": {
+        "avg_ms": 15.15,
+        "game_ms": 3.34,
+        "render_ms": 15.15,
+        "max_ms": 16.58
+      },
+      "delta_ms": -0.09999999999999964
+    },
+    {
+      "view": "detail_establishing_corner",
+      "on": {
+        "avg_ms": 18.0,
+        "game_ms": 3.58,
+        "render_ms": 17.99,
+        "max_ms": 20.8
+      },
+      "off": {
+        "avg_ms": 18.16,
+        "game_ms": 3.56,
+        "render_ms": 18.15,
+        "max_ms": 20.35
+      },
+      "delta_ms": -0.16000000000000014
+    },
+    {
+      "view": "detail_street_dusk",
+      "on": {
+        "avg_ms": 14.28,
+        "game_ms": 3.27,
+        "render_ms": 14.27,
+        "max_ms": 15.41
+      },
+      "off": {
+        "avg_ms": 14.37,
+        "game_ms": 3.23,
+        "render_ms": 14.37,
+        "max_ms": 18.34
+      },
+      "delta_ms": -0.08999999999999986
+    },
+    {
+      "view": "detail_clocktower_far",
+      "on": {
+        "avg_ms": 6.87,
+        "game_ms": 3.31,
+        "render_ms": 6.86,
+        "max_ms": 8.69
+      },
+      "off": {
+        "avg_ms": 7.1,
+        "game_ms": 3.36,
+        "render_ms": 7.09,
+        "max_ms": 10.02
+      },
+      "delta_ms": -0.22999999999999954
+    },
+    {
+      "view": "detail_campus_quad",
+      "on": {
+        "avg_ms": 8.34,
+        "game_ms": 3.31,
+        "render_ms": 8.34,
+        "max_ms": 10.09
+      },
+      "off": {
+        "avg_ms": 8.39,
+        "game_ms": 3.22,
+        "render_ms": 8.39,
+        "max_ms": 10.35
+      },
+      "delta_ms": -0.05000000000000071
+    },
+    {
+      "view": "detail_layout_quad",
+      "on": {
+        "avg_ms": 8.84,
+        "game_ms": 3.67,
+        "render_ms": 8.75,
+        "max_ms": 21.46
+      },
+      "off": {
+        "avg_ms": 8.76,
+        "game_ms": 3.59,
+        "render_ms": 8.7,
+        "max_ms": 20.89
+      },
+      "delta_ms": 0.08000000000000007
+    },
+    {
+      "view": "detail_layout_gateway",
+      "on": {
+        "avg_ms": 7.63,
+        "game_ms": 3.3,
+        "render_ms": 7.63,
+        "max_ms": 8.85
+      },
+      "off": {
+        "avg_ms": 7.72,
+        "game_ms": 3.2,
+        "render_ms": 7.72,
+        "max_ms": 10.36
+      },
+      "delta_ms": -0.08999999999999986
+    },
+    {
+      "view": "detail_stadium_gate",
+      "on": {
+        "avg_ms": 7.31,
+        "game_ms": 3.26,
+        "render_ms": 7.3,
+        "max_ms": 8.31
+      },
+      "off": {
+        "avg_ms": 7.4,
+        "game_ms": 3.25,
+        "render_ms": 7.4,
+        "max_ms": 9.39
+      },
+      "delta_ms": -0.09000000000000075
+    },
+    {
+      "view": "detail_layout_aerial",
+      "on": {
+        "avg_ms": 13.48,
+        "game_ms": 3.24,
+        "render_ms": 13.48,
+        "max_ms": 17.5
+      },
+      "off": {
+        "avg_ms": 13.41,
+        "game_ms": 3.23,
+        "render_ms": 13.41,
+        "max_ms": 19.76
+      },
+      "delta_ms": 0.07000000000000028
+    },
+    {
+      "view": "detail_layout_dormrow",
+      "on": {
+        "avg_ms": 8.37,
+        "game_ms": 3.15,
+        "render_ms": 8.36,
+        "max_ms": 9.7
+      },
+      "off": {
+        "avg_ms": 8.31,
+        "game_ms": 3.12,
+        "render_ms": 8.31,
+        "max_ms": 9.38
+      },
+      "delta_ms": 0.05999999999999872
+    },
+    {
+      "view": "detail_woods_edge",
+      "on": {
+        "avg_ms": 17.46,
+        "game_ms": 5.61,
+        "render_ms": 17.46,
+        "max_ms": 18.54
+      },
+      "off": {
+        "avg_ms": 16.24,
+        "game_ms": 5.59,
+        "render_ms": 16.23,
+        "max_ms": 17.57
+      },
+      "delta_ms": 1.2200000000000024
+    },
+    {
+      "view": "detail_woods_20m",
+      "on": {
+        "avg_ms": 16.2,
+        "game_ms": 3.56,
+        "render_ms": 16.2,
+        "max_ms": 17.58
+      },
+      "off": {
+        "avg_ms": 14.31,
+        "game_ms": 3.45,
+        "render_ms": 14.3,
+        "max_ms": 15.78
+      },
+      "delta_ms": 1.8899999999999988
+    },
+    {
+      "view": "detail_woods_deep",
+      "on": {
+        "avg_ms": 17.36,
+        "game_ms": 3.6,
+        "render_ms": 17.36,
+        "max_ms": 19.14
+      },
+      "off": {
+        "avg_ms": 16.12,
+        "game_ms": 3.54,
+        "render_ms": 16.11,
+        "max_ms": 17.88
+      },
+      "delta_ms": 1.2399999999999984
+    },
+    {
+      "view": "detail_woods_silhouette",
+      "on": {
+        "avg_ms": 14.86,
+        "game_ms": 3.51,
+        "render_ms": 14.86,
+        "max_ms": 16.08
+      },
+      "off": {
+        "avg_ms": 13.02,
+        "game_ms": 3.43,
+        "render_ms": 13.02,
+        "max_ms": 14.57
+      },
+      "delta_ms": 1.8399999999999999
+    }
+  ],
+  "decision": "Keep opt-in: 1.22-1.89ms woods rendering cost; wider photographic forest work and full pinned-clock/interior acceptance remain.",
+  "source_checkpoint": "Saved/CalderWork/codex_checkpoint_tree_fit_20261017_054056",
+  "measured_before_owned_fern_stump_repair": true
+}

@@ -1,0 +1,7692 @@
+{
+  "passed": true,
+  "updated": 512,
+  "removedObsoleteOverlaps": [
+    {
+      "id": "SMV_GR_ClubChair1_Solid__001",
+      "preserved": "SM_GR3_Conversation__003"
+    }
+  ],
+  "actors": [
+    {
+      "id": "SMV_S02_Fidelity_LobbySlingChair0_Solid__001",
+      "stages": [
+        "HI_SMV_S02_Fidelity_LobbySlingChair0_Solid_001",
+        "HI_SMV_S02_Fidelity_LobbySlingChair0_Solid_001_DamageV2",
+        "HI_SMV_S02_Fidelity_LobbySlingChair0_Solid_001_HeavyV2",
+        "HI_SMV_S02_Fidelity_LobbySlingChair0_Solid_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMV_S03_LowerFidelity_EastGrayArmchairA_Solid__001",
+      "stages": [
+        "HI_SMV_S03_LowerFidelity_EastGrayArmchairA_Solid_001",
+        "HI_SMV_S03_LowerFidelity_EastGrayArmchairA_Solid_001_DamageV2",
+        "HI_SMV_S03_LowerFidelity_EastGrayArmchairA_Solid_001_HeavyV2",
+        "HI_SMV_S03_LowerFidelity_EastGrayArmchairA_Solid_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__001",
+      "stages": [
+        "HI_SM_GR3_Consoles_001",
+        "HI_SM_GR3_Consoles_001_DamageV2",
+        "HI_SM_GR3_Consoles_001_HeavyV2",
+        "HI_SM_GR3_Consoles_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__002",
+      "stages": [
+        "HI_SM_GR3_Consoles_002",
+        "HI_SM_GR3_Consoles_002_DamageV2",
+        "HI_SM_GR3_Consoles_002_HeavyV2",
+        "HI_SM_GR3_Consoles_002_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__003",
+      "stages": [
+        "HI_SM_GR3_Consoles_003",
+        "HI_SM_GR3_Consoles_003_DamageV2",
+        "HI_SM_GR3_Consoles_003_HeavyV2",
+        "HI_SM_GR3_Consoles_003_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__004",
+      "stages": [
+        "HI_SM_GR3_Consoles_004",
+        "HI_SM_GR3_Consoles_004_DamageV2",
+        "HI_SM_GR3_Consoles_004_HeavyV2",
+        "HI_SM_GR3_Consoles_004_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__005",
+      "stages": [
+        "HI_SM_GR3_Consoles_005",
+        "HI_SM_GR3_Consoles_005_DamageV2",
+        "HI_SM_GR3_Consoles_005_HeavyV2",
+        "HI_SM_GR3_Consoles_005_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__006",
+      "stages": [
+        "HI_SM_GR3_Consoles_006",
+        "HI_SM_GR3_Consoles_006_DamageV2",
+        "HI_SM_GR3_Consoles_006_HeavyV2",
+        "HI_SM_GR3_Consoles_006_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__007",
+      "stages": [
+        "HI_SM_GR3_Consoles_007",
+        "HI_SM_GR3_Consoles_007_DamageV2",
+        "HI_SM_GR3_Consoles_007_HeavyV2",
+        "HI_SM_GR3_Consoles_007_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__008",
+      "stages": [
+        "HI_SM_GR3_Consoles_008",
+        "HI_SM_GR3_Consoles_008_DamageV2",
+        "HI_SM_GR3_Consoles_008_HeavyV2",
+        "HI_SM_GR3_Consoles_008_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__009",
+      "stages": [
+        "HI_SM_GR3_Consoles_009",
+        "HI_SM_GR3_Consoles_009_DamageV2",
+        "HI_SM_GR3_Consoles_009_HeavyV2",
+        "HI_SM_GR3_Consoles_009_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__010",
+      "stages": [
+        "HI_SM_GR3_Consoles_010",
+        "HI_SM_GR3_Consoles_010_DamageV2",
+        "HI_SM_GR3_Consoles_010_HeavyV2",
+        "HI_SM_GR3_Consoles_010_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__011",
+      "stages": [
+        "HI_SM_GR3_Consoles_011",
+        "HI_SM_GR3_Consoles_011_DamageV2",
+        "HI_SM_GR3_Consoles_011_HeavyV2",
+        "HI_SM_GR3_Consoles_011_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__012",
+      "stages": [
+        "HI_SM_GR3_Consoles_012",
+        "HI_SM_GR3_Consoles_012_DamageV2",
+        "HI_SM_GR3_Consoles_012_HeavyV2",
+        "HI_SM_GR3_Consoles_012_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__013",
+      "stages": [
+        "HI_SM_GR3_Consoles_013",
+        "HI_SM_GR3_Consoles_013_DamageV2",
+        "HI_SM_GR3_Consoles_013_HeavyV2",
+        "HI_SM_GR3_Consoles_013_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Consoles__014",
+      "stages": [
+        "HI_SM_GR3_Consoles_014",
+        "HI_SM_GR3_Consoles_014_DamageV2",
+        "HI_SM_GR3_Consoles_014_HeavyV2",
+        "HI_SM_GR3_Consoles_014_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__001",
+      "stages": [
+        "HI_SM_GR3_Conversation_001",
+        "HI_SM_GR3_Conversation_001_DamageV2",
+        "HI_SM_GR3_Conversation_001_HeavyV2",
+        "HI_SM_GR3_Conversation_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__002",
+      "stages": [
+        "HI_SM_GR3_Conversation_002",
+        "HI_SM_GR3_Conversation_002_DamageV2",
+        "HI_SM_GR3_Conversation_002_HeavyV2",
+        "HI_SM_GR3_Conversation_002_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__003",
+      "stages": [
+        "HI_SM_GR3_Conversation_003",
+        "HI_SM_GR3_Conversation_003_DamageV2",
+        "HI_SM_GR3_Conversation_003_HeavyV2",
+        "HI_SM_GR3_Conversation_003_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__004",
+      "stages": [
+        "HI_SM_GR3_Conversation_004",
+        "HI_SM_GR3_Conversation_004_DamageV2",
+        "HI_SM_GR3_Conversation_004_HeavyV2",
+        "HI_SM_GR3_Conversation_004_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__005",
+      "stages": [
+        "HI_SM_GR3_Conversation_005",
+        "HI_SM_GR3_Conversation_005_DamageV2",
+        "HI_SM_GR3_Conversation_005_HeavyV2",
+        "HI_SM_GR3_Conversation_005_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__006",
+      "stages": [
+        "HI_SM_GR3_Conversation_006",
+        "HI_SM_GR3_Conversation_006_DamageV2",
+        "HI_SM_GR3_Conversation_006_HeavyV2",
+        "HI_SM_GR3_Conversation_006_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__007",
+      "stages": [
+        "HI_SM_GR3_Conversation_007",
+        "HI_SM_GR3_Conversation_007_DamageV2",
+        "HI_SM_GR3_Conversation_007_HeavyV2",
+        "HI_SM_GR3_Conversation_007_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Conversation__008",
+      "stages": [
+        "HI_SM_GR3_Conversation_008",
+        "HI_SM_GR3_Conversation_008_DamageV2",
+        "HI_SM_GR3_Conversation_008_HeavyV2",
+        "HI_SM_GR3_Conversation_008_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_GR3_FarRug__001",
+      "stages": [
+        "HI_SM_GR3_FarRug_001",
+        "HI_SM_GR3_FarRug_001_DamageV2",
+        "HI_SM_GR3_FarRug_001_HeavyV2",
+        "HI_SM_GR3_FarRug_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_GR3_FarSeating__001",
+      "stages": [
+        "HI_SM_GR3_FarSeating_001",
+        "HI_SM_GR3_FarSeating_001_DamageV2",
+        "HI_SM_GR3_FarSeating_001_HeavyV2",
+        "HI_SM_GR3_FarSeating_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_FarSeating__002",
+      "stages": [
+        "HI_SM_GR3_FarSeating_002",
+        "HI_SM_GR3_FarSeating_002_DamageV2",
+        "HI_SM_GR3_FarSeating_002_HeavyV2",
+        "HI_SM_GR3_FarSeating_002_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_FarSeating__003",
+      "stages": [
+        "HI_SM_GR3_FarSeating_003",
+        "HI_SM_GR3_FarSeating_003_DamageV2",
+        "HI_SM_GR3_FarSeating_003_HeavyV2",
+        "HI_SM_GR3_FarSeating_003_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_GreenRug__001",
+      "stages": [
+        "HI_SM_GR3_GreenRug_001",
+        "HI_SM_GR3_GreenRug_001_DamageV2",
+        "HI_SM_GR3_GreenRug_001_HeavyV2",
+        "HI_SM_GR3_GreenRug_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_GR3_NearSeating__001",
+      "stages": [
+        "HI_SM_GR3_NearSeating_001",
+        "HI_SM_GR3_NearSeating_001_DamageV2",
+        "HI_SM_GR3_NearSeating_001_HeavyV2",
+        "HI_SM_GR3_NearSeating_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_NearSeating__002",
+      "stages": [
+        "HI_SM_GR3_NearSeating_002",
+        "HI_SM_GR3_NearSeating_002_DamageV2",
+        "HI_SM_GR3_NearSeating_002_HeavyV2",
+        "HI_SM_GR3_NearSeating_002_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SM_GR3_NearSeating__003",
+      "stages": [
+        "HI_SM_GR3_NearSeating_003",
+        "HI_SM_GR3_NearSeating_003_DamageV2",
+        "HI_SM_GR3_NearSeating_003_HeavyV2",
+        "HI_SM_GR3_NearSeating_003_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_NearSeating__004",
+      "stages": [
+        "HI_SM_GR3_NearSeating_004",
+        "HI_SM_GR3_NearSeating_004_DamageV2",
+        "HI_SM_GR3_NearSeating_004_HeavyV2",
+        "HI_SM_GR3_NearSeating_004_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_GR3_NearSeating__005",
+      "stages": [
+        "HI_SM_GR3_NearSeating_005",
+        "HI_SM_GR3_NearSeating_005_DamageV2",
+        "HI_SM_GR3_NearSeating_005_HeavyV2",
+        "HI_SM_GR3_NearSeating_005_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_GR3_NearSeating__006",
+      "stages": [
+        "HI_SM_GR3_NearSeating_006",
+        "HI_SM_GR3_NearSeating_006_DamageV2",
+        "HI_SM_GR3_NearSeating_006_HeavyV2",
+        "HI_SM_GR3_NearSeating_006_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_GR3_NearSeating__007",
+      "stages": [
+        "HI_SM_GR3_NearSeating_007",
+        "HI_SM_GR3_NearSeating_007_DamageV2",
+        "HI_SM_GR3_NearSeating_007_HeavyV2",
+        "HI_SM_GR3_NearSeating_007_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_GR3_RoseRug__001",
+      "stages": [
+        "HI_SM_GR3_RoseRug_001",
+        "HI_SM_GR3_RoseRug_001_DamageV2",
+        "HI_SM_GR3_RoseRug_001_HeavyV2",
+        "HI_SM_GR3_RoseRug_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SM_GR3_Tables__001",
+      "stages": [
+        "HI_SM_GR3_Tables_001",
+        "HI_SM_GR3_Tables_001_DamageV2",
+        "HI_SM_GR3_Tables_001_HeavyV2",
+        "HI_SM_GR3_Tables_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Tables__002",
+      "stages": [
+        "HI_SM_GR3_Tables_002",
+        "HI_SM_GR3_Tables_002_DamageV2",
+        "HI_SM_GR3_Tables_002_HeavyV2",
+        "HI_SM_GR3_Tables_002_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Tables__003",
+      "stages": [
+        "HI_SM_GR3_Tables_003",
+        "HI_SM_GR3_Tables_003_DamageV2",
+        "HI_SM_GR3_Tables_003_HeavyV2",
+        "HI_SM_GR3_Tables_003_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_GR3_Tables__004",
+      "stages": [
+        "HI_SM_GR3_Tables_004",
+        "HI_SM_GR3_Tables_004_DamageV2",
+        "HI_SM_GR3_Tables_004_HeavyV2",
+        "HI_SM_GR3_Tables_004_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "SM_GR3_Tables__005",
+      "stages": [
+        "HI_SM_GR3_Tables_005",
+        "HI_SM_GR3_Tables_005_DamageV2",
+        "HI_SM_GR3_Tables_005_HeavyV2",
+        "HI_SM_GR3_Tables_005_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_Lounge__001",
+      "stages": [
+        "HI_SM_SpaRoom_Lounge_001",
+        "HI_SM_SpaRoom_Lounge_001_DamageV2",
+        "HI_SM_SpaRoom_Lounge_001_HeavyV2",
+        "HI_SM_SpaRoom_Lounge_001_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_Lounge__002",
+      "stages": [
+        "HI_SM_SpaRoom_Lounge_002",
+        "HI_SM_SpaRoom_Lounge_002_DamageV2",
+        "HI_SM_SpaRoom_Lounge_002_HeavyV2",
+        "HI_SM_SpaRoom_Lounge_002_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_Plants__001",
+      "stages": [
+        "HI_SM_SpaRoom_Plants_001",
+        "HI_SM_SpaRoom_Plants_001_DamageV2",
+        "HI_SM_SpaRoom_Plants_001_HeavyV2",
+        "HI_SM_SpaRoom_Plants_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_Plants__002",
+      "stages": [
+        "HI_SM_SpaRoom_Plants_002",
+        "HI_SM_SpaRoom_Plants_002_DamageV2",
+        "HI_SM_SpaRoom_Plants_002_HeavyV2",
+        "HI_SM_SpaRoom_Plants_002_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__001",
+      "stages": [
+        "HI_SM_SpaRoom_RefreshmentBar_001",
+        "HI_SM_SpaRoom_RefreshmentBar_001_DamageV2",
+        "HI_SM_SpaRoom_RefreshmentBar_001_HeavyV2",
+        "HI_SM_SpaRoom_RefreshmentBar_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__002",
+      "stages": [
+        "HI_SM_SpaRoom_RefreshmentBar_002",
+        "HI_SM_SpaRoom_RefreshmentBar_002_DamageV2",
+        "HI_SM_SpaRoom_RefreshmentBar_002_HeavyV2",
+        "HI_SM_SpaRoom_RefreshmentBar_002_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__003",
+      "stages": [
+        "HI_SM_SpaRoom_RefreshmentBar_003",
+        "HI_SM_SpaRoom_RefreshmentBar_003_DamageV2",
+        "HI_SM_SpaRoom_RefreshmentBar_003_HeavyV2",
+        "HI_SM_SpaRoom_RefreshmentBar_003_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__004",
+      "stages": [
+        "HI_SM_SpaRoom_RefreshmentBar_004",
+        "HI_SM_SpaRoom_RefreshmentBar_004_DamageV2",
+        "HI_SM_SpaRoom_RefreshmentBar_004_HeavyV2",
+        "HI_SM_SpaRoom_RefreshmentBar_004_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__005",
+      "stages": [
+        "HI_SM_SpaRoom_RefreshmentBar_005",
+        "HI_SM_SpaRoom_RefreshmentBar_005_DamageV2",
+        "HI_SM_SpaRoom_RefreshmentBar_005_HeavyV2",
+        "HI_SM_SpaRoom_RefreshmentBar_005_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__001",
+      "stages": [
+        "HI_SM_SpaRoom_TowelStorage_001",
+        "HI_SM_SpaRoom_TowelStorage_001_DamageV2",
+        "HI_SM_SpaRoom_TowelStorage_001_HeavyV2",
+        "HI_SM_SpaRoom_TowelStorage_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__002",
+      "stages": [
+        "HI_SM_SpaRoom_TowelStorage_002",
+        "HI_SM_SpaRoom_TowelStorage_002_DamageV2",
+        "HI_SM_SpaRoom_TowelStorage_002_HeavyV2",
+        "HI_SM_SpaRoom_TowelStorage_002_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__003",
+      "stages": [
+        "HI_SM_SpaRoom_TowelStorage_003",
+        "HI_SM_SpaRoom_TowelStorage_003_DamageV2",
+        "HI_SM_SpaRoom_TowelStorage_003_HeavyV2",
+        "HI_SM_SpaRoom_TowelStorage_003_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__004",
+      "stages": [
+        "HI_SM_SpaRoom_TowelStorage_004",
+        "HI_SM_SpaRoom_TowelStorage_004_DamageV2",
+        "HI_SM_SpaRoom_TowelStorage_004_HeavyV2",
+        "HI_SM_SpaRoom_TowelStorage_004_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "Room102_Chair_01__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_02__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_03__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_04__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_05__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_06__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_07__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_08__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_09__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_10__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_11__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_12__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_13__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_14__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_15__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_16__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_17__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_18__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_19__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_20__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_21__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_22__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_23__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_24__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_25__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_26__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_27__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_28__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_29__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_30__001",
+      "stages": [
+        "HI_Room102_Chair_01_001",
+        "HI_Room102_Chair_01_001_DamageV2",
+        "HI_Room102_Chair_01_001_HeavyV2",
+        "HI_Room102_Chair_01_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "Room102_Chair_31__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_32__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_33__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_34__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_35__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_36__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_37__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_38__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_39__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_40__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_41__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_42__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_43__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_44__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_45__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_46__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_47__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_48__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_49__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_50__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_51__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "Room102_Chair_52__001",
+      "stages": [
+        "HI_Room102_Chair_31_001",
+        "HI_Room102_Chair_31_001_DamageV2",
+        "HI_Room102_Chair_31_001_HeavyV2",
+        "HI_Room102_Chair_31_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_SM_Bath_VanityTriple__001",
+      "stages": [
+        "HI_UpBath_SM_Bath_VanityTriple_001",
+        "HI_UpBath_SM_Bath_VanityTriple_001_DamageV2",
+        "HI_UpBath_SM_Bath_VanityTriple_001_HeavyV2",
+        "HI_UpBath_SM_Bath_VanityTriple_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        9,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_SM_Bath_VanityClutter__001",
+      "stages": [
+        "HI_UpBath_SM_Bath_VanityClutter_001",
+        "HI_UpBath_SM_Bath_VanityClutter_001_DamageV2",
+        "HI_UpBath_SM_Bath_VanityClutter_001_HeavyV2",
+        "HI_UpBath_SM_Bath_VanityClutter_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "UpBath_SM_Bath_MirrorLightRail__001",
+      "stages": [
+        "HI_UpBath_SM_Bath_MirrorLightRail_001",
+        "HI_UpBath_SM_Bath_MirrorLightRail_001_DamageV2",
+        "HI_UpBath_SM_Bath_MirrorLightRail_001_HeavyV2",
+        "HI_UpBath_SM_Bath_MirrorLightRail_001_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "UpBath_Bath_black_dispenser_1__001",
+      "stages": [
+        "HI_UpBath_Bath_black_dispenser_1_001",
+        "HI_UpBath_Bath_black_dispenser_1_001_DamageV2",
+        "HI_UpBath_Bath_black_dispenser_1_001_HeavyV2",
+        "HI_UpBath_Bath_black_dispenser_1_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "UpBath_Bath_black_dispenser_2__001",
+      "stages": [
+        "HI_UpBath_Bath_black_dispenser_1_001",
+        "HI_UpBath_Bath_black_dispenser_1_001_DamageV2",
+        "HI_UpBath_Bath_black_dispenser_1_001_HeavyV2",
+        "HI_UpBath_Bath_black_dispenser_1_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "UpBath_Bath_open_toilet_stall_1__001",
+      "stages": [
+        "HI_UpBath_Bath_open_toilet_stall_1_001",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_DamageV2",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_HeavyV2",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_ceramic_toilet_1__001",
+      "stages": [
+        "HI_UpBath_Bath_ceramic_toilet_1_001",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_DamageV2",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_HeavyV2",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "UpBath_Bath_open_toilet_stall_2__001",
+      "stages": [
+        "HI_UpBath_Bath_open_toilet_stall_1_001",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_DamageV2",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_HeavyV2",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_ceramic_toilet_2__001",
+      "stages": [
+        "HI_UpBath_Bath_ceramic_toilet_1_001",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_DamageV2",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_HeavyV2",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "UpBath_Bath_open_toilet_stall_3__001",
+      "stages": [
+        "HI_UpBath_Bath_open_toilet_stall_1_001",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_DamageV2",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_HeavyV2",
+        "HI_UpBath_Bath_open_toilet_stall_1_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_ceramic_toilet_3__001",
+      "stages": [
+        "HI_UpBath_Bath_ceramic_toilet_1_001",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_DamageV2",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_HeavyV2",
+        "HI_UpBath_Bath_ceramic_toilet_1_001_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "UpBath_SM_Bath_UrinalBag__001",
+      "stages": [
+        "HI_UpBath_SM_Bath_UrinalBag_001",
+        "HI_UpBath_SM_Bath_UrinalBag_001_DamageV2",
+        "HI_UpBath_SM_Bath_UrinalBag_001_HeavyV2",
+        "HI_UpBath_SM_Bath_UrinalBag_001_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "UpBath_Bath_orange_shower_frame_1__001",
+      "stages": [
+        "HI_UpBath_Bath_orange_shower_frame_1_001",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_DamageV2",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_HeavyV2",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_orange_shower_frame_2__001",
+      "stages": [
+        "HI_UpBath_Bath_orange_shower_frame_1_001",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_DamageV2",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_HeavyV2",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_orange_shower_frame_3__001",
+      "stages": [
+        "HI_UpBath_Bath_orange_shower_frame_1_001",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_DamageV2",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_HeavyV2",
+        "HI_UpBath_Bath_orange_shower_frame_1_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_SM_Bath_ShowerShelf__001",
+      "stages": [
+        "HI_UpBath_SM_Bath_ShowerShelf_001",
+        "HI_UpBath_SM_Bath_ShowerShelf_001_DamageV2",
+        "HI_UpBath_SM_Bath_ShowerShelf_001_HeavyV2",
+        "HI_UpBath_SM_Bath_ShowerShelf_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_SM_Bath_UtilityShelf__001",
+      "stages": [
+        "HI_UpBath_SM_Bath_UtilityShelf_001",
+        "HI_UpBath_SM_Bath_UtilityShelf_001_DamageV2",
+        "HI_UpBath_SM_Bath_UtilityShelf_001_HeavyV2",
+        "HI_UpBath_SM_Bath_UtilityShelf_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_SM_Bath_TissueTable__001",
+      "stages": [
+        "HI_UpBath_SM_Bath_TissueTable_001",
+        "HI_UpBath_SM_Bath_TissueTable_001_DamageV2",
+        "HI_UpBath_SM_Bath_TissueTable_001_HeavyV2",
+        "HI_UpBath_SM_Bath_TissueTable_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_shower_clothes__001",
+      "stages": [
+        "HI_UpBath_Bath_shower_clothes_001",
+        "HI_UpBath_Bath_shower_clothes_001_DamageV2",
+        "HI_UpBath_Bath_shower_clothes_001_HeavyV2",
+        "HI_UpBath_Bath_shower_clothes_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_rack_floor_clothes__001",
+      "stages": [
+        "HI_UpBath_Bath_shower_clothes_001",
+        "HI_UpBath_Bath_shower_clothes_001_DamageV2",
+        "HI_UpBath_Bath_shower_clothes_001_HeavyV2",
+        "HI_UpBath_Bath_shower_clothes_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_urinal_floor_clothes__001",
+      "stages": [
+        "HI_UpBath_Bath_shower_clothes_001",
+        "HI_UpBath_Bath_shower_clothes_001_DamageV2",
+        "HI_UpBath_Bath_shower_clothes_001_HeavyV2",
+        "HI_UpBath_Bath_shower_clothes_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_Bath_white_fluorescent_fitting_1__001",
+      "stages": [
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_DamageV2",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_HeavyV2",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "UpBath_Bath_white_fluorescent_fitting_2__001",
+      "stages": [
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_DamageV2",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_HeavyV2",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "UpBath_Bath_white_fluorescent_fitting_3__001",
+      "stages": [
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_DamageV2",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_HeavyV2",
+        "HI_UpBath_Bath_white_fluorescent_fitting_1_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "UpBath_SM_UpBath_BlackRecliner__001",
+      "stages": [
+        "HI_UpBath_SM_UpBath_BlackRecliner_001",
+        "HI_UpBath_SM_UpBath_BlackRecliner_001_DamageV2",
+        "HI_UpBath_SM_UpBath_BlackRecliner_001_HeavyV2",
+        "HI_UpBath_SM_UpBath_BlackRecliner_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "UpBath_SM_UpBath_StickVacuumResting__001",
+      "stages": [
+        "HI_UpBath_SM_UpBath_StickVacuumResting_001",
+        "HI_UpBath_SM_UpBath_StickVacuumResting_001_DamageV2",
+        "HI_UpBath_SM_UpBath_StickVacuumResting_001_HeavyV2",
+        "HI_UpBath_SM_UpBath_StickVacuumResting_001_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "UpBath_SM_UpBath_FishPoster__001",
+      "stages": [
+        "HI_UpBath_SM_UpBath_FishPoster_001",
+        "HI_UpBath_SM_UpBath_FishPoster_001_DamageV2",
+        "HI_UpBath_SM_UpBath_FishPoster_001_HeavyV2",
+        "HI_UpBath_SM_UpBath_FishPoster_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_FullSpindleBed__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_FullSpindleBed_001",
+        "HI_BR_SM_Bedroom_FullSpindleBed_001_DamageV2",
+        "HI_BR_SM_Bedroom_FullSpindleBed_001_HeavyV2",
+        "HI_BR_SM_Bedroom_FullSpindleBed_001_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_TwinSpindleBed__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_TwinSpindleBed_001",
+        "HI_BR_SM_Bedroom_TwinSpindleBed_001_DamageV2",
+        "HI_BR_SM_Bedroom_TwinSpindleBed_001_HeavyV2",
+        "HI_BR_SM_Bedroom_TwinSpindleBed_001_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_BrownReclinerSofa__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_BrownReclinerSofa_001",
+        "HI_BR_SM_Bedroom_BrownReclinerSofa_001_DamageV2",
+        "HI_BR_SM_Bedroom_BrownReclinerSofa_001_HeavyV2",
+        "HI_BR_SM_Bedroom_BrownReclinerSofa_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_OvalCoffeeTable__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_OvalCoffeeTable_001",
+        "HI_BR_SM_Bedroom_OvalCoffeeTable_001_DamageV2",
+        "HI_BR_SM_Bedroom_OvalCoffeeTable_001_HeavyV2",
+        "HI_BR_SM_Bedroom_OvalCoffeeTable_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_OakFourDrawerChest__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_OakFourDrawerChest_001",
+        "HI_BR_SM_Bedroom_OakFourDrawerChest_001_DamageV2",
+        "HI_BR_SM_Bedroom_OakFourDrawerChest_001_HeavyV2",
+        "HI_BR_SM_Bedroom_OakFourDrawerChest_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_StainlessMiniFridge__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_StainlessMiniFridge_001",
+        "HI_BR_SM_Bedroom_StainlessMiniFridge_001_DamageV2",
+        "HI_BR_SM_Bedroom_StainlessMiniFridge_001_HeavyV2",
+        "HI_BR_SM_Bedroom_StainlessMiniFridge_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        9,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_WallTelevision__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_WallTelevision_001",
+        "HI_BR_SM_Bedroom_WallTelevision_001_DamageV2",
+        "HI_BR_SM_Bedroom_WallTelevision_001_HeavyV2",
+        "HI_BR_SM_Bedroom_WallTelevision_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_BlackGamingTable__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_BlackGamingTable_001",
+        "HI_BR_SM_Bedroom_BlackGamingTable_001_DamageV2",
+        "HI_BR_SM_Bedroom_BlackGamingTable_001_HeavyV2",
+        "HI_BR_SM_Bedroom_BlackGamingTable_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_ClosetShallowContents__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_ClosetShallowContents_001",
+        "HI_BR_SM_Bedroom_ClosetShallowContents_001_DamageV2",
+        "HI_BR_SM_Bedroom_ClosetShallowContents_001_HeavyV2",
+        "HI_BR_SM_Bedroom_ClosetShallowContents_001_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_ClosetDeepContents__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_ClosetDeepContents_001",
+        "HI_BR_SM_Bedroom_ClosetDeepContents_001_DamageV2",
+        "HI_BR_SM_Bedroom_ClosetDeepContents_001_HeavyV2",
+        "HI_BR_SM_Bedroom_ClosetDeepContents_001_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "BR_SM_Bedroom_FiveBladeCeilingFan__001",
+      "stages": [
+        "HI_BR_SM_Bedroom_FiveBladeCeilingFan_001",
+        "HI_BR_SM_Bedroom_FiveBladeCeilingFan_001_DamageV2",
+        "HI_BR_SM_Bedroom_FiveBladeCeilingFan_001_HeavyV2",
+        "HI_BR_SM_Bedroom_FiveBladeCeilingFan_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "BR_BedDetail_TexasFlag_01__001",
+      "stages": [
+        "HI_BR_BedDetail_TexasFlag_01_001",
+        "HI_BR_BedDetail_TexasFlag_01_001_DamageV2",
+        "HI_BR_BedDetail_TexasFlag_01_001_HeavyV2",
+        "HI_BR_BedDetail_TexasFlag_01_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_TennesseeBanner_02__001",
+      "stages": [
+        "HI_BR_BedDetail_TennesseeBanner_02_001",
+        "HI_BR_BedDetail_TennesseeBanner_02_001_DamageV2",
+        "HI_BR_BedDetail_TennesseeBanner_02_001_HeavyV2",
+        "HI_BR_BedDetail_TennesseeBanner_02_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_WingedWreath_03__001",
+      "stages": [
+        "HI_BR_BedDetail_WingedWreath_03_001",
+        "HI_BR_BedDetail_WingedWreath_03_001_DamageV2",
+        "HI_BR_BedDetail_WingedWreath_03_001_HeavyV2",
+        "HI_BR_BedDetail_WingedWreath_03_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_CollegiateT_04__001",
+      "stages": [
+        "HI_BR_BedDetail_CollegiateT_04_001",
+        "HI_BR_BedDetail_CollegiateT_04_001_DamageV2",
+        "HI_BR_BedDetail_CollegiateT_04_001_HeavyV2",
+        "HI_BR_BedDetail_CollegiateT_04_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_ChampionsPennant_05__001",
+      "stages": [
+        "HI_BR_BedDetail_ChampionsPennant_05_001",
+        "HI_BR_BedDetail_ChampionsPennant_05_001_DamageV2",
+        "HI_BR_BedDetail_ChampionsPennant_05_001_HeavyV2",
+        "HI_BR_BedDetail_ChampionsPennant_05_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_CoronaOval_06__001",
+      "stages": [
+        "HI_BR_BedDetail_CoronaOval_06_001",
+        "HI_BR_BedDetail_CoronaOval_06_001_DamageV2",
+        "HI_BR_BedDetail_CoronaOval_06_001_HeavyV2",
+        "HI_BR_BedDetail_CoronaOval_06_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_VolsHelmet_07__001",
+      "stages": [
+        "HI_BR_BedDetail_VolsHelmet_07_001",
+        "HI_BR_BedDetail_VolsHelmet_07_001_DamageV2",
+        "HI_BR_BedDetail_VolsHelmet_07_001_HeavyV2",
+        "HI_BR_BedDetail_VolsHelmet_07_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_FramedCollage_08__001",
+      "stages": [
+        "HI_BR_BedDetail_FramedCollage_08_001",
+        "HI_BR_BedDetail_FramedCollage_08_001_DamageV2",
+        "HI_BR_BedDetail_FramedCollage_08_001_HeavyV2",
+        "HI_BR_BedDetail_FramedCollage_08_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_VolsPennant_09__001",
+      "stages": [
+        "HI_BR_BedDetail_VolsPennant_09_001",
+        "HI_BR_BedDetail_VolsPennant_09_001_DamageV2",
+        "HI_BR_BedDetail_VolsPennant_09_001_HeavyV2",
+        "HI_BR_BedDetail_VolsPennant_09_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "BR_BedDetail_AmericanWomanFlag_10__001",
+      "stages": [
+        "HI_BR_BedDetail_AmericanWomanFlag_10_001",
+        "HI_BR_BedDetail_AmericanWomanFlag_10_001_DamageV2",
+        "HI_BR_BedDetail_AmericanWomanFlag_10_001_HeavyV2",
+        "HI_BR_BedDetail_AmericanWomanFlag_10_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_XIIICrest_11__001",
+      "stages": [
+        "HI_BR_BedDetail_XIIICrest_11_001",
+        "HI_BR_BedDetail_XIIICrest_11_001_DamageV2",
+        "HI_BR_BedDetail_XIIICrest_11_001_HeavyV2",
+        "HI_BR_BedDetail_XIIICrest_11_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_ClosetArtwork_12__001",
+      "stages": [
+        "HI_BR_BedDetail_ClosetArtwork_12_001",
+        "HI_BR_BedDetail_ClosetArtwork_12_001_DamageV2",
+        "HI_BR_BedDetail_ClosetArtwork_12_001_HeavyV2",
+        "HI_BR_BedDetail_ClosetArtwork_12_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "BR_BedDetail_TennesseeMiniFlag_13__001",
+      "stages": [
+        "HI_BR_BedDetail_TennesseeMiniFlag_13_001",
+        "HI_BR_BedDetail_TennesseeMiniFlag_13_001_DamageV2",
+        "HI_BR_BedDetail_TennesseeMiniFlag_13_001_HeavyV2",
+        "HI_BR_BedDetail_TennesseeMiniFlag_13_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_PartyTime_15__001",
+      "stages": [
+        "HI_BR_BedDetail_PartyTime_15_001",
+        "HI_BR_BedDetail_PartyTime_15_001_DamageV2",
+        "HI_BR_BedDetail_PartyTime_15_001_HeavyV2",
+        "HI_BR_BedDetail_PartyTime_15_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_PhotoComposite_16__001",
+      "stages": [
+        "HI_BR_BedDetail_PhotoComposite_16_001",
+        "HI_BR_BedDetail_PhotoComposite_16_001_DamageV2",
+        "HI_BR_BedDetail_PhotoComposite_16_001_HeavyV2",
+        "HI_BR_BedDetail_PhotoComposite_16_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_RedMusicBanner_17__001",
+      "stages": [
+        "HI_BR_BedDetail_RedMusicBanner_17_001",
+        "HI_BR_BedDetail_RedMusicBanner_17_001_DamageV2",
+        "HI_BR_BedDetail_RedMusicBanner_17_001_HeavyV2",
+        "HI_BR_BedDetail_RedMusicBanner_17_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_HookWhiteCap_18__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001",
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001_DamageV2",
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001_HeavyV2",
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_HookWhiteCap_19__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001",
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001_DamageV2",
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001_HeavyV2",
+        "HI_BR_BedDetail_SM_Bed_HookWhiteCap_18_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_HookBlackCap_20__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_DamageV2",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_HeavyV2",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_HookBlackCap_21__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_DamageV2",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_HeavyV2",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_HookBlackCap_22__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_DamageV2",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_HeavyV2",
+        "HI_BR_BedDetail_SM_Bed_HookBlackCap_20_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_EntryCoatRack_23__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_Bed_EntryCoatRack_23_001",
+        "HI_BR_BedDetail_SM_Bed_EntryCoatRack_23_001_DamageV2",
+        "HI_BR_BedDetail_SM_Bed_EntryCoatRack_23_001_HeavyV2",
+        "HI_BR_BedDetail_SM_Bed_EntryCoatRack_23_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_CoffeeTable_24__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_BedProps_CoffeeTable_24_001",
+        "HI_BR_BedDetail_SM_BedProps_CoffeeTable_24_001_DamageV2",
+        "HI_BR_BedDetail_SM_BedProps_CoffeeTable_24_001_HeavyV2",
+        "HI_BR_BedDetail_SM_BedProps_CoffeeTable_24_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_ExtraBasketPlant_25__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_BedProps_ExtraBasketPlant_25_001",
+        "HI_BR_BedDetail_SM_BedProps_ExtraBasketPlant_25_001_DamageV2",
+        "HI_BR_BedDetail_SM_BedProps_ExtraBasketPlant_25_001_HeavyV2",
+        "HI_BR_BedDetail_SM_BedProps_ExtraBasketPlant_25_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_Dresser_26__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_BedProps_Dresser_26_001",
+        "HI_BR_BedDetail_SM_BedProps_Dresser_26_001_DamageV2",
+        "HI_BR_BedDetail_SM_BedProps_Dresser_26_001_HeavyV2",
+        "HI_BR_BedDetail_SM_BedProps_Dresser_26_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_FridgeTop_27__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_BedProps_FridgeTop_27_001",
+        "HI_BR_BedDetail_SM_BedProps_FridgeTop_27_001_DamageV2",
+        "HI_BR_BedDetail_SM_BedProps_FridgeTop_27_001_HeavyV2",
+        "HI_BR_BedDetail_SM_BedProps_FridgeTop_27_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_GameTable_28__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_BedProps_GameTable_28_001",
+        "HI_BR_BedDetail_SM_BedProps_GameTable_28_001_DamageV2",
+        "HI_BR_BedDetail_SM_BedProps_GameTable_28_001_HeavyV2",
+        "HI_BR_BedDetail_SM_BedProps_GameTable_28_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_SofaRemote_29__001",
+      "stages": [
+        "HI_BR_BedDetail_SM_BedProps_SofaRemote_29_001",
+        "HI_BR_BedDetail_SM_BedProps_SofaRemote_29_001_DamageV2",
+        "HI_BR_BedDetail_SM_BedProps_SofaRemote_29_001_HeavyV2",
+        "HI_BR_BedDetail_SM_BedProps_SofaRemote_29_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "BR_EntryFloorClutter__001",
+      "stages": [
+        "HI_BR_EntryFloorClutter_001",
+        "HI_BR_EntryFloorClutter_001_DamageV2",
+        "HI_BR_EntryFloorClutter_001_HeavyV2",
+        "HI_BR_EntryFloorClutter_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        6,
+        11
+      ]
+    },
+    {
+      "id": "HallEnd_BudLightFlag__001",
+      "stages": [
+        "HI_HallEnd_BudLightFlag_001",
+        "HI_HallEnd_BudLightFlag_001_DamageV2",
+        "HI_HallEnd_BudLightFlag_001_HeavyV2",
+        "HI_HallEnd_BudLightFlag_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "HallEnd_SantaBass__001",
+      "stages": [
+        "HI_HallEnd_SantaBass_001",
+        "HI_HallEnd_SantaBass_001_DamageV2",
+        "HI_HallEnd_SantaBass_001_HeavyV2",
+        "HI_HallEnd_SantaBass_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "HallEnd_ExitArrowLight__001",
+      "stages": [
+        "HI_HallEnd_ExitArrowLight_001",
+        "HI_HallEnd_ExitArrowLight_001_DamageV2",
+        "HI_HallEnd_ExitArrowLight_001_HeavyV2",
+        "HI_HallEnd_ExitArrowLight_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "HallEnd_RedAlarm__001",
+      "stages": [
+        "HI_HallEnd_RedAlarm_001",
+        "HI_HallEnd_RedAlarm_001_DamageV2",
+        "HI_HallEnd_RedAlarm_001_HeavyV2",
+        "HI_HallEnd_RedAlarm_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "R204_SM_FlushCeilingLight__001",
+      "stages": [
+        "HI_R204_SM_FlushCeilingLight_001",
+        "HI_R204_SM_FlushCeilingLight_001_DamageV2",
+        "HI_R204_SM_FlushCeilingLight_001_HeavyV2",
+        "HI_R204_SM_FlushCeilingLight_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "R204_WhiteStripedDoubleBed__001",
+      "stages": [
+        "HI_R204_WhiteStripedDoubleBed_001",
+        "HI_R204_WhiteStripedDoubleBed_001_DamageV2",
+        "HI_R204_WhiteStripedDoubleBed_001_HeavyV2",
+        "HI_R204_WhiteStripedDoubleBed_001_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_BlackDoubleBed__001",
+      "stages": [
+        "HI_R204_BlackDoubleBed_001",
+        "HI_R204_BlackDoubleBed_001_DamageV2",
+        "HI_R204_BlackDoubleBed_001_HeavyV2",
+        "HI_R204_BlackDoubleBed_001_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_GalanzFridgeAndMicrowave__001",
+      "stages": [
+        "HI_R204_GalanzFridgeAndMicrowave_001",
+        "HI_R204_GalanzFridgeAndMicrowave_001_DamageV2",
+        "HI_R204_GalanzFridgeAndMicrowave_001_HeavyV2",
+        "HI_R204_GalanzFridgeAndMicrowave_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "R204_OpenDarkWoodDresser__001",
+      "stages": [
+        "HI_R204_OpenDarkWoodDresser_001",
+        "HI_R204_OpenDarkWoodDresser_001_DamageV2",
+        "HI_R204_OpenDarkWoodDresser_001_HeavyV2",
+        "HI_R204_OpenDarkWoodDresser_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_QuiltedLeatherFuton__001",
+      "stages": [
+        "HI_R204_QuiltedLeatherFuton_001",
+        "HI_R204_QuiltedLeatherFuton_001_DamageV2",
+        "HI_R204_QuiltedLeatherFuton_001_HeavyV2",
+        "HI_R204_QuiltedLeatherFuton_001_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "R204_SquareLeatherOttoman__001",
+      "stages": [
+        "HI_R204_SquareLeatherOttoman_001",
+        "HI_R204_SquareLeatherOttoman_001_DamageV2",
+        "HI_R204_SquareLeatherOttoman_001_HeavyV2",
+        "HI_R204_SquareLeatherOttoman_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "R204_NightstandAndLamp__001",
+      "stages": [
+        "HI_R204_NightstandAndLamp_001",
+        "HI_R204_NightstandAndLamp_001_DamageV2",
+        "HI_R204_NightstandAndLamp_001_HeavyV2",
+        "HI_R204_NightstandAndLamp_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "R204_BlackDeskFan__001",
+      "stages": [
+        "HI_R204_BlackDeskFan_001",
+        "HI_R204_BlackDeskFan_001_DamageV2",
+        "HI_R204_BlackDeskFan_001_HeavyV2",
+        "HI_R204_BlackDeskFan_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "id": "R204_LargeMottledGrayRug__001",
+      "stages": [
+        "HI_R204_LargeMottledGrayRug_001",
+        "HI_R204_LargeMottledGrayRug_001_DamageV2",
+        "HI_R204_LargeMottledGrayRug_001_HeavyV2",
+        "HI_R204_LargeMottledGrayRug_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_OrangeTFlag__001",
+      "stages": [
+        "HI_R204_OrangeTFlag_001",
+        "HI_R204_OrangeTFlag_001_DamageV2",
+        "HI_R204_OrangeTFlag_001_HeavyV2",
+        "HI_R204_OrangeTFlag_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_BlackTFlag__001",
+      "stages": [
+        "HI_R204_BlackTFlag_001",
+        "HI_R204_BlackTFlag_001_DamageV2",
+        "HI_R204_BlackTFlag_001_HeavyV2",
+        "HI_R204_BlackTFlag_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_VerticalUSAFlag__001",
+      "stages": [
+        "HI_R204_VerticalUSAFlag_001",
+        "HI_R204_VerticalUSAFlag_001_DamageV2",
+        "HI_R204_VerticalUSAFlag_001_HeavyV2",
+        "HI_R204_VerticalUSAFlag_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "R204_JAWSPoster__001",
+      "stages": [
+        "HI_R204_JAWSPoster_001",
+        "HI_R204_JAWSPoster_001_DamageV2",
+        "HI_R204_JAWSPoster_001_HeavyV2",
+        "HI_R204_JAWSPoster_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_AugustaPoster__001",
+      "stages": [
+        "HI_R204_AugustaPoster_001",
+        "HI_R204_AugustaPoster_001_DamageV2",
+        "HI_R204_AugustaPoster_001_HeavyV2",
+        "HI_R204_AugustaPoster_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_BuschAppleSign__001",
+      "stages": [
+        "HI_R204_BuschAppleSign_001",
+        "HI_R204_BuschAppleSign_001_DamageV2",
+        "HI_R204_BuschAppleSign_001_HeavyV2",
+        "HI_R204_BuschAppleSign_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_CheckeredT__001",
+      "stages": [
+        "HI_R204_CheckeredT_001",
+        "HI_R204_CheckeredT_001_DamageV2",
+        "HI_R204_CheckeredT_001_HeavyV2",
+        "HI_R204_CheckeredT_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_WindowSchedule__001",
+      "stages": [
+        "HI_R204_WindowSchedule_001",
+        "HI_R204_WindowSchedule_001_DamageV2",
+        "HI_R204_WindowSchedule_001_HeavyV2",
+        "HI_R204_WindowSchedule_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "R204_DonationPlaque__001",
+      "stages": [
+        "HI_R204_DonationPlaque_001",
+        "HI_R204_DonationPlaque_001_DamageV2",
+        "HI_R204_DonationPlaque_001_HeavyV2",
+        "HI_R204_DonationPlaque_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "R204_FutonClothingShoesBread__001",
+      "stages": [
+        "HI_R204_FutonClothingShoesBread_001",
+        "HI_R204_FutonClothingShoesBread_001_DamageV2",
+        "HI_R204_FutonClothingShoesBread_001_HeavyV2",
+        "HI_R204_FutonClothingShoesBread_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_FutonBackDrapes__001",
+      "stages": [
+        "HI_R204_FutonBackDrapes_001",
+        "HI_R204_FutonBackDrapes_001_DamageV2",
+        "HI_R204_FutonBackDrapes_001_HeavyV2",
+        "HI_R204_FutonBackDrapes_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_BlackCap__001",
+      "stages": [
+        "HI_R204_BlackCap_001",
+        "HI_R204_BlackCap_001_DamageV2",
+        "HI_R204_BlackCap_001_HeavyV2",
+        "HI_R204_BlackCap_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "R204_WhiteCap__001",
+      "stages": [
+        "HI_R204_WhiteCap_001",
+        "HI_R204_WhiteCap_001_DamageV2",
+        "HI_R204_WhiteCap_001_HeavyV2",
+        "HI_R204_WhiteCap_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "R204_BeigeHangingTote__001",
+      "stages": [
+        "HI_R204_BeigeHangingTote_001",
+        "HI_R204_BeigeHangingTote_001_DamageV2",
+        "HI_R204_BeigeHangingTote_001_HeavyV2",
+        "HI_R204_BeigeHangingTote_001_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "R204_HangingBackpack__001",
+      "stages": [
+        "HI_R204_HangingBackpack_001",
+        "HI_R204_HangingBackpack_001_DamageV2",
+        "HI_R204_HangingBackpack_001_HeavyV2",
+        "HI_R204_HangingBackpack_001_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "R204_HangingBelt__001",
+      "stages": [
+        "HI_R204_HangingBelt_001",
+        "HI_R204_HangingBelt_001_DamageV2",
+        "HI_R204_HangingBelt_001_HeavyV2",
+        "HI_R204_HangingBelt_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "R204_ClosetGarmentsBins__001",
+      "stages": [
+        "HI_R204_ClosetGarmentsBins_001",
+        "HI_R204_ClosetGarmentsBins_001_DamageV2",
+        "HI_R204_ClosetGarmentsBins_001_HeavyV2",
+        "HI_R204_ClosetGarmentsBins_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_BlackBedLaundryBasket__001",
+      "stages": [
+        "HI_R204_BlackBedLaundryBasket_001",
+        "HI_R204_BlackBedLaundryBasket_001_DamageV2",
+        "HI_R204_BlackBedLaundryBasket_001_HeavyV2",
+        "HI_R204_BlackBedLaundryBasket_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        9,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "R204_FutonSnackCrateSlippers__001",
+      "stages": [
+        "HI_R204_FutonSnackCrateSlippers_001",
+        "HI_R204_FutonSnackCrateSlippers_001_DamageV2",
+        "HI_R204_FutonSnackCrateSlippers_001_HeavyV2",
+        "HI_R204_FutonSnackCrateSlippers_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_CoorsCartonFridge__001",
+      "stages": [
+        "HI_R204_CoorsCartonFridge_001",
+        "HI_R204_CoorsCartonFridge_001_DamageV2",
+        "HI_R204_CoorsCartonFridge_001_HeavyV2",
+        "HI_R204_CoorsCartonFridge_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_CoorsCartonBlackBed__001",
+      "stages": [
+        "HI_R204_CoorsCartonFridge_001",
+        "HI_R204_CoorsCartonFridge_001_DamageV2",
+        "HI_R204_CoorsCartonFridge_001_HeavyV2",
+        "HI_R204_CoorsCartonFridge_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "R204_DresserCupsTumblerRoll__001",
+      "stages": [
+        "HI_R204_DresserCupsTumblerRoll_001",
+        "HI_R204_DresserCupsTumblerRoll_001_DamageV2",
+        "HI_R204_DresserCupsTumblerRoll_001_HeavyV2",
+        "HI_R204_DresserCupsTumblerRoll_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "R204_DresserOpenDrawerLaundry__001",
+      "stages": [
+        "HI_R204_DresserOpenDrawerLaundry_001",
+        "HI_R204_DresserOpenDrawerLaundry_001_DamageV2",
+        "HI_R204_DresserOpenDrawerLaundry_001_HeavyV2",
+        "HI_R204_DresserOpenDrawerLaundry_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "R204_SharedNightstandDrinks__001",
+      "stages": [
+        "HI_R204_SharedNightstandDrinks_001",
+        "HI_R204_SharedNightstandDrinks_001_DamageV2",
+        "HI_R204_SharedNightstandDrinks_001_HeavyV2",
+        "HI_R204_SharedNightstandDrinks_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "R204_R2_SM_SecondClosetShelf__001",
+      "stages": [
+        "HI_R204_R2_SM_SecondClosetShelf_001",
+        "HI_R204_R2_SM_SecondClosetShelf_001_DamageV2",
+        "HI_R204_R2_SM_SecondClosetShelf_001_HeavyV2",
+        "HI_R204_R2_SM_SecondClosetShelf_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "id": "R204_R2_BlackBedFootGarments__001",
+      "stages": [
+        "HI_R204_R2_BlackBedFootGarments_001",
+        "HI_R204_R2_BlackBedFootGarments_001_DamageV2",
+        "HI_R204_R2_BlackBedFootGarments_001_HeavyV2",
+        "HI_R204_R2_BlackBedFootGarments_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "id": "R204_R2_ClosetThresholdClothesBox__001",
+      "stages": [
+        "HI_R204_R2_ClosetThresholdClothesBox_001",
+        "HI_R204_R2_ClosetThresholdClothesBox_001_DamageV2",
+        "HI_R204_R2_ClosetThresholdClothesBox_001_HeavyV2",
+        "HI_R204_R2_ClosetThresholdClothesBox_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_R2_SecondClosetClothes__001",
+      "stages": [
+        "HI_R204_R2_SecondClosetClothes_001",
+        "HI_R204_R2_SecondClosetClothes_001_DamageV2",
+        "HI_R204_R2_SecondClosetClothes_001_HeavyV2",
+        "HI_R204_R2_SecondClosetClothes_001_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "R204_R2_FutonSideFloorGarments__001",
+      "stages": [
+        "HI_R204_R2_FutonSideFloorGarments_001",
+        "HI_R204_R2_FutonSideFloorGarments_001_DamageV2",
+        "HI_R204_R2_FutonSideFloorGarments_001_HeavyV2",
+        "HI_R204_R2_FutonSideFloorGarments_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "R204_R2_EntryIron__001",
+      "stages": [
+        "HI_R204_R2_EntryIron_001",
+        "HI_R204_R2_EntryIron_001_DamageV2",
+        "HI_R204_R2_EntryIron_001_HeavyV2",
+        "HI_R204_R2_EntryIron_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "R204_R2_EntryOutletCable__001",
+      "stages": [
+        "HI_R204_R2_EntryOutletCable_001",
+        "HI_R204_R2_EntryOutletCable_001_DamageV2",
+        "HI_R204_R2_EntryOutletCable_001_HeavyV2",
+        "HI_R204_R2_EntryOutletCable_001_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "PIG_Mattress__001",
+      "stages": [
+        "HI_PIG_Mattress_001",
+        "HI_PIG_Mattress_001_DamageV2",
+        "HI_PIG_Mattress_001_HeavyV2",
+        "HI_PIG_Mattress_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "PIG_Blanket__001",
+      "stages": [
+        "HI_PIG_Blanket_001",
+        "HI_PIG_Blanket_001_DamageV2",
+        "HI_PIG_Blanket_001_HeavyV2",
+        "HI_PIG_Blanket_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "PIG_CheetosBag__001",
+      "stages": [
+        "HI_PIG_CheetosBag_001",
+        "HI_PIG_CheetosBag_001_DamageV2",
+        "HI_PIG_CheetosBag_001_HeavyV2",
+        "HI_PIG_CheetosBag_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "PIG_Crumbs__001",
+      "stages": [
+        "HI_PIG_Crumbs_001",
+        "HI_PIG_Crumbs_001_DamageV2",
+        "HI_PIG_Crumbs_001_HeavyV2",
+        "HI_PIG_Crumbs_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "PIG_WaterTrough__001",
+      "stages": [
+        "HI_PIG_WaterTrough_001",
+        "HI_PIG_WaterTrough_001_DamageV2",
+        "HI_PIG_WaterTrough_001_HeavyV2",
+        "HI_PIG_WaterTrough_001_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "PIG_FeedBucket__001",
+      "stages": [
+        "HI_PIG_FeedBucket_001",
+        "HI_PIG_FeedBucket_001_DamageV2",
+        "HI_PIG_FeedBucket_001_HeavyV2",
+        "HI_PIG_FeedBucket_001_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "PIG_BrokenBoards__001",
+      "stages": [
+        "HI_PIG_BrokenBoards_001",
+        "HI_PIG_BrokenBoards_001_DamageV2",
+        "HI_PIG_BrokenBoards_001_HeavyV2",
+        "HI_PIG_BrokenBoards_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "PIG_BulkheadLamp__001",
+      "stages": [
+        "HI_PIG_BulkheadLamp_001",
+        "HI_PIG_BulkheadLamp_001_DamageV2",
+        "HI_PIG_BulkheadLamp_001_HeavyV2",
+        "HI_PIG_BulkheadLamp_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "PIG_KeepShutSign__001",
+      "stages": [
+        "HI_PIG_KeepShutSign_001",
+        "HI_PIG_KeepShutSign_001_DamageV2",
+        "HI_PIG_KeepShutSign_001_HeavyV2",
+        "HI_PIG_KeepShutSign_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__001",
+      "stages": [
+        "HI_SMF_Basement_ALL_001",
+        "HI_SMF_Basement_ALL_001_DamageV2",
+        "HI_SMF_Basement_ALL_001_HeavyV2",
+        "HI_SMF_Basement_ALL_001_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__002",
+      "stages": [
+        "HI_SMF_Basement_ALL_002",
+        "HI_SMF_Basement_ALL_002_DamageV2",
+        "HI_SMF_Basement_ALL_002_HeavyV2",
+        "HI_SMF_Basement_ALL_002_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__003",
+      "stages": [
+        "HI_SMF_Basement_ALL_003",
+        "HI_SMF_Basement_ALL_003_DamageV2",
+        "HI_SMF_Basement_ALL_003_HeavyV2",
+        "HI_SMF_Basement_ALL_003_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__004",
+      "stages": [
+        "HI_SMF_Basement_ALL_004",
+        "HI_SMF_Basement_ALL_004_DamageV2",
+        "HI_SMF_Basement_ALL_004_HeavyV2",
+        "HI_SMF_Basement_ALL_004_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__005",
+      "stages": [
+        "HI_SMF_Basement_ALL_005",
+        "HI_SMF_Basement_ALL_005_DamageV2",
+        "HI_SMF_Basement_ALL_005_HeavyV2",
+        "HI_SMF_Basement_ALL_005_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__006",
+      "stages": [
+        "HI_SMF_Basement_ALL_006",
+        "HI_SMF_Basement_ALL_006_DamageV2",
+        "HI_SMF_Basement_ALL_006_HeavyV2",
+        "HI_SMF_Basement_ALL_006_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__007",
+      "stages": [
+        "HI_SMF_Basement_ALL_007",
+        "HI_SMF_Basement_ALL_007_DamageV2",
+        "HI_SMF_Basement_ALL_007_HeavyV2",
+        "HI_SMF_Basement_ALL_007_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__008",
+      "stages": [
+        "HI_SMF_Basement_ALL_008",
+        "HI_SMF_Basement_ALL_008_DamageV2",
+        "HI_SMF_Basement_ALL_008_HeavyV2",
+        "HI_SMF_Basement_ALL_008_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__009",
+      "stages": [
+        "HI_SMF_Basement_ALL_009",
+        "HI_SMF_Basement_ALL_009_DamageV2",
+        "HI_SMF_Basement_ALL_009_HeavyV2",
+        "HI_SMF_Basement_ALL_009_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__010",
+      "stages": [
+        "HI_SMF_Basement_ALL_010",
+        "HI_SMF_Basement_ALL_010_DamageV2",
+        "HI_SMF_Basement_ALL_010_HeavyV2",
+        "HI_SMF_Basement_ALL_010_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        9,
+        9,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__011",
+      "stages": [
+        "HI_SMF_Basement_ALL_011",
+        "HI_SMF_Basement_ALL_011_DamageV2",
+        "HI_SMF_Basement_ALL_011_HeavyV2",
+        "HI_SMF_Basement_ALL_011_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__012",
+      "stages": [
+        "HI_SMF_Basement_ALL_012",
+        "HI_SMF_Basement_ALL_012_DamageV2",
+        "HI_SMF_Basement_ALL_012_HeavyV2",
+        "HI_SMF_Basement_ALL_012_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__013",
+      "stages": [
+        "HI_SMF_Basement_ALL_013",
+        "HI_SMF_Basement_ALL_013_DamageV2",
+        "HI_SMF_Basement_ALL_013_HeavyV2",
+        "HI_SMF_Basement_ALL_013_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__014",
+      "stages": [
+        "HI_SMF_Basement_ALL_014",
+        "HI_SMF_Basement_ALL_014_DamageV2",
+        "HI_SMF_Basement_ALL_014_HeavyV2",
+        "HI_SMF_Basement_ALL_014_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__015",
+      "stages": [
+        "HI_SMF_Basement_ALL_015",
+        "HI_SMF_Basement_ALL_015_DamageV2",
+        "HI_SMF_Basement_ALL_015_HeavyV2",
+        "HI_SMF_Basement_ALL_015_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__016",
+      "stages": [
+        "HI_SMF_Basement_ALL_016",
+        "HI_SMF_Basement_ALL_016_DamageV2",
+        "HI_SMF_Basement_ALL_016_HeavyV2",
+        "HI_SMF_Basement_ALL_016_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__017",
+      "stages": [
+        "HI_SMF_Basement_ALL_017",
+        "HI_SMF_Basement_ALL_017_DamageV2",
+        "HI_SMF_Basement_ALL_017_HeavyV2",
+        "HI_SMF_Basement_ALL_017_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__018",
+      "stages": [
+        "HI_SMF_Basement_ALL_018",
+        "HI_SMF_Basement_ALL_018_DamageV2",
+        "HI_SMF_Basement_ALL_018_HeavyV2",
+        "HI_SMF_Basement_ALL_018_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__019",
+      "stages": [
+        "HI_SMF_Basement_ALL_019",
+        "HI_SMF_Basement_ALL_019_DamageV2",
+        "HI_SMF_Basement_ALL_019_HeavyV2",
+        "HI_SMF_Basement_ALL_019_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__020",
+      "stages": [
+        "HI_SMF_Basement_ALL_020",
+        "HI_SMF_Basement_ALL_020_DamageV2",
+        "HI_SMF_Basement_ALL_020_HeavyV2",
+        "HI_SMF_Basement_ALL_020_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__021",
+      "stages": [
+        "HI_SMF_Basement_ALL_021",
+        "HI_SMF_Basement_ALL_021_DamageV2",
+        "HI_SMF_Basement_ALL_021_HeavyV2",
+        "HI_SMF_Basement_ALL_021_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__022",
+      "stages": [
+        "HI_SMF_Basement_ALL_022",
+        "HI_SMF_Basement_ALL_022_DamageV2",
+        "HI_SMF_Basement_ALL_022_HeavyV2",
+        "HI_SMF_Basement_ALL_022_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__023",
+      "stages": [
+        "HI_SMF_Basement_ALL_023",
+        "HI_SMF_Basement_ALL_023_DamageV2",
+        "HI_SMF_Basement_ALL_023_HeavyV2",
+        "HI_SMF_Basement_ALL_023_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__024",
+      "stages": [
+        "HI_SMF_Basement_ALL_024",
+        "HI_SMF_Basement_ALL_024_DamageV2",
+        "HI_SMF_Basement_ALL_024_HeavyV2",
+        "HI_SMF_Basement_ALL_024_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__025",
+      "stages": [
+        "HI_SMF_Basement_ALL_025",
+        "HI_SMF_Basement_ALL_025_DamageV2",
+        "HI_SMF_Basement_ALL_025_HeavyV2",
+        "HI_SMF_Basement_ALL_025_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__026",
+      "stages": [
+        "HI_SMF_Basement_ALL_026",
+        "HI_SMF_Basement_ALL_026_DamageV2",
+        "HI_SMF_Basement_ALL_026_HeavyV2",
+        "HI_SMF_Basement_ALL_026_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__027",
+      "stages": [
+        "HI_SMF_Basement_ALL_027",
+        "HI_SMF_Basement_ALL_027_DamageV2",
+        "HI_SMF_Basement_ALL_027_HeavyV2",
+        "HI_SMF_Basement_ALL_027_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__028",
+      "stages": [
+        "HI_SMF_Basement_ALL_028",
+        "HI_SMF_Basement_ALL_028_DamageV2",
+        "HI_SMF_Basement_ALL_028_HeavyV2",
+        "HI_SMF_Basement_ALL_028_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__029",
+      "stages": [
+        "HI_SMF_Basement_ALL_029",
+        "HI_SMF_Basement_ALL_029_DamageV2",
+        "HI_SMF_Basement_ALL_029_HeavyV2",
+        "HI_SMF_Basement_ALL_029_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__030",
+      "stages": [
+        "HI_SMF_Basement_ALL_030",
+        "HI_SMF_Basement_ALL_030_DamageV2",
+        "HI_SMF_Basement_ALL_030_HeavyV2",
+        "HI_SMF_Basement_ALL_030_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__031",
+      "stages": [
+        "HI_SMF_Basement_ALL_031",
+        "HI_SMF_Basement_ALL_031_DamageV2",
+        "HI_SMF_Basement_ALL_031_HeavyV2",
+        "HI_SMF_Basement_ALL_031_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__032",
+      "stages": [
+        "HI_SMF_Basement_ALL_032",
+        "HI_SMF_Basement_ALL_032_DamageV2",
+        "HI_SMF_Basement_ALL_032_HeavyV2",
+        "HI_SMF_Basement_ALL_032_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__033",
+      "stages": [
+        "HI_SMF_Basement_ALL_033",
+        "HI_SMF_Basement_ALL_033_DamageV2",
+        "HI_SMF_Basement_ALL_033_HeavyV2",
+        "HI_SMF_Basement_ALL_033_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        6,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__034",
+      "stages": [
+        "HI_SMF_Basement_ALL_034",
+        "HI_SMF_Basement_ALL_034_DamageV2",
+        "HI_SMF_Basement_ALL_034_HeavyV2",
+        "HI_SMF_Basement_ALL_034_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__035",
+      "stages": [
+        "HI_SMF_Basement_ALL_035",
+        "HI_SMF_Basement_ALL_035_DamageV2",
+        "HI_SMF_Basement_ALL_035_HeavyV2",
+        "HI_SMF_Basement_ALL_035_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__036",
+      "stages": [
+        "HI_SMF_Basement_ALL_036",
+        "HI_SMF_Basement_ALL_036_DamageV2",
+        "HI_SMF_Basement_ALL_036_HeavyV2",
+        "HI_SMF_Basement_ALL_036_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__037",
+      "stages": [
+        "HI_SMF_Basement_ALL_037",
+        "HI_SMF_Basement_ALL_037_DamageV2",
+        "HI_SMF_Basement_ALL_037_HeavyV2",
+        "HI_SMF_Basement_ALL_037_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__038",
+      "stages": [
+        "HI_SMF_Basement_ALL_038",
+        "HI_SMF_Basement_ALL_038_DamageV2",
+        "HI_SMF_Basement_ALL_038_HeavyV2",
+        "HI_SMF_Basement_ALL_038_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__039",
+      "stages": [
+        "HI_SMF_Basement_ALL_039",
+        "HI_SMF_Basement_ALL_039_DamageV2",
+        "HI_SMF_Basement_ALL_039_HeavyV2",
+        "HI_SMF_Basement_ALL_039_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__040",
+      "stages": [
+        "HI_SMF_Basement_ALL_040",
+        "HI_SMF_Basement_ALL_040_DamageV2",
+        "HI_SMF_Basement_ALL_040_HeavyV2",
+        "HI_SMF_Basement_ALL_040_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__041",
+      "stages": [
+        "HI_SMF_Basement_ALL_041",
+        "HI_SMF_Basement_ALL_041_DamageV2",
+        "HI_SMF_Basement_ALL_041_HeavyV2",
+        "HI_SMF_Basement_ALL_041_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__042",
+      "stages": [
+        "HI_SMF_Basement_ALL_042",
+        "HI_SMF_Basement_ALL_042_DamageV2",
+        "HI_SMF_Basement_ALL_042_HeavyV2",
+        "HI_SMF_Basement_ALL_042_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__043",
+      "stages": [
+        "HI_SMF_Basement_ALL_043",
+        "HI_SMF_Basement_ALL_043_DamageV2",
+        "HI_SMF_Basement_ALL_043_HeavyV2",
+        "HI_SMF_Basement_ALL_043_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__044",
+      "stages": [
+        "HI_SMF_Basement_ALL_044",
+        "HI_SMF_Basement_ALL_044_DamageV2",
+        "HI_SMF_Basement_ALL_044_HeavyV2",
+        "HI_SMF_Basement_ALL_044_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__045",
+      "stages": [
+        "HI_SMF_Basement_ALL_045",
+        "HI_SMF_Basement_ALL_045_DamageV2",
+        "HI_SMF_Basement_ALL_045_HeavyV2",
+        "HI_SMF_Basement_ALL_045_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__046",
+      "stages": [
+        "HI_SMF_Basement_ALL_046",
+        "HI_SMF_Basement_ALL_046_DamageV2",
+        "HI_SMF_Basement_ALL_046_HeavyV2",
+        "HI_SMF_Basement_ALL_046_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__047",
+      "stages": [
+        "HI_SMF_Basement_ALL_047",
+        "HI_SMF_Basement_ALL_047_DamageV2",
+        "HI_SMF_Basement_ALL_047_HeavyV2",
+        "HI_SMF_Basement_ALL_047_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        6,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__048",
+      "stages": [
+        "HI_SMF_Basement_ALL_048",
+        "HI_SMF_Basement_ALL_048_DamageV2",
+        "HI_SMF_Basement_ALL_048_HeavyV2",
+        "HI_SMF_Basement_ALL_048_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__049",
+      "stages": [
+        "HI_SMF_Basement_ALL_049",
+        "HI_SMF_Basement_ALL_049_DamageV2",
+        "HI_SMF_Basement_ALL_049_HeavyV2",
+        "HI_SMF_Basement_ALL_049_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__050",
+      "stages": [
+        "HI_SMF_Basement_ALL_050",
+        "HI_SMF_Basement_ALL_050_DamageV2",
+        "HI_SMF_Basement_ALL_050_HeavyV2",
+        "HI_SMF_Basement_ALL_050_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__051",
+      "stages": [
+        "HI_SMF_Basement_ALL_051",
+        "HI_SMF_Basement_ALL_051_DamageV2",
+        "HI_SMF_Basement_ALL_051_HeavyV2",
+        "HI_SMF_Basement_ALL_051_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        7,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__052",
+      "stages": [
+        "HI_SMF_Basement_ALL_052",
+        "HI_SMF_Basement_ALL_052_DamageV2",
+        "HI_SMF_Basement_ALL_052_HeavyV2",
+        "HI_SMF_Basement_ALL_052_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__053",
+      "stages": [
+        "HI_SMF_Basement_ALL_053",
+        "HI_SMF_Basement_ALL_053_DamageV2",
+        "HI_SMF_Basement_ALL_053_HeavyV2",
+        "HI_SMF_Basement_ALL_053_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__054",
+      "stages": [
+        "HI_SMF_Basement_ALL_054",
+        "HI_SMF_Basement_ALL_054_DamageV2",
+        "HI_SMF_Basement_ALL_054_HeavyV2",
+        "HI_SMF_Basement_ALL_054_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__055",
+      "stages": [
+        "HI_SMF_Basement_ALL_055",
+        "HI_SMF_Basement_ALL_055_DamageV2",
+        "HI_SMF_Basement_ALL_055_HeavyV2",
+        "HI_SMF_Basement_ALL_055_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__056",
+      "stages": [
+        "HI_SMF_Basement_ALL_056",
+        "HI_SMF_Basement_ALL_056_DamageV2",
+        "HI_SMF_Basement_ALL_056_HeavyV2",
+        "HI_SMF_Basement_ALL_056_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__057",
+      "stages": [
+        "HI_SMF_Basement_ALL_057",
+        "HI_SMF_Basement_ALL_057_DamageV2",
+        "HI_SMF_Basement_ALL_057_HeavyV2",
+        "HI_SMF_Basement_ALL_057_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__058",
+      "stages": [
+        "HI_SMF_Basement_ALL_058",
+        "HI_SMF_Basement_ALL_058_DamageV2",
+        "HI_SMF_Basement_ALL_058_HeavyV2",
+        "HI_SMF_Basement_ALL_058_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__059",
+      "stages": [
+        "HI_SMF_Basement_ALL_059",
+        "HI_SMF_Basement_ALL_059_DamageV2",
+        "HI_SMF_Basement_ALL_059_HeavyV2",
+        "HI_SMF_Basement_ALL_059_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__060",
+      "stages": [
+        "HI_SMF_Basement_ALL_060",
+        "HI_SMF_Basement_ALL_060_DamageV2",
+        "HI_SMF_Basement_ALL_060_HeavyV2",
+        "HI_SMF_Basement_ALL_060_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__061",
+      "stages": [
+        "HI_SMF_Basement_ALL_061",
+        "HI_SMF_Basement_ALL_061_DamageV2",
+        "HI_SMF_Basement_ALL_061_HeavyV2",
+        "HI_SMF_Basement_ALL_061_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__062",
+      "stages": [
+        "HI_SMF_Basement_ALL_062",
+        "HI_SMF_Basement_ALL_062_DamageV2",
+        "HI_SMF_Basement_ALL_062_HeavyV2",
+        "HI_SMF_Basement_ALL_062_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__063",
+      "stages": [
+        "HI_SMF_Basement_ALL_063",
+        "HI_SMF_Basement_ALL_063_DamageV2",
+        "HI_SMF_Basement_ALL_063_HeavyV2",
+        "HI_SMF_Basement_ALL_063_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__064",
+      "stages": [
+        "HI_SMF_Basement_ALL_064",
+        "HI_SMF_Basement_ALL_064_DamageV2",
+        "HI_SMF_Basement_ALL_064_HeavyV2",
+        "HI_SMF_Basement_ALL_064_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__065",
+      "stages": [
+        "HI_SMF_Basement_ALL_065",
+        "HI_SMF_Basement_ALL_065_DamageV2",
+        "HI_SMF_Basement_ALL_065_HeavyV2",
+        "HI_SMF_Basement_ALL_065_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__066",
+      "stages": [
+        "HI_SMF_Basement_ALL_066",
+        "HI_SMF_Basement_ALL_066_DamageV2",
+        "HI_SMF_Basement_ALL_066_HeavyV2",
+        "HI_SMF_Basement_ALL_066_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__067",
+      "stages": [
+        "HI_SMF_Basement_ALL_067",
+        "HI_SMF_Basement_ALL_067_DamageV2",
+        "HI_SMF_Basement_ALL_067_HeavyV2",
+        "HI_SMF_Basement_ALL_067_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__068",
+      "stages": [
+        "HI_SMF_Basement_ALL_068",
+        "HI_SMF_Basement_ALL_068_DamageV2",
+        "HI_SMF_Basement_ALL_068_HeavyV2",
+        "HI_SMF_Basement_ALL_068_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__069",
+      "stages": [
+        "HI_SMF_Basement_ALL_069",
+        "HI_SMF_Basement_ALL_069_DamageV2",
+        "HI_SMF_Basement_ALL_069_HeavyV2",
+        "HI_SMF_Basement_ALL_069_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__070",
+      "stages": [
+        "HI_SMF_Basement_ALL_070",
+        "HI_SMF_Basement_ALL_070_DamageV2",
+        "HI_SMF_Basement_ALL_070_HeavyV2",
+        "HI_SMF_Basement_ALL_070_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__071",
+      "stages": [
+        "HI_SMF_Basement_ALL_071",
+        "HI_SMF_Basement_ALL_071_DamageV2",
+        "HI_SMF_Basement_ALL_071_HeavyV2",
+        "HI_SMF_Basement_ALL_071_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Basement_ALL__072",
+      "stages": [
+        "HI_SMF_Basement_ALL_072",
+        "HI_SMF_Basement_ALL_072_DamageV2",
+        "HI_SMF_Basement_ALL_072_HeavyV2",
+        "HI_SMF_Basement_ALL_072_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__003",
+      "stages": [
+        "HI_SMF_Entrance_ALL_003",
+        "HI_SMF_Entrance_ALL_003_DamageV2",
+        "HI_SMF_Entrance_ALL_003_HeavyV2",
+        "HI_SMF_Entrance_ALL_003_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__004",
+      "stages": [
+        "HI_SMF_Entrance_ALL_004",
+        "HI_SMF_Entrance_ALL_004_DamageV2",
+        "HI_SMF_Entrance_ALL_004_HeavyV2",
+        "HI_SMF_Entrance_ALL_004_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__005",
+      "stages": [
+        "HI_SMF_Entrance_ALL_005",
+        "HI_SMF_Entrance_ALL_005_DamageV2",
+        "HI_SMF_Entrance_ALL_005_HeavyV2",
+        "HI_SMF_Entrance_ALL_005_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__006",
+      "stages": [
+        "HI_SMF_Entrance_ALL_006",
+        "HI_SMF_Entrance_ALL_006_DamageV2",
+        "HI_SMF_Entrance_ALL_006_HeavyV2",
+        "HI_SMF_Entrance_ALL_006_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__007",
+      "stages": [
+        "HI_SMF_Entrance_ALL_007",
+        "HI_SMF_Entrance_ALL_007_DamageV2",
+        "HI_SMF_Entrance_ALL_007_HeavyV2",
+        "HI_SMF_Entrance_ALL_007_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__008",
+      "stages": [
+        "HI_SMF_Entrance_ALL_008",
+        "HI_SMF_Entrance_ALL_008_DamageV2",
+        "HI_SMF_Entrance_ALL_008_HeavyV2",
+        "HI_SMF_Entrance_ALL_008_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__009",
+      "stages": [
+        "HI_SMF_Entrance_ALL_009",
+        "HI_SMF_Entrance_ALL_009_DamageV2",
+        "HI_SMF_Entrance_ALL_009_HeavyV2",
+        "HI_SMF_Entrance_ALL_009_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__010",
+      "stages": [
+        "HI_SMF_Entrance_ALL_010",
+        "HI_SMF_Entrance_ALL_010_DamageV2",
+        "HI_SMF_Entrance_ALL_010_HeavyV2",
+        "HI_SMF_Entrance_ALL_010_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__011",
+      "stages": [
+        "HI_SMF_Entrance_ALL_011",
+        "HI_SMF_Entrance_ALL_011_DamageV2",
+        "HI_SMF_Entrance_ALL_011_HeavyV2",
+        "HI_SMF_Entrance_ALL_011_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__012",
+      "stages": [
+        "HI_SMF_Entrance_ALL_012",
+        "HI_SMF_Entrance_ALL_012_DamageV2",
+        "HI_SMF_Entrance_ALL_012_HeavyV2",
+        "HI_SMF_Entrance_ALL_012_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__013",
+      "stages": [
+        "HI_SMF_Entrance_ALL_013",
+        "HI_SMF_Entrance_ALL_013_DamageV2",
+        "HI_SMF_Entrance_ALL_013_HeavyV2",
+        "HI_SMF_Entrance_ALL_013_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__014",
+      "stages": [
+        "HI_SMF_Entrance_ALL_014",
+        "HI_SMF_Entrance_ALL_014_DamageV2",
+        "HI_SMF_Entrance_ALL_014_HeavyV2",
+        "HI_SMF_Entrance_ALL_014_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__015",
+      "stages": [
+        "HI_SMF_Entrance_ALL_015",
+        "HI_SMF_Entrance_ALL_015_DamageV2",
+        "HI_SMF_Entrance_ALL_015_HeavyV2",
+        "HI_SMF_Entrance_ALL_015_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__016",
+      "stages": [
+        "HI_SMF_Entrance_ALL_016",
+        "HI_SMF_Entrance_ALL_016_DamageV2",
+        "HI_SMF_Entrance_ALL_016_HeavyV2",
+        "HI_SMF_Entrance_ALL_016_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        8,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__017",
+      "stages": [
+        "HI_SMF_Entrance_ALL_017",
+        "HI_SMF_Entrance_ALL_017_DamageV2",
+        "HI_SMF_Entrance_ALL_017_HeavyV2",
+        "HI_SMF_Entrance_ALL_017_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__018",
+      "stages": [
+        "HI_SMF_Entrance_ALL_018",
+        "HI_SMF_Entrance_ALL_018_DamageV2",
+        "HI_SMF_Entrance_ALL_018_HeavyV2",
+        "HI_SMF_Entrance_ALL_018_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__019",
+      "stages": [
+        "HI_SMF_Entrance_ALL_019",
+        "HI_SMF_Entrance_ALL_019_DamageV2",
+        "HI_SMF_Entrance_ALL_019_HeavyV2",
+        "HI_SMF_Entrance_ALL_019_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__020",
+      "stages": [
+        "HI_SMF_Entrance_ALL_020",
+        "HI_SMF_Entrance_ALL_020_DamageV2",
+        "HI_SMF_Entrance_ALL_020_HeavyV2",
+        "HI_SMF_Entrance_ALL_020_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__021",
+      "stages": [
+        "HI_SMF_Entrance_ALL_021",
+        "HI_SMF_Entrance_ALL_021_DamageV2",
+        "HI_SMF_Entrance_ALL_021_HeavyV2",
+        "HI_SMF_Entrance_ALL_021_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__022",
+      "stages": [
+        "HI_SMF_Entrance_ALL_022",
+        "HI_SMF_Entrance_ALL_022_DamageV2",
+        "HI_SMF_Entrance_ALL_022_HeavyV2",
+        "HI_SMF_Entrance_ALL_022_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__023",
+      "stages": [
+        "HI_SMF_Entrance_ALL_023",
+        "HI_SMF_Entrance_ALL_023_DamageV2",
+        "HI_SMF_Entrance_ALL_023_HeavyV2",
+        "HI_SMF_Entrance_ALL_023_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__024",
+      "stages": [
+        "HI_SMF_Entrance_ALL_024",
+        "HI_SMF_Entrance_ALL_024_DamageV2",
+        "HI_SMF_Entrance_ALL_024_HeavyV2",
+        "HI_SMF_Entrance_ALL_024_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__025",
+      "stages": [
+        "HI_SMF_Entrance_ALL_025",
+        "HI_SMF_Entrance_ALL_025_DamageV2",
+        "HI_SMF_Entrance_ALL_025_HeavyV2",
+        "HI_SMF_Entrance_ALL_025_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__026",
+      "stages": [
+        "HI_SMF_Entrance_ALL_026",
+        "HI_SMF_Entrance_ALL_026_DamageV2",
+        "HI_SMF_Entrance_ALL_026_HeavyV2",
+        "HI_SMF_Entrance_ALL_026_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__027",
+      "stages": [
+        "HI_SMF_Entrance_ALL_027",
+        "HI_SMF_Entrance_ALL_027_DamageV2",
+        "HI_SMF_Entrance_ALL_027_HeavyV2",
+        "HI_SMF_Entrance_ALL_027_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__028",
+      "stages": [
+        "HI_SMF_Entrance_ALL_028",
+        "HI_SMF_Entrance_ALL_028_DamageV2",
+        "HI_SMF_Entrance_ALL_028_HeavyV2",
+        "HI_SMF_Entrance_ALL_028_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__029",
+      "stages": [
+        "HI_SMF_Entrance_ALL_029",
+        "HI_SMF_Entrance_ALL_029_DamageV2",
+        "HI_SMF_Entrance_ALL_029_HeavyV2",
+        "HI_SMF_Entrance_ALL_029_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__030",
+      "stages": [
+        "HI_SMF_Entrance_ALL_030",
+        "HI_SMF_Entrance_ALL_030_DamageV2",
+        "HI_SMF_Entrance_ALL_030_HeavyV2",
+        "HI_SMF_Entrance_ALL_030_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__031",
+      "stages": [
+        "HI_SMF_Entrance_ALL_031",
+        "HI_SMF_Entrance_ALL_031_DamageV2",
+        "HI_SMF_Entrance_ALL_031_HeavyV2",
+        "HI_SMF_Entrance_ALL_031_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__032",
+      "stages": [
+        "HI_SMF_Entrance_ALL_032",
+        "HI_SMF_Entrance_ALL_032_DamageV2",
+        "HI_SMF_Entrance_ALL_032_HeavyV2",
+        "HI_SMF_Entrance_ALL_032_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__033",
+      "stages": [
+        "HI_SMF_Entrance_ALL_033",
+        "HI_SMF_Entrance_ALL_033_DamageV2",
+        "HI_SMF_Entrance_ALL_033_HeavyV2",
+        "HI_SMF_Entrance_ALL_033_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__034",
+      "stages": [
+        "HI_SMF_Entrance_ALL_034",
+        "HI_SMF_Entrance_ALL_034_DamageV2",
+        "HI_SMF_Entrance_ALL_034_HeavyV2",
+        "HI_SMF_Entrance_ALL_034_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__035",
+      "stages": [
+        "HI_SMF_Entrance_ALL_035",
+        "HI_SMF_Entrance_ALL_035_DamageV2",
+        "HI_SMF_Entrance_ALL_035_HeavyV2",
+        "HI_SMF_Entrance_ALL_035_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__036",
+      "stages": [
+        "HI_SMF_Entrance_ALL_036",
+        "HI_SMF_Entrance_ALL_036_DamageV2",
+        "HI_SMF_Entrance_ALL_036_HeavyV2",
+        "HI_SMF_Entrance_ALL_036_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__037",
+      "stages": [
+        "HI_SMF_Entrance_ALL_037",
+        "HI_SMF_Entrance_ALL_037_DamageV2",
+        "HI_SMF_Entrance_ALL_037_HeavyV2",
+        "HI_SMF_Entrance_ALL_037_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__038",
+      "stages": [
+        "HI_SMF_Entrance_ALL_038",
+        "HI_SMF_Entrance_ALL_038_DamageV2",
+        "HI_SMF_Entrance_ALL_038_HeavyV2",
+        "HI_SMF_Entrance_ALL_038_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        6,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__039",
+      "stages": [
+        "HI_SMF_Entrance_ALL_039",
+        "HI_SMF_Entrance_ALL_039_DamageV2",
+        "HI_SMF_Entrance_ALL_039_HeavyV2",
+        "HI_SMF_Entrance_ALL_039_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__040",
+      "stages": [
+        "HI_SMF_Entrance_ALL_040",
+        "HI_SMF_Entrance_ALL_040_DamageV2",
+        "HI_SMF_Entrance_ALL_040_HeavyV2",
+        "HI_SMF_Entrance_ALL_040_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__041",
+      "stages": [
+        "HI_SMF_Entrance_ALL_041",
+        "HI_SMF_Entrance_ALL_041_DamageV2",
+        "HI_SMF_Entrance_ALL_041_HeavyV2",
+        "HI_SMF_Entrance_ALL_041_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__042",
+      "stages": [
+        "HI_SMF_Entrance_ALL_042",
+        "HI_SMF_Entrance_ALL_042_DamageV2",
+        "HI_SMF_Entrance_ALL_042_HeavyV2",
+        "HI_SMF_Entrance_ALL_042_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__043",
+      "stages": [
+        "HI_SMF_Entrance_ALL_043",
+        "HI_SMF_Entrance_ALL_043_DamageV2",
+        "HI_SMF_Entrance_ALL_043_HeavyV2",
+        "HI_SMF_Entrance_ALL_043_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__044",
+      "stages": [
+        "HI_SMF_Entrance_ALL_044",
+        "HI_SMF_Entrance_ALL_044_DamageV2",
+        "HI_SMF_Entrance_ALL_044_HeavyV2",
+        "HI_SMF_Entrance_ALL_044_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__045",
+      "stages": [
+        "HI_SMF_Entrance_ALL_045",
+        "HI_SMF_Entrance_ALL_045_DamageV2",
+        "HI_SMF_Entrance_ALL_045_HeavyV2",
+        "HI_SMF_Entrance_ALL_045_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        12,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__046",
+      "stages": [
+        "HI_SMF_Entrance_ALL_046",
+        "HI_SMF_Entrance_ALL_046_DamageV2",
+        "HI_SMF_Entrance_ALL_046_HeavyV2",
+        "HI_SMF_Entrance_ALL_046_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__047",
+      "stages": [
+        "HI_SMF_Entrance_ALL_047",
+        "HI_SMF_Entrance_ALL_047_DamageV2",
+        "HI_SMF_Entrance_ALL_047_HeavyV2",
+        "HI_SMF_Entrance_ALL_047_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__048",
+      "stages": [
+        "HI_SMF_Entrance_ALL_048",
+        "HI_SMF_Entrance_ALL_048_DamageV2",
+        "HI_SMF_Entrance_ALL_048_HeavyV2",
+        "HI_SMF_Entrance_ALL_048_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__049",
+      "stages": [
+        "HI_SMF_Entrance_ALL_049",
+        "HI_SMF_Entrance_ALL_049_DamageV2",
+        "HI_SMF_Entrance_ALL_049_HeavyV2",
+        "HI_SMF_Entrance_ALL_049_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        10,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__050",
+      "stages": [
+        "HI_SMF_Entrance_ALL_050",
+        "HI_SMF_Entrance_ALL_050_DamageV2",
+        "HI_SMF_Entrance_ALL_050_HeavyV2",
+        "HI_SMF_Entrance_ALL_050_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__051",
+      "stages": [
+        "HI_SMF_Entrance_ALL_051",
+        "HI_SMF_Entrance_ALL_051_DamageV2",
+        "HI_SMF_Entrance_ALL_051_HeavyV2",
+        "HI_SMF_Entrance_ALL_051_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        1,
+        1,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__052",
+      "stages": [
+        "HI_SMF_Entrance_ALL_052",
+        "HI_SMF_Entrance_ALL_052_DamageV2",
+        "HI_SMF_Entrance_ALL_052_HeavyV2",
+        "HI_SMF_Entrance_ALL_052_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        2,
+        2,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__053",
+      "stages": [
+        "HI_SMF_Entrance_ALL_053",
+        "HI_SMF_Entrance_ALL_053_DamageV2",
+        "HI_SMF_Entrance_ALL_053_HeavyV2",
+        "HI_SMF_Entrance_ALL_053_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__054",
+      "stages": [
+        "HI_SMF_Entrance_ALL_054",
+        "HI_SMF_Entrance_ALL_054_DamageV2",
+        "HI_SMF_Entrance_ALL_054_HeavyV2",
+        "HI_SMF_Entrance_ALL_054_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__055",
+      "stages": [
+        "HI_SMF_Entrance_ALL_055",
+        "HI_SMF_Entrance_ALL_055_DamageV2",
+        "HI_SMF_Entrance_ALL_055_HeavyV2",
+        "HI_SMF_Entrance_ALL_055_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__056",
+      "stages": [
+        "HI_SMF_Entrance_ALL_056",
+        "HI_SMF_Entrance_ALL_056_DamageV2",
+        "HI_SMF_Entrance_ALL_056_HeavyV2",
+        "HI_SMF_Entrance_ALL_056_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__057",
+      "stages": [
+        "HI_SMF_Entrance_ALL_057",
+        "HI_SMF_Entrance_ALL_057_DamageV2",
+        "HI_SMF_Entrance_ALL_057_HeavyV2",
+        "HI_SMF_Entrance_ALL_057_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__058",
+      "stages": [
+        "HI_SMF_Entrance_ALL_058",
+        "HI_SMF_Entrance_ALL_058_DamageV2",
+        "HI_SMF_Entrance_ALL_058_HeavyV2",
+        "HI_SMF_Entrance_ALL_058_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__059",
+      "stages": [
+        "HI_SMF_Entrance_ALL_059",
+        "HI_SMF_Entrance_ALL_059_DamageV2",
+        "HI_SMF_Entrance_ALL_059_HeavyV2",
+        "HI_SMF_Entrance_ALL_059_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__060",
+      "stages": [
+        "HI_SMF_Entrance_ALL_060",
+        "HI_SMF_Entrance_ALL_060_DamageV2",
+        "HI_SMF_Entrance_ALL_060_HeavyV2",
+        "HI_SMF_Entrance_ALL_060_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__061",
+      "stages": [
+        "HI_SMF_Entrance_ALL_061",
+        "HI_SMF_Entrance_ALL_061_DamageV2",
+        "HI_SMF_Entrance_ALL_061_HeavyV2",
+        "HI_SMF_Entrance_ALL_061_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__062",
+      "stages": [
+        "HI_SMF_Entrance_ALL_062",
+        "HI_SMF_Entrance_ALL_062_DamageV2",
+        "HI_SMF_Entrance_ALL_062_HeavyV2",
+        "HI_SMF_Entrance_ALL_062_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__063",
+      "stages": [
+        "HI_SMF_Entrance_ALL_063",
+        "HI_SMF_Entrance_ALL_063_DamageV2",
+        "HI_SMF_Entrance_ALL_063_HeavyV2",
+        "HI_SMF_Entrance_ALL_063_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__064",
+      "stages": [
+        "HI_SMF_Entrance_ALL_064",
+        "HI_SMF_Entrance_ALL_064_DamageV2",
+        "HI_SMF_Entrance_ALL_064_HeavyV2",
+        "HI_SMF_Entrance_ALL_064_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__065",
+      "stages": [
+        "HI_SMF_Entrance_ALL_065",
+        "HI_SMF_Entrance_ALL_065_DamageV2",
+        "HI_SMF_Entrance_ALL_065_HeavyV2",
+        "HI_SMF_Entrance_ALL_065_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__066",
+      "stages": [
+        "HI_SMF_Entrance_ALL_066",
+        "HI_SMF_Entrance_ALL_066_DamageV2",
+        "HI_SMF_Entrance_ALL_066_HeavyV2",
+        "HI_SMF_Entrance_ALL_066_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__067",
+      "stages": [
+        "HI_SMF_Entrance_ALL_067",
+        "HI_SMF_Entrance_ALL_067_DamageV2",
+        "HI_SMF_Entrance_ALL_067_HeavyV2",
+        "HI_SMF_Entrance_ALL_067_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__068",
+      "stages": [
+        "HI_SMF_Entrance_ALL_068",
+        "HI_SMF_Entrance_ALL_068_DamageV2",
+        "HI_SMF_Entrance_ALL_068_HeavyV2",
+        "HI_SMF_Entrance_ALL_068_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__069",
+      "stages": [
+        "HI_SMF_Entrance_ALL_069",
+        "HI_SMF_Entrance_ALL_069_DamageV2",
+        "HI_SMF_Entrance_ALL_069_HeavyV2",
+        "HI_SMF_Entrance_ALL_069_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__070",
+      "stages": [
+        "HI_SMF_Entrance_ALL_070",
+        "HI_SMF_Entrance_ALL_070_DamageV2",
+        "HI_SMF_Entrance_ALL_070_HeavyV2",
+        "HI_SMF_Entrance_ALL_070_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__071",
+      "stages": [
+        "HI_SMF_Entrance_ALL_071",
+        "HI_SMF_Entrance_ALL_071_DamageV2",
+        "HI_SMF_Entrance_ALL_071_HeavyV2",
+        "HI_SMF_Entrance_ALL_071_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__072",
+      "stages": [
+        "HI_SMF_Entrance_ALL_072",
+        "HI_SMF_Entrance_ALL_072_DamageV2",
+        "HI_SMF_Entrance_ALL_072_HeavyV2",
+        "HI_SMF_Entrance_ALL_072_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__073",
+      "stages": [
+        "HI_SMF_Entrance_ALL_073",
+        "HI_SMF_Entrance_ALL_073_DamageV2",
+        "HI_SMF_Entrance_ALL_073_HeavyV2",
+        "HI_SMF_Entrance_ALL_073_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__074",
+      "stages": [
+        "HI_SMF_Entrance_ALL_074",
+        "HI_SMF_Entrance_ALL_074_DamageV2",
+        "HI_SMF_Entrance_ALL_074_HeavyV2",
+        "HI_SMF_Entrance_ALL_074_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__075",
+      "stages": [
+        "HI_SMF_Entrance_ALL_075",
+        "HI_SMF_Entrance_ALL_075_DamageV2",
+        "HI_SMF_Entrance_ALL_075_HeavyV2",
+        "HI_SMF_Entrance_ALL_075_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__076",
+      "stages": [
+        "HI_SMF_Entrance_ALL_076",
+        "HI_SMF_Entrance_ALL_076_DamageV2",
+        "HI_SMF_Entrance_ALL_076_HeavyV2",
+        "HI_SMF_Entrance_ALL_076_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__082",
+      "stages": [
+        "HI_SMF_Entrance_ALL_082",
+        "HI_SMF_Entrance_ALL_082_DamageV2",
+        "HI_SMF_Entrance_ALL_082_HeavyV2",
+        "HI_SMF_Entrance_ALL_082_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__083",
+      "stages": [
+        "HI_SMF_Entrance_ALL_083",
+        "HI_SMF_Entrance_ALL_083_DamageV2",
+        "HI_SMF_Entrance_ALL_083_HeavyV2",
+        "HI_SMF_Entrance_ALL_083_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__084",
+      "stages": [
+        "HI_SMF_Entrance_ALL_084",
+        "HI_SMF_Entrance_ALL_084_DamageV2",
+        "HI_SMF_Entrance_ALL_084_HeavyV2",
+        "HI_SMF_Entrance_ALL_084_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__085",
+      "stages": [
+        "HI_SMF_Entrance_ALL_085",
+        "HI_SMF_Entrance_ALL_085_DamageV2",
+        "HI_SMF_Entrance_ALL_085_HeavyV2",
+        "HI_SMF_Entrance_ALL_085_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__086",
+      "stages": [
+        "HI_SMF_Entrance_ALL_086",
+        "HI_SMF_Entrance_ALL_086_DamageV2",
+        "HI_SMF_Entrance_ALL_086_HeavyV2",
+        "HI_SMF_Entrance_ALL_086_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__087",
+      "stages": [
+        "HI_SMF_Entrance_ALL_087",
+        "HI_SMF_Entrance_ALL_087_DamageV2",
+        "HI_SMF_Entrance_ALL_087_HeavyV2",
+        "HI_SMF_Entrance_ALL_087_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__088",
+      "stages": [
+        "HI_SMF_Entrance_ALL_088",
+        "HI_SMF_Entrance_ALL_088_DamageV2",
+        "HI_SMF_Entrance_ALL_088_HeavyV2",
+        "HI_SMF_Entrance_ALL_088_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__089",
+      "stages": [
+        "HI_SMF_Entrance_ALL_089",
+        "HI_SMF_Entrance_ALL_089_DamageV2",
+        "HI_SMF_Entrance_ALL_089_HeavyV2",
+        "HI_SMF_Entrance_ALL_089_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__090",
+      "stages": [
+        "HI_SMF_Entrance_ALL_090",
+        "HI_SMF_Entrance_ALL_090_DamageV2",
+        "HI_SMF_Entrance_ALL_090_HeavyV2",
+        "HI_SMF_Entrance_ALL_090_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__091",
+      "stages": [
+        "HI_SMF_Entrance_ALL_091",
+        "HI_SMF_Entrance_ALL_091_DamageV2",
+        "HI_SMF_Entrance_ALL_091_HeavyV2",
+        "HI_SMF_Entrance_ALL_091_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__092",
+      "stages": [
+        "HI_SMF_Entrance_ALL_092",
+        "HI_SMF_Entrance_ALL_092_DamageV2",
+        "HI_SMF_Entrance_ALL_092_HeavyV2",
+        "HI_SMF_Entrance_ALL_092_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        2,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__093",
+      "stages": [
+        "HI_SMF_Entrance_ALL_093",
+        "HI_SMF_Entrance_ALL_093_DamageV2",
+        "HI_SMF_Entrance_ALL_093_HeavyV2",
+        "HI_SMF_Entrance_ALL_093_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__094",
+      "stages": [
+        "HI_SMF_Entrance_ALL_094",
+        "HI_SMF_Entrance_ALL_094_DamageV2",
+        "HI_SMF_Entrance_ALL_094_HeavyV2",
+        "HI_SMF_Entrance_ALL_094_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__095",
+      "stages": [
+        "HI_SMF_Entrance_ALL_095",
+        "HI_SMF_Entrance_ALL_095_DamageV2",
+        "HI_SMF_Entrance_ALL_095_HeavyV2",
+        "HI_SMF_Entrance_ALL_095_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__096",
+      "stages": [
+        "HI_SMF_Entrance_ALL_096",
+        "HI_SMF_Entrance_ALL_096_DamageV2",
+        "HI_SMF_Entrance_ALL_096_HeavyV2",
+        "HI_SMF_Entrance_ALL_096_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__097",
+      "stages": [
+        "HI_SMF_Entrance_ALL_097",
+        "HI_SMF_Entrance_ALL_097_DamageV2",
+        "HI_SMF_Entrance_ALL_097_HeavyV2",
+        "HI_SMF_Entrance_ALL_097_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__098",
+      "stages": [
+        "HI_SMF_Entrance_ALL_098",
+        "HI_SMF_Entrance_ALL_098_DamageV2",
+        "HI_SMF_Entrance_ALL_098_HeavyV2",
+        "HI_SMF_Entrance_ALL_098_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__099",
+      "stages": [
+        "HI_SMF_Entrance_ALL_099",
+        "HI_SMF_Entrance_ALL_099_DamageV2",
+        "HI_SMF_Entrance_ALL_099_HeavyV2",
+        "HI_SMF_Entrance_ALL_099_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__100",
+      "stages": [
+        "HI_SMF_Entrance_ALL_100",
+        "HI_SMF_Entrance_ALL_100_DamageV2",
+        "HI_SMF_Entrance_ALL_100_HeavyV2",
+        "HI_SMF_Entrance_ALL_100_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__101",
+      "stages": [
+        "HI_SMF_Entrance_ALL_101",
+        "HI_SMF_Entrance_ALL_101_DamageV2",
+        "HI_SMF_Entrance_ALL_101_HeavyV2",
+        "HI_SMF_Entrance_ALL_101_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__102",
+      "stages": [
+        "HI_SMF_Entrance_ALL_102",
+        "HI_SMF_Entrance_ALL_102_DamageV2",
+        "HI_SMF_Entrance_ALL_102_HeavyV2",
+        "HI_SMF_Entrance_ALL_102_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__104",
+      "stages": [
+        "HI_SMF_Entrance_ALL_104",
+        "HI_SMF_Entrance_ALL_104_DamageV2",
+        "HI_SMF_Entrance_ALL_104_HeavyV2",
+        "HI_SMF_Entrance_ALL_104_BrokenV2"
+      ],
+      "hulls": [
+        3,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__105",
+      "stages": [
+        "HI_SMF_Entrance_ALL_105",
+        "HI_SMF_Entrance_ALL_105_DamageV2",
+        "HI_SMF_Entrance_ALL_105_HeavyV2",
+        "HI_SMF_Entrance_ALL_105_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__106",
+      "stages": [
+        "HI_SMF_Entrance_ALL_106",
+        "HI_SMF_Entrance_ALL_106_DamageV2",
+        "HI_SMF_Entrance_ALL_106_HeavyV2",
+        "HI_SMF_Entrance_ALL_106_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__107",
+      "stages": [
+        "HI_SMF_Entrance_ALL_107",
+        "HI_SMF_Entrance_ALL_107_DamageV2",
+        "HI_SMF_Entrance_ALL_107_HeavyV2",
+        "HI_SMF_Entrance_ALL_107_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__108",
+      "stages": [
+        "HI_SMF_Entrance_ALL_108",
+        "HI_SMF_Entrance_ALL_108_DamageV2",
+        "HI_SMF_Entrance_ALL_108_HeavyV2",
+        "HI_SMF_Entrance_ALL_108_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__109",
+      "stages": [
+        "HI_SMF_Entrance_ALL_109",
+        "HI_SMF_Entrance_ALL_109_DamageV2",
+        "HI_SMF_Entrance_ALL_109_HeavyV2",
+        "HI_SMF_Entrance_ALL_109_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__110",
+      "stages": [
+        "HI_SMF_Entrance_ALL_110",
+        "HI_SMF_Entrance_ALL_110_DamageV2",
+        "HI_SMF_Entrance_ALL_110_HeavyV2",
+        "HI_SMF_Entrance_ALL_110_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__114",
+      "stages": [
+        "HI_SMF_Entrance_ALL_114",
+        "HI_SMF_Entrance_ALL_114_DamageV2",
+        "HI_SMF_Entrance_ALL_114_HeavyV2",
+        "HI_SMF_Entrance_ALL_114_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__115",
+      "stages": [
+        "HI_SMF_Entrance_ALL_115",
+        "HI_SMF_Entrance_ALL_115_DamageV2",
+        "HI_SMF_Entrance_ALL_115_HeavyV2",
+        "HI_SMF_Entrance_ALL_115_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__116",
+      "stages": [
+        "HI_SMF_Entrance_ALL_116",
+        "HI_SMF_Entrance_ALL_116_DamageV2",
+        "HI_SMF_Entrance_ALL_116_HeavyV2",
+        "HI_SMF_Entrance_ALL_116_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__117",
+      "stages": [
+        "HI_SMF_Entrance_ALL_117",
+        "HI_SMF_Entrance_ALL_117_DamageV2",
+        "HI_SMF_Entrance_ALL_117_HeavyV2",
+        "HI_SMF_Entrance_ALL_117_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__118",
+      "stages": [
+        "HI_SMF_Entrance_ALL_118",
+        "HI_SMF_Entrance_ALL_118_DamageV2",
+        "HI_SMF_Entrance_ALL_118_HeavyV2",
+        "HI_SMF_Entrance_ALL_118_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__119",
+      "stages": [
+        "HI_SMF_Entrance_ALL_119",
+        "HI_SMF_Entrance_ALL_119_DamageV2",
+        "HI_SMF_Entrance_ALL_119_HeavyV2",
+        "HI_SMF_Entrance_ALL_119_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__120",
+      "stages": [
+        "HI_SMF_Entrance_ALL_120",
+        "HI_SMF_Entrance_ALL_120_DamageV2",
+        "HI_SMF_Entrance_ALL_120_HeavyV2",
+        "HI_SMF_Entrance_ALL_120_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__121",
+      "stages": [
+        "HI_SMF_Entrance_ALL_121",
+        "HI_SMF_Entrance_ALL_121_DamageV2",
+        "HI_SMF_Entrance_ALL_121_HeavyV2",
+        "HI_SMF_Entrance_ALL_121_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__122",
+      "stages": [
+        "HI_SMF_Entrance_ALL_122",
+        "HI_SMF_Entrance_ALL_122_DamageV2",
+        "HI_SMF_Entrance_ALL_122_HeavyV2",
+        "HI_SMF_Entrance_ALL_122_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        11,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__123",
+      "stages": [
+        "HI_SMF_Entrance_ALL_123",
+        "HI_SMF_Entrance_ALL_123_DamageV2",
+        "HI_SMF_Entrance_ALL_123_HeavyV2",
+        "HI_SMF_Entrance_ALL_123_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__124",
+      "stages": [
+        "HI_SMF_Entrance_ALL_124",
+        "HI_SMF_Entrance_ALL_124_DamageV2",
+        "HI_SMF_Entrance_ALL_124_HeavyV2",
+        "HI_SMF_Entrance_ALL_124_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__125",
+      "stages": [
+        "HI_SMF_Entrance_ALL_125",
+        "HI_SMF_Entrance_ALL_125_DamageV2",
+        "HI_SMF_Entrance_ALL_125_HeavyV2",
+        "HI_SMF_Entrance_ALL_125_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__126",
+      "stages": [
+        "HI_SMF_Entrance_ALL_126",
+        "HI_SMF_Entrance_ALL_126_DamageV2",
+        "HI_SMF_Entrance_ALL_126_HeavyV2",
+        "HI_SMF_Entrance_ALL_126_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        3,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__127",
+      "stages": [
+        "HI_SMF_Entrance_ALL_127",
+        "HI_SMF_Entrance_ALL_127_DamageV2",
+        "HI_SMF_Entrance_ALL_127_HeavyV2",
+        "HI_SMF_Entrance_ALL_127_BrokenV2"
+      ],
+      "hulls": [
+        4,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__128",
+      "stages": [
+        "HI_SMF_Entrance_ALL_128",
+        "HI_SMF_Entrance_ALL_128_DamageV2",
+        "HI_SMF_Entrance_ALL_128_HeavyV2",
+        "HI_SMF_Entrance_ALL_128_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__129",
+      "stages": [
+        "HI_SMF_Entrance_ALL_129",
+        "HI_SMF_Entrance_ALL_129_DamageV2",
+        "HI_SMF_Entrance_ALL_129_HeavyV2",
+        "HI_SMF_Entrance_ALL_129_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__130",
+      "stages": [
+        "HI_SMF_Entrance_ALL_130",
+        "HI_SMF_Entrance_ALL_130_DamageV2",
+        "HI_SMF_Entrance_ALL_130_HeavyV2",
+        "HI_SMF_Entrance_ALL_130_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__131",
+      "stages": [
+        "HI_SMF_Entrance_ALL_131",
+        "HI_SMF_Entrance_ALL_131_DamageV2",
+        "HI_SMF_Entrance_ALL_131_HeavyV2",
+        "HI_SMF_Entrance_ALL_131_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        9,
+        9,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__132",
+      "stages": [
+        "HI_SMF_Entrance_ALL_132",
+        "HI_SMF_Entrance_ALL_132_DamageV2",
+        "HI_SMF_Entrance_ALL_132_HeavyV2",
+        "HI_SMF_Entrance_ALL_132_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        3,
+        3,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__133",
+      "stages": [
+        "HI_SMF_Entrance_ALL_133",
+        "HI_SMF_Entrance_ALL_133_DamageV2",
+        "HI_SMF_Entrance_ALL_133_HeavyV2",
+        "HI_SMF_Entrance_ALL_133_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__134",
+      "stages": [
+        "HI_SMF_Entrance_ALL_134",
+        "HI_SMF_Entrance_ALL_134_DamageV2",
+        "HI_SMF_Entrance_ALL_134_HeavyV2",
+        "HI_SMF_Entrance_ALL_134_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__135",
+      "stages": [
+        "HI_SMF_Entrance_ALL_135",
+        "HI_SMF_Entrance_ALL_135_DamageV2",
+        "HI_SMF_Entrance_ALL_135_HeavyV2",
+        "HI_SMF_Entrance_ALL_135_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__136",
+      "stages": [
+        "HI_SMF_Entrance_ALL_136",
+        "HI_SMF_Entrance_ALL_136_DamageV2",
+        "HI_SMF_Entrance_ALL_136_HeavyV2",
+        "HI_SMF_Entrance_ALL_136_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__137",
+      "stages": [
+        "HI_SMF_Entrance_ALL_137",
+        "HI_SMF_Entrance_ALL_137_DamageV2",
+        "HI_SMF_Entrance_ALL_137_HeavyV2",
+        "HI_SMF_Entrance_ALL_137_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__138",
+      "stages": [
+        "HI_SMF_Entrance_ALL_138",
+        "HI_SMF_Entrance_ALL_138_DamageV2",
+        "HI_SMF_Entrance_ALL_138_HeavyV2",
+        "HI_SMF_Entrance_ALL_138_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__139",
+      "stages": [
+        "HI_SMF_Entrance_ALL_139",
+        "HI_SMF_Entrance_ALL_139_DamageV2",
+        "HI_SMF_Entrance_ALL_139_HeavyV2",
+        "HI_SMF_Entrance_ALL_139_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__140",
+      "stages": [
+        "HI_SMF_Entrance_ALL_140",
+        "HI_SMF_Entrance_ALL_140_DamageV2",
+        "HI_SMF_Entrance_ALL_140_HeavyV2",
+        "HI_SMF_Entrance_ALL_140_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__141",
+      "stages": [
+        "HI_SMF_Entrance_ALL_141",
+        "HI_SMF_Entrance_ALL_141_DamageV2",
+        "HI_SMF_Entrance_ALL_141_HeavyV2",
+        "HI_SMF_Entrance_ALL_141_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__142",
+      "stages": [
+        "HI_SMF_Entrance_ALL_142",
+        "HI_SMF_Entrance_ALL_142_DamageV2",
+        "HI_SMF_Entrance_ALL_142_HeavyV2",
+        "HI_SMF_Entrance_ALL_142_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__151",
+      "stages": [
+        "HI_SMF_Entrance_ALL_151",
+        "HI_SMF_Entrance_ALL_151_DamageV2",
+        "HI_SMF_Entrance_ALL_151_HeavyV2",
+        "HI_SMF_Entrance_ALL_151_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__152",
+      "stages": [
+        "HI_SMF_Entrance_ALL_152",
+        "HI_SMF_Entrance_ALL_152_DamageV2",
+        "HI_SMF_Entrance_ALL_152_HeavyV2",
+        "HI_SMF_Entrance_ALL_152_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__153",
+      "stages": [
+        "HI_SMF_Entrance_ALL_153",
+        "HI_SMF_Entrance_ALL_153_DamageV2",
+        "HI_SMF_Entrance_ALL_153_HeavyV2",
+        "HI_SMF_Entrance_ALL_153_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__154",
+      "stages": [
+        "HI_SMF_Entrance_ALL_154",
+        "HI_SMF_Entrance_ALL_154_DamageV2",
+        "HI_SMF_Entrance_ALL_154_HeavyV2",
+        "HI_SMF_Entrance_ALL_154_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__155",
+      "stages": [
+        "HI_SMF_Entrance_ALL_155",
+        "HI_SMF_Entrance_ALL_155_DamageV2",
+        "HI_SMF_Entrance_ALL_155_HeavyV2",
+        "HI_SMF_Entrance_ALL_155_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__156",
+      "stages": [
+        "HI_SMF_Entrance_ALL_156",
+        "HI_SMF_Entrance_ALL_156_DamageV2",
+        "HI_SMF_Entrance_ALL_156_HeavyV2",
+        "HI_SMF_Entrance_ALL_156_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__157",
+      "stages": [
+        "HI_SMF_Entrance_ALL_157",
+        "HI_SMF_Entrance_ALL_157_DamageV2",
+        "HI_SMF_Entrance_ALL_157_HeavyV2",
+        "HI_SMF_Entrance_ALL_157_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__158",
+      "stages": [
+        "HI_SMF_Entrance_ALL_158",
+        "HI_SMF_Entrance_ALL_158_DamageV2",
+        "HI_SMF_Entrance_ALL_158_HeavyV2",
+        "HI_SMF_Entrance_ALL_158_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__159",
+      "stages": [
+        "HI_SMF_Entrance_ALL_159",
+        "HI_SMF_Entrance_ALL_159_DamageV2",
+        "HI_SMF_Entrance_ALL_159_HeavyV2",
+        "HI_SMF_Entrance_ALL_159_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Entrance_ALL__160",
+      "stages": [
+        "HI_SMF_Entrance_ALL_160",
+        "HI_SMF_Entrance_ALL_160_DamageV2",
+        "HI_SMF_Entrance_ALL_160_HeavyV2",
+        "HI_SMF_Entrance_ALL_160_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__007",
+      "stages": [
+        "HI_SMF_Upper_ALL_007",
+        "HI_SMF_Upper_ALL_007_DamageV2",
+        "HI_SMF_Upper_ALL_007_HeavyV2",
+        "HI_SMF_Upper_ALL_007_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__008",
+      "stages": [
+        "HI_SMF_Upper_ALL_008",
+        "HI_SMF_Upper_ALL_008_DamageV2",
+        "HI_SMF_Upper_ALL_008_HeavyV2",
+        "HI_SMF_Upper_ALL_008_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__009",
+      "stages": [
+        "HI_SMF_Upper_ALL_009",
+        "HI_SMF_Upper_ALL_009_DamageV2",
+        "HI_SMF_Upper_ALL_009_HeavyV2",
+        "HI_SMF_Upper_ALL_009_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__010",
+      "stages": [
+        "HI_SMF_Upper_ALL_010",
+        "HI_SMF_Upper_ALL_010_DamageV2",
+        "HI_SMF_Upper_ALL_010_HeavyV2",
+        "HI_SMF_Upper_ALL_010_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__011",
+      "stages": [
+        "HI_SMF_Upper_ALL_011",
+        "HI_SMF_Upper_ALL_011_DamageV2",
+        "HI_SMF_Upper_ALL_011_HeavyV2",
+        "HI_SMF_Upper_ALL_011_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__012",
+      "stages": [
+        "HI_SMF_Upper_ALL_012",
+        "HI_SMF_Upper_ALL_012_DamageV2",
+        "HI_SMF_Upper_ALL_012_HeavyV2",
+        "HI_SMF_Upper_ALL_012_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__013",
+      "stages": [
+        "HI_SMF_Upper_ALL_013",
+        "HI_SMF_Upper_ALL_013_DamageV2",
+        "HI_SMF_Upper_ALL_013_HeavyV2",
+        "HI_SMF_Upper_ALL_013_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__014",
+      "stages": [
+        "HI_SMF_Upper_ALL_014",
+        "HI_SMF_Upper_ALL_014_DamageV2",
+        "HI_SMF_Upper_ALL_014_HeavyV2",
+        "HI_SMF_Upper_ALL_014_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__015",
+      "stages": [
+        "HI_SMF_Upper_ALL_015",
+        "HI_SMF_Upper_ALL_015_DamageV2",
+        "HI_SMF_Upper_ALL_015_HeavyV2",
+        "HI_SMF_Upper_ALL_015_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__016",
+      "stages": [
+        "HI_SMF_Upper_ALL_016",
+        "HI_SMF_Upper_ALL_016_DamageV2",
+        "HI_SMF_Upper_ALL_016_HeavyV2",
+        "HI_SMF_Upper_ALL_016_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__017",
+      "stages": [
+        "HI_SMF_Upper_ALL_017",
+        "HI_SMF_Upper_ALL_017_DamageV2",
+        "HI_SMF_Upper_ALL_017_HeavyV2",
+        "HI_SMF_Upper_ALL_017_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__018",
+      "stages": [
+        "HI_SMF_Upper_ALL_018",
+        "HI_SMF_Upper_ALL_018_DamageV2",
+        "HI_SMF_Upper_ALL_018_HeavyV2",
+        "HI_SMF_Upper_ALL_018_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__019",
+      "stages": [
+        "HI_SMF_Upper_ALL_019",
+        "HI_SMF_Upper_ALL_019_DamageV2",
+        "HI_SMF_Upper_ALL_019_HeavyV2",
+        "HI_SMF_Upper_ALL_019_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        6,
+        6,
+        11
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__020",
+      "stages": [
+        "HI_SMF_Upper_ALL_020",
+        "HI_SMF_Upper_ALL_020_DamageV2",
+        "HI_SMF_Upper_ALL_020_HeavyV2",
+        "HI_SMF_Upper_ALL_020_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__021",
+      "stages": [
+        "HI_SMF_Upper_ALL_021",
+        "HI_SMF_Upper_ALL_021_DamageV2",
+        "HI_SMF_Upper_ALL_021_HeavyV2",
+        "HI_SMF_Upper_ALL_021_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__022",
+      "stages": [
+        "HI_SMF_Upper_ALL_022",
+        "HI_SMF_Upper_ALL_022_DamageV2",
+        "HI_SMF_Upper_ALL_022_HeavyV2",
+        "HI_SMF_Upper_ALL_022_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__023",
+      "stages": [
+        "HI_SMF_Upper_ALL_023",
+        "HI_SMF_Upper_ALL_023_DamageV2",
+        "HI_SMF_Upper_ALL_023_HeavyV2",
+        "HI_SMF_Upper_ALL_023_BrokenV2"
+      ],
+      "hulls": [
+        5,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__024",
+      "stages": [
+        "HI_SMF_Upper_ALL_024",
+        "HI_SMF_Upper_ALL_024_DamageV2",
+        "HI_SMF_Upper_ALL_024_HeavyV2",
+        "HI_SMF_Upper_ALL_024_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__025",
+      "stages": [
+        "HI_SMF_Upper_ALL_025",
+        "HI_SMF_Upper_ALL_025_DamageV2",
+        "HI_SMF_Upper_ALL_025_HeavyV2",
+        "HI_SMF_Upper_ALL_025_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__026",
+      "stages": [
+        "HI_SMF_Upper_ALL_026",
+        "HI_SMF_Upper_ALL_026_DamageV2",
+        "HI_SMF_Upper_ALL_026_HeavyV2",
+        "HI_SMF_Upper_ALL_026_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__027",
+      "stages": [
+        "HI_SMF_Upper_ALL_027",
+        "HI_SMF_Upper_ALL_027_DamageV2",
+        "HI_SMF_Upper_ALL_027_HeavyV2",
+        "HI_SMF_Upper_ALL_027_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__028",
+      "stages": [
+        "HI_SMF_Upper_ALL_028",
+        "HI_SMF_Upper_ALL_028_DamageV2",
+        "HI_SMF_Upper_ALL_028_HeavyV2",
+        "HI_SMF_Upper_ALL_028_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__029",
+      "stages": [
+        "HI_SMF_Upper_ALL_029",
+        "HI_SMF_Upper_ALL_029_DamageV2",
+        "HI_SMF_Upper_ALL_029_HeavyV2",
+        "HI_SMF_Upper_ALL_029_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__030",
+      "stages": [
+        "HI_SMF_Upper_ALL_030",
+        "HI_SMF_Upper_ALL_030_DamageV2",
+        "HI_SMF_Upper_ALL_030_HeavyV2",
+        "HI_SMF_Upper_ALL_030_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__031",
+      "stages": [
+        "HI_SMF_Upper_ALL_031",
+        "HI_SMF_Upper_ALL_031_DamageV2",
+        "HI_SMF_Upper_ALL_031_HeavyV2",
+        "HI_SMF_Upper_ALL_031_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        10,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__032",
+      "stages": [
+        "HI_SMF_Upper_ALL_032",
+        "HI_SMF_Upper_ALL_032_DamageV2",
+        "HI_SMF_Upper_ALL_032_HeavyV2",
+        "HI_SMF_Upper_ALL_032_BrokenV2"
+      ],
+      "hulls": [
+        6,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__033",
+      "stages": [
+        "HI_SMF_Upper_ALL_033",
+        "HI_SMF_Upper_ALL_033_DamageV2",
+        "HI_SMF_Upper_ALL_033_HeavyV2",
+        "HI_SMF_Upper_ALL_033_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__034",
+      "stages": [
+        "HI_SMF_Upper_ALL_034",
+        "HI_SMF_Upper_ALL_034_DamageV2",
+        "HI_SMF_Upper_ALL_034_HeavyV2",
+        "HI_SMF_Upper_ALL_034_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__035",
+      "stages": [
+        "HI_SMF_Upper_ALL_035",
+        "HI_SMF_Upper_ALL_035_DamageV2",
+        "HI_SMF_Upper_ALL_035_HeavyV2",
+        "HI_SMF_Upper_ALL_035_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__036",
+      "stages": [
+        "HI_SMF_Upper_ALL_036",
+        "HI_SMF_Upper_ALL_036_DamageV2",
+        "HI_SMF_Upper_ALL_036_HeavyV2",
+        "HI_SMF_Upper_ALL_036_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__037",
+      "stages": [
+        "HI_SMF_Upper_ALL_037",
+        "HI_SMF_Upper_ALL_037_DamageV2",
+        "HI_SMF_Upper_ALL_037_HeavyV2",
+        "HI_SMF_Upper_ALL_037_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__038",
+      "stages": [
+        "HI_SMF_Upper_ALL_038",
+        "HI_SMF_Upper_ALL_038_DamageV2",
+        "HI_SMF_Upper_ALL_038_HeavyV2",
+        "HI_SMF_Upper_ALL_038_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__039",
+      "stages": [
+        "HI_SMF_Upper_ALL_039",
+        "HI_SMF_Upper_ALL_039_DamageV2",
+        "HI_SMF_Upper_ALL_039_HeavyV2",
+        "HI_SMF_Upper_ALL_039_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__041",
+      "stages": [
+        "HI_SMF_Upper_ALL_041",
+        "HI_SMF_Upper_ALL_041_DamageV2",
+        "HI_SMF_Upper_ALL_041_HeavyV2",
+        "HI_SMF_Upper_ALL_041_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__043",
+      "stages": [
+        "HI_SMF_Upper_ALL_043",
+        "HI_SMF_Upper_ALL_043_DamageV2",
+        "HI_SMF_Upper_ALL_043_HeavyV2",
+        "HI_SMF_Upper_ALL_043_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__045",
+      "stages": [
+        "HI_SMF_Upper_ALL_045",
+        "HI_SMF_Upper_ALL_045_DamageV2",
+        "HI_SMF_Upper_ALL_045_HeavyV2",
+        "HI_SMF_Upper_ALL_045_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__046",
+      "stages": [
+        "HI_SMF_Upper_ALL_046",
+        "HI_SMF_Upper_ALL_046_DamageV2",
+        "HI_SMF_Upper_ALL_046_HeavyV2",
+        "HI_SMF_Upper_ALL_046_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__047",
+      "stages": [
+        "HI_SMF_Upper_ALL_047",
+        "HI_SMF_Upper_ALL_047_DamageV2",
+        "HI_SMF_Upper_ALL_047_HeavyV2",
+        "HI_SMF_Upper_ALL_047_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__048",
+      "stages": [
+        "HI_SMF_Upper_ALL_048",
+        "HI_SMF_Upper_ALL_048_DamageV2",
+        "HI_SMF_Upper_ALL_048_HeavyV2",
+        "HI_SMF_Upper_ALL_048_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__052",
+      "stages": [
+        "HI_SMF_Upper_ALL_052",
+        "HI_SMF_Upper_ALL_052_DamageV2",
+        "HI_SMF_Upper_ALL_052_HeavyV2",
+        "HI_SMF_Upper_ALL_052_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        4,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__053",
+      "stages": [
+        "HI_SMF_Upper_ALL_053",
+        "HI_SMF_Upper_ALL_053_DamageV2",
+        "HI_SMF_Upper_ALL_053_HeavyV2",
+        "HI_SMF_Upper_ALL_053_BrokenV2"
+      ],
+      "hulls": [
+        2,
+        6,
+        6,
+        9
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__054",
+      "stages": [
+        "HI_SMF_Upper_ALL_054",
+        "HI_SMF_Upper_ALL_054_DamageV2",
+        "HI_SMF_Upper_ALL_054_HeavyV2",
+        "HI_SMF_Upper_ALL_054_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__055",
+      "stages": [
+        "HI_SMF_Upper_ALL_055",
+        "HI_SMF_Upper_ALL_055_DamageV2",
+        "HI_SMF_Upper_ALL_055_HeavyV2",
+        "HI_SMF_Upper_ALL_055_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        7,
+        7,
+        10
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__056",
+      "stages": [
+        "HI_SMF_Upper_ALL_056",
+        "HI_SMF_Upper_ALL_056_DamageV2",
+        "HI_SMF_Upper_ALL_056_HeavyV2",
+        "HI_SMF_Upper_ALL_056_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__057",
+      "stages": [
+        "HI_SMF_Upper_ALL_057",
+        "HI_SMF_Upper_ALL_057_DamageV2",
+        "HI_SMF_Upper_ALL_057_HeavyV2",
+        "HI_SMF_Upper_ALL_057_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__058",
+      "stages": [
+        "HI_SMF_Upper_ALL_058",
+        "HI_SMF_Upper_ALL_058_DamageV2",
+        "HI_SMF_Upper_ALL_058_HeavyV2",
+        "HI_SMF_Upper_ALL_058_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__059",
+      "stages": [
+        "HI_SMF_Upper_ALL_059",
+        "HI_SMF_Upper_ALL_059_DamageV2",
+        "HI_SMF_Upper_ALL_059_HeavyV2",
+        "HI_SMF_Upper_ALL_059_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__060",
+      "stages": [
+        "HI_SMF_Upper_ALL_060",
+        "HI_SMF_Upper_ALL_060_DamageV2",
+        "HI_SMF_Upper_ALL_060_HeavyV2",
+        "HI_SMF_Upper_ALL_060_BrokenV2"
+      ],
+      "hulls": [
+        7,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__061",
+      "stages": [
+        "HI_SMF_Upper_ALL_061",
+        "HI_SMF_Upper_ALL_061_DamageV2",
+        "HI_SMF_Upper_ALL_061_HeavyV2",
+        "HI_SMF_Upper_ALL_061_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__062",
+      "stages": [
+        "HI_SMF_Upper_ALL_062",
+        "HI_SMF_Upper_ALL_062_DamageV2",
+        "HI_SMF_Upper_ALL_062_HeavyV2",
+        "HI_SMF_Upper_ALL_062_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__063",
+      "stages": [
+        "HI_SMF_Upper_ALL_063",
+        "HI_SMF_Upper_ALL_063_DamageV2",
+        "HI_SMF_Upper_ALL_063_HeavyV2",
+        "HI_SMF_Upper_ALL_063_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__064",
+      "stages": [
+        "HI_SMF_Upper_ALL_064",
+        "HI_SMF_Upper_ALL_064_DamageV2",
+        "HI_SMF_Upper_ALL_064_HeavyV2",
+        "HI_SMF_Upper_ALL_064_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__065",
+      "stages": [
+        "HI_SMF_Upper_ALL_065",
+        "HI_SMF_Upper_ALL_065_DamageV2",
+        "HI_SMF_Upper_ALL_065_HeavyV2",
+        "HI_SMF_Upper_ALL_065_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__066",
+      "stages": [
+        "HI_SMF_Upper_ALL_066",
+        "HI_SMF_Upper_ALL_066_DamageV2",
+        "HI_SMF_Upper_ALL_066_HeavyV2",
+        "HI_SMF_Upper_ALL_066_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__071",
+      "stages": [
+        "HI_SMF_Upper_ALL_071",
+        "HI_SMF_Upper_ALL_071_DamageV2",
+        "HI_SMF_Upper_ALL_071_HeavyV2",
+        "HI_SMF_Upper_ALL_071_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__072",
+      "stages": [
+        "HI_SMF_Upper_ALL_072",
+        "HI_SMF_Upper_ALL_072_DamageV2",
+        "HI_SMF_Upper_ALL_072_HeavyV2",
+        "HI_SMF_Upper_ALL_072_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__073",
+      "stages": [
+        "HI_SMF_Upper_ALL_073",
+        "HI_SMF_Upper_ALL_073_DamageV2",
+        "HI_SMF_Upper_ALL_073_HeavyV2",
+        "HI_SMF_Upper_ALL_073_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SMF_Upper_ALL__074",
+      "stages": [
+        "HI_SMF_Upper_ALL_074",
+        "HI_SMF_Upper_ALL_074_DamageV2",
+        "HI_SMF_Upper_ALL_074_HeavyV2",
+        "HI_SMF_Upper_ALL_074_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_Basement_p0_m1_Solid__embedded_1",
+      "stages": [
+        "HI_Embedded_SM_Basement_p0_m1_Solid_01",
+        "HI_Embedded_SM_Basement_p0_m1_Solid_01_DamageV2",
+        "HI_Embedded_SM_Basement_p0_m1_Solid_01_HeavyV2",
+        "HI_Embedded_SM_Basement_p0_m1_Solid_01_BrokenV2"
+      ],
+      "hulls": [
+        8,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "SM_Entrance_m1_p1_Solid__embedded_1",
+      "stages": [
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_01",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_01_DamageV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_01_HeavyV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_01_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_Entrance_m1_p1_Solid__embedded_2",
+      "stages": [
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_02",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_02_DamageV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_02_HeavyV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_02_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "SM_Entrance_m1_p1_Solid__embedded_3",
+      "stages": [
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_03",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_03_DamageV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_03_HeavyV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_03_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_Entrance_m1_p1_Solid__embedded_4",
+      "stages": [
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_04",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_04_DamageV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_04_HeavyV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_04_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_Entrance_m1_p1_Solid__embedded_5",
+      "stages": [
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_05",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_05_DamageV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_05_HeavyV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_05_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_Entrance_m1_p1_Solid__embedded_6",
+      "stages": [
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_06",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_06_DamageV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_06_HeavyV2",
+        "HI_Embedded_SM_Entrance_m1_p1_Solid_06_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "SM_Entrance_m1_p2_Solid__embedded_1",
+      "stages": [
+        "HI_Embedded_SM_Entrance_m1_p2_Solid_01",
+        "HI_Embedded_SM_Entrance_m1_p2_Solid_01_DamageV2",
+        "HI_Embedded_SM_Entrance_m1_p2_Solid_01_HeavyV2",
+        "HI_Embedded_SM_Entrance_m1_p2_Solid_01_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "SM_Room102_Sign__walldecor_1",
+      "stages": [
+        "HI_WallDecor_SM_Room102_Sign_1",
+        "HI_WallDecor_SM_Room102_Sign_1_DamageV2",
+        "HI_WallDecor_SM_Room102_Sign_1_HeavyV2",
+        "HI_WallDecor_SM_Room102_Sign_1_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "BR_BedDetail_TennesseeDoorPlaque_14__walldecor_1",
+      "stages": [
+        "HI_WallDecor_BR_BedDetail_TennesseeDoorPlaque_14_1",
+        "HI_WallDecor_BR_BedDetail_TennesseeDoorPlaque_14_1_DamageV2",
+        "HI_WallDecor_BR_BedDetail_TennesseeDoorPlaque_14_1_HeavyV2",
+        "HI_WallDecor_BR_BedDetail_TennesseeDoorPlaque_14_1_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "PIG_OutsideDoorPlaque__walldecor_1",
+      "stages": [
+        "HI_WallDecor_PIG_OutsideDoorPlaque_1",
+        "HI_WallDecor_PIG_OutsideDoorPlaque_1_DamageV2",
+        "HI_WallDecor_PIG_OutsideDoorPlaque_1_HeavyV2",
+        "HI_WallDecor_PIG_OutsideDoorPlaque_1_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_ArchitecturalDetails__walldecor_1",
+      "stages": [
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_1",
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_1_DamageV2",
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_1_HeavyV2",
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_1_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SM_SpaRoom_ArchitecturalDetails__walldecor_2",
+      "stages": [
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_2",
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_2_DamageV2",
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_2_HeavyV2",
+        "HI_WallDecor_SM_SpaRoom_ArchitecturalDetails_2_BrokenV2"
+      ],
+      "hulls": [
+        1,
+        1,
+        1,
+        3
+      ]
+    }
+  ]
+}

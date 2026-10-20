@@ -12,6 +12,8 @@ const FHallUV ConcreteUV=FHallUV::World(180.f), BrickUV=FHallUV::World(120.f), P
 constexpr float CX=-36.65f, HalfStair=390.f, Front=-2190.f, GradeFront=-60.f, GradeRear=-362.f;
 constexpr float Top=-2.f, Bottom=-57.f, Rise=(Top-Bottom)/3.f;
 
+// The house walks' own copy of the grade. Every caller is inside the frozen house lot, where the Calder relief is exactly
+// 0, so it carries none (HouseExteriorSite::GroundHeight is the ground everywhere else).
 float Grade(float Y)
 {
     return FMath::Lerp(GradeFront,GradeRear,FMath::Clamp(Y/1600.f,0.f,1.f));

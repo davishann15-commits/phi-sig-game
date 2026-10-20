@@ -1,0 +1,1313 @@
+{
+  "modified": [
+    {
+      "actor": "COL_Entrance_m1_p2_Solid",
+      "original_components": 10,
+      "modified_components": 2,
+      "original_faces": 120,
+      "retained_original_faces": 96,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Entrance_m1_p2_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              16.32169,
+              4.951431,
+              0.05
+            ],
+            [
+              16.356689,
+              5.772461,
+              1.9851
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.055606865760969314
+        },
+        {
+          "windows": [
+            "SM_Entrance_m1_p2_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              16.319056,
+              1.371222,
+              0.3751
+            ],
+            [
+              16.354055,
+              2.214333,
+              1.9451
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.04632872227875068
+        }
+      ]
+    },
+    {
+      "actor": "COL_Entrance_p0_p1_Solid",
+      "original_components": 19,
+      "modified_components": 2,
+      "original_faces": 240,
+      "retained_original_faces": 216,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Entrance_p0_p1_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              14.450095,
+              -7.107499,
+              0.4316
+            ],
+            [
+              15.123104,
+              -7.072499,
+              1.9114
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.03485699792986577
+        },
+        {
+          "windows": [
+            "SM_Entrance_p0_p1_Glass__003"
+          ],
+          "original_bounds": [
+            [
+              8.893096,
+              -7.1075,
+              0.4563
+            ],
+            [
+              9.566105,
+              -7.0725,
+              1.7484
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.030436100390907436
+        }
+      ]
+    },
+    {
+      "actor": "COL_Entrance_p0_p2_Solid",
+      "original_components": 9,
+      "modified_components": 2,
+      "original_faces": 108,
+      "retained_original_faces": 84,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Entrance_p0_p2_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              16.316315,
+              -2.34248,
+              0.3751
+            ],
+            [
+              16.351315,
+              -1.499369,
+              1.9451
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.04632873537979417
+        },
+        {
+          "windows": [
+            "SM_Entrance_p0_p2_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              16.313612,
+              -6.005995,
+              0.3751
+            ],
+            [
+              16.348612,
+              -5.162884,
+              1.9451
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.04632872227875068
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_m1_m1_Solid",
+      "original_components": 27,
+      "modified_components": 7,
+      "original_faces": 596,
+      "retained_original_faces": 512,
+      "new_fragment_boxes": 12,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_m1_m1_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              -0.851794,
+              4.661,
+              3.09833
+            ],
+            [
+              -0.586794,
+              4.679,
+              5.11833
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.009635462440646916
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_m1_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              -2.825,
+              4.661,
+              3.62333
+            ],
+            [
+              -2.035,
+              4.678999,
+              5.106
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.021083146532861058
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_m1_Glass__003"
+          ],
+          "original_bounds": [
+            [
+              -5.875,
+              4.661,
+              3.62333
+            ],
+            [
+              -5.085,
+              4.679,
+              5.106
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.021083152895665612
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_m1_Glass__004"
+          ],
+          "original_bounds": [
+            [
+              -5.05,
+              4.559999,
+              3.58833
+            ],
+            [
+              -2.86,
+              4.78,
+              5.141
+            ]
+          ],
+          "remaining_boxes": [
+            [
+              [
+                -5.05,
+                4.559999,
+                3.58833
+              ],
+              [
+                -3.094294,
+                4.78,
+                5.141
+              ]
+            ],
+            [
+              [
+                -3.094294,
+                4.559999,
+                3.58833
+              ],
+              [
+                -2.86,
+                4.643845,
+                5.141
+              ]
+            ],
+            [
+              [
+                -3.094294,
+                4.643845,
+                3.58833
+              ],
+              [
+                -2.86,
+                4.78,
+                3.691421
+              ]
+            ],
+            [
+              [
+                -3.094294,
+                4.643845,
+                5.111421
+              ],
+              [
+                -2.86,
+                4.78,
+                5.141
+              ]
+            ]
+          ],
+          "removed_volume_m3": 0.04529834597274544
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_m1_Glass__002",
+            "SM_Upper_m1_m1_Glass__004"
+          ],
+          "original_bounds": [
+            [
+              -3.094294,
+              4.993845,
+              3.691421
+            ],
+            [
+              -2.394294,
+              5.008845,
+              5.111421
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.014910336074993017
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_m1_Glass__001",
+            "SM_Upper_m1_m1_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              -2.359294,
+              4.941345,
+              3.677933
+            ],
+            [
+              -0.624294,
+              5.061346,
+              3.687934
+            ]
+          ],
+          "remaining_boxes": [
+            [
+              [
+                -2.035,
+                4.941345,
+                3.677933
+              ],
+              [
+                -0.851794,
+                5.061346,
+                3.687934
+              ]
+            ],
+            [
+              [
+                -2.359294,
+                5.028999,
+                3.677933
+              ],
+              [
+                -2.035,
+                5.061346,
+                3.687934
+              ]
+            ],
+            [
+              [
+                -0.851794,
+                5.029,
+                3.677933
+              ],
+              [
+                -0.624294,
+                5.061346,
+                3.687934
+              ]
+            ]
+          ],
+          "removed_volume_m3": 0.0004836923265827826
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_m1_Glass__001",
+            "SM_Upper_m1_m1_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              -2.359294,
+              4.941345,
+              3.687933
+            ],
+            [
+              -0.624294,
+              5.061346,
+              5.147933
+            ]
+          ],
+          "remaining_boxes": [
+            [
+              [
+                -2.035,
+                4.941345,
+                3.687933
+              ],
+              [
+                -0.851794,
+                5.061346,
+                5.147933
+              ]
+            ],
+            [
+              [
+                -2.359294,
+                5.028999,
+                3.687933
+              ],
+              [
+                -2.035,
+                5.061346,
+                5.147933
+              ]
+            ],
+            [
+              [
+                -2.359294,
+                4.941345,
+                5.106
+              ],
+              [
+                -2.035,
+                5.028999,
+                5.147933
+              ]
+            ],
+            [
+              [
+                -0.851794,
+                5.029,
+                3.687933
+              ],
+              [
+                -0.624294,
+                5.061346,
+                5.147933
+              ]
+            ],
+            [
+              [
+                -0.851794,
+                4.941345,
+                5.11833
+              ],
+              [
+                -0.624294,
+                5.029,
+                5.147933
+              ]
+            ]
+          ],
+          "removed_volume_m3": 0.06883347424898505
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_m1_p0_Solid",
+      "original_components": 31,
+      "modified_components": 6,
+      "original_faces": 690,
+      "retained_original_faces": 618,
+      "new_fragment_boxes": 9,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_m1_p0_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              0.318206,
+              4.67,
+              3.06833
+            ],
+            [
+              0.373206,
+              5.55,
+              5.148329
+            ]
+          ],
+          "remaining_boxes": [
+            [
+              [
+                0.318206,
+                4.67,
+                3.06833
+              ],
+              [
+                0.373206,
+                4.72,
+                5.148329
+              ]
+            ],
+            [
+              [
+                0.318206,
+                5.5,
+                3.06833
+              ],
+              [
+                0.373206,
+                5.55,
+                5.148329
+              ]
+            ],
+            [
+              [
+                0.318206,
+                4.72,
+                3.06833
+              ],
+              [
+                0.373206,
+                5.5,
+                3.59833
+              ]
+            ],
+            [
+              [
+                0.318206,
+                4.72,
+                5.11833
+              ],
+              [
+                0.373206,
+                5.5,
+                5.148329
+              ]
+            ]
+          ],
+          "removed_volume_m3": 0.06520806053544193
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_p0_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              0.398206,
+              4.661,
+              3.09833
+            ],
+            [
+              0.663206,
+              4.679,
+              5.11833
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.009635209357029752
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_p0_Glass__003"
+          ],
+          "original_bounds": [
+            [
+              5.085,
+              4.661,
+              3.62333
+            ],
+            [
+              5.874999,
+              4.679,
+              5.106
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.02108312744444739
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_p0_Glass__004"
+          ],
+          "original_bounds": [
+            [
+              2.105,
+              4.661,
+              3.62333
+            ],
+            [
+              2.895,
+              4.679,
+              5.106
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.021083705056399598
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_p0_Glass__004",
+            "SM_Upper_m1_p0_Glass__005"
+          ],
+          "original_bounds": [
+            [
+              2.180706,
+              4.993845,
+              3.724274
+            ],
+            [
+              2.910706,
+              5.008846,
+              5.134274
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.015439847015810018
+        },
+        {
+          "windows": [
+            "SM_Upper_m1_p0_Glass__002",
+            "SM_Upper_m1_p0_Glass__004"
+          ],
+          "original_bounds": [
+            [
+              0.435706,
+              4.941346,
+              3.687933
+            ],
+            [
+              2.145706,
+              5.061346,
+              5.147933
+            ]
+          ],
+          "remaining_boxes": [
+            [
+              [
+                0.663206,
+                4.941346,
+                3.687933
+              ],
+              [
+                2.105,
+                5.061346,
+                5.147933
+              ]
+            ],
+            [
+              [
+                2.105,
+                5.029,
+                3.687933
+              ],
+              [
+                2.145706,
+                5.061346,
+                5.147933
+              ]
+            ],
+            [
+              [
+                2.105,
+                4.941346,
+                5.106
+              ],
+              [
+                2.145706,
+                5.029,
+                5.147933
+              ]
+            ],
+            [
+              [
+                0.435706,
+                5.029,
+                3.687933
+              ],
+              [
+                0.663206,
+                5.061346,
+                5.147933
+              ]
+            ],
+            [
+              [
+                0.435706,
+                4.941346,
+                5.11833
+              ],
+              [
+                0.663206,
+                5.029,
+                5.147933
+              ]
+            ]
+          ],
+          "removed_volume_m3": 0.03358371375558858
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_m2_p0_Solid",
+      "original_components": 4,
+      "modified_components": 1,
+      "original_faces": 48,
+      "retained_original_faces": 36,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_m2_p0_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              7.271206,
+              8.486345,
+              3.893127
+            ],
+            [
+              7.286207,
+              9.466345,
+              5.153127
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.018522411637980143
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_m2_p1_Solid",
+      "original_components": 12,
+      "modified_components": 1,
+      "original_faces": 224,
+      "retained_original_faces": 212,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_m2_p1_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              11.656705,
+              10.283845,
+              3.510004
+            ],
+            [
+              12.346706,
+              10.298843,
+              4.970004
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.015109457373042583
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_m2_p2_Solid",
+      "original_components": 2,
+      "modified_components": 1,
+      "original_faces": 48,
+      "retained_original_faces": 36,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_m2_p2_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              16.288206,
+              8.156343,
+              3.93222
+            ],
+            [
+              16.303204,
+              9.106344,
+              5.19222
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.017951997197228484
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_p0_m2_Solid",
+      "original_components": 38,
+      "modified_components": 2,
+      "original_faces": 722,
+      "retained_original_faces": 698,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_p0_m2_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              -9.433293,
+              -7.027999,
+              3.327061
+            ],
+            [
+              -8.635293,
+              -7.009999,
+              4.895061
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.022522899565329043
+        },
+        {
+          "windows": [
+            "SM_Upper_p0_m2_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              -15.714292,
+              -7.286152,
+              3.826236
+            ],
+            [
+              -14.774293,
+              -7.271152,
+              5.086236
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.01776636037056052
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_p0_m3_Solid",
+      "original_components": 8,
+      "modified_components": 2,
+      "original_faces": 120,
+      "retained_original_faces": 96,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_p0_m3_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              -16.601793,
+              -6.238654,
+              3.819792
+            ],
+            [
+              -16.586792,
+              -5.278654,
+              5.079792
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.018145553551308258
+        },
+        {
+          "windows": [
+            "SM_Upper_p0_m3_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              -16.601793,
+              -0.778654,
+              3.793711
+            ],
+            [
+              -16.586794,
+              0.181346,
+              5.053712
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.01814326128317432
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_p0_p1_Solid",
+      "original_components": 33,
+      "modified_components": 2,
+      "original_faces": 564,
+      "retained_original_faces": 540,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_p0_p1_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              7.930706,
+              -7.286155,
+              3.904295
+            ],
+            [
+              8.780706,
+              -7.271154,
+              5.164295
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.016065371747108148
+        },
+        {
+          "windows": [
+            "SM_Upper_p0_p1_Glass__002"
+          ],
+          "original_bounds": [
+            [
+              10.565705,
+              -7.286155,
+              3.915959
+            ],
+            [
+              11.545705,
+              -7.271154,
+              5.175959
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.01852300043611219
+        }
+      ]
+    },
+    {
+      "actor": "COL_Upper_p0_p2_Solid",
+      "original_components": 3,
+      "modified_components": 1,
+      "original_faces": 60,
+      "retained_original_faces": 48,
+      "new_fragment_boxes": 0,
+      "cuts": [
+        {
+          "windows": [
+            "SM_Upper_p0_p2_Glass__001"
+          ],
+          "original_bounds": [
+            [
+              16.218206,
+              -6.573655,
+              3.93782
+            ],
+            [
+              16.233206,
+              -5.623655,
+              5.19782
+            ]
+          ],
+          "remaining_boxes": [],
+          "removed_volume_m3": 0.017954262271218595
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "actor": "COL_Entrance_m1_m1_Solid",
+      "window": "SM_Entrance_m1_m1_Glass__004",
+      "bounds": [
+        [
+          -5.099999,
+          4.559999,
+          0.351
+        ],
+        [
+          -0.97,
+          4.78,
+          2.291
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Entrance_m1_p0_Solid",
+      "window": "SM_Entrance_m1_p0_Glass__002",
+      "bounds": [
+        [
+          0.599999,
+          4.56,
+          0.351
+        ],
+        [
+          5.05,
+          4.780001,
+          2.291
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Entrance_p0_p0_Solid",
+      "window": "SM_Entrance_p0_p0_Glass__002",
+      "bounds": [
+        [
+          -0.8985,
+          -4.895,
+          2.3676
+        ],
+        [
+          4.5063,
+          -4.824999,
+          2.4579
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Entrance_p0_p0_Solid",
+      "window": "SM_Entrance_p0_m1_Glass__001",
+      "bounds": [
+        [
+          -7.189999,
+          -4.895001,
+          2.4579
+        ],
+        [
+          7.2,
+          -4.824999,
+          3.111
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Entrance_p0_p0_Solid",
+      "window": "SM_Entrance_p0_p0_Glass__002",
+      "bounds": [
+        [
+          -0.8985,
+          -4.81,
+          2.3676
+        ],
+        [
+          4.5063,
+          -4.57,
+          2.4579
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Entrance_p0_p1_Solid",
+      "window": "SM_Entrance_p0_p1_Glass__002",
+      "bounds": [
+        [
+          14.4101,
+          -7.169999,
+          0.0
+        ],
+        [
+          16.33,
+          -7.009999,
+          2.5797
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Entrance_p0_p1_Solid",
+      "window": "SM_Entrance_p0_p1_Glass__001",
+      "bounds": [
+        [
+          11.36,
+          -3.290061,
+          0.0
+        ],
+        [
+          11.521703,
+          -1.087939,
+          2.5797
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_m1_Solid",
+      "window": "SM_Upper_m1_m1_Glass__002",
+      "bounds": [
+        [
+          -7.190001,
+          4.559999,
+          3.06833
+        ],
+        [
+          -0.879294,
+          4.78,
+          5.141
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_m1_Solid",
+      "window": "SM_Upper_m1_m1_Glass__003",
+      "bounds": [
+        [
+          -7.190001,
+          4.559999,
+          3.06833
+        ],
+        [
+          -0.879294,
+          4.78,
+          5.141
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_m1_Solid",
+      "window": "SM_Upper_m1_m1_Glass__004",
+      "bounds": [
+        [
+          -7.190001,
+          4.559999,
+          3.06833
+        ],
+        [
+          -0.879294,
+          4.78,
+          5.141
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_m1_Solid",
+      "window": "SM_Upper_m1_m1_Glass__001",
+      "bounds": [
+        [
+          -3.464293,
+          4.941345,
+          3.018286
+        ],
+        [
+          -0.624294,
+          5.061346,
+          3.677933
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_m1_Solid",
+      "window": "SM_Upper_m1_m1_Glass__002",
+      "bounds": [
+        [
+          -3.464293,
+          4.941345,
+          3.018286
+        ],
+        [
+          -0.624294,
+          5.061346,
+          3.677933
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_p0_Solid",
+      "window": "SM_Upper_m1_p0_Glass__003",
+      "bounds": [
+        [
+          0.690706,
+          4.56,
+          3.06833
+        ],
+        [
+          7.199999,
+          4.78,
+          5.141
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_p0_Solid",
+      "window": "SM_Upper_m1_p0_Glass__004",
+      "bounds": [
+        [
+          0.690706,
+          4.56,
+          3.06833
+        ],
+        [
+          7.199999,
+          4.78,
+          5.141
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_p0_Solid",
+      "window": "SM_Upper_m1_p0_Glass__005",
+      "bounds": [
+        [
+          0.690706,
+          4.56,
+          3.06833
+        ],
+        [
+          7.199999,
+          4.78,
+          5.141
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_p0_Solid",
+      "window": "SM_Upper_m1_p0_Glass__002",
+      "bounds": [
+        [
+          0.435706,
+          4.941345,
+          3.035134
+        ],
+        [
+          3.305707,
+          5.061346,
+          3.687934
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m1_p0_Solid",
+      "window": "SM_Upper_m1_p0_Glass__004",
+      "bounds": [
+        [
+          0.435706,
+          4.941345,
+          3.035134
+        ],
+        [
+          3.305707,
+          5.061346,
+          3.687934
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m2_p1_Solid",
+      "window": "SM_Upper_m2_p1_Glass__001",
+      "bounds": [
+        [
+          9.839706,
+          10.211344,
+          3.073632
+        ],
+        [
+          16.295706,
+          10.371345,
+          5.836586
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_m2_p2_Solid",
+      "window": "SM_Upper_m2_p2_Glass__001",
+      "bounds": [
+        [
+          16.215706,
+          6.201344,
+          3.101209
+        ],
+        [
+          16.375706,
+          10.291344,
+          5.838539
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_p0_m2_Solid",
+      "window": "SM_Upper_p0_m2_Glass__002",
+      "bounds": [
+        [
+          -16.594294,
+          -7.358653,
+          2.990371
+        ],
+        [
+          -12.974293,
+          -7.198652,
+          5.113223
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_p0_m3_Solid",
+      "window": "SM_Upper_p0_m3_Glass__002",
+      "bounds": [
+        [
+          -16.674294,
+          -2.238654,
+          2.962357
+        ],
+        [
+          -16.514294,
+          2.221346,
+          5.699835
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    },
+    {
+      "actor": "COL_Upper_p0_p2_Solid",
+      "window": "SM_Upper_p0_p2_Glass__001",
+      "bounds": [
+        [
+          16.145706,
+          -7.278655,
+          3.106413
+        ],
+        [
+          16.305706,
+          -3.448655,
+          5.843639
+        ]
+      ],
+      "reason": "non-axis-aligned source solid"
+    }
+  ]
+}

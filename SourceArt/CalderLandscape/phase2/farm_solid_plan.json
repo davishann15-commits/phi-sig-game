@@ -1,0 +1,23 @@
+{
+  "scope": "Finish the existing optional farm solids: collision must match visible barn structure/roof, round-bale bodies and split-rail fence; terrain, original routes and frozen/house areas stay fixed",
+  "switch": "CalderFarmSolidTrial",
+  "default_enabled": false,
+  "requires": [
+    "CalderFarmTrial",
+    "existing landscape/terrain gates"
+  ],
+  "geometry_authority": "Reuse identical LOD0 visible solid geometry and the exact existing deterministic bale poses; exclude curing leaves, shrubs, loose straw and twine from collision",
+  "components": "Static complex-as-simple procedural collision only, no extra draw/ISM/light/navigation/tick; same collision on client and dedicated server",
+  "access": "Keep the existing open barn gable and broad fence gate; do not bridge slat/rail openings with boxes or add containment barriers",
+  "required_checks": [
+    "Actual collision triangle/pose comparison to visible solids",
+    "Independent native physical contact rays",
+    "Farm entrance and barn ordinary-input walking with unchanged movement",
+    "Original terrain/water/woods and frozen/tree/light contracts",
+    "Client and dedicated collider hashes match",
+    "NoTerrain/NoLandscape/NoFarm/featureOFF restore original behavior",
+    "Screenshots prove original appearance remains unchanged",
+    "Full no-traps/reachability checks before promotion"
+  ],
+  "implementation_pending": true
+}

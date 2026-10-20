@@ -1,0 +1,130 @@
+{
+  "scope": "Partial farm checkpoint: normal-culling visibility/native physics/settings pass; photo/performance still unfinished",
+  "default_enabled": false,
+  "build": {
+    "log": "Saved/CalderWork/codex_farm_bounds_build.log",
+    "actions": 210,
+    "seconds": 123.25,
+    "passed": true
+  },
+  "runtime": {
+    "run": "Saved/CalderWork/runs/codex_farm_bounds_views",
+    "farm_native_pass": true,
+    "components": 5,
+    "bales": 6,
+    "build_ms": 148.2,
+    "LOD_triangles": {
+      "wood": [
+        3816,
+        2208,
+        1404
+      ],
+      "roof": [
+        1472,
+        736,
+        192
+      ],
+      "hay": [
+        3600,
+        864,
+        192
+      ],
+      "curing": [
+        4800,
+        864,
+        192
+      ],
+      "fence": [
+        2800,
+        2000,
+        1600
+      ]
+    },
+    "ground_cover_instances": 57705,
+    "ground_cover_crc": "17dc66ec",
+    "old_default_cover_instances": 57815,
+    "old_default_cover_crc": "29aceab6",
+    "actual_total_Calder_ISMs": 24,
+    "farm_cover_footprints": 0,
+    "terrain_water_pass": true,
+    "terrain_hash": "72564759",
+    "tree_crc": "0f3b2bb7"
+  },
+  "appearance": {
+    "inspected_all_frames": true,
+    "images": {
+      "241_detail_calder_farm.png": "69802bdd044abf97d8fea1eaaaf7c6a861c2c6c34720e9c309b9bb5f98c6188d",
+      "242_detail_calder_bale.png": "fafa528aafed8149cccfd0618dccb77c1cc922904abd5e13e234861d8d044cb5",
+      "243_detail_calder_barn_entry.png": "4a0efb9b349fa9b4845cf8632de49e890614f7e22ab632d81414a8bc488bfd93"
+    },
+    "total_inspected_tree_woods_ridge_water_farm_frames": 146,
+    "normal_culling_visibility_fixed": true,
+    "photographic_appearance_accepted": false,
+    "findings": [
+      "Full timber frame/boards/piers now render in entry view with normal GPU culling.",
+      "Bale retains cut fibres/twine and no drawn spiral.",
+      "Barn/bale cover reservations are clear.",
+      "Angular curing leaves and mineral roof texture remain provisional; wider farm/pasture/detail/performance open."
+    ],
+    "default_enabled": false
+  },
+  "material_audit": {
+    "pixel_instructions": 229,
+    "pixel_samples": 2,
+    "ISM_enabled": true,
+    "assets_saved": false,
+    "source_sha256": {
+      "Content/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured.uasset": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+      "Content/SeniorSendOff/Calder/Textures/rough_wood/T_rough_wood_A.uasset": "e6e319a0a42d059e5f3652035326a7068333e1b89d1db2a29c450af7b95f09c7",
+      "Content/SeniorSendOff/Calder/Textures/rough_wood/T_rough_wood_N.uasset": "7331265811f6221ea2488ab9436e811df0e121a21e85e62673cfb32986bcd928",
+      "Content/SeniorSendOff/Calder/Textures/stacked_stone_wall/T_stacked_stone_wall_A.uasset": "68073df8c6699b3a32fb95ac0287387373da4efd296c32f578d46d7d41f4d698",
+      "Content/SeniorSendOff/Calder/Textures/stacked_stone_wall/T_stacked_stone_wall_N.uasset": "bd92030efc15a377dee7cfaf5867a1bffb36d2d5bfb48af22e3c557cdecc55e5",
+      "Content/SeniorSendOff/Calder/Textures/cracked_concrete/T_cracked_concrete_A.uasset": "84b25948d9677f1fd0ad75f791aa1bbdf00195a917130ca2fe8e7a9eec9cad35",
+      "Content/SeniorSendOff/Calder/Textures/cracked_concrete/T_cracked_concrete_N.uasset": "09af6e0b4ad7078d009852e19badcbfc5e79731c236134722b7494752c608d94",
+      "Content/SeniorSendOff/Calder/Textures/withered_grass/T_withered_grass_A.uasset": "103ac8fcae32f85c773ee52a583c800a5b15d2baf2b25d56bcd64d044ab54972",
+      "Content/SeniorSendOff/Calder/Textures/withered_grass/T_withered_grass_N.uasset": "0ae0cc4d4c6514d59fbba056e4efd147875d704ae1fda5fee5486a07a23eded4"
+    },
+    "scope": "Existing shader budget/provenance only; native farm/visual acceptance separate"
+  },
+  "compiled_sources": {
+    "Source/SeniorSendoff/HouseCalderFarm.cpp": "f6c4901b077a039b5fe8be7c79e4bdc773b2c27bb2daa64cb0bf318948f8821d",
+    "Source/SeniorSendoff/HouseCalderFarm.h": "ca3a46a3b022221f3bf19a99ca9606db837f97975e8441b19eb9744371d56427",
+    "Source/SeniorSendoff/HouseCalderCover.cpp": "2d9d71a8a0d735192c8cd0250dd9d633ed4c44fca4a1d524002f829b4309efec",
+    "Source/SeniorSendoff/HouseCalderLandscapeReview.cpp": "41c6afd1be2280634345ab12866d63b7301259a56b4b872cbab558530de46747",
+    "Source/SeniorSendoff/HouseExterior.cpp": "f16c6067b50e453f085ea2e698fbd07d4d36f477052e90bcd07b686ec691a6c1"
+  },
+  "open": [
+    "Photographic quality/performance",
+    "All-trial terrain-off compatibility on final source",
+    "Broader rock/wall/pasture/hedgerow/persimmon/water-edge work",
+    "All wildlife and final multiplayer/performance/review chain"
+  ],
+  "fog": "Pending owner approval; unapplied",
+  "geometry_comparison": {
+    "actual_vertices_compared": 100056,
+    "max_world_coordinate_difference_cm": 0.0005000000001018634,
+    "all_LOD_triangle_totals_preserved": true,
+    "normal_culling_frame_visible": true,
+    "scope": "Fence spatial split plus populated registration, no global CVar change"
+  },
+  "no_terrain_compatibility": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_farm_all_trials_noterrain",
+    "grounds": 69240,
+    "instances": 53740,
+    "campusFrontVertices": 1091586,
+    "floorSamples": 2654,
+    "exterior_lights": 53,
+    "tree_crc": "0f3b2bb7",
+    "all_Calder_ISMs": 0,
+    "all_five_trial_markers_disabled": true
+  },
+  "default_cover_compatibility": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_farm_off_cover",
+    "instances": 57815,
+    "placement_hash": "29aceab6",
+    "tree_crc": "0f3b2bb7",
+    "farm_disabled": true
+  }
+}

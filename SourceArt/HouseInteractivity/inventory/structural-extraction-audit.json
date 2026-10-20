@@ -1,0 +1,42 @@
+[
+  {
+    "actor": "SM_Basement_p0_m1_Solid",
+    "original_faces": 73792,
+    "extracted_faces": 15120,
+    "retained_faces": 58672,
+    "pieces": 1,
+    "conservation_pass": true
+  },
+  {
+    "actor": "SM_Entrance_m1_p1_Solid",
+    "original_faces": 39874,
+    "extracted_faces": 23903,
+    "retained_faces": 15971,
+    "pieces": 6,
+    "conservation_pass": true
+  },
+  {
+    "actor": "SM_Entrance_m1_p2_Solid",
+    "original_faces": 6016,
+    "extracted_faces": 2524,
+    "retained_faces": 3492,
+    "pieces": 1,
+    "conservation_pass": true
+  },
+  {
+    "actor": "SM_Entrance_p0_m1_Solid",
+    "original_faces": 45826,
+    "extracted_faces": 188,
+    "retained_faces": 45638,
+    "pieces": 1,
+    "conservation_pass": true
+  },
+  {
+    "actor": "SM_Entrance_p0_m2_Solid",
+    "original_faces": 32732,
+    "extracted_faces": 188,
+    "retained_faces": 32544,
+    "pieces": 1,
+    "conservation_pass": true
+  }
+]

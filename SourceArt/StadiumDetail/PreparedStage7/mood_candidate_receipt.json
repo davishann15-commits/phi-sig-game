@@ -1,0 +1,23 @@
+{
+  "installed": false,
+  "runtime_preimage_sha": "120c97b177c4f4533b61c960b33a2800ba2bce1c634ced65136a71edd948c35e",
+  "candidate_sha": "daa93b592fa178a6eb4d8430fd37fd1a8f93eaae2fa716e6b3b47bb5503aa273",
+  "pending_header_additions": [
+    "forward USoundSubmix/UWorld",
+    "namespace SoundReviewMix(UWorld*,int32)",
+    "public RegisteredSoundReviewMix(int32)const",
+    "private FreshMoodWave(int32), ProgramAlong, QueuedSoundBytes, SoundGeneration, UPROPERTY SoundReviewSubmixes"
+  ],
+  "pending_hook": "BeforeDrumsSetSound: if(auto* Mix=HouseStadiumDetail::SoundReviewMix(GetWorld(),3)) DrumWave->SoundSubmixObject=Mix;",
+  "pending_native_audio_review": true,
+  "notes": "Prepared only. No runtime, Draft, camera, build or acceptance change. Keep distinct30Hzpaper, boundedchord origins, fresh waves after stop, four registered diagnostic submixes with no master fallback, PA/halyard bounded42m falloff; actual hearing/mix/indoor/recovery/defaultsnare/paper/nativeperformance still required. Submix object routing is assigned before async mixer registration completes; recorder must wait for all GetSubmixInstance checks. No master recording fallback. Candidate indoor stop now queries BOTH public campus-interior and protectedhouse distance APIs, mirroring the already-proven wildlife isolation without changing either donor. OptionalStadiumSoundReview writes exactHumSource/HalyardSource PCM WAVs; PA sharesHumSource. Nativeactualmixesremainmandatory. Recorderincuncompiled/outsideSource; appendonlyafter6accepted->7.",
+  "prepared_recorder_inc_sha": "987c0a1c621ab082030b278aae6d062639953aefda6b63e73e3a1b404f19d77c",
+  "source_dry_wav_dump_prepared": true,
+  "prepared_driver": "sound_review_candidate.py",
+  "api_preflight": "Mixer registration lookup uses FAudioDeviceManager::GetAudioMixerDeviceFromWorldContext, matching installed UE5.8 and existing wildlife implementation. Offline cadence check requires actual PlayDrums schedule trigger. Both still uncompiled/unrun.",
+  "additional_flood_temporal_images": 2,
+  "actual_image_total_required": 24,
+  "flicker_capture_scope": "Same normal23s event: after dim snapshot wait0.25s for existing bright window; after final bank pair allow3s new paper-camera settling. No actor cadence/audio phase/threshold/source timer changes.",
+  "additional_banner_inspection": "Additional look-down from the unchanged original tunnel eye/FOV after the23 existing temporal/phase images. Original ExViews, routes and timing camera sequence unchanged.",
+  "actual_compile_repairs": "UE5.8: explicit APawn pointer for TObjectPtr GetPawn return, and single iterator lookup avoids unreachable-loop-increment warning."
+}

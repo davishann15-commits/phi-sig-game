@@ -326,7 +326,11 @@ UStaticMesh* HwBuildStaticMesh(const FHallMesh& Mesh, const TCHAR* Name, UHouseB
         if (S.I.Num() == 0) continue;
         const FPolygonGroupID Group = MD.CreatePolygonGroup();
         Slots[Group] = Key;
-        Mats.Add(FStaticMaterial(Look->Mat(Key), Key, Key));
+        Mats.Add(FStaticMaterial(Look->Mat(Key), Key
+#if WITH_EDITORONLY_DATA
+            , Key
+#endif
+        ));
         TArray<FVertexID> Ids; Ids.Reserve(S.V.Num());
         for (const FVector& V : S.V) { const FVertexID Id = MD.CreateVertex(); Pos[Id] = FVector3f(V); Ids.Add(Id); }
         for (int32 T = 0; T + 2 < S.I.Num(); T += 3)

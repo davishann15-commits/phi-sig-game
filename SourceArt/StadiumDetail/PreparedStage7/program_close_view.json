@@ -1,0 +1,24 @@
+{
+  "introduced_stage": 7,
+  "installed": false,
+  "added_comment": "Moving programs:170cm eye above a verified existing bench, with all earlier poses preserved.",
+  "views": [
+    {
+      "name": "detail_stadium_programs",
+      "eye": [
+        -485.863,
+        -15722.141,
+        710
+      ],
+      "target": [
+        -451.251,
+        -15776.403,
+        495.18
+      ],
+      "floor_z": 540,
+      "floor_kind": "existingrow5outerbenchplanktop",
+      "fov": 75
+    }
+  ],
+  "scope": "Prepared camera only. After actual6 acceptance and advance7, native floor/capsule proof and actual paper-in-frame inspection are required. All prior34 poses stay exact; final35-view timing includes this pose in all six production runs."
+}

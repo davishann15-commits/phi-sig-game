@@ -1,6 +1,8 @@
 #include "HouseFurnitureInteractionComponent.h"
 #include "HouseInteractiveProp.h"
 #include "HouseBasketball.h"
+#include "HouseWoodcutting.h"
+#include "GameFramework/GameStateBase.h"
 #include "HouseSfx.h"
 #include "StoryCampaign.h"
 #include "Camera/CameraComponent.h"
@@ -246,6 +248,10 @@ void UHouseFurnitureInteractionComponent::GetLifetimeReplicatedProps(TArray<FLif
     DOREPLIFETIME(UHouseFurnitureInteractionComponent, LocalLeftNormal);
     DOREPLIFETIME(UHouseFurnitureInteractionComponent, LocalFingerDirection);
     DOREPLIFETIME(UHouseFurnitureInteractionComponent, LocalFaceNormal);
+    DOREPLIFETIME(UHouseFurnitureInteractionComponent, bBasketballCharging);
+    DOREPLIFETIME(UHouseFurnitureInteractionComponent, BasketballChargeStart);
+    DOREPLIFETIME(UHouseFurnitureInteractionComponent, BasketballFeedback);
+    DOREPLIFETIME(UHouseFurnitureInteractionComponent, BasketballFeedbackAt);
 }
 
 ESSOCarrySize UHouseFurnitureInteractionComponent::ClassifyFurniture(const UPrimitiveComponent* Body, const AActor* Furniture)
@@ -280,8 +286,85 @@ void UHouseFurnitureInteractionComponent::ReleaseGrab()
 void UHouseFurnitureInteractionComponent::ThrowHeldFurniture()
 {
     if (!GetOwner()) return;
+    if (HeldBody && Cast<AHouseWoodAxe>(HeldBody->GetOwner()))
+    {
+        if (GetOwner()->HasAuthority()) Cast<AHouseWoodAxe>(HeldBody->GetOwner())->BeginSwing(Cast<AStoryFirstPersonCharacter>(GetOwner()));
+        else ServerThrowHeldFurniture();
+        return;
+    }
+    if (BeginBasketballShot()) return;
     if (GetOwner()->HasAuthority()) ThrowHeldFurnitureAuthoritative();
     else ServerThrowHeldFurniture();
+}
+
+float UHouseFurnitureInteractionComponent::ShotClock() const
+{
+    const auto* State = GetWorld() ? GetWorld()->GetGameState() : nullptr;
+    return State ? State->GetServerWorldTimeSeconds() : GetWorld() ? GetWorld()->GetTimeSeconds() : 0;
+}
+float UHouseFurnitureInteractionComponent::GetBasketballPower() const
+{ return bBasketballCharging ? FMath::Clamp((ShotClock() - BasketballChargeStart) / AHouseBasketball::ChargeSeconds, 0.f, 1.f) : 0; }
+float UHouseFurnitureInteractionComponent::GetBasketballIdealPower() const
+{
+    const auto* Ball = HeldBody ? Cast<AHouseBasketball>(HeldBody->GetOwner()) : nullptr;
+    FVector View; FRotator Aim;
+    return Ball && GetServerView(View, Aim) ? Ball->SuggestedPower(View, Aim) : -1;
+}
+FString UHouseFurnitureInteractionComponent::GetBasketballFeedback() const
+{ return ShotClock() - BasketballFeedbackAt < 1.8f ? BasketballFeedback : FString(); }
+bool UHouseFurnitureInteractionComponent::BeginBasketballShot()
+{
+    if (!bHoldingFurniture || !HeldBody || !Cast<AHouseBasketball>(HeldBody->GetOwner())) return false;
+    if (bBasketballCharging || CarryPhase == ESSOCarryPhase::SettingDown || CarryPhase == ESSOCarryPhase::ThrowWindup) return true;
+    if (GetOwner()->HasAuthority()) BasketballInputAuthoritative(true, false, FRotator::ZeroRotator);
+    else
+    {
+        bBasketballCharging = true; BasketballChargeStart = ShotClock();
+        ServerBasketballInput(true, false, FRotator::ZeroRotator);
+    }
+    return true;
+}
+void UHouseFurnitureInteractionComponent::ReleaseBasketballShot()
+{
+    // A very quick tap can arrive before the server's charge state replicates.
+    // Still send its release after the reliable press, rather than leaving it held.
+    const bool PendingClientPress = GetOwner() && !GetOwner()->HasAuthority() && bHoldingFurniture
+        && HeldBody && Cast<AHouseBasketball>(HeldBody->GetOwner());
+    if (!bBasketballCharging && !PendingClientPress) return;
+    FVector View; FRotator Aim;
+    if (!GetServerView(View, Aim)) { CancelBasketballShot(); return; }
+    if (GetOwner()->HasAuthority()) BasketballInputAuthoritative(false, false, Aim);
+    else { bBasketballCharging = false; ServerBasketballInput(false, false, Aim); }
+}
+void UHouseFurnitureInteractionComponent::CancelBasketballShot()
+{
+    if (!bBasketballCharging) return;
+    bBasketballCharging = false; PendingBasketballPower = -1;
+    if (GetOwner()->HasAuthority()) GetOwner()->ForceNetUpdate();
+    else ServerBasketballInput(false, true, FRotator::ZeroRotator);
+}
+void UHouseFurnitureInteractionComponent::ServerBasketballInput_Implementation(bool Begin, bool Cancel, FRotator Aim)
+{ BasketballInputAuthoritative(Begin, Cancel, Aim); }
+void UHouseFurnitureInteractionComponent::BasketballInputAuthoritative(bool Begin, bool Cancel, const FRotator& Aim)
+{
+    if (!GetOwner() || !GetOwner()->HasAuthority()) return;
+    if (Cancel) { bBasketballCharging = false; PendingBasketballPower = -1; GetOwner()->ForceNetUpdate(); return; }
+    if (!bHoldingFurniture || !HeldBody || !Cast<AHouseBasketball>(HeldBody->GetOwner())
+        || CarryPhase == ESSOCarryPhase::SettingDown || CarryPhase == ESSOCarryPhase::ThrowWindup) return;
+    if (Begin)
+    {
+        if (bBasketballCharging) return;
+        bBasketballCharging = true; BasketballChargeStart = ShotClock(); GetOwner()->ForceNetUpdate(); return;
+    }
+    if (!bBasketballCharging || Aim.ContainsNaN()) return;
+    PendingBasketballPower = GetBasketballPower(); PendingBasketballAim = Aim.GetNormalized();
+    const float Ideal = GetBasketballIdealPower();
+    BasketballFeedback = Ideal < 0 ? TEXT("FREE THROW")
+        : FMath::Abs(PendingBasketballPower - Ideal) <= AHouseBasketball::GreenHalfWidth ? TEXT("GREEN RELEASE")
+        : PendingBasketballPower < Ideal ? TEXT("EARLY - SHORT") : TEXT("LATE - LONG");
+    BasketballFeedbackAt = ShotClock(); bBasketballCharging = false;
+    // Release on this input frame, not after a second delayed furniture wind-up.
+    ExecuteThrowAuthoritative(); PendingBasketballPower = -1;
 }
 
 AActor* UHouseFurnitureInteractionComponent::FocusedFurnitureForInteraction() const
@@ -387,6 +470,7 @@ float UHouseFurnitureInteractionComponent::LargeHeave() const
 
 float UHouseFurnitureInteractionComponent::GetThrowWindup() const
 {
+    if (bBasketballCharging) return FMath::SmoothStep(0.f, .22f, ShotClock() - BasketballChargeStart) * .75f;
     if (!bHoldingFurniture || CarryPhase != ESSOCarryPhase::ThrowWindup) return 0.f;
     const float T = FMath::Clamp(PhaseAge / WindupDuration(), 0.f, 1.f);
     return T * T * (3.f - 2.f * T);
@@ -470,6 +554,12 @@ void UHouseFurnitureInteractionComponent::ToggleGrabAuthoritative()
 
     if (bHoldingFurniture)
     {
+        if (auto* Axe = HeldBody ? Cast<AHouseWoodAxe>(HeldBody->GetOwner()) : nullptr)
+        {
+            if (Axe->CanReturnToStump(Cast<AStoryFirstPersonCharacter>(Owner)))
+            { ReleaseGrabAuthoritative(); Axe->EmbedInStump(); return; }
+            Axe->CancelSwing();
+        }
         BeginSetDownAuthoritative();
         return;
     }
@@ -492,6 +582,7 @@ void UHouseFurnitureInteractionComponent::ToggleGrabAuthoritative()
         || Body->ComponentHasTag(HeldFurnitureTag)) return;
     if (AHouseInteractiveProp* Prop = Cast<AHouseInteractiveProp>(Furniture))
     {
+        if (auto* Axe = Cast<AHouseWoodAxe>(Prop)) Axe->PreparePickup();
         if (!Prop->CanBeMoved() || !Prop->WakeForInteraction(Owner)) return;
     }
     if (!Body->IsSimulatingPhysics()) return;
@@ -533,6 +624,9 @@ void UHouseFurnitureInteractionComponent::ToggleGrabAuthoritative()
     }
     FVector SurfaceGrip;
     if(!CaptureHandContacts(Body,Hit.ImpactPoint,ViewLocation,FRotationMatrix(ViewRotation).GetUnitAxis(EAxis::Y),ViewDirection,SurfaceGrip))return;
+    // Drive the rigid body at its mass centre; the separately captured palm
+    // stays on the handle. This avoids a long tool levering its carry spring.
+    if (Cast<AHouseWoodAxe>(Furniture)) SurfaceGrip = Body->GetCenterOfMass();
     HeldLocalGrip=Body->GetComponentTransform().InverseTransformPosition(SurfaceGrip);
     PickupGripStart = SmoothedTarget = SurfaceGrip;
     SmoothedOffset = SurfaceGrip - ViewLocation;
@@ -573,6 +667,14 @@ void UHouseFurnitureInteractionComponent::ToggleGrabAuthoritative()
     Body->SetCollisionResponseToChannel(ECC_Pawn, ECR_Ignore);
     PhysicsHandle->GrabComponentAtLocationWithRotation(Body,NAME_None,SurfaceGrip,HeldRotation);
     if (PhysicsHandle->GetGrabbedComponent() != Body) { Body->SetCollisionResponseToChannel(ECC_Pawn, SavedPawnResponse); return; }
+    if (Cast<AHouseWoodAxe>(Furniture))
+    {
+        // An end-gripped tool needs orientation support from the wrist. The
+        // generic centre-of-mass furniture drive otherwise lets its head sag.
+        Body->SetEnableGravity(false);
+        PhysicsHandle->SetLinearStiffness(50000.f); PhysicsHandle->SetLinearDamping(1000.f);
+        PhysicsHandle->SetAngularStiffness(80000.f); PhysicsHandle->SetAngularDamping(3000.f);
+    }
     Body->ComponentTags.AddUnique(HeldFurnitureTag);
     HeldActor = Furniture; HeldComponent = Body; HeldBody = Body;
     bHoldingFurniture = true;
@@ -657,6 +759,13 @@ bool UHouseFurnitureInteractionComponent::CaptureHandContacts(UPrimitiveComponen
         // One palm on the selected surface; physics holds the centre of mass so
         // the piece does not swing down around the fingertips.
         OutSurface=Body->GetCenterOfMass();
+    }
+    if (Cast<AHouseWoodAxe>(Body->GetOwner()))
+    {
+        // Grip the wooden handle, not the steel head or the clicked surface.
+        OutSurface = RightPoint = LeftPoint = Transform.TransformPosition(AHouseWoodAxe::GripLocal());
+        RightNormal = LeftNormal = Transform.TransformVectorNoScale(FVector(0, -1, 0));
+        FingerWorld = Transform.GetUnitAxis(EAxis::Z); bTwoHandedGrip = false;
     }
     if(!bShaped && CarrySize!=ESSOCarrySize::Small)
     {
@@ -922,10 +1031,16 @@ void UHouseFurnitureInteractionComponent::TickComponent(float DeltaTime,ELevelTi
         if(bSmall)
         {
             // Held out in the right hand, a little low and to the side.
-            const float Lower=Cast<AHouseBasketball>(Furniture)?20.f:30.f;
+            // Small court props need a visible relaxed grip, not a rest below
+            // the viewport. Keep existing basketball and furniture poses intact.
+            const float Lower=Cast<AHouseBasketball>(Furniture)?20.f
+                :Furniture->ActorHasTag(TEXT("SSOCourtSmallProp"))?12.f:30.f;
             Rest=ViewLocation+Direction*HoldDistance+RightAxis*17.f-Up*Lower+Up*(Bob*1.2f+Breath*.3f);
             // Wind-up: draw back past the shoulder before the release.
-            Rest+=(RightAxis*16.f-Direction*12.f+Up*30.f)*Wind;
+            if (Cast<AHouseBasketball>(Furniture) && bBasketballCharging)
+                Rest = FMath::Lerp(Rest, ViewLocation + Flat * 38 + RightAxis * 6 + Up * 20,
+                    FMath::SmoothStep(0.f, .22f, ShotClock() - BasketballChargeStart));
+            else Rest+=(RightAxis*16.f-Direction*12.f+Up*30.f)*Wind;
         }
         else
         {
@@ -937,6 +1052,12 @@ void UHouseFurnitureInteractionComponent::TickComponent(float DeltaTime,ELevelTi
         Target=FMath::Lerp(PickupGripStart,Rest,FMath::SmoothStep(bSmall?.06f:.28f,LiftDuration(),PickupAge));
         if(CarryPhase==ESSOCarryPhase::SettingDown)
             Target=FMath::Lerp(SetDownFrom,SetDownTo,FMath::SmoothStep(0.f,SetDownDuration(),PhaseAge));
+    }
+    if (auto* Axe = Cast<AHouseWoodAxe>(Furniture); Axe && CarryPhase != ESSOCarryPhase::SettingDown)
+    {
+        FVector Grip; FQuat Rot; Axe->CarryPose(ViewLocation, ViewRotation, Grip, Rot);
+        const FVector MassCentre = Grip + Rot.RotateVector((HeldLocalGrip - AHouseWoodAxe::GripLocal()) * Body->GetComponentScale());
+        Target = FMath::Lerp(PickupGripStart, MassCentre, FMath::SmoothStep(.06f, LiftDuration(), PickupAge));
     }
     if(!bLarge)
     {
@@ -1001,8 +1122,14 @@ void UHouseFurnitureInteractionComponent::TickComponent(float DeltaTime,ELevelTi
         SmoothedTarget=ViewLocation+SmoothedOffset;
     }
 
-    const FRotator DesiredRotation=(FQuat(FVector::UpVector,FMath::DegreesToRadians(FRotator::NormalizeAxis(ViewRotation.Yaw-StartingViewYaw)))*StartingBodyRotation.Quaternion()).Rotator();
-    HeldRotation=FMath::RInterpConstantTo(HeldRotation,DesiredRotation,DeltaTime,bLarge?12.f:(bSmall?80.f:55.f));
+    FRotator DesiredRotation=(FQuat(FVector::UpVector,FMath::DegreesToRadians(FRotator::NormalizeAxis(ViewRotation.Yaw-StartingViewYaw)))*StartingBodyRotation.Quaternion()).Rotator();
+    if (auto* Axe = Cast<AHouseWoodAxe>(Furniture); Axe && CarryPhase != ESSOCarryPhase::SettingDown)
+    {
+        FVector Grip; FQuat Rot; Axe->CarryPose(ViewLocation, ViewRotation, Grip, Rot);
+        const float AxeLift = FMath::SmoothStep(.06f, LiftDuration(), PickupAge);
+        DesiredRotation = FQuat::Slerp(StartingBodyRotation.Quaternion(), Rot, AxeLift).Rotator();
+    }
+    HeldRotation=FMath::RInterpConstantTo(HeldRotation,DesiredRotation,DeltaTime,Cast<AHouseWoodAxe>(Furniture)?900.f:bLarge?12.f:(bSmall?80.f:55.f));
     FQuat FinalRotation=HeldRotation.Quaternion();
     if(bLarge && !LocalFaceNormal.IsNearlyZero())
     {
@@ -1026,7 +1153,8 @@ void UHouseFurnitureInteractionComponent::TickComponent(float DeltaTime,ELevelTi
     const FVector Velocity=Body->GetPhysicsLinearVelocity();
     if(Velocity.SizeSquared()>FMath::Square(MaxSpeed))Body->SetPhysicsLinearVelocity(Velocity.GetClampedToMaxSize(MaxSpeed));
     const FVector Spin=Body->GetPhysicsAngularVelocityInRadians();
-    if(Spin.SizeSquared()>FMath::Square(3.5f))Body->SetPhysicsAngularVelocityInRadians(Spin.GetClampedToMaxSize(3.5f));
+    const float MaxSpin = Cast<AHouseWoodAxe>(Furniture) ? 24.f : 3.5f;
+    if(Spin.SizeSquared()>FMath::Square(MaxSpin))Body->SetPhysicsAngularVelocityInRadians(Spin.GetClampedToMaxSize(MaxSpin));
 }
 
 void UHouseFurnitureInteractionComponent::TranslateHeldFurniture(const FVector& Delta)
@@ -1055,6 +1183,7 @@ void UHouseFurnitureInteractionComponent::TranslateHeldFurniture(const FVector& 
 // ---------------------------------------------------------------------------
 void UHouseFurnitureInteractionComponent::BeginSetDownAuthoritative()
 {
+    bBasketballCharging = false; PendingBasketballPower = -1;
     AActor* Owner=GetOwner();
     UPrimitiveComponent* Body=HeldComponent.Get();
     if(!Owner || !bHoldingFurniture)return;
@@ -1092,6 +1221,8 @@ void UHouseFurnitureInteractionComponent::BeginSetDownAuthoritative()
 void UHouseFurnitureInteractionComponent::ReleaseGrabAuthoritative()
 {
     if (GetOwner() && !GetOwner()->HasAuthority()) return;
+    if (auto* Axe = Cast<AHouseWoodAxe>(HeldActor.Get())) Axe->CancelSwing();
+    bBasketballCharging = false;
     if (IsValid(PhysicsHandle)) PhysicsHandle->ReleaseComponent();
     if (UPrimitiveComponent* Body = HeldComponent.Get())
     {
@@ -1121,6 +1252,10 @@ void UHouseFurnitureInteractionComponent::ThrowHeldFurnitureAuthoritative()
 {
     AActor* Owner = GetOwner();
     if (!Owner || !Owner->HasAuthority() || !bHoldingFurniture) return;
+    if (auto* Axe = HeldBody ? Cast<AHouseWoodAxe>(HeldBody->GetOwner()) : nullptr)
+    { Axe->BeginSwing(Cast<AStoryFirstPersonCharacter>(Owner)); return; }
+    if (HeldBody && Cast<AHouseBasketball>(HeldBody->GetOwner()))
+    { BasketballInputAuthoritative(true, false, FRotator::ZeroRotator); return; }
     if (CarryPhase == ESSOCarryPhase::ThrowWindup || CarryPhase == ESSOCarryPhase::SettingDown
         || CarryPhase == ESSOCarryPhase::Thrown) return;
     if (!bAnimatedTransitions) { ExecuteThrowAuthoritative(); return; }
@@ -1175,11 +1310,20 @@ void UHouseFurnitureInteractionComponent::ExecuteThrowAuthoritative()
         }
     }
 
-    // Basketball uses the same server-owned grip and wind-up, with a proper
-    // lob when the player aims close to either rim. Ordinary props keep their throws.
+    // Basketball uses the player's release-time aim and power. No perfect lob.
     if (bCanThrow)
         if (const AHouseBasketball* Ball = Cast<AHouseBasketball>(Furniture))
-        { Launch = Ball->ShotVelocity(ViewLocation, ViewRotation, Owner); Spin = -RightAxis * 6.f; }
+        {
+            ViewRotation = PendingBasketballAim;
+            FCollisionQueryParams Q(SCENE_QUERY_STAT(BasketballReleaseClearance), false, Owner);
+            Q.AddIgnoredActor(Furniture); FHitResult Hit;
+            const FVector Release = AHouseBasketball::ReleasePoint(ViewLocation, ViewRotation);
+            if (!GetWorld()->SweepSingleByChannel(Hit, Body->GetComponentLocation(), Release, FQuat::Identity,
+                ECC_Visibility, FCollisionShape::MakeSphere(12.4f), Q))
+                Body->SetWorldLocation(Release, false, nullptr, ETeleportType::TeleportPhysics);
+            Launch = Ball->ShotVelocity(ViewLocation, ViewRotation, FMath::Max(0.f, PendingBasketballPower));
+            Spin = -FVector(-ViewRotation.Vector().Y, ViewRotation.Vector().X, 0).GetSafeNormal() * 6.f;
+        }
 
     // Release also clears the server reservation, disables hold tick and
     // replicates the new hold state. A stale or invalid grip still gets cleaned up.

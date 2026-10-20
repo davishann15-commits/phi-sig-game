@@ -1,0 +1,1152 @@
+{
+  "visual": [
+    {
+      "actor": "SM_Entrance_m1_m1_Solid",
+      "original_faces": 39814,
+      "extracted_faces": 3008,
+      "retained_faces": 36806,
+      "windows": [
+        {
+          "window_id": "SM_Entrance_m1_m1_Glass__001",
+          "components": 6,
+          "faces": 1128,
+          "bounds": [
+            [
+              [
+                -0.196,
+                4.6475,
+                -1e-06
+              ],
+              [
+                -0.174,
+                4.6925,
+                2.070999
+              ]
+            ],
+            [
+              [
+                -0.94,
+                4.648,
+                0.039999
+              ],
+              [
+                0.57,
+                4.728,
+                0.239999
+              ]
+            ],
+            [
+              [
+                -0.94,
+                4.6595,
+                0.403199
+              ],
+              [
+                0.57,
+                4.7045,
+                0.425199
+              ]
+            ],
+            [
+              [
+                -0.94,
+                4.6595,
+                0.817399
+              ],
+              [
+                0.57,
+                4.7045,
+                0.839399
+              ]
+            ],
+            [
+              [
+                -0.94,
+                4.6595,
+                1.231599
+              ],
+              [
+                0.57,
+                4.7045,
+                1.253599
+              ]
+            ],
+            [
+              [
+                -0.94,
+                4.6595,
+                1.645799
+              ],
+              [
+                0.57,
+                4.7045,
+                1.667799
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Entrance_m1_m1_Glass__003",
+          "components": 5,
+          "faces": 940,
+          "bounds": [
+            [
+              [
+                -5.536,
+                4.6475,
+                0.340999
+              ],
+              [
+                -5.514,
+                4.6925,
+                2.400999
+              ]
+            ],
+            [
+              [
+                -5.920001,
+                4.6595,
+                0.741999
+              ],
+              [
+                -5.130001,
+                4.7045,
+                0.763999
+              ]
+            ],
+            [
+              [
+                -5.920001,
+                4.6595,
+                1.153999
+              ],
+              [
+                -5.130001,
+                4.7045,
+                1.175999
+              ]
+            ],
+            [
+              [
+                -5.920001,
+                4.6595,
+                1.565999
+              ],
+              [
+                -5.130001,
+                4.7045,
+                1.587999
+              ]
+            ],
+            [
+              [
+                -5.920001,
+                4.6595,
+                1.977999
+              ],
+              [
+                -5.130001,
+                4.7045,
+                1.999999
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Entrance_m1_m1_Glass__004",
+          "components": 5,
+          "faces": 940,
+          "bounds": [
+            [
+              [
+                -2.436,
+                4.6475,
+                0.350999
+              ],
+              [
+                -2.414,
+                4.6925,
+                2.180999
+              ]
+            ],
+            [
+              [
+                -2.77,
+                4.6595,
+                0.705999
+              ],
+              [
+                -2.08,
+                4.7045,
+                0.727999
+              ]
+            ],
+            [
+              [
+                -2.77,
+                4.6595,
+                1.071999
+              ],
+              [
+                -2.08,
+                4.7045,
+                1.093999
+              ]
+            ],
+            [
+              [
+                -2.77,
+                4.6595,
+                1.437999
+              ],
+              [
+                -2.08,
+                4.7045,
+                1.459999
+              ]
+            ],
+            [
+              [
+                -2.77,
+                4.6595,
+                1.803999
+              ],
+              [
+                -2.08,
+                4.7045,
+                1.825999
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Entrance_m1_p0_Solid",
+      "original_faces": 42402,
+      "extracted_faces": 1880,
+      "retained_faces": 40522,
+      "windows": [
+        {
+          "window_id": "SM_Entrance_m1_p0_Glass__001",
+          "components": 5,
+          "faces": 940,
+          "bounds": [
+            [
+              [
+                5.394,
+                4.647501,
+                0.340999
+              ],
+              [
+                5.415999,
+                4.692501,
+                2.290999
+              ]
+            ],
+            [
+              [
+                5.08,
+                4.6595,
+                0.719999
+              ],
+              [
+                5.729999,
+                4.704501,
+                0.741999
+              ]
+            ],
+            [
+              [
+                5.08,
+                4.659501,
+                1.109999
+              ],
+              [
+                5.729999,
+                4.704501,
+                1.131999
+              ]
+            ],
+            [
+              [
+                5.08,
+                4.659501,
+                1.499999
+              ],
+              [
+                5.729999,
+                4.704501,
+                1.521999
+              ]
+            ],
+            [
+              [
+                5.08,
+                4.659501,
+                1.889999
+              ],
+              [
+                5.729999,
+                4.704501,
+                1.911999
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Entrance_m1_p0_Glass__002",
+          "components": 5,
+          "faces": 940,
+          "bounds": [
+            [
+              [
+                2.524,
+                4.6475,
+                0.350999
+              ],
+              [
+                2.546,
+                4.692501,
+                2.180999
+              ]
+            ],
+            [
+              [
+                2.06,
+                4.6595,
+                0.705999
+              ],
+              [
+                3.01,
+                4.7045,
+                0.727999
+              ]
+            ],
+            [
+              [
+                2.06,
+                4.659501,
+                1.071999
+              ],
+              [
+                3.01,
+                4.704501,
+                1.093999
+              ]
+            ],
+            [
+              [
+                2.06,
+                4.659501,
+                1.437999
+              ],
+              [
+                3.01,
+                4.704501,
+                1.459999
+              ]
+            ],
+            [
+              [
+                2.06,
+                4.659501,
+                1.803999
+              ],
+              [
+                3.01,
+                4.704501,
+                1.825999
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Entrance_m1_p2_Solid",
+      "original_faces": 3492,
+      "extracted_faces": 188,
+      "retained_faces": 3304,
+      "windows": [
+        {
+          "window_id": "SM_Entrance_m1_p2_Glass__001",
+          "components": 0
+        },
+        {
+          "window_id": "SM_Entrance_m1_p2_Glass__002",
+          "components": 1,
+          "faces": 188,
+          "bounds": [
+            [
+              [
+                16.304056,
+                1.331074,
+                1.1421
+              ],
+              [
+                16.369055,
+                2.254481,
+                1.1781
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Entrance_p0_p1_Solid",
+      "original_faces": 21628,
+      "extracted_faces": 376,
+      "retained_faces": 21252,
+      "windows": [
+        {
+          "window_id": "SM_Entrance_p0_p1_Glass__002",
+          "components": 1,
+          "faces": 188,
+          "bounds": [
+            [
+              [
+                14.4101,
+                -7.122499,
+                1.1535
+              ],
+              [
+                15.163099,
+                -7.057499,
+                1.1895
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Entrance_p0_p1_Glass__003",
+          "components": 1,
+          "faces": 188,
+          "bounds": [
+            [
+              [
+                8.853101,
+                -7.122499,
+                1.08435
+              ],
+              [
+                9.6061,
+                -7.0575,
+                1.12035
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Entrance_p0_p2_Solid",
+      "original_faces": 2716,
+      "extracted_faces": 376,
+      "retained_faces": 2340,
+      "windows": [
+        {
+          "window_id": "SM_Entrance_p0_p2_Glass__001",
+          "components": 1,
+          "faces": 188,
+          "bounds": [
+            [
+              [
+                16.301315,
+                -2.382628,
+                1.1421
+              ],
+              [
+                16.366314,
+                -1.459221,
+                1.1781
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Entrance_p0_p2_Glass__002",
+          "components": 1,
+          "faces": 188,
+          "bounds": [
+            [
+              [
+                16.298613,
+                -6.046144,
+                1.1421
+              ],
+              [
+                16.363611,
+                -5.122736,
+                1.1781
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_m1_m1_Solid",
+      "original_faces": 32732,
+      "extracted_faces": 1128,
+      "retained_faces": 31604,
+      "windows": [
+        {
+          "window_id": "SM_Upper_m1_m1_Glass__002",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                -2.4575,
+                4.585,
+                3.618329
+              ],
+              [
+                -2.4025,
+                4.645,
+                5.110999
+              ]
+            ],
+            [
+              [
+                -2.845,
+                4.585,
+                4.334664
+              ],
+              [
+                -2.015,
+                4.645,
+                4.394664
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Upper_m1_m1_Glass__003",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                -5.507501,
+                4.585,
+                3.618329
+              ],
+              [
+                -5.4525,
+                4.645001,
+                5.110999
+              ]
+            ],
+            [
+              [
+                -5.895,
+                4.585,
+                4.334664
+              ],
+              [
+                -5.065001,
+                4.645,
+                4.394664
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Upper_m1_m1_Glass__004",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                -2.755294,
+                4.983846,
+                3.66642
+              ],
+              [
+                -2.733294,
+                5.018846,
+                5.13642
+              ]
+            ],
+            [
+              [
+                -3.109294,
+                4.963346,
+                4.377419
+              ],
+              [
+                -2.379294,
+                5.003346,
+                4.42542
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_m1_p0_Solid",
+      "original_faces": 37162,
+      "extracted_faces": 1128,
+      "retained_faces": 36034,
+      "windows": [
+        {
+          "window_id": "SM_Upper_m1_p0_Glass__001",
+          "components": 0
+        },
+        {
+          "window_id": "SM_Upper_m1_p0_Glass__003",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                5.452499,
+                4.585,
+                3.618329
+              ],
+              [
+                5.5075,
+                4.645001,
+                5.110999
+              ]
+            ],
+            [
+              [
+                5.065,
+                4.585,
+                4.334664
+              ],
+              [
+                5.894999,
+                4.645,
+                4.394664
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Upper_m1_p0_Glass__004",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                2.4725,
+                4.585,
+                3.618329
+              ],
+              [
+                2.5275,
+                4.645001,
+                5.110999
+              ]
+            ],
+            [
+              [
+                2.085,
+                4.585,
+                4.334664
+              ],
+              [
+                2.915,
+                4.645001,
+                4.394664
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Upper_m1_p0_Glass__005",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                2.534706,
+                4.983846,
+                3.699273
+              ],
+              [
+                2.556706,
+                5.018847,
+                5.159273
+              ]
+            ],
+            [
+              [
+                2.165706,
+                4.963346,
+                4.405272
+              ],
+              [
+                2.925706,
+                5.003346,
+                4.453273
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_m2_p0_Solid",
+      "original_faces": 2668,
+      "extracted_faces": 376,
+      "retained_faces": 2292,
+      "windows": [
+        {
+          "window_id": "SM_Upper_m2_p0_Glass__001",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                7.261207,
+                8.965346,
+                3.868127
+              ],
+              [
+                7.296206,
+                8.987346,
+                5.178127
+              ]
+            ],
+            [
+              [
+                7.276706,
+                8.471346,
+                4.499127
+              ],
+              [
+                7.316707,
+                9.481345,
+                4.547128
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_m2_p1_Solid",
+      "original_faces": 7176,
+      "extracted_faces": 188,
+      "retained_faces": 6988,
+      "windows": [
+        {
+          "window_id": "SM_Upper_m2_p1_Glass__001",
+          "components": 1,
+          "faces": 188,
+          "bounds": [
+            [
+              [
+                11.641706,
+                10.253345,
+                3.784003
+              ],
+              [
+                12.361705,
+                10.293347,
+                3.832002
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_m2_p2_Solid",
+      "original_faces": 2668,
+      "extracted_faces": 376,
+      "retained_faces": 2292,
+      "windows": [
+        {
+          "window_id": "SM_Upper_m2_p2_Glass__001",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                16.278206,
+                8.620345,
+                3.907219
+              ],
+              [
+                16.313206,
+                8.642344,
+                5.217219
+              ]
+            ],
+            [
+              [
+                16.293703,
+                8.141344,
+                4.538219
+              ],
+              [
+                16.333704,
+                9.121344,
+                4.58622
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_p0_m2_Solid",
+      "original_faces": 21242,
+      "extracted_faces": 564,
+      "retained_faces": 20678,
+      "windows": [
+        {
+          "window_id": "SM_Upper_p0_m2_Glass__001",
+          "components": 1,
+          "faces": 188,
+          "bounds": [
+            [
+              [
+                -9.436793,
+                -7.007498,
+                4.113563
+              ],
+              [
+                -8.631793,
+                -6.952497,
+                4.148563
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Upper_p0_m2_Glass__002",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                -15.255293,
+                -7.296151,
+                3.801238
+              ],
+              [
+                -15.233294,
+                -7.261151,
+                5.111238
+              ]
+            ],
+            [
+              [
+                -15.729293,
+                -7.316651,
+                4.432237
+              ],
+              [
+                -14.759295,
+                -7.276651,
+                4.480237
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_p0_m3_Solid",
+      "original_faces": 4796,
+      "extracted_faces": 752,
+      "retained_faces": 4044,
+      "windows": [
+        {
+          "window_id": "SM_Upper_p0_m3_Glass__001",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                -16.611794,
+                -5.769653,
+                3.794793
+              ],
+              [
+                -16.576794,
+                -5.747652,
+                5.104793
+              ]
+            ],
+            [
+              [
+                -16.596294,
+                -6.253653,
+                4.425792
+              ],
+              [
+                -16.556292,
+                -5.263652,
+                4.473793
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Upper_p0_m3_Glass__002",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                -16.611794,
+                -0.309653,
+                3.768712
+              ],
+              [
+                -16.576794,
+                -0.287653,
+                5.078712
+              ]
+            ],
+            [
+              [
+                -16.596294,
+                -0.793653,
+                4.399712
+              ],
+              [
+                -16.556293,
+                0.196347,
+                4.447711
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_p0_p1_Solid",
+      "original_faces": 25084,
+      "extracted_faces": 752,
+      "retained_faces": 24332,
+      "windows": [
+        {
+          "window_id": "SM_Upper_p0_p1_Glass__001",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                8.344707,
+                -7.296154,
+                3.879296
+              ],
+              [
+                8.366705,
+                -7.261154,
+                5.189296
+              ]
+            ],
+            [
+              [
+                7.915705,
+                -7.316654,
+                4.510296
+              ],
+              [
+                8.795706,
+                -7.276654,
+                4.558296
+              ]
+            ]
+          ]
+        },
+        {
+          "window_id": "SM_Upper_p0_p1_Glass__002",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                11.044705,
+                -7.296154,
+                3.89096
+              ],
+              [
+                11.066705,
+                -7.261154,
+                5.200961
+              ]
+            ],
+            [
+              [
+                10.550705,
+                -7.316654,
+                4.52196
+              ],
+              [
+                11.560705,
+                -7.276654,
+                4.56996
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    },
+    {
+      "actor": "SM_Upper_p0_p2_Solid",
+      "original_faces": 2680,
+      "extracted_faces": 376,
+      "retained_faces": 2304,
+      "windows": [
+        {
+          "window_id": "SM_Upper_p0_p2_Glass__001",
+          "components": 2,
+          "faces": 376,
+          "bounds": [
+            [
+              [
+                16.208206,
+                -6.109655,
+                3.91282
+              ],
+              [
+                16.243206,
+                -6.087654,
+                5.22282
+              ]
+            ],
+            [
+              [
+                16.223705,
+                -6.588655,
+                4.54382
+              ],
+              [
+                16.263706,
+                -5.608654,
+                4.591821
+              ]
+            ]
+          ]
+        }
+      ],
+      "conservation_pass": true
+    }
+  ],
+  "collision": [
+    {
+      "actor": "COL_Entrance_m1_m1_Solid",
+      "removed_components": 0,
+      "original_components": 22,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Entrance_m1_p0_Solid",
+      "removed_components": 0,
+      "original_components": 22,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Entrance_m1_p2_Solid",
+      "removed_components": 0,
+      "original_components": 10,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Entrance_p0_p1_Solid",
+      "removed_components": 0,
+      "original_components": 19,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Entrance_p0_p2_Solid",
+      "removed_components": 0,
+      "original_components": 9,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_m1_m1_Solid",
+      "removed_components": 0,
+      "original_components": 27,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_m1_p0_Solid",
+      "removed_components": 0,
+      "original_components": 31,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_m2_p0_Solid",
+      "removed_components": 0,
+      "original_components": 4,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_m2_p1_Solid",
+      "removed_components": 0,
+      "original_components": 12,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_m2_p2_Solid",
+      "removed_components": 0,
+      "original_components": 2,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_p0_m2_Solid",
+      "removed_components": 0,
+      "original_components": 38,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_p0_m3_Solid",
+      "removed_components": 0,
+      "original_components": 8,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_p0_p1_Solid",
+      "removed_components": 0,
+      "original_components": 33,
+      "removed_faces": 0,
+      "bounds": []
+    },
+    {
+      "actor": "COL_Upper_p0_p2_Solid",
+      "removed_components": 0,
+      "original_components": 3,
+      "removed_faces": 0,
+      "bounds": []
+    }
+  ]
+}

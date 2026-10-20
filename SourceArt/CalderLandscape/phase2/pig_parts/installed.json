@@ -1,0 +1,278 @@
+{
+  "parts": [
+    {
+      "part": "Body",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Body.SM_CalderPig_Body",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -69.5,
+          -27.214906692504883,
+          25.426498413085938
+        ],
+        [
+          54.87477111816406,
+          27.21489715576172,
+          91.10476684570312
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Head",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Head.SM_CalderPig_Head",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -13.313677787780762,
+          -27.795312881469727,
+          -33.81389236450195
+        ],
+        [
+          27.871641159057617,
+          27.79862403869629,
+          23.502376556396484
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "LeftEar",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_LeftEar.SM_CalderPig_LeftEar",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -17.584537506103516,
+          -10.16629695892334,
+          -0.18576812744140625
+        ],
+        [
+          8.852105140686035,
+          9.723255157470703,
+          6.8034210205078125
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "RightEar",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_RightEar.SM_CalderPig_RightEar",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -17.584537506103516,
+          -9.723257064819336,
+          -0.18576812744140625
+        ],
+        [
+          8.852103233337402,
+          10.166298866271973,
+          6.8034210205078125
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Upper0",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Upper0.SM_CalderPig_Upper0",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -7.610531330108643,
+          -6.566516399383545,
+          -29.186538696289062
+        ],
+        [
+          10.54660701751709,
+          4.420628070831299,
+          -3.31764817237854
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Lower0",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Lower0.SM_CalderPig_Lower0",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -9.234896659851074,
+          -6.244236469268799,
+          -33.52259063720703
+        ],
+        [
+          12.88317584991455,
+          6.100788593292236,
+          3.964949131011963
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Upper1",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Upper1.SM_CalderPig_Upper1",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -7.611121654510498,
+          -4.418242454528809,
+          -29.18625259399414
+        ],
+        [
+          10.545970916748047,
+          6.568872928619385,
+          -3.317225694656372
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Lower1",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Lower1.SM_CalderPig_Lower1",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -9.234932899475098,
+          -6.098503112792969,
+          -33.52212142944336
+        ],
+        [
+          12.882654190063477,
+          6.246621608734131,
+          3.9652936458587646
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Upper2",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Upper2.SM_CalderPig_Upper2",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -15.697757720947266,
+          -6.825908184051514,
+          -36.93184280395508
+        ],
+        [
+          12.364567756652832,
+          12.963663101196289,
+          -22.211360931396484
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Lower2",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Lower2.SM_CalderPig_Lower2",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -13.196135520935059,
+          -7.588770389556885,
+          -39.126182556152344
+        ],
+        [
+          13.638105392456055,
+          10.45997428894043,
+          4.434398651123047
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Upper3",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Upper3.SM_CalderPig_Upper3",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -15.698174476623535,
+          -12.962779998779297,
+          -36.931827545166016
+        ],
+        [
+          12.364160537719727,
+          6.826697826385498,
+          -22.211179733276367
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Lower3",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Lower3.SM_CalderPig_Lower3",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -13.19633960723877,
+          -10.459257125854492,
+          -39.12574768066406
+        ],
+        [
+          13.637568473815918,
+          7.5894646644592285,
+          4.434514999389648
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    },
+    {
+      "part": "Donor",
+      "asset": "/Game/SeniorSendOff/Calder/Pig/SM_CalderPig_Donor.SM_CalderPig_Donor",
+      "lods": 3,
+      "bounds_cm": [
+        [
+          -69.5,
+          -27.85288429260254,
+          7.234361305563652e-07
+        ],
+        [
+          85.0,
+          27.852907180786133,
+          91.10476684570312
+        ]
+      ],
+      "material_slots": [
+        "M_Pig"
+      ]
+    }
+  ],
+  "material_parameters": {
+    "M_Pig": {
+      "vectors": [],
+      "textures": []
+    },
+    "M_PigDirty": {
+      "vectors": [],
+      "textures": []
+    },
+    "M_PigHair": {
+      "vectors": [],
+      "textures": []
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "owner_authorization": "2026-10-18: they sound better just need to be a bit longer",
+  "prompt_exception": "MASTER_PROMPT.md:581 synthesis-only exception for crow and raven field recordings only",
+  "license": "Public domain",
+  "license_urls": [
+    "https://home.nps.gov/romo/learn/photosmultimedia/soundlibrary.htm",
+    "https://www.nps.gov/media/video/view.htm?id=27990F1A-563F-455D-A2AE-91AFA23C6C0D"
+  ],
+  "runtime": "Fixed mono PCM copied into existing bank once on worker. Four pooled one-shots and two loops unchanged. Goose/deer/bed buffers unchanged.",
+  "items": [
+    {
+      "name": "Caw",
+      "source_page": "https://home.nps.gov/romo/learn/photosmultimedia/sounds-americancrow.htm",
+      "credit": "J. Job / National Park Service / Rocky Mountain National Park",
+      "master_mp3_sha256": "9a99bb4daa7145c5c6d64ef46bd4c727146502f61102bc5e608562e31f494783",
+      "cut_seconds": [
+        41.5,
+        42.95
+      ],
+      "rate": 24000,
+      "samples": 34800,
+      "seconds": 1.45,
+      "wav_sha256": "d571e8eee0ae0cd1204dbfb2355ffbbda7587e490956f35e49bd89c99ad7e978",
+      "pcm_sha256": "7e834bb1052ebd824ff82190d02c5c794c2488300cdce0b996e61439bc3be155",
+      "processing": "crop; DC removal;12ms edge fades; peak normalize -4.15dBFS. No pitch shift or time stretch.",
+      "beak_envelope": "actual source10ms RMS"
+    },
+    {
+      "name": "Raven",
+      "source_page": "https://www.nps.gov/media/video/view.htm?id=27990F1A-563F-455D-A2AE-91AFA23C6C0D",
+      "credit": "National Park Service / Grand Teton National Park",
+      "master_mp3_sha256": "50ac94bd9cb8ad26e8857cf75545416e2a43ebc5888e451657a2c8aaf18d4a32",
+      "cut_seconds": [
+        0.32,
+        2.27
+      ],
+      "rate": 24000,
+      "samples": 46800,
+      "seconds": 1.95,
+      "wav_sha256": "1176d70f116bbd332af124a5d230b5ffecb07577888ef3bd118c39bfb7c1ccde",
+      "pcm_sha256": "fffbf89612e90325696f16798369c342a5d7b85ac8b661d85493ae31a7e2dbe2",
+      "processing": "crop; DC removal;12ms edge fades; peak normalize -4.15dBFS. No pitch shift or time stretch.",
+      "beak_envelope": null
+    }
+  ],
+  "generated_sha256": "579d34008b157dacaffa9fbf1184a59fca3e42c0cf0b326d58662ede6d99c28e",
+  "source_installed": true
+}

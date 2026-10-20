@@ -1,0 +1,76 @@
+{
+  "checked_utc": "2026-10-18T06:19:07.669746+00:00",
+  "owner_instruction": "make sure to use the fabs i downloaded; you can use whatever fabs you want as long as they are free",
+  "budget_usd": 0,
+  "account_signin_or_terms_acceptance_authorized": false,
+  "inventory_roots": [
+    "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Content",
+    "/Users/Stewart/Downloads",
+    "/Users/Stewart/Projects/Senior sendoff"
+  ],
+  "existing_animal_pack": {
+    "path": "Content/AnimalVarietyPack",
+    "listing": "https://www.fab.com/listings/2dd7964c-a601-4264-a53d-465dcae1644c",
+    "listing_observed_free": true,
+    "deer_and_crow": "already used as read-only donors for owned native static derivatives",
+    "fox": "existing textured donor and phase2/fox.fbx, available for next ground species",
+    "pig": "existing donor, separate protected-room scope",
+    "wolf_and_european_stag": "not appropriate for1986 Appalachian roster"
+  },
+  "additional_wildlife_packs_found": [],
+  "candidate_checks": [
+    {
+      "title": "Goose Low Poly",
+      "url": "https://www.fab.com/listings/c21cf5e3-cdb9-4743-b6fe-78e76748c8ec",
+      "observed_free": true,
+      "use": false,
+      "reason": "minimalist domestic goose does not meet Canada-goose/photo target"
+    },
+    {
+      "title": "Entitled Goose - Untitled Goose Game",
+      "url": "https://www.fab.com/listings/e0c3dca6-e6a9-476e-a2fb-7a7f6f217e80",
+      "observed_free": true,
+      "use": false,
+      "reason": "stylized existing-game character is unsuitable"
+    },
+    {
+      "title": "Low Poly Cartoon Canada Goose",
+      "url": "https://www.fab.com/listings/6bc878a7-15a0-4255-b0d9-9e25c785fb19",
+      "observed_free": null,
+      "use": false,
+      "reason": "price not verified zero; cartoon/no texture maps"
+    },
+    {
+      "title": "Goose19",
+      "url": "https://www.fab.com/listings/538b897b-b899-4fe2-af91-4b215e8b6900",
+      "observed_free": false,
+      "use": false,
+      "reason": "buy now listing, skip"
+    },
+    {
+      "title": "Squirrel Extended",
+      "url": "https://www.fab.com/listings/1056882a-ec88-4a79-b567-6192b80e7b87",
+      "observed_free": true,
+      "use": false,
+      "reason": "photogrammetry statue/park scene, not an animated living gray squirrel"
+    },
+    {
+      "title": "Animalia - Black Bear male",
+      "url": "https://www.fab.com/listings/505a3e9c-509a-4ecd-87dd-63c0c3821439",
+      "observed_free": null,
+      "use": false,
+      "reason": "free description refers to optional gFur plugin, not the model; no verified zero-price licence"
+    }
+  ],
+  "new_acquisitions": [],
+  "goose_and_bat_geometry": "current original-code prototype remains opt-in; no claim of Fab origin or photographic acceptance",
+  "search_scope_note": "This targeted check did not find a suitable free replacement; it does not establish that none exists on Fab.",
+  "additional_standard_cache_paths_checked_absent": [
+    "/Users/Shared/Epic Games/Launcher/VaultCache",
+    "/Users/Shared/Epic Games",
+    "/Users/Stewart/Library/Application Support/Epic/UnrealEngineLauncher/VaultCache",
+    "/Users/Stewart/Library/Application Support/Epic/EpicGamesLauncher/VaultCache",
+    "/Users/Stewart/Documents/Fab",
+    "/Users/Stewart/Documents/Megascans Library"
+  ]
+}

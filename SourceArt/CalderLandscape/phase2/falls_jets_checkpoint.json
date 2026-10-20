@@ -1,0 +1,75 @@
+{
+  "scope": "Partial waterfall appearance checkpoint; whole master unfinished",
+  "build": {
+    "log": "Saved/CalderWork/codex_falls_ballistic_build.log",
+    "actions": 209,
+    "seconds": 122.22,
+    "passed": true
+  },
+  "material": {
+    "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderFallsJetsTrial",
+    "pixel_instructions": 305,
+    "pixel_samples": 4,
+    "surface": "Masked opaque jets; no translucent/refraction pass",
+    "animation": "Ballistic time-of-flight advection, v0=90 cm/s, g=980 cm/s2",
+    "roughness": 0.06,
+    "has_pixel_animation": true,
+    "default_enabled": false,
+    "trial_switch": "CalderFallsJetsTrial",
+    "source_sha256": {
+      "Content/SeniorSendOff/Calder/Materials/M_CalderFalls.uasset": "edcd97c14c7bc43ea47d4194075d9fdc6e5c0ab7c2e40f21de0af4e8393f24b5",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderStream.uasset": "c36d1457988cef02c14494164ede0dcea78b33fc4291f1d011ff2b3e57a482b9"
+    },
+    "scope": "Appearance trial; native/visual acceptance pending",
+    "collision_water_queries_mist_unchanged": true,
+    "static_geometry_tails": false
+  },
+  "appearance": {
+    "inspected_all_frames": true,
+    "images": {
+      "225_detail_calder_eye_P6.png": "689449776a3da84fe27c310aaf34b8cbb77538bcc947af4223c546739362c01c",
+      "225_detail_calder_eye_P6_motion_00.png": "23aeb8eecef01a754f1c3fe24409e7dd9c59e1b39f97b14d151029cd2c02eb2a",
+      "225_detail_calder_eye_P6_motion_01.png": "0f6c3a57cdabc076fa207ddf2810cc2bf2d30677f3117e90f6888c5c6e859937",
+      "225_detail_calder_eye_P6_motion_02.png": "17fc413401f792c01f6854d5591d1ea243bfaf6b69f0863cb0e3a77954a80e7e",
+      "225_detail_calder_eye_P6_motion_03.png": "9f953d3e7a89f2f26b48f3e3944c17ba966cd6be3534ba5898137050c455ef59"
+    },
+    "motion_world_seconds": [
+      9.732,
+      10.54,
+      11.346,
+      12.149
+    ],
+    "findings": [
+      "Fixed triangular ends removed; continuous strands now reach the existing pool.",
+      "Animated open gaps retain the view of the rock-house path.",
+      "Flow changes over all delayed frames; motion mapping is ballistic by analytic receipt.",
+      "Dither grain and a sheet-like planar silhouette remain; broader photographic acceptance and performance are open."
+    ],
+    "total_inspected_tree_woods_ridge_water_frames": 132,
+    "default_enabled": false
+  },
+  "terrain_water_review": "Saved/CalderWork/runs/codex_falls_ballistic_terrain/Saved/CalderTerrainReview/review.txt",
+  "terrain_water_pass": true,
+  "collision_queries_beds_bridges_unchanged": true,
+  "no_terrain_compatibility": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_falls_trials_noterrain",
+    "grounds": 69240,
+    "instances": 53740,
+    "campusFrontVertices": 1091586,
+    "floorSamples": 2654,
+    "exterior_lights": 53,
+    "tree_crc": "0f3b2bb7",
+    "trial_markers_absent": true
+  },
+  "sources": {
+    "Source/SeniorSendoff/HouseCalderWater.cpp": "a05dd7c86637ea4486c351ba96f9777c21fdb0e4cb91e0e0ff263695cdfda02f",
+    "Source/SeniorSendoff/HouseExterior.cpp": "f3d359bf4ec40849d4159a877a22ce2f519805c094be85f4a892cdfdb0f1e1ea",
+    "Tools/calder/falls_jets_assets_batch.py": "bbdda3c44b33b1bd58bdabf8990b0ac4a197c3b34b7b61d36ae197404d9db44b",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderFallsJetsTrial.uasset": "150bc0956caa31db77da4b8e269ae441a98634aacbb69f5b8d82359326cdf2c9"
+  },
+  "global_fog": "Pending owner approval; unapplied"
+}

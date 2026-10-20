@@ -1,0 +1,844 @@
+// The homecoming campus actor: builds the stadium and campus dressing (HouseCampusFallStadium, HouseCampusFallQuad) beside
+// the exterior and keeps it alive: pennants, streamers and bedsheets flutter; jack-o'-lanterns and bonfire embers flicker;
+// the scoreboard's marquee bulbs chase; the floods and the mercury lamps carry a soft haze; the bonfire smokes; leaves
+// come down over the green; and now and then the band's drumline is heard from the stadium. Adds no lights.
+#include "HouseCampusFall.h"
+#include "HouseStadiumDetail.h"
+#include "HouseCampusFallParts.h"
+#include "HouseBlackHall.h"
+#include "HouseBlackHallLook.h"
+#include "HouseBlackHallMesh.h"
+#include "HouseBlackHallPaint.h"
+#include "HouseExteriorCampus.h"
+#include "HouseStreetScene.h"
+#include "Async/Async.h"
+#include "AudioMixerBlueprintLibrary.h"
+#include "Camera/PlayerCameraManager.h"
+#include "Components/AudioComponent.h"
+#include "Components/HierarchicalInstancedStaticMeshComponent.h"
+#include "Engine/CollisionProfile.h"
+#include "Engine/Engine.h"
+#include "Engine/Texture2D.h"
+#include "Engine/World.h"
+#include "EngineUtils.h"
+#include "HAL/FileManager.h"
+#include "HAL/IConsoleManager.h"
+#include "HAL/PlatformTime.h"
+#include "Kismet/GameplayStatics.h"
+#include "Materials/MaterialInstanceDynamic.h"
+#include "Misc/CommandLine.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Parse.h"
+#include "Misc/Paths.h"
+#include "ProceduralMeshComponent.h"
+#include "Sound/SoundAttenuation.h"
+#include "Sound/SoundWaveProcedural.h"
+#include "Sound/SoundSubmix.h"
+
+namespace HouseCampusFallImpl
+{
+constexpr int32 DrumRate = 32000, PuffCount = 44, LeafCount = 96;
+constexpr float DrumInner = 2000.f, DrumFalloff = 36000.f;
+const TCHAR* const LeafKeys[4] = { TEXT("ST_LeafOrange"), TEXT("ST_LeafRed"), TEXT("ST_LeafYellow"), TEXT("ST_LeafBrown") };
+
+TWeakObjectPtr<AHouseCampusFall>& Current() { static TWeakObjectPtr<AHouseCampusFall> Actor; return Actor; }
+
+// ------------------------------------------------------------------ the drumline, synthesised
+float Hash(uint32 X)
+{
+    X ^= X >> 16; X *= 0x7feb352du; X ^= X >> 15; X *= 0x846ca68bu; X ^= X >> 16;
+    return (X & 0xFFFFFFu) / float(0xFFFFFF);
+}
+
+void Snare(TArray<float>& Out, int32 At, float Vel, uint32 Seed)
+{
+    // A tight marching snare: a short pitched crack and the bright buzz of the wires.
+    const int32 Len = int32(.26f * DrumRate);
+    float Lp = 0.f, Prev = 0.f;
+    for (int32 I = 0; I < Len && At + I < Out.Num(); ++I)
+    {
+        if (At + I < 0) continue;
+        const float T = I / float(DrumRate);
+        const float Noise = Hash(Seed * 7919u + uint32(I)) * 2.f - 1.f;
+        const float Bright = Noise - Prev * .65f;
+        Prev = Noise;
+        Lp += (Bright - Lp) * .5f;
+        const float Body = FMath::Sin(2.f * PI * 196.f * T + 3.f * FMath::Exp(-T * 60.f)) * FMath::Exp(-T * 34.f);
+        Out[At + I] += Vel * (.45f * Body + .75f * Lp * FMath::Exp(-T * 18.f));
+    }
+}
+
+void Bass(TArray<float>& Out, int32 At, float Pitch, float Vel)
+{
+    const int32 Len = int32(.65f * DrumRate);
+    float Phase = 0.f;
+    for (int32 I = 0; I < Len && At + I < Out.Num(); ++I)
+    {
+        const float T = I / float(DrumRate);
+        Phase += 2.f * PI * Pitch * (1.f + .45f * FMath::Exp(-T * 26.f)) / DrumRate;
+        if (At + I >= 0) Out[At + I] += Vel * FMath::Sin(Phase) * FMath::Exp(-T * 7.f) * (1.f - FMath::Exp(-T * 900.f));
+    }
+}
+
+void Tenor(TArray<float>& Out, int32 At, float Pitch, float Vel, uint32 Seed)
+{
+    const int32 Len = int32(.4f * DrumRate);
+    float Phase = 0.f;
+    for (int32 I = 0; I < Len && At + I < Out.Num(); ++I)
+    {
+        const float T = I / float(DrumRate);
+        Phase += 2.f * PI * Pitch * (1.f + .1f * FMath::Exp(-T * 40.f)) / DrumRate;
+        const float Stick = (Hash(Seed * 104729u + uint32(I)) * 2.f - 1.f) * FMath::Exp(-T * 140.f);
+        if (At + I >= 0) Out[At + I] += Vel * (FMath::Sin(Phase) * FMath::Exp(-T * 12.f) + .35f * Stick);
+    }
+}
+
+void Cymbal(TArray<float>& Out, int32 At, float Vel, uint32 Seed)
+{
+    const int32 Len = int32(2.4f * DrumRate);
+    float Prev = 0.f;
+    for (int32 I = 0; I < Len && At + I < Out.Num(); ++I)
+    {
+        const float T = I / float(DrumRate);
+        const float Noise = Hash(Seed * 15485863u + uint32(I)) * 2.f - 1.f;
+        const float Hiss = Noise - Prev;
+        Prev = Noise;
+        const float Ring = FMath::Sin(2.f * PI * 3520.f * T) * .3f + FMath::Sin(2.f * PI * 5170.f * T) * .25f + FMath::Sin(2.f * PI * 6930.f * T) * .2f;
+        if (At + I >= 0) Out[At + I] += Vel * (Hiss * .7f + Ring * .3f) * FMath::Exp(-T * 2.3f) * (1.f - FMath::Exp(-T * 400.f));
+    }
+}
+
+/** The cadence: four bars at 120 bpm in sixteenths (snare, five split basses, four tenors, crashes), played three times
+    and heard across the campus with the far stands' slap-back. */
+TArray<int16> Cadence()
+{
+    static const TCHAR* const SnareBars[4] = { TEXT("X.x.x.xxX.x.x.xx"), TEXT("X.x.xxx.X.x.xx.x"), TEXT("X.gxX.gxX.gxXxxx"), TEXT("XxxxXxxxX.X.X...") };
+    static const TCHAR* const BassBars[4] = { TEXT("1...3...1...4..."), TEXT("1..2.3..1..2.4.5"), TEXT("1...3.2.1...45.."), TEXT("54321...1.1.1...") };
+    static const TCHAR* const TenorBars[4] = { TEXT("....a.b.....c.d."), TEXT("..abcd....dcba.."), TEXT("a.b.c.d.a.b.c.d."), TEXT("abcdabcda.a.a...") };
+    const float BassPitch[5] = { 55.f, 62.f, 70.f, 82.f, 96.f }, TenorPitch[4] = { 330.f, 282.f, 238.f, 198.f };
+    constexpr float Step = .125f;
+    const bool bStadiumGhost=HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=7;
+    if(bStadiumGhost)return HouseStadiumDetail::SnareCadence();
+    const int32 Loops=bStadiumGhost?1:3;
+    TArray<float> Mix;
+    Mix.SetNumZeroed(int32((Loops * 64 * Step + 3.f) * DrumRate));
+    uint32 Seed = 11;
+    for (int32 Loop = 0; Loop < Loops; ++Loop)
+        for (int32 Bar = 0; Bar < 4; ++Bar)
+            for (int32 S = 0; S < 16; ++S)
+            {
+                const float T = ((Loop * 4 + Bar) * 16 + S) * Step + .1f;
+                const int32 At = int32((T + (Hash(Seed++) - .5f) * .008f) * DrumRate);
+                const TCHAR Sn = SnareBars[Bar][S], Ba = BassBars[Bar][S], Te = TenorBars[Bar][S];
+                if (Sn == TEXT('X')) Snare(Mix, At, 1.f, Seed++);
+                else if (Sn == TEXT('x')) Snare(Mix, At, .6f, Seed++);
+                else if (Sn == TEXT('g')) Snare(Mix, At, .22f, Seed++);
+                if (!bStadiumGhost&&Ba >= TEXT('1') && Ba <= TEXT('5')) Bass(Mix, At + int32(Hash(Seed++) * 60.f), BassPitch[Ba - TEXT('1')], .95f);
+                if (!bStadiumGhost&&Te >= TEXT('a') && Te <= TEXT('d'))
+                {
+                    const int32 Late = int32(Hash(Seed++) * 50.f);
+                    Tenor(Mix, At + Late, TenorPitch[Te - TEXT('a')], .42f, Seed++);
+                }
+                if (!bStadiumGhost&&(((Bar == 0 || Bar == 2) && S == 0) || (Bar == 3 && S == 12))) Cymbal(Mix, At, .3f, Seed++);
+            }
+    // Slap-back from the stands across the bowl, then a little air between the stadium and the listener.
+    const int32 D1 = int32(.17f * DrumRate), D2 = int32(.39f * DrumRate);
+    TArray<float> Wet = Mix;
+    for (int32 I = 0; I < Mix.Num(); ++I) Wet[I] += (I >= D1 ? .3f * Mix[I - D1] : 0.f) + (I >= D2 ? .15f * Mix[I - D2] : 0.f);
+    const float A = 1.f - FMath::Exp(-2.f * PI * (bStadiumGhost?1400.f:4200.f) / DrumRate);
+    float Y = 0.f, Peak = 1e-4f;
+    for (float& V : Wet) { Y += (V - Y) * A; V = Y; Peak = FMath::Max(Peak, FMath::Abs(V)); }
+    TArray<int16> Pcm;
+    Pcm.SetNumUninitialized(Wet.Num());
+    for (int32 I = 0; I < Wet.Num(); ++I) Pcm[I] = int16(FMath::Clamp(Wet[I] / Peak * .85f, -1.f, 1.f) * 32767.f);
+    return Pcm;
+}
+
+/** How loud the drums are at a distance: a soft spreading law, renormalised to reach zero at the falloff. */
+float Spread(float Distance) { return FMath::Clamp(FMath::Pow(DrumInner / FMath::Max(Distance, DrumInner), .85f), 0.f, 1.f); }
+
+void DrumsCommand(const TArray<FString>& Args, UWorld* World)
+{
+    AHouseCampusFall* Actor = Current().Get();
+    if (Actor && Actor->GetWorld() == World) Actor->PlayDrums(TEXT("console"));
+}
+}
+
+static FAutoConsoleCommandWithWorldAndArgs GHouseCampusFallDrumsCommand(TEXT("CampusFall.Drums"), TEXT("Play the homecoming drumline cadence from the stadium now."),
+    FConsoleCommandWithWorldAndArgsDelegate::CreateStatic(&HouseCampusFallImpl::DrumsCommand));
+
+AHouseCampusFall::AHouseCampusFall()
+{
+    PrimaryActorTick.bCanEverTick = true;
+    PrimaryActorTick.bStartWithTickEnabled = true;
+    bReplicates = false;
+    SetCanBeDamaged(false);
+    USceneComponent* Root = CreateDefaultSubobject<USceneComponent>(TEXT("CampusFallRoot"));
+    Root->SetMobility(EComponentMobility::Static);
+    RootComponent = Root;
+}
+
+AHouseCampusFall* AHouseCampusFall::SpawnFor(AActor* Exterior, UHouseBlackHallSubsystem* Look)
+{
+    UWorld* World = Exterior ? Exterior->GetWorld() : nullptr;
+    if (!World || !Look || !HouseCampusFall::Enabled()) return nullptr;
+    FActorSpawnParameters Params;
+    Params.ObjectFlags |= RF_Transient;
+    Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+    // At the origin like the exterior, so every part is written in world space.
+    AHouseCampusFall* Actor = World->SpawnActor<AHouseCampusFall>(AHouseCampusFall::StaticClass(), FTransform::Identity, Params);
+    if (!Actor) return nullptr;
+    HouseCampusFallImpl::Current() = Actor;
+    // Where the exterior's trees stand (read, never moved).
+    TArray<FVector> Trees;
+    TArray<UInstancedStaticMeshComponent*> Batches;
+    Exterior->GetComponents(Batches);
+    for (const UInstancedStaticMeshComponent* Batch : Batches)
+    {
+        if (!Batch || !(Batch->GetName().StartsWith(TEXT("ExteriorTree")) || Batch->GetName().StartsWith(TEXT("CampusFallTree")))) continue;
+        for (int32 I = 0; I < Batch->GetInstanceCount(); ++I)
+        {
+            FTransform T;
+            if (Batch->GetInstanceTransform(I, T, true)) Trees.Add(FVector(T.GetLocation().X, T.GetLocation().Y, T.GetScale3D().Z));
+        }
+    }
+    Actor->Build(Look, Trees);
+    return Actor;
+}
+
+UProceduralMeshComponent* AHouseCampusFall::MakePart(const FHallMesh& M, const FString& Name, bool bCollision, float CullDistance, UHouseBlackHallSubsystem* Look)
+{
+    if (M.NumTriangles() == 0) return nullptr;
+    UProceduralMeshComponent* PM = NewObject<UProceduralMeshComponent>(this, FName(*Name));
+    PM->SetMobility(EComponentMobility::Static);
+    PM->SetupAttachment(GetRootComponent());
+    PM->SetCastShadow(false);
+    PM->SetReceivesDecals(false);
+    PM->bUseComplexAsSimpleCollision = true;
+    PM->bUseAsyncCooking = false;
+    PM->bAffectDynamicIndirectLighting = false;
+    PM->bAffectDistanceFieldLighting = false;
+    if (bCollision)
+    {
+        // Simple blockers for the solid props; never drawn.
+        PM->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
+        PM->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+        PM->SetVisibility(false);
+        PM->SetHiddenInGame(true);
+    }
+    else PM->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    if (CullDistance > 0.f) PM->SetCullDistance(CullDistance);
+    PM->RegisterComponent();
+    AddInstanceComponent(PM);
+    M.Build(PM, [Look](FName Key) { return Look->Mat(Key); }, bCollision);
+    Meshes.Add(PM);
+    if (!bCollision) { Triangles += M.NumTriangles(); ++Parts; }
+    return PM;
+}
+
+UProceduralMeshComponent* AHouseCampusFall::MakeDynamic(const TCHAR* Name)
+{
+    UProceduralMeshComponent* PM = NewObject<UProceduralMeshComponent>(this, Name);
+    PM->SetMobility(EComponentMobility::Movable);
+    PM->SetupAttachment(GetRootComponent());
+    PM->SetCastShadow(false);
+    PM->SetReceivesDecals(false);
+    PM->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    PM->bAffectDynamicIndirectLighting = false;
+    PM->bAffectDistanceFieldLighting = false;
+    PM->RegisterComponent();
+    AddInstanceComponent(PM);
+    Meshes.Add(PM);
+    ++Parts;
+    return PM;
+}
+
+void AHouseCampusFall::Build(UHouseBlackHallSubsystem* Look, const TArray<FVector>& Trees)
+{
+    const double Started = FPlatformTime::Seconds();
+    Rng.Initialize(18101986);
+    HouseCampusFallParts::FParts P;
+    P.Trees = Trees;
+    HouseCampusFallParts::Stadium(P);
+    HouseCampusFallParts::Campus(P);
+    MakePart(P.Field, TEXT("CampusFallField"), false, 0.f, Look);
+    MakePart(P.Score, TEXT("CampusFallScoreboard"), false, 0.f, Look);
+    MakePart(P.Stands, TEXT("CampusFallStands"), false, 32000.f, Look);
+    MakePart(P.Gate, TEXT("CampusFallGate"), false, 24000.f, Look);
+    MakePart(P.Green, TEXT("CampusFallGreen"), false, 24000.f, Look);
+    MakePart(P.Dorms, TEXT("CampusFallDorms"), false, 30000.f, Look);
+    MakePart(P.Lamps, TEXT("CampusFallLamps"), false, 22000.f, Look);
+    MakePart(P.Walks, TEXT("CampusFallWalks"), false, 14000.f, Look);
+    MakePart(P.Solid, TEXT("CampusFallSolid"), true, 0.f, Look);
+    Lanterns = P.Lanterns;
+    BuildFlutter(Look, P.Cloths);
+    BuildHalos(Look, P.Halos);
+    if (!P.Bonfire.IsZero()) BuildSmoke(Look, P.Bonfire);
+    BuildLeaves(Look, P.LeafBox);
+    BuildGlow(Look);
+    BuildSound();
+    AHouseStadiumDetail::SpawnFor(this,Look);
+    UE_LOG(LogTemp, Display, TEXT("CAMPUS_FALL built school=\"%s\" team=%s rival=%s tris=%d parts=%d cloths=%d halos=%d lanterns=%d puffs=%d leaves=%d trees=%d bonfire=(%.0f,%.0f) glows=%d drums=%d lights=0 ms=%.0f"),
+        HouseCampusFall::School(), HouseCampusFall::Team(), HouseCampusFall::Rival(), Triangles, Parts, Cloths.Num(), HaloSpots.Num(), Lanterns, Puffs.Num(), LeafState.Num(), Trees.Num(), P.Bonfire.X, P.Bonfire.Y,
+        GlowMaterials.Num(), Drums ? 1 : 0, (FPlatformTime::Seconds() - Started) * 1000.0);
+}
+
+// ------------------------------------------------------------------ flutter
+void AHouseCampusFall::BuildFlutter(UHouseBlackHallSubsystem* Look, const TArray<HouseCampusFallParts::FCloth>& In)
+{
+    if (In.Num() == 0) return;
+    TArray<FName> Keys;
+    TArray<TArray<int32>> Indices;
+    TArray<TArray<FVector2D>> UVs;
+    TArray<TArray<FProcMeshTangent>> Tangents;
+    auto SectionFor = [&](FName Key)
+    {
+        int32 S = Keys.IndexOfByKey(Key);
+        if (S == INDEX_NONE)
+        {
+            S = Keys.Add(Key);
+            FlutterPos.AddDefaulted(); FlutterNrm.AddDefaulted(); Indices.AddDefaulted(); UVs.AddDefaulted(); Tangents.AddDefaulted();
+        }
+        return S;
+    };
+    for (int32 K = 0; K < In.Num(); ++K)
+    {
+        const HouseCampusFallParts::FCloth& C = In[K];
+        FFlutter F;
+        F.Cols = FMath::Max(1, C.Cols); F.Rows = FMath::Max(1, C.Rows);
+        F.Origin = C.Origin; F.Right = C.Right.GetSafeNormal(); F.Down = C.Down.GetSafeNormal();
+        F.Normal = FVector::CrossProduct(F.Right, F.Down).GetSafeNormal();
+        F.Width = C.Width; F.Height = C.Height; F.Amp = C.Amp; F.Pinned = C.Pinned; F.Taper = C.Taper;
+        F.Phase = Rng.FRandRange(0.f, 2.f * PI);
+        const int32 W = F.Cols + 1, H = F.Rows + 1;
+        for (int32 Face = 0; Face < 2; ++Face)
+        {
+            const int32 S = SectionFor(Face == 0 ? C.Front : C.Back);
+            const int32 First = FlutterPos[S].Num();
+            if (Face == 0) { F.Section = S; F.First = First; }
+            else { F.BackSection = S; F.BackFirst = First; }
+            const FVector Nrm = Face == 0 ? F.Normal : -F.Normal;
+            for (int32 R = 0; R < H; ++R)
+                for (int32 Col = 0; Col < W; ++Col)
+                {
+                    const float U = Col / float(F.Cols), V = R / float(F.Rows);
+                    const FVector At = F.Origin + F.Right * (F.Width * ((U - .5f) * (1.f - F.Taper * V) + .5f)) + F.Down * (F.Height * V) - Nrm * (Face == 0 ? 0.f : .25f);
+                    FlutterPos[S].Add(At);
+                    FlutterNrm[S].Add(Nrm);
+                    UVs[S].Add(FVector2D(Face == 0 ? U : 1.f - U, V));
+                    Tangents[S].Add(FProcMeshTangent(F.Right * (Face == 0 ? 1.f : -1.f), false));
+                    ClothBounds += At;
+                }
+            for (int32 R = 0; R < F.Rows; ++R)
+                for (int32 Col = 0; Col < F.Cols; ++Col)
+                {
+                    const int32 A = First + R * W + Col, B = A + 1, Cc = A + W + 1, D = A + W;
+                    const TArray<FVector>& Pos = FlutterPos[S];
+                    // Wound to face Nrm (the engine's front faces have a negative cross . normal here).
+                    if (FVector::DotProduct(FVector::CrossProduct(Pos[B] - Pos[A], Pos[D] - Pos[A]), Nrm) < 0) Indices[S].Append({ A, B, D, B, Cc, D });
+                    else Indices[S].Append({ A, D, B, B, D, Cc });
+                }
+        }
+        Cloths.Add(F);
+    }
+    Flutter = MakeDynamic(TEXT("CampusFallCloth"));
+    for (int32 S = 0; S < Keys.Num(); ++S)
+    {
+        Flutter->CreateMeshSection(S, FlutterPos[S], Indices[S], FlutterNrm[S], UVs[S], TArray<FColor>(), Tangents[S], false);
+        Flutter->SetMaterial(S, Look->Mat(Keys[S]));
+        Triangles += Indices[S].Num() / 3;
+    }
+}
+
+void AHouseCampusFall::UpdateFlutter(double Now, const FVector& Camera)
+{
+    if (!Flutter || Cloths.Num() == 0 || Now < NextFlutter) return;
+    // Out of sight of the stadium and the green nothing visibly moves: look again in a moment.
+    if (ClothBounds.ComputeSquaredDistanceToPoint(Camera) > FMath::Square(17000.)) { NextFlutter = Now + .5; return; }
+    NextFlutter = Now + 1.0 / 30.0;
+    const float T = float(FMath::Fmod(Now, 3600.0));
+    TArray<FVector> Grid;
+    for (const FFlutter& F : Cloths)
+    {
+        const int32 W = F.Cols + 1, H = F.Rows + 1;
+        Grid.SetNum(W * H, EAllowShrinking::No);
+        const float Gust = .62f + .38f * FMath::Sin(T * .37f + F.Phase * .3f) * FMath::Sin(T * .23f + 1.f);
+        for (int32 R = 0; R < H; ++R)
+            for (int32 Col = 0; Col < W; ++Col)
+            {
+                const float U = Col / float(F.Cols), V = R / float(F.Rows);
+                const float Hang = FMath::Pow(V, 1.3f), Tied = FMath::Min(1.f, (FMath::Sin(PI * U) + FMath::Sin(PI * V)) * .6f);
+                const float Weight = FMath::Lerp(Hang, Tied, F.Pinned);
+                const float Wave = FMath::Sin(T * 3.1f + U * 4.2f + V * 2.3f + F.Phase) * .55f + FMath::Sin(T * 5.7f - U * 6.1f + V * 3.7f + F.Phase * 1.7f) * .25f
+                    + FMath::Sin(T * 1.2f + F.Phase * .5f) * .45f;
+                const float Sway = FMath::Sin(T * 1.6f + F.Phase) * (1.f - F.Pinned) * Hang;
+                Grid[R * W + Col] = F.Origin + F.Right * (F.Width * ((U - .5f) * (1.f - F.Taper * V) + .5f) + Sway * F.Amp * 3.f) + F.Down * (F.Height * V)
+                    + F.Normal * (Wave * Gust * F.Amp * 6.f * Weight);
+                FlutterPeak = FMath::Max(FlutterPeak, FMath::Abs(Wave * Gust * F.Amp * 6.f * Weight));
+            }
+        for (int32 R = 0; R < H; ++R)
+            for (int32 Col = 0; Col < W; ++Col)
+            {
+                const int32 I = R * W + Col;
+                const FVector DU = Grid[R * W + FMath::Min(Col + 1, W - 1)] - Grid[R * W + FMath::Max(Col - 1, 0)];
+                const FVector DV = Grid[FMath::Min(R + 1, H - 1) * W + Col] - Grid[FMath::Max(R - 1, 0) * W + Col];
+                FVector Nrm = FVector::CrossProduct(DU, DV).GetSafeNormal();
+                if (Nrm.IsNearlyZero()) Nrm = F.Normal;
+                else if (FVector::DotProduct(Nrm, F.Normal) < 0) Nrm = -Nrm;
+                FlutterPos[F.Section][F.First + I] = Grid[I];
+                FlutterNrm[F.Section][F.First + I] = Nrm;
+                FlutterPos[F.BackSection][F.BackFirst + I] = Grid[I] - Nrm * .25f;
+                FlutterNrm[F.BackSection][F.BackFirst + I] = -Nrm;
+            }
+    }
+    for (int32 S = 0; S < FlutterPos.Num(); ++S) Flutter->UpdateMeshSection(S, FlutterPos[S], FlutterNrm[S], TArray<FVector2D>(), TArray<FColor>(), TArray<FProcMeshTangent>());
+    ++FlutterUpdates;
+}
+
+// ------------------------------------------------------------------ glow: lanterns, embers and the marquee
+void AHouseCampusFall::BuildGlow(UHouseBlackHallSubsystem* Look)
+{
+    static const TCHAR* const Bases[3] = { TEXT("CF_Candle"), TEXT("CF_Ember"), TEXT("CF_Chase") };
+    for (int32 Kind = 0; Kind < 3; ++Kind)
+        for (int32 K = 0; K < 3; ++K)
+        {
+            UMaterialInstanceDynamic* M = Cast<UMaterialInstanceDynamic>(Look->Materials.FindRef(FName(*FString::Printf(TEXT("%s%d"), Bases[Kind], K))));
+            FLinearColor E;
+            if (!M || !M->GetVectorParameterValue(FHashedMaterialParameterInfo(TEXT("Emission")), E)) continue;
+            GlowMaterials.Add(M);
+            GlowBase.Add(E);
+            GlowKind.Add(Kind * 3 + K);
+        }
+}
+
+void AHouseCampusFall::UpdateGlow(double Now)
+{
+    if (Now < NextGlow) return;
+    NextGlow = Now + 1.0 / 30.0;
+    const float T = float(FMath::Fmod(Now, 3600.0));
+    const int32 Step = int32(FMath::Fmod(Now * 5.0, 3.0));
+    for (int32 I = 0; I < GlowMaterials.Num(); ++I)
+    {
+        const int32 Kind = GlowKind[I] / 3, K = GlowKind[I] % 3;
+        float F = 1.f;
+        if (Kind == 0)
+        {
+            // A candle in a pumpkin: a quick flicker over a slower breathing, now and then a gutter.
+            F = .8f + .1f * FMath::Sin(T * 7.1f + K * 2.3f) + .07f * FMath::Sin(T * 13.7f + K * 5.1f) + .05f * FMath::Sin(T * 23.3f + K);
+            F -= .25f * FMath::Max(0.f, FMath::Sin(T * .53f + K * 1.9f) - .93f) / .07f;
+        }
+        else if (Kind == 1) F = .62f + .22f * FMath::Sin(T * .9f + K * 2.f) + .12f * FMath::Sin(T * 2.7f + K * 4.f);
+        else F = (Step + K) % 3 == 0 ? .05f : 1.f;   // two lit, one dark, marching round the board
+        GlowMaterials[I]->SetVectorParameterValue(TEXT("Emission"), GlowBase[I] * FMath::Max(0.f, F));
+    }
+    ++GlowUpdates;
+}
+
+// ------------------------------------------------------------------ halos
+void AHouseCampusFall::BuildHalos(UHouseBlackHallSubsystem* Look, const TArray<HouseCampusFallParts::FHalo>& In)
+{
+    if (In.Num() == 0) return;
+    FHallImage Img;
+    constexpr int32 N = 64;
+    Img.Init(N, N, FLinearColor(1, 1, 1, 0));
+    for (int32 Y = 0; Y < N; ++Y)
+        for (int32 X = 0; X < N; ++X)
+        {
+            const float DX = (X + .5f) / N * 2.f - 1.f, DY = (Y + .5f) / N * 2.f - 1.f, R2 = DX * DX + DY * DY;
+            const float A = R2 >= 1.f ? 0.f : FMath::Square(1.f - R2) * (.3f + .7f * FMath::Exp(-R2 * 10.f));
+            Img.At(X, Y) = FLinearColor(1, 1, 1, A);
+        }
+    UTexture2D* Tex = HouseStreetScene::MakeTexture(Img, true, false, TEXT("T_CF_Halo"), false);
+    UMaterialInstanceDynamic* Mat = Cast<UMaterialInstanceDynamic>(HouseStreetScene::MakeSmokeMaterial(Look, TEXT("CF_Halo"), Tex));
+    if (!Mat) return;
+    Mat->SetScalarParameterValue(TEXT("Glow"), 24.f);
+    Mat->SetScalarParameterValue(TEXT("Opacity"), 1.f);
+    Mat->SetVectorParameterValue(TEXT("SmokeColor"), FLinearColor(0, 0, 0));
+    HaloSpots = In;
+    const int32 V = HaloSpots.Num() * 4;
+    HaloPos.Init(FVector::ZeroVector, V); HaloNrm.Init(FVector::UpVector, V); HaloCol.Init(FLinearColor::Transparent, V);
+    TArray<FVector2D> UV; UV.SetNum(V);
+    TArray<int32> Tri;
+    for (int32 Q = 0; Q < HaloSpots.Num(); ++Q)
+    {
+        UV[Q * 4] = FVector2D(0, 1); UV[Q * 4 + 1] = FVector2D(1, 1); UV[Q * 4 + 2] = FVector2D(1, 0); UV[Q * 4 + 3] = FVector2D(0, 0);
+        Tri.Append({ Q * 4, Q * 4 + 1, Q * 4 + 2, Q * 4, Q * 4 + 2, Q * 4 + 3 });
+        for (int32 K = 0; K < 4; ++K) HaloPos[Q * 4 + K] = HaloSpots[Q].P;
+    }
+    Halos = MakeDynamic(TEXT("CampusFallHalos"));
+    Halos->CreateMeshSection_LinearColor(0, HaloPos, Tri, HaloNrm, UV, HaloCol, TArray<FProcMeshTangent>(), false);
+    Halos->SetMaterial(0, Mat);
+}
+
+void AHouseCampusFall::UpdateHalos(const FVector& Camera, const FRotator& CameraRotation)
+{
+    if (!Halos) return;
+    const FRotationMatrix Frame(CameraRotation);
+    const FVector Across = Frame.GetUnitAxis(EAxis::Y), Upward = Frame.GetUnitAxis(EAxis::Z), Facing = -CameraRotation.Vector();
+    for (int32 Q = 0; Q < HaloSpots.Num(); ++Q)
+    {
+        const HouseCampusFallParts::FHalo& Spot = HaloSpots[Q];
+        // Fades as the camera comes into it, so a halo never fills the screen.
+        const float Into = FMath::Clamp(float((FVector::Dist(Camera, Spot.P) - Spot.Size * .4f) / Spot.Size), 0.f, 1.f);
+        const FVector A1 = (Across - Upward) * (Spot.Size * .5f), A2 = (Across + Upward) * (Spot.Size * .5f);
+        HaloPos[Q * 4] = Spot.P - A2; HaloPos[Q * 4 + 1] = Spot.P + A1; HaloPos[Q * 4 + 2] = Spot.P + A2; HaloPos[Q * 4 + 3] = Spot.P - A1;
+        FLinearColor C = Spot.Color;
+        C.A *= Into;
+        if (Spot.Flicker > 0.f)
+        {
+            const float T = float(FMath::Fmod(GetWorld()->GetTimeSeconds(), 3600.0)) + Q * 1.7f;
+            C.A *= FMath::Lerp(1.f, .78f + .14f * FMath::Sin(T * 7.1f) + .08f * FMath::Sin(T * 13.7f), Spot.Flicker);
+        }
+        for (int32 K = 0; K < 4; ++K) { HaloNrm[Q * 4 + K] = Facing; HaloCol[Q * 4 + K] = C; }
+    }
+    Halos->UpdateMeshSection_LinearColor(0, HaloPos, HaloNrm, TArray<FVector2D>(), HaloCol, TArray<FProcMeshTangent>());
+}
+
+// ------------------------------------------------------------------ bonfire smoke
+void AHouseCampusFall::BuildSmoke(UHouseBlackHallSubsystem* Look, const FVector& Origin)
+{
+    UMaterialInterface* SmokeMat = Look->Materials.FindRef(TEXT("ST_Smoke"));
+    if (!SmokeMat) return;
+    SmokeOrigin = Origin;
+    Smoke = MakeDynamic(TEXT("CampusFallSmoke"));
+    Puffs.SetNum(HouseCampusFallImpl::PuffCount);
+    const int32 V = Puffs.Num() * 4;
+    SmokePos.Init(Origin, V); SmokeNrm.Init(FVector::UpVector, V); SmokeUV.SetNum(V); SmokeCol.Init(FLinearColor::Transparent, V); SmokeTan.Init(FProcMeshTangent(1, 0, 0), V);
+    TArray<int32> Tri;
+    for (int32 Q = 0; Q < Puffs.Num(); ++Q)
+    {
+        SmokeUV[Q * 4] = FVector2D(0, 1); SmokeUV[Q * 4 + 1] = FVector2D(1, 1); SmokeUV[Q * 4 + 2] = FVector2D(1, 0); SmokeUV[Q * 4 + 3] = FVector2D(0, 0);
+        Tri.Append({ Q * 4, Q * 4 + 1, Q * 4 + 2, Q * 4, Q * 4 + 2, Q * 4 + 3 });
+    }
+    Smoke->CreateMeshSection_LinearColor(0, SmokePos, Tri, SmokeNrm, SmokeUV, SmokeCol, SmokeTan, false);
+    Smoke->SetMaterial(0, SmokeMat);
+    // Already smouldering on the first frame.
+    for (int32 K = 0; K < 300; ++K) UpdateSmoke(1.f / 30.f, FVector(1e9), FRotator::ZeroRotator);
+}
+
+void AHouseCampusFall::UpdateSmoke(float Dt, const FVector& Camera, const FRotator& CameraRotation)
+{
+    if (!Smoke) return;
+    SmokeClock += Dt;
+    SmokeSpawn += Dt;
+    while (SmokeSpawn >= .16f)
+    {
+        SmokeSpawn -= .16f;
+        for (FPuff& P : Puffs)
+        {
+            if (P.bLive) continue;
+            P.bLive = true; P.Age = 0.f; P.Life = 7.f + 3.f * Rand();
+            P.P = SmokeOrigin + FVector((Rand() - .5f) * 90.f, (Rand() - .5f) * 90.f, 20.f + 30.f * Rand());
+            P.V = FVector((Rand() - .5f) * 10.f, (Rand() - .5f) * 10.f, 70.f + 40.f * Rand());
+            P.Size = 45.f + 30.f * Rand(); P.Spin = Rand() * 6.283f; P.SpinRate = (Rand() - .5f) * .4f;
+            break;
+        }
+    }
+    const FVector Wind(22.f, -13.f, 0.f);
+    for (FPuff& P : Puffs)
+    {
+        if (!P.bLive) continue;
+        P.Age += Dt;
+        if (P.Age >= P.Life) { P.bLive = false; continue; }
+        P.V.Z = FMath::Max(14.0, P.V.Z - 9.0 * Dt);
+        const FVector Curl(FMath::Sin(SmokeClock * .6f + P.Spin * 3.f) * 12.f, FMath::Cos(SmokeClock * .45f + P.Spin * 2.f) * 12.f, 0.f);
+        P.P += (P.V + (Wind + Curl) * FMath::Min(1.f, P.Age * .4f)) * Dt;
+        P.Spin += P.SpinRate * Dt;
+    }
+    if (FVector::DistSquared(Camera, SmokeOrigin) > FMath::Square(20000.)) return;
+    TArray<int32> Order;
+    for (int32 I = 0; I < Puffs.Num(); ++I) if (Puffs[I].bLive) Order.Add(I);
+    Order.Sort([&](int32 A, int32 B) { return FVector::DistSquared(Puffs[A].P, Camera) > FVector::DistSquared(Puffs[B].P, Camera); });
+    const FRotationMatrix Frame(CameraRotation);
+    const FVector Across = Frame.GetUnitAxis(EAxis::Y), Upward = Frame.GetUnitAxis(EAxis::Z), Facing = -CameraRotation.Vector();
+    for (int32 Slot = 0; Slot < Puffs.Num(); ++Slot)
+    {
+        const int32 B = Slot * 4;
+        if (Slot >= Order.Num())
+        {
+            for (int32 K = 0; K < 4; ++K) { SmokePos[B + K] = SmokeOrigin; SmokeCol[B + K] = FLinearColor::Transparent; }
+            continue;
+        }
+        const FPuff& P = Puffs[Order[Slot]];
+        const float T = P.Age / P.Life;
+        const float Size = P.Size + 420.f * FMath::Pow(T, .7f);
+        const float Fade = FMath::Clamp(P.Age / .8f, 0.f, 1.f) * FMath::Square(1.f - T);
+        const float Glow = FMath::Square(FMath::Clamp(1.f - P.Age / 1.6f, 0.f, 1.f));
+        const float C = FMath::Cos(P.Spin), S = FMath::Sin(P.Spin);
+        const FVector A1 = (Across * C + Upward * S) * (Size * .5f), A2 = (Upward * C - Across * S) * (Size * .5f);
+        SmokePos[B] = P.P - A1 - A2; SmokePos[B + 1] = P.P + A1 - A2; SmokePos[B + 2] = P.P + A1 + A2; SmokePos[B + 3] = P.P - A1 + A2;
+        const FLinearColor Tint(Glow, .36f * Glow, .09f * Glow, .8f * Fade);
+        for (int32 K = 0; K < 4; ++K) { SmokeNrm[B + K] = Facing; SmokeCol[B + K] = Tint; SmokeTan[B + K] = FProcMeshTangent(Across, false); }
+    }
+    Smoke->UpdateMeshSection_LinearColor(0, SmokePos, SmokeNrm, SmokeUV, SmokeCol, SmokeTan);
+    ++SmokeUpdates;
+}
+
+// ------------------------------------------------------------------ leaves
+void AHouseCampusFall::BuildLeaves(UHouseBlackHallSubsystem* Look, const FBox& Area)
+{
+    if (!Area.IsValid) return;
+    LeafArea = Area;
+    LeafState.SetNum(HouseCampusFallImpl::LeafCount);
+    for (FLeaf& L : LeafState)
+    {
+        L.P = FVector(Rng.FRandRange(Area.Min.X, Area.Max.X), Rng.FRandRange(Area.Min.Y, Area.Max.Y), Rng.FRandRange(Area.Min.Z, Area.Max.Z));
+        L.Yaw = Rng.FRandRange(0.f, 2.f * PI); L.Tumble = Rng.FRandRange(0.f, 2.f * PI); L.Phase = Rng.FRandRange(0.f, 20.f); L.Fall = Rng.FRandRange(38.f, 72.f);
+    }
+    Leaves = MakeDynamic(TEXT("CampusFallLeaves"));
+    LeafPos.SetNum(4); LeafNrm.SetNum(4);
+    for (int32 S = 0; S < 4; ++S)
+    {
+        const int32 Count = (LeafState.Num() - S + 3) / 4;
+        LeafPos[S].Init(Area.GetCenter(), Count * 8);
+        LeafNrm[S].Init(FVector::UpVector, Count * 8);
+        TArray<int32> Tri;
+        for (int32 K = 0; K < Count; ++K)
+        {
+            const int32 B = K * 8;
+            Tri.Append({ B, B + 1, B + 2, B, B + 2, B + 3 });
+            Tri.Append({ B + 4, B + 6, B + 5, B + 4, B + 7, B + 6 });
+        }
+        TArray<FVector2D> UV; UV.Init(FVector2D::ZeroVector, Count * 8);
+        Leaves->CreateMeshSection(S, LeafPos[S], Tri, LeafNrm[S], UV, TArray<FColor>(), TArray<FProcMeshTangent>(), false);
+        Leaves->SetMaterial(S, Look->Mat(HouseCampusFallImpl::LeafKeys[S]));
+    }
+}
+
+void AHouseCampusFall::UpdateLeaves(float Dt, const FVector& Camera)
+{
+    if (!Leaves || LeafArea.ComputeSquaredDistanceToPoint(Camera) > FMath::Square(9000.)) return;
+    const FVector Wind(40.f, -24.f, 0.f);
+    const double Floor = LeafArea.Min.Z + .4;
+    for (int32 I = 0; I < LeafState.Num(); ++I)
+    {
+        FLeaf& L = LeafState[I];
+        if (L.Rest > 0.f)
+        {
+            L.Rest -= Dt;
+            if (L.Rest <= 0.f)
+                L.P = FVector(Rng.FRandRange(LeafArea.Min.X, LeafArea.Max.X) - 400.f, Rng.FRandRange(LeafArea.Min.Y, LeafArea.Max.Y) + 250.f, Rng.FRandRange(LeafArea.Max.Z * .6f, LeafArea.Max.Z));
+        }
+        else
+        {
+            L.Phase += Dt;
+            const float Swing = FMath::Sin(L.Phase * 2.3f + I);
+            const FVector Sideways(FMath::Cos(L.Yaw), FMath::Sin(L.Yaw), 0.f);
+            L.P += (Wind * (.6f + .4f * FMath::Sin(L.Phase * .4f + I)) + Sideways * (Swing * 45.f) - FVector(0, 0, L.Fall * (.65f + .35f * FMath::Abs(Swing)))) * Dt;
+            L.Tumble += Dt * (3.f + (I % 5));
+            L.Yaw += Dt * .6f;
+            if (L.P.Z <= Floor) { L.P.Z = Floor; L.Rest = Rng.FRandRange(4.f, 14.f); }
+        }
+        // A diamond leaf, tumbling while it falls and lying flat once down; written front and back.
+        const bool bDown = L.Rest > 0.f;
+        const FVector Dir(FMath::Cos(L.Yaw), FMath::Sin(L.Yaw), 0.f), Side(-Dir.Y, Dir.X, 0.f);
+        const float Tilt = bDown ? 0.f : FMath::Sin(L.Tumble), Lift = bDown ? 0.f : FMath::Cos(L.Tumble);
+        const FVector Width = (Side * Lift + FVector::UpVector * Tilt) * 3.6f, Length = Dir * 6.f;
+        const FVector Q[4] = { L.P - Length, L.P + Width, L.P + Length, L.P - Width };
+        FVector Nrm = -FVector::CrossProduct(Q[1] - Q[0], Q[2] - Q[0]).GetSafeNormal();
+        if (Nrm.IsNearlyZero()) Nrm = FVector::UpVector;
+        const int32 S = I % 4, B = (I / 4) * 8;
+        for (int32 K = 0; K < 4; ++K)
+        {
+            LeafPos[S][B + K] = Q[K]; LeafNrm[S][B + K] = Nrm;
+            LeafPos[S][B + 4 + K] = Q[K] - Nrm * .1f; LeafNrm[S][B + 4 + K] = -Nrm;
+        }
+    }
+    for (int32 S = 0; S < 4; ++S) Leaves->UpdateMeshSection(S, LeafPos[S], LeafNrm[S], TArray<FVector2D>(), TArray<FColor>(), TArray<FProcMeshTangent>());
+    ++LeafUpdates;
+}
+
+// ------------------------------------------------------------------ the drumline
+void AHouseCampusFall::BuildSound()
+{
+    const TCHAR* Cmd = FCommandLine::Get();
+    if (FParse::Param(Cmd, TEXT("NoCampusDrums")) || !GEngine || !GEngine->UseSound() || GetNetMode() == NM_DedicatedServer) return;
+    DrumAttenuation = NewObject<USoundAttenuation>(this, NAME_None, RF_Transient);
+    FSoundAttenuationSettings& A = DrumAttenuation->Attenuation;
+    A.bAttenuate = true;
+    A.bSpatialize = true;
+    A.AttenuationShape = EAttenuationShape::Sphere;
+    A.AttenuationShapeExtents = FVector(HouseCampusFallImpl::DrumInner, 0.f, 0.f);
+    A.FalloffDistance = HouseCampusFallImpl::DrumFalloff;
+    A.DistanceAlgorithm = EAttenuationDistanceModel::Custom;
+    if (FRichCurve* Curve = A.CustomAttenuationCurve.GetRichCurve())
+    {
+        // Read at (distance - inner radius) / falloff; renormalised so it reaches zero at the falloff.
+        Curve->Reset();
+        const float Floor = HouseCampusFallImpl::Spread(HouseCampusFallImpl::DrumInner + HouseCampusFallImpl::DrumFalloff);
+        for (int32 K = 0; K <= 20; ++K)
+        {
+            const float X = FMath::Square(K / 20.f);
+            Curve->AddKey(X, FMath::Max(0.f, (HouseCampusFallImpl::Spread(HouseCampusFallImpl::DrumInner + X * HouseCampusFallImpl::DrumFalloff) - Floor) / (1.f - Floor)));
+        }
+    }
+    A.bAttenuateWithLPF = true;
+    A.LPFRadiusMin = 3000.f; A.LPFRadiusMax = 30000.f;
+    A.LPFFrequencyAtMin = 20000.f; A.LPFFrequencyAtMax = 2400.f;
+    A.bEnableOcclusion = false;
+    Drums = NewObject<UAudioComponent>(this, TEXT("CampusFallDrums"), RF_Transient);
+    Drums->SetupAttachment(GetRootComponent());
+    Drums->bAutoActivate = false;
+    Drums->bAutoDestroy = false;
+    Drums->bAllowSpatialization = true;
+    Drums->AttenuationSettings = DrumAttenuation;
+    Drums->RegisterComponent();
+    AddInstanceComponent(Drums);
+    Drums->SetWorldLocation(HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=7?FVector(10000,-11000,250):FVector(HouseCampus::StadiumX, HouseCampus::StadiumY, 120.f));
+    float Every = HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=7?260.f:110.f;
+    FParse::Value(Cmd, TEXT("CampusDrumsEvery="), Every);
+    DrumsEvery = FMath::Max(10.f, Every);
+    NextDrums = GetWorld()->GetAudioTimeSeconds() + (HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=7?130.0:FMath::Min(30.0, DrumsEvery * .5));
+    DrumMix = Async(EAsyncExecution::ThreadPool, []() { return HouseCampusFallImpl::Cadence(); });
+}
+
+void AHouseCampusFall::SetIndoors(bool bInside)
+{
+    bDrumsIndoors = bInside;
+    if (!Drums) return;
+    Drums->SetLowPassFilterEnabled(bInside);
+    Drums->SetLowPassFilterFrequency(650.f);
+    Drums->SetVolumeMultiplier((bInside ? .4f : 1.f)*(HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=7?.025f:1.f));
+}
+
+void AHouseCampusFall::PlayDrums(const TCHAR* Trigger)
+{
+    if (!Drums || !bDrumsReady || !GetWorld()) return;
+    if (bDrumsLive) Drums->Stop();
+    // A fresh wave each time (never ResetAudio on a procedural wave).
+    DrumWave = NewObject<USoundWaveProcedural>(this, NAME_None, RF_Transient);
+    DrumWave->SetSampleRate(HouseCampusFallImpl::DrumRate);
+    DrumWave->NumChannels = 1;
+    DrumWave->Duration = INDEFINITELY_LOOPING_DURATION;
+    DrumWave->SoundGroup = SOUNDGROUP_Default;
+    DrumWave->bLooping = false;
+    DrumWave->bRequiresStopFade = true;
+    DrumWave->VirtualizationMode = EVirtualizationMode::PlayWhenSilent;
+    DrumFed = DrumQueued = 0;
+    bDrumsLive = true;
+    bDrumsConsumed = false;
+    FeedDrums();
+    if(auto* Mix=HouseStadiumDetail::SoundReviewMix(GetWorld(),3))DrumWave->SoundSubmixObject=Mix;
+    Drums->SetSound(DrumWave);
+    Drums->SetVolumeMultiplier((bDrumsIndoors ? .4f : 1.f)*(HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=7?.025f:1.f));
+    Drums->Play();
+    ++DrumPlays;
+    const double Now = GetWorld()->GetAudioTimeSeconds(), Seconds = DrumPcm.Num() / double(HouseCampusFallImpl::DrumRate);
+    NextDrums = Now + Seconds + DrumsEvery * Rng.FRandRange(.8f, 1.25f);
+#if !UE_BUILD_SHIPPING
+    if (FParse::Param(FCommandLine::Get(), TEXT("CampusDrumsRecord")) && !bDrumsRecording && DrumPlays == 1)
+    {
+        UAudioMixerBlueprintLibrary::StartRecordingOutput(this, float(Seconds) + 2.f);
+        bDrumsRecording = true;
+    }
+#endif
+    UE_LOG(LogTemp, Display, TEXT("CAMPUS_FALL_DRUMS start trigger=%s seconds=%.1f play=%d next=%.0fs"), Trigger, Seconds, DrumPlays, NextDrums - Now);
+}
+
+void AHouseCampusFall::FeedDrums()
+{
+    if (!bDrumsLive || !DrumWave) return;
+    const int32 Chunk = HouseCampusFallImpl::DrumRate / 2, Ahead = 6 * HouseCampusFallImpl::DrumRate * int32(sizeof(int16));
+    while (DrumFed < DrumPcm.Num() && DrumWave->GetAvailableAudioByteCount() < Ahead)
+    {
+        const int32 Count = FMath::Min(Chunk, DrumPcm.Num() - DrumFed);
+        DrumWave->QueueAudio(reinterpret_cast<const uint8*>(DrumPcm.GetData() + DrumFed), Count * int32(sizeof(int16)));
+        DrumFed += Count;
+        DrumQueued += Count * int32(sizeof(int16));
+    }
+    const int32 Played = DrumQueued - DrumWave->GetAvailableAudioByteCount();
+    if (!bDrumsConsumed && Played > HouseCampusFallImpl::DrumRate * int32(sizeof(int16)))
+    {
+        bDrumsConsumed = true;
+        UE_LOG(LogTemp, Display, TEXT("CAMPUS_FALL_DRUMS playing=%d playedSeconds=%.2f"), int32(Drums->IsPlaying()), Played / float(HouseCampusFallImpl::DrumRate * sizeof(int16)));
+    }
+    if (DrumFed >= DrumPcm.Num() && DrumWave->GetAvailableAudioByteCount() <= 0)
+    {
+        Drums->Stop();
+        bDrumsLive = false;
+        UE_LOG(LogTemp, Display, TEXT("CAMPUS_FALL_DRUMS rang_out seconds=%.1f"), DrumPcm.Num() / float(HouseCampusFallImpl::DrumRate));
+#if !UE_BUILD_SHIPPING
+        if (bDrumsRecording)
+        {
+            const FString Dir = FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir() / TEXT("CampusFall"));
+            IFileManager::Get().MakeDirectory(*Dir, true);
+            UAudioMixerBlueprintLibrary::StopRecordingOutput(this, EAudioRecordingExportType::WavFile, TEXT("CampusDrums"), Dir);
+            bDrumsRecording = false;
+            UE_LOG(LogTemp, Display, TEXT("CAMPUS_FALL_RECORDING wav=%s"), *(Dir / TEXT("CampusDrums.wav")));
+        }
+#endif
+    }
+}
+
+void AHouseCampusFall::UpdateSound(double Now)
+{
+    if (!Drums) return;
+    if (!bDrumsReady && DrumMix.IsValid() && DrumMix.IsReady())
+    {
+        DrumPcm = DrumMix.Consume();
+        bDrumsReady = DrumPcm.Num() > 0;
+#if !UE_BUILD_SHIPPING
+        if (bDrumsReady && FParse::Param(FCommandLine::Get(), TEXT("CampusDrumsDump")))
+        {
+            // The dry cadence as a 16-bit mono WAV, for listening to without the game.
+            const FString Path = FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir() / TEXT("CampusFall") / TEXT("CampusDrumsDry.wav"));
+            TArray<uint8> Wav;
+            auto U32 = [&Wav](uint32 V) { for (int32 B = 0; B < 4; ++B) Wav.Add(uint8(V >> (8 * B))); };
+            auto U16 = [&Wav](uint16 V) { Wav.Add(uint8(V)); Wav.Add(uint8(V >> 8)); };
+            const uint32 Bytes = uint32(DrumPcm.Num() * sizeof(int16));
+            Wav.Append(reinterpret_cast<const uint8*>("RIFF"), 4); U32(36 + Bytes); Wav.Append(reinterpret_cast<const uint8*>("WAVEfmt "), 8);
+            U32(16); U16(1); U16(1); U32(HouseCampusFallImpl::DrumRate); U32(HouseCampusFallImpl::DrumRate * 2); U16(2); U16(16);
+            Wav.Append(reinterpret_cast<const uint8*>("data"), 4); U32(Bytes);
+            Wav.Append(reinterpret_cast<const uint8*>(DrumPcm.GetData()), int32(Bytes));
+            FFileHelper::SaveArrayToFile(Wav, *Path);
+            UE_LOG(LogTemp, Display, TEXT("CAMPUS_FALL_DRUMS dumped=%s seconds=%.1f"), *Path, DrumPcm.Num() / float(HouseCampusFallImpl::DrumRate));
+        }
+#endif
+    }
+    if (bDrumsLive) FeedDrums();
+    else if (bDrumsReady && Now >= NextDrums) PlayDrums(TEXT("schedule"));
+}
+
+float AHouseCampusFall::Rand() { return Rng.FRand(); }
+
+void AHouseCampusFall::Tick(float DeltaSeconds)
+{
+    Super::Tick(DeltaSeconds);
+    UWorld* World = GetWorld();
+    if (!World) return;
+    const double Now = World->GetTimeSeconds();
+    FVector Camera(0, 0, 1e6);
+    FRotator CameraRotation = FRotator::ZeroRotator;
+    if (const APlayerCameraManager* Manager = UGameplayStatics::GetPlayerCameraManager(this, 0)) { Camera = Manager->GetCameraLocation(); CameraRotation = Manager->GetCameraRotation(); }
+    const float Dt = FMath::Min(DeltaSeconds, .1f);
+    UpdateGlow(Now);
+    UpdateFlutter(Now, Camera);
+    UpdateHalos(Camera, CameraRotation);
+    UpdateSmoke(Dt, Camera, CameraRotation);
+    UpdateLeaves(Dt, Camera);
+    UpdateSound(World->GetAudioTimeSeconds());
+    if (Now >= NextStats)
+    {
+        if (NextStats > 0.0 && FlutterUpdates + LeafUpdates + SmokeUpdates + GlowUpdates > 0)
+            UE_LOG(LogTemp, Display, TEXT("CAMPUS_FALL_MOTION flutter=%d peak=%.1fcm leaves=%d smoke=%d glow=%d drums=%d live=%d"),
+                FlutterUpdates, FlutterPeak, LeafUpdates, SmokeUpdates, GlowUpdates, DrumPlays, int32(bDrumsLive));
+        FlutterUpdates = LeafUpdates = SmokeUpdates = GlowUpdates = 0;
+        FlutterPeak = 0.f;
+        NextStats = Now + 20.0;
+    }
+}
+
+void AHouseCampusFall::EndPlay(const EEndPlayReason::Type Reason)
+{
+    if (Drums) Drums->Stop();
+#if !UE_BUILD_SHIPPING
+    if (bDrumsRecording)
+    {
+        const FString Dir = FPaths::ConvertRelativePathToFull(FPaths::ProjectSavedDir() / TEXT("CampusFall"));
+        UAudioMixerBlueprintLibrary::StopRecordingOutput(this, EAudioRecordingExportType::WavFile, TEXT("CampusDrums_cut"), Dir);
+        bDrumsRecording = false;
+    }
+#endif
+    if (HouseCampusFallImpl::Current().Get() == this) HouseCampusFallImpl::Current().Reset();
+    Super::EndPlay(Reason);
+}

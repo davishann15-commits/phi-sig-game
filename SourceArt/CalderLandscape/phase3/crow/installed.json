@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "source_assets_unchanged": 26,
+  "existing_wildlife_assets_unchanged": 10,
+  "source_sha256": {
+    "Content/AnimalVarietyPack/Crow/Maps/Overview_BuiltData.uasset": "d4599294121b0e04f75aca5ffa49f8501bb0f9c8e606ed1af65732e837394652",
+    "Content/AnimalVarietyPack/Crow/Textures/T_Crow_OcclusionRoughnessMetallic.uasset": "38a4125bf69d9fd3a980357f85b89ee5f3075d71bf7aa0dc95e5e8c82632d08d",
+    "Content/AnimalVarietyPack/Crow/Textures/T_Crow_Nml.uasset": "a9aac6cfe78334b706f5a9cb5726049b02d03665d4693aee292b9f0956c0d978",
+    "Content/AnimalVarietyPack/Crow/Textures/T_Crow_BaseColor.uasset": "4b70abba60be25e2beb212f852c1aa11f7cdcd85ab0556e173df5941b6aa94d6",
+    "Content/AnimalVarietyPack/Crow/Textures/T_Crow_Specular.uasset": "66ef95e752d1da3115a9c17d84deae2b9df308615577ff4ecf8d796f073677e2",
+    "Content/AnimalVarietyPack/Crow/Materials/M_Crow.uasset": "50ca7d388932307840d1fcc20340a301e2f080f61d29591a90444a9e96204cad",
+    "Content/AnimalVarietyPack/Crow/Meshes/SK_Crow_PhysicsAsset.uasset": "e1ff9498723d6068019feae5e3985810b85314dfe8c5757c56b2c66ce6a663d3",
+    "Content/AnimalVarietyPack/Crow/Meshes/SK_Crow.uasset": "94dd754a1320752472ac059e7d9209dd4825b987fd23f66ee97c335291d4ea41",
+    "Content/AnimalVarietyPack/Crow/Meshes/SK_Crow_Skeleton.uasset": "2a12335d9b2603309e5dd514151b9bfb21ac225881792e8ab90f18d96ae40f1f",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_DeathHitTheGround.uasset": "d777d0d070c45fe6aa1840a9ba4e0ace4cfee4d1f3d04f3871daac8da4cd1003",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_InAirDeathGoToFall.uasset": "a40ba60695b3cdab378bf300c08ce1eb1c7f6ae2e77226784413ddcb638432b5",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_EatSomething.uasset": "2022725fb40c559d58b86551c0ba5c8086a95fc80f8dcd4a02ef78956cbd99b1",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Hop.uasset": "8dc28ed2df7215c4ef2ed53e5ea11e60e9fe6a342dd571f59943366c78c62906",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_FlyingAttack.uasset": "67a84a5265841cd2a17422f1b99c8bce6f1dbced5efc1c05c9e48616120eabbb",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Landing.uasset": "3d92ed106354b3413325e6da67912f044d5afefeae2d8287e0b39351c8083147",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Fly.uasset": "c74501ec53f21e3e9543e64064b6b7a9adceb414ba0ad66bba1dfb9919978181",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_IdleScratchWing.uasset": "3faa7301c2ffaf23d25ee59d119e6ccc37cdfc189d8a57e0225acc40d3714ed9",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_TakeOff.uasset": "59f448d9022fff38d51b737e905e3ff6e2675f6b704b89a2bd3a30fdc27e9974",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Walk.uasset": "a4efc3101fd71962007be59677d296ca433ffdf01de59de74c8b42874bda395e",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Walk_RM.uasset": "7f970337e3f678cc7c8ded63fb8c07527d1e2a11877b0b6950d541b2c1130130",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_IdleStretchWings.uasset": "a0f8ab8880f4bec088c1fbc81339773a90f37873621dcbb67bb3620c32c99701",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Glide.uasset": "4f576020ed338969c3646aad9b7599a3542a25d889958cd4b44464fe362502d1",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_IdleLookAround.uasset": "f9d27f22c70685a3112e097c3e672dc2c0d0a27eaff4e787a099710bfc05e0cf",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Hop_RM.uasset": "ddb053ff18954bf2f25175a9be78c12bcb2254bdf6cdce7dba16f67f04129503",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_DeathGrounded.uasset": "97c7326d4576cd0c0df33fcb8a810af2b64fd606e13af9212cf7ce78ddf6c8c4",
+    "Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Falling.uasset": "7c04278fab7fb3f7268b7ddc51559e2e2d167cfc0c8e5781503b5fd4dac7b433",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerBody 2.uasset": "b1df114ce83019729b6f5b2e6dd93f5afffebc3b20b2101127385e72fc569c0e",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerFur 2.uasset": "9a81c2724e3e8ccb9f2ebcbb42841db2df4abb4576257bb37b8b65cd0034e80e",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerBody.uasset": "11fc9a961502791ee5bb25d89c7d526ada5a112e2439bae95e515153a82f4f6d",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerSkin.uasset": "89070fe12a5c612b36cae4bf073b592498d766492251833c720cbd684dcba7df",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderWildlifePart.uasset": "402d3c4f924da0e62b94ffa3d69510b7662536c4e78a270e4f37f4c558bdc367",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerSourceLOD1.uasset": "4ea7f5b7714c4c75c41425f268b69f7d67f8660f6a983a12552fe43a31c796fc",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderWildlifeContact.uasset": "262b0aec3e9c5c16d01ed2b94371ea91aae5944c48e8c28782b36980f903bd00",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerSkin 2.uasset": "a0872330b04027987bcd72189ec02056e5e827358cd7d098504ac39cde9867ab",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerSourceLOD2.uasset": "389cbb9221318752bcc63977d5b8539aecc1308319f0a6fb2410b16ccf639414",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerFur.uasset": "738ec1ea1639b3d28f311a50b9607a31ecfb71cc661a928ddb605ccd249c2a85"
+  },
+  "runtime_skeletons": 0,
+  "runtime_mesh": "/Game/SeniorSendOff/Calder/Wildlife/SM_CalderCrowBody.SM_CalderCrowBody",
+  "lods": 3,
+  "uv_channels": [
+    5,
+    5,
+    5
+  ],
+  "materials": {
+    "M_CalderCrowSkin": {
+      "pixel_instructions": 244,
+      "samples": 3
+    }
+  },
+  "no_map_saved": true,
+  "rigid_controls": 16,
+  "per_instance_custom_floats": 225
+}

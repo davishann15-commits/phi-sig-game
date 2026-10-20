@@ -16,6 +16,7 @@
 #include "Engine/Engine.h"
 #include "Engine/GameViewportClient.h"
 #include "Engine/World.h"
+#include "Engine/StaticMesh.h"
 #include "EngineUtils.h"
 #include "GameFramework/GameUserSettings.h"
 #include "GameFramework/PlayerController.h"
@@ -23,6 +24,8 @@
 #include "HAL/IConsoleManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "Misc/CommandLine.h"
+#include "Misc/App.h"
+#include "Misc/CoreDelegates.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Parse.h"
 #include "Misc/Paths.h"
@@ -54,6 +57,9 @@ struct FHouseVisualState
     double CapturedWarmupSeconds = 0;
     float HorizontalFov = 0;
     bool bInitialized = false, bFinished = false;
+    double SampleStart = 0;
+    bool bSampling = false;
+    TArray<double> FrameMs;
 };
 
 int32 CVarInt(const TCHAR* Name)
@@ -109,12 +115,72 @@ bool Point(const TSharedPtr<FJsonObject>& View, const TCHAR* Field, FVector& Out
     Out = FVector(Z * 100, X * 100, Y * 100);
     return !Out.ContainsNaN();
 }
+
+void CleanupProbe(UWorld* World, const FHouseVisualState& State, const FString& Name)
+{
+    if (!FParse::Param(FCommandLine::Get(), TEXT("HouseCleanupProbe"))) return;
+    FString Out;
+    APlayerController* PC = World->GetFirstPlayerController();
+    for (int32 Y=0; Y<=12; ++Y) for (int32 X=0; X<=16; ++X)
+    {
+        FVector Start, Direction; FHitResult Hit;
+        if (!PC->DeprojectScreenPositionToWorld(State.Width*X/16.f,State.Height*Y/12.f,Start,Direction)) continue;
+        FCollisionQueryParams Q(SCENE_QUERY_STAT(HouseCleanupProbe),true);Q.AddIgnoredActor(State.Pawn.Get());
+        if (World->LineTraceSingleByChannel(Hit,Start,Start+Direction*4000,ECC_Visibility,Q))
+        {
+            auto* Mesh=Cast<UStaticMeshComponent>(Hit.GetComponent());
+            Out+=FString::Printf(TEXT("%d,%d hit=%s actor=%s class=%s component=%s mesh=%s\n"),X,Y,*Hit.ImpactPoint.ToString(),*GetNameSafe(Hit.GetActor()),Hit.GetActor()?*Hit.GetActor()->GetClass()->GetName():TEXT("none"),*GetNameSafe(Hit.GetComponent()),Mesh&&Mesh->GetStaticMesh()?*Mesh->GetStaticMesh()->GetPathName():TEXT("procedural"));
+        }
+    }
+    FFileHelper::SaveStringToFile(Out,*(State.Directory/(Name+TEXT("-probes.txt"))));
+    Out.Reset();
+    for (TObjectIterator<UPrimitiveComponent> It;It;++It)
+    {
+        auto* C=*It;if (!IsValid(C)||C->GetWorld()!=World||!C->IsRegistered()||!C->IsVisible()) continue;
+        const FBox B=C->Bounds.GetBox();if(B.GetSize().GetMax()>4000)continue;
+        auto* M=Cast<UStaticMeshComponent>(C);FString Mats;
+        for(int32 I=0;I<C->GetNumMaterials();++I) Mats+=GetNameSafe(C->GetMaterial(I))+TEXT(",");
+        Out+=FString::Printf(TEXT("owner=%s class=%s component=%s mesh=%s lo=%s hi=%s loc=%s mats=%s\n"),*GetNameSafe(C->GetOwner()),C->GetOwner()?*C->GetOwner()->GetClass()->GetName():TEXT("none"),*C->GetName(),M&&M->GetStaticMesh()?*M->GetStaticMesh()->GetPathName():TEXT("procedural"),*B.Min.ToString(),*B.Max.ToString(),*C->GetComponentLocation().ToString(),*Mats);
+    }
+    FFileHelper::SaveStringToFile(Out,*(State.Directory/TEXT("runtime-primitives.txt")));
 }
+}
+
+void TickHouseJoinRepairReview(UWorld* World);
+void TickHouseCleanupReview(UWorld* World);
+void TickHouseDoorSwingReview(UWorld* World);
+void TickHouseClubHallReview(UWorld* World);
+void TickHouseCampusReview(UWorld* World);
+void TickHouseWoodsReview(UWorld* World);
+void TickHouseWestFieldReview(UWorld* World);
+void TickHouseParkingLotReview(UWorld* World);
+void TickHouseFreeRoamReview(UWorld* World);
+void TickHouseCampusLayoutReview(UWorld* World);
+void TickHouseCampusInteriorsReview(UWorld* World);
+void TickHouseCampusInteriorsSmoke(UWorld* World);
 
 void TickHouseVisualReview(UWorld* World)
 {
+    TickHouseJoinRepairReview(World);
+    TickHouseCleanupReview(World);
+    TickHouseDoorSwingReview(World);
+    TickHouseClubHallReview(World);
+    TickHouseCampusReview(World);
+    TickHouseWoodsReview(World);
+    TickHouseWestFieldReview(World);
+    TickHouseParkingLotReview(World);
+    TickHouseFreeRoamReview(World);
+    TickHouseCampusLayoutReview(World);
+    TickHouseCampusInteriorsReview(World);
+    TickHouseCampusInteriorsSmoke(World);
     if (!FParse::Param(FCommandLine::Get(), TEXT("HouseVisualReview"))) return;
     static FHouseVisualState State;
+    static const FDelegateHandle SampleHandle = FCoreDelegates::OnEndFrame.AddLambda([]()
+    {
+        // This review is called by the game mode at 4 Hz. Sample rendered
+        // frames here so the benchmark includes every frame and every stall.
+        if (State.bSampling) State.FrameMs.Add(FApp::GetDeltaTime()*1000.0);
+    });
     if (!World || State.bFinished) return;
     const double Now = FPlatformTime::Seconds();
     if (State.World.Get() != World)
@@ -182,6 +248,10 @@ void TickHouseVisualReview(UWorld* World)
         State.Pawn = Cast<AStoryFirstPersonCharacter>(PC->GetPawn());
         if (!State.Pawn.IsValid() || !State.Pawn->FirstPersonCamera)
         { Finish(State, false, TEXT("Actual story first-person camera is unavailable")); return; }
+        if (FParse::Param(FCommandLine::Get(), TEXT("HouseVisualBreakLobbyWindow")))
+            for (TActorIterator<AHouseReactiveFixture> It(World); It; ++It)
+                if (It->GetFixtureMesh()->GetStaticMesh() && It->GetFixtureMesh()->GetStaticMesh()->GetName()==TEXT("HI_SM_Entrance_m1_p2_Glass_001"))
+                    It->ApplyImpact(It->GetFixtureMesh()->Bounds.Origin, FVector(-1,0,0), It->GlassBreakingDamage+1.f);
         // Keep the real view owner, character and held weapon. A detached
         // camera exposes owner-hidden third-person head/hair at the first pose.
         if (FParse::Param(FCommandLine::Get(), TEXT("HouseLandingCollisionCheck")))
@@ -267,6 +337,11 @@ void TickHouseVisualReview(UWorld* World)
                     It->Interact(State.Pawn.Get());
                 }
         }
+        FString CleanupDoor;
+        if(FParse::Value(FCommandLine::Get(),TEXT("HouseVisualOpenDoorId="),CleanupDoor))
+            for(TActorIterator<AExistingHouseDoor> It(World);It;++It)
+                if(It->DoorId.ToString()==CleanupDoor&&!It->IsOpen())
+                {State.Pawn->SetActorLocation(It->DoorwayCenter+FVector(120,0,0),false,nullptr,ETeleportType::TeleportPhysics);It->Interact(State.Pawn.Get());}
         State.Pawn->FirstPersonCamera->bConstrainAspectRatio = false;
         State.Pawn->FirstPersonCamera->bOverrideAspectRatioAxisConstraint = true;
         State.Pawn->FirstPersonCamera->SetAspectRatioAxisConstraint(AspectRatio_MaintainXFOV);
@@ -419,10 +494,18 @@ void TickHouseVisualReview(UWorld* World)
         // the camera is actually placed, rather than using its earlier clock.
         State.Changed = FPlatformTime::Seconds();
         State.ChangedFrame = GFrameCounter;
+        State.FrameMs.Reset(); State.SampleStart = 0;
         UE_LOG(LogTemp, Display, TEXT("HOUSE_VISUAL_REVIEW_VIEW: %d %s"), State.Index, *Name);
         return;
     }
     if (Now - State.Changed < 2.5 || GFrameCounter - State.ChangedFrame < MinimumWarmupFrames) return;
+    if (FParse::Param(FCommandLine::Get(), TEXT("HouseVisualBenchmark")) && State.PendingScreenshot.IsEmpty())
+    {
+        if (Now - State.Changed < 8.0) return;
+        if (State.SampleStart == 0) { State.SampleStart = Now; State.bSampling=true; return; }
+        if (Now-State.SampleStart < 8.0 || State.FrameMs.Num()<128) return;
+        State.bSampling=false;
+    }
     if (State.PendingScreenshot.IsEmpty())
     {
         int32 Width = 0, Height = 0;
@@ -434,6 +517,7 @@ void TickHouseVisualReview(UWorld* World)
         { Finish(State, false, TEXT("Cannot clear previous screenshot")); return; }
         State.CapturedWarmupFrames = GFrameCounter - State.ChangedFrame;
         State.CapturedWarmupSeconds = FPlatformTime::Seconds() - State.Changed;
+        CleanupProbe(World,State,Name);
         FScreenshotRequest::RequestScreenshot(State.PendingScreenshot, false, false);
         State.Requested = Now;
         return;
@@ -456,6 +540,15 @@ void TickHouseVisualReview(UWorld* World)
     Result->SetNumberField(TEXT("actualPages"), CVarInt(TEXT("r.Shadow.Virtual.MaxPhysicalPages")));
     Result->SetNumberField(TEXT("warmupFrames"), State.CapturedWarmupFrames);
     Result->SetNumberField(TEXT("warmupSeconds"), State.CapturedWarmupSeconds);
+    if (!State.FrameMs.IsEmpty())
+    {
+        double Total = 0; for(double Ms:State.FrameMs) Total += Ms;
+        State.FrameMs.Sort();
+        Result->SetNumberField(TEXT("averageFps"), 1000.0*State.FrameMs.Num()/Total);
+        Result->SetNumberField(TEXT("p95FrameMs"), State.FrameMs[FMath::Min(State.FrameMs.Num()-1, FMath::FloorToInt(State.FrameMs.Num()*.95))]);
+        Result->SetNumberField(TEXT("sampleFrames"),State.FrameMs.Num());
+        Result->SetNumberField(TEXT("sampleSeconds"),Total/1000.0);
+    }
     State.Results.Add(MakeShared<FJsonValueObject>(Result));
     ++State.Index;
     State.Changed = 0;

@@ -1,0 +1,81 @@
+finish view=5 pixel=X=1040.000 Y=340.000 hit=HouseExteriorDetail_0/ExteriorHouse at=X=-1420.000 Y=-1601.584 Z=300.219
+finish view=5 pixel=X=1110.000 Y=355.000 hit=HouseExteriorDetail_0/ExteriorHouse at=X=-1420.000 Y=-1816.499 Z=279.458
+finish view=5 pixel=X=650.000 Y=420.000 hit=HouseExteriorDetail_0/ExteriorHouse at=X=-269.361 Y=-1010.000 Z=94.214
+finish view=6 pixel=X=1040.000 Y=340.000 hit=HouseExteriorDetail_0/ExteriorHouse at=X=1142.810 Y=-1010.000 Z=255.363
+finish view=6 pixel=X=1110.000 Y=355.000 hit=HouseExteriorDetail_0/ExteriorHouse at=X=1103.739 Y=-1011.000 Z=245.843
+finish view=6 pixel=X=650.000 Y=420.000 hit=HouseExteriorDetail_0/ExteriorHouse at=X=1360.000 Y=-1137.986 Z=204.792
+window SM_Entrance_m1_m1_Glass__003 clear=1 blocker=None/None
+usable capsule lane X=-1121.520 Y=-924.660 Z=150.810
+window SM_Entrance_m1_m1_Glass__004 clear=1 blocker=None/None
+usable capsule lane X=-500.789 Y=-924.660 Z=139.260
+window SM_Entrance_m1_p0_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=1052.322 Y=-924.660 Z=144.760
+window SM_Entrance_m1_p0_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=463.272 Y=-924.660 Z=139.260
+window SM_Entrance_m1_p2_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=3235.160 Y=-1096.583 Z=111.931
+window SM_Entrance_m1_p2_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=3234.638 Y=-391.417 Z=127.611
+window SM_Entrance_p0_m1_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=-455.852 Y=934.560 Z=253.242
+window SM_Entrance_p0_m1_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=-1178.747 Y=934.560 Z=239.536
+window SM_Entrance_p0_p0_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=962.075 Y=934.560 Z=249.469
+window SM_Entrance_p0_p0_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=236.628 Y=934.560 Z=245.157
+window SM_Entrance_p0_p1_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=2903.087 Y=1403.820 Z=128.865
+window SM_Entrance_p0_p1_Glass__003 clear=1 blocker=None/None
+usable capsule lane X=1802.801 Y=1403.820 Z=121.259
+window SM_Entrance_p0_p2_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=3234.095 Y=343.895 Z=127.611
+window SM_Entrance_p0_p2_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=3233.560 Y=1069.271 Z=127.611
+window SM_Upper_m1_m1_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=-148.780 Y=-924.660 Z=451.916
+window SM_Upper_m1_m1_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=-513.907 Y=-924.660 Z=480.113
+window SM_Upper_m1_m1_Glass__003 clear=1 blocker=None/None
+usable capsule lane X=-1117.807 Y=-924.660 Z=480.113
+window SM_Upper_m1_m1_Glass__004 clear=1 blocker=None/None
+usable capsule lane X=-569.900 Y=-990.266 Z=484.156
+window SM_Upper_m1_p0_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=98.720 Y=-924.660 Z=451.916
+window SM_Upper_m1_p0_Glass__003 clear=1 blocker=None/None
+usable capsule lane X=1052.273 Y=-924.660 Z=480.113
+window SM_Upper_m1_p0_Glass__004 clear=1 blocker=None/None
+usable capsule lane X=462.233 Y=-924.660 Z=480.113
+window SM_Upper_m1_p0_Glass__005 clear=1 blocker=None/None
+usable capsule lane X=475.441 Y=-990.266 Z=487.220
+window SM_Upper_m2_p0_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=1441.184 Y=-1823.250 Z=497.544
+window SM_Upper_m2_p1_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=2350.501 Y=-2037.686 Z=466.400
+window SM_Upper_m2_p2_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=3226.550 Y=-1752.861 Z=501.844
+window SM_Upper_p0_m1_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=-394.637 Y=930.600 Z=527.010
+window SM_Upper_p0_m1_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=-1123.277 Y=930.600 Z=527.010
+window SM_Upper_p0_m2_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=-1822.111 Y=1389.762 Z=452.217
+window SM_Upper_p0_m2_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=-3061.532 Y=1441.173 Z=490.186
+window SM_Upper_p0_m3_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=-3285.670 Y=1095.665 Z=489.477
+window SM_Upper_p0_m3_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=-3285.670 Y=14.585 Z=486.608
+window SM_Upper_p0_p0_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=1030.963 Y=930.600 Z=527.010
+window SM_Upper_p0_p0_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=308.263 Y=930.600 Z=527.010
+window SM_Upper_p0_p1_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=1617.505 Y=1441.174 Z=498.772
+window SM_Upper_p0_p1_Glass__002 clear=1 blocker=None/None
+usable capsule lane X=2143.096 Y=1441.174 Z=500.055
+window SM_Upper_p0_p2_Glass__001 clear=1 blocker=None/None
+usable capsule lane X=3212.690 Y=1163.679 Z=502.460
+window UpperLandingSashWindow clear=1 blocker=None/None
+usable capsule lane X=-2472.160 Y=1351.790 Z=492.250
+glass=37 eligible=37 clear=37 radius=30.4 standingHalf=84.3 crouchHalf=51.3

@@ -14,6 +14,7 @@ class AHouseRoamingPig;
 class AHouseInteractiveProp;
 class UAudioComponent;
 class USoundBase;
+class UMaterialInstanceDynamic;
 
 UENUM(BlueprintType)
 enum class EHousePigMood : uint8 { Walking, Running, Sniffing, Feeding, Resting, Sleeping, Fleeing, Down, Carried };
@@ -146,7 +147,8 @@ public:
     FString MovementDebug() const;
     // Runtime motion diagnostics use the real animated component transform.
     FVector GetHoofWorldPosition(int32 Leg) const;
-    bool IsHoofPlanted(int32 Leg) const { return Leg>=0&&Leg<4&&GaitPlanted[Leg]; }
+    bool IsHoofPlanted(int32 Leg) const
+        { return Leg>=0&&Leg<4&&GaitPlanted[Leg]&&(!bCalderAppearance||SleepBlend<.005f); }
     float GetTrotBlend() const { return GaitTrot; }
     float GetGroundSniffBlend() const { return GaitSniffBlend; }
     float GetSnortPulse() const;
@@ -169,6 +171,8 @@ private:
     UPROPERTY(VisibleAnywhere) TArray<TObjectPtr<UStaticMeshComponent>> LowerLegs;
     UPROPERTY(VisibleAnywhere) TObjectPtr<UBoxComponent> WeaponHitBox;
     void RefreshMeshes();
+    void UpdateCalderSkin();
+    UPROPERTY(Transient) TObjectPtr<UMaterialInstanceDynamic> CalderSkinMaterial;
     UFUNCTION() void OnRep_Appearance();
     UFUNCTION() void OnRep_Carrier();
     void UpdateCarry(float DeltaSeconds);
@@ -219,6 +223,9 @@ private:
     float GaitPhase = 0, VisualTime = 0, FleeUntil = 0, VisualCrouch = 0;
     float SleepBlend = 0.f;
     bool GaitInitialized = false;
+    bool bCalderAppearance = false;
+    float CalderSupportDrop = 0.f;
+    TArray<FVector> CalderSoleVertices[4];
     bool GaitPlanted[4] = {true,true,true,true};
     float GaitSpeed = 0.f, GaitMotion = 0.f, GaitTrot = 0.f, GaitTurn = 0.f, GaitTerrainPitch = 0.f;
     float GaitLastYaw = 0.f, GaitGroundAccumulator = 0.f;

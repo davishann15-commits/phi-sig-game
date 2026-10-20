@@ -1,0 +1,7 @@
+{
+  "apply_only_after_complete_Row_release": true,
+  "reason": "Inspected first native baseline. Portal view sees the stair guard and ceiling; concession view crops menu. Improve only these new stadium cameras at integration; retain all existing views and baseline evidence.",
+  "detail_stadium_portal": {"position":[245,-10110,115],"target":[1232,-9951,455],"fov":73},
+  "detail_stadium_concession": {"increase_outward_depth_from_concourse_inner_chord":250,"position_z":115,"target_z":175,"fov":72},
+  "detail_stadium_turnstiles": {"bowl_degrees":76.5,"radius":1.10,"position_z":113,"target_radius":0.995,"target_z":130,"fov":70}
+}

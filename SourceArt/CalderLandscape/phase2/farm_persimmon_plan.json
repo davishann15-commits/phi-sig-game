@@ -1,0 +1,30 @@
+{
+  "switch": "CalderFarmTreeTrial",
+  "requires": "CalderFarmTrial and landscape enabled",
+  "default_enabled": false,
+  "site_xy": [
+    -22700,
+    -1550
+  ],
+  "geometry": "One sparse fruiting common persimmon merged into existing farm fence ISM; three LODs. Existing five components and 24 landscape ISMs retained.",
+  "collision": "Only exact visible main-stem surface, built identically on server/client; no leaf/fruit/branch collision. No terrain edits.",
+  "range": "Fence/tree coherent cluster 180/225m; global quality scaling unchanged.",
+  "references": [
+    {
+      "url": "https://landscapeplants.oregonstate.edu/plants/diospyros-virginiana",
+      "use": "Text plus three images inspected in background browser: orange globose fruit/four calyx lobes, branching silhouette, blocky grey-brown bark. No downloaded/imported pixels."
+    },
+    {
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/diospyros/virginiana.htm",
+      "use": "USDA fruit diameter1.9..5.1cm; persistent fall fruit. PDF photo endpoint failed502 and was not inspected."
+    }
+  ],
+  "acceptance_pending": [
+    "DisableUnity build",
+    "Native exact trunk collision/contact rays and settings",
+    "Ground cover footprint and original terrain/water/woods checks",
+    "Actual whole-tree and fruit-detail images",
+    "Farm-tree OFF and NoTerrain/NoLandscape restoration",
+    "Final frame timing and photographic comparison"
+  ]
+}

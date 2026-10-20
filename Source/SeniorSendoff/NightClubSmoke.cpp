@@ -59,7 +59,7 @@ struct FClubSmokeState
     FRotator FirstBeamRotation = FRotator::ZeroRotator;
     FLinearColor FirstBeamColor = FLinearColor::Black;
     float MaximumBeamRotationChange = 0.f, MaximumBeamColorChange = 0.f, MaximumObservedStrobe = 0.f;
-    bool bExpanded = false, bWrapLayout = false, bCheckingAdditionalDoor = false;
+    bool bExpanded = false, bWrapLayout = false, bExteriorFill = false, bCheckingAdditionalDoor = false;
     int32 AdditionalEntryFadeInFrames = 0;
     TArray<FVector> WalkTargets;
     int32 WalkRoom = 0, WalkLeg = 0, WalkSamples = 0, WalkSeamCrossings = 0, ExcludedCameraIndex = 0;
@@ -303,6 +303,10 @@ void TickNightClubSmoke(UWorld* World)
             ? FVector(-2370.f,-1640.f,LocalFloor+145.f) : FVector(-1100.f,-1235.f,LocalFloor+145.f));
         if(S.bWrapLayout) S.WalkTargets={FVector(-2050,-1640,LocalFloor),FVector(-2370,-1640,LocalFloor),
             FVector(-2050,-1640,LocalFloor),FVector(-2050,-1390,LocalFloor)};
+        if(S.bExteriorFill) S.WalkTargets={FVector(-2050,-1640,LocalFloor),FVector(-1770,-1640,LocalFloor),
+            FVector(-1770,-1960,LocalFloor),FVector(-2450,-1880,LocalFloor),FVector(-3000,-1910,LocalFloor),
+            FVector(-3260,-2060,LocalFloor),FVector(-3110,-1800,LocalFloor),FVector(-2370,-1640,LocalFloor),
+            FVector(-2050,-1640,LocalFloor),FVector(-2050,-1390,LocalFloor)};
         if (!Club->IsInsideClubRoomAtWorld(Destination,Room))
         { Fail(TEXT("The approved real-walk destination is not inside the added wing")); return false; }
         Pawn->GetCharacterMovement()->StopMovementImmediately();
@@ -462,20 +466,21 @@ void TickNightClubSmoke(UWorld* World)
         const float Radius = Pawn->GetCapsuleComponent()->GetScaledCapsuleRadius();
         const float HalfHeight = Pawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
         S.bWrapLayout = !Club->LowerAdditionalDoorways.IsEmpty();
+        S.bExteriorFill = S.bWrapLayout && Club->LowerExtraRegions.Num()==4;
         S.bExpanded = !Club->LowerExtraRegions.IsEmpty() || !Club->UpperExtraRegions.IsEmpty();
         FVector EnclosingMaximum = LowerMax;
         if(S.bWrapLayout)
         {
-            if(!Club->UpperExtraRegions.IsEmpty() || Club->LowerExtraRegions.Num()!=2)
-            {Fail(TEXT("The wrap layout must have one original upstairs room and two lower extension volumes"));return;}
-            for(int32 R=0;R<2;++R)
+            if(!Club->UpperExtraRegions.IsEmpty() || (Club->LowerExtraRegions.Num()!=2 && !S.bExteriorFill))
+            {Fail(TEXT("The wrap layout must retain the original upstairs room and its approved lower extension volumes"));return;}
+            for(int32 R=0;R<Club->LowerExtraRegions.Num();++R)
             {
                 const FHouseClubRoomRegion& Region=Club->LowerExtraRegions[R];
                 for(int32 X=0;X<4;++X)for(int32 Y=0;Y<4;++Y)
                 {
                     const FVector P=ClubTransform.TransformPosition(FVector(
-                        FMath::Lerp(Region.Minimum.X+55.,Region.Maximum.X-55.,X/3.),
-                        FMath::Lerp(Region.Minimum.Y+55.,Region.Maximum.Y-55.,Y/3.),Region.Minimum.Z));
+                        FMath::Lerp(Region.Minimum.X+FMath::Min(55.,(Region.Maximum.X-Region.Minimum.X)*.25),Region.Maximum.X-FMath::Min(55.,(Region.Maximum.X-Region.Minimum.X)*.25),X/3.),
+                        FMath::Lerp(Region.Minimum.Y+FMath::Min(55.,(Region.Maximum.Y-Region.Minimum.Y)*.25),Region.Maximum.Y-FMath::Min(55.,(Region.Maximum.Y-Region.Minimum.Y)*.25),Y/3.),Region.Minimum.Z));
                     if(!FloorCheck(FString::Printf(TEXT("lowerWrap%dGrid%d_%d"),R,X,Y),P,true))
                     {Fail(TEXT("Missing structural floor in the former chair room or its corner join"));return;}
                 }
@@ -501,9 +506,10 @@ void TickNightClubSmoke(UWorld* World)
                 S.CollisionResults.Add(MakeShared<FJsonValueObject>(Result));
                 if(!Passed){Fail(TEXT("The main room and former chair room lack a clear, continuously audible player passage"));return;}
             }
-            const FVector BoundaryCenters[]={FVector(-1490,-1200,LowerMin.Z),FVector(-1970,-1640,LowerMin.Z),
-                FVector(-2450,-2146.65,LowerMin.Z),FVector(-2750.44,-1850,LowerMin.Z)};
-            const FVector Outward[]={FVector(1,0,0),FVector(1,0,0),FVector(0,-1,0),FVector(-1,0,0)};
+            const FVector BoundaryCenters[]={FVector(S.bExteriorFill?-1432:-1490,-1200,LowerMin.Z),
+                S.bExteriorFill?FVector(-3000,-1522,LowerMin.Z):FVector(-1970,-1640,LowerMin.Z),
+                FVector(-2450,S.bExteriorFill?-2188:-2146.65,LowerMin.Z),FVector(S.bExteriorFill?-3388:-2750.44,-1850,LowerMin.Z)};
+            const FVector Outward[]={FVector(1,0,0),S.bExteriorFill?FVector(0,1,0):FVector(1,0,0),FVector(0,-1,0),FVector(-1,0,0)};
             for(int32 Edge=0;Edge<4;++Edge)
             {
                 const FVector Center=BoundaryCenters[Edge]+FVector(0,0,HalfHeight+3.f);FHitResult Hit;
@@ -636,9 +642,15 @@ void TickNightClubSmoke(UWorld* World)
         // Strict mathematical room isolation includes the room directly across
         // the hallway, unchanged 101, and outside every wall at both elevations.
         for (const FVector& P : {HouseWorldScale::Point(World,FVector(-2750,-1050,145)),
-            FVector(-2966,-1188,485), FVector(EnclosingMaximum.X+85.f,(LowerMin.Y+LowerMax.Y)*.5f,LowerMin.Z+145.f), FVector(-1935,-1550,155),
+            FVector(-2966,-1188,485), FVector(EnclosingMaximum.X+85.f,(LowerMin.Y+LowerMax.Y)*.5f,LowerMin.Z+145.f),
+            S.bExteriorFill?FVector(-1935,-2230,155):FVector(-1935,-1550,155),
             FVector(-1935,-900,485), FVector(-2280,-1250,485)})
             if (Club->GetMusicGainAtWorld(P) > .0001f) { Fail(FString::Printf(TEXT("Club music leaks outside the current room bounds at %s"),*P.ToCompactString())); return; }
+        if(S.bExteriorFill)
+            for(const FVector& Local:{FVector(-3430,-1850,145),FVector(-3000,-1450,145),
+                FVector(-1380,-1850,145),FVector(-1460,-990,145)})
+                if(Club->GetMusicGainAtWorld(ClubTransform.TransformPosition(Local))>.0001f)
+                {Fail(TEXT("Music leaks past the enlarged club perimeter or its protected hallway notch"));return;}
         const FVector HoleListener(Hole.X+25.f,Hole.Y,(LowerMax.Z+UpperMin.Z)*.5f);
         const float HoleGain = Club->GetMusicGainAtWorld(HoleListener);
         if (HoleGain <= .001f || HoleGain > .25f) { Fail(TEXT("The pole-hole bridge lacks its faint shared music gain")); return; }
@@ -836,7 +848,8 @@ void TickNightClubSmoke(UWorld* World)
         Pawn->GetCharacterMovement()->StopMovementImmediately();
         const FString Name=S.bWrapLayout?FString::Printf(TEXT("LowerRealWrapWalk%d"),S.WalkLeg):
             FString::Printf(TEXT("%sRealSeamWalk%s"),S.WalkRoom?TEXT("upper"):TEXT("lower"),S.WalkLeg?TEXT("Return"):TEXT("Outward"));
-        const bool Passed=S.WalkSamples>=4 && S.WalkSeamCrossings>=1;
+        const bool Passed=S.WalkSamples>=4 && (S.bExteriorFill
+            ? FVector::Dist2D(S.WalkStart,Current)>80.f : S.WalkSeamCrossings>=1);
         TSharedRef<FJsonObject> Result=PositionRecord(Name,Current);
         Result->SetBoolField(TEXT("passed"),Passed);
         Result->SetBoolField(TEXT("usedAddMovementInput"),true);

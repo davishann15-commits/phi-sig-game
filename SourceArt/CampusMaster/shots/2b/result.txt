@@ -1,0 +1,35 @@
+doors=5 building=LIB seed=0 openFloors=2
+stop 0: the library forecourt (placed at -15000,-10800)
+stop 1: reached at the main doors, feet at (-15371,-10800,-54.9), indoor=0, interiorLights=0
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached through the doors into the lobby, feet at (-15844,-10800,-52.9), indoor=1, interiorLights=6
+stop 4: reached into the card catalog hall, feet at (-16462,-11514,-52.9), indoor=1, interiorLights=6
+stop 5: reached past the circulation desk, feet at (-16548,-10297,-52.9), indoor=1, interiorLights=6
+stop 6: reached behind the desk, feet at (-17393,-10272,-52.9), indoor=1, interiorLights=6
+stop 7: reached into the reference reading room, feet at (-17400,-9681,-52.9), indoor=1, interiorLights=6
+stop 8: reached back to the circulation area, feet at (-17451,-10278,-52.9), indoor=1, interiorLights=6
+stop 9: reached the corridor between the stairs, feet at (-17450,-10747,-52.9), indoor=1, interiorLights=6
+stop 10: reached at the staff workroom, feet at (-18171,-10799,-52.9), indoor=1, interiorLights=6
+stop 11: try the workroom door -> stayed locked, reason "STAFF ONLY - the library workroom"
+stop 12: reached back out of the corridor, feet at (-17451,-10800,-52.9), indoor=1, interiorLights=6
+stop 13: reached into the carrels, feet at (-17402,-11521,-52.9), indoor=1, interiorLights=6
+stop 14: reached back to the circulation area, feet at (-17450,-10800,-52.9), indoor=1, interiorLights=6
+stop 15: reached the foot of the stairs, feet at (-17480,-10450,-52.9), indoor=1, interiorLights=6
+stop 16: reached up the stairs to the stacks, feet at (-18400,-10450,361.1), indoor=1, interiorLights=6
+stop 17: reached the stacks landing, feet at (-18496,-10450,361.1), indoor=1, interiorLights=6
+stop 18: reached at the copy room, feet at (-18549,-10791,361.1), indoor=1, interiorLights=6
+stop 19: try the copy room door -> stayed locked, reason "COPY ROOM - staff only after 5 PM"
+stop 20: reached toward the west stacks, feet at (-18395,-10344,361.1), indoor=1, interiorLights=6
+stop 21: reached along the back of the stacks, feet at (-18381,-9749,361.1), indoor=1, interiorLights=6
+stop 22: reached the stacks' main aisle, feet at (-17159,-9701,361.1), indoor=1, interiorLights=6
+stop 23: reached back past the end of the ranges, feet at (-18450,-10100,361.1), indoor=1, interiorLights=6
+stop 24: reached the head of the stairs, feet at (-18450,-10451,361.1), indoor=1, interiorLights=6
+stop 25: reached down the stairs, feet at (-17477,-10450,-52.9), indoor=1, interiorLights=6
+stop 26: reached round the desk, feet at (-17447,-10252,-52.9), indoor=1, interiorLights=6
+stop 27: reached the lobby side, feet at (-16597,-10269,-52.9), indoor=1, interiorLights=6
+stop 28: reached the lobby, feet at (-15838,-10809,-52.9), indoor=1, interiorLights=6
+stop 29: reached out through the doors, feet at (-14994,-10800,-54.7), indoor=0, interiorLights=0
+stop 30: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+PASS building=LIB stops=26/26 problems=0 mainDoorsOpened=1 lockedDoorsHeld=1 reasonsShown=1 builtWhileInside=1 freedAfterLeaving=1 indoorTest=24/24 outdoorTest=2/2 maxInteriorLights=6 pool=6

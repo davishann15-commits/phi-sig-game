@@ -1,0 +1,112 @@
+{
+  "introduced_stage": 4,
+  "added_comment": "Field-prop inspection:170cm above the fixed local floor; every prior pose remains unchanged.",
+  "views": [
+    {
+      "name": "detail_stadium_turf_wear",
+      "eye": [
+        3650,
+        -13580,
+        114
+      ],
+      "target": [
+        3650,
+        -13380,
+        -54
+      ],
+      "fov": 75,
+      "floor_z": -56
+    },
+    {
+      "name": "detail_stadium_tarp",
+      "eye": [
+        -410,
+        -12640,
+        114
+      ],
+      "target": [
+        -160,
+        -12500,
+        -12
+      ],
+      "fov": 75,
+      "floor_z": -56
+    },
+    {
+      "name": "detail_stadium_cart",
+      "eye": [
+        4700,
+        -13200,
+        114
+      ],
+      "target": [
+        4920,
+        -13020,
+        10
+      ],
+      "fov": 75,
+      "floor_z": -56
+    },
+    {
+      "name": "detail_stadium_chalk_liner",
+      "eye": [
+        4060,
+        -15150,
+        114
+      ],
+      "target": [
+        4160,
+        -15000,
+        15
+      ],
+      "fov": 70,
+      "floor_z": -56
+    },
+    {
+      "name": "detail_stadium_band_risers",
+      "eye": [
+        6120,
+        -13900,
+        110
+      ],
+      "target": [
+        5650,
+        -13900,
+        0
+      ],
+      "fov": 80,
+      "floor_z": -60
+    },
+    {
+      "name": "detail_stadium_trombone_case",
+      "eye": [
+        5080,
+        -14220,
+        114
+      ],
+      "target": [
+        5230,
+        -14100,
+        -44
+      ],
+      "fov": 70,
+      "floor_z": -56
+    },
+    {
+      "name": "detail_stadium_float_frame",
+      "eye": [
+        -350,
+        -14200,
+        114
+      ],
+      "target": [
+        -350,
+        -13900,
+        -26
+      ],
+      "fov": 80,
+      "floor_z": -56
+    }
+  ],
+  "scope": "Seven appended field-prop close views; original21poses, planting NoGo and every gameplay route unchanged. Earlier accepted stages retain21view receipts; stage4onward must capture/time all28views at original budgets."
+}

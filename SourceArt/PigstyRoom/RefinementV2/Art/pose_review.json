@@ -1,0 +1,15 @@
+{
+  "feedingHeadPivotCm": [
+    60,
+    0,
+    30
+  ],
+  "feedingHeadBlenderYDegrees": 55,
+  "bodyCrouchCm": 26,
+  "sideRestRollDegrees": 90,
+  "assetsChanged": false,
+  "reviewOnlyPoseImages": [
+    "PIG_Feeding_Junction.png",
+    "PIG_SideRest_Underside.png"
+  ]
+}

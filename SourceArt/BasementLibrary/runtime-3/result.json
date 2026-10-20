@@ -1,0 +1,12 @@
+{
+	"allPropsParkedWithDamageAndCollision": true,
+	"closedDoorBlocksAndOpenDoorClearsFullPlayer": true,
+	"actualChairPickupAndTwoHandContacts": true,
+	"allThreeTableDamageStagesAndSettling": true,
+	"settledBrokenSpeed": 0,
+	"passed": true,
+	"detail": "Installed library inventory, fitted damage meshes, service door capsule clearance, actual chair pickup and staged table destruction verified",
+	"furnitureCount": 151,
+	"ceilingPanels": 3,
+	"elapsedSeconds": 16.898456040769815
+}

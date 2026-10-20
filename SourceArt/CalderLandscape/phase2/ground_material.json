@@ -1,0 +1,18 @@
+{
+  "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderLandscapeGround",
+  "num_pixel_shader_instructions": 377,
+  "num_pixel_texture_samples": 12,
+  "compile_error_messages": [],
+  "original_ground_stats": {
+    "num_pixel_shader_instructions": 379,
+    "num_pixel_texture_samples": 15
+  },
+  "saved": true,
+  "scope": "Owned unbound appearance material; runtime/visual/performance acceptance separate",
+  "originals_sha256": {
+    "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+    "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+    "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb"
+  },
+  "asset_sha256": "6dc14c7aa1e6160bc7b70704d3340ddd719df64bc373bcc05b1fae26566bce85"
+}

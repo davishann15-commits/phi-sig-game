@@ -1,0 +1,862 @@
+[
+  {
+    "actor": "COL_Entrance_m1_m1_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_m1_m1_Solid.COL_Entrance_m1_m1_Solid",
+    "asset": "COL_Connected_Entrance_m1_m1_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Entrance_m1_m1_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Entrance_m1_m1_Glass__004"
+        ],
+        "bounds": [
+          [
+            -5.09999942779541,
+            4.559999465942383,
+            0.35100001096725464
+          ],
+          [
+            -0.9700004458427429,
+            4.779999732971191,
+            2.2910001277923584
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 652,
+    "original_faces": 688,
+    "clipped_faces": 688
+  },
+  {
+    "actor": "COL_Entrance_m1_p0_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/NoodleWing/COL_Entrance_m1_p0_Solid_NoodleCut.COL_Entrance_m1_p0_Solid_NoodleCut",
+    "asset": "COL_Connected_Entrance_m1_p0_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Entrance_m1_p0_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Entrance_m1_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            0.6000002026557922,
+            4.559999465942383,
+            0.35100001096725464
+          ],
+          [
+            5.050000190734863,
+            4.78000020980835,
+            2.2910001277923584
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 676,
+    "original_faces": 712,
+    "clipped_faces": 712
+  },
+  {
+    "actor": "COL_Entrance_p0_m2_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/HotTubRoomV1/COL_SPA_Entrance_p0_m2_DoorClear.COL_SPA_Entrance_p0_m2_DoorClear",
+    "asset": "COL_Connected_Entrance_p0_m2_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Entrance_p0_m2_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "UpperLandingSashWindow"
+        ],
+        "bounds": [
+          [
+            -12.9399995803833,
+            -7.055001258850098,
+            -3.2905986309051514
+          ],
+          [
+            -9.47429370880127,
+            -6.85499906539917,
+            5.775201320648193
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 336,
+    "original_faces": 348,
+    "clipped_faces": 368
+  },
+  {
+    "actor": "COL_Entrance_p0_p0_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Meshes/COL_Entrance_p0_p0_Solid.COL_Entrance_p0_p0_Solid",
+    "asset": "COL_Connected_Entrance_p0_p0_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Entrance_p0_p0_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Entrance_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            -0.8985002636909485,
+            -4.895000457763672,
+            2.367600202560425
+          ],
+          [
+            4.506300449371338,
+            -4.8249993324279785,
+            2.457899808883667
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Entrance_p0_m1_Glass__001"
+        ],
+        "bounds": [
+          [
+            -7.189999103546143,
+            -4.89500093460083,
+            2.457900047302246
+          ],
+          [
+            7.199999809265137,
+            -4.82499885559082,
+            3.1110000610351562
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Entrance_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            -0.8985002636909485,
+            -4.809999942779541,
+            2.367600202560425
+          ],
+          [
+            4.506300449371338,
+            -4.569999694824219,
+            2.457899808883667
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 364,
+    "original_faces": 436,
+    "clipped_faces": 436
+  },
+  {
+    "actor": "COL_Entrance_p0_p1_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/ReferenceKitchen/SM_Kitchen_COL_Entrance_p0_p1_Solid.SM_Kitchen_COL_Entrance_p0_p1_Solid",
+    "asset": "COL_Connected_Entrance_p0_p1_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Entrance_p0_p1_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Entrance_p0_p1_Glass__002",
+          "SM_Entrance_p0_p1_Glass__003"
+        ],
+        "bounds": [
+          [
+            14.633999824523926,
+            -12.905999183654785,
+            3.1083998237591004e-06
+          ],
+          [
+            29.393999099731445,
+            -12.617998123168945,
+            2.5797033309936523
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 120,
+    "original_faces": 204,
+    "clipped_faces": 204
+  },
+  {
+    "actor": "COL_Upper_m1_m1_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_m1_m1_Solid.HI_WindowPassage_COL_Upper_m1_m1_Solid",
+    "asset": "COL_Connected_Upper_m1_m1_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Upper_m1_m1_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_m1_m1_Glass__002",
+          "SM_Upper_m1_m1_Glass__003",
+          "SM_Upper_m1_m1_Glass__004"
+        ],
+        "bounds": [
+          [
+            -7.190000534057617,
+            4.559999942779541,
+            3.068329095840454
+          ],
+          [
+            -0.8792942762374878,
+            4.780000686645508,
+            5.140999794006348
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_m1_m1_Glass__001",
+          "SM_Upper_m1_m1_Glass__002"
+        ],
+        "bounds": [
+          [
+            -3.4642934799194336,
+            4.941345691680908,
+            3.018285036087036
+          ],
+          [
+            -0.6242936253547668,
+            5.061346054077148,
+            3.6779327392578125
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_m1_m1_Glass__004"
+        ],
+        "bounds": [
+          [
+            -5.049999713897705,
+            4.559999942779541,
+            3.5883290767669678
+          ],
+          [
+            -2.859999895095825,
+            4.780000686645508,
+            5.140999794006348
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_m1_m1_Glass__001",
+          "SM_Upper_m1_m1_Glass__002"
+        ],
+        "bounds": [
+          [
+            -2.3592936992645264,
+            4.941345691680908,
+            3.687932252883911
+          ],
+          [
+            -0.6242935657501221,
+            5.061346530914307,
+            5.147932052612305
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 512,
+    "original_faces": 656,
+    "clipped_faces": 748
+  },
+  {
+    "actor": "COL_Upper_m1_p0_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_m1_p0_Solid.HI_WindowPassage_COL_Upper_m1_p0_Solid",
+    "asset": "COL_Connected_Upper_m1_p0_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Upper_m1_p0_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_m1_p0_Glass__003",
+          "SM_Upper_m1_p0_Glass__004",
+          "SM_Upper_m1_p0_Glass__005"
+        ],
+        "bounds": [
+          [
+            0.6907060742378235,
+            4.560000419616699,
+            3.068329095840454
+          ],
+          [
+            7.1999993324279785,
+            4.780000686645508,
+            5.140999794006348
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_m1_p0_Glass__002",
+          "SM_Upper_m1_p0_Glass__004"
+        ],
+        "bounds": [
+          [
+            0.4357064664363861,
+            4.941345691680908,
+            3.0351333618164062
+          ],
+          [
+            3.30570650100708,
+            5.061346530914307,
+            3.6879329681396484
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_m1_p0_Glass__002",
+          "SM_Upper_m1_p0_Glass__004"
+        ],
+        "bounds": [
+          [
+            0.43570640683174133,
+            4.941346168518066,
+            3.687932252883911
+          ],
+          [
+            2.1457064151763916,
+            5.061346530914307,
+            5.147932052612305
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 608,
+    "original_faces": 726,
+    "clipped_faces": 793
+  },
+  {
+    "actor": "COL_Upper_m2_p1_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_m2_p1_Solid.HI_WindowPassage_COL_Upper_m2_p1_Solid",
+    "asset": "COL_Connected_Upper_m2_p1_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Upper_m2_p1_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_m2_p1_Glass__001"
+        ],
+        "bounds": [
+          [
+            9.839706420898438,
+            10.211344718933105,
+            3.0736305713653564
+          ],
+          [
+            16.295705795288086,
+            10.371344566345215,
+            5.836584568023682
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 164,
+    "original_faces": 212,
+    "clipped_faces": 212
+  },
+  {
+    "actor": "COL_Upper_m2_p2_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_m2_p2_Solid.HI_WindowPassage_COL_Upper_m2_p2_Solid",
+    "asset": "COL_Connected_Upper_m2_p2_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Upper_m2_p2_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_m2_p2_Glass__001"
+        ],
+        "bounds": [
+          [
+            16.21570587158203,
+            6.2013444900512695,
+            3.1012070178985596
+          ],
+          [
+            16.37570571899414,
+            10.29134464263916,
+            5.838537693023682
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 0,
+    "original_faces": 36,
+    "clipped_faces": 36
+  },
+  {
+    "actor": "COL_Upper_p0_m2_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_p0_m2_Solid.HI_WindowPassage_COL_Upper_p0_m2_Solid",
+    "asset": "COL_Connected_Upper_p0_m2_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Upper_p0_m2_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_p0_m2_Glass__002"
+        ],
+        "bounds": [
+          [
+            -16.59429359436035,
+            -7.358652114868164,
+            2.9903719425201416
+          ],
+          [
+            -12.974292755126953,
+            -7.198649883270264,
+            5.741074562072754
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 662,
+    "original_faces": 698,
+    "clipped_faces": 698
+  },
+  {
+    "actor": "COL_Upper_p0_m3_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_p0_m3_Solid.HI_WindowPassage_COL_Upper_p0_m3_Solid",
+    "asset": "COL_Connected_Upper_p0_m3_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Upper_p0_m3_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_p0_m3_Glass__002"
+        ],
+        "bounds": [
+          [
+            -16.674293518066406,
+            -2.2386529445648193,
+            2.9623560905456543
+          ],
+          [
+            -16.514293670654297,
+            2.2213473320007324,
+            5.699835777282715
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 60,
+    "original_faces": 96,
+    "clipped_faces": 96
+  },
+  {
+    "actor": "COL_Upper_p0_p2_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Interactivity/HI_WindowPassage_COL_Upper_p0_p2_Solid.HI_WindowPassage_COL_Upper_p0_p2_Solid",
+    "asset": "COL_Connected_Upper_p0_p2_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_Upper_p0_p2_Solid.fbx",
+    "custom_collision": false,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_p0_p2_Glass__001"
+        ],
+        "bounds": [
+          [
+            16.14570426940918,
+            -7.278654098510742,
+            3.1064136028289795
+          ],
+          [
+            16.305706024169922,
+            -3.44865345954895,
+            5.8436408042907715
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 12,
+    "original_faces": 48,
+    "clipped_faces": 48
+  },
+  {
+    "actor": "SM_Upper_p0_m1_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/Meshes/SM_Upper_p0_m1_Solid.SM_Upper_p0_m1_Solid",
+    "asset": "COL_Connected_pper_p0_m1_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_pper_p0_m1_Solid.fbx",
+    "custom_collision": true,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__001"
+        ],
+        "bounds": [
+          [
+            -1.8109997510910034,
+            -4.722499370574951,
+            4.341000556945801
+          ],
+          [
+            -1.7889997959136963,
+            -4.677498817443848,
+            5.241000175476074
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__001"
+        ],
+        "bounds": [
+          [
+            -2.1999998092651367,
+            -4.710499286651611,
+            4.510000228881836
+          ],
+          [
+            -1.3999998569488525,
+            -4.665499210357666,
+            4.53200101852417
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__001"
+        ],
+        "bounds": [
+          [
+            -2.1999998092651367,
+            -4.710498809814453,
+            4.690000534057617
+          ],
+          [
+            -1.3999998569488525,
+            -4.665498733520508,
+            4.712001323699951
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__001"
+        ],
+        "bounds": [
+          [
+            -2.1999998092651367,
+            -4.710498809814453,
+            4.87000036239624
+          ],
+          [
+            -1.3999998569488525,
+            -4.665498733520508,
+            4.892001152038574
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__001"
+        ],
+        "bounds": [
+          [
+            -2.1999998092651367,
+            -4.710498809814453,
+            5.050000190734863
+          ],
+          [
+            -1.3999998569488525,
+            -4.665498733520508,
+            5.072000980377197
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__002"
+        ],
+        "bounds": [
+          [
+            -5.490999698638916,
+            -4.722499370574951,
+            4.341000556945801
+          ],
+          [
+            -5.46899938583374,
+            -4.677498817443848,
+            5.241000175476074
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__002"
+        ],
+        "bounds": [
+          [
+            -5.87999963760376,
+            -4.710499286651611,
+            4.510000228881836
+          ],
+          [
+            -5.0799994468688965,
+            -4.665498733520508,
+            4.53200101852417
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__002"
+        ],
+        "bounds": [
+          [
+            -5.87999963760376,
+            -4.710498809814453,
+            4.690000534057617
+          ],
+          [
+            -5.0799994468688965,
+            -4.665498733520508,
+            4.712001323699951
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__002"
+        ],
+        "bounds": [
+          [
+            -5.87999963760376,
+            -4.710498809814453,
+            4.87000036239624
+          ],
+          [
+            -5.0799994468688965,
+            -4.665498733520508,
+            4.892001152038574
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__002"
+        ],
+        "bounds": [
+          [
+            -5.87999963760376,
+            -4.710498809814453,
+            5.050000190734863
+          ],
+          [
+            -5.0799994468688965,
+            -4.665498733520508,
+            5.072000980377197
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 15032,
+    "original_faces": 16912,
+    "clipped_faces": 17552
+  },
+  {
+    "actor": "SM_Upper_p0_p0_Solid",
+    "source_mesh": "/Game/SeniorSendOff/House/NoodleWing/SM_Upper_p0_p0_CornerCleared_NoodleCut.SM_Upper_p0_p0_CornerCleared_NoodleCut",
+    "asset": "COL_Connected_pper_p0_p0_Solid",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/COL_Connected_pper_p0_p0_Solid.fbx",
+    "custom_collision": true,
+    "cuts": [
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__001"
+        ],
+        "bounds": [
+          [
+            5.388998985290527,
+            -4.722499370574951,
+            4.341000556945801
+          ],
+          [
+            5.410999774932861,
+            -4.677498817443848,
+            5.241000175476074
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__001"
+        ],
+        "bounds": [
+          [
+            4.999999046325684,
+            -4.710499286651611,
+            4.510000228881836
+          ],
+          [
+            5.799999713897705,
+            -4.665499687194824,
+            4.53200101852417
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__001"
+        ],
+        "bounds": [
+          [
+            4.999999046325684,
+            -4.710499286651611,
+            4.690000534057617
+          ],
+          [
+            5.799999713897705,
+            -4.665498733520508,
+            4.712001323699951
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__001"
+        ],
+        "bounds": [
+          [
+            4.999999046325684,
+            -4.710499286651611,
+            4.87000036239624
+          ],
+          [
+            5.799999713897705,
+            -4.665498733520508,
+            4.892001152038574
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__001"
+        ],
+        "bounds": [
+          [
+            4.999999046325684,
+            -4.710499286651611,
+            5.050000190734863
+          ],
+          [
+            5.799999713897705,
+            -4.665498733520508,
+            5.072000980377197
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            1.7389992475509644,
+            -4.722498893737793,
+            4.341000556945801
+          ],
+          [
+            1.7609994411468506,
+            -4.677498817443848,
+            5.241000175476074
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            1.3499993085861206,
+            -4.710499286651611,
+            4.510000228881836
+          ],
+          [
+            2.1499996185302734,
+            -4.665498733520508,
+            4.53200101852417
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            1.3499993085861206,
+            -4.710498332977295,
+            4.690000534057617
+          ],
+          [
+            2.1499996185302734,
+            -4.665498733520508,
+            4.712001323699951
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            1.3499993085861206,
+            -4.710498332977295,
+            4.87000036239624
+          ],
+          [
+            2.1499996185302734,
+            -4.665498733520508,
+            4.892001152038574
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            1.3499993085861206,
+            -4.710498332977295,
+            5.050000190734863
+          ],
+          [
+            2.1499996185302734,
+            -4.665498733520508,
+            5.072000980377197
+          ]
+        ]
+      },
+      {
+        "panes": [
+          "SM_Upper_p0_m1_Glass__001",
+          "SM_Upper_p0_m1_Glass__002",
+          "SM_Upper_p0_p0_Glass__001",
+          "SM_Upper_p0_p0_Glass__002"
+        ],
+        "bounds": [
+          [
+            -7.190000057220459,
+            -4.810000896453857,
+            2.4922006130218506
+          ],
+          [
+            7.1999993324279785,
+            -4.569997310638428,
+            5.821600437164307
+          ]
+        ]
+      }
+    ],
+    "untouched_faces": 16781,
+    "original_faces": 19225,
+    "clipped_faces": 19865
+  }
+]

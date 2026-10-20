@@ -1,0 +1,18 @@
+{
+  "installed": true,
+  "compiled": false,
+  "native_tested": false,
+  "files": [
+    {
+      "file": "Source/SeniorSendoff/HouseStadiumDetailInteriors.cpp",
+      "before_sha": "e75da81635478b349947e72d47fc7ed12c383f59b76b5af238ea07d70686d972",
+      "after_sha": "a689dbe526602a39cea969a95d420e184f57549a0aeed3eae841d83eb1962d60"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseStadiumDetailLook.cpp",
+      "before_sha": "0985b382ea7f2c9b7d397c565976ed7dc3cca8e5881dd58da1850b17f750c6cc",
+      "after_sha": "7e8a58bfce56eeb9b037ba0c9ae9363d5cb0a188b1729350e1bd3cdb2bce1582"
+    }
+  ],
+  "scope": "Owner-requested desk/board clutter and less-perfect placements. All previous cameras/routes retained; office interior containment also handles collinear edge points correctly."
+}

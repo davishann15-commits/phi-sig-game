@@ -1,0 +1,15 @@
+{
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "interior_camera_views_reviewed": 39,
+  "interior_scope": "Assisted in-game camera review; no multiplayer session.",
+  "window_test": "PASS: 37 of 37 collision lanes clear after breaking; actual two-way side-window traversal.",
+  "front_door_test": "PASS: Normal E interaction both sides, solid closed collision, six open lanes, actual two-way player walking.",
+  "basement_walk_test": "PASS: Basement red/blue/laundry rooms and all three stair floors walked both ways without recovery teleports; five door collision checks passed.",
+  "room_layout_unchanged": true,
+  "automatic_footprint_fitting_removed": true,
+  "all_original_13_facade_definitions_restored": true,
+  "rooms_deleted": 0,
+  "unity_changed": false,
+  "basement_route_waypoint_passes": 46,
+  "multiplayer_tested": false
+}

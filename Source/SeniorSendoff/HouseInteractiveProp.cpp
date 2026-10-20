@@ -150,7 +150,7 @@ void AHouseInteractiveProp::BeginPlay()
     Super::BeginPlay();
     if (bPhysicsActive && FParse::Param(FCommandLine::Get(), TEXT("HouseInteractivitySmoke")))
         UE_LOG(LogTemp, Display, TEXT("HOUSE_PROP_BEGIN_ACTIVE id=%s sim=%d"), *PropId.ToString(), Body->IsSimulatingPhysics());
-    OriginalScale = GetActorScale3D();
+    if (!bBroken) OriginalScale = GetActorScale3D();   // a piece already broken (a late join) is crushed: keep the intact scale
     if (HasAuthority())
     {
         Health = bBroken ? 0.f : FMath::Max(.1f, BreakHealth);
@@ -974,6 +974,7 @@ void AHouseInteractiveProp::PlayDamageFx(const FVector& Impact, const FVector& D
             Ghost->SetCollisionEnabled(ECollisionEnabled::NoCollision);
             Ghost->SetStaticMesh(GhostMesh);
             Ghost->SetWorldTransform(Body->GetComponentTransform());
+            Ghost->LightingChannels = Body->LightingChannels;   // lit like the piece it stands in for
             for (int32 OriginalSlot = 0; OriginalSlot < MaterialOverrides.Num(); ++OriginalSlot)
                 if (MaterialOverrides[OriginalSlot])
                 {

@@ -1,0 +1,187 @@
+#include "HouseStadiumDetail.h"
+#include "HouseCampusFallKit.h"
+#include "HouseBlackHallPaint.h"
+namespace HouseStadiumDetailInteriorsImpl
+{
+FVector At(float Deg,float R,float Z){const float A=FMath::DegreesToRadians(Deg);return {2400+FMath::Cos(A)*5600*R,-13300+FMath::Sin(A)*3800*R,Z};}
+void Box(FHallMesh& M,FName K,FVector C,FVector D,FRotator R=FRotator::ZeroRotator){M.Box(K,FTransform(R,C),D*.5f,FHallUV::World(100));}
+// Small physical bevels keep padded/table/motor silhouettes from reading as cubes at1–2m.
+void SoftBox(FHallMesh& M,FName Key,FVector Centre,FVector Dimensions,FRotator Rotation,float RequestedBevel)
+{
+ const float Bevel=FMath::Min(RequestedBevel,float(Dimensions.GetMin())*.2f),H[]={float(Dimensions.X*.5),float(Dimensions.Y*.5),float(Dimensions.Z*.5)};
+ const FVector Axis[]={FVector::ForwardVector,FVector::RightVector,FVector::UpVector};FHallUV UV=FHallUV::World(100);
+ const bool AgedWood=HouseStadiumDetail::Step()>=7&&(Key.ToString().StartsWith(TEXT("SD_LockerOak"))||Key==TEXT("SD_BenchWood"));
+ const FName BevelKey=AgedWood?FName(TEXT("SD_WoodEdge")):Key;
+ if(AgedWood){UV=FHallUV::Local(FTransform(Rotation,Centre),100);UV.Offset={FMath::Fmod(FMath::Abs(float(Centre.X))*.013f,1.f),FMath::Fmod(FMath::Abs(float(Centre.Y))*.017f,1.f)};}
+ auto P=[&](FVector V){return Centre+Rotation.RotateVector(V);};auto N=[&](FVector V){return Rotation.RotateVector(V);};
+ for(int32 A=0;A<3;++A)for(float S:{-1.f,1.f}){const int32 B=(A+1)%3,C=(A+2)%3;const FVector At=Axis[A]*(S*H[A]),U=Axis[B]*(H[B]-Bevel),V=Axis[C]*(H[C]-Bevel);M.Quad(Key,P(At-U-V),P(At+U-V),P(At+U+V),P(At-U+V),N(Axis[A]*S),UV);}
+ for(int32 A=0;A<2;++A)for(int32 B=A+1;B<3;++B)for(float SA:{-1.f,1.f})for(float SB:{-1.f,1.f}){const int32 C=3-A-B;const FVector U=Axis[A]*(SA*H[A])+Axis[B]*(SB*(H[B]-Bevel)),V=Axis[A]*(SA*(H[A]-Bevel))+Axis[B]*(SB*H[B]),End=Axis[C]*(H[C]-Bevel);M.Quad(BevelKey,P(U-End),P(V-End),P(V+End),P(U+End),N((Axis[A]*SA+Axis[B]*SB).GetSafeNormal()),UV);}
+ for(float X:{-1.f,1.f})for(float Y:{-1.f,1.f})for(float Z:{-1.f,1.f})HouseCampusFallKit::Tri(M,BevelKey,P({X*H[0],Y*(H[1]-Bevel),Z*(H[2]-Bevel)}),P({X*(H[0]-Bevel),Y*H[1],Z*(H[2]-Bevel)}),P({X*(H[0]-Bevel),Y*(H[1]-Bevel),Z*H[2]}),N(FVector(X,Y,Z).GetSafeNormal()),UV);
+}
+void Word(FHallMesh& M,FString Text,FVector C,FVector Right,FVector N,float Height)
+{const float Pitch=Height*.82f;const FVector Left=C-Right*((Text.Len()-1)*Pitch*.5f+Height/3.f);for(int32 I=0;I<Text.Len();++I)for(const auto& Stroke:HallGlyph(Text[I]))for(int32 J=1;J<Stroke.Num();++J){auto P=[&](FVector2D Q){return Left+Right*(I*Pitch+Q.X*Height/6.f)+FVector(0,0,Q.Y*Height/6.f);};HouseCampusFallKit::Bar(M,TEXT("SD_Cream"),P(Stroke[J-1]),P(Stroke[J]),Height*.08f,.15f,N);}}
+// Construction details are merged into the STA loader's existing meshes and freed with the room.
+void Screw(FHallMesh& M,FVector C,FVector N,float Radius=.45f)
+{
+ const FVector R(-N.Y,N.X,0);M.Cylinder(TEXT("SD_Aluminium"),C,C+N*.25f,Radius,8,FHallUV::World(100));
+ HouseCampusFallKit::Bar(M,TEXT("SD_Dark"),C+N*.28f-R*Radius*.65f,C+N*.28f+R*Radius*.65f,.10f,.08f,N);
+}
+void Piping(FHallMesh& M,FName Key,FVector Centre,FVector X,FVector Y,float HalfX,float HalfY,float Z,float Radius)
+{for(float S:{-1.f,1.f}){M.Cylinder(Key,Centre+X*(S*HalfX)-Y*HalfY+FVector(0,0,Z),Centre+X*(S*HalfX)+Y*HalfY+FVector(0,0,Z),Radius,6,FHallUV::World(100));M.Cylinder(Key,Centre+Y*(S*HalfY)-X*HalfX+FVector(0,0,Z),Centre+Y*(S*HalfY)+X*HalfX+FVector(0,0,Z),Radius,6,FHallUV::World(100));}}
+void Jersey(FHallMesh& M,FVector C,FVector Along,FVector N,int32 Number)
+{
+ const TArray<FVector2D> Shape={{-10,0},{10,0},{12,38},{18,30},{23,43},{12,54},{5,57},{-5,57},{-12,54},{-23,43},{-18,30},{-12,38}};
+ // A shaped, shallow garment: shoulder/sleeve outline, side thickness, collar and sewn hem.
+ TArray<FVector> Front;for(const auto& Q:Shape)Front.Add(C+Along*(Q.X*.65f)+FVector(0,0,Q.Y)+N*(1.2f+FMath::Cos(Q.X*.2f)*.65f));
+ HouseCampusFallKit::Fan(M,TEXT("SD_Jersey"),C+N*2+FVector(0,0,28),Front,N);
+ for(int32 J=0;J<Shape.Num();++J){const int32 K=(J+1)%Shape.Num();M.Quad(TEXT("SD_Jersey"),Front[J]-N*1.5f,Front[K]-N*1.5f,Front[K],Front[J],FVector::CrossProduct(Front[K]-Front[J],N).GetSafeNormal(),FHallUV::World(80));}
+ HouseCampusFallKit::Bar(M,TEXT("SD_FabricEdge"),C-Along*9+N*2+FVector(0,0,1),C+Along*9+N*2+FVector(0,0,1),.6f,.15f,N);
+ const TArray<FVector> Collar={C-Along*5+N*2+FVector(0,0,56),C+N*2+FVector(0,0,51),C+Along*5+N*2+FVector(0,0,56)};
+ for(int32 J=1;J<Collar.Num();++J)M.Cylinder(TEXT("SD_Cream"),Collar[J-1],Collar[J],.5f,6,FHallUV::World(100));
+ Word(M,FString::FromInt(Number),C+N*2.1f+FVector(0,0,24),Along,N,13.f);
+}
+}
+void HouseStadiumDetail::WoodLockers(FHallMesh& Solid,FHallMesh& Detail,FVector Origin,FVector Along,int32 Count,FVector Facing)
+{
+ namespace I=HouseStadiumDetailInteriorsImpl;const FRotator R=Along.Rotation();
+ const TCHAR* Names[]={TEXT("WARD"),TEXT("BELL"),TEXT("REED"),TEXT("FINCH"),TEXT("MASON"),TEXT("GREER"),TEXT("COLE"),TEXT("ASH"),TEXT("HOLT"),TEXT("DRAKE")};
+ for(int32 L=0;L<Count;++L)
+ {
+  const FVector C=Origin+Along*(L*38+19)+Facing*23;const FName Oak=L%3==0?TEXT("SD_LockerOakLight"):L%3==1?TEXT("SD_LockerOak"):TEXT("SD_LockerOakDark");
+  auto Board=[&](FVector P,FVector D){I::SoftBox(Solid,Oak,P,D,R,.35f);};
+  Board(C+FVector(0,0,4),{37,46,8});Board(C+FVector(0,0,182),{37,46,8});
+  for(float S:{-1.f,1.f}){Board(C+Along*(S*18)+FVector(0,0,94),{2,46,174});Board(C+Along*(S*16.7f)+Facing*23+FVector(0,0,94),{2.7f,2,174});}
+  for(int32 P=0;P<3;++P)Board(C-Facing*22+Along*((P-1)*11.7f)+FVector(0,0,94),{11.4f,2,174});
+  Board(C+FVector(0,0,152),{34,45,3});Board(C+Facing*23+FVector(0,0,157),{34,2.2f,9});
+  Board(C+Facing*21+FVector(0,0,11),{34,3,6});
+  for(float S:{-1.f,1.f}){I::Screw(Detail,C+Facing*24.3f+Along*(S*16.7f)+FVector(0,0,18),Facing);I::Screw(Detail,C+Facing*24.3f+Along*(S*16.7f)+FVector(0,0,177),Facing);}
+  I::SoftBox(Detail,TEXT("SD_NameBrass"),C+Facing*23.5f+FVector(0,0,171),{30,1,10},R,.3f);
+  I::Box(Detail,TEXT("SD_Dark"),C+Facing*24.05f+FVector(0,0,171),{25,.12f,7},R);
+  I::Word(Detail,Names[L%10],C+Facing*24.2f+FVector(0,0,169),Along,Facing,3.5f);
+  for(float S:{-1.f,1.f})I::Screw(Detail,C+Facing*24.1f+Along*(S*13.6f)+FVector(0,0,171),Facing,.35f);
+  if(Step()>=7){FRandomStream Wear(1931+L*71+int32(FMath::Abs(Origin.X)));for(float Side:{-1.f,1.f}){const FVector P=C+Along*(Side*17.7f)+Facing*24.06f+FVector(0,0,Wear.FRandRange(65,128));const float Width=Wear.FRandRange(.20f,.45f),Height=Wear.FRandRange(3,9);Detail.Quad(TEXT("SD_WoodEdge"),P-Along*Width,P+Along*Width+FVector(0,0,1.3f),P+Along*Width*.25f+FVector(0,0,Height),P-Along*Width*.35f+FVector(0,0,Height*.85f),Facing,FHallUV::World(100));}}
+  // Open shelf back has real ventilation slots, a hanger rail and a double coat hook.
+  Detail.Cylinder(TEXT("SD_Steel"),C-Along*15-Facing*4+FVector(0,0,142),C+Along*15-Facing*4+FVector(0,0,142),.7f,8,FHallUV::World(100));
+  for(float S:{-1.f,1.f}){const FVector Hook=C-Facing*18+Along*(S*4)+FVector(0,0,133);Detail.Cylinder(TEXT("SD_Aluminium"),Hook,Hook+Facing*7,.7f,8,FHallUV::World(100));Detail.Cylinder(TEXT("SD_Aluminium"),Hook+Facing*7,Hook+Facing*8+FVector(0,0,3),.7f,8,FHallUV::World(100));}
+  for(int32 J=0;J<4;++J)I::Box(Detail,TEXT("SD_Dark"),C-Facing*20.8f+Along*((J-1.5f)*5.5f)+FVector(0,0,167),{.6f,.15f,8},R);
+  if(L%3!=1)I::Jersey(Detail,C-Facing*10+FVector(0,0,74+(L%2)*4),Along,Facing,12+(L*7)%77);
+  if(L%5==1){I::SoftBox(Detail,TEXT("SD_Towel"),C-Facing*2+FVector(0,0,157),{23,29,6},R,.8f);I::Piping(Detail,TEXT("SD_FabricEdge"),C-Facing*2,Along,Facing,10,12,160,.2f);}
+  if(L%7==3){Detail.Cylinder(TEXT("SD_Cream"),C+FVector(0,0,9),C+FVector(0,0,27),3.3f,12,FHallUV::World(100));I::Box(Detail,TEXT("SD_Gold"),C+Facing*3.3f+FVector(0,0,18),{5,.2f,8},R);}
+ }
+}
+void HouseStadiumDetail::LockerBench(FHallMesh& Solid,FHallMesh& Detail,FVector Start,FVector Along,float Span,FVector Facing)
+{
+ namespace I=HouseStadiumDetailInteriorsImpl;const FVector C=Start+Along*(Span*.5f);const FRotator R=Along.Rotation();
+ for(int32 J=0;J<3;++J)I::SoftBox(Solid,Step()>=7?TEXT("SD_BenchWood"):J==1?TEXT("SD_LockerOakLight"):TEXT("SD_LockerOak"),C+Facing*((J-1)*11.8f)+FVector(0,0,44),{Span,11.2f,4},R,.5f);
+ for(float U=20;U<Span;U+=120){const FVector P=Start+Along*U;for(float S:{-1.f,1.f}){I::Box(Solid,TEXT("SD_Steel"),P+Facing*(S*12)+FVector(0,0,20),{4,4,40},R);I::Box(Solid,TEXT("SD_Steel"),P+Facing*(S*12)+FVector(0,0,1),{15,9,2},R);I::Screw(Detail,P+Facing*(S*13.9f)+FVector(0,0,38),Facing*S,.6f);}I::Box(Solid,TEXT("SD_Steel"),P+FVector(0,0,40),{7,35,3},R);Detail.Cylinder(TEXT("SD_Steel"),P-Along*20+FVector(0,0,20),P+FVector(0,0,40),1.5f,8,FHallUV::World(100));}
+ I::Box(Solid,TEXT("SD_Steel"),C+FVector(0,0,18),{Span-30,3,3},R);
+}
+void HouseStadiumDetail::LockerHelmet(FHallMesh& Solid,FHallMesh& Detail,FVector Base,FVector Facing)
+{
+ namespace I=HouseStadiumDetailInteriorsImpl;const FVector X=Facing.GetSafeNormal2D(),Y(-X.Y,X.X,0);
+ auto P=[&](float Xv,float Yv,float Z){return Base+X*Xv+Y*Yv+FVector(0,0,Z);};
+ auto Shell=[&](float T,float A){return P(14*FMath::Sin(T)*FMath::Cos(A),11.7f*FMath::Sin(T)*FMath::Sin(A),16+15*FMath::Cos(T));};
+ auto Limit=[](float A){return 2.24f-1.04f*FMath::Pow(FMath::Max(0.f,FMath::Cos(A)),3.f);};
+ for(int32 J=0;J<32;++J){const float A=J*2*PI/32,B=(J+1)*2*PI/32;for(int32 K=0;K<12;++K){const float T0=(K+.01f)/12,T1=(K+1.f)/12;const FVector V[]={Shell(T0*Limit(A),A),Shell(T0*Limit(B),B),Shell(T1*Limit(B),B),Shell(T1*Limit(A),A)};const FVector N=((V[0]+V[1]+V[2]+V[3])*.25f-P(0,0,16)).GetSafeNormal();Solid.Quad(TEXT("SD_HelmetShell"),V[0],V[1],V[2],V[3],N,FHallUV::World(100));{auto& S=Solid.Sec(TEXT("SD_HelmetShell"));const int32 First=S.N.Num()-4;for(int32 I=0;I<4;++I){const FVector D=V[I]-P(0,0,16);S.N[First+I]=(X*(FVector::DotProduct(D,X)/(14*14))+Y*(FVector::DotProduct(D,Y)/(11.7f*11.7f))+FVector::UpVector*(D.Z/(15*15))).GetSafeNormal();}}}
+  const FVector A0=Shell(Limit(A),A),B0=Shell(Limit(B),B);Detail.Cylinder(TEXT("SD_PaddingDark"),A0,B0,.65f,6,FHallUV::World(100));}
+ // A narrow gold stripe follows the shell over the crown, rather than a floating cuboid.
+ for(int32 J=0;J<28;++J){const float A=-2.18f+J*3.36f/28,B=A+3.36f/28;auto Stripe=[&](float T,float Side){return P(14.12f*FMath::Sin(T),Side,16+15.12f*FMath::Cos(T));};Detail.Quad(TEXT("SD_Gold"),Stripe(A,-.8f),Stripe(A,.8f),Stripe(B,.8f),Stripe(B,-.8f),(X*FMath::Sin((A+B)*.5f)+FVector::UpVector*FMath::Cos((A+B)*.5f)),FHallUV::World(100));}
+ for(float Side:{-1.f,1.f}){
+  const FVector SideN=Y*Side;Detail.Cylinder(TEXT("SD_Dark"),P(0,Side*11.3f,16),P(0,Side*11.8f,16),2.1f,16,FHallUV::World(100));I::Screw(Detail,P(8,Side*10.4f,18),SideN,.7f);
+  for(float Z:{8.f,13.f})Detail.Cylinder(TEXT("SD_Aluminium"),P(6,Side*10,Z+3),P(18,Side*10,Z),.58f,8,FHallUV::World(100));
+  Detail.Cylinder(TEXT("SD_Aluminium"),P(17,Side*10,8),P(18.2f,Side*10,17),.58f,8,FHallUV::World(100));
+  Detail.Cylinder(TEXT("SD_Cream"),P(-1,Side*10,11),P(14,Side*8,1.4f),.65f,8,FHallUV::World(100));
+  for(float Z:{23.f,26.f})I::Box(Detail,TEXT("SD_Dark"),P(-3,Side*9.3f,Z),{3.5f,.2f,.65f},X.Rotation());
+ }
+ for(float Z:{8.f,13.f})for(int32 J=0;J<12;++J){const float A=-HALF_PI+J*PI/12,B=A+PI/12;Detail.Cylinder(TEXT("SD_Aluminium"),P(17+4*FMath::Cos(A),10*FMath::Sin(A),Z),P(17+4*FMath::Cos(B),10*FMath::Sin(B),Z),.58f,8,FHallUV::World(100));}
+ I::SoftBox(Detail,TEXT("SD_Cream"),P(14,0,2),{4,12,3},X.Rotation(),.5f);
+}
+void HouseStadiumDetail::Interiors(FHallMesh& Solid,FHallMesh& Clutter,FHallMesh&)
+{
+ if(!Enabled()||Step()<6)return;namespace I=HouseStadiumDetailInteriorsImpl;
+ constexpr float Floor=-55.f;
+ // Trainer's table by the east end wall, outside the existing64.3/58.5degree route.
+ const FVector Table=I::At(51.8f,.823f,Floor);const FRotator Rot(0,141.8f,0);const FVector X=Rot.Vector(),Y(-X.Y,X.X,0);
+ I::SoftBox(Solid,TEXT("SD_LockerOak"),Table+FVector(0,0,68),{183,64,10},Rot,.8f);I::SoftBox(Solid,TEXT("SD_Padding"),Table+FVector(0,0,75),{185,66,6},Rot,1.2f);
+ for(float A:{-76.f,76.f})for(float B:{-23.f,23.f})I::Box(Solid,TEXT("SD_LockerOak"),Table+X*A+Y*B+FVector(0,0,32.5f),{7,7,65},Rot);
+ for(int32 J=0;J<3;++J){const FVector P=Table+X*(J*17-35)+Y*(J==1?9.f:-7.f)+FVector(0,0,78);const TArray<FVector2D> Roll={{3,0},{3,6},{7,6},{7,0},{3,0}};HouseCampusFallKit::Lathe(Clutter,TEXT("SD_Cream"),P,Roll,24);}
+ // Trainer's joinery, lower shelf, corner plates and upholstery piping; the footprint and78cm top stay fixed.
+ for(float Side:{-1.f,1.f}){
+  I::SoftBox(Solid,TEXT("SD_LockerOak"),Table+Y*(Side*25)+FVector(0,0,57),{159,4,13},Rot,.4f);
+  I::SoftBox(Solid,TEXT("SD_LockerOakLight"),Table+X*(Side*76)+FVector(0,0,24),{6,49,5},Rot,.4f);
+  for(float End:{-1.f,1.f})I::Screw(Clutter,Table+X*(End*76)+Y*(Side*27.2f)+FVector(0,0,58),Y*Side,.65f);
+ }
+ for(int32 J=0;J<5;++J)I::SoftBox(Solid,TEXT("SD_LockerOak"),Table+Y*((J-2)*9.5f)+FVector(0,0,24),{152,9,2},Rot,.25f);
+ I::Piping(Clutter,TEXT("SD_FabricEdge"),Table,X,Y,90.6f,31.5f,73.5f,.38f);
+ I::Piping(Clutter,TEXT("SD_FabricEdge"),Table,X,Y,90.8f,32.4f,76.8f,.30f);
+ for(float End:{-1.f,1.f})for(int32 J=0;J<38;++J){const FVector A=Table+X*(-88+J*4.65f)+Y*(End*32.7f)+FVector(0,0,74.3f);HouseCampusFallKit::Bar(Clutter,TEXT("SD_PaddingDark"),A,A+X*1.7f,.12f,.10f,Y*End);}
+ // Tape tails, scissors and a labelled amber bottle break the previous identical row of props.
+ const FVector Tape=Table-X*35+FVector(0,0,78.1f);HouseCampusFallKit::Card(Clutter,TEXT("SD_Cream"),Tape+Y*9,X,Y,5,18,FVector::UpVector);
+ const FVector Bottle=Table+X*47+Y*16+FVector(0,0,78);Clutter.Cylinder(TEXT("SD_BottleAmber"),Bottle,Bottle+FVector(0,0,16),3.4f,16,FHallUV::World(100));Clutter.Cylinder(TEXT("SD_Cream"),Bottle+FVector(0,0,16),Bottle+FVector(0,0,19),2.4f,16,FHallUV::World(100));HouseCampusFallKit::Card(Clutter,TEXT("SD_TrainerLabel"),Bottle-Y*3.45f+FVector(0,0,9),X,FVector::UpVector,5.7f,7,-Y);
+ I::SoftBox(Clutter,TEXT("SD_Towel"),Table+X*8+Y*8+FVector(0,0,29),{43,30,7},Rot,.8f);
+ for(float S:{-1.f,1.f})Clutter.Cylinder(TEXT("SD_Aluminium"),Table+X*10+Y*(S*2)+FVector(0,0,78.2f),Table+X*26+Y*(-S*2)+FVector(0,0,78.2f),.35f,8,FHallUV::World(100));
+ for(float S:{-1.f,1.f})for(int32 J=0;J<16;++J){const float A=J*2*PI/16,B=(J+1)*2*PI/16;const FVector C=Table+X*8+Y*(S*3.6f)+FVector(0,0,78.2f);Clutter.Cylinder(TEXT("SD_Aluminium"),C+X*(FMath::Cos(A)*2.8f)+Y*(FMath::Sin(A)*1.7f),C+X*(FMath::Cos(B)*2.8f)+Y*(FMath::Sin(B)*1.7f),.32f,8,FHallUV::World(100));}
+
+
+ // A compact oval steel whirlpool: real hollow walls, rolled rim and a small period agitator.
+ // The64.3degree door-to-room line stays clear; leave room to walk behind the tub/locker bench too.
+ const FVector Tub=I::At(55.6f,.83f,Floor);const FRotator TR(0,145.6f,0);
+ const FVector TX=TR.Vector(),TY(-TX.Y,TX.X,0);
+ auto Oval=[&](float A,float RX,float RY,float Z){return Tub+TX*(FMath::Cos(A)*RX)+TY*(FMath::Sin(A)*RY)+FVector(0,0,Z);};
+ const auto MetalUV=FHallUV::World(100);
+ for(int32 J=0;J<48;++J){const float A=J*2*PI/48,B=(J+1)*2*PI/48;const FVector Out=(TX*(FMath::Cos((A+B)*.5f)/62.f)+TY*(FMath::Sin((A+B)*.5f)/36.f)).GetSafeNormal();
+  Solid.Quad(TEXT("SD_TubSteel"),Oval(A,62,36,5),Oval(B,62,36,5),Oval(B,62,36,76),Oval(A,62,36,76),Out,MetalUV);
+  {auto& Section=Solid.Sec(TEXT("SD_TubSteel"));const int32 First=Section.N.Num()-4;for(int32 V=0;V<4;++V){const float Angle=(V==0||V==3)?A:B;Section.N[First+V]=(TX*(FMath::Cos(Angle)/62.f)+TY*(FMath::Sin(Angle)/36.f)).GetSafeNormal();}}
+  Solid.Quad(TEXT("SD_TubSteel"),Oval(A,58,32,8),Oval(A,58,32,76),Oval(B,58,32,76),Oval(B,58,32,8),-Out,MetalUV);
+  Solid.Quad(TEXT("SD_TubSteel"),Oval(A,62,36,76),Oval(B,62,36,76),Oval(B,58,32,76),Oval(A,58,32,76),FVector::UpVector,MetalUV);
+  HouseCampusFallKit::Tri(Solid,TEXT("SD_Steel"),Tub+FVector(0,0,8),Oval(A,58,32,8),Oval(B,58,32,8),FVector::UpVector,MetalUV);
+  HouseCampusFallKit::Tri(Clutter,TEXT("SD_TubWater"),Tub+FVector(0,0,26),Oval(A,58,32,26),Oval(B,58,32,26),FVector::UpVector,MetalUV);
+  Clutter.Cylinder(TEXT("SD_TubSteel"),Oval(A,60,34,78),Oval(B,60,34,78),2.2f,6,MetalUV);
+ }
+ for(float A:{-44.f,44.f})for(float B:{-21.f,21.f})I::SoftBox(Solid,TEXT("SD_Steel"),Tub+TX*A+TY*B+FVector(0,0,3),{8,8,6},TR,.5f);
+ const FVector Motor=Tub-TX*43;I::SoftBox(Solid,TEXT("SD_Cream"),Motor+FVector(0,0,102),{24,27,34},TR,1.5f);Clutter.Cylinder(TEXT("SD_Steel"),Motor+FVector(0,0,28),Motor+FVector(0,0,89),3.f,8,MetalUV);
+ I::Box(Clutter,TEXT("SD_Dark"),Motor+TY*14+FVector(0,0,107),{9,1,7},TR);
+ const FVector Spill=I::At(55.3f,.809f,Floor+.10f);TArray<FVector> WetEdge;FRandomStream WetSeed(861018);for(int32 J=0;J<20;++J){const float A=J*2*PI/20,Scale=WetSeed.FRandRange(.78f,1.18f);WetEdge.Add(Spill+TX*(FMath::Cos(A)*49*Scale)+TY*(FMath::Sin(A)*33*Scale));}HouseCampusFallKit::Fan(Clutter,TEXT("SD_Wet"),Spill,WetEdge,FVector::UpVector);
+ // Real handles, clamp-on agitator mount, dial, ventilation and a safely coiled cable.
+ for(float S:{-1.f,1.f}){
+  const FVector H=Tub+TY*(S*36);const FVector A=H-TX*15+FVector(0,0,62),B=H+TX*15+FVector(0,0,62);
+  for(const FVector P:{A,B})Clutter.Cylinder(TEXT("SD_TubSteel"),P,P+TY*(S*5)+FVector(0,0,4),1.1f,10,MetalUV);
+  Clutter.Cylinder(TEXT("SD_TubSteel"),A+TY*(S*5)+FVector(0,0,4),B+TY*(S*5)+FVector(0,0,4),1.1f,10,MetalUV);
+  for(float U:{-28.f,28.f})I::Screw(Clutter,Tub+TX*U+TY*(S*29)+FVector(0,0,70),TY*S,.6f);
+ }
+ for(float S:{-1.f,1.f})I::SoftBox(Solid,TEXT("SD_Steel"),Motor+TY*(S*12)+FVector(0,0,81),{12,5,18},TR,.5f);
+ I::Box(Solid,TEXT("SD_TubSteel"),Motor+FVector(0,0,89),{29,34,4},TR);
+ const FVector Dial=Motor+TY*14.1f+FVector(0,0,108);Clutter.Cylinder(TEXT("SD_Dark"),Dial,Dial+TY*1.5f,3.4f,24,MetalUV);Clutter.Cylinder(TEXT("SD_Cream"),Dial+TY*1.6f,Dial+TY*2.4f,2.4f,24,MetalUV);
+ HouseCampusFallKit::Bar(Clutter,TEXT("SD_Dark"),Dial+TY*2.5f,Dial+TY*2.5f+TX*1.6f+FVector(0,0,1.1f),.3f,.12f,TY);
+ for(int32 J=0;J<7;++J){const float A=-PI*.7f+J*PI*1.4f/6;Clutter.Cylinder(TEXT("SD_Dark"),Dial+TY*1.6f+(TX*FMath::Sin(A)+FVector::UpVector*FMath::Cos(A))*4.1f,Dial+TY*1.6f+(TX*FMath::Sin(A)+FVector::UpVector*FMath::Cos(A))*4.7f,.14f,6,MetalUV);}
+ for(int32 J=0;J<7;++J)I::Box(Clutter,TEXT("SD_Dark"),Motor+TY*13.65f+TX*((J-3)*2.6f)+FVector(0,0,94),{1.3f,.15f,5},TR);
+ HouseCampusFallKit::Card(Clutter,TEXT("SD_AgitatorLabel"),Motor+TY*13.8f+FVector(0,0,119),TX,FVector::UpVector,18,6,TY);
+ I::Box(Clutter,TEXT("SD_Dark"),Motor+TY*14.2f+TX*7+FVector(0,0,108),{2.4f,1.6f,6},TR);
+ for(float S:{-1.f,1.f})for(float Z:{89.f,116.f})I::Screw(Clutter,Motor+TY*13.6f+TX*(S*9)+FVector(0,0,Z),TY,.45f);
+ const FVector Cord=Motor-TX*9-TY*6+FVector(0,0,90);Clutter.Cylinder(TEXT("SD_Dark"),Cord,Cord-TX*7+FVector(0,0,-25),.55f,8,MetalUV);
+ for(int32 J=0;J<72;++J){auto P=[&](float T){return Cord-TX*7+FVector(0,0,-25)+TY*(5*FMath::Cos(T))+TX*(5*FMath::Sin(T))+FVector(0,0,-T*.40f);};const float A=J*6*PI/72;Clutter.Cylinder(TEXT("SD_Dark"),P(A),P(A+6*PI/72),.55f,8,MetalUV);}
+ // The inspection side also has stamped maintenance markings, vents and a removable rear cover.
+ HouseCampusFallKit::Card(Clutter,TEXT("SD_AgitatorLabel"),Motor+TX*12.15f+FVector(0,0,108),-TY,FVector::UpVector,18,7,TX);
+ for(float U:{-9.f,9.f})for(float Z:{90.f,115.f})I::Screw(Clutter,Motor+TX*12.05f+TY*U+FVector(0,0,Z),TX,.4f);
+ for(int32 J=0;J<6;++J)I::Box(Clutter,TEXT("SD_Dark"),Motor+TX*12.1f+TY*((J-2.5f)*2.7f)+FVector(0,0,97),{.15f,1.4f,4},TR);
+ // Drain and graduated inner fill marks are visible through the shallow water.
+ Clutter.Cylinder(TEXT("SD_Dark"),Tub+TX*25+FVector(0,0,8.1f),Tub+TX*25+FVector(0,0,8.3f),3,16,MetalUV);
+ for(float Z:{30.f,40.f,50.f,60.f})I::Box(Clutter,TEXT("SD_Dark"),Tub+TY*31.8f+FVector(0,0,Z),{6,.15f,.4f},TR);
+
+ // A second small play diagram on the existing locker-room end wall, no room or doorway added.
+ const FVector Across=(I::At(50,.86f,0)-I::At(50,.84f,0)).GetSafeNormal(),Out(-Across.Y,Across.X,0),Board=I::At(50.f,.855f,70)+Out*25;
+ I::Box(Solid,TEXT("SD_Wood"),Board,{145,8,87},Across.Rotation());HouseCampusFallKit::Card(Clutter,TEXT("SD_Play"),Board+Out*4.2f,Across,FVector::UpVector,135,78,Out);
+ // New pads line existing tunnel cheeks only. Opening stays300cm wide;4cm pads leave292cm.
+ const FVector MouthA=I::At(54,.695f,Floor),MouthB=I::At(63,.695f,Floor),AcrossTunnel=(MouthB-MouthA).GetSafeNormal(),Rad(AcrossTunnel.Y,-AcrossTunnel.X,0),Mouth=(MouthA+MouthB)*.5f;
+ for(float Side:{-1.f,1.f}){I::SoftBox(Solid,TEXT("SD_Padding"),Mouth+AcrossTunnel*(Side*148)+Rad*15+FVector(0,0,105),{90,4,205},Rad.Rotation(),.8f);for(float Z:{35.f,105.f,175.f})Clutter.Cylinder(TEXT("SD_Steel"),Mouth+AcrossTunnel*(Side*145.8f)+Rad*12+FVector(0,0,Z),Mouth+AcrossTunnel*(Side*145.4f)+Rad*12+FVector(0,0,Z),1.2f,6,FHallUV::World(100));}
+ for(float Side:{-1.f,1.f}){
+  const FVector Face=Mouth+AcrossTunnel*(Side*145.8f)+Rad*15;
+  for(float Z:{Floor+38.f,Floor+106.f,Floor+174.f})Clutter.Cylinder(TEXT("SD_PaddingDark"),Face-Rad*43+FVector(0,0,Z),Face+Rad*43+FVector(0,0,Z),.14f,6,FHallUV::World(100));
+  for(float Edge:{-43.f,43.f})Clutter.Cylinder(TEXT("SD_FabricEdge"),Face+Rad*Edge+FVector(0,0,Floor+5),Face+Rad*Edge+FVector(0,0,Floor+205),.28f,6,FHallUV::World(100));
+ }
+ const FVector Torn=I::At(58.5f,.715f,Floor+.12f);
+ // A real irregular torn edge, mapped to the authored paper artwork; no black rectangle faking a hole.
+ const TArray<FVector2D> Edge={{-95,-23.5f},{90,-23.5f},{85,-15},{95,-6},{83,0},{93,6},{87,14},{95,23.5f},{-95,23.5f}};
+ FHallSection& Paper=Clutter.Sec(TEXT("SD_Beat"));for(int32 J=0;J<Edge.Num();++J){const int32 Base=Paper.V.Num();for(FVector2D Q:{FVector2D::ZeroVector,Edge[J],Edge[(J+1)%Edge.Num()]}){Paper.V.Add(Torn+AcrossTunnel*Q.X+Rad*Q.Y);Paper.N.Add(FVector::UpVector);Paper.UV.Add({Q.X/190.f+.5f,.5f-Q.Y/47.f});Paper.T.Add(FProcMeshTangent(AcrossTunnel,false));}if(FVector::CrossProduct(Paper.V[Base+1]-Paper.V[Base],Paper.V[Base+2]-Paper.V[Base]).Z<0)Paper.I.Append({Base,Base+1,Base+2});else Paper.I.Append({Base,Base+2,Base+1});}
+ UE_LOG(LogTemp,Display,TEXT("CALDER_STADIUM_INTERIOR sameDoors=1 sameRoute=1 trainer=1 whirlpool=1 tunnelPads=2 newRooms=0 newLights=0"));
+}

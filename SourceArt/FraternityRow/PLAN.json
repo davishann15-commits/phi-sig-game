@@ -1,0 +1,904 @@
+{
+  "created_utc": "2026-10-19T02:19:10.016529+00:00",
+  "units": "world centimeters",
+  "status": "REVISED LOT PLAN; R3 native walks passed but R5 canopy clipping requires this relocation; R4 native integration pending",
+  "no_map_expansion": true,
+  "no_road_change": true,
+  "no_fence_change": true,
+  "no_ground_change": true,
+  "houses": [
+    {
+      "id": "R1",
+      "existing": true,
+      "name": "Quiet red brick",
+      "letters": "ΩΞΛΗ",
+      "body": [
+        -18625,
+        -16175,
+        -2545,
+        -295
+      ],
+      "parcel": [
+        -18740,
+        -15750
+      ],
+      "state": "Dark house",
+      "yard": "Overgrown garden and old swing set",
+      "color": "#b8bdc4",
+      "interior": "Entry and stair hall; chapter room; TV lounge; dining; kitchen; shared WC.",
+      "floor_z_cm": 30
+    },
+    {
+      "id": "R2",
+      "existing": true,
+      "name": "Tidy clapboard",
+      "letters": "ΨΗΞΡ",
+      "body": [
+        -15300,
+        -12500,
+        -2530,
+        -430
+      ],
+      "parcel": [
+        -15750,
+        -12000
+      ],
+      "state": "Quiet and cared for",
+      "yard": "Raked lawn, stone patio, garden shed",
+      "color": "#c9d9cf",
+      "interior": "Central stair; orderly lounge; chapter and dining rooms; kitchen; shared WC.",
+      "floor_z_cm": 30
+    },
+    {
+      "id": "R3",
+      "existing": true,
+      "name": "Brick Colonial",
+      "letters": "ΗΞΩΡ",
+      "body": [
+        -11350,
+        -8850,
+        -2600,
+        -400
+      ],
+      "parcel": [
+        -12000,
+        -8500
+      ],
+      "state": "Party wreckage",
+      "yard": "Volleyball, garage, couch and muddy paths",
+      "color": "#dcb8a3",
+      "interior": "Foyer and composite stair; hearth lounge; dining; kitchen; ground-floor party chapter room; WC.",
+      "floor_z_cm": 30
+    },
+    {
+      "id": "R4",
+      "existing": false,
+      "name": "Tudor Revival",
+      "letters": "ΛΩΗΞ",
+      "body": [
+        -8400,
+        -6800,
+        450,
+        1850
+      ],
+      "parcel": [
+        -8500,
+        -6700
+      ],
+      "state": "Moderate party",
+      "yard": "Picnic patio, grill and lean-to",
+      "color": "#ddc58e",
+      "interior": "Slate vestibule; oak hall; hearth lounge; chapter and dining room; kitchen; shared WC.",
+      "floor_z_cm": -50
+    },
+    {
+      "id": "R5",
+      "existing": false,
+      "name": "Queen Anne",
+      "letters": "ΡΞΗΨ",
+      "body": [
+        -7080,
+        -5680,
+        -1700,
+        -200
+      ],
+      "parcel": [
+        -6700,
+        -3900
+      ],
+      "state": "Party interrupted",
+      "yard": "Food still out, fire ring and small shed",
+      "color": "#d8b8c7",
+      "interior": "Entry stair; connected parlors; turret alcove; dining and kitchen; shared WC.",
+      "floor_z_cm": 30
+    }
+  ],
+  "porches": [
+    {
+      "house": "R4",
+      "rect": [
+        -8400,
+        -6800,
+        150,
+        450
+      ]
+    },
+    {
+      "house": "R5",
+      "rect": [
+        -7080,
+        -5680,
+        -1850,
+        -1700
+      ]
+    },
+    {
+      "house": "R5",
+      "rect": [
+        -7230,
+        -7080,
+        -1850,
+        -1150
+      ]
+    }
+  ],
+  "access_steps": [
+    {
+      "house": "R1",
+      "side": "rear",
+      "rect": [
+        -17600.0,
+        -17200.0,
+        -295,
+        85
+      ],
+      "risers": 6,
+      "nominal_riser_cm": 15,
+      "tread_cm": 28,
+      "top_landing_cm": 120,
+      "bottom_landing_cm": 120
+    },
+    {
+      "house": "R2",
+      "side": "rear",
+      "rect": [
+        -14100.0,
+        -13700.0,
+        -430,
+        -50
+      ],
+      "risers": 6,
+      "nominal_riser_cm": 15,
+      "tread_cm": 28,
+      "top_landing_cm": 120,
+      "bottom_landing_cm": 120
+    },
+    {
+      "house": "R3",
+      "side": "rear",
+      "rect": [
+        -10300.0,
+        -9900.0,
+        -400,
+        -20
+      ],
+      "risers": 6,
+      "nominal_riser_cm": 15,
+      "tread_cm": 28,
+      "top_landing_cm": 120,
+      "bottom_landing_cm": 120
+    },
+    {
+      "house": "R4",
+      "side": "rear",
+      "rect": [
+        -7800.0,
+        -7400.0,
+        1850,
+        2350
+      ],
+      "risers": 7,
+      "nominal_riser_cm": 15.885714285714286,
+      "tread_cm": 28,
+      "top_landing_cm": 120,
+      "bottom_landing_cm": 120
+    },
+    {
+      "house": "R4",
+      "side": "front",
+      "rect": [
+        -7800.0,
+        -7400.0,
+        122,
+        150
+      ],
+      "risers": 2,
+      "nominal_riser_cm": 16.51375,
+      "tread_cm": 28,
+      "top_landing": "Uses the front porch",
+      "bottom_landing": "Existing grade; no new slab"
+    },
+    {
+      "house": "R5",
+      "side": "rear",
+      "rect": [
+        -6500.0,
+        -6100.0,
+        -200,
+        208
+      ],
+      "risers": 7,
+      "nominal_riser_cm": 15.23,
+      "tread_cm": 28,
+      "top_landing_cm": 120,
+      "bottom_landing_cm": 120
+    },
+    {
+      "house": "R5",
+      "side": "front",
+      "rect": [
+        -6580.0,
+        -6180.0,
+        -1990,
+        -1850
+      ],
+      "risers": 6,
+      "nominal_riser_cm": 15,
+      "tread_cm": 28,
+      "top_landing": "Uses the front porch",
+      "bottom_landing": "Existing grade; no new slab"
+    }
+  ],
+  "outbuildings": [
+    {
+      "house": "R1",
+      "kind": "Garden shelter",
+      "rect": [
+        -16680,
+        -16180,
+        3950,
+        4330
+      ]
+    },
+    {
+      "house": "R2",
+      "kind": "Garden shed",
+      "rect": [
+        -14900,
+        -14300,
+        3920,
+        4350
+      ]
+    },
+    {
+      "house": "R3",
+      "kind": "Garage",
+      "rect": [
+        -10500,
+        -9750,
+        3850,
+        4380
+      ]
+    },
+    {
+      "house": "R4",
+      "kind": "Lean-to",
+      "rect": [
+        -8240,
+        -7790,
+        3890,
+        4320
+      ]
+    },
+    {
+      "house": "R5",
+      "kind": "Small shed",
+      "rect": [
+        -5140,
+        -4700,
+        3970,
+        4350
+      ]
+    }
+  ],
+  "retained_hedge": {
+    "rect": [
+      -18860,
+      -18740,
+      -4100,
+      5100
+    ],
+    "kind": "Existing solid hedge; retain; context clipped to diagram north edge",
+    "height_cm": 190
+  },
+  "yard_dividers": [
+    {
+      "x": -15750,
+      "kind": "Low picket",
+      "gaps": [
+        [
+          700,
+          1150
+        ],
+        [
+          3100,
+          3550
+        ]
+      ]
+    },
+    {
+      "x": -12000,
+      "kind": "Chain link",
+      "gaps": [
+        [
+          700,
+          1150
+        ],
+        [
+          3100,
+          3550
+        ]
+      ]
+    },
+    {
+      "x": -8500,
+      "kind": "Split rail",
+      "gaps": [
+        [
+          100,
+          650
+        ],
+        [
+          3100,
+          3600
+        ]
+      ]
+    },
+    {
+      "x": -6700,
+      "kind": "Broken hedge with rail sections",
+      "gaps": [
+        [
+          1050,
+          2150
+        ],
+        [
+          3000,
+          3920
+        ]
+      ]
+    }
+  ],
+  "main_house_parking": {
+    "authorized": true,
+    "rect": [
+      -7200,
+      -3700,
+      -2500,
+      -300
+    ],
+    "lot_approach": [
+      -5800,
+      -5200,
+      -4190,
+      -2500
+    ],
+    "replacement": "Queen Anne chapter house, front lawns, porch approaches and the unchanged pedestrian connection to the main house",
+    "remove": [
+      "Lot asphalt and its dedicated entrance apron",
+      "Parking cars and bay-specific muscle-car placement",
+      "Bay paint and accessible-parking symbols",
+      "Curbs, wheel stops and parking signs",
+      "Lot-specific props, mulch and shrubs",
+      "Both west-lot light poles, their lights and pier bases"
+    ],
+    "preserve": [
+      "Main-house perimeter walk and connection",
+      "Main-house east driveway",
+      "Existing road and sidewalk",
+      "All original tree transforms and site planting RNG/NoGo"
+    ],
+    "built": false
+  },
+  "commons_paths": [
+    {
+      "name": "Retained house approach",
+      "points": [
+        [
+          -5510,
+          -3900
+        ],
+        [
+          -5510,
+          -2800
+        ],
+        [
+          -5510,
+          -1400
+        ],
+        [
+          -4320,
+          -1400
+        ],
+        [
+          -4320,
+          -600
+        ],
+        [
+          -4320,
+          -195
+        ],
+        [
+          -3480,
+          -195
+        ]
+      ]
+    },
+    {
+      "name": "Tudor lawn approach",
+      "points": [
+        [
+          -5510,
+          -2800
+        ],
+        [
+          -7600,
+          -2800
+        ],
+        [
+          -7600,
+          122
+        ]
+      ]
+    },
+    {
+      "name": "Queen Anne lawn approach",
+      "points": [
+        [
+          -6380,
+          -2800
+        ],
+        [
+          -6380,
+          -2020
+        ]
+      ]
+    }
+  ],
+  "commons_props": [
+    {
+      "kind": "Tudor picnic table",
+      "rect": [
+        -8730,
+        -8270,
+        -1020,
+        -680
+      ]
+    },
+    {
+      "kind": "Queen Anne abandoned food table",
+      "rect": [
+        -6100,
+        -5800,
+        -2550,
+        -2350
+      ]
+    }
+  ],
+  "retained_parking_walk": [
+    [
+      -5510,
+      -2800
+    ],
+    [
+      -5510,
+      -1400
+    ],
+    [
+      -4320,
+      -1400
+    ],
+    [
+      -4320,
+      -600
+    ],
+    [
+      -4320,
+      -195
+    ],
+    [
+      -3480,
+      -195
+    ]
+  ],
+  "fence": {
+    "y": 4520,
+    "west": -19300,
+    "east": -3900,
+    "gate_west": -7320,
+    "gate_east": -6780
+  },
+  "access_path": [
+    [
+      -8100,
+      -3900
+    ],
+    [
+      -8100,
+      0
+    ],
+    [
+      -6550,
+      0
+    ],
+    [
+      -6550,
+      2200
+    ],
+    [
+      -6350,
+      3100
+    ],
+    [
+      -7050,
+      3100
+    ],
+    [
+      -7050,
+      4520
+    ]
+  ],
+  "path_width_cm": 180,
+  "access_path_treatment": "Noncolliding ground-conforming visual dirt/wear only; no raised paving or terrain edits",
+  "preserved_native_tree_csv": "Saved/CampusMasterWork/runs/p8z_reviews/Saved/WoodsPassReview/original_trees.csv",
+  "trees": [
+    {
+      "batch": "Big",
+      "index": 0,
+      "x": -3000.0,
+      "y": -2600.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Big",
+      "index": 1,
+      "x": 2200.0,
+      "y": -2650.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Big",
+      "index": 2,
+      "x": -4200.0,
+      "y": 1200.0,
+      "z": -164.781036
+    },
+    {
+      "batch": "Big",
+      "index": 3,
+      "x": 4300.0,
+      "y": 800.0,
+      "z": -216.0
+    },
+    {
+      "batch": "Big",
+      "index": 4,
+      "x": 3200.0,
+      "y": 4450.0,
+      "z": -366.0
+    },
+    {
+      "batch": "Big",
+      "index": 31,
+      "x": -18935.226562,
+      "y": 1610.536621,
+      "z": -165.087952
+    },
+    {
+      "batch": "Big",
+      "index": 52,
+      "x": -6215.250488,
+      "y": 1596.282227,
+      "z": -165.993881
+    },
+    {
+      "batch": "Big",
+      "index": 109,
+      "x": -6731.647461,
+      "y": 4701.249023,
+      "z": -182.808395
+    },
+    {
+      "batch": "Big",
+      "index": 110,
+      "x": -5822.91748,
+      "y": 4593.321289,
+      "z": -174.956635
+    },
+    {
+      "batch": "Big",
+      "index": 113,
+      "x": -4164.393555,
+      "y": 4740.959961,
+      "z": -209.555862
+    },
+    {
+      "batch": "Big",
+      "index": 114,
+      "x": -2952.321777,
+      "y": 4651.415527,
+      "z": -366.030518
+    },
+    {
+      "batch": "Big",
+      "index": 116,
+      "x": -1155.617065,
+      "y": 4698.398926,
+      "z": -366.143158
+    },
+    {
+      "batch": "Big",
+      "index": 117,
+      "x": -482.478302,
+      "y": 4697.72998,
+      "z": -366.272797
+    },
+    {
+      "batch": "Big",
+      "index": 120,
+      "x": 1336.513428,
+      "y": 4717.309082,
+      "z": -365.972961
+    },
+    {
+      "batch": "Big",
+      "index": 121,
+      "x": 2176.687012,
+      "y": 4745.009277,
+      "z": -366.507111
+    },
+    {
+      "batch": "Big",
+      "index": 124,
+      "x": 4158.799316,
+      "y": 4566.841797,
+      "z": -366.0
+    },
+    {
+      "batch": "Small",
+      "index": 0,
+      "x": -3170.0,
+      "y": 4450.0,
+      "z": -366.0
+    },
+    {
+      "batch": "Small",
+      "index": 1,
+      "x": -4800.0,
+      "y": -2600.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 2,
+      "x": -17851.960938,
+      "y": -3800.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 3,
+      "x": -16971.492188,
+      "y": -5900.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 4,
+      "x": -15474.238281,
+      "y": -3800.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 5,
+      "x": -14463.238281,
+      "y": -5900.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 6,
+      "x": -13220.230469,
+      "y": -3800.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 7,
+      "x": -12035.608398,
+      "y": -5900.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 8,
+      "x": -10988.771484,
+      "y": -3800.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 9,
+      "x": -9697.606445,
+      "y": -5900.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 10,
+      "x": -8355.871094,
+      "y": -3800.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 11,
+      "x": -7277.208008,
+      "y": -5900.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 12,
+      "x": -3464.556152,
+      "y": -3800.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 13,
+      "x": -2423.700439,
+      "y": -5900.0,
+      "z": -65.0
+    },
+    {
+      "batch": "Small",
+      "index": 46,
+      "x": -18826.691406,
+      "y": 3805.634766,
+      "z": -165.199997
+    },
+    {
+      "batch": "Small",
+      "index": 124,
+      "x": -7459.354492,
+      "y": 4655.868164,
+      "z": -179.254211
+    },
+    {
+      "batch": "Small",
+      "index": 126,
+      "x": -5047.582031,
+      "y": 4696.07373,
+      "z": -182.36084
+    },
+    {
+      "batch": "Small",
+      "index": 128,
+      "x": -2084.750244,
+      "y": 4607.250977,
+      "z": -365.99762
+    },
+    {
+      "batch": "Small",
+      "index": 130,
+      "x": 613.584839,
+      "y": 4630.26709,
+      "z": -365.962128
+    },
+    {
+      "batch": "Small",
+      "index": 132,
+      "x": 3346.403564,
+      "y": 4634.090332,
+      "z": -365.952606
+    }
+  ],
+  "fixed_west_field_probes": [
+    [
+      -17500,
+      2100
+    ],
+    [
+      -17500,
+      2800
+    ],
+    [
+      -17500,
+      3700
+    ],
+    [
+      -12500,
+      2100
+    ],
+    [
+      -12500,
+      2800
+    ],
+    [
+      -12500,
+      3700
+    ],
+    [
+      -7000,
+      2100
+    ],
+    [
+      -7000,
+      2800
+    ],
+    [
+      -7000,
+      3700
+    ],
+    [
+      -4400,
+      2100
+    ],
+    [
+      -4400,
+      2800
+    ],
+    [
+      -4400,
+      3700
+    ]
+  ],
+  "fixed_walk_route": [
+    [
+      -4500,
+      2900
+    ],
+    [
+      -5700,
+      3200
+    ],
+    [
+      -7050,
+      3800
+    ],
+    [
+      -7050,
+      4200
+    ],
+    [
+      -7050,
+      4830
+    ],
+    [
+      -7050,
+      5480
+    ],
+    [
+      -6800,
+      5900
+    ]
+  ],
+  "plan_checks": {
+    "conflicts": [],
+    "min_path_tree_distance_cm": 255.87109400000008,
+    "min_commons_path_tree_distance_cm": 710.0,
+    "path_probe_intersections": [
+      [
+        -7000,
+        3700
+      ]
+    ],
+    "path_probe_policy": "Must remain noncolliding at existing grade"
+  },
+  "removed_existing_parking_lights": 2,
+  "new_real_exterior_lights": 6,
+  "proposed_exterior_total": 57,
+  "shared_interior_pool": 6
+}

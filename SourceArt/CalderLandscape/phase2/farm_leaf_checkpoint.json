@@ -1,0 +1,42 @@
+{
+  "build": {
+    "log": "Saved/CalderWork/codex_farm_leaf_build.log",
+    "actions": 210,
+    "seconds": 121.95,
+    "passed": true
+  },
+  "runtime": {
+    "components": 5,
+    "bales": 6,
+    "diagnostic_build_ms": 408.0,
+    "curing_LOD_triangles": [
+      113280,
+      10368,
+      1152
+    ],
+    "all_Calder_ISMs": 24,
+    "cover_instances": 57705,
+    "cover_crc": "17dc66ec",
+    "terrain_water_woods_pass": true
+  },
+  "visual_review": {
+    "inspected_all_frames": true,
+    "images": {
+      "241_detail_calder_farm.png": "bbb94d4cde5729af25056854c09e708e09dea9c688968dc2da1ccbd1adcf2b8a",
+      "242_detail_calder_bale.png": "996282217d474a123a08500a58a343c515fdf1c1f3c7f0c63ba5ddf4d1b435fe",
+      "243_detail_calder_barn_entry.png": "70cccc055d64ed3485c0845166e32a2a8ca37ec63c675d41b8e0f08876bec31f",
+      "244_detail_calder_barn_roof.png": "54c7a79082302888c13ce7a3bc48e9999a40c87a96128e7205f836c41f9da96d"
+    },
+    "total_inspected_tree_woods_ridge_water_farm_frames": 150,
+    "photographic_appearance_accepted": false,
+    "findings": [
+      "Curved whole-plant leaves read substantially more naturally than pointed diamonds.",
+      "Normal-culling timber frame remains intact; original wide/bale views retained.",
+      "Physical hill roof camera reaches actual ground+130cm but barn is culled out; roof frame rejected for material assessment.",
+      "Existing project ViewDistanceQuality1 applies r.ViewDistanceScale0.6; original90m end becomes54m, shorter than the66m hill view."
+    ],
+    "default_enabled": false
+  },
+  "references": "farm_reference_plan.json",
+  "scope": "Leaf art native checkpoint; roof frame pending correct architectural cull range, no full photo/performance acceptance"
+}

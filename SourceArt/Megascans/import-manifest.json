@@ -1,0 +1,135 @@
+{
+  "packs": [
+    {
+      "name": "Raspberry",
+      "content_folder": "/Game/Environment/Megascans/Raspberry_wf0oefeja",
+      "textures": [
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_BaseColor.T_Raspberry_BaseColor",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Billboard_BaseColor.T_Raspberry_Billboard_BaseColor",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Billboard_Normal.T_Raspberry_Billboard_Normal",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Billboard_Opacity.T_Raspberry_Billboard_Opacity",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Billboard_Translucency.T_Raspberry_Billboard_Translucency",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Bump.T_Raspberry_Bump",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Cavity.T_Raspberry_Cavity",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Displacement.T_Raspberry_Displacement",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Gloss.T_Raspberry_Gloss",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Normal.T_Raspberry_Normal",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Opacity.T_Raspberry_Opacity",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Roughness.T_Raspberry_Roughness",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Specular.T_Raspberry_Specular",
+        "/Game/Environment/Megascans/Raspberry_wf0oefeja/Textures/T_Raspberry_Translucency.T_Raspberry_Translucency"
+      ],
+      "meshes": [
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarA.SM_Raspberry_VarA",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarA_LOD0.fbx",
+          "extent_cm": [
+            14.65371561050415,
+            15.608992099761963,
+            19.370644882321358
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarB.SM_Raspberry_VarB",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarB_LOD0.fbx",
+          "extent_cm": [
+            10.350023746490479,
+            6.919618844985962,
+            16.2204412817955
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarC.SM_Raspberry_VarC",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarC_LOD0.fbx",
+          "extent_cm": [
+            6.197629928588867,
+            6.074288845062256,
+            8.134157091379166
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarD.SM_Raspberry_VarD",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarD_LOD0.fbx",
+          "extent_cm": [
+            68.3093090057373,
+            63.65074920654297,
+            33.08435982465744
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarE.SM_Raspberry_VarE",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarE_LOD0.fbx",
+          "extent_cm": [
+            57.347412109375,
+            59.292551040649414,
+            38.84676653146744
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarF.SM_Raspberry_VarF",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarF_LOD0.fbx",
+          "extent_cm": [
+            50.09288787841797,
+            39.60957622528076,
+            52.1673429608345
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarG.SM_Raspberry_VarG",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarG_LOD0.fbx",
+          "extent_cm": [
+            37.63912105560303,
+            25.27846336364746,
+            29.829726666212082
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Meshes/SM_Raspberry_VarH.SM_Raspberry_VarH",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/raspberry_wf0oefeja_high/Raspberry_wf0oefeja_High_wf0oefeja_VarH_LOD0.fbx",
+          "extent_cm": [
+            32.93215751647949,
+            40.92502403259277,
+            25.85165300965309
+          ],
+          "material": "/Game/Environment/Megascans/Raspberry_wf0oefeja/Materials/M_Raspberry.M_Raspberry"
+        }
+      ]
+    },
+    {
+      "name": "LargeFallenTree",
+      "content_folder": "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw",
+      "textures": [
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_AO.T_LargeFallenTree_AO",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_BaseColor.T_LargeFallenTree_BaseColor",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Bump.T_LargeFallenTree_Bump",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Cavity.T_LargeFallenTree_Cavity",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Displacement.T_LargeFallenTree_Displacement",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Fuzz.T_LargeFallenTree_Fuzz",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Gloss.T_LargeFallenTree_Gloss",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Normal.T_LargeFallenTree_Normal",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Roughness.T_LargeFallenTree_Roughness",
+        "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Textures/T_LargeFallenTree_Specular.T_LargeFallenTree_Specular"
+      ],
+      "meshes": [
+        {
+          "asset": "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Meshes/SM_LargeFallenTree.SM_LargeFallenTree",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/large_fallen_tree_wd1mbcvbw_high/Large_Fallen_Tree_wd1mbcvbw_High.fbx",
+          "extent_cm": [
+            862.9104309082031,
+            115.14119911193848,
+            57.96549904346466
+          ],
+          "material": "/Game/Environment/Megascans/LargeFallenTree_wd1mbcvbw/Materials/M_LargeFallenTree.M_LargeFallenTree"
+        }
+      ]
+    }
+  ],
+  "status": "complete"
+}

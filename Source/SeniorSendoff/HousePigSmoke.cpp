@@ -1489,13 +1489,17 @@ void TickHousePigAnimalSmoke(UWorld* World)
         for (TActorIterator<AHouseRoamingPig> It(World);It;++It) S.Pigs.Add(*It);
         S.Pigs.Sort([](const TWeakObjectPtr<AHouseRoamingPig>& A,const TWeakObjectPtr<AHouseRoamingPig>& B) { return A->VisualScale<B->VisualScale; });
         if (S.Pigs.Num()!=2||!S.Pigs[0]->HasAuthority()||!S.Pigs[1]->HasAuthority()) { Finish(false,TEXT("Animal check needs the two actual authority pigs")); return; }
-        if (!PlacePlayer(World,Pawn,PC,FVector(-2910,-1310,302.3),FVector(-2680,-1110,350),TEXT("animal_far")))
+        // The installed pigs now live in the basement closet. Keep the actual
+        // player's clear spawn as the distant observer instead of teleporting
+        // them onto the removed upstairs test course. All motion/contact
+        // thresholds below remain unchanged.
+        const FVector ObserverFeet=Pawn->GetActorLocation()-FVector(0,0,Pawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight());
+        if (!PlacePlayer(World,Pawn,PC,ObserverFeet,S.Pigs[0]->FeetLocation()+FVector(0,0,45),TEXT("animal_far")))
         { Finish(false,TEXT("Far physical observer has no clear floor")); return; }
         FActorSpawnParameters Spawn; Spawn.ObjectFlags|=RF_Transient;
         S.Camera=World->SpawnActor<ACameraActor>(Spawn);
         if (!S.Camera.IsValid()) { Finish(false,TEXT("Transient animal camera could not be created")); return; }
         S.Camera->GetCameraComponent()->SetFieldOfView(75.f); PC->SetViewTarget(S.Camera.Get());
-        const TArray<FVector> Points={FVector(-2810,-1215,302.3),FVector(-2440,-1215,302.3),FVector(-2500,-1050,302.3),FVector(-2690,-1060,302.3)};
         for (int32 i=0;i<2;++i)
         {
             AHouseRoamingPig* Pig=S.Pigs[i].Get(); FPigAnimalMetrics& M=S.Metrics[i];
@@ -1504,10 +1508,9 @@ void TickHousePigAnimalSmoke(UWorld* World)
             { Finish(false,TEXT("Animal head, independently authored ears or playable recorded snort are missing")); return; }
             M.SnoutLocal=PigAnimalSnoutLocal(Head); M.SnortsBefore=Pig->SnortEvents; M.LastFeet=Pig->FeetLocation();
             TArray<int32> Nodes;
-            for (const FVector& P:Points) { FHousePigRoamNode N; N.Feet=P; N.bInsidePigsty=true; Nodes.Add(Pig->RoamGraph.Add(N)); }
-            for (int32 p=0;p<4;++p) { const int32 A=Nodes[p],B=Nodes[(p+1)%4]; Pig->RoamGraph[A].Links.AddUnique(B); Pig->RoamGraph[B].Links.AddUnique(A); }
-            for (const TPair<int32,int32>& Link:{TPair<int32,int32>(Nodes[0],5),TPair<int32,int32>(Nodes[2],2),TPair<int32,int32>(Nodes[3],1)})
-            { Pig->RoamGraph[Link.Key].Links.AddUnique(Link.Value); Pig->RoamGraph[Link.Value].Links.AddUnique(Link.Key); }
+            for (int32 Node=0;Node<Pig->RoamGraph.Num();++Node)
+                if (Pig->RoamGraph[Node].bInsidePigsty && Pig->RoamGraph[Node].GateDoorId.IsNone()) Nodes.Add(Node);
+            if (Nodes.Num()<4) { Finish(false,TEXT("Installed pigsty has fewer than four ordinary animal route nodes")); return; }
             S.SeedNodes[i]=Nodes;
             if (!Pig->RequestRoamNode(Nodes[i?0:1])) { Finish(false,TEXT("Initial ordinary animal route was not physically reachable")); return; }
         }

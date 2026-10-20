@@ -1,0 +1,82 @@
+{
+  "scope": "Unbound reduced-wood preview; final forest/photographic/performance acceptance pending",
+  "geometry": {
+    "Beech": {
+      "triangles": [
+        40481,
+        9538,
+        3611
+      ],
+      "build_ms": 31.8
+    },
+    "Maple": {
+      "triangles": [
+        43132,
+        10284,
+        3535
+      ],
+      "build_ms": 34.9
+    }
+  },
+  "images": [
+    {
+      "file": "Beech_0.png",
+      "sha256": "b7abd46a65107b656734b4b2c3045de24d1220e1fc9781ebe15b1c9997403ab6",
+      "inspected": true
+    },
+    {
+      "file": "Beech_1.png",
+      "sha256": "02f40282c345ddfc48ec533df32b2bbf22f13c87238a943426892b61664228c5",
+      "inspected": true
+    },
+    {
+      "file": "Beech_2.png",
+      "sha256": "62a24f76159f82377a2f7f71407b361ae0d0fe007d391b1d7d1b2b4bcb144e3a",
+      "inspected": true
+    },
+    {
+      "file": "Beech_3.png",
+      "sha256": "e9f182a0552e72019e4873c914b5d68b7e29bdea0fc833cf85e90b2954539a5f",
+      "inspected": true
+    },
+    {
+      "file": "Beech_4.png",
+      "sha256": "b75d44ae8911a8f767a2683236bdc16a5aed2582326e969b7a027e3411c9ab47",
+      "inspected": true
+    },
+    {
+      "file": "Maple_0.png",
+      "sha256": "fdd828902fab969d9e55b65b26287f9dfe03ba7fe54b395dc2c910e79c56fb65",
+      "inspected": true
+    },
+    {
+      "file": "Maple_1.png",
+      "sha256": "8050d80d3d7c2f71c6d8066f1ec146e5886a8fe7d9e2c0ffe2231510c931c00f",
+      "inspected": true
+    },
+    {
+      "file": "Maple_2.png",
+      "sha256": "0a56b347056a0965e7bb1caf88e6d3185a8dfb31def592958d0789640f63bea7",
+      "inspected": true
+    },
+    {
+      "file": "Maple_3.png",
+      "sha256": "79809bcbe3ad89c3c550926445d15060ab9a0e76ad7f50c619d6a191b331ba19",
+      "inspected": true
+    },
+    {
+      "file": "Maple_4.png",
+      "sha256": "8356efc90465c0ac377c8ef65573fffbaa66c42c924fdc8d564259094c8a1c27",
+      "inspected": true
+    }
+  ],
+  "distance_view_cm": 15018.6,
+  "far_lod_findings": "Readable connected trunk/crown silhouette at150m. Forced close-up of farLOD remains visibly coarse; not a final forest acceptance.",
+  "trunk_material_findings": "No prior lower-trunk bark patches",
+  "tree_crc": "0f3b2bb7",
+  "cover_instances": 57815,
+  "cover_crc": "29aceab6",
+  "exterior_lights": 53,
+  "total_candidate_frames_inspected": 74,
+  "next": "Physical fit, collision/instance preservation, common wind and measured forest integration"
+}

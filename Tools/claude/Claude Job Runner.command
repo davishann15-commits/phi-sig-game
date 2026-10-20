@@ -1,0 +1,24 @@
+#!/bin/bash
+# Claude job runner for the Senior Sendoff Unreal project.
+# Runs each *.sh dropped into Tools/claude/queue (one at a time) and writes
+# Saved/ClaudeDump/<job>.log + <job>.status. Close this window to stop it.
+cd "$(dirname "$0")" || exit 1
+QUEUE="queue"; DONE="done"; LOGS="../../Saved/ClaudeDump"
+mkdir -p "$QUEUE" "$DONE" "$LOGS"
+echo "Claude job runner started $(date) in $(pwd)"
+echo "Watching $QUEUE/ ... close this window to stop."
+while true; do
+  date +%s > "$LOGS/runner.alive"
+  for job in "$QUEUE"/*.sh; do
+    [ -e "$job" ] || continue
+    name=$(basename "$job" .sh)
+    echo "=== $(date) running $name"
+    echo "START $(date +%s)" > "$LOGS/$name.status"
+    bash "$job" > "$LOGS/$name.log" 2>&1
+    code=$?
+    echo "EXIT $code $(date +%s)" >> "$LOGS/$name.status"
+    mv -f "$job" "$DONE/$name.$(date +%s).sh"
+    echo "=== $(date) finished $name (exit $code)"
+  done
+  sleep 2
+done

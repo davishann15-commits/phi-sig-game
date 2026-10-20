@@ -1,0 +1,87 @@
+{
+  "utc": "2026-10-19T03:57:46.769492+00:00",
+  "base": "captured pre-integration bytes, after both owners camera-only instrumentation",
+  "implementation_patch": "ROW_IMPLEMENTATION.patch",
+  "separate_prior_camera_patch": "ROW_CAMERAS.patch",
+  "files": {
+    "Source/SeniorSendoff/HouseCalderTerrainReview.cpp": {
+      "before_sha256": "7cca40b585d10e0d2befcad3f96bce3d26bd1fb2bcea80523920c969592c2940",
+      "final_sha256": "57342159651956cebf7fa4558d349d9dc3990de3420e5ef24896db30c1b2f8f5"
+    },
+    "Source/SeniorSendoff/HouseCampusInteriors.cpp": {
+      "before_sha256": "3b4443ff55149c399c52222a28808a4d3878ca3d9f3aec363f01f44f73a26355",
+      "final_sha256": "60961b89f34c095becae55c2565ecc4bb07514cdc2b37d5ce93a4d1a46df117f"
+    },
+    "Source/SeniorSendoff/HouseCampusInteriorsReview.cpp": {
+      "before_sha256": "fd7ac8eab8908a2e0d8e06242ad91eadb652a67e590b6544d7dc6eea1cafa720",
+      "final_sha256": "568ad8b407a87ebb7cfd76b84564376dc4c8e03d484722c00d215b8fb6ad25ba"
+    },
+    "Source/SeniorSendoff/HouseCampusInteriorsRooms.h": {
+      "before_sha256": "6d1f2f375df586ea835e7b84376422418bec445c095cd6ca1d38facf678d406e",
+      "final_sha256": "f484a128fc3acf9cebcb37b7d61a3ea7f8b51c291d1010c70e58315a71f3ef34"
+    },
+    "Source/SeniorSendoff/HouseCampusInteriorsRow.cpp": {
+      "before_sha256": null,
+      "final_sha256": "239baa52dbb04f9b2e16d4c4e6d09058bc26ba9e0fb03cda438018899bb77a7b"
+    },
+    "Source/SeniorSendoff/HouseCampusInteriorsSmoke.cpp": {
+      "before_sha256": "d1f4f6635591d792cbc9e16ab4338b2c000b46855e4cc2d80df82128bae28898",
+      "final_sha256": "d0602c01422a45b0c5559f28282db789e361ff764a76b387604f560e8d952c21"
+    },
+    "Source/SeniorSendoff/HouseCampusLayoutReview.cpp": {
+      "before_sha256": "50a2e0797405002a5506702c0970079167238430e094e3a0410ede373a4e5744",
+      "final_sha256": "5be4755d96ae9c7ca12f607a710273ab4b548f8eaaf9fab8b6668e34676f84d3"
+    },
+    "Source/SeniorSendoff/HouseCampusMultiplayerReview.cpp": {
+      "before_sha256": "17014aff94619db85dacde1e2d7c2146fa3f68862a156372f500e6e13818a9dd",
+      "final_sha256": "182347eb150d3debd9d091fbc9adaaa3a2b167e4899960006a5ae738fec644d0"
+    },
+    "Source/SeniorSendoff/HouseClockTower.cpp": {
+      "before_sha256": "c1d1202aad8be972a8b1bf0d9f5af9c3a011e39551fc67caac2286b9ec034db8",
+      "final_sha256": "afd4a8706534e9e8fd5c9d4e0a59323f92e412aa72694d26d8bda2b13e7afad5"
+    },
+    "Source/SeniorSendoff/HouseExterior.cpp": {
+      "before_sha256": "e077b0646e9efc0164f0d82069c8552e6bfa98887f5014405eb205cd04cabd5e",
+      "final_sha256": "26cb9ba60b149f3acfbc1f63a4180ee0b93251d3628c99a86ad664a2529a8adc"
+    },
+    "Source/SeniorSendoff/HouseExteriorWalkReview.cpp": {
+      "before_sha256": "b5e0af857c93384b156f974c8b7d5c1f4279061b9697b2167a6c2682a8a3bbc3",
+      "final_sha256": "6bcfe24c20ccb700114bbc0ff61d35df56ddd2aead8aed27f580aac41649b984"
+    },
+    "Source/SeniorSendoff/HouseFraternityRow.cpp": {
+      "before_sha256": "8ada023ed996a6ffcf38de5119609be74550dc2426f38b6e878f04befcc721a5",
+      "final_sha256": "535db7f9e0437f9fb5c09f501b5c3a33b8d9ef9444d0906ffb5a8e1d781c5172"
+    },
+    "Source/SeniorSendoff/HouseFraternityRow.h": {
+      "before_sha256": "481c241cf6fb5b3e348e06b83a08208e9f037b6152abea9bf96b0f14a990bc1c",
+      "final_sha256": "22668895d006dbc455f646ede4f71645ec0d3fe7112003186214ca3621069335"
+    },
+    "Source/SeniorSendoff/HouseFraternityRowReview.cpp": {
+      "before_sha256": null,
+      "final_sha256": "2c06976679b327c6b565e6811f1f9ed04c893fc6c1242ccc92943d059e70c9a5"
+    },
+    "Source/SeniorSendoff/HouseFraternityRowYards.cpp": {
+      "before_sha256": null,
+      "final_sha256": "8829ba6586f54fb10fbd8f9956a05429c373a012f56eb7812e696aa46c9f62f7"
+    },
+    "Source/SeniorSendoff/HouseFraternityRowYards.h": {
+      "before_sha256": null,
+      "final_sha256": "9e670ce838d20f8a656032f279b431d77001bc805e55864e91bec22f981f3126"
+    },
+    "Source/SeniorSendoff/HouseParkingLotReview.cpp": {
+      "before_sha256": "ac2f10f3cdbead6b4b28c00cfb5ba130a150dab14a9228c656572fb76f815e41",
+      "final_sha256": "7d3d9b689c69ce62a4fdd45ba6dade0e506b73a3530ef20f3714b3c48cb1242d"
+    },
+    "Source/SeniorSendoff/HouseWoodsPass.cpp": {
+      "before_sha256": "0bdc4bd323e280285fb9360a03ad89e75b00ebb686c7aeca02a8dd321dc8e07a",
+      "final_sha256": "f3c965382b0255049625a7597b4567eea578e2f1d170da68c1318eb70d517fe4"
+    }
+  },
+  "excluded": [
+    "unrelated existing checkout changes",
+    "stadium cameras",
+    "Config",
+    "Content",
+    "maps"
+  ]
+}

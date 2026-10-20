@@ -1,0 +1,6 @@
+import unreal,json,hashlib
+from pathlib import Path
+R=Path(unreal.Paths.project_dir()).resolve();W=R/'Saved/StadiumDetailWork';g=json.loads((W/'integration_grant.json').read_text());assert g['granted'] and g['scope']=='full' and g.get('release_evidence')
+p=R/'SourceArt/StadiumDetail/OfficeClutter/coach_team_snapshot_1978.png';dest='/Game/SeniorSendOff/Calder/Stadium/Textures';name='T_Stadium_CoachSnapshot';assert not unreal.EditorAssetLibrary.does_asset_exist(dest+'/'+name)
+t=unreal.AssetImportTask();t.filename=str(p);t.destination_path=dest;t.destination_name=name;t.automated=True;t.save=False;t.replace_existing=False;unreal.AssetToolsHelpers.get_asset_tools().import_asset_tasks([t]);a=unreal.load_asset(dest+'/'+name);assert isinstance(a,unreal.Texture2D);a.set_editor_property('srgb',True);a.set_editor_property('max_texture_size',1024);a.set_editor_property('compression_settings',unreal.TextureCompressionSettings.TC_DEFAULT);assert unreal.EditorAssetLibrary.save_loaded_asset(a,False)
+(W/'coach_snapshot_import_receipt.json').write_text(json.dumps({'passed':True,'asset':dest+'/'+name,'source_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'fictional_generated_prop':True,'map_saved':False,'existing_assets_saved':False},indent=2)+'\n');unreal.log('STADIUM_COACH_SNAPSHOT_IMPORT PASS newTexture=1 fictionalProp=1 mapSaved=0')

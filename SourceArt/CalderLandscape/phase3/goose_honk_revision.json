@@ -1,0 +1,206 @@
+{
+  "utc": "2026-10-18T18:14:36.217147+00:00",
+  "request": "Actually make it sound more real; it sounds weird.",
+  "prior_good_for_now_superseded": true,
+  "scope": "Honk PCM and matching beak envelope only; all other calls, paths, replication and audio pooling unchanged.",
+  "approach": "Authored worker-thread synthesis: rough low-register onset, brief crossfade to a nasal upper-register call, nonperiodic cycle jitter, breath and vocal-tract spectral shaping.",
+  "original_synthesis_requirement_preserved": true,
+  "new_assets_downloaded": false,
+  "primary_references": [
+    {
+      "url": "https://home.nps.gov/subjects/sound/sounds-canada-geese.htm",
+      "used_for": "Complex harmonic honk structure; no media downloaded."
+    },
+    {
+      "url": "https://www.researchgate.net/publication/397454103_Bird_vocalizations_Canada_goose_Branta_canadensis",
+      "used_for": "Two-part rattle/upper-register call inspiration. This small observational report has contradictory second-part frequency numbers, so numeric agreement is not claimed."
+    }
+  ],
+  "offline_preview": "Saved/CalderWork/goose_honk_revision_v1/preview.json",
+  "stable_recovery": "Saved/CalderWork/codex_checkpoint_goose_audio_20261018_v1",
+  "subjective_listening_accepted": true,
+  "native_game_verified": true,
+  "next": "After verified archive, end recovery freeze and resume crow roost/calls. No default promotion/full master claim; 30-minute night remains queued after all animals.",
+  "full_roster_complete": false,
+  "night_30min_after_animals_unchanged": true,
+  "v1": {
+    "editor_build_passed_seconds": 151.83,
+    "native_structural_passed_seconds": 129,
+    "native_tag": "codex_goose_honk_native_v1",
+    "all_four_images_inspected": true,
+    "beak_samples": 20,
+    "maximum_beak_error_rad": 0,
+    "original_seven_unchanged": true,
+    "preview_matches_native_exactly": true,
+    "mix_analysis_passed": false,
+    "honk_source_correlations": [
+      0.0421231753053403,
+      0.03835788508081566
+    ],
+    "required_correlation": 0.05,
+    "source_rms_dbfs": -18.3894764253544,
+    "retained_as_failed_mix_evidence": true
+  },
+  "candidate_v2": {
+    "change": "Soft pressure saturation before original peak normalization, reducing crest factor. Same duration and timing; no audio component gain or attenuation changes.",
+    "preview": "Saved/CalderWork/goose_honk_revision_v2/GooseHonk.wav",
+    "source_rms_dbfs": -12.278666809567865,
+    "source_peak_dbfs": -2.8555445582931545,
+    "clipped_samples": 0,
+    "native_verified": false
+  },
+  "v2": {
+    "native_tag": "codex_goose_honk_native_v2",
+    "editor_build_passed_seconds": 148.75,
+    "native_structural_passed_seconds": 119,
+    "all_four_images_inspected": true,
+    "mix_analysis_passed": false,
+    "source_correlation": [
+      0.0,
+      0.038053014497425354
+    ],
+    "source_rms_change_did_not_resolve_distant_mix_detection": true,
+    "retained_as_failed_mix_evidence": true
+  },
+  "candidate_v3": {
+    "same_honk_pcm_as_v2": true,
+    "change": "Overhead-only NaturalSound dBAttenuationAtMax -60 default to -35 at 400m. Original ground 93m curve unchanged.",
+    "reason": "Actual engine Attenuation.cpp confirms inherited -60dB fade at max; calls approximately 280-390m from the pond listener were buried in existing creek/night background. No correlation threshold change.",
+    "native_verified": true,
+    "next": "Fresh arrival source/mixer/beak/caps and four physical locations incl active indoor calls."
+  },
+  "owner_feedback": {
+    "utc": "2026-10-18T18:29:58.803747+00:00",
+    "question": "Does this revised goose honk sound more natural?",
+    "answer": "Yes, this is better",
+    "preview_in_question": "Saved/CalderWork/goose_honk_revision_v1/GooseHonk.wav",
+    "later_fuller_preview_also_presented": "Saved/CalderWork/goose_honk_revision_v2/GooseHonk.wav",
+    "scope": "Approval of revised honk direction; no claim of full roster/audio/master acceptance. Later v2 keeps timing/voicing with soft limiting for body; v3 only changes overhead distance falloff."
+  },
+  "v3": {
+    "native_tag": "codex_goose_honk_native_v3",
+    "native_seconds": 120.53,
+    "result": "PASS scope=nativeGooseAudioIntegration buffers=12 components=6 peakVoices=3 peakSources=8 maxPerSpecies=1 honks=2 echoes=2 splashes=4 hisses=0 actualBeakSamples=20 maximumBeakAngleErrorRad=0.000000 captures=4 registeredWildlifeSubmix=1 sourceWavsDumped=1 subjectiveListeningAccepted=0 indoorLawnAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/beak/mix files produced;analyzePCM/listen/checkindoors/lawn/performance",
+    "mix_analysis": "Saved/CalderWork/runs/codex_goose_honk_native_v3/Saved/CalderWildlifeSound/goose_audio_analysis.json",
+    "mix_analysis_passed": true,
+    "honk_correlation": 0.2414380207794547,
+    "earliest_honk_not_proven_by_mix": true,
+    "reason_earliest": "Recording starts after that call was already queued. Only later full call meets the source/mix detection gate.",
+    "original_seven_and_native_preview_exact": {
+      "unchanged_calls": {
+        "DeerBlow": true,
+        "LeafCrunch": true,
+        "NightBed": true,
+        "Creek": true,
+        "LonePeeper": true,
+        "GooseHiss": true,
+        "GooseSplash": true
+      },
+      "native_pcm_exactly_matches_preview": true,
+      "passed": true
+    },
+    "all_four_images_individually_inspected": true,
+    "images": [
+      "Saved/CalderWork/runs/codex_goose_honk_native_v3/Saved/CalderGooseAudioReview/detail_goose_audio_00.png",
+      "Saved/CalderWork/runs/codex_goose_honk_native_v3/Saved/CalderGooseAudioReview/detail_goose_audio_01.png",
+      "Saved/CalderWork/runs/codex_goose_honk_native_v3/Saved/CalderGooseAudioReview/detail_goose_audio_02.png",
+      "Saved/CalderWork/runs/codex_goose_honk_native_v3/Saved/CalderGooseAudioReview/detail_goose_audio_03.png"
+    ],
+    "tick_p95_ms": 0.0818,
+    "editor_build_seconds": 156.74
+  },
+  "four_locations": {
+    "tag": "codex_goose_honk_locations_v1",
+    "native_seconds": 94.39,
+    "result": "SOUND_RECORD view=frat_lawn eye=X=-300.000 Y=-2800.000 Z=113.000 actualFloorPlus170=1 wildlifeVoices=6\nSOUND_WAV /Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeSound/Wildlife_frat_lawn.wav\nSOUND_RECORD view=inside_house eye=X=0.000 Y=600.000 Z=170.000 actualFloorPlus170=1 wildlifeVoices=6\nSOUND_WAV /Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeSound/Wildlife_inside_house.wav\nSOUND_RECORD view=inside_campus eye=X=-15850.000 Y=-10800.000 Z=1115.000 actualFloorPlus170=1 wildlifeVoices=6\nSOUND_WAV /Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeSound/Wildlife_inside_campus.wav\nSOUND_RECORD view=near_creek eye=X=26820.000 Y=14000.000 Z=1497.743 actualFloorPlus170=1 wildlifeVoices=6\nSOUND_WAV /Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeSound/Wildlife_near_creek.wav\nPASS scope=deerOnly logicProbe=0 renderFeetPending=0 cases=0/0 directReactions=0 captures=4 tickP95ms=0.1245 hoofGapP95cm=2.204 hoofDriftP95cm=0.000 actualSoleSamples=40/0 terrainHash=72564759 soundMultiplayerOtherSpeciesFinalPerformancePending=1 wholePhase3Complete=0 reason=four native wildlife-only submix recordings made; waveform RMS analysis still required;voice6/source24/actual indoor volume0 checks passed",
+    "all_four_images_individually_inspected": true,
+    "images": [
+      "Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeReview/detail_wild_sound_frat_lawn.png",
+      "Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeReview/detail_wild_sound_inside_campus.png",
+      "Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeReview/detail_wild_sound_inside_house.png",
+      "Saved/CalderWork/runs/codex_goose_honk_locations_v1/Saved/CalderWildlifeReview/detail_wild_sound_near_creek.png"
+    ],
+    "rows": {
+      "Wildlife_frat_lawn.wav": {
+        "file": "Wildlife_frat_lawn.wav",
+        "sha256": "cffb9c873e6671d25b939b169edf5a59bddfd11d2d72795a4a257112a728163b",
+        "rate": 48000,
+        "channels": 2,
+        "seconds": 8.0,
+        "rms": 0.0002597673672162635,
+        "rms_dbfs": -71.7083081451712,
+        "peak": 0.00262451171875,
+        "clipped_samples": 0,
+        "passed": true
+      },
+      "Wildlife_inside_campus.wav": {
+        "file": "Wildlife_inside_campus.wav",
+        "sha256": "46ea71da247c66a543a722efb94bc0008c5448bc6b03da650b8d818627c196ac",
+        "rate": 48000,
+        "channels": 2,
+        "seconds": 8.0,
+        "rms": 0.0,
+        "rms_dbfs": -240.0,
+        "peak": 0.0,
+        "clipped_samples": 0,
+        "passed": true,
+        "all_samples_zero": true
+      },
+      "Wildlife_inside_house.wav": {
+        "file": "Wildlife_inside_house.wav",
+        "sha256": "46ea71da247c66a543a722efb94bc0008c5448bc6b03da650b8d818627c196ac",
+        "rate": 48000,
+        "channels": 2,
+        "seconds": 8.0,
+        "rms": 0.0,
+        "rms_dbfs": -240.0,
+        "peak": 0.0,
+        "clipped_samples": 0,
+        "passed": true,
+        "all_samples_zero": true
+      },
+      "Wildlife_near_creek.wav": {
+        "file": "Wildlife_near_creek.wav",
+        "sha256": "59580a6d18d4aaf30ce2edd535673bb9f9324079c2a650b70a04c1617e186af5",
+        "rate": 48000,
+        "channels": 2,
+        "seconds": 8.0,
+        "rms": 0.005759780124588062,
+        "rms_dbfs": -44.79188190271885,
+        "peak": 0.031768798828125,
+        "clipped_samples": 0,
+        "passed": true
+      }
+    },
+    "active_honks_during_house_and_campus_recordings": true,
+    "analysis_passed": true
+  },
+  "earlier_mp_and_off_switch": {
+    "carried_forward_not_rerun": true,
+    "reason": "No animal routes, replicated controls, thresholds, dormancy, component counts, voice pooling or switch code changed. Honk PCM, beak amplitude envelope and overhead-only fade changed. Prior MP remains prior-revision evidence."
+  },
+  "standalone_compile": {
+    "passed": true,
+    "log": "Saved/CalderWork/codex_goose_honk_game_build_v1.log",
+    "actions": 250,
+    "seconds": 127.7,
+    "generated_app_finder_info_removals": 417,
+    "standalone_gameplay_claimed": false
+  },
+  "strict_signature": {
+    "passed": true,
+    "exit_code": 0,
+    "finder_info_removals": 7,
+    "guard": "Generated app root FinderInfo only, cleared before and during verification",
+    "bundle": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Binaries/Mac/SeniorSendoff.app",
+    "log": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/codex_goose_honk_game_signature_v1.log",
+    "standalone_gameplay_claimed": false
+  },
+  "scope_guard_passed": true,
+  "source_config_equals_final_native_freeze": {
+    "passed": true,
+    "files": 413
+  },
+  "recovery_receipt": "Saved/CalderWork/codex_checkpoint_goose_honk_20261018_v1/recovery_receipt.json",
+  "recovery_rule": "Only a present receipt with passed=true confirms this new recovery. Prior audio checkpoint remains verified fallback."
+}

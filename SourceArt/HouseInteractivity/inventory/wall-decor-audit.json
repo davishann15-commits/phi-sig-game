@@ -1,0 +1,30 @@
+[
+  {
+    "actor": "SM_Room102_Sign",
+    "original_faces": 856,
+    "interactive_faces": 856,
+    "retained_faces": 0,
+    "conservation_pass": true
+  },
+  {
+    "actor": "BR_BedDetail_TennesseeDoorPlaque_14",
+    "original_faces": 2,
+    "interactive_faces": 2,
+    "retained_faces": 0,
+    "conservation_pass": true
+  },
+  {
+    "actor": "PIG_OutsideDoorPlaque",
+    "original_faces": 2,
+    "interactive_faces": 2,
+    "retained_faces": 0,
+    "conservation_pass": true
+  },
+  {
+    "actor": "SM_SpaRoom_ArchitecturalDetails",
+    "original_faces": 12592,
+    "interactive_faces": 8224,
+    "retained_faces": 4368,
+    "conservation_pass": true
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "id": "SMV_GR_ClubChair1_Solid__001",
+    "kind": "intact",
+    "slots": [
+      "MI_SSO_LeatherOlive",
+      "MI_SSO_WoodWalnut"
+    ],
+    "used": {
+      "0": 5544,
+      "1": 752
+    }
+  },
+  {
+    "id": "SMV_GR_ClubChair1_Solid__001",
+    "kind": "damaged",
+    "slots": [
+      "MI_SSO_LeatherOlive",
+      "MI_SSO_WoodWalnut",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 5254,
+      "1": 752,
+      "2": 0,
+      "3": 298,
+      "4": 0,
+      "5": 0
+    }
+  },
+  {
+    "id": "SMV_GR_ClubChair1_Solid__001",
+    "kind": "heavily_damaged",
+    "slots": [
+      "MI_SSO_LeatherOlive",
+      "MI_SSO_WoodWalnut",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 5049,
+      "1": 752,
+      "2": 0,
+      "3": 313,
+      "4": 0,
+      "5": 0
+    }
+  },
+  {
+    "id": "SMV_GR_ClubChair1_Solid__001",
+    "kind": "broken",
+    "slots": [
+      "MI_SSO_LeatherOlive",
+      "MI_SSO_WoodWalnut",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 5066,
+      "1": 820,
+      "2": 0,
+      "3": 1211,
+      "4": 0,
+      "5": 0
+    }
+  },
+  {
+    "id": "Room102_Chair_01__001",
+    "kind": "intact",
+    "slots": [
+      "M_Room102_IvoryPlastic",
+      "M_Room102_BlackSteel",
+      "M_Room102_Rubber"
+    ],
+    "used": {
+      "0": 1432,
+      "1": 1216,
+      "2": 300
+    }
+  },
+  {
+    "id": "Room102_Chair_01__001",
+    "kind": "damaged",
+    "slots": [
+      "M_Room102_IvoryPlastic",
+      "M_Room102_BlackSteel",
+      "M_Room102_Rubber",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 1422,
+      "1": 1216,
+      "2": 300,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 66
+    }
+  },
+  {
+    "id": "Room102_Chair_01__001",
+    "kind": "heavily_damaged",
+    "slots": [
+      "M_Room102_IvoryPlastic",
+      "M_Room102_BlackSteel",
+      "M_Room102_Rubber",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 1393,
+      "1": 1216,
+      "2": 300,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 93
+    }
+  },
+  {
+    "id": "Room102_Chair_01__001",
+    "kind": "broken",
+    "slots": [
+      "M_Room102_IvoryPlastic",
+      "M_Room102_BlackSteel",
+      "M_Room102_Rubber",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 1491,
+      "1": 1158,
+      "2": 293,
+      "3": 0,
+      "4": 0,
+      "5": 340,
+      "6": 304
+    }
+  },
+  {
+    "id": "BR_SM_Bedroom_OvalCoffeeTable__001",
+    "kind": "intact",
+    "slots": [
+      "M_Bedroom_DarkStainedWood",
+      "M_Bedroom_MatteBlackMetal"
+    ],
+    "used": {
+      "0": 3960,
+      "1": 1520
+    }
+  },
+  {
+    "id": "BR_SM_Bedroom_OvalCoffeeTable__001",
+    "kind": "damaged",
+    "slots": [
+      "M_Bedroom_DarkStainedWood",
+      "M_Bedroom_MatteBlackMetal",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 3540,
+      "1": 1520,
+      "2": 242,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    }
+  },
+  {
+    "id": "BR_SM_Bedroom_OvalCoffeeTable__001",
+    "kind": "heavily_damaged",
+    "slots": [
+      "M_Bedroom_DarkStainedWood",
+      "M_Bedroom_MatteBlackMetal",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 3254,
+      "1": 1616,
+      "2": 273,
+      "3": 0,
+      "4": 184,
+      "5": 0
+    }
+  },
+  {
+    "id": "BR_SM_Bedroom_OvalCoffeeTable__001",
+    "kind": "broken",
+    "slots": [
+      "M_Bedroom_DarkStainedWood",
+      "M_Bedroom_MatteBlackMetal",
+      "M_HI_SplinterWood",
+      "M_HI_Foam",
+      "M_HI_RawMetal",
+      "M_HI_FractureCore"
+    ],
+    "used": {
+      "0": 3306,
+      "1": 1221,
+      "2": 487,
+      "3": 0,
+      "4": 251,
+      "5": 0
+    }
+  }
+]

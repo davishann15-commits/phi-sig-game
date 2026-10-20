@@ -1,0 +1,196 @@
+{
+  "assets": [
+    {
+      "name": "SM_Basement_p0_m1_Cleanup2",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseCleanup2/geometry/models/SM_Basement_p0_m1_Cleanup2.fbx",
+      "target_actor": "SM_Basement_p0_m1_Solid",
+      "collision": false,
+      "materials": [
+        "MI_SSO_BHCeilingWhite",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_BlackBlock",
+        "MI_SSO_BHTapeCharcoal",
+        "MI_SSO_BHMetalChannel",
+        "MI_SSO_BHLightNeutral",
+        "MI_SSO_PaintGrey",
+        "MI_SSO_Ceiling",
+        "MI_SSO_S03WornConcrete",
+        "MI_SSO_S03MasonryCream",
+        "MI_SSO_MortarDark",
+        "MI_SSO_Concrete",
+        "MI_SSO_S03ConnectionHardwareMetal",
+        "MI_SSO_S03ConnectionDoorCream",
+        "MI_SSO_S03ConnectionIvory"
+      ],
+      "changed_faces": 2032
+    },
+    {
+      "name": "SM_Upper_p0_p0_Cleanup2",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseCleanup2/geometry/models/SM_Upper_p0_p0_Cleanup2.fbx",
+      "target_actor": "SM_Upper_p0_p0_Solid",
+      "collision": false,
+      "materials": [
+        "MI_SSO_Ceiling.001",
+        "MI_SSO_PaintWhite.001",
+        "MI_SSO_PaintGrey.001",
+        "MI_SSO_PaintCream",
+        "MI_SSO_MetalDark.001",
+        "MI_SSO_S05RoomWarm"
+      ],
+      "changed_faces": 1504
+    },
+    {
+      "name": "SM_Upper_p0_p1_Cleanup2",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseCleanup2/geometry/models/SM_Upper_p0_p1_Cleanup2.fbx",
+      "target_actor": "SM_Upper_p0_p1_Solid",
+      "collision": false,
+      "materials": [
+        "MI_SSO_LightWarm",
+        "MI_SSO_MetalBrass",
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_PaintWhite.002",
+        "MI_SSO_S05RoomWarm.001",
+        "MI_SSO_S05Ceiling",
+        "MI_SSO_FloorWood"
+      ],
+      "changed_faces": 60
+    },
+    {
+      "name": "SM_HC_BasementStairJoin",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseCleanup2/geometry/models/SM_HC_BasementStairJoin.fbx",
+      "target_actor": null,
+      "collision": true,
+      "materials": [
+        "MI_SSO_S03MasonryCream",
+        "MI_SSO_S03WornConcrete"
+      ]
+    }
+  ],
+  "materials": {
+    "MI_SSO_BHCeilingWhite": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_BHCeilingWhite"
+    },
+    "MI_SSO_PaintWhite": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "MI_SSO_BlackBlock": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_BlackBlock"
+    },
+    "MI_SSO_BHTapeCharcoal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_BHTapeCharcoal"
+    },
+    "MI_SSO_BHMetalChannel": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_BHMetalChannel"
+    },
+    "MI_SSO_BHLightNeutral": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_BHLightNeutral"
+    },
+    "MI_SSO_PaintGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey"
+    },
+    "MI_SSO_Ceiling": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling"
+    },
+    "MI_SSO_S03WornConcrete": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03WornConcrete"
+    },
+    "MI_SSO_S03MasonryCream": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream"
+    },
+    "MI_SSO_MortarDark": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MortarDark"
+    },
+    "MI_SSO_Concrete": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete"
+    },
+    "MI_SSO_S03ConnectionHardwareMetal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03ConnectionHardwareMetal"
+    },
+    "MI_SSO_S03ConnectionDoorCream": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03ConnectionDoorCream"
+    },
+    "MI_SSO_S03ConnectionIvory": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03ConnectionIvory"
+    },
+    "MI_SSO_MetalDark": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark"
+    },
+    "MI_SSO_Ceiling.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling"
+    },
+    "MI_SSO_PaintWhite.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "MI_SSO_PaintGrey.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey"
+    },
+    "MI_SSO_PaintCream": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream"
+    },
+    "MI_SSO_MetalDark.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark"
+    },
+    "MI_SSO_S05RoomWarm": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05RoomWarm"
+    },
+    "MI_SSO_LightWarm": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm"
+    },
+    "MI_SSO_MetalBrass": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass"
+    },
+    "MI_SSO_S05HallGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05HallGrey"
+    },
+    "MI_SSO_PaintWhite.002": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "MI_SSO_S05RoomWarm.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05RoomWarm"
+    },
+    "MI_SSO_S05Ceiling": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05Ceiling"
+    },
+    "MI_SSO_FloorWood": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood"
+    }
+  },
+  "scope": [
+    "Small basement utility door only",
+    "Basement stair connection floor, sides, ceiling",
+    "Great room intrusive trim and adjacent floor lip"
+  ],
+  "world_baked": true,
+  "uv_fits": {
+    "floor": [
+      [
+        -6.883674752423835e-15,
+        1.7232008852930417e-17
+      ],
+      [
+        0.0025247822237718077,
+        -6.463132481449515e-18
+      ],
+      [
+        -1.832159212538226,
+        0.08496093750003038
+      ]
+    ],
+    "floor_key": "MI_SSO_S03WornConcrete",
+    "brick": [
+      [
+        0.002525512833728434,
+        3.724200583276002e-17
+      ],
+      [
+        1.8245548348150832e-09,
+        0.004545650892939863
+      ],
+      [
+        -1.5138670167633401,
+        1.0686985630279142
+      ]
+    ],
+    "brick_key": "MI_SSO_S03MasonryCream"
+  }
+}

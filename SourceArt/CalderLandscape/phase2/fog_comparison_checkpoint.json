@@ -1,0 +1,393 @@
+{
+  "scope": "Exact owner-approved global fog comparison and retained better result after map-wide tree replacement",
+  "owner_approval": "Test it and keep the better result (Recommended)",
+  "comparison_complete": true,
+  "decision": "Retain candidate; modestly improved P5/P8 visibility while preserving dusk",
+  "whole_master_complete": false,
+  "photo_quality_accepted": false,
+  "settings_when_calder_landscape_enabled": {
+    "density": 0.012,
+    "max_opacity": 0.9,
+    "dusk_glow": 0.8
+  },
+  "settings_when_terrain_or_landscape_disabled": {
+    "density": 0.016,
+    "max_opacity": 0.97,
+    "dusk_glow": 1.3
+  },
+  "source_files": [
+    {
+      "file": "Source/SeniorSendoff/HouseExterior.cpp",
+      "preimage_sha256": "ccc683a5c4c0add4e772c1a198375074ce4984173de3bc6cb531cacbadf21e0e",
+      "candidate_sha256": "40f7eb9ca89c83005a6baf2f2747b244ddab8615525ade41dd544cd3d2b83fbe"
+    },
+    {
+      "file": "Source/SeniorSendoff/HouseDuskAtmosphere.cpp",
+      "preimage_sha256": "0d20612948d929fb49a3ac04ade0633cca0daa033888a9d14ab1c217dc7c1c15",
+      "candidate_sha256": "1d218b0ef5c04ca8b96d2f09325a7098ee5f3b87414852441b2b00e5c5b45f0d"
+    }
+  ],
+  "source_build": {
+    "log": "codex_fog_map_trees_build.log",
+    "actions": 218,
+    "seconds": 135.27,
+    "result": "Succeeded"
+  },
+  "original_visuals": {
+    "run": "codex_fog_map_trees_original",
+    "images": [
+      {
+        "file": "00_detail_woods_edge.png",
+        "sha256": "1e039fe79e0345737420e5f6f59059904548375ca5dc199a29f11688065722f7",
+        "inspected": true
+      },
+      {
+        "file": "01_detail_woods_20m.png",
+        "sha256": "7d2391a69b5ebdfb5ded95531c178e035e6fe97a20a57a6e53b49ec9458b23cc",
+        "inspected": true
+      },
+      {
+        "file": "02_detail_woods_deep.png",
+        "sha256": "e72a67595dcbf5e8df265ac696fefc7ecde265d406138a8753688958d8f3d983",
+        "inspected": true
+      },
+      {
+        "file": "04_detail_woods_silhouette.png",
+        "sha256": "e859c44e317eaeb0fb7a1adc14e241557f0ba56235bcc837811132b2ecbb5996",
+        "inspected": true
+      },
+      {
+        "file": "05_detail_woods_house_back.png",
+        "sha256": "8fe535bb45b7afca1b9418abd6be758903aa1bca93a3e8c96ce3e716c7ec5e5e",
+        "inspected": true
+      },
+      {
+        "file": "219_detail_calder_eye_P1.png",
+        "sha256": "9dda6ffa3a57df2931caf71490554ee9e9215e278ac0c7aff85a9257eca7e1cf",
+        "inspected": true
+      },
+      {
+        "file": "220_detail_calder_eye_P2.png",
+        "sha256": "633b82c839eaba8bdf06b7d7b897b48173144aa30176bbeec1f73517569f019f",
+        "inspected": true
+      },
+      {
+        "file": "221_detail_calder_eye_P3.png",
+        "sha256": "15f8bb51bd493a05b0667691c322482b097561eaca8301dae138d7ca192fab8f",
+        "inspected": true
+      },
+      {
+        "file": "222_detail_calder_eye_P4.png",
+        "sha256": "8d698e138de6060cdac436c6c9a745880c89268b967f43e66223b0043861731b",
+        "inspected": true
+      },
+      {
+        "file": "223_detail_calder_eye_P5.png",
+        "sha256": "a89d2438ddb5d2ebb18838e03507b61da24a866b79f2b0047a32cb2ed8345375",
+        "inspected": true
+      },
+      {
+        "file": "224_detail_calder_eye_P8.png",
+        "sha256": "a957e03ffdfcec6d30ff41e0a56cf1bc7adb195b21611e29a8a4f20b43f5b7ba",
+        "inspected": true
+      },
+      {
+        "file": "225_detail_calder_eye_P6.png",
+        "sha256": "83737518862a8d71a174ab8c7fff15d24a407a19f0783c36e77049dd99fa66ae",
+        "inspected": true
+      },
+      {
+        "file": "226_detail_calder_eye_P7.png",
+        "sha256": "651537f37fbc5065dfd9c952fc63ae46b8f2a3242926b24621f8388577e2000f",
+        "inspected": true
+      },
+      {
+        "file": "229_detail_calder_eye_P3_tower.png",
+        "sha256": "92e5ed388dd0b6f0e48fb6d98b143edc668643577154892bff115230eeeb6f2f",
+        "inspected": true
+      },
+      {
+        "file": "25_front_street.png",
+        "sha256": "9255aaee77f20770237b3538fa0805669693adc75ad8691ee2b99c2b13a19d99",
+        "inspected": true
+      },
+      {
+        "file": "26_front_walk.png",
+        "sha256": "24ea17a2ae6df5f201f68de0624ada44f76c5ed9333fe2e8b84883272e69c287",
+        "inspected": true
+      },
+      {
+        "file": "29_street_along.png",
+        "sha256": "06520aeb55302c2eb05e3ecb5799da965b3c1ab3fa41cd65a6a094bea2f14d5c",
+        "inspected": true
+      }
+    ],
+    "total_diagnostic_images_inspected": 345,
+    "findings": [
+      "P5 town/river/ridge detail severely washed by warm horizon glow",
+      "P8 has warm haze at left but campus and tower readable",
+      "Woods keep deep shadow, readable trail and warm leaves",
+      "Street/porch remain sodium-lit with blue-purple dusk; preserve this mood",
+      "P2 tall stadium slab, P8 partial house roof occlusion and falls finish remain separate pre-existing work"
+    ]
+  },
+  "candidate_visuals": {
+    "run": "codex_fog_map_trees_candidate",
+    "compared_against": "codex_fog_map_trees_original",
+    "images": [
+      {
+        "file": "00_detail_woods_edge.png",
+        "sha256": "80d74894f66ab142a47d372a4707ca1ac291a76c84c5fbae75df445f945893a1",
+        "inspected": true
+      },
+      {
+        "file": "01_detail_woods_20m.png",
+        "sha256": "01a2e37d8a591c42b2e07d1af87efc65a549d7056bd404c5c94fb53ad6b0d68f",
+        "inspected": true
+      },
+      {
+        "file": "02_detail_woods_deep.png",
+        "sha256": "12e08179188568dd6bb84cde0b8756fc2353a97a828618deec4bf55f7f184548",
+        "inspected": true
+      },
+      {
+        "file": "04_detail_woods_silhouette.png",
+        "sha256": "baac6251f349f48008d1e6e8160d5bb37b3cf4499e906976aebe4f4b53d9b0ca",
+        "inspected": true
+      },
+      {
+        "file": "05_detail_woods_house_back.png",
+        "sha256": "1cf158ec2a760df30790349b228475a98b0088e2b3f5a86e7543e31881c4bbc6",
+        "inspected": true
+      },
+      {
+        "file": "219_detail_calder_eye_P1.png",
+        "sha256": "8e1152abb0f2c8c7a58cc79815cc914593dda5c38db1971c74eaefbd8cfecef5",
+        "inspected": true
+      },
+      {
+        "file": "220_detail_calder_eye_P2.png",
+        "sha256": "6e6a5f85639c7869cb0675390e3a2665a62a6c0effdeb6c1683bedbf2609e0a4",
+        "inspected": true
+      },
+      {
+        "file": "221_detail_calder_eye_P3.png",
+        "sha256": "d9ae94ed81e6b637d919df4661a7909381c258d5292b86bd3babf771ff053ad7",
+        "inspected": true
+      },
+      {
+        "file": "222_detail_calder_eye_P4.png",
+        "sha256": "8f13a771294eb9ccd22ed434bff8e466b113aef834fd1c8c0f7380f849b4e517",
+        "inspected": true
+      },
+      {
+        "file": "223_detail_calder_eye_P5.png",
+        "sha256": "c1f49577e8c93c3b59a669d388ceb0364e357339f6c6f49d9049f908b8483635",
+        "inspected": true
+      },
+      {
+        "file": "224_detail_calder_eye_P8.png",
+        "sha256": "924ddf502fbfca8c5c05cc5236f9708645c13aaa28f1c07c7bc847c29d215760",
+        "inspected": true
+      },
+      {
+        "file": "225_detail_calder_eye_P6.png",
+        "sha256": "c1dfc116bbf11d0ad999b9f49ec6e28169ff299c0262535267a7d3ae31a709d6",
+        "inspected": true
+      },
+      {
+        "file": "226_detail_calder_eye_P7.png",
+        "sha256": "fbe7058f38468696ca416f5b69db544666dc5529ffca16c037334b86af9bc290",
+        "inspected": true
+      },
+      {
+        "file": "229_detail_calder_eye_P3_tower.png",
+        "sha256": "b7df56f56d524738426bb300b4c9ef86abeca946b2cb9e05c34d682c8132ca04",
+        "inspected": true
+      },
+      {
+        "file": "25_front_street.png",
+        "sha256": "480714c126131c931b11db20d5a74002008b84400a5067209873046bc8301d38",
+        "inspected": true
+      },
+      {
+        "file": "26_front_walk.png",
+        "sha256": "7421be9b1af83fb03474a17a1db85d9bbdf7f746a6dbcee50d7e65296e4c8393",
+        "inspected": true
+      },
+      {
+        "file": "29_street_along.png",
+        "sha256": "0f2ae3ce688cc36dcbb0710ed965672ad8e8b951639bf220fa7091ac8d164c83",
+        "inspected": true
+      }
+    ],
+    "total_diagnostic_images_inspected": 362,
+    "decision": "Keep exact approved three-setting adjustment",
+    "findings": [
+      "P5 warm haze reduced, town silhouette/near rooftops and ridge shading clearer; river and full ridge-layer readability remain unresolved",
+      "P8 left-side haze reduced, tower/campus contrast improved; original partial roof occlusion remains",
+      "P3 and tower retain warm afterglow with less wash",
+      "P1/P2/P4/P7 retain dark blue-purple dusk and readable light pools",
+      "Woods still have dark canopy, autumn leaves and readable trail; no bright daylight conversion",
+      "House porch and street retain warm fixtures; no added lights or geometry changes",
+      "P6 waterfall still has existing flat/temporal grain finish issue; haze change is not water acceptance"
+    ],
+    "whole_master_complete": false,
+    "photo_quality_accepted": false,
+    "runtime_fallback_verification": "PASS normal default/NoTerrain/NoLandscape"
+  },
+  "default_visuals": {
+    "run": "codex_fog_default_native",
+    "images": [
+      {
+        "file": "00_detail_woods_edge.png",
+        "sha256": "0b7bb25526260f53bfaf3f385f13b990301c4c00245127ddf2283562b789a3e6",
+        "inspected": true
+      },
+      {
+        "file": "25_front_street.png",
+        "sha256": "e59a6c75d97c1cdfc61b32234f280feb4dd0cb6b415d4c587ec5f315cad2596f",
+        "inspected": true
+      },
+      {
+        "file": "58_nature_tree_variety.png",
+        "sha256": "eb2f8ad38b0749946a28df34228acbcafc653f19c374771f6d74851ed2751c9b",
+        "inspected": true
+      }
+    ],
+    "total_diagnostic_images_inspected": 365
+  },
+  "runtime_mode_checks": {
+    "scope": "Actual global fog properties and native default/fallback checks after approved visual comparison",
+    "cases": [
+      {
+        "name": "codex_fog_default_native",
+        "arguments": [
+          "-RenderOffScreen",
+          "-nosound",
+          "-CalderMapTreesReview",
+          "-CalderLandscapeReview",
+          "-CalderTerrainReview",
+          "-WoodsPassReview",
+          "-CampusWoodsReview",
+          "-HouseExteriorViews",
+          "-CleanViews",
+          "-ExteriorViewFilter=detail_woods_edge,nature_tree_variety,front_street"
+        ],
+        "density": 0.012,
+        "opacity": 0.9,
+        "glow": 0.8,
+        "reference": "codex_map_trees_default_native",
+        "passed": true,
+        "actual_properties_dumped": true,
+        "log_sha256": "71ef4b2a992d1fd823efe244f198b7c1155e6381be27b54914805d3b18311e7f"
+      },
+      {
+        "name": "codex_fog_compat_noterrain",
+        "arguments": [
+          "-RenderOffScreen",
+          "-nosound",
+          "-CalderWoodsTreeTrial",
+          "-CalderEvergreenAtlasTrial",
+          "-CalderRidgeForestTrial",
+          "-CalderFallsJetsTrial",
+          "-CalderFarmTrial",
+          "-CalderRockStrataTrial",
+          "-CalderFarmTreeTrial",
+          "-CalderHedgerowTrial",
+          "-CalderFarmSolidTrial",
+          "-CalderMapTreesReview",
+          "-CalderLandscapeReview",
+          "-NoCalderTerrain",
+          "-CampusLayoutReview",
+          "-WoodsPassReview",
+          "-CampusWoodsReview"
+        ],
+        "density": 0.016,
+        "opacity": 0.97,
+        "glow": 1.3,
+        "reference": "codex_map_trees_compat_noterrain",
+        "passed": true,
+        "actual_properties_dumped": true,
+        "log_sha256": "7ce711e43f14b5699a215e03e1da60883f044925630fa1a0d3e02e24a5b4469c"
+      },
+      {
+        "name": "codex_fog_compat_nolandscape",
+        "arguments": [
+          "-RenderOffScreen",
+          "-nosound",
+          "-CalderWoodsTreeTrial",
+          "-CalderEvergreenAtlasTrial",
+          "-CalderRidgeForestTrial",
+          "-CalderFallsJetsTrial",
+          "-CalderFarmTrial",
+          "-CalderRockStrataTrial",
+          "-CalderFarmTreeTrial",
+          "-CalderHedgerowTrial",
+          "-CalderFarmSolidTrial",
+          "-CalderMapTreesReview",
+          "-CalderLandscapeReview",
+          "-NoCalderLandscape",
+          "-CalderTerrainReview",
+          "-WoodsPassReview",
+          "-CampusWoodsReview"
+        ],
+        "density": 0.016,
+        "opacity": 0.97,
+        "glow": 1.3,
+        "reference": "codex_map_trees_compat_nolandscape",
+        "passed": true,
+        "actual_properties_dumped": true,
+        "log_sha256": "ab8ac46975b8b5b2f0f57dda13065023ff932bfd11275632f1c54fb4c912b1d7"
+      }
+    ],
+    "passed": true
+  },
+  "candidate_native": {
+    "passed": true,
+    "run": "codex_fog_map_trees_candidate",
+    "tree_data_identical_to_original": true,
+    "tree_batches": 33,
+    "tree_instances": 1600,
+    "baked_town_trees": 280,
+    "legacy_tree_render_batches_or_sections": 0,
+    "physical_contacts": 7800,
+    "terrain_samples": 20000,
+    "terrain_holes": 0,
+    "terrain_max_error_cm": 0.03,
+    "frozen_grid_samples": 685,
+    "cover_instances": 57652,
+    "cover_crc": "90e3d189",
+    "total_calder_isms": 24,
+    "terrain_hash": "72564759",
+    "tree_crc": "0f3b2bb7"
+  },
+  "default_tree_replacement_still_passes": true,
+  "protected_sources_and_map_unchanged": 13,
+  "total_diagnostic_images_inspected": 365,
+  "remaining_visual_issues": [
+    "P5 town river/full ridge-layer readability",
+    "P8 original partial roof occlusion",
+    "P2 existing stadium slab",
+    "Waterfall planar/temporal-grain finish",
+    "Broader photographic vegetation/ground/farm/wall/water/mist work"
+  ],
+  "recovery_target": "Saved/CalderWork/codex_checkpoint_trees_fog_20261017_143043",
+  "saved_map": false,
+  "committed": false,
+  "additional_lights": 0,
+  "default_enabled_with_calder_landscape": true,
+  "interactive_editor_session": {
+    "observed_at": "2026-10-17 14:33 EDT",
+    "separate_editor_pid": 38368,
+    "project": "SeniorSendoff",
+    "mode": "interactive editor, not task-owned review process",
+    "elapsed_at_observation": "01:04:57",
+    "editor_started_before_tree_timing": true,
+    "task_owned_review_or_build_jobs_remaining": false,
+    "editor_left_untouched": true,
+    "timing_caveat": "All tree A/B runs are diagnostics with a separate editor present. No isolated final-performance acceptance. Do not use these measurements as final p8p or multiplayer proof.",
+    "user_action_to_see_latest_build": "Save work and restart the interactive Unreal Editor; no auto-close or save was performed."
+  },
+  "user_must_restart_editor_to_load_latest_build": true
+}

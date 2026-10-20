@@ -1,0 +1,17 @@
+{
+  "requests": [
+    "Remove screenshot small stair door and tidy its area",
+    "Fill true basement-to-stair doorway voids without blocking passage",
+    "Remove two stationary porch door centre strips",
+    "Remove great-room floating trim/hardware",
+    "Join soil to basketball court perimeter"
+  ],
+  "protected": [
+    "All room shells including empty rooms",
+    "Nightclub expansion and pole",
+    "Front entrance doors",
+    "Billy Bass",
+    "Other stairwell and bedroom work"
+  ],
+  "unity_untouched": true
+}

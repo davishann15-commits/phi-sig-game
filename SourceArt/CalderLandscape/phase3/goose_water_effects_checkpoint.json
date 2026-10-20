@@ -1,0 +1,240 @@
+{
+  "updated_utc": "2026-10-18T16:58:17.435112+00:00",
+  "scope": "Opt-in effects: geometry checks passed; close visual review and performance remain open.",
+  "default_promotion": false,
+  "runtime_unchanged_for_visual_retry": true,
+  "changed_source_files": [
+    "Source/SeniorSendoff/HouseCalderWildlifePondEffectsReview.cpp"
+  ],
+  "v1": {
+    "codex_goose_water_arrival_v1": {
+      "native_geometry_result": "PASS scope=nativeGooseWaterEffects mode=arrival captures=8 expected=8 samples=263 peakContact=0 peakWakes=4 peakDrops=2 peakRings=2 contactVertices=0 wakeVertices=82080 dropVertices=5952 ringVertices=28800 maximumGroundErrorCm=0.000000 maximumWaterPlaneErrorCm=1.600000 components=4 fixedPools=16/32/16/16 actualSubmittedTransforms=1 actualCustomData=1 newLights=0 collision=0 runtimeSkeletons=0 realServerRate=1 diagnosticOffset=1 audioAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/geometry files produced;inspectall8images;audio/fullperformance/defaultpromotionremain",
+      "captures_individually_inspected": 8,
+      "visual_limits": "Wide arrival view too dark to resolve splash detail; shore sequence shows grounded feet and water entry but misses precise spatter peak.",
+      "shutdown_clean": false,
+      "shutdown_note": "CoreAudio shutdown stalled; wrapper forced termination after geometry result. Not a clean process pass.",
+      "source_config_frozen": true,
+      "audio_accepted": false,
+      "full_performance_accepted": false,
+      "tick_diagnostic": [
+        "view=goose_water_arrival samples=981 p50ms=0.2780 p95ms=0.3853 clock=Cycles64"
+      ]
+    },
+    "codex_goose_water_entry_v1": {
+      "native_geometry_result": "PASS scope=nativeGooseWaterEffects mode=shoreEntry captures=8 expected=8 samples=302 peakContact=2 peakWakes=4 peakDrops=1 peakRings=1 contactVertices=1386 wakeVertices=68976 dropVertices=2112 ringVertices=10560 maximumGroundErrorCm=1.596499 maximumWaterPlaneErrorCm=2.139246 components=4 fixedPools=16/32/16/16 actualSubmittedTransforms=1 actualCustomData=1 newLights=0 collision=0 runtimeSkeletons=0 realServerRate=1 diagnosticOffset=1 audioAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/geometry files produced;inspectall8images;audio/fullperformance/defaultpromotionremain",
+      "captures_individually_inspected": 8,
+      "visual_limits": "Wide arrival view too dark to resolve splash detail; shore sequence shows grounded feet and water entry but misses precise spatter peak.",
+      "shutdown_clean": false,
+      "shutdown_note": "CoreAudio shutdown stalled; wrapper forced termination after geometry result. Not a clean process pass.",
+      "source_config_frozen": true,
+      "audio_accepted": false,
+      "full_performance_accepted": false,
+      "tick_diagnostic": [
+        "view=goose_water_shore samples=1478 p50ms=0.2346 p95ms=0.3482 clock=Cycles64"
+      ]
+    }
+  },
+  "new_review": "Target actual wet-entry birth and close arrival eye; disable audio for this visual-only review; treat forced shutdown as failure.",
+  "whole_phase3_complete": false,
+  "night_implementation_started": false,
+  "v2": {
+    "codex_goose_water_arrival_close_v2": {
+      "machine_passed": true,
+      "process_timeout": false,
+      "native_geometry_result": "PASS scope=nativeGooseWaterEffects mode=arrival captures=8 expected=8 samples=253 peakContact=0 peakWakes=4 peakDrops=2 peakRings=2 contactVertices=0 wakeVertices=72720 dropVertices=6528 ringVertices=30720 maximumGroundErrorCm=0.000000 maximumWaterPlaneErrorCm=1.600000 components=4 fixedPools=16/32/16/16 actualSubmittedTransforms=1 actualCustomData=1 newLights=0 collision=0 runtimeSkeletons=0 realServerRate=1 diagnosticOffset=1 audioAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/geometry files produced;inspectall8images;audio/fullperformance/defaultpromotionremain",
+      "captures_individually_inspected": 8,
+      "source_config_frozen": true,
+      "visual_limits": "Bird/water transitions readable; splash particles faint and wakes too dark. Not photographic acceptance.",
+      "tick_diagnostic": [
+        "view=goose_water_arrival_close samples=950 p50ms=0.2368 p95ms=0.3653 clock=Cycles64"
+      ]
+    },
+    "codex_goose_water_entry_v2": {
+      "machine_passed": true,
+      "process_timeout": false,
+      "native_geometry_result": "PASS scope=nativeGooseWaterEffects mode=shoreEntry captures=8 expected=8 samples=297 peakContact=2 peakWakes=4 peakDrops=1 peakRings=1 contactVertices=1362 wakeVertices=70704 dropVertices=1152 ringVertices=5760 maximumGroundErrorCm=1.575211 maximumWaterPlaneErrorCm=2.129785 components=4 fixedPools=16/32/16/16 actualSubmittedTransforms=1 actualCustomData=1 newLights=0 collision=0 runtimeSkeletons=0 realServerRate=1 diagnosticOffset=1 audioAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/geometry files produced;inspectall8images;audio/fullperformance/defaultpromotionremain",
+      "captures_individually_inspected": 8,
+      "source_config_frozen": true,
+      "visual_limits": "Bird/water transitions readable; splash particles faint and wakes too dark. Not photographic acceptance.",
+      "tick_diagnostic": [
+        "view=goose_water_shore samples=1369 p50ms=0.2200 p95ms=0.3350 clock=Cycles64"
+      ]
+    }
+  },
+  "current_candidate": "Native local water geometry and effects-enabled MP host approach/observer full recovery pass. Full performance/audio/photo/default promotion remain open.",
+  "editor_build_running": null,
+  "next_tests": [
+    "fresh close arrival",
+    "fresh exact shore entry"
+  ],
+  "night_confirmed_minutes": 30,
+  "v3": {
+    "arrival_close": {
+      "machine_passed": true,
+      "process_timeout": false,
+      "native_geometry_result": "PASS scope=nativeGooseWaterEffects mode=arrival captures=8 expected=8 samples=322 peakContact=0 peakWakes=4 peakDrops=2 peakRings=2 contactVertices=0 wakeVertices=99792 dropVertices=8064 ringVertices=40320 maximumGroundErrorCm=0.000000 maximumWaterPlaneErrorCm=1.600000 components=4 fixedPools=16/32/16/16 actualSubmittedTransforms=1 actualCustomData=1 newLights=0 collision=0 runtimeSkeletons=0 realServerRate=1 diagnosticOffset=1 audioAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/geometry files produced;inspectall8images;audio/fullperformance/defaultpromotionremain",
+      "captures_individually_inspected": 8,
+      "visual_note": "Stable bird/water placement and no large stray particles; water detail remains subtle in this backlit dusk view. Not photographic-quality acceptance.",
+      "self_tick": [
+        "view=goose_water_arrival_close samples=4096 p50ms=0.0518 p95ms=0.0799 clock=Cycles64"
+      ]
+    },
+    "shore_entry": {
+      "machine_passed": true,
+      "process_timeout": false,
+      "native_geometry_result": "PASS scope=nativeGooseWaterEffects mode=shoreEntry captures=8 expected=8 samples=360 peakContact=2 peakWakes=4 peakDrops=1 peakRings=1 contactVertices=1716 wakeVertices=80640 dropVertices=1920 ringVertices=9600 maximumGroundErrorCm=1.577343 maximumWaterPlaneErrorCm=2.149011 components=4 fixedPools=16/32/16/16 actualSubmittedTransforms=1 actualCustomData=1 newLights=0 collision=0 runtimeSkeletons=0 realServerRate=1 diagnosticOffset=1 audioAccepted=0 fullPerformanceAccepted=0 wholePhase3Complete=0 reason=native pool/geometry files produced;inspectall8images;audio/fullperformance/defaultpromotionremain",
+      "captures_individually_inspected": 8,
+      "visual_note": "Ground-to-water transition stable; small spatter at body/water line and subtle wakes. No stray bank effects seen. Not photographic-quality acceptance.",
+      "self_tick": [
+        "view=goose_water_shore samples=4096 p50ms=0.0512 p95ms=0.0855 clock=Cycles64"
+      ]
+    }
+  },
+  "editor_build_passed": "Saved/CalderWork/codex_goose_water_effects_editor_build_v6.log",
+  "prior_build_failure": "Saved/CalderWork/codex_goose_water_effects_editor_build_v4.log",
+  "prior_build_repair": "Renamed local ContactKey to avoid shadowing effect update Key.",
+  "current_job": "Recovery export/check/archive freeze",
+  "native_two_views_tick_gate_passed": true,
+  "full_performance_accepted": false,
+  "waves_calls_pending": "Water/contact geometry verified locally; calls remain unimplemented, MP effects integration active.",
+  "multiplayer_v1": {
+    "passed": false,
+    "peers": [
+      {
+        "role": "host",
+        "passed": false,
+        "effects_ready": true,
+        "exit_code": null,
+        "result": "FAIL scope=nativeGooseReactionReplication role=host normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=-1000.000 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=0 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=0 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=0 callsAccepted=0 wholePhase3Complete=0 reason=peer failure\n",
+        "events": [
+          "[2026.10.18-16.41.13:196][962]LogTemp: Display: CALDER_GOOSE_REACTION_MP FAIL scope=nativeGooseReactionReplication role=host normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=-1000.000 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=0 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=0 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=0 callsAccepted=0 wholePhase3Complete=0 reason=peer failure"
+        ]
+      },
+      {
+        "role": "client",
+        "passed": false,
+        "effects_ready": true,
+        "exit_code": null,
+        "result": "FAIL scope=nativeGooseReactionReplication role=client normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=511.033 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=4 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=4 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=0 callsAccepted=0 wholePhase3Complete=0 reason=replicated hiss data exceeds500ms\n",
+        "events": [
+          "[2026.10.18-16.41.04:644][ 67]LogTemp: Display: CALDER_GOOSE_REACTION_MP_EYE at=X=25544.683 Y=-10860.777 Z=824.153 standing170cm=1 sideOfApproach=1 geometryUnchanged=1",
+          "[2026.10.18-16.41.13:195][136]LogTemp: Display: CALDER_GOOSE_REACTION_MP FAIL scope=nativeGooseReactionReplication role=client normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=511.033 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=4 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=4 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=0 callsAccepted=0 wholePhase3Complete=0 reason=replicated hiss data exceeds500ms"
+        ]
+      }
+    ],
+    "terrain_hashes": {
+      "host": "72564759",
+      "client": "72564759"
+    },
+    "habitat_hashes": {
+      "host": "5c0dee53",
+      "client": "5c0dee53"
+    },
+    "hashes_match": true,
+    "client_reaction_recovery_checked": "",
+    "client_csv_samples": 4,
+    "seconds": 73.89,
+    "logic_probe_only": false,
+    "native_captures": [
+      "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_water_mp_v1/session/detail_goose_reaction_client.png",
+      "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_water_mp_v1/session/detail_goose_reaction_host.png"
+    ],
+    "original_campus_mp_sha256": "404b4e7727205d7f01a7b8dd5f1f9205ef12a4ee7db6618eb32626e5642f3e79",
+    "original_hill_route_gate_pending": true,
+    "whole_phase3_complete": false,
+    "scope": "Native normal-lobby host ordinary-input hiss/retreat/home wait/return, actual client FastArray data and following-view GPU response within500ms, same-wall roots within120cm. Remote-controlled approach/audio/full roster/final performance remain separate.",
+    "source_config_frozen": true,
+    "captures_inspection_pending": true,
+    "water_effects_enabled": true,
+    "audio_accepted": false,
+    "failure_reason": "FAIL scope=nativeGooseReactionReplication role=client normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=511.033 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=4 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=4 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=0 callsAccepted=0 wholePhase3Complete=0 reason=replicated hiss data exceeds500ms\n",
+    "captures_inspected": 0,
+    "diagnosis": "Client character-outfit startup streaming stall logged (5.14s between network ticks), followed by511.033ms hiss-data upper bound. Keep failure; startup performance remains open."
+  },
+  "runtime_carryforward_audit": {
+    "changed_source_config_files": [
+      "Source/SeniorSendoff/HouseCalderWildlifeGooseReactionNetworkReview.cpp"
+    ],
+    "unchanged_files": 407,
+    "only_test_setup_changed": true
+  },
+  "multiplayer_v2": {
+    "passed": true,
+    "peers": [
+      {
+        "role": "host",
+        "passed": true,
+        "effects_ready": true,
+        "exit_code": 0,
+        "result": "PASS scope=nativeGooseReactionReplication role=host normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=-1000.000 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=0 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=0 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=host input/recovery and client GPU/pose acknowledgement complete;inspect captures\n",
+        "events": [
+          "[2026.10.18-16.52.49:904][693]LogTemp: Display: CALDER_GOOSE_REACTION_MP PASS scope=nativeGooseReactionReplication role=host normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=-1000.000 followingViewGpuFrameMs=-1000.000 responseLimitMs=500 sameWallPoseSamples=0 maximumSameWallErrorCm=0.000000 poseLimitCm=120 hissSamples=0 retreatSamples=0 homeWaitSamples=0 returnSamples=0 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=host input/recovery and client GPU/pose acknowledgement complete;inspect captures"
+        ]
+      },
+      {
+        "role": "client",
+        "passed": true,
+        "effects_ready": true,
+        "exit_code": 0,
+        "result": "PASS scope=nativeGooseReactionReplication role=client normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=41.334 followingViewGpuFrameMs=78.699 responseLimitMs=500 sameWallPoseSamples=1919 maximumSameWallErrorCm=3.372666 poseLimitCm=120 hissSamples=1 retreatSamples=436 homeWaitSamples=1001 returnSamples=463 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=real FastArray hiss/retreat/homewait/return and actual client GPU/roots checked;inspect image\n",
+        "events": [
+          "[2026.10.18-16.48.34:958][ 45]LogTemp: Display: CALDER_GOOSE_REACTION_MP_EYE at=X=25544.683 Y=-10860.777 Z=824.153 standing170cm=1 sideOfApproach=1 geometryUnchanged=1",
+          "[2026.10.18-16.48.50:415][350]LogTemp: Display: CALDER_GOOSE_REACTION_MP_STABLE_START seconds=10.007 maximumTickGapMs=150 responseLimitMs=500 setupOnly=1 startupPerformanceAccepted=0",
+          "[2026.10.18-16.48.56:407][528]LogTemp: Display: CALDER_GOOSE_REACTION_MP_ARM id=6 dataMs=41.334 actualSubmittedRoot=1 followingFrame=1",
+          "[2026.10.18-16.48.56:474][530]LogTemp: Display: CALDER_GOOSE_REACTION_MP_RENDER id=6 gpuFrameMs=78.699 limitMs=500 nextFrameFence=1 PNGTimingSeparate=1",
+          "[2026.10.18-16.52.47:901][414]LogTemp: Display: CALDER_GOOSE_REACTION_MP PASS scope=nativeGooseReactionReplication role=client normalLobby=1 nativeRender=1 realPlayerApproach=1 id=6 dataMs=41.334 followingViewGpuFrameMs=78.699 responseLimitMs=500 sameWallPoseSamples=1919 maximumSameWallErrorCm=3.372666 poseLimitCm=120 hissSamples=1 retreatSamples=436 homeWaitSamples=1001 returnSamples=463 fullRealRecovery=1 callsAccepted=0 wholePhase3Complete=0 reason=real FastArray hiss/retreat/homewait/return and actual client GPU/roots checked;inspect image"
+        ]
+      }
+    ],
+    "terrain_hashes": {
+      "host": "72564759",
+      "client": "72564759"
+    },
+    "habitat_hashes": {
+      "host": "5c0dee53",
+      "client": "5c0dee53"
+    },
+    "hashes_match": true,
+    "client_reaction_recovery_checked": "complete",
+    "client_csv_samples": 1919,
+    "seconds": 331.3,
+    "logic_probe_only": false,
+    "native_captures": [
+      "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_water_mp_v2/session/detail_goose_reaction_client.png",
+      "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/runs/codex_goose_water_mp_v2/session/detail_goose_reaction_host.png"
+    ],
+    "original_campus_mp_sha256": "404b4e7727205d7f01a7b8dd5f1f9205ef12a4ee7db6618eb32626e5642f3e79",
+    "original_hill_route_gate_pending": true,
+    "whole_phase3_complete": false,
+    "scope": "Native normal-lobby host ordinary-input hiss/retreat/home wait/return, actual client FastArray data and following-view GPU response within500ms, same-wall roots within120cm. Remote-controlled approach/audio/full roster/final performance remain separate.",
+    "source_config_frozen": true,
+    "captures_inspection_pending": false,
+    "water_effects_enabled": true,
+    "audio_accepted": false,
+    "captures_individually_inspected": 6,
+    "host_actual_soles": "PASS scope=nativeGoosePlayerReaction mode=walk captures=4 expected=4 effectiveHissDistanceCm=554.263 expectedCm=600 toleranceCm=120 actualRoots=6890 worstRootErrorCm=0.000000 gapSamples=35904 gapP95Cm=0.065097 driftSamples=33120 driftP95Cm=0.000000 footLimitCm=3 enteredWater=1 returnedShore=1 ordinaryPlayerInput=1 noAnimalForcing=1 serverCheckHz=10 twoPeerAccepted=0 callsAccepted=0 wholePhase3Complete=0 reason=native ordinary-input files produced; inspect all4images;two-peer/audio/performance remain",
+    "startup_performance_accepted": false,
+    "remote_controlled_approach_accepted": false
+  },
+  "recovery_target": "Saved/CalderWork/codex_checkpoint_goose_water_effects_20261018_v1",
+  "standalone_compile": {
+    "passed": true,
+    "actions": 248,
+    "seconds": 135.7,
+    "log": "Saved/CalderWork/codex_goose_water_game_build_v1.log",
+    "generated_app_finder_info_removals": 495,
+    "gameplay_claimed": false
+  },
+  "standalone_signature": {
+    "passed": true,
+    "exit_code": 0,
+    "finder_info_removals": 9,
+    "guard": "Generated app root FinderInfo only, cleared before and during verification",
+    "bundle": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Binaries/Mac/SeniorSendoff.app",
+    "log": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/codex_goose_water_game_signature_v1.log",
+    "standalone_gameplay_claimed": false
+  },
+  "source_config_matches_final_native_freeze": true,
+  "recovery_receipt": "Saved/CalderWork/codex_checkpoint_goose_water_effects_20261018_v1/recovery_receipt.json",
+  "recovery_status": "Read the named receipt: present passed=true is authoritative. Export/check/archive happens after this documentation freeze."
+}

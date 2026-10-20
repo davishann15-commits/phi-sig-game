@@ -1,0 +1,8 @@
+{
+  "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderRidgeCanopy",
+  "pixel_instructions": 224,
+  "pixel_samples": 3,
+  "source_parent_sha256": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+  "original_parent_unchanged": true,
+  "scope": "Owned scenery canopy shader; actual scene/performance acceptance pending"
+}

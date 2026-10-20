@@ -1,0 +1,30 @@
+[
+  {
+    "folder": "nordic_forest_cliff_large_xibsff1_high",
+    "label": "NordicForestCliffLarge",
+    "prefix": "Nordic_Forest_Cliff_Large_xibsff1_High_4K_",
+    "destination": "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1",
+    "foliage": false
+  },
+  {
+    "folder": "beech_fern_vmkpdbeia_high",
+    "label": "BeechFern",
+    "prefix": "Beech_Fern_vmkpdbeia_High_4K_",
+    "destination": "/Game/Environment/Megascans/BeechFern_vmkpdbeia",
+    "foliage": true
+  },
+  {
+    "folder": "black_locust_wdvhberja_high",
+    "label": "BlackLocust",
+    "prefix": "Black_Locust_wdvhberja_High_4K_",
+    "destination": "/Game/Environment/Megascans/BlackLocust_wdvhberja",
+    "foliage": true
+  },
+  {
+    "folder": "rotten_tree_stump_whnpaed_high",
+    "label": "RottenTreeStump",
+    "prefix": "Rotten_Tree_Stump_whnpaed_High_4K_",
+    "destination": "/Game/Environment/Megascans/RottenTreeStump_whnpaed",
+    "foliage": false
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "room": "HallEnd_West",
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "nativeVisualViews": 4,
+  "pokerInteraction": {
+    "passed": true,
+    "actualEPresses": 4,
+    "repeatDeals": 3,
+    "atlasFacesMatched": true
+  },
+  "doorInteraction": {
+    "passed": true,
+    "door": "HallEnd_West",
+    "openCloseReopen": true
+  },
+  "walk": {
+    "passed": true,
+    "seconds": 15,
+    "frames": 897,
+    "p95FrameMs": 16.77,
+    "worstFrameMs": 45.13,
+    "travelCm": 5410.6,
+    "laps": 2,
+    "stalls": 0
+  },
+  "protectedExistingActorsUnchanged": 680
+}

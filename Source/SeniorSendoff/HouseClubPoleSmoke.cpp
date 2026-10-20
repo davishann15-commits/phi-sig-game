@@ -416,6 +416,15 @@ void TickClubPoleSmoke(UWorld* World,ELevelTick,float Delta)
                         Club?Club->DebugListenerGain:0.f,State.SawMusicStartPhase,State.MaximumActiveLights));
                 return;
             }
+            if(FParse::Param(FCommandLine::Get(),TEXT("ClubHallNetworkReview")))
+            {
+                const float Lounge=Club->GetMusicGainAtWorld(FVector(-2390,-1830,490));
+                const float Dance=Club->GetMusicGainAtWorld(FVector(-1850,-1830,490));
+                const float Hall=Club->GetMusicGainAtWorld(FVector(-2395,-1400,490));
+                if(Club->UpperExtraRegions.Num()!=3||Club->UpperAdditionalDoorways.Num()!=1||Club->ClubLights.Num()!=6||Lounge<.9f||Dance<.9f||Hall>.001f)
+                { Fail(TEXT("new club wing regions or music boundaries differ on this peer"));return; }
+                UE_LOG(LogTemp,Display,TEXT("CLUB_HALL_NETWORK_PASS mode=%d regions=%d lights=%d newRoomGain=%.3f newDanceGain=%.3f hallwayGain=%.3f"),int32(World->GetNetMode()),Club->UpperExtraRegions.Num(),Club->ClubLights.Num(),Lounge,Dance,Hall);
+            }
             const AGameStateBase* GameState=World->GetGameState();
             UE_LOG(LogTemp,Display,TEXT("CLUB_AMBIENCE_MP_PASS mode=%d wall=%.6f server=%.6f epoch=%.6f phase=%.6f startOffset=%.6f maxStartError=%.6f playingSamples=%d currentPlaying=%d gain=%.3f activeLights=%d maxLights=%d"),
                 int32(World->GetNetMode()),Now,GameState?GameState->GetServerWorldTimeSeconds():double(World->GetTimeSeconds()),

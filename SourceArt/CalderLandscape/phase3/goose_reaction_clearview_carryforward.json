@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "prior_native_report": "Saved/CalderWork/runs/codex_goose_reaction_walk_v1_reactions.json",
+  "source_config_changed": [
+    "Source/SeniorSendoff/HouseCalderWildlifeGooseReactionReview.cpp"
+  ],
+  "unchanged_runtime_source_count": 403,
+  "runtime_and_config_byte_identical": true,
+  "native_v1_full_recovery_root_and_sole_data_retained": true,
+  "native_v1_images_visuals_limited": true,
+  "clearview_review_pending": true,
+  "scope": "Review setup visibility checks only;no runtime,animal,player,world geometry or thresholds changed",
+  "prior_review_sha256": "12947d824163080f68ac9c60761b28d0ef9c7955ba786502ae9c1ea07673585a",
+  "current_review_sha256": "7057a82dd0c89b44f7284fda1329e8234d02f0ec52eff1a3bd47effdc90e463c"
+}

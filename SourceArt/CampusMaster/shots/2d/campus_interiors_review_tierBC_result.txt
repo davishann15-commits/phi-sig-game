@@ -1,0 +1,265 @@
+doors=161 building=MAIN seed=1 openFloors=1
+stop 0: the front walk (placed at -13300,-6500)
+stop 1: reached at the main doors, feet at (-13300,-7027,-53.0), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-13300,-7372,-52.9), indoor=1, interiorLights=6
+stop 4: reached the corridor, feet at (-13300,-7969,-52.9), indoor=1, interiorLights=6
+stop 5: reached at 101 DEAN OF STUDENTS, feet at (-15103,-8013,-52.9), indoor=1, interiorLights=6
+stop 6: reached into 101, feet at (-15089,-7709,-52.9), indoor=1, interiorLights=6
+stop 7: reached back to the corridor, feet at (-15090,-8034,-52.9), indoor=1, interiorLights=6
+stop 8: reached at 103 ADMISSIONS, feet at (-14372,-8014,-52.9), indoor=1, interiorLights=6
+stop 9: reached into 103, feet at (-14332,-7704,-52.9), indoor=1, interiorLights=6
+stop 10: reached back to the corridor, feet at (-14333,-8028,-52.9), indoor=1, interiorLights=6
+stop 11: reached at 105 REGISTRAR, feet at (-12873,-8012,-52.9), indoor=1, interiorLights=6
+stop 12: reached into 105, feet at (-12893,-7710,-52.9), indoor=1, interiorLights=6
+stop 13: reached back to the corridor, feet at (-12892,-8032,-52.9), indoor=1, interiorLights=6
+stop 14: reached at 107, feet at (-11799,-8012,-52.9), indoor=1, interiorLights=6
+stop 15: try 107's door -> stayed locked, reason "RECORDS - CLOSED SATURDAY"
+stop 16: reached at 104 CONFERENCE ROOM, feet at (-13986,-8013,-52.9), indoor=1, interiorLights=6
+stop 17: reached into 104, feet at (-13972,-8321,-52.9), indoor=1, interiorLights=6
+stop 18: reached back to the corridor, feet at (-13973,-7990,-52.9), indoor=1, interiorLights=6
+stop 19: reached the corridor at the lobby, feet at (-13279,-8013,-52.9), indoor=1, interiorLights=6
+stop 20: reached back through the lobby, feet at (-13298,-7417,-52.9), indoor=1, interiorLights=6
+stop 21: reached out through the doors, feet at (-13300,-6488,-54.9), indoor=0, interiorLights=3
+stop 22: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: HLTH
+stop 0: the front walk (placed at -3000,-6500)
+stop 1: reached at the main doors, feet at (-3000,-6973,-52.9), indoor=0, interiorLights=1
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-3000,-7321,-52.9), indoor=1, interiorLights=1
+stop 4: reached at the lobby's door 0, feet at (-3280,-7858,-52.9), indoor=1, interiorLights=1
+stop 5: try the lobby's door 0 -> stayed locked, reason "EXAM ROOMS - CLOSED SATURDAY. EMERGENCIES: CAMPUS SECURITY, EXT 2911"
+stop 6: reached at the lobby's door 1, feet at (-2829,-7833,-52.9), indoor=1, interiorLights=1
+stop 7: try the lobby's door 1 -> stayed locked, reason "PHARMACY - AUTHORIZED PERSONNEL ONLY"
+stop 8: reached back across the lobby, feet at (-2994,-7378,-52.9), indoor=1, interiorLights=1
+stop 9: reached out through the doors, feet at (-3000,-6516,-54.9), indoor=0, interiorLights=1
+stop 10: away to the house; the inside must be freed (placed at 0,-26000)
+after leaving: built=freed lights=0
+next building: COM
+stop 0: the front walk (placed at 10400,-8550)
+stop 1: reached at the main doors, feet at (10878,-8550,-52.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (11225,-8550,-52.9), indoor=1, interiorLights=6
+stop 4: reached the corridor, feet at (11807,-8550,-52.9), indoor=1, interiorLights=6
+stop 5: reached at 101 THE HEARTH, feet at (11792,-9853,-52.9), indoor=1, interiorLights=6
+stop 6: reached into 101, feet at (11491,-9839,-52.9), indoor=1, interiorLights=6
+stop 7: reached back to the corridor, feet at (11814,-9840,-52.9), indoor=1, interiorLights=6
+stop 8: reached at 103, feet at (11792,-8044,-52.9), indoor=1, interiorLights=6
+stop 9: try 103's door -> stayed locked, reason "MANAGER - CLOSED SATURDAY"
+stop 10: reached at 102 DINING HALL, feet at (11793,-9857,-52.9), indoor=1, interiorLights=6
+stop 11: reached into 102, feet at (12098,-9839,-52.9), indoor=1, interiorLights=6
+stop 12: reached back to the corridor, feet at (11773,-9840,-52.9), indoor=1, interiorLights=6
+stop 13: reached the corridor at the lobby, feet at (11793,-8540,-52.9), indoor=1, interiorLights=6
+stop 14: reached back through the lobby, feet at (11316,-8549,-52.9), indoor=1, interiorLights=6
+stop 15: reached out through the doors, feet at (10390,-8550,-64.1), indoor=0, interiorLights=3
+stop 16: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: ASH
+stop 0: the front walk (placed at 16800,-6500)
+stop 1: reached at the main doors, feet at (16800,-6971,-52.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (16800,-7323,-52.9), indoor=1, interiorLights=6
+stop 4: reached the corridor, feet at (16800,-8011,-52.9), indoor=1, interiorLights=6
+stop 5: reached at 101 , feet at (14830,-7993,-52.9), indoor=1, interiorLights=6
+stop 6: reached into 101, feet at (14817,-7704,-52.9), indoor=1, interiorLights=6
+stop 7: reached back to the corridor, feet at (14810,-8005,-52.9), indoor=1, interiorLights=6
+stop 8: reached at 103, feet at (15158,-7994,-52.9), indoor=1, interiorLights=6
+stop 9: try 103's door -> stayed locked, reason "Room 103 - nobody home, they're at the game"
+stop 10: reached at 105 , feet at (15510,-7993,-52.9), indoor=1, interiorLights=6
+stop 11: reached into 105, feet at (15580,-7714,-52.8), indoor=1, interiorLights=6
+stop 12: reached back to the corridor, feet at (15570,-7935,-52.8), indoor=1, interiorLights=6
+stop 13: reached at 109 LAUNDRY, feet at (16295,-7993,-52.8), indoor=1, interiorLights=6
+stop 14: reached into 109, feet at (16287,-7693,-52.8), indoor=1, interiorLights=6
+stop 15: reached back to the corridor, feet at (16288,-8013,-52.8), indoor=1, interiorLights=6
+stop 16: reached at 111 LOUNGE, feet at (17382,-7993,-52.8), indoor=1, interiorLights=6
+stop 17: reached into 111, feet at (17419,-7688,-52.8), indoor=1, interiorLights=6
+stop 18: reached back to the corridor, feet at (17417,-8012,-52.8), indoor=1, interiorLights=6
+stop 19: reached at 115 , feet at (18467,-7992,-52.8), indoor=1, interiorLights=6
+stop 20: reached into 115, feet at (18459,-7713,-52.8), indoor=1, interiorLights=6
+stop 21: reached back to the corridor, feet at (18450,-7939,-52.8), indoor=1, interiorLights=6
+stop 22: reached at 102 RECREATION, feet at (14855,-7993,-52.8), indoor=1, interiorLights=6
+stop 23: reached into 102, feet at (14860,-8297,-52.8), indoor=1, interiorLights=6
+stop 24: reached back to the corridor, feet at (14860,-7971,-52.8), indoor=1, interiorLights=6
+stop 25: reached at 104 STUDY LOUNGE, feet at (16331,-7992,-52.8), indoor=1, interiorLights=6
+stop 26: reached into 104, feet at (16338,-8298,-52.8), indoor=1, interiorLights=6
+stop 27: reached back to the corridor, feet at (16337,-7972,-52.8), indoor=1, interiorLights=6
+stop 28: reached the corridor at the lobby, feet at (16808,-7993,-52.8), indoor=1, interiorLights=6
+stop 29: reached back through the lobby, feet at (16800,-7389,-52.8), indoor=1, interiorLights=6
+stop 30: reached out through the doors, feet at (16800,-6538,-54.9), indoor=0, interiorLights=3
+stop 31: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: HUM
+stop 0: the front walk (placed at -17400,-13800)
+stop 1: reached at the main doors, feet at (-17400,-14275,-52.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-17400,-14622,-52.9), indoor=1, interiorLights=6
+stop 4: reached the corridor, feet at (-17400,-15476,-52.9), indoor=1, interiorLights=6
+stop 5: reached at 101 ENGLISH, feet at (-18873,-15473,-52.9), indoor=1, interiorLights=6
+stop 6: reached into 101, feet at (-18891,-15173,-52.9), indoor=1, interiorLights=6
+stop 7: reached back to the corridor, feet at (-18890,-15486,-52.9), indoor=1, interiorLights=6
+stop 8: reached at 103, feet at (-18537,-15474,-52.9), indoor=1, interiorLights=6
+stop 9: try 103's door -> stayed locked, reason "103 OFFICE - office hours Monday to Friday"
+stop 10: reached at 105 SEMINAR, feet at (-18184,-15473,-52.9), indoor=1, interiorLights=6
+stop 11: reached into 105, feet at (-18136,-15165,-52.8), indoor=1, interiorLights=6
+stop 12: reached back to the corridor, feet at (-18132,-15494,-52.8), indoor=1, interiorLights=6
+stop 13: reached at 107 SEMINAR, feet at (-17039,-15472,-52.8), indoor=1, interiorLights=6
+stop 14: reached into 107, feet at (-17053,-15168,-52.8), indoor=1, interiorLights=6
+stop 15: reached back to the corridor, feet at (-17052,-15488,-52.8), indoor=1, interiorLights=6
+stop 16: reached at 111 HISTORY, feet at (-16327,-15472,-52.8), indoor=1, interiorLights=6
+stop 17: reached into 111, feet at (-16333,-15170,-52.8), indoor=1, interiorLights=6
+stop 18: reached back to the corridor, feet at (-16332,-15495,-52.8), indoor=1, interiorLights=6
+stop 19: reached at 102 CLASSROOM, feet at (-18909,-15472,-52.8), indoor=1, interiorLights=6
+stop 20: reached into 102, feet at (-18901,-15780,-52.8), indoor=1, interiorLights=6
+stop 21: reached back to the corridor, feet at (-18889,-15453,-52.8), indoor=1, interiorLights=6
+stop 22: reached at 104 AUDITORIUM, feet at (-17708,-15473,-52.8), indoor=1, interiorLights=6
+stop 23: reached into 104, feet at (-17723,-15773,-52.8), indoor=1, interiorLights=6
+stop 24: reached back to the corridor, feet at (-17722,-15450,-52.8), indoor=1, interiorLights=6
+stop 25: reached at 106 CLASSROOM, feet at (-16744,-15471,-52.8), indoor=1, interiorLights=6
+stop 26: reached into 106, feet at (-16698,-15783,-52.9), indoor=1, interiorLights=6
+stop 27: reached back to the corridor, feet at (-16693,-15456,-52.8), indoor=1, interiorLights=6
+stop 28: reached the corridor at the lobby, feet at (-17412,-15473,-52.8), indoor=1, interiorLights=6
+stop 29: reached back through the lobby, feet at (-17400,-14643,-52.8), indoor=1, interiorLights=6
+stop 30: reached out through the doors, feet at (-17400,-13793,-54.9), indoor=0, interiorLights=3
+stop 31: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: KER
+stop 0: the front walk (placed at 10400,-13400)
+stop 1: reached at the main doors, feet at (10876,-13400,-53.0), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (11223,-13400,-52.9), indoor=1, interiorLights=6
+stop 4: reached the corridor, feet at (11946,-13400,-52.9), indoor=1, interiorLights=6
+stop 5: reached at 101 CLASSROOM, feet at (11991,-15243,-52.9), indoor=1, interiorLights=6
+stop 6: reached into 101, feet at (11684,-15281,-52.8), indoor=1, interiorLights=6
+stop 7: reached back to the corridor, feet at (12009,-15290,-52.8), indoor=1, interiorLights=6
+stop 8: reached at 103, feet at (11993,-14563,-52.8), indoor=1, interiorLights=6
+stop 9: try 103's door -> stayed locked, reason "103 OFFICE - office hours Monday to Friday"
+stop 10: reached at 107 CLASSROOM, feet at (11992,-13088,-52.8), indoor=1, interiorLights=6
+stop 11: reached into 107, feet at (11694,-13093,-52.8), indoor=1, interiorLights=6
+stop 12: reached back to the corridor, feet at (12008,-13092,-52.8), indoor=1, interiorLights=6
+stop 13: reached at 109 SEMINAR, feet at (11993,-12376,-52.8), indoor=1, interiorLights=6
+stop 14: reached into 109, feet at (11691,-12372,-52.8), indoor=1, interiorLights=6
+stop 15: reached back to the corridor, feet at (12007,-12373,-52.8), indoor=1, interiorLights=6
+stop 16: reached at 102 CLASSROOM, feet at (11992,-15307,-52.8), indoor=1, interiorLights=6
+stop 17: reached into 102, feet at (12303,-15294,-52.8), indoor=1, interiorLights=6
+stop 18: reached back to the corridor, feet at (11974,-15290,-52.8), indoor=1, interiorLights=6
+stop 19: reached at 104 CLASSROOM, feet at (11992,-14195,-52.8), indoor=1, interiorLights=6
+stop 20: reached into 104, feet at (12302,-14174,-52.8), indoor=1, interiorLights=6
+stop 21: reached back to the corridor, feet at (11975,-14172,-52.8), indoor=1, interiorLights=6
+stop 22: reached at 106 LECTURE ROOM, feet at (11992,-13444,-52.8), indoor=1, interiorLights=6
+stop 23: reached into 106, feet at (12299,-13400,-52.8), indoor=1, interiorLights=6
+stop 24: reached back to the corridor, feet at (11973,-13403,-52.8), indoor=1, interiorLights=6
+stop 25: reached at 108 CLASSROOM, feet at (11992,-12422,-52.8), indoor=1, interiorLights=6
+stop 26: reached into 108, feet at (12303,-12377,-52.9), indoor=1, interiorLights=6
+stop 27: reached back to the corridor, feet at (11972,-12372,-52.8), indoor=1, interiorLights=6
+stop 28: reached the corridor at the lobby, feet at (11991,-13346,-52.8), indoor=1, interiorLights=6
+stop 29: reached back through the lobby, feet at (11271,-13399,-52.8), indoor=1, interiorLights=6
+stop 30: reached out through the doors, feet at (10424,-13400,-62.2), indoor=0, interiorLights=3
+stop 31: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: FLD
+stop 0: the front walk (placed at 16950,-11600)
+stop 1: reached at the main doors, feet at (16950,-12068,-52.9), indoor=0, interiorLights=1
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (16950,-12417,-52.9), indoor=1, interiorLights=1
+stop 4: reached at the lobby's door 0, feet at (16653,-12907,-52.9), indoor=1, interiorLights=1
+stop 5: try the lobby's door 0 -> stayed locked, reason "LOCKER ROOMS - TEAMS ONLY"
+stop 6: reached at the lobby's door 1, feet at (17089,-12893,-52.9), indoor=1, interiorLights=1
+stop 7: try the lobby's door 1 -> stayed locked, reason "THE GYM - chained and padlocked for the weekend"
+stop 8: reached back across the lobby, feet at (16946,-12448,-52.9), indoor=1, interiorLights=1
+stop 9: reached out through the doors, feet at (16950,-11595,-54.9), indoor=0, interiorLights=1
+stop 10: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: ART
+stop 0: the front walk (placed at -11150,-17800)
+stop 1: reached at the main doors, feet at (-11150,-18273,-52.9), indoor=0, interiorLights=3
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-11150,-18622,-52.9), indoor=1, interiorLights=6
+stop 4: reached the corridor, feet at (-11150,-19350,-52.9), indoor=1, interiorLights=6
+stop 5: reached at 101 PAINTING, feet at (-13127,-19352,-52.9), indoor=1, interiorLights=6
+stop 6: reached into 101, feet at (-13141,-19051,-52.9), indoor=1, interiorLights=6
+stop 7: reached back to the corridor, feet at (-13140,-19375,-52.9), indoor=1, interiorLights=6
+stop 8: reached at 103 DRAWING, feet at (-12422,-19354,-52.9), indoor=1, interiorLights=6
+stop 9: reached into 103, feet at (-12382,-19046,-52.8), indoor=1, interiorLights=6
+stop 10: reached back to the corridor, feet at (-12383,-19373,-52.8), indoor=1, interiorLights=6
+stop 11: reached at 105, feet at (-11656,-19352,-52.8), indoor=1, interiorLights=6
+stop 12: try 105's door -> stayed locked, reason "105 OFFICE - office hours Monday to Friday"
+stop 13: reached at 107 WHITCOMB GALLERY, feet at (-10560,-19352,-52.8), indoor=1, interiorLights=6
+stop 14: reached into 107, feet at (-10531,-19049,-52.8), indoor=1, interiorLights=6
+stop 15: reached back to the corridor, feet at (-10533,-19371,-52.8), indoor=1, interiorLights=6
+stop 16: reached at 102 CERAMICS, feet at (-13136,-19353,-52.8), indoor=1, interiorLights=6
+stop 17: reached into 102, feet at (-13140,-19662,-52.8), indoor=1, interiorLights=6
+stop 18: reached back to the corridor, feet at (-13140,-19333,-52.8), indoor=1, interiorLights=6
+stop 19: reached at 106 SCULPTURE, feet at (-11293,-19353,-52.8), indoor=1, interiorLights=6
+stop 20: reached into 106, feet at (-11303,-19659,-52.8), indoor=1, interiorLights=6
+stop 21: reached back to the corridor, feet at (-11302,-19335,-52.8), indoor=1, interiorLights=6
+stop 22: reached the corridor at the lobby, feet at (-11201,-19347,-52.8), indoor=1, interiorLights=6
+stop 23: reached back through the lobby, feet at (-11149,-18644,-52.8), indoor=1, interiorLights=6
+stop 24: reached out through the doors, feet at (-11150,-17797,-54.9), indoor=0, interiorLights=3
+stop 25: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: MUS
+stop 0: the front walk (placed at -5950,-16850)
+stop 1: reached at the main doors, feet at (-5950,-17318,-52.9), indoor=0, interiorLights=1
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-5950,-17668,-52.9), indoor=1, interiorLights=1
+stop 4: reached at the lobby's door 0, feet at (-6094,-17956,-52.9), indoor=1, interiorLights=1
+stop 5: try the lobby's door 0 -> stayed locked, reason "BAND ROOM - AUTHORIZED PERSONNEL"
+stop 6: reached at the lobby's door 1, feet at (-5659,-17944,-52.8), indoor=1, interiorLights=1
+stop 7: try the lobby's door 1 -> stayed locked, reason "PRACTICE ROOMS - chained shut until Monday"
+stop 8: reached back across the lobby, feet at (-5927,-17728,-52.8), indoor=1, interiorLights=1
+stop 9: reached out through the doors, feet at (-5949,-16879,-54.9), indoor=0, interiorLights=1
+stop 10: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: ENG
+stop 0: the front walk (placed at -8200,-21350)
+stop 1: reached at the main doors, feet at (-8200,-21825,-52.9), indoor=0, interiorLights=1
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-8200,-22174,-52.9), indoor=1, interiorLights=1
+stop 4: reached at the lobby's door 0, feet at (-8343,-22453,-52.9), indoor=1, interiorLights=1
+stop 5: try the lobby's door 0 -> stayed locked, reason "LABS - AUTHORIZED PERSONNEL ONLY"
+stop 6: reached at the lobby's door 1, feet at (-7913,-22444,-52.9), indoor=1, interiorLights=1
+stop 7: try the lobby's door 1 -> stayed locked, reason "MACHINE SHOP - chain and padlock, CLOSED SATURDAY"
+stop 8: reached back across the lobby, feet at (-8187,-22221,-52.9), indoor=1, interiorLights=1
+stop 9: reached out through the doors, feet at (-8200,-21376,-54.9), indoor=0, interiorLights=1
+stop 10: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: PLT
+stop 0: the front walk (placed at 11150,-19750)
+stop 1: reached at the main doors, feet at (11625,-19750,-52.9), indoor=0, interiorLights=1
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (11980,-19750,-52.9), indoor=1, interiorLights=1
+stop 4: reached at the lobby's door 0, feet at (12542,-19940,-52.9), indoor=1, interiorLights=1
+stop 5: try the lobby's door 0 -> stayed locked, reason "BOILER ROOM - AUTHORIZED PERSONNEL ONLY"
+stop 6: reached at the lobby's door 1, feet at (12557,-19595,-52.9), indoor=1, interiorLights=1
+stop 7: try the lobby's door 1 -> stayed locked, reason "SHOP - chained, CLOSED SATURDAY"
+stop 8: reached back across the lobby, feet at (11992,-19755,-52.9), indoor=1, interiorLights=1
+stop 9: reached out through the doors, feet at (11147,-19750,-54.9), indoor=0, interiorLights=1
+stop 10: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+next building: ALU
+stop 0: the front walk (placed at -17300,-21200)
+stop 1: reached at the main doors, feet at (-17300,-21673,-52.9), indoor=0, interiorLights=1
+stop 2: open the main doors -> opening
+main doors open: A=1 B=1
+stop 3: reached into the lobby, feet at (-17285,-22074,-52.9), indoor=1, interiorLights=1
+stop 4: reached at the lobby's door 0, feet at (-17336,-22545,-52.9), indoor=1, interiorLights=1
+stop 5: try the lobby's door 0 -> stayed locked, reason "ALUMNI OFFICE - CLOSED SATURDAY, SEE YOU AT THE TENT"
+stop 6: reached at the lobby's door 1, feet at (-16960,-22550,-52.9), indoor=1, interiorLights=1
+stop 7: try the lobby's door 1 -> stayed locked, reason "ARCHIVES - chained, BY APPOINTMENT"
+stop 8: reached back across the lobby, feet at (-17299,-22061,-52.9), indoor=1, interiorLights=1
+stop 9: reached out through the doors, feet at (-17302,-21245,-53.3), indoor=0, interiorLights=1
+stop 10: away to the house; the inside must be freed (placed at 0,-3000)
+after leaving: built=freed lights=0
+PASS buildings=MAIN,HLTH,COM,ASH,HUM,KER,FLD,ART,MUS,ENG,PLT,ALU stops=174/174 problems=0 mainDoorsOpened=12/12 lockedDoorsHeld=1 reasonsShown=1 builtWhileInside=1 freedAfterLeaving=12/12 indoorTest=150/150 outdoorTest=24/24 maxInteriorLights=6 pool=6

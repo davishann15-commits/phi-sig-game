@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-11",
+  "project": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SeniorSendoff.uproject",
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "scope": "Photo-led rear covered porch and basketball court update",
+  "referencesInspected": ["IMG_2417.HEIC", "IMG_2415.HEIC", "IMG_2414.HEIC", "IMG_2413.HEIC", "IMG_2412.HEIC"],
+  "implemented": [
+    "Grass removed from the rear court footprint; level worn concrete joins arcade to court",
+    "Usable dark metal door in kitchen-side gap, using existing E/double-click interaction",
+    "Library-side gap closed with brick wall and matching stone cap",
+    "Library-end wooden bar, woven stools, wall-mounted TV and countertop details",
+    "Opposite-end two-tier black timber stages with pale legs and a low step",
+    "Red die table, cups and two separate rounded numbered dice",
+    "Three basketballs total, leather football and panelled volleyball",
+    "Independent physics and normal one-hand pickup/throw for new loose props",
+    "Warm light pools above bar and stages; existing door approaches preserved"
+  ],
+  "build": {"target": "SeniorSendoffEditor Mac Development", "status": "PASS"},
+  "visualReview": {
+    "status": "PASS",
+    "viewsInspected": 8,
+    "quality": 2,
+    "report": "evidence/final-visuals/Saved/HouseVisualReview/review.json"
+  },
+  "nativeInteractionReview": {
+    "status": "PASS",
+    "checks": ["inventory", "20 concrete floor samples", "closed-door and wall capsule collision", "actual player walking court/porch both directions", "normal door targeting", "open-door walk-through both directions", "door reclosing restores collision", "football normal pickup and throw", "football held inside frame", "dice table contact and normal pickup", "die held inside frame", "die set-down"],
+    "report": "evidence/verified-interaction/Saved/RearPorchReview/result.txt"
+  },
+  "basketballRegression": {
+    "status": "PASS",
+    "checks": ["three basketballs", "15 floor samples", "retaining wall collision", "open rims", "backboard collision", "real bounce", "normal carry and shots through both hoops", "lost-ball recovery without duplicate actors", "actual player walking full court route and back"],
+    "report": "evidence/basketball/Saved/BasketballReview/result.txt"
+  },
+  "preview": {
+    "status": "OPEN",
+    "mode": "Actual campaign, isolated preview profile, player free to move",
+    "location": "Court facing rear covered porch",
+    "observedWarning": "Non-Nanite virtual-shadow marking job queue overflow; cause and performance impact not measured. No crash observed. This warning is separate from the passed layout and interaction checks."
+  },
+  "multiplayer": "Not exercised; inherited authoritative door/carry/physics replication retained, procedural art built locally",
+  "durability": "Saved source is compiled into the current editor module; rear geometry is generated on map load, not stored as unsaved editor actors",
+  "protectedScope": "No character, weapon, interior-room or front-porch changes authored by this implementation. Existing dirty worktree preserved.",
+  "concurrentChanges": "Unrelated connected-wall underside joins and a map-package save occurred during this task and were preserved, not reverted or attributed to this work.",
+  "currentMapSha256": "a69dc07bdd59620b647415af5c31f01ecbc115dcc36fcc6cacfd037820bed32c",
+  "validationKind": "Assisted runtime checks in actual campaign plus direct screenshot inspection, not an observed human multiplayer playtest"
+}

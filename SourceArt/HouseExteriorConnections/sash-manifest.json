@@ -1,0 +1,80 @@
+[
+  {
+    "kind": "frame",
+    "actor": "Interactive_SM_Upper_p0_m1_Glass__001",
+    "asset": "SM_Breakaway_SM_Upper_p0_m1_Glass_001",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/SM_Breakaway_SM_Upper_p0_m1_Glass_001.fbx",
+    "materials": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "parts": 5,
+    "faces": 940
+  },
+  {
+    "kind": "frame",
+    "actor": "Interactive_SM_Upper_p0_m1_Glass__002",
+    "asset": "SM_Breakaway_SM_Upper_p0_m1_Glass_002",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/SM_Breakaway_SM_Upper_p0_m1_Glass_002.fbx",
+    "materials": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "parts": 5,
+    "faces": 940
+  },
+  {
+    "kind": "remainder",
+    "actor": "SM_Upper_p0_m1_Solid",
+    "asset": "SM_Connected_Upper_p0_m1_Solid_SashCleared",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/SM_Connected_Upper_p0_m1_Solid_SashCleared.fbx",
+    "materials": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm.MI_SSO_LightWarm",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "original_faces": 16912,
+    "retained_faces": 15032,
+    "removed_faces": 1880
+  },
+  {
+    "kind": "frame",
+    "actor": "Interactive_SM_Upper_p0_p0_Glass__001",
+    "asset": "SM_Breakaway_SM_Upper_p0_p0_Glass_001",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/SM_Breakaway_SM_Upper_p0_p0_Glass_001.fbx",
+    "materials": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "parts": 5,
+    "faces": 940
+  },
+  {
+    "kind": "frame",
+    "actor": "Interactive_SM_Upper_p0_p0_Glass__002",
+    "asset": "SM_Breakaway_SM_Upper_p0_p0_Glass_002",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/SM_Breakaway_SM_Upper_p0_p0_Glass_002.fbx",
+    "materials": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite"
+    ],
+    "parts": 5,
+    "faces": 940
+  },
+  {
+    "kind": "remainder",
+    "actor": "SM_Upper_p0_p0_Solid",
+    "asset": "SM_Connected_Upper_p0_p0_Solid_SashCleared",
+    "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseExteriorConnections/models/SM_Connected_Upper_p0_p0_Solid_SashCleared.fbx",
+    "materials": [
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling.MI_SSO_Ceiling",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite.MI_SSO_PaintWhite",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey.MI_SSO_PaintGrey",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream.MI_SSO_PaintCream",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark.MI_SSO_MetalDark",
+      "/Game/SeniorSendOff/House/Materials/MI_SSO_S05RoomWarm.MI_SSO_S05RoomWarm"
+    ],
+    "original_faces": 19225,
+    "retained_faces": 17345,
+    "removed_faces": 1880
+  }
+]

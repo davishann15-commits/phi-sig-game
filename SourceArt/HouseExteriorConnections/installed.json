@@ -1,0 +1,72 @@
+[
+  {
+    "actor": "COL_Entrance_m1_m1_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_m1_m1_Solid.COL_Connected_Entrance_m1_m1_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_m1_m1_Solid.COL_Connected_Entrance_m1_m1_Solid"
+  },
+  {
+    "actor": "COL_Entrance_m1_p0_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_m1_p0_Solid.COL_Connected_Entrance_m1_p0_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_m1_p0_Solid.COL_Connected_Entrance_m1_p0_Solid"
+  },
+  {
+    "actor": "COL_Entrance_p0_m2_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_p0_m2_Solid.COL_Connected_Entrance_p0_m2_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_p0_m2_Solid.COL_Connected_Entrance_p0_m2_Solid"
+  },
+  {
+    "actor": "COL_Entrance_p0_p0_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_p0_p0_Solid.COL_Connected_Entrance_p0_p0_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_p0_p0_Solid.COL_Connected_Entrance_p0_p0_Solid"
+  },
+  {
+    "actor": "COL_Entrance_p0_p1_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_p0_p1_Solid.COL_Connected_Entrance_p0_p1_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Entrance_p0_p1_Solid.COL_Connected_Entrance_p0_p1_Solid"
+  },
+  {
+    "actor": "COL_Upper_m1_m1_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m1_m1_Solid.COL_Connected_Upper_m1_m1_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m1_m1_Solid.COL_Connected_Upper_m1_m1_Solid"
+  },
+  {
+    "actor": "COL_Upper_m1_p0_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m1_p0_Solid.COL_Connected_Upper_m1_p0_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m1_p0_Solid.COL_Connected_Upper_m1_p0_Solid"
+  },
+  {
+    "actor": "COL_Upper_m2_p1_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m2_p1_Solid.COL_Connected_Upper_m2_p1_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m2_p1_Solid.COL_Connected_Upper_m2_p1_Solid"
+  },
+  {
+    "actor": "COL_Upper_m2_p2_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m2_p2_Solid.COL_Connected_Upper_m2_p2_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_m2_p2_Solid.COL_Connected_Upper_m2_p2_Solid"
+  },
+  {
+    "actor": "COL_Upper_p0_m2_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_p0_m2_Solid.COL_Connected_Upper_p0_m2_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_p0_m2_Solid.COL_Connected_Upper_p0_m2_Solid"
+  },
+  {
+    "actor": "COL_Upper_p0_m3_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_p0_m3_Solid.COL_Connected_Upper_p0_m3_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_p0_m3_Solid.COL_Connected_Upper_p0_m3_Solid"
+  },
+  {
+    "actor": "COL_Upper_p0_p2_Solid",
+    "before": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_p0_p2_Solid.COL_Connected_Upper_p0_p2_Solid",
+    "after": "/Game/SeniorSendOff/House/ExteriorConnections/COL_Connected_Upper_p0_p2_Solid.COL_Connected_Upper_p0_p2_Solid"
+  },
+  {
+    "actor": "SM_Upper_p0_m1_Solid",
+    "before": "/Game/SeniorSendOff/House/Meshes/SM_Upper_p0_m1_Solid.SM_Upper_p0_m1_Solid",
+    "after": "/Game/SeniorSendOff/House/Meshes/SM_Upper_p0_m1_Solid.SM_Upper_p0_m1_Solid"
+  },
+  {
+    "actor": "SM_Upper_p0_p0_Solid",
+    "before": "/Game/SeniorSendOff/House/NoodleWing/SM_Upper_p0_p0_CornerCleared_NoodleCut.SM_Upper_p0_p0_CornerCleared_NoodleCut",
+    "after": "/Game/SeniorSendOff/House/NoodleWing/SM_Upper_p0_p0_CornerCleared_NoodleCut.SM_Upper_p0_p0_CornerCleared_NoodleCut"
+  }
+]

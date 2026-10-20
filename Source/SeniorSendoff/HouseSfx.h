@@ -23,6 +23,8 @@ namespace HouseSfx
     void Handle(UWorld* World, const FVector& At, int32 Kind, EHouseSurface Surface, float MassKg);
     /** Kind 0 light switch, 1 pull station handle, 2 plastic button. */
     void Click(UWorld* World, const FVector& At, int32 Kind);
+    /** 0 rubber bounce, 1 rim clank, 2 backboard thump, 3 rope swish. Returns audio spawn success. */
+    bool Basketball(UWorld* World, const FVector& At, int32 Kind, float ImpactSpeed);
     /** The bass's tune, attached to the fish. Returns the playing component (stop it to cut the song). */
     UAudioComponent* Song(USceneComponent* AttachTo);
 }

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-10-18T06:33:30.166612+00:00",
+  "scope": "Opt-in pond-background implementation; live native/MP checks in progress. Reactions/wakes/calls/master unfinished.",
+  "enabled_by_default": false,
+  "feature_flag": "CalderGoosePondTrial",
+  "goose_count_decision": "Owner chose6\u201312peel off on alternating V, remainder continues. Fixed seed selects8of30/22continue.",
+  "actor_model": "One existing replicated director, separate16-entry/two-cohort PondStates FastArray, original10deer entries unchanged, one nonreplicated pond ISM",
+  "deer_current_receipt": "SourceArt/CalderLandscape/phase3/deer_checkpoint.json",
+  "fab_inventory": "SourceArt/CalderLandscape/phase3/fab_wildlife_inventory_20261018.json",
+  "native_pinned_first": {
+    "report": "Saved/CalderWork/runs/codex_pond_first_native_v1_pond.json",
+    "machine_passed": true,
+    "captures_individually_inspected": 1,
+    "moving_landing_accepted": false
+  },
+  "native_fixed_poses": {
+    "report": "Saved/CalderWork/runs/codex_goose_poses_native_v3_poses.json",
+    "machine_passed": true,
+    "captures_individually_inspected": 8,
+    "art_accepted": false
+  },
+  "cycle_data": {
+    "report": "Saved/CalderWork/runs/codex_goose_cycle_data_v1_paths.json",
+    "clear": 26364,
+    "samples": 72000,
+    "duration_seconds": 3600,
+    "water_population_min": 6,
+    "water_population_max": 8,
+    "minimum_pair_separation_cm": 356.168987,
+    "position_seam_error_cm": 0,
+    "hash": "bf170b85",
+    "data_only": true
+  },
+  "rejected_native_sequences": [
+    {
+      "report": "Saved/CalderWork/runs/codex_pond_sequence_native_v1_pond.json",
+      "reason": "new visibility outside origin/pond cached box",
+      "images_inspected": 2,
+      "root_error_cm": 0
+    },
+    {
+      "report": "Saved/CalderWork/runs/codex_pond_sequence_native_v2_pond.json",
+      "reason": "start anchors missed westward curve bow",
+      "images_inspected": 2,
+      "root_error_cm": 0
+    }
+  ],
+  "bounds_fix_v3": "Opposite zero-scale hidden anchors cover full curved-approach box plus20m. Retain2Hz UpdateBounds/MarkRenderTransformDirty; one BatchUpdate(false)/changed component/frame; normal instance culling remains.",
+  "current_editor_build": {
+    "passed": true,
+    "actions": 238,
+    "seconds": 146.66,
+    "log": "Saved/CalderWork/codex_pond_sequence_editor_build_v3.log"
+  },
+  "active_native_run": null,
+  "native_sequence_accepted": true,
+  "two_peer_background_accepted": true,
+  "default_restoration_current_source_pending": false,
+  "standalone_current_source_pending": false,
+  "reactions_pending": true,
+  "wakes_pending": true,
+  "calls_pending": true,
+  "performance_pending": true,
+  "full_master_pending": true,
+  "latest_verified_immutable_recovery": "Saved/CalderWork/codex_checkpoint_pond_background_20261018_v1",
+  "recovery_covers_pond_code": true,
+  "next_recovery_target": "Saved/CalderWork/codex_checkpoint_pond_background_20261018_v1",
+  "whole_phase3_complete": false,
+  "photographic_master_accepted": false,
+  "map_saved": false,
+  "committed": false,
+  "native_sequence_acceptance_scope": "Background arrival/departure/water movement only,192069exact actual ISM roots,6\u20138water population,all8frames inspected; no reaction/audio/art/master acceptance",
+  "native_sequence_report": "Saved/CalderWork/runs/codex_pond_sequence_native_v3_pond.json",
+  "active_multiplayer_run": null,
+  "native_sequence_diagnostic_rolling_tick_max_p95_ms": 0.0998,
+  "full_performance_accepted": false,
+  "rejected_multiplayer_runs": [
+    {
+      "report": "Saved/CalderWork/runs/codex_pond_mp_native_v1/result.json",
+      "terrain_and_habitat_hashes_match": true,
+      "deer_states": 10,
+      "pond_states": 16,
+      "native_client_root_samples": 1465,
+      "maximum_client_error_cm": 246.063413,
+      "unchanged_limit_cm": 120,
+      "cause": "Client averaged GameState clock lagged authority by about0.1628s when first incoming bird became visible."
+    }
+  ],
+  "clock_fix_candidate": "Natural pond phase changes at10Hz authority checks update only changed FastArray records,carrying fresh server timestamps. Client anchors only ambient cycle to these events; no idle heartbeat,deer reaction clock/engine/player/protected files unchanged. Native MP rerun required.",
+  "current_clock_editor_build": "Saved/CalderWork/codex_pond_clock_editor_build_v1.log",
+  "queued_after_wildlife": "SourceArt/CalderLandscape/phase3/after_wildlife_night_request.json",
+  "two_peer_background_acceptance_scope": "Normal real lobby,16replicated geese plus10deer,37927hostactualroot/10505clientactualroot comparisons;client worst same-wall error32.6595cm under unchanged120cm;bothnativeimages inspected;reactions/audio/normal30min/fullroster separate",
+  "two_peer_report": "Saved/CalderWork/runs/codex_pond_mp_native_v2/result.json",
+  "two_peer_seconds": 189.33,
+  "clock_editor_build_v2_passed": true,
+  "active_default_restoration_run": null,
+  "native_sequence_carryforward_scope_audit": "SourceArt/CalderLandscape/phase3/pond_render_carryforward.json",
+  "default_restoration_passed": true,
+  "default_restoration_report": "Saved/CalderWork/runs/codex_pond_background_default_v1_default.json",
+  "default_nine_captures_inspected": true,
+  "current_standalone_build": "Saved/CalderWork/codex_pond_background_game_build_v1.log",
+  "standalone_compile_passed": true,
+  "standalone_compile_actions": 240,
+  "standalone_compile_seconds": 134.44,
+  "strict_signature_passed": true,
+  "strict_signature_report": "Saved/CalderWork/codex_pond_background_game_signature_v1.json",
+  "standalone_gameplay_claimed": false,
+  "scope_guard_passed": true,
+  "recovery_export_next": false,
+  "recovery_verified": {
+    "text": 268,
+    "owned_binary": 97,
+    "evidence": 5141
+  }
+}

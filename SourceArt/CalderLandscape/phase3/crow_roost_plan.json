@@ -1,0 +1,124 @@
+{
+  "stage": "Independent crow roost path data before renderer/audio integration",
+  "stable_verified_recovery": "Saved/CalderWork/codex_checkpoint_goose_honk_20261018_v1",
+  "protected": [
+    "tower twelve crows and their actors/models",
+    "all tree instance transforms and improved models",
+    "terrain72564759",
+    "existing goose/pond/shore paths and hashes",
+    "original seven PCM buffers and revised honk",
+    "map, Config, original master and canonical MP tool"
+  ],
+  "requirements": {
+    "group_size": [
+      3,
+      15
+    ],
+    "interval_seconds": 150,
+    "flow": "Across valley into actual existing north-woods evergreen canopy",
+    "period_seconds": 1800,
+    "local": true,
+    "physics_queries_runtime": 0,
+    "render_pool_reuse": "existing crow ISM/15 slots; no animal actors or skeletons"
+  },
+  "habitat_note": "Actual north-woods components are named ExteriorWoodsPassHemlock0/1 (31 improved Conifer-family trees in last native log). Use exact existing transforms and canopy bounds. Do not call those assets verified pine species or edit vegetation for this path stage. Original pine-specific habitat acceptance remains a documented limitation.",
+  "implementation": [
+    "Gather actual mature conifer ISM transforms and mesh bounds, sort deterministically north-first. Validate at least15 distinct endpoints away from solid trunks and inside canopy bounds.",
+    "Build15 independent densely sampled arrival curves. Reuse existing sky analytic ground and solid clearance APIs; preserve base sky/GoosePlan hash and use a separate roost hash.",
+    "Require all points and swept segments clear; sample motion, pair separation, cadence and 1800-second wrap. Record tree identity, routes and failures.",
+    "Only after path-data proof integrate opt-in crow renderer and actual submitted-root/bounds/motion checks, then caw/raven audio through existing pools."
+  ],
+  "acceptance_for_this_stage": [
+    "Actual native world tree census saved",
+    "15 distinct validated endpoints",
+    "No analytic ground or solid penetration in dense samples/sweeps",
+    "Group3..15,interval150s,all flights finish before next group",
+    "No pair overlap and no active wrap seam jump",
+    "Base sky hash74bb095c/terrain72564759 unchanged"
+  ],
+  "not_accepted": [
+    "ambient crow rendering",
+    "caws or raven croaks",
+    "pine-specific habitat taxonomy",
+    "normal30minute/fullperformance/master"
+  ],
+  "implementation_status": "Independent path data and opt-in crow renderer functional checks PASS; eight images inspected with limits. Standalone compile/strict signing/scope pass. Recovery export/check/archive now; no whole-master/default promotion claim.",
+  "data_review_tool": "Tools/calder/review_crow_roost.py",
+  "build_log": "Saved/CalderWork/codex_crow_roost_editor_build_v2.log",
+  "native_data_v1": {
+    "receipt": "Saved/CalderWork/runs/codex_crow_roost_data_v1_crow_paths.json",
+    "result": "PASS scope=crowRoostDataOnly trees=31 targets=15 routeSamples=266290 candidateRejects=0 clockSamples=72000 failures=0 groupMin=3 groupMax=15 minimumPairCm=1145.225062 maximumGroupSeconds=92.861626 launchSpacingSeconds=1.000 wrapSeamCm=0.000000 hash=b7ca5f24 baseSky=74bb095c terrain=72564759 physicsQueries=0 actualExistingTreeBounds=1 pineTaxonomyVerified=0 renderAccepted=0 callsAccepted=0 wholePhase3Complete=0 buildReviewMs=479.84",
+    "seconds": 40.23,
+    "tree_count": 31,
+    "targets": 15,
+    "clearance_samples": 266290,
+    "clock_samples": 72000,
+    "simulated_seconds": 3600,
+    "failures": 0,
+    "minimum_pair_cm": 1145.225062,
+    "max_group_seconds": 92.861626,
+    "hash": "b7ca5f24",
+    "base_sky_hash": "74bb095c",
+    "terrain_hash": "72564759",
+    "editor_build_seconds": 144.86
+  },
+  "render_review_tool": "Tools/calder/review_crow_roost_render.py",
+  "native_render_v1": {
+    "receipt": "Saved/CalderWork/runs/codex_crow_roost_render_v1_crow_render.json",
+    "result": "PASS scope=explicitNativeCrowRoostRender captures=8 compared=732 crossingVisible=416 roostVisible=316 hiddenAfter=147 worstRootCm=0.000000 hash=b7ca5f24 baseSky=74bb095c physicalEyeCm=170 actualInstances=17 hiddenBoundsAnchors=2 noPerBirdActors=1 callsAccepted=0 normalCadenceAccepted=0 pineTaxonomyVerified=0 wholePhase3Complete=0 reason=actual flight/reentry/roost-hide/bounds proof; inspect images",
+    "seconds": 76.35,
+    "editor_build_seconds": 147.59,
+    "compared_roots": 732,
+    "maximum_root_error_cm": 0,
+    "crossing_visible_samples": 416,
+    "roost_visible_samples": 316,
+    "hidden_after_samples": 147,
+    "all_eight_images_individually_inspected": true,
+    "images": [
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_0_0.png",
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_0_1.png",
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_0_2.png",
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_0_3.png",
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_1_0.png",
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_1_1.png",
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_1_2.png",
+      "Saved/CalderWork/runs/codex_crow_roost_render_v1/Saved/CalderCrowRenderReview/detail_crow_roost_1_3.png"
+    ],
+    "visual_limits": "Crossing silhouettes are small. Final approach is foliage-occluded after the first roost image; no close photographic or physical perch acceptance. Crows enter existing evergreen bounds and hide; no perch pose was implemented.",
+    "tick_p95_ms": {
+      "crow_crossing": 0.0301,
+      "crow_roost_entry": 0.111
+    },
+    "actual_ism_instances": 17,
+    "permanently_hidden_bounds_anchors": 2,
+    "max_draw_birds": 15,
+    "extra_wildlife_components": 0,
+    "normal_cadence_accepted": false,
+    "audio_accepted": false
+  },
+  "next": "Finish standalone/sign/scope/recovery, then crow caws/raven work and normal-cadence/final visual checks. Remaining squirrel/turkey/full roster/night stages stay open.",
+  "standalone_compile": {
+    "passed": true,
+    "actions": 253,
+    "seconds": 135.67,
+    "log": "Saved/CalderWork/codex_crow_roost_game_build_v1.log",
+    "generated_app_finder_info_removals": 494,
+    "standalone_gameplay_claimed": false
+  },
+  "strict_signature": {
+    "passed": true,
+    "exit_code": 0,
+    "finder_info_removals": 8,
+    "guard": "Generated app root FinderInfo only, cleared before and during verification",
+    "bundle": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Binaries/Mac/SeniorSendoff.app",
+    "log": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/codex_crow_roost_game_signature_v1.log",
+    "standalone_gameplay_claimed": false
+  },
+  "scope_guard_passed": true,
+  "source_config_matches_final_native_render": {
+    "passed": true,
+    "files": 417
+  },
+  "recovery_receipt": "Saved/CalderWork/codex_checkpoint_crow_roost_20261018_v1/recovery_receipt.json",
+  "recovery_rule": "Require receipt present passed=true; otherwise prior verified honk300/98/6094 is fallback."
+}

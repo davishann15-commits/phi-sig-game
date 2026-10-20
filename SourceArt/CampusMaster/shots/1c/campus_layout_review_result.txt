@@ -1,0 +1,1 @@
+PASS buildings=16 entrances=25 entrancesOffNetwork=0 overlaps=0 lots=3 lotsWithoutRoad=0 roads=15 deadEnds=0 pedestrianCells=64533 networks=1 walkOnLaneCells=0 floorSamples=2325 floorMisses=0 walkObstructions=0 campusTrees=96 treesInBuildingsOrLanes=0 campusPoles=15 polesInBuildingsOrLanes=0 lampsInBuildingsOrLanes=0 exteriorLights=53

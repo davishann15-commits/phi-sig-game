@@ -1,0 +1,409 @@
+[
+  {
+    "actor": "OriginalDoor_Basement_m1_m1_Solid_01",
+    "component": "OriginalDoorLeaf",
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+    "hinge": [
+      -1366.2,
+      -393.03000000000003,
+      -353.1
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -1550.0842813972745,
+        -576.7799071072305,
+        -362.9010644531251
+      ],
+      [
+        -1332.8132781537179,
+        -379.71876207528055,
+        -125.58916152954102
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 431.22009289276946,
+    "disjoint": true
+  },
+  {
+    "actor": "OriginalDoor_Entrance_m1_m1_Solid_01",
+    "component": "OriginalDoorLeaf",
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+    "hinge": [
+      -1455.3000000000002,
+      -875.6,
+      8.8
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -1641.6471323823457,
+        -899.0822116813611,
+        -4.235083923339838
+      ],
+      [
+        -1449.558106617206,
+        -689.2512951475286,
+        254.5068872070313
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 108.91778831863894,
+    "disjoint": true
+  },
+  {
+    "actor": "OriginalDoor_Entrance_m1_m1_Solid_01",
+    "component": "AddedDoorHandle",
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+    "hinge": [
+      -1455.3000000000002,
+      -875.6,
+      8.8
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -1633.8009784672813,
+        -886.6660336285137,
+        105.48999003410343
+      ],
+      [
+        -1444.1460336272526,
+        -697.0949333850639,
+        123.85999213218693
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 121.33396637148633,
+    "disjoint": true
+  },
+  {
+    "actor": "OriginalDoor_Upper_m1_m1_Solid_01",
+    "component": "OriginalDoorLeaf",
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+    "hinge": [
+      -1423.6200000000001,
+      -856.35,
+      338.25
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -1615.0397547238988,
+        -866.5249999999997,
+        338.2500000537642
+      ],
+      [
+        -1413.445,
+        -664.9302452761012,
+        564.850016784668
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 141.47500000000025,
+    "disjoint": true
+  },
+  {
+    "actor": "OriginalDoor_Upper_m1_m1_Solid_01",
+    "component": "MovingPanelCollision",
+    "collision": "<CollisionEnabled.QUERY_ONLY: 1>",
+    "hinge": [
+      -1423.6200000000001,
+      -856.35,
+      338.25
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -1615.044780005098,
+        -859.43,
+        338.25
+      ],
+      [
+        -1420.5400000000002,
+        -664.9252199949024,
+        564.85
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 148.57000000000005,
+    "disjoint": true
+  },
+  {
+    "actor": "HallEnd_West",
+    "component": "OriginalDoorLeaf",
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+    "hinge": [
+      -2568.3160800000005,
+      -1458.6000000000001,
+      332.53000000000003
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -2747.807614204442,
+        -1477.8057142470482,
+        332.5298522949219
+      ],
+      [
+        -2549.109988623989,
+        -1279.1084648245478,
+        563.529852294922
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 1059.109988623989,
+    "disjoint": true
+  },
+  {
+    "actor": "HallEnd_West",
+    "component": "MovingPanelCollision",
+    "collision": "<CollisionEnabled.QUERY_ONLY: 1>",
+    "hinge": [
+      -2568.3160800000005,
+      -1458.6000000000001,
+      332.53000000000003
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -2746.6114217787467,
+        -1464.43,
+        332.53000000000003
+      ],
+      [
+        -2562.4860800000006,
+        -1280.3046582212537,
+        563.5300000000001
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 1072.4860800000006,
+    "disjoint": true
+  },
+  {
+    "actor": "HallEnd_End",
+    "component": "OriginalDoorLeaf",
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+    "hinge": [
+      -2305.6000000000004,
+      -1524.8667500000001,
+      332.53000000000003
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -2485.0916217657677,
+        -1704.3583750184027,
+        332.5298522949219
+      ],
+      [
+        -2286.393809946934,
+        -1505.6610135804005,
+        563.529852294922
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 796.3938099469342,
+    "disjoint": true
+  },
+  {
+    "actor": "HallEnd_End",
+    "component": "MovingPanelCollision",
+    "collision": "<CollisionEnabled.QUERY_ONLY: 1>",
+    "hinge": [
+      -2305.6000000000004,
+      -1524.8667500000001,
+      332.53000000000003
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -2483.8953417787466,
+        -1703.1620917787466,
+        332.53000000000003
+      ],
+      [
+        -2299.7700000000004,
+        -1519.0367500000002,
+        563.5300000000001
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 809.7700000000004,
+    "disjoint": true
+  },
+  {
+    "actor": "HallEnd_East",
+    "component": "OriginalDoorLeaf",
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>",
+    "hinge": [
+      -2228.35019,
+      -1296.9,
+      332.53000000000003
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -2247.5561416319692,
+        -1476.3917431547318,
+        332.5298522949219
+      ],
+      [
+        -2048.858445812393,
+        -1277.6939043096972,
+        563.529852294922
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 558.8584458123928,
+    "disjoint": true
+  },
+  {
+    "actor": "HallEnd_East",
+    "component": "MovingPanelCollision",
+    "collision": "<CollisionEnabled.QUERY_ONLY: 1>",
+    "hinge": [
+      -2228.35019,
+      -1296.9,
+      332.53000000000003
+    ],
+    "angular_range_degrees": 90.0,
+    "continuous_swept_bounds": [
+      [
+        -2234.18019,
+        -1475.1953417787463,
+        332.53000000000003
+      ],
+      [
+        -2050.054848221254,
+        -1291.0700000000002,
+        563.5300000000001
+      ]
+    ],
+    "candidate_box": [
+      [
+        -1490,
+        -1521.02675,
+        -10
+      ],
+      [
+        -838,
+        -1008,
+        640.3
+      ]
+    ],
+    "separating_axis_clearance_cm": 560.0548482212539,
+    "disjoint": true
+  }
+]

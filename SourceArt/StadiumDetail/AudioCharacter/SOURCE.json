@@ -1,0 +1,113 @@
+{
+  "name": "Virtuosity Drums acoustic snare center hits",
+  "producer": "Versilian Studios LLC and Karoryfer Samples",
+  "performer": "Austin McMahon",
+  "license": "CC0 1.0",
+  "primary_producer_url": "https://versilian-studios.com/virtuosity-drums/",
+  "repository": "https://github.com/sfzinstruments/virtuosity_drums",
+  "repository_tree_sha": "9f04cf9a734527edfbb0a4eee1f674e45bbf71bc",
+  "license_url": "https://github.com/sfzinstruments/virtuosity_drums/blob/master/LICENSE",
+  "license_local_sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+  "source_files": [
+    {
+      "local": "SourceArt/StadiumDetail/AudioCharacter/snare_center_vl11.flac",
+      "repo_path": "Samples/snaremic/snare/snaremic_snare_center_vl11.flac",
+      "git_blob_sha": "60a203c837e20638695af080c45dbcd959e7e216",
+      "sha256": "b6a3802b838c0c779e03066e0b6448c3cf7b6c490db1fa03a0878543878db848"
+    },
+    {
+      "local": "SourceArt/StadiumDetail/AudioCharacter/snare_center_vl13.flac",
+      "repo_path": "Samples/snaremic/snare/snaremic_snare_center_vl13.flac",
+      "git_blob_sha": "f1670d2ce4785eb4b69cfc78cb69f6028ad4f934",
+      "sha256": "c114876e77aebb86e38898b7dc55b8a670d4f60943c15e44ac41d979ba21124b"
+    },
+    {
+      "local": "SourceArt/StadiumDetail/AudioCharacter/snare_center_vl22.flac",
+      "repo_path": "Samples/snaremic/snare/snaremic_snare_center_vl22.flac",
+      "git_blob_sha": "f0c333139810e70b6f768cfbbea546c24ddc7f7f",
+      "sha256": "f7232a78d57f03a603f219518ba7a5921fb3f15fa2eb2f0a4048b4e98396ec37"
+    },
+    {
+      "local": "SourceArt/StadiumDetail/AudioCharacter/snare_center_vl24.flac",
+      "repo_path": "Samples/snaremic/snare/snaremic_snare_center_vl24.flac",
+      "git_blob_sha": "034623f7e30d542e510b0a6afdef7aba9c16e34b",
+      "sha256": "dba6bb99b96907a681bdc85e86d2d3651c4294d8a22700cfdaa4832937428c2f"
+    },
+    {
+      "local": "SourceArt/StadiumDetail/AudioCharacter/snare_center_vl31.flac",
+      "repo_path": "Samples/snaremic/snare/snaremic_snare_center_vl31.flac",
+      "git_blob_sha": "745fae014bbecc415b5e0c1689330b7ae80371a9",
+      "sha256": "047cfaff61ca9268aca82abcd5a5c8a9733003720fef41744a9e5dbc4dfdc92c"
+    },
+    {
+      "local": "SourceArt/StadiumDetail/AudioCharacter/snare_center_vl33.flac",
+      "repo_path": "Samples/snaremic/snare/snaremic_snare_center_vl33.flac",
+      "git_blob_sha": "70e8cd9d533494c7558fc87d162f164de344a068",
+      "sha256": "ae7a11680bdd83abe3470ff67004c14f95c7ad03eca465113f10ef1495e5f89a"
+    }
+  ],
+  "scope": "Six exact CC0 acoustic snare source hits;450ms/16kHz/mono16-bit prepared PCM embedded in owned runtime code. No Content audio import or new dependency. Source provenance is independent of native/subjective acceptance, which is recorded separately in actual test receipts and STATUS.md.",
+  "prepared_pcm": [
+    {
+      "source_level": 11,
+      "source_skip_samples_at16k": 74,
+      "seconds": 0.45,
+      "rate": 16000,
+      "channels": 1,
+      "pcm_sha256": "80aac24f84c63dcceacc7deeb104ce5deaec3348e0572806a95a6141d144236f",
+      "zlib_bytes": 8525,
+      "source": "Real acoustic recording; trimmed/padded to450ms with20ms tail fade; individual peak scaled .90 before cadence velocity is applied."
+    },
+    {
+      "source_level": 13,
+      "source_skip_samples_at16k": 82,
+      "seconds": 0.45,
+      "rate": 16000,
+      "channels": 1,
+      "pcm_sha256": "b82a6f9896171f836fb675cfb59c2358a63e44e6d2a065bae5bcc8be28282679",
+      "zlib_bytes": 8738,
+      "source": "Real acoustic recording; trimmed/padded to450ms with20ms tail fade; individual peak scaled .90 before cadence velocity is applied."
+    },
+    {
+      "source_level": 22,
+      "source_skip_samples_at16k": 84,
+      "seconds": 0.45,
+      "rate": 16000,
+      "channels": 1,
+      "pcm_sha256": "f1d0e72acd14d273c278d0c1bf06f63910b202d641664df249b6670e50aa0046",
+      "zlib_bytes": 9692,
+      "source": "Real acoustic recording; trimmed/padded to450ms with20ms tail fade; individual peak scaled .90 before cadence velocity is applied."
+    },
+    {
+      "source_level": 24,
+      "source_skip_samples_at16k": 84,
+      "seconds": 0.45,
+      "rate": 16000,
+      "channels": 1,
+      "pcm_sha256": "49079be441a0cdeda04166606168f6812f0718dbb3f56fb92796650b718db16d",
+      "zlib_bytes": 10441,
+      "source": "Real acoustic recording; trimmed/padded to450ms with20ms tail fade; individual peak scaled .90 before cadence velocity is applied."
+    },
+    {
+      "source_level": 31,
+      "source_skip_samples_at16k": 76,
+      "seconds": 0.45,
+      "rate": 16000,
+      "channels": 1,
+      "pcm_sha256": "4458dec606faa72d3a52a2750f89a1d31326f42f050e87e80f427bd94bad8667",
+      "zlib_bytes": 11027,
+      "source": "Real acoustic recording; trimmed/padded to450ms with20ms tail fade; individual peak scaled .90 before cadence velocity is applied."
+    },
+    {
+      "source_level": 33,
+      "source_skip_samples_at16k": 81,
+      "seconds": 0.45,
+      "rate": 16000,
+      "channels": 1,
+      "pcm_sha256": "50bcdd846749d0037acdce8c7ce2b060515cdcf83eb8f9fb82947190de88cdfd",
+      "zlib_bytes": 10878,
+      "source": "Real acoustic recording; trimmed/padded to450ms with20ms tail fade; individual peak scaled .90 before cadence velocity is applied."
+    }
+  ],
+  "owner_direction": "Creepier and more natural rhythm; sparse96bpm prototype accepted."
+}

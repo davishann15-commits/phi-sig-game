@@ -1,3 +1,4 @@
+#include "HouseFraternityRow.h"
 #include "HouseCarryTiersReview.h"
 #if !UE_BUILD_SHIPPING
 #include "StoryCampaign.h"
@@ -82,7 +83,8 @@ void TickHouseExteriorWalkReview(AStoryFirstPersonCharacter* Pawn)
         for(float Y:{-3000.f,-3500.f,HouseExteriorSite::FrontSidewalkInnerY+20})if(!Surface(-36.65,Y,-57,TEXT("EX_WalkConcrete")))return;
         if(!Surface(800,HouseExteriorSite::FrontSidewalkInnerY-125,-57,TEXT("EX_Concrete")))return;
         for(float X:{-2000.f,0.f,2500.f})if(!Surface(X,HouseExteriorSite::FrontRoadNearY-200,-72,TEXT("EX_Asphalt")))return;
-        for(float X:{-5500.f,3750.f})if(!Surface(X,-3700,-58,TEXT("EX_Asphalt")))return;
+        if(!Surface(-5500,-3700,HouseFraternityRow::Enabled()?-60.f:-58.f,HouseFraternityRow::Enabled()?TEXT("EX_Grass"):TEXT("EX_Asphalt")))return;
+        if(!Surface(3750,-3700,-58,TEXT("EX_Asphalt")))return;
         Note(FString::Printf(TEXT("Street set back %.0f world cm; continuous concrete approach, displaced sidewalk/asphalt and both driveway extensions verified"),HouseExteriorSite::FrontStreetSetback));
         for(float X:{3398.f,3445.f,3490.f,3530.f})
         {

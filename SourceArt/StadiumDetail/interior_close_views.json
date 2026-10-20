@@ -1,0 +1,53 @@
+{
+  "introduced_stage": 6,
+  "installed": false,
+  "added_comment": "Interior detail:170cm eyes on the existing locker-room floor, with all prior poses retained.",
+  "views": [
+    {
+      "name": "detail_stadium_trainer",
+      "eye": [
+        5157.36,
+        -10960.19,
+        115
+      ],
+      "target": [
+        5250.121,
+        -10842.311,
+        25
+      ],
+      "floor_z": -55,
+      "fov": 75
+    },
+    {
+      "name": "detail_stadium_whirlpool",
+      "eye": [
+        4885.697,
+        -10601.548,
+        115
+      ],
+      "target": [
+        5025.967,
+        -10697.592,
+        0
+      ],
+      "floor_z": -55,
+      "fov": 75
+    },
+    {
+      "name": "detail_stadium_wood_lockers",
+      "eye": [
+        4769.615,
+        -10596.971,
+        115
+      ],
+      "target": [
+        4838.112,
+        -10432.246,
+        113
+      ],
+      "floor_z": -55,
+      "fov": 75
+    }
+  ],
+  "scope": "Prepared only. Actualfloor/capsuleprobes required after5accepted->6, along with actualdark/duskroomlightingtours. Fullfixednightroomshotscannotreplacepooledlighttour. Addallthreepermanentposesafterprior31andincludeeveryviewinsixproductiontimingruns; stage6NAMES34, final7programview35. No originalroute/camera changed."
+}

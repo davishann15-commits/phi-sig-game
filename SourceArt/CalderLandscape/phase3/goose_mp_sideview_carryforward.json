@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "prior_report": "Saved/CalderWork/runs/codex_goose_reaction_mp_native_v2/result.json",
+  "changed_source_only": [
+    "Source/SeniorSendoff/HouseCalderWildlifeGooseReactionNetworkReview.cpp"
+  ],
+  "unchanged_source_config_count": 405,
+  "runtime_byte_identical": true,
+  "change": "Physical side observer eye only to avoid host-body visual occlusion",
+  "old_eye_review_visuals_limited": true,
+  "new_native_retry_pending": true
+}

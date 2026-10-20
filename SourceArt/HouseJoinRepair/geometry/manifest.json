@@ -1,0 +1,217 @@
+{
+  "assets": [
+    {
+      "name": "SM_HJ_EntranceStairAligned",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseJoinRepair/geometry/models/SM_HJ_EntranceStairAligned.fbx",
+      "target_actor": "SM_Entrance_p0_m2_Solid",
+      "collision": false,
+      "materials": [
+        "MI_SSO_MetalBrass",
+        "MI_SSO_MetalDark",
+        "MI_SSO_S03FidelityBathPaint",
+        "MI_SSO_S03FidelityPartitionBrown",
+        "MI_SSO_S03FidelityChrome",
+        "MI_SSO_PaintGrey",
+        "MI_SSO_S03FidelityPlasticBlack",
+        "MI_SSO_S03BathFloor",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_S03MasonryCream",
+        "MI_SSO_Concrete",
+        "MI_SSO_S03StairTreadSteel",
+        "MI_SSO_S03HallGrey",
+        "MI_SSO_S03MasonryCream_15",
+        "MI_SSO_S03HallSkirting",
+        "MI_SSO_S03WallGrey",
+        "HFP_BathCoating",
+        "HFP_LandingCoating",
+        "HFP_StairPaint"
+      ]
+    },
+    {
+      "name": "SM_HJ_UpperStairAligned",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseJoinRepair/geometry/models/SM_HJ_UpperStairAligned.fbx",
+      "target_actor": "SM_Upper_p0_m2_Solid",
+      "collision": false,
+      "materials": [
+        "MI_SSO_PaintWhite.001",
+        "MI_SSO_MetalDark.001",
+        "MI_SSO_S03MasonryCream.001",
+        "MI_SSO_LightWarm",
+        "MI_SSO_Concrete.001",
+        "MI_SSO_S03StairTreadSteel.001",
+        "MI_SSO_S05BathBlue",
+        "MI_SSO_MetalBrass.001",
+        "MI_SSO_Ceiling",
+        "MI_SSO_S05Ceiling",
+        "MI_SSO_S05HallGrey",
+        "MI_SSO_S03MasonryCream_19",
+        "MI_SSO_S05SouthHallPaint",
+        "MI_SSO_S05SouthHallBaseboard",
+        "MI_SSO_S05FireRed",
+        "MI_SSO_FloorWood",
+        "MI_SSO_S05SouthHallFloor",
+        "Bedroom_PerwinklePaint",
+        "Bedroom_CharcoalSkirting",
+        "Bedroom_CreamCeiling",
+        "HFP_LandingCoating.001",
+        "HFP_HallCoating",
+        "HFP_StairPaint.001"
+      ]
+    },
+    {
+      "name": "SM_HJ_StairDoorThresholds",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseJoinRepair/geometry/models/SM_HJ_StairDoorThresholds.fbx",
+      "target_actor": null,
+      "collision": true,
+      "materials": [
+        "HJ_HallCoating"
+      ]
+    },
+    {
+      "name": "SM_HJ_GalleryBannerBrackets",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/HouseJoinRepair/geometry/models/SM_HJ_GalleryBannerBrackets.fbx",
+      "target_actor": null,
+      "collision": false,
+      "materials": [
+        "HJ_Bracket"
+      ]
+    }
+  ],
+  "materials": {
+    "MI_SSO_MetalBrass": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass"
+    },
+    "MI_SSO_MetalDark": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark"
+    },
+    "MI_SSO_S03FidelityBathPaint": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityBathPaint"
+    },
+    "MI_SSO_S03FidelityPartitionBrown": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityPartitionBrown"
+    },
+    "MI_SSO_S03FidelityChrome": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityChrome"
+    },
+    "MI_SSO_PaintGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintGrey"
+    },
+    "MI_SSO_S03FidelityPlasticBlack": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03FidelityPlasticBlack"
+    },
+    "MI_SSO_S03BathFloor": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03BathFloor"
+    },
+    "MI_SSO_PaintWhite": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "MI_SSO_S03MasonryCream": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream"
+    },
+    "MI_SSO_Concrete": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete"
+    },
+    "MI_SSO_S03StairTreadSteel": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03StairTreadSteel"
+    },
+    "MI_SSO_S03HallGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03HallGrey"
+    },
+    "MI_SSO_S03HallSkirting": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03HallSkirting"
+    },
+    "MI_SSO_S03WallGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03WallGrey"
+    },
+    "MI_SSO_S03MasonryCream_15": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream"
+    },
+    "HFP_BathCoating": {
+      "reuse_asset": "/Game/SeniorSendOff/House/HallFloorsPorch/HFP_BathCoating"
+    },
+    "HFP_LandingCoating": {
+      "reuse_asset": "/Game/SeniorSendOff/House/HallFloorsPorch/HFP_LandingCoating"
+    },
+    "HFP_StairPaint": {
+      "reuse_asset": "/Game/SeniorSendOff/House/HallFloorsPorch/HFP_StairPaint"
+    },
+    "MI_SSO_PaintWhite.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "MI_SSO_MetalDark.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark"
+    },
+    "MI_SSO_S03MasonryCream.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream"
+    },
+    "MI_SSO_LightWarm": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_LightWarm"
+    },
+    "MI_SSO_Concrete.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Concrete"
+    },
+    "MI_SSO_S03StairTreadSteel.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03StairTreadSteel"
+    },
+    "MI_SSO_S05BathBlue": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05BathBlue"
+    },
+    "MI_SSO_MetalBrass.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalBrass"
+    },
+    "MI_SSO_Ceiling": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling"
+    },
+    "MI_SSO_S05Ceiling": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05Ceiling"
+    },
+    "MI_SSO_S05HallGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05HallGrey"
+    },
+    "MI_SSO_S05SouthHallPaint": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05SouthHallPaint"
+    },
+    "MI_SSO_S05SouthHallBaseboard": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05SouthHallBaseboard"
+    },
+    "MI_SSO_S05FireRed": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05FireRed"
+    },
+    "MI_SSO_FloorWood": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood"
+    },
+    "MI_SSO_S05SouthHallFloor": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05SouthHallFloor"
+    },
+    "Bedroom_PerwinklePaint": {
+      "reuse_asset": "/Game/SeniorSendOff/House/AcrossPosterBedroom/Bedroom_PerwinklePaint"
+    },
+    "Bedroom_CharcoalSkirting": {
+      "reuse_asset": "/Game/SeniorSendOff/House/AcrossPosterBedroom/Bedroom_CharcoalSkirting"
+    },
+    "Bedroom_CreamCeiling": {
+      "reuse_asset": "/Game/SeniorSendOff/House/AcrossPosterBedroom/Bedroom_CreamCeiling"
+    },
+    "MI_SSO_S03MasonryCream_19": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03MasonryCream"
+    },
+    "HFP_LandingCoating.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/HallFloorsPorch/HFP_LandingCoating"
+    },
+    "HFP_HallCoating": {
+      "reuse_asset": "/Game/SeniorSendOff/House/HallFloorsPorch/HFP_HallCoating"
+    },
+    "HFP_StairPaint.001": {
+      "reuse_asset": "/Game/SeniorSendOff/House/HallFloorsPorch/HFP_StairPaint"
+    },
+    "HJ_HallCoating": {
+      "reuse_asset": "/Game/SeniorSendOff/House/HallFloorsPorch/HFP_HallCoating"
+    },
+    "HJ_Bracket": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_MetalDark"
+    }
+  },
+  "notes": [
+    "Local staircase facing, floor thresholds, and banner brackets only."
+  ]
+}

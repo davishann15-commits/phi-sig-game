@@ -1,0 +1,9 @@
+{
+  "build_succeeded": true,
+  "normal_signing_kept_enabled": true,
+  "guarded_signature_verify_exit": 0,
+  "FinderInfo_removals_during_verification": 7,
+  "direct_verify_failed_after_icloud_reattached_FinderInfo": true,
+  "changed_metadata_only": "com.apple.FinderInfo on generated Binaries/Mac/SeniorSendoff.app root",
+  "standalone_gameplay_verified": false
+}

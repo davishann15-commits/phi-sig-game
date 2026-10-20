@@ -111,7 +111,7 @@ void SfxKnock(FSfxBuf& B, FRandomStream& R, EHouseSurface Surface, float Amp, fl
     }
 }
 
-enum class ESfxKind : uint8 { Impact, Crack, Break, Pickup, SetDown, Throw, Switch, Pull, Button, Song };
+enum class ESfxKind : uint8 { Impact, Crack, Break, Pickup, SetDown, Throw, Switch, Pull, Button, Song, BallBounce, RimClank, BoardThump, NetSwish };
 
 uint32 SfxKey(ESfxKind Kind, EHouseSurface Surface, int32 Variant, int32 SizeBucket)
 {
@@ -130,6 +130,32 @@ const TArray<int16>& SfxPcm(ESfxKind Kind, EHouseSurface Surface, int32 Variant,
     FSfxBuf B(.1f);
     switch (Kind)
     {
+    case ESfxKind::BallBounce:
+        B = FSfxBuf(.34f);
+        B.Sine(R.FRandRange(82, 98), .75f, 28);
+        B.Sine(R.FRandRange(170, 205), .30f, 48);
+        B.Noise(R, .55f, 165, 3000); B.Noise(R, .15f, 40, 650, .008f);
+        Gain = .85f; break;
+    case ESfxKind::RimClank:
+        B = FSfxBuf(.65f);
+        // Rubber's short low thump, followed by inharmonic steel resonances.
+        B.Sine(R.FRandRange(105, 125), .55f, 44);
+        B.Noise(R, .80f, 220, 5800);
+        B.Sine(R.FRandRange(470, 510), .34f, 11);
+        B.Sine(R.FRandRange(1090, 1150), .23f, 14);
+        B.Sine(R.FRandRange(1870, 1980), .14f, 20);
+        B.Noise(R, .10f, 38, 1900, .024f); Gain = .9f; break;
+    case ESfxKind::BoardThump:
+        B = FSfxBuf(.42f);
+        B.Sine(R.FRandRange(69, 82), .8f, 23);
+        B.Sine(R.FRandRange(185, 225), .32f, 36);
+        B.Noise(R, .65f, 145, 2800);
+        B.Sine(R.FRandRange(620, 750), .1f, 27); break;
+    case ESfxKind::NetSwish:
+        B = FSfxBuf(.4f);
+        B.Noise(R, .62f, 17, 4800, 0, .028f);
+        B.Noise(R, .33f, 33, 2500, .045f, .012f);
+        B.Noise(R, .12f, 60, 6500, .09f); Gain = .72f; break;
     case ESfxKind::Impact:
         B = FSfxBuf(Surface == EHouseSurface::Metal ? .8f : .4f);
         SfxKnock(B, R, Surface, 1.f, 0.f, Size);
@@ -239,13 +265,13 @@ USoundWaveProcedural* SfxWave(const TArray<int16>& Pcm)
 }
 
 /** Plays one cached clip at a location. Cheap global rate limit so a pile-up never floods the mixer. */
-void SfxPlay(UWorld* World, const TArray<int16>& Pcm, const FVector& At, float Volume, float Pitch, float Inner, float Falloff)
+bool SfxPlay(UWorld* World, const TArray<int16>& Pcm, const FVector& At, float Volume, float Pitch, float Inner, float Falloff)
 {
-    if (!World || World->GetNetMode() == NM_DedicatedServer || Pcm.Num() == 0 || Volume <= .01f) return;
+    if (!World || World->GetNetMode() == NM_DedicatedServer || Pcm.Num() == 0 || Volume <= .01f) return false;
     static double Window = 0.0; static int32 InWindow = 0;
     const double Now = FPlatformTime::Seconds();
     if (Now - Window > .25) { Window = Now; InWindow = 0; }
-    if (++InWindow > 6) return;
+    if (++InWindow > 6) return false;
     UAudioComponent* Comp = UGameplayStatics::SpawnSoundAtLocation(World, SfxWave(Pcm), At, FRotator::ZeroRotator,
         FMath::Clamp(Volume, 0.f, 1.5f), Pitch, 0.f, SfxAttenuation(Inner, Falloff), nullptr, true);
     if (Comp)
@@ -256,6 +282,7 @@ void SfxPlay(UWorld* World, const TArray<int16>& Pcm, const FVector& At, float V
         TWeakObjectPtr<UAudioComponent> Weak(Comp);
         World->GetTimerManager().SetTimer(Handle, FTimerDelegate::CreateLambda([Weak] { if (UAudioComponent* C = Weak.Get()) { C->Stop(); C->DestroyComponent(); } }), Length, false);
     }
+    return Comp != nullptr;
 }
 
 int32 SfxSizeBucket(float MassKg) { return MassKg < 3.f ? 0 : (MassKg < 12.f ? 1 : (MassKg < 40.f ? 2 : 3)); }
@@ -307,6 +334,15 @@ void HouseSfx::Click(UWorld* World, const FVector& At, int32 Kind)
 {
     const ESfxKind K = Kind == 0 ? ESfxKind::Switch : (Kind == 1 ? ESfxKind::Pull : ESfxKind::Button);
     SfxPlay(World, SfxPcm(K, EHouseSurface::Wood, 0, 0), At, Kind == 1 ? .9f : .7f, 1.f, 120.f, 900.f);
+}
+
+bool HouseSfx::Basketball(UWorld* World, const FVector& At, int32 Kind, float ImpactSpeed)
+{
+    const ESfxKind K = Kind == 1 ? ESfxKind::RimClank : Kind == 2 ? ESfxKind::BoardThump
+        : Kind == 3 ? ESfxKind::NetSwish : ESfxKind::BallBounce;
+    const float Strength = FMath::Clamp((ImpactSpeed - 50) / 700, .05f, 1.f);
+    return SfxPlay(World, SfxPcm(K, EHouseSurface::Metal, SfxVariant(), 0), At,
+        Kind == 3 ? .8f : .24f + .9f * Strength, FMath::FRandRange(.96f, 1.04f), 230, 2100);
 }
 
 UAudioComponent* HouseSfx::Song(USceneComponent* AttachTo)

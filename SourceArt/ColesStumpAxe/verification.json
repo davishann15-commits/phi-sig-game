@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-12",
+  "project": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SeniorSendoff.uproject",
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "placement": "Beside the entrance to Cole's quarters, 365 cm east and 340 cm south of the hut centre, fitted to the woodland terrain",
+  "implementation": {
+    "art": "Irregular bark-covered stump, root flare, radial end grain, cracks, oval hickory handle and beveled steel axe head",
+    "interaction": "E extracts the axe; LMB or RT swings without throwing; E returns it when aiming at the nearby stump, otherwise sets it down",
+    "effects": "Chops leave marks and kick up short-lived wood chips with an impact sound",
+    "damage": "Close-range, server-authoritative point damage integrates with existing props and reactive trees",
+    "recovery": "An axe lost below terrain or outside the playable bounds returns to the stump without duplication"
+  },
+  "build": "SeniorSendoffEditor Mac Development - succeeded",
+  "runtime_review": {
+    "run": "evidence/run-4",
+    "result": "PASS",
+    "checks": [
+      "Exactly one grounded stump and one axe, with only the cutting tip inserted 1.5 cm",
+      "Forged head clears the top by 1.9 cm; handle grip is 64.1 cm above the top",
+      "Clear hut entrance collision sweep",
+      "Normal pickup focus and extraction",
+      "One-handed grip on the wooden handle, not the head",
+      "Axe remains within the playable view and follows the carry target",
+      "Repeated clicks respect swing cooldown and do not throw the axe",
+      "Stump receives a chop with marks, chips and thud playback",
+      "Return to stump releases the grip and parks the same axe",
+      "Second pickup after returning the axe",
+      "Ordinary interactive props receive real axe damage",
+      "A missed swing does not damage distant objects",
+      "Set-down enables gravity/collision and clears the reservation",
+      "Lost axe returns without duplicates",
+      "Actual character movement through the clearing, porch steps and hut doorway"
+    ],
+    "visual_review": "Placement, handle grip, chopping, re-embedded axe and ground placement screenshots inspected",
+    "carry_target_error_cm": 0,
+    "palm_contact_error_cm": 0,
+    "screenshots": "evidence/run-4/Saved/ColesStumpAxeReview",
+    "limitations": ["Multiplayer clients not tested", "Physical gamepad not tested", "Audio playback was invoked but not separately recorded"]
+  },
+  "protected": [
+    "Existing hut, sign, woodland trail and trees retained",
+    "Existing basketball and other furniture controls retained",
+    "No house-map asset rewrite or user-save modification",
+    "Unrelated dirty files and open editor preserved"
+  ],
+  "latest_change": "Reoriented the parked axe so the head and handle stick up above the stump, while only the sharpened corner seats in the wood. Applies to initial placement, return-to-stump and recovery.",
+  "preview": "Updated placement and interaction checks used an isolated UserDir; open editors need restarting to load the rebuilt module"
+}

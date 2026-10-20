@@ -1,0 +1,18 @@
+ if(Step()>=5)
+ {
+  struct FFlyer{const TCHAR* Key;const TCHAR* Title;const TCHAR* Line;const TCHAR* Date;};
+  const FFlyer Flyers[]={
+   {TEXT("SD_FlyerFormal"),TEXT("FALL FORMAL"),TEXT("THE PAPER LANTERNS"),TEXT("OCT 25  UNION HALL")},
+   {TEXT("SD_FlyerRadio"),TEXT("CAMPUS RADIO"),TEXT("REQUEST NIGHT"),TEXT("FRIDAY  9 PM")},
+   {TEXT("SD_FlyerSki"),TEXT("SKI CLUB"),TEXT("WINTER TRIP SIGNUP"),TEXT("MONDAY  UNION 204")},
+   {TEXT("SD_FlyerCat"),TEXT("LOST CAT"),TEXT("ORANGE TABBY"),TEXT("LAST SEEN ON CAMPUS")}};
+  for(int32 Index=0;Index<4;++Index)
+  {
+   const auto& Flyer=Flyers[Index];FHallImage Page;Page.Init(512,384,{.69f,.64f,.49f});
+   for(int32 Y=0;Y<Page.H;++Y)for(int32 X=0;X<Page.W;++X){auto& Pixel=Page.At(X,Y);const float Edge=FMath::Min(FMath::Min(X,511-X),FMath::Min(Y,383-Y));Pixel*=.93f+HallNoise(X*.8f,Y*.8f,1931+Index)*.09f;Pixel*=1.f-(1.f-FMath::Clamp(Edge/24.f,0.f,1.f))*.12f;Pixel.A=1.f;}
+   L::Label(Page,Flyer.Title,90,44,{.11f,.055f,.14f});L::Label(Page,Flyer.Line,182,30,{.12f,.10f,.075f});L::Label(Page,Flyer.Date,276,24,{.12f,.10f,.075f});
+   Page.Stroke({{26,307},{486,307}},1.2f,{.25f,.22f,.16f});
+   if(Index==3)for(int32 Tab=0;Tab<12;++Tab)Page.Stroke({{28.f+Tab*40,325},{28.f+Tab*40,383}},.9f,{.25f,.22f,.16f});
+   L::Texture(Look,Flyer.Key,Page,.94f,0,nullptr,false);
+  }
+ }

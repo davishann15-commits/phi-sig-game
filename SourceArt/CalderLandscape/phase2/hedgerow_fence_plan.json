@@ -1,0 +1,40 @@
+{
+  "scope": "First farm fence planting pass; existing boundary box replacement remains separate unfinished work",
+  "switch": "CalderHedgerowTrial",
+  "default_enabled": false,
+  "budget": "One new plain ISM plus tested coherent barn merge; total stays at24 when all current trials are active.",
+  "site": "Worm-fence corridor nearX-22050/Y-3100..6500, preserve broad gate and pure frozen/paving/water/stair/path/building exclusions.",
+  "collision": "New shrubs have no collision; all existing hedge/fence and terrain collision unchanged.",
+  "materials": "Owned opaque ISM-enabled derivative of read-only NaturePropTextured;2custom floats per instance (rootZ/height) keep all materials on one coherent wind displacement. Register new MIDs with existing public gust clock, no per-frame geometry rebuild.",
+  "geometry": "Three LODs; redcedar scale branchlets, arching rose canes with serrated odd-pinnate leaflets and small red hips, blackberry canes. Private code-painted maps; no downloaded photo pixels.",
+  "culls_cm": [
+    7000,
+    9000
+  ],
+  "references": [
+    {
+      "page": "https://plants.ces.ncsu.edu/plants/rosa-multiflora/",
+      "photos_inspected": [
+        "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/multiflora-rosa_frin_gVOvKm4AjWww.jpeg",
+        "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/multiflora-rosa_hip__E5TyYEkHHmmG.jpeg"
+      ],
+      "use": "Morphology only: compound serrated leaflets, thin arching canes and small hips; spring reference colours are not an October palette."
+    },
+    {
+      "page": "https://plants.ces.ncsu.edu/plants/juniperus-virginiana/",
+      "photos_inspected": [
+        "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Juniperus_virginianu_sZ893hXQLKqD.jpeg"
+      ],
+      "use": "Morphology only: tightly overlapping opposite scale leaves along branchlets. No spruce substitution or downloaded pixels."
+    }
+  ],
+  "acceptance_pending": [
+    "Owned shader statistics/parent SHA checks",
+    "DisableUnity build",
+    "Native instance settings/culls/roots/custom data/frozen and paving checks",
+    "Shared wind registration/readback",
+    "Actual close and field view inspection",
+    "Landscape/terrain disable and budget checks",
+    "Final timing and photographic acceptance"
+  ]
+}

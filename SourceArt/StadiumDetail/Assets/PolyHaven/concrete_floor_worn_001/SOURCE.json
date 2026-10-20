@@ -1,0 +1,30 @@
+{
+  "asset": "concrete_floor_worn_001",
+  "authors": {
+    "photography": "Dimitrios Savva",
+    "processing": "Rico Cilliers"
+  },
+  "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "scale_metres": 3,
+  "resolution": 2048,
+  "downloaded_utc": "2026-10-19T01:07:36.145530+00:00",
+  "unmodified_downloads": true,
+  "files": [
+    {
+      "kind": "Diffuse",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_diff_2k.jpg",
+      "file": "concrete_floor_worn_001_diff_2k.jpg",
+      "bytes": 482906,
+      "sha256": "e29b45cdcd6d02fae3c087c456196ffa750779a9b62e7071aa3831dc322a0cc4"
+    },
+    {
+      "kind": "nor_dx",
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_worn_001/concrete_floor_worn_001_nor_dx_2k.jpg",
+      "file": "concrete_floor_worn_001_nor_dx_2k.jpg",
+      "bytes": 864456,
+      "sha256": "b2c2dfb210c08b3308eb03549f6c0cdb2d34523c2f1d384baa4cdb688222a219"
+    }
+  ]
+}

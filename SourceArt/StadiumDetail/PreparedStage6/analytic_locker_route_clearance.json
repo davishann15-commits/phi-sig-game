@@ -1,0 +1,28 @@
+{
+  "native_acceptance": false,
+  "scope": "Prepared-prop geometry preflight only. Unchanged64.3/.93\u219264.3/.8\u219258.5/.75 STA route; conservative XY bounding circles plus36cm capsule. Does not replace real floors, doors, capsule sweeps or full native69-stop tour.",
+  "props": [
+    {
+      "prop": "trainer",
+      "centre": [
+        5250.120612523895,
+        -10842.311152283248
+      ],
+      "nearest_unchanged_route_segment_cm": 656.2100348975272,
+      "conservative_xy_bounding_radius_cm": 98.21023368264633,
+      "capsule_radius_cm": 36,
+      "analytic_margin_cm": 521.9998012148808
+    },
+    {
+      "prop": "whirlpool",
+      "centre": [
+        5025.966631919111,
+        -10697.592026430257
+      ],
+      "nearest_unchanged_route_segment_cm": 464.6339734411181,
+      "conservative_xy_bounding_radius_cm": 71.69379331573968,
+      "capsule_radius_cm": 36,
+      "analytic_margin_cm": 356.9401801253784
+    }
+  ]
+}

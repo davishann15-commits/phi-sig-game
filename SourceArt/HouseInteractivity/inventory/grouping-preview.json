@@ -1,0 +1,779 @@
+[
+  {
+    "name": "furniture 1",
+    "behavior": "furniture",
+    "parts": 13,
+    "bounds": [
+      [
+        -0.4284747838973999,
+        -3.2704010009765625,
+        0.02199999988079071
+      ],
+      [
+        0.48869067430496216,
+        -2.2934889793395996,
+        1.0264803171157837
+      ]
+    ],
+    "mats": [
+      "MI_SSO_LeatherOlive",
+      "MI_SSO_RugGold",
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "furniture 2",
+    "behavior": "furniture",
+    "parts": 19,
+    "bounds": [
+      [
+        0.5326848030090332,
+        -1.381645917892456,
+        0.02199999988079071
+      ],
+      [
+        1.5374016761779785,
+        -0.42823225259780884,
+        1.0264803171157837
+      ]
+    ],
+    "mats": [
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_LeatherTobacco",
+      "MI_SSO_RugGold",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "furniture 3",
+    "behavior": "furniture",
+    "parts": 19,
+    "bounds": [
+      [
+        6.981005668640137,
+        -3.693681001663208,
+        0.02199999988079071
+      ],
+      [
+        8.021623611450195,
+        -2.6414902210235596,
+        1.0264803171157837
+      ]
+    ],
+    "mats": [
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_RugGold",
+      "MI_SSO_LeatherBrown",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "furniture 4",
+    "behavior": "furniture",
+    "parts": 12,
+    "bounds": [
+      [
+        5.597164630889893,
+        -8.092999458312988,
+        0.012499998323619366
+      ],
+      [
+        7.006783962249756,
+        -7.604176998138428,
+        0.9350000023841858
+      ]
+    ],
+    "mats": [
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_MetalDark",
+      "MI_SSO_WoodOak"
+    ]
+  },
+  {
+    "name": "furniture 5",
+    "behavior": "furniture",
+    "parts": 8,
+    "bounds": [
+      [
+        -0.7028351426124573,
+        -8.092999458312988,
+        0.012499998323619366
+      ],
+      [
+        0.7067842483520508,
+        -7.604176998138428,
+        0.9350000023841858
+      ]
+    ],
+    "mats": [
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_MetalDark",
+      "MI_SSO_WoodOak"
+    ]
+  },
+  {
+    "name": "furniture 6",
+    "behavior": "furniture",
+    "parts": 12,
+    "bounds": [
+      [
+        7.373000144958496,
+        -2.2169995307922363,
+        0.036143526434898376
+      ],
+      [
+        8.666999816894531,
+        -0.9229996204376221,
+        0.6369999647140503
+      ]
+    ],
+    "mats": [
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_RugGold",
+      "MI_SSO_WoodOak",
+      "MI_SSO_MetalDark",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "furniture 7",
+    "behavior": "furniture",
+    "parts": 19,
+    "bounds": [
+      [
+        11.327309608459473,
+        -12.326664924621582,
+        -0.0020000003278255463
+      ],
+      [
+        11.968624114990234,
+        -10.686185836791992,
+        1.2000000476837158
+      ]
+    ],
+    "mats": [
+      "MI_SSO_PaintGrey",
+      "MI_SSO_Black",
+      "MI_SSO_MetalDark",
+      "MI_SSO_MetalBrass"
+    ]
+  },
+  {
+    "name": "furniture 8",
+    "behavior": "furniture",
+    "parts": 12,
+    "bounds": [
+      [
+        9.240077018737793,
+        -12.813579559326172,
+        0.008573729544878006
+      ],
+      [
+        9.826756477355957,
+        -12.234272956848145,
+        1.072935700416565
+      ]
+    ],
+    "mats": [
+      "MI_SSO_FeltGreen",
+      "MI_SSO_MetalDark"
+    ]
+  },
+  {
+    "name": "furniture 9",
+    "behavior": "furniture",
+    "parts": 49,
+    "bounds": [
+      [
+        13.422000885009766,
+        -10.109000205993652,
+        0.0
+      ],
+      [
+        13.992000579833984,
+        -8.539000511169434,
+        1.0455000400543213
+      ]
+    ],
+    "mats": [
+      "MI_SSO_S02StockCap",
+      "MI_SSO_S02IcePlastic",
+      "MI_SSO_S02StockDish",
+      "MI_SSO_S02StockCarton",
+      "MI_SSO_PaintWhite",
+      "MI_SSO_MetalDark",
+      "MI_SSO_S02StockPaper",
+      "MI_SSO_S02StockGreen",
+      "MI_SSO_S02StainlessMetal"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 11,
+    "bounds": [
+      [
+        5.369999885559082,
+        -7.048998832702637,
+        0.0
+      ],
+      [
+        5.789999961853027,
+        -6.732999324798584,
+        0.699999988079071
+      ]
+    ],
+    "mats": [
+      "MI_SSO_PaintGrey",
+      "MI_SSO_MetalDark"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 8,
+    "bounds": [
+      [
+        13.267997741699219,
+        -10.566634178161621,
+        0.7620999813079834
+      ],
+      [
+        13.363499641418457,
+        -10.468798637390137,
+        1.9621000289916992
+      ]
+    ],
+    "mats": [
+      "MI_SSO_PaintWhite",
+      "MI_SSO_MetalDark"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 5,
+    "bounds": [
+      [
+        13.267998695373535,
+        -9.562820434570312,
+        1.2288999557495117
+      ],
+      [
+        13.284998893737793,
+        -9.48982048034668,
+        1.3418998718261719
+      ]
+    ],
+    "mats": [
+      "MI_SSO_PaintWhite",
+      "MI_SSO_MetalDark"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 5,
+    "bounds": [
+      [
+        13.268000602722168,
+        -8.80448055267334,
+        1.2541999816894531
+      ],
+      [
+        13.285000801086426,
+        -8.73147964477539,
+        1.3671997785568237
+      ]
+    ],
+    "mats": [
+      "MI_SSO_PaintWhite",
+      "MI_SSO_MetalDark"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 1,
+    "bounds": [
+      [
+        0.00041255983524024487,
+        -1.4567921161651611,
+        0.03642403706908226
+      ],
+      [
+        0.036792121827602386,
+        -1.420412540435791,
+        0.45872732996940613
+      ]
+    ],
+    "mats": [
+      "MI_SSO_MetalDark"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 1,
+    "bounds": [
+      [
+        0.0004125449631828815,
+        -0.9395875334739685,
+        0.03642403706908226
+      ],
+      [
+        0.036792073398828506,
+        -0.9032078981399536,
+        0.45872732996940613
+      ]
+    ],
+    "mats": [
+      "MI_SSO_MetalDark"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 9,
+    "bounds": [
+      [
+        6.143008708953857,
+        -7.958998680114746,
+        0.8986443281173706
+      ],
+      [
+        6.456992149353027,
+        -7.776998519897461,
+        1.409000039100647
+      ]
+    ],
+    "mats": [
+      "MI_SSO_LightWarm",
+      "MI_SSO_MetalDark",
+      "MI_SSO_PaintCream",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 7,
+    "bounds": [
+      [
+        -0.15699109435081482,
+        -7.9589996337890625,
+        0.8986443281173706
+      ],
+      [
+        0.15699177980422974,
+        -7.776999473571777,
+        1.409000039100647
+      ]
+    ],
+    "mats": [
+      "MI_SSO_LightWarm",
+      "MI_SSO_MetalDark",
+      "MI_SSO_PaintCream",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 40,
+    "bounds": [
+      [
+        1.4924999475479126,
+        -3.1519999504089355,
+        0.01601179502904415
+      ],
+      [
+        1.6652170419692993,
+        0.9199999570846558,
+        0.04050000011920929
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 2,
+    "bounds": [
+      [
+        1.277000069618225,
+        -2.9600000381469727,
+        0.03750000149011612
+      ],
+      [
+        1.4000000953674316,
+        0.8000000715255737,
+        0.04050000011920929
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 2,
+    "bounds": [
+      [
+        0.17554190754890442,
+        -1.1716010570526123,
+        0.03750000149011612
+      ],
+      [
+        0.3587438762187958,
+        -0.9883989691734314,
+        0.041999995708465576
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 1,
+    "bounds": [
+      [
+        0.1755419373512268,
+        -1.8316009044647217,
+        0.03750000149011612
+      ],
+      [
+        0.3587438762187958,
+        -1.648398995399475,
+        0.04050000011920929
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 2,
+    "bounds": [
+      [
+        0.5326847434043884,
+        -1.8316009044647217,
+        0.03750000149011612
+      ],
+      [
+        0.7158868312835693,
+        -1.6483988761901855,
+        0.041999995708465576
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 1,
+    "bounds": [
+      [
+        0.5326848030090332,
+        -2.49160099029541,
+        0.03750000149011612
+      ],
+      [
+        0.7158868312835693,
+        -2.308398962020874,
+        0.04050000011920929
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 1,
+    "bounds": [
+      [
+        0.8898277282714844,
+        -1.8316009044647217,
+        0.03750000149011612
+      ],
+      [
+        1.073029637336731,
+        -1.6483988761901855,
+        0.04050000011920929
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 2,
+    "bounds": [
+      [
+        0.8898276090621948,
+        -2.49160099029541,
+        0.03750000149011612
+      ],
+      [
+        1.073029637336731,
+        -2.308398962020874,
+        0.041999995708465576
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 128,
+    "bounds": [
+      [
+        4.534782886505127,
+        -3.9699995517730713,
+        0.014999999664723873
+      ],
+      [
+        9.145216941833496,
+        0.7300004959106445,
+        0.041999995708465576
+      ]
+    ],
+    "mats": [
+      "MI_SSO_RugGold",
+      "MI_SSO_RugRed",
+      "MI_SSO_FabricCream"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 76,
+    "bounds": [
+      [
+        5.599999904632568,
+        -8.200499534606934,
+        1.4249999523162842
+      ],
+      [
+        7.0,
+        -7.809999942779541,
+        2.615000009536743
+      ]
+    ],
+    "mats": [
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_LightWarm",
+      "MI_SSO_MetalBrass",
+      "MI_SSO_FabricCream",
+      "MI_SSO_PaintGrey"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 40,
+    "bounds": [
+      [
+        -0.6999996304512024,
+        -8.200499534606934,
+        1.4249999523162842
+      ],
+      [
+        0.7000003457069397,
+        -7.809999942779541,
+        2.615000009536743
+      ]
+    ],
+    "mats": [
+      "MI_SSO_WoodWalnut",
+      "MI_SSO_LightWarm",
+      "MI_SSO_MetalBrass",
+      "MI_SSO_FabricCream",
+      "MI_SSO_PaintGrey"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 2,
+    "bounds": [
+      [
+        5.744999885559082,
+        -7.942998886108398,
+        0.9350000023841858
+      ],
+      [
+        5.894999980926514,
+        -7.792999744415283,
+        1.4049999713897705
+      ]
+    ],
+    "mats": [
+      "MI_SSO_MetalBrass"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 2,
+    "bounds": [
+      [
+        6.704999923706055,
+        -7.942998886108398,
+        0.9350000023841858
+      ],
+      [
+        6.855000019073486,
+        -7.792999744415283,
+        1.4049999713897705
+      ]
+    ],
+    "mats": [
+      "MI_SSO_MetalBrass"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 2,
+    "bounds": [
+      [
+        0.40500032901763916,
+        -7.942998886108398,
+        0.9350000023841858
+      ],
+      [
+        0.5550003051757812,
+        -7.792999744415283,
+        1.4049999713897705
+      ]
+    ],
+    "mats": [
+      "MI_SSO_MetalBrass"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 1,
+    "bounds": [
+      [
+        7.921000003814697,
+        -1.738999605178833,
+        0.6355000138282776
+      ],
+      [
+        7.999000072479248,
+        -1.6609995365142822,
+        0.6444999575614929
+      ]
+    ],
+    "mats": [
+      "MI_SSO_Black"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 1,
+    "bounds": [
+      [
+        5.877452373504639,
+        -11.112196922302246,
+        0.010450243949890137
+      ],
+      [
+        6.29521369934082,
+        -10.441438674926758,
+        0.4479101002216339
+      ]
+    ],
+    "mats": [
+      "MI_SSO_Black"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 12,
+    "bounds": [
+      [
+        13.590499877929688,
+        -9.709500312805176,
+        0.9249998927116394
+      ],
+      [
+        13.874001502990723,
+        -9.195000648498535,
+        1.2969999313354492
+      ]
+    ],
+    "mats": [
+      "MI_SSO_S02StockPaper",
+      "MI_SSO_S02StainlessMetal",
+      "MI_SSO_S02IcePlastic"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 6,
+    "bounds": [
+      [
+        13.590499877929688,
+        -9.031999588012695,
+        0.900999903678894
+      ],
+      [
+        13.859999656677246,
+        -8.595999717712402,
+        1.253000020980835
+      ]
+    ],
+    "mats": [
+      "MI_SSO_S02Linen",
+      "MI_SSO_S02IcePlastic"
+    ]
+  },
+  {
+    "name": "loose furnishing",
+    "behavior": "furniture",
+    "parts": 6,
+    "bounds": [
+      [
+        13.639500617980957,
+        -10.019498825073242,
+        1.0094999074935913
+      ],
+      [
+        13.829499244689941,
+        -9.828499794006348,
+        1.0435000658035278
+      ]
+    ],
+    "mats": [
+      "MI_SSO_S02StockPaper"
+    ]
+  }
+]

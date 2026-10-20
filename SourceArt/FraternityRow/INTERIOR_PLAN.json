@@ -1,0 +1,692 @@
+{
+  "status": "PROPOSED; NOT BUILT OR RUNTIME VERIFIED",
+  "units": "local centimetres",
+  "houses": [
+    {
+      "id": "R1",
+      "width_cm": 2450,
+      "depth_cm": 2250,
+      "central_hall": [
+        1115.0,
+        1335.0,
+        0,
+        2250
+      ],
+      "entry_width_cm": 200,
+      "rear_exit_width_cm": 140,
+      "room_door_width_cm": 140,
+      "floor_z_cm": 30,
+      "turret": null,
+      "exterior_access_steps": [
+        {
+          "house": "R1",
+          "side": "rear",
+          "rect": [
+            -17600.0,
+            -17200.0,
+            -295,
+            85
+          ],
+          "risers": 6,
+          "nominal_riser_cm": 15,
+          "tread_cm": 28,
+          "top_landing_cm": 120,
+          "bottom_landing_cm": 120
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Still TV lounge",
+          "rect": [
+            30,
+            1107.0,
+            30,
+            1049.5
+          ],
+          "door": [
+            1115.0,
+            947.5
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Chapter room / hearth",
+          "rect": [
+            1343.0,
+            2420,
+            30,
+            1049.5
+          ],
+          "door": [
+            1335.0,
+            444.15
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Dining room",
+          "rect": [
+            30,
+            1107.0,
+            1065.5,
+            1702.0
+          ],
+          "door": [
+            1115.0,
+            1383.75
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Kitchen",
+          "rect": [
+            1343.0,
+            2420,
+            1065.5,
+            2220
+          ],
+          "door": [
+            1335.0,
+            1530.0
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Shared WC",
+          "rect": [
+            30,
+            1107.0,
+            1718.0,
+            2220
+          ],
+          "door": [
+            1115.0,
+            1980.0
+          ],
+          "side": "left"
+        }
+      ],
+      "stair": {
+        "name": "Closed upper stair",
+        "rect": [
+          815.0,
+          1090.0,
+          80,
+          600
+        ],
+        "form": "Two flights with a return landing",
+        "floor_to_floor_cm": 390,
+        "risers": 24,
+        "nominal_riser_cm": 16.25,
+        "tread_cm": 28,
+        "flight_clear_width_cm": 110,
+        "return_landing_cm": 110,
+        "minimum_headroom_cm": 210,
+        "upper": "Closed by a visible solid locked door at the upper landing"
+      },
+      "parlor_connection": null,
+      "vestibule": null,
+      "floor": "Ground floor only; no excavation or terrain cuts",
+      "circulation": "South entry -> clear central hall -> north exit. All five side rooms open off the hall."
+    },
+    {
+      "id": "R2",
+      "width_cm": 2800,
+      "depth_cm": 2100,
+      "central_hall": [
+        1290.0,
+        1510.0,
+        0,
+        2100
+      ],
+      "entry_width_cm": 200,
+      "rear_exit_width_cm": 140,
+      "room_door_width_cm": 140,
+      "floor_z_cm": 30,
+      "turret": null,
+      "exterior_access_steps": [
+        {
+          "house": "R2",
+          "side": "rear",
+          "rect": [
+            -14100.0,
+            -13700.0,
+            -430,
+            -50
+          ],
+          "risers": 6,
+          "nominal_riser_cm": 15,
+          "tread_cm": 28,
+          "top_landing_cm": 120,
+          "bottom_landing_cm": 120
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Formal lounge",
+          "rect": [
+            30,
+            1282.0,
+            30,
+            979.0
+          ],
+          "door": [
+            1290.0,
+            877.0
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Tidy chapter room",
+          "rect": [
+            1518.0,
+            2770,
+            30,
+            979.0
+          ],
+          "door": [
+            1510.0,
+            414.53999999999996
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Dining room",
+          "rect": [
+            30,
+            1282.0,
+            995.0,
+            1588.0
+          ],
+          "door": [
+            1290.0,
+            1291.5
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Kitchen",
+          "rect": [
+            1518.0,
+            2770,
+            995.0,
+            2070
+          ],
+          "door": [
+            1510.0,
+            1428.0
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Shared WC",
+          "rect": [
+            30,
+            1282.0,
+            1604.0,
+            2070
+          ],
+          "door": [
+            1290.0,
+            1848.0
+          ],
+          "side": "left"
+        }
+      ],
+      "stair": {
+        "name": "Composite stair",
+        "rect": [
+          990.0,
+          1265.0,
+          80,
+          600
+        ],
+        "form": "Two flights with a return landing",
+        "floor_to_floor_cm": 390,
+        "risers": 24,
+        "nominal_riser_cm": 16.25,
+        "tread_cm": 28,
+        "flight_clear_width_cm": 110,
+        "return_landing_cm": 110,
+        "minimum_headroom_cm": 210,
+        "upper": "Closed by a visible solid locked door at the upper landing"
+      },
+      "parlor_connection": null,
+      "vestibule": null,
+      "floor": "Ground floor only; no excavation or terrain cuts",
+      "circulation": "South entry -> clear central hall -> north exit. All five side rooms open off the hall."
+    },
+    {
+      "id": "R3",
+      "width_cm": 2500,
+      "depth_cm": 2200,
+      "central_hall": [
+        1140.0,
+        1360.0,
+        0,
+        2200
+      ],
+      "entry_width_cm": 200,
+      "rear_exit_width_cm": 140,
+      "room_door_width_cm": 140,
+      "floor_z_cm": 30,
+      "turret": null,
+      "exterior_access_steps": [
+        {
+          "house": "R3",
+          "side": "rear",
+          "rect": [
+            -10300.0,
+            -9900.0,
+            -400,
+            -20
+          ],
+          "risers": 6,
+          "nominal_riser_cm": 15,
+          "tread_cm": 28,
+          "top_landing_cm": 120,
+          "bottom_landing_cm": 120
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Hearth lounge",
+          "rect": [
+            30,
+            1132.0,
+            30,
+            1026.0
+          ],
+          "door": [
+            1140.0,
+            924.0
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Party chapter room",
+          "rect": [
+            1368.0,
+            2470,
+            30,
+            1026.0
+          ],
+          "door": [
+            1360.0,
+            434.28
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Long dining tables",
+          "rect": [
+            30,
+            1132.0,
+            1042.0,
+            1664.0
+          ],
+          "door": [
+            1140.0,
+            1353.0
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Kitchen / serving",
+          "rect": [
+            1368.0,
+            2470,
+            1042.0,
+            2170
+          ],
+          "door": [
+            1360.0,
+            1496.0
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Shared WC",
+          "rect": [
+            30,
+            1132.0,
+            1680.0,
+            2170
+          ],
+          "door": [
+            1140.0,
+            1936.0
+          ],
+          "side": "left"
+        }
+      ],
+      "stair": {
+        "name": "Composite stair",
+        "rect": [
+          840.0,
+          1115.0,
+          80,
+          600
+        ],
+        "form": "Two flights with a return landing",
+        "floor_to_floor_cm": 390,
+        "risers": 24,
+        "nominal_riser_cm": 16.25,
+        "tread_cm": 28,
+        "flight_clear_width_cm": 110,
+        "return_landing_cm": 110,
+        "minimum_headroom_cm": 210,
+        "upper": "Closed by a visible solid locked door at the upper landing"
+      },
+      "parlor_connection": null,
+      "vestibule": null,
+      "floor": "Ground floor only; no excavation or terrain cuts",
+      "circulation": "South entry -> clear central hall -> north exit. All five side rooms open off the hall."
+    },
+    {
+      "id": "R4",
+      "width_cm": 1600,
+      "depth_cm": 1400,
+      "central_hall": [
+        690.0,
+        910.0,
+        0,
+        1400
+      ],
+      "entry_width_cm": 200,
+      "rear_exit_width_cm": 140,
+      "room_door_width_cm": 140,
+      "floor_z_cm": -50,
+      "turret": null,
+      "exterior_access_steps": [
+        {
+          "house": "R4",
+          "side": "rear",
+          "rect": [
+            -7800.0,
+            -7400.0,
+            1850,
+            2350
+          ],
+          "risers": 7,
+          "nominal_riser_cm": 15.885714285714286,
+          "tread_cm": 28,
+          "top_landing_cm": 120,
+          "bottom_landing_cm": 120
+        },
+        {
+          "house": "R4",
+          "side": "front",
+          "rect": [
+            -7800.0,
+            -7400.0,
+            122,
+            150
+          ],
+          "risers": 2,
+          "nominal_riser_cm": 16.51375,
+          "tread_cm": 28,
+          "top_landing": "Uses the front porch",
+          "bottom_landing": "Existing grade; no new slab"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Hearth lounge",
+          "rect": [
+            30,
+            682.0,
+            30,
+            650.0
+          ],
+          "door": [
+            690.0,
+            548.0
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Oak chapter room",
+          "rect": [
+            918.0,
+            1570,
+            30,
+            650.0
+          ],
+          "door": [
+            910.0,
+            276.36
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Dining room",
+          "rect": [
+            30,
+            682.0,
+            666.0,
+            1056.0
+          ],
+          "door": [
+            690.0,
+            861.0
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Kitchen / scullery",
+          "rect": [
+            918.0,
+            1570,
+            666.0,
+            1370
+          ],
+          "door": [
+            910.0,
+            952.0000000000001
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Shared WC",
+          "rect": [
+            30,
+            682.0,
+            1072.0,
+            1370
+          ],
+          "door": [
+            690.0,
+            1232.0
+          ],
+          "side": "left"
+        }
+      ],
+      "stair": {
+        "name": "Oak stair",
+        "rect": [
+          390.0,
+          665.0,
+          80,
+          448.0
+        ],
+        "form": "Two flights with a return landing",
+        "floor_to_floor_cm": 330,
+        "risers": 20,
+        "nominal_riser_cm": 16.5,
+        "tread_cm": 28,
+        "flight_clear_width_cm": 110,
+        "return_landing_cm": 110,
+        "minimum_headroom_cm": 210,
+        "upper": "Closed by a visible solid locked door at the upper landing"
+      },
+      "parlor_connection": null,
+      "vestibule": {
+        "rect": [
+          690.0,
+          910.0,
+          0,
+          220
+        ],
+        "floor": "Slate"
+      },
+      "floor": "Ground floor only; no excavation or terrain cuts",
+      "circulation": "South entry -> clear central hall -> north exit. All five side rooms open off the hall."
+    },
+    {
+      "id": "R5",
+      "width_cm": 1400,
+      "depth_cm": 1500,
+      "central_hall": [
+        590.0,
+        810.0,
+        0,
+        1500
+      ],
+      "entry_width_cm": 200,
+      "rear_exit_width_cm": 140,
+      "room_door_width_cm": 140,
+      "floor_z_cm": 30,
+      "turret": {
+        "location": "southwest",
+        "rect": [
+          30,
+          270,
+          30,
+          270
+        ],
+        "purpose": "Front parlor reading alcove"
+      },
+      "exterior_access_steps": [
+        {
+          "house": "R5",
+          "side": "rear",
+          "rect": [
+            -6500.0,
+            -6100.0,
+            -200,
+            208
+          ],
+          "risers": 7,
+          "nominal_riser_cm": 15.23,
+          "tread_cm": 28,
+          "top_landing_cm": 120,
+          "bottom_landing_cm": 120
+        },
+        {
+          "house": "R5",
+          "side": "front",
+          "rect": [
+            -6580.0,
+            -6180.0,
+            -1990,
+            -1850
+          ],
+          "risers": 6,
+          "nominal_riser_cm": 15,
+          "tread_cm": 28,
+          "top_landing": "Uses the front porch",
+          "bottom_landing": "Existing grade; no new slab"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Front parlor / alcove",
+          "rect": [
+            30,
+            582.0,
+            30,
+            697.0
+          ],
+          "door": [
+            590.0,
+            595.0
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Chapter parlor",
+          "rect": [
+            818.0,
+            1370,
+            30,
+            697.0
+          ],
+          "door": [
+            810.0,
+            296.09999999999997
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Dining / food left out",
+          "rect": [
+            30,
+            582.0,
+            713.0,
+            1132.0
+          ],
+          "door": [
+            590.0,
+            922.5
+          ],
+          "side": "left"
+        },
+        {
+          "name": "Kitchen",
+          "rect": [
+            818.0,
+            1370,
+            713.0,
+            1470
+          ],
+          "door": [
+            810.0,
+            1020.0000000000001
+          ],
+          "side": "right"
+        },
+        {
+          "name": "Shared WC",
+          "rect": [
+            30,
+            582.0,
+            1148.0,
+            1470
+          ],
+          "door": [
+            590.0,
+            1320.0
+          ],
+          "side": "left"
+        }
+      ],
+      "stair": {
+        "name": "Carved stair",
+        "rect": [
+          290.0,
+          565.0,
+          80,
+          495.0
+        ],
+        "form": "Two flights with a return landing",
+        "floor_to_floor_cm": 330,
+        "risers": 20,
+        "nominal_riser_cm": 16.5,
+        "tread_cm": 28,
+        "flight_clear_width_cm": 110,
+        "return_landing_cm": 110,
+        "minimum_headroom_cm": 210,
+        "upper": "Closed by a visible solid locked door at the upper landing"
+      },
+      "parlor_connection": {
+        "at_y": 705.0,
+        "x0": 100,
+        "x1": 300
+      },
+      "vestibule": null,
+      "floor": "Ground floor only; no excavation or terrain cuts",
+      "circulation": "South entry -> clear central hall -> north exit. All five side rooms open off the hall."
+    }
+  ]
+}

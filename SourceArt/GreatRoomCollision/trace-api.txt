@@ -1,0 +1,23 @@
+X.capsule_trace_multi_for_objects(world_context_object, start, end, radius, half_height, object_types, trace_complex, actors_to_ignore, draw_debug_type, ignore_self=True, trace_color=[1.000000, 0.000000, 0.000000, 1.000000], trace_hit_color=[0.000000, 1.000000, 0.000000, 1.000000], draw_time=5.000000) -> Array[HitResult] or None
+Sweeps a capsule along the given line and returns all hits encountered.
+This only finds objects that are of a type specified by ObjectTypes.
+
+Args:
+    world_context_object (Object): 
+    start (Vector): Start of line segment.
+    end (Vector): End of line segment.
+    radius (float): Radius of the capsule to sweep
+    half_height (float): Distance from center of capsule to tip of hemisphere endcap.
+    object_types (Array[ObjectTypeQuery]): Array of Object Types to trace
+    trace_complex (bool): True to test against complex collision, false to test against simplified collision.
+    actors_to_ignore (Array[Actor]): 
+    draw_debug_type (DrawDebugTrace): 
+    ignore_self (bool): 
+    trace_color (LinearColor): 
+    trace_hit_color (LinearColor): 
+    draw_time (float): 
+
+Returns:
+    Array[HitResult] or None: True if there was a hit, false otherwise.
+
+    out_hits (Array[HitResult]): A list of hits, sorted along the trace from start to finish.  The blocking hit will be the last hit, if there was one.

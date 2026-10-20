@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "scope": "Explicit maple-only trial; physical fit/poses/wind verified, visual/performance acceptance pending",
+  "runs": [
+    {
+      "run": "codex_tree_fit_original",
+      "pose_sha256": "b011f36278dea26d5de634d30734b64dcfa934a4d8c8ef43b60f71053865d33c",
+      "max_contact_error_cm": 4e-06,
+      "native_result": "PASS trial=0 batches=2 replacements=0 instances=65 contactSamples=780 failures=0 windRange=0.000000 originalPoseComparisonPending=1"
+    },
+    {
+      "run": "codex_tree_fit_runtime_material",
+      "pose_sha256": "b011f36278dea26d5de634d30734b64dcfa934a4d8c8ef43b60f71053865d33c",
+      "max_contact_error_cm": 4e-06,
+      "native_result": "PASS trial=1 batches=2 replacements=2 instances=65 contactSamples=780 failures=0 windRange=2.238571 originalPoseComparisonPending=1"
+    }
+  ],
+  "original_tree_crc": "0f3b2bb7",
+  "all_poses_byte_identical": true,
+  "wind_scalar_range": 2.238571,
+  "default_enabled": false
+}

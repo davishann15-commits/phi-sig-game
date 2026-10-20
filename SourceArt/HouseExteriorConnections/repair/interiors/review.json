@@ -1,0 +1,406 @@
+{
+	"status": "PASS",
+	"detail": "Registered campaign camera sweep complete",
+	"scope": "Assisted registered-camera sweep in the actual campaign house; not player traversal or a multiplayer session.",
+	"userDirectory": "/tmp/SSOHouseRepairInterior1/",
+	"elapsedSeconds": 140.74699345603585,
+	"quality": 2,
+	"actualShadowQuality": 2,
+	"requestedPageOverride": 0,
+	"actualPages": 2048,
+	"virtualShadowsEnabled": 1,
+	"expectedViews": 39,
+	"minimumWarmupFrames": 64,
+	"captures": [
+		{
+			"view": "01_GreatRoom_Entrance",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/01_GreatRoom_Entrance.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 99.28125,
+			"actualPages": 2048,
+			"warmupFrames": 69,
+			"warmupSeconds": 3.4493749178946018
+		},
+		{
+			"view": "02_Basement_BlackHall",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/02_Basement_BlackHall.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 98.203475952148438,
+			"actualPages": 2048,
+			"warmupFrames": 83,
+			"warmupSeconds": 2.723836001008749
+		},
+		{
+			"view": "05_S03_LongHall",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/05_S03_LongHall.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 87.974250793457031,
+			"actualPages": 2048,
+			"warmupFrames": 91,
+			"warmupSeconds": 2.7620020844042301
+		},
+		{
+			"view": "08_GreatRoom_HallDoor",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/08_GreatRoom_HallDoor.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 97,
+			"warmupSeconds": 2.7316994145512581
+		},
+		{
+			"view": "11_S03_Switchback",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/11_S03_Switchback.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 97,
+			"warmupSeconds": 2.7546387054026127
+		},
+		{
+			"view": "14_S03_UpperCapturedLanding",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/14_S03_UpperCapturedLanding.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 87.974250793457031,
+			"actualPages": 2048,
+			"warmupFrames": 102,
+			"warmupSeconds": 2.7432443350553513
+		},
+		{
+			"view": "15_S03_ShortHallIntersection",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/15_S03_ShortHallIntersection.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 92,
+			"warmupSeconds": 2.5008709579706192
+		},
+		{
+			"view": "17_S03_RearChairRoom",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/17_S03_RearChairRoom.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 104,
+			"warmupSeconds": 2.7580668739974499
+		},
+		{
+			"view": "19_S03_Bedroom",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/19_S03_Bedroom.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 102,
+			"warmupSeconds": 2.764764666557312
+		},
+		{
+			"view": "20_S02_Dining1937",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/20_S02_Dining1937.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 104,
+			"warmupSeconds": 2.5129876658320427
+		},
+		{
+			"view": "28_S02_SmallBathroom",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/28_S02_SmallBathroom.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 106.52006530761719,
+			"actualPages": 2048,
+			"warmupFrames": 106,
+			"warmupSeconds": 2.7546686269342899
+		},
+		{
+			"view": "29_S02_LobbyReverse",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/29_S02_LobbyReverse.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 112,
+			"warmupSeconds": 2.746177040040493
+		},
+		{
+			"view": "31_BH_ServiceAlcove1910",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/31_BH_ServiceAlcove1910.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 90,
+			"warmupSeconds": 2.5591097101569176
+		},
+		{
+			"view": "33_GalleryHall1928",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/33_GalleryHall1928.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 91.492843627929688,
+			"actualPages": 2048,
+			"warmupFrames": 90,
+			"warmupSeconds": 2.5106029994785786
+		},
+		{
+			"view": "39_S05_RearHall",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/39_S05_RearHall.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 90,
+			"warmupSeconds": 2.5179790854454041
+		},
+		{
+			"view": "43_S05_StripedBedroom",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/43_S05_StripedBedroom.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 97,
+			"warmupSeconds": 2.5001639984548092
+		},
+		{
+			"view": "45_S05_NorthWestSuite",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/45_S05_NorthWestSuite.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 98,
+			"warmupSeconds": 2.5026904605329037
+		},
+		{
+			"view": "46_S05_NorthEastSuite",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/46_S05_NorthEastSuite.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 114,
+			"warmupSeconds": 2.5057903751730919
+		},
+		{
+			"view": "49_S05_NorthWestBedroom",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/49_S05_NorthWestBedroom.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 106,
+			"warmupSeconds": 2.7379823736846447
+		},
+		{
+			"view": "50_S05_NorthEastSouthBedroom",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/50_S05_NorthEastSouthBedroom.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 97.114334106445312,
+			"actualPages": 2048,
+			"warmupFrames": 123,
+			"warmupSeconds": 2.7554052509367466
+		},
+		{
+			"view": "53_Inspect_BasementStudyInterior",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/53_Inspect_BasementStudyInterior.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 102.44786071777344,
+			"actualPages": 2048,
+			"warmupFrames": 105,
+			"warmupSeconds": 2.7579193748533726
+		},
+		{
+			"view": "63_Inspect_GalleryBalconyInterior",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/63_Inspect_GalleryBalconyInterior.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 102.44786071777344,
+			"actualPages": 2048,
+			"warmupFrames": 102,
+			"warmupSeconds": 2.7422542497515678
+		},
+		{
+			"view": "BasementDoorFacingStairs",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/BasementDoorFacingStairs.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 110.43002319335938,
+			"actualPages": 2048,
+			"warmupFrames": 74,
+			"warmupSeconds": 2.5227453745901585
+		},
+		{
+			"view": "BasementTurn",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/BasementTurn.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 110.43002319335938,
+			"actualPages": 2048,
+			"warmupFrames": 72,
+			"warmupSeconds": 2.5008900426328182
+		},
+		{
+			"view": "MainLanding",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/MainLanding.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 110.43002319335938,
+			"actualPages": 2048,
+			"warmupFrames": 95,
+			"warmupSeconds": 2.7527587525546551
+		},
+		{
+			"view": "UpperLanding",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/UpperLanding.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 110.43002319335938,
+			"actualPages": 2048,
+			"warmupFrames": 87,
+			"warmupSeconds": 2.5132196247577667
+		},
+		{
+			"view": "TJunction",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/TJunction.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 156.85908508300781,
+			"actualPages": 2048,
+			"warmupFrames": 114,
+			"warmupSeconds": 2.7450778745114803
+		},
+		{
+			"view": "RedEntrance",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/RedEntrance.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 110.43002319335938,
+			"actualPages": 2048,
+			"warmupFrames": 127,
+			"warmupSeconds": 2.7287771664559841
+		},
+		{
+			"view": "BlueEntrance",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/BlueEntrance.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 110.43002319335938,
+			"actualPages": 2048,
+			"warmupFrames": 111,
+			"warmupSeconds": 2.5055588334798813
+		},
+		{
+			"view": "ClosedOldRedOpening",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/ClosedOldRedOpening.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 110.43002319335938,
+			"actualPages": 2048,
+			"warmupFrames": 136,
+			"warmupSeconds": 2.7484481632709503
+		},
+		{
+			"view": "ClubLowerDanceFloor",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/ClubLowerDanceFloor.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 100.34780883789062,
+			"actualPages": 2048,
+			"warmupFrames": 103,
+			"warmupSeconds": 2.5174114592373371
+		},
+		{
+			"view": "ClubCornerConnection",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/ClubCornerConnection.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 100.34780883789062,
+			"actualPages": 2048,
+			"warmupFrames": 113,
+			"warmupSeconds": 2.752452876418829
+		},
+		{
+			"view": "ClubNewLounge",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/ClubNewLounge.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 102.44786071777344,
+			"actualPages": 2048,
+			"warmupFrames": 116,
+			"warmupSeconds": 2.748086791485548
+		},
+		{
+			"view": "ClubUpperOriginalSize",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/ClubUpperOriginalSize.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 102.44786071777344,
+			"actualPages": 2048,
+			"warmupFrames": 122,
+			"warmupSeconds": 2.7456915006041527
+		},
+		{
+			"view": "ClubUpperPole",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/ClubUpperPole.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 91.492843627929688,
+			"actualPages": 2048,
+			"warmupFrames": 116,
+			"warmupSeconds": 2.5095393732190132
+		},
+		{
+			"view": "ClubLowerPole",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/ClubLowerPole.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 91.492843627929688,
+			"actualPages": 2048,
+			"warmupFrames": 111,
+			"warmupSeconds": 2.5001190416514874
+		},
+		{
+			"view": "LibraryEntrance",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/LibraryEntrance.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 93.777168273925781,
+			"actualPages": 2048,
+			"warmupFrames": 81,
+			"warmupSeconds": 2.5005154609680176
+		},
+		{
+			"view": "LibraryLounge",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/LibraryLounge.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 81.855819702148438,
+			"actualPages": 2048,
+			"warmupFrames": 114,
+			"warmupSeconds": 2.7380001246929169
+		},
+		{
+			"view": "LibraryShelves",
+			"path": "/tmp/SSOHouseRepairInterior1/Saved/HouseVisualReview/LibraryShelves.png",
+			"width": 1280,
+			"height": 720,
+			"horizontalFov": 81.855819702148438,
+			"actualPages": 2048,
+			"warmupFrames": 96,
+			"warmupSeconds": 2.5064289569854736
+		}
+	]
+}

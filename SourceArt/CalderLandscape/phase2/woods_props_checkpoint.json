@@ -1,0 +1,39 @@
+{
+  "scope": "Owned material/LOD repair with native placement/settings proof and actual forest/macro captures",
+  "native_run": "codex_woods_props_review",
+  "wide_views": "codex_woods_props_views",
+  "macro_views": "codex_woods_props_clear_macros",
+  "rejected_macro": "codex_woods_props_macros",
+  "props": 677,
+  "max_actual_foot_error_cm": 0,
+  "instancing_fallback_warnings": 0,
+  "build": "codex_woods_prop_clear_macro_build.log",
+  "disable_unity_actions": 207,
+  "build_seconds": 123.2,
+  "visual_review": {
+    "images": [
+      {
+        "file": "239_detail_calder_macro_fern.png",
+        "sha256": "8ca8229cd7b450273ca9087462900590841a419507e8c208b65256d28093844a",
+        "inspected": true
+      },
+      {
+        "file": "240_detail_calder_macro_stump.png",
+        "sha256": "01aa5c2696594720da4b1aa3874f10ba1cf701f51ec29349ab1e6435f35095eb",
+        "inspected": true
+      }
+    ],
+    "camera_markers": [
+      "[2026.10.17-10.17.54:324][204]LogTemp: Display: CALDER_WOODS_PROP_CAMERA view=detail_calder_macro_fern batch=ExteriorAppalachianFerns index=55 eye=X=-2636.662 Y=6479.823 Z=-232.641 target=X=-2818.326 Y=6657.828 Z=-345.547 eyeAboveActualFloorCm=130 lineOfSight=1 existingInstance=1 shrubBoundsChecked=865",
+      "[2026.10.17-10.17.58:096][428]LogTemp: Display: CALDER_WOODS_PROP_CAMERA view=detail_calder_macro_stump batch=ExteriorAppalachianStumps index=6 eye=X=-52.501 Y=5402.195 Z=-231.039 target=X=135.240 Y=5576.887 Z=-345.373 eyeAboveActualFloorCm=130 lineOfSight=1 existingInstance=1 shrubBoundsChecked=865"
+    ],
+    "findings": [
+      "Fern retains photographed frond detail in original dusk",
+      "Stump is visible as low fallen wood among ferns and grass; wider photographic ground/forest finish remains",
+      "Prior obstructed stump frame rejected; no plants hidden or moved"
+    ],
+    "total_inspected_tree_candidate_and_woods_frames": 94,
+    "full_woods_photographic_acceptance": false
+  },
+  "master_complete": false
+}

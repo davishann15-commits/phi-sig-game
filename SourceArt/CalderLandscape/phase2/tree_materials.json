@@ -1,0 +1,168 @@
+{
+  "materials": [
+    {
+      "asset": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_TwoSided.MI_EuropeanBeech_TwoSided",
+      "pixel_instructions": 418,
+      "vertex_instructions": 341,
+      "pixel_samples": 3,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Tileable.MI_EuropeanBeech_Tileable",
+      "pixel_instructions": 263,
+      "vertex_instructions": 341,
+      "pixel_samples": 4,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Trunk_01.MI_EuropeanBeech_Trunk_01",
+      "pixel_instructions": 263,
+      "vertex_instructions": 170,
+      "pixel_samples": 4,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Decoration.MI_EuropeanBeech_Decoration",
+      "pixel_instructions": 267,
+      "vertex_instructions": 338,
+      "pixel_samples": 4,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/EuropeanBeech/Materials/Impostor/MI_Impostor_Forest_01.MI_Impostor_Forest_01",
+      "pixel_instructions": 369,
+      "vertex_instructions": 530,
+      "pixel_samples": 9,
+      "texture_parameters": [
+        "BaseColor",
+        "Normal",
+        "Albedo Winter",
+        "BaseColor Winter",
+        "Normal Winter"
+      ]
+    },
+    {
+      "asset": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_TwoSided.MI_NorwayMaple_TwoSided",
+      "pixel_instructions": 477,
+      "vertex_instructions": 341,
+      "pixel_samples": 5,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Tileable.MI_NorwayMaple_Tileable",
+      "pixel_instructions": 263,
+      "vertex_instructions": 341,
+      "pixel_samples": 4,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Trunk_03.MI_NorwayMaple_Trunk_03",
+      "pixel_instructions": 263,
+      "vertex_instructions": 341,
+      "pixel_samples": 4,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Decoration.MI_NorwayMaple_Decoration",
+      "pixel_instructions": 267,
+      "vertex_instructions": 338,
+      "pixel_samples": 4,
+      "texture_parameters": [
+        "Albedo Winter",
+        "Normals Winter",
+        "Mask Winter",
+        "Albedo",
+        "Mask",
+        "Normal",
+        "WindTurbulenceVectorAndGustMagnitude",
+        "X-Vector And X-Extent Texture",
+        "Position and Index Texture"
+      ]
+    },
+    {
+      "asset": "/Game/NorwayMaple/Materials/Impostor/MI_Impostor_NorwayMaple_Forest_01.MI_Impostor_NorwayMaple_Forest_01",
+      "pixel_instructions": 335,
+      "vertex_instructions": 450,
+      "pixel_samples": 9,
+      "texture_parameters": [
+        "BaseColor",
+        "Normal",
+        "Albedo Winter",
+        "BaseColor Winter",
+        "Normal Winter"
+      ]
+    }
+  ],
+  "source_pack_sha_unchanged": true,
+  "scope": "Read-only acquired-material statistics; no woods binding or budget waiver"
+}

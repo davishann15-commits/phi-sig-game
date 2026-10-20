@@ -1,0 +1,208 @@
+{
+  "scope": "Tested optional farm-tree candidate; whole Phase2/master unfinished",
+  "switch": "CalderFarmTreeTrial",
+  "requires": "CalderFarmTrial and landscape enabled",
+  "default_enabled": false,
+  "master_complete": false,
+  "photographic_appearance_accepted": false,
+  "final_performance_accepted": false,
+  "build": {
+    "log": "Saved/CalderWork/codex_farm_persimmon_frame_build.log",
+    "passed": true,
+    "actions": 211,
+    "seconds": 124.27,
+    "last_change": "Only appended whole-tree camera FOV70 to95; all tree/farm/physics/gate code unchanged from six-gate build."
+  },
+  "site": {
+    "xy": [
+      -22700,
+      -1550
+    ],
+    "ground_z": -22.53,
+    "fruit_diameter_cm": 4.1,
+    "fruit_count": 39,
+    "sparse_leaf_count": 26,
+    "main_stem_height_cm": 640,
+    "tree_and_fence_cull_cm": [
+      18000,
+      22500
+    ]
+  },
+  "runtime": {
+    "run": "Saved/CalderWork/runs/codex_persimmon_framed_views",
+    "trunk_contact_samples": 96,
+    "trunk_contact_hits": 96,
+    "tree_fence_LOD_triangles": [
+      12898,
+      7236,
+      4626
+    ],
+    "farm_components": 5,
+    "all_Calder_ISMs": 24,
+    "cover_instances": 57704,
+    "cover_root_max_error_cm": 0.182,
+    "terrain_hash": "72564759",
+    "tree_crc": "0f3b2bb7",
+    "terrain_samples": 20000,
+    "holes": 0,
+    "max_collision_error_cm": 0.03,
+    "new_lights": 0,
+    "new_tree_draw_components": 0,
+    "new_trunk_collision_components": 1,
+    "native_terrain_water_woods_passed": true
+  },
+  "spatial_comparison": {
+    "passed": true,
+    "unchanged_barn_roof_bale_curing_vertices": 324840,
+    "max_position_delta_cm": 0.0,
+    "cover_original": 57705,
+    "cover_tree_on": 57704,
+    "removed_roots": [
+      [
+        "CalderCover_Broomsedge",
+        "-22720.725",
+        "-1426.161",
+        "-13.378"
+      ]
+    ],
+    "added_roots": 0,
+    "reason": "Pure trunk footprint exclusion only; existing farm geometry and all other cover positions unchanged."
+  },
+  "disable_server_and_portrait_gates": {
+    "codex_persimmon_final_off": {
+      "passed": true,
+      "expected_markers": [
+        "instances=57705",
+        "name=CalderFarm_Fence instances=1 lodTris=2800/2000/1600",
+        "cull=7000/9000"
+      ],
+      "forbidden_markers_absent": [
+        "CALDER_PERSIMMON_TRUNK",
+        "CALDER_PERSIMMON_CAMERA"
+      ],
+      "log": "Saved/CalderWork/runs/codex_persimmon_final_off/Saved/Logs/SeniorSendoff.log"
+    },
+    "codex_persimmon_final_noterrain": {
+      "passed": true,
+      "expected_markers": [
+        "grounds=69240",
+        "instances=53740",
+        "campusFrontVertices=1091586",
+        "floorSamples=2654",
+        "allCalderISMs=0"
+      ],
+      "forbidden_markers_absent": [
+        "CALDER_PERSIMMON_TRUNK",
+        "CALDER_ROCK_STRATA bound="
+      ],
+      "log": "Saved/CalderWork/runs/codex_persimmon_final_noterrain/Saved/Logs/SeniorSendoff.log"
+    },
+    "codex_persimmon_final_nolandscape": {
+      "passed": true,
+      "expected_markers": [
+        "CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759",
+        "enabled=0 batches=0 instances=0",
+        "allCalderISMs=3"
+      ],
+      "forbidden_markers_absent": [
+        "CALDER_PERSIMMON_TRUNK",
+        "CALDER_ROCK_STRATA bound="
+      ],
+      "log": "Saved/CalderWork/runs/codex_persimmon_final_nolandscape/Saved/Logs/SeniorSendoff.log"
+    },
+    "codex_persimmon_final_nofarm": {
+      "passed": true,
+      "expected_markers": [
+        "instances=57815",
+        "allCalderISMs=19"
+      ],
+      "forbidden_markers_absent": [
+        "CALDER_PERSIMMON_TRUNK",
+        "CALDER_FARM_BATCH"
+      ],
+      "log": "Saved/CalderWork/runs/codex_persimmon_final_nofarm/Saved/Logs/SeniorSendoff.log"
+    },
+    "codex_persimmon_final_server": {
+      "passed": true,
+      "expected_markers": [
+        "CALDER_PERSIMMON_TRUNK PASS samples=96 hits=96",
+        "dedicated=1",
+        "enabled=0 batches=0 instances=0"
+      ],
+      "forbidden_markers_absent": [
+        "CALDER_FARM_BATCH"
+      ],
+      "log": "Saved/CalderWork/runs/codex_persimmon_final_server/Saved/Logs/SeniorSendoff.log"
+    },
+    "codex_persimmon_final_portrait": {
+      "passed": true,
+      "expected_markers": [
+        "CALDER_PERSIMMON_TRUNK PASS samples=96 hits=96",
+        "CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759",
+        "CALDER_PERSIMMON_CAMERA name=detail_calder_persimmon groundPlus130=1"
+      ],
+      "forbidden_markers_absent": [
+        "physicalOrBranchClearanceFailed=1"
+      ],
+      "log": "Saved/CalderWork/runs/codex_persimmon_final_portrait/Saved/Logs/SeniorSendoff.log"
+    }
+  },
+  "appearance": {
+    "all_16_new_frames_individually_inspected": true,
+    "total_inspected_frames": 194,
+    "images": {
+      "codex_farm_persimmon_views": {
+        "241_detail_calder_farm.png": "64d0f256a73c3135c12832bab722d58af0082c4174b84b6f675394b714a52cc5",
+        "243_detail_calder_barn_entry.png": "dc23c1578bd3d2d62b790808a243530c068c2afc266dbb8ec01273a2ef6352c9",
+        "247_detail_calder_persimmon.png": "625478faf39dd95439ce76668310a8092034611ca680915bf319546bbc696c40",
+        "248_detail_calder_persimmon_fruit.png": "573463be8415603b828e467a3a56e6d458491f070515df25159066a6b0cdf8fa"
+      },
+      "codex_farm_persimmon_attachment_views": {
+        "241_detail_calder_farm.png": "7df2a5294ab615a7b374c59f17c914a40dd47c269500aa7b6023e1451fb72401",
+        "243_detail_calder_barn_entry.png": "5d85c79a040c8672e2ffec85afed262ac5e711f6edddc5931daa6bc6d0d808fb",
+        "247_detail_calder_persimmon.png": "572a984024cea67414409ee9467f82e4561614943243d7e5df8778e56ebfee1d",
+        "248_detail_calder_persimmon_fruit.png": "6e81d2e39a43b07838e7ed99b7d9071287e55b97f8a222db6305bd9cf0f97b23"
+      },
+      "codex_farm_persimmon_joints_views": {
+        "241_detail_calder_farm.png": "4e538cbf316a098283bfa9c389d41e2358bf48f84d302f789647ca3bc3e04687",
+        "243_detail_calder_barn_entry.png": "66a70efa997ed4067540c4ef0ce7d87c86a3683406600a2f0518e525d80281f7",
+        "247_detail_calder_persimmon.png": "f955b79805b555be23e8504cfe047c1bfc0c8f7ad6d8fe13d9a6bc9cbe0dee07",
+        "248_detail_calder_persimmon_fruit.png": "dd60b5d63f43549b719b5d63d387df4ee5f9e54215ed113793aea3a6faf07c00"
+      },
+      "codex_persimmon_final_portrait": {
+        "247_detail_calder_persimmon.png": "b16e6997c35d5ae3008fbd3e32ce9a76fcd5185eb55edb7f1475806a928fc0f2",
+        "248_detail_calder_persimmon_fruit.png": "9c11d0f611bffe313cae93a642f6334e6607e0709d67bbe64b59f15a9749c813"
+      },
+      "codex_persimmon_framed_views": {
+        "247_detail_calder_persimmon.png": "2271109ebe70eae4dfb4e4848121df5176208da743a7b4bc5c1caf6c68110d26",
+        "248_detail_calder_persimmon_fruit.png": "713d64c5f9f1752671d186a01238f90f0b47b859b99bb5cf436b625a46ec9677"
+      }
+    },
+    "findings": [
+      "Detached twig roots fixed by sharing the actual piecewise main branch positions.",
+      "Bark joint surfaces close angled branch-bend gaps.",
+      "Source photos inform small orange fruit, four calyx lobes, bark plates and branching; no downloaded pixels used.",
+      "The95degree new whole-tree view now frames root and highest shoot; the35degree fruit eye uses real floor and branch clearance.",
+      "Earlier720x982portrait capture was clamped and still cropped; preserved as rejected framing.",
+      "Geometry and private paint still read as a constructed asset under dusk lighting; photographic quality and final performance remain unaccepted.",
+      "The existing barn/roof/bale/curing geometry and all other cover placements are unchanged."
+    ]
+  },
+  "protected_file_count": 13,
+  "original_material_hashes_unchanged": {
+    "Content/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured.uasset": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderFalls.uasset": "edcd97c14c7bc43ea47d4194075d9fdc6e5c0ab7c2e40f21de0af4e8393f24b5",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderStream.uasset": "c36d1457988cef02c14494164ede0dcea78b33fc4291f1d011ff2b3e57a482b9"
+  },
+  "pending_fog": "Original values and exact dry-run remain unchanged; no direct owner approval received",
+  "sources": {
+    "Source/SeniorSendoff/HouseCalderFarmTree.h": "7acce7d3582ad5e8f32a7887298820672c6291981678e7e662016ebc7408c392",
+    "Source/SeniorSendoff/HouseCalderFarmTree.cpp": "8dbe17abee4cdef81e0b03b4cf6500091855981edae1daf37d1da789c165d6d6",
+    "Source/SeniorSendoff/HouseCalderFarm.cpp": "2e539db9859d05d80c71451494e9eee0e9335b6f379ae929043c715c15aec035",
+    "Source/SeniorSendoff/HouseCalderFarm.h": "58317a4587463526e19c344c658fc22c40c90b2ef652348389f709fb39c0c4b6",
+    "Source/SeniorSendoff/HouseExterior.cpp": "30624e8358b2e211fc1feb6e05ec55df0a96a3533341b476363f6365367cca73"
+  }
+}

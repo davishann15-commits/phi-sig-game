@@ -1,0 +1,25 @@
+{
+  "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderHedgerow",
+  "parent": "/Game/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured",
+  "pixel_instructions": 229,
+  "pixel_samples": 2,
+  "opaque": true,
+  "ISM_enabled": true,
+  "instance_custom_data": [
+    "rootZ",
+    "height"
+  ],
+  "wind": "Same root-pinned world displacement on woody canes, leaves and hips; existing gust actor drives WindStrength",
+  "original_material_sha256": {
+    "Content/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured.uasset": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderFalls.uasset": "edcd97c14c7bc43ea47d4194075d9fdc6e5c0ab7c2e40f21de0af4e8393f24b5",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderStream.uasset": "c36d1457988cef02c14494164ede0dcea78b33fc4291f1d011ff2b3e57a482b9",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderFarmRoof.uasset": "fa1c5b7839d1924db298f9556460e6507ed1f108a20c24e195a485270c326413",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderStrataRock.uasset": "c031f619898d10e60e5775771e088340c1fda8f5e89c7f667d0f246f51167ef8"
+  },
+  "default_enabled": false,
+  "scope": "Asset compile only; native placement/wind/visual/performance acceptance separate"
+}

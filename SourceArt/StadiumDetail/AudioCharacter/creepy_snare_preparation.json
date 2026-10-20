@@ -1,0 +1,122 @@
+{
+  "status": "Prepared rhythm demo only; not installed, compiled or in-game accepted.",
+  "owner_direction": "Make it creepier; previous rhythm feels unnatural.",
+  "tempo_bpm": 96,
+  "bars": 4,
+  "seconds": 11,
+  "strokes": [
+    {
+      "seconds": 0.2,
+      "velocity": 0.91,
+      "sample_layer": 4
+    },
+    {
+      "seconds": 0.828,
+      "velocity": 0.49,
+      "sample_layer": 3
+    },
+    {
+      "seconds": 1.1385,
+      "velocity": 0.21,
+      "sample_layer": 0
+    },
+    {
+      "seconds": 1.217125,
+      "velocity": 0.18,
+      "sample_layer": 1
+    },
+    {
+      "seconds": 1.29575,
+      "velocity": 0.35,
+      "sample_layer": 2
+    },
+    {
+      "seconds": 1.374375,
+      "velocity": 0.31,
+      "sample_layer": 3
+    },
+    {
+      "seconds": 1.454,
+      "velocity": 0.86,
+      "sample_layer": 4
+    },
+    {
+      "seconds": 2.705,
+      "velocity": 0.58,
+      "sample_layer": 3
+    },
+    {
+      "seconds": 3.332,
+      "velocity": 0.23,
+      "sample_layer": 0
+    },
+    {
+      "seconds": 3.6435,
+      "velocity": 0.4,
+      "sample_layer": 3
+    },
+    {
+      "seconds": 4.11425,
+      "velocity": 0.16,
+      "sample_layer": 0
+    },
+    {
+      "seconds": 4.192875,
+      "velocity": 0.19,
+      "sample_layer": 1
+    },
+    {
+      "seconds": 4.2715,
+      "velocity": 0.22,
+      "sample_layer": 0
+    },
+    {
+      "seconds": 4.350125,
+      "velocity": 0.25,
+      "sample_layer": 1
+    },
+    {
+      "seconds": 4.42875,
+      "velocity": 0.33,
+      "sample_layer": 2
+    },
+    {
+      "seconds": 4.507375,
+      "velocity": 0.36,
+      "sample_layer": 3
+    },
+    {
+      "seconds": 4.588,
+      "velocity": 0.74,
+      "sample_layer": 4
+    },
+    {
+      "seconds": 7.629875,
+      "velocity": 0.13,
+      "sample_layer": 1
+    },
+    {
+      "seconds": 7.669437,
+      "velocity": 0.16,
+      "sample_layer": 0
+    },
+    {
+      "seconds": 7.71,
+      "velocity": 0.45,
+      "sample_layer": 3
+    },
+    {
+      "seconds": 8.341,
+      "velocity": 0.24,
+      "sample_layer": 0
+    },
+    {
+      "seconds": 8.974,
+      "velocity": 0.13,
+      "sample_layer": 1
+    }
+  ],
+  "audition": "Rhythm demo before game attenuation; demo peak .22. Runtime gain/timers remain unchanged.",
+  "candidate_sha256": "1062a091d144de50fc3d9be6ecf2c9a42191d5e2ffaeea4780d6fb6a91be2542",
+  "demo_sha256": "43584bb8d14523d2f553e1426da2cf961d369e01d57df6c468a447e5ca01539a"
+}

@@ -1,0 +1,18 @@
+{
+  "pixel_instructions": 229,
+  "pixel_samples": 2,
+  "ISM_enabled": true,
+  "assets_saved": false,
+  "source_sha256": {
+    "Content/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured.uasset": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+    "Content/SeniorSendOff/Calder/Textures/rough_wood/T_rough_wood_A.uasset": "e6e319a0a42d059e5f3652035326a7068333e1b89d1db2a29c450af7b95f09c7",
+    "Content/SeniorSendOff/Calder/Textures/rough_wood/T_rough_wood_N.uasset": "7331265811f6221ea2488ab9436e811df0e121a21e85e62673cfb32986bcd928",
+    "Content/SeniorSendOff/Calder/Textures/stacked_stone_wall/T_stacked_stone_wall_A.uasset": "68073df8c6699b3a32fb95ac0287387373da4efd296c32f578d46d7d41f4d698",
+    "Content/SeniorSendOff/Calder/Textures/stacked_stone_wall/T_stacked_stone_wall_N.uasset": "bd92030efc15a377dee7cfaf5867a1bffb36d2d5bfb48af22e3c557cdecc55e5",
+    "Content/SeniorSendOff/Calder/Textures/cracked_concrete/T_cracked_concrete_A.uasset": "84b25948d9677f1fd0ad75f791aa1bbdf00195a917130ca2fe8e7a9eec9cad35",
+    "Content/SeniorSendOff/Calder/Textures/cracked_concrete/T_cracked_concrete_N.uasset": "09af6e0b4ad7078d009852e19badcbfc5e79731c236134722b7494752c608d94",
+    "Content/SeniorSendOff/Calder/Textures/withered_grass/T_withered_grass_A.uasset": "103ac8fcae32f85c773ee52a583c800a5b15d2baf2b25d56bcd64d044ab54972",
+    "Content/SeniorSendOff/Calder/Textures/withered_grass/T_withered_grass_N.uasset": "0ae0cc4d4c6514d59fbba056e4efd147875d704ae1fda5fee5486a07a23eded4"
+  },
+  "scope": "Existing shader budget/provenance only; native farm/visual acceptance separate"
+}

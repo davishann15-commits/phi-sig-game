@@ -132,6 +132,8 @@ UInstancedStaticMeshComponent* UHouseBreakDebrisComponent::GroupComponent(EGroup
     if (!Owner) return nullptr;
     UInstancedStaticMeshComponent* Component = NewObject<UInstancedStaticMeshComponent>(Owner);
     Component->SetMobility(EComponentMobility::Movable);
+    // Debris is lit like the piece it came from (a campus prop indoors is on the interior lighting channel).
+    if (const UPrimitiveComponent* Root = Cast<UPrimitiveComponent>(Owner->GetRootComponent())) Component->LightingChannels = Root->LightingChannels;
     Component->SetUsingAbsoluteLocation(true);
     Component->SetUsingAbsoluteRotation(true);
     Component->SetUsingAbsoluteScale(true);

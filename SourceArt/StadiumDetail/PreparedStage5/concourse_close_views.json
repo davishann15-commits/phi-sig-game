@@ -1,0 +1,51 @@
+{
+  "introduced_stage": 5,
+  "views": [
+    {
+      "name": "detail_stadium_hall_fame",
+      "eye": [
+        -605.282,
+        -9857.585,
+        113
+      ],
+      "target": [
+        -530.411,
+        -10037.638,
+        113
+      ],
+      "floor_z": -57,
+      "fov": 90
+    },
+    {
+      "name": "detail_stadium_bulletin",
+      "eye": [
+        4846.251,
+        -9658.64,
+        113
+      ],
+      "target": [
+        4795.651,
+        -9838.664,
+        113
+      ],
+      "floor_z": -57,
+      "fov": 70
+    },
+    {
+      "name": "detail_stadium_dedication",
+      "eye": [
+        3008.455,
+        -9332.209,
+        113
+      ],
+      "target": [
+        2998.322,
+        -9521.939,
+        130
+      ],
+      "floor_z": -57,
+      "fov": 65
+    }
+  ],
+  "added_comment": "Concourse wall details:170cm eyes above the fixed apron; earlier poses unchanged."
+}

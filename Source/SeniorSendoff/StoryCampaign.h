@@ -236,6 +236,7 @@ private:
     UFUNCTION() void OnRep_ReplicatedCrawl();
     void StartMovementJump();
     void OnLeftMousePressed();
+    void OnShootReleased();
     AExistingHouseDoor* FindFocusedExistingDoor(float MinimumFacing) const;
     bool InteractWithExistingDoor(AExistingHouseDoor* Door);
     void InteractWithExistingDoorOrFurniture();

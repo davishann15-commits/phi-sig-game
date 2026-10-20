@@ -1,0 +1,360 @@
+{
+  "status": "owner_three_species_revision_verified_and_followup_nightfall_verified",
+  "owner_feedback": "finish the geese and crows; deer need major work, run mindlessly and look weird",
+  "scope": [
+    "deer calm behavior and locomotion/neck correction using acquired Fab animations",
+    "geese and roost crows in regular Play",
+    "crow and raven audio"
+  ],
+  "baseline": "Saved/CalderWork/wildlife_revision_20261018_v1/baseline.json",
+  "recovery_before_revision": "Saved/CalderWork/codex_checkpoint_crow_roost_20261018_v1",
+  "protected": [
+    "terrain",
+    "trees",
+    "tower twelve crows",
+    "maps",
+    "unrelated gameplay"
+  ],
+  "current_acceptance": {
+    "visual": true,
+    "deer_reactions": true,
+    "deer_recovery": true,
+    "deer_medium_soles": true,
+    "geese_combined": true,
+    "crow_audio": true,
+    "normal_default": true,
+    "multiplayer": true,
+    "performance": true,
+    "recovery_checkpoint": true
+  },
+  "old_deer_acceptance_superseded_by_owner_feedback": true,
+  "whole_phase3_complete": false,
+  "dusk_to_night": "Implemented30-minute shared-server-time transition and night hold; native stages/clock/restoration/MP/current build pass. See nightfall_20261018.json; final nightfall recovery receipt is authoritative.",
+  "updated_utc": "2026-10-18T22:24:51.463582+00:00",
+  "owner_revision1_feedback": "The legs or body still look unnatural",
+  "revision1_native_result": "Saved/CalderWork/runs/codex_owner_deer_revision_v1",
+  "revision2_plan": "21 baked donor controls, preserve real hand/hock/head joints; compressed253-float palette; slope-aware body root; ground contact without replacing donor gait",
+  "revision2": {
+    "controls": 21,
+    "custom_floats": 253,
+    "native_campus": "Saved/CalderWork/runs/codex_owner_deer_preview_v2",
+    "native_campus_machine_passed": true,
+    "native_campus_captures": 20,
+    "native_campus_tick_diagnostic_p95_ms": 0.2245,
+    "native_campus_sole_gap_p95_cm": 0.636,
+    "native_campus_drift_p95_cm": 0.0,
+    "owner_visual_acceptance": "Yes, this looks more natural",
+    "unforced_calm_run": "Saved/CalderWork/runs/codex_owner_deer_calm_v2",
+    "unforced_calm_complete": true,
+    "unforced_calm_result": {
+      "real_seconds": 110.004,
+      "all10_walked": true,
+      "flee_samples": 0,
+      "feeding_fraction": 0.888,
+      "max_home_distance_cm": 989.9495,
+      "actual_submitted_sole_samples": 24333,
+      "sole_gap_p95_cm": 0.62732,
+      "sole_drift_p95_cm": 0.0
+    },
+    "capture_review": {
+      "preview_captures_reviewed": 20,
+      "calm_captures_reviewed": 11,
+      "method": "All five contact sheets reviewed; selected close-up originals also inspected",
+      "limits": [
+        "Foliage blocks a few woods angles",
+        "Initial escape has adult/young overlap",
+        "Walking capture mainly covers starting and turning"
+      ],
+      "full_captures_reviewed": 53,
+      "full_review_note": "All44 approach/flee frames in5initial sheets, then9 newfeeding details in final sheets03/04. Some foliage occlusion retained and documented; no stretched neck or artificial knee IK in visible poses."
+    },
+    "full_native": "Saved/CalderWork/runs/codex_owner_deer_complete_v2",
+    "full_native_passed": true,
+    "full_native_result": {
+      "ordinary_input_cases": "4/4",
+      "direct_reactions": 12,
+      "real_return_delay_seconds": 142.04,
+      "captures": 53,
+      "sole_gap_p95_cm": 0.636,
+      "sole_drift_p95_cm": 0,
+      "submitted_sole_samples": 3254,
+      "diagnostic_tick_p95_ms": 0.1081
+    },
+    "medium_native": {
+      "run": "codex_owner_deer_medium_v2",
+      "passed": true,
+      "frames": 554,
+      "captures_reviewed": 8,
+      "per_variant_gap_p95_cm": [
+        0.6169,
+        0.6605,
+        0.4027
+      ],
+      "drift_p95_cm": 0,
+      "visual_limit": "Physical medium-distance shots are dark and often visually obscured by existing foliage. Numeric submitted-palette contact proof is stronger than these distant images."
+    }
+  },
+  "crow_raven_audio_revision": {
+    "synthesized_v1": "Owner rejected: they both need help",
+    "recorded_preview": "Owner: they sound better just need to be a bit longer",
+    "authorized_exception": "Public-domain NPS field recordings for crow/raven only; original prompt581 synthesis constraint overridden for these two calls",
+    "longer_clips_prepared": "SourceArt/CalderLandscape/phase3/audio/nps_corvids",
+    "source_not_installed_yet": false,
+    "longer_seconds": {
+      "crow": 1.45,
+      "raven": 1.95
+    },
+    "build": "editor_build_v6 PASS203.77s",
+    "ambient_v2": {
+      "run": "codex_owner_wildlife_ambient_v2",
+      "passed": false,
+      "actual_source_twelve_unchanged": true,
+      "corvid_sources_exact": true,
+      "crow_mix_correlations": [
+        0.98978949,
+        0.99640436
+      ],
+      "raven_missing": "Fixed ridge emitter beyond shared400m flight attenuation cutoff",
+      "normal_clock": true,
+      "peaks": {
+        "voices": 3,
+        "sources": 10
+      }
+    },
+    "range_fix": "Separate raven falloff to1km; no new voice/components, goose/crow ranges unchanged; raven still subject to indoor and lawn cap. Editorbuildv6 active.",
+    "ambient_v3": {
+      "run": "codex_owner_wildlife_ambient_v3",
+      "passed": true,
+      "analysis": "Saved/CalderWork/runs/codex_owner_wildlife_ambient_v3/Saved/CalderWildlifeSound/corvid_audio_analysis.json",
+      "normal_clock": true,
+      "raven_distance_cm": 51897.94,
+      "crow_correlations": [
+        0.99324577,
+        0.99770757
+      ],
+      "raven_correlation": 0.990953,
+      "original12unchanged": true,
+      "peaks": {
+        "voices": 3,
+        "sources": 10
+      },
+      "captures_review_pending": false,
+      "captures_reviewed": 2
+    }
+  },
+  "owner_scope_update": "2026-10-18: once done with geese, crows and deer, good on wildlife for now. Remaining species deferred, not current acceptance requirements.",
+  "prior_goose_audio_captures_reviewed": {
+    "run": "codex_owner_bird_audio_v1",
+    "images": 4,
+    "limits": "Dusk silhouettes; source/mix proof separate"
+  },
+  "current_crow_render": {
+    "run": "codex_owner_crow_complete_v2",
+    "passed": true,
+    "captures_reviewed": 8,
+    "roots_compared": 723,
+    "root_error_cm": 0,
+    "visual_note": "Small natural distant silhouettes in crossing views; birds enter existing northwoods tree crowns and hide after roosting. No verified pine taxonomy claim."
+  },
+  "normal_defaults": {
+    "receipt": "Saved/CalderWork/runs/codex_owner_default_v2_default.json",
+    "passed": [
+      "on",
+      "off",
+      "terrain_off"
+    ],
+    "captures_reviewed": 9
+  },
+  "current_goose_arrival": {
+    "run": "codex_owner_goose_arrival_v2",
+    "native_passed": true,
+    "mix_analysis_passed": true,
+    "buffers": 14,
+    "voices": 6,
+    "peak_active_voices": 4,
+    "peak_engine_sources": 9,
+    "max_per_species": 1,
+    "honks": 2,
+    "echoes": 2,
+    "splashes": 4,
+    "actual_beak_samples": 20,
+    "beak_error_rad": 0,
+    "captures_reviewed": 4
+  },
+  "indoor_lawn": {
+    "run": "codex_owner_wildlife_locations_v2",
+    "native_and_analysis_passed": true,
+    "house_and_campus_actual_samples_all_zero": true,
+    "lawn_rms_dbfs": -71.6966566,
+    "creek_rms_dbfs": -44.7907947,
+    "captures_reviewed": 4
+  },
+  "current_deer_mp": {
+    "run": "codex_owner_deer_mp_v2",
+    "passed": true,
+    "source_config_frozen": true,
+    "normal_defaults": true,
+    "client_data_ms": 37.22,
+    "client_gpu_completion_upper_bound_ms": 71.82,
+    "required_ms": 500,
+    "client_capture_reviewed": true,
+    "actual_lobby_story_travel": true,
+    "original_global_hill_route_gate_separate": true
+  },
+  "current_goose_mp": {
+    "run": "codex_owner_goose_mp_v2",
+    "passed": true,
+    "seconds": 315.72,
+    "source_config_frozen": true,
+    "normal_defaults": true,
+    "ordinary_host_approach": true,
+    "full_recovery": true,
+    "client_data_ms": 92.768,
+    "client_gpu_completion_upper_bound_ms": 128.172,
+    "limit_ms": 500,
+    "client_same_wall_samples": 1916,
+    "max_same_wall_root_error_cm": 2.217858,
+    "root_error_limit_cm": 120,
+    "hiss_queue_upper_bound_ms": {
+      "host": 0.21366775,
+      "client": 48.99666831
+    },
+    "both_actual_mixes_hiss_splash_detected": true,
+    "captures_reviewed": 6,
+    "limits": "Remote controlled client approach is not separately exercised; original global hill-route gate remains separate."
+  },
+  "sound_off": {
+    "run": "codex_owner_sound_off_v2",
+    "passed": true,
+    "wildlife_audio_components": 0,
+    "original_cricket_playing": true,
+    "original_owl_source_unchanged": true
+  },
+  "standalone_build": {
+    "passed": true,
+    "seconds": 152.85,
+    "actions": 254,
+    "log": "Saved/CalderWork/codex_owner_wildlife_game_v2.log",
+    "strict_signature_passed": true,
+    "metadata_receipt": "Saved/CalderWork/wildlife_revision_20261018_v1/build_signature_and_owned_crash_helper.json",
+    "initial_signature_verify_failed": "Cloud/Finder reapplied FinderInfo metadata to generated app root; removal during verification passed. Security/cloud attributes otherwise preserved.",
+    "actual_standalone_gameplay_tested": false
+  },
+  "performance": {
+    "status": "v2 stopped after two on-runs and one off-run for pose optimization; all failures retained",
+    "tag": "codex_owner_wildlife_perf_v2",
+    "rounds": 3,
+    "views": 21,
+    "samples_per_view": 300,
+    "warmup_seconds": 4,
+    "source_config_frozen": true,
+    "normal_defaults": true,
+    "failed_tick_views_on1": {
+      "front_street": 0.7171,
+      "detail_perf_in_lib": 0.463,
+      "detail_perf_in_science": 0.4182
+    },
+    "failed_tick_views_on2": {
+      "detail_woods_edge": 1.3268,
+      "detail_woods_20m": 0.7565,
+      "detail_woods_ravine": 0.6055
+    },
+    "historical_frame_limits_also_exceeded_off": true
+  },
+  "pose_cache_v3": {
+    "baseline": "Saved/CalderWork/wildlife_revision_20261018_v1/before_pose_cache_v3",
+    "implementation": "Memoize pure stance transforms by complete state/scale/touchdown time; reuse overlapping15Hz key frames and cache relative transforms. No donor, geometry, gait table, rate, route or behavior changes.",
+    "editor_build_v7": "PASS149.82s",
+    "native_fresh_reference_comparison": "codex_owner_deer_cache_v4 currently running; no acceptance yet",
+    "native_v7_stopped": {
+      "run": "codex_owner_deer_cache_v3",
+      "native_passed": false,
+      "reason": "Raw AngularDistance on slightly nonunit quaternions reported false errors even when cached/fresh translations were identical to1.3e-11cm and scales identical. No gait/position mismatch observed.",
+      "max_raw_angle_deg": 0.003414952002,
+      "failed_comparison_rows": 7910
+    },
+    "v8_corrections": "Normalize quaternion comparisons and use shortest quaternion chord angle; retain1e-4degree/1e-4cm thresholds. Require exactly identical key times rather than epsilon reuse across possible plant/stamp boundaries. Ring cursors bounded.",
+    "editor_build_v8": {
+      "passed": true,
+      "seconds": 148.09,
+      "log": "Saved/CalderWork/wildlife_revision_20261018_v1/editor_build_v8.log"
+    },
+    "native_v8": {
+      "full": "Saved/CalderWork/runs/codex_owner_deer_cache_v4_owner.json",
+      "full_passed": true,
+      "seconds": 327.33,
+      "fresh_transform_comparisons": 332365,
+      "max_position_error_cm": 0,
+      "max_angle_error_degrees": 0,
+      "full_captures_reviewed": 53,
+      "medium": "Saved/CalderWork/runs/codex_owner_deer_medium_cache_v4_owner.json",
+      "medium_passed": true,
+      "medium_fresh_comparisons": 15701,
+      "medium_captures_reviewed": 8,
+      "medium_visual_limits": "Distant foliage obscures several frames; current numerical soles and exact cached transforms pass."
+    }
+  },
+  "owner_preview_shortcut": {
+    "path": "Saved/CalderWork/owner_preview/launch_wildlife_preview.py",
+    "normal_defaults": true,
+    "enabling_trial_flags": false,
+    "check_passed": true,
+    "launched": false
+  },
+  "performance_v3": {
+    "status": "passed",
+    "report": "Saved/CalderWork/runs/codex_owner_wildlife_perf_v3_perf.json",
+    "rounds": 3,
+    "views": 21,
+    "samples_per_view": 300,
+    "warmup_seconds": 4,
+    "source_config_frozen": true,
+    "normal_defaults": true,
+    "all_views_all_rounds_tick_budget_passed": true,
+    "max_tick_p95_ms": 0.124,
+    "listed_frame_budgets_passed": true,
+    "interior_paired_median_deltas_ms": {
+      "detail_perf_in_lib": 0.08,
+      "detail_perf_in_harlow": 0.35,
+      "detail_perf_in_science": 0.38,
+      "detail_perf_in_union": 0.35,
+      "detail_perf_in_stadium": 0.19
+    },
+    "matched_first_pair_42_captures_reviewed": true,
+    "other_four_run_captures_not_reinspected_same_frozen_source": true,
+    "earlier_partial_performance_failures_preserved": true,
+    "full_master_global_load_hill_route_and_photo_acceptance_separate": true
+  },
+  "visual_acceptance_basis": {
+    "owner_approved_deer_movement_revision2": true,
+    "current_native_render_inspection": true,
+    "all_three_species_photographic_master_quality_owner_accepted": false,
+    "limits": "Current owner correction and functional/render checks accepted; no claim that the original full photographic quality gate or whole Calder master is complete."
+  },
+  "scope_guard": {
+    "passed": true,
+    "protected_source_map_files": 13,
+    "donors_unchanged": 90,
+    "allowed_owned_deer_asset_changes": 7,
+    "report": "SourceArt/CalderLandscape/phase3/wildlife_revision_scope_guard.json"
+  },
+  "recovery_target": "Saved/CalderWork/codex_checkpoint_owner_wildlife_20261018_v1/recovery_receipt.json; present passed=true is authoritative",
+  "standalone_build_v3": {
+    "passed": true,
+    "seconds": 138.12,
+    "strict_signature_passed": true,
+    "source_config_frozen": true,
+    "actions": 254,
+    "log": "Saved/CalderWork/codex_owner_wildlife_game_v3.log",
+    "receipt": "Saved/CalderWork/codex_owner_wildlife_game_v3_build.json",
+    "standalone_gameplay_tested": false
+  },
+  "recovery_checkpoint_condition": "Target recovery_receipt.json must exist with passed=true; a pending boolean in this pre-archive ledger does not override that authoritative receipt.",
+  "verified_recovery": {
+    "path": "Saved/CalderWork/codex_checkpoint_owner_wildlife_20261018_v1/recovery_receipt.json",
+    "passed": true,
+    "text": 325,
+    "binary": 108,
+    "evidence": 7638
+  }
+}

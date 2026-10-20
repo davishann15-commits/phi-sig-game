@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "utc": "2026-10-18T23:27:30.139258+00:00",
+  "protected_source_map": {
+    "Source/SeniorSendoff/HouseBasketballCourt.h": "d6d4968aaaa30d5c8556bbf9fb3acaba63264fbbb9a67994542dca73a5aa8d91",
+    "Source/SeniorSendoff/HouseParkingLot.h": "6622d5244d6d9176ef5dceca787830744f5aa8d344b986d182c31fe3c33443e3",
+    "Source/SeniorSendoff/HouseBasketballCourt.cpp": "695430e976d8f907d10d50fa8b826ea91a6480c02d9dd8527e22f504cb0b5714",
+    "Source/SeniorSendoff/HouseParkingLotReview.cpp": "ac2f10f3cdbead6b4b28c00cfb5ba130a150dab14a9228c656572fb76f815e41",
+    "Source/SeniorSendoff/HouseRearPorch.cpp": "8175e1e0ce07fb8763a2bb6811476289da051f5c442954797232c353435979ca",
+    "Source/SeniorSendoff/HouseParkingLot.cpp": "86a205a8670a6bd4262e81801fb580ce30be1c403eb7b308f7c1badc4f51af15",
+    "Source/SeniorSendoff/HouseParkingDetail.cpp": "6f4af188ed90d19f59c2682908c6daf1c136742e192ba0585f6aa5ba6fdb8381",
+    "Source/SeniorSendoff/HouseFallJam.cpp": "6ce445873590eac43d270cbc947fc445057af4a71aed92a8f41bf99afdca100b",
+    "Source/SeniorSendoff/HouseFallJam.h": "9e2d8d2c2670d2ccc2719e41ec087dc91300dc53fd09a61679ee1fc36291553b",
+    "Source/SeniorSendoff/HouseRearPorchReview.cpp": "de049038a7da41c86157ff2f432b891a749c3ec24d54c074c2b54a1432e28270",
+    "Source/SeniorSendoff/HouseParkingDetail.h": "3aca74c29c4a1313c272669fe92210d4e523951e25fb7cd3e9d2bafbba7ba980",
+    "Source/SeniorSendoff/HouseRearPorch.h": "b789c92e671f6949f1d18f4204ffd9c497c602676e695c42abf1c54f44ef500a",
+    "Content/Story/Maps/Chapter01_House.umap": "5309c8f80470373721148eabdc62bc6d70ed40fe12ad789587881a2ca7335e5c"
+  },
+  "donors_unchanged": 90,
+  "other_existing_assets_unchanged": 97,
+  "allowed_owned_deer_revisions": {
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerBody.uasset": {
+      "prior_sha256": "11fc9a961502791ee5bb25d89c7d526ada5a112e2439bae95e515153a82f4f6d",
+      "current_sha256": "6d943272fba720885aaa51379dfb2a7b093fbbb4ec219e9130401e53d133c816",
+      "reason": "Owner rejected simplified leg/body poses;21 donor controls with compressed253-float material palette"
+    },
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerSkin.uasset": {
+      "prior_sha256": "89070fe12a5c612b36cae4bf073b592498d766492251833c720cbd684dcba7df",
+      "current_sha256": "9815eecb460a333d0fbfb018a22d9bc57605615aa24a6b496e1decfa0a27f413",
+      "reason": "Owner rejected simplified leg/body poses;21 donor controls with compressed253-float material palette"
+    },
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderWildlifePart.uasset": {
+      "prior_sha256": "402d3c4f924da0e62b94ffa3d69510b7662536c4e78a270e4f37f4c558bdc367",
+      "current_sha256": "abbcc8bb0c10bda3ff0efcab8cc9b8c2655f7510fb95dbcf1867d7ee6815bbba",
+      "reason": "Owner rejected simplified leg/body poses;21 donor controls with compressed253-float material palette"
+    },
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerSourceLOD1.uasset": {
+      "prior_sha256": "4ea7f5b7714c4c75c41425f268b69f7d67f8660f6a983a12552fe43a31c796fc",
+      "current_sha256": "4aac799f35a123fd1e3990d1d476ef8436e055e5b642c573bcfe2cb45f67d554",
+      "reason": "Owner rejected simplified leg/body poses;21 donor controls with compressed253-float material palette"
+    },
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderWildlifeContact.uasset": {
+      "prior_sha256": "262b0aec3e9c5c16d01ed2b94371ea91aae5944c48e8c28782b36980f903bd00",
+      "current_sha256": "af865bc4b5e5e370ef4697e91d7363b101fdec232b1fa462a990516e459c905b",
+      "reason": "Owner rejected simplified leg/body poses;21 donor controls with compressed253-float material palette"
+    },
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerSourceLOD2.uasset": {
+      "prior_sha256": "389cbb9221318752bcc63977d5b8539aecc1308319f0a6fb2410b16ccf639414",
+      "current_sha256": "0fd688fa5ed09d43b9e975aaab249d8e612c4ffd60876b34d5a73c5f24a08ee1",
+      "reason": "Owner rejected simplified leg/body poses;21 donor controls with compressed253-float material palette"
+    },
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerFur.uasset": {
+      "prior_sha256": "738ec1ea1639b3d28f311a50b9607a31ecfb71cc661a928ddb605ccd249c2a85",
+      "current_sha256": "d47ca695a70f81ec654759ee716e14db9c7b9f9e10e42d82f77d667f14073de8",
+      "reason": "Owner rejected simplified leg/body poses;21 donor controls with compressed253-float material palette"
+    }
+  },
+  "canonical_mp_unchanged": true,
+  "config_master_unchanged": true,
+  "original_guard_failure_preserved": "Prior guard correctly rejects changed owned deer static body; approved revision scoped here",
+  "whole_phase3_complete": false
+}

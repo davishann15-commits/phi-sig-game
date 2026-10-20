@@ -1,0 +1,72 @@
+{
+  "scope": "Optional tested farm collision integration; full photographic/final performance/master acceptance remains open",
+  "default_enabled": false,
+  "whole_master_complete": false,
+  "photo_quality_accepted": false,
+  "native_source_build": {
+    "log": "codex_farm_solid_slope_build.log",
+    "actions": 214,
+    "seconds": 132.57,
+    "result": "Succeeded"
+  },
+  "native_run": "codex_farm_solid_slope_native",
+  "native": {
+    "parts": 3,
+    "triangles": 9240,
+    "collision_vertices": 18632,
+    "unmatched_render_vertices": 0,
+    "contacts": 1685,
+    "hits": 1685,
+    "max_contact_error_cm": 0.0008,
+    "client_server_crc": "7764fe3e",
+    "additional_isms": 0,
+    "frozen_hits": 0,
+    "terrain_hash": "72564759",
+    "original_tree_crc": "0f3b2bb7",
+    "total_calder_isms": 24,
+    "cover_instances": 57652,
+    "cover_crc": "90e3d189"
+  },
+  "source_render_comparison": "Saved/CalderWork/farm_solid_trial/render_and_cover_comparison.json",
+  "cover_change": {
+    "removed": 52,
+    "added_or_moved": 0
+  },
+  "all_five_fallback_server_cases_pass": true,
+  "gates": {
+    "codex_farm_solid_final_off": true,
+    "codex_farm_solid_final_noterrain": true,
+    "codex_farm_solid_final_nolandscape": true,
+    "codex_farm_solid_final_nofarm": true,
+    "codex_farm_solid_final_server": true
+  },
+  "walker": {
+    "passed": true,
+    "run": "codex_farm_solid_walk",
+    "ordinary_input_legs": 11,
+    "capsule_floor_profiles": 773,
+    "saved_and_inspected_captures": 3,
+    "source_build_actions": 215,
+    "build_seconds": 134.11
+  },
+  "fog": "Explicitly approved comparison, still original/unapplied before checkpoint",
+  "failure_retained": "First native terrain slope failure corrected with explicit Unwalkable; original reviews unchanged",
+  "full_reach": {
+    "passed": true,
+    "run": "codex_farm_solid_reach_baselined",
+    "baseline": "codex_farm_solid_reach_off",
+    "paths": 6094,
+    "entrances": 47,
+    "overlooks": 6,
+    "gates": 3,
+    "eyes": 8,
+    "stairs": 78,
+    "ramps": 12,
+    "drop_seeds": 1891,
+    "traps": 0,
+    "seed_traps": 0,
+    "new_edge_escapes": 0,
+    "hole_exits": 0,
+    "lowest_reached_z": -564.9
+  }
+}

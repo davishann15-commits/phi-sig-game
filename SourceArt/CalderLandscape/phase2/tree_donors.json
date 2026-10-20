@@ -1,0 +1,238 @@
+[
+  {
+    "source": "/Game/EuropeanBeech/Geometry/SimpleWind/SM_EuropeanBeech_Forest_01.SM_EuropeanBeech_Forest_01",
+    "lods": 7,
+    "triangles": [
+      10696,
+      1045949,
+      613384,
+      175663,
+      65936,
+      15132,
+      8
+    ],
+    "extent": [
+      1520.2011108398438,
+      1588.3919372558594,
+      2423.568603515625
+    ],
+    "centre": [
+      -158.4739990234375,
+      6.287384033203125,
+      2421.422607421875
+    ],
+    "materials": [
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_TwoSided.MI_EuropeanBeech_TwoSided",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Tileable.MI_EuropeanBeech_Tileable",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Trunk_01.MI_EuropeanBeech_Trunk_01",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Decoration.MI_EuropeanBeech_Decoration",
+      "/Game/EuropeanBeech/Materials/Impostor/MI_Impostor_Forest_01.MI_Impostor_Forest_01"
+    ],
+    "nanite": true
+  },
+  {
+    "source": "/Game/EuropeanBeech/Geometry/SimpleWind/SM_EuropeanBeech_Forest_02.SM_EuropeanBeech_Forest_02",
+    "lods": 7,
+    "triangles": [
+      550781,
+      1568529,
+      788192,
+      458139,
+      205593,
+      19612,
+      8
+    ],
+    "extent": [
+      1337.224609375,
+      1084.3543701171875,
+      2244.419677734375
+    ],
+    "centre": [
+      186.898681640625,
+      -131.38973999023438,
+      2242.273681640625
+    ],
+    "materials": [
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_TwoSided.MI_EuropeanBeech_TwoSided",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Tileable.MI_EuropeanBeech_Tileable",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Trunk_01.MI_EuropeanBeech_Trunk_01",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Decoration.MI_EuropeanBeech_Decoration",
+      "/Game/EuropeanBeech/Materials/Impostor/MI_Impostor_Forest_02.MI_Impostor_Forest_02"
+    ],
+    "nanite": true
+  },
+  {
+    "source": "/Game/EuropeanBeech/Geometry/SimpleWind/SM_EuropeanBeech_Field_01.SM_EuropeanBeech_Field_01",
+    "lods": 7,
+    "triangles": [
+      972734,
+      2309649,
+      1022547,
+      261371,
+      96289,
+      32150,
+      8
+    ],
+    "extent": [
+      1142.637939453125,
+      1168.3330078125,
+      1195.810546875
+    ],
+    "centre": [
+      -26.891357421875,
+      22.23480224609375,
+      1194.961669921875
+    ],
+    "materials": [
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_TwoSided.MI_EuropeanBeech_TwoSided",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Tileable.MI_EuropeanBeech_Tileable",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Trunk_05.MI_EuropeanBeech_Trunk_05",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Decoration.MI_EuropeanBeech_Decoration",
+      "/Game/EuropeanBeech/Materials/Impostor/MI_Impostor_Field_01.MI_Impostor_Field_01"
+    ],
+    "nanite": true
+  },
+  {
+    "source": "/Game/EuropeanBeech/Geometry/SimpleWind/SM_EuropeanBeech_Sapling_01.SM_EuropeanBeech_Sapling_01",
+    "lods": 4,
+    "triangles": [
+      19579,
+      38750,
+      9778,
+      6233
+    ],
+    "extent": [
+      115.02459716796875,
+      89.57826805114746,
+      159.2445526123047
+    ],
+    "centre": [
+      1.4235115051269531,
+      -13.632539749145508,
+      157.8964080810547
+    ],
+    "materials": [
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_TwoSided.MI_EuropeanBeech_TwoSided",
+      "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Tileable.MI_EuropeanBeech_Tileable"
+    ],
+    "nanite": true
+  },
+  {
+    "source": "/Game/NorwayMaple/Geometry/SimpleWind/SM_NorwayMaple_Forest_01.SM_NorwayMaple_Forest_01",
+    "lods": 7,
+    "triangles": [
+      5428,
+      182609,
+      76749,
+      36542,
+      8204,
+      3583,
+      8
+    ],
+    "extent": [
+      421.44628143310547,
+      460.6263732910156,
+      1249.6463623046875
+    ],
+    "centre": [
+      -75.00171661376953,
+      70.42959594726562,
+      1246.7593994140625
+    ],
+    "materials": [
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_TwoSided.MI_NorwayMaple_TwoSided",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Tileable.MI_NorwayMaple_Tileable",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Trunk_03.MI_NorwayMaple_Trunk_03",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Decoration.MI_NorwayMaple_Decoration",
+      "/Game/NorwayMaple/Materials/Impostor/MI_Impostor_NorwayMaple_Forest_01.MI_Impostor_NorwayMaple_Forest_01"
+    ],
+    "nanite": true
+  },
+  {
+    "source": "/Game/NorwayMaple/Geometry/SimpleWind/SM_NorwayMaple_Forest_02.SM_NorwayMaple_Forest_02",
+    "lods": 7,
+    "triangles": [
+      8377,
+      321126,
+      118381,
+      43148,
+      14056,
+      7008,
+      8
+    ],
+    "extent": [
+      562.4892959594727,
+      681.5992736816406,
+      1264.5916748046875
+    ],
+    "centre": [
+      -99.57091522216797,
+      17.02069091796875,
+      1259.1480712890625
+    ],
+    "materials": [
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_TwoSided.MI_NorwayMaple_TwoSided",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Tileable.MI_NorwayMaple_Tileable",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Trunk_02.MI_NorwayMaple_Trunk_02",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Decoration.MI_NorwayMaple_Decoration",
+      "/Game/NorwayMaple/Materials/Impostor/MI_Impostor_NorwayMaple_Forest_02.MI_Impostor_NorwayMaple_Forest_02"
+    ],
+    "nanite": true
+  },
+  {
+    "source": "/Game/NorwayMaple/Geometry/SimpleWind/SM_NorwayMaple_Field_01.SM_NorwayMaple_Field_01",
+    "lods": 7,
+    "triangles": [
+      1196582,
+      1770099,
+      644859,
+      85238,
+      18459,
+      13042,
+      8
+    ],
+    "extent": [
+      1044.1649169921875,
+      995.6212463378906,
+      1202.150666475296
+    ],
+    "centre": [
+      -8.442138671875,
+      44.113739013671875,
+      1199.955534696579
+    ],
+    "materials": [
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_TwoSided.MI_NorwayMaple_TwoSided",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Trunk_01.MI_NorwayMaple_Trunk_01",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Tileable.MI_NorwayMaple_Tileable",
+      "/Game/NorwayMaple/Materials/Impostor/MI_Impostor_NorwayMaple_Field_01.MI_Impostor_NorwayMaple_Field_01",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Decoration.MI_NorwayMaple_Decoration"
+    ],
+    "nanite": true
+  },
+  {
+    "source": "/Game/NorwayMaple/Geometry/SimpleWind/SM_NorwayMaple_Sapling_01.SM_NorwayMaple_Sapling_01",
+    "lods": 4,
+    "triangles": [
+      54884,
+      52743,
+      2798,
+      523
+    ],
+    "extent": [
+      99.4699821472168,
+      84.1510419845581,
+      168.10887145996094
+    ],
+    "centre": [
+      13.026123046875,
+      26.585301399230957,
+      165.0160369873047
+    ],
+    "materials": [
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_TwoSided.MI_NorwayMaple_TwoSided",
+      "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Tileable.MI_NorwayMaple_Tileable"
+    ],
+    "nanite": true
+  }
+]

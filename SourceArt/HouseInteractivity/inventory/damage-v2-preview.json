@@ -1,0 +1,676 @@
+{
+  "assets": {
+    "HI_SMV_GR_ClubChair1_Solid_001": {
+      "damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_SMV_GR_ClubChair1_Solid_001_DamageV2.fbx",
+      "damaged_asset_name": "HI_SMV_GR_ClubChair1_Solid_001_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LeatherOlive.MI_SSO_LeatherOlive",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodWalnut.MI_SSO_WoodWalnut",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_SMV_GR_ClubChair1_Solid_001_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "HI_SMV_GR_ClubChair1_Solid_001_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LeatherOlive.MI_SSO_LeatherOlive",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodWalnut.MI_SSO_WoodWalnut",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_SMV_GR_ClubChair1_Solid_001_BrokenV2.fbx",
+      "broken_asset_name": "HI_SMV_GR_ClubChair1_Solid_001_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_LeatherOlive.MI_SSO_LeatherOlive",
+        "/Game/SeniorSendOff/House/Materials/MI_SSO_WoodWalnut.MI_SSO_WoodWalnut",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "HI_SM_GR3_NearSeating_003": {
+      "damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_SM_GR3_NearSeating_003_DamageV2.fbx",
+      "damaged_asset_name": "HI_SM_GR3_NearSeating_003_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_Walnut.M_GR3_Walnut",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_BronzeLeather.M_GR3_BronzeLeather",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_BronzeStitch.M_GR3_BronzeStitch",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_Brass.M_GR3_Brass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_SM_GR3_NearSeating_003_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "HI_SM_GR3_NearSeating_003_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_Walnut.M_GR3_Walnut",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_BronzeLeather.M_GR3_BronzeLeather",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_BronzeStitch.M_GR3_BronzeStitch",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_Brass.M_GR3_Brass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_SM_GR3_NearSeating_003_BrokenV2.fbx",
+      "broken_asset_name": "HI_SM_GR3_NearSeating_003_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_Walnut.M_GR3_Walnut",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_BronzeLeather.M_GR3_BronzeLeather",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_BronzeStitch.M_GR3_BronzeStitch",
+        "/Game/SeniorSendOff/House/GreatRoomV3/M_GR3_Brass.M_GR3_Brass",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "HI_Room102_Chair_01_001": {
+      "damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_Room102_Chair_01_001_DamageV2.fbx",
+      "damaged_asset_name": "HI_Room102_Chair_01_001_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_IvoryPlastic.M_Room102_IvoryPlastic",
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_BlackSteel.M_Room102_BlackSteel",
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_Rubber.M_Room102_Rubber",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_Room102_Chair_01_001_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "HI_Room102_Chair_01_001_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_IvoryPlastic.M_Room102_IvoryPlastic",
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_BlackSteel.M_Room102_BlackSteel",
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_Rubber.M_Room102_Rubber",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_Room102_Chair_01_001_BrokenV2.fbx",
+      "broken_asset_name": "HI_Room102_Chair_01_001_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_IvoryPlastic.M_Room102_IvoryPlastic",
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_BlackSteel.M_Room102_BlackSteel",
+        "/Game/SeniorSendOff/House/Room102Chairs/M_Room102_Rubber.M_Room102_Rubber",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "HI_BR_SM_Bedroom_OvalCoffeeTable_001": {
+      "damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_BR_SM_Bedroom_OvalCoffeeTable_001_DamageV2.fbx",
+      "damaged_asset_name": "HI_BR_SM_Bedroom_OvalCoffeeTable_001_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_Bedroom_DarkStainedWood.M_Bedroom_DarkStainedWood",
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_Bedroom_MatteBlackMetal.M_Bedroom_MatteBlackMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_BR_SM_Bedroom_OvalCoffeeTable_001_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "HI_BR_SM_Bedroom_OvalCoffeeTable_001_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_Bedroom_DarkStainedWood.M_Bedroom_DarkStainedWood",
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_Bedroom_MatteBlackMetal.M_Bedroom_MatteBlackMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_BR_SM_Bedroom_OvalCoffeeTable_001_BrokenV2.fbx",
+      "broken_asset_name": "HI_BR_SM_Bedroom_OvalCoffeeTable_001_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_Bedroom_DarkStainedWood.M_Bedroom_DarkStainedWood",
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_Bedroom_MatteBlackMetal.M_Bedroom_MatteBlackMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "HI_BR_BedDetail_FramedCollage_08_001": {
+      "damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_BR_BedDetail_FramedCollage_08_001_DamageV2.fbx",
+      "damaged_asset_name": "HI_BR_BedDetail_FramedCollage_08_001_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_BedDetail_ReferenceArt.M_BedDetail_ReferenceArt",
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_BedDetail_Black.M_BedDetail_Black",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_BR_BedDetail_FramedCollage_08_001_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "HI_BR_BedDetail_FramedCollage_08_001_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_BedDetail_ReferenceArt.M_BedDetail_ReferenceArt",
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_BedDetail_Black.M_BedDetail_Black",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_BR_BedDetail_FramedCollage_08_001_BrokenV2.fbx",
+      "broken_asset_name": "HI_BR_BedDetail_FramedCollage_08_001_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_BedDetail_ReferenceArt.M_BedDetail_ReferenceArt",
+        "/Game/SeniorSendOff/House/AcrossPosterBedroom/M_BedDetail_Black.M_BedDetail_Black",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    },
+    "HI_R204_GalanzFridgeAndMicrowave_001": {
+      "damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_R204_GalanzFridgeAndMicrowave_001_DamageV2.fbx",
+      "damaged_asset_name": "HI_R204_GalanzFridgeAndMicrowave_001_DamageV2",
+      "damaged_material_slots": [
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackFridgeEnamel.M_R204_R2_BlackFridgeEnamel",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackFridgeGasket.M_R204_R2_BlackFridgeGasket",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_PolishedChrome.M_R204_R2_PolishedChrome",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_WarmOakBedframe.M_R204_R2_WarmOakBedframe",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackPlastic.M_R204_R2_BlackPlastic",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_OldIvoryAppliance.M_R204_R2_OldIvoryAppliance",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_MicrowaveBlackGlass.M_R204_R2_MicrowaveBlackGlass",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_WarmLampBulb.M_R204_R2_WarmLampBulb",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_MicrowaveKeyLegends.M_R204_R2_MicrowaveKeyLegends",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "damaged_collision": "imported_fragment_ucx",
+      "heavily_damaged_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_R204_GalanzFridgeAndMicrowave_001_HeavyV2.fbx",
+      "heavily_damaged_asset_name": "HI_R204_GalanzFridgeAndMicrowave_001_HeavyV2",
+      "heavily_damaged_material_slots": [
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackFridgeEnamel.M_R204_R2_BlackFridgeEnamel",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackFridgeGasket.M_R204_R2_BlackFridgeGasket",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_PolishedChrome.M_R204_R2_PolishedChrome",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_WarmOakBedframe.M_R204_R2_WarmOakBedframe",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackPlastic.M_R204_R2_BlackPlastic",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_OldIvoryAppliance.M_R204_R2_OldIvoryAppliance",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_MicrowaveBlackGlass.M_R204_R2_MicrowaveBlackGlass",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_WarmLampBulb.M_R204_R2_WarmLampBulb",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_MicrowaveKeyLegends.M_R204_R2_MicrowaveKeyLegends",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "heavily_damaged_collision": "imported_fragment_ucx",
+      "broken_fbx": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/damage-v2/HI_R204_GalanzFridgeAndMicrowave_001_BrokenV2.fbx",
+      "broken_asset_name": "HI_R204_GalanzFridgeAndMicrowave_001_BrokenV2",
+      "broken_material_slots": [
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackFridgeEnamel.M_R204_R2_BlackFridgeEnamel",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackFridgeGasket.M_R204_R2_BlackFridgeGasket",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_PolishedChrome.M_R204_R2_PolishedChrome",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_WarmOakBedframe.M_R204_R2_WarmOakBedframe",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_BlackPlastic.M_R204_R2_BlackPlastic",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_OldIvoryAppliance.M_R204_R2_OldIvoryAppliance",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_MicrowaveBlackGlass.M_R204_R2_MicrowaveBlackGlass",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_WarmLampBulb.M_R204_R2_WarmLampBulb",
+        "/Game/SeniorSendOff/House/Room204/M_R204_R2_MicrowaveKeyLegends.M_R204_R2_MicrowaveKeyLegends",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_SplinterWood.M_HI_SplinterWood",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_Foam.M_HI_Foam",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_RawMetal.M_HI_RawMetal",
+        "/Game/SeniorSendOff/House/Interactivity/M_HI_FractureCore.M_HI_FractureCore"
+      ],
+      "broken_collision": "imported_fragment_ucx",
+      "damage_geometry_version": 2
+    }
+  },
+  "audit": [
+    {
+      "asset_name": "HI_SMV_GR_ClubChair1_Solid_001",
+      "id": "SMV_GR_ClubChair1_Solid__001",
+      "groups": 11,
+      "stages": {
+        "damaged": {
+          "vertices": 3279,
+          "faces": 6304,
+          "hulls": 11,
+          "bounds": [
+            [
+              -0.554041,
+              -0.560615,
+              -0.50224
+            ],
+            [
+              0.554041,
+              0.560615,
+              0.50224
+            ]
+          ],
+          "fragments": 11
+        },
+        "heavily_damaged": {
+          "vertices": 3186,
+          "faces": 6114,
+          "hulls": 11,
+          "bounds": [
+            [
+              -0.578967,
+              -0.560615,
+              -0.50224
+            ],
+            [
+              0.573061,
+              0.617998,
+              0.516007
+            ]
+          ],
+          "fragments": 11
+        },
+        "broken": {
+          "vertices": 3942,
+          "faces": 7097,
+          "hulls": 12,
+          "bounds": [
+            [
+              -0.63608,
+              -0.55614,
+              -0.502074
+            ],
+            [
+              0.607421,
+              0.709787,
+              -0.017969
+            ]
+          ],
+          "fragments": 16
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    },
+    {
+      "asset_name": "HI_SM_GR3_NearSeating_003",
+      "id": "SM_GR3_NearSeating__003",
+      "groups": 12,
+      "stages": {
+        "damaged": {
+          "vertices": 4463,
+          "faces": 8319,
+          "hulls": 11,
+          "bounds": [
+            [
+              -1.700784,
+              -0.882,
+              -0.584866
+            ],
+            [
+              1.700784,
+              0.882,
+              0.584866
+            ]
+          ],
+          "fragments": 12
+        },
+        "heavily_damaged": {
+          "vertices": 4390,
+          "faces": 8177,
+          "hulls": 11,
+          "bounds": [
+            [
+              -1.700784,
+              -0.882,
+              -0.584866
+            ],
+            [
+              1.700784,
+              0.979804,
+              0.584866
+            ]
+          ],
+          "fragments": 12
+        },
+        "broken": {
+          "vertices": 4297,
+          "faces": 7442,
+          "hulls": 12,
+          "bounds": [
+            [
+              -2.000052,
+              -1.086576,
+              -0.584864
+            ],
+            [
+              1.85038,
+              1.493064,
+              -0.005369
+            ]
+          ],
+          "fragments": 17
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    },
+    {
+      "asset_name": "HI_Room102_Chair_01_001",
+      "id": "Room102_Chair_01__001",
+      "groups": 7,
+      "stages": {
+        "damaged": {
+          "vertices": 1562,
+          "faces": 3004,
+          "hulls": 7,
+          "bounds": [
+            [
+              -0.23,
+              -0.28616,
+              -0.425
+            ],
+            [
+              0.23,
+              0.28616,
+              0.425
+            ]
+          ],
+          "fragments": 7
+        },
+        "heavily_damaged": {
+          "vertices": 1571,
+          "faces": 3002,
+          "hulls": 7,
+          "bounds": [
+            [
+              -0.23,
+              -0.28616,
+              -0.425
+            ],
+            [
+              0.23,
+              0.28616,
+              0.425
+            ]
+          ],
+          "fragments": 7
+        },
+        "broken": {
+          "vertices": 2028,
+          "faces": 3586,
+          "hulls": 11,
+          "bounds": [
+            [
+              -0.433914,
+              -0.3384,
+              -0.424457
+            ],
+            [
+              0.42662,
+              0.445769,
+              -0.367507
+            ]
+          ],
+          "fragments": 11
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    },
+    {
+      "asset_name": "HI_BR_SM_Bedroom_OvalCoffeeTable_001",
+      "id": "BR_SM_Bedroom_OvalCoffeeTable__001",
+      "groups": 7,
+      "stages": {
+        "damaged": {
+          "vertices": 2738,
+          "faces": 5302,
+          "hulls": 7,
+          "bounds": [
+            [
+              -0.583,
+              -0.323,
+              -0.2175
+            ],
+            [
+              0.583,
+              0.323,
+              0.2175
+            ]
+          ],
+          "fragments": 7
+        },
+        "heavily_damaged": {
+          "vertices": 2809,
+          "faces": 5327,
+          "hulls": 9,
+          "bounds": [
+            [
+              -0.583,
+              -0.323,
+              -0.2175
+            ],
+            [
+              0.581583,
+              0.323,
+              0.2175
+            ]
+          ],
+          "fragments": 9
+        },
+        "broken": {
+          "vertices": 2863,
+          "faces": 5265,
+          "hulls": 11,
+          "bounds": [
+            [
+              -0.53675,
+              -0.459956,
+              -0.216971
+            ],
+            [
+              0.583461,
+              0.426383,
+              -0.166028
+            ]
+          ],
+          "fragments": 11
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    },
+    {
+      "asset_name": "HI_BR_BedDetail_FramedCollage_08_001",
+      "id": "BR_BedDetail_FramedCollage_08__001",
+      "groups": 1,
+      "stages": {
+        "damaged": {
+          "vertices": 199,
+          "faces": 386,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.156,
+              -0.007,
+              -0.271
+            ],
+            [
+              0.156,
+              0.007,
+              0.271
+            ]
+          ],
+          "fragments": 1
+        },
+        "heavily_damaged": {
+          "vertices": 199,
+          "faces": 386,
+          "hulls": 1,
+          "bounds": [
+            [
+              -0.156,
+              -0.007,
+              -0.271
+            ],
+            [
+              0.156,
+              0.007,
+              0.271
+            ]
+          ],
+          "fragments": 1
+        },
+        "broken": {
+          "vertices": 353,
+          "faces": 593,
+          "hulls": 3,
+          "bounds": [
+            [
+              -0.163431,
+              -0.220181,
+              -0.26765
+            ],
+            [
+              0.169486,
+              0.166442,
+              -0.252778
+            ]
+          ],
+          "fragments": 3
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    },
+    {
+      "asset_name": "HI_R204_GalanzFridgeAndMicrowave_001",
+      "id": "R204_GalanzFridgeAndMicrowave__001",
+      "groups": 5,
+      "stages": {
+        "damaged": {
+          "vertices": 6702,
+          "faces": 12533,
+          "hulls": 5,
+          "bounds": [
+            [
+              -0.30825,
+              -0.3905,
+              -1.023
+            ],
+            [
+              0.30825,
+              0.3905,
+              1.023
+            ]
+          ],
+          "fragments": 5
+        },
+        "heavily_damaged": {
+          "vertices": 6901,
+          "faces": 12772,
+          "hulls": 6,
+          "bounds": [
+            [
+              -0.30825,
+              -0.3905,
+              -1.023
+            ],
+            [
+              0.30825,
+              0.615459,
+              1.023
+            ]
+          ],
+          "fragments": 6
+        },
+        "broken": {
+          "vertices": 7941,
+          "faces": 14061,
+          "hulls": 8,
+          "bounds": [
+            [
+              -0.510504,
+              -0.895659,
+              -1.022631
+            ],
+            [
+              0.876563,
+              0.611268,
+              -0.034866
+            ]
+          ],
+          "fragments": 8
+        }
+      },
+      "policy": "capped rigid part fracture; no vertex stretching; floor-rested final fragments"
+    }
+  ],
+  "damage_materials": [
+    {
+      "asset_name": "M_HI_SplinterWood",
+      "base_color": [
+        0.34,
+        0.21,
+        0.095
+      ],
+      "roughness": 0.95,
+      "metallic": 0
+    },
+    {
+      "asset_name": "M_HI_Foam",
+      "base_color": [
+        0.48,
+        0.38,
+        0.2
+      ],
+      "roughness": 1.0,
+      "metallic": 0
+    },
+    {
+      "asset_name": "M_HI_RawMetal",
+      "base_color": [
+        0.12,
+        0.13,
+        0.14
+      ],
+      "roughness": 0.8,
+      "metallic": 0.65
+    },
+    {
+      "asset_name": "M_HI_FractureCore",
+      "base_color": [
+        0.42,
+        0.4,
+        0.34
+      ],
+      "roughness": 0.95,
+      "metallic": 0
+    }
+  ],
+  "intact_sha256": {
+    "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_SMV_GR_ClubChair1_Solid_001.fbx": "d00f3ddccd565365ee691ceab6e8c3e0a705d797f39a0eecfcbec2fa47dfa161",
+    "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_SM_GR3_NearSeating_003.fbx": "4d393d4d83bd888686aa1722ffbf86b941981c38356a0dfb9eb7947e5075ffc2",
+    "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_Room102_Chair_01_001.fbx": "cb49c3a84e9ff61cf649167850c338c6db03ce0352109a733fc93d798b4ee257",
+    "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BR_SM_Bedroom_OvalCoffeeTable_001.fbx": "c089126783927568656534da7b5cf1e3fd25a4266a2dc81518c2af95fb2bfbe9",
+    "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_BR_BedDetail_FramedCollage_08_001.fbx": "094d073ff1294abdb1ac9338db1aa455b8813727ddc75c8dd9f2cc14d0a7c9d6",
+    "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/models/HI_R204_GalanzFridgeAndMicrowave_001.fbx": "8d240fc9d1bf7cf5225e16f5c7235c84dbae2a0765f4f850173bdcd2921d6d44"
+  },
+  "intact_unchanged": true,
+  "passed": true
+}

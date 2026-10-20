@@ -1,0 +1,497 @@
+{
+  "scope": "Owner-requested replacement of all original tree render models across the map; broader Calder master still incomplete",
+  "default_enabled_with_calder_landscape": true,
+  "feature_complete": true,
+  "whole_master_complete": false,
+  "photo_quality_accepted": false,
+  "source_build": {
+    "log": "codex_map_trees_sign_build.log",
+    "actions": 218,
+    "seconds": 133.52,
+    "result": "Succeeded"
+  },
+  "physical": {
+    "passed": true,
+    "runs": [
+      "codex_map_trees_legacy_views",
+      "codex_map_trees_envelope_views"
+    ],
+    "tree_batches": 33,
+    "tree_instances": 1600,
+    "poses_identical": true,
+    "bodies_identical": true,
+    "component_settings_identical": [
+      "count",
+      "collision",
+      "cullStart",
+      "cullEnd",
+      "shadow",
+      "distanceField",
+      "indirect",
+      "boxes"
+    ],
+    "poses_sha256": "25e75205527fa35eef12f58a553e09b6d4f1109d4212b8f2f03f82bce707fd7d",
+    "bodies_sha256": "3d7b2a78a33ffd88932b1ee43b2af10250d5472bcf7a98aca83412ed595e3b3c",
+    "baked_town_trees": 280,
+    "all_replacement_lods_nonlegacy": true,
+    "native_reports": [
+      "PASS enabled=0 batches=33 replacements=0 instances=1600 legacyBatches=33 legacyTownSections=10 newTownSections=0 contacts=7800 maxErrorCm=0.000006 failures=0 crossRunPoseBodySettingsComparisonPending=1\n",
+      "PASS enabled=1 batches=33 replacements=33 instances=1600 legacyBatches=0 legacyTownSections=0 newTownSections=30 contacts=7800 maxErrorCm=0.000006 failures=0 crossRunPoseBodySettingsComparisonPending=1\n"
+    ],
+    "full_master_complete": false,
+    "visual_review_and_performance": "Separate required checks; not implied by this receipt"
+  },
+  "fit": {
+    "passed": true,
+    "original_review_unchanged": true,
+    "run": "codex_map_trees_fit_review",
+    "poses_sha256": "b011f36278dea26d5de634d30734b64dcfa934a4d8c8ef43b60f71053865d33c",
+    "poses_identical_to_original_65_tree_baseline": true,
+    "native": "PASS trial=1 batches=2 replacements=2 instances=65 contactSamples=780 failures=0 windRange=2.238593 originalPoseComparisonPending=1\n"
+  },
+  "woods_walk": {
+    "passed": true,
+    "run": "codex_map_trees_woods_walk",
+    "ordinary_input_legs": 44,
+    "original_review_unchanged": true,
+    "screenshot_inspected": "HutEntered.png",
+    "total_diagnostic_frames_inspected": 319,
+    "native_report": "ExteriorWoodsFallenLog0 first=X=-3950.000 Y=6860.000 Z=-361.803\nExteriorWoodsBranches0 first=X=2626.311 Y=7634.194 Z=-125.436\nExteriorWoodsFlowers0 first=X=-3692.697 Y=12202.656 Z=-346.272\nExteriorWoodsRock0 first=X=-116.585 Y=5770.538 Z=-360.822\nExteriorWoodsLeaves0 first=X=1322.780 Y=15776.813 Z=-362.178\nExteriorWoodsShrub0 first=X=2251.192 Y=17609.625 Z=-373.554\nExteriorWoodsGrassGreen0 first=X=-7886.034 Y=5049.154 Z=-215.829\nExteriorWoodsGrassDry0 first=X=-7842.030 Y=5683.455 Z=-303.836\nExteriorWoodsFallenLog1 first=X=6934.268 Y=12286.569 Z=-358.582\nExteriorWoodsBranches1 first=X=-3884.775 Y=9209.622 Z=-354.490\nExteriorWoodsFlowers1 first=X=-3580.098 Y=12238.378 Z=-350.335\nExteriorWoodsRock1 first=X=-5995.186 Y=9849.013 Z=-238.282\nExteriorWoodsLeaves1 first=X=279.161 Y=17621.566 Z=-179.062\nExteriorWoodsShrub1 first=X=-5718.846 Y=14497.247 Z=-368.430\nExteriorWoodsGrassGreen1 first=X=-7862.368 Y=5458.194 Z=-272.221\nExteriorWoodsGrassDry1 first=X=-7857.472 Y=5873.438 Z=-326.953\nExteriorWoodsFallenLog2 first=X=5110.903 Y=9274.551 Z=-353.575\nExteriorWoodsBranches2 first=X=-7217.016 Y=10349.359 Z=-353.213\nExteriorWoodsFlowers2 first=X=1730.751 Y=15631.504 Z=-322.084\nExteriorWoodsRock2 first=X=5338.714 Y=17646.943 Z=-323.812\nExteriorWoodsLeaves2 first=X=-2010.696 Y=5282.811 Z=-367.861\nExteriorWoodsShrub2 first=X=4839.985 Y=16414.379 Z=-358.080\nExteriorWoodsGrassGreen2 first=X=-7826.724 Y=6184.231 Z=-354.613\nExteriorWoodsGrassDry2 first=X=-7813.030 Y=5993.886 Z=-340.758\nExteriorWoodsPassOak0 first=X=-1733.932 Y=5270.056 Z=-370.961\nExteriorWoodsPassOak1 first=X=2501.156 Y=5195.722 Z=-363.532\nExteriorWoodsPassHickory0 first=X=1308.650 Y=5189.652 Z=-366.621\nExteriorWoodsPassHickory1 first=X=-5311.661 Y=5297.068 Z=-247.596\nExteriorWoodsPassMaple0 first=X=6026.042 Y=5240.937 Z=-371.746\nExteriorWoodsPassMaple1 first=X=3530.062 Y=5799.578 Z=-377.577\nExteriorWoodsPassTulipPoplar0 first=X=-704.036 Y=5128.569 Z=-362.802\nExteriorWoodsPassTulipPoplar1 first=X=6402.143 Y=5324.812 Z=-372.375\nExteriorWoodsPassHemlock0 first=X=-2079.323 Y=5326.096 Z=-373.664\nExteriorWoodsPassHemlock1 first=X=5065.441 Y=5131.801 Z=-363.398\nExteriorWoodsPassDogwoodSapling0 first=X=-2555.115 Y=11501.154 Z=-363.343\nExteriorWoodsPassDogwoodSapling1 first=X=-3430.654 Y=14593.177 Z=-370.240\nExteriorWoodsPassLaurelShrub0 first=X=4223.823 Y=12937.429 Z=-277.074\nExteriorWoodsPassLaurelShrub1 first=X=2581.486 Y=18067.441 Z=-364.925\nExteriorWoodsPassTraceDumpedFridge first=X=-4040.000 Y=8090.000 Z=-364.510\nExteriorWoodsPassTraceColdAshRing first=X=-2470.000 Y=11680.000 Z=-363.356\nExteriorWoodsPassTraceHutWeathering first=X=-800.000 Y=13895.000 Z=-344.000\nExteriorWoodsPassTraceNoTrespassing first=X=-2386.225 Y=5527.180 Z=-197.392\nExteriorWoodsPassTracePlainPaddle first=X=146.287 Y=12878.714 Z=-220.590\nExteriorWoodsPassTraceEmptyCoat first=X=-1646.976 Y=8865.469 Z=-40.905\nExteriorWoodsPassTraceSeatlessSwing first=X=-650.364 Y=14685.782 Z=60.696\nExteriorWoodsPassTraceCollapsedStand first=X=-5726.866 Y=11234.643 Z=4.754\nUndergrowth shrubs=716 grassClumps=15997; no decorative foliage collision, shadows or indirect-light updates; trail and clearing plant margins clear\nActual scene: logs=21 branches=165 flowerPatches=470 rocks=121 leafPatches=2094 treeHeightScale=0.51..1.88 floorSamples=81; three hollow bottoms solid; hut entry capsule clear\nWalking leg 1 reached X=-2499.744 Y=4506.924 Z=-358.414\nWalking leg 2 reached X=-2630.776 Y=4680.877 Z=-358.414\nWalking leg 3 reached X=-2761.974 Y=4918.401 Z=-358.414\nWalking leg 4 reached X=-2854.712 Y=5124.097 Z=-358.414\nWalking leg 5 reached X=-2945.429 Y=5324.803 Z=-358.414\nWalking leg 6 reached X=-3035.061 Y=5528.200 Z=-358.414\nWalking leg 7 reached X=-3154.384 Y=5817.287 Z=-358.414\nWalking leg 8 reached X=-3229.628 Y=6029.511 Z=-358.414\nWalking leg 9 reached X=-3306.466 Y=6295.606 Z=-358.414\nWalking leg 10 reached X=-3345.072 Y=6520.876 Z=-358.414\nWalking leg 11 reached X=-3349.051 Y=6739.899 Z=-358.670\nWalking leg 12 reached X=-3324.455 Y=6961.313 Z=-358.670\nWalking leg 13 reached X=-3273.323 Y=7178.100 Z=-358.670\nWalking leg 14 reached X=-3198.278 Y=7393.230 Z=-358.670\nWalking leg 15 reached X=-3109.872 Y=7593.695 Z=-358.670\nWalking leg 16 reached X=-2970.585 Y=7871.004 Z=-358.670\nWalking leg 17 reached X=-2862.150 Y=8064.980 Z=-358.670\nWalking leg 18 reached X=-2738.846 Y=8249.780 Z=-358.670\nWalking leg 19 reached X=-2601.933 Y=8428.793 Z=-358.670\nWalking leg 20 reached X=-2458.633 Y=8603.213 Z=-358.670\nWalking leg 21 reached X=-2257.728 Y=8841.029 Z=-358.670\nWalking leg 22 reached X=-2114.428 Y=9012.286 Z=-358.924\nWalking leg 23 reached X=-1977.073 Y=9185.113 Z=-358.924\nWalking leg 24 reached X=-1811.891 Y=9412.840 Z=-358.924\nWalking leg 25 reached X=-1699.821 Y=9600.300 Z=-358.924\nWalking leg 26 reached X=-1600.854 Y=9806.239 Z=-358.674\nWalking leg 27 reached X=-1504.045 Y=10049.208 Z=-358.674\nWalking leg 28 reached X=-1436.159 Y=10260.666 Z=-358.674\nWalking leg 29 reached X=-1377.502 Y=10474.912 Z=-358.674\nWalking leg 30 reached X=-1324.633 Y=10689.780 Z=-358.674\nWalking leg 31 reached X=-1256.862 Y=10974.354 Z=-358.674\nWalking leg 32 reached X=-1201.949 Y=11192.266 Z=-358.674\nWalking leg 33 reached X=-1147.361 Y=11407.346 Z=-358.674\nWalking leg 34 reached X=-1077.010 Y=11701.345 Z=-358.674\nWalking leg 35 reached X=-1026.775 Y=11923.542 Z=-358.424\nWalking leg 36 reached X=-958.622 Y=12234.089 Z=-358.424\nWalking leg 37 reached X=-912.166 Y=12453.177 Z=-358.424\nWalking leg 38 reached X=-867.190 Y=12669.376 Z=-358.172\nWalking leg 39 reached X=-822.756 Y=12886.771 Z=-358.424\nWalking leg 40 reached X=-780.160 Y=13109.132 Z=-358.424\nWalking leg 41 reached X=-794.367 Y=13201.310 Z=-343.436\nWalking leg 42 reached X=-800.292 Y=13503.785 Z=-341.850\nWalking leg 43 reached X=-800.003 Y=13598.976 Z=-341.850\nWalking leg 44 reached X=-800.000 Y=13698.797 Z=-341.850\nPASS Player walked the full woodland trail, up the porch steps and through the hut doorway without a collision stall or ground drop. Single-player check.\n"
+  },
+  "interaction": {
+    "passed": true,
+    "run": "codex_map_trees_interaction",
+    "original_review_unchanged": true,
+    "actual_weapon_species": 3,
+    "physics_object_hit": true,
+    "accepted_events": 11,
+    "landed_leaves": 115,
+    "peak_falling_leaves": 78,
+    "capacity": 216,
+    "images_inspected": 6,
+    "total_diagnostic_frames_inspected": 325,
+    "house_damage_unchanged": true,
+    "native_report": "Maple trunk blocks weapon at instance=0\nActual Maple weapon hit accepted; active leaves=30\nOak trunk blocks weapon at instance=31\nActual Oak weapon hit accepted; active leaves=36\nBirch trunk blocks weapon at instance=40\nActual Birch weapon hit accepted; active leaves=59\nThrown physics object knocked leaves from the oak\naccepted=11 local_sheds=11 landed=115 peak=78 capacity=216\nPASS All three species, actual weapon throws, physics impacts, leaf settling, bounded repeated hits and unchanged house-damage count\n"
+  },
+  "compatibility_and_server": {
+    "scope": "Tree rollout fallbacks and native dedicated physics; not multiplayer or full-master acceptance",
+    "launcher_sha256": "f01036e4bda1aac4410fd4d9efb18d8703e422c033fc0382b8e5518e1a6d0a86",
+    "cases": [
+      {
+        "name": "codex_map_trees_compat_noterrain",
+        "native": "PASS enabled=0 batches=31 replacements=0 instances=1666 legacyBatches=31 legacyTownSections=10 newTownSections=0 contacts=7392 maxErrorCm=0.000006 failures=0 crossRunPoseBodySettingsComparisonPending=1\n",
+        "landscape": "CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=0 batches=0 instances=0 maxTuftTriangles=0 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.000 allCalderISMs=0 farmFootprints=0\n",
+        "arguments": [
+          "bash",
+          "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/tools/run_game.sh",
+          "codex_map_trees_compat_noterrain",
+          "300",
+          "-RenderOffScreen",
+          "-nosound",
+          "-CalderWoodsTreeTrial",
+          "-CalderEvergreenAtlasTrial",
+          "-CalderRidgeForestTrial",
+          "-CalderFallsJetsTrial",
+          "-CalderFarmTrial",
+          "-CalderRockStrataTrial",
+          "-CalderFarmTreeTrial",
+          "-CalderHedgerowTrial",
+          "-CalderFarmSolidTrial",
+          "-CalderMapTreesReview",
+          "-CalderLandscapeReview",
+          "-NoCalderTerrain",
+          "-CampusLayoutReview",
+          "-WoodsPassReview",
+          "-CampusWoodsReview"
+        ]
+      },
+      {
+        "name": "codex_map_trees_compat_nolandscape",
+        "native": "PASS enabled=0 batches=33 replacements=0 instances=1600 legacyBatches=33 legacyTownSections=10 newTownSections=0 contacts=7800 maxErrorCm=0.000006 failures=0 crossRunPoseBodySettingsComparisonPending=1\n",
+        "landscape": "CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=0 batches=0 instances=0 maxTuftTriangles=0 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.000 allCalderISMs=3 farmFootprints=0\n",
+        "arguments": [
+          "bash",
+          "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/tools/run_game.sh",
+          "codex_map_trees_compat_nolandscape",
+          "300",
+          "-RenderOffScreen",
+          "-nosound",
+          "-CalderWoodsTreeTrial",
+          "-CalderEvergreenAtlasTrial",
+          "-CalderRidgeForestTrial",
+          "-CalderFallsJetsTrial",
+          "-CalderFarmTrial",
+          "-CalderRockStrataTrial",
+          "-CalderFarmTreeTrial",
+          "-CalderHedgerowTrial",
+          "-CalderFarmSolidTrial",
+          "-CalderMapTreesReview",
+          "-CalderLandscapeReview",
+          "-NoCalderLandscape",
+          "-CalderTerrainReview",
+          "-WoodsPassReview",
+          "-CampusWoodsReview"
+        ]
+      },
+      {
+        "name": "codex_map_trees_compat_server",
+        "native": "PASS enabled=1 batches=33 replacements=33 instances=1600 legacyBatches=0 legacyTownSections=0 newTownSections=0 contacts=7800 maxErrorCm=0.000006 failures=0 crossRunPoseBodySettingsComparisonPending=1\n",
+        "landscape": "CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=0 batches=0 instances=0 maxTuftTriangles=0 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.000 allCalderISMs=3 farmFootprints=0\n",
+        "arguments": [
+          "bash",
+          "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/Saved/CalderWork/tools/run_game.sh",
+          "codex_map_trees_compat_server",
+          "300",
+          "-RenderOffScreen",
+          "-nosound",
+          "-CalderWoodsTreeTrial",
+          "-CalderEvergreenAtlasTrial",
+          "-CalderRidgeForestTrial",
+          "-CalderFallsJetsTrial",
+          "-CalderFarmTrial",
+          "-CalderRockStrataTrial",
+          "-CalderFarmTreeTrial",
+          "-CalderHedgerowTrial",
+          "-CalderFarmSolidTrial",
+          "-CalderMapTreesReview",
+          "-CalderLandscapeReview",
+          "-server",
+          "-NullRHI"
+        ]
+      }
+    ],
+    "passed": true
+  },
+  "visuals": {
+    "final_full_sweep_run": "codex_map_trees_envelope_views",
+    "inspected_full_sweep_images": 27,
+    "local_sign_run": "codex_map_trees_sign_views",
+    "local_sign_inspected_images": 2,
+    "total_diagnostic_images_inspected": 328,
+    "superseded_trials_preserved": true
+  },
+  "performance": {
+    "status": "three alternating pairs complete",
+    "report": "Saved/CalderWork/codex_map_trees_timing_perf.json",
+    "final_pinned_clock_and_full_interior_acceptance": false,
+    "rounds": 3,
+    "views_per_run": 17,
+    "samples_per_view": 300,
+    "warmup_seconds": 4,
+    "method": "Uncapped MetalOffscreenOnly",
+    "largest_added_average_ms": 0.45999999999999996,
+    "tree_diagnostic_regression_within_noise": true,
+    "median_results": [
+      {
+        "view": "front_street",
+        "on": {
+          "avg_ms": 15.02,
+          "game_ms": 3.51,
+          "render_ms": 15.01,
+          "max_ms": 17.81
+        },
+        "off": {
+          "avg_ms": 22.33,
+          "game_ms": 4.05,
+          "render_ms": 22.16,
+          "max_ms": 67.8
+        },
+        "delta_ms": -7.309999999999999
+      },
+      {
+        "view": "street_along",
+        "on": {
+          "avg_ms": 12.16,
+          "game_ms": 3.29,
+          "render_ms": 12.16,
+          "max_ms": 13.49
+        },
+        "off": {
+          "avg_ms": 15.21,
+          "game_ms": 3.38,
+          "render_ms": 15.21,
+          "max_ms": 17.28
+        },
+        "delta_ms": -3.0500000000000007
+      },
+      {
+        "view": "detail_establishing_corner",
+        "on": {
+          "avg_ms": 14.09,
+          "game_ms": 3.38,
+          "render_ms": 14.08,
+          "max_ms": 16.23
+        },
+        "off": {
+          "avg_ms": 17.93,
+          "game_ms": 3.59,
+          "render_ms": 17.93,
+          "max_ms": 20.59
+        },
+        "delta_ms": -3.84
+      },
+      {
+        "view": "detail_street_dusk",
+        "on": {
+          "avg_ms": 12.38,
+          "game_ms": 3.41,
+          "render_ms": 12.38,
+          "max_ms": 13.28
+        },
+        "off": {
+          "avg_ms": 14.3,
+          "game_ms": 3.59,
+          "render_ms": 14.3,
+          "max_ms": 15.39
+        },
+        "delta_ms": -1.92
+      },
+      {
+        "view": "detail_clocktower_far",
+        "on": {
+          "avg_ms": 7.4,
+          "game_ms": 3.57,
+          "render_ms": 7.39,
+          "max_ms": 12.5
+        },
+        "off": {
+          "avg_ms": 6.94,
+          "game_ms": 3.35,
+          "render_ms": 6.94,
+          "max_ms": 8.48
+        },
+        "delta_ms": 0.45999999999999996
+      },
+      {
+        "view": "detail_campus_quad",
+        "on": {
+          "avg_ms": 8.59,
+          "game_ms": 3.42,
+          "render_ms": 8.58,
+          "max_ms": 11.08
+        },
+        "off": {
+          "avg_ms": 8.61,
+          "game_ms": 3.24,
+          "render_ms": 8.61,
+          "max_ms": 10.89
+        },
+        "delta_ms": -0.019999999999999574
+      },
+      {
+        "view": "detail_layout_quad",
+        "on": {
+          "avg_ms": 8.67,
+          "game_ms": 3.73,
+          "render_ms": 8.58,
+          "max_ms": 20.69
+        },
+        "off": {
+          "avg_ms": 9.05,
+          "game_ms": 3.7,
+          "render_ms": 8.97,
+          "max_ms": 18.3
+        },
+        "delta_ms": -0.3800000000000008
+      },
+      {
+        "view": "detail_layout_gateway",
+        "on": {
+          "avg_ms": 7.72,
+          "game_ms": 3.35,
+          "render_ms": 7.71,
+          "max_ms": 9.61
+        },
+        "off": {
+          "avg_ms": 7.78,
+          "game_ms": 3.48,
+          "render_ms": 7.74,
+          "max_ms": 20.39
+        },
+        "delta_ms": -0.0600000000000005
+      },
+      {
+        "view": "detail_stadium_gate",
+        "on": {
+          "avg_ms": 7.65,
+          "game_ms": 3.44,
+          "render_ms": 7.65,
+          "max_ms": 9.0
+        },
+        "off": {
+          "avg_ms": 7.47,
+          "game_ms": 3.48,
+          "render_ms": 7.46,
+          "max_ms": 8.95
+        },
+        "delta_ms": 0.1800000000000006
+      },
+      {
+        "view": "detail_layout_aerial",
+        "on": {
+          "avg_ms": 13.46,
+          "game_ms": 3.33,
+          "render_ms": 13.46,
+          "max_ms": 17.38
+        },
+        "off": {
+          "avg_ms": 14.04,
+          "game_ms": 3.3,
+          "render_ms": 14.04,
+          "max_ms": 19.17
+        },
+        "delta_ms": -0.5799999999999983
+      },
+      {
+        "view": "detail_layout_dormrow",
+        "on": {
+          "avg_ms": 6.66,
+          "game_ms": 3.23,
+          "render_ms": 6.66,
+          "max_ms": 8.45
+        },
+        "off": {
+          "avg_ms": 8.47,
+          "game_ms": 3.26,
+          "render_ms": 8.47,
+          "max_ms": 10.27
+        },
+        "delta_ms": -1.8100000000000005
+      },
+      {
+        "view": "detail_woods_edge",
+        "on": {
+          "avg_ms": 14.07,
+          "game_ms": 6.1,
+          "render_ms": 14.07,
+          "max_ms": 21.76
+        },
+        "off": {
+          "avg_ms": 15.98,
+          "game_ms": 5.66,
+          "render_ms": 15.97,
+          "max_ms": 16.76
+        },
+        "delta_ms": -1.9100000000000001
+      },
+      {
+        "view": "detail_woods_20m",
+        "on": {
+          "avg_ms": 12.59,
+          "game_ms": 3.44,
+          "render_ms": 12.58,
+          "max_ms": 13.4
+        },
+        "off": {
+          "avg_ms": 14.14,
+          "game_ms": 3.61,
+          "render_ms": 14.13,
+          "max_ms": 22.55
+        },
+        "delta_ms": -1.5500000000000007
+      },
+      {
+        "view": "detail_woods_deep",
+        "on": {
+          "avg_ms": 12.78,
+          "game_ms": 3.46,
+          "render_ms": 12.77,
+          "max_ms": 13.94
+        },
+        "off": {
+          "avg_ms": 15.92,
+          "game_ms": 3.55,
+          "render_ms": 15.91,
+          "max_ms": 18.08
+        },
+        "delta_ms": -3.1400000000000006
+      },
+      {
+        "view": "detail_woods_silhouette",
+        "on": {
+          "avg_ms": 12.16,
+          "game_ms": 3.46,
+          "render_ms": 12.16,
+          "max_ms": 12.92
+        },
+        "off": {
+          "avg_ms": 12.89,
+          "game_ms": 3.54,
+          "render_ms": 12.88,
+          "max_ms": 13.95
+        },
+        "delta_ms": -0.7300000000000004
+      },
+      {
+        "view": "nature_tree_variety",
+        "on": {
+          "avg_ms": 12.57,
+          "game_ms": 3.33,
+          "render_ms": 12.56,
+          "max_ms": 14.11
+        },
+        "off": {
+          "avg_ms": 14.99,
+          "game_ms": 3.39,
+          "render_ms": 14.99,
+          "max_ms": 16.44
+        },
+        "delta_ms": -2.42
+      },
+      {
+        "view": "detail_calder_eye_P5",
+        "on": {
+          "avg_ms": 5.28,
+          "game_ms": 3.0,
+          "render_ms": 5.27,
+          "max_ms": 5.86
+        },
+        "off": {
+          "avg_ms": 5.37,
+          "game_ms": 2.99,
+          "render_ms": 5.37,
+          "max_ms": 5.95
+        },
+        "delta_ms": -0.08999999999999986
+      }
+    ],
+    "environment_caveat": "All tree A/B runs are diagnostics with a separate editor present. No isolated final-performance acceptance. Do not use these measurements as final p8p or multiplayer proof.",
+    "isolated_final_performance_accepted": false
+  },
+  "default_play": {
+    "passed": true,
+    "run": "codex_map_trees_default_native",
+    "optional_trial_flags": false,
+    "physical_comparison": "Saved/CalderWork/map_tree_replacement/default_physical_comparison.json",
+    "native_report": "PASS enabled=1 batches=33 replacements=33 instances=1600 legacyBatches=0 legacyTownSections=0 newTownSections=30 contacts=7800 maxErrorCm=0.000006 failures=0 crossRunPoseBodySettingsComparisonPending=1\n",
+    "ground_cover": 57815,
+    "total_calder_isms": 7,
+    "terrain_hash": "72564759",
+    "images": [
+      {
+        "file": "00_detail_woods_edge.png",
+        "sha256": "787b80195921e146aa7356bcd5d68b92fc616d938ce30236c4891f53947da34e",
+        "inspected": true
+      },
+      {
+        "file": "25_front_street.png",
+        "sha256": "bf095efb386f22b5929fc17d4442e3d906e83125bdf0f83b7b9e8b2acef28689",
+        "inspected": true
+      },
+      {
+        "file": "58_nature_tree_variety.png",
+        "sha256": "5223a9313a744d2a1e9bfdb77ee91ae4aef50b98989972f06faba4cdeae5f88f",
+        "inspected": true
+      }
+    ]
+  },
+  "fog": "Explicitly approved, original values retained during tree tests",
+  "recovery_archive": "Saved/CalderWork/map_tree_replacement/archive_plan.json",
+  "protected_source_and_map_files_unchanged": 13,
+  "acquired_source_assets_unchanged": 650,
+  "additional_tree_components": 0,
+  "additional_lights": 0,
+  "saved_map": false,
+  "committed": false,
+  "source_hash_manifest": "Saved/CalderWork/map_tree_replacement/timing_source_freeze_verified.json"
+}

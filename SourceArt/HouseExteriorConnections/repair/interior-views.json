@@ -1,0 +1,556 @@
+{
+  "views": [
+    {
+      "name": "01_GreatRoom_Entrance",
+      "position": {
+        "x": 5.67,
+        "y": 1.68,
+        "z": 10.764
+      },
+      "target": {
+        "x": -4.14,
+        "y": 2.5,
+        "z": -3.96
+      },
+      "fieldOfView": 67
+    },
+    {
+      "name": "02_Basement_BlackHall",
+      "position": {
+        "x": 6.39,
+        "y": -1.6906,
+        "z": -10.26
+      },
+      "target": {
+        "x": -3.78,
+        "y": -2.1106,
+        "z": 5.85
+      },
+      "fieldOfView": 66
+    },
+    {
+      "name": "05_S03_LongHall",
+      "position": {
+        "x": 5.715,
+        "y": 1.6352,
+        "z": -22.05
+      },
+      "target": {
+        "x": -12.285,
+        "y": 1.6352,
+        "z": -22.05
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "08_GreatRoom_HallDoor",
+      "position": {
+        "x": -6.84,
+        "y": 1.68,
+        "z": -8.82
+      },
+      "target": {
+        "x": -7.155,
+        "y": 1.4,
+        "z": -15.3
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "11_S03_Switchback",
+      "position": {
+        "x": 11.115,
+        "y": -0.6148,
+        "z": -14.85
+      },
+      "target": {
+        "x": 9.405,
+        "y": 1.0352,
+        "z": -21.510018
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "14_S03_UpperCapturedLanding",
+      "position": {
+        "x": 9.495018,
+        "y": 4.6652,
+        "z": -22.05
+      },
+      "target": {
+        "x": 9.675,
+        "y": 2.6852,
+        "z": -15.93
+      },
+      "fieldOfView": 57
+    },
+    {
+      "name": "15_S03_ShortHallIntersection",
+      "position": {
+        "x": -7.155,
+        "y": 1.6352,
+        "z": -14.67
+      },
+      "target": {
+        "x": -7.155,
+        "y": 1.6352,
+        "z": -22.05
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "17_S03_RearChairRoom",
+      "position": {
+        "x": 6.525,
+        "y": -1.6548,
+        "z": -16.11
+      },
+      "target": {
+        "x": 6.255,
+        "y": -1.9148,
+        "z": -23.85
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "19_S03_Bedroom",
+      "position": {
+        "x": -11.025,
+        "y": 1.6252,
+        "z": -24.75
+      },
+      "target": {
+        "x": -6.165,
+        "y": 1.4352,
+        "z": -28.89
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "20_S02_Dining1937",
+      "position": {
+        "x": -2.718,
+        "y": 1.5651,
+        "z": 23.202
+      },
+      "target": {
+        "x": 10.062,
+        "y": 1.3651,
+        "z": 25.812
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "28_S02_SmallBathroom",
+      "position": {
+        "x": -11.898,
+        "y": 1.4651,
+        "z": 28.152
+      },
+      "target": {
+        "x": -13.608,
+        "y": 1.0151,
+        "z": 25.092
+      },
+      "fieldOfView": 74
+    },
+    {
+      "name": "29_S02_LobbyReverse",
+      "position": {
+        "x": -9.558,
+        "y": 1.5651,
+        "z": 27.432
+      },
+      "target": {
+        "x": -8.478,
+        "y": 1.4651,
+        "z": 13.752
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "31_BH_ServiceAlcove1910",
+      "position": {
+        "x": -4.365,
+        "y": -1.6706,
+        "z": 11.016
+      },
+      "target": {
+        "x": -4.608,
+        "y": -2.2106,
+        "z": 15.876
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "33_GalleryHall1928",
+      "position": {
+        "x": -6.84,
+        "y": 4.57,
+        "z": -11.97
+      },
+      "target": {
+        "x": -6.84,
+        "y": 4.4,
+        "z": 1.8
+      },
+      "fieldOfView": 60
+    },
+    {
+      "name": "39_S05_RearHall",
+      "position": {
+        "x": 6.29757,
+        "y": 4.67606,
+        "z": -21.769722
+      },
+      "target": {
+        "x": -5.40243,
+        "y": 4.62606,
+        "z": -21.769722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "43_S05_StripedBedroom",
+      "position": {
+        "x": -2.48643,
+        "y": 4.67606,
+        "z": -24.577722
+      },
+      "target": {
+        "x": 1.43757,
+        "y": 4.27606,
+        "z": -28.429722
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "45_S05_NorthWestSuite",
+      "position": {
+        "x": 6.92757,
+        "y": 4.65606,
+        "z": 21.430278
+      },
+      "target": {
+        "x": 10.61757,
+        "y": 4.27606,
+        "z": 18.370278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "46_S05_NorthEastSuite",
+      "position": {
+        "x": -12.42243,
+        "y": 4.72606,
+        "z": 20.350278
+      },
+      "target": {
+        "x": -17.64243,
+        "y": 4.52606,
+        "z": 20.710278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "49_S05_NorthWestBedroom",
+      "position": {
+        "x": 10.79757,
+        "y": 4.62606,
+        "z": 25.030278
+      },
+      "target": {
+        "x": 10.79757,
+        "y": 4.42606,
+        "z": 28.630278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "50_S05_NorthEastSouthBedroom",
+      "position": {
+        "x": -12.40443,
+        "y": 4.72606,
+        "z": 18.064278
+      },
+      "target": {
+        "x": -15.57243,
+        "y": 4.49606,
+        "z": 13.960278
+      },
+      "fieldOfView": 65
+    },
+    {
+      "name": "53_Inspect_BasementStudyInterior",
+      "position": {
+        "x": -0.966996,
+        "y": -1.6106,
+        "z": -28.519452
+      },
+      "target": {
+        "x": -6.170472,
+        "y": -1.8106,
+        "z": -28.934478
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "06_S03_BasementStudy",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "63_Inspect_GalleryBalconyInterior",
+      "position": {
+        "x": -10.89243,
+        "y": 4.69745,
+        "z": -0.169722
+      },
+      "target": {
+        "x": -10.29843,
+        "y": 3.87606,
+        "z": 4.942278
+      },
+      "fieldOfView": 70,
+      "wholeHouseInspection": true,
+      "sourceView": "41_S05_GalleryBalcony",
+      "evidence": "Sep21 native Unreal inspection; interior poses based on existing room routes and source review cameras, not calibrated photo resection"
+    },
+    {
+      "name": "BasementDoorFacingStairs",
+      "position": {
+        "x": 5.036363636363636,
+        "y": -1.8451454545454546,
+        "z": 13.454545454545455
+      },
+      "target": {
+        "x": 4.790909090909091,
+        "y": -1.7670563636363634,
+        "z": 17.227272727272727
+      },
+      "fieldOfView": 78
+    },
+    {
+      "name": "BasementTurn",
+      "position": {
+        "x": 5.036363636363636,
+        "y": -0.8579654545454544,
+        "z": 16.954545454545453
+      },
+      "target": {
+        "x": -1.8727272727272728,
+        "y": 0.44545454545454544,
+        "z": 16.863636363636363
+      },
+      "fieldOfView": 78
+    },
+    {
+      "name": "MainLanding",
+      "position": {
+        "x": -4.990909090909091,
+        "y": 1.3909090909090909,
+        "z": 17.40909090909091
+      },
+      "target": {
+        "x": 1.7636363636363637,
+        "y": -0.2636363636363636,
+        "z": 15.681818181818182
+      },
+      "fieldOfView": 78
+    },
+    {
+      "name": "UpperLanding",
+      "position": {
+        "x": -5.054545454545455,
+        "y": 4.445454545454545,
+        "z": 17.772727272727273
+      },
+      "target": {
+        "x": 1.2181818181818183,
+        "y": 3.1,
+        "z": 15.681818181818182
+      },
+      "fieldOfView": 78
+    },
+    {
+      "name": "TJunction",
+      "position": {
+        "x": -5.7272727272727275,
+        "y": -1.6633272727272728,
+        "z": 21.0
+      },
+      "target": {
+        "x": -5.7272727272727275,
+        "y": -1.7542363636363638,
+        "z": 23.463636363636365
+      },
+      "fieldOfView": 140
+    },
+    {
+      "name": "RedEntrance",
+      "position": {
+        "x": -5.418181818181818,
+        "y": -1.6906,
+        "z": 22.118181818181817
+      },
+      "target": {
+        "x": -9.6,
+        "y": -1.8087818181818183,
+        "z": 22.318181818181817
+      },
+      "fieldOfView": 78
+    },
+    {
+      "name": "BlueEntrance",
+      "position": {
+        "x": -6.418181818181818,
+        "y": -1.6906,
+        "z": 22.118181818181817
+      },
+      "target": {
+        "x": -0.7818181818181819,
+        "y": -1.8087818181818183,
+        "z": 22.227272727272727
+      },
+      "fieldOfView": 78
+    },
+    {
+      "name": "ClosedOldRedOpening",
+      "position": {
+        "x": -7.054545454545455,
+        "y": -1.6906,
+        "z": 21.136363636363637
+      },
+      "target": {
+        "x": -7.054545454545455,
+        "y": -1.872418181818182,
+        "z": 23.463636363636365
+      },
+      "fieldOfView": 78
+    },
+    {
+      "name": "ClubLowerDanceFloor",
+      "position": {
+        "x": -10.0,
+        "y": 1.3454545454545455,
+        "z": -14.5
+      },
+      "target": {
+        "x": -13.772727272727273,
+        "y": 1.0454545454545454,
+        "z": -19.09090909090909
+      },
+      "fieldOfView": 68
+    },
+    {
+      "name": "ClubCornerConnection",
+      "position": {
+        "x": -13.363636363636363,
+        "y": 1.3454545454545455,
+        "z": -18.318181818181817
+      },
+      "target": {
+        "x": -17.545454545454547,
+        "y": 1.0454545454545454,
+        "z": -22.363636363636363
+      },
+      "fieldOfView": 68
+    },
+    {
+      "name": "ClubNewLounge",
+      "position": {
+        "x": -14.363636363636363,
+        "y": 1.3454545454545455,
+        "z": -20.90909090909091
+      },
+      "target": {
+        "x": -18.363636363636363,
+        "y": 1.0454545454545454,
+        "z": -23.636363636363637
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "ClubUpperOriginalSize",
+      "position": {
+        "x": -9.545454545454545,
+        "y": 4.363636363636363,
+        "z": -19.454545454545453
+      },
+      "target": {
+        "x": -12.727272727272727,
+        "y": 3.909090909090909,
+        "z": -15.954545454545455
+      },
+      "fieldOfView": 70
+    },
+    {
+      "name": "ClubUpperPole",
+      "position": {
+        "x": -9.318181818181818,
+        "y": 4.363636363636363,
+        "z": -17.59090909090909
+      },
+      "target": {
+        "x": -10.681818181818182,
+        "y": 4.363636363636363,
+        "z": -17.59090909090909
+      },
+      "fieldOfView": 60
+    },
+    {
+      "name": "ClubLowerPole",
+      "position": {
+        "x": -9.318181818181818,
+        "y": 1.3454545454545455,
+        "z": -17.59090909090909
+      },
+      "target": {
+        "x": -10.681818181818182,
+        "y": 1.3454545454545455,
+        "z": -17.59090909090909
+      },
+      "fieldOfView": 60
+    },
+    {
+      "name": "LibraryEntrance",
+      "position": {
+        "x": 6.3,
+        "y": -1.64,
+        "z": -26.4
+      },
+      "target": {
+        "x": -9.0,
+        "y": -2.11,
+        "z": -27.6
+      },
+      "fieldOfView": 62
+    },
+    {
+      "name": "LibraryLounge",
+      "position": {
+        "x": -2.65,
+        "y": -1.6,
+        "z": -25.3
+      },
+      "target": {
+        "x": -2.9,
+        "y": -2.28,
+        "z": -29.7
+      },
+      "fieldOfView": 52
+    },
+    {
+      "name": "LibraryShelves",
+      "position": {
+        "x": -0.2,
+        "y": -1.74,
+        "z": -27.7
+      },
+      "target": {
+        "x": 0.52,
+        "y": -2.03,
+        "z": -29.75
+      },
+      "fieldOfView": 52
+    }
+  ]
+}

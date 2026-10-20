@@ -1,0 +1,20 @@
+[
+  {
+    "species": "Oak",
+    "source": "LeafSet012",
+    "source_url": "https://ambientcg.com/view?id=LeafSet012",
+    "licence": "CC0",
+    "raw_sha256": "6d8b6c7ac03a1a3541f4b38b53064ff29b045522ca7727e14424988bf1ee78d7",
+    "leaves_per_spray": 9,
+    "size": 1024
+  },
+  {
+    "species": "Maple",
+    "source": "LeafSet028",
+    "source_url": "https://ambientcg.com/view?id=LeafSet028",
+    "licence": "CC0",
+    "raw_sha256": "fdca0c660aee9aa4052f4131d5f317f3788c60e9120862ecbe3b6418847c5803",
+    "leaves_per_spray": 9,
+    "size": 1024
+  }
+]

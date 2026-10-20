@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-10-18T07:56:36.102745+00:00",
+  "scope": "Opt-in shore routine, grounded art, real-player reactions and prior clear-view MP verified; new water/contact effects locally verified with two-view tick limits. Effects MP integration and calls remain open.",
+  "stable_pond_recovery": "Saved/CalderWork/codex_checkpoint_pond_background_20261018_v1",
+  "stable_recovery_covers_shore_or_newfeet": false,
+  "shore_data": {
+    "passed": true,
+    "report": "Saved/CalderWork/runs/codex_goose_shore_data_v1_paths.json",
+    "native_seconds": 40,
+    "nodes": 2539,
+    "samples": 31577,
+    "waterworks_triangle_bounds": 1593,
+    "rejects": 0,
+    "hash": "d966aba1",
+    "terrain": "72564759",
+    "routes": [
+      {
+        "member": 6,
+        "length_cm": 1836.706811,
+        "bank_xy": [
+          25200,
+          -10800
+        ],
+        "ground_z": 652.940002
+      },
+      {
+        "member": 7,
+        "length_cm": 2621.93454,
+        "bank_xy": [
+          24500,
+          -10700
+        ],
+        "ground_z": 653.774963
+      }
+    ],
+    "native_render_accepted": false,
+    "physics_queries": 0
+  },
+  "ground_fixed_poses": {
+    "passed": true,
+    "report": "Saved/CalderWork/runs/codex_goose_ground_native_v1_poses.json",
+    "seconds": 70,
+    "captures": 8,
+    "captures_individually_inspected": 8,
+    "sole_samples_each": 192,
+    "maximum_actual_submitted_sole_error_cm": 0.043593,
+    "unchanged_limit_cm": 3,
+    "small_large_and_lifted_foot_poses": true,
+    "moving_feet_accepted": false,
+    "photographic_quality_accepted": false,
+    "visible_art_limits": "simple code-painted forms,visible tube-neck join,simplified webfeet"
+  },
+  "leg_art_flag": "CalderGooseLegArtTrial",
+  "rig_controls": 16,
+  "custom_floats": 225,
+  "runtime_shore_enabled": "opt-in CalderGooseShoreTrial only",
+  "current_job": "Audio recovery export/check/archive; read named receipt",
+  "pure_routine_candidate": "Prior routine data pass; new turn/last-step cleanup changes require native review.",
+  "runtime_hiss_waddle_unimplemented": false,
+  "moving_sole_drift_unverified": false,
+  "waves_calls_pending": "Water/contact geometry and opt-in goose audio objective local/MP/mix/indoor/off checks pass. Listening/fullperformance/fullroster/defaultpromotion remain open.",
+  "default_promotion": false,
+  "whole_phase3_complete": false,
+  "night_after_animals_request": "SourceArt/CalderLandscape/phase3/after_wildlife_night_request.json",
+  "pure_routine_data": {
+    "passed": true,
+    "report": "Saved/CalderWork/runs/codex_goose_shore_routine_data_v1_paths.json",
+    "samples": 72000,
+    "water_min": 6,
+    "water_max": 8,
+    "pair_minimum_cm": 349.433284,
+    "position_seam_cm": 0,
+    "runtime_feet_accepted": false
+  },
+  "editor_build": {
+    "passed": true,
+    "log": "Saved/CalderWork/codex_goose_shore_live_editor_build_v2.log",
+    "actions": 241,
+    "seconds": 148.16,
+    "first_attempt_failed_log_retained": "Saved/CalderWork/codex_goose_shore_live_editor_build_v1.log",
+    "repair": "Corrected test-only HouseExteriorSiteLayout.h include"
+  },
+  "native_background_gait": {
+    "return_full": {
+      "machine_passed": true,
+      "seconds": 162,
+      "root_samples": 126724,
+      "root_error_cm": 0,
+      "moving_frames_birds": [
+        875,
+        582
+      ],
+      "gap_samples": 180864,
+      "gap_p95_cm": 0.067227,
+      "drift_samples": 178272,
+      "drift_p95_cm": 0,
+      "captures_individually_inspected": 8,
+      "report": "Saved/CalderWork/runs/codex_goose_shore_return_full_v1_shore.json"
+    },
+    "return_medium_pending": false,
+    "outward_both_tiers_pending": false,
+    "return_medium": {
+      "machine_passed": true,
+      "seconds": 159,
+      "root_samples": 128189,
+      "root_error_cm": 0,
+      "moving_frames_birds": [
+        844,
+        524
+      ],
+      "gap_samples": 168864,
+      "gap_p95_cm": 0.06961,
+      "drift_samples": 166176,
+      "drift_p95_cm": 0,
+      "captures_individually_inspected": 8,
+      "report": "Saved/CalderWork/runs/codex_goose_shore_return_medium_v1_shore.json"
+    },
+    "outward_full": {
+      "machine_passed": true,
+      "seconds": 146,
+      "root_samples": 112016,
+      "root_error_cm": 0,
+      "moving_frames_birds": [
+        850,
+        582
+      ],
+      "gap_samples": 175872,
+      "gap_p95_cm": 0.015494,
+      "drift_samples": 173376,
+      "drift_p95_cm": 0,
+      "captures_individually_inspected": 8,
+      "report": "Saved/CalderWork/runs/codex_goose_shore_outward_full_v1_shore.json"
+    },
+    "outward_medium": {
+      "machine_passed": true,
+      "seconds": 147,
+      "root_samples": 108136,
+      "root_error_cm": 0,
+      "moving_frames_birds": [
+        781,
+        450
+      ],
+      "gap_samples": 154944,
+      "gap_p95_cm": 0.015657,
+      "drift_samples": 152448,
+      "drift_p95_cm": 0,
+      "captures_individually_inspected": 8,
+      "report": "Saved/CalderWork/runs/codex_goose_shore_outward_medium_v1_shore.json"
+    },
+    "total_actual_root_samples": 475065,
+    "total_gap_samples": 680544,
+    "total_drift_samples": 670272,
+    "all_captures_inspected": 32
+  },
+  "moving_sole_drift_scope": "Natural background shore routine only;no player-driven hiss or retreat accepted",
+  "current_recovery_target": "Saved/CalderWork/codex_checkpoint_goose_shore_background_20261018_v1",
+  "new_recovery_verified": true,
+  "diagnostic_tick_p95_max_ms": {
+    "return_full": 0.0828,
+    "return_medium": 0.0746,
+    "outward_full": 0.0755,
+    "outward_medium": 0.0636
+  },
+  "diagnostic_is_full_performance_acceptance": false,
+  "standalone_build": {
+    "passed": true,
+    "actions": 243,
+    "seconds": 132.63,
+    "finder_info_removals_generated_app_only": 482,
+    "log": "Saved/CalderWork/codex_goose_shore_background_game_build_v1.log",
+    "gameplay_claimed": false
+  },
+  "strict_game_signature": {
+    "passed": true,
+    "report": "Saved/CalderWork/codex_goose_shore_background_game_signature_v1.json",
+    "gameplay_claimed": false
+  },
+  "scope_guard": {
+    "passed": true,
+    "protected_map_files": 13,
+    "deer_donors": 64,
+    "crow_donors": 26,
+    "existing_source_exceptions": 6,
+    "config_master_canonical_mp_unchanged": true,
+    "physical_wildlife_assets": 16
+  },
+  "stable_shore_recovery": "Saved/CalderWork/codex_checkpoint_goose_shore_background_20261018_v1",
+  "stable_shore_recovery_counts": {
+    "text": 276,
+    "owned_binary": 97,
+    "evidence": 5286
+  },
+  "unverified_pure_reaction_candidate": "Pure route projection and elapsed-time hiss/step-turn/reverse/homewait/return path only;not connected to live authority or renderer.",
+  "pure_reaction_path_data": {
+    "passed": true,
+    "samples": 40000,
+    "route_projection_error_cm": 0,
+    "position_seam_cm": 0.003541,
+    "report": "Saved/CalderWork/runs/codex_goose_reaction_pure_data_v1_paths.json",
+    "runtime_or_replication_accepted": false
+  },
+  "unverified_live_reaction_candidate": "Opt-in CalderGooseReactionsTrial:real players at10Hz,6m3D/sprint2/crouch.6;Cause64hiss/turn/retreat/Homewait120s,Cause65returns afterallplayers12mclear ifdepartureallows;natural expiry sharedpureHomeDeadline;fixed diagnostic offset;gait evaluator uses replicated override. Native3ordinary-input cases prepared,not run.",
+  "runtime_hiss_waddle_unverified": false,
+  "reaction_build_v1": {
+    "passed": false,
+    "log": "Saved/CalderWork/codex_goose_reactions_editor_build_v1.log",
+    "repair": "Explicit const APawn pointer accepts UE5.8 TObjectPtr-returning conditional"
+  },
+  "reaction_editor_build": {
+    "passed": true,
+    "log": "Saved/CalderWork/codex_goose_reactions_editor_build_v2.log",
+    "seconds": 146.82,
+    "actions": 243
+  },
+  "ordinary_player_walk_v1": {
+    "machine_passed": true,
+    "seconds": 289,
+    "effective_hiss_distance_cm": 561.991,
+    "root_samples": 25833,
+    "root_error_cm": 0,
+    "gap_samples": 128160,
+    "gap_p95_cm": 0.065097,
+    "drift_samples": 125376,
+    "drift_p95_cm": 0,
+    "entered_water": true,
+    "real_120_second_home_wait_and_return": true,
+    "captures_individually_inspected": 4,
+    "visuals_limited_by_bank_wall": true,
+    "report": "Saved/CalderWork/runs/codex_goose_reaction_walk_v1_reactions.json",
+    "two_peer_accepted": false
+  },
+  "clearview_scope_audit": "SourceArt/CalderLandscape/phase3/goose_reaction_clearview_carryforward.json",
+  "ordinary_player_cases": {
+    "walk": {
+      "machine_passed": true,
+      "report": "Saved/CalderWork/runs/codex_goose_reaction_walk_v2_reactions.json",
+      "seconds": 287,
+      "effective_hiss_distance_cm": 562.876,
+      "actual_hiss_distance_cm": 562.876,
+      "posture_factor": 1.0,
+      "expected_effective_cm": 600,
+      "unchanged_tolerance_cm": 120,
+      "actual_root_samples": 24685,
+      "maximum_root_error_cm": 0,
+      "actual_submitted_gap_samples": 128832,
+      "gap_p95_cm": 0.065097,
+      "planted_pervertex_drift_samples": 126048,
+      "drift_p95_cm": 0,
+      "real_recovery_and_return_checked": true,
+      "captures_individually_inspected": 4
+    },
+    "sprint": {
+      "machine_passed": true,
+      "report": "Saved/CalderWork/runs/codex_goose_reaction_sprint_v1_reactions.json",
+      "seconds": 106,
+      "effective_hiss_distance_cm": 576.713,
+      "actual_hiss_distance_cm": 1153.426,
+      "posture_factor": 2.0,
+      "expected_effective_cm": 600,
+      "unchanged_tolerance_cm": 120,
+      "actual_root_samples": 5180,
+      "maximum_root_error_cm": 0,
+      "actual_submitted_gap_samples": 53376,
+      "gap_p95_cm": 0.106955,
+      "planted_pervertex_drift_samples": 52128,
+      "drift_p95_cm": 0,
+      "real_recovery_and_return_checked": false,
+      "captures_individually_inspected": 4
+    },
+    "crouch": {
+      "machine_passed": true,
+      "report": "Saved/CalderWork/runs/codex_goose_reaction_crouch_v1_reactions.json",
+      "seconds": 108,
+      "effective_hiss_distance_cm": 595.488,
+      "actual_hiss_distance_cm": 357.2928,
+      "posture_factor": 0.6,
+      "expected_effective_cm": 600,
+      "unchanged_tolerance_cm": 120,
+      "actual_root_samples": 6159,
+      "maximum_root_error_cm": 0,
+      "actual_submitted_gap_samples": 59136,
+      "gap_p95_cm": 0.088609,
+      "planted_pervertex_drift_samples": 57888,
+      "drift_p95_cm": 0,
+      "real_recovery_and_return_checked": false,
+      "captures_individually_inspected": 4
+    }
+  },
+  "runtime_hiss_waddle_scope": "Three real local-player ordinary-input postures;walking full recovery;no two-peer/audio/fullperformance acceptance",
+  "source_freeze_note": "No C++ edits during standalone compilation.",
+  "reactions_default_on": false,
+  "reaction_recovery_target": "Saved/CalderWork/codex_checkpoint_goose_reactions_local_20261018_v1",
+  "reaction_recovery_verified": true,
+  "reaction_standalone_build": {
+    "passed": true,
+    "actions": 245,
+    "seconds": 136.11,
+    "generated_app_finder_info_removals": 534,
+    "log": "Saved/CalderWork/codex_goose_reactions_local_game_build_v1.log",
+    "standalone_gameplay_claimed": false
+  },
+  "reaction_strict_signature": {
+    "passed": true,
+    "report": "Saved/CalderWork/codex_goose_reactions_local_game_signature_v1.json",
+    "standalone_gameplay_claimed": false
+  },
+  "stable_reaction_recovery": "Saved/CalderWork/codex_checkpoint_goose_reactions_local_20261018_v1",
+  "stable_reaction_recovery_counts": {
+    "text": 280,
+    "owned_binary": 97,
+    "evidence": 5390
+  },
+  "unverified_mp_candidate": "Normal lobby two rendered peers;host ordinary walking/full recovery reused with screenshot delay outside0.5s gate;client actual FastArray fields,following-viewGPUfence<=500ms,samewallroots<=120cm throughhiss/retreat/wait/return;remote-controlled approach still separate.",
+  "mp_editor_v1": {
+    "build_reported_succeeded": true,
+    "seconds": 151.56,
+    "include_order_diagnostic": true,
+    "clean_first_header_fix_rebuild_pending": true,
+    "log": "Saved/CalderWork/codex_goose_reactions_mp_editor_build_v1.log"
+  },
+  "mp_native_v1": {
+    "passed": false,
+    "seconds": 81.95,
+    "report": "Saved/CalderWork/runs/codex_goose_reaction_mp_native_v1/result.json",
+    "hashes_match": true,
+    "client_actual_phase_at_failure": 6,
+    "actual_reaction_not_delivered_within_500ms": true,
+    "retained": true
+  },
+  "dormancy_fix_candidate": "Wake director before changing replicated pond fields,matching existing deer. Appliesroster/naturalphase/reaction/naturalclear changes only;idle remains dormant,noheartbeat. Native retry pending.",
+  "mp_native_v2": {
+    "machine_passed": true,
+    "seconds": 318.66,
+    "report": "Saved/CalderWork/runs/codex_goose_reaction_mp_native_v2/result.json",
+    "data_upper_bound_ms": 92.018,
+    "following_view_gpu_frame_ms": 129.407,
+    "same_wall_pose_samples": 1924,
+    "max_same_wall_error_cm": 7.481649,
+    "phase_samples": {
+      "hiss": 1,
+      "retreat": 428,
+      "home_wait": 1014,
+      "return": 463
+    },
+    "host_actual_root_samples": 6885,
+    "host_root_error_cm": 0,
+    "host_gap_samples": 34944,
+    "host_gap_p95_cm": 0.066175,
+    "host_drift_samples": 32160,
+    "host_drift_p95_cm": 0,
+    "full_real_recovery": true,
+    "captures_individually_inspected": 6,
+    "client_visual_occlusion_by_host_limited_acceptance": true
+  },
+  "new_mp_view_only_scope_audit": "SourceArt/CalderLandscape/phase3/goose_mp_sideview_carryforward.json",
+  "water_material_script_prepared_not_run": "Tools/calder/bird_water_assets_batch.py",
+  "mp_native_v3": {
+    "passed": false,
+    "seconds": 86.48,
+    "report": "Saved/CalderWork/runs/codex_goose_reaction_mp_native_v3/result.json",
+    "failure_scope": "No physically clear side camera eye;approach never began;no new gameplay result",
+    "captures": 0
+  },
+  "side_eye_retry": "Expand standing-eye search350/500/700/1000/1800cm aroundfullbank;closeeyesbeforestoppedhost,farther eyesoffcorridor;dryactualfloor/slope/feet+body sightlines unchanged. ObserverHome sightline removed asitneedlesslyblockedhissview;fullrecoveryremainsmeasuredandhostviewstillclear.",
+  "mp_native_v4": {
+    "passed": true,
+    "seconds": 399.93,
+    "report": "Saved/CalderWork/runs/codex_goose_reaction_mp_native_v4/result.json",
+    "data_upper_bound_ms": 259.147,
+    "following_view_gpu_frame_ms": 306.608,
+    "same_wall_pose_samples": 1692,
+    "maximum_same_wall_error_cm": 23.86478,
+    "phase_samples": {
+      "hiss": 1,
+      "retreat": 368,
+      "home_wait": 894,
+      "return": 408
+    },
+    "full_real_recovery": true,
+    "captures_individually_inspected": 6,
+    "client_visual_unobstructed": true,
+    "host_root_samples": 4095,
+    "host_root_error_cm": 0.0,
+    "host_gap_p95_cm": 0.054111,
+    "host_drift_p95_cm": 0.0,
+    "remote_controlled_approach_accepted": false
+  },
+  "mp_reaction_host_and_client_observer_accepted": true,
+  "mp_recovery_target": "Saved/CalderWork/codex_checkpoint_goose_reactions_mp_20261018_v1",
+  "mp_recovery_verified": true,
+  "mp_standalone_build": {
+    "passed": true,
+    "actions": 246,
+    "seconds": 270.84,
+    "generated_app_finder_info_removals": 1079,
+    "log": "Saved/CalderWork/codex_goose_reactions_mp_game_build_v1.log",
+    "standalone_gameplay_claimed": false
+  },
+  "mp_strict_signature": {
+    "passed": true,
+    "report": "Saved/CalderWork/codex_goose_reactions_mp_game_signature_v1.json",
+    "standalone_gameplay_claimed": false
+  },
+  "stable_mp_recovery": "Saved/CalderWork/codex_checkpoint_goose_reactions_mp_20261018_v1",
+  "stable_mp_recovery_counts": {
+    "text": 285,
+    "owned_binary": 97,
+    "evidence": 5532
+  },
+  "water_material_asset_created": {
+    "passed": true,
+    "report": "SourceArt/CalderLandscape/phase3/sky/bird_water_material_v1.json",
+    "native_batch_seconds": 56.1,
+    "existing_calder_assets_sha_unchanged": 234,
+    "no_map_saved": true,
+    "native_effects_accepted": false
+  },
+  "unverified_effect_candidate": {
+    "flag": "CalderGooseEffectsTrial",
+    "components": 4,
+    "fixed_pools": [
+      16,
+      32,
+      16,
+      16
+    ],
+    "types": [
+      "reused_softcontact",
+      "V_wake",
+      "splash_drops",
+      "ripple_ring"
+    ],
+    "shared_lit_water_material": true,
+    "authored_textures": 0,
+    "lights": 0,
+    "collision": false,
+    "native_effects_accepted": false,
+    "source": "Source/SeniorSendoff/HouseCalderWildlifePondEffects.cpp"
+  },
+  "water_effect_build_v1": {
+    "passed": false,
+    "log": "Saved/CalderWork/codex_goose_water_effects_editor_build_v1.log",
+    "repair": "Renamed material-slot FName constant WaterSlot to avoid local water-level shadows"
+  },
+  "water_effects_ledger": "SourceArt/CalderLandscape/phase3/goose_water_effects_checkpoint.json",
+  "night_confirmed_duration_minutes": 30,
+  "audio_ledger": "SourceArt/CalderLandscape/phase3/goose_audio_checkpoint.json"
+}

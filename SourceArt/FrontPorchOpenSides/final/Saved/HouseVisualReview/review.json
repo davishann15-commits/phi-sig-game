@@ -1,0 +1,46 @@
+{
+	"status": "PASS",
+	"detail": "Registered campaign camera sweep complete",
+	"scope": "Assisted registered-camera sweep in the actual campaign house; not player traversal or a multiplayer session.",
+	"userDirectory": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontPorchOpenSides/final/",
+	"elapsedSeconds": 12.384923789650202,
+	"quality": 2,
+	"actualShadowQuality": 2,
+	"requestedPageOverride": 0,
+	"actualPages": 2048,
+	"virtualShadowsEnabled": 1,
+	"expectedViews": 3,
+	"minimumWarmupFrames": 64,
+	"captures": [
+		{
+			"view": "01_Front_Porch",
+			"path": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontPorchOpenSides/final/Saved/HouseVisualReview/01_Front_Porch.png",
+			"width": 1440,
+			"height": 900,
+			"horizontalFov": 91.095901489257812,
+			"actualPages": 2048,
+			"warmupFrames": 70,
+			"warmupSeconds": 3.0715282931923866
+		},
+		{
+			"view": "02_Right_Porch_End",
+			"path": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontPorchOpenSides/final/Saved/HouseVisualReview/02_Right_Porch_End.png",
+			"width": 1440,
+			"height": 900,
+			"horizontalFov": 91.095901489257812,
+			"actualPages": 2048,
+			"warmupFrames": 104,
+			"warmupSeconds": 2.7184392474591732
+		},
+		{
+			"view": "03_Left_Porch_End",
+			"path": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/FrontPorchOpenSides/final/Saved/HouseVisualReview/03_Left_Porch_End.png",
+			"width": 1440,
+			"height": 900,
+			"horizontalFov": 91.095901489257812,
+			"actualPages": 2048,
+			"warmupFrames": 99,
+			"warmupSeconds": 2.7403532490134239
+		}
+	]
+}

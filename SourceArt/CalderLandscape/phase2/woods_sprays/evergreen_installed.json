@@ -1,0 +1,18 @@
+{
+  "textures": [
+    {
+      "asset": "/Game/SeniorSendOff/Calder/Woods/T_CalderWoodsEvergreen_A.T_CalderWoodsEvergreen_A",
+      "srgb": true,
+      "alpha_coverage_mips": true,
+      "virtual_texture_streaming": false
+    },
+    {
+      "asset": "/Game/SeniorSendOff/Calder/Woods/T_CalderWoodsEvergreen_N.T_CalderWoodsEvergreen_N",
+      "srgb": false,
+      "alpha_coverage_mips": false,
+      "virtual_texture_streaming": false
+    }
+  ],
+  "source_kit_sha_unchanged": true,
+  "scope": "Owned atlas trial; default material/wind/mesh/collision/placement unchanged"
+}

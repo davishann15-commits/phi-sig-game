@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "peers": [
+    {
+      "peer": "host",
+      "exit_code": 0,
+      "status": "FAIL",
+      "log": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/InteractiveTrees/network-host.log",
+      "evidence": "/tmp/sso-trees-host-3d2c0c8b/Saved/TreesReview"
+    },
+    {
+      "peer": "client",
+      "exit_code": 0,
+      "status": "FAIL",
+      "log": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/InteractiveTrees/network-client.log",
+      "evidence": "/tmp/sso-trees-client-3d2c0c8b/Saved/TreesReview"
+    }
+  ],
+  "seconds": 134.78
+}

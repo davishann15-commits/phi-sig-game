@@ -1,0 +1,219 @@
+{
+  "assets": [
+    {
+      "name": "SM_NCF_LowerOpenedShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/SM_NCF_LowerOpenedShell.fbx",
+      "target_actor": "NightClub_SM_NC_LowerRoomShell",
+      "collision": true,
+      "materials": [
+        "M_NC_FloorBlack",
+        "M_NC_Charcoal"
+      ],
+      "triangles": 364
+    },
+    {
+      "name": "SM_NCF_LoungeOpenedShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/SM_NCF_LoungeOpenedShell.fbx",
+      "target_actor": "SM_Room102_Shell",
+      "collision": false,
+      "materials": [
+        "MI_SSO_Ceiling",
+        "MI_SSO_PaintWhite",
+        "MI_SSO_PaintCream",
+        "MI_SSO_FloorWood",
+        "MI_SSO_S03HallGrey"
+      ],
+      "triangles": 1087
+    },
+    {
+      "name": "COL_NCF_LoungeOpenedShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/COL_NCF_LoungeOpenedShell.fbx",
+      "target_actor": "COL_Room102_Shell",
+      "collision": true,
+      "materials": [
+        "WorldGridMaterial",
+        "WorldGridMaterial_1",
+        "WorldGridMaterial_2",
+        "WorldGridMaterial_3"
+      ],
+      "triangles": 392
+    },
+    {
+      "name": "SM_NCF_RetainedLoungeLining",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/SM_NCF_RetainedLoungeLining.fbx",
+      "target_actor": "NightClub_SM_NCW_LoungeWallLining",
+      "collision": false,
+      "materials": [
+        "M_NC_Charcoal",
+        "M_NC_CeilingBlack"
+      ],
+      "triangles": 112
+    },
+    {
+      "name": "SM_NCF_RetainedClubDetails",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/SM_NCF_RetainedClubDetails.fbx",
+      "target_actor": "NightClub_Polish_ArchitecturalDetails",
+      "collision": false,
+      "materials": [
+        "M_CP_WornUpholsteredPanel",
+        "M_CP_ScuffedMetal",
+        "M_CP_BrushedEdges",
+        "M_CP_NeonCyan",
+        "M_CP_NeonViolet"
+      ],
+      "triangles": 2712
+    },
+    {
+      "name": "SM_NCF_ExteriorFillShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/SM_NCF_ExteriorFillShell.fbx",
+      "target_actor": null,
+      "collision": true,
+      "materials": [
+        "M_NC_FloorBlack",
+        "M_NC_CeilingBlack",
+        "M_CP_WornCharcoal"
+      ],
+      "triangles": 420
+    },
+    {
+      "name": "SM_NCF_ContinuousDanceFloor",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/SM_NCF_ContinuousDanceFloor.fbx",
+      "target_actor": "NightClub_SM_NC_LowerDanceFloorInlay",
+      "collision": false,
+      "materials": [
+        "M_CP_WornFloor",
+        "M_CP_NeonFloorLine"
+      ],
+      "triangles": 6444
+    },
+    {
+      "name": "SM_NCF_NewPerimeterDetails",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/exterior_fill/geometry/models/SM_NCF_NewPerimeterDetails.fbx",
+      "target_actor": null,
+      "collision": false,
+      "materials": [
+        "M_CP_ScuffedMetal",
+        "M_CP_WornUpholsteredPanel"
+      ],
+      "triangles": 132
+    }
+  ],
+  "materials": {
+    "M_CP_WornFloor": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_WornFloor"
+    },
+    "M_CP_WornCharcoal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_WornCharcoal"
+    },
+    "M_CP_NeonFloorLine": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_NeonFloorLine"
+    },
+    "M_CP_WornUpholsteredPanel": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_WornUpholsteredPanel"
+    },
+    "M_CP_ScuffedMetal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_ScuffedMetal"
+    },
+    "M_NC_FloorBlack": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorBlack"
+    },
+    "M_NC_Charcoal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_WornCharcoal"
+    },
+    "M_NC_CeilingBlack": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_CeilingBlack"
+    },
+    "MI_SSO_Ceiling": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_Ceiling"
+    },
+    "MI_SSO_PaintWhite": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "MI_SSO_PaintCream": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintCream"
+    },
+    "MI_SSO_FloorWood": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_FloorWood"
+    },
+    "MI_SSO_S03HallGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S03HallGrey"
+    },
+    "WorldGridMaterial": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_1": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_2": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_3": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "M_CP_BrushedEdges": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_BrushedEdges"
+    },
+    "M_CP_NeonCyan": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_NeonCyan"
+    },
+    "M_CP_NeonViolet": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_NeonViolet"
+    }
+  },
+  "lower_regions": [
+    [
+      [
+        -2750.44,
+        -2188,
+        0.88
+      ],
+      [
+        -2152.04,
+        -1483.4,
+        288.464
+      ]
+    ],
+    [
+      [
+        -2212.51019,
+        -1740,
+        0.88
+      ],
+      [
+        -1432,
+        -1509.02675,
+        288.464
+      ]
+    ],
+    [
+      [
+        -3388,
+        -2188,
+        0.88
+      ],
+      [
+        -1432,
+        -1522,
+        288.464
+      ]
+    ],
+    [
+      [
+        -1490,
+        -1509.02675,
+        0.88
+      ],
+      [
+        -1432,
+        -1030,
+        327.03
+      ]
+    ]
+  ],
+  "notes": [
+    "Inside existing exterior footprint only.",
+    "No upstairs changes.",
+    "Hallways, neighboring rooms, existing doors and pole remain.",
+    "No new real lights."
+  ]
+}

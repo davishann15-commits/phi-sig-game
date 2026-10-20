@@ -1,0 +1,19 @@
+{
+  "installed": false,
+  "runtime_preimage_sha": "8914f4a67c244e579fb5f0de187e9205cc8c4d6851e5787dc04115e3e10f7310",
+  "candidate_sha": "f15f0674d163a00d8b1ee7ba861b06de6fe70587b1a0059685dabb82dde3f102",
+  "changes": [
+    "Physical bevels on the prepared trainer top/pad, motor and tunnel pads; original doors and room geometry stay exact.",
+    "Tape rolls have real holes and rest on the revised pad top78cm, with no gap.",
+    "Tub circumference48segments; four feet connect its raised5cm body to the fixed floor.",
+    "Period-text-supported trainer table:183cm timber top/185cm pad,64/66cm width,78cm finished height; legs support the top and stay on the fixed floor. Native route/capsule fit unverified."
+  ],
+  "native_compile_and_acceptance_pending": true,
+  "scope": "Prepared only. Original doors/routes/geometry constants stay exact; actual closeups/collision/fullreviews/performance required after5accepted->6.",
+  "period_text_reference": {
+    "id": "T1",
+    "title": "Tips on Training,1983, chapter Planning a High School Athletic Training Program, PDF9",
+    "url": "https://files.eric.ed.gov/fulltext/ED232967.pdf",
+    "type": "Primary period text, not photo. Gives approximate30in high/2ft wide/6\u20137ft long padded wood-or-metal treatment tables; translated to scene dimensions, with full native validation pending."
+  }
+}

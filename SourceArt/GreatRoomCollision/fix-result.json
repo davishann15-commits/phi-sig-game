@@ -1,0 +1,5 @@
+{
+  "mesh": "/Game/SeniorSendOff/House/Meshes/SM_Upper_p0_m1_Solid.SM_Upper_p0_m1_Solid",
+  "before": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+  "after": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+}

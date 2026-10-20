@@ -1,0 +1,525 @@
+{
+  "source_log": "Saved/CalderWork/runs/codex_bridge_lot_join_physical/Saved/Logs/SeniorSendoff.log",
+  "scope": "Paving kinds at fixed XY endpoints; not a physical acceptance test",
+  "pave_offsets_cm": [
+    0.0,
+    -12.0,
+    3.0,
+    5.0
+  ],
+  "cadastre_sources_sha256": {
+    "Source/SeniorSendoff/HouseCampusLayout.cpp": "173c2ae8434f592a46aafec09bc253fdf15bf1f486c883335840445efd8aa1e0",
+    "Source/SeniorSendoff/HouseCalderTerrain.cpp": "2b4f61970df609f42c7aa205da0cdd4f577fcfa4825b67a2f26c2b871912ca3e",
+    "Source/SeniorSendoff/HouseCalderRoads.cpp": "df9b5af35d8e444ec3984e48cad7f281c229ce0dde92680853a75783152cc98e",
+    "Source/SeniorSendoff/HouseCalderRoads.h": "305be086a671d9b842a4c7e06613a50670939df15168580e768a28e527bc0b6f"
+  },
+  "stairs": [
+    {
+      "name": "the Senior Steps (CLASS OF 1936 plaque), on the Y -10800 axis",
+      "foot": [
+        -14306.0,
+        -10800.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -14615.0,
+        -10800.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "quad stair Q3/Q2 on the axis",
+      "foot": [
+        -13205.0,
+        -10800.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -13415.0,
+        -10800.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "quad stair Q2/Q1 on the axis",
+      "foot": [
+        -10972.0,
+        -10800.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -11215.0,
+        -10800.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "the sunken panel's opening (4 risers) on the axis",
+      "foot": [
+        -12300.0,
+        -11192.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        -12300.0,
+        -11015.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "the knoll stair (centred on the axis walk)",
+      "foot": [
+        -9962.0,
+        -10800.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -9785.0,
+        -10800.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "Harlow south court: steps up at its east end",
+      "foot": [
+        -6863.0,
+        -9640.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        -6785.0,
+        -9640.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "Hollis west court: steps up at its north end",
+      "foot": [
+        -15390.0,
+        -14461.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        -15390.0,
+        -14185.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "Kerr south court: steps up at its west end",
+      "foot": [
+        11063.0,
+        -15590.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        10985.0,
+        -15590.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "Field House south court: steps up at its east end",
+      "foot": [
+        19038.0,
+        -17140.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        19215.0,
+        -17140.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "Band and Music west court: steps up at its north end",
+      "foot": [
+        -7950.0,
+        -18140.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        -7950.0,
+        -17435.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "Whitcomb west court: steps up at its north end",
+      "foot": [
+        -13440.0,
+        -19123.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        -13440.0,
+        -18385.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "walk walk_00 stair",
+      "foot": [
+        -19423.0,
+        -6500.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -18685.0,
+        -6500.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_02 stair",
+      "foot": [
+        11640.0,
+        -6500.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        12015.0,
+        -6500.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_04 stair",
+      "foot": [
+        -13300.0,
+        -6685.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -13300.0,
+        -6895.0
+      ],
+      "head_kind": 3
+    },
+    {
+      "name": "walk walk_05 stair",
+      "foot": [
+        -13289.0,
+        -9824.2
+      ],
+      "foot_kind": 3,
+      "head": [
+        -13237.117,
+        -10408.215
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_05 stair",
+      "foot": [
+        -12966.2,
+        -13455.8
+      ],
+      "foot_kind": 2,
+      "head": [
+        -12946.414,
+        -13678.232
+      ],
+      "head_kind": 3
+    },
+    {
+      "name": "walk walk_06 stair",
+      "foot": [
+        -13503.7,
+        -12810.4
+      ],
+      "foot_kind": 2,
+      "head": [
+        -13661.3,
+        -12949.2
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_07 stair",
+      "foot": [
+        -14427.0,
+        -9876.2
+      ],
+      "foot_kind": 0,
+      "head": [
+        -13848.4,
+        -10385.8
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_14 flight",
+      "foot": [
+        -7600.0,
+        -9900.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -8400.0,
+        -9900.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_16 stair",
+      "foot": [
+        -3574.0,
+        -12650.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -4015.0,
+        -12650.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_22 flight",
+      "foot": [
+        -8600.0,
+        -17650.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -9400.0,
+        -17650.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_28 stair",
+      "foot": [
+        -8556.0,
+        -19900.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -8865.0,
+        -19900.0
+      ],
+      "head_kind": 3
+    },
+    {
+      "name": "walk walk_29 stair",
+      "foot": [
+        -7766.0,
+        -18850.0
+      ],
+      "foot_kind": 3,
+      "head": [
+        -8075.0,
+        -18850.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_30 flight",
+      "foot": [
+        -8200.0,
+        -20000.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -8200.0,
+        -21600.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_30 flight",
+      "foot": [
+        -8200.0,
+        -19000.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -8200.0,
+        -19800.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_32 flight",
+      "foot": [
+        -17300.0,
+        -20200.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -17300.0,
+        -21200.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_36 stair",
+      "foot": [
+        10655.0,
+        -8550.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        10865.0,
+        -8550.0
+      ],
+      "head_kind": 3
+    },
+    {
+      "name": "walk walk_37 stair",
+      "foot": [
+        12600.0,
+        -6941.0
+      ],
+      "foot_kind": 3,
+      "head": [
+        12600.0,
+        -6665.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_45 stair",
+      "foot": [
+        16950.0,
+        -11455.0
+      ],
+      "foot_kind": 1,
+      "head": [
+        16950.0,
+        -11665.0
+      ],
+      "head_kind": 3
+    },
+    {
+      "name": "walk walk_47 flight",
+      "foot": [
+        9400.3,
+        -19664.6
+      ],
+      "foot_kind": 2,
+      "head": [
+        11399.5,
+        -19737.301
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_51 flight",
+      "foot": [
+        -19975.0,
+        -10800.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -19000.5,
+        -10800.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_52 flight",
+      "foot": [
+        -2400.2,
+        -18898.6
+      ],
+      "foot_kind": 2,
+      "head": [
+        -3600.3,
+        -18865.301
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk walk_53 flight",
+      "foot": [
+        -17300.0,
+        -25599.5
+      ],
+      "foot_kind": 2,
+      "head": [
+        -17300.0,
+        -24999.699
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk uni_steps flight",
+      "foot": [
+        -8425.0,
+        -12400.0
+      ],
+      "foot_kind": 2,
+      "head": [
+        -8425.0,
+        -11400.0
+      ],
+      "head_kind": 2
+    },
+    {
+      "name": "walk crow_trail flight",
+      "foot": [
+        8200.0,
+        26850.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        6200.0,
+        26850.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "walk crow_trail flight",
+      "foot": [
+        6100.0,
+        26850.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        4200.0,
+        26850.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "walk crow_trail flight",
+      "foot": [
+        4100.0,
+        26850.0
+      ],
+      "foot_kind": 0,
+      "head": [
+        2200.0,
+        26850.0
+      ],
+      "head_kind": 0
+    },
+    {
+      "name": "walk south_lot_tier_links stair",
+      "foot": [
+        1800.0,
+        -21209.0
+      ],
+      "foot_kind": 1,
+      "head": [
+        1800.0,
+        -21815.0
+      ],
+      "head_kind": 1
+    },
+    {
+      "name": "walk south_lot_tier_links stair",
+      "foot": [
+        1800.0,
+        -22811.0
+      ],
+      "foot_kind": 1,
+      "head": [
+        1800.0,
+        -23615.0
+      ],
+      "head_kind": 1
+    }
+  ]
+}

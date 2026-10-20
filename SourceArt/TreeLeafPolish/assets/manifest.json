@@ -1,0 +1,15 @@
+{
+  "generation_method": "Built-in image_gen",
+  "atlases": [
+    "AutumnClusters.png",
+    "AutumnSingleLeaves.png"
+  ],
+  "source_images": [
+    "exec-ad6510bd-ec4f-4e03-b791-3e7f5f1766be.png",
+    "exec-3a1172b1-316b-44a7-a940-b48d40159539.png"
+  ],
+  "prompts": [
+    "Use case: photorealistic-natural. Asset type: production Unreal Engine masked foliage texture atlas, botanically believable autumn leaves. Create a square transparent PNG texture atlas with exactly 9 separated branch clusters in an exact regular 3 by 3 grid; equal square cells, 8% empty transparent margins inside each cell. Row 1: broad 5-lobed maple leaves. Row 2: rounded elongated oak leaves with 5-7 lobes per side. Row 3: small serrated triangular oval birch leaves. In each row column 1 is mostly golden yellow with some olive, column 2 is warm copper/orange with some yellow, column 3 is muted ochre/russet/brown with slight green. Each cell is one compact organic irregular broad cluster of 12-20 leaves on thin branching woody twigs. Branching mostly sideways and diagonal, not a tall vertical strip. Visible realistic vein networks, mottled pigments, small weathered spots, fine serrations where appropriate, a few dry curled edges and occasional small holes, natural asymmetry. Realistic photographic albedo, soft flat diffuse light with no directional cast shadows or glossy highlights. Some small overlap but plenty of negative space between the leaf outlines. All leaves sharp, detailed, varied in size and rotation. The cluster spans 75-85% of each cell, no leaf crosses a cell border. True transparent background including gaps between leaves. No text, labels, grid lines, frame, ground, scenery, watermark, glow, illustration or stylization. Output 2048 by 2048 if possible.",
+    "Use case: photorealistic-natural. Asset type: Unreal Engine masked autumn single-leaf albedo atlas. Square transparent PNG texture atlas of exactly nine individual fallen leaves in a precise regular 3 by 3 equal-cell grid. Each leaf entirely within its cell with 12% transparent margins. Row 1 three maple leaves, broad natural five pointed lobes. Row 2 three white-oak leaves, elongated with five to seven rounded lobes on each side. Row 3 three birch leaves, small triangular oval outline with fine natural serrations. Columns left to right golden yellow with residual olive, copper orange with some ochre, dry russet brown. Each individual leaf points toward the top of its cell with its thin petiole at the bottom; visible distinct veins, tiny age spots, organic mottled pigments, fine wrinkles and slight curled worn edges with some irregular small damage. Realistic sharp high resolution photographic albedo under flat soft diffuse lighting. No cast shadows, no strong highlights. The leaf must fill roughly 70-80% of its cell. Pure true transparent alpha around all leaf edges, no opaque background, no overlapping leaves, no branches besides the petiole, no text, labels, grid, frames, watermark or scenery. No illustration or cartoon. Output 2048 by 2048 if possible."
+  ]
+}

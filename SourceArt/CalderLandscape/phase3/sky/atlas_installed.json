@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "owned_assets": [
+    "/Game/SeniorSendOff/Calder/Wildlife/T_CalderBirdAtlas.T_CalderBirdAtlas",
+    "/Game/SeniorSendOff/Calder/Wildlife/M_CalderBirdPart.M_CalderBirdPart"
+  ],
+  "pixel_instructions": 191,
+  "samples": 1,
+  "existing_assets_unchanged": 14,
+  "existing_sha256": {
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderCrowSourceLOD2.uasset": "60eaedb8a3f695a7b14781cfcdb5447cf98e5179f2e32f6ad152fe7c5f9f91fe",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerBody 2.uasset": "b1df114ce83019729b6f5b2e6dd93f5afffebc3b20b2101127385e72fc569c0e",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerFur 2.uasset": "9a81c2724e3e8ccb9f2ebcbb42841db2df4abb4576257bb37b8b65cd0034e80e",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerBody.uasset": "11fc9a961502791ee5bb25d89c7d526ada5a112e2439bae95e515153a82f4f6d",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerSkin.uasset": "89070fe12a5c612b36cae4bf073b592498d766492251833c720cbd684dcba7df",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderWildlifePart.uasset": "402d3c4f924da0e62b94ffa3d69510b7662536c4e78a270e4f37f4c558bdc367",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerSourceLOD1.uasset": "4ea7f5b7714c4c75c41425f268b69f7d67f8660f6a983a12552fe43a31c796fc",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderWildlifeContact.uasset": "262b0aec3e9c5c16d01ed2b94371ea91aae5944c48e8c28782b36980f903bd00",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderCrowSkin.uasset": "2edfa357ab56012f255287ae281f48e020df1e302807b2be2b6e2b19e3e616c4",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderCrowSourceLOD1.uasset": "4d85376259d96c78269a101d864fe863c4f9092e865534928edd5f9c80690c78",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderCrowBody.uasset": "e672330ce17ca4c0b3ad47b4e8d4d5ee4e743432052de3d490a1c304ca4ecb9b",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerSkin 2.uasset": "a0872330b04027987bcd72189ec02056e5e827358cd7d098504ac39cde9867ab",
+    "Content/SeniorSendOff/Calder/Wildlife/SM_CalderDeerSourceLOD2.uasset": "389cbb9221318752bcc63977d5b8539aecc1308319f0a6fb2410b16ccf639414",
+    "Content/SeniorSendOff/Calder/Wildlife/M_CalderDeerFur.uasset": "738ec1ea1639b3d28f311a50b9607a31ecfb71cc661a928ddb605ccd249c2a85"
+  },
+  "no_map_saved": true,
+  "original_code_painted": true,
+  "rigid_controls": 16,
+  "custom_floats": 225,
+  "current_previous_pose": true,
+  "native_quality_acceptance_pending": true
+}

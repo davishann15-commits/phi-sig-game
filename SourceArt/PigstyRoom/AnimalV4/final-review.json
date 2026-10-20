@@ -1,0 +1,21 @@
+{
+  "sourceSHA256": {
+    "HouseRoamingPig.cpp": "52f2119e15aae489553f0c75673b61122ffdfd5d749b76bc9f3ebfc89abdb771",
+    "HouseRoamingPig.h": "4c46a13579e7e90b34ec97e26387116ec8af092e50a9f015c8cc7fb8b05e2ebb",
+    "HousePigSmoke.cpp": "e4f8cc1ece36f47e24c3a23db55fa271ac3f63c997af526ea9cda09792143f35",
+    "StoryCampaign.cpp": "c9367eb7708b2fc31380359dcbca1e52ba5fd6cb66a722a16157f61ae070cd1f"
+  },
+  "assetSHA256": {
+    "SM_PIG_BlackHead": "39f96512685f861050bed50c0017e8a0008a25500cc197e380b83b5aa69ba83f",
+    "SM_PIG_LeftEar": "4887d912a2d46e64b71d17b4c34d621a683e3a86e869b346d86156f84b6fa97c",
+    "SM_PIG_RightEar": "b2b9222021a4f40eb6cb439cadd1a8a6a00c8426a1d80ec81f92f6b503aa6bb0",
+    "PIG_Snort": "f39444701b087615e359f486e7addb3da1ae4344c5fb2eda2f6958d4a0b574bf"
+  },
+  "mapSHA256": "91390e5c5685647e8eac69a1437740756c9f454e00238f030ddd7215cbf69dae",
+  "mapPreserved": true,
+  "validation": [
+    "autonomous animal behavior and audio playback",
+    "physical hoof and carry regression",
+    "door-gated stairs traversal"
+  ]
+}

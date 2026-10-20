@@ -1,0 +1,67 @@
+{
+  "scope": "Opt-in photograph-based evergreen atlas; no runtime skeletal/PVE or geometry change",
+  "default_enabled": false,
+  "trial_switch": "CalderEvergreenAtlasTrial",
+  "build": {
+    "log": "codex_evergreen_atlas_build.log",
+    "disable_unity_actions": 207,
+    "seconds": 120.53
+  },
+  "native_run": "codex_evergreen_atlas_review",
+  "native_checks": "WoodsPass/CampusWoods and65-maple/780contact PASS; exact actual maple poses match original",
+  "existing_evergreen_batches": [
+    {
+      "instances": 19,
+      "triangles": [
+        3196,
+        1032,
+        226
+      ]
+    },
+    {
+      "instances": 12,
+      "triangles": [
+        3196,
+        1032,
+        226
+      ]
+    }
+  ],
+  "native_scene": {
+    "passed": true,
+    "floor_samples": 81,
+    "hut_entry_capsule_clear": true
+  },
+  "visual_review": {
+    "images": [
+      {
+        "file": "00_detail_woods_edge.png",
+        "sha256": "dcd4ff64b9edcb115f31701edc73c5f1f4c5a973cbb4cfce16495665c168fa9a",
+        "inspected": true
+      },
+      {
+        "file": "01_detail_woods_20m.png",
+        "sha256": "cc9edbf2c7360887d9006d6b0612b889d731aa075b2e36fe083fca3b03462a37",
+        "inspected": true
+      },
+      {
+        "file": "02_detail_woods_deep.png",
+        "sha256": "eb8b6cb55450f1cad92b5b2e228873ad891b48d46b469c71a99c64c5220b62ca",
+        "inspected": true
+      },
+      {
+        "file": "04_detail_woods_silhouette.png",
+        "sha256": "9c536bd8f44da51d1369590331e1cb65c7dcae62db380ac5ea38b119b8856952",
+        "inspected": true
+      }
+    ],
+    "findings": [
+      "No obvious missing-foliage or world regression in four established views",
+      "Evergreen needle change is subtle in these wide frames; retain opt-in pending closer/botanical/final-performance review",
+      "Trail/hut/framing and existing common wind retained"
+    ],
+    "total_inspected_tree_candidate_and_woods_frames": 98,
+    "full_photographic_acceptance": false
+  },
+  "final_performance_acceptance": false
+}

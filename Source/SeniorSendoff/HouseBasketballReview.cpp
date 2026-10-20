@@ -46,7 +46,7 @@ void TickHouseBasketballReview(AStoryFirstPersonCharacter* Pawn)
         }
         return;
     }
-    struct FState {TWeakObjectPtr<UWorld> World;TWeakObjectPtr<AHouseBasketball> Ball;int Phase=0,End=0,Way=1;double Start=0,Total=0;bool Falling=false;FString Dir,Log;FVector Last=FVector::ZeroVector;};
+    struct FState {TWeakObjectPtr<UWorld> World;TWeakObjectPtr<AHouseBasketball> Ball;int Phase=0,End=0,Way=1;double Start=0,Total=0;bool Falling=false,Charging=false;FString Dir,Log;FVector Last=FVector::ZeroVector;};
     static FState S;double Now=W->GetTimeSeconds();
     auto Finish=[&](bool Pass,const FString& Why){S.Phase=-1;S.Log+=(Pass?TEXT("PASS "):TEXT("FAIL "))+Why+TEXT("\n");FFileHelper::SaveStringToFile(S.Log,*FPaths::Combine(S.Dir,TEXT("result.txt")));UE_LOG(LogTemp,Display,TEXT("COURT_REVIEW_%s %s"),Pass?TEXT("PASS"):TEXT("FAIL"),*Why);FPlatformMisc::RequestExitWithStatus(false,Pass?0:1);};
     auto Note=[&](const FString& Text){S.Log+=Text+TEXT("\n");UE_LOG(LogTemp,Display,TEXT("COURT_CHECK %s"),*Text);};
@@ -57,10 +57,11 @@ void TickHouseBasketballReview(AStoryFirstPersonCharacter* Pawn)
     if(S.Phase==0)
     {
         if(Now-S.Start<7)return;
-        int Count=0;for(TActorIterator<AHouseBasketball> It(W);It;++It){S.Ball=*It;++Count;}
-        auto* Ball=S.Ball.Get();if(Count!=1 || !Ball || !Ball->Body->IsSimulatingPhysics()){Finish(false,TEXT("Expected one shared simulated ball"));return;}
+        int Count=0;float Closest=BIG_NUMBER;
+        for(TActorIterator<AHouseBasketball> It(W);It;++It){++Count;float Dist=FVector::DistSquared(It->Body->GetComponentLocation(),HouseCourt::BallHome());if(Dist<Closest){Closest=Dist;S.Ball=*It;}}
+        auto* Ball=S.Ball.Get();if(Count!=3 || !Ball || !Ball->Body->IsSimulatingPhysics()){Finish(false,TEXT("Expected three shared simulated basketballs"));return;}
         if(FMath::Abs(Ball->Body->Bounds.BoxExtent.GetMax()-12.4f)>1.f){Finish(false,TEXT("Basketball is not regulation-sized"));return;}
-        Note(TEXT("One replicated ball with spherical collision and CCD"));
+        Note(TEXT("Three replicated basketballs; primary ball has spherical collision and CCD"));
         FCollisionQueryParams Q(SCENE_QUERY_STAT(CourtCollisionReview),false,Pawn);Q.AddIgnoredActor(Ball);
         for(float X:{-950.f,-400.f,0.f,400.f,950.f})for(float Y:{2120.f,2700.f,3460.f})
         {
@@ -119,7 +120,10 @@ void TickHouseBasketballReview(AStoryFirstPersonCharacter* Pawn)
     if(S.Phase==5)
     {
         if(Now-S.Start<.8)return;
-        PC->SetControlRotation((HouseCourt::Rim(S.End)-Pawn->FirstPersonCamera->GetComponentLocation()).Rotation());Shot(S.End==0?TEXT("BallHeld.png"):TEXT("SecondBasketAim.png"));Mover->ThrowHeldFurniture();S.Phase=6;S.Start=Now;return;
+        PC->SetControlRotation((HouseCourt::Rim(S.End)-Pawn->FirstPersonCamera->GetComponentLocation()).Rotation());
+        if(!S.Charging){Mover->BeginBasketballShot();S.Charging=true;return;}
+        if(Mover->GetBasketballPower()<Mover->GetBasketballIdealPower())return;
+        Shot(S.End==0?TEXT("BallHeld.png"):TEXT("SecondBasketAim.png"));Mover->ReleaseBasketballShot();S.Charging=false;S.Phase=6;S.Start=Now;return;
     }
     if(S.Phase==6)
     {

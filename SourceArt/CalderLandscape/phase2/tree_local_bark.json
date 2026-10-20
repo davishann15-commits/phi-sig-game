@@ -1,0 +1,55 @@
+{
+  "scope": "Opaque local bark on unbound preview candidates; geometry and appearance not accepted",
+  "source_parent_sha256": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+  "source_packs_unchanged": true,
+  "materials": [
+    {
+      "source": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Tileable.MI_EuropeanBeech_Tileable",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_Tileable.MI_CalderTree_Beech_Tileable",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    },
+    {
+      "source": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Trunk_01.MI_EuropeanBeech_Trunk_01",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_Trunk_01.MI_CalderTree_Beech_Trunk_01",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    },
+    {
+      "source": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Decoration.MI_EuropeanBeech_Decoration",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_Decoration.MI_CalderTree_Beech_Decoration",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    },
+    {
+      "source": "/Game/EuropeanBeech/Materials/Simplewind/MI_EuropeanBeech_Trunk_05.MI_EuropeanBeech_Trunk_05",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_Trunk_05.MI_CalderTree_Beech_Trunk_05",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    },
+    {
+      "source": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Tileable.MI_NorwayMaple_Tileable",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_Tileable.MI_CalderTree_Maple_Tileable",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    },
+    {
+      "source": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Trunk_03.MI_NorwayMaple_Trunk_03",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_Trunk_03.MI_CalderTree_Maple_Trunk_03",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    },
+    {
+      "source": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Decoration.MI_NorwayMaple_Decoration",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_Decoration.MI_CalderTree_Maple_Decoration",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    },
+    {
+      "source": "/Game/NorwayMaple/Materials/SimpleWind/MI_NorwayMaple_Trunk_01.MI_NorwayMaple_Trunk_01",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_Trunk_01.MI_CalderTree_Maple_Trunk_01",
+      "pixel_instructions": 229,
+      "pixel_samples": 2
+    }
+  ]
+}

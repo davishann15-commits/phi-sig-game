@@ -1,0 +1,115 @@
+{
+  "scope": "Partial tested farm art checkpoint; full environment photo/performance and wildlife unfinished",
+  "build": {
+    "log": "Saved/CalderWork/codex_farm_roof_name_build.log",
+    "actions": 210,
+    "seconds": 121.7,
+    "passed": true
+  },
+  "material": {
+    "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderFarmRoof",
+    "pixel_instructions": 229,
+    "pixel_samples": 2,
+    "opaque": true,
+    "ISM_enabled": true,
+    "albedo_alpha": "Metal fraction,0 porous rust/1 galvanized metal; linear averaged mips",
+    "roughness_rust": 0.93,
+    "roughness_metal": 0.49,
+    "source_sha256": {
+      "Content/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured.uasset": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderFalls.uasset": "edcd97c14c7bc43ea47d4194075d9fdc6e5c0ab7c2e40f21de0af4e8393f24b5",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderStream.uasset": "c36d1457988cef02c14494164ede0dcea78b33fc4291f1d011ff2b3e57a482b9"
+    },
+    "default_enabled": false,
+    "switch": "CalderFarmTrial",
+    "scope": "Owned shader compile only; native texture readback/visual/performance acceptance separate"
+  },
+  "native_roof_data": {
+    "bound": true,
+    "top_alpha_min": 0,
+    "top_alpha_max": 255,
+    "tail_mip_alpha": 171,
+    "mips": 10,
+    "read_before_RHI_initialization": true
+  },
+  "runtime": {
+    "run": "Saved/CalderWork/runs/codex_farm_roof_views",
+    "components": 5,
+    "all_Calder_ISMs": 24,
+    "bales": 6,
+    "diagnostic_build_ms": 415.5,
+    "cover_instances": 57705,
+    "cover_crc": "17dc66ec",
+    "farm_cover_overlaps": 0,
+    "terrain_water_woods_pass": true,
+    "terrain_hash": "72564759",
+    "tree_crc": "0f3b2bb7",
+    "global_quality_scale": 0.6,
+    "architecture_cull_cm": [
+      18000,
+      22500
+    ],
+    "field_cull_cm": [
+      7000,
+      9000
+    ]
+  },
+  "appearance": {
+    "inspected_all_frames": true,
+    "images": {
+      "241_detail_calder_farm.png": "82b44c70bec27c2d764326e574365ec5d982c837171fdb88ac3b143b7c89936d",
+      "242_detail_calder_bale.png": "ebaf0889ead6f52d1cffe342ab6b342fc3929bbb8dbe478dc34c6db246e6151e",
+      "243_detail_calder_barn_entry.png": "7be54dab510030bebf67dd8af00ca3d36503ed19333fe84dd9a6eb711997753c",
+      "244_detail_calder_barn_roof.png": "88c18c06b8bbb8560f5fa0c3d2beba59edd77d0107dbe735cba40e2604f3260b"
+    },
+    "total_inspected_tree_woods_ridge_water_farm_frames": 158,
+    "photographic_appearance_accepted": false,
+    "findings": [
+      "Physical hill view now shows corrugation and differentiated metal/rust instead of a uniform brown roof.",
+      "Standing entry retains broad veined curing leaves, timber frame and visible roof detail.",
+      "Original wide and bale views retain scene/placement.",
+      "This local farm art improvement is not whole-environment photo or performance acceptance."
+    ],
+    "default_enabled": false
+  },
+  "current_no_terrain_compatibility": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_farm_roof_noterrain",
+    "grounds": 69240,
+    "instances": 53740,
+    "campusFrontVertices": 1091586,
+    "floorSamples": 2654,
+    "exterior_lights": 53,
+    "tree_crc": "0f3b2bb7",
+    "all_Calder_ISMs": 0,
+    "trial_farm_roof_disabled": true
+  },
+  "current_default_cover_compatibility": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_farm_roof_off_cover",
+    "instances": 57815,
+    "placement_hash": "29aceab6",
+    "tree_crc": "0f3b2bb7",
+    "farm_disabled": true
+  },
+  "sources": {
+    "Source/SeniorSendoff/HouseCalderFarm.cpp": "31227672c3bae51e22364b9dfe0ae7ea22c8984fa7289d08bb3de39e682d2fce",
+    "Source/SeniorSendoff/HouseExterior.cpp": "d3bfb3a4c8c6ccf7fb8db6c15880ff78d42d266b5b3c929699944035b5295aa3",
+    "Tools/calder/farm_roof_assets_batch.py": "621be4127e2c1e917db22fc795f0c04caefd91bac3ec6d19c369866f8bd34569",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderFarmRoof.uasset": "fa1c5b7839d1924db298f9556460e6507ed1f108a20c24e195a485270c326413"
+  },
+  "global_fog": "Pending owner approval; original values unchanged",
+  "current_no_landscape_compatibility": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_farm_roof_nolandscape",
+    "terrain_water_woods_pass": true,
+    "terrain_hash": "72564759",
+    "tree_crc": "0f3b2bb7",
+    "cover_instances": 0,
+    "legacy_Calder_ISMs": 3,
+    "trial_bindings_disabled": true
+  }
+}

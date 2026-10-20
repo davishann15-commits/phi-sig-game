@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-11",
+  "project": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SeniorSendoff.uproject",
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "build": "SeniorSendoffEditor Mac Development - succeeded",
+  "runtime_review": {
+    "run": "evidence/run-2",
+    "result": "PASS",
+    "checks": [
+      "Three shared basketballs and two open, physical rims",
+      "Timed, aimed shots scored on both baskets",
+      "Early release, late release and mis-aimed green release all missed",
+      "Charge cancellation retains the ball and set-down clears charging",
+      "Rim collision produced a physical rebound and clank playback",
+      "Backboard collision produced separate thump playback",
+      "Made shots and side contacts visibly deformed the anchored net",
+      "Net attachments remained pinned and ropes settled afterward",
+      "Lost basketball recovered without duplicate actors",
+      "Character walked the complete porch-court route"
+    ],
+    "net": {
+      "through_ball_contacts": 71,
+      "through_ball_peak_displacement_cm": 36.28,
+      "attachment_error_cm": 0,
+      "settled_displacement_cm": 0.55
+    },
+    "visual_review": "All eight runtime screenshots inspected, including shot meter, both baskets, rim rebound, net contact, side contact and settled net",
+    "audio_output": {
+      "file": "evidence/run-2/Saved/BasketballSkillReview/CourtImpactAudio.wav",
+      "source": "Actual game master-submix output, not microphone capture",
+      "duration_seconds": 4.586666666666667,
+      "format": "48000 Hz stereo PCM16",
+      "rms": 0.017278007606345337,
+      "peak": 0.328765869140625,
+      "clipped_samples": 0,
+      "playback_components_spawned": 6
+    }
+  },
+  "controls": {
+    "pickup_set_down": "E",
+    "shoot": "Hold left mouse button or right trigger; release in green while aiming at the rim"
+  },
+  "not_tested": [
+    "Multiplayer clients",
+    "Physical gamepad",
+    "Manual mouse press/release session"
+  ],
+  "notes": [
+    "Automated runtime review used the same normal pickup and authoritative charge/release methods as gameplay",
+    "First review failed because screenshot readback stalled a timed shot; capture was moved outside the charge and the full review rerun",
+    "No user save files were changed; review used an isolated UserDir",
+    "Unrelated work in the shared project was preserved"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "asset": "painted_plaster_wall",
+  "source": "https://polyhaven.com/a/painted_plaster_wall",
+  "author": "Amal Kumar",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "tile_cm": 200,
+  "files": [
+    {
+      "kind": "Diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_diff_2k.jpg",
+      "file": "painted_plaster_wall_diff_2k.jpg",
+      "bytes": 3132937,
+      "sha256": "6fd812ed8dd5be1873c29aeef38ce9bf1fb30a22c6d4b3a12db725e98c26a1be"
+    },
+    {
+      "kind": "nor_dx",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/painted_plaster_wall/painted_plaster_wall_nor_dx_2k.png",
+      "file": "painted_plaster_wall_nor_dx_2k.png",
+      "bytes": 22789119,
+      "sha256": "148d654923ae5a5c4f9c248fabc74e06898578e583b5671d6ffb4ee159b897fd"
+    }
+  ],
+  "use": "Candidate stadium locker-room only; not yet imported."
+}

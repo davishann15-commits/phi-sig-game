@@ -1,0 +1,17 @@
+{
+  "requested_utc": "2026-10-18T06:46:13.831222+00:00",
+  "owner_request": "when your done with the animals can you make the sky turn from dusk to night the longer the player is in the map please",
+  "order": "Finish animals first, then implement gradual dusk-to-night progression.",
+  "overrides_original_frozen_dusk": true,
+  "multiplayer": "Use shared map/server elapsed time so all players see the same transition, including late joiners.",
+  "transition_duration_question_pending": false,
+  "suggested_duration_minutes": 30,
+  "not_yet_implemented": false,
+  "existing_protected_scope_and_light_count_still_apply": true,
+  "confirmed_duration_minutes": 30,
+  "duration_confirmed_utc": "2026-10-18T16:31:10.988254+00:00",
+  "owner_confirmation": "30 minutes (recommended)",
+  "implementation": "Source/SeniorSendoff/HouseCalderNightfall.cpp",
+  "evidence": "SourceArt/CalderLandscape/phase3/nightfall_20261018.json",
+  "shared_clock_native_validation": true
+}

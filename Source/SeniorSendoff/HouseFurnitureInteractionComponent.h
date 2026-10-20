@@ -45,6 +45,14 @@ public:
     /** LMB / right trigger: wind up and throw (small/medium) or shove (large). */
     UFUNCTION(BlueprintCallable, Category="Furniture")
     void ThrowHeldFurniture();
+    /** Basketball only: hold to charge, release to shoot. Other props are unchanged. */
+    bool BeginBasketballShot();
+    void ReleaseBasketballShot();
+    void CancelBasketballShot();
+    bool IsBasketballCharging() const { return bBasketballCharging; }
+    float GetBasketballPower() const;
+    float GetBasketballIdealPower() const;
+    FString GetBasketballFeedback() const;
 
     /** One local view trace for a focused, available movable furniture prompt. */
     UFUNCTION(BlueprintCallable, Category="Furniture")
@@ -157,6 +165,15 @@ private:
     TEnumAsByte<ECollisionResponse> SavedPawnResponse = ECR_Block;
     float DebugTargetError = 0.f;
     FVector LeadVelocity = FVector::ZeroVector;
+    UPROPERTY(Replicated) bool bBasketballCharging = false;
+    UPROPERTY(Replicated) float BasketballChargeStart = 0;
+    UPROPERTY(Replicated) FString BasketballFeedback;
+    UPROPERTY(Replicated) float BasketballFeedbackAt = -10;
+    float PendingBasketballPower = -1;
+    FRotator PendingBasketballAim = FRotator::ZeroRotator;
+    float ShotClock() const;
+    void BasketballInputAuthoritative(bool Begin, bool Cancel, const FRotator& Aim);
+    UFUNCTION(Server, Reliable) void ServerBasketballInput(bool Begin, bool Cancel, FRotator Aim);
     UFUNCTION(Server, Reliable)
     void ServerToggleGrab();
 

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "SM_NCW_LowerMainAndReturn_main_south_join_clear": true,
+    "SM_NCW_LowerMainAndReturn_lounge_east_join_clear": true,
+    "COL_NCW_Former102Shell_main_south_join_clear": true,
+    "COL_NCW_Former102Shell_lounge_east_join_clear": true,
+    "SM_NCW_LoungeWallLining_main_south_join_clear": true,
+    "SM_NCW_LoungeWallLining_lounge_east_join_clear": true,
+    "former102_door_clear": true,
+    "main_east_wall_restored": true,
+    "return_has_floor": true,
+    "lounge_floor_solid": true,
+    "within_pre_annex_east_edge": true
+  }
+}

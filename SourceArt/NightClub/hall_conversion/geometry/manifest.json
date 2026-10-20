@@ -1,0 +1,363 @@
+{
+  "assets": [
+    {
+      "name": "SM_NCH_OpenedHallEndShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/SM_NCH_OpenedHallEndShell.fbx",
+      "target_actor": "HallEnd_SM_HallEnd_ThreeRoomsShell",
+      "collision": false,
+      "triangles": 753,
+      "source": {
+        "source_actor": "HallEnd_SM_HallEnd_ThreeRoomsShell",
+        "cut_boxes": [
+          [
+            [
+              -2130,
+              -1544,
+              332.5
+            ],
+            [
+              -1540,
+              -1495,
+              600
+            ]
+          ],
+          [
+            [
+              -2080,
+              -2047,
+              332.5
+            ],
+            [
+              -2056,
+              -1540.55,
+              600
+            ]
+          ]
+        ],
+        "source_polygons": 318
+      }
+    },
+    {
+      "name": "COL_NCH_OpenedHallEndShell",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/COL_NCH_OpenedHallEndShell.fbx",
+      "target_actor": "HallEnd_COL_HallEnd_ThreeRoomsShell",
+      "collision": true,
+      "triangles": 1362,
+      "source": {
+        "source_actor": "HallEnd_COL_HallEnd_ThreeRoomsShell",
+        "cut_boxes": [
+          [
+            [
+              -2130,
+              -1544,
+              332.5
+            ],
+            [
+              -1540,
+              -1495,
+              600
+            ]
+          ],
+          [
+            [
+              -2080,
+              -2047,
+              332.5
+            ],
+            [
+              -2056,
+              -1540.55,
+              600
+            ]
+          ]
+        ],
+        "source_polygons": 549
+      }
+    },
+    {
+      "name": "SM_NCH_OpenedUpperLining",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/SM_NCH_OpenedUpperLining.fbx",
+      "target_actor": "NightClub_SM_NC_UpperWallLining",
+      "collision": false,
+      "triangles": 178,
+      "source": {
+        "source_actor": "NightClub_SM_NC_UpperWallLining",
+        "cut_boxes": [
+          [
+            [
+              -2130,
+              -1544,
+              332.5
+            ],
+            [
+              -1540,
+              -1495,
+              600
+            ]
+          ]
+        ],
+        "source_polygons": 84
+      }
+    },
+    {
+      "name": "COL_NCH_OpenedUpperExtension",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/COL_NCH_OpenedUpperExtension.fbx",
+      "target_actor": "NightClub_SM_NCR_UpperExtensionCollision",
+      "collision": true,
+      "triangles": 103,
+      "source": {
+        "source_actor": "NightClub_SM_NCR_UpperExtensionCollision",
+        "cut_boxes": [
+          [
+            [
+              -2130,
+              -1544,
+              332.5
+            ],
+            [
+              -1540,
+              -1495,
+              600
+            ]
+          ]
+        ],
+        "source_polygons": 48
+      }
+    },
+    {
+      "name": "SM_NCH_RetainedTrim",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/SM_NCH_RetainedTrim.fbx",
+      "target_actor": "HallEnd_SM_HallEnd_ThreeRoomsTrim",
+      "collision": false,
+      "triangles": 24,
+      "source": {
+        "source_actor": "HallEnd_SM_HallEnd_ThreeRoomsTrim",
+        "cut_boxes": [
+          [
+            [
+              -2130,
+              -1544,
+              332.5
+            ],
+            [
+              -1540,
+              -1495,
+              600
+            ]
+          ],
+          [
+            [
+              -2080,
+              -2047,
+              332.5
+            ],
+            [
+              -2056,
+              -1540.55,
+              600
+            ]
+          ],
+          [
+            [
+              -2740,
+              -2047,
+              332
+            ],
+            [
+              -1432,
+              -1540.5,
+              355
+            ]
+          ],
+          [
+            [
+              -2212.54,
+              -1509.05,
+              332.4
+            ],
+            [
+              -1489.98,
+              -973.48,
+              352
+            ]
+          ]
+        ],
+        "source_polygons": 108
+      }
+    },
+    {
+      "name": "SM_NCH_RetainedClubDetail",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/SM_NCH_RetainedClubDetail.fbx",
+      "target_actor": "NightClub_Polish_ArchitecturalDetails",
+      "collision": false,
+      "triangles": 2812,
+      "source": {
+        "source_actor": "NightClub_Polish_ArchitecturalDetails",
+        "cut_boxes": [
+          [
+            [
+              -2130,
+              -1544,
+              332.5
+            ],
+            [
+              -1540,
+              -1495,
+              600
+            ]
+          ]
+        ],
+        "source_polygons": 2264
+      }
+    },
+    {
+      "name": "SM_NCH_FiniteWingStructure",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/SM_NCH_FiniteWingStructure.fbx",
+      "target_actor": null,
+      "collision": true,
+      "triangles": 168,
+      "source": {}
+    },
+    {
+      "name": "SM_NCH_UpstairsDanceFloor",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/SM_NCH_UpstairsDanceFloor.fbx",
+      "target_actor": null,
+      "collision": false,
+      "triangles": 240,
+      "source": {}
+    },
+    {
+      "name": "SM_NCH_ClubFinishDetails",
+      "fbx": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/NightClub/hall_conversion/geometry/models/SM_NCH_ClubFinishDetails.fbx",
+      "target_actor": null,
+      "collision": false,
+      "triangles": 612,
+      "source": {}
+    }
+  ],
+  "materials": {
+    "M_CP_WornFloor": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_WornFloor"
+    },
+    "M_CP_WornCharcoal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_WornCharcoal"
+    },
+    "M_CP_NeonFloorLine": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_NeonFloorLine"
+    },
+    "M_CP_WornUpholsteredPanel": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_WornUpholsteredPanel"
+    },
+    "M_CP_ScuffedMetal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_ScuffedMetal"
+    },
+    "M_CP_BrushedEdges": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_BrushedEdges"
+    },
+    "M_CP_NeonCyan": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_NeonCyan"
+    },
+    "M_CP_NeonPink": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_NeonPink"
+    },
+    "M_CP_ChippedWalnut": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_ChippedWalnut"
+    },
+    "M_CP_Rubber": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_Rubber"
+    },
+    "MI_SSO_S05HallGrey": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05HallGrey"
+    },
+    "MI_SSO_S05Ceiling": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_S05Ceiling"
+    },
+    "WorldGridMaterial": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_1": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_2": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "WorldGridMaterial_3": {
+      "reuse_asset": "/Engine/EngineMaterials/WorldGridMaterial"
+    },
+    "M_NC_Charcoal": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_Charcoal"
+    },
+    "M_NC_CeilingBlack": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_CeilingBlack"
+    },
+    "MI_SSO_PaintWhite": {
+      "reuse_asset": "/Game/SeniorSendOff/House/Materials/MI_SSO_PaintWhite"
+    },
+    "M_CP_NeonViolet": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/ConnectionPolish/M_CP_NeonViolet"
+    },
+    "M_NC_FloorBlack": {
+      "reuse_asset": "/Game/SeniorSendOff/House/NightClub/M_NC_FloorBlack"
+    }
+  },
+  "upper_regions": [
+    [
+      [
+        -2739,
+        -2188,
+        332.53
+      ],
+      [
+        -1432,
+        -1540.6,
+        622.71
+      ]
+    ],
+    [
+      [
+        -2552.4,
+        -1540.8,
+        332.53
+      ],
+      [
+        -2228.3,
+        -1509,
+        622.71
+      ]
+    ],
+    [
+      [
+        -2130,
+        -1541,
+        332.53
+      ],
+      [
+        -1540,
+        -1495,
+        622.71
+      ]
+    ]
+  ],
+  "notes": [
+    "Finite upstairs club wing within current exterior footprint.",
+    "Only scoped room partitions cut; all doors and pole retained.",
+    "No edits to Boywick, Pigsty, other rooms or ground club footprint.",
+    "Existing six native club lights reused; three infinite-hall lamps removed."
+  ],
+  "geometry_checks": {
+    "COL_NCH_OpenedHallEndShell_main_join_clear": true,
+    "COL_NCH_OpenedHallEndShell_wing_join_clear": true,
+    "COL_NCH_OpenedUpperExtension_main_join_clear": true,
+    "COL_NCH_OpenedUpperExtension_wing_join_clear": true,
+    "SM_NCH_FiniteWingStructure_main_join_clear": true,
+    "SM_NCH_FiniteWingStructure_wing_join_clear": true,
+    "SM_NCH_OpenedUpperLining_main_join_clear": true,
+    "SM_NCH_OpenedUpperLining_wing_join_clear": true,
+    "SM_NCH_RetainedClubDetail_main_join_clear": true,
+    "SM_NCH_RetainedClubDetail_wing_join_clear": true,
+    "wing_floor_supported": true,
+    "finite_far_wall": true,
+    "east_wall_closed": true,
+    "old_door_clear": true
+  }
+}

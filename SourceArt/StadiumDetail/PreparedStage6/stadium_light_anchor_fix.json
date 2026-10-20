@@ -1,0 +1,63 @@
+{
+  "installed": false,
+  "runtime_preimage_sha": "59053c16cdc3223bf1b1fd04b3244c2925090a4d8d9228e59117c72e15acc588",
+  "replacements": [
+    {
+      "old": "float StaFloorZ(int32 Floor) { return Floor == 1 ? StaPBFloor : StaFloor; }",
+      "new": "float StaFloorZ(int32 Floor)\n{\n    // The pooled-light classifier probes floors8..1. STA has only0/1; higher probes must not alias its ground floor.\n    if(HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=6&&Floor>1)return FLT_MAX;\n    return Floor == 1 ? StaPBFloor : StaFloor;\n}"
+    },
+    {
+      "old": "    D.FloorZ = &StaFloorZ;",
+      "new": "    D.FloorZ = &StaFloorZ;\n    // Locker lights are185cm above the ground floor; keep their anchors on that floor.\n    if(HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=6)D.LightAnchorFloorOffset=185.f;"
+    },
+    {
+      "old": "    for (const float Z : { 200.f, 650.f, 1100.f }) Out.Add(FVector(StaTwX0 + 188.f, (StaTwY0 + StaTwY1) * .5f, Z));   // over the east flights, not the gap between them",
+      "new": "    for (const float Z : { 200.f, 650.f, 1100.f }) Out.Add(FVector(StaTwX0 + 188.f, (StaTwY0 + StaTwY1) * .5f, Z));   // over the east flights, not the gap between them\n    // Existing six-light pool: the upper landing also needs an anchor classified on the press-box floor.\n    if(HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=6)Out.Add(FVector(StaTwX0+188.f,(StaTwY0+StaTwY1)*.5f,StaPBFloor+250.f));"
+    }
+  ],
+  "evidence": {
+    "observed_current_night_image": "stadium_s5_20261019_a8_night/275_detail_stadium_locker.png",
+    "current_floor_classifier": "HouseCampusInteriors.cpp probes8..1; unsupported STA floor queries all return-55, classifying room camera115\u2212150 as8. Actual locker anchor130\u2212default300 is-170, classified0 and excluded.",
+    "prepared_result": "Unsupported floor queries returnFLT_MAX only for enabled stage6+. With185cm anchor offset, room camera and anchors both classify0; press camera/anchors classify1.",
+    "native_validation_pending": true,
+    "expected_classifications": [
+      {
+        "location": "locker camera",
+        "z_before_floor_adjustment": 115,
+        "old_class": 8,
+        "prepared_class": 0
+      },
+      {
+        "location": "locker light anchor",
+        "z_before_floor_adjustment": 130,
+        "old_class": 0,
+        "prepared_class": 0
+      },
+      {
+        "location": "press camera",
+        "z_before_floor_adjustment": 1235,
+        "old_class": 8,
+        "prepared_class": 1
+      },
+      {
+        "location": "press light anchor",
+        "z_before_floor_adjustment": 1365,
+        "old_class": 8,
+        "prepared_class": 1
+      }
+    ]
+  },
+  "constraints": {
+    "new_lights": 0,
+    "interior_pool": 6,
+    "exterior_points_unchanged": true,
+    "original_door_route_and_actual_floor0_1_heights_unchanged": true,
+    "disabled_branch_exact": true
+  },
+  "upper_tower_landing_anchor": {
+    "world_z": 1315,
+    "floor_after_offset185": 1,
+    "reason": "Existing1100toweranchor is floor0 after185offset, while upper landing is floor1. Add a candidate anchor beside existing upper fixture for the same six pooled light components. No additional point/spot components; no exterior light changes.",
+    "native_pending": true
+  }
+}

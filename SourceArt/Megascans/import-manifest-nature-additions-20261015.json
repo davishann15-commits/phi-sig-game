@@ -1,0 +1,266 @@
+{
+  "packs": [
+    {
+      "name": "NordicForestCliffLarge",
+      "content_folder": "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1",
+      "textures": [
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_AO.T_NordicForestCliffLarge_AO",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_BaseColor.T_NordicForestCliffLarge_BaseColor",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Bump.T_NordicForestCliffLarge_Bump",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Cavity.T_NordicForestCliffLarge_Cavity",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Displacement.T_NordicForestCliffLarge_Displacement",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Fuzz.T_NordicForestCliffLarge_Fuzz",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Gloss.T_NordicForestCliffLarge_Gloss",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Normal.T_NordicForestCliffLarge_Normal",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Roughness.T_NordicForestCliffLarge_Roughness",
+        "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Textures/T_NordicForestCliffLarge_Specular.T_NordicForestCliffLarge_Specular"
+      ],
+      "meshes": [
+        {
+          "asset": "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Meshes/SM_NordicForestCliffLarge.SM_NordicForestCliffLarge",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/nordic_forest_cliff_large_xibsff1_high/Nordic_Forest_Cliff_Large_xibsff1_High.fbx",
+          "extent_cm": [
+            667.1588134765625,
+            193.13497352600098,
+            272.11744594573975
+          ],
+          "material": "/Game/Environment/Megascans/NordicForestCliffLarge_xibsff1/Materials/M_NordicForestCliffLarge.M_NordicForestCliffLarge"
+        }
+      ]
+    },
+    {
+      "name": "BeechFern",
+      "content_folder": "/Game/Environment/Megascans/BeechFern_vmkpdbeia",
+      "textures": [
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_AO.T_BeechFern_AO",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_BaseColor.T_BeechFern_BaseColor",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_BaseColor.T_BeechFern_Billboard_BaseColor",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_Normal.T_BeechFern_Billboard_Normal",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_Opacity.T_BeechFern_Billboard_Opacity",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Billboard_Translucency.T_BeechFern_Billboard_Translucency",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Bump.T_BeechFern_Bump",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Cavity.T_BeechFern_Cavity",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Displacement.T_BeechFern_Displacement",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Gloss.T_BeechFern_Gloss",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Normal.T_BeechFern_Normal",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Opacity.T_BeechFern_Opacity",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Roughness.T_BeechFern_Roughness",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Specular.T_BeechFern_Specular",
+        "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Textures/T_BeechFern_Translucency.T_BeechFern_Translucency"
+      ],
+      "meshes": [
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarA.SM_BeechFern_VarA",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarA_LOD0.fbx",
+          "extent_cm": [
+            61.45998191833496,
+            62.55986022949219,
+            27.077929973602295
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarB.SM_BeechFern_VarB",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarB_LOD0.fbx",
+          "extent_cm": [
+            8.19724690914154,
+            8.305358529090881,
+            6.831000197678804
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarC.SM_BeechFern_VarC",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarC_LOD0.fbx",
+          "extent_cm": [
+            17.576173305511475,
+            19.92513370513916,
+            6.883113086223602
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarD.SM_BeechFern_VarD",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarD_LOD0.fbx",
+          "extent_cm": [
+            56.13516807556152,
+            51.02201271057129,
+            29.95552408695221
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarE.SM_BeechFern_VarE",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarE_LOD0.fbx",
+          "extent_cm": [
+            39.67856407165527,
+            50.37815284729004,
+            27.42925477027893
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarF.SM_BeechFern_VarF",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarF_LOD0.fbx",
+          "extent_cm": [
+            43.50978660583496,
+            36.57043647766113,
+            23.99273419380188
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarG.SM_BeechFern_VarG",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarG_LOD0.fbx",
+          "extent_cm": [
+            32.39977836608887,
+            29.92538547515869,
+            22.953888654708862
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Meshes/SM_BeechFern_VarH.SM_BeechFern_VarH",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/beech_fern_vmkpdbeia_high/Beech_Fern_vmkpdbeia_High_vmkpdbeia_VarH_LOD0.fbx",
+          "extent_cm": [
+            15.417287588119507,
+            15.53019380569458,
+            12.342523097991943
+          ],
+          "material": "/Game/Environment/Megascans/BeechFern_vmkpdbeia/Materials/M_BeechFern.M_BeechFern"
+        }
+      ]
+    },
+    {
+      "name": "BlackLocust",
+      "content_folder": "/Game/Environment/Megascans/BlackLocust_wdvhberja",
+      "textures": [
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_BaseColor.T_BlackLocust_BaseColor",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Billboard_BaseColor.T_BlackLocust_Billboard_BaseColor",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Billboard_Normal.T_BlackLocust_Billboard_Normal",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Billboard_Opacity.T_BlackLocust_Billboard_Opacity",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Billboard_Translucency.T_BlackLocust_Billboard_Translucency",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Bump.T_BlackLocust_Bump",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Cavity.T_BlackLocust_Cavity",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Displacement.T_BlackLocust_Displacement",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Gloss.T_BlackLocust_Gloss",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Normal.T_BlackLocust_Normal",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Opacity.T_BlackLocust_Opacity",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Roughness.T_BlackLocust_Roughness",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Specular.T_BlackLocust_Specular",
+        "/Game/Environment/Megascans/BlackLocust_wdvhberja/Textures/T_BlackLocust_Translucency.T_BlackLocust_Translucency"
+      ],
+      "meshes": [
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarA.SM_BlackLocust_VarA",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarA_LOD0.fbx",
+          "extent_cm": [
+            67.92850112915039,
+            76.45661163330078,
+            57.31575687229633
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarB.SM_BlackLocust_VarB",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarB_LOD0.fbx",
+          "extent_cm": [
+            55.04787254333496,
+            50.91079139709473,
+            59.44139352440834
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarC.SM_BlackLocust_VarC",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarC_LOD0.fbx",
+          "extent_cm": [
+            90.80186080932617,
+            77.47396469116211,
+            73.3463659286499
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarD.SM_BlackLocust_VarD",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarD_LOD0.fbx",
+          "extent_cm": [
+            28.167731285095215,
+            22.950742721557617,
+            23.935245007276535
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarE.SM_BlackLocust_VarE",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarE_LOD0.fbx",
+          "extent_cm": [
+            18.461691856384277,
+            18.367031574249268,
+            24.832474356051534
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarF.SM_BlackLocust_VarF",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarF_LOD0.fbx",
+          "extent_cm": [
+            10.201872825622559,
+            14.305530548095703,
+            8.591844409704208
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarG.SM_BlackLocust_VarG",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarG_LOD0.fbx",
+          "extent_cm": [
+            29.457987785339355,
+            34.993011474609375,
+            42.884812289848924
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        },
+        {
+          "asset": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Meshes/SM_BlackLocust_VarH.SM_BlackLocust_VarH",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/black_locust_wdvhberja_high/Black_Locust_wdvhberja_High_wdvhberja_VarH_LOD0.fbx",
+          "extent_cm": [
+            45.78742599487305,
+            49.33041954040527,
+            51.607867896556854
+          ],
+          "material": "/Game/Environment/Megascans/BlackLocust_wdvhberja/Materials/M_BlackLocust.M_BlackLocust"
+        }
+      ]
+    },
+    {
+      "name": "RottenTreeStump",
+      "content_folder": "/Game/Environment/Megascans/RottenTreeStump_whnpaed",
+      "textures": [
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_AO.T_RottenTreeStump_AO",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_BaseColor.T_RottenTreeStump_BaseColor",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Bump.T_RottenTreeStump_Bump",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Cavity.T_RottenTreeStump_Cavity",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Displacement.T_RottenTreeStump_Displacement",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Fuzz.T_RottenTreeStump_Fuzz",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Gloss.T_RottenTreeStump_Gloss",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Normal.T_RottenTreeStump_Normal",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Roughness.T_RottenTreeStump_Roughness",
+        "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Textures/T_RottenTreeStump_Specular.T_RottenTreeStump_Specular"
+      ],
+      "meshes": [
+        {
+          "asset": "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Meshes/SM_RottenTreeStump.SM_RottenTreeStump",
+          "source": "../../../../Stewart/Documents/Unreal Projects/SeniorSendoff/SourceArt/Megascans/rotten_tree_stump_whnpaed_high/Rotten_Tree_Stump_whnpaed_High.fbx",
+          "extent_cm": [
+            117.9278335571289,
+            51.77827453613281,
+            84.2206004858017
+          ],
+          "material": "/Game/Environment/Megascans/RottenTreeStump_whnpaed/Materials/M_RottenTreeStump.M_RottenTreeStump"
+        }
+      ]
+    }
+  ],
+  "status": "complete"
+}

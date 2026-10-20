@@ -1,0 +1,2774 @@
+{
+  "pig": {
+    "meshes": [
+      {
+        "name": "SK_Pig_LOD1",
+        "vertices": 5266,
+        "polygons": 8886,
+        "min": [
+          -0.32768112421035767,
+          -1.1786209344863892,
+          -0.007538269739598036
+        ],
+        "max": [
+          0.32768112421035767,
+          0.8171292543411255,
+          1.0083370208740234
+        ],
+        "groups": [
+          "PIG_ Pelvis",
+          "PIG_ Spine",
+          "PIG_ Spine1",
+          "PIG_ Neck",
+          "PIG_ Neck1",
+          "PIG_ Head",
+          "PIG_ Queue de cheval 1",
+          "Pig_Nose",
+          "PIG_ R Clavicle",
+          "PIG_ R UpperArm",
+          "PIG_ R Forearm",
+          "PIG_ R Hand",
+          "PIG_ R Finger0",
+          "PIG_ L Clavicle",
+          "PIG_ L UpperArm",
+          "PIG_ L Forearm",
+          "PIG_ L Hand",
+          "PIG_ L Finger0",
+          "PIG_ L Thigh",
+          "PIG_ L Calf",
+          "PIG_ L HorseLink",
+          "PIG_ L Foot",
+          "PIG_ R Thigh",
+          "PIG_ R Calf",
+          "PIG_ R HorseLink",
+          "PIG_ R Foot",
+          "PIG_ Tail",
+          "PIG_ Tail1",
+          "PIG_ Tail2",
+          "PIG_ Tail3",
+          "PIG_ Tail4",
+          "PIG_ Tail5",
+          "PIG_ Tail6"
+        ],
+        "materials": [
+          "M_Pig",
+          "M_PigHair"
+        ]
+      },
+      {
+        "name": "SK_Pig_LOD2",
+        "vertices": 3944,
+        "polygons": 6748,
+        "min": [
+          -0.32768112421035767,
+          -1.1786209344863892,
+          -0.007538269739598036
+        ],
+        "max": [
+          0.32768112421035767,
+          0.8171292543411255,
+          1.0047370195388794
+        ],
+        "groups": [
+          "PIG_ Pelvis",
+          "PIG_ Spine",
+          "PIG_ Spine1",
+          "PIG_ Neck",
+          "PIG_ Neck1",
+          "PIG_ Head",
+          "PIG_ Queue de cheval 1",
+          "Pig_Nose",
+          "PIG_ R Clavicle",
+          "PIG_ R UpperArm",
+          "PIG_ R Forearm",
+          "PIG_ R Hand",
+          "PIG_ R Finger0",
+          "PIG_ L Clavicle",
+          "PIG_ L UpperArm",
+          "PIG_ L Forearm",
+          "PIG_ L Hand",
+          "PIG_ L Finger0",
+          "PIG_ L Thigh",
+          "PIG_ L Calf",
+          "PIG_ L HorseLink",
+          "PIG_ L Foot",
+          "PIG_ R Thigh",
+          "PIG_ R Calf",
+          "PIG_ R HorseLink",
+          "PIG_ R Foot",
+          "PIG_ Tail",
+          "PIG_ Tail1",
+          "PIG_ Tail2",
+          "PIG_ Tail3",
+          "PIG_ Tail4",
+          "PIG_ Tail5",
+          "PIG_ Tail6"
+        ],
+        "materials": [
+          "M_Pig",
+          "M_PigHair"
+        ]
+      },
+      {
+        "name": "SK_Pig_LOD0",
+        "vertices": 6588,
+        "polygons": 11024,
+        "min": [
+          -0.32768112421035767,
+          -1.1786209344863892,
+          -0.007538269739598036
+        ],
+        "max": [
+          0.32768112421035767,
+          0.8171292543411255,
+          1.010936975479126
+        ],
+        "groups": [
+          "PIG_ Pelvis",
+          "PIG_ Spine",
+          "PIG_ Spine1",
+          "PIG_ Neck",
+          "PIG_ Neck1",
+          "PIG_ Head",
+          "PIG_ Queue de cheval 1",
+          "Pig_Nose",
+          "PIG_ R Clavicle",
+          "PIG_ R UpperArm",
+          "PIG_ R Forearm",
+          "PIG_ R Hand",
+          "PIG_ R Finger0",
+          "PIG_ L Clavicle",
+          "PIG_ L UpperArm",
+          "PIG_ L Forearm",
+          "PIG_ L Hand",
+          "PIG_ L Finger0",
+          "PIG_ L Thigh",
+          "PIG_ L Calf",
+          "PIG_ L HorseLink",
+          "PIG_ L Foot",
+          "PIG_ R Thigh",
+          "PIG_ R Calf",
+          "PIG_ R HorseLink",
+          "PIG_ R Foot",
+          "PIG_ Tail",
+          "PIG_ Tail1",
+          "PIG_ Tail2",
+          "PIG_ Tail3",
+          "PIG_ Tail4",
+          "PIG_ Tail5",
+          "PIG_ Tail6"
+        ],
+        "materials": [
+          "M_Pig",
+          "M_PigHair"
+        ]
+      },
+      {
+        "name": "SK_Pig_LOD3",
+        "vertices": 2927,
+        "polygons": 4838,
+        "min": [
+          -0.3264414072036743,
+          -1.1738051176071167,
+          -0.007538269739598036
+        ],
+        "max": [
+          0.3264414072036743,
+          0.8121172785758972,
+          0.9916580319404602
+        ],
+        "groups": [
+          "PIG_ Pelvis",
+          "PIG_ Spine",
+          "PIG_ Spine1",
+          "PIG_ Neck",
+          "PIG_ Neck1",
+          "PIG_ Head",
+          "PIG_ Queue de cheval 1",
+          "Pig_Nose",
+          "PIG_ R Clavicle",
+          "PIG_ R UpperArm",
+          "PIG_ R Forearm",
+          "PIG_ R Hand",
+          "PIG_ R Finger0",
+          "PIG_ L Clavicle",
+          "PIG_ L UpperArm",
+          "PIG_ L Forearm",
+          "PIG_ L Hand",
+          "PIG_ L Finger0",
+          "PIG_ L Thigh",
+          "PIG_ L Calf",
+          "PIG_ L HorseLink",
+          "PIG_ L Foot",
+          "PIG_ R Thigh",
+          "PIG_ R Calf",
+          "PIG_ R HorseLink",
+          "PIG_ R Foot",
+          "PIG_ Tail",
+          "PIG_ Tail1",
+          "PIG_ Tail2",
+          "PIG_ Tail3",
+          "PIG_ Tail4",
+          "PIG_ Tail5",
+          "PIG_ Tail6"
+        ],
+        "materials": [
+          "M_Pig",
+          "M_PigHair"
+        ]
+      }
+    ],
+    "bones": {
+      "PIG_": {
+        "head": [
+          0.0,
+          0.39499998092651367,
+          0.7709999680519104
+        ],
+        "tail": [
+          9.99832118395716e-05,
+          0.39499998092651367,
+          0.7709999680519104
+        ],
+        "parent": null
+      },
+      "PIG_ Pelvis": {
+        "head": [
+          4.7210228348165684e-17,
+          0.39499998092651367,
+          0.7709999680519104
+        ],
+        "tail": [
+          -1.4827874110778794e-06,
+          0.39499998092651367,
+          0.6062512993812561
+        ],
+        "parent": "PIG_"
+      },
+      "PIG_ Spine": {
+        "head": [
+          -2.6510081170272315e-06,
+          0.21423321962356567,
+          0.7713160514831543
+        ],
+        "tail": [
+          -6.242806193768047e-06,
+          0.24091409146785736,
+          0.469124972820282
+        ],
+        "parent": "PIG_ Pelvis"
+      },
+      "PIG_ Spine1": {
+        "head": [
+          -8.745761078898795e-06,
+          -0.18282754719257355,
+          0.7365763783454895
+        ],
+        "tail": [
+          -1.2030662219331134e-05,
+          -0.12805674970149994,
+          0.42739614844322205
+        ],
+        "parent": "PIG_ Spine"
+      },
+      "PIG_ Neck": {
+        "head": [
+          -1.5152645573834889e-05,
+          -0.5639493465423584,
+          0.6403395533561707
+        ],
+        "tail": [
+          -1.607324884389527e-05,
+          -0.5327695608139038,
+          0.5380581021308899
+        ],
+        "parent": "PIG_ Spine1"
+      },
+      "PIG_ Neck1": {
+        "head": [
+          -1.698077903711237e-05,
+          -0.6662556529045105,
+          0.6092411279678345
+        ],
+        "tail": [
+          -1.84833934326889e-05,
+          -0.6322792172431946,
+          0.4605156481266022
+        ],
+        "parent": "PIG_ Neck"
+      },
+      "PIG_ Head": {
+        "head": [
+          -1.9447172235231847e-05,
+          -0.8185896277427673,
+          0.600994884967804
+        ],
+        "tail": [
+          -2.476135159668047e-05,
+          -1.0043933391571045,
+          0.4210980236530304
+        ],
+        "parent": "PIG_ Neck1"
+      },
+      "PIG_ Queue de cheval 1": {
+        "head": [
+          -2.112841684720479e-05,
+          -0.8016610741615295,
+          0.42335832118988037
+        ],
+        "tail": [
+          -2.171944288420491e-05,
+          -0.6459542512893677,
+          0.2168605923652649
+        ],
+        "parent": "PIG_ Head"
+      },
+      "Pig_Nose": {
+        "head": [
+          -2.573816709627863e-05,
+          -1.1004706621170044,
+          0.41302725672721863
+        ],
+        "tail": [
+          -2.4867573301889934e-05,
+          -1.2035903930664062,
+          0.650202751159668
+        ],
+        "parent": "PIG_ Head"
+      },
+      "PIG_ R Clavicle": {
+        "head": [
+          -0.08404091000556946,
+          -0.438538134098053,
+          0.6829774379730225
+        ],
+        "tail": [
+          -0.21012385189533234,
+          -0.4646289348602295,
+          0.8309569954872131
+        ],
+        "parent": "PIG_ Spine1"
+      },
+      "PIG_ R UpperArm": {
+        "head": [
+          -0.201886385679245,
+          -0.5412175059318542,
+          0.5644658803939819
+        ],
+        "tail": [
+          -0.21112793684005737,
+          -0.3340938985347748,
+          0.7635853290557861
+        ],
+        "parent": "PIG_ R Clavicle"
+      },
+      "PIG_ R Forearm": {
+        "head": [
+          -0.158579021692276,
+          -0.3432670831680298,
+          0.36056825518608093
+        ],
+        "tail": [
+          -0.14234471321105957,
+          -0.17634807527065277,
+          0.34199053049087524
+        ],
+        "parent": "PIG_ R UpperArm"
+      },
+      "PIG_ R Hand": {
+        "head": [
+          -0.13827969133853912,
+          -0.36374467611312866,
+          0.1943177580833435
+        ],
+        "tail": [
+          -0.04393387585878372,
+          -0.3767530620098114,
+          0.1935039907693863
+        ],
+        "parent": "PIG_ R Forearm"
+      },
+      "PIG_ R Finger0": {
+        "head": [
+          -0.14158321917057037,
+          -0.3818584680557251,
+          0.10087263584136963
+        ],
+        "tail": [
+          -0.04724746569991112,
+          -0.394940584897995,
+          0.10007351636886597
+        ],
+        "parent": "PIG_ R Hand"
+      },
+      "PIG_ L Clavicle": {
+        "head": [
+          0.08401504158973694,
+          -0.438540518283844,
+          0.6829755902290344
+        ],
+        "tail": [
+          0.21010024845600128,
+          -0.4646349251270294,
+          0.830952525138855
+        ],
+        "parent": "PIG_ Spine1"
+      },
+      "PIG_ L UpperArm": {
+        "head": [
+          0.2018551230430603,
+          -0.5412232279777527,
+          0.5644617080688477
+        ],
+        "tail": [
+          0.21110691130161285,
+          -0.3340999484062195,
+          0.7635809183120728
+        ],
+        "parent": "PIG_ L Clavicle"
+      },
+      "PIG_ L Forearm": {
+        "head": [
+          0.15854938328266144,
+          -0.34327152371406555,
+          0.36056509613990784
+        ],
+        "tail": [
+          0.14231958985328674,
+          -0.17635196447372437,
+          0.3419877290725708
+        ],
+        "parent": "PIG_ L UpperArm"
+      },
+      "PIG_ L Hand": {
+        "head": [
+          0.13824595510959625,
+          -0.36374861001968384,
+          0.19431491196155548
+        ],
+        "tail": [
+          0.0438997820019722,
+          -0.3767542243003845,
+          0.19350309669971466
+        ],
+        "parent": "PIG_ L Forearm"
+      },
+      "PIG_ L Finger0": {
+        "head": [
+          0.14154700934886932,
+          -0.3818624019622803,
+          0.10086974501609802
+        ],
+        "tail": [
+          0.047210901975631714,
+          -0.3949417471885681,
+          0.10007258504629135
+        ],
+        "parent": "PIG_ L Hand"
+      },
+      "PIG_ L Thigh": {
+        "head": [
+          0.1809338927268982,
+          0.3949972689151764,
+          0.7709980010986328
+        ],
+        "tail": [
+          0.31953591108322144,
+          0.07738816738128662,
+          0.8816202878952026
+        ],
+        "parent": "PIG_ Spine"
+      },
+      "PIG_ L Calf": {
+        "head": [
+          0.22517530620098114,
+          0.2936069667339325,
+          0.42446357011795044
+        ],
+        "tail": [
+          0.28916189074516296,
+          0.14697490632534027,
+          0.2666366994380951
+        ],
+        "parent": "PIG_ L Thigh"
+      },
+      "PIG_ L HorseLink": {
+        "head": [
+          0.1620488464832306,
+          0.438259482383728,
+          0.2644784450531006
+        ],
+        "tail": [
+          0.22610346972942352,
+          0.29147636890411377,
+          0.27243906259536743
+        ],
+        "parent": "PIG_ L Calf"
+      },
+      "PIG_ L Foot": {
+        "head": [
+          0.16523119807243347,
+          0.4309627115726471,
+          0.10432765632867813
+        ],
+        "tail": [
+          0.21029555797576904,
+          0.2770768702030182,
+          0.10432720184326172
+        ],
+        "parent": "PIG_ L HorseLink"
+      },
+      "PIG_ R Thigh": {
+        "head": [
+          -0.1809338927268982,
+          0.3950026333332062,
+          0.7710018157958984
+        ],
+        "tail": [
+          -0.3195430040359497,
+          0.07739736139774323,
+          0.8816268444061279
+        ],
+        "parent": "PIG_ Spine"
+      },
+      "PIG_ R Calf": {
+        "head": [
+          -0.22518545389175415,
+          0.2936137020587921,
+          0.42446818947792053
+        ],
+        "tail": [
+          -0.2891795337200165,
+          0.14698363840579987,
+          0.2666427493095398
+        ],
+        "parent": "PIG_ R Thigh"
+      },
+      "PIG_ R HorseLink": {
+        "head": [
+          -0.162058025598526,
+          0.4382644295692444,
+          0.26448193192481995
+        ],
+        "tail": [
+          -0.2261165976524353,
+          0.29148292541503906,
+          0.2724437117576599
+        ],
+        "parent": "PIG_ R Calf"
+      },
+      "PIG_ R Foot": {
+        "head": [
+          -0.16524381935596466,
+          0.43096789717674255,
+          0.10433109104633331
+        ],
+        "tail": [
+          -0.21031272411346436,
+          0.27708324790000916,
+          0.10433156043291092
+        ],
+        "parent": "PIG_ R HorseLink"
+      },
+      "PIG_ Tail": {
+        "head": [
+          2.6536761197348824e-06,
+          0.5262913107872009,
+          0.8408803939819336
+        ],
+        "tail": [
+          2.792507530102739e-06,
+          0.5212175250053406,
+          0.8690657019615173
+        ],
+        "parent": "PIG_ Pelvis"
+      },
+      "PIG_ Tail1": {
+        "head": [
+          3.1200279408949427e-06,
+          0.5544814467430115,
+          0.8459271788597107
+        ],
+        "tail": [
+          3.3072324185923208e-06,
+          0.5496227145195007,
+          0.8800118565559387
+        ],
+        "parent": "PIG_ Tail"
+      },
+      "PIG_ Tail2": {
+        "head": [
+          3.670709247671766e-06,
+          0.588570773601532,
+          0.8507532477378845
+        ],
+        "tail": [
+          3.942577677662484e-06,
+          0.5855777859687805,
+          0.8922735452651978
+        ],
+        "parent": "PIG_ Tail1"
+      },
+      "PIG_ Tail3": {
+        "head": [
+          4.311104476073524e-06,
+          0.6300938129425049,
+          0.8537078499794006
+        ],
+        "tail": [
+          4.698311840911629e-06,
+          0.6313818693161011,
+          0.902087926864624
+        ],
+        "parent": "PIG_ Tail2"
+      },
+      "PIG_ Tail4": {
+        "head": [
+          5.00771739098127e-06,
+          0.6784728765487671,
+          0.8523829579353333
+        ],
+        "tail": [
+          5.43758278581663e-06,
+          0.6837885975837708,
+          0.8987026214599609
+        ],
+        "parent": "PIG_ Tail3"
+      },
+      "PIG_ Tail5": {
+        "head": [
+          5.6322405725950375e-06,
+          0.7247887253761292,
+          0.8470340371131897
+        ],
+        "tail": [
+          5.910217169002863e-06,
+          0.7217304706573486,
+          0.8894832134246826
+        ],
+        "parent": "PIG_ Tail4"
+      },
+      "PIG_ Tail6": {
+        "head": [
+          6.286990810622228e-06,
+          0.7672402858734131,
+          0.8500585556030273
+        ],
+        "tail": [
+          6.5649674070300534e-06,
+          0.7641820311546326,
+          0.892507791519165
+        ],
+        "parent": "PIG_ Tail5"
+      }
+    }
+  },
+  "doe": {
+    "meshes": [
+      {
+        "name": "SK_DeerDoe_LOD1",
+        "vertices": 4718,
+        "polygons": 7980,
+        "min": [
+          -0.25689607858657837,
+          -0.996269941329956,
+          -0.0008724984945729375
+        ],
+        "max": [
+          0.2568960189819336,
+          0.8889173269271851,
+          1.5078994035720825
+        ],
+        "groups": [
+          "DeerDoe_ Pelvis",
+          "DeerDoe_ Spine",
+          "DeerDoe_ Spine1",
+          "DeerDoe_ Neck",
+          "DeerDoe_ Neck1",
+          "DeerDoe_ Neck2",
+          "DeerDoe_ Head",
+          "DeerDoe_ Ponytail1",
+          "DeerDoe_ R Clavicle",
+          "DeerDoe_ R UpperArm",
+          "DeerDoe_ R Forearm",
+          "DeerDoe_ R Hand",
+          "DeerDoe_ R Finger0",
+          "DeerDoe_ L Clavicle",
+          "DeerDoe_ L UpperArm",
+          "DeerDoe_ L Forearm",
+          "DeerDoe_ L Hand",
+          "DeerDoe_ L Finger0",
+          "DeerDoe_ L Thigh",
+          "DeerDoe_ L Calf",
+          "DeerDoe_ L HorseLink",
+          "DeerDoe_ L Foot",
+          "DeerDoe_ R Thigh",
+          "DeerDoe_ R Calf",
+          "DeerDoe_ R HorseLink",
+          "DeerDoe_ R Foot",
+          "DeerDoe_ Tail",
+          "DeerDoe_ Tail1",
+          "DeerDoe_ Tail2"
+        ],
+        "materials": [
+          "M_DeerDoe",
+          "M_DeerDoeFur"
+        ]
+      },
+      {
+        "name": "SK_DeerDoe_LOD2",
+        "vertices": 3142,
+        "polygons": 5416,
+        "min": [
+          -0.25231361389160156,
+          -0.9944268465042114,
+          -0.0008724984945729375
+        ],
+        "max": [
+          0.2523135244846344,
+          0.8848410248756409,
+          1.5032389163970947
+        ],
+        "groups": [
+          "DeerDoe_ Pelvis",
+          "DeerDoe_ Spine",
+          "DeerDoe_ Spine1",
+          "DeerDoe_ Neck",
+          "DeerDoe_ Neck1",
+          "DeerDoe_ Neck2",
+          "DeerDoe_ Head",
+          "DeerDoe_ Ponytail1",
+          "DeerDoe_ R Clavicle",
+          "DeerDoe_ R UpperArm",
+          "DeerDoe_ R Forearm",
+          "DeerDoe_ R Hand",
+          "DeerDoe_ R Finger0",
+          "DeerDoe_ L Clavicle",
+          "DeerDoe_ L UpperArm",
+          "DeerDoe_ L Forearm",
+          "DeerDoe_ L Hand",
+          "DeerDoe_ L Finger0",
+          "DeerDoe_ L Thigh",
+          "DeerDoe_ L Calf",
+          "DeerDoe_ L HorseLink",
+          "DeerDoe_ L Foot",
+          "DeerDoe_ R Thigh",
+          "DeerDoe_ R Calf",
+          "DeerDoe_ R HorseLink",
+          "DeerDoe_ R Foot",
+          "DeerDoe_ Tail",
+          "DeerDoe_ Tail1",
+          "DeerDoe_ Tail2"
+        ],
+        "materials": [
+          "M_DeerDoe",
+          "M_DeerDoeFur"
+        ]
+      },
+      {
+        "name": "SK_DeerDoe_LOD0",
+        "vertices": 6294,
+        "polygons": 10544,
+        "min": [
+          -0.2612122893333435,
+          -0.9971717596054077,
+          -0.0008724984945729375
+        ],
+        "max": [
+          0.26121219992637634,
+          0.8928627967834473,
+          1.5123604536056519
+        ],
+        "groups": [
+          "DeerDoe_ Pelvis",
+          "DeerDoe_ Spine",
+          "DeerDoe_ Spine1",
+          "DeerDoe_ Neck",
+          "DeerDoe_ Neck1",
+          "DeerDoe_ Neck2",
+          "DeerDoe_ Head",
+          "DeerDoe_ Ponytail1",
+          "DeerDoe_ R Clavicle",
+          "DeerDoe_ R UpperArm",
+          "DeerDoe_ R Forearm",
+          "DeerDoe_ R Hand",
+          "DeerDoe_ R Finger0",
+          "DeerDoe_ L Clavicle",
+          "DeerDoe_ L UpperArm",
+          "DeerDoe_ L Forearm",
+          "DeerDoe_ L Hand",
+          "DeerDoe_ L Finger0",
+          "DeerDoe_ L Thigh",
+          "DeerDoe_ L Calf",
+          "DeerDoe_ L HorseLink",
+          "DeerDoe_ L Foot",
+          "DeerDoe_ R Thigh",
+          "DeerDoe_ R Calf",
+          "DeerDoe_ R HorseLink",
+          "DeerDoe_ R Foot",
+          "DeerDoe_ Tail",
+          "DeerDoe_ Tail1",
+          "DeerDoe_ Tail2"
+        ],
+        "materials": [
+          "M_DeerDoe",
+          "M_DeerDoeFur"
+        ]
+      },
+      {
+        "name": "SK_DeerDoe_LOD3",
+        "vertices": 2334,
+        "polygons": 3874,
+        "min": [
+          -0.25066259503364563,
+          -0.9944268465042114,
+          -0.0008724984945729375
+        ],
+        "max": [
+          0.25066250562667847,
+          0.8848410248756409,
+          1.5032389163970947
+        ],
+        "groups": [
+          "DeerDoe_ Pelvis",
+          "DeerDoe_ Spine",
+          "DeerDoe_ Spine1",
+          "DeerDoe_ Neck",
+          "DeerDoe_ Neck1",
+          "DeerDoe_ Neck2",
+          "DeerDoe_ Head",
+          "DeerDoe_ Ponytail1",
+          "DeerDoe_ R Clavicle",
+          "DeerDoe_ R UpperArm",
+          "DeerDoe_ R Forearm",
+          "DeerDoe_ R Hand",
+          "DeerDoe_ R Finger0",
+          "DeerDoe_ L Clavicle",
+          "DeerDoe_ L UpperArm",
+          "DeerDoe_ L Forearm",
+          "DeerDoe_ L Hand",
+          "DeerDoe_ L Finger0",
+          "DeerDoe_ L Thigh",
+          "DeerDoe_ L Calf",
+          "DeerDoe_ L HorseLink",
+          "DeerDoe_ L Foot",
+          "DeerDoe_ R Thigh",
+          "DeerDoe_ R Calf",
+          "DeerDoe_ R HorseLink",
+          "DeerDoe_ R Foot",
+          "DeerDoe_ Tail",
+          "DeerDoe_ Tail1",
+          "DeerDoe_ Tail2"
+        ],
+        "materials": [
+          "M_DeerDoe",
+          "M_DeerDoeFur"
+        ]
+      }
+    ],
+    "bones": {
+      "DeerDoe_": {
+        "head": [
+          0.0,
+          0.4699999988079071,
+          0.9009999632835388
+        ],
+        "tail": [
+          0.0003739166131708771,
+          0.4699999988079071,
+          0.9009999632835388
+        ],
+        "parent": null
+      },
+      "DeerDoe_ Pelvis": {
+        "head": [
+          7.972253933397067e-12,
+          0.4702663719654083,
+          0.9007375836372375
+        ],
+        "tail": [
+          -8.085317858785857e-06,
+          0.46791136264801025,
+          0.6743876338005066
+        ],
+        "parent": "DeerDoe_"
+      },
+      "DeerDoe_ Spine": {
+        "head": [
+          -7.460272627213271e-06,
+          0.26176977157592773,
+          0.9031398296356201
+        ],
+        "tail": [
+          -1.835123293858487e-05,
+          0.2591440975666046,
+          0.6298563480377197
+        ],
+        "parent": "DeerDoe_ Pelvis"
+      },
+      "DeerDoe_ Spine1": {
+        "head": [
+          -1.7942042177310213e-05,
+          -0.03083483874797821,
+          0.9061841368675232
+        ],
+        "tail": [
+          -3.0665902158943936e-05,
+          -0.033902402967214584,
+          0.586908221244812
+        ],
+        "parent": "DeerDoe_ Spine"
+      },
+      "DeerDoe_ Neck": {
+        "head": [
+          -2.8425483833416365e-05,
+          -0.32339033484458923,
+          0.9091345071792603
+        ],
+        "tail": [
+          -3.7688248994527385e-05,
+          -0.38783949613571167,
+          0.7345602512359619
+        ],
+        "parent": "DeerDoe_ Spine1"
+      },
+      "DeerDoe_ Neck1": {
+        "head": [
+          -3.2375184673583135e-05,
+          -0.4979184865951538,
+          0.9737082719802856
+        ],
+        "tail": [
+          -4.249099947628565e-05,
+          -0.6331447958946228,
+          0.845820963382721
+        ],
+        "parent": "DeerDoe_ Neck"
+      },
+      "DeerDoe_ Neck2": {
+        "head": [
+          -3.2036965421866626e-05,
+          -0.6257010102272034,
+          1.109033465385437
+        ],
+        "tail": [
+          -4.1699124267324805e-05,
+          -0.7854530811309814,
+          1.017681360244751
+        ],
+        "parent": "DeerDoe_ Neck1"
+      },
+      "DeerDoe_ Head": {
+        "head": [
+          -2.969217166537419e-05,
+          -0.7205983400344849,
+          1.2667053937911987
+        ],
+        "tail": [
+          -3.0322948077809997e-05,
+          -0.732227623462677,
+          1.2619781494140625
+        ],
+        "parent": "DeerDoe_ Neck2"
+      },
+      "DeerDoe_ Ponytail1": {
+        "head": [
+          -2.911019510065671e-05,
+          -0.7115375995635986,
+          1.2753939628601074
+        ],
+        "tail": [
+          -2.9444647225318477e-05,
+          -0.7076558470726013,
+          1.263455867767334
+        ],
+        "parent": "DeerDoe_ Head"
+      },
+      "DeerDoe_ R Clavicle": {
+        "head": [
+          -0.03832334280014038,
+          -0.3612608313560486,
+          0.9089957475662231
+        ],
+        "tail": [
+          -0.09331788867712021,
+          -0.36002179980278015,
+          1.0278949737548828
+        ],
+        "parent": "DeerDoe_ Spine1"
+      },
+      "DeerDoe_ R UpperArm": {
+        "head": [
+          -0.15273790061473846,
+          -0.39747580885887146,
+          0.856453001499176
+        ],
+        "tail": [
+          -0.15136727690696716,
+          -0.1800411194562912,
+          1.0086909532546997
+        ],
+        "parent": "DeerDoe_ R Clavicle"
+      },
+      "DeerDoe_ R Forearm": {
+        "head": [
+          -0.12286121398210526,
+          -0.24632973968982697,
+          0.640308678150177
+        ],
+        "tail": [
+          -0.10360293835401535,
+          0.013578662648797035,
+          0.6261448264122009
+        ],
+        "parent": "DeerDoe_ R UpperArm"
+      },
+      "DeerDoe_ R Hand": {
+        "head": [
+          -0.10063516348600388,
+          -0.26212242245674133,
+          0.3807312250137329
+        ],
+        "tail": [
+          0.19745846092700958,
+          -0.30328571796417236,
+          0.3675324022769928
+        ],
+        "parent": "DeerDoe_ R Forearm"
+      },
+      "DeerDoe_ R Finger0": {
+        "head": [
+          -0.11630970984697342,
+          -0.27934014797210693,
+          0.08042089641094208
+        ],
+        "tail": [
+          0.18175174295902252,
+          -0.3207406997680664,
+          0.06723735481500626
+        ],
+        "parent": "DeerDoe_ R Hand"
+      },
+      "DeerDoe_ L Clavicle": {
+        "head": [
+          0.03826373815536499,
+          -0.36126360297203064,
+          0.9089928865432739
+        ],
+        "tail": [
+          0.09326711297035217,
+          -0.36002856492996216,
+          1.0278880596160889
+        ],
+        "parent": "DeerDoe_ Spine1"
+      },
+      "DeerDoe_ L UpperArm": {
+        "head": [
+          0.15267173945903778,
+          -0.39748695492744446,
+          0.8564416170120239
+        ],
+        "tail": [
+          0.15132808685302734,
+          -0.180052250623703,
+          1.0086796283721924
+        ],
+        "parent": "DeerDoe_ L Clavicle"
+      },
+      "DeerDoe_ L Forearm": {
+        "head": [
+          0.12279016524553299,
+          -0.24633872509002686,
+          0.6402996778488159
+        ],
+        "tail": [
+          0.10354949533939362,
+          0.013571242801845074,
+          0.6261371970176697
+        ],
+        "parent": "DeerDoe_ L UpperArm"
+      },
+      "DeerDoe_ L Hand": {
+        "head": [
+          0.10054387152194977,
+          -0.26212984323501587,
+          0.38072359561920166
+        ],
+        "tail": [
+          -0.1975535899400711,
+          -0.3032718896865845,
+          0.3675466775894165
+        ],
+        "parent": "DeerDoe_ L Forearm"
+      },
+      "DeerDoe_ L Finger0": {
+        "head": [
+          0.11619506776332855,
+          -0.2793486416339874,
+          0.08041217923164368
+        ],
+        "tail": [
+          -0.1818702667951584,
+          -0.3207276463508606,
+          0.067250557243824
+        ],
+        "parent": "DeerDoe_ L Hand"
+      },
+      "DeerDoe_ L Thigh": {
+        "head": [
+          0.16132663190364838,
+          0.47026053071022034,
+          0.9007315039634705
+        ],
+        "tail": [
+          0.2250797599554062,
+          0.16123385727405548,
+          0.9255320429801941
+        ],
+        "parent": "DeerDoe_ Spine"
+      },
+      "DeerDoe_ L Calf": {
+        "head": [
+          0.14758062362670898,
+          0.44214826822280884,
+          0.5857747793197632
+        ],
+        "tail": [
+          0.1657593548297882,
+          0.28697142004966736,
+          0.3737013041973114
+        ],
+        "parent": "DeerDoe_ L Thigh"
+      },
+      "DeerDoe_ L HorseLink": {
+        "head": [
+          0.09643808007240295,
+          0.6485745906829834,
+          0.43034598231315613
+        ],
+        "tail": [
+          0.1666480451822281,
+          0.3219272196292877,
+          0.5023539662361145
+        ],
+        "parent": "DeerDoe_ L Calf"
+      },
+      "DeerDoe_ L Foot": {
+        "head": [
+          0.09093114733695984,
+          0.573878824710846,
+          0.09687435626983643
+        ],
+        "tail": [
+          0.15330860018730164,
+          0.2378399670124054,
+          0.09691671282052994
+        ],
+        "parent": "DeerDoe_ L HorseLink"
+      },
+      "DeerDoe_ R Thigh": {
+        "head": [
+          -0.16132663190364838,
+          0.4702722132205963,
+          0.9007433652877808
+        ],
+        "tail": [
+          -0.22510001063346863,
+          0.1612500101327896,
+          0.9255486130714417
+        ],
+        "parent": "DeerDoe_ Spine"
+      },
+      "DeerDoe_ R Calf": {
+        "head": [
+          -0.1476057469844818,
+          0.44215890765190125,
+          0.5857855677604675
+        ],
+        "tail": [
+          -0.16581127047538757,
+          0.28698334097862244,
+          0.3737134337425232
+        ],
+        "parent": "DeerDoe_ R Thigh"
+      },
+      "DeerDoe_ R HorseLink": {
+        "head": [
+          -0.09645967930555344,
+          0.6485816240310669,
+          0.4303531050682068
+        ],
+        "tail": [
+          -0.16668784618377686,
+          0.321939080953598,
+          0.5023662447929382
+        ],
+        "parent": "DeerDoe_ R Calf"
+      },
+      "DeerDoe_ R Foot": {
+        "head": [
+          -0.09098264575004578,
+          0.5738852024078369,
+          0.09688102453947067
+        ],
+        "tail": [
+          -0.15319766104221344,
+          0.23781603574752808,
+          0.09692791104316711
+        ],
+        "parent": "DeerDoe_ R HorseLink"
+      },
+      "DeerDoe_ Tail": {
+        "head": [
+          1.2196881471027154e-05,
+          0.6860310435295105,
+          1.015131950378418
+        ],
+        "tail": [
+          1.545291524962522e-05,
+          0.7116508483886719,
+          1.0840672254562378
+        ],
+        "parent": "DeerDoe_ Pelvis"
+      },
+      "DeerDoe_ Tail1": {
+        "head": [
+          1.3750042853644118e-05,
+          0.7549462914466858,
+          0.9894582033157349
+        ],
+        "tail": [
+          1.7893340555019677e-05,
+          0.8240594267845154,
+          1.0406990051269531
+        ],
+        "parent": "DeerDoe_ Tail"
+      },
+      "DeerDoe_ Tail2": {
+        "head": [
+          1.309215440414846e-05,
+          0.8060682415962219,
+          0.9202570915222168
+        ],
+        "tail": [
+          1.691403849690687e-05,
+          0.8862013816833496,
+          0.951576828956604
+        ],
+        "parent": "DeerDoe_ Tail1"
+      }
+    }
+  },
+  "fox": {
+    "meshes": [
+      {
+        "name": "SK_Fox_LOD2",
+        "vertices": 3370,
+        "polygons": 5614,
+        "min": [
+          -0.08829999715089798,
+          -0.43450695276260376,
+          -0.0027999880257993937
+        ],
+        "max": [
+          0.08829999715089798,
+          0.6311352849006653,
+          0.5571999549865723
+        ],
+        "groups": [
+          "Fox_ Pelvis",
+          "Fox_ L Thigh",
+          "Fox_ L Calf",
+          "Fox_ L HorseLink",
+          "Fox_ L Foot",
+          "Fox_ R Thigh",
+          "Fox_ R Calf",
+          "Fox_ R HorseLink",
+          "Fox_ R Foot",
+          "Fox_ Spine",
+          "Fox_ Spine1",
+          "Fox_ Neck",
+          "Fox_ Neck1",
+          "Fox_ Neck2",
+          "Fox_ Head",
+          "Fox_ Queue de cheval 1",
+          "Fox_ L Clavicle",
+          "Fox_ L UpperArm",
+          "Fox_ L Forearm",
+          "Fox_ L Hand",
+          "Fox_ L Finger0",
+          "Fox_ R Clavicle",
+          "Fox_ R UpperArm",
+          "Fox_ R Forearm",
+          "Fox_ R Hand",
+          "Fox_ R Finger0",
+          "Fox_ Tail",
+          "Fox_ Tail1",
+          "Fox_ Tail2",
+          "Fox_ Tail3",
+          "Fox_ Tail4",
+          "Fox_ Tail5"
+        ],
+        "materials": [
+          "M_Fox",
+          "M_FoxFur"
+        ]
+      },
+      {
+        "name": "SK_Fox_LOD0",
+        "vertices": 5658,
+        "polygons": 9274,
+        "min": [
+          -0.09493522346019745,
+          -0.43450695276260376,
+          -0.0027999880257993937
+        ],
+        "max": [
+          0.09493522346019745,
+          0.6360151767730713,
+          0.5620889663696289
+        ],
+        "groups": [
+          "Fox_ Pelvis",
+          "Fox_ L Thigh",
+          "Fox_ L Calf",
+          "Fox_ L HorseLink",
+          "Fox_ L Foot",
+          "Fox_ R Thigh",
+          "Fox_ R Calf",
+          "Fox_ R HorseLink",
+          "Fox_ R Foot",
+          "Fox_ Spine",
+          "Fox_ Spine1",
+          "Fox_ Neck",
+          "Fox_ Neck1",
+          "Fox_ Neck2",
+          "Fox_ Head",
+          "Fox_ Queue de cheval 1",
+          "Fox_ L Clavicle",
+          "Fox_ L UpperArm",
+          "Fox_ L Forearm",
+          "Fox_ L Hand",
+          "Fox_ L Finger0",
+          "Fox_ R Clavicle",
+          "Fox_ R UpperArm",
+          "Fox_ R Forearm",
+          "Fox_ R Hand",
+          "Fox_ R Finger0",
+          "Fox_ Tail",
+          "Fox_ Tail1",
+          "Fox_ Tail2",
+          "Fox_ Tail3",
+          "Fox_ Tail4",
+          "Fox_ Tail5"
+        ],
+        "materials": [
+          "M_Fox",
+          "M_FoxFur"
+        ]
+      },
+      {
+        "name": "SK_Fox_LOD3",
+        "vertices": 2858,
+        "polygons": 4681,
+        "min": [
+          -0.08460000157356262,
+          -0.43450695276260376,
+          -0.0027999880257993937
+        ],
+        "max": [
+          0.08460000157356262,
+          0.6311352849006653,
+          0.5564499497413635
+        ],
+        "groups": [
+          "Fox_ Pelvis",
+          "Fox_ L Thigh",
+          "Fox_ L Calf",
+          "Fox_ L HorseLink",
+          "Fox_ L Foot",
+          "Fox_ R Thigh",
+          "Fox_ R Calf",
+          "Fox_ R HorseLink",
+          "Fox_ R Foot",
+          "Fox_ Spine",
+          "Fox_ Spine1",
+          "Fox_ Neck",
+          "Fox_ Neck1",
+          "Fox_ Neck2",
+          "Fox_ Head",
+          "Fox_ Queue de cheval 1",
+          "Fox_ L Clavicle",
+          "Fox_ L UpperArm",
+          "Fox_ L Forearm",
+          "Fox_ L Hand",
+          "Fox_ L Finger0",
+          "Fox_ R Clavicle",
+          "Fox_ R UpperArm",
+          "Fox_ R Forearm",
+          "Fox_ R Hand",
+          "Fox_ R Finger0",
+          "Fox_ Tail",
+          "Fox_ Tail1",
+          "Fox_ Tail2",
+          "Fox_ Tail3",
+          "Fox_ Tail4",
+          "Fox_ Tail5"
+        ],
+        "materials": [
+          "M_Fox",
+          "M_FoxFur"
+        ]
+      },
+      {
+        "name": "SK_Fox_LOD1",
+        "vertices": 4514,
+        "polygons": 7444,
+        "min": [
+          -0.09234847873449326,
+          -0.43450695276260376,
+          -0.0027999880257993937
+        ],
+        "max": [
+          0.09234847873449326,
+          0.6334242224693298,
+          0.5594940185546875
+        ],
+        "groups": [
+          "Fox_ Pelvis",
+          "Fox_ L Thigh",
+          "Fox_ L Calf",
+          "Fox_ L HorseLink",
+          "Fox_ L Foot",
+          "Fox_ R Thigh",
+          "Fox_ R Calf",
+          "Fox_ R HorseLink",
+          "Fox_ R Foot",
+          "Fox_ Spine",
+          "Fox_ Spine1",
+          "Fox_ Neck",
+          "Fox_ Neck1",
+          "Fox_ Neck2",
+          "Fox_ Head",
+          "Fox_ Queue de cheval 1",
+          "Fox_ L Clavicle",
+          "Fox_ L UpperArm",
+          "Fox_ L Forearm",
+          "Fox_ L Hand",
+          "Fox_ L Finger0",
+          "Fox_ R Clavicle",
+          "Fox_ R UpperArm",
+          "Fox_ R Forearm",
+          "Fox_ R Hand",
+          "Fox_ R Finger0",
+          "Fox_ Tail",
+          "Fox_ Tail1",
+          "Fox_ Tail2",
+          "Fox_ Tail3",
+          "Fox_ Tail4",
+          "Fox_ Tail5"
+        ],
+        "materials": [
+          "M_Fox",
+          "M_FoxFur"
+        ]
+      }
+    ],
+    "bones": {
+      "Fox_": {
+        "head": [
+          0.0,
+          0.16200000047683716,
+          0.31700000166893005
+        ],
+        "tail": [
+          0.00010000228940043598,
+          0.16200000047683716,
+          0.31700000166893005
+        ],
+        "parent": null
+      },
+      "Fox_ Pelvis": {
+        "head": [
+          1.941064010650405e-17,
+          0.16200000047683716,
+          0.31700000166893005
+        ],
+        "tail": [
+          8.236641235725983e-08,
+          0.16200000047683716,
+          0.2569182813167572
+        ],
+        "parent": "Fox_"
+      },
+      "Fox_ L Thigh": {
+        "head": [
+          0.054635051637887955,
+          0.16200010478496552,
+          0.31700000166893005
+        ],
+        "tail": [
+          0.04609245806932449,
+          0.03727724775671959,
+          0.36729589104652405
+        ],
+        "parent": "Fox_ Pelvis"
+      },
+      "Fox_ L Calf": {
+        "head": [
+          0.04648661985993385,
+          0.11217550933361053,
+          0.19206179678440094
+        ],
+        "tail": [
+          0.03636438772082329,
+          0.020904388278722763,
+          0.11032678186893463
+        ],
+        "parent": "Fox_ L Thigh"
+      },
+      "Fox_ L HorseLink": {
+        "head": [
+          0.050166595727205276,
+          0.19392548501491547,
+          0.10031820088624954
+        ],
+        "tail": [
+          0.045731592923402786,
+          0.1284978836774826,
+          0.128120556473732
+        ],
+        "parent": "Fox_ L Calf"
+      },
+      "Fox_ L Foot": {
+        "head": [
+          0.04577671363949776,
+          0.1663742959499359,
+          0.03478139266371727
+        ],
+        "tail": [
+          0.04577687010169029,
+          0.09514737874269485,
+          0.03515336290001869
+        ],
+        "parent": "Fox_ L HorseLink"
+      },
+      "Fox_ R Thigh": {
+        "head": [
+          -0.054635051637887955,
+          0.1619998663663864,
+          0.31700000166893005
+        ],
+        "tail": [
+          -0.046091873198747635,
+          0.03727705776691437,
+          0.36729589104652405
+        ],
+        "parent": "Fox_ Pelvis"
+      },
+      "Fox_ R Calf": {
+        "head": [
+          -0.046486400067806244,
+          0.11217527091503143,
+          0.19206179678440094
+        ],
+        "tail": [
+          -0.03636374697089195,
+          0.020904187113046646,
+          0.11032669991254807
+        ],
+        "parent": "Fox_ R Thigh"
+      },
+      "Fox_ R HorseLink": {
+        "head": [
+          -0.05016675963997841,
+          0.19392532110214233,
+          0.10031819343566895
+        ],
+        "tail": [
+          -0.04573144391179085,
+          0.12849773466587067,
+          0.12812042236328125
+        ],
+        "parent": "Fox_ R Calf"
+      },
+      "Fox_ R Foot": {
+        "head": [
+          -0.04577675834298134,
+          0.16637428104877472,
+          0.03478136658668518
+        ],
+        "tail": [
+          -0.045776598155498505,
+          0.09514740854501724,
+          0.03515332564711571
+        ],
+        "parent": "Fox_ R HorseLink"
+      },
+      "Fox_ Spine": {
+        "head": [
+          1.5938144315441605e-07,
+          0.09006097912788391,
+          0.3170834481716156
+        ],
+        "tail": [
+          -1.3311100133250875e-07,
+          0.09014441072940826,
+          0.21229472756385803
+        ],
+        "parent": "Fox_ Pelvis"
+      },
+      "Fox_ Spine1": {
+        "head": [
+          3.9154031128418865e-07,
+          -0.01472779456526041,
+          0.31711047887802124
+        ],
+        "tail": [
+          -6.969239407794703e-09,
+          -0.014614121988415718,
+          0.17433993518352509
+        ],
+        "parent": "Fox_ Spine"
+      },
+      "Fox_ Neck": {
+        "head": [
+          6.993799956944713e-07,
+          -0.1532503217458725,
+          0.36273592710494995
+        ],
+        "tail": [
+          5.630690793623216e-07,
+          -0.1682349145412445,
+          0.3038344383239746
+        ],
+        "parent": "Fox_ Spine1"
+      },
+      "Fox_ Neck1": {
+        "head": [
+          8.300882541334431e-07,
+          -0.21213991940021515,
+          0.3777672052383423
+        ],
+        "tail": [
+          7.079107149365882e-07,
+          -0.23348958790302277,
+          0.32086271047592163
+        ],
+        "parent": "Fox_ Neck"
+      },
+      "Fox_ Neck2": {
+        "head": [
+          9.564621450408595e-07,
+          -0.2690275311470032,
+          0.39916178584098816
+        ],
+        "tail": [
+          8.471935757370375e-07,
+          -0.29665330052375793,
+          0.34460756182670593
+        ],
+        "parent": "Fox_ Neck1"
+      },
+      "Fox_ Head": {
+        "head": [
+          1.077387310033373e-06,
+          -0.32364386320114136,
+          0.4266645610332489
+        ],
+        "tail": [
+          1.0694637921915273e-06,
+          -0.33765727281570435,
+          0.42572370171546936
+        ],
+        "parent": "Fox_ Neck2"
+      },
+      "Fox_ Queue de cheval 1": {
+        "head": [
+          1.0154384426641627e-06,
+          -0.3188493549823761,
+          0.4134633541107178
+        ],
+        "tail": [
+          9.606329740563524e-07,
+          -0.3113293945789337,
+          0.4016011953353882
+        ],
+        "parent": "Fox_ Head"
+      },
+      "Fox_ L Clavicle": {
+        "head": [
+          0.017553912475705147,
+          -0.15441083908081055,
+          0.3284096419811249
+        ],
+        "tail": [
+          0.04175268113613129,
+          -0.15441079437732697,
+          0.3783469796180725
+        ],
+        "parent": "Fox_ Spine1"
+      },
+      "Fox_ L UpperArm": {
+        "head": [
+          0.0641527995467186,
+          -0.17435979843139648,
+          0.30582869052886963
+        ],
+        "tail": [
+          0.06172606721520424,
+          -0.06079860404133797,
+          0.35792917013168335
+        ],
+        "parent": "Fox_ L Clavicle"
+      },
+      "Fox_ L Forearm": {
+        "head": [
+          0.05688422918319702,
+          -0.12246600538492203,
+          0.19237957894802094
+        ],
+        "tail": [
+          0.051268383860588074,
+          -0.001641988754272461,
+          0.18020622432231903
+        ],
+        "parent": "Fox_ L UpperArm"
+      },
+      "Fox_ L Hand": {
+        "head": [
+          0.05198207125067711,
+          -0.13486799597740173,
+          0.07154776155948639
+        ],
+        "tail": [
+          0.05702964961528778,
+          -0.08080381155014038,
+          0.0431356281042099
+        ],
+        "parent": "Fox_ L Forearm"
+      },
+      "Fox_ L Finger0": {
+        "head": [
+          0.052093639969825745,
+          -0.16025462746620178,
+          0.01576991006731987
+        ],
+        "tail": [
+          0.05629862844944,
+          -0.16143262386322021,
+          -0.04535777121782303
+        ],
+        "parent": "Fox_ L Hand"
+      },
+      "Fox_ R Clavicle": {
+        "head": [
+          -0.017552509903907776,
+          -0.1544109284877777,
+          0.3284096419811249
+        ],
+        "tail": [
+          -0.04175128415226936,
+          -0.1544109731912613,
+          0.3783469796180725
+        ],
+        "parent": "Fox_ Spine1"
+      },
+      "Fox_ R UpperArm": {
+        "head": [
+          -0.06415130198001862,
+          -0.17436009645462036,
+          0.30582866072654724
+        ],
+        "tail": [
+          -0.06172507628798485,
+          -0.060798872262239456,
+          0.35792914032936096
+        ],
+        "parent": "Fox_ R Clavicle"
+      },
+      "Fox_ R Forearm": {
+        "head": [
+          -0.05688295140862465,
+          -0.12246627360582352,
+          0.19237954914569855
+        ],
+        "tail": [
+          -0.051267631351947784,
+          -0.0016422652406618,
+          0.18020617961883545
+        ],
+        "parent": "Fox_ R UpperArm"
+      },
+      "Fox_ R Hand": {
+        "head": [
+          -0.051980748772621155,
+          -0.13486826419830322,
+          0.07154775410890579
+        ],
+        "tail": [
+          -0.05702855810523033,
+          -0.08080411702394485,
+          0.04313560575246811
+        ],
+        "parent": "Fox_ R Forearm"
+      },
+      "Fox_ R Finger0": {
+        "head": [
+          -0.05209219828248024,
+          -0.16025492548942566,
+          0.015769898891448975
+        ],
+        "tail": [
+          -0.056297171860933304,
+          -0.16143295168876648,
+          -0.04535778984427452
+        ],
+        "parent": "Fox_ R Hand"
+      },
+      "Fox_ Tail": {
+        "head": [
+          -1.1475869143851014e-07,
+          0.21343585848808289,
+          0.3461420238018036
+        ],
+        "tail": [
+          -2.779240446670883e-07,
+          0.21356013417243958,
+          0.39191022515296936
+        ],
+        "parent": "Fox_ Pelvis"
+      },
+      "Fox_ Tail1": {
+        "head": [
+          -1.5344976134201715e-07,
+          0.25920388102531433,
+          0.34596142172813416
+        ],
+        "tail": [
+          -4.06230867611157e-07,
+          0.2598872184753418,
+          0.41671043634414673
+        ],
+        "parent": "Fox_ Tail"
+      },
+      "Fox_ Tail2": {
+        "head": [
+          -2.1014244566686102e-07,
+          0.3299521803855896,
+          0.3452126979827881
+        ],
+        "tail": [
+          -5.03683338592964e-07,
+          0.331313818693161,
+          0.4272199869155884
+        ],
+        "parent": "Fox_ Tail1"
+      },
+      "Fox_ Tail3": {
+        "head": [
+          -2.7223143206356326e-07,
+          0.41195836663246155,
+          0.34378668665885925
+        ],
+        "tail": [
+          -5.626538381875434e-07,
+          0.4138663411140442,
+          0.4248062074184418
+        ],
+        "parent": "Fox_ Tail2"
+      },
+      "Fox_ Tail4": {
+        "head": [
+          -3.2998693200170237e-07,
+          0.4929765462875366,
+          0.34182390570640564
+        ],
+        "tail": [
+          -5.767839752479631e-07,
+          0.4950741231441498,
+          0.4106006622314453
+        ],
+        "parent": "Fox_ Tail3"
+      },
+      "Fox_ Tail5": {
+        "head": [
+          -3.7595827961922623e-07,
+          0.5617516040802002,
+          0.3396700918674469
+        ],
+        "tail": [
+          -6.207213232301001e-07,
+          0.5611450672149658,
+          0.4084761440753937
+        ],
+        "parent": "Fox_ Tail4"
+      }
+    }
+  },
+  "crow": {
+    "meshes": [
+      {
+        "name": "SK_Crow.001",
+        "vertices": 1500,
+        "polygons": 2208,
+        "min": [
+          -0.5180869698524475,
+          -0.19452400505542755,
+          -0.00012211054854560643
+        ],
+        "max": [
+          0.5180869698524475,
+          0.2838428318500519,
+          0.3390919864177704
+        ],
+        "groups": [
+          "CROW_ Pelvis",
+          "CROW_ Spine",
+          "CROW_ Neck",
+          "CROW_ Head",
+          "CROW_ Queue de cheval 1",
+          "CROW_ L Clavicle",
+          "CROW_ L UpperArm",
+          "CROW_ L Forearm",
+          "CROW_ L Hand",
+          "WingLeftC",
+          "WingLeftH",
+          "WingLeftG",
+          "WingLeftB",
+          "WingLeftF",
+          "WingLeftA",
+          "WingLeftE",
+          "WingLeftD",
+          "CROW_ R Clavicle",
+          "CROW_ R UpperArm",
+          "CROW_ R Forearm",
+          "CROW_ R Hand",
+          "WingRightC",
+          "WingRightG",
+          "WingRightH",
+          "WingRightB",
+          "WingRightF",
+          "WingRightD",
+          "WingRightE",
+          "WingRightA",
+          "CrowTailRightFeatherB",
+          "CrowTailRightFeatherD",
+          "CrowTailRightFeatherA",
+          "CrowTailRightFeatherE",
+          "CrowTailLeftFeatherA",
+          "CrowTailRightFeatherC",
+          "CrowTailLeftFeatherC",
+          "CrowTailLeftFeatherD",
+          "CrowTailLeftFeatherB",
+          "CrowTailLeftFeatherE",
+          "CROW_ L Thigh",
+          "CROW_ L Calf",
+          "CROW_ L HorseLink",
+          "CROW_ L Foot",
+          "CROW_ L Toe0",
+          "CROW_ L Toe01",
+          "CROW_ L Toe02",
+          "CROW_ L Toe1",
+          "CROW_ L Toe11",
+          "CROW_ L Toe12",
+          "CROW_ R Thigh",
+          "CROW_ R Calf",
+          "CROW_ R HorseLink",
+          "CROW_ R Foot",
+          "CROW_ R Toe0",
+          "CROW_ R Toe01",
+          "CROW_ R Toe02",
+          "CROW_ R Toe1",
+          "CROW_ R Toe11",
+          "CROW_ R Toe12"
+        ],
+        "materials": [
+          "M_Crow"
+        ]
+      }
+    ],
+    "bones": {
+      "CROW_": {
+        "head": [
+          0.0,
+          0.03240377455949783,
+          0.12915539741516113
+        ],
+        "tail": [
+          9.999990288633853e-05,
+          0.03240377455949783,
+          0.12915539741516113
+        ],
+        "parent": null
+      },
+      "CROW_ Pelvis": {
+        "head": [
+          9.223030054527487e-15,
+          0.032403770834207535,
+          0.12915538251399994
+        ],
+        "tail": [
+          1.0525842952802122e-07,
+          0.008502650074660778,
+          0.0778992772102356
+        ],
+        "parent": "CROW_"
+      },
+      "CROW_ Spine": {
+        "head": [
+          6.795448825869244e-08,
+          0.004255990963429213,
+          0.1341101974248886
+        ],
+        "tail": [
+          -7.34157978854455e-08,
+          -0.05082192271947861,
+          0.06986871361732483
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CROW_ Neck": {
+        "head": [
+          2.676674171198101e-07,
+          -0.06702110916376114,
+          0.19527922570705414
+        ],
+        "tail": [
+          1.735636345756575e-07,
+          -0.10368398576974869,
+          0.15251657366752625
+        ],
+        "parent": "CROW_ Spine"
+      },
+      "CROW_ Head": {
+        "head": [
+          3.87462478101952e-07,
+          -0.10978376120328903,
+          0.23194211721420288
+        ],
+        "tail": [
+          3.776394805754535e-07,
+          -0.1287349909543991,
+          0.2260497808456421
+        ],
+        "parent": "CROW_ Neck"
+      },
+      "CROW_ Queue de cheval 1": {
+        "head": [
+          3.7203801639407175e-07,
+          -0.1287328153848648,
+          0.23784147202968597
+        ],
+        "tail": [
+          2.8204448199176113e-07,
+          -0.11663947999477386,
+          0.22210551798343658
+        ],
+        "parent": "CROW_ Head"
+      },
+      "CROW_ L Clavicle": {
+        "head": [
+          -0.001890162588097155,
+          -0.016418851912021637,
+          0.21133524179458618
+        ],
+        "tail": [
+          -0.001890194951556623,
+          0.004186175763607025,
+          0.23532971739768982
+        ],
+        "parent": "CROW_ Spine"
+      },
+      "CROW_ L UpperArm": {
+        "head": [
+          0.02973301336169243,
+          -0.016818372532725334,
+          0.2116783857345581
+        ],
+        "tail": [
+          -0.020025158300995827,
+          0.12703067064285278,
+          0.14348793029785156
+        ],
+        "parent": "CROW_ L Clavicle"
+      },
+      "CROW_ L Forearm": {
+        "head": [
+          0.13044430315494537,
+          0.022723183035850525,
+          0.22160352766513824
+        ],
+        "tail": [
+          0.18861781060695648,
+          0.16408613324165344,
+          0.18142716586589813
+        ],
+        "parent": "CROW_ L UpperArm"
+      },
+      "CROW_ L Hand": {
+        "head": [
+          0.2489844113588333,
+          -0.013614247553050518,
+          0.2653886079788208
+        ],
+        "tail": [
+          0.29517900943756104,
+          -0.09040200710296631,
+          0.07173047959804535
+        ],
+        "parent": "CROW_ L Forearm"
+      },
+      "WingLeftC": {
+        "head": [
+          0.39473605155944824,
+          -0.05018721893429756,
+          0.31895118951797485
+        ],
+        "tail": [
+          0.604603111743927,
+          -0.08823365718126297,
+          0.3254369795322418
+        ],
+        "parent": "CROW_ L Hand"
+      },
+      "WingLeftH": {
+        "head": [
+          0.5177207589149475,
+          0.04757335036993027,
+          0.30447161197662354
+        ],
+        "tail": [
+          0.3071072995662689,
+          0.08121900260448456,
+          0.2978600859642029
+        ],
+        "parent": "CROW_ L Hand"
+      },
+      "WingLeftG": {
+        "head": [
+          0.42066988348960876,
+          0.0932762399315834,
+          0.262850284576416
+        ],
+        "tail": [
+          0.2101498544216156,
+          0.1275046169757843,
+          0.2562551200389862
+        ],
+        "parent": "CROW_ L Hand"
+      },
+      "WingLeftB": {
+        "head": [
+          0.2435627281665802,
+          -0.053235121071338654,
+          0.27047327160835266
+        ],
+        "tail": [
+          0.39915797114372253,
+          -0.07787296921014786,
+          0.28331369161605835
+        ],
+        "parent": "CROW_ L Forearm"
+      },
+      "WingLeftF": {
+        "head": [
+          0.26596805453300476,
+          0.16546723246574402,
+          0.20081447064876556
+        ],
+        "tail": [
+          0.11264713853597641,
+          0.20190829038619995,
+          0.18870970606803894
+        ],
+        "parent": "CROW_ L Forearm"
+      },
+      "WingLeftA": {
+        "head": [
+          0.12557263672351837,
+          -0.03011985681951046,
+          0.22939817607402802
+        ],
+        "tail": [
+          0.2911279499530792,
+          -0.02976187691092491,
+          0.20915797352790833
+        ],
+        "parent": "CROW_ L UpperArm"
+      },
+      "WingLeftE": {
+        "head": [
+          0.14530979096889496,
+          0.20240773260593414,
+          0.14740443229675293
+        ],
+        "tail": [
+          -0.0201570987701416,
+          0.1986701935529709,
+          0.16802239418029785
+        ],
+        "parent": "CROW_ L UpperArm"
+      },
+      "WingLeftD": {
+        "head": [
+          0.05125793442130089,
+          0.168939471244812,
+          0.12987542152404785
+        ],
+        "tail": [
+          -0.11552869528532028,
+          0.16945873200893402,
+          0.12931238114833832
+        ],
+        "parent": "CROW_ L UpperArm"
+      },
+      "CROW_ R Clavicle": {
+        "head": [
+          0.001890490879304707,
+          -0.01641884632408619,
+          0.21133524179458618
+        ],
+        "tail": [
+          0.0018904585158452392,
+          0.004186178557574749,
+          0.23532971739768982
+        ],
+        "parent": "CROW_ Spine"
+      },
+      "CROW_ R UpperArm": {
+        "head": [
+          -0.029732679948210716,
+          -0.016818497329950333,
+          0.2116784006357193
+        ],
+        "tail": [
+          0.020043425261974335,
+          0.12708468735218048,
+          0.14346233010292053
+        ],
+        "parent": "CROW_ R Clavicle"
+      },
+      "CROW_ R Forearm": {
+        "head": [
+          -0.13044415414333344,
+          0.022722598165273666,
+          0.22160367667675018
+        ],
+        "tail": [
+          -0.18866302073001862,
+          0.16419382393360138,
+          0.18139655888080597
+        ],
+        "parent": "CROW_ R UpperArm"
+      },
+      "CROW_ R Hand": {
+        "head": [
+          -0.24898402392864227,
+          -0.013615410774946213,
+          0.2653889060020447
+        ],
+        "tail": [
+          -0.29523569345474243,
+          -0.09049844741821289,
+          0.07149112224578857
+        ],
+        "parent": "CROW_ R Forearm"
+      },
+      "WingRightC": {
+        "head": [
+          -0.39499998092651367,
+          -0.05018794909119606,
+          0.318951815366745
+        ],
+        "tail": [
+          -0.1848732978105545,
+          -0.012093782424926758,
+          0.3124578893184662
+        ],
+        "parent": "CROW_ R Hand"
+      },
+      "WingRightG": {
+        "head": [
+          -0.42100006341934204,
+          0.09327542036771774,
+          0.2628508508205414
+        ],
+        "tail": [
+          -0.6317806243896484,
+          0.059004154056310654,
+          0.26945459842681885
+        ],
+        "parent": "CROW_ R Hand"
+      },
+      "WingRightH": {
+        "head": [
+          -0.518000066280365,
+          0.0475723072886467,
+          0.3044723868370056
+        ],
+        "tail": [
+          -0.7288740873336792,
+          0.013884510844945908,
+          0.31109264492988586
+        ],
+        "parent": "CROW_ R Hand"
+      },
+      "WingRightB": {
+        "head": [
+          -0.2439998984336853,
+          -0.053235623985528946,
+          0.27047353982925415
+        ],
+        "tail": [
+          -0.0865439772605896,
+          -0.047231461852788925,
+          0.2566266357898712
+        ],
+        "parent": "CROW_ R Forearm"
+      },
+      "WingRightF": {
+        "head": [
+          -0.265999972820282,
+          0.16546671092510223,
+          0.20081479847431183
+        ],
+        "tail": [
+          -0.41953375935554504,
+          0.1294095814228058,
+          0.21295619010925293
+        ],
+        "parent": "CROW_ R Forearm"
+      },
+      "WingRightD": {
+        "head": [
+          -0.050999969244003296,
+          0.16893944144248962,
+          0.12987546622753143
+        ],
+        "tail": [
+          -0.21751952171325684,
+          0.17429865896701813,
+          0.12083396315574646
+        ],
+        "parent": "CROW_ R UpperArm"
+      },
+      "WingRightE": {
+        "head": [
+          -0.1449999362230301,
+          0.20240749418735504,
+          0.14740459620952606
+        ],
+        "tail": [
+          -0.31180429458618164,
+          0.19916923344135284,
+          0.1451600342988968
+        ],
+        "parent": "CROW_ R UpperArm"
+      },
+      "WingRightA": {
+        "head": [
+          -0.12599989771842957,
+          -0.030120093375444412,
+          0.22939829528331757
+        ],
+        "tail": [
+          0.03870907798409462,
+          -0.04537694528698921,
+          0.2512480318546295
+        ],
+        "parent": "CROW_ R UpperArm"
+      },
+      "CrowTailRightFeatherB": {
+        "head": [
+          -0.0040000565350055695,
+          0.09737996011972427,
+          0.12562891840934753
+        ],
+        "tail": [
+          -0.052725352346897125,
+          0.06866937130689621,
+          0.12562894821166992
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailRightFeatherD": {
+        "head": [
+          -0.001000069547444582,
+          0.10078386962413788,
+          0.12562891840934753
+        ],
+        "tail": [
+          -0.056483328342437744,
+          0.08991403132677078,
+          0.12700973451137543
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailRightFeatherA": {
+        "head": [
+          -0.00400004955008626,
+          0.08681662380695343,
+          0.12562891840934753
+        ],
+        "tail": [
+          -0.048290278762578964,
+          0.051648061722517014,
+          0.12562893331050873
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailRightFeatherE": {
+        "head": [
+          -0.0020000638905912638,
+          0.10078386217355728,
+          0.12562890350818634
+        ],
+        "tail": [
+          -0.05852368846535683,
+          0.09950873255729675,
+          0.12700971961021423
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailLeftFeatherA": {
+        "head": [
+          0.003999942913651466,
+          0.08681663125753403,
+          0.12562891840934753
+        ],
+        "tail": [
+          -0.040290363132953644,
+          0.12198510766029358,
+          0.12562894821166992
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailRightFeatherC": {
+        "head": [
+          -0.007000057492405176,
+          0.09737998992204666,
+          0.12562891840934753
+        ],
+        "tail": [
+          -0.06045522540807724,
+          0.07891388237476349,
+          0.12562893331050873
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailLeftFeatherC": {
+        "head": [
+          0.006999937817454338,
+          0.09737999737262726,
+          0.12562890350818634
+        ],
+        "tail": [
+          -0.046455267816782,
+          0.11584600806236267,
+          0.12562893331050873
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailLeftFeatherD": {
+        "head": [
+          0.0009999381145462394,
+          0.10078386962413788,
+          0.12562891840934753
+        ],
+        "tail": [
+          -0.05449988692998886,
+          0.11165684461593628,
+          0.12562893331050873
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailLeftFeatherB": {
+        "head": [
+          0.0039999354630708694,
+          0.09737995266914368,
+          0.12562890350818634
+        ],
+        "tail": [
+          -0.04472542181611061,
+          0.1260904222726822,
+          0.12562891840934753
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CrowTailLeftFeatherE": {
+        "head": [
+          -0.0020000638905912638,
+          0.10078386217355728,
+          0.12562890350818634
+        ],
+        "tail": [
+          -0.05854054167866707,
+          0.1020592749118805,
+          0.12562893331050873
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CROW_ L Thigh": {
+        "head": [
+          0.031022440642118454,
+          0.03240383416414261,
+          0.12915538251399994
+        ],
+        "tail": [
+          0.032192908227443695,
+          -0.012428306974470615,
+          0.1520041823387146
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CROW_ L Calf": {
+        "head": [
+          0.0330035425722599,
+          0.009607626125216484,
+          0.08432494848966599
+        ],
+        "tail": [
+          0.034769222140312195,
+          -0.024584421887993813,
+          0.06619502604007721
+        ],
+        "parent": "CROW_ L Thigh"
+      },
+      "CROW_ L HorseLink": {
+        "head": [
+          0.03314269706606865,
+          0.027761904522776604,
+          0.050100523978471756
+        ],
+        "tail": [
+          0.03415987268090248,
+          -0.015685422345995903,
+          0.07701456546783447
+        ],
+        "parent": "CROW_ L Calf"
+      },
+      "CROW_ L Foot": {
+        "head": [
+          0.035246677696704865,
+          0.0009009585482999682,
+          0.006659375503659248
+        ],
+        "tail": [
+          0.035246800631284714,
+          -0.007567272055894136,
+          0.006592294201254845
+        ],
+        "parent": "CROW_ L HorseLink"
+      },
+      "CROW_ L Toe0": {
+        "head": [
+          0.036040835082530975,
+          -0.005980936344712973,
+          -7.753269164822996e-05
+        ],
+        "tail": [
+          0.036040838807821274,
+          -0.006056015845388174,
+          0.009400240145623684
+        ],
+        "parent": "CROW_ L Foot"
+      },
+      "CROW_ L Toe01": {
+        "head": [
+          0.03604084998369217,
+          -0.015458705835044384,
+          -0.00015261162479873747
+        ],
+        "tail": [
+          0.036040857434272766,
+          -0.015546438284218311,
+          0.010922325775027275
+        ],
+        "parent": "CROW_ L Toe0"
+      },
+      "CROW_ L Toe02": {
+        "head": [
+          0.03604087606072426,
+          -0.026533640921115875,
+          -0.0002403424005024135
+        ],
+        "tail": [
+          0.036040883511304855,
+          -0.026621371507644653,
+          0.010834594257175922
+        ],
+        "parent": "CROW_ L Toe01"
+      },
+      "CROW_ L Toe1": {
+        "head": [
+          0.03441264480352402,
+          0.0035137846134603024,
+          -7.753062527626753e-05
+        ],
+        "tail": [
+          0.03441264480352402,
+          0.003472105599939823,
+          0.005183815024793148
+        ],
+        "parent": "CROW_ L Foot"
+      },
+      "CROW_ L Toe11": {
+        "head": [
+          0.034412626177072525,
+          0.008775128982961178,
+          -3.585199374356307e-05
+        ],
+        "tail": [
+          0.034412629902362823,
+          0.008717155084013939,
+          0.007282417733222246
+        ],
+        "parent": "CROW_ L Toe1"
+      },
+      "CROW_ L Toe12": {
+        "head": [
+          0.03441261127591133,
+          0.01609339751303196,
+          2.2120855646790005e-05
+        ],
+        "tail": [
+          0.03441261872649193,
+          0.016035422682762146,
+          0.0073403907008469105
+        ],
+        "parent": "CROW_ L Toe11"
+      },
+      "CROW_ R Thigh": {
+        "head": [
+          -0.031022440642118454,
+          0.03240369260311127,
+          0.12915539741516113
+        ],
+        "tail": [
+          -0.032192688435316086,
+          -0.012428445741534233,
+          0.1520041972398758
+        ],
+        "parent": "CROW_ Pelvis"
+      },
+      "CROW_ R Calf": {
+        "head": [
+          -0.03300350531935692,
+          0.009607478976249695,
+          0.08432498574256897
+        ],
+        "tail": [
+          -0.03476903215050697,
+          -0.024584578350186348,
+          0.0661950558423996
+        ],
+        "parent": "CROW_ R Thigh"
+      },
+      "CROW_ R HorseLink": {
+        "head": [
+          -0.033142779022455215,
+          0.027761759236454964,
+          0.05010056495666504
+        ],
+        "tail": [
+          -0.03415973484516144,
+          -0.015685567632317543,
+          0.07701461017131805
+        ],
+        "parent": "CROW_ R Calf"
+      },
+      "CROW_ R Foot": {
+        "head": [
+          -0.03524669632315636,
+          0.000900810759048909,
+          0.006659402512013912
+        ],
+        "tail": [
+          -0.035246577113866806,
+          -0.007567419670522213,
+          0.006592319346964359
+        ],
+        "parent": "CROW_ R HorseLink"
+      },
+      "CROW_ R Toe0": {
+        "head": [
+          -0.03604082390666008,
+          -0.005981088150292635,
+          -7.750838267384097e-05
+        ],
+        "tail": [
+          -0.03604082018136978,
+          -0.006056167185306549,
+          0.00940026342868805
+        ],
+        "parent": "CROW_ R Foot"
+      },
+      "CROW_ R Toe01": {
+        "head": [
+          -0.03604080528020859,
+          -0.015458853915333748,
+          -0.000152589229401201
+        ],
+        "tail": [
+          -0.03604080155491829,
+          -0.0155465854331851,
+          0.010922347195446491
+        ],
+        "parent": "CROW_ R Toe0"
+      },
+      "CROW_ R Toe02": {
+        "head": [
+          -0.0360407792031765,
+          -0.026533784344792366,
+          -0.00024032227520365268
+        ],
+        "tail": [
+          -0.0360407754778862,
+          -0.026621514931321144,
+          0.01083461381494999
+        ],
+        "parent": "CROW_ R Toe01"
+      },
+      "CROW_ R Toe1": {
+        "head": [
+          -0.034412674605846405,
+          0.003513636998832226,
+          -7.75060398154892e-05
+        ],
+        "tail": [
+          -0.03441267088055611,
+          0.0034719582181423903,
+          0.005183837842196226
+        ],
+        "parent": "CROW_ R Foot"
+      },
+      "CROW_ R Toe11": {
+        "head": [
+          -0.0344126895070076,
+          0.00877497810870409,
+          -3.5826156818075106e-05
+        ],
+        "tail": [
+          -0.0344126857817173,
+          0.008717005141079426,
+          0.007282441481947899
+        ],
+        "parent": "CROW_ R Toe1"
+      },
+      "CROW_ R Toe12": {
+        "head": [
+          -0.03441270813345909,
+          0.016093241050839424,
+          2.2148160496726632e-05
+        ],
+        "tail": [
+          -0.03441270440816879,
+          0.01603526994585991,
+          0.0073404149152338505
+        ],
+        "parent": "CROW_ R Toe11"
+      }
+    }
+  }
+}

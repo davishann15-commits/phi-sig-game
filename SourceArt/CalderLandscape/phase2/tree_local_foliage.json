@@ -1,0 +1,37 @@
+{
+  "scope": "Owned preview candidates only; appearance, wind registration and live forest fit pending",
+  "source_foliage_sha256": "5b7ae1ee8e2368ccfab0bb6a4a1bc1c36a1e93ed63feff98271ebc7383aa3233",
+  "source_packs_unchanged": true,
+  "materials": [
+    {
+      "label": "Beech",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Beech_TwoSided.MI_CalderTree_Beech_TwoSided",
+      "pixel_instructions": 245,
+      "pixel_samples": 3,
+      "preview_meshes": [
+        "/Game/SeniorSendOff/Calder/Trees/SM_CalderTreeCandidate_Beech.SM_CalderTreeCandidate_Beech",
+        "/Game/SeniorSendOff/Calder/Trees/SM_CalderTreeCandidate_Beech_Structural.SM_CalderTreeCandidate_Beech_Structural"
+      ],
+      "autumn_tint": [
+        0.44,
+        0.19,
+        0.035
+      ]
+    },
+    {
+      "label": "Maple",
+      "asset": "/Game/SeniorSendOff/Calder/Trees/MI_CalderTree_Maple_TwoSided.MI_CalderTree_Maple_TwoSided",
+      "pixel_instructions": 245,
+      "pixel_samples": 3,
+      "preview_meshes": [
+        "/Game/SeniorSendOff/Calder/Trees/SM_CalderTreeCandidate_Maple.SM_CalderTreeCandidate_Maple",
+        "/Game/SeniorSendOff/Calder/Trees/SM_CalderTreeCandidate_Maple_Structural.SM_CalderTreeCandidate_Maple_Structural"
+      ],
+      "autumn_tint": [
+        0.52,
+        0.09,
+        0.016
+      ]
+    }
+  ]
+}

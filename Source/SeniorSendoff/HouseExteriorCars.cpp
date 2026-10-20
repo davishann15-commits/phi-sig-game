@@ -4,6 +4,7 @@
 #include "HouseBlackHallMesh.h"
 #include "Materials/MaterialInterface.h"
 #include "Materials/MaterialInstanceDynamic.h"
+#include "HouseSurroundingsPolish.h"
 
 namespace HouseCars
 {
@@ -144,13 +145,15 @@ void Cabin(FHallMesh& M,FName Paint,int32 Style)
     {
         const FVector A(Back,S*147,102),B(RearTop,S*126,H-3),C(FrontTop,S*126,H-3),D(Front,S*147,102);
         const FVector N=FVector(0,S,21.f/(H-105.f)).GetSafeNormal();
-        Face(M,Paint,A,B,C,D,N);
+        if(!HouseSurroundings::Enabled())Face(M,Paint,A,B,C,D,N);
         const float Split=Style==2?95.f:-26.f;
         const FVector Centre=(A+B+C+D)*.25f;
         const FVector A0=FMath::Lerp(A,Centre,.13f)+N*.45f,B0=FMath::Lerp(B,Centre,.13f)+N*.45f,
             C0=FMath::Lerp(C,Centre,.13f)+N*.45f,D0=FMath::Lerp(D,Centre,.13f)+N*.45f;
         const FVector Lo=FMath::Lerp(A0,D0,(Split-A0.X)/(D0.X-A0.X)),
             Hi=FMath::Lerp(B0,C0,(Split-B0.X)/(C0.X-B0.X));
+        if(HouseSurroundings::Enabled())
+        {Face(M,Paint,A,B,B0,A0,N);Face(M,Paint,B,C,C0,B0,N);Face(M,Paint,C,D,D0,C0,N);Face(M,Paint,D,A,A0,D0,N);}
         Face(M,Glass,A0,B0,Hi-FVector(4,0,0),Lo-FVector(4,0,0),N);
         Face(M,Glass,Lo+FVector(4,0,0),Hi+FVector(4,0,0),C0,D0,N);
         Rail(M,Trim,A0,D0,1);Rail(M,Trim,B0,C0,1);Rail(M,Trim,A0,B0,1);Rail(M,Trim,C0,D0,1);
@@ -180,10 +183,12 @@ void Cabin(FHallMesh& M,FName Paint,int32 Style)
         const float Low=IsFront?Front:Back,High=IsFront?FrontTop:RearTop;
         const FVector N=FVector(IsFront?H-106:106-H,0,FMath::Abs(Low-High)).GetSafeNormal();
         const FVector A(Low,-147,103),B(High,-126,H-3),C(High,126,H-3),D(Low,147,103);
-        Face(M,Paint,A,B,C,D,N);
+        if(!HouseSurroundings::Enabled())Face(M,Paint,A,B,C,D,N);
         const FVector Centre=(A+B+C+D)*.25f;
-        Face(M,Glass,FMath::Lerp(A,Centre,.10f)+N*.3f,FMath::Lerp(B,Centre,.10f)+N*.3f,
-            FMath::Lerp(C,Centre,.10f)+N*.3f,FMath::Lerp(D,Centre,.10f)+N*.3f,N);
+        const FVector A0=FMath::Lerp(A,Centre,.10f)+N*.3f,B0=FMath::Lerp(B,Centre,.10f)+N*.3f,C0=FMath::Lerp(C,Centre,.10f)+N*.3f,D0=FMath::Lerp(D,Centre,.10f)+N*.3f;
+        Face(M,Glass,A0,B0,C0,D0,N);
+        if(HouseSurroundings::Enabled())
+        {Face(M,Paint,A,B,B0,A0,N);Face(M,Paint,B,C,C0,B0,N);Face(M,Paint,C,D,D0,C0,N);Face(M,Paint,D,A,A0,D0,N);Rail(M,Trim,A0,D0,1.2f);Rail(M,Trim,B0,C0,1.2f);}
         if(IsFront)
         {
             for(float Y:{-62.f,42.f})Rail(M,Trim,FVector(Low-14,Y-43,110),FVector(Low-34,Y+26,118),.7f);
@@ -221,6 +226,50 @@ void LampsAndGrille(FHallMesh& M)
     }
     M.Cylinder(Chrome,FVector(-432,-100,39),FVector(-446,-100,39),3.6f,12,UV,true);
 }
+void Details(FHallMesh& M,int Style)
+{
+    // Interior geometry uses final vehicle centimetres, after the body has been scaled.
+    const FName Seat(TEXT("EX_CarSeat")),Interior(TEXT("EX_CarInterior")),Dust(TEXT("EX_CarDust"));
+    const float RoofH=Style==1?184.f:Style==2?173.f:160.f;
+    Box(M,Interior,{69,-73,104},{112,73,111});Box(M,Interior,{2,-15,104},{58,15,111});
+    for(float Y:{-42.f,42.f})
+    {
+        Box(M,Seat,{8,Y-22,104},{56,Y+22,111});
+        M.Box(Seat,FTransform(FRotator(0,0,-7),FVector(8,Y,128)),{7,22,21},UV);
+        Box(M,Seat,{0,Y-13,145},{12,Y+13,FMath::Min(RoofH-9,158.f)});
+        for(float YY:{Y-13,Y,Y+13})Rail(M,Trim,{11,YY,111},{45,YY,111},.3f);
+    }
+    if(Style!=2){Box(M,Seat,{-110,-66,104},{-57,66,112});Box(M,Seat,{-119,-66,110},{-109,66,135});for(float Y:{-42.f,42.f})Box(M,Seat,{-121,Y-14,135},{-109,Y+14,RoofH-12});}
+    const FVector C(87,-42,125);const FVector U(.42f,0,.91f),V(0,1,0),N=FVector::CrossProduct(U,V).GetSafeNormal();
+    Rail(M,Interior,C-N*12,C,3);
+    for(int K=0;K<24;++K){float A=K*PI/12,B=(K+1)*PI/12;Rail(M,Interior,C+(U*FMath::Cos(A)+V*FMath::Sin(A))*16,C+(U*FMath::Cos(B)+V*FMath::Sin(B))*16,1.5f);}
+    for(float A:{0.f,2.3f,4.f})Rail(M,Interior,C,C+(U*FMath::Cos(A)+V*FMath::Sin(A))*14,1.2f);
+    M.Cylinder(Trim,C-N,C+N,4,12,UV);
+    Box(M,Trim,{73,-58,112},{87,-26,122});
+    for(float Y:{-49.f,-35.f})M.Cylinder(Plate,{72.7f,Y,117},{72.9f,Y,117},3,10,UV);
+    Box(M,Trim,{68,-15,111},{75,15,131});Box(M,TEXT("EX_CarDisplay"),{67.6f,-12,116},{67.9f,12,127});
+    Rail(M,Chrome,{31,0,110},{31,0,120},1);M.Dome(Interior,{31,0,120},FVector::UpVector,3,3,8);
+    Box(M,Interior,{Style==2?5.f:-77.f,-63,RoofH-5},{55,63,RoofH-3});
+    Rail(M,Chrome,{61,0,RoofH-9},{68,0,RoofH-22},.6f);Box(M,Interior,{64,-14,RoofH-26},{69,14,RoofH-19});
+    // Surface detail: fuel flap, door seals, lens ribs, vents, brake calipers and subtle sill dust.
+    for(float S:{-1.f,1.f})
+    {
+        const float Y=S*98;
+        const FVector A(-94,Y,72),B(-75,Y,72),Cc(-75,Y,88),D(-94,Y,88);
+        Rail(M,Trim,A,B,.35f);Rail(M,Trim,B,Cc,.35f);Rail(M,Trim,Cc,D,.35f);Rail(M,Trim,D,A,.35f);
+        for(float X=-110;X<130;X+=15)Box(M,Dust,{X,S<0?-98.2f:97.8f,40},{X+12,S<0?-97.8f:98.2f,41.2f+(int(X+110)%3)*.3f});
+        for(float X:{-159.6f,159.6f})Box(M,TEXT("EX_CarCaliper"),{X-5,S<0?-99:94,38},{X+5,S<0?-94:99,50});
+        for(int I=0;I<6;++I){const float YY=S*(54+I*3.5f);Rail(M,Chrome,{246,YY,65},{246,YY,73},.33f);Rail(M,Trim,{-246,YY,67},{-246,YY,78},.3f);}
+    }
+    for(float Y=-34;Y<35;Y+=9)Box(M,Trim,{244,Y,42},{245,Y+4,49});
+    // Painted plate atlas is shared per model, rather than an extra actor on every car.
+    const FName K(*FString::Printf(TEXT("EX_CarPlate%d"),Style));
+    for(float X:{-247.f,247.f})
+    {
+        const float Sign=FMath::Sign(X);const FVector R(0,-Sign,0),Up(0,0,1),P(X,0,52.5f),Out(Sign,0,0);
+        M.QuadUV(K,P-R*14-Up*6,P+R*14-Up*6,P+R*14+Up*6,P-R*14+Up*6,Out,{0,1},{1,1},{1,0},{0,0},R);
+    }
+}
 }
 
 void CreateLook(UHouseBlackHallSubsystem* L)
@@ -247,6 +296,23 @@ void CreateLook(UHouseBlackHallSubsystem* L)
     Mat(Headlamp,FLinearColor(.71f,.78f,.86f),.23f,.1f,FLinearColor(.30f,.35f,.44f));
     Mat(Tail,FLinearColor(.29f,.011f,.006f),.28f,.1f,FLinearColor(.14f,.003f,.001f));
     Mat(Plate,FLinearColor(.62f,.66f,.61f),.60f);
+    if(HouseSurroundings::Enabled())
+    {
+        if(auto* Parent=HallHouseMat(TEXT("M_House_Glass")))
+        {auto* M=UMaterialInstanceDynamic::Create(Parent,L);M->SetVectorParameterValue(TEXT("Tint"),FLinearColor(.11f,.16f,.18f));M->SetScalarParameterValue(TEXT("Opacity"),.32f);M->SetScalarParameterValue(TEXT("Roughness"),.11f);M->SetScalarParameterValue(TEXT("Metallic"),0);L->Materials.Add(Glass,M);}
+        Mat(TEXT("EX_CarSeat"),FLinearColor(.14f,.125f,.106f),.92f);Mat(TEXT("EX_CarInterior"),FLinearColor(.042f,.044f,.046f),.79f);
+        Mat(TEXT("EX_CarDust"),FLinearColor(.075f,.063f,.044f),.93f);Mat(TEXT("EX_CarCaliper"),FLinearColor(.24f,.039f,.019f),.63f,.23f);
+        Mat(TEXT("EX_CarDisplay"),FLinearColor(.017f,.032f,.041f),.3f,0,FLinearColor(.011f,.025f,.031f));
+        const TCHAR* IDs[]={TEXT("VLS 101"),TEXT("TN 2748"),TEXT("UTK 1800")};
+        for(int I=0;I<3;++I)
+        {
+            FHallImage Image;Image.Init(512,224,FLinearColor(.72f,.75f,.67f));Image.Rect({9,9},{503,215},FLinearColor(.14f,.18f,.15f));Image.Rect({14,14},{498,210},FLinearColor(.72f,.75f,.67f));
+            FHallTextStyle S;S.Height=25;S.Stroke=3;S.Spacing=.18f;HallDrawText(Image,TEXT("TENNESSEE"),{(512-HallTextWidth(TEXT("TENNESSEE"),S))*.5f,49},S,FLinearColor(.08f,.15f,.12f));
+            S.Height=77;S.Stroke=8;HallDrawText(Image,IDs[I],{(512-HallTextWidth(IDs[I],S))*.5f,151},S,FLinearColor(.033f,.057f,.039f));
+            S.Height=20;S.Stroke=2;HallDrawText(Image,TEXT("VOLUNTEER STATE"),{(512-HallTextWidth(TEXT("VOLUNTEER STATE"),S))*.5f,198},S,FLinearColor(.08f,.15f,.12f));
+            const FName Key(*FString::Printf(TEXT("EX_CarPlate%d"),I));auto* T=HallMakeTexture(Image,true,false,*Key.ToString(),false);L->Textures.Add(Key,T);HallMakeTextured(L,Key,T,nullptr,.54f);
+        }
+    }
     UE_LOG(LogTemp,Display,TEXT("HOUSE_CARS clear-coated sedan, crossover, pickup; wheel arches, tyres/rims, glazing, mirrors and trim ready"));
 }
 
@@ -262,6 +328,7 @@ void Build(FHallMesh& M,int32 Style,TArray<FBox>& Col)
         for(FProcMeshTangent& T:S.T)T.TangentX=FVector(T.TangentX.X*BodyScale,T.TangentX.Y*BodyScale,T.TangentX.Z).GetSafeNormal();
     }
     for(float X:{-285.f,285.f})for(float Y:{-165.f,165.f})Wheel(M,X*BodyScale,Y*BodyScale);
+    if(HouseSurroundings::Enabled())Details(M,Style);
     Col.Add(FBox(FVector(-435*BodyScale,-178*BodyScale,0),FVector(435*BodyScale,178*BodyScale,100)));
     const float H=Style==1?187.f:Style==2?175.f:163.f;
     Col.Add(FBox(FVector((Style==2?-28.f:-250.f)*BodyScale,-147*BodyScale,100),FVector(237*BodyScale,147*BodyScale,H)));

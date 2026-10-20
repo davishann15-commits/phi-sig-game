@@ -1,0 +1,90 @@
+{
+  "scope": "Opt-in merged scenery/altitude palette, physical settings and rendered-position evidence; photo/performance acceptance open",
+  "default_enabled": false,
+  "switch": "CalderRidgeForestTrial",
+  "native_result": "PASS tiles=12 allCalderISMs=19 vertices=583134 failures=0 offsetCm=2.9995..1452.3451 bands=20175/406506/155403 valleyGreen=0.196033 newCollision=0 defaultEnabled=0 visualPerformanceAcceptancePending=1",
+  "build": {
+    "log": "codex_ridge_forest_palette_build.log",
+    "disable_unity_actions": 209,
+    "seconds": 122.41
+  },
+  "build_ms": 166.72,
+  "material": {
+    "pixel_instructions": 224,
+    "pixel_samples": 3
+  },
+  "actual_geometry_comparison": {
+    "passed": true,
+    "scope": "Actual ordered rendered positions match through colour correction, at native CSV 0.001cm precision",
+    "runs": [
+      {
+        "run": "codex_ridge_forest_review",
+        "geometry_sha256": "47513baa460c8c7e5cd5150d4b8053d54ed163c5b06827438a333e03838f0940",
+        "vertices": 583134
+      },
+      {
+        "run": "codex_ridge_forest_palette_review",
+        "geometry_sha256": "47513baa460c8c7e5cd5150d4b8053d54ed163c5b06827438a333e03838f0940",
+        "vertices": 583134
+      }
+    ]
+  },
+  "visual_review": {
+    "images": [
+      {
+        "file": "219_detail_calder_eye_P1.png",
+        "sha256": "a172aa1695cb47fc4f0483f77722171bbfaa8614dd1a159b07131e13a8e1b490",
+        "inspected": true
+      },
+      {
+        "file": "220_detail_calder_eye_P2.png",
+        "sha256": "2c47253e1964f72682f5c1917448e58cdfae18f9ad62073995e4bddd28669813",
+        "inspected": true
+      },
+      {
+        "file": "221_detail_calder_eye_P3.png",
+        "sha256": "d32a1ca65d7d35909bd1613f28edf84c1c08c3f8aaf10b3231cf9f05bebb3ec1",
+        "inspected": true
+      },
+      {
+        "file": "222_detail_calder_eye_P4.png",
+        "sha256": "53371f5972e1307ffa344fb419e9f3ba2a29ea1aa70133e08ef51102907309bc",
+        "inspected": true
+      },
+      {
+        "file": "223_detail_calder_eye_P5.png",
+        "sha256": "12fa9006b0216ea5749e0b68e3e48ed06cc7b3c99762274c4b984a805c04e738",
+        "inspected": true
+      },
+      {
+        "file": "224_detail_calder_eye_P8.png",
+        "sha256": "9810dfaf2b21e8b6b27f99dad2051a5aaf55970907e67c867aa02c0cabd3b020",
+        "inspected": true
+      },
+      {
+        "file": "225_detail_calder_eye_P6.png",
+        "sha256": "5ca3f3c9348324032ae94b1bc1d92273c1d7ecfc3109a01c448ef99d4bbfa218",
+        "inspected": true
+      },
+      {
+        "file": "226_detail_calder_eye_P7.png",
+        "sha256": "6481dd84262596a5bf2505000bd966c1d565649f12b09e01d7a2f8b02a0872a8",
+        "inspected": true
+      },
+      {
+        "file": "229_detail_calder_eye_P3_tower.png",
+        "sha256": "e60499ec5debca376fc207171deb541ec9caf0dd481eb9481bfe58635fa155e9",
+        "inspected": true
+      }
+    ],
+    "findings": [
+      "P1-P8 and original supplemental tower view inspected with current fog",
+      "Geometry visually consistent with v1; measured valley palette corrected to19.6033percent green",
+      "Distant canopy/altitude line remains subtle under original dusk haze; no final photo acceptance",
+      "P5 haze, P8 foreground-roof occlusion and falling-sheet appearance remain open"
+    ],
+    "total_inspected_tree_woods_ridge_frames": 116,
+    "full_acceptance": false
+  },
+  "global_fog_proposal": "Prepared/unapplied pending human approval; no fog change in these results"
+}

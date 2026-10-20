@@ -1,0 +1,204 @@
+{
+  "scope": "Tested optional rock material; full Phase2/master remains incomplete",
+  "build": {
+    "log": "Saved/CalderWork/codex_rock_macro_survey_build.log",
+    "passed": true,
+    "actions": 210,
+    "seconds": 122.77
+  },
+  "material": {
+    "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderStrataRock",
+    "pixel_instructions": 370,
+    "pixel_samples": 8,
+    "original_material_sha256": {
+      "Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderFalls.uasset": "edcd97c14c7bc43ea47d4194075d9fdc6e5c0ab7c2e40f21de0af4e8393f24b5",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderStream.uasset": "c36d1457988cef02c14494164ede0dcea78b33fc4291f1d011ff2b3e57a482b9",
+      "Content/SeniorSendOff/Calder/Materials/M_CalderFarmRoof.uasset": "fa1c5b7839d1924db298f9556460e6507ed1f108a20c24e195a485270c326413"
+    },
+    "opaque": true,
+    "ISM_enabled": true,
+    "default_enabled": false,
+    "switch": "CalderRockStrataTrial",
+    "bedding": "Tilted82cm beds, shallow recessed shale seams; zero strength on masonry",
+    "preserved": "Original scan inputs/projection/moss/AO, positions/collision/water authority",
+    "scope": "Compile-only candidate; native/visual/performance and shoreline wet bands still open"
+  },
+  "native": {
+    "codex_rock_baseline_views": {
+      "run": "Saved/CalderWork/runs/codex_rock_baseline_views",
+      "markers": [
+        "[2026.10.17-13.39.49:583][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.40.15:915][329]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1112052 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=752 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.40.16:475][339]LogTemp: Display: CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759 tiles=24 collisionParts=24 samples=20000 holes=0 over3cm=0 maxErr=0.03 worst=(-2385,-22237) ground 780.85 hit 780.88 frozenGrid=685 lightsOutsideHouse=45 skyline=PASS cracks=PASS slopes=PASS rails=PASS gaps=PASS stairs=PASS levels=PASS sightline=PASS water=PASS footpoints=PASS world=PASS treeCrc=0f3b2bb7 fallLimit=-1099.2 lowestWalkable=-569.97 footPoints=301 collisionReadyS=0.0 reviewMs=553",
+        "[2026.10.17-13.40.18:833][420]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=1 batches=4 instances=57705 maxTuftTriangles=58 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.182 allCalderISMs=24 farmFootprints=0"
+      ],
+      "images": {
+        "219_detail_calder_eye_P1.png": "f00ee376bddef029dfe016c3198e588fd6bad4f461a41461715bee6b0c7d923d",
+        "220_detail_calder_eye_P2.png": "6a84b098023dc0590c3fea84e10ad85b1077f919663434ba573a8f9aa80d034e",
+        "225_detail_calder_eye_P6.png": "1cff5698fd04a867c4431f04b13c4eba98d028d73c3d039f967cf331010bf28d",
+        "226_detail_calder_eye_P7.png": "24d77c04d16605511c8c8f594d7015d12271cd11f7bd4ed8c9a3cf975093345e"
+      }
+    },
+    "codex_rock_strata_views": {
+      "run": "Saved/CalderWork/runs/codex_rock_strata_views",
+      "markers": [
+        "[2026.10.17-13.40.50:793][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_wall_15 bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.50:793][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=stacked_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.50:794][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.50:794][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.51:014][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=mossy_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.51:014][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=stacked_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.51:017][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.51:018][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=lichen_rock bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.40.58:390][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.41.25:355][283]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1112052 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=752 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.41.25:940][293]LogTemp: Display: CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759 tiles=24 collisionParts=24 samples=20000 holes=0 over3cm=0 maxErr=0.03 worst=(-2385,-22237) ground 780.85 hit 780.88 frozenGrid=685 lightsOutsideHouse=45 skyline=PASS cracks=PASS slopes=PASS rails=PASS gaps=PASS stairs=PASS levels=PASS sightline=PASS water=PASS footpoints=PASS world=PASS treeCrc=0f3b2bb7 fallLimit=-1099.2 lowestWalkable=-569.97 footPoints=301 collisionReadyS=0.0 reviewMs=577",
+        "[2026.10.17-13.41.28:296][367]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=1 batches=4 instances=57705 maxTuftTriangles=58 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.182 allCalderISMs=24 farmFootprints=0"
+      ],
+      "images": {
+        "219_detail_calder_eye_P1.png": "430551c3d1ebb83c6c0909a1f401b81340578dbecadc532ad22f0418b7fb552b",
+        "220_detail_calder_eye_P2.png": "f27b4c6642e29c993621a6b3cfb2a76fa7700b73ebfb3df39dd157e30e59b9f0",
+        "225_detail_calder_eye_P6.png": "41ac07f8129a01e75a28f5e10dfd672ad43721bdcbc39bb5b053807689a9fe2a",
+        "226_detail_calder_eye_P7.png": "2026026cdac2e2b94d9f025e6f116fd27c76bdb3a121ada4b261d2173d547d5f"
+      }
+    },
+    "codex_rock_macro_baseline": {
+      "run": "Saved/CalderWork/runs/codex_rock_macro_baseline",
+      "markers": [
+        "[2026.10.17-13.47.12:761][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.47.37:468][205]LogTemp: Warning: CALDER_ROCK_CAMERA view=detail_calder_rock_beds physicalSurfaceCheckFailed=1 retainingSeedView=1 floor=CalderTerrainCollision_22 face=None",
+        "[2026.10.17-13.47.39:163][347]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1112052 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=752 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.47.39:715][357]LogTemp: Display: CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759 tiles=24 collisionParts=24 samples=20000 holes=0 over3cm=0 maxErr=0.03 worst=(-2385,-22237) ground 780.85 hit 780.88 frozenGrid=685 lightsOutsideHouse=42 skyline=PASS cracks=PASS slopes=PASS rails=PASS gaps=PASS stairs=PASS levels=PASS sightline=PASS water=PASS footpoints=PASS world=PASS treeCrc=0f3b2bb7 fallLimit=-1099.2 lowestWalkable=-569.97 footPoints=301 collisionReadyS=0.0 reviewMs=544",
+        "[2026.10.17-13.47.41:560][402]LogTemp: Warning: CALDER_ROCK_CAMERA view=detail_calder_wall_stone physicalSurfaceCheckFailed=1 retainingSeedView=1 floor=CampusLayoutGround_40 face=CalderTerrainCollision_06",
+        "[2026.10.17-13.47.42:179][440]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=1 batches=4 instances=57705 maxTuftTriangles=58 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.182 allCalderISMs=24 farmFootprints=0"
+      ],
+      "images": {
+        "245_detail_calder_rock_beds.png": "fdd4d129cb454e5e131bf7770b512f90dc8eee1185ce4cb214c4332f462c3fb3",
+        "246_detail_calder_wall_stone.png": "c4298a56849d18acd376b853122b0159569b2cc17f4a433d4d1962148d646ba2"
+      }
+    },
+    "codex_rock_macro_survey_off": {
+      "run": "Saved/CalderWork/runs/codex_rock_macro_survey_off",
+      "markers": [
+        "[2026.10.17-13.51.45:769][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.52.11:302][213]LogTemp: Display: CALDER_ROCK_CAMERA view=detail_calder_rock_beds eyeGroundCm=130.0 surface=CalderWall_23_CollisionUnwalkable distanceCm=387.57 eye=(10200.000,28000.000,608.940) target=(10586.928,28000.033,598.404)",
+        "[2026.10.17-13.52.12:993][355]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1112052 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=752 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.52.13:555][365]LogTemp: Display: CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759 tiles=24 collisionParts=24 samples=20000 holes=0 over3cm=0 maxErr=0.03 worst=(-2385,-22237) ground 780.85 hit 780.88 frozenGrid=685 lightsOutsideHouse=42 skyline=PASS cracks=PASS slopes=PASS rails=PASS gaps=PASS stairs=PASS levels=PASS sightline=PASS water=PASS footpoints=PASS world=PASS treeCrc=0f3b2bb7 fallLimit=-1099.2 lowestWalkable=-569.97 footPoints=301 collisionReadyS=0.0 reviewMs=554",
+        "[2026.10.17-13.52.15:418][410]LogTemp: Display: CALDER_ROCK_CAMERA view=detail_calder_wall_stone eyeGroundCm=130.0 surface=CalderWall_06_CollisionUnwalkable distanceCm=300.00 eye=(-19000.000,-6850.000,103.099) target=(-18700.500,-6850.000,103.099)",
+        "[2026.10.17-13.52.16:052][440]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=1 batches=4 instances=57705 maxTuftTriangles=58 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.182 allCalderISMs=24 farmFootprints=0"
+      ],
+      "images": {
+        "245_detail_calder_rock_beds.png": "b4409fb91b4e77d17253e8a45a359d06f2e3a97f2f3916e9bc584243ee857b65",
+        "246_detail_calder_wall_stone.png": "e8dda8132730365ca4d5a6775ddeeb41a7c0abc4b93050156640cddcdfbe2a24"
+      }
+    },
+    "codex_rock_macro_survey_on": {
+      "run": "Saved/CalderWork/runs/codex_rock_macro_survey_on",
+      "markers": [
+        "[2026.10.17-13.52.47:536][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_wall_15 bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.47:536][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=stacked_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.47:538][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.47:538][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.47:758][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=mossy_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.47:758][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=stacked_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.47:762][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.47:763][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=lichen_rock bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.52.55:112][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.53.20:079][208]LogTemp: Display: CALDER_ROCK_CAMERA view=detail_calder_rock_beds eyeGroundCm=130.0 surface=CalderWall_23_CollisionUnwalkable distanceCm=387.57 eye=(10200.000,28000.000,608.940) target=(10586.928,28000.033,598.404)",
+        "[2026.10.17-13.53.21:789][351]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1112052 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=752 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.53.22:355][361]LogTemp: Display: CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759 tiles=24 collisionParts=24 samples=20000 holes=0 over3cm=0 maxErr=0.03 worst=(-2385,-22237) ground 780.85 hit 780.88 frozenGrid=685 lightsOutsideHouse=42 skyline=PASS cracks=PASS slopes=PASS rails=PASS gaps=PASS stairs=PASS levels=PASS sightline=PASS water=PASS footpoints=PASS world=PASS treeCrc=0f3b2bb7 fallLimit=-1099.2 lowestWalkable=-569.97 footPoints=301 collisionReadyS=0.0 reviewMs=558",
+        "[2026.10.17-13.53.24:184][406]LogTemp: Display: CALDER_ROCK_CAMERA view=detail_calder_wall_stone eyeGroundCm=130.0 surface=CalderWall_06_CollisionUnwalkable distanceCm=300.00 eye=(-19000.000,-6850.000,103.099) target=(-18700.500,-6850.000,103.099)",
+        "[2026.10.17-13.53.24:807][440]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=1 batches=4 instances=57705 maxTuftTriangles=58 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.182 allCalderISMs=24 farmFootprints=0"
+      ],
+      "images": {
+        "245_detail_calder_rock_beds.png": "ef9051d2a54ecd53d9761630de4133fd2c7909ab43041a0ca6cc5e6c3f645ff4",
+        "246_detail_calder_wall_stone.png": "658b8f3e2e423b30059940a261fceeaca2ef81667f52de643c49370b29d16738"
+      }
+    },
+    "codex_rock_strata_v3_views": {
+      "run": "Saved/CalderWork/runs/codex_rock_strata_v3_views",
+      "markers": [
+        "[2026.10.17-13.56.58:387][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_wall_15 bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.56.58:387][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=stacked_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.56.58:389][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.56.58:389][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.56.58:607][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=mossy_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.56.58:607][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=stacked_stone_wall bedding=0.0 gray=0.10 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.56.58:610][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=rock_face_04 bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.56.58:612][  0]LogTemp: Display: CALDER_ROCK_STRATA bound=1 set=lichen_rock bedding=1.0 gray=0.30 existingGeometryCollisionWaterUnchanged=1 trial=1",
+        "[2026.10.17-13.57.05:943][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.57.33:388][284]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1112052 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=752 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.57.33:990][294]LogTemp: Display: CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759 tiles=24 collisionParts=24 samples=20000 holes=0 over3cm=0 maxErr=0.03 worst=(-2385,-22237) ground 780.85 hit 780.88 frozenGrid=685 lightsOutsideHouse=45 skyline=PASS cracks=PASS slopes=PASS rails=PASS gaps=PASS stairs=PASS levels=PASS sightline=PASS water=PASS footpoints=PASS world=PASS treeCrc=0f3b2bb7 fallLimit=-1099.2 lowestWalkable=-569.97 footPoints=301 collisionReadyS=0.0 reviewMs=595",
+        "[2026.10.17-13.57.36:363][364]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=1 batches=4 instances=57705 maxTuftTriangles=58 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.182 allCalderISMs=24 farmFootprints=0",
+        "[2026.10.17-13.57.43:610][991]LogTemp: Display: CALDER_ROCK_CAMERA view=detail_calder_rock_beds eyeGroundCm=130.0 surface=CalderWall_23_CollisionUnwalkable distanceCm=387.57 eye=(10200.000,28000.000,608.940) target=(10586.928,28000.033,598.404)",
+        "[2026.10.17-13.57.46:198][217]LogTemp: Display: CALDER_ROCK_CAMERA view=detail_calder_wall_stone eyeGroundCm=130.0 surface=CalderWall_06_CollisionUnwalkable distanceCm=300.00 eye=(-19000.000,-6850.000,103.099) target=(-18700.500,-6850.000,103.099)"
+      ],
+      "images": {
+        "219_detail_calder_eye_P1.png": "78e3cd2bde87b9ffed7b2fa4479ca9e2953353b62026e994c63d96dfc46791cb",
+        "220_detail_calder_eye_P2.png": "e93c7283f7f0569294f06df03703de7db440c3b212ff80cbf2590b03a46819d9",
+        "225_detail_calder_eye_P6.png": "a997c6eade52d38c9a7f3772457d4e77a09e9db9f0e11bf928d482f60a8d935a",
+        "226_detail_calder_eye_P7.png": "32bf70f6b392c3dc1dca70379649db0c19e31ae513c3b0239bb9e30ec9e4718a",
+        "245_detail_calder_rock_beds.png": "148ea78f64ee05804f21b6471a3c6b2a4022962274c9add3c9ff52d1515dcc52",
+        "246_detail_calder_wall_stone.png": "21698e7f4b704acc71f1145f91b3e2a0c036de1539a07c7e7ebd238549796751"
+      }
+    },
+    "codex_rock_noterrain": {
+      "run": "Saved/CalderWork/runs/codex_rock_noterrain",
+      "markers": [
+        "[2026.10.17-13.54.06:676][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.54.32:095][231]LogTemp: Display: CAMPUS_LAYOUT_REVIEW PASS buildings=16 entrances=31 entrancesOffNetwork=0 walksAtBlankWalls=0 overlaps=0 lots=4 lotsWithoutRoad=0 roads=16 deadEnds=0 pedestrianCells=65285 networks=1 walkOnLaneCells=0 floorSamples=2654 floorMisses=0 walkObstructions=0 campusTrees=95 treesInBuildingsOrLanes=0 campusPoles=15 polesInBuildingsOrLanes=0 lampsInBuildingsOrLanes=0 exteriorLights=53 stairSkipped=0 stairSamples=0",
+        "[2026.10.17-13.54.33:465][302]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1091586 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=852 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.54.35:353][408]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=0 batches=0 instances=0 maxTuftTriangles=0 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.000 allCalderISMs=0 farmFootprints=0"
+      ],
+      "images": {}
+    },
+    "codex_rock_nolandscape": {
+      "run": "Saved/CalderWork/runs/codex_rock_nolandscape",
+      "markers": [
+        "[2026.10.17-13.55.20:678][  0]LogTemp: Display: WOODS_PASS_REVIEW PASS stage=3 actualExteriorPointAndSpotLights=53 newBatches=47 newInstances=4005 threeLODTrunkBatches=10 noSmallDetailShadowsOrCollision=1 distanceCulling=1 lowPools=3 safePools=1 runtimeOnlyBuild=1",
+        "[2026.10.17-13.55.47:092][311]LogTemp: Display: CAMPUS_WOODS_REVIEW PASS campusFrontVertices=1112052 stadiumSeatVertices=4110 rearBuildingVertices=0 ridgeVertices=3072,3072,3072 closeRearTrees=40 distantRearTrees=752 distantShadowsOff=1 geometryRegionsValid=1 courtFloorSolid=1 hoops=2 basketballs=3",
+        "[2026.10.17-13.55.47:701][321]LogTemp: Display: CALDER_TERRAIN_REVIEW PASS terrain=1 hash=72564759 tiles=24 collisionParts=24 samples=20000 holes=0 over3cm=0 maxErr=0.03 worst=(-2385,-22237) ground 780.85 hit 780.88 frozenGrid=685 lightsOutsideHouse=42 skyline=PASS cracks=PASS slopes=PASS rails=PASS gaps=PASS stairs=PASS levels=PASS sightline=PASS water=PASS footpoints=PASS world=PASS treeCrc=0f3b2bb7 fallLimit=-1099.2 lowestWalkable=-569.97 footPoints=301 collisionReadyS=0.0 reviewMs=601",
+        "[2026.10.17-13.55.48:976][394]LogTemp: Display: CALDER_LANDSCAPE_REVIEW PASS scope=groundCoverCheckpoint wholePhase2Complete=0 enabled=0 batches=0 instances=0 maxTuftTriangles=0 badSettings=0 badPlacement=0 frozenHits=0 waterFootprints=0 worstRootGapCm=0.000 allCalderISMs=3 farmFootprints=0"
+      ],
+      "images": {}
+    }
+  },
+  "current_geometry": {
+    "terrain_hash": "72564759",
+    "tree_crc": "0f3b2bb7",
+    "cover_instances": 57705,
+    "cover_crc": "17dc66ec",
+    "Calder_ISMs": 24,
+    "collision_samples": 20000,
+    "holes": 0,
+    "max_collision_error_cm": 0.03
+  },
+  "appearance": {
+    "all_20_new_frames_individually_inspected": true,
+    "total_inspected_frames": 178,
+    "findings": [
+      "First two macro seeds rejected because native surface checks failed.",
+      "Current road-cut and retaining-wall close-ups use actual physical ground+130cm and real collision faces.",
+      "Stronger shallow shale seams remain subtle under original dusk lighting; scan texture still dominates.",
+      "Original P1/P2/P6/P7 retain their cameras.",
+      "Photographic appearance and final performance are unaccepted."
+    ],
+    "default_enabled": false,
+    "photographic_accepted": false
+  },
+  "protected_file_count": 13,
+  "pending_fog": "Unapplied; requires direct human approval",
+  "sources": {
+    "Source/SeniorSendoff/HouseCalderLandscape.cpp": "731b4c2f7f7cee743981f58a86bf9aae780aab994db2b99c9939a875cbb6c326",
+    "Source/SeniorSendoff/HouseCalderLandscape.h": "d516bd1f89fa315a527715630b2aa809ffabc22068fdaf8ed001d334015776ae",
+    "Source/SeniorSendoff/HouseCalderFeatures.cpp": "371e5ce538f7eccea9d83ed4c7519b0e123b3466f4883f826b571685769eaeea",
+    "Source/SeniorSendoff/HouseCalderWater.cpp": "4863287be08cbc0c4af14ef28ec87daba2c5fcda09b726c479995716ac523a37",
+    "Source/SeniorSendoff/HouseCalderPropViews.cpp": "5aeee70dc40594fa41f3c45db4e917f429d60590dfabe9c46ea15b1d20bbf7c4",
+    "Source/SeniorSendoff/HouseExterior.cpp": "276288ec78dab23cb13d5fdca9f621112fc4587a18f3db444cf9d8421daccd29",
+    "Tools/calder/rock_strata_assets_batch.py": "633cf052d3dbb2989c53d39571d6fd3e42d7369ba47a267e12bfc5765655bba3",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderStrataRock.uasset": "c031f619898d10e60e5775771e088340c1fda8f5e89c7f667d0f246f51167ef8"
+  }
+}

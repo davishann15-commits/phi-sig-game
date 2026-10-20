@@ -1,0 +1,8 @@
+{"views":[
+{"name":"01_Entrance_Fascia","position":{"x":-23,"y":3.5,"z":-0.2},"target":{"x":-14.86,"y":6.6,"z":-0.2},"fieldOfView":56},
+{"name":"02_Hall_Dogs","position":{"x":-1.1,"y":-1.4,"z":-9},"target":{"x":-1.1,"y":-1.4,"z":-12.3},"fieldOfView":64},
+{"name":"03_Upper_Plaque","position":{"x":6.4,"y":4.1,"z":0},"target":{"x":8.093,"y":4.1,"z":0},"fieldOfView":58},
+{"name":"04_Striped_Flag","position":{"x":11.59,"y":5.1,"z":14.6},"target":{"x":11.59,"y":5.1,"z":12.87},"fieldOfView":60},
+{"name":"05_Hall_Composite","position":{"x":1,"y":2.78,"z":-21.2},"target":{"x":1,"y":2.78,"z":-23.57},"fieldOfView":52},
+{"name":"06_Upper_Letter_Wall","position":{"x":10.25,"y":3.2,"z":-12},"target":{"x":10.25,"y":3.2,"z":-14},"fieldOfView":62}
+]}

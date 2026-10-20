@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "project": "/Users/Stewart/Documents/Unreal Projects/SeniorSendoff/SeniorSendoff.uproject",
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "changes": [
+    "31 front planting-bed shrubs only",
+    "Three instanced rounded shrub variants",
+    "2304 cupped individual leaves and 192 small fill sprigs per shrub",
+    "Sixteen rooted fine-branch stems per shrub",
+    "Dedicated generated photographic green leaf atlas with visible vein detail",
+    "Pinned leaf-tip breeze, mature/new-growth color variation"
+  ],
+  "checks": {
+    "nativeBuild": "Succeeded: SeniorSendoffEditor Mac Development, final build 6.87 seconds",
+    "assetImport": "PASS: evidence/import.json; new texture and material saved",
+    "actualCampaignVisuals": "PASS: five final native 1280x800 captures reviewed",
+    "placements": {
+      "front": 31,
+      "frontBatches": 3,
+      "unchangedSideShrubs": 21
+    },
+    "collision": "PASS: original 140x140x100 cm simple blockers retained",
+    "normalPlayerMovement": "PASS: twelve normal-movement segments covering approach, stairs, porch, return, and both side paths",
+    "unrelatedVegetation": "Original Shrub builder, materials, scatter transforms, parking, neighbours and woodland unchanged",
+    "protectedMapSHA256": "5309c8f80470373721148eabdc62bc6d70ed40fe12ad789587881a2ca7335e5c",
+    "savedMapChanged": false,
+    "shaderErrors": "None in final rendered run",
+    "multiplayer": "Not tested",
+    "performance": "Instancing and distance culling retained; no dedicated before/after frame benchmark"
+  },
+  "evidence": {
+    "visuals": "evidence/final/Saved/HouseVisualReview/review.json",
+    "walking": "evidence/walk/Saved/FrontBushReview/result.txt",
+    "generation": "generation.json"
+  },
+  "preview": "evidence/final/Saved/HouseVisualReview/LeafCloseUp.png"
+}

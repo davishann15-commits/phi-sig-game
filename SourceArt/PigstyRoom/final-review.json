@@ -1,0 +1,27 @@
+{
+  "map": "/Game/Story/Maps/Chapter01_House",
+  "door": "HallEnd_West",
+  "roomExpansionCm": 120,
+  "floorAreaIncreasePercent": 24.65,
+  "protectedActorCount": 677,
+  "doorRegistryUnchanged": true,
+  "pigNames": [
+    "Pepper",
+    "Coal"
+  ],
+  "pigHealth": 100,
+  "initialEdibleCheetos": 24,
+  "mainBehaviorPassed": true,
+  "stairsGreatRoomPassed": true,
+  "existingDoorPassed": true,
+  "nativeVisualsReviewed": true,
+  "foodMaterialInstancedUsageFixed": true,
+  "bagPlaqueLabelsCorrected": true,
+  "groundedGaitReviewed": true,
+  "performancePending": false,
+  "performancePassed": true,
+  "performanceEvidence": "[2026.10.01-04.57.51:685][964]LogTemp: Display: HOUSE_WALK_PERF_RESULT: passed=1 seconds=15.01 frames=896 p50FrameMs=16.67 p95FrameMs=16.79 p99FrameMs=16.92 worstFrameMs=52.14 over25Ms=3 over33Ms=2 travelCm=4687.2 waypoints=6 laps=0 stalls=0 longestNoProgressSeconds=0.07 memoryStartMB=9306.9 memoryEndMB=9354.2 memoryDeltaMB=+47.2 vsm=1 vsmCoarseNonNanite=0 vsmPages=1024 lumenHw=0 lumenMeshSdf=0 skylight=1.30 shadowQuality=1 resolutionQuality=80.0 pigAvoidances=13",
+  "latestFeedingVisualReviewed": true,
+  "foodVisualOrange": true,
+  "latestMainBehaviorPassed": true
+}

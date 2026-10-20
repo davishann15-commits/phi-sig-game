@@ -1,0 +1,28 @@
+{
+  "installed": true,
+  "compiled": false,
+  "native_tested": false,
+  "scope": "Owner-authorized connected office and furniture; all original paths and camera poses preserved.",
+  "files": {
+    "HouseStadiumDetail.h": {
+      "before": "249cc79df382048c95c882df0cbb7bb4e369590361bab97209ae4aa4502ad88b",
+      "after": "65b6af26cdf86d44cca470bed24a181edf542c4b7fe0de276b6d5ad22fe9de97"
+    },
+    "HouseStadiumDetailInteriors.cpp": {
+      "before": "8fccd0eef7e8d1aed5ea8a00563811afd4bd5d9eb52eeb573d6a9084083697de",
+      "after": "a1cbbcde86c3838d87366d32fd24697feb4d9547baffe41cbb58a0ffa8ced1ce"
+    },
+    "HouseCampusInteriorsStadium.cpp": {
+      "before": "9e5bc7beef7e57aa5328b9e11a367e124514b1a169406a8a56999fe053424967",
+      "after": "98d271aabc529f7d8e0f5fbbe6382f8c4d0c0ac18cdcda1cb947fbfb4b476168"
+    },
+    "HouseStadiumDetailLook.cpp": {
+      "before": "ffd808b34d4426ed8697576af2da80af01a6eceb357e77774bdd801814dad7b3",
+      "after": "55f98d7be15c546b5c074f08918b77e3c40dd9089ca259dcac25949c5e02cd0e"
+    },
+    "HouseExterior.cpp": {
+      "before": "109326db5c926aa270c31df09e5d455df789c7baff76b56a473af9f6ca0a6060",
+      "after": "a207a74ba2cb80a7edaabded1dfde7fda31e085a82321fe8bcb3e571c4c3c750"
+    }
+  }
+}

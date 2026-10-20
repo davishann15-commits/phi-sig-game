@@ -1,0 +1,20 @@
+{
+	"allPropsParkedWithDamageAndCollision": true,
+	"independentSmallItems": 517,
+	"closedDoorBlocksAndOpenDoorClearsFullPlayer": true,
+	"rollingChairWidthCm": 71.682060241699219,
+	"rollingChairDepthCm": 70.707481384277344,
+	"actualChairPickupAndTwoHandContacts": true,
+	"allThreeTableDamageStagesAndSettling": true,
+	"settledBrokenSpeed": 0,
+	"singleBookPickupIndependentOfNeighbour": true,
+	"singlePaperPickupWithHandContact": true,
+	"individualBookAndPaperThrownAndSettled": true,
+	"shelfBooksWokenTogether": 32,
+	"shelfBooksFellToFloor": 27,
+	"passed": true,
+	"detail": "Separate clutter pickup, throw, hand contact, settling, shelf support, narrowed chair pickup and library collision verified",
+	"furnitureCount": 585,
+	"ceilingPanels": 3,
+	"elapsedSeconds": 36.973604541271925
+}

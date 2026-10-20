@@ -9,6 +9,20 @@ class USceneComponent;
 class UStaticMesh;
 class UStaticMeshComponent;
 class AHouseReactiveFixture;
+class UPrimitiveComponent;
+
+/** One atomic motion record also preserves a blocked, partly open leaf for late joiners. */
+USTRUCT()
+struct FHouseDoorSwing
+{
+    GENERATED_BODY()
+    UPROPERTY() float FromYaw = 0.f;
+    UPROPERTY() float ToYaw = 0.f;
+    UPROPERTY() float StartedAt = 0.f;
+    UPROPERTY() float Duration = 0.f;
+    UPROPERTY() bool bOpening = false;
+    UPROPERTY() uint16 Revision = 0;
+};
 
 /** Moves a leaf extracted from the imported house mesh; no replacement door art. */
 UCLASS()
@@ -29,22 +43,22 @@ public:
     /** Perimeter-only porch frame after its glass and attached grille break. */
     UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
     TObjectPtr<UStaticMesh> BrokenFrameMesh;
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     FVector DoorwayCenter;
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     FName DoorId;
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     float ClosedYaw = -90.f;
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     float OpenYaw = 0.f;
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     bool bLocked = false;
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     FName DoorGroup;
     /** A simple moving blocker for each framed porch glass leaf. */
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door|Collision")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door|Collision")
     FVector PanelCenterWorld = FVector::ZeroVector;
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door|Collision")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door|Collision")
     FVector PanelHalfExtent = FVector::ZeroVector;
     UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door|Hardware")
     TObjectPtr<UStaticMesh> AddedHandleMesh;
@@ -54,14 +68,16 @@ public:
     FRotator AddedHandleRotation;
 
     /** Leaf/panel/handle values are authored relative to the hinge pivot (doors built in code). */
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     bool bLocalLeafSpace = false;
 
     /** World anchor of the extracted mesh's original coordinate origin. */
-    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category="House Door")
+    UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Replicated, Category="House Door")
     FVector SourceGeometryOriginWorld = FVector::ZeroVector;
 
     bool IsOpen() const { return bOpen; }
+    /** A door built in code that stands open from the start (call between SpawnActorDeferred and FinishSpawning). */
+    void SetStartsOpen(bool bInOpen) { bOpen = bInOpen; }
     USceneComponent* GetLeafPivot() const { return LeafPivot; }
     bool Interact(APawn* Player);
     AHouseReactiveFixture* GetPorchGlassFixture() const { return PorchGlassFixture; }
@@ -71,10 +87,16 @@ public:
 private:
     void SetGroupOpen(bool bShouldOpen);
     void StartMotion();
+    void PublishMotion();
+    float ServerTime() const;
+    FBox SwingBounds() const;
+    void PrepareSwing();
+    bool IsSwingBlocked(float Yaw, const FBox& Bounds) const;
+    float ClearSwingYaw(float From, float To) const;
     void UpdateBlockingCollision(float CurrentYaw);
     bool IsDoorwayOccupied() const;
     UFUNCTION()
-    void OnRep_Open();
+    void OnRep_Swing();
     void CreatePorchGlassFixture();
     void OnPorchGlassBroken(AHouseReactiveFixture* Fixture);
     UFUNCTION() void OnRep_PorchGlassFixture();
@@ -92,11 +114,14 @@ private:
     TObjectPtr<UBoxComponent> PanelCollision;
     UPROPERTY(VisibleAnywhere)
     TObjectPtr<UBoxComponent> Approach;
-    UPROPERTY(ReplicatedUsing=OnRep_Open)
+    UPROPERTY()
     bool bOpen = false;
+    UPROPERTY(ReplicatedUsing=OnRep_Swing)
+    FHouseDoorSwing Swing;
     UPROPERTY(ReplicatedUsing=OnRep_PorchGlassFixture, Transient)
     TObjectPtr<AHouseReactiveFixture> PorchGlassFixture;
     bool bComplexFrameReady = false;
+    TArray<TWeakObjectPtr<UPrimitiveComponent>> FittedFrameContacts;
     float MotionFromYaw = 0.f;
     float MotionToYaw = 0.f;
     float MotionElapsed = 0.f;

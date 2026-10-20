@@ -2,6 +2,7 @@
 #include "HouseBlackHallLook.h"
 #include "HouseBlackHallMesh.h"
 #include "HouseBlackHallLayout.h"
+#include "HouseClockTowerMesh.h"
 #include "HouseInteractiveProp.h"
 #include "HouseWorldScale.h"
 
@@ -451,7 +452,9 @@ void AHouseBlackHallDoor::Setup(EHallDoorStyle InStyle, float InWidth, float InH
     PanelCenterWorld = FVector(LeafWidth * .5f, CenterY, LeafHeight * .5f + .6f);
     PanelHalfExtent = FVector(LeafWidth * .5f, T * .5f + 1.f, LeafHeight * .5f);
     ClosedYaw = 0.f;
-    OpenYaw = (bOut ? -RoomSign : RoomSign) * 92.f;
+    // A plank pair hangs deep in a stone reveal (the clock tower's): just short of square open, so a leaf never leans into
+    // its jamb.
+    OpenYaw = (bOut ? -RoomSign : RoomSign) * (InStyle == EHallDoorStyle::Plank ? 89.f : 92.f);
 }
 
 void AHouseBlackHallDoor::BeginPlay()
@@ -499,6 +502,32 @@ void AHouseBlackHallDoor::BuildVisual()
             LBox(Paint, Stile, W - Stile, A, B, BottomRail, BottomRail + 1.6f, LeafUV);
             if (Flags & KickPlate) LBox(TEXT("KickBlack"), 1.5f, W - 1.5f, Face, Face + Dir * .15f, 1.2f, 16.f, Plain);
         }
+    }
+    else if (Style == EHallDoorStyle::Plank)
+    {
+        // The clock tower's ledged oak door, in the tower's plain materials so a closed leaf reads exactly as the fixed door it
+        // replaces: on the outer face the boards' joints, two strap hinges and a ring pull (and the meeting bar, on one leaf);
+        // the tympanum over the springing keeps the rest. Inside, three ledges and two braces. Leaf B mirrors A (yaw 180).
+        HouseClockTowerMesh::CreateLook(Sub);   // a door can begin play before the tower has made its look (Mat falls back to white)
+        const float Face = OutY, Dir = OutY >= YC ? 1.f : -1.f, Inner = RoomY;
+        auto Rod = [&M, &Plain, Dir](FName Key, const FVector& A, const FVector& B, float Width, float Thick)
+        {
+            const FVector Along = B - A;
+            M.Box(Key, FTransform(FRotationMatrix::MakeFromXZ(Along.GetSafeNormal(), FVector(0.f, Dir, 0.f)).ToQuat(), (A + B) * .5f), FVector(Along.Size() * .5f, Width * .5f, Thick * .5f), Plain);
+        };
+        LBox(TEXT("CT_Oak"), 0, W, Y0, Y1, Bottom, H, Plain);
+        for (int32 K = 0; K < 6; ++K) LBox(TEXT("CT_StoneDeep"), 10.f + 14.f * K, 11.2f + 14.f * K, Face + Dir * .2f, Face + Dir * 1.f, Bottom, H, Plain);
+        for (const float Z : { 60.f, 180.f }) LBox(TEXT("CT_Iron"), 4.6f, 76.6f, Face + Dir * .5f, Face + Dir * 1.9f, Z - 2.5f, Z + 2.5f, Plain);
+        const FVector Hub(81.6f, Face + Dir * 2.6f, 130.f);
+        for (int32 K = 0; K < 10; ++K)
+        {
+            const float A0 = 2.f * PI * K / 10, A1 = 2.f * PI * (K + 1) / 10;
+            Rod(TEXT("CT_Iron"), Hub + FVector(FMath::Sin(A0), 0.f, FMath::Cos(A0)) * 7.f, Hub + FVector(FMath::Sin(A1), 0.f, FMath::Cos(A1)) * 7.f, 1.4f, 1.4f);
+        }
+        if (Flags & Astragal) LBox(TEXT("CT_Iron"), W - 1.8f, W + 2.2f, Face + Dir * .4f, Face + Dir * 1.6f, Bottom, H, Plain);
+        for (const float Z : { 30.f, 128.f, 226.f }) LBox(TEXT("CT_Oak"), 5.f, W - 5.f, Inner, Inner - Dir * 2.5f, Z - 8.f, Z + 8.f, Plain);
+        for (const FVector2D& Span : { FVector2D(40.f, 118.f), FVector2D(138.f, 216.f) })
+            Rod(TEXT("CT_Oak"), FVector(10.f, Inner - Dir * 1.25f, Span.X), FVector(W - 10.f, Inner - Dir * 1.25f, Span.Y), 12.f, 2.5f);
     }
     else
     {

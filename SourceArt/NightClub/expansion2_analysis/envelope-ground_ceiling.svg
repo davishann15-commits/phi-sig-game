@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1650" height="1350" viewBox="-2300 -2200 1650 1350">
+<rect x="-2300" y="-2200" width="1650" height="1350" fill="#fff"/>
+<rect x="-2212.51" y="-1509.03" width="722.51" height="535.53" fill="#fde68a" fill-opacity=".35" stroke="black" stroke-width="3"/>
+<path d="M -1447.3801208496095 -924.6600000000001 L -1447.3800191039254 635.6533070430971" stroke="#1d4ed8" stroke-width="1.5" opacity=".45"><title>COL_Entrance_p0_m1_Solid</title></path>
+<path d="M -1399.8600000000001 -631.6931861934877 L -1399.8600000000001 -924.6600000000001" stroke="#1d4ed8" stroke-width="1.5" opacity=".45"><title>COL_Entrance_p0_m1_Solid</title></path>
+<path d="M -1399.8600000000001 -924.6600000000001 L -1439.868132650746 -924.6600000000001" stroke="#1d4ed8" stroke-width="1.5" opacity=".45"><title>COL_Entrance_p0_m1_Solid</title></path>
+<path d="M -1439.868132650746 -924.6600000000001 L -1447.3801208496095 -924.6600000000001" stroke="#1d4ed8" stroke-width="1.5" opacity=".45"><title>COL_Entrance_p0_m1_Solid</title></path>
+<path d="M -685.9301165771485 -1033.272595451518 L -685.9301165771485 -990.2665338134767" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -685.9301165771485 -1033.272595451518 L -685.9301165771485 -1423.8865942382813" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M 77.62254901824167 -1423.8865253999413 L -685.9301165771485 -1423.8865942382813" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -685.9301165771485 -990.2665338134767 L 37.38189394080325 -990.2665338134767" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -1446.2501770019533 -869.4864129638672 L -1446.2501770019533 -868.4490704171876" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -1446.2501770019533 -868.4490704171876 L -1446.2501770019533 -651.686473388672" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -1405.8001202742525 -652.7234044705128 L -1405.8000000000002 -869.4864129638672" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -1405.8000000000002 -869.4864129638672 L -1405.9926573980715 -869.4864129638672" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -1405.9926573980715 -869.4864129638672 L -1446.2501770019533 -869.4864129638672" stroke="#15803d" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m1_Solid</title></path>
+<path d="M -2228.3502978515626 -930.8670776367188 L -2228.35014772085 -1115.3476595439845" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -2228.35014772085 -1115.3476595439845 L -2228.3498144531254 -1524.8668740975713" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -1428.430056152344 -655.3486210354822 L -1428.430056152344 -930.8667755126954" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -2228.3498144531254 -1524.8668740975713 L -2249.80418044535 -1524.8668744512024" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -2249.80418044535 -1524.8668744512024 L -2295.670056152344 -1524.8668752067406" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -2295.670056152344 -1524.8668752067406 L -2387.893402937801 -1524.8668767263869" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -1428.430056152344 -930.8667755126954 L -1551.5721682852914 -930.8668407557203" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -1551.5721682852914 -930.8668407557203 L -1998.6701770019533 -930.8670776367188" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -1998.6701770019533 -930.8670776367188 L -2040.6422039869567 -930.8670776367188" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -2040.6422039869567 -930.8670776367188 L -2147.1702978515627 -930.8670776367188" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -2147.1702978515627 -930.8670776367188 L -2171.564316116315 -930.8670776367188" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -2171.564316116315 -930.8670776367188 L -2228.3502978515626 -930.8670776367188" stroke="#7e22ce" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_m2_Solid</title></path>
+<path d="M -1423.6201208496095 -685.0969003136277 L -1423.6201208496095 -924.6601208496095" stroke="#0e7490" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_p0_Solid</title></path>
+<path d="M -489.5718618176991 -924.6601208496095 L -1423.6201208496095 -924.6601208496095" stroke="#0e7490" stroke-width="1.5" opacity=".45"><title>COL_Upper_m1_p0_Solid</title></path>
+<path d="M -1447.0418214032422 -922.9545806059339 L -1447.3801208496095 -921.6903873033096" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1447.0418214032422 -922.9545806059339 L -1446.983250732422 -923.1734537095596" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1446.0540604138375 -924.102747042592 L -1446.983250732422 -923.1734537095596" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1446.0540604138375 -924.102747042592 L -1445.8931872558596 -924.2636380357314" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1444.6289939532353 -924.601834467651 L -1445.8931872558596 -924.2636380357314" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1444.6289939532353 -924.601834467651 L -1444.4101208496095 -924.660369468148" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1401.5659275469852 -924.3221730362285 L -1402.8301208496096 -924.660369468148" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1401.5659275469852 -924.3221730362285 L -1401.3470544433594 -924.2636380357314" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1400.417761110327 -923.3343962099229 L -1401.3470544433594 -924.2636380357314" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1400.417761110327 -923.3343962099229 L -1400.2568701171876 -923.1735052167835" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1399.9185706708204 -921.9092604069355 L -1400.2568701171876 -923.1735052167835" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1399.9185706708204 -921.9092604069355 L -1399.8600000000001 -921.6903873033096" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1402.8301208496096 -924.660369468148 L -1438.2736837956747 -924.660369468148" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1438.2736837956747 -924.660369468148 L -1444.4101208496095 -924.660369468148" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1447.3801208496095 -921.6903873033096 L -1447.3800178357728 653.0071898146256" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -1399.8600000000001 -649.0555012224806 L -1399.8600000000001 -921.6903873033096" stroke="#a16207" stroke-width="1.5" opacity=".85"><title>SM_Entrance_p0_m1_Solid</title></path>
+<path d="M -685.9301165771485 -1033.2779254812672 L -685.9301165771485 -990.266721048565" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -685.9301165771485 -1033.2779254812672 L -685.9301165771485 -1423.8867150878907" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M 77.73444517416056 -1423.8867150878907 L -685.9301165771485 -1423.8867150878907" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -685.9301165771485 -990.266721048565 L 37.4658160577593 -990.2667150878907" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1445.7446595936901 -869.2331947772909 L -1445.6562011718752 -869.2611341553412" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1445.7446595936901 -869.2331947772909 L -1445.9207445399365 -869.1776017278115" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1445.9411844914837 -869.1571701021103 L -1445.9306714404695 -869.167092780227" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1445.9306714404695 -869.167092780227 L -1445.9207445399365 -869.1776017278115" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1445.996796353898 -868.981160053757 L -1446.024637329034 -868.8927392578125" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1445.996796353898 -868.981160053757 L -1445.9411844914837 -869.1571701021103" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1406.053501497665 -868.981160053757 L -1406.0256605225288 -868.8927392578125" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1406.053501497665 -868.981160053757 L -1406.1091133600792 -869.1571701021103" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1406.1196223076638 -869.167092780227 L -1406.1091133600792 -869.1571701021103" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1406.1295449857805 -869.1776017278115 L -1406.1196223076638 -869.167092780227" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1406.305555034134 -869.2331947772909 L -1406.3939758300783 -869.2611341553412" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1406.1295449857805 -869.1776017278115 L -1406.305555034134 -869.2331947772909" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1445.6562011718752 -869.2611341553412 L -1419.3227710072479 -869.2611341553412" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1419.3227710072479 -869.2611341553412 L -1406.3939758300783 -869.2611341553412" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1406.0256605225288 -868.8927392578125 L -1406.025701038603 -723.5693094821726" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -1446.0246174480792 -797.5835463450685 L -1446.024637329034 -868.8927392578125" stroke="#7e22ce" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m1_Solid</title></path>
+<path d="M -2228.3502978515626 -930.8673193359376 L -2228.3501477146992 -1115.3554597011291" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -2228.3501477146992 -1115.3554597011291 L -2228.3498144531254 -1524.8671157986341" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -1428.430056152344 -655.3517442985071 L -1428.430056152344 -930.8670172119141" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -2228.3498144531254 -1524.8671157986341 L -2249.8052171880877 -1524.8671161522823" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -2249.8052171880877 -1524.8671161522823 L -2295.670056152344 -1524.8671169078034" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -2295.670056152344 -1524.8671169078034 L -2387.897733610427 -1524.867118427521" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -1428.430056152344 -930.8670172119141 L -1551.579244395328 -930.8670824586881" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -1551.579244395328 -930.8670824586881 L -1998.6701770019533 -930.8673193359376" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -1998.6701770019533 -930.8673193359376 L -2040.6439385582883 -930.8673193359376" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -2040.6439385582883 -930.8673193359376 L -2147.1702978515627 -930.8673193359376" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -2147.1702978515627 -930.8673193359376 L -2171.5652555456136 -930.8673193359376" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -2171.5652555456136 -930.8673193359376 L -2228.3502978515626 -930.8673193359376" stroke="#0e7490" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_m2_Solid</title></path>
+<path d="M -1423.6201208496095 -685.1001076496389 L -1423.6201208496095 -924.6604229736329" stroke="#be185d" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_p0_Solid</title></path>
+<path d="M -489.54863629647525 -924.6604625922563 L -1423.6201208496095 -924.6604229736329" stroke="#be185d" stroke-width="1.5" opacity=".85"><title>SM_Upper_m1_p0_Solid</title></path>
+<path d="M -1489.999755859375 -1499.887563431838 L -1489.999755859375 -961.5001831054688" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1489.999755859375 -1499.887563431838 L -1489.999755859375 -1521.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1478.453243865538 -1521.0269775390625 L -1489.999755859375 -1521.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1478.453243865538 -1521.0269775390625 L -1477.9998779296875 -1521.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1477.9998779296875 -982.6395972126932 L -1477.9998779296875 -1521.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1477.9998779296875 -982.6395972126932 L -1477.9998779296875 -961.5001831054688" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1489.5463899235244 -961.5001831054688 L -1477.9998779296875 -961.5001831054688" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1489.5463899235244 -961.5001831054688 L -1489.999755859375 -961.5001831054688" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.509765625 -1520.5737290616007 L -2228.509765625 -1509.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.509765625 -1520.5737290616007 L -2228.509765625 -1521.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1517.9013131647216 -1521.0269821509862 L -2228.509765625 -1521.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1517.9013131647216 -1521.0269821509862 L -1489.999755859375 -1521.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1489.999755859375 -1509.4803480868368 L -1489.999755859375 -1521.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1489.999755859375 -1509.4803480868368 L -1489.999755859375 -1509.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2200.6082083196534 -1509.0270949974513 L -1489.999755859375 -1509.0269775390625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2200.6082083196534 -1509.0270949974513 L -2228.509765625 -1509.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.510009765625 -973.0470520863959 L -2228.510009765625 -961.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.510009765625 -973.0470520863959 L -2228.510009765625 -973.5004272460938" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1517.901322388569 -973.500309787705 L -2228.510009765625 -973.5004272460938" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1517.901322388569 -973.500309787705 L -1489.999755859375 -973.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1489.999755859375 -961.9535582651666 L -1489.999755859375 -973.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -1489.999755859375 -961.9535582651666 L -1489.999755859375 -961.5001831054688" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2200.608443236431 -961.5003005638575 L -1489.999755859375 -961.5001831054688" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2200.608443236431 -961.5003005638575 L -2228.510009765625 -961.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.509765625 -1507.4392926808741 L -2228.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.509765625 -1507.4392926808741 L -2228.509765625 -1509.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2213.114259688699 -1509.027099609375 L -2228.509765625 -1509.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2213.114259688699 -1509.027099609375 L -2212.509765625 -1509.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2212.509765625 -1468.5881731394384 L -2212.509765625 -1509.027099609375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2212.509765625 -1468.5881731394384 L -2212.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2227.905271561301 -1467.0003662109375 L -2212.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2227.905271561301 -1467.0003662109375 L -2228.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.510009765625 -1276.118277465394 L -2228.510009765625 -973.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.510009765625 -1276.118277465394 L -2228.510009765625 -1288.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2213.114503829324 -1288.0003662109375 L -2228.510009765625 -1288.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2213.114503829324 -1288.0003662109375 L -2212.510009765625 -1288.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2212.510009765625 -985.3823939213248 L -2212.510009765625 -1288.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2212.510009765625 -985.3823939213248 L -2212.510009765625 -973.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2227.905515701926 -973.5003051757812 L -2212.510009765625 -973.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2227.905515701926 -973.5003051757812 L -2228.510009765625 -973.5003051757812" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.509793301484 -1446.7083971907125 L -2228.510009765625 -1288.000244140625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2228.509793301484 -1446.7083971907125 L -2228.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2214.3235716747863 -1467.0003662109375 L -2228.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2214.3235716747863 -1467.0003662109375 L -2212.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2212.509982089141 -1308.29221316085 L -2212.509765625 -1467.0003662109375" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2212.509982089141 -1308.29221316085 L -2212.510009765625 -1288.000244140625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2226.6962037158387 -1288.000244140625 L -2212.510009765625 -1288.000244140625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M -2226.6962037158387 -1288.000244140625 L -2228.510009765625 -1288.000244140625" stroke="#7f1d1d" stroke-width="1.5" opacity=".85"><title>NightClub_SM_NC_LowerRoomShell</title></path>
+<path d="M-2200 -2200V-850" stroke="gray" opacity=".1"/><text x="-2200" y="-870" font-size="14">-2200</text>
+<path d="M-2100 -2200V-850" stroke="gray" opacity=".1"/><text x="-2100" y="-870" font-size="14">-2100</text>
+<path d="M-2000 -2200V-850" stroke="gray" opacity=".1"/><text x="-2000" y="-870" font-size="14">-2000</text>
+<path d="M-1900 -2200V-850" stroke="gray" opacity=".1"/><text x="-1900" y="-870" font-size="14">-1900</text>
+<path d="M-1800 -2200V-850" stroke="gray" opacity=".1"/><text x="-1800" y="-870" font-size="14">-1800</text>
+<path d="M-1700 -2200V-850" stroke="gray" opacity=".1"/><text x="-1700" y="-870" font-size="14">-1700</text>
+<path d="M-1600 -2200V-850" stroke="gray" opacity=".1"/><text x="-1600" y="-870" font-size="14">-1600</text>
+<path d="M-1500 -2200V-850" stroke="gray" opacity=".1"/><text x="-1500" y="-870" font-size="14">-1500</text>
+<path d="M-1400 -2200V-850" stroke="gray" opacity=".1"/><text x="-1400" y="-870" font-size="14">-1400</text>
+<path d="M-1300 -2200V-850" stroke="gray" opacity=".1"/><text x="-1300" y="-870" font-size="14">-1300</text>
+<path d="M-1200 -2200V-850" stroke="gray" opacity=".1"/><text x="-1200" y="-870" font-size="14">-1200</text>
+<path d="M-1100 -2200V-850" stroke="gray" opacity=".1"/><text x="-1100" y="-870" font-size="14">-1100</text>
+<path d="M-1000 -2200V-850" stroke="gray" opacity=".1"/><text x="-1000" y="-870" font-size="14">-1000</text>
+<path d="M-900 -2200V-850" stroke="gray" opacity=".1"/><text x="-900" y="-870" font-size="14">-900</text>
+<path d="M-800 -2200V-850" stroke="gray" opacity=".1"/><text x="-800" y="-870" font-size="14">-800</text>
+<path d="M-700 -2200V-850" stroke="gray" opacity=".1"/><text x="-700" y="-870" font-size="14">-700</text>
+<path d="M-2300 -2200H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-2200" font-size="14">-2200</text>
+<path d="M-2300 -2100H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-2100" font-size="14">-2100</text>
+<path d="M-2300 -2000H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-2000" font-size="14">-2000</text>
+<path d="M-2300 -1900H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1900" font-size="14">-1900</text>
+<path d="M-2300 -1800H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1800" font-size="14">-1800</text>
+<path d="M-2300 -1700H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1700" font-size="14">-1700</text>
+<path d="M-2300 -1600H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1600" font-size="14">-1600</text>
+<path d="M-2300 -1500H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1500" font-size="14">-1500</text>
+<path d="M-2300 -1400H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1400" font-size="14">-1400</text>
+<path d="M-2300 -1300H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1300" font-size="14">-1300</text>
+<path d="M-2300 -1200H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1200" font-size="14">-1200</text>
+<path d="M-2300 -1100H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1100" font-size="14">-1100</text>
+<path d="M-2300 -1000H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-1000" font-size="14">-1000</text>
+<path d="M-2300 -900H-650" stroke="gray" opacity=".1"/><text x="-2280" y="-900" font-size="14">-900</text>
+</svg>

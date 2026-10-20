@@ -1,0 +1,10 @@
+{
+  "prepared_only": true,
+  "legacy_preimage_sha": "c62b10dcd3b7234b41910eebe96d1038ae4521527aa49218562fefe056f41f8f",
+  "look_preimage_sha": "b178d0138a4772ce487df0ece37fb89bcdb97d7aaeae55cc1fe7c182d4a31fae",
+  "legacy_old": "I.At(I.Len * .15f, .5f, StaGround + 120.f)",
+  "legacy_new": "I.At(I.Len * .15f, .5f, HouseStadiumDetail::Enabled()&&HouseStadiumDetail::Step()>=7?119.f:StaGround+120.f)",
+  "look_old": "  FHallImage Slate;Slate.Init(1024,512,{.035f,.075f,.049f});",
+  "look_new": "  if(Step()>=7){FHallImage Crest;Crest.Init(768,512,Purple);\n   Crest.Stroke({{18,18},{750,18},{750,494},{18,494},{18,18}},3,Gold,.85f);Crest.Ellipse({384,206},{151,151},0,Gold);Crest.Ellipse({384,206},{143,143},0,Purple);\n   Crest.Stroke({{329,320},{345,225},{391,123}},43,{.025f,.028f,.025f});Crest.Ellipse({414,116},{45,29},-12,{.025f,.028f,.025f});Crest.Ellipse({404,132},{25,12},18,Cream);Crest.FillPolygon({{450,108},{503,124},{449,137}},Gold);Crest.Ellipse({433,108},{4,4},0,Cream);\n   S::Line(Crest,TEXT(\"FIGHTING GEESE\"),454,56,Gold);HouseStadiumDetailLookImpl::Texture(Look,TEXT(\"CI_StaGeese\"),Crest,.89f,0,nullptr,false);\n  }\n  FHallImage Slate;Slate.Init(1024,512,{.035f,.075f,.049f});",
+  "reason": "The requested oak wainscot cap reaches47worldZ, covering the lower portion of the existing Geese mark(bottom5). Final stage7 finish raises only that painted mark tocentre119,height110(bottom64/top174), above the cap and below the175ceiling, and gives it a higher-resolution invented crest. This is a cosmetic alignment under the owner all-sign/wood requests. Step6/disabled branch, all doors/routes/cameras/lights unchanged. Native stage7 visual/build/performance/final gates mandatory."
+}

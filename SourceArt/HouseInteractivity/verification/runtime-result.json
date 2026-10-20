@@ -1,0 +1,856 @@
+{
+	"passed": true,
+	"detail": "Native weapon hits, movable/throwable furniture, held destruction release, one-count house damage, parked bodies, authored variants and reactive fixtures passed.",
+	"stage": 20,
+	"seconds": 44.351946197450161,
+	"method": "Native sauce and douli flights from the real character weapon input; existing physics-handle grab and throw; production damage callback while held; installed asset audit and representative variant. Transient setup outside the house, isolated UserDir, no map saves.",
+	"installedProps": 513,
+	"installedMovables": 499,
+	"installedBreakables": 513,
+	"installedBrokenVariants": 513,
+	"initiallySimulatingProps": 0,
+	"idlePropsStable": true,
+	"nativeSauceBrokeProp": true,
+	"nativeDouliBrokeProp": true,
+	"repeatDamageCountedOnce": true,
+	"heldBreakReleasedHandle": true,
+	"nativeThrownPropBrokeTarget": true,
+	"nativeThrowSpeedCmPerSecond": 774.2767333984375,
+	"authoredBrokenVariantVerified": true,
+	"wallPictureDetachedIntactThenBrokeOnce": true,
+	"detachedPictureFellCm": 29.737707138061523,
+	"supportedContentsWokeAndFell": true,
+	"supportedCupFallCm": 117.29428863525391,
+	"supportSeparationCm": 356.91653442382812,
+	"sturdyPieceRequiredRepeatedHits": true,
+	"sturdyWallMountRequiredRepeatedHits": true,
+	"threeDamageStagesAndHeldStageRelease": true,
+	"authoredDamageStagesVerified": true,
+	"brokenFurnitureAllowsPlayerCapsule": true,
+	"representativeAuthoredProp": "SMV_GR_ClubChair1_Solid",
+	"totalBrokenCount": 40,
+	"fixtures":
+	{
+		"curtain_open_progress": 1,
+		"curtain_anchor_delta_cm": 0,
+		"curtain_closed_progress": 0,
+		"glass_first_hit_crack_lines": 30,
+		"glass_second_hit_crack_lines": 64,
+		"glass_collision_removed": true,
+		"glass_shard_count": 56,
+		"glass_count_delta_after_repeated_hit": 1,
+		"lamp_physics_impacts": 1,
+		"lamp_peak_swing_degrees": 7.1744060516357422,
+		"lamp_settled_swing_degrees": 0.0019842023029923439,
+		"lamp_anchor_delta_cm": 0,
+		"porch_door_id": "Porch_p0_m1_01",
+		"porch_cracked_capture": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/porch_glass_first_crack.png",
+		"porch_shattered_capture": "/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/porch_glass_shattered.png",
+		"porch_equipped_weapon_shattered_glass": true,
+		"porch_first_second_weapon_hits_cracked": true,
+		"porch_weapon_throws": 3,
+		"porch_pane_clear_frame_solid": true,
+		"porch_player_capsule_passes_broken_opening": true,
+		"tested_capsule_radius_cm": 32,
+		"tested_capsule_halfheight_cm": 88.737152099609375,
+		"porch_test_capsule_feet_z": 2.0000762939453125,
+		"porch_broken_frame_mesh": "HI_BrokenPorchFrame_p0_m1_01",
+		"porch_opens_closes_after_break": true,
+		"fixed_window_capsule_audit": [
+			{
+				"fixture_id": "SM_Entrance_m1_m1_Glass__001",
+				"actor": "HouseReactiveFixture_0",
+				"capsule_posture": "standing",
+				"capsule_halfheight_cm": 88.737152099609375,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-33.300 Y=-840.600 Z=103.550",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-33.300 Y=-840.600 Z=103.550",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_m1_m1_Glass__003",
+				"actor": "HouseReactiveFixture_2",
+				"capsule_posture": "standing",
+				"capsule_halfheight_cm": 88.737152099609375,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-994.500 Y=-840.600 Z=137.100",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-994.500 Y=-840.600 Z=137.100",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_m1_m1_Glass__004",
+				"actor": "HouseReactiveFixture_3",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-436.500 Y=-840.600 Z=126.600",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-436.500 Y=-840.600 Z=126.600",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_m1_p0_Glass__001",
+				"actor": "HouseReactiveFixture_4",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=972.900 Y=-840.600 Z=131.600",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=972.900 Y=-840.600 Z=131.600",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_m1_p0_Glass__002",
+				"actor": "HouseReactiveFixture_5",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=456.300 Y=-840.600 Z=126.600",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=456.300 Y=-840.600 Z=126.600",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_m1_p2_Glass__001",
+				"actor": "HouseReactiveFixture_6",
+				"capsule_posture": "standing",
+				"capsule_halfheight_cm": 88.737152099609375,
+				"has_breakaway_grille": false,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2941.054 Y=-965.150 Z=101.755",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2941.054 Y=-965.150 Z=101.755",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_m1_p2_Glass__002",
+				"actor": "HouseReactiveFixture_7",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2940.580 Y=-322.700 Z=116.010",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2940.580 Y=-322.700 Z=116.010",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_399",
+						"prop_id": "SMF_Entrance_ALL__107",
+						"prop_name": "loose furnishing",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_p0_p1_Glass__002",
+				"actor": "HouseReactiveFixture_13",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2661.588 Y=1276.200 Z=117.150",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2661.588 Y=1276.200 Z=117.150",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_p0_p1_Glass__003",
+				"actor": "HouseReactiveFixture_14",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=1661.328 Y=1276.200 Z=110.235",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=1661.328 Y=1276.200 Z=110.235",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_p0_p2_Glass__001",
+				"actor": "HouseReactiveFixture_15",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2940.087 Y=345.766 Z=116.010",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2940.087 Y=345.766 Z=116.010",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_440",
+						"prop_id": "SMF_Entrance_ALL__159",
+						"prop_name": "loose furnishing",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Entrance_p0_p2_Glass__002",
+				"actor": "HouseReactiveFixture_16",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2939.600 Y=1005.199 Z=116.010",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2939.600 Y=1005.199 Z=116.010",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_441",
+						"prop_id": "SMF_Entrance_ALL__160",
+						"prop_name": "loose furnishing",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m1_m1_Glass__002",
+				"actor": "HouseReactiveFixture_18",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-437.400 Y=-840.600 Z=436.466",
+				"neighboring_panes_within_sweep_bounds": [
+					{
+						"fixture_id": "SM_Upper_m1_m1_Glass__004",
+						"pane_center_cm": "X=-493.973 Y=-900.242 Z=440.142",
+						"center_distance_cm": 82.28723798127146,
+						"also_shattered_for_passage_test": true
+					}
+				],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-437.400 Y=-840.600 Z=436.466",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": false,
+						"blocking_actor": "StaticMeshActor_49",
+						"blocking_component": "StaticMeshComponent0"
+					},
+					{
+						"lateral_offset_cm": 36.099998474121094,
+						"capsule_center_cm": "X=-473.500 Y=-840.600 Z=436.466",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 36.099998474121094,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_450",
+						"prop_id": "SMF_Upper_ALL__015",
+						"prop_name": "furniture 3",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m1_m1_Glass__003",
+				"actor": "HouseReactiveFixture_19",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-986.400 Y=-840.600 Z=436.466",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-986.400 Y=-840.600 Z=436.466",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m1_m1_Glass__004",
+				"actor": "HouseReactiveFixture_20",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-493.973 Y=-900.242 Z=440.142",
+				"neighboring_panes_within_sweep_bounds": [
+					{
+						"fixture_id": "SM_Upper_m1_m1_Glass__002",
+						"pane_center_cm": "X=-437.400 Y=-840.600 Z=436.466",
+						"center_distance_cm": 82.28723798127146,
+						"also_shattered_for_passage_test": true
+					}
+				],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-493.973 Y=-900.242 Z=440.142",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": false,
+						"blocking_actor": "StaticMeshActor_49",
+						"blocking_component": "StaticMeshComponent0"
+					},
+					{
+						"lateral_offset_cm": 27.999984741210938,
+						"capsule_center_cm": "X=-521.973 Y=-900.242 Z=440.142",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": false,
+						"blocking_actor": "StaticMeshActor_49",
+						"blocking_component": "StaticMeshComponent0"
+					},
+					{
+						"lateral_offset_cm": -27.999984741210938,
+						"capsule_center_cm": "X=-465.973 Y=-900.242 Z=440.142",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": -27.999984741210938,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_450",
+						"prop_id": "SMF_Upper_ALL__015",
+						"prop_name": "furniture 3",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m1_p0_Glass__001",
+				"actor": "HouseReactiveFixture_21",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": false,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=62.227 Y=-919.800 Z=435.833",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=62.227 Y=-919.800 Z=435.833",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": false,
+						"blocking_actor": "StaticMeshActor_52",
+						"blocking_component": "StaticMeshComponent0"
+					},
+					{
+						"lateral_offset_cm": 35.199996948242188,
+						"capsule_center_cm": "X=62.227 Y=-884.600 Z=435.833",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": false,
+						"blocking_actor": "ExistingHouseDoor_14",
+						"blocking_component": "OriginalDoorLeaf"
+					},
+					{
+						"lateral_offset_cm": -35.199996948242188,
+						"capsule_center_cm": "X=62.227 Y=-955.000 Z=435.833",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": -35.199996948242188,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m1_p0_Glass__003",
+				"actor": "HouseReactiveFixture_23",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=986.400 Y=-840.600 Z=436.466",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=986.400 Y=-840.600 Z=436.466",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m1_p0_Glass__004",
+				"actor": "HouseReactiveFixture_24",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=450.000 Y=-840.600 Z=436.466",
+				"neighboring_panes_within_sweep_bounds": [
+					{
+						"fixture_id": "SM_Upper_m1_p0_Glass__005",
+						"pane_center_cm": "X=458.227 Y=-900.242 Z=442.927",
+						"center_distance_cm": 60.552586907215257,
+						"also_shattered_for_passage_test": true
+					}
+				],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=450.000 Y=-840.600 Z=436.466",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m1_p0_Glass__005",
+				"actor": "HouseReactiveFixture_25",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=458.227 Y=-900.242 Z=442.927",
+				"neighboring_panes_within_sweep_bounds": [
+					{
+						"fixture_id": "SM_Upper_m1_p0_Glass__004",
+						"pane_center_cm": "X=450.000 Y=-840.600 Z=436.466",
+						"center_distance_cm": 60.552586907215257,
+						"also_shattered_for_passage_test": true
+					}
+				],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=458.227 Y=-900.242 Z=442.927",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m2_p0_Glass__001",
+				"actor": "HouseReactiveFixture_26",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=1310.167 Y=-1615.742 Z=452.313",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=1310.167 Y=-1615.742 Z=452.313",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m2_p1_Glass__001",
+				"actor": "HouseReactiveFixture_27",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2160.307 Y=-1852.442 Z=424.000",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2160.307 Y=-1852.442 Z=424.000",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_486",
+						"prop_id": "SMF_Upper_ALL__057",
+						"prop_name": "loose furnishing",
+						"component": "Body",
+						"can_be_moved": true
+					},
+					{
+						"actor": "HouseInteractiveProp_460",
+						"prop_id": "SMF_Upper_ALL__025",
+						"prop_name": "furniture 13",
+						"component": "Body",
+						"can_be_moved": true
+					},
+					{
+						"actor": "HouseInteractiveProp_488",
+						"prop_id": "SMF_Upper_ALL__059",
+						"prop_name": "loose furnishing",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_m2_p2_Glass__001",
+				"actor": "HouseReactiveFixture_28",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2933.227 Y=-1553.642 Z=456.222",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2933.227 Y=-1553.642 Z=456.222",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_489",
+						"prop_id": "SMF_Upper_ALL__060",
+						"prop_name": "loose furnishing",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_p0_m2_Glass__001",
+				"actor": "HouseReactiveFixture_31",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-1626.173 Y=1263.420 Z=411.106",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-1626.173 Y=1263.420 Z=411.106",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_p0_m2_Glass__002",
+				"actor": "HouseReactiveFixture_32",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-2743.973 Y=1310.158 Z=445.623",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-2743.973 Y=1310.158 Z=445.623",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_136",
+						"prop_id": "BR_SM_Bedroom_TwinSpindleBed__001",
+						"prop_name": "BR_SM_Bedroom_TwinSpindleBed",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_p0_m3_Glass__001",
+				"actor": "HouseReactiveFixture_33",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-2986.973 Y=1036.558 Z=444.979",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-2986.973 Y=1036.558 Z=444.979",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_136",
+						"prop_id": "BR_SM_Bedroom_TwinSpindleBed__001",
+						"prop_name": "BR_SM_Bedroom_TwinSpindleBed",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_p0_m3_Glass__002",
+				"actor": "HouseReactiveFixture_34",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=-2986.973 Y=53.758 Z=442.371",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=-2986.973 Y=53.758 Z=442.371",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_p0_p1_Glass__001",
+				"actor": "HouseReactiveFixture_37",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=1504.027 Y=1310.158 Z=453.429",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=1504.027 Y=1310.158 Z=453.429",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_p0_p1_Glass__002",
+				"actor": "HouseReactiveFixture_38",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=1990.027 Y=1310.158 Z=454.596",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": true,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=1990.027 Y=1310.158 Z=454.596",
+						"passes_without_moving_furniture": true,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [],
+				"permanent_opening_clear_after_moving_furniture": true
+			},
+			{
+				"fixture_id": "SM_Upper_p0_p2_Glass__001",
+				"actor": "HouseReactiveFixture_39",
+				"capsule_posture": "crouching",
+				"capsule_halfheight_cm": 54,
+				"has_breakaway_grille": true,
+				"intact_blocks_capsule": true,
+				"pane_center_cm": "X=2920.627 Y=1097.758 Z=456.782",
+				"neighboring_panes_within_sweep_bounds": [],
+				"shattered_capsule_passes": false,
+				"available_lateral_passage_candidates": [
+					{
+						"lateral_offset_cm": 0,
+						"capsule_center_cm": "X=2920.627 Y=1097.758 Z=456.782",
+						"passes_without_moving_furniture": false,
+						"permanent_opening_clear": true
+					}
+				],
+				"passing_lateral_offset_cm": 0,
+				"movable_furniture_obstacles": [
+					{
+						"actor": "HouseInteractiveProp_468",
+						"prop_id": "SMF_Upper_ALL__033",
+						"prop_name": "furniture 21",
+						"component": "Body",
+						"can_be_moved": true
+					}
+				],
+				"permanent_opening_clear_after_moving_furniture": true
+			}
+		],
+		"fixed_windows_tested": 28,
+		"fixed_windows_standing_tested": 3,
+		"fixed_windows_crouching_tested": 25,
+		"fixed_windows_with_movable_furniture_obstacles": 10,
+		"all_capsule_sized_fixed_panes_audited": true,
+		"all_intact_controls_captured_before_any_fixed_pane_breaks": true,
+		"passed": true
+	},
+	"captures": [
+		"/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/intact_before_weapon.png",
+		"/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/broken_after_sauce.png",
+		"/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/authored_intact_variant.png",
+		"/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/authored_damaged_variant.png",
+		"/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/authored_heavily_damaged_variant.png",
+		"/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/authored_broken_variant.png",
+		"/Users/Stewart/Projects/Senior sendoff/outputs/house-interactivity/runtime-final-4/picture_knocked_off_wall.png"
+	]
+}

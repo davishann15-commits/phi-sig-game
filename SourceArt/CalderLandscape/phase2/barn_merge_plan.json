@@ -1,0 +1,14 @@
+{
+  "scope": "Optional coherent barn draw-component merge before hedgerow detail",
+  "switch": "CalderBarnMergeTrial, or future CalderHedgerowTrial",
+  "default_enabled": false,
+  "preserved": "All geometry/normals/UVs/materials/positions/culls, separate far fence cluster, terrain/collision/tree/trail/lights",
+  "budget": "Farm5 to4; combined current landscape24 to23. Original24 limit unchanged.",
+  "verification": [
+    "DisableUnity build",
+    "Actual sorted source attributes and native geometry before/after",
+    "All four existing farm views plus tree whole/fruit",
+    "Original native terrain/water/woods/cover",
+    "Switch OFF retains five components"
+  ]
+}

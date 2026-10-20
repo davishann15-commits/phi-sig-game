@@ -1,0 +1,12 @@
+    // Accepted camera-only baseline poses. Geometry integration must not move these.
+    { TEXT("detail_stadium_aisle_up"), FVector(5958.87,-12299.70,350.00), FVector(7351.47,-11908.27,860.00), 75.f },
+    { TEXT("detail_stadium_seat_knee"), FVector(6439.66,-11842.48,550.00), FVector(6381.64,-11740.10,539.00), 68.f },
+    { TEXT("detail_stadium_front_rail"), FVector(304.91,-15575.14,350.00), FVector(560.12,-15298.00,0.00), 76.f },
+    { TEXT("detail_stadium_press_50yard"), FVector(2400.00,-13300.00,114.00), FVector(2400.00,-9900.00,1650.00), 63.f },
+    { TEXT("detail_stadium_score_endzone"), FVector(5200.00,-14300.00,114.00), FVector(2400.00,-16966.00,1750.00), 58.f },
+    { TEXT("detail_stadium_bench_chains"), FVector(2750.00,-11275.00,114.00), FVector(2850.00,-11490.00,-10.00), 70.f },
+    { TEXT("detail_stadium_portal"), FVector(245.00,-10110.00,115.00), FVector(1232.00,-9951.00,455.00), 73.f },
+    { TEXT("detail_stadium_concession"), FVector(4236.28,-9927.58,115.00), FVector(4175.94,-10142.26,175.00), 72.f },
+    { TEXT("detail_stadium_turnstiles"), FVector(3838.02,-9235.49,113.00), FVector(3700.76,-9623.47,130.00), 70.f },
+    { TEXT("detail_stadium_locker"), FVector(4342.79,-10560.73,115.00), FVector(5096.13,-10872.15,25.00), 80.f },
+    { TEXT("detail_stadium_tunnel"), FVector(4594.49,-10869.98,115.00), FVector(4301.89,-11193.98,50.00), 75.f },

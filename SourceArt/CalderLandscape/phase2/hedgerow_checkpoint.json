@@ -1,0 +1,68 @@
+{
+  "scope": "Partial first farm-fence hedge integration; existing boundary-box replacement and photographic finish remain unfinished",
+  "default_enabled": false,
+  "whole_master_complete": false,
+  "photo_quality_accepted": false,
+  "final_performance_accepted": false,
+  "source_build": {
+    "log": "Saved/CalderWork/codex_hedgerow_sprays_build.log",
+    "result": "Succeeded",
+    "disable_unity_actions": 213,
+    "seconds": 124.02
+  },
+  "runtime_run": "codex_hedgerow_sprays_views",
+  "native": {
+    "instances": 25,
+    "components": 1,
+    "all_calder_isms": 24,
+    "lod_triangles": [
+      28485,
+      4286,
+      1450
+    ],
+    "first_resident_lod": 0,
+    "wind_materials_registered": 6,
+    "wind_range": 0.907797,
+    "worst_root_gap_cm": 0.004,
+    "terrain_hash": "72564759",
+    "original_tree_crc": "0f3b2bb7",
+    "ground_cover_instances": 57704,
+    "ground_cover_crc": "a9b515e8",
+    "existing_boundary_collision_unchanged": true
+  },
+  "actual_cover_comparison": "Saved/CalderWork/hedgerow_trial/fence_plants/cover_comparison.json",
+  "images": {
+    "this_stage_inspected": 15,
+    "total_diagnostic_inspected": 221,
+    "latest_run": "Saved/CalderWork/runs/codex_hedgerow_sprays_views/visual_review.json",
+    "findings": "Leaf camber softer; field remains sparse and cedar/macro presentation need refinement. No full visual acceptance."
+  },
+  "owned_materials": [
+    {
+      "asset": "M_CalderHedgerow",
+      "instructions": 229,
+      "samples": 2
+    },
+    {
+      "asset": "M_CalderHedgerowFoliage",
+      "instructions": 240,
+      "samples": 2
+    }
+  ],
+  "protected_audit": "Saved/CalderWork/hedgerow_trial/fence_plants/protected_audit.json",
+  "global_fog": "Original and unapplied; direct owner reply pending",
+  "source_sha256": {
+    "Source/SeniorSendoff/HouseCalderHedgerow.cpp": "51abc68e034d4ff9d11ab26848c05293a59319d9515ba8099a88c76b8a89ada3",
+    "Source/SeniorSendoff/HouseCalderHedgerowGeometry.cpp": "2fb6c4ac45ac36d7694dedc3754db40939e14a0675f1afa0998d676d9a2a66f6",
+    "Source/SeniorSendoff/HouseCalderFarm.cpp": "28be9e1cbaadd866acf284dd8b874663052b8337b1dc0717f1d01aad17e2d685",
+    "Source/SeniorSendoff/HouseCalderCover.cpp": "2d9d71a8a0d735192c8cd0250dd9d633ed4c44fca4a1d524002f829b4309efec"
+  },
+  "gates": {
+    "codex_hedgerow_final_off": true,
+    "codex_hedgerow_final_noterrain": true,
+    "codex_hedgerow_final_nolandscape": true,
+    "codex_hedgerow_final_nofarm": true,
+    "codex_hedgerow_final_server": true
+  },
+  "all_fallback_server_gates_pass": true
+}

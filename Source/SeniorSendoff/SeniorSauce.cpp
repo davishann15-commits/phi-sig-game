@@ -180,7 +180,7 @@ void ASeniorSaucePacket::Burst(const FHitResult* Impact)
         AActor* Target=Impact->GetActor();
         const APawn* OtherPawn=Cast<APawn>(Target);
         if(Target && Target->CanBeDamaged() && !(OtherPawn && OtherPawn->IsPlayerControlled()) &&
-            (OtherPawn || Target->ActorHasTag(TEXT("Enemy")) || Target->ActorHasTag(TEXT("HouseBreakable"))))
+            (OtherPawn || Target->ActorHasTag(TEXT("Enemy")) || Target->ActorHasTag(TEXT("HouseBreakable")) || Target->ActorHasTag(TEXT("HouseTree"))))
             UGameplayStatics::ApplyPointDamage(Target,8.f * Pawn->OutgoingDamageMultiplier(),Velocity.GetSafeNormal(),*Impact,Pawn->GetController(),this,UDamageType::StaticClass());
     }
     FVector Point=Impact?FVector(Impact->ImpactPoint):GetActorLocation();

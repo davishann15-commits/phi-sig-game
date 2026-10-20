@@ -1,0 +1,5 @@
+{"views":[
+{"name":"01_Front_Porch","position":{"x":-23,"y":2.0,"z":-0.2},"target":{"x":-12.5,"y":3.5,"z":-0.2},"fieldOfView":65},
+{"name":"02_Right_Porch_End","position":{"x":-17.5,"y":1.6,"z":10.0},"target":{"x":-12.3,"y":4.5,"z":7.5},"fieldOfView":65},
+{"name":"03_Left_Porch_End","position":{"x":-17.5,"y":1.6,"z":-10.5},"target":{"x":-12.3,"y":4.5,"z":-8.0},"fieldOfView":65}
+]}

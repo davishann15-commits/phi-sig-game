@@ -1,0 +1,3114 @@
+{
+  "assets": [
+    {
+      "id": "SM_Entrance_m1_m1_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_m1_m1_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_m1_m1_Glass__003",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_m1_m1_Glass__004",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_m1_p0_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_m1_p0_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_m1_p2_Glass__001",
+      "materials": 1,
+      "faces": 12,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_m1_p2_Glass__002",
+      "materials": 1,
+      "faces": 12,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_m1_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_m1_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_p0_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_p0_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_p1_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_p1_Glass__002",
+      "materials": 1,
+      "faces": 12,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_p1_Glass__003",
+      "materials": 1,
+      "faces": 12,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_p2_Glass__001",
+      "materials": 1,
+      "faces": 12,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Entrance_p0_p2_Glass__002",
+      "materials": 1,
+      "faces": 12,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_m1_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_m1_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_m1_Glass__003",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_m1_Glass__004",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_p0_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_p0_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_p0_Glass__003",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_p0_Glass__004",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m1_p0_Glass__005",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m2_p0_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m2_p1_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_m2_p2_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_m1_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_m1_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_m2_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_m2_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_m3_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_m3_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_p0_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_p0_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_p1_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_p1_Glass__002",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SM_Upper_p0_p2_Glass__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "window"
+    },
+    {
+      "id": "SMV_GR_ClubChair1_Solid__001",
+      "materials": 2,
+      "faces": 6296,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMV_S02_Fidelity_LobbySlingChair0_Solid__001",
+      "materials": 2,
+      "faces": 148,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMV_S03_LowerFidelity_EastGrayArmchairA_Solid__001",
+      "materials": 2,
+      "faces": 4344,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__001",
+      "materials": 2,
+      "faces": 1636,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__002",
+      "materials": 2,
+      "faces": 1636,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__003",
+      "materials": 2,
+      "faces": 1636,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__004",
+      "materials": 2,
+      "faces": 1260,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__005",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__006",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__007",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__008",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__009",
+      "materials": 1,
+      "faces": 356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__010",
+      "materials": 1,
+      "faces": 356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__011",
+      "materials": 1,
+      "faces": 356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__012",
+      "materials": 1,
+      "faces": 356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__013",
+      "materials": 1,
+      "faces": 356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Consoles__014",
+      "materials": 1,
+      "faces": 356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__001",
+      "materials": 4,
+      "faces": 5656,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__002",
+      "materials": 4,
+      "faces": 5656,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__003",
+      "materials": 4,
+      "faces": 5656,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__004",
+      "materials": 4,
+      "faces": 5656,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__005",
+      "materials": 4,
+      "faces": 5656,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__006",
+      "materials": 4,
+      "faces": 5656,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__007",
+      "materials": 3,
+      "faces": 2308,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Conversation__008",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_FarRug__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_FarSeating__001",
+      "materials": 4,
+      "faces": 11552,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_FarSeating__002",
+      "materials": 4,
+      "faces": 8312,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_FarSeating__003",
+      "materials": 4,
+      "faces": 8312,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_GreenRug__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_NearSeating__001",
+      "materials": 4,
+      "faces": 11552,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_NearSeating__002",
+      "materials": 3,
+      "faces": 2496,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_NearSeating__003",
+      "materials": 4,
+      "faces": 8312,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_NearSeating__004",
+      "materials": 2,
+      "faces": 1664,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_NearSeating__005",
+      "materials": 2,
+      "faces": 1664,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_NearSeating__006",
+      "materials": 2,
+      "faces": 1664,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_NearSeating__007",
+      "materials": 2,
+      "faces": 1664,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_RoseRug__001",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Tables__001",
+      "materials": 2,
+      "faces": 2060,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Tables__002",
+      "materials": 2,
+      "faces": 1072,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Tables__003",
+      "materials": 2,
+      "faces": 1072,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Tables__004",
+      "materials": 1,
+      "faces": 944,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_GR3_Tables__005",
+      "materials": 2,
+      "faces": 1664,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_Lounge__001",
+      "materials": 3,
+      "faces": 752,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_Lounge__002",
+      "materials": 6,
+      "faces": 4544,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_Plants__001",
+      "materials": 4,
+      "faces": 1375,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_Plants__002",
+      "materials": 4,
+      "faces": 1375,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__001",
+      "materials": 6,
+      "faces": 11516,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__002",
+      "materials": 2,
+      "faces": 996,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__003",
+      "materials": 2,
+      "faces": 996,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__004",
+      "materials": 2,
+      "faces": 588,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_RefreshmentBar__005",
+      "materials": 2,
+      "faces": 588,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__001",
+      "materials": 6,
+      "faces": 5912,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__002",
+      "materials": 2,
+      "faces": 320,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__003",
+      "materials": 2,
+      "faces": 860,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SM_SpaRoom_TowelStorage__004",
+      "materials": 2,
+      "faces": 296,
+      "behavior": "furniture"
+    },
+    {
+      "id": "Room102_Chair_01__001",
+      "materials": 3,
+      "faces": 2948,
+      "behavior": "furniture"
+    },
+    {
+      "id": "Room102_Chair_31__001",
+      "materials": 3,
+      "faces": 2948,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_Bath_VanityTriple__001",
+      "materials": 6,
+      "faces": 9008,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_Bath_VanityClutter__001",
+      "materials": 8,
+      "faces": 21948,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_Bath_MirrorLightRail__001",
+      "materials": 6,
+      "faces": 5912,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_Bath_black_dispenser_1__001",
+      "materials": 4,
+      "faces": 844,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_Bath_open_toilet_stall_1__001",
+      "materials": 3,
+      "faces": 3400,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_Bath_ceramic_toilet_1__001",
+      "materials": 3,
+      "faces": 2790,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_Bath_UrinalBag__001",
+      "materials": 4,
+      "faces": 2554,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_Bath_orange_shower_frame_1__001",
+      "materials": 4,
+      "faces": 3204,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_Bath_orange_folded_curtain_1__001",
+      "materials": 3,
+      "faces": 18712,
+      "behavior": "curtain"
+    },
+    {
+      "id": "UpBath_Bath_orange_folded_curtain_2__001",
+      "materials": 3,
+      "faces": 18712,
+      "behavior": "curtain"
+    },
+    {
+      "id": "UpBath_SM_Bath_ShowerShelf__001",
+      "materials": 7,
+      "faces": 34820,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_Bath_UtilityShelf__001",
+      "materials": 10,
+      "faces": 7402,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_Bath_TissueTable__001",
+      "materials": 4,
+      "faces": 12032,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_Bath_shower_clothes__001",
+      "materials": 6,
+      "faces": 22460,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_Bath_white_fluorescent_fitting_1__001",
+      "materials": 3,
+      "faces": 908,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_UpBath_BlackRecliner__001",
+      "materials": 5,
+      "faces": 18678,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_UpBath_StickVacuumResting__001",
+      "materials": 6,
+      "faces": 2436,
+      "behavior": "furniture"
+    },
+    {
+      "id": "UpBath_SM_UpBath_FishPoster__001",
+      "materials": 1,
+      "faces": 432,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_FullSpindleBed__001",
+      "materials": 6,
+      "faces": 29172,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_TwinSpindleBed__001",
+      "materials": 6,
+      "faces": 25836,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_BrownReclinerSofa__001",
+      "materials": 4,
+      "faces": 33164,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_OvalCoffeeTable__001",
+      "materials": 2,
+      "faces": 5480,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_OakFourDrawerChest__001",
+      "materials": 3,
+      "faces": 8580,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_StainlessMiniFridge__001",
+      "materials": 3,
+      "faces": 4248,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_WallTelevision__001",
+      "materials": 4,
+      "faces": 1590,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_BlackGamingTable__001",
+      "materials": 4,
+      "faces": 3116,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_ClosetShallowContents__001",
+      "materials": 13,
+      "faces": 50040,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_ClosetDeepContents__001",
+      "materials": 13,
+      "faces": 71696,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_FiveBladeCeilingFan__001",
+      "materials": 6,
+      "faces": 6616,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_SM_Bedroom_CreamCurtainsPartOpen__001",
+      "materials": 4,
+      "faces": 2556,
+      "behavior": "curtain"
+    },
+    {
+      "id": "BR_SM_Bedroom_CreamCurtainsPartOpen__002",
+      "materials": 4,
+      "faces": 2800,
+      "behavior": "curtain"
+    },
+    {
+      "id": "BR_SM_Bedroom_CharcoalCurtainsClosed__001",
+      "materials": 4,
+      "faces": 5372,
+      "behavior": "curtain"
+    },
+    {
+      "id": "BR_SM_Bedroom_CharcoalCurtainsClosed__002",
+      "materials": 4,
+      "faces": 5372,
+      "behavior": "curtain"
+    },
+    {
+      "id": "BR_BedDetail_TexasFlag_01__001",
+      "materials": 1,
+      "faces": 384,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_TennesseeBanner_02__001",
+      "materials": 1,
+      "faces": 384,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_WingedWreath_03__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_CollegiateT_04__001",
+      "materials": 2,
+      "faces": 12,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_ChampionsPennant_05__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_CoronaOval_06__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_VolsHelmet_07__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_FramedCollage_08__001",
+      "materials": 2,
+      "faces": 426,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_VolsPennant_09__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_AmericanWomanFlag_10__001",
+      "materials": 1,
+      "faces": 384,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_XIIICrest_11__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_ClosetArtwork_12__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_TennesseeMiniFlag_13__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_PartyTime_15__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_PhotoComposite_16__001",
+      "materials": 2,
+      "faces": 426,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_RedMusicBanner_17__001",
+      "materials": 1,
+      "faces": 384,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_HookWhiteCap_18__001",
+      "materials": 2,
+      "faces": 5160,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_HookBlackCap_20__001",
+      "materials": 3,
+      "faces": 5160,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_Bed_EntryCoatRack_23__001",
+      "materials": 4,
+      "faces": 34652,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_CoffeeTable_24__001",
+      "materials": 10,
+      "faces": 24968,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_ExtraBasketPlant_25__001",
+      "materials": 4,
+      "faces": 10460,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_Dresser_26__001",
+      "materials": 5,
+      "faces": 10478,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_FridgeTop_27__001",
+      "materials": 6,
+      "faces": 14120,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_GameTable_28__001",
+      "materials": 4,
+      "faces": 12430,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_BedDetail_SM_BedProps_SofaRemote_29__001",
+      "materials": 3,
+      "faces": 2096,
+      "behavior": "furniture"
+    },
+    {
+      "id": "BR_EntryFloorClutter__001",
+      "materials": 7,
+      "faces": 24952,
+      "behavior": "furniture"
+    },
+    {
+      "id": "HallEnd_BudLightFlag__001",
+      "materials": 4,
+      "faces": 7252,
+      "behavior": "furniture"
+    },
+    {
+      "id": "HallEnd_SantaBass__001",
+      "materials": 8,
+      "faces": 5148,
+      "behavior": "furniture"
+    },
+    {
+      "id": "HallEnd_ExitArrowLight__001",
+      "materials": 3,
+      "faces": 542,
+      "behavior": "furniture"
+    },
+    {
+      "id": "HallEnd_RedAlarm__001",
+      "materials": 3,
+      "faces": 422,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_SM_FlushCeilingLight__001",
+      "materials": 2,
+      "faces": 312,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_WhiteStripedDoubleBed__001",
+      "materials": 5,
+      "faces": 35876,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_BlackDoubleBed__001",
+      "materials": 5,
+      "faces": 39692,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_GalanzFridgeAndMicrowave__001",
+      "materials": 9,
+      "faces": 12664,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_OpenDarkWoodDresser__001",
+      "materials": 4,
+      "faces": 10616,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_QuiltedLeatherFuton__001",
+      "materials": 3,
+      "faces": 23372,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_SquareLeatherOttoman__001",
+      "materials": 2,
+      "faces": 2860,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_NightstandAndLamp__001",
+      "materials": 4,
+      "faces": 5312,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_BlackDeskFan__001",
+      "materials": 2,
+      "faces": 6733,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_LargeMottledGrayRug__001",
+      "materials": 1,
+      "faces": 268,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_LightGrommetCurtains__001",
+      "materials": 2,
+      "faces": 7880,
+      "behavior": "curtain"
+    },
+    {
+      "id": "R204_LightGrommetCurtains__002",
+      "materials": 2,
+      "faces": 7880,
+      "behavior": "curtain"
+    },
+    {
+      "id": "R204_OrangeTFlag__001",
+      "materials": 2,
+      "faces": 1600,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_BlackTFlag__001",
+      "materials": 2,
+      "faces": 1600,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_VerticalUSAFlag__001",
+      "materials": 2,
+      "faces": 1600,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_JAWSPoster__001",
+      "materials": 2,
+      "faces": 1202,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_AugustaPoster__001",
+      "materials": 2,
+      "faces": 1202,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_BuschAppleSign__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_CheckeredT__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_WindowSchedule__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_DonationPlaque__001",
+      "materials": 2,
+      "faces": 1202,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_FutonClothingShoesBread__001",
+      "materials": 12,
+      "faces": 8486,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_FutonBackDrapes__001",
+      "materials": 3,
+      "faces": 824,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_BlackCap__001",
+      "materials": 3,
+      "faces": 1048,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_WhiteCap__001",
+      "materials": 3,
+      "faces": 1048,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_BeigeHangingTote__001",
+      "materials": 3,
+      "faces": 1320,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_HangingBackpack__001",
+      "materials": 2,
+      "faces": 924,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_HangingBelt__001",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_ClosetGarmentsBins__001",
+      "materials": 9,
+      "faces": 13304,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_BlackBedLaundryBasket__001",
+      "materials": 10,
+      "faces": 7342,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_FutonSnackCrateSlippers__001",
+      "materials": 6,
+      "faces": 2870,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_CoorsCartonFridge__001",
+      "materials": 2,
+      "faces": 302,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_DresserCupsTumblerRoll__001",
+      "materials": 4,
+      "faces": 3280,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_DresserOpenDrawerLaundry__001",
+      "materials": 1,
+      "faces": 1344,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_SharedNightstandDrinks__001",
+      "materials": 4,
+      "faces": 1240,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_R2_SM_SecondClosetShelf__001",
+      "materials": 2,
+      "faces": 1932,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_R2_BlackBedFootGarments__001",
+      "materials": 8,
+      "faces": 6496,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_R2_ClosetThresholdClothesBox__001",
+      "materials": 11,
+      "faces": 9338,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_R2_SecondClosetClothes__001",
+      "materials": 10,
+      "faces": 12424,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_R2_FutonSideFloorGarments__001",
+      "materials": 7,
+      "faces": 4642,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_R2_EntryIron__001",
+      "materials": 3,
+      "faces": 580,
+      "behavior": "furniture"
+    },
+    {
+      "id": "R204_R2_EntryOutletCable__001",
+      "materials": 4,
+      "faces": 1644,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_Mattress__001",
+      "materials": 3,
+      "faces": 6377,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_Blanket__001",
+      "materials": 1,
+      "faces": 2472,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_CheetosBag__001",
+      "materials": 2,
+      "faces": 1544,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_Crumbs__001",
+      "materials": 1,
+      "faces": 480,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_WaterTrough__001",
+      "materials": 3,
+      "faces": 426,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_FeedBucket__001",
+      "materials": 3,
+      "faces": 2384,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_BrokenBoards__001",
+      "materials": 2,
+      "faces": 548,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_BulkheadLamp__001",
+      "materials": 3,
+      "faces": 484,
+      "behavior": "furniture"
+    },
+    {
+      "id": "PIG_KeepShutSign__001",
+      "materials": 1,
+      "faces": 2,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__001",
+      "materials": 1,
+      "faces": 672,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__002",
+      "materials": 1,
+      "faces": 2568,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__003",
+      "materials": 1,
+      "faces": 256,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__004",
+      "materials": 3,
+      "faces": 3816,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__005",
+      "materials": 1,
+      "faces": 256,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__006",
+      "materials": 4,
+      "faces": 4296,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__007",
+      "materials": 2,
+      "faces": 2164,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__008",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__009",
+      "materials": 5,
+      "faces": 1896,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__010",
+      "materials": 6,
+      "faces": 18252,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__011",
+      "materials": 2,
+      "faces": 1200,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__012",
+      "materials": 5,
+      "faces": 1692,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__013",
+      "materials": 3,
+      "faces": 1604,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__014",
+      "materials": 6,
+      "faces": 6580,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__015",
+      "materials": 6,
+      "faces": 6956,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__016",
+      "materials": 3,
+      "faces": 23632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__017",
+      "materials": 3,
+      "faces": 23632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__018",
+      "materials": 3,
+      "faces": 23632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__019",
+      "materials": 3,
+      "faces": 23632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__020",
+      "materials": 5,
+      "faces": 2632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__021",
+      "materials": 9,
+      "faces": 12220,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__022",
+      "materials": 6,
+      "faces": 5452,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__023",
+      "materials": 4,
+      "faces": 1880,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__024",
+      "materials": 4,
+      "faces": 4008,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__025",
+      "materials": 3,
+      "faces": 15744,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__026",
+      "materials": 2,
+      "faces": 44,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__027",
+      "materials": 7,
+      "faces": 5512,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__028",
+      "materials": 2,
+      "faces": 4296,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__029",
+      "materials": 2,
+      "faces": 1288,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__030",
+      "materials": 1,
+      "faces": 1880,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__031",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__032",
+      "materials": 1,
+      "faces": 3732,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__033",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__034",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__035",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__036",
+      "materials": 1,
+      "faces": 572,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__037",
+      "materials": 3,
+      "faces": 23632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__038",
+      "materials": 3,
+      "faces": 1880,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__039",
+      "materials": 2,
+      "faces": 2852,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__040",
+      "materials": 5,
+      "faces": 2476,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__041",
+      "materials": 3,
+      "faces": 1768,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__042",
+      "materials": 7,
+      "faces": 16356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__043",
+      "materials": 4,
+      "faces": 1692,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__044",
+      "materials": 4,
+      "faces": 660,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__045",
+      "materials": 3,
+      "faces": 504,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__046",
+      "materials": 3,
+      "faces": 444,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__047",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__048",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__049",
+      "materials": 5,
+      "faces": 3196,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__050",
+      "materials": 3,
+      "faces": 3212,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__051",
+      "materials": 3,
+      "faces": 3056,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__052",
+      "materials": 3,
+      "faces": 3196,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__053",
+      "materials": 3,
+      "faces": 564,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__054",
+      "materials": 3,
+      "faces": 564,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__055",
+      "materials": 5,
+      "faces": 573,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__056",
+      "materials": 3,
+      "faces": 564,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__057",
+      "materials": 2,
+      "faces": 564,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__058",
+      "materials": 2,
+      "faces": 408,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__059",
+      "materials": 3,
+      "faces": 564,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__060",
+      "materials": 2,
+      "faces": 1036,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__061",
+      "materials": 3,
+      "faces": 440,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__062",
+      "materials": 2,
+      "faces": 1164,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__063",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__064",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__065",
+      "materials": 4,
+      "faces": 3212,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__066",
+      "materials": 4,
+      "faces": 1128,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__067",
+      "materials": 4,
+      "faces": 1128,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__068",
+      "materials": 4,
+      "faces": 1128,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__069",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__070",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__071",
+      "materials": 4,
+      "faces": 1004,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Basement_ALL__072",
+      "materials": 3,
+      "faces": 456,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__001",
+      "materials": 1,
+      "faces": 3424,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Entrance_ALL__002",
+      "materials": 1,
+      "faces": 1296,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Entrance_ALL__003",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__004",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__005",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__006",
+      "materials": 1,
+      "faces": 300,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__007",
+      "materials": 1,
+      "faces": 1200,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__008",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__009",
+      "materials": 1,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__010",
+      "materials": 1,
+      "faces": 752,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__011",
+      "materials": 1,
+      "faces": 752,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__012",
+      "materials": 1,
+      "faces": 256,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__013",
+      "materials": 2,
+      "faces": 4180,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__014",
+      "materials": 3,
+      "faces": 1692,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__015",
+      "materials": 5,
+      "faces": 3704,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__016",
+      "materials": 3,
+      "faces": 1504,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__017",
+      "materials": 3,
+      "faces": 13112,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__018",
+      "materials": 5,
+      "faces": 5020,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__019",
+      "materials": 2,
+      "faces": 1052,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__020",
+      "materials": 3,
+      "faces": 1504,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__021",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__022",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__023",
+      "materials": 2,
+      "faces": 960,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__024",
+      "materials": 1,
+      "faces": 3428,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__025",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__026",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__027",
+      "materials": 2,
+      "faces": 828,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__028",
+      "materials": 3,
+      "faces": 812,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__029",
+      "materials": 3,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__030",
+      "materials": 3,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__031",
+      "materials": 2,
+      "faces": 1780,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__032",
+      "materials": 2,
+      "faces": 148,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__033",
+      "materials": 2,
+      "faces": 8708,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__034",
+      "materials": 3,
+      "faces": 2148,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__035",
+      "materials": 3,
+      "faces": 4906,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__036",
+      "materials": 1,
+      "faces": 2068,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__037",
+      "materials": 1,
+      "faces": 2068,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__038",
+      "materials": 1,
+      "faces": 1868,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__039",
+      "materials": 1,
+      "faces": 940,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__040",
+      "materials": 1,
+      "faces": 2120,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__041",
+      "materials": 1,
+      "faces": 2120,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__042",
+      "materials": 10,
+      "faces": 13116,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__043",
+      "materials": 2,
+      "faces": 752,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__044",
+      "materials": 4,
+      "faces": 5560,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__045",
+      "materials": 2,
+      "faces": 444,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__046",
+      "materials": 10,
+      "faces": 10696,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__047",
+      "materials": 9,
+      "faces": 2320,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__048",
+      "materials": 1,
+      "faces": 496,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__049",
+      "materials": 4,
+      "faces": 7140,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__050",
+      "materials": 5,
+      "faces": 5398,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__051",
+      "materials": 4,
+      "faces": 4618,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__052",
+      "materials": 4,
+      "faces": 4618,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__053",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__054",
+      "materials": 3,
+      "faces": 1512,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__055",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__056",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__057",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__058",
+      "materials": 2,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__059",
+      "materials": 1,
+      "faces": 2712,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__060",
+      "materials": 9,
+      "faces": 9864,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__061",
+      "materials": 1,
+      "faces": 3428,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__062",
+      "materials": 1,
+      "faces": 3428,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__063",
+      "materials": 3,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__064",
+      "materials": 3,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__065",
+      "materials": 3,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__066",
+      "materials": 3,
+      "faces": 796,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__067",
+      "materials": 5,
+      "faces": 9324,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__068",
+      "materials": 2,
+      "faces": 1020,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__069",
+      "materials": 3,
+      "faces": 952,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__070",
+      "materials": 5,
+      "faces": 6524,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__071",
+      "materials": 2,
+      "faces": 1926,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__072",
+      "materials": 3,
+      "faces": 2632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__073",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__074",
+      "materials": 2,
+      "faces": 2256,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__075",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__076",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__077",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__078",
+      "materials": 2,
+      "faces": 1036,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__079",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__080",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__081",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__082",
+      "materials": 6,
+      "faces": 6068,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__083",
+      "materials": 3,
+      "faces": 1536,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__084",
+      "materials": 2,
+      "faces": 1480,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__085",
+      "materials": 2,
+      "faces": 1576,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__086",
+      "materials": 2,
+      "faces": 2052,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__087",
+      "materials": 2,
+      "faces": 2084,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__088",
+      "materials": 2,
+      "faces": 2084,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__089",
+      "materials": 2,
+      "faces": 2052,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__090",
+      "materials": 1,
+      "faces": 1544,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__091",
+      "materials": 2,
+      "faces": 2052,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__092",
+      "materials": 4,
+      "faces": 1320,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__093",
+      "materials": 2,
+      "faces": 752,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__094",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__095",
+      "materials": 2,
+      "faces": 2320,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__096",
+      "materials": 1,
+      "faces": 48,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__097",
+      "materials": 3,
+      "faces": 8548,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__098",
+      "materials": 3,
+      "faces": 2632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__099",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__100",
+      "materials": 3,
+      "faces": 564,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__101",
+      "materials": 3,
+      "faces": 1316,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__102",
+      "materials": 4,
+      "faces": 1636,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__103",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__104",
+      "materials": 2,
+      "faces": 1048,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__105",
+      "materials": 1,
+      "faces": 32,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__106",
+      "materials": 7,
+      "faces": 3332,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__107",
+      "materials": 2,
+      "faces": 1536,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__108",
+      "materials": 2,
+      "faces": 2068,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__109",
+      "materials": 5,
+      "faces": 14628,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__110",
+      "materials": 6,
+      "faces": 14628,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__111",
+      "materials": 2,
+      "faces": 1036,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__112",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__113",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__114",
+      "materials": 2,
+      "faces": 1480,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__115",
+      "materials": 2,
+      "faces": 1480,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__116",
+      "materials": 2,
+      "faces": 376,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__117",
+      "materials": 4,
+      "faces": 3980,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__118",
+      "materials": 1,
+      "faces": 16,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__119",
+      "materials": 3,
+      "faces": 3596,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__120",
+      "materials": 2,
+      "faces": 1576,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__121",
+      "materials": 2,
+      "faces": 1544,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__122",
+      "materials": 2,
+      "faces": 2068,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__123",
+      "materials": 2,
+      "faces": 1780,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__124",
+      "materials": 2,
+      "faces": 940,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__125",
+      "materials": 2,
+      "faces": 940,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__126",
+      "materials": 5,
+      "faces": 14628,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__127",
+      "materials": 1,
+      "faces": 48,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__128",
+      "materials": 3,
+      "faces": 2756,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__129",
+      "materials": 2,
+      "faces": 1948,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__130",
+      "materials": 1,
+      "faces": 1128,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__131",
+      "materials": 9,
+      "faces": 12588,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__132",
+      "materials": 5,
+      "faces": 1356,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__133",
+      "materials": 7,
+      "faces": 3332,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__134",
+      "materials": 7,
+      "faces": 3332,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__135",
+      "materials": 2,
+      "faces": 4532,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__136",
+      "materials": 4,
+      "faces": 1692,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__137",
+      "materials": 2,
+      "faces": 4284,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__138",
+      "materials": 2,
+      "faces": 3924,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__139",
+      "materials": 2,
+      "faces": 3550,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__140",
+      "materials": 2,
+      "faces": 9964,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__141",
+      "materials": 2,
+      "faces": 6576,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__142",
+      "materials": 2,
+      "faces": 360,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__143",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__144",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__145",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__146",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__147",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__148",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__149",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__150",
+      "materials": 2,
+      "faces": 1564,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Entrance_ALL__151",
+      "materials": 2,
+      "faces": 1900,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__152",
+      "materials": 2,
+      "faces": 1900,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__153",
+      "materials": 2,
+      "faces": 1900,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__154",
+      "materials": 2,
+      "faces": 1900,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__155",
+      "materials": 1,
+      "faces": 32,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__156",
+      "materials": 2,
+      "faces": 1244,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__157",
+      "materials": 6,
+      "faces": 3384,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__158",
+      "materials": 7,
+      "faces": 3384,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__159",
+      "materials": 2,
+      "faces": 1536,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Entrance_ALL__160",
+      "materials": 2,
+      "faces": 1536,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__001",
+      "materials": 1,
+      "faces": 1496,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Upper_ALL__002",
+      "materials": 1,
+      "faces": 1496,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Upper_ALL__003",
+      "materials": 1,
+      "faces": 1496,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Upper_ALL__004",
+      "materials": 1,
+      "faces": 1496,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Upper_ALL__005",
+      "materials": 1,
+      "faces": 1496,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Upper_ALL__006",
+      "materials": 1,
+      "faces": 1496,
+      "behavior": "curtain"
+    },
+    {
+      "id": "SMF_Upper_ALL__007",
+      "materials": 1,
+      "faces": 1316,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__008",
+      "materials": 1,
+      "faces": 8560,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__009",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__010",
+      "materials": 1,
+      "faces": 512,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__011",
+      "materials": 1,
+      "faces": 880,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__012",
+      "materials": 1,
+      "faces": 1760,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__013",
+      "materials": 1,
+      "faces": 1760,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__014",
+      "materials": 1,
+      "faces": 1760,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__015",
+      "materials": 1,
+      "faces": 2632,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__016",
+      "materials": 3,
+      "faces": 3880,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__017",
+      "materials": 7,
+      "faces": 4188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__018",
+      "materials": 3,
+      "faces": 1692,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__019",
+      "materials": 2,
+      "faces": 1764,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__020",
+      "materials": 1,
+      "faces": 144,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__021",
+      "materials": 1,
+      "faces": 272,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__022",
+      "materials": 2,
+      "faces": 524,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__023",
+      "materials": 2,
+      "faces": 4624,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__024",
+      "materials": 4,
+      "faces": 6088,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__025",
+      "materials": 2,
+      "faces": 1956,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__026",
+      "materials": 10,
+      "faces": 23836,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__027",
+      "materials": 3,
+      "faces": 18548,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__028",
+      "materials": 19,
+      "faces": 15916,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__029",
+      "materials": 8,
+      "faces": 4188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__030",
+      "materials": 7,
+      "faces": 29444,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__031",
+      "materials": 1,
+      "faces": 5880,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__032",
+      "materials": 2,
+      "faces": 940,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__033",
+      "materials": 3,
+      "faces": 19232,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__034",
+      "materials": 2,
+      "faces": 1692,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__035",
+      "materials": 3,
+      "faces": 18548,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__036",
+      "materials": 2,
+      "faces": 444,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__037",
+      "materials": 2,
+      "faces": 444,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__038",
+      "materials": 4,
+      "faces": 2728,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__039",
+      "materials": 6,
+      "faces": 4448,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__040",
+      "materials": 7,
+      "faces": 25624,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__041",
+      "materials": 2,
+      "faces": 1140,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__042",
+      "materials": 7,
+      "faces": 25624,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__043",
+      "materials": 8,
+      "faces": 60998,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__044",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__045",
+      "materials": 5,
+      "faces": 3828,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__046",
+      "materials": 3,
+      "faces": 412,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__047",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__048",
+      "materials": 1,
+      "faces": 380,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__049",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__050",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__051",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__052",
+      "materials": 4,
+      "faces": 1996,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__053",
+      "materials": 7,
+      "faces": 1320,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__054",
+      "materials": 1,
+      "faces": 100,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__055",
+      "materials": 4,
+      "faces": 7460,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__056",
+      "materials": 3,
+      "faces": 1428,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__057",
+      "materials": 3,
+      "faces": 6580,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__058",
+      "materials": 3,
+      "faces": 332,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__059",
+      "materials": 2,
+      "faces": 4700,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__060",
+      "materials": 4,
+      "faces": 5372,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__061",
+      "materials": 3,
+      "faces": 10736,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__062",
+      "materials": 3,
+      "faces": 1800,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__063",
+      "materials": 2,
+      "faces": 1140,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__064",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__065",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__066",
+      "materials": 2,
+      "faces": 932,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__067",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__068",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__069",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__070",
+      "materials": 1,
+      "faces": 528,
+      "behavior": "chandelier"
+    },
+    {
+      "id": "SMF_Upper_ALL__071",
+      "materials": 2,
+      "faces": 1136,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__072",
+      "materials": 3,
+      "faces": 412,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__073",
+      "materials": 1,
+      "faces": 188,
+      "behavior": "furniture"
+    },
+    {
+      "id": "SMF_Upper_ALL__074",
+      "materials": 1,
+      "faces": 380,
+      "behavior": "furniture"
+    }
+  ],
+  "ambiguous_materials": [],
+  "passed": true
+}

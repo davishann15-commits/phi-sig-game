@@ -1,0 +1,26 @@
+{
+  "budget_usd": 0,
+  "downloaded_furniture_pack_found": false,
+  "local_roots_checked": [
+    "Content",
+    "/Users/Stewart/Downloads",
+    "/Users/Stewart/Projects/Senior sendoff"
+  ],
+  "fab_candidates": [
+    {
+      "url": "https://www.fab.com/listings/6a235b63-3d05-445a-9502-25afbd21c457",
+      "title": "Indoor Wooden Desk",
+      "observed_free": true,
+      "acquired": false,
+      "used": false
+    },
+    {
+      "url": "https://www.fab.com/listings/1945016c-8094-46d1-9e8f-5d10bbd0c2f1",
+      "title": "Office Chair",
+      "observed_free": true,
+      "acquired": false,
+      "used": false
+    }
+  ],
+  "implemented": "Owned runtime geometry with existing stadium materials. No third-party furniture model was imported, and no purchase/signin occurred."
+}

@@ -1,0 +1,124 @@
+{
+  "introduced_stage": 7,
+  "added_comment": "Owner-requested connected coach office:170cm eyes, prior camera poses preserved.",
+  "views": [
+    {
+      "name": "detail_stadium_coach_entry",
+      "eye": [
+        5011.463,
+        -10995.147,
+        115
+      ],
+      "target": [
+        5257.851,
+        -11220.297,
+        30
+      ],
+      "floor_z": -55,
+      "fov": 75
+    },
+    {
+      "name": "detail_stadium_coach_furniture",
+      "eye": [
+        5213.259,
+        -11204.916,
+        115
+      ],
+      "target": [
+        5343.551,
+        -11183.142,
+        15
+      ],
+      "floor_z": -55,
+      "fov": 75
+    },
+    {
+      "name": "detail_stadium_coach_board",
+      "eye": [
+        5293.421,
+        -11065.495,
+        115
+      ],
+      "target": [
+        5436.071,
+        -11228.932,
+        89
+      ],
+      "floor_z": -55,
+      "fov": 65
+    },
+    {
+      "name": "detail_stadium_coach_phone",
+      "eye": [
+        5299.025,
+        -11032.668,
+        115
+      ],
+      "target": [
+        5385.038,
+        -11113.581,
+        31
+      ],
+      "floor_z": -55,
+      "fov": 52
+    },
+    {
+      "name": "detail_stadium_coach_chair_wall",
+      "eye": [
+        5234.694,
+        -11271.177,
+        115
+      ],
+      "target": [
+        5394.83,
+        -11222.696,
+        39
+      ],
+      "floor_z": -55,
+      "fov": 70
+    },
+    {
+      "name": "detail_stadium_coach_wall",
+      "eye": [
+        5218.974,
+        -11251.738,
+        115
+      ],
+      "target": [
+        5105.89,
+        -11278.887,
+        95
+      ],
+      "floor_z": -55,
+      "fov": 75
+    }
+  ],
+  "footprint": [
+    [
+      5251.054541744159,
+      -11365.355846673607,
+      -55
+    ],
+    [
+      5627.235349335402,
+      -11110.090298665262,
+      -55
+    ],
+    [
+      5324.6889838506495,
+      -10934.748115196111,
+      -55
+    ],
+    [
+      4983.774317021433,
+      -11210.45232262724,
+      -55
+    ]
+  ],
+  "door_origin": [
+    5105.785881991889,
+    -11111.779237862414,
+    0
+  ],
+  "scope": "New coach office explicitly authorized by owner after room identity p2 acceptance; existing routes/doors stay unchanged."
+}

@@ -1,0 +1,839 @@
+[
+  {
+    "x": -1000,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__003"
+    ]
+  },
+  {
+    "x": -1000,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003",
+      "Interactive_SM_GR3_Tables__003"
+    ]
+  },
+  {
+    "x": -1000,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -1000,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -1000,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -1000,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -900,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__003"
+    ]
+  },
+  {
+    "x": -900,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003",
+      "Interactive_SM_GR3_Tables__003"
+    ]
+  },
+  {
+    "x": -900,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -900,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -900,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -900,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -800,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -800,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -800,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -800,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -800,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -700,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -700,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -700,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__003"
+    ]
+  },
+  {
+    "x": -700,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -700,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__002"
+    ]
+  },
+  {
+    "x": -600,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -600,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -600,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -600,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -600,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -600,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -600,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -600,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -500,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_FarSeating__001"
+    ]
+  },
+  {
+    "x": -300,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__004"
+    ]
+  },
+  {
+    "x": -300,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__006"
+    ]
+  },
+  {
+    "x": -300,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__006"
+    ]
+  },
+  {
+    "x": -200,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__004"
+    ]
+  },
+  {
+    "x": -200,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__003"
+    ]
+  },
+  {
+    "x": -200,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__003"
+    ]
+  },
+  {
+    "x": -200,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__006"
+    ]
+  },
+  {
+    "x": -200,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__006"
+    ]
+  },
+  {
+    "x": -200,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__001"
+    ]
+  },
+  {
+    "x": -200,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__001"
+    ]
+  },
+  {
+    "x": -100,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__003"
+    ]
+  },
+  {
+    "x": -100,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__003"
+    ]
+  },
+  {
+    "x": -100,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__007"
+    ]
+  },
+  {
+    "x": -100,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__001"
+    ]
+  },
+  {
+    "x": -100,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__001"
+    ]
+  },
+  {
+    "x": 0,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__003"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__007"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__007"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__008"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__001",
+      "Interactive_SM_GR3_Conversation__008"
+    ]
+  },
+  {
+    "x": 100,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__004"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__004"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__007"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__007"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__002"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__002"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__001"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__001",
+      "Interactive_SM_GR3_Tables__005"
+    ]
+  },
+  {
+    "x": 100,
+    "y": 700,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__001"
+    ]
+  },
+  {
+    "x": 200,
+    "y": -100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__004"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 0,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__004"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__005"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__005"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__002"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__002"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__001"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__001",
+      "Interactive_SM_GR3_Tables__005"
+    ]
+  },
+  {
+    "x": 200,
+    "y": 700,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__001"
+    ]
+  },
+  {
+    "x": 300,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__005"
+    ]
+  },
+  {
+    "x": 300,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__005"
+    ]
+  },
+  {
+    "x": 300,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 300,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 400,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__005"
+    ]
+  },
+  {
+    "x": 400,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_Conversation__005"
+    ]
+  },
+  {
+    "x": 400,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001",
+      "Interactive_SM_GR3_NearSeating__007"
+    ]
+  },
+  {
+    "x": 400,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 500,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003"
+    ]
+  },
+  {
+    "x": 500,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003"
+    ]
+  },
+  {
+    "x": 500,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 500,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 600,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003"
+    ]
+  },
+  {
+    "x": 600,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003",
+      "Interactive_SM_GR3_NearSeating__004"
+    ]
+  },
+  {
+    "x": 600,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 600,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 700,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003"
+    ]
+  },
+  {
+    "x": 700,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003",
+      "Interactive_SM_GR3_NearSeating__005"
+    ]
+  },
+  {
+    "x": 700,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 700,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 800,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003"
+    ]
+  },
+  {
+    "x": 800,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003"
+    ]
+  },
+  {
+    "x": 800,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001",
+      "Interactive_SM_GR3_NearSeating__006"
+    ]
+  },
+  {
+    "x": 800,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 900,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003",
+      "Interactive_SM_GR3_Tables__002"
+    ]
+  },
+  {
+    "x": 900,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__003",
+      "Interactive_SM_GR3_Tables__002"
+    ]
+  },
+  {
+    "x": 900,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 900,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": -300,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__002"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": -200,
+    "blockers": [
+      "Interactive_SM_GR3_Tables__002"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 1000,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 1100,
+    "y": 100,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1100,
+    "y": 200,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1100,
+    "y": 300,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1100,
+    "y": 400,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__002"
+    ]
+  },
+  {
+    "x": 1100,
+    "y": 500,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  },
+  {
+    "x": 1100,
+    "y": 600,
+    "blockers": [
+      "Interactive_SM_GR3_NearSeating__001"
+    ]
+  }
+]

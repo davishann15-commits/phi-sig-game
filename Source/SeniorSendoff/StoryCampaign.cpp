@@ -10,7 +10,10 @@
 #include "StoryMovementComponent.h"
 #include "HouseFurnitureInteractionComponent.h"
 #include "HouseBasketball.h"
+#include "HouseBasketballHoop.h"
+#include "HouseWoodcutting.h"
 #include "ExistingHouseDoor.h"
+#include "HouseRearPorch.h"
 #include "HouseOxbloodMask.h"
 #include "HousePokerTable.h"
 #include "HouseRoamingPig.h"
@@ -63,6 +66,7 @@
 #include "UObject/UObjectGlobals.h"
 #include "Misc/CommandLine.h"
 #include "Misc/Parse.h"
+#include "HouseCampusInteriors.h"
 #if WITH_EDITOR
 void TickStorySmokeTest(UWorld* World);
 void TickDouliSmokeTest(AStoryFirstPersonCharacter* Pawn);
@@ -93,6 +97,11 @@ void UStoryCampaign::Init()
 {
     Super::Init();
 #if !UE_BUILD_SHIPPING
+    if (FParse::Param(FCommandLine::Get(), TEXT("HouseBasketballSkillReview"))) SaveSlot = TEXT("SeniorSendoff_BasketballSkillAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(), TEXT("HouseWoodcuttingReview"))) SaveSlot = TEXT("SeniorSendoff_WoodcuttingAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(), TEXT("HouseBasketballReview"))) SaveSlot = TEXT("SeniorSendoff_BasketballAutomationOnly");
+#endif
+#if !UE_BUILD_SHIPPING
     if (FParse::Param(FCommandLine::Get(),TEXT("HouseInteractivitySmoke"))) SaveSlot=TEXT("SeniorSendoff_HouseInteractivityAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("HouseGlassSmoke"))) SaveSlot=TEXT("SeniorSendoff_HouseGlassAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("HouseLibrarySmoke"))) SaveSlot=TEXT("SeniorSendoff_LibraryAutomationOnly");
@@ -103,7 +112,10 @@ void UStoryCampaign::Init()
     if (FParse::Param(FCommandLine::Get(),TEXT("HouseMaskReview"))) SaveSlot=TEXT("SeniorSendoff_HouseMaskAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("ExistingHouseDoorSmoke"))) SaveSlot=TEXT("SeniorSendoff_OriginalDoorAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("FrontDoubleDoorReview"))) SaveSlot=TEXT("SeniorSendoff_FrontDoorAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseConnectionsReview"))) SaveSlot=TEXT("SeniorSendoff_ConnectionsAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseRearPorchReview"))) SaveSlot=TEXT("SeniorSendoff_RearPorchAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("HouseExteriorWalkReview"))) SaveSlot=TEXT("SeniorSendoff_ExteriorWalkAutomationOnly");
+    if (FParse::Param(FCommandLine::Get(),TEXT("HouseFrontBushReview"))) SaveSlot=TEXT("SeniorSendoff_FrontBushAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("NightClubEntranceSmoke"))) SaveSlot=TEXT("SeniorSendoff_NightClubEntryAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("NightClubSmoke"))) SaveSlot=TEXT("SeniorSendoff_NightClubAutomationOnly");
     if (FParse::Param(FCommandLine::Get(),TEXT("Room101EntrySmoke"))) SaveSlot=TEXT("SeniorSendoff_Room101AutomationOnly");
@@ -586,12 +598,18 @@ void AStoryFirstPersonCharacter::Tick(float DeltaSeconds)
         }
     }
     if (bHouseMaskEquipped) UpdateHouseMaskVisual();
+    if (FurnitureInteraction && FurnitureInteraction->IsBasketballCharging() && IsLocallyControlled())
+        if (const auto* PC = Cast<APlayerController>(Controller); PC && (PC->bShowMouseCursor || PC->IsInputKeyDown(EKeys::Escape)))
+            FurnitureInteraction->CancelBasketballShot();
     if (AppliedCharacterIndex == 0 && !BraxtonVisual && GetNetMode() != NM_DedicatedServer)
         ClothMotion.Update(GetMesh(), DeltaSeconds, GetActorRotation().Yaw, GetVelocity().Size2D());
 #if WITH_EDITOR
     TickHouseFurnitureCarrySmoke(this);
     TickHouseCarryTiersReview(this);
     TickHouseBasketballReview(this);
+    TickHouseBasketballSkillReview(this);
+    TickHouseWoodcuttingReview(this);
+    TickHouseRearPorchReview(this);
     TickDouliSmokeTest(this);
     TickSauceSmokeTest(this);
 #endif
@@ -966,7 +984,9 @@ void AStoryFirstPersonCharacter::SetupPlayerInputComponent(UInputComponent* Play
     Super::SetupPlayerInputComponent(PlayerInputComponent);
     ConfigureLocalInput();
     PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Pressed,this,&AStoryFirstPersonCharacter::OnLeftMousePressed);
+    PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Released,this,&AStoryFirstPersonCharacter::OnShootReleased);
     PlayerInputComponent->BindKey(EKeys::Gamepad_RightTrigger,IE_Pressed,this,&AStoryFirstPersonCharacter::ThrowEquippedWeapon);
+    PlayerInputComponent->BindKey(EKeys::Gamepad_RightTrigger,IE_Released,this,&AStoryFirstPersonCharacter::OnShootReleased);
     PlayerInputComponent->BindKey(EKeys::E, IE_Pressed, this, &AStoryFirstPersonCharacter::InteractWithExistingDoorOrFurniture);
     PlayerInputComponent->BindKey(EKeys::Gamepad_FaceButton_Left, IE_Pressed, this, &AStoryFirstPersonCharacter::InteractWithExistingDoorOrFurniture);
     PlayerInputComponent->BindKey(EKeys::M, IE_Pressed, this, &AStoryFirstPersonCharacter::ToggleHouseMask);
@@ -1251,7 +1271,11 @@ bool AStoryFirstPersonCharacter::InteractWithExistingDoor(AExistingHouseDoor* Do
     if (Door->bLocked)
     {
         if (UStoryCampaign* Story = GetGameInstance<UStoryCampaign>())
-            Story->Notify(TEXT("Locked: this area is not playable yet."));
+        {
+            // A campus door says why it is locked; every house door keeps its message.
+            const ACampusDoor* Campus = Cast<ACampusDoor>(Door);
+            Story->Notify(Campus && !Campus->LockedReason.IsEmpty() ? FString::Printf(TEXT("Locked: %s."), *Campus->LockedReason) : FString(TEXT("Locked: this area is not playable yet.")));
+        }
         return true;
     }
     if (HasAuthority())
@@ -1313,6 +1337,13 @@ void AStoryFirstPersonCharacter::OnLeftMousePressed()
     LastClickedDoor.Reset();
     LastDoorClickTime = -1000.0;
     ThrowEquippedWeapon();
+}
+void AStoryFirstPersonCharacter::OnShootReleased()
+{
+    if (!IsLocallyControlled() || !FurnitureInteraction) return;
+    if (const auto* PC = Cast<APlayerController>(Controller); PC && PC->bShowMouseCursor)
+        FurnitureInteraction->CancelBasketballShot();
+    else FurnitureInteraction->ReleaseBasketballShot();
 }
 AHouseReactiveFixture* AStoryFirstPersonCharacter::FocusedHouseFixture() const
 {
@@ -1926,7 +1957,10 @@ void AStoryHUD::DrawHUD()
             ? TEXT("Carry pig  |  E place on clear floor  |  Aim at door + E open / close")
             : ArmedPawn && ArmedPawn->FurnitureInteraction && ArmedPawn->FurnitureInteraction->bHoldingFurniture
                 && ArmedPawn->FurnitureInteraction->GetHeldBody() && Cast<AHouseBasketball>(ArmedPawn->FurnitureInteraction->GetHeldBody()->GetOwner())
-            ? TEXT("Basketball  |  Aim at either rim  |  LMB / right trigger shoot  |  E set down")
+            ? TEXT("Basketball  |  Hold LMB / right trigger, release in green  |  E set down")
+            : ArmedPawn && ArmedPawn->FurnitureInteraction && ArmedPawn->FurnitureInteraction->GetHeldBody()
+                && Cast<AHouseWoodAxe>(ArmedPawn->FurnitureInteraction->GetHeldBody()->GetOwner())
+            ? TEXT("Chopping axe  |  LMB / right trigger swing  |  E set down / return to stump")
             : ArmedPawn && ArmedPawn->FurnitureInteraction && ArmedPawn->FurnitureInteraction->bHoldingFurniture
             ? (ArmedPawn->FurnitureInteraction->GetCarrySize()==ESSOCarrySize::Large?TEXT("Dragging  |  E lower and let go  |  LMB / right trigger shove")
                 : ArmedPawn->FurnitureInteraction->GetCarrySize()==ESSOCarrySize::Medium?TEXT("Two-hand carry  |  E set down  |  LMB / right trigger toss")
@@ -1960,7 +1994,11 @@ void AStoryHUD::DrawHUD()
                 }
                 const AHouseBasketball* Ball = Cast<AHouseBasketball>(bHolding && ArmedPawn->FurnitureInteraction->GetHeldBody()
                     ? ArmedPawn->FurnitureInteraction->GetHeldBody()->GetOwner() : Focused);
-                if (Ball) Prompt = bHolding ? TEXT("E SET DOWN  |  AIM AT RIM + LMB SHOOT") : TEXT("E PICK UP BASKETBALL");
+                if (Ball) Prompt = bHolding ? TEXT("AIM AT RIM  |  HOLD & RELEASE LMB / RT") : TEXT("E PICK UP BASKETBALL");
+                if (auto* Axe = Cast<AHouseWoodAxe>(bHolding && ArmedPawn->FurnitureInteraction->GetHeldBody()
+                    ? ArmedPawn->FurnitureInteraction->GetHeldBody()->GetOwner() : Focused))
+                    Prompt = bHolding ? (Axe->CanReturnToStump(ArmedPawn) ? TEXT("E RETURN TO STUMP  |  LMB / RT SWING") : TEXT("E SET DOWN  |  LMB / RT SWING"))
+                        : Axe->bEmbedded ? TEXT("E PULL AXE FROM STUMP") : TEXT("E PICK UP AXE");
                 float PromptWidth = bHolding ? 280*S : 350*S;
                 { float TW = 0, TH = 0; GetTextSize(Prompt, TW, TH, GEngine->GetMediumFont(), S * .82f); PromptWidth = FMath::Max(PromptWidth, TW + 26*S); }
                 const float PromptX = (W - PromptWidth) * .5f;
@@ -1969,6 +2007,33 @@ void AStoryHUD::DrawHUD()
                     PromptX + 12*S, H*.5f + 34*S, Gold, .82f);
             }
         }
+    }
+    if (ArmedPawn && ArmedPawn->FurnitureInteraction && PlayerOwner && !PlayerOwner->bShowMouseCursor)
+    {
+        const auto* Mover = ArmedPawn->FurnitureInteraction.Get();
+        const auto* Ball = Mover->GetHeldBody() ? Cast<AHouseBasketball>(Mover->GetHeldBody()->GetOwner()) : nullptr;
+        const float MeterWidth = 270 * S, X = (W - MeterWidth) * .5f, Y = H * .5f + 82 * S;
+        if (Ball)
+        {
+            const float Ideal = Mover->GetBasketballIdealPower(), Power = Mover->GetBasketballPower();
+            const FLinearColor Green(.24f, .95f, .50f), Orange(1.f, .60f, .25f);
+            DrawRect(Ink, X - 12 * S, Y - 10 * S, MeterWidth + 24 * S, 69 * S);
+            Text(Mover->IsBasketballCharging() ? TEXT("RELEASE IN GREEN") : TEXT("HOLD TO CHARGE"), X, Y - 4 * S, FLinearColor::White, .78f);
+            DrawRect(FLinearColor(.12f, .15f, .18f), X, Y + 21 * S, MeterWidth, 11 * S);
+            if (Ideal >= 0)
+            {
+                const float Lo = FMath::Max(0.f, Ideal - AHouseBasketball::GreenHalfWidth);
+                const float Hi = FMath::Min(1.f, Ideal + AHouseBasketball::GreenHalfWidth);
+                DrawRect(Green, X + MeterWidth * Lo, Y + 21 * S, MeterWidth * (Hi - Lo), 11 * S);
+            }
+            if (Mover->IsBasketballCharging())
+                DrawRect(Ideal >= 0 && FMath::Abs(Power - Ideal) <= AHouseBasketball::GreenHalfWidth ? Green : Orange,
+                    X + MeterWidth * Power - 2 * S, Y + 17 * S, 4 * S, 19 * S);
+            Text(Ideal >= 0 ? TEXT("EARLY = SHORT     LATE = LONG") : TEXT("AIM AT A HOOP TO SEE THE TARGET BAND"), X, Y + 40 * S, Gold, .65f);
+        }
+        else if (!Mover->GetBasketballFeedback().IsEmpty())
+            Text(Mover->GetBasketballFeedback(), X + 48 * S, Y, Mover->GetBasketballFeedback().Contains(TEXT("GREEN"))
+                ? FLinearColor(.24f, .95f, .50f) : Gold, 1.f);
     }
     if (Story->CurrentChapter() == 1 && PlayerOwner)
         for (TActorIterator<AHouseRoamingPig> It(GetWorld()); It; ++It)

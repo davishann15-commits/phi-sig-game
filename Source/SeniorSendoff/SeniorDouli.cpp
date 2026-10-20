@@ -65,7 +65,7 @@ void ASeniorDouli::DamageHit(const FHitResult& Hit)
     const APawn* OtherPawn=Cast<APawn>(Target);
     if(HasAuthority() && Pawn && Target && Target->CanBeDamaged()
         && !(OtherPawn && OtherPawn->IsPlayerControlled())
-        && (OtherPawn || Target->ActorHasTag(TEXT("Enemy")) || Target->ActorHasTag(TEXT("HouseBreakable"))))
+        && (OtherPawn || Target->ActorHasTag(TEXT("Enemy")) || Target->ActorHasTag(TEXT("HouseBreakable")) || Target->ActorHasTag(TEXT("HouseTree"))))
     {
         // Scenery uses hit-sized damage steps; combat damage keeps its existing tuning.
         const float AppliedDamage = (Target->ActorHasTag(TEXT("HouseBreakable")) ? 8.f : Damage) * Pawn->OutgoingDamageMultiplier();

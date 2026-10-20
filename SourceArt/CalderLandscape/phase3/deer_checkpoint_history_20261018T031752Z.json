@@ -1,0 +1,452 @@
+{
+  "scope": "Deer-first partial wildlife implementation; no complete Phase3 acceptance",
+  "whole_phase3_complete": false,
+  "normal_game_enabled": false,
+  "source_build": {
+    "log": "Saved/CalderWork/codex_deer_solid_props_build_v1.log",
+    "result": "Succeeded",
+    "actions": 228,
+    "seconds": 139.75,
+    "disable_unity": true,
+    "source_frozen_after_build": true
+  },
+  "logic_approaches": {
+    "walk": {
+      "expected_m": [
+        60,
+        45,
+        35
+      ],
+      "observed_m": [
+        59.8827,
+        44.8516,
+        34.607
+      ]
+    },
+    "sprint": {
+      "expected_m": [
+        120,
+        90,
+        70
+      ],
+      "observed_m": [
+        119.9381,
+        89.616,
+        69.3363
+      ]
+    },
+    "crouch": {
+      "expected_m": [
+        36,
+        27,
+        21
+      ],
+      "observed_m": [
+        35.867,
+        26.967,
+        20.898
+      ]
+    },
+    "campus": {
+      "expected_m": [
+        30,
+        22.5,
+        17.5
+      ],
+      "observed_m": [
+        29.805,
+        22.23,
+        17.167
+      ]
+    }
+  },
+  "same_wary_deer_stillness_settles_after_15s": true,
+  "native_roster": {
+    "animals": 10,
+    "groups": [
+      3,
+      4,
+      3
+    ],
+    "hard_antler_bucks": 1,
+    "spotless_young": 3
+  },
+  "native_dedicated_graphs": {
+    "default": {
+      "clear": 2138,
+      "total": 2138,
+      "habitat_hash": "32f8531b"
+    },
+    "farm_trials": {
+      "clear": 2107,
+      "total": 2107,
+      "habitat_hash": "8932170c"
+    }
+  },
+  "terrain_hash": "72564759",
+  "disabled_no_wildlife_and_no_terrain": {
+    "passed": true,
+    "actors": 0,
+    "components": 0,
+    "instances": 0
+  },
+  "protected_source_map_sha_count": 13,
+  "logic_evidence": [
+    "Saved/CalderWork/runs/codex_wildlife_walk_probe/Saved/CalderWildlifeReview/result.txt",
+    "Saved/CalderWork/codex_wildlife_logic_remaining/receipt.json"
+  ],
+  "source_sha256": {
+    "Source/SeniorSendoff/HouseCalderWildlife.cpp": "982e1e83f05ae0d63b365ff66d8985599994e52c2b533ab6e7d86f8dd22fc9dc",
+    "Source/SeniorSendoff/HouseCalderWildlife.h": "885e8f4a052f2a6f116aa324de9b0c972e432ddb79685825dcd8e6d9120495f5",
+    "Source/SeniorSendoff/HouseCalderWildlifeApproachReview.cpp": "458282c5cbb81c627f0c7d787fc03bb7ad728e1bdf232cd22382ab75a4343021",
+    "Source/SeniorSendoff/HouseCalderWildlifeApproachReview.h": "9fbba49fb1014e9418ba233a6691bc68d0efc15ac683e4920aa83e058e280e36",
+    "Source/SeniorSendoff/HouseCalderWildlifeDraw.cpp": "dcfb1dd43fbb9ba8a66648b58668388c496f2e5cf7402334d06f7fff85cc1d0e",
+    "Source/SeniorSendoff/HouseCalderWildlifeNetworkReview.cpp": "c40b09154bec4221894b75c4abb1865b075a2622c56a29a3afa7defe195fd2cd",
+    "Source/SeniorSendoff/HouseCalderWildlifePaths.cpp": "01c9f4334884420f024c4f02ffc19c650a2419f7ece811ea8cd0e5c50df04489",
+    "Source/SeniorSendoff/HouseCalderWildlifePaths.h": "bf7128e5ee8906662ff665d6ecdaf044a694901baa30d095a1ea5efc17a99e1f",
+    "Source/SeniorSendoff/HouseCalderWildlifePose.cpp": "f033616c1af11ac6ecab9c324c8c99c66fa63a8c72bd4495dfa10d9bc7e21485",
+    "Source/SeniorSendoff/HouseCalderWildlifePrivate.h": "1a483505cc19eca5725b07af347c63202cfa4eed3f7e43d1f197c94a4468f9e8",
+    "Source/SeniorSendoff/HouseCalderWildlifeReview.cpp": "e1f1727decacf3fe1c09c6dd5c7fd6ab9bddb416b9e2ddce2b3bf582bbc966ae",
+    "Source/SeniorSendoff/HouseCalderWildlifeSound.cpp": "5b6df6475f8e7b6fb72dc738570a0a807c7dd7fb5373ea8033f15920c0c75ec2",
+    "Source/SeniorSendoff/HouseCalderWildlifeSoundPcm.cpp": "5166843dbec458f6b986dfa828e733de02cd1bbfc10fff6c96c034745c82cfe3"
+  },
+  "asset_batch_run": true,
+  "close_editor_question_pending": false,
+  "pending": [
+    "Current compatibility refresh running (six original reviews and optional farm graph)",
+    "Final six-run isolated performance after contact/solid-route changes",
+    "Fresh immutable recovery and appropriate default activation",
+    "Full species roster/calls/ridge echoes/subjective listening and original global load/hill-route/final master chain"
+  ],
+  "map_saved": false,
+  "committed": false,
+  "two_process_logic": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_wildlife_network_logic_v2/result.json",
+    "normal_lobby": true,
+    "client_received_ms": 31.83,
+    "terrain_and_habitat_hashes_match": true,
+    "native_render": false,
+    "original_hill_route_unchanged_and_pending": true
+  },
+  "scene_clock": {
+    "negative_values_wrap": true,
+    "pinned_background_pose_and_wander": true,
+    "reactive_server_time_advances": true,
+    "native_pinned_clock_visual_evidence": "codex_deer_native_full_v2, Scene300 fixed while reactive flee/recovery advances",
+    "unpinned_native_wandering_passed": true,
+    "unpinned_run": "Saved/CalderWork/runs/codex_deer_unpinned_native_v1",
+    "all10_walked_and_fed_without_forcing": true,
+    "unpinned_captures_inspected": 3,
+    "full30minute_seam_tested": false
+  },
+  "return_probe": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_wildlife_return_probe_v2/Saved/CalderWildlifeReview/result.txt",
+    "delay_seconds": 142.02,
+    "walked_back_to_authored_home": true,
+    "feeding_resumed": true,
+    "server_clock_accelerated": false,
+    "native_render": false
+  },
+  "standalone_game_build": {
+    "passed": true,
+    "current_after_medium_and_solid_fix": true,
+    "log": "Saved/CalderWork/codex_deer_medium_current_game_build_v1.log",
+    "actions": 230,
+    "seconds": 127.43,
+    "signature_verified_with_metadata_guard": true,
+    "signature_receipt": "Saved/CalderWork/codex_deer_medium_current_game_signature.json",
+    "known_icloud_generated_bundle_FinderInfo_reappears_after_guard": true,
+    "standalone_gameplay_verified": false
+  },
+  "recovery_target": "Saved/CalderWork/codex_checkpoint_deer_native_20261017_evening_v1",
+  "stopping_state": "Current full,medium,MP,standalone/sign,bounds and unpinned wandering passed; compatibility refresh running; final performance then recovery/default remain.",
+  "closure_verified_utc": "2026-10-18T00:15:38.830542+00:00",
+  "asset_batch_status": "PASS v6 imported corrected225-float materials/threeLOD mesh; native fullv2/currentwalk validated",
+  "asset_batch_log": "Saved/CalderWork/codex_deer_assets_batch_v6.log",
+  "asset_batch_receipt": "SourceArt/CalderLandscape/phase3/deer/installed.json",
+  "native_components": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_native_paths_v1",
+    "animals": 10,
+    "components": 4,
+    "instances": 31,
+    "lights": 0
+  },
+  "native_detail": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_native_detail_v2",
+    "images_inspected": 9,
+    "hoof_gap_p95_cm": 2.553,
+    "hoof_drift_p95_cm": 0.0,
+    "actual_sole_samples": 4096,
+    "tick_p95_ms_diagnostic": 0.2997,
+    "camera_some_foliage_occlusion": true,
+    "motion_acceptance_pending": true
+  },
+  "per_instance_custom_floats": 225,
+  "native_multiplayer_attempt": {
+    "passed": false,
+    "run": "Saved/CalderWork/runs/codex_deer_network_native_v1",
+    "state_hashes_match": true,
+    "native_flee_image_inspected": true,
+    "failure": "Historical PNG-completion gate failed1.5801s; superseded by real visible-frame GPU fence instrumentation and successful nativev2/v3 with unchanged0.5s requirement"
+  },
+  "bounds_review": {
+    "passed": true,
+    "current_after_medium_and_solid_fix": true,
+    "run": "Saved/CalderWork/runs/codex_deer_bounds_native_v2",
+    "distance_cm": 32842.909,
+    "images_inspected": 2,
+    "r_instance_culling_occlusion_cull": 1,
+    "renderer_setup_only_not_gameplay_route": true,
+    "gap_drift_diagnostic_not_gait_acceptance": true,
+    "tick_p95_ms_diagnostic": 0.0951
+  },
+  "native_multiplayer": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_network_native_v4",
+    "normal_lobby": true,
+    "terrain_and_habitat_match": true,
+    "habitat_hash": "5c0dee53",
+    "data_ms": 22.95,
+    "gpu_frame_completion_upper_bound_ms": 58.31,
+    "screenshot_completion_ms": 1596.7,
+    "capture_inspected": true,
+    "registered_audio_both_peers": true,
+    "gate_seconds": 0.5,
+    "current_after_medium_and_solid_fix": true,
+    "original_hill_route_unchanged_and_pending": true
+  },
+  "sound_status": "Registered-submix fullv2 and locationv3 objective recordings passed; exact silence indoors; source PCM/120s mix/spectrograms checked; subjective listening and full roster pending",
+  "native_full": {
+    "machine_passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_native_full_v3",
+    "ordinary_input_cases": 4,
+    "direct_reactions": 12,
+    "return_delay_seconds": 142.09,
+    "real_return_home_feeding": true,
+    "hoof_gap_worst_mood_p95_cm": 2.181,
+    "hoof_drift_worst_mood_p95_cm": 0.0,
+    "actual_gap_samples": 3862,
+    "actual_drift_samples": 3519,
+    "tick_rolling_p95_ms_diagnostic": 0.0744,
+    "captures": 53,
+    "all_images_reviewed_in_native_grids": true,
+    "some_natural_foliage_occlusion": true,
+    "no_player_head_capture_transition": true,
+    "registered_wildlife_submix_recording": true,
+    "current_after_medium_and_solid_fix": true,
+    "feet_scope": "Full-pose here; all three reduced-pose variants passed separately in native mediumv5"
+  },
+  "sound_off_native": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_sound_off_native_v1",
+    "wildlife_audio_components": 0,
+    "original_campus_crickets_playing": true,
+    "woods_owl_source_unchanged": true
+  },
+  "sound_location_attempt": {
+    "passed": false,
+    "run": "Saved/CalderWork/runs/codex_deer_sound_native_v1",
+    "frat_lawn_wav_exists": true,
+    "reason": "Strict indoor test checks every pooled volume; unused slots retained default1.0 despite not playing. Production now initializes and keeps inactive slots at0; strict gate unchanged; rerun pending"
+  },
+  "audio_analysis": "Saved/CalderWork/runs/codex_deer_native_full_v3/Saved/CalderWildlifeSound/waveform_analysis.json",
+  "sound_location_native_v2": {
+    "component_checks_passed": true,
+    "waveform_checks_passed": false,
+    "run": "Saved/CalderWork/runs/codex_deer_sound_native_v2",
+    "scope_error": "Transient submix was not registered; engine recording silently fell back to master. Prior mixed recordings do not prove wildlife audio/indoor silence. Five source PCM files remain valid.",
+    "source_fix": "Explicit world-device registration/unregistration and live registration guard before recording; awaiting build/rerun"
+  },
+  "statistics_fix": "True4096-sample rolling buffers and per-mood sole windows; worst-mood p95. Native fullv2 and currentwalkv1 passed after correction.",
+  "sound_location_native": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_sound_native_v3",
+    "registered_submix": true,
+    "house_and_campus_recordings_all_samples_zero": true,
+    "frat_lawn_rms_dbfs": -71.7534,
+    "frat_lawn_required_max_dbfs": -36,
+    "near_creek_rms_dbfs": -44.6993,
+    "waveform_analysis": "Saved/CalderWork/runs/codex_deer_sound_native_v3/Saved/CalderWildlifeSound/waveform_analysis.json",
+    "four_captures_inspected": true
+  },
+  "contact_optimization": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_contact_detail_v1",
+    "raw_sole_vertices": [
+      44,
+      44,
+      43,
+      43
+    ],
+    "unique_sole_positions": [
+      30,
+      30,
+      27,
+      27
+    ],
+    "every_unique_position_preserved": true,
+    "moving_sample_frequency_unchanged": true,
+    "max_view_tick_p95_ms": 0.1821,
+    "gap_p95_cm": 2.553,
+    "drift_p95_cm": 0.0,
+    "new_native_detail_images_pending_inspection": false,
+    "prior_detail_first_startup_camera_invalid": true,
+    "superseding_current_native_run": "Saved/CalderWork/runs/codex_deer_current_walk_v1"
+  },
+  "current_native_walk": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_current_walk_v1",
+    "captures": 20,
+    "all_images_inspected": true,
+    "first_detail_camera_correct": true,
+    "cached_actual_pov_guard": true,
+    "cases": 1,
+    "direct_reactions": 3,
+    "gap_p95_cm": 2.553,
+    "drift_p95_cm": 0.0,
+    "sole_gap_samples": 801,
+    "sole_drift_samples": 709,
+    "rolling_tick_p95_ms": 0.0793,
+    "maximum_view_tick_p95_ms_diagnostic": 0.2288,
+    "full_300_frame_performance_comparison_pending": false
+  },
+  "csv_profiler_smoke": {
+    "passed": true,
+    "run": "Saved/CalderWork/runs/codex_deer_csv_smoke_v1",
+    "views": 3,
+    "positive_tick_samples_per_view": 299,
+    "category_column": "CalderWildlife/TickMs"
+  },
+  "recovery_receipt_required_passed": true,
+  "performance": {
+    "passed": true,
+    "report": "Saved/CalderWork/runs/codex_deer_perf_v1_perf.json",
+    "scope_audio_audit": "Saved/CalderWork/runs/codex_deer_perf_v1_scope_audio_audit.json",
+    "pairs": 3,
+    "alternating": true,
+    "views": 21,
+    "samples": 300,
+    "actual_csv_positive_tick_samples_per_view": 299,
+    "warmup_seconds": 4,
+    "source_config_frozen": true,
+    "editor_closed": true,
+    "maximum_tick_p95_ms": 0.128,
+    "all_listed_p8p_frame_budgets_passed": true,
+    "five_interior_deltas_ms": {
+      "library": 0.12,
+      "harlow": 0.26,
+      "science": 0.22,
+      "union": 0.29,
+      "stadium": 0.11
+    },
+    "maximum_total_audio_sources": 14,
+    "global_load_and_full_roster_pending": true,
+    "current_after_medium_fix": false
+  },
+  "compatibility": {
+    "passed": true,
+    "report": "Saved/CalderWork/runs/codex_deer_current_compat.json",
+    "original_reviews": [
+      "CampusLayout",
+      "CampusWoods",
+      "FraternityBoundary",
+      "SurroundingsPolish",
+      "ParkingLotWalk",
+      "WoodsPass"
+    ],
+    "native_optional_farm_graph_and_components_passed": true,
+    "seconds": 125
+  },
+  "medium_pose": {
+    "native_proof_pending": false,
+    "native_v1": "Saved/CalderWork/runs/codex_deer_medium_native_v1",
+    "native_v1_confirmed_drift_but_incomplete_camera_coverage": true,
+    "native_v1_variant_gap_p95_cm": [
+      3.4092,
+      4.2125,
+      4.8523
+    ],
+    "native_v1_variant_drift_p95_cm": [
+      7.6889,
+      6.6509,
+      13.8782
+    ],
+    "native_v2": "Saved/CalderWork/runs/codex_deer_medium_native_v2",
+    "native_v2_contact_fix_partial_gap_p95_cm": [
+      0.7659,
+      0.5426,
+      0.3263
+    ],
+    "native_v2_contact_fix_partial_drift_p95_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "native_v2_failed_camera_coverage_before_required_counts_and_captures": true,
+    "fix": "Boundary-aware independent hoof anchors, retained15Hz body/limb keys. Original Root restored: path evaluator already applies SurfaceZ. New camera blocker diagnostics, no changed feet/coverage thresholds.",
+    "current_build_log": "Saved/CalderWork/codex_deer_solid_props_build_v1.log",
+    "current_build_running": false,
+    "baseline_editor_build_passed": "Saved/CalderWork/codex_deer_medium_probe_build_v1.log",
+    "contact_build_passed": "Saved/CalderWork/codex_deer_medium_contact_build_v1.log",
+    "no_new_assets_or_protected_edits": true,
+    "native_v3": "Saved/CalderWork/runs/codex_deer_medium_native_v3",
+    "native_v3_variant_gap_p95_cm": [
+      0.7659,
+      0.5426,
+      0.3263
+    ],
+    "native_v3_variant_drift_p95_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "native_v3_incomplete_camera_coverage": true,
+    "route_surface_difference_measured_cm": 0.0,
+    "redundant_root_adjustment_reverted": true,
+    "native_v5_passed": true,
+    "native_v5": "Saved/CalderWork/runs/codex_deer_medium_native_v5",
+    "native_v5_frames": 925,
+    "native_v5_captures": 8,
+    "native_v5_images_inspected": true,
+    "native_v5_some_frames_foliage_occluded": true,
+    "native_v5_variant_gap_p95_cm": [
+      1.8748,
+      1.9308,
+      0.6093
+    ],
+    "native_v5_variant_drift_p95_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "native_v5_variant_gap_samples": [
+      1545,
+      259,
+      565
+    ],
+    "native_v5_variant_drift_samples": [
+      1333,
+      210,
+      440
+    ],
+    "explicit_gait_setup_not_reaction_proof": true,
+    "actual_camera_blocker": "ExteriorWoodsRock1",
+    "camera_failure_cause": "missing solid-prop bounds in authored habitat graph; fixed without changing props or camera height",
+    "current_build_passed": true,
+    "current_build_seconds": 139.75
+  },
+  "current_habitat_graph": {
+    "clear_edges": 1980,
+    "total_edges": 1980,
+    "trunks": 649,
+    "solid_props": 142,
+    "hash": "5c0dee53",
+    "physics_queries": 0,
+    "protected_props_unmodified": true,
+    "old_2138_edge_graph_superseded": true
+  }
+}

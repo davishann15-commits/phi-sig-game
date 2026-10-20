@@ -1,11 +1,14 @@
 #include "HouseBasketball.h"
 #include "HouseBasketballCourt.h"
+#include "HouseBasketballHoop.h"
+#include "HouseSfx.h"
 #include "HouseBlackHall.h"
 #include "HouseBlackHallLook.h"
 #include "HouseBlackHallPaint.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
+#include "EngineUtils.h"
 #include "Net/UnrealNetwork.h"
 #include "Misc/CommandLine.h"
 #include "Misc/Parse.h"
@@ -54,10 +57,14 @@ void AHouseBasketball::BeginPlay()
         BallLook(L);MaterialOverrides={L->Mat(TEXT("EX_Basketball"))};
     }
     Super::BeginPlay();
+    // Replace the generic furniture knock with basketball-specific contact sounds.
+    Body->OnComponentHit.RemoveAll(this);
+    Body->OnComponentHit.AddDynamic(this, &AHouseBasketball::OnBallHit);
     Rubber=NewObject<UPhysicalMaterial>(this);Rubber->Friction=.45f;Rubber->StaticFriction=.5f;
     Rubber->Restitution=.76f;Rubber->RestitutionCombineMode=EFrictionCombineMode::Max;Rubber->bOverrideRestitutionCombineMode=true;
     Body->SetPhysMaterialOverride(Rubber);Body->SetUseCCD(true);
     SfxSurface=EHouseSurface::Plastic;Previous=Body->GetComponentLocation();
+    RecoveryHome=Previous;
     // An unbreakable ball needs no furniture damage sampling. This short server timer
     // also continues when Chaos sleeps the body, for lost-ball recovery.
     SetActorTickEnabled(false);
@@ -72,40 +79,58 @@ void AHouseBasketball::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out
 {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);DOREPLIFETIME(AHouseBasketball,LeftBaskets);DOREPLIFETIME(AHouseBasketball,RightBaskets);DOREPLIFETIME(AHouseBasketball,LastBasketAt);
 }
-FVector AHouseBasketball::ShotVelocity(const FVector& View,const FRotator& Aim,const AActor* Shooter)const
+FVector AHouseBasketball::ReleasePoint(const FVector& View, const FRotator& Aim)
 {
-    FVector From=Body->GetComponentLocation(),Target=FVector::ZeroVector;float Best=.97f;
-    bool Court=FMath::Abs(From.X)<1420 && From.Y>1870 && From.Y<3780 && From.Z<HouseCourt::Floor+460;
-    if(Court)for(int I=0;I<2;++I)
-    {
-        FVector Rim=HouseCourt::Rim(I);float Dot=FVector::DotProduct((Rim-View).GetSafeNormal(),Aim.Vector());
-        if(Dot<Best || FVector::Dist2D(From,Rim)>2800 || FVector::Dist2D(From,Rim)<70)continue;
-        FHitResult Hit;FCollisionQueryParams Q(SCENE_QUERY_STAT(CourtShotSight),false,this);Q.AddIgnoredActor(GetOwner());Q.AddIgnoredActor(Shooter);
-        // The carrying pawn can be in the trace near its camera.
-        Q.AddIgnoredActor(GetInstigator());
-        if(GetWorld()->LineTraceSingleByChannel(Hit,View+Aim.Vector()*40,Rim,ECC_Visibility,Q) && Hit.Distance<FVector::Dist(View+Aim.Vector()*40,Rim)-8)
-        {
-            if(FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballReview")))UE_LOG(LogTemp,Display,TEXT("COURT_SHOT_BLOCKED actor=%s point=%s rim=%s"),*GetNameSafe(Hit.GetActor()),*Hit.ImpactPoint.ToString(),*Rim.ToString());
-            continue;
-        }
-        Best=Dot;Target=Rim;
-    }
-    if(Target.IsNearlyZero())
-    {
-        if(FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballReview")))UE_LOG(LogTemp,Display,TEXT("COURT_SHOT_FREE from=%s view=%s aim=%s court=%d"),*From.ToString(),*View.ToString(),*Aim.ToString(),Court);
-        return Aim.Vector()*1050+FVector::UpVector*235;
-    }
-    float G=FMath::Max(100.f,-GetWorld()->GetGravityZ());float D=FVector::Dist2D(From,Target);
-    float Apex=FMath::Max(From.Z,Target.Z)+FMath::Max(140.f,D*.32f);
-    float Up=FMath::Sqrt(2*(Apex-From.Z)/G),Down=FMath::Sqrt(2*(Apex-Target.Z)/G),Time=Up+Down;
-    // Account for the ball's light air drag and Chaos' semi-implicit gravity
-    // step. A continuous parabola alone lands several cm short of the opening.
-    const double Drag=.003, Travel=(1.-FMath::Exp(-Drag*Time))/Drag;
-    FVector V=(Target-From)/Travel;
-    V.Z=((Target.Z-From.Z)+(G/Drag)*Time)/Travel-G/Drag+G*PhysicsStep*.5;
-    if(FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballReview")))UE_LOG(LogTemp,Display,TEXT("COURT_SHOT_LOB from=%s target=%s v=%s"),*From.ToString(),*Target.ToString(),*V.ToString());
-    return V;
+    return View + FVector(Aim.Vector().X, Aim.Vector().Y, 0).GetSafeNormal() * 55 + FVector(0, 0, 12);
 }
+float AHouseBasketball::SuggestedPower(const FVector& View, const FRotator& Aim) const
+{
+    const FVector From = Body->GetComponentLocation();
+    if (FMath::Abs(From.X) > 1550 || From.Y < 1700 || From.Y > 3900) return -1;
+    float Best = .85f, Power = -1;
+    for (int I = 0; I < 2; ++I)
+    {
+        const FVector Rim = HouseCourt::Rim(I), LaunchFrom = ReleasePoint(View, Aim);
+        const float Dot = FVector::DotProduct((Rim - View).GetSafeNormal(), Aim.Vector());
+        const float Distance = FVector::Dist2D(LaunchFrom, Rim);
+        if (Dot < Best || Distance < 90 || Distance > 2800) continue;
+        // The reference band assumes the crosshair is ON the rim. Raising/lowering
+        // the actual aim changes the release angle and can still miss a green shot.
+        const float Pitch = (Rim - View).Rotation().Pitch;
+        const float Angle = FMath::DegreesToRadians(FMath::Clamp(50.f + Pitch * .45f, 25.f, 78.f));
+        const float Denom = 2 * FMath::Square(FMath::Cos(Angle)) * (Distance * FMath::Tan(Angle) - (Rim.Z - LaunchFrom.Z));
+        if (Denom <= 0) continue;
+        const float Speed = FMath::Sqrt(-GetWorld()->GetGravityZ() * Distance * Distance / Denom);
+        if (Speed < 500 || Speed > 1850) continue;
+        Best = Dot; Power = (Speed - 500) / 1350;
+    }
+    return Power;
+}
+FVector AHouseBasketball::ShotVelocity(const FVector& View, const FRotator& Aim, float Power) const
+{
+    const float Ideal = SuggestedPower(View, Aim);
+    // A timing window makes the meter playable at normal frame rates. Only the
+    // magnitude is calibrated; yaw and pitch are always the player's own aim.
+    if (Ideal >= 0 && FMath::Abs(Power - Ideal) <= GreenHalfWidth) Power = Ideal;
+    const float Angle = FMath::DegreesToRadians(FMath::Clamp(50.f + FRotator::NormalizeAxis(Aim.Pitch) * .45f, 25.f, 78.f));
+    const FVector Flat = FVector(Aim.Vector().X, Aim.Vector().Y, 0).GetSafeNormal();
+    FVector Velocity = (Flat * FMath::Cos(Angle) + FVector::UpVector * FMath::Sin(Angle)) * SpeedForPower(Power);
+    // Small integration/air-drag compensation, not a hoop-seeking correction.
+    Velocity *= 1.002f; Velocity.Z += -GetWorld()->GetGravityZ() * PhysicsStep * .5f;
+    return Velocity;
+}
+void AHouseBasketball::OnBallHit(UPrimitiveComponent*, AActor* Other, UPrimitiveComponent* Surface, FVector Impulse, const FHitResult& Hit)
+{
+    if (!HasAuthority() || !Surface || Body->ComponentHasTag(TEXT("SSOFurnitureHeld"))) return;
+    const float Speed = FMath::Max(float(Impulse.Size()) / .62f,
+        float(FMath::Abs(FVector::DotProduct(Body->GetPhysicsLinearVelocity(), Hit.ImpactNormal))));
+    if (auto* Hoop = Cast<AHouseBasketballHoop>(Other))
+    { Hoop->BallImpact(Surface, Hit.ImpactPoint, -Hit.ImpactNormal * Speed, Speed); return; }
+    if (Speed > 85 && GetWorld()->GetTimeSeconds() - LastBounceAt > .12)
+    { LastBounceAt = GetWorld()->GetTimeSeconds(); MulticastBounce(Hit.ImpactPoint, uint8(FMath::Clamp(Speed / 5, 1.f, 255.f))); }
+}
+void AHouseBasketball::MulticastBounce_Implementation(FVector_NetQuantize Point, uint8 Strength)
+{ HouseSfx::Basketball(GetWorld(), Point, 0, Strength * 5.f); }
 void AHouseBasketball::MarkShot(){if(HasAuthority()){ShotAt=GetWorld()->GetTimeSeconds();Previous=Body->GetComponentLocation();}}
 void AHouseBasketball::UpdateBall()
 {
@@ -124,16 +149,18 @@ void AHouseBasketball::UpdateBall()
         for(int I=0;I<2;++I)
         {
             FVector Rim=HouseCourt::Rim(I);
-            if(FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballReview")) && FVector::Dist2D(At,Rim)<240 && At.Z>HouseCourt::Floor+230)
+            if((FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballReview")) || FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballSkillReview"))) && FVector::Dist2D(At,Rim)<240 && At.Z>HouseCourt::Floor+230)
                 UE_LOG(LogTemp,Display,TEXT("COURT_APPROACH end=%d at=%s v=%s dt=%.4f"),I,*At.ToString(),*Body->GetPhysicsLinearVelocity().ToString(),GetWorld()->GetDeltaSeconds());
             if(Previous.Z>=Rim.Z && At.Z<Rim.Z)
             {
                 FVector Crossing=FMath::Lerp(Previous,At,(Previous.Z-Rim.Z)/(Previous.Z-At.Z));
-                if(FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballReview")))UE_LOG(LogTemp,Display,TEXT("COURT_CROSS end=%d at=%s offset=%.1f v=%s"),I,*Crossing.ToString(),FVector::Dist2D(Crossing,Rim),*Body->GetPhysicsLinearVelocity().ToString());
+                if(FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballReview")) || FParse::Param(FCommandLine::Get(),TEXT("HouseBasketballSkillReview")))UE_LOG(LogTemp,Display,TEXT("COURT_CROSS end=%d at=%s offset=%.1f v=%s"),I,*Crossing.ToString(),FVector::Dist2D(Crossing,Rim),*Body->GetPhysicsLinearVelocity().ToString());
                 if(FVector::Dist2D(Crossing,Rim)<12.f)
                 {
                     (I==0?LeftBaskets:RightBaskets)++;LastBasketAt=Now;ScoredAt=Now;ShotAt=-100;
                     ForceNetUpdate();UE_LOG(LogTemp,Display,TEXT("COURT_BASKET end=%d left=%d right=%d"),I,LeftBaskets,RightBaskets);
+                    for (TActorIterator<AHouseBasketballHoop> It(GetWorld()); It; ++It)
+                        if (It->End() == I) It->Basket(Body->GetPhysicsLinearVelocity());
                 }
             }
         }
@@ -144,7 +171,7 @@ void AHouseBasketball::UpdateBall()
     bool Abandoned=OutsideSince>0 && Now-OutsideSince>25 && Body->GetPhysicsLinearVelocity().Size()<20;
     if(!Held && (Lost || Abandoned))
     {
-        Body->SetWorldLocation(HouseCourt::BallHome(),false,nullptr,ETeleportType::TeleportPhysics);Body->SetPhysicsLinearVelocity(FVector::ZeroVector);Body->SetPhysicsAngularVelocityInRadians(FVector::ZeroVector);Body->WakeAllRigidBodies();At=Body->GetComponentLocation();OutsideSince=-1;ShotAt=-100;ForceNetUpdate();
+        Body->SetWorldLocation(RecoveryHome,false,nullptr,ETeleportType::TeleportPhysics);Body->SetPhysicsLinearVelocity(FVector::ZeroVector);Body->SetPhysicsAngularVelocityInRadians(FVector::ZeroVector);Body->WakeAllRigidBodies();At=Body->GetComponentLocation();OutsideSince=-1;ShotAt=-100;ForceNetUpdate();
         UE_LOG(LogTemp,Display,TEXT("COURT_BALL_RECOVERED"));
     }
     Previous=At;

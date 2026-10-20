@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "checks": {
+    "SM_NCR2_LowerRoomShell_coordinate_contract": true,
+    "SM_NCR2_LowerRoomShell_bounds_match": true,
+    "SM_NCR2_LowerRoomShell_triangle_count": true,
+    "SM_NCR2_LowerCeilingWithHole_coordinate_contract": true,
+    "SM_NCR2_LowerCeilingWithHole_bounds_match": true,
+    "SM_NCR2_LowerCeilingWithHole_triangle_count": true,
+    "SM_NCR2_UpperDarkFloorWithHole_coordinate_contract": true,
+    "SM_NCR2_UpperDarkFloorWithHole_bounds_match": true,
+    "SM_NCR2_UpperDarkFloorWithHole_triangle_count": true,
+    "SM_NCR2_UpperSupportFloorWithHole_coordinate_contract": true,
+    "SM_NCR2_UpperSupportFloorWithHole_bounds_match": true,
+    "SM_NCR2_UpperSupportFloorWithHole_triangle_count": true,
+    "SM_NCR2_UpperExtensionCollision_coordinate_contract": true,
+    "SM_NCR2_UpperExtensionCollision_bounds_match": true,
+    "SM_NCR2_UpperExtensionCollision_triangle_count": true,
+    "SM_NCR2_UpperWallLining_coordinate_contract": true,
+    "SM_NCR2_UpperWallLining_bounds_match": true,
+    "SM_NCR2_UpperWallLining_triangle_count": true,
+    "SM_NCR2_LowerDanceFloorInlay_coordinate_contract": true,
+    "SM_NCR2_LowerDanceFloorInlay_bounds_match": true,
+    "SM_NCR2_LowerDanceFloorInlay_triangle_count": true,
+    "lower_join_open_full_height": true,
+    "upper_join_open_full_height": true,
+    "upper_cosmetic_liner_join_open": true,
+    "lower_notch_wall_preserved": true,
+    "upper_notch_wall_preserved": true,
+    "SM_NCR2_LowerCeilingWithHole_aperture_clear": true,
+    "SM_NCR2_LowerCeilingWithHole_aperture_ring_solid": true,
+    "SM_NCR2_LowerCeilingWithHole_seam_floor_continuous": true,
+    "SM_NCR2_UpperSupportFloorWithHole_aperture_clear": true,
+    "SM_NCR2_UpperSupportFloorWithHole_aperture_ring_solid": true,
+    "SM_NCR2_UpperSupportFloorWithHole_seam_floor_continuous": true,
+    "SM_NCR2_UpperDarkFloorWithHole_aperture_clear": true,
+    "SM_NCR2_UpperDarkFloorWithHole_aperture_ring_solid": true,
+    "SM_NCR2_UpperDarkFloorWithHole_seam_floor_continuous": true,
+    "lower_wing_grid_floor_solid": true,
+    "upper_wing_grid_floor_solid": true,
+    "lower_wing_grid_ceiling_solid": true,
+    "upper_wing_grid_ceiling_solid": true,
+    "preserved_notch_has_no_new_floor": true,
+    "native_door_sweeps_clear": true,
+    "protected_full_wing_envelope_clear": true
+  },
+  "assets": {
+    "SM_NCR2_LowerRoomShell": {
+      "bounds": [
+        [
+          -2280.999755859375,
+          -1521.0270881652832,
+          -10.000000149011612
+        ],
+        [
+          -838.0000114440918,
+          -961.4999771118164,
+          332.53002166748047
+        ]
+      ],
+      "bound_error_cm": 0.0,
+      "triangles": 142,
+      "models": [
+        {
+          "name": "SM_NCR2_LowerRoomShell\u0000\u0001Model",
+          "Lcl Rotation": [
+            0.0,
+            -0.0,
+            179.999991348578
+          ],
+          "Lcl Scaling": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      ]
+    },
+    "SM_NCR2_LowerCeilingWithHole": {
+      "bounds": [
+        [
+          -2212.5099182128906,
+          -1509.027099609375,
+          327.02999114990234
+        ],
+        [
+          -860.0000381469727,
+          -973.5002517700195,
+          332.52999782562256
+        ]
+      ],
+      "bound_error_cm": 0.0,
+      "triangles": 282,
+      "models": [
+        {
+          "name": "SM_NCR2_LowerCeilingWithHole\u0000\u0001Model",
+          "Lcl Rotation": [
+            0.0,
+            -0.0,
+            179.999991348578
+          ],
+          "Lcl Scaling": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      ]
+    },
+    "SM_NCR2_UpperDarkFloorWithHole": {
+      "bounds": [
+        [
+          -2212.5099182128906,
+          -1509.027099609375,
+          332.5999975204468
+        ],
+        [
+          -860.0000381469727,
+          -973.5002517700195,
+          333.1000089645386
+        ]
+      ],
+      "bound_error_cm": 0.0,
+      "triangles": 282,
+      "models": [
+        {
+          "name": "SM_NCR2_UpperDarkFloorWithHole\u0000\u0001Model",
+          "Lcl Rotation": [
+            0.0,
+            -0.0,
+            179.999991348578
+          ],
+          "Lcl Scaling": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      ]
+    },
+    "SM_NCR2_UpperSupportFloorWithHole": {
+      "bounds": [
+        [
+          -2212.5099182128906,
+          -1509.027099609375,
+          327.09996700286865
+        ],
+        [
+          -860.0000381469727,
+          -973.5002517700195,
+          332.52999782562256
+        ]
+      ],
+      "bound_error_cm": 0.0,
+      "triangles": 282,
+      "models": [
+        {
+          "name": "SM_NCR2_UpperSupportFloorWithHole\u0000\u0001Model",
+          "Lcl Rotation": [
+            0.0,
+            -0.0,
+            179.999991348578
+          ],
+          "Lcl Scaling": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      ]
+    },
+    "SM_NCR2_UpperExtensionCollision": {
+      "bounds": [
+        [
+          -1636.7998123168945,
+          -1521.0270881652832,
+          332.52999782562256
+        ],
+        [
+          -838.0000114440918,
+          -961.4999771118164,
+          640.2999877929688
+        ]
+      ],
+      "bound_error_cm": 0.0,
+      "triangles": 88,
+      "models": [
+        {
+          "name": "SM_NCR2_UpperExtensionCollision\u0000\u0001Model",
+          "Lcl Rotation": [
+            0.0,
+            -0.0,
+            179.999991348578
+          ],
+          "Lcl Scaling": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      ]
+    },
+    "SM_NCR2_UpperWallLining": {
+      "bounds": [
+        [
+          -2212.510299682617,
+          -1509.027099609375,
+          333.09996128082275
+        ],
+        [
+          -860.0000381469727,
+          -973.4999656677246,
+          622.7099895477295
+        ]
+      ],
+      "bound_error_cm": 0.0,
+      "triangles": 124,
+      "models": [
+        {
+          "name": "SM_NCR2_UpperWallLining\u0000\u0001Model",
+          "Lcl Rotation": [
+            0.0,
+            -0.0,
+            179.999991348578
+          ],
+          "Lcl Scaling": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      ]
+    },
+    "SM_NCR2_LowerDanceFloorInlay": {
+      "bounds": [
+        [
+          -2212.510108947754,
+          -1509.0267181396484,
+          0.8799999952316284
+        ],
+        [
+          -860.0000381469727,
+          -973.4999656677246,
+          339.1000032424927
+        ]
+      ],
+      "bound_error_cm": 0.0,
+      "triangles": 1812,
+      "models": [
+        {
+          "name": "SM_NCR2_LowerDanceFloorInlay\u0000\u0001Model",
+          "Lcl Rotation": [
+            0.0,
+            -0.0,
+            179.999991348578
+          ],
+          "Lcl Scaling": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      ]
+    }
+  },
+  "floor_grid_samples": 117,
+  "note": "Independent raw FBX geometry analysis; actual imported map runtime remains required."
+}

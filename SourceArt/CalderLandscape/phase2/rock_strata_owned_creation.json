@@ -1,0 +1,6 @@
+{
+  "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderStrataRock",
+  "failed_owned_asset_sha256": "6764e562ef7741abba60f9f6258564f637a438238663d71576d378cb4c9eb664",
+  "evidence": "Saved/CalderWork/rock_strata_trial/failed_shader_v1",
+  "status": "First owned compile failed: HLSL line reserved token. Originals read only; unbound."
+}

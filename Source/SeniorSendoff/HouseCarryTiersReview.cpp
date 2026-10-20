@@ -1,5 +1,6 @@
 #include "HouseCarryTiersReview.h"
 #include "HouseExterior.h"
+#include "HouseTreeReaction.h"
 #include "HouseBlackHall.h"
 
 #if !UE_BUILD_SHIPPING
@@ -816,6 +817,8 @@ void TickHouseFlagReview(AStoryFirstPersonCharacter* Pawn)
 
 void TickHouseCarryTiersReview(AStoryFirstPersonCharacter* Pawn)
 {
+    if(Pawn && FParse::Param(FCommandLine::Get(),TEXT("HouseFrontBushReview"))){ TickHouseFrontBushReview(Pawn); return; }
+    if(Pawn && FParse::Param(FCommandLine::Get(),TEXT("HouseConnectionsReview"))){ TickHouseConnectionsReview(Pawn); return; }
     if(Pawn && FParse::Param(FCommandLine::Get(),TEXT("NoodleWingSmoke"))){ TickHouseNoodleWingReview(Pawn); return; }
     if(Pawn && (FParse::Param(FCommandLine::Get(),TEXT("HouseGreatRoomPillowReview"))
         || FParse::Param(FCommandLine::Get(),TEXT("HouseGreatRoomPillowBreakReview"))
@@ -834,6 +837,7 @@ void TickHouseCarryTiersReview(AStoryFirstPersonCharacter* Pawn)
     if(Pawn && FParse::Param(FCommandLine::Get(),TEXT("HouseGadgetSmoke"))){ TickHouseGadgetSmoke(Pawn); return; }
     if(Pawn && FParse::Param(FCommandLine::Get(),TEXT("HouseStairSurvey"))){ TickHouseStairSurvey(Pawn); return; }
     if(Pawn && FParse::Param(FCommandLine::Get(),TEXT("HouseExteriorViews"))){ TickHouseExteriorViews(Pawn); return; }
+    if(Pawn && (FParse::Param(FCommandLine::Get(),TEXT("HouseTreesReview")) || FParse::Param(FCommandLine::Get(),TEXT("HouseTreesNetworkReview")))){ TickHouseTreesReview(Pawn); return; }
     if(!Pawn || !Pawn->HasAuthority() || !Pawn->IsLocallyControlled()
         || !FParse::Param(FCommandLine::Get(),TEXT("HouseCarryTiersReview")))return;
     UWorld* World=Pawn->GetWorld();

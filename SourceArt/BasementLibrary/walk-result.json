@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "measurements": {
+    "passed": "1",
+    "seconds": "15.00",
+    "frames": "825",
+    "p50FrameMs": "16.76",
+    "p95FrameMs": "24.48",
+    "p99FrameMs": "36.59",
+    "worstFrameMs": "65.65",
+    "over25Ms": "34",
+    "over33Ms": "11",
+    "travelCm": "5214.1",
+    "waypoints": "35",
+    "laps": "1",
+    "stalls": "0",
+    "longestNoProgressSeconds": "0.05",
+    "memoryStartMB": "11045.5",
+    "memoryEndMB": "11670.0",
+    "memoryDeltaMB": "+624.5",
+    "vsm": "1",
+    "vsmCoarseNonNanite": "0",
+    "vsmPages": "1024",
+    "lumenHw": "0",
+    "lumenMeshSdf": "0",
+    "skylight": "1.30",
+    "shadowQuality": "1",
+    "resolutionQuality": "80.0",
+    "pigAvoidances": "0"
+  },
+  "scope": "Actual player movement through the furnished library and back at normal playable quality",
+  "source_log": "/Users/Stewart/Projects/Senior sendoff/outputs/basement-library/walk-3/runtime.log"
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "Opt-in five-cluster farm bounds fix under build; native/visual validation pending",
+  "switch": "CalderFarmTrial",
+  "default_enabled": false,
+  "site": {
+    "barn_xy": [
+      -27200,
+      -2200
+    ],
+    "barn_footprint_half_cm": [
+      750,
+      1100
+    ],
+    "first_bale_xy": [
+      -24600,
+      200
+    ],
+    "fence_gate_y_cm": [
+      -300,
+      1300
+    ],
+    "planning_survey": "Saved/CalderWork/farm_trial/planning_ground.json"
+  },
+  "features": [
+    "Level open timber barn on individual stone piers, existing sloped soil floor",
+    "Dull corrugated roof, no brands or advertising",
+    "Dry brown curing leaves hung from sticks",
+    "Six proposed twine-bound round hay bales, no plastic or net wrap",
+    "Chestnut worm fence with broad field opening"
+  ],
+  "constraints": {
+    "plain_static_ISM_components": 5,
+    "LODs": 3,
+    "no_collision_shadows_DF_indirect_navigation": true,
+    "cull_cm": [
+      7000,
+      9000
+    ],
+    "new_lights": 0,
+    "terrain_tree_routes_protected_areas_unchanged": true,
+    "habitat_and_later_wildlife": "No wildlife implementation implied"
+  },
+  "materials": {
+    "parent": "/Game/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured",
+    "existing_CC0_sets": [
+      "rough_wood",
+      "stacked_stone_wall",
+      "cracked_concrete",
+      "withered_grass"
+    ],
+    "new_imports": 0,
+    "note": "Existing acquired/shared material and CC0 textures read-only; actual shader-budget audit still required. Roof uses the available cracked mineral texture tinted dull iron; first visual trial may need replacement."
+  },
+  "acceptance_next": [
+    "DisableUnity build",
+    "Native actual render buffers/3LOD/settings/grounded bales/frozen footprint dump",
+    "Inspect actual ground+130cm wide/macro cameras",
+    "Check terrain/no-terrain compatibility and 24-Calder-ISM budget",
+    "Reject visual failures; no default promotion before performance and photographic review"
+  ],
+  "current_rendering_diagnosis": "GPU instance culling off restores frame; global settings not promoted. Fence/barn cluster split and populated pre-registration bounds are under test."
+}

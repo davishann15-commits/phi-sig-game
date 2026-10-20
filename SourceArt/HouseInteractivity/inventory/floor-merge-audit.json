@@ -1,0 +1,106 @@
+[
+  {
+    "merged": "SMF_Basement_ALL",
+    "source_labels": [
+      "SMF_Basement_m1_m1_Solid",
+      "SMF_Basement_m1_m2_Solid",
+      "SMF_Basement_m1_m3_Glass",
+      "SMF_Basement_m1_m3_Solid",
+      "SMF_Basement_m1_p0_Solid",
+      "SMF_Basement_p0_m1_Solid",
+      "SMF_Basement_p0_m2_Solid",
+      "SMF_Basement_p0_m3_Solid",
+      "SMF_Basement_p0_p0_Solid"
+    ],
+    "source_faces": 298857,
+    "exported_faces": 298857,
+    "materials": 116
+  },
+  {
+    "merged": "COLF_Basement_ALL",
+    "source_labels": [
+      "COLF_Basement_m1_m1_Solid",
+      "COLF_Basement_m1_m2_Solid",
+      "COLF_Basement_m1_m3_Solid",
+      "COLF_Basement_m1_p0_Solid",
+      "COLF_Basement_p0_m1_Solid",
+      "COLF_Basement_p0_m2_Solid",
+      "COLF_Basement_p0_m3_Solid",
+      "COLF_Basement_p0_p0_Solid"
+    ],
+    "source_faces": 868,
+    "exported_faces": 868,
+    "materials": 8
+  },
+  {
+    "merged": "SMF_Entrance_ALL",
+    "source_labels": [
+      "SMF_Entrance_m1_m1_Solid",
+      "SMF_Entrance_m1_m2_Glass",
+      "SMF_Entrance_m1_m2_Solid",
+      "SMF_Entrance_m1_m3_Solid",
+      "SMF_Entrance_m1_p0_Solid",
+      "SMF_Entrance_m1_p1_Solid",
+      "SMF_Entrance_m1_p2_Solid",
+      "SMF_Entrance_p0_m1_Solid",
+      "SMF_Entrance_p0_m2_Solid",
+      "SMF_Entrance_p0_p0_Glass",
+      "SMF_Entrance_p0_p0_Solid",
+      "SMF_Entrance_p0_p1_Glass",
+      "SMF_Entrance_p0_p1_Solid",
+      "SMF_Entrance_p0_p2_Solid"
+    ],
+    "source_faces": 410276,
+    "exported_faces": 410276,
+    "materials": 168
+  },
+  {
+    "merged": "COLF_Entrance_ALL",
+    "source_labels": [
+      "COLF_Entrance_m1_m2_Solid",
+      "COLF_Entrance_m1_m3_Solid",
+      "COLF_Entrance_m1_p1_Solid",
+      "COLF_Entrance_p0_m1_Solid",
+      "COLF_Entrance_p0_m2_Solid",
+      "COLF_Entrance_p0_p0_Solid",
+      "COLF_Entrance_p0_p1_Solid"
+    ],
+    "source_faces": 1668,
+    "exported_faces": 1668,
+    "materials": 7
+  },
+  {
+    "merged": "SMF_Upper_ALL",
+    "source_labels": [
+      "SMF_Upper_m1_m1_Solid",
+      "SMF_Upper_m1_p0_Solid",
+      "SMF_Upper_m1_p1_Solid",
+      "SMF_Upper_m1_p2_Solid",
+      "SMF_Upper_m2_p0_Solid",
+      "SMF_Upper_m2_p1_Solid",
+      "SMF_Upper_m2_p2_Solid",
+      "SMF_Upper_p0_m1_Solid",
+      "SMF_Upper_p0_m2_Solid",
+      "SMF_Upper_p0_p0_Solid",
+      "SMF_Upper_p0_p1_Solid",
+      "SMF_Upper_p0_p2_Solid"
+    ],
+    "source_faces": 368910,
+    "exported_faces": 368910,
+    "materials": 147
+  },
+  {
+    "merged": "COLF_Upper_ALL",
+    "source_labels": [
+      "COLF_Upper_m1_m1_Solid",
+      "COLF_Upper_m1_p0_Solid",
+      "COLF_Upper_m1_p1_Solid",
+      "COLF_Upper_m2_p1_Solid",
+      "COLF_Upper_m2_p2_Solid",
+      "COLF_Upper_p0_p1_Solid"
+    ],
+    "source_faces": 276,
+    "exported_faces": 276,
+    "materials": 6
+  }
+]

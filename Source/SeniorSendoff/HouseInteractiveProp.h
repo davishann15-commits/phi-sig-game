@@ -125,4 +125,8 @@ private:
     bool bIncomingVelocityValid = false;
     bool bIncomingVelocityWasHeld = false;
     FVector OriginalScale = FVector::OneVector;
+protected:
+    /** The intact scale a crushed (broken, no broken mesh) piece is squashed from. Runtime-spawned subclasses whose scale
+     *  is part of what they are (ACampusProp) set it before begin play. */
+    void SetOriginalScale(const FVector& Scale) { OriginalScale = Scale; }
 };

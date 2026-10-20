@@ -25,6 +25,8 @@ void TickHouseFrontDoubleDoorReview(AStoryFirstPersonCharacter* Pawn);
 
 /** Opt-in (-HouseExteriorWalkReview) concrete paths, steps and real player traversal. */
 void TickHouseExteriorWalkReview(AStoryFirstPersonCharacter* Pawn);
+/** Opt-in (-HouseFrontBushReview) front-only placements, collision and player paths. */
+void TickHouseFrontBushReview(AStoryFirstPersonCharacter* Pawn);
 
 /** Opt-in (-HouseGadgetSmoke) pull station / horn / light switch / singing bass check. */
 void TickHouseGadgetSmoke(AStoryFirstPersonCharacter* Pawn);
@@ -34,3 +36,6 @@ void TickHouseStairSurvey(AStoryFirstPersonCharacter* Pawn);
 
 /** Opt-in (-NoodleWingSmoke) walks the new three-floor stair and basement routes. */
 void TickHouseNoodleWingReview(AStoryFirstPersonCharacter* Pawn);
+
+/** Opt-in actual exterior aperture and player traversal review. */
+void TickHouseConnectionsReview(AStoryFirstPersonCharacter* Pawn);

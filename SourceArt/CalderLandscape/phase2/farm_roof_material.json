@@ -1,0 +1,21 @@
+{
+  "asset": "/Game/SeniorSendOff/Calder/Materials/M_CalderFarmRoof",
+  "pixel_instructions": 229,
+  "pixel_samples": 2,
+  "opaque": true,
+  "ISM_enabled": true,
+  "albedo_alpha": "Metal fraction,0 porous rust/1 galvanized metal; linear averaged mips",
+  "roughness_rust": 0.93,
+  "roughness_metal": 0.49,
+  "source_sha256": {
+    "Content/SeniorSendOff/House/ExteriorNature/M_NaturePropTextured.uasset": "2aef46578e18be21ea43c979cd8db2b4fea3fc251deb846c100cfb3ef35f238e",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderGround.uasset": "fe68d9036d1d1ebb75efdc1ddbe825969d3b6fd09bff174ecb93cc6aa922046f",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderRock.uasset": "d817b9a5421591d37485ebd041916fb065d4f61de81dcc1a9e80f99a99ce9b19",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderWater.uasset": "7df95d7e509984b1c519ee44b2b15e0455a4285a53ce10172909ebe1561d4cdb",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderFalls.uasset": "edcd97c14c7bc43ea47d4194075d9fdc6e5c0ab7c2e40f21de0af4e8393f24b5",
+    "Content/SeniorSendOff/Calder/Materials/M_CalderStream.uasset": "c36d1457988cef02c14494164ede0dcea78b33fc4291f1d011ff2b3e57a482b9"
+  },
+  "default_enabled": false,
+  "switch": "CalderFarmTrial",
+  "scope": "Owned shader compile only; native texture readback/visual/performance acceptance separate"
+}
